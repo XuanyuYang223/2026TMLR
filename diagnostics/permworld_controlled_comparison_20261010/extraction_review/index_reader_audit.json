@@ -1,0 +1,1110 @@
+{
+  "status": "passed",
+  "audit_scope": "Read-only completed cache inspection, actual NPY hash/shape/finite values and exact final activation equality. No forward, training, metric calculation or labels read.",
+  "protocol_sha256": "9c8b6dfac09bf809410f87b2648cf9c8a12a5a17b77a17dae9de5a6bf11415ea",
+  "index_path": "/mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+  "index_sha256": "291ca6aa2eb2a59726387e1716f97db9b3085f5631f50c71613cbf2bab49ffaa",
+  "physical_split_count": 40,
+  "logical_split_count": 64,
+  "source_job_count": 16,
+  "condition_split_counts": {
+    "initial|validation": 4,
+    "initial|test": 4,
+    "trained|validation": 16,
+    "trained|test": 16
+  },
+  "initial_equality_count": 32,
+  "shared_initial_hidden_only": true,
+  "task_specific_initial_query_output_not_reused": true,
+  "actual_file_count": 144,
+  "actual_file_bytes": 4962926592,
+  "processed_feature_vectors": 967680,
+  "processed_layer_states": 4838400,
+  "all_actual_new_file_hashes_match": true,
+  "all_feature_values_finite": true,
+  "all_lengths_10_to_30_complete": true,
+  "all_new_final_norm_equals_original_cache_bitwise": true,
+  "max_final_norm_difference": 0,
+  "all_trained_argmax_equals_original_cache": true,
+  "prediction_disagreements": 0,
+  "all_recorded_parameter_hashes_unchanged": true,
+  "source_updates": 0,
+  "new_forward_calls": 0,
+  "new_metric_calls": 0,
+  "actual_extraction_wall_seconds": 160.1566785019968,
+  "wall_scope": "Extraction timer starts after planning/data/old-cache hashing; per-record forward_and_store excludes some later file hashing. This is not whole CLI process wall.",
+  "reader_audit_wall_seconds": 46.00232994100952,
+  "checks": [
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "0a6f00526e8f23a1c2b82fbe8680b90f55d7453f61903b5f916502938637d868",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "e1bbb6b0ca7b16a9dcde031610f59ab999f860987368af9f1c53ba90c2aa89b5",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "44d84488366cf8b633b8b8ddbcbdf13baaa80ede36e2175d128b9b7a0a3eb6d2",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "29b2afe1958577bf5bffde30026aa5c485e71262597efd44d36e81bc26acd927",
+        "answer_argmax": "c63ddb7f44563364c20b5091da273e037e1b4c2efbcf775f86a84dd270f95f92"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "0397788110289b0237bad54f563bd9371ba4eb2f14a2dc393b50a95db19c05cf",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "04a106da3367fd786211a3356921af1dc60b1dc00766083047f62c44329f19e8",
+        "answer_argmax": "be805d88cd269dc2788955068580acf890486135483df9009812880f085fa10d"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "67d2b3e26222e7aa3050feb785418db7b6cba97d79479a41484ce281642d9b24",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "ac95963dfcc09d6c88910f68523656c16948c741ee70d69397f28eefdeea9247",
+        "answer_argmax": "f11e7046d657bd82a1953d2657bd901a124797af7f3e15ec05cf1220576a27a5"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "6f4575ed0544dd48f33fcea3253c1f2348daec4ef00b7998563e514514bf1d8c",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "a8b5d4663b80742dffedbb2e6465ceb38aefc2e295e2417079992c253a5e97b5",
+        "answer_argmax": "fab0da315628bad0caafa02d231a74bcb8952b49709c39ae6e86cd074bb52593"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "93d6ec44857c1a947dd8f02b7b8ccdd078be02486f8648ca9b58c4702c100cf0",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "66fe4980cca7d482fc421303bbe335b09da679cbf478d53156d08ef2cecef263",
+        "answer_argmax": "8ca29aa6a54abd9850f328e88d1b94e0920dfa79f80ae210695fb1750512aba0"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "8528c5f6480be0d985268c395aa0e2d2fb8e44ca3391de6d9ba01645f8f143f2",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "f8e06eeeb83248e43dfab93a77f3a08a659df449edb7b83f1e8de8b940f7c234",
+        "answer_argmax": "a487689188ec5540d4df3fa332226f4a6e9570afa6d530b3482ee7c81f21da78"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "221725a47de48ad59919a27aeaa896db79b789fd33fe0e6303f6f42dd452d173",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "ac63f6d3e17b18e32c8995997d0180d5ee1df3bedd460842b7e07910ef4945b0",
+        "answer_argmax": "8c9ee681322052825a9915ac972d1f20930e6b5c1aba0b1c9c32583ff08e1576"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "ec0d6a383d2fc1dadfdd6eb214c74392efc88fa0480b1f24f154fabe1d3f89bf",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "a91be6d564166c8e5fd09e18ca6661cbd606cd3edd9ac0b253f30aecd5aa7623",
+        "answer_argmax": "307b34b7767b950506582cd51e5cbbcb94f76368a2c2fc7477dd9d586579950c"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "eb67b03b30206dd5607a8a59c66021be44b7157b04b17696c479ddede697982b",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "cc70ff327e2b7f0a3fbd1db6e01177c1ede150382a319e1fe415b0f586f09a9e",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "e0b863f5c58d95b73c5f91d0f4add89b7ca4bc5a712c224525c2c52919ffb199",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "972640ab4299416795fcc6afa19321dbb4a10ecbf0aba8e1434ce70a1cdb6820",
+        "answer_argmax": "01a975f9bb936a73310d62cf2451b2dc5d21f28f62d15426d0be3a15a442022e"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "36083ab88f8be98439a0e6943d0722f3854b70caa81381097aa3c435fd78e9cb",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "31ade501fbd01c17c45c61fed6f46aac2ecb62a5f2f7b54055de05efebd818e0",
+        "answer_argmax": "a2a8f7876e6ee217f52985fb381656111dbdaab46b5675fe5de0d361c949a828"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "da711c02b5824334f773067987b5c633bac497f193918d1448271544f54900f2",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "252c7ddec48edff19cdc8684af3f1e7070a448ec919ef52dffc54bae06e2fd0a",
+        "answer_argmax": "9c9883b0c135019fb74776700db41c1f367be8f0e8f0f09cda88dd804a26f504"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "e7984e28f11d2692031e7dff427cef0f4608b23c99c38bebe8d80b277df5973a",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "4c2a214be76c55e817c86d58957edcb5aac2e12dfeb735733586cbe6cdb92188",
+        "answer_argmax": "9fcddc1c0d874239dee916e30b83d035066b941f8808a5b6e023194a7f1be762"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "a1cc5f6ce9f25a473164177e7a6de26b7e86cb0208a25da3bfaa9be63cdbb813",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "b8ace3825e48e3052a4b82351112252345e889f19904fef573d4ae718a1e92b6",
+        "answer_argmax": "4dc29a2f7f30f6de1f49cbeb1311009f0844d99e9b10cb3a04184cf9d2774e74"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "625e77ebacbaffe0cd1ec5c77ab11aea9df9c9e3b471d07fac0212b86b78bad7",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "69c1f327a1f83880f3058f7e9cff8bde3644356f51f7c8b277dab8e60a8a2ec0",
+        "answer_argmax": "d65176715f41bf157e8323647ed8e1a204b42908b41bea2b910a979d88e75178"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "3394e6a3d44d207a5b81f5cc934eae6d091190f348f30ad3fae610e8cf27cb89",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "4728617db619f194863c2f33a336d1b8814073de74cbae3afde3c50d16b53caa",
+        "answer_argmax": "0c692a1dfa65569575442502aa32ce97151c23a04705291e84dd1a0416c49731"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "c99b88291d317894db712f5d553625dc77f2eea03232609d237361f2384a9f8c",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "d03c2468ffde66e38833c18c026de3782b111216eeeb3f18adfe582326b8c812",
+        "answer_argmax": "7eca4203e599502a9b29c8a987d78d90b0e386cb6485d39c89ae72b835977c04"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "23b28219c7e509e304124b4dc4f97b1bca79847e5d2b25bf3088178b51e310d9",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "baf443ff232229bb168d57b71ca285d33644541f41cbcbce71a17a9b7db8c1fe",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "d8eb65d7b480b7302419b9bee49e8b492c0ff6ed07a4152a9c7376f803fa54a5",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "caa88a4931be461a8b2dd9c8fe0fef074beb4cdd52228c1b28e0ba599b9e1dc4",
+        "answer_argmax": "9c75f493e4d580e9074fc98cd9d05e4b5b4de3a26355a9ffad2278aef12ce1f1"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "833872266b6100a96d6a71f83bfe41ab912706c0e673ecec855494b86cea62d1",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "65bf2a5770c024eee79f01a122b13e7c356c59999e9730bfde36de508658e42d",
+        "answer_argmax": "aa2e1d6c9cda23a6cb1eb505767fc2a055338eeff3b15b0bbc4939dfd49c6fdf"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "4ae7922c7cd1f483bd2120fc7d08843dfedc45f002dfe6c2b654b4d2e22fb206",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "732e22be9a0ae764e275e4b6d7771a236554ddda61a13cfdde8ab29c8b6f7513",
+        "answer_argmax": "25743980f38f954b196dfa878732c140fe6e0d78b8c1d19b618d2915b0f2f6af"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "76f086883dd297ab6cf5c452075e8b9b786f2d61d75da1e5c7c44c82eb47a2ba",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "36205605ef5c6d3bf0ed7b03afbea38de1c689819d9e5d874d2c60ccf11b5568",
+        "answer_argmax": "bb3fb9c5ea03300ed2db7b1500eb029458c7aa54641372837685f0cb8eacb18b"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "66c8136f5b1d24ec21342534f33ee25014c7c1d0929f72f04cd745716531af40",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "39b3831008e143c489c11ac1e3008bc362badea3abe755a23a7329e6a928eece",
+        "answer_argmax": "9f06e112eca9f0b2c3ea7e546df0a64087e78f37047c4c8f447a16b6ddf23ba2"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "c6902958abde5b86d907ebb325bad1e03aa6de360484f2e8130bb94cbd64d12e",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "096fd1544909ff100c55ebef30f8a8d955df6b385fb15b0e6fbbf84d06bb6e20",
+        "answer_argmax": "857ff247ddf2583ac5129e9c3daa8340dbe9a496b433d435b8010fef3e81c8eb"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "615ff150ceef40317ab5fe9207b914d5089e129db1924119c9eda5b9ea5b6cf8",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "130a52495f48e9ce63d9140d61869bba706ea09be670fd384d7791a1f29452fa",
+        "answer_argmax": "179db6a6e1c0ab3a27d390d9a9c9060d3aac8842de47bcf49da1c21cde6486de"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "7330a6445d12779b6f14f8165b7d853e9c4546d460bb3832729023829cc5df47",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "d61cb525150097ba080ac3c542182f4edb8267f1cbbb9c2e1beb64a7aa438f01",
+        "answer_argmax": "c6790898d42977179aa7bac6499ef331db62809acb7775daa34eaec1ce256e5d"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "adc2930926a071b3c78e851525c6adbd3c9652a4212876fb9d320429a2f895fc",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "d7d2dda1e05702ef86bb1d28d6b33b45f087cbaf2c2d4e5904f3ce8b2aaf7d44",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "b7e60da43165b8b27a50748381024c723a73890bce962c57777a4284cefdde0a",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "9880eec43494ee2eba6abe57a118c665643525dc16360fb87ad945cd27cfddeb",
+        "answer_argmax": "b37f6cb6bef3422c70f428a07d41a9e782484ca48e8f4563b18384401e1d8ce3"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "a4a5f1e9dcfcec44b8ccc208addf58668d567dc7e1b88c4347e9a13dafda5329",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "79ca01ed46b209f96ad00af77bca016722bca9322ec925f310ef20ea551c09c5",
+        "answer_argmax": "2e1d493aa7361d437ef6f8b2cf3e860c5a7dac8f2de31b16202b0401a7739696"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "054e072baef9bec63608ebcc18c8fab68b40d3fb76de66ac2d7a422c11163232",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "4ef88b171cabf09299844e07629f4c009ac59f83a5d61fa0df1b259c5b0ac425",
+        "answer_argmax": "ede33fc2763a7999805ca14b27f9d18d2073a8cd0b75c6c553217b2ccf3c5b9c"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "3582b543795b0004f7c5ab604f7d9cea984cc34b915d9afbb846a60ec2ac5f37",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "14cda641679a11fb706045e9e03f3963c7917b6216f77d4b29fec43cb98626a2",
+        "answer_argmax": "4a3dfbbaa022988d48ee7a2916ed8d5684c59d90a072f76390cfa0a5d87702a3"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "e9a560f90d5f07399d536e13fe8d39faeff7e1c78e27baecc10349e491c61848",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "abd7cea36da216641fcdacfb2bfe68ff673df58c2e6dcaef2824adbbc3db6bf6",
+        "answer_argmax": "2fb7f40db2073b8b5eb563d6ab8f6b6f51e0fccf5b835e76d32d23d2f197e71f"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "70a1508285234010c2fce304d1f813b9b23fa89a812e30300d2e875b5683e8b8",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "689b3e1f87672d69a80daa5b16b558bf0f17299e829af81f976e6ffd278d37ef",
+        "answer_argmax": "41ea9c08cc55589913c3a0f409f02ec413826b78e35785eb16574589b54346fa"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|validation",
+      "N": 5376,
+      "shape": [
+        5376,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "0e2fdd7dcde2c7a9bb59b932fe69f94410c0efa31780067816c715dd4a897636",
+        "lengths": "4b19794a09e96fd942f42b667bd15fbb9eb12a3da45496b8fefdb86a8b799f04",
+        "answer_ce": "2ff19bddb880303240bebfdd5972e1750b1d9c0eca9ff717ea7c37951ff7dc7d",
+        "answer_argmax": "a3d71c8039d570f6caa7bdcf25c095d84633eaaec5b8c653878a6c4de8066901"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "N": 10752,
+      "shape": [
+        10752,
+        3,
+        5,
+        256
+      ],
+      "dtype": "float32",
+      "hashes": {
+        "features": "609b3ac6489989706b30cac5595cfe022c86a7e12dd4446f5dc9b3b926f1f722",
+        "lengths": "2ac29d63a08e7929ded2ab654a1d4a0624c5db9399d24e109a1cf88a346ddb22",
+        "answer_ce": "9798493a0258ec50af62e59478cabc5890158f3af6662bcefebce1f2a6125b44",
+        "answer_argmax": "73b7958d9f2721e6741e454d6d406237b082940b718bdf1f1b813524c3bbceae"
+      },
+      "final_norm_max_abs": 0.0,
+      "finite": true
+    }
+  ],
+  "logical_mappings": [
+    {
+      "logical_key": "archdev001_transformer_one_line_descents|initial|validation",
+      "source_key": "archdev001_transformer_one_line_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_descents|initial|test",
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_descents|trained|validation",
+      "source_key": "archdev001_transformer_one_line_descents|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_descents|trained|test",
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_recoils|initial|validation",
+      "source_key": "archdev001_transformer_one_line_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_recoils|initial|test",
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_recoils|trained|validation",
+      "source_key": "archdev001_transformer_one_line_recoils|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_peaks|initial|validation",
+      "source_key": "archdev001_transformer_one_line_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_peaks|initial|test",
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_peaks|trained|validation",
+      "source_key": "archdev001_transformer_one_line_peaks|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_valleys|initial|validation",
+      "source_key": "archdev001_transformer_one_line_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_valleys|initial|test",
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_valleys|trained|validation",
+      "source_key": "archdev001_transformer_one_line_valleys|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_descents|initial|validation",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_descents|trained|validation",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_recoils|initial|validation",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_recoils|initial|test",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_recoils|trained|validation",
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_peaks|initial|validation",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_peaks|initial|test",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_peaks|trained|validation",
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_valleys|initial|validation",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_valleys|initial|test",
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_valleys|trained|validation",
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_descents|initial|validation",
+      "source_key": "archdev001_gru_one_line_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_descents|initial|test",
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_descents|trained|validation",
+      "source_key": "archdev001_gru_one_line_descents|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_descents|trained|test",
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_recoils|initial|validation",
+      "source_key": "archdev001_gru_one_line_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_recoils|initial|test",
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_recoils|trained|validation",
+      "source_key": "archdev001_gru_one_line_recoils|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_recoils|trained|test",
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_peaks|initial|validation",
+      "source_key": "archdev001_gru_one_line_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_peaks|initial|test",
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_peaks|trained|validation",
+      "source_key": "archdev001_gru_one_line_peaks|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_peaks|trained|test",
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_valleys|initial|validation",
+      "source_key": "archdev001_gru_one_line_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_valleys|initial|test",
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_valleys|trained|validation",
+      "source_key": "archdev001_gru_one_line_valleys|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_one_line_valleys|trained|test",
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_descents|initial|validation",
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_descents|trained|validation",
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_recoils|initial|validation",
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_recoils|initial|test",
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_recoils|trained|validation",
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_peaks|initial|validation",
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_peaks|initial|test",
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_peaks|trained|validation",
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_trained_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_valleys|initial|validation",
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_initial_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_valleys|initial|test",
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_initial_test.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_valleys|trained|validation",
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|validation",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_trained_validation.npz"
+    },
+    {
+      "logical_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "task_specific_old_cache_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_trained_test.npz"
+    }
+  ],
+  "limitations": [
+    "Post-hoc read verifies file identities and values; no new forward independently verifies every intermediate layer. Benchmark independently verifies same-shape layer path in180 cells.",
+    "Four shared initial physical models are genuine recorded step-0 states; sharing across task suffixes is justified by exact equality of all32 original initial prefix caches. It does not justify sharing task-specific output CE.",
+    "Embedding endpoint is structurally constant within length and not an empirical nonzero-signal result. EOS and initial CE were not newly evaluated."
+  ]
+}

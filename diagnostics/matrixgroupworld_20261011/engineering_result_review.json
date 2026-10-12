@@ -1,0 +1,261 @@
+{
+  "status": "passed_engineering_result_review",
+  "snapshot_monotonic": 172194.464365413,
+  "checks": [
+    {
+      "check": "actual_engineering_result_passed",
+      "passed": true
+    },
+    {
+      "check": "actual_receipt_hash_binding",
+      "passed": true
+    },
+    {
+      "check": "previous_launch_audit_preserved",
+      "passed": true
+    },
+    {
+      "check": "all_frozen_source_bytes_unchanged",
+      "passed": true
+    },
+    {
+      "check": "formal_protocol_exact_frozen",
+      "passed": true
+    },
+    {
+      "check": "F1_receipt_exact",
+      "passed": true
+    },
+    {
+      "check": "F1_fixed500_finite_full188_nonformal",
+      "passed": true
+    },
+    {
+      "check": "F1_actual_same_initial_RNG",
+      "passed": true
+    },
+    {
+      "check": "F2_receipt_exact",
+      "passed": true
+    },
+    {
+      "check": "F2_fixed500_finite_full188_nonformal",
+      "passed": true
+    },
+    {
+      "check": "F2_actual_same_initial_RNG",
+      "passed": true
+    },
+    {
+      "check": "F3_receipt_exact",
+      "passed": true
+    },
+    {
+      "check": "F3_fixed500_finite_full188_nonformal",
+      "passed": true
+    },
+    {
+      "check": "F3_actual_same_initial_RNG",
+      "passed": true
+    },
+    {
+      "check": "F4_receipt_exact",
+      "passed": true
+    },
+    {
+      "check": "F4_fixed500_finite_full188_nonformal",
+      "passed": true
+    },
+    {
+      "check": "F4_actual_same_initial_RNG",
+      "passed": true
+    },
+    {
+      "check": "exact_four_engineering_tasks",
+      "passed": true
+    },
+    {
+      "check": "fresh_process_resume_exact_all_four_numeric_checks",
+      "passed": true
+    },
+    {
+      "check": "resume_metadata_binds_actual32_endpoints",
+      "passed": true
+    },
+    {
+      "check": "cost_n6_fixed_timing_cells",
+      "passed": true
+    },
+    {
+      "check": "cost_n8_fixed_timing_cells",
+      "passed": true
+    },
+    {
+      "check": "cost_n10_fixed_timing_cells",
+      "passed": true
+    },
+    {
+      "check": "cost_formula_meanupdate",
+      "passed": true
+    },
+    {
+      "check": "cost_formula_inference",
+      "passed": true
+    },
+    {
+      "check": "cost_formula_unscaled",
+      "passed": true
+    },
+    {
+      "check": "cost_formula_total",
+      "passed": true
+    },
+    {
+      "check": "forecast_satisfies_absolute_remaining_budget_at_engineering",
+      "passed": true
+    },
+    {
+      "check": "formal_fixed20k_recipe_no_engineeringwarmup_override",
+      "passed": true
+    },
+    {
+      "check": "unit001_four_formal_tasks_actual_init_clone_binding",
+      "passed": true
+    },
+    {
+      "check": "unit002_four_formal_tasks_actual_init_clone_binding",
+      "passed": true
+    }
+  ],
+  "engineering_receipts": [
+    {
+      "task": "F1",
+      "receipt_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/engineering/overfit/F1/partial.json",
+      "receipt_sha256": "9bff6b94e58fb4418fc0e7b387b4d1ef7f50bce5a6f5630f2a77e9309987c01b",
+      "step": 500,
+      "finite_gradient_updates": 500,
+      "answer_accuracy_full188": 1.0,
+      "EOS_accuracy_teacher_conditioned": 1.0,
+      "answer_ce": 0.0013086474027659278,
+      "eos_ce": 0.00044258930392970797,
+      "formal_completed": false,
+      "constant_engineering_learning_rate": 0.0003
+    },
+    {
+      "task": "F2",
+      "receipt_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/engineering/overfit/F2/partial.json",
+      "receipt_sha256": "6b68681e601350d7da80ba022f349fda05a0c2225818de0594335e363a12cc2b",
+      "step": 500,
+      "finite_gradient_updates": 500,
+      "answer_accuracy_full188": 1.0,
+      "EOS_accuracy_teacher_conditioned": 1.0,
+      "answer_ce": 0.0011167814882355742,
+      "eos_ce": 0.00040872604404285084,
+      "formal_completed": false,
+      "constant_engineering_learning_rate": 0.0003
+    },
+    {
+      "task": "F3",
+      "receipt_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/engineering/overfit/F3/partial.json",
+      "receipt_sha256": "a9ce3878a0c10effe82c0b52610f402ff3d57c810129d20922f3f481a6e0d457",
+      "step": 500,
+      "finite_gradient_updates": 500,
+      "answer_accuracy_full188": 1.0,
+      "EOS_accuracy_teacher_conditioned": 1.0,
+      "answer_ce": 0.0025221351570507977,
+      "eos_ce": 0.0006337925460684346,
+      "formal_completed": false,
+      "constant_engineering_learning_rate": 0.0003
+    },
+    {
+      "task": "F4",
+      "receipt_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/engineering/overfit/F4/partial.json",
+      "receipt_sha256": "b310d20914e3a9b8839507101e4241291c1be71ef7e75701ea24e863d88732ae",
+      "step": 500,
+      "finite_gradient_updates": 500,
+      "answer_accuracy_full188": 1.0,
+      "EOS_accuracy_teacher_conditioned": 1.0,
+      "answer_ce": 0.0019382191458134912,
+      "eos_ce": 0.0006607668747165008,
+      "formal_completed": false,
+      "constant_engineering_learning_rate": 0.0003
+    }
+  ],
+  "resume_result": {
+    "passed": true,
+    "continuous_updates": 32,
+    "split_updates": 16,
+    "fresh_process_resumed_updates": 16,
+    "parameter_max_difference": 0.0,
+    "optimizer_max_difference": 0.0,
+    "logits_max_difference": 0.0,
+    "causal_suffix_logits_max_difference": 0.0,
+    "same_final_RNG": true,
+    "tolerances": {
+      "parameter_tolerance": 1e-05,
+      "optimizer_tolerance": 1e-05,
+      "logit_tolerance": 0.0001
+    },
+    "source_endpoints_produced": 0,
+    "no_tolerance_relaxation": true
+  },
+  "resume_receipt_paths": {
+    "continuous": "/mnt/yangx-projects-f/20261011/matrixgroupworld/engineering/resume/continuous/partial.json",
+    "fresh_process_split": "/mnt/yangx-projects-f/20261011/matrixgroupworld/engineering/resume/split/partial.json"
+  },
+  "independent_cost_formula": {
+    "fixed_per_n_timing_cells": [
+      {
+        "n": 6,
+        "updates_excluding_fixed_first_three": 13,
+        "mean_update_wall_seconds": 0.0422508815357175
+      },
+      {
+        "n": 8,
+        "updates_excluding_fixed_first_three": 6,
+        "mean_update_wall_seconds": 0.04189157416597785
+      },
+      {
+        "n": 10,
+        "updates_excluding_fixed_first_three": 10,
+        "mean_update_wall_seconds": 0.04310254110605456
+      }
+    ],
+    "equal_n_mean_update_seconds": 0.04241499893591664,
+    "formal_training_seconds_8x20000": 6786.399829746662,
+    "160_validation_and_checkpoint_seconds": 125.69016575813293,
+    "conservative_extraction_examples": 294912,
+    "train_identity_examples": 98304,
+    "inference_seconds": 40.381382137537,
+    "unscaled_remaining_seconds": 6952.471377642332,
+    "headroom_multiplier": 1.25,
+    "scaled_remaining_seconds": 8690.589222052915,
+    "engineering_function_elapsed_seconds": 100.10304755400284,
+    "predicted_total_seconds": 8790.692269606918,
+    "predicted_total_hours": 2.4418589637796995,
+    "actual_GPU_stage_wall_at_engineering_receipt_seconds": 100.93119600700447,
+    "initialization_and_launcher_gap_before_receipt_seconds": 0.8281484530016314,
+    "absolute_GPU_budget_seconds": 14400,
+    "GPU_wall_deadline_monotonic": 186194.323694138,
+    "cost_is_prediction_not_actual_final_runtime": true
+  },
+  "initial_clone_identity": "Actual saved weights/RNG verified independently in preserved launch audit, and four fixed formal manifest rows/unit bind those exact hashes. Cross-unit weight hashes differ.",
+  "scope_remaining": [
+    "Eight fixed20k formal endpoints must still finish; engineering endpoints are never substituted.",
+    "All source train/validation endpoint scoring, frozen geometry extraction/analysis, independent evaluation audits and protected-artifact closing checks remain outside this engineering result certificate.",
+    "No budget/update endpoint will be extended or shortened based on accuracy or geometry; budget interruption remains partial."
+  ],
+  "input_sha256": {
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/gpu_engineering.json": "381a26837d62bc847fd61e60e05f8f2e316ee1d39fb89cefdf685a9da1a6668d",
+    "/mnt/yangx-projects-f/20261011/matrixgroupworld/engineering/engineering_audit.json": "307aec01981cf88ec8627df12a7b63c9c9889e82701f6636008e976bfc432f07",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/engineering_independent_launch_audit.json": "d71ac65ad97664d8f1552592692a1dbd882056a36046ca94236415ad7ac614e0",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/protocol.json": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/freeze_manifest.json": "2e52c0957d646a4dad261ffd0d0b63120ef8ee4e9f3118a179b142cf4c305e3c"
+  },
+  "read_scope": "Only source files and JSON receipt/config metadata, no model/checkpoint arrays or final analysis labels.",
+  "Torch_imported": false,
+  "GPU_or_model_calls": 0,
+  "training_updates": 0,
+  "old_artifacts_written": false,
+  "formal_protocol_or_frozen_sources_edited": false
+}

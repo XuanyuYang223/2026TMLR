@@ -1,0 +1,173 @@
+授权范围与最终交付接口只读复核
+复核时间：2026-10-11 04:14 UTC
+状态：计划/源码接口审查完成；正式训练和科学阶段尚未全部结束，不是最终结果审计。
+
+本次只读附件、源码、协议、冻结文件和小型元信息。没有加载模型/权重/激活，
+没有新前向、训练、科学指标、标签选择或完整产物哈希扫描。唯一新增文件是本说明。
+冻结代码、旧报告、F17及发布产物均未修改。
+
+1. 授权与当前实现的对应
+
+授权附件：
+/home/yangx/.codex/attachments/78f9e781-bd22-44d0-b213-5c0b95b1024e/Pasted text.txt
+SHA256：76a19e2f889bc840bf64c68e1c2de58a22159a4f8bc4d178d967fe82751b530a
+
+固定范围：PermWorld 16性质×两架构×两编码，64个20k终点，其中16复用、48新训练；
+八关系×四条件为32个耦合关系条件。GraphWorld仅四源模型、四关系、一个参考
+Transformer/编码配置，四个20k终点。全轮新增正式模型52个、正式更新1,040,000；
+复用模型本轮更新0。工程更新另计，不能混成额外正式源模型。
+全部负值、弱学习、常量与未定义读数保留；无准确率/几何效果驱动的延长或选择。
+不启动更多架构/编码/种子/世界/群族/机制训练，不自动上传、发布、移动或删除。
+
+八关系名称、方向与offset已在协议显式列明。decomposition_complement的右侧
+components(Cπ)=global_descents(π)+1；共同答案key使用减offset坐标，不把真实
+任务标签或数字答案改成相等。真值onehot/scalar仍表示实际答案。
+
+未发现当前冻结 audit、combined reader、archive updater 的真实接口阻断。
+这个判断不等于未完成的正式提取/指标/报告已通过，仍需各阶段实际产物验证。
+
+2. 四部分图与完整读数
+
+实际入口：Perm DIAG/figures/four_controlled_comparisons.png。
+冻结报告plot_all的固定四部分：
+A：32个关系条件的同激活三主指标Bt与Delta方向（各指标独立读数）；
+B：16个关系×编码的GRU−Transformer现有配置比较B0/Bt；
+C：16个关系×架构的轮换−一行Gamma0/Gammat/GammaDelta；
+D：32条件全部四层与独立final norm的Bt/Delta普通CKA。
+这张总图不是原始相似度或dc/dw全部分量的替代。主表、两控制的similarity图、
+五分量decomposition图、逐长度heatmap与layer图均由固定报告保存，combined
+reader对原图清单逐一绑定SHA和链接。最终Root须实际视检可读性、标签和NaN图例，
+不能只确认PNG存在。空白/未定义格不得被读成0，不选择最有利关系/长度/层。
+
+最终图数从实际report_audit.plots/figures_sha256读取，不沿用旧轮40图数量。
+Layer主分析普通/U-centered CKA，三主指标仍在final norm同激活比较；没有新增层指标网格。
+embedding在逐长度输入结束位置是结构常量，未定义不是没有学习。
+
+每条件完整保留initial/trained × correct/wrong/identity原值与B0/Bt/dc/dw/di/Delta。
+Gamma方向始终cycle−line，须同时保留Gamma0/Gammat/Gammac/Gammaw/GammaDelta。
+Delta翻转与Bt翻转分别核对；正Delta也不能自动称正确相似度上升。
+Root解释须依据实际CSV分解，不用旧轮的8/8、7/8或某两关系计数预测八关系结果。
+
+3. GraphWorld的基线、密度与泄漏边界
+
+图主报告/图：Graph DIAG/report.html、report.txt、answer_control_decomposition.png。
+720逐n科学行、240汇总行、240源学习行；四关系×三控制×五分支×四指标固定覆盖。
+三主指标与U-centered敏感性保留，n6/7/8各1/3；任一n分量未定义则其汇总未定义。
+五分支：prefix_final、output_prob、gold_onehot、gold_scalar、input_onehot。
+静态答案/输入分支只表示一次静态几何，不虚构initial、B0、dc/dw或Delta。
+位置二进制onehot输入核在固定R/C/W槽位和类别等距变换下Gram不变；高CKA不识别
+正确/错误，不作为训练证据。不同指标分数大小不可直接横比。
+
+密度控制实际键：joint[n,left identity,mapped right identity/correct/wrong]再加
+anchor精确边数m；每split最小组3。不是筛选p区间、不是连续密度拟合，也不等于
+排除所有输出/难度因素。所有模型/分支共用固定mask。稀疏、方差或秩不足不放宽
+阈值，不补0，不重新分配n权重。
+
+W是已保存固定交换表/哈希的非顶点诱导对合，与R/C交换、保n/边数；负对照WR/WC
+可能偶然保持真实关系，不能称逐样本错误。protocol.wrong_tables保存各n实际映射、
+非顶点诱导见证、四公式反例、固定随机样本偶然匹配率；这些应在CURRENT或最终说明
+提供明确链接，不能只说“已验证W”。当前预先随机样本偶然匹配比例约0.519..0.656，
+这不是最终训练/分析集的比例，也不是选择W的依据。
+
+data_audit保存实际p=0.25/.5/.75数量、拒绝数与完整<R,C,W>轨道跨split重叠0。
+只排除指定轨道，不排除所有顶点重标记/同构类，不能写语义图对象完全互斥。
+Procrustes使用validation拟合、held-out analysis评估，源任务弱时仍纳入。
+图编码/task token语义与Perm不同；既有188词表和真实TF初始化相同，不等于跨域
+输入/任务/规模/分布相同。不得相减两域原CKA声称仅领域的因果差。
+模型最终答案准确率/CE使用全188词表；output_prob为0..30数字条件概率。
+EOS仅来自原teacher-forced验证，不是prompt-only抽取的EOS能力。
+
+4. 真实初始化、训练和metadata修复
+
+两编码在各架构内真实复制同一原step-0参数；跨架构不共享权重。
+原GRU显式层间Dropout迁移的旧权重/逐tensor证据和执行binding保留，不改称新seed构造。
+旧四任务仍用各自原任务起始RNG；新12任务没有旧同任务流，统一绑定每架构实际保存的
+descents起始RNG，两编码相同。真实身份不等于存在每个新任务独立原流；任务间耦合要写明。
+Graph四任务也用实际原TF初始化与descents起始RNG。各最终CP都需核真实参数/文件SHA。
+
+所有正式终点固定20,000更新、finite_gradient_updates=20,000、exposures=1,280,000、
+supervised_tokens=2,560,000、20条每1000更新验证记录；没有best checkpoint。
+final审计使用真实CP/receipt而非库存status。新receipt仍可能继承missing_authorized
+库存标签，最终completed_checkpoint_manifest必须派生真实完成状态。
+
+终端dict重复checkpoint_sha256错误不是只影响首模型：冻结train.py未改，runner.py
+对每个新源的同一精确错误/原行号提供metadata-only sidecar，并复核已存20k CP。
+最终须核全部48 receipt的metadata_repair_source_updates=0和checkpoint_bytes_unmodified，
+单独绑定metadata_writer_freeze/源码SHA。不得把CPU验证构造临时RNG重置称实际训练RNG未动；
+准确表述是保存CP内参数/优化器/RNG/轨迹字节不改，后续源训练隔离在独立子进程。
+首模型已完成权重而writer失败，没有重复20k更新；原失败队列/日志及repair保留。
+工程mkdir修复发生正式训练前，40失败工程更新与成功240工程更新分开记录。
+Graph工程192更新单列。本轮工程不计之前CUDA toy fixture/旧开发训练。
+
+旧16初始任务特定CE未保存，32逻辑cache缺CE保持缺失；不能用共享hidden补任务读出。
+新48初始输出/CE实际前向独立计算，只有无任务prefix隐状态经全anchor五层bitwise gate
+才可别名复用。full-prompt batch128生产路径不使用旧prefix-only8诊断路径。
+6.866455e-5属于历史备选shape诊断，不是旧生产层误差，但未来new48严格gate仍待执行。
+
+5. 真实成本与存储
+
+Root completion应分别记录：旧16历史训练进程wall、新48真实receipt进程wall、Graph4
+真实receipt进程wall、队列wall、14命令phase wall/CPU user/system、工程/CPU复用/提取
+pipeline记录、final audit和combined/archive只读阶段独立资源记录。
+队列wall包含失败writer阶段及恢复累计，与源elapsed重叠；Graph driver与七Graph阶段
+重叠；bridge wait与Perm队列/分析重叠；pipeline内部计时也与phase重叠。不能相加
+制造总GPU小时/总墙钟。旧25.04累计进程小时仅预测来源，不是本轮实际成本。
+完整总执行跨度若缺失就留未知/分项；GPU kernel/active未独立测量保留null，不能填0。
+phase_timing固定14阶段结束后锁定；final audit/combined/archive计时放另文件，不能追加
+第15阶段使冻结audit/reader/updater误失败或改变它们已绑定的SHA。
+Perm显存字段为peak_cuda_allocated_bytes；Graph为peak_cuda_memory_bytes。
+旧root_completion_fields.txt曾统一写后者，这条说明明确更正；实际字段不应混用。
+峰值不能跨模型相加，max_rss_kib是主机RAM不是显存。
+
+缓存：Perm256逻辑记录、Graph16逻辑cache不等于相同数量物理数组。
+final physical_file_manifest按resolved绝对路径去重；initial alias、旧mmap复用和各角色
+重叠组不能重复计容量。不同真实文件内容相同仍按各路径计字节，不假设内容去重。
+audited_references与actual_new_F_roots单列；后者含工程CP/日志/stat-only文件，前者可能
+包含F根之外的旧依赖，不可相加。stat st_size是文件逻辑字节，不能称磁盘分配块。
+最终报告/归档/根completion在audit之后创建，audit快照不包含它们全部最终存储。
+原protected1223与Graph996可重叠，保护数按独立manifest及unique路径分别标明。
+
+6. 最终入口/gate/hash收口顺序
+
+固定14阶段：perm_extract、perm_extraction_validation、perm_geometry、perm_report、
+perm_reader_audit、graph_verify、graph_engineering、graph_train_four、graph_evaluate、
+graph_independent_metrics、graph_report、graph_reader_audit、perm_result_readout、graph_result_readout。
+全部finish_utc且exit0；两readout为completed_readout、非fixture、科学度量重算0、更新0。
+bridge状态scientific_scope_completed_report_review_pending；orchestration状态
+all_fixed_scientific_stages_completed。保持历史phase ledger和状态，不事后改成最终root状态。
+
+当前Graph report_reader_audit.json是source_count=0的预训练readiness，即便status=passed
+也不是完成证据；最终固定graph_reader_audit必须覆盖4个真实终点。
+Graph completion必须completed_and_stopped；独立actual_small_batch failure_count0。
+Perm final reader应24,192逐长度行、16,128源学习行，所有32主条件与64源均保留。
+最终coverage不仅绑定原coverage_status.csv，还绑定readout的12分量逐长度缺失身份表：
+Perm supplementary_component_coverage.csv与Graph graph_component_coverage.csv。
+恒等分量缺失不必让独立可定义Delta变成缺失；各分量固定权重分别判断。
+
+最终先audit.py --run全来源通过，再生成/实际审阅combined reader及原图，Root写定
+CURRENT_RESEARCH.txt及额外解释（不改冻结科学原报告），再update_archive.py --run，
+最后Root写Perm DIAG/completion.json并停止。
+archive保持原699行byte prefix/顺序/理由，不覆盖独立旧项目；cleanup13原样，删除0/移动0。
+scope_artifact_manifest排除自身和未来根completion避免循环；根completion反向绑定其SHA。
+scope/phase/source/audit/combined报告在绑定后不得再修改。Graph已有completion属审计输入，
+不要为根级停止状态改写它。没有pre-run tracked diff字节快照，只能报告最后tracked==
+指定GitHEAD且保护旧文件SHA一致，不声称全过程diff恒定。未跟踪新文件另有scope索引。
+
+Root completion至少反向绑定以下实际最终SHA：两协议及相关freeze、最终来源audit/ledger、
+64完成checkpoint manifest、Graph4完成manifest/缓存内容manifest、全部科学CSV与原报告图
+（可通过audit/readout/图hash清单传递绑定）、combined报告/combined_input_hashes、
+CURRENT_RESEARCH.txt、archive_index.csv、cleanup_candidates.csv、archive_update_audit、
+scope_artifact_manifest及current_entry_manifest。不得给completion写自己的SHA形成自引用。
+最终实际数值与停止标志由这些完成产物取，不能按计划先写complete。
+
+7. 本次核对的冻结源码SHA
+
+audit.py: 75c0abbbb5a1a0a616ad324ec39ce8bbd81eb088f0395ea2e01fe1b5afb2c6fc
+build_combined_reader.py: c17f7e8c0e5cb283cd096f7d955a230f4464d46a42063a4989d89f238d07c488
+update_archive.py: cb4a249cf00df608dcfabc064f1e93ebb28d8b874d197d73f770bd448559ac79
+Perm report.py: 95fa3ad68d9a5480bb3dbfaf4e295fa5ea31c1c15c9dfab16ffafd8a0b97f2bc
+Graph evaluation.py: 083ac83a7955af63920c2dd75d4d2b625ff0e7746374a084db0eddacb88769dc
+Graph report.py: 4b1254594de1b19874c6e5386092122542f0b9509d9ac782fe6ad485ac85aab8
+Perm runner.py: c5dbef4980658952d2f317b0c3eed1c277a9b6455510bc5fad02ab1b646d48df
+
+本说明是后续交付提醒，不是新科学协议、实验选择条件或完成证书。

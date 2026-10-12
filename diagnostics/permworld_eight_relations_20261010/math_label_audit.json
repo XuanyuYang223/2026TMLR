@@ -1,0 +1,215 @@
+{
+  "status": "passed",
+  "data_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+  "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "label_task_names": [
+    "anti_fixed_points",
+    "components",
+    "deficiencies",
+    "descents",
+    "exceedances",
+    "fixed_points",
+    "global_descents",
+    "lds_length",
+    "left_to_right_maxima",
+    "left_to_right_minima",
+    "lis_length",
+    "longest_decreasing_run",
+    "longest_increasing_run",
+    "peaks",
+    "recoils",
+    "valleys"
+  ],
+  "full_cached_label_recomputation_checks": 2150400,
+  "full_cached_relationship_checks": 129024,
+  "anchors_reused": 102144,
+  "exhaustive": {
+    "max_n": 8,
+    "permutations_checked": 46232,
+    "relations_checked": 8
+  },
+  "random_lengths": [
+    {
+      "length": 10,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 11,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 12,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 13,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 14,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 15,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 16,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 17,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 18,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 19,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 20,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 21,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 22,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 23,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 24,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 25,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 26,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 27,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 28,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 29,
+      "permutations": 256,
+      "relations": 8
+    },
+    {
+      "length": 30,
+      "permutations": 256,
+      "relations": 8
+    }
+  ],
+  "fixed_roundtrip_checks": 2352,
+  "counts": {
+    "train": {
+      "10": 4096,
+      "11": 4096,
+      "12": 4096,
+      "13": 4096,
+      "14": 4096,
+      "15": 4096,
+      "16": 4096,
+      "17": 4096,
+      "18": 4096,
+      "19": 4096,
+      "20": 4096,
+      "21": 4096,
+      "22": 4096,
+      "23": 4096,
+      "24": 4096,
+      "25": 4096,
+      "26": 4096,
+      "27": 4096,
+      "28": 4096,
+      "29": 4096,
+      "30": 4096
+    },
+    "validation": {
+      "10": 256,
+      "11": 256,
+      "12": 256,
+      "13": 256,
+      "14": 256,
+      "15": 256,
+      "16": 256,
+      "17": 256,
+      "18": 256,
+      "19": 256,
+      "20": 256,
+      "21": 256,
+      "22": 256,
+      "23": 256,
+      "24": 256,
+      "25": 256,
+      "26": 256,
+      "27": 256,
+      "28": 256,
+      "29": 256,
+      "30": 256
+    },
+    "test": {
+      "10": 512,
+      "11": 512,
+      "12": 512,
+      "13": 512,
+      "14": 512,
+      "15": 512,
+      "16": 512,
+      "17": 512,
+      "18": 512,
+      "19": 512,
+      "20": 512,
+      "21": 512,
+      "22": 512,
+      "23": 512,
+      "24": 512,
+      "25": 512,
+      "26": 512,
+      "27": 512,
+      "28": 512,
+      "29": 512,
+      "30": 512
+    }
+  },
+  "anti_fixed_definition": "Number of positions i with pi(i)=n+1-i; complement maps fixed to anti-fixed",
+  "subsequence_not_run": true,
+  "global_components_direction": "components(C(pi))=global_descents(pi)+1",
+  "no_new_training_anchors": true,
+  "elapsed_cpu_wall_seconds": 6.941081258992199
+}

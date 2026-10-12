@@ -1,0 +1,19 @@
+{
+  "status": "frozen_before_new_actual_task_pair_CKA",
+  "registered_utc": "2026-10-11T14:25:32.472358+00:00",
+  "protocol_sha256": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c",
+  "source_sha256": {
+    "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/protection_audit.py": "1a1f2dde0eb9a0602a6fe60fc72267e06f7b732595c64231ae4bcc8570af3506",
+    "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/freeze_protocol.py": "82baf0c9d23b955b8bc2c1c47293253dbc314e8d049cba167b54bfe982f24450",
+    "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/classification_and_W.py": "82a08128a8d687ccdb279b0b393af32c2a0823b02c6122424563be50cb89de50",
+    "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/existing_results_review.py": "611977f8619112df3f05e588f8a9a95bb4dbce89b38ed23f832258eb619d690f",
+    "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/fixed_transform_analysis.py": "e174d55ba88c5f58006d2b929550fc7ffaff1c8541f673fffb0146f787925fca",
+    "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/engineering_fixture.py": "0cd7e7b11a684f8128088b0b429b0e0b5d1838c6a05af1222b15ca78e359c078"
+  },
+  "candidate_pairs_sha256": "c9e2ff23a034b9b6951d9fa56273c3520904597055f48b2fec9297e119a67c6d",
+  "classification_manifest_sha256": "69ab57a9a8429cbd07ed8ccd866baf12f40be28b1bf2c643ab45b8b43171ba94",
+  "classification_audit_sha256": "28d50441e3382ddb95fd7854ac772eb30e005a10f1730d2a180dcbc55b341afd",
+  "protection_start_sha256": "b7a4d980a584788fb13c4c03912e9a8344098f88f0ec75cc90296205c3b3d8e3",
+  "new_actual_task_pair_CKA_seen": false,
+  "confirmation_preregistration": false
+}

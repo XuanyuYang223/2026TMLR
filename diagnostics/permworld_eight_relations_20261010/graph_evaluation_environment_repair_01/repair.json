@@ -1,0 +1,69 @@
+{
+  "status": "completed_fixed_remaining_stages",
+  "reason": "ModuleNotFoundError: No module named 'threadpoolctl'",
+  "failed_phase": {
+    "phase": "graph_evaluate",
+    "command": [
+      "/home/yangx/ICML/.venv/bin/python",
+      "-B",
+      "-m",
+      "experiments.graphworld_pilot_20261010",
+      "--stage",
+      "evaluate"
+    ],
+    "start_utc": "2026-10-11T11:12:49.542805+00:00",
+    "finish_utc": "2026-10-11T11:13:06.807553+00:00",
+    "wall_seconds": 17.26281511801062,
+    "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_evaluate.log",
+    "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_evaluate.resources.json",
+    "timing_scope": "nonoverlapping orchestrated process phase",
+    "user_cpu_seconds": null,
+    "system_cpu_seconds": null,
+    "max_rss_kib": null,
+    "timing_parse_failed": true,
+    "exit_code": 1
+  },
+  "failed_resource_recovered": {
+    "user_cpu_seconds": 13.51,
+    "system_cpu_seconds": 1.88,
+    "max_rss_kib": 1408516,
+    "exit_code": 1
+  },
+  "new_package": "threadpoolctl",
+  "pinned_version": "3.6.0",
+  "existing_package_versions_unchanged": true,
+  "source_url": "https://pypi.org/project/threadpoolctl/3.6.0/",
+  "module_path": "/home/yangx/ICML/.venv/lib/python3.13/site-packages/threadpoolctl.py",
+  "module_sha256": "12fb9526b6a74d2e686b7ec148dc165c3587999b14fa86984aa180e10802400b",
+  "BLAS_pools_with_fixed_limit": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/yangx/miniforge3/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "scientific_sources_changed": false,
+  "scientific_protocol_changed": false,
+  "training_updates": 0,
+  "new_source_endpoints": 0,
+  "cached_extraction_files_preserved": 16,
+  "source_checkpoints_preserved": 4,
+  "canonical_phase_ledger_rule": "Exactly one successful record per frozen phase; failed attempt is retained verbatim here with its resource and cost, not silently discarded.",
+  "remaining_stages": [
+    "graph_evaluate",
+    "graph_independent_metrics",
+    "graph_report",
+    "graph_reader_audit",
+    "graph_result_readout"
+  ],
+  "finished_utc": "2026-10-11T11:18:06.661771+00:00",
+  "resume_wall_seconds": 98.21545744000468,
+  "all_checkpoint_and_cache_bytes_unchanged": true,
+  "duplicate_extraction_forward": false,
+  "remaining_training_updates": 0
+}

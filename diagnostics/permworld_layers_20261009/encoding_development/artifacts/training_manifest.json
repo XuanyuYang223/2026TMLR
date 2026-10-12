@@ -1,0 +1,178 @@
+[
+  {
+    "run_id": "archdev001_transformer_one_line_descents",
+    "unit": "archdev001",
+    "architecture": "transformer",
+    "encoding": "one_line",
+    "task": "descents",
+    "model_seed": 95100001,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_transformer_one_line_recoils",
+    "unit": "archdev001",
+    "architecture": "transformer",
+    "encoding": "one_line",
+    "task": "recoils",
+    "model_seed": 95100001,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_transformer_one_line_peaks",
+    "unit": "archdev001",
+    "architecture": "transformer",
+    "encoding": "one_line",
+    "task": "peaks",
+    "model_seed": 95100001,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_transformer_one_line_valleys",
+    "unit": "archdev001",
+    "architecture": "transformer",
+    "encoding": "one_line",
+    "task": "valleys",
+    "model_seed": 95100001,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_transformer_canonical_cycle_descents",
+    "unit": "archdev001",
+    "architecture": "transformer",
+    "encoding": "canonical_cycle",
+    "task": "descents",
+    "model_seed": 95100001,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_transformer_canonical_cycle_recoils",
+    "unit": "archdev001",
+    "architecture": "transformer",
+    "encoding": "canonical_cycle",
+    "task": "recoils",
+    "model_seed": 95100001,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_transformer_canonical_cycle_peaks",
+    "unit": "archdev001",
+    "architecture": "transformer",
+    "encoding": "canonical_cycle",
+    "task": "peaks",
+    "model_seed": 95100001,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_transformer_canonical_cycle_valleys",
+    "unit": "archdev001",
+    "architecture": "transformer",
+    "encoding": "canonical_cycle",
+    "task": "valleys",
+    "model_seed": 95100001,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_gru_one_line_descents",
+    "unit": "archdev001",
+    "architecture": "gru",
+    "encoding": "one_line",
+    "task": "descents",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_gru_one_line_recoils",
+    "unit": "archdev001",
+    "architecture": "gru",
+    "encoding": "one_line",
+    "task": "recoils",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_gru_one_line_peaks",
+    "unit": "archdev001",
+    "architecture": "gru",
+    "encoding": "one_line",
+    "task": "peaks",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_gru_one_line_valleys",
+    "unit": "archdev001",
+    "architecture": "gru",
+    "encoding": "one_line",
+    "task": "valleys",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_gru_canonical_cycle_descents",
+    "unit": "archdev001",
+    "architecture": "gru",
+    "encoding": "canonical_cycle",
+    "task": "descents",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_gru_canonical_cycle_recoils",
+    "unit": "archdev001",
+    "architecture": "gru",
+    "encoding": "canonical_cycle",
+    "task": "recoils",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_gru_canonical_cycle_peaks",
+    "unit": "archdev001",
+    "architecture": "gru",
+    "encoding": "canonical_cycle",
+    "task": "peaks",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  },
+  {
+    "run_id": "archdev001_gru_canonical_cycle_valleys",
+    "unit": "archdev001",
+    "architecture": "gru",
+    "encoding": "canonical_cycle",
+    "task": "valleys",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "updates": 20000
+  }
+]

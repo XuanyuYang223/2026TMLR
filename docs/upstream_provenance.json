@@ -1,0 +1,80 @@
+{
+  "repository": "XuanyuYang223/neurips",
+  "url": "https://github.com/XuanyuYang223/neurips",
+  "commit": "74f0de2017115f06f11b7285366b66e7e8431d30",
+  "snapshot_scope": "Only the explicitly named source/configuration files in the resolved dependency closure; ordinary Git blobs, not a nested gitlink or complete unrelated upstream repository.",
+  "files": [
+    {
+      "path": "external/neurips/README.md",
+      "bytes": 20530,
+      "sha256": "06a5b128ac7ff68a08b13f415b540870d4784307d0bd223ae7297104e939e2d1"
+    },
+    {
+      "path": "external/neurips/configs/property_task_geometry.toml",
+      "bytes": 8133,
+      "sha256": "8a3b21366ca344c0cb50f5a26108375b96eceb3ca49720ff001749ef09155e88"
+    },
+    {
+      "path": "external/neurips/pyproject.toml",
+      "bytes": 3008,
+      "sha256": "cccb6783853ea6f07f8cb86e64d78cdbc5c6d95ff1a46b5fef40785b5ae7d16f"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/__init__.py",
+      "bytes": 303,
+      "sha256": "ab87fbaa3acb307adaba99368b62ab1fb3fae955ddc9c6fe4cc072dba1c4c950"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/_compat.py",
+      "bytes": 260,
+      "sha256": "d0b3ad9d8c8fd514c7e447d1618cea1b01f37d0eebc2d7fd6f6ed0bffdb19cd1"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/audit.py",
+      "bytes": 73052,
+      "sha256": "e73889c1f3b69ad47703632a2c423ec9365d277fe79c672b422350640c95849b"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/cka.py",
+      "bytes": 63796,
+      "sha256": "baaf8805426260d95412137235fab618a4be6cee8befe8a0c340e3064970cf7f"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/experiments.py",
+      "bytes": 26898,
+      "sha256": "e349bf93fef9376b9ecc981898d94f6e6d5c28f74f3bd631c2de474bf45c922f"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/generate.py",
+      "bytes": 30336,
+      "sha256": "393decd100ed2677a63f9603abedcc928b09b9599faddc0e3e6d3a3e4e5272d6"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/math_ops.py",
+      "bytes": 27121,
+      "sha256": "968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/models.py",
+      "bytes": 19018,
+      "sha256": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/passage.py",
+      "bytes": 24650,
+      "sha256": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_task_geometry_experiments.py",
+      "bytes": 17826,
+      "sha256": "813df8d20368dcd95d1c8f5d4681a597641112076b87a904742e827d77c556fe"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/training.py",
+      "bytes": 52556,
+      "sha256": "b09bdd90a349e18cbf71d1345a05a1e075de945956d30d4940806fd3d8712183"
+    }
+  ],
+  "license_audit": "No LICENSE/COPYING/NOTICE file or package license declaration was found in the inspected upstream snapshot. Original source/attribution retained; no new upstream license or relicensing claim.",
+  "upstream_modified_or_pushed": false
+}

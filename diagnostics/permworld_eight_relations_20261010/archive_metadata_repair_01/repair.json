@@ -1,0 +1,21 @@
+{
+  "status": "metadata_schema_compatibility_repaired",
+  "registered_utc": "2026-10-11T11:29:00.566867+00:00",
+  "failure": "KeyError: 'graph_driver' at frozen update_archive.py line255 (closed log reference collection); no index/manifest output had been written.",
+  "updater_source_unchanged": true,
+  "updater_sha256": "cb4a249cf00df608dcfabc064f1e93ebb28d8b874d197d73f770bd448559ac79",
+  "updater_freeze_sha256": "b9af8f86c16879fe76538b259ef4146bb393ebf1ef3afb1301b4eba4ddd6ff96",
+  "bridge_before_sha256": "2b1bc0b03fe9719b62d0b20a69e272a33e1f90448a1124ed9040462eebe38cb6",
+  "bridge_after_sha256": "c3988d624c17ec15cab89ae0859d1e1e376e24c0c4bb3d2616305738b084139d",
+  "actual_completed_driver_log_sha256": "72e868b92b3f38e36a0ddaf39fcb5db510ed988d005d6b1a6b7790b00579bb3d",
+  "actual_completed_driver_source_sha256": "edb5b18c8ddcb4a02ea5b11498f012ca6399a9f53108efd2d2e726c21b61ed77",
+  "protected_or_audited_scientific_file_changed": false,
+  "scientific_protocol_changed": false,
+  "training_updates": 0,
+  "forward": 0,
+  "metrics": 0,
+  "initial_failed_archive_output_written": false,
+  "timing_seconds": null,
+  "timing_limitation": "Failed logical index attempt was not independently timed; keep unknown.",
+  "scope": "Add a truthful existing completed-driver log reference to unprotected closure metadata, preserving its exact status and scientific completion counts. Do not edit the frozen archive updater."
+}

@@ -1,0 +1,6 @@
+{
+  "freeze_sha256": [
+    "94d06db9fed10fa86c925c26681d4adee586274e2a302dcb109e2f0330d0d2f1"
+  ],
+  "reason": "Previously extracted arrays passed unchanged legacy2e-5 gate; retain them without rerunning. Numeric repair occurs before new geometry metrics, never selected by effect direction."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "completed_and_stopped",
+  "recorded_utc": "2026-10-10T17:03:37.497206+00:00",
+  "models_fixed8k_completed": 16,
+  "models_learning_passed": 6,
+  "paired_encoding_qualification_passed": 0,
+  "paired_encoding_total": 8,
+  "qualified_common_setting_found": false,
+  "new_training_workers": [],
+  "additional_candidate_started": false,
+  "independent_confirmation_started": false,
+  "new_CKA_evaluated": false,
+  "GroupWorld_started": false,
+  "F17_changed": false,
+  "protected_legacy_files_unchanged": 407,
+  "active_GPU_stage_process_wall_seconds": 1703.4707593917847,
+  "deadline_reset": false,
+  "big_artifact_root": "/mnt/yangx-projects-f/20261010/permworld_learnability",
+  "reason_to_stop": "Fixed development manifest completed; joint learning prerequisite failed. No automatic continuation."
+}

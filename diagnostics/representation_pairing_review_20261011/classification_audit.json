@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "registered_utc": "2026-10-11T14:24:48.090367+00:00",
+  "rows": 132,
+  "categories": [
+    "designated",
+    "other_known_exact",
+    "not_designated"
+  ],
+  "category_counts": {
+    "permworld": {
+      "designated": 8,
+      "other_known_exact": 0,
+      "not_designated": 112
+    },
+    "graphworld": {
+      "designated": 4,
+      "other_known_exact": 0,
+      "not_designated": 8
+    }
+  },
+  "catalogue_scope": "A fixed known-exact binary-correspondence catalogue for the original directed f/T rows; not a complete classification of all possible algebraic relations.",
+  "not_designated_meaning": "Not listed in this catalogue; does not assert mathematical independence or absence of any relation.",
+  "comparison_formula_meaning": "For not_designated rows this is the specific candidate equation inherited from the original map, not an asserted identity.",
+  "search_policy": "No new affine-formula enumeration or synthetic input search; no unproved consistent candidate promoted to other_known_exact.",
+  "possible_not_proven": [],
+  "proofs": {
+    "descent_inverse": "Recoil count is the descent count of the inverse. Applying inverse twice recovers pi, so recoils(pi^-1)=descents(pi).",
+    "peak_complement": "C(pi)_i=n+1-pi_i reverses every strict comparison. Each interior peak of pi is exactly a valley of C(pi).",
+    "fixed_complement": "pi_i=i iff C(pi)_i=n+1-i; hence fixed_points(pi)=anti_fixed_points(C(pi)).",
+    "exceedance_inverse": "The bijection i -> j=pi_i sends each pi_i>i to pi^-1_j=i<j, and conversely. Exceedances(pi)=deficiencies(pi^-1).",
+    "subsequence_complement": "For each fixed subsequence of indices, complement reverses all value inequalities; increasing subsequences of pi correspond to decreasing subsequences of C(pi), with equal lengths.",
+    "run_complement": "Complement reverses adjacent comparisons on every contiguous interval; maximal increasing-run length of pi equals maximal decreasing-run length of C(pi).",
+    "record_complement": "pi_i exceeds all preceding values iff C(pi)_i is below all preceding values. Left-to-right maxima and minima thus correspond.",
+    "decomposition_complement": "A global descent cut has every prefix value greater than every suffix value. After complement the prefix comprises {1,...,k}, exactly a direct-sum component cut. A nonempty permutation has one more component than component cuts, so components(C(pi))=global_descents(pi)+1.",
+    "reverse_max": "Transposition sends the outdegree of each vertex to its indegree. Taking the maximum gives max_in(R(A))=max_out(A).",
+    "reverse_min": "Transposition sends the outdegree of each vertex to its indegree. Taking the minimum gives min_in(R(A))=min_out(A).",
+    "complement_out": "Off-diagonal complement sends every outdegree d to n-1-d. Therefore min_out(C(A))=n-1-max_out(A).",
+    "complement_in": "Off-diagonal complement sends every indegree d to n-1-d. Therefore min_in(C(A))=n-1-max_in(A)."
+  },
+  "excluded_scope": "Self-task candidates, identities using three or more tasks, conditional/nonlinear identities and exhaustive independence claims are outside this catalogue.",
+  "registry": {
+    "anti_fixed_points": "anti_fixed_point_count",
+    "components": "component_count",
+    "deficiencies": "deficiency_count",
+    "descents": "descent_count",
+    "exceedances": "exceedance_count",
+    "fixed_points": "fixed_point_count",
+    "global_descents": "global_descent_count",
+    "lds_length": "lds_length",
+    "left_to_right_maxima": "left_to_right_maximum_count",
+    "left_to_right_minima": "left_to_right_minimum_count",
+    "lis_length": "lis_length",
+    "longest_decreasing_run": "longest_decreasing_run_length",
+    "longest_increasing_run": "longest_increasing_run_length",
+    "peaks": "peak_count",
+    "recoils": "recoil_count",
+    "valleys": "valley_count"
+  },
+  "sources": [
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json",
+      "sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/protocol.json",
+      "sha256": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1"
+    },
+    {
+      "path": "/home/yangx/ICML/external/neurips/src/neurips_permutations/math_ops.py",
+      "sha256": "968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c"
+    },
+    {
+      "path": "/home/yangx/ICML/external/neurips/configs/property_task_geometry.toml",
+      "sha256": "8a3b21366ca344c0cb50f5a26108375b96eceb3ca49720ff001749ef09155e88"
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/common.py",
+      "sha256": "d0038289de9d100f96f6107a9732937efbdccfb5c03ccd8daba351b2a468283c"
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/graphworld_pilot_20261010/core.py",
+      "sha256": "db8889408b7586749a7fe57637b4aed2c8a270bb821842ee9db311ffed45daaf"
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/graphworld_pilot_20261010/evaluation.py",
+      "sha256": "083ac83a7955af63920c2dd75d4d2b625ff0e7746374a084db0eddacb88769dc"
+    }
+  ],
+  "script": {
+    "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/classification_and_W.py",
+    "sha256": "82a08128a8d687ccdb279b0b393af32c2a0823b02c6122424563be50cb89de50"
+  },
+  "manifest": {
+    "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/classification_manifest.csv",
+    "sha256": "69ab57a9a8429cbd07ed8ccd866baf12f40be28b1bf2c643ab45b8b43171ba94"
+  },
+  "no_new_cka_read": true,
+  "no_models": true,
+  "no_forward": true,
+  "no_training": true
+}

@@ -1,0 +1,546 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-10T16:08:34.803388+00:00",
+  "source_root": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev",
+  "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "models": 16,
+  "per_length_rows": 2016,
+  "summary_rows": 96,
+  "learning_curve_rows": 320,
+  "training_label_count_rows": 2604,
+  "validation_final_matches_original_curves": 16,
+  "primary_split": "validation",
+  "test_usage": "old descriptive only; not for selecting lengths",
+  "decoded_data_arrays": [
+    "train_lengths",
+    "train_labels",
+    "validation_lengths",
+    "validation_labels",
+    "test_lengths",
+    "test_labels"
+  ],
+  "decoded_cache_array": "prediction only",
+  "geometry_metrics_or_activations_or_probabilities_loaded": false,
+  "weights_loaded": false,
+  "new_training_started": false,
+  "old_reports_or_f17_modified": false,
+  "source_artifacts": [
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/protocol.json",
+      "sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "purpose": "training manifest and fixed lengths/tasks",
+      "bytes": 29346
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "purpose": "only lengths and exact label arrays are decoded",
+      "bytes": 7158873
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data_audit.json",
+      "sha256": "9a48d9aec89809a2f3d5672ac186a1e3006be9620d9bb5cdad11042f193dba74",
+      "purpose": "frozen source label/data provenance",
+      "bytes": 2102
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/completed.json",
+      "sha256": "7514fe76f6698405166f728f8129c0c5b3e71ebb92f27866fbd741fe5b440003",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5225
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_trained_validation.json",
+      "sha256": "d403da64f459fa2ed548072fbddf2a1011ac31bb93bf13872a452a0192cfcc8e",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_trained_validation.npz",
+      "sha256": "d68325aadd60b2d4eaebf4a70870193100aa7bc58bf846bfb253198801d17f23",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17185449
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_trained_test.json",
+      "sha256": "3cc97dfe27efc2a2dd75cd9719bedf90c2f0b0a9c16cccfcb1ded589e66a9228",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_trained_test.npz",
+      "sha256": "adf1ef6a9d6d88994648e8f0feca85c061b61783b7fbea994663a73fcf6ada7c",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34369689
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/completed.json",
+      "sha256": "97118cf492031d9f45a3335ab34e7d314b94764d7e4ad048fd93408d1192a5f1",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5228
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_trained_validation.json",
+      "sha256": "e7c06cc2684aa2317387f9adea0ebdb55a9c6edf02814ee8f593f28221ecd772",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_trained_validation.npz",
+      "sha256": "656dff0dc0cedca2242ab8628c1be3c24aff69aaa2f55783aa3861e331bc673f",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17149776
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_trained_test.json",
+      "sha256": "f5cf2c398dffce3604df3037fdcd023444decdb31be84870b94cecb07445dd16",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_trained_test.npz",
+      "sha256": "1af7fe592bd1e8075c657faa6b850e0235517caa13206b1efe3f23aedb0f66de",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34299090
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/completed.json",
+      "sha256": "7e6d7a45a6c76f996e988ef2afb0e8973064ac9ef5a5a3884c065993fc56fe31",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5202
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_trained_validation.json",
+      "sha256": "c7d31ce1e30da93f33d64ad2b1a78d5f8f34dfe936887aed73fcbefa947b9d1c",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_trained_validation.npz",
+      "sha256": "113f296e88b02bacc6186a4a4a106ef5533eade273e2f09f8187ef72dc9cc95b",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17160090
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_trained_test.json",
+      "sha256": "ba7065e19753dc0125d5914ceeb3c4f6913fe657e10e3e17b0f9f4c5d722351f",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_trained_test.npz",
+      "sha256": "58e0693d07750a7daab9bd737c2f9223c790189d92db47295aadea7e39fedb68",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34318602
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/completed.json",
+      "sha256": "cc831c15cd886878a3ffd6769102609a320c5eda6141278bbf39e73a836007a4",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5243
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_trained_validation.json",
+      "sha256": "5de093dfdfcd14f26bd2a83bed26f2a4ce4da9097c763d1f62a0de18f91ae23c",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_trained_validation.npz",
+      "sha256": "d96abc840d5e18316e9780ed746259c14a2f33f82c3412bed6a2972d0207cc1d",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17160200
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_trained_test.json",
+      "sha256": "0f711b64e2e49bf69729a6c3c6325f75c6ad9db54cf0d80641944ce33b99fa83",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_trained_test.npz",
+      "sha256": "2fed127f396d40bf486b6022455611038b8a8097bc188f798bcf5b5e9a4cf111",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34319319
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/completed.json",
+      "sha256": "b65753be96eee40e64b1b3ba1d332006b04336892d5bb473d9c785149272bf45",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5269
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_trained_validation.json",
+      "sha256": "27c54393fd20721c22101ad4407bed4b32ae574a28b6ec19702c531d80e36c9d",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_trained_validation.npz",
+      "sha256": "65abbb11fbc43b4d00d90dc837e943864d197ecebb64ee9fcb54010e7080e1ff",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17195711
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_trained_test.json",
+      "sha256": "c88013f87f70994b7d5e0cbd06850e574629621654768aac349e24da914d1382",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_trained_test.npz",
+      "sha256": "60761005c2e11dc0b115ee612039fadc74ff50b2bae52e91f1ba35cb39146efa",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34389385
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/completed.json",
+      "sha256": "4f8cc344e56caf9f920156a9aa99671746cfc2df5576da8ee64fafca22e63c1b",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5222
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_trained_validation.json",
+      "sha256": "39a764314907d91c92f7d7daefa4a167c3245d53384d90ab1c26d5b96dc68012",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_trained_validation.npz",
+      "sha256": "59ea06cfbf440d6b3eedff08a839e353dbd231b94fd82674f9984a86a074fea5",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17311092
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_trained_test.json",
+      "sha256": "147c55a7d40cf7c07449c95ae1a183ef178bf784898cc5214c8969fb8d6be0c7",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_trained_test.npz",
+      "sha256": "3981776ac15586e795f564eb6f089f8772260f9c13969fbb89c0654ce03d22cb",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34621498
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/completed.json",
+      "sha256": "d8cbb2119f330add099aa7e478a3d4b2b4d1b15a7ec8c1a805a7b97d6673bba4",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5244
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_trained_validation.json",
+      "sha256": "9d555c247f51b287bc620517d9a47acbcd59b02bd4166e2748fd869f63c004ad",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_trained_validation.npz",
+      "sha256": "9d4d5bf0e6c0c625f384183522c3de12bda5432f2699c69b7e778516a55b1866",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17084524
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_trained_test.json",
+      "sha256": "42e65dce52f7dd1ed7e515f64ea6e33b33869d16fbac9ade35dae67d31ace4f2",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_trained_test.npz",
+      "sha256": "e076499a60f01c9b57864b61c91cd733579720da077224d5ce204e3c1c9ecfed",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34169116
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/completed.json",
+      "sha256": "ee5efffc483160412a1508598b35cbbc860e42d611248bef6670a8c7b845c824",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5252
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_trained_validation.json",
+      "sha256": "011396fb75bbaa124a5af711d24fa26d03bc7fa0fa5ab267daab0afc7004d464",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_trained_validation.npz",
+      "sha256": "54c6a089ae35125e169fdc4a8233c3f88bd67d8bfd3737f08151ca064fc58c40",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17192088
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_trained_test.json",
+      "sha256": "0f4bf8f60bbd3070908a71b2a76e181a5244ac53967bcb046c799c035ccfe986",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_trained_test.npz",
+      "sha256": "8c5b5e16dfa72c6678bdf20c441aa945d706d158d16304252db212fa122d71f1",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34382282
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/completed.json",
+      "sha256": "6ea2f2aa12cc48910fb3b8c1931b1482aaf01b5eae0f932d912d80ec2ba703b6",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5172
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_trained_validation.json",
+      "sha256": "e21ae81260286f3328f69ebf859e728095effefcb3137b0ac4b09d5a20fbd3c0",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_trained_validation.npz",
+      "sha256": "64b584934169b722127da9de44eb20add176d2c5c42718d5184b59f03ef01062",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17115197
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_trained_test.json",
+      "sha256": "67f642f06ebf7ff6c061398af84d79fb8cdc085a80c8fb48f0a42119f21894c6",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_trained_test.npz",
+      "sha256": "4432a0398a51aff84e1a8e4d8a754b9743572200692b5cabbbd38dae2f0e5dbf",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34228729
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/completed.json",
+      "sha256": "fed62f787e08268198fdac6c36fa0f36ef1f7463c11dfd503bb6a088ad816675",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5227
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_trained_validation.json",
+      "sha256": "60c9ac4500709e3a1fe462c00fac7a1c286d13b0176c7eda7e789c47b5027040",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_trained_validation.npz",
+      "sha256": "5e9f7acc2a87f3b9e002d685a5e8110683fd37e5d835d8ff6e0e377b2d992dd5",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17192169
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_trained_test.json",
+      "sha256": "e3db088f96a470522648dcde7480ecf9dc943f22bb8ebd4352b83520f269a798",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_trained_test.npz",
+      "sha256": "7029c7fc82517d26c9eadc188704c09d5c506d43743dcefe168e35536852ad30",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34380187
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/completed.json",
+      "sha256": "64ef25ca28787042a708e6df9447e36b26cd3d686a2c75d698d1185ffab17c6c",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5045
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_trained_validation.json",
+      "sha256": "7e3deffd6450eb4a098f3363f65a8cb014a284a3465239cd258ad9cff8ca963e",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_trained_validation.npz",
+      "sha256": "e993725a92be582d5b2bc2083eff38bd0805bef6a0a2c8005d0bdca02da012f9",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 16899755
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_trained_test.json",
+      "sha256": "f67f21eb7b065dd9712640e18fb46b156055be7dc224e935adcb02718a6853ac",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_trained_test.npz",
+      "sha256": "85a6c9d29ddaf3e5289d9790d7f07b7743a1f8c5a378124bb37849aaec86bf52",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 33795813
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/completed.json",
+      "sha256": "73c2a5d70bd98e6eb2e22d24b104117cc6cb7c5465b9625241e072e0cfa3ca46",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5221
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_trained_validation.json",
+      "sha256": "5a5ddfda2dfc94c017f77bba69059ceab3f6e41525f5b9f856d715ce07742c2a",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_trained_validation.npz",
+      "sha256": "bd6a5b7bf599eb6868d79edf455f6eafeadcf76ddf383e207974402745aa29a7",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 16919294
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_trained_test.json",
+      "sha256": "c0bfee0de15a2e50d3af0eca08d88d49a9890ee948a18b06933d0ecee5578336",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_trained_test.npz",
+      "sha256": "56c39ee3e392f54f3423dbd34a572f9c379e44c4d81fdf9024b395b89c712b92",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 33837476
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/completed.json",
+      "sha256": "c1e55fe5a7d2162c00b1bcc19ec5bc140ca1ac7d7ce04b6bbe5421863ca6375b",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5257
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_trained_validation.json",
+      "sha256": "5e97c778afa8a44b0592af685b11a3a0cadff5d9cb368944092451b07ba7d180",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_trained_validation.npz",
+      "sha256": "45ecd66bacf7da428ea45f26c89bc82892e8652aacaa9b1cb8b6bf53367b7a6e",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17350745
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_trained_test.json",
+      "sha256": "f01377334b84d9c25669bfa7f12a4d0f93c0bf97701ff708db19b82a3a4a583f",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_trained_test.npz",
+      "sha256": "c0e7f1a3b71649a1ef928468b8019cdb8d6396c22ad5238544a11390c030fa48",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34699515
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/completed.json",
+      "sha256": "d10b0206589d2291ad78a2b7cd9669d49648b36e9432f678da38661b8d7be991",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5205
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_trained_validation.json",
+      "sha256": "98e0bfa4f1cdf8bca559bfda8652b1a53ec14979031a17533c5060aad10a7800",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_trained_validation.npz",
+      "sha256": "8ff1c061ece4e66e071f77d03a5f8e9b4c7b907bb8326accc7f13e3b00c94b47",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17382971
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_trained_test.json",
+      "sha256": "5c243692bf4021bb7be1361f8ee941ff4335cab3bfc0734556ebe844ad2c898d",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_trained_test.npz",
+      "sha256": "ddf38ad9cbfd9f3c377b56363c70e0abc837524a20f0193be2d9e01ba3197b7a",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34762304
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/completed.json",
+      "sha256": "5025223955f2cb8e7d82f12d1602edf237a413b780667afb33f834419163794b",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5230
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_trained_validation.json",
+      "sha256": "46238009ab56b6e43a0b2c0e526f25f783ad8813151d859cf1812b70d3dcef2e",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_trained_validation.npz",
+      "sha256": "19d739fb37b954cd7dca8a56862dbe79afd2903a130a25875cdd1c8163384d77",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17226555
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_trained_test.json",
+      "sha256": "ecc3b99916e488763322047c344c05f318fb8a08e7c386e9d29ab82f26b5b329",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_trained_test.npz",
+      "sha256": "571ce96f5c5f4e3fffff00c8b706f7a13700bac34fa12c4926742318e9efce0d",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34452923
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/completed.json",
+      "sha256": "be0cb8b0a1f941c6a7e7885e16e22d737ad0073f242f4f6a74def3e4cb4d9647",
+      "purpose": "real fixed-20k validation learning curve and run provenance",
+      "bytes": 5219
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_trained_validation.json",
+      "sha256": "7dbbf5a9e8cea13d5d1e07d810d6737e9902c20feb94da82bc757359b5c953be",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 402
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_trained_validation.npz",
+      "sha256": "aec60f2f08020749eb971cfca83f3c316253afd1183478449daa99012c4e5f93",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 17242074
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_trained_test.json",
+      "sha256": "a0430498d5aea6a52cc54bdad7dd1edeb93b33540c44cf0b43fa969a25a5a9a9",
+      "purpose": "saved prediction cache provenance",
+      "bytes": 396
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_trained_test.npz",
+      "sha256": "7cb20ea3cb2089c0a9e004e14797d21addc98f5d96a4734c9eefbb30dd236b04",
+      "purpose": "hash cache bytes; decode only prediction IDs, not representations",
+      "bytes": 34483857
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_learnability_20261010/old_learning_diagnosis.py",
+      "sha256": "9d07e3fdd60ffc38cbb2e5b710d218134205ad420ac836f9e9e1bd91563d11c3",
+      "purpose": "new read-only diagnosis script",
+      "bytes": 20753
+    }
+  ],
+  "plots": [
+    "old_learning_diagnosis_validation_answer_accuracy.png",
+    "old_learning_diagnosis_last_update_training_loss.png",
+    "old_learning_diagnosis_validation_length_gain.png",
+    "old_learning_diagnosis_test_length_gain.png"
+  ],
+  "missing_saved_quantities": [
+    "per-update per-length validation predictions",
+    "validation loss"
+  ],
+  "descriptive_cycle_all_eight_observed_positive_gain_lengths": [],
+  "length_recommendation": "Old validation does not establish a learnable subset; keep complete10..30 target. Any debug reduction uses fixed smallest10 then contiguous10..12, all tasks/architectures; no old-test or geometry selection."
+}

@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "source_version_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+  "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "actual_initial_forward_records": [
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "length": 10,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "length": 20,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "length": 30,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "length": 10,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "length": 20,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "length": 30,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "length": 10,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "length": 20,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "length": 30,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "length": 10,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "length": 20,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "length": 30,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    }
+  ],
+  "CPU_only": true,
+  "source_optimizer_updates": 0,
+  "gru_implementation": "four_single_layer_GRUs_plus_three_explicit_dropout_modules"
+}

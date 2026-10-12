@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "gpu_forward_seconds_per_sequence": {
+    "one_line": 3.723553776069366e-05,
+    "canonical_cycle": 3.487312304647124e-05
+  },
+  "profile_sequences_per_encoding": 1536,
+  "cpu_psd_adjust_seconds_mean": 0.023065190499892196,
+  "samples": 512,
+  "feature_dimension": 256,
+  "formal_training_started": false,
+  "no_model_accuracy_or_cka_outcome_recorded": true,
+  "caveat": "Inference timed at n20; CPU PSD uses dense synthetic 512-row kernels. Actual common-stratum sizes and GPU frequency may differ."
+}

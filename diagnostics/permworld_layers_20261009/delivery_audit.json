@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-10T10:18:56.930534+00:00",
+  "frozen_overview_sha256_verified": true,
+  "original_report_hashes_verified": true,
+  "reader_report_hashes_verified": true,
+  "local_reader_links_checked": 25,
+  "reader_report_sha256": {
+    "completion_reader_report.html": "3c1bfcebcd53138885aff8e95fe1ff1dc0aa4b2202b486778b2b09adf6a33a26",
+    "completion_reader_report.txt": "cb7bff561fae002f2e7a7ae571c2122956fb9e23ce5a15f2443fe7628e6bccc8"
+  },
+  "training_started": false,
+  "formal_training_started": false,
+  "scope": "Final delivery hashes and local links; earlier data/coverage/model checks are preserved in final_audit.json, not rerun."
+}

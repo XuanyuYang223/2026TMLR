@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-10T22:13:14.298727+00:00",
+  "sample_interval_seconds": 45.0,
+  "queue_state_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/queue_state.json",
+  "protocol_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+  "monitor_source_sha256": "70ed244769ace2d398b227e62236bcaa4886bff1e5b762b74350f5b4f12826ba",
+  "monitoring_scope": "Read-only /proc and nvidia-smi; no imports of training/model modules, no GPU launches or process signals.",
+  "cpu_scope": "Cumulative process user/system snapshots and observed adjacent-sample deltas only. Not complete CPU core-hours. Time before each process first observation and its final tail after last observation are unobserved; first source and first failed metadata writer predate monitoring.",
+  "gpu_scope": "Instantaneous 45-second GPU utilization, memory and power samples. They do not measure exact GPU active time or energy; shared-device samples are not attribution to this queue alone."
+}

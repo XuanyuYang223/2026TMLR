@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "source_version_sha256": "6cfb4f873fbc856bac1c07b6a6e802ac55388af9d92ee60c04ee6e4f7dc5c6b8",
+  "prior_orbits": 102144,
+  "new_orbits": 102144,
+  "prior_new_orbit_intersection": 0,
+  "within_new_split_orbit_overlap": 0,
+  "split_counts": {
+    "train": 86016,
+    "validation": 5376,
+    "test": 10752
+  },
+  "prior_development_orbit_members_appended": 817152,
+  "history_sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+  "before_data_sha256": "f41865601989f47fd3a363fab3ec316131c0a7ea54c72089157f3523ed1cf098",
+  "after_data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "actual_init_cpu_max_difference": 0.0,
+  "source_optimizer_updates": 0,
+  "GPU_forward": false
+}

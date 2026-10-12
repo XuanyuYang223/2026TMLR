@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-10T10:16:35.825959+00:00",
+  "issue": "Pre-generation frozen hash check failed; next shell line nevertheless generated report. Those outputs are superseded and preserved here.",
+  "frozen_sha256": "9da65a8a44aa5cb145b62270841cb617d98f64d90880dba4abc087a350a15070",
+  "before_restore_sha256": "2b1a974fe489ed5997e15ff43ac22118513174357fbed7c55deb18a129f42369",
+  "verified_temporary_exact_restore_sha256": "9da65a8a44aa5cb145b62270841cb617d98f64d90880dba4abc087a350a15070",
+  "known_changes_reversed": [
+    "os import moved from report link loop to module scope",
+    "integer CSV strings displayed without signed decimal suffix"
+  ],
+  "scientific_selection_or_metric_or_training_code_changes": false,
+  "snapshot_sha256": {
+    "overview.py": "2b1a974fe489ed5997e15ff43ac22118513174357fbed7c55deb18a129f42369",
+    "completion_report.html": "e680fa31ba2ff0c8a502dfe470bb87af3e2f86ff64bb89627c046f61f0eaface",
+    "completion_report.txt": "f806046332b2e18d12621d3c055c5382abb85b1dbe9c3741b9b1eb287431212d",
+    "completion_report_audit.json": "895ec5bf1a552f2799cd4c62b7479c008528b3cdf80c12498db0e7decfbf0c10",
+    "overview_freeze.json": "00c0b38a73cdc275b1109fb699bc74c52cbdb4a43591722b8ca827ebe6c2d89c"
+  },
+  "original_freeze_redefined": false,
+  "temporary_verified_path": "/tmp/overview_exact_freeze_xqryclku.py"
+}

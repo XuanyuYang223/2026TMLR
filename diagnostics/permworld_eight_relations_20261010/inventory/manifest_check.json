@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": {
+    "64_condition_unique": true,
+    "16_reuse48_missing": true,
+    "48only_missing": true,
+    "twelve_tasks_four_conditions": true,
+    "all_same20000_budget": true,
+    "same_data_batch_vocab": true,
+    "two_exact_initial_states": true,
+    "new_tasks_saved_descents_stream": true,
+    "original_metadata_preserved": true,
+    "prior16_not_in_newmanifest": true
+  },
+  "independent_CSV_only": true,
+  "training": false,
+  "forward": false
+}

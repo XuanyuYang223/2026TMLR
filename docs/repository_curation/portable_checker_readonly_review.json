@@ -1,0 +1,26 @@
+{
+  "status": "passed_readonly_interface_review",
+  "script": "/mnt/yangx-projects-f/20261011/representation_publication/portable_tools/recompute_tables.py",
+  "script_sha256": "b37053658f993ddbb29220b08fe10a465b8ca17c1022ce32022a2f94467d30de",
+  "script_executed": false,
+  "checks": [
+    "Python standard library imports only; no old scientific module import or host-specific fallback.",
+    "Repository-relative input paths reject traversal, absolute paths and external symlinks.",
+    "Saved checksum identity is checked before table arithmetic; no new model or activation metrics.",
+    "Complete fixed lengths and undefined propagation are preserved; no missing-length renormalization.",
+    "Perm480/Graph12 catalogues and original designated per-length/aggregate scores are distinct from Bt/Delta.",
+    "Matrix R1/R3 include both controls and all n6/8/10, preserving component identities and original1e-12 table tolerance.",
+    "Original numerical failed status,64 passed/2 failed/6 undefined-consistent counts and two fixed64 output-kNN failures are explicit gates.",
+    "Six n2 mathematical cases are separately described and do not replace model/activation-level reproduction.",
+    "Passed table checker status explicitly retains scientific verification caveat."
+  ],
+  "limitations": [
+    "This is a static read of the script, not execution of the reported79125 checks or a clean-clone audit.",
+    "Empty-category row keys are not independently checked for uniqueness, but the frozen per-file SHA gate protects these actual input bytes; no observed schema issue requires a code change."
+  ],
+  "source_files_edited": false,
+  "models_constructed": 0,
+  "training_updates": 0,
+  "new_forward": 0,
+  "scientific_metrics": 0
+}

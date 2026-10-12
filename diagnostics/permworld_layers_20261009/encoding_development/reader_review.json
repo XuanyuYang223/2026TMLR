@@ -1,0 +1,246 @@
+{
+  "status": "passed",
+  "reviewed_utc": "2026-10-10T10:13:40.880181+00:00",
+  "post_export_reader_audit": true,
+  "frozen_exporter_sha256": "d74b74e7c81fed7b0f6c814d490b8170f389545b50fe5b49f86b09417992aa3f",
+  "export_audit_sha256": "2d60fd7fae6efaa9aa7945d69a423ea9f782897cb8de7be48dfa5fb9573d1130",
+  "plots_checked": 40,
+  "plot_hashes": [
+    {
+      "name": "accuracy_complement_full_vocab_accuracy.png",
+      "sha256": "09e170ab359000a3f1acc6481a04dd0053f13c87d234e6f7cbf0a5280329c827",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "accuracy_complement_numeric_accuracy.png",
+      "sha256": "6732e6925f5176c747ad9294ed0b5a4362b34acba74b5a7d08f26d10833407e1",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "accuracy_identity_full_vocab_accuracy.png",
+      "sha256": "f6ae3a74ab45ef175e0e22d975f188f35fb1732b38431f284f5b22971374fa14",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "accuracy_identity_numeric_accuracy.png",
+      "sha256": "762868a0e7ab3d97afb29872419e6e474d1fecab98928f89466f574cbfcbafcc",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "accuracy_inverse_full_vocab_accuracy.png",
+      "sha256": "d1a30c3197daa00dffdb647182831c7ac722806b07ca760c20dcfde0c5025678",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "accuracy_inverse_numeric_accuracy.png",
+      "sha256": "e296536ba9d992908fdf1b1974a6c58a25f9101a696a3712bc0ff6cc48d69638",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_output_prob_answer_strata_debiased_cka.png",
+      "sha256": "49fa7af582822822fb0870dcb9d600860e45b1a761562acffdaf54ff2b2b5e70",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_output_prob_answer_strata_knn_overlap.png",
+      "sha256": "1185fd0122e97e88e474c308cfa7a8bdb7cd55c5a0b2d44c8ffc3569afe66f62",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_output_prob_answer_strata_linear_cka.png",
+      "sha256": "6a799b533ed2d3133b958f644dd0c58fb095d5a93e6c42d7f2938b32f8b9e228",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_output_prob_answer_strata_procrustes.png",
+      "sha256": "01dddec0fb4925b9ce8f13c66be3aa489434204850d226a631573f6a49268b88",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_output_prob_raw_within_length_debiased_cka.png",
+      "sha256": "037f8575fb8d0e74ce171ea9a63d98c882f0b3d99fd71dbd23a94fe898bbec6c",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_output_prob_raw_within_length_knn_overlap.png",
+      "sha256": "e2d51dbc9d7e11a5e13b88c6d01ac84356c68c8ffb37471e00e59935d5d3f950",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_output_prob_raw_within_length_linear_cka.png",
+      "sha256": "37cd2e26df54255d8d396fa9a54650933d98eea4b794e1eeed0432f1921eb26b",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_output_prob_raw_within_length_procrustes.png",
+      "sha256": "62dcc7faadec373819800f944eadb0c61fdb06d451c8518a8c8611e26e11afec",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_prefix_final_answer_strata_debiased_cka.png",
+      "sha256": "69b5e594b1b25ac8112638ab1084e3db26cb28df9f902a8487d959c7c6c4df5a",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_prefix_final_answer_strata_knn_overlap.png",
+      "sha256": "f25d13862df28b7fe20ba311e7c8934e982ae535642bd23dcb78b7d7a5c562a9",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_prefix_final_answer_strata_linear_cka.png",
+      "sha256": "8eaf2ae224b1f05cac1971ded5629d61a6460811bb3cc89f155a85d76ef23ff3",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_prefix_final_answer_strata_procrustes.png",
+      "sha256": "8e17f39cac6fe7c96c0c6b9418f6f68af0b2a211cc1764e22f00a67aa5527b59",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_prefix_final_raw_within_length_debiased_cka.png",
+      "sha256": "63d7a6f80f585e83c1b7953ff43c849aadc97ce2cb7009ad9000a789cc4ebd44",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_prefix_final_raw_within_length_knn_overlap.png",
+      "sha256": "7f5485f92f98f172ca485283f3aab7fce561f615f1be1ee03ce8aac3ec5cee68",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_prefix_final_raw_within_length_linear_cka.png",
+      "sha256": "941913c69b99b65cf115a5f39619dbfc24227049be11dc41a61495ecd3caeb52",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "components_prefix_final_raw_within_length_procrustes.png",
+      "sha256": "f193ba963243d9a1f2835afb7f08b1e2b805a3d844779576301e9934c881c70c",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_output_prob_answer_strata_debiased_cka.png",
+      "sha256": "31ab2e93e41de3a81da0daa9018fe1745e0f2ddf31511675dd94d94868a00e87",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_output_prob_answer_strata_knn_overlap.png",
+      "sha256": "7c8cbfdc2e50c5445db9751db6d4e1241cef688f3214b5ddeb3efcecfd085994",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_output_prob_answer_strata_linear_cka.png",
+      "sha256": "98400447b5fee60aaec8fe7eae19841106c244a81f5851e39a40a9323d8cdbd9",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_output_prob_answer_strata_procrustes.png",
+      "sha256": "dd2d89627215a479fd843c8f04807074198ad287d121e7e1c70b658676b98bb7",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_output_prob_raw_within_length_debiased_cka.png",
+      "sha256": "ffb02c158740b5b60640b8d0b3072bf4fbf9d3f89269076b8ad12d5311859032",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_output_prob_raw_within_length_knn_overlap.png",
+      "sha256": "b6392f267b367e7cbdfed2330fe9c2d190b861febc694e1f423f4c30897142b7",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_output_prob_raw_within_length_linear_cka.png",
+      "sha256": "724249a482d0a51a1e0fb58975af7ebded50f92bf8c3efdbefbf0fa4277c0b70",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_output_prob_raw_within_length_procrustes.png",
+      "sha256": "b4faf16f2fc77a926f3dbbc296b1de7a6b99e6de1a3805c954554dc4744b0066",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_prefix_final_answer_strata_debiased_cka.png",
+      "sha256": "09deac745228433d553e336fddc5d9510cb77867ce9c1b7f7a8637dca9113b82",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_prefix_final_answer_strata_knn_overlap.png",
+      "sha256": "8c6b0fe7a4fc1ef71861affd4478afa257104ac3aa7a817a54ef247a247452f5",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_prefix_final_answer_strata_linear_cka.png",
+      "sha256": "c9182e79a1aaff2957a585718a4ffad29d4460372770e019f1980e092aa34483",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_prefix_final_answer_strata_procrustes.png",
+      "sha256": "1fb234629c9b416385a7843eaf5d06c0ee4b071abbfed3e35fea472b7eea9114",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_prefix_final_raw_within_length_debiased_cka.png",
+      "sha256": "c0a86a41faf0e39f588caca4e4b4c9d56e03ebbce6d9fa4a52032027fbc8ebd3",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_prefix_final_raw_within_length_knn_overlap.png",
+      "sha256": "69aecbdc33cbcdc43150887c121d075517c22b68679ae1c19c919cf1b5e1c886",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_prefix_final_raw_within_length_linear_cka.png",
+      "sha256": "e2b3955c8c2ebaf0aaf17a7b315b81e98a35b4ceb1d2b1b6a7d978611490f9b5",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "interactions_prefix_final_raw_within_length_procrustes.png",
+      "sha256": "b87a699061078f3d6154c27db51f9a8127c871df5841ec96ae13d427964c3d2c",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "learning_train_loss.png",
+      "sha256": "3ed32cf58c6230dfa7b0cf837b91ea0bc868b80ed777ad18f93ff2f6290ef88a",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    },
+    {
+      "name": "learning_validation_answer_accuracy.png",
+      "sha256": "2ec147c4a5d65997158248968659a8f34ebc543a0a5483d0c8724eea3d98bbf1",
+      "visual_inspection": "checked in one of ten four-panel contact sheets; condition labels, decomposition axes, baseline curves and undefined markers retained"
+    }
+  ],
+  "all_html_links_exist": true,
+  "artifact_copies_matching_current_source_hashes": 79,
+  "frozen_source_files_hash_verified": 17,
+  "models_source_version_protocol_final_step_consistent": 16,
+  "independent_length_majority_from_label_counts_rows_checked": 252,
+  "independent_fixed_length_average_rows_checked": 96,
+  "output_probability_reader_note": "output_prob uses softmax only over token IDs 0..30, verified as numeric answers 00..30. It is probability conditional on this legal numeric set, not full-vocabulary probability. Keep full_vocab_accuracy and numeric_accuracy distinct.",
+  "timing_reader_note": "Frozen exporter contains no elapsed_seconds aggregation or GPU-hour/wall-time claims. Per-model elapsed_seconds include waiting and overlap under concurrent jobs; their sum is not actual GPU resource usage or elapsed project wall time.",
+  "undefined_summary_cells_retained": [
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "relation": "descent_inverse",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "metric": "procrustes",
+      "undefined_lengths": "3"
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "relation": "peak_complement",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "metric": "procrustes",
+      "undefined_lengths": "16"
+    }
+  ],
+  "limitations": [
+    "One exploratory development world/init unit; no confirmation inference.",
+    "GRU and Transformer capacity is not matched.",
+    "Cycle-encoded source accuracies remain near the training-defined length-majority baseline.",
+    "Delta sign reversals do not imply reversals in trained pairing preference; Gamma0 and Gammat must remain separate."
+  ],
+  "original_source_evaluator_protocol_modified": false,
+  "new_metric_or_training_started": false
+}

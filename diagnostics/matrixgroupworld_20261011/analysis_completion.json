@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "protocol_sha256": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+  "source_version_sha256": "ada7c9305ce357ab44db232200860cfcc9ec354ef4300f0f0dc770927edd394e",
+  "cache_index_sha256": "a2c2f3570947ca45edf5677a808d57eafd9a0e3e43d992e74d640d7211f1237d",
+  "output_sha256": {
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/geometry_per_n.csv": "67e52eed74bbd1d0a90bd4833ab942ff68725856125ca6ecb22ed3fc99c2b8ab",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/geometry_summary.csv": "0b5c9360f5a307d13fbee322cd0cd1ef891fbad9634a53bc9266a30bcba44d09",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/selection_masks.csv": "322a11ea9f272568ab01862c954f9efcf6b43a7f106a3ddfccb70fdfeaf5830e",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/W_actual_per_n.csv": "80171e240aab138300c0fd98e78cd4b97eeb50730300296eadac6b31efa4e6bb",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/W_actual_per_anchor.csv": "5ef1975e6c8d0a5022346b1e053675f0b9b2bc558f5b361da04ffbd52e81f58a",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/W_actual_summary.csv": "2739b99ecebea0776ad07260b89355d9767138d2eef4673682ad13319ad4a377",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/pair_per_n.csv": "4f77ff8a51eee4799c76cfd859218b7b8c21fbb0c0f844686d0b13b24ca135c5",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/pair_summary.csv": "b3635492af2ece49d745043aad00ebec85a832a3d624d6bfad8fb25b37fd2748",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/category_summary.csv": "da8fd21bc36700255bbde7dbab163a8ae899d3a8d83bc149418efe65bdd48885",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/designated_category_comparisons.csv": "41bb80095d32421089529b5f72640c3e37305677258e931a669c4ecce38d53ed",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/common_support_training_comparisons.csv": "58b42e5ddd1abc80c8b467fbccf8e1e37263eabef6cb23f18fd635b4c2c6f96c",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/designated_rank.csv": "0f23013e41cb0c7970531c498fba9a4553d7c1c88570dad70d99da4609dbd291"
+  },
+  "geometry_per_n": 432,
+  "geometry_summary": 144,
+  "pair_per_n": 144,
+  "pair_summary": 48,
+  "categories": 96,
+  "ranking_rows": 32,
+  "source_models": 8,
+  "units": 2,
+  "wall_seconds": 30.201400146994274,
+  "models_constructed": 0,
+  "new_training": 0,
+  "new_forward": 0,
+  "interpretation": "Exploratory third-domain pilot, two independent data/init units; dependent tasks/relations/scales/metrics/candidates. No significance or universal mechanism claim."
+}

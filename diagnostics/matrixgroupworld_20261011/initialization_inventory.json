@@ -1,0 +1,50 @@
+{
+  "unit001": {
+    "unit": "unit001",
+    "model_seed": 97100011,
+    "init_spec_sha256": "72b1b343b148d827a36a243ff65e239b45ad262829e3e1c747cc5e213ab81d78",
+    "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/step0.pt",
+    "initial_checkpoint_sha256": "ab7ac159c74b7851f1219b5dd68353449db99b613dc3afebc358b85b5c09f66a",
+    "initial_parameter_sha256": "d88f3b16ff72c86e2a64754517e5b8f86d80537fcf5456639828f1d6f735a78b",
+    "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/starting_rng.pt",
+    "starting_rng_sha256": "7dbce517144465a059f9253cf3095ae2ff211b98ce66e1d170066176f50c0cf2",
+    "starting_rng_hash": "2c6b7f6ce12d1e15c063f3e089b396516e812126bae93eda4b37cb816388254b",
+    "actual_initial_identity_verified": true,
+    "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+    "parameters": 3240448,
+    "model_config": {
+      "vocab_size": 188,
+      "max_seq_len": 128,
+      "d_model": 256,
+      "layers": 4,
+      "dropout": 0.1,
+      "heads": 8,
+      "mlp_ratio": 4,
+      "tie_embeddings": true
+    }
+  },
+  "unit002": {
+    "unit": "unit002",
+    "model_seed": 97100012,
+    "init_spec_sha256": "06782a56704c8f2ce6444c51fae57c8dd3f9a4587ef5a93ee803a3b6abb1cf99",
+    "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/step0.pt",
+    "initial_checkpoint_sha256": "dc28e2d3d7d110e52cf3ce323e733e00568b442093a12a343235030c3cc38ce2",
+    "initial_parameter_sha256": "5489795dde7032d49a61ca58607c0c6f0e1a7a80ca2c64dafadcdc1e9803863f",
+    "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/starting_rng.pt",
+    "starting_rng_sha256": "e212cd85dce70591f70a6b868b2379950b986fc959707822eae8258aa9a2a805",
+    "starting_rng_hash": "de8657e167cee1b429ac207d1dd4e9da0cc5204662c7495577713cb1367516ee",
+    "actual_initial_identity_verified": true,
+    "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+    "parameters": 3240448,
+    "model_config": {
+      "vocab_size": 188,
+      "max_seq_len": 128,
+      "d_model": 256,
+      "layers": 4,
+      "dropout": 0.1,
+      "heads": 8,
+      "mlp_ratio": 4,
+      "tie_embeddings": true
+    }
+  }
+}

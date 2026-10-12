@@ -1,0 +1,146 @@
+[
+  {
+    "run_id": "learningdev001_transformer_one_line_descents",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_transformer_one_line_descents/predictions.npz",
+    "sha256": "e4e3c19224a00666505eb6be436a8f14d8a69e003105b6ae98983bc3ac378a4e",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "08af292d3347c5bacc7a0dd1d186b535086d25d699ea51d7f394ae176c55c293",
+    "parameter_sha256_before": "7a5ac59eb315aedd103aa229e9074577c302dec59f0d671f90283ff5cb4faf67",
+    "parameter_sha256_after": "7a5ac59eb315aedd103aa229e9074577c302dec59f0d671f90283ff5cb4faf67"
+  },
+  {
+    "run_id": "learningdev001_transformer_canonical_cycle_descents",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_transformer_canonical_cycle_descents/predictions.npz",
+    "sha256": "efe3e3212a60a42218e86708a7549ecbf8d235c9ee9661b1acbbe99bbe4931aa",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "773ac557ec9d2158cd549ac1701bc39d5473ff98a1427f519cf293bcf4f7781a",
+    "parameter_sha256_before": "042e36eb4aa3cf29268de2f7dfc89d1cb1184dc3a6da99033fae860d8e481378",
+    "parameter_sha256_after": "042e36eb4aa3cf29268de2f7dfc89d1cb1184dc3a6da99033fae860d8e481378"
+  },
+  {
+    "run_id": "learningdev001_transformer_one_line_recoils",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_transformer_one_line_recoils/predictions.npz",
+    "sha256": "c07d689f71f25475e42a7ea31a8aefd0ee9400c55bb40e1afe7dfa0834e4a33a",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "01117461cb9e2677cfefb5e00a465b7fff9cb340e97cd4836f83d4060c236006",
+    "parameter_sha256_before": "2b0ad51182a31236ef1fa9b9cbd86d9d8f5000ef70c1336deb8a77759ed7d36b",
+    "parameter_sha256_after": "2b0ad51182a31236ef1fa9b9cbd86d9d8f5000ef70c1336deb8a77759ed7d36b"
+  },
+  {
+    "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_transformer_canonical_cycle_recoils/predictions.npz",
+    "sha256": "842382ee7b152a39f6265858c94f9017b6c6eec7c5e7c2678ccceb706d594785",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "0952ef35a73b1ca9cfbcf563e5e8942893931ebb7bb49326576464ecba270a28",
+    "parameter_sha256_before": "0759d8478bce57980a3a32414058700bf64263d0a468b83ad60601084dccb952",
+    "parameter_sha256_after": "0759d8478bce57980a3a32414058700bf64263d0a468b83ad60601084dccb952"
+  },
+  {
+    "run_id": "learningdev001_transformer_one_line_peaks",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_transformer_one_line_peaks/predictions.npz",
+    "sha256": "6c66bf44077b2c04b8b8e761986f3206930e64e79eb48f26aa0e97bfc5d864a3",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "b57ed6d3afd17f8227e1b456a5c43bfa3723b4c95fb5e43e81dd5afd58224784",
+    "parameter_sha256_before": "574169dd384889a544391b588107ae012c85338e30a67bebcd06f530c729905b",
+    "parameter_sha256_after": "574169dd384889a544391b588107ae012c85338e30a67bebcd06f530c729905b"
+  },
+  {
+    "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_transformer_canonical_cycle_peaks/predictions.npz",
+    "sha256": "f6f56ab98421ff72f76bb2da22c365d65fdf50fde79f126c12fa177d0adcf6c3",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "bedd97c0132d86c8fad8544da11cb09237b9e949d3cd2bc5cb799d38ac28aedd",
+    "parameter_sha256_before": "62ce44b257cb366543f176bb79f3124673f1b5aee70fbe91e1204c46c4ba725e",
+    "parameter_sha256_after": "62ce44b257cb366543f176bb79f3124673f1b5aee70fbe91e1204c46c4ba725e"
+  },
+  {
+    "run_id": "learningdev001_transformer_one_line_valleys",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_transformer_one_line_valleys/predictions.npz",
+    "sha256": "fb28062b4cf6a28ef4c96a8e86492e0b314849c4e80c7292ac58e03bacb35357",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "c575059112e31be4fc203c1ad4bcde9014d710f4957305c76c10875ee783099d",
+    "parameter_sha256_before": "246c51fc68b236a63342b4ace1d9930be839cbe3bec1998acd9a19263aefe6ef",
+    "parameter_sha256_after": "246c51fc68b236a63342b4ace1d9930be839cbe3bec1998acd9a19263aefe6ef"
+  },
+  {
+    "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_transformer_canonical_cycle_valleys/predictions.npz",
+    "sha256": "dfe5f6022bd4ee4aef8fa21c8476214dd84c63e431b99e5618eae90840b46dc1",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "e78c71e1836eccb71d7cce9453286ed1b6826f9e365b02054a9f0f812c0fb1ab",
+    "parameter_sha256_before": "112ef46e16e22fe0cfe51cd1bdf3656c2476425f6dcc94f0f55758b861e2a31b",
+    "parameter_sha256_after": "112ef46e16e22fe0cfe51cd1bdf3656c2476425f6dcc94f0f55758b861e2a31b"
+  },
+  {
+    "run_id": "learningdev001_gru_one_line_descents",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_gru_one_line_descents/predictions.npz",
+    "sha256": "8f6a73cd95e186c77abf09f7ce95651505d1055302a7ee17cd257fdcaa7869d6",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "98e6a20db6d7c888b2cfa4907d37642a8e3c24d23c09360495ab7d04ecc1b6be",
+    "parameter_sha256_before": "0ca8993f837a8c295b689b45fabb888c43e572c16f20af67d0794631b6a88c25",
+    "parameter_sha256_after": "0ca8993f837a8c295b689b45fabb888c43e572c16f20af67d0794631b6a88c25"
+  },
+  {
+    "run_id": "learningdev001_gru_canonical_cycle_descents",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_gru_canonical_cycle_descents/predictions.npz",
+    "sha256": "874d60cfb2ff858a3048c57a4c6bad2ffe5aeb3a6a7dc89d78cde4177399284e",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "53dfdad3aa376b8f0e5120af5afb13bbdfde3dc99f205334e5b7bff2f1fe7dc0",
+    "parameter_sha256_before": "3a4d44b7ac413a108280214b6a4be9b65a403fa0cee61062a30443c6f07451d6",
+    "parameter_sha256_after": "3a4d44b7ac413a108280214b6a4be9b65a403fa0cee61062a30443c6f07451d6"
+  },
+  {
+    "run_id": "learningdev001_gru_one_line_recoils",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_gru_one_line_recoils/predictions.npz",
+    "sha256": "8181d2e7abe3e05d5635f13b6e633c56c606813b5c152200baac4611349db50c",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "d84735446d13e2c309e89e6ab82b2eae0ef64c0759f5186a1ccc1186af3a52e1",
+    "parameter_sha256_before": "7f65041663d425ea915dce42966df04285f8684492d5ad9d5d11910d2f25925b",
+    "parameter_sha256_after": "7f65041663d425ea915dce42966df04285f8684492d5ad9d5d11910d2f25925b"
+  },
+  {
+    "run_id": "learningdev001_gru_canonical_cycle_recoils",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_gru_canonical_cycle_recoils/predictions.npz",
+    "sha256": "ca6c0467d61e78a45d38228e914e2d7bcd593d9f68a82789534840431761f25e",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "1d2eca5dce398e10ec10d2be7e948157dffffe98b9d4c6af4b1f840dd5a86993",
+    "parameter_sha256_before": "c5fd49c1d54272eb7715ffe26a3c2f30e037e29d417c2e48216aef115e4b9c37",
+    "parameter_sha256_after": "c5fd49c1d54272eb7715ffe26a3c2f30e037e29d417c2e48216aef115e4b9c37"
+  },
+  {
+    "run_id": "learningdev001_gru_one_line_peaks",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_gru_one_line_peaks/predictions.npz",
+    "sha256": "75e2f3fce34f90e99abc9892d858b757528d56f88d018d399da542408bc97a13",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "09bd0ccf33346ebda0b9433c6c0450f65d8ba868929aaabd19c821f15bdc4d48",
+    "parameter_sha256_before": "b6f1ac32d55d7ec63ffc1126333d80c3990c06be34ec1d61ab82f7dc97b401ba",
+    "parameter_sha256_after": "b6f1ac32d55d7ec63ffc1126333d80c3990c06be34ec1d61ab82f7dc97b401ba"
+  },
+  {
+    "run_id": "learningdev001_gru_canonical_cycle_peaks",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_gru_canonical_cycle_peaks/predictions.npz",
+    "sha256": "40901f7e21b0b1676fb8e9ce405a9511950768c7269f610d2803f867ae7f6bf7",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "ac0463a77d3aaa324f4d9b1eecdad337e7bfa248f54f5d9107b2b384b3065235",
+    "parameter_sha256_before": "2d855e930be244311a7775b99229497958d198e19b2e9b0a4161abad3eb602d4",
+    "parameter_sha256_after": "2d855e930be244311a7775b99229497958d198e19b2e9b0a4161abad3eb602d4"
+  },
+  {
+    "run_id": "learningdev001_gru_one_line_valleys",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_gru_one_line_valleys/predictions.npz",
+    "sha256": "c4dabf32d76c78113fdd73ee82f00d7dcee31d90ec910d47f779987ca0b5812d",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "6a07a3de1e669749928ff19d197ff9dc373b31894b04c9bc6d502abb9017d79a",
+    "parameter_sha256_before": "6d87489af8d55fc5c6728eb0e99ea70346b1eaff3d23968d9bf333aa339ee7f2",
+    "parameter_sha256_after": "6d87489af8d55fc5c6728eb0e99ea70346b1eaff3d23968d9bf333aa339ee7f2"
+  },
+  {
+    "run_id": "learningdev001_gru_canonical_cycle_valleys",
+    "path": "/mnt/yangx-projects-f/20261010/permworld_fullset_eval/learningdev001_gru_canonical_cycle_valleys/predictions.npz",
+    "sha256": "d4a24d6da3b6d4e02f09ed374fa6ecfdc535e6afdce98c1227b6e9930326ff67",
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/checkpoint_step_8000.pt",
+    "checkpoint_sha256": "a615a47818a96b73fd8d7954180457188a44b78f7dee6d78753fc74e50c4ff52",
+    "parameter_sha256_before": "551763574e52889ff2132ebba706b169a348e6a5ae1f402cd8b6d2c92e0caa53",
+    "parameter_sha256_after": "551763574e52889ff2132ebba706b169a348e6a5ae1f402cd8b6d2c92e0caa53"
+  }
+]

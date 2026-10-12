@@ -1,0 +1,221 @@
+{
+  "status": "passed",
+  "checks": 99671,
+  "check_counts": {
+    "GL2_size_six": 1,
+    "GL3_size_168": 1,
+    "independent_H_enumeration": 1,
+    "independent_rank_random_proposals": 288,
+    "independent_exact_full_rank": 270,
+    "independent_four_labels": 270,
+    "encoding_roundtrip": 270,
+    "independent_big_packed_key": 270,
+    "Q_square_identity": 270,
+    "P_square_identity": 270,
+    "Q_s_equals_e1": 270,
+    "independent_frozen_transform": 2160,
+    "frozen_transform_preserves_rank": 2160,
+    "transformed_labels_independent": 2160,
+    "R1_correct_formula": 270,
+    "R1_wrong_formula": 270,
+    "R2_correct_formula": 270,
+    "R2_wrong_formula": 270,
+    "R3_correct_formula": 270,
+    "R3_wrong_formula": 270,
+    "R4_correct_formula": 270,
+    "R4_wrong_formula": 270,
+    "independent_complete_72_orbit": 270,
+    "independent_canonical_key": 270,
+    "orbit_at_most_72": 270,
+    "H_left_right_transpose_closure": 62460,
+    "canonical_invariant_all_members": 12492,
+    "orbit_member_exact_full_rank": 12492,
+    "independent_GF2_multiplication": 270,
+    "transpose_anti_automorphism": 270,
+    "nonconstant_audit_task_labels": 20,
+    "exhaustive_theoretical_label_distribution": 20,
+    "R1_wrong_not_identical": 1,
+    "R2_wrong_not_identical": 1,
+    "R3_wrong_not_identical": 1,
+    "R4_wrong_not_identical": 1,
+    "n10_key_retains_bits_above_64": 1,
+    "teacher_forcing_grammar_within_128": 3,
+    "invalid_matrix_rejected": 5,
+    "invalid_encoding_rejected": 3
+  },
+  "exhaustive_GL_sizes": {
+    "2": 6,
+    "3": 168
+  },
+  "random_audit_seed": 98000021,
+  "random_large_n": [
+    {
+      "n": 6,
+      "audit_samples": 32,
+      "iid_proposals": 105,
+      "independent_from_formal_worlds": true
+    },
+    {
+      "n": 8,
+      "audit_samples": 32,
+      "iid_proposals": 101,
+      "independent_from_formal_worlds": true
+    },
+    {
+      "n": 10,
+      "audit_samples": 32,
+      "iid_proposals": 82,
+      "independent_from_formal_worlds": true
+    }
+  ],
+  "orbit_members_checked": 12492,
+  "wrong_formula_counterexamples": {
+    "R2": {
+      "n": 2,
+      "matrix_rows": [
+        1,
+        2
+      ],
+      "left_answer": 2,
+      "wrong_answer": 1
+    },
+    "R1": {
+      "n": 2,
+      "matrix_rows": [
+        1,
+        3
+      ],
+      "left_answer": 2,
+      "wrong_answer": 1
+    },
+    "R3": {
+      "n": 2,
+      "matrix_rows": [
+        1,
+        3
+      ],
+      "left_answer": 2,
+      "wrong_answer": 1
+    },
+    "R4": {
+      "n": 2,
+      "matrix_rows": [
+        1,
+        3
+      ],
+      "left_answer": 1,
+      "wrong_answer": 2
+    }
+  },
+  "exact_label_distribution": [
+    {
+      "n": 2,
+      "task": "F1",
+      "total": 6,
+      "histogram": {
+        "1": 4,
+        "2": 2
+      },
+      "theoretical": "C(n,k)/(2^n-1)",
+      "exact_match": true
+    },
+    {
+      "n": 2,
+      "task": "F2",
+      "total": 6,
+      "histogram": {
+        "1": 4,
+        "2": 2
+      },
+      "theoretical": "C(n,k)/(2^n-1)",
+      "exact_match": true
+    },
+    {
+      "n": 2,
+      "task": "F3",
+      "total": 6,
+      "histogram": {
+        "2": 2,
+        "1": 4
+      },
+      "theoretical": "C(n,k)/(2^n-1)",
+      "exact_match": true
+    },
+    {
+      "n": 2,
+      "task": "F4",
+      "total": 6,
+      "histogram": {
+        "2": 2,
+        "1": 4
+      },
+      "theoretical": "C(n,k)/(2^n-1)",
+      "exact_match": true
+    },
+    {
+      "n": 3,
+      "task": "F1",
+      "total": 168,
+      "histogram": {
+        "1": 72,
+        "2": 72,
+        "3": 24
+      },
+      "theoretical": "C(n,k)/(2^n-1)",
+      "exact_match": true
+    },
+    {
+      "n": 3,
+      "task": "F2",
+      "total": 168,
+      "histogram": {
+        "1": 72,
+        "2": 72,
+        "3": 24
+      },
+      "theoretical": "C(n,k)/(2^n-1)",
+      "exact_match": true
+    },
+    {
+      "n": 3,
+      "task": "F3",
+      "total": 168,
+      "histogram": {
+        "2": 72,
+        "3": 24,
+        "1": 72
+      },
+      "theoretical": "C(n,k)/(2^n-1)",
+      "exact_match": true
+    },
+    {
+      "n": 3,
+      "task": "F4",
+      "total": 168,
+      "histogram": {
+        "2": 72,
+        "1": 72,
+        "3": 24
+      },
+      "theoretical": "C(n,k)/(2^n-1)",
+      "exact_match": true
+    }
+  ],
+  "independent_implementation": "Python integer bit rows, XOR-basis rank, XOR-selected row multiplication, independent row-major bit packing and independently enumerated GL2 subgroup.",
+  "sampling_scope": "All n2/3 invertible matrices and 32 independently seeded audit GL matrices for each n6/8/10; these are not formal inputs or final analysis labels.",
+  "elapsed_process_wall_seconds": 2.1764141979801934,
+  "vocabulary_size": 188,
+  "prefix_lengths": {
+    "6": 46,
+    "8": 76,
+    "10": 114
+  },
+  "teacher_forcing_lengths": {
+    "6": 50,
+    "8": 80,
+    "10": 118
+  },
+  "grammar": "<BOS> <SIZE> nn <ARG_START> n rows of n 00/01 tokens separated by | <ARG_END> <EXCEEDANCES> = answer <EOS>",
+  "no_Torch_or_model_calls": true,
+  "no_formal_analysis_label_calls": true
+}

@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "count": 15,
+  "checks": [
+    {
+      "check": "undefined aggregation does not reweight",
+      "passed": true
+    },
+    {
+      "check": "fixed_three_equal_weights",
+      "passed": true
+    },
+    {
+      "check": "zero is a defined value",
+      "passed": true
+    },
+    {
+      "check": "structural NaN retained",
+      "passed": true
+    },
+    {
+      "check": "unexpected infinity rejected",
+      "passed": true
+    },
+    {
+      "check": "equal model and mode does not become learning gain",
+      "passed": true
+    },
+    {
+      "check": "missing source scale stays undefined",
+      "passed": true
+    },
+    {
+      "check": "raw cloned-score agreement uses only actual three saved candidates",
+      "passed": true
+    },
+    {
+      "check": "missing raw candidate is not exact equality evidence",
+      "passed": true
+    },
+    {
+      "check": "absent candidate results remain absent",
+      "passed": true
+    },
+    {
+      "check": "complete tables with numerical failure are caveated rather than pending",
+      "passed": true
+    },
+    {
+      "check": "complete table presentation does not imply verification pass",
+      "passed": true
+    },
+    {
+      "check": "engineering failure without formal tables stays engineering stop",
+      "passed": true
+    },
+    {
+      "check": "failed engineering yields no scientific conclusion",
+      "passed": true
+    },
+    {
+      "check": "report emits both languages",
+      "passed": true
+    }
+  ],
+  "synthetic_only": true,
+  "source_sha256": "3f2eb1d870035e3bd3ff0c315bf18a4a011863dca31935a287a06ea7317cc246",
+  "no_model_or_metric_or_analysis_label_calls": true
+}

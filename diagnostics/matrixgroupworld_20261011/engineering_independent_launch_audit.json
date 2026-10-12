@@ -1,0 +1,296 @@
+{
+  "status": "passed_launch_review",
+  "snapshot_monotonic": 171884.426551031,
+  "checks": [
+    {
+      "check": "all_bound_source_bytes_unchanged",
+      "passed": true
+    },
+    {
+      "check": "source_aggregate_digest",
+      "passed": true
+    },
+    {
+      "check": "draft_protocol_binding",
+      "passed": true
+    },
+    {
+      "check": "data_ready_binding",
+      "passed": true
+    },
+    {
+      "check": "mathematics_and_protection_ready",
+      "passed": true
+    },
+    {
+      "check": "absolute_four_hour_gpu_clock",
+      "passed": true
+    },
+    {
+      "check": "two_fresh_units_and_fixed_eight_formal_jobs",
+      "passed": true
+    },
+    {
+      "check": "unit001_actual_initial_file_hashes",
+      "passed": true
+    },
+    {
+      "check": "unit001_initial_parameter_value_digest",
+      "passed": true
+    },
+    {
+      "check": "unit001_actual_initial_rng_value_digest",
+      "passed": true
+    },
+    {
+      "check": "unit001_initial_spec_identity",
+      "passed": true
+    },
+    {
+      "check": "unit001_data_and_schedule_file_hashes",
+      "passed": true
+    },
+    {
+      "check": "unit001_analysis_labels_unsealed",
+      "passed": true
+    },
+    {
+      "check": "unit001_train_validation_counts",
+      "passed": true
+    },
+    {
+      "check": "unit001_fixed20k_schedule_shape",
+      "passed": true
+    },
+    {
+      "check": "unit001_same_length_and_distinct64_schedule",
+      "passed": true
+    },
+    {
+      "check": "unit002_actual_initial_file_hashes",
+      "passed": true
+    },
+    {
+      "check": "unit002_initial_parameter_value_digest",
+      "passed": true
+    },
+    {
+      "check": "unit002_actual_initial_rng_value_digest",
+      "passed": true
+    },
+    {
+      "check": "unit002_initial_spec_identity",
+      "passed": true
+    },
+    {
+      "check": "unit002_data_and_schedule_file_hashes",
+      "passed": true
+    },
+    {
+      "check": "unit002_analysis_labels_unsealed",
+      "passed": true
+    },
+    {
+      "check": "unit002_train_validation_counts",
+      "passed": true
+    },
+    {
+      "check": "unit002_fixed20k_schedule_shape",
+      "passed": true
+    },
+    {
+      "check": "unit002_same_length_and_distinct64_schedule",
+      "passed": true
+    },
+    {
+      "check": "independent_units_different_actual_weights",
+      "passed": true
+    },
+    {
+      "check": "engineering_data_file_hash",
+      "passed": true
+    },
+    {
+      "check": "four_task_fixed_engineering_supervision",
+      "passed": true
+    },
+    {
+      "check": "launcher_calls_engineering_once_and_no_run_job",
+      "passed": true
+    },
+    {
+      "check": "F1_observed_receipt_not_formal",
+      "passed": true
+    },
+    {
+      "check": "F2_observed_receipt_not_formal",
+      "passed": true
+    },
+    {
+      "check": "F3_observed_receipt_not_formal",
+      "passed": true
+    }
+  ],
+  "initializations": [
+    {
+      "unit": "unit001",
+      "model_seed": 97100011,
+      "actual_step0_verified": true,
+      "parameter_sha256": "d88f3b16ff72c86e2a64754517e5b8f86d80537fcf5456639828f1d6f735a78b",
+      "step0_file_sha256": "ab7ac159c74b7851f1219b5dd68353449db99b613dc3afebc358b85b5c09f66a",
+      "starting_rng_hash": "2c6b7f6ce12d1e15c063f3e089b396516e812126bae93eda4b37cb816388254b",
+      "four_task_clones": "All four tasks load the same actual saved state and restore the same unit start RNG in run_job; this is a checked execution rule, not a claim that eight formal endpoints exist."
+    },
+    {
+      "unit": "unit002",
+      "model_seed": 97100012,
+      "actual_step0_verified": true,
+      "parameter_sha256": "5489795dde7032d49a61ca58607c0c6f0e1a7a80ca2c64dafadcdc1e9803863f",
+      "step0_file_sha256": "dc28e2d3d7d110e52cf3ce323e733e00568b442093a12a343235030c3cc38ce2",
+      "starting_rng_hash": "de8657e167cee1b429ac207d1dd4e9da0cc5204662c7495577713cb1367516ee",
+      "four_task_clones": "All four tasks load the same actual saved state and restore the same unit start RNG in run_job; this is a checked execution rule, not a claim that eight formal endpoints exist."
+    }
+  ],
+  "data_bindings": [
+    {
+      "unit": "unit001",
+      "train_samples": 12288,
+      "validation_samples": 768,
+      "schedule_updates": 20000,
+      "batch_size": 64,
+      "length_counts": {
+        "6": 6667,
+        "8": 6667,
+        "10": 6666
+      },
+      "analysis_arrays_loaded": false,
+      "data_sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+      "schedule_sha256": "70c2fc314663378046cff2bf15fab3aae9f25a0b0289cf257016b10df1fbef37"
+    },
+    {
+      "unit": "unit002",
+      "train_samples": 12288,
+      "validation_samples": 768,
+      "schedule_updates": 20000,
+      "batch_size": 64,
+      "length_counts": {
+        "6": 6667,
+        "8": 6667,
+        "10": 6666
+      },
+      "analysis_arrays_loaded": false,
+      "data_sha256": "239d405749fd6539e3bbbe88d185c15084dc96812e7232ffcbb5bb08994c02b8",
+      "schedule_sha256": "3dbe237bc3ae017135960b7e711e3c3d4bc779d57b0c72bb42d4643a34d47764"
+    }
+  ],
+  "engineering_loss_checks": [
+    {
+      "task": "F1",
+      "samples": 32,
+      "nonconstant_answers": true,
+      "targets_per_example": 2,
+      "answer_logit_position": "eq",
+      "answer_target_position": "eq+1",
+      "EOS_logit_position": "eq+1",
+      "EOS_target_position": "eq+2",
+      "double_CE_max_difference": 0.0,
+      "tolerance": 1e-12
+    },
+    {
+      "task": "F2",
+      "samples": 32,
+      "nonconstant_answers": true,
+      "targets_per_example": 2,
+      "answer_logit_position": "eq",
+      "answer_target_position": "eq+1",
+      "EOS_logit_position": "eq+1",
+      "EOS_target_position": "eq+2",
+      "double_CE_max_difference": 8.881784197001252e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "task": "F3",
+      "samples": 32,
+      "nonconstant_answers": true,
+      "targets_per_example": 2,
+      "answer_logit_position": "eq",
+      "answer_target_position": "eq+1",
+      "EOS_logit_position": "eq+1",
+      "EOS_target_position": "eq+2",
+      "double_CE_max_difference": 8.881784197001252e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "task": "F4",
+      "samples": 32,
+      "nonconstant_answers": true,
+      "targets_per_example": 2,
+      "answer_logit_position": "eq",
+      "answer_target_position": "eq+1",
+      "EOS_logit_position": "eq+1",
+      "EOS_target_position": "eq+2",
+      "double_CE_max_difference": 8.881784197001252e-16,
+      "tolerance": 1e-12
+    }
+  ],
+  "observed_engineering_receipts": [
+    {
+      "task": "F1",
+      "status": "engineering_endpoint",
+      "step": 500,
+      "formal_completed": false,
+      "answer_accuracy": 1.0,
+      "full_vocabulary_argmax": true
+    },
+    {
+      "task": "F2",
+      "status": "engineering_endpoint",
+      "step": 500,
+      "formal_completed": false,
+      "answer_accuracy": 1.0,
+      "full_vocabulary_argmax": true
+    },
+    {
+      "task": "F3",
+      "status": "engineering_endpoint",
+      "step": 500,
+      "formal_completed": false,
+      "answer_accuracy": 1.0,
+      "full_vocabulary_argmax": true
+    }
+  ],
+  "runtime_overfit_resume_cost_completion": "Pending until engineering_audit.json exists; this audit is not a passed engineering or formal-training certificate.",
+  "GPU_calls_by_auditor": 0,
+  "model_constructions_by_auditor": 0,
+  "model_forwards_by_auditor": 0,
+  "training_updates_by_auditor": 0,
+  "analysis_labels_read": false,
+  "formal_protocol_frozen": false,
+  "launch_binding_sha256": "e2905310e30c56ce7cc17412a07a82e1f7820e50b88bb9d69d759748dd36ac13",
+  "initialization_inventory_sha256": "5a40bdab885f11f4ae651bfdd82501a571147d59b2acaacd32077ef1b2dacd10",
+  "gpu_clock_sha256_at_snapshot": "1c25b882f05065fe0aad3411d875ba3a473455522dcd62a34958147dcc70c700",
+  "source_safeguards": [
+    "Frozen source files unchanged",
+    "All writes by auditor only to this new diagnostic audit",
+    "No repeat engineering invocation",
+    "No old artifact mutation"
+  ],
+  "budget_and_cost_review": {
+    "absolute_monotonic_GPU_deadline": 186194.323694138,
+    "total_stage_seconds": 14400,
+    "checkpoint_reserve_seconds": 30,
+    "validation_forward_reserve_seconds": 5,
+    "terminal_checkpoint_written_as_CPU_state": true,
+    "conservative_full_logical_cache_examples": 294912,
+    "full_train_identity_eval_examples": 98304,
+    "estimated_remaining_has_1_25_headroom": true,
+    "cost_estimate_is_prediction_not_guarantee": true,
+    "future_formal_start_requires_root_cost_decision_and_formal_protocol_freeze": true
+  },
+  "limitations": [
+    "The copied draft precision prose mentions a CPU fallback, but run_job explicitly forces CUDA and rejects an implicit CPU source substitute.",
+    "The engineer causality gate checks equality-position logits, while final_norm extraction-position equivalence is evaluated by the separate evaluation module.",
+    "CPU mask validation is based on actual data and independent double logits, not a trained-model forward.",
+    "Formal eight endpoints have not been claimed by this launch audit."
+  ]
+}

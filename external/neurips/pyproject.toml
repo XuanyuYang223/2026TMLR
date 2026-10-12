@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurips-permutation-data"
+version = "0.1.0"
+description = "Auditable Passage Math data and models for permutation tasks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["tomli>=2; python_version < '3.11'"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+train = ["torch>=2.5"]
+figures = ["Pillow>=10"]
+
+[project.scripts]
+permutation-generate = "neurips_permutations.generate:main"
+permutation-verify = "neurips_permutations.verify:main"
+permutation-split = "neurips_permutations.splits:main"
+permutation-train = "neurips_permutations.training:main"
+permutation-experiments = "neurips_permutations.experiments:main"
+permutation-audit = "neurips_permutations.audit:main"
+permutation-results = "neurips_permutations.results:main"
+permutation-evaluate = "neurips_permutations.evaluate:main"
+permutation-fewshot = "neurips_permutations.fewshot:main"
+permutation-fewshot-results = "neurips_permutations.fewshot_results:main"
+permutation-fewshot-curve = "neurips_permutations.fewshot_curve:main"
+permutation-cka = "neurips_permutations.cka:main"
+permutation-property-experiments = "neurips_permutations.property_experiments:main"
+permutation-property-report = "neurips_permutations.property_report:main"
+permutation-property-cka = "neurips_permutations.property_cka:main"
+permutation-property-replicates = "neurips_permutations.property_replicates:main"
+permutation-property-replicate-results = "neurips_permutations.property_replicate_results:main"
+permutation-property-relation-experiments = "neurips_permutations.property_relation_experiments:main"
+permutation-property-relation-cka = "neurips_permutations.property_relation_cka:main"
+permutation-property-task-geometry = "neurips_permutations.property_task_geometry_experiments:main"
+permutation-property-task-geometry-cka = "neurips_permutations.property_task_geometry_cka:main"
+permutation-property-linear-probe = "neurips_permutations.property_linear_probe:main"
+permutation-property-fewshot = "neurips_permutations.property_fewshot:main"
+permutation-property-fewshot-results = "neurips_permutations.property_fewshot_results:main"
+permutation-scaling-k16 = "neurips_permutations.scaling_k16:main"
+permutation-property-fewshot-lr-sensitivity = "neurips_permutations.property_fewshot_lr_sensitivity:main"
+permutation-paper-figures = "neurips_permutations.paper_figures:main"
+permutation-manuscript-figures = "neurips_permutations.manuscript_figures:main"
+permutation-category-linear-probe = "neurips_permutations.category_linear_probe:main"
+permutation-size-extrapolation = "neurips_permutations.size_extrapolation:main"
+permutation-representation-transfer = "neurips_permutations.representation_transfer:main"
+permutation-property-subset-replicate-results = "neurips_permutations.property_subset_replicate_results:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

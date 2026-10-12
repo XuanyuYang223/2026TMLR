@@ -1,0 +1,4391 @@
+{
+  "status": "passed",
+  "protocol_sha256": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+  "verification_freeze_sha256": "d4d3f8d0d4f8977e3201f2ac6dd0d4d94c5f7eb46d56fe08571f03b500a235bb",
+  "four_coverage_states": [
+    "completed",
+    "coupled",
+    "undefined",
+    "missing"
+  ],
+  "coverage": [
+    {
+      "unit": "graphpilot001_max_out",
+      "kind": "source",
+      "status": "completed",
+      "reason": "Fixed20k hash-bound actual endpoint"
+    },
+    {
+      "unit": "graphpilot001_min_out",
+      "kind": "source",
+      "status": "completed",
+      "reason": "Fixed20k hash-bound actual endpoint"
+    },
+    {
+      "unit": "graphpilot001_max_in",
+      "kind": "source",
+      "status": "completed",
+      "reason": "Fixed20k hash-bound actual endpoint"
+    },
+    {
+      "unit": "graphpilot001_min_in",
+      "kind": "source",
+      "status": "completed",
+      "reason": "Fixed20k hash-bound actual endpoint"
+    },
+    {
+      "unit": "reverse_max",
+      "kind": "dependence",
+      "status": "coupled",
+      "reason": "Fourtasks/twotransforms/oneworld/oneinitial; not independent relation repeats"
+    },
+    {
+      "unit": "reverse_min",
+      "kind": "dependence",
+      "status": "coupled",
+      "reason": "Fourtasks/twotransforms/oneworld/oneinitial; not independent relation repeats"
+    },
+    {
+      "unit": "complement_out",
+      "kind": "dependence",
+      "status": "coupled",
+      "reason": "Fourtasks/twotransforms/oneworld/oneinitial; not independent relation repeats"
+    },
+    {
+      "unit": "complement_in",
+      "kind": "dependence",
+      "status": "coupled",
+      "reason": "Fourtasks/twotransforms/oneworld/oneinitial; not independent relation repeats"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/6/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/7/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_max/8/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/6/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/7/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "reverse_min/8/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/6/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/7/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_out/8/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/6/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/7/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/output_prob/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/raw_within_n/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/prefix_final/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/prefix_final/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/prefix_final/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/prefix_final/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/output_prob/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/output_prob/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/output_prob/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/output_prob/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/gold_onehot/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/gold_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/gold_onehot/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/gold_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/gold_scalar/linear_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/gold_scalar/knn_overlap",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/gold_scalar/procrustes",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/gold_scalar/debiased_cka",
+      "kind": "metric",
+      "status": "undefined",
+      "reason": "No variable/rank/eligible input defined"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/input_onehot/linear_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/input_onehot/knn_overlap",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/input_onehot/procrustes",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    },
+    {
+      "unit": "complement_in/8/answer_density_strata/input_onehot/debiased_cka",
+      "kind": "metric",
+      "status": "completed",
+      "reason": "Defined exploratory cell; dependence listed separately"
+    }
+  ],
+  "problems": [],
+  "source_count": 4,
+  "world_count": 1,
+  "shared_initial_count": 1,
+  "source_recorded_process_seconds": 2564.1223093860026,
+  "training_cost_is_process_wall_not_GPU_active_time": true,
+  "old_protected_files": 996,
+  "static_increment_is_not_learning_evidence": true,
+  "no_report_or_scientific_result_modified": true,
+  "no_new_training_or_forward": true
+}

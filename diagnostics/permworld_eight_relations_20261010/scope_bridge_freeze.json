@@ -1,0 +1,20 @@
+{
+  "source_sha256": "fdf3e5bd1073d1bdc576d94bfb1df6fbfa9b24f588d11beb718fa4bb8c53344c",
+  "dependent_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/orchestration_freeze.json": "209b09b4262573419e759fd68a40649995550aff227f0ed15add73815a122875",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/readout_freeze.json": "6a694aea9f316675ec5f232419207ae22ac1ca736761eb6aa80f9220bb14cc3c",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/result_readout.py": "6c417d11426122d83da9568c26f43679033241e51c9ed10b49637a0a566a68e3"
+  },
+  "registered_utc": "2026-10-10T22:28:23.824467+00:00",
+  "new_formal_model_limits": {
+    "permworld": 48,
+    "graphworld": 4
+  },
+  "readout_phase_names": [
+    "perm_result_readout",
+    "graph_result_readout"
+  ],
+  "graph_only_after_perm_report_and_independent_audit": true,
+  "science_protocols_unchanged": true,
+  "final_stop_before_any_scope_extension": true
+}

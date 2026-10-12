@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "complete_condition_and_length_check": true,
+  "delta_flip_without_Bt_flip_fixture": true,
+  "undefined_preserved": true,
+  "missing_condition_rejected": true,
+  "train_only_length_baseline_tie_policy_verified": true,
+  "all_model_actions_baseline_reported": true,
+  "rendered_plots": 40,
+  "read_real_experiment_outputs": false,
+  "GPU_started": false,
+  "script_sha256": "d74b74e7c81fed7b0f6c814d490b8170f389545b50fe5b49f86b09417992aa3f",
+  "fixture_files_removed": true
+}

@@ -1,0 +1,37 @@
+{
+  "revision": "uninterrupted-resume-reference-and-actual-activation-audit/v2",
+  "old_freeze_sha256": "d1e8b42688a0d6db15736b90fa162ee24e3bc388b2b24d0f3545eb9f5d658ee4",
+  "new_freeze_sha256": "eb1d5b80599a96407424f72c513fe2d223f2245d4c898da9a5b77b0074323f25",
+  "changed_sources": [
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "old_sha256": "96d72852f82a4ee2da88157fd8b60bd326840bf1d6f3fdd6c55d43ecf1843ec1",
+      "new_sha256": "66944f630eb95039b85718256de1901cf680407e380c55a310707873b02739e2"
+    },
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/training.py",
+      "old_sha256": "e0110bef13d0afc731ef39824a2420f692cf520372e4c545c7898581c86f4710",
+      "new_sha256": "ef187e5eed3d63d43d6171140522a41802b693d287e82c7febe1fc332a56d623"
+    }
+  ],
+  "protocol_sha256_unchanged": true,
+  "changes": [
+    "Resume reference now single-process0->2000, split separate0->1000 plus resumed1000->2000; interrupted references get fresh retained attempts.",
+    "Checkpoint/completion source-version hashes reject cross-version reuse.",
+    "Saved init/trained activations prefix-only forward and suffix causal checks plus actual-data covariance CKA audit."
+  ],
+  "actual_initializations_preserved": [
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "unchanged_checkpoint_sha256": "1714244f6ada652c35af4ddca7002681d31f237346296a48d19cc2cc9154a83d"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "unchanged_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+    }
+  ],
+  "source_training_before_revision": false,
+  "GPU_source_training_before_revision": false,
+  "existing_data_generation_semantics_unchanged": true,
+  "weak_sources_retained_without_extension": true
+}

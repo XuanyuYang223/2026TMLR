@@ -1,0 +1,36 @@
+{
+  "registered_utc": "2026-10-10T22:47:11.824684+00:00",
+  "source_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/update_archive.py",
+  "source_sha256": "cb4a249cf00df608dcfabc064f1e93ebb28d8b874d197d73f770bd448559ac79",
+  "baseline_archive_sha256": "6b2e21131bceae192caa5ff5604f2e22f818658bc0f1c95fbc521487cf6979a7",
+  "baseline_rows": 699,
+  "cleanup_sha256": "e03ff6ff38c95c78ff12444157ec3790c38be9e5a8df5b1350b69430f0da0d8d",
+  "cleanup_rows": 13,
+  "bindings": {
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/audit_freeze.json": "e5df72d4ded0716b87fe164ba313660d27f87c4c1bc2e8be79ab8ce4de10b781",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+    "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/protocol.json": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/orchestration_freeze.json": "209b09b4262573419e759fd68a40649995550aff227f0ed15add73815a122875",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/scope_bridge_freeze.json": "7ff1d065f4c3d2e1b1e8f08c39afb18ec093f54a537c72647aaa76ab163288d5",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/inventory/archive_dependency_edges.json": "60cdac4a597d9676e82c3d65cf8278fe037989d48fc79ad8df57e62bc0117db9"
+  },
+  "scope_roots": [
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010",
+    "/home/yangx/ICML/experiments/graphworld_pilot_20261010",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010",
+    "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010",
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations",
+    "/mnt/yangx-projects-f/20261010/graphworld_pilot"
+  ],
+  "policy": {
+    "original_rows_and_raw_byte_prefix_preserved": true,
+    "current_research_body_untouched": true,
+    "cleanup_unchanged": true,
+    "deleted_files": 0,
+    "moved_files": 0,
+    "scientific_metrics": 0,
+    "no_large_file_rehash": true,
+    "only_after_all_phases_and_final_audit": true,
+    "mutable_annotations_never_exempt_audited_scientific_files": true
+  }
+}

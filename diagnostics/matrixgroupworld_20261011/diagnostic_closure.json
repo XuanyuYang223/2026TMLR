@@ -1,0 +1,16 @@
+{
+  "status": "completed_with_verification_caveat",
+  "tables_complete": true,
+  "scientific_analysis_complete": false,
+  "original_driver_state": "independent_saved_feature_verification",
+  "original_numerical_status": "failed",
+  "original_failure_count": 2,
+  "original_verification_sha256": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+  "original_CPU_error_log_sha256": "7a8fe99513ab1543def9a1795cadc0131577511c895a2845d23d6e9251e41ed3",
+  "numerical_diagnosis_sha256": "f01530c8af334815797a18eafbb185023c9952f226090c791136132637d586f4",
+  "table_arithmetic_audit_sha256": "9259e1aeb59c6b838d0da4a97e56033e9f3abe78c8e713e5486f62d8054b2fe4",
+  "interpretation": "All fixed models, caches and tables exist. Two output-probability kNN checks remain failed at the frozen tolerance. Numerical cause localization does not count as passing independent verification. Ordinary CKA, Procrustes and hidden-state kNN checks passed only within the prescribed saved-feature subset.",
+  "stopped": true,
+  "no_new_training_after_fixed_manifest": true,
+  "no_new_forward_after_extraction": true
+}

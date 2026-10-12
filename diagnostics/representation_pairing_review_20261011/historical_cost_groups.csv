@@ -1,0 +1,6 @@
+domain,reused_existing,architecture,models,recorded_process_wall_seconds,mean_seconds,minimum_seconds,maximum_seconds,scope
+graphworld,False,transformer,4,2564.1223093860026,641.0305773465006,640.3701784170116,641.6635024819989,"actual new52; process-wall, not end-to-end/GPU-active"
+permworld,False,gru,24,22119.821178196027,921.6592157581678,831.401291496004,1106.5540594429767,"actual new52; process-wall, not end-to-end/GPU-active"
+permworld,False,transformer,24,14419.635542598975,600.8181476082906,587.2842988549965,620.5593379670026,"actual new52; process-wall, not end-to-end/GPU-active"
+permworld,True,gru,8,20039.876469410985,2504.984558676373,1898.9202702129987,3057.0537593109984,historical prior16
+permworld,True,transformer,8,10005.632251277006,1250.7040314096257,799.9459489650035,1489.4225259410014,historical prior16

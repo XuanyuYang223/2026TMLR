@@ -1,0 +1,13 @@
+task,length,training_samples,majority_answer,majority_training_count,majority_training_fraction,validation_samples,validation_baseline_accuracy,rule
+descents,10,2048,4,744,0.36328125,1024,0.3671875,Train-only identity-label mode; ties choose lowest numeric answer.
+descents,11,2048,5,817,0.39892578125,1024,0.3974609375,Train-only identity-label mode; ties choose lowest numeric answer.
+descents,12,2048,6,708,0.345703125,1024,0.333984375,Train-only identity-label mode; ties choose lowest numeric answer.
+recoils,10,2048,4,755,0.36865234375,1024,0.3779296875,Train-only identity-label mode; ties choose lowest numeric answer.
+recoils,11,2048,5,824,0.40234375,1024,0.451171875,Train-only identity-label mode; ties choose lowest numeric answer.
+recoils,12,2048,6,712,0.34765625,1024,0.345703125,Train-only identity-label mode; ties choose lowest numeric answer.
+peaks,10,2048,3,1038,0.5068359375,1024,0.5205078125,Train-only identity-label mode; ties choose lowest numeric answer.
+peaks,11,2048,3,1091,0.53271484375,1024,0.521484375,Train-only identity-label mode; ties choose lowest numeric answer.
+peaks,12,2048,3,971,0.47412109375,1024,0.4521484375,Train-only identity-label mode; ties choose lowest numeric answer.
+valleys,10,2048,3,1055,0.51513671875,1024,0.4990234375,Train-only identity-label mode; ties choose lowest numeric answer.
+valleys,11,2048,3,1085,0.52978515625,1024,0.5390625,Train-only identity-label mode; ties choose lowest numeric answer.
+valleys,12,2048,3,930,0.4541015625,1024,0.466796875,Train-only identity-label mode; ties choose lowest numeric answer.

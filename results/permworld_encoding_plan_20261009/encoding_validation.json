@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "permutations": 11289,
+  "exhaustive_max_n": 7,
+  "random_per_length": 256,
+  "random_lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "relation_identity_checks": 90312,
+  "invalid_serializations_rejected": 7,
+  "matched_token_lengths": true,
+  "prefix_max_tokens": 64,
+  "supervised_max_tokens": 68,
+  "vocabulary_size": 188,
+  "tasks": [
+    "anti_fixed_points",
+    "components",
+    "deficiencies",
+    "descents",
+    "exceedances",
+    "fixed_points",
+    "global_descents",
+    "lds_length",
+    "left_to_right_maxima",
+    "left_to_right_minima",
+    "lis_length",
+    "longest_decreasing_run",
+    "longest_increasing_run",
+    "peaks",
+    "recoils",
+    "valleys"
+  ],
+  "relations": [
+    {
+      "pair_id": "descent_inverse",
+      "left": "descents",
+      "right": "recoils",
+      "input_transform": "inverse",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "peak_complement",
+      "left": "peaks",
+      "right": "valleys",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "fixed_complement",
+      "left": "fixed_points",
+      "right": "anti_fixed_points",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "exceedance_inverse",
+      "left": "exceedances",
+      "right": "deficiencies",
+      "input_transform": "inverse",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "subsequence_complement",
+      "left": "lis_length",
+      "right": "lds_length",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "run_complement",
+      "left": "longest_increasing_run",
+      "right": "longest_decreasing_run",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "record_complement",
+      "left": "left_to_right_maxima",
+      "right": "left_to_right_minima",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "decomposition_complement",
+      "left": "global_descents",
+      "right": "components",
+      "input_transform": "complement",
+      "right_label_offset": 1
+    }
+  ],
+  "canonical_rule": "Follow pi, start each cycle at its minimum, order cycles by minima, keep singleton cycles; comma inside, semicolon between.",
+  "prefix_causal_max_abs_error": 0.0,
+  "sdpa_max_abs_error": 1.0132789611816406e-06,
+  "shared_initial_parameter_identity_checked": true,
+  "training_started": false
+}

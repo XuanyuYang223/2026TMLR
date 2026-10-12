@@ -1,0 +1,16 @@
+{'status': 'CPU_analysis', 'utc': '2026-10-11T23:43:58.538718+00:00', 'protocol_sha256': '532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67', 'source_version_sha256': 'ada7c9305ce357ab44db232200860cfcc9ec354ef4300f0f0dc770927edd394e', 'completed_models': 8}
+{'status': 'independent_saved_feature_verification', 'utc': '2026-10-11T23:44:28.748921+00:00', 'protocol_sha256': '532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67', 'source_version_sha256': 'ada7c9305ce357ab44db232200860cfcc9ec354ef4300f0f0dc770927edd394e', 'completed_models': 8}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/run_cpu.py", line 20, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ~~~~^^
+  File "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/run_cpu.py", line 18, in main
+    return run_cpu()
+  File "/home/yangx/ICML/experiments/matrixgroupworld_20261011/driver.py", line 100, in run_cpu
+    check=verify_actual(c,prepared,index,cpu_deadline=deadline)
+  File "/home/yangx/ICML/experiments/matrixgroupworld_20261011/verification.py", line 165, in verify_actual
+    if failures:raise AssertionError('Fixed independent numerical verification failed; no tolerance relaxation')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Fixed independent numerical verification failed; no tolerance relaxation

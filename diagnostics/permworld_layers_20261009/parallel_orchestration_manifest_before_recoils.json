@@ -1,0 +1,32 @@
+{
+  "recorded_utc": "2026-10-10T07:32:52.187253+00:00",
+  "first_tail_script_sha256": "73475cdfcbd50241633cc1a0e60757915008bc19f4c416d189bef704cc125996",
+  "first_tail_indices": [
+    15,
+    14,
+    13,
+    12
+  ],
+  "second_worker_indices": [
+    11,
+    10,
+    9,
+    8
+  ],
+  "minimum_start_gap": 6,
+  "source_training_code_and_budget_unchanged": true,
+  "purpose": "Run additional disjoint jobs from the same16model manifest concurrently; no scientific condition added",
+  "additional_reserved_worker": {
+    "registered_utc": "2026-10-10T08:32:02.497704+00:00",
+    "script": "parallel_reserved_driver.py",
+    "script_sha256": "03c154d98ce81cdef777df085bb6fd0cef72d4d11a10a5fa87029fe9c8acd1d5",
+    "fixed_manifest_index": 8,
+    "run_id": "archdev001_gru_one_line_descents",
+    "updates": 20000,
+    "models_added": 0,
+    "source_or_protocol_changed": false,
+    "selection_uses_metrics_or_accuracy": false,
+    "serial_first_pending_index_at_launch": 3,
+    "previous_orchestration_manifest_sha256": "43f666575049d8e4537c04f450dd7b6b31fd7c820d1af961458b76d7c14b5494"
+  }
+}

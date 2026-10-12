@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "real_new_outcomes_read": false,
+  "trained": false,
+  "synthetic_per_length_rows": 24192,
+  "summary_rows": 2912,
+  "condition_groups": 1152,
+  "contrast_counts": {
+    "condition_summary": 1152,
+    "encoding_difference": 576,
+    "configuration_difference": 320,
+    "layer_difference": 640,
+    "interaction": 160,
+    "metric_direction": 64
+  },
+  "cross_arch_rows": 2688,
+  "gold_rows": 32256,
+  "source_learning_rows": 16128,
+  "independent_table_audit": "passed",
+  "full_report_and_plots_exercised": true,
+  "report_plots": 22,
+  "fixture_source_sha256": "72ee54fb08518052f1beee73cb032bcdbf2c8fc4b6d954fa80d9f38a8c5ff77a"
+}

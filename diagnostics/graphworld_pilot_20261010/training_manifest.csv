@@ -1,0 +1,5 @@
+run_id,task,architecture,encoding,updates
+graphpilot001_max_out,max_out,transformer,row_major_offdiagonal_binary,20000
+graphpilot001_min_out,min_out,transformer,row_major_offdiagonal_binary,20000
+graphpilot001_max_in,max_in,transformer,row_major_offdiagonal_binary,20000
+graphpilot001_min_in,min_in,transformer,row_major_offdiagonal_binary,20000

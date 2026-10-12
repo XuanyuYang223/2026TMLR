@@ -1,0 +1,11 @@
+Completed-cache reader audit: PASS
+
+Only the first 20k-update development cohort was used: 16 trained jobs, four shared actual initial hidden states, two splits. All 40 physical caches and 64 logical mappings are complete and unique. No later8k or historical82 cohort is present.
+
+Actual feature files are float32 [5376 or10752,3,5,256], with full21-length coverage and finite values. All144 newly indexed NPY hashes match (4962926592 bytes). The40 full final_norm arrays equal their original caches bitwise, max absolute discrepancy0; all32 trained answer-argmax arrays equal the original full-vocabulary predictions. This checks967680 input/action feature vectors and4838400 layer states.
+
+All32 original initial equality records remain exact; task-conditioned query outputs are not shared. Parameter hashes before/after are unchanged in every extraction record, updates0. No new forward, optimizer, metrics or labels were used in this audit.
+
+Recorded extraction timer: 160.156679 seconds; starts after planning and old-cache hashing, not the complete CLI process. Independent reader audit: 46.002330 seconds.
+
+Main final_norm scientific values remain the original per-logical cache; newly extracted final_norm is an audit. Embedding endpoint is undefined as a within-length geometry signal. EOS and initial CE were not newly measured. Intermediate layers have been independently checked on the180-cell benchmark; no new full-sample manual forward was run.

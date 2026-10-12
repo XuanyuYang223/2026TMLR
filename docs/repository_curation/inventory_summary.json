@@ -1,0 +1,452 @@
+{
+  "status": "completed_inventory",
+  "logical_file_count": 5366,
+  "existing_logical_file_count": 5366,
+  "physical_inode_count": 5366,
+  "content_unique_file_count": 4959,
+  "logical_bytes": 88547604362,
+  "physical_unique_inode_bytes": 88547604362,
+  "content_unique_bytes": 71338282465,
+  "deduplicated_release_payload_bytes": 70823685969,
+  "ordinary_git_unique_bytes": 514596496,
+  "content_duplicate_logical_bytes": 17209321897,
+  "missing_files": [],
+  "expected_hash_mismatches": [],
+  "identity_unavailable_notes": [
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-anti_fixed_points-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/anti_fixed_points_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-anti_fixed_points-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/anti_fixed_points_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-anti_fixed_points-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/anti_fixed_points_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-components-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/components_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-components-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/components_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-components-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/components_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-deficiencies-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/deficiencies_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-deficiencies-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/deficiencies_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-deficiencies-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/deficiencies_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property32-zero-overlap-pilot/property-a-transformer-tasks01-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/descents_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-descents-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/descents_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property32-zero-overlap-replicates/r2/property-b-transformer-tasks01-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/descents_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-exceedances-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/exceedances_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-exceedances-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/exceedances_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-exceedances-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/exceedances_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-fixed_points-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/fixed_points_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-fixed_points-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/fixed_points_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-fixed_points-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/fixed_points_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-global_descents-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/global_descents_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-global_descents-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/global_descents_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-global_descents-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/global_descents_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-lds_length-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/lds_length_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-lds_length-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/lds_length_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-lds_length-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/lds_length_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-left_to_right_maxima-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/left_to_right_maxima_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-left_to_right_maxima-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/left_to_right_maxima_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-left_to_right_maxima-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/left_to_right_maxima_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-left_to_right_minima-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/left_to_right_minima_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-left_to_right_minima-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/left_to_right_minima_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-left_to_right_minima-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/left_to_right_minima_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-lis_length-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/lis_length_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-lis_length-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/lis_length_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-lis_length-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/lis_length_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-longest_decreasing_run-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/longest_decreasing_run_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-longest_decreasing_run-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/longest_decreasing_run_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-longest_decreasing_run-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/longest_decreasing_run_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-longest_increasing_run-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/longest_increasing_run_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-longest_increasing_run-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/longest_increasing_run_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-longest_increasing_run-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/longest_increasing_run_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property32-relation-controlled/s2-seed17/relation-s2-a-transformer-tasks01-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/peaks_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property32-zero-overlap-replicates/r1/property-a-transformer-tasks01-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/peaks_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property32-relation-controlled/s2-seed101/relation-s2-a-transformer-tasks01-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/peaks_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property32-zero-overlap-pilot/property-b-transformer-tasks01-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/recoils_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property32-relation-controlled/s0-seed42/relation-s0-a-transformer-tasks01-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/recoils_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property32-relation-controlled/s0-seed101/relation-s0-a-transformer-tasks01-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/recoils_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-valleys-transformer-seed17/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/valleys_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-valleys-transformer-seed42/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/valleys_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/neurips/runs/property-task-geometry/specialists/geometry-specialist-valleys-transformer-seed101/checkpoint.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source specialist16/valleys_s101 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_deficiencies_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_deficiencies_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_double_ascents_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_double_ascents_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_double_ascents_s42.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_double_ascents_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_double_descents_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_double_descents_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_double_descents_s42.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_double_descents_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_exceedances_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_exceedances_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_fixed_points_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_fixed_points_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_left_to_right_maxima_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_left_to_right_maxima_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_peaks_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_peaks_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_peaks_s42.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_peaks_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_right_to_left_maxima_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_right_to_left_maxima_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_right_to_left_minima_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_right_to_left_minima_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_valleys_s17.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_valleys_s17 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/six_hour_session/single/checkpoints/d256_l4_valleys_s42.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source six_hour_session_single/d256_l4_valleys_s42 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_left_to_right_maxima_s1009.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_left_to_right_maxima_s1009 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_left_to_right_maxima_s2027.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_left_to_right_maxima_s2027 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_left_to_right_maxima_s3037.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_left_to_right_maxima_s3037 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_left_to_right_maxima_s4051.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_left_to_right_maxima_s4051 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_left_to_right_maxima_s5059.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_left_to_right_maxima_s5059 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_peaks_s1009.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_peaks_s1009 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_peaks_s2027.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_peaks_s2027 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_peaks_s3037.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_peaks_s3037 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_peaks_s4051.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_peaks_s4051 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_peaks_s5059.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_peaks_s5059 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_right_to_left_maxima_s1009.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_right_to_left_maxima_s1009 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_right_to_left_maxima_s2027.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_right_to_left_maxima_s2027 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_right_to_left_maxima_s3037.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_right_to_left_maxima_s3037 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_right_to_left_maxima_s4051.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_right_to_left_maxima_s4051 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_right_to_left_maxima_s5059.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_right_to_left_maxima_s5059 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_valleys_s1009.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_valleys_s1009 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_valleys_s2027.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_valleys_s2027 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_valleys_s3037.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_valleys_s3037 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_valleys_s4051.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_valleys_s4051 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    },
+    {
+      "path": "/home/yangx/ICML/results/native_confirmation/single/checkpoints/d256_l4_valleys_s5059.pt",
+      "kind": "original_initial_weight_identity_unavailable",
+      "detail": "Source native_confirmation_single/d256_l4_valleys_s5059 uses documented constructor rebuild grade C. Saved reconstructed features are available; original step-0/RNG identity is not verified and is not recreated."
+    }
+  ],
+  "proposed_release_asset_count": 75,
+  "largest_proposed_estimated_tar_bytes": 1580238463,
+  "F_drive_free_bytes": 3749341437952,
+  "staging_requirements": {
+    "all_uncompressed_asset_payloads_upper_bound_bytes": 70823685969,
+    "serial_one_asset_plus_validation_copy_upper_bound_bytes": 3265334526,
+    "downloads_not_included": true,
+    "compression_ratio_not_assumed": true
+  },
+  "hash_read_workers": 2,
+  "elapsed_seconds": 935.7791370759951,
+  "source_artifacts_deleted": 0,
+  "source_artifacts_moved": 0,
+  "source_artifacts_modified": 0,
+  "packages_created": 0,
+  "uploaded_assets": 0,
+  "full_disk_scan": false,
+  "init_identity_caveat": "Old grade-C sources do not acquire real step0 identity from this inventory. New real saved initial weights remain separately recorded.",
+  "matrix_verification_caveat": "completed_with_verification_caveat:8 true20k;64passed,2failed,6undefined_consistent;scientific_analysis_complete=false; original scientific bytes and failures preserved.",
+  "scope_exclusions": [
+    "Pure protected_old F17 ledger entries",
+    "Unrelated LIS transfer and finite-field/polynomial composition outputs",
+    "Virtual environments and compiled caches",
+    "Previous release tar/download/fresh-checkout duplicates"
+  ]
+}

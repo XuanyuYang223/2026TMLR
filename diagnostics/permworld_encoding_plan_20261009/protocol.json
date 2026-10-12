@@ -1,0 +1,65 @@
+{
+  "research_question": "输入编码如何影响训练对变换配对选择性的重塑？",
+  "status": "analysis_requirements_fixed_execution_design_pending",
+  "evidence_phase": "Current tables are exploratory re-expression of previously observed results. This document is not a completed preregistration or a new confirmatory experiment.",
+  "execution_authorized_in_this_work": false,
+  "training_started": false,
+  "protected_scope": "Existing F17 paper, results and published assets, and completed permworld_cka_20261009 diagnosis are read-only.",
+  "current_encoding": "one_line",
+  "current_data_policy": "Use existing CSVs only; do not rerun model inference, CKA fits, permutation calibration, or training to construct this addendum.",
+  "relation_scope": "Retain all eight original relations; inverse/complement families and individual relations reported separately. No result-based relation selection.",
+  "object_pairings": "For every encoding E and underlying permutation pi, pair E(pi) with E(T_correct(pi)), E(T_wrong(pi)), and E(pi). Apply transforms to mathematical objects before encoding, not to serialized strings.",
+  "landmark": "Final-layer final_norm at the actual input-end token before any task token; verify causality and endpoint separately for every encoding.",
+  "mandatory_per_encoding": {
+    "raw_scores": ["K_correct_initial", "K_wrong_initial", "K_identity_initial", "K_correct_trained", "K_wrong_trained", "K_identity_trained"],
+    "initial_preference": "B_initial = K_correct_initial - K_wrong_initial",
+    "trained_preference": "B_trained = K_correct_trained - K_wrong_trained",
+    "correct_change": "delta_correct = K_correct_trained - K_correct_initial",
+    "wrong_change": "delta_wrong = K_wrong_trained - K_wrong_initial",
+    "selection_change": "Delta = B_trained - B_initial = delta_correct - delta_wrong",
+    "controls": ["existing common true-answer strata", "true-answer scalar and one-hot geometry", "model output probability geometry", "fixed input baselines", "identity pairing"],
+    "undefined_policy": "Keep constant-answer or zero-variance CKA undefined. Do not fill with zero. True-answer geometry has no model initialization state and no fabricated training increment."
+  },
+  "mandatory_encoding_interactions": {
+    "initial_preference_interaction": "Gamma_initial = B_initial(E1) - B_initial(E0)",
+    "trained_preference_interaction": "Gamma_trained = B_trained(E1) - B_trained(E0)",
+    "correct_change_interaction": "Gamma_correct = delta_correct(E1) - delta_correct(E0)",
+    "wrong_change_interaction": "Gamma_wrong = delta_wrong(E1) - delta_wrong(E0)",
+    "selection_change_interaction": "Gamma_Delta = Delta(E1) - Delta(E0) = Gamma_trained - Gamma_initial = Gamma_correct - Gamma_wrong",
+    "identity_interaction": "Retain identity CKA and its initial/trained difference as a separate reference.",
+    "report_rule": "Report the complete interaction vector and each encoding's raw components together. No interaction can be estimated from the single encoding presently available."
+  },
+  "aggregation": {
+    "existing_addendum": "Compute changes at each relation x seed-pair x length x control x metric cell, then average over all 21 lengths with fixed 1/21. Aggregate same-seed (3 pairs) and cross-seed (6 ordered pairs) separately. Report component medians individually; do not reconstruct a median difference by subtracting marginal medians.",
+    "future_confirmation": "Freeze mathematical-object lengths, weights, input anchors, seed/data-world pairing, and encoding contrasts before any test analysis. Same underlying inputs and source-world blocks across encodings. No length-centered pooled CKA substituted for within-length CKA.",
+    "dependence": "Shared source models, tasks, input orbits and transform families remain dependent. Seed pairs do not multiply the number of independent relations."
+  },
+  "initialization_capture_requirements": {
+    "stage": "Save actual step-0 weights immediately after the original constructor and weight tying, before any optimizer update or stochastic training forward. Save RNG state at the exact stage and record whether device transfer has occurred.",
+    "identity_evidence": ["serialized step-0 file SHA256", "canonical parameter-and-buffer hash with tensor names/dtypes/shapes/bytes", "trained-checkpoint link to its step-0 hash", "complete constructor config", "full vocabulary and token-ID map", "encoding/parser code hashes", "git commit and dirty-diff or source hashes", "framework/device versions", "CPU/CUDA/Python and any used NumPy RNG states and RNG-call ordering"],
+    "paired_encodings": "If constructor/config/vocabulary are identical, explicitly share saved initial weights across encoding conditions and verify hashes. Same weights can still produce different initial geometries because inputs differ. If architectures or vocabularies differ, report that starting weights cannot be identical rather than describing them as matched by seed.",
+    "failure_policy": "Missing or unverifiable step-0 evidence precludes the exact-identity confirmation claim; retain the run with its limitation rather than silently replacing it by a reconstruction."
+  },
+  "confirmation_freeze_requirements": [
+    "Select and justify exact encodings, serialization lengths, vocabulary and sequence cap before outcomes; currently unset.",
+    "Freeze source model architecture, task/exposure budget, optimizer, checkpoint step and source/data-world replication count; currently unset.",
+    "Use fresh unused object orbits/worlds for confirmation, with split and transform-leakage audit; current old test set remains exploratory.",
+    "Fix primary contrast vector and sensitivity metrics/kernels and statistical procedures, with sample size justified for that contrast rather than inheriting F17 counts.",
+    "Record input count, token count, task accuracy and exposure separately. If encoded lengths/vocabulary/architecture change, do not attribute the entire intervention to token identity alone.",
+    "Specify the single encoding-aware input control, if needed, before outcomes; do not search kernels after seeing CKA.",
+    "No source/task/length exclusion based on the final CKA outcome or weak task performance. Report learning quality and failures explicitly.",
+    "Freeze a dated, hashed execution protocol before training; only then can a future run be called confirmation."
+  ],
+  "interpretation_rules": [
+    "Delta is a difference of relative preferences, not an increase in correct CKA or a direct measure of mathematical learning.",
+    "Negative Delta can coexist with positive trained correct-minus-wrong preference; it does not establish absence of learning.",
+    "A change of Delta sign across encodings does not establish a flip in trained preference. Inspect B_initial, B_trained and their interactions separately.",
+    "A non-significant Gamma_trained does not prove trained preferences equivalent; report estimates and uncertainty without an unregistered equivalence claim.",
+    "Components are an algebraic decomposition, not a causal percentage attribution.",
+    "Do not subtract hidden Delta and output Delta to estimate an additional mechanism.",
+    "True-label stratification does not remove confidence, prediction-error structure or all answer information.",
+    "Pooled-length CKA and within-length averages are different estimands. The R0/k8 0.803 versus 0.214 example is a length-mixing sensitivity result, not an exact source decomposition.",
+    "CKA alone cannot identify internal algebraic computations or prove their causal use."
+  ],
+  "ending_rule": "Write decomposition tables, table-arithmetic audit and this planning addendum, then stop. Do not train, add seeds/data/tasks, execute alternative encodings, or modify F17/publication artifacts."
+}

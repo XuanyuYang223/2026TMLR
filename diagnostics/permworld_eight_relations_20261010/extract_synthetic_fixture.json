@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "checks": {
+    "old_arrays_original_to_saved_hash_and_bitwise_equal": true,
+    "primary_original_norm_not_packed_norm": true,
+    "array_hash_matches_frozen_convention": true,
+    "original_prediction_dtype_preserved": true,
+    "numeric_conditioning_not_full_vocab_prediction": true,
+    "CE_full188_including_outside_numeric_tokens": true,
+    "labels_zero_to_thirty_no_offset": true,
+    "answer_ce_float64": true,
+    "readonly_mmap_metadata": true,
+    "direct_manual_to_saved_arrays_path_verified": true,
+    "incorrect_saved_arrays_rejected": true,
+    "saved_initial_alias_metadata_verified": true,
+    "incorrect_initial_alias_metadata_rejected": true
+  },
+  "extractor_sha256": "216380df1c7224e852449dd973a1c8f664c9da233240c6d29cbc94c42d936c79",
+  "original_capture_sha256": "4693a3dd79a0e96d792dca64c94de5a9458cbbc41847af6e12b1a58f82ed58c4",
+  "CPU_synthetic_only": true,
+  "real_inputs_read": false,
+  "checkpoints_loaded": false,
+  "GPU_started": false,
+  "training_started": false,
+  "new_metrics": false
+}

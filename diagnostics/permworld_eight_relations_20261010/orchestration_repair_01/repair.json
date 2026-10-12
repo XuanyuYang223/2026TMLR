@@ -1,0 +1,9 @@
+{
+  "reason": "Auxiliary orchestration compared JSON list stages with Python tuple stages and failed before waiting/any scientific phase",
+  "old_source_sha256": "d532f59bdf4f1b1330e834e809541db81af980e367e7863e21eff124b338fb2c",
+  "new_source_sha256": "5a35a3fc40ba95cc04df9a2ea00bb804bb29021da0889c810f61a8136114013c",
+  "no_scientific_code_changed": true,
+  "training_updates": 0,
+  "forward_calls": 0,
+  "registered_utc": "2026-10-10T22:17:21.318515+00:00"
+}

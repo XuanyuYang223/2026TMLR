@@ -1,0 +1,1253 @@
+{
+  "status": "passed",
+  "protocol_sha256": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+  "verification_freeze_sha256": "d4d3f8d0d4f8977e3201f2ac6dd0d4d94c5f7eb46d56fe08571f03b500a235bb",
+  "actual_cache_provenance": [
+    {
+      "task": "max_out",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_validation.npz",
+      "sha256": "733b09e360998575321d2d5b5490002524e6483459f3db11336f21810ae931e1"
+    },
+    {
+      "task": "max_out",
+      "condition": "initial",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_analysis.npz",
+      "sha256": "fe9be329149be9d45f8db3c26d14bb3681503dba2e07d5933dfbcea866929c5b"
+    },
+    {
+      "task": "max_out",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_validation.npz",
+      "sha256": "9a5383969d28d44fbe928bd39e1beab1fb2f9994c2cd7bdadb0e71c150a6e531"
+    },
+    {
+      "task": "max_out",
+      "condition": "trained",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_analysis.npz",
+      "sha256": "160280b54fb74f7495058a944010475affe207ecec218c8ad8edb0e16c55cbec"
+    },
+    {
+      "task": "max_in",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_validation.npz",
+      "sha256": "00dc40b6506e020651a55bfb4897ba60903ae69102c2f373ef83193967198f20"
+    },
+    {
+      "task": "max_in",
+      "condition": "initial",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_analysis.npz",
+      "sha256": "a003f7334f24043f4b4297d6ed53490e609a017924dbf7376be0e899f89a952c"
+    },
+    {
+      "task": "max_in",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_validation.npz",
+      "sha256": "b9ac63f5b05a24cb9517ee67ca8b7d90f2b65f00831aafff1bcdddb2da025a00"
+    },
+    {
+      "task": "max_in",
+      "condition": "trained",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_analysis.npz",
+      "sha256": "afcd1abffb94d69c3cec379630ff956ad8b73a0ef51e0d1f7079f4164c5ba709"
+    }
+  ],
+  "checks": [
+    {
+      "check": "raw_within_n/initial/prefix_final/correct/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/correct/linear_cka",
+      "production": 0.9727526343490285,
+      "independent": 0.9727526343490284,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/correct/debiased_cka",
+      "production": 0.9725305302767903,
+      "independent": 0.9725305302767902,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/correct/knn_overlap",
+      "production": 0.6625,
+      "independent": 0.6625,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/correct/procrustes",
+      "production": -0.2902713239403202,
+      "independent": -0.29027132394031996,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/correct/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/wrong/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/wrong/linear_cka",
+      "production": 0.9564184180010806,
+      "independent": 0.9564184180010806,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/wrong/debiased_cka",
+      "production": 0.9557983247035703,
+      "independent": 0.95579832470357,
+      "absolute_error": 3.3306690738754696e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/wrong/knn_overlap",
+      "production": 0.6328125,
+      "independent": 0.6328125,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/wrong/procrustes",
+      "production": -0.3233717828684677,
+      "independent": -0.3233717828684676,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/wrong/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/identity/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/identity/linear_cka",
+      "production": 0.9999999999999998,
+      "independent": 1.0,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/identity/debiased_cka",
+      "production": 1.0000000000000002,
+      "independent": 1.0,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/identity/knn_overlap",
+      "production": 1.0,
+      "independent": 1.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/identity/procrustes",
+      "production": -6.816499667817939e-15,
+      "independent": -1.7497404620395128e-16,
+      "absolute_error": 6.641525621613988e-15,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/prefix_final/identity/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/correct/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/correct/linear_cka",
+      "production": 0.9807721378869394,
+      "independent": 0.9807721378869396,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/correct/debiased_cka",
+      "production": 0.9805898025300924,
+      "independent": 0.9805898025300926,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/correct/knn_overlap",
+      "production": 0.6828125,
+      "independent": 0.6828125,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/correct/procrustes",
+      "production": -0.29718303391734474,
+      "independent": -0.2971830339173441,
+      "absolute_error": 6.661338147750939e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/correct/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/wrong/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/wrong/linear_cka",
+      "production": 0.9681216474332647,
+      "independent": 0.9681216474332651,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/wrong/debiased_cka",
+      "production": 0.9676635045356248,
+      "independent": 0.9676635045356244,
+      "absolute_error": 3.3306690738754696e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/wrong/knn_overlap",
+      "production": 0.64375,
+      "independent": 0.64375,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/wrong/procrustes",
+      "production": -0.32177593322445347,
+      "independent": -0.32177593322445497,
+      "absolute_error": 1.4988010832439613e-15,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/wrong/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/identity/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/identity/linear_cka",
+      "production": 0.9999821434700245,
+      "independent": 0.9999821434700245,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/identity/debiased_cka",
+      "production": 0.9999822500132179,
+      "independent": 0.999982250013218,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/identity/knn_overlap",
+      "production": 1.0,
+      "independent": 1.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/identity/procrustes",
+      "production": -0.005343546152375306,
+      "independent": -0.005343546152375518,
+      "absolute_error": 2.1163626406917047e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/initial/output_prob/identity/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/correct/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/correct/linear_cka",
+      "production": 0.900598783276128,
+      "independent": 0.9005987832761283,
+      "absolute_error": 3.3306690738754696e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/correct/debiased_cka",
+      "production": 0.8955616979141113,
+      "independent": 0.8955616979141116,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/correct/knn_overlap",
+      "production": 0.7484375000000001,
+      "independent": 0.7484375,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/correct/procrustes",
+      "production": -0.4097628255434455,
+      "independent": -0.4097628255434453,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/correct/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/wrong/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/wrong/linear_cka",
+      "production": 0.3677349553883122,
+      "independent": 0.36773495538831225,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/wrong/debiased_cka",
+      "production": 0.3349421599731028,
+      "independent": 0.3349421599731027,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/wrong/knn_overlap",
+      "production": 0.3578125,
+      "independent": 0.3578125,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/wrong/procrustes",
+      "production": -1.07075151623969,
+      "independent": -1.0707515162396894,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/wrong/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/identity/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/identity/linear_cka",
+      "production": 0.3038584191568432,
+      "independent": 0.3038584191568432,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/identity/debiased_cka",
+      "production": 0.26592105350838385,
+      "independent": 0.26592105350838396,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/identity/knn_overlap",
+      "production": 0.3125,
+      "independent": 0.3125,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/identity/procrustes",
+      "production": -1.1012633069449669,
+      "independent": -1.1012633069449664,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/prefix_final/identity/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/correct/centering_max_abs",
+      "production": 1.1102230246251565e-16,
+      "independent": 0.0,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/correct/linear_cka",
+      "production": 0.999999992434843,
+      "independent": 0.9999999924348426,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/correct/debiased_cka",
+      "production": 0.9999999923501818,
+      "independent": 0.9999999923501819,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/correct/knn_overlap",
+      "production": 0.690625,
+      "independent": 0.690625,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/correct/procrustes",
+      "production": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-08,
+      "status": "undefined_consistent"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/correct/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/wrong/centering_max_abs",
+      "production": 1.1102230246251565e-16,
+      "independent": 0.0,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/wrong/linear_cka",
+      "production": 0.3447762383663506,
+      "independent": 0.34477623836635096,
+      "absolute_error": 3.885780586188048e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/wrong/debiased_cka",
+      "production": 0.31253676929681823,
+      "independent": 0.3125367692968183,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/wrong/knn_overlap",
+      "production": 0.340625,
+      "independent": 0.340625,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/wrong/procrustes",
+      "production": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-08,
+      "status": "undefined_consistent"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/wrong/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/identity/centering_max_abs",
+      "production": 1.1102230246251565e-16,
+      "independent": 0.0,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/identity/linear_cka",
+      "production": 0.26299862229955256,
+      "independent": 0.26299862229955256,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/identity/debiased_cka",
+      "production": 0.22640699405893475,
+      "independent": 0.22640699405893477,
+      "absolute_error": 2.7755575615628914e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/identity/knn_overlap",
+      "production": 0.26875,
+      "independent": 0.26875,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/identity/procrustes",
+      "production": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-08,
+      "status": "undefined_consistent"
+    },
+    {
+      "check": "raw_within_n/trained/output_prob/identity/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/correct/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/correct/linear_cka",
+      "production": 0.5751466818214322,
+      "independent": 0.5751466818214325,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/correct/debiased_cka",
+      "production": 0.556065829944392,
+      "independent": 0.5560658299443919,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/correct/knn_overlap",
+      "production": 0.4234375,
+      "independent": 0.4234375,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/correct/procrustes",
+      "production": -0.9452626128474733,
+      "independent": -0.9452626128474736,
+      "absolute_error": 3.3306690738754696e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/correct/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/wrong/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/wrong/linear_cka",
+      "production": 0.472193568343533,
+      "independent": 0.47219356834353327,
+      "absolute_error": 2.7755575615628914e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/wrong/debiased_cka",
+      "production": 0.4388236382946613,
+      "independent": 0.43882363829466137,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/wrong/knn_overlap",
+      "production": 0.41874999999999996,
+      "independent": 0.41875,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/wrong/procrustes",
+      "production": -0.9532854397219152,
+      "independent": -0.953285439721915,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/wrong/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/identity/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/identity/linear_cka",
+      "production": 0.9999999999999996,
+      "independent": 1.0000000000000002,
+      "absolute_error": 6.661338147750939e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/identity/debiased_cka",
+      "production": 1.0,
+      "independent": 1.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/identity/knn_overlap",
+      "production": 1.0,
+      "independent": 1.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/identity/procrustes",
+      "production": -2.9736985990280737e-16,
+      "independent": -3.125205665543961e-16,
+      "absolute_error": 1.5150706651588705e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/prefix_final/identity/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/initial/output_prob/correct/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/correct/linear_cka",
+      "production": 0.5927894311426751,
+      "independent": 0.5927894311426751,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/correct/debiased_cka",
+      "production": 0.5711982081158623,
+      "independent": 0.5711982081158624,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/correct/knn_overlap",
+      "production": 0.4109375,
+      "independent": 0.4109375,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/correct/procrustes",
+      "production": -0.9605644982257566,
+      "independent": -0.9605644982257562,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/correct/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/initial/output_prob/wrong/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/wrong/linear_cka",
+      "production": 0.516372638046315,
+      "independent": 0.516372638046315,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/wrong/debiased_cka",
+      "production": 0.4807226143424732,
+      "independent": 0.4807226143424732,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/wrong/knn_overlap",
+      "production": 0.39531250000000007,
+      "independent": 0.3953125,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/wrong/procrustes",
+      "production": -0.9082159159386379,
+      "independent": -0.9082159159386382,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/wrong/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/initial/output_prob/identity/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/identity/linear_cka",
+      "production": 0.9999449600972947,
+      "independent": 0.9999449600972947,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/identity/debiased_cka",
+      "production": 0.9999431456365179,
+      "independent": 0.9999431456365179,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/identity/knn_overlap",
+      "production": 0.9921875,
+      "independent": 0.9921875,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/identity/procrustes",
+      "production": -0.01118124411376421,
+      "independent": -0.011181244113764742,
+      "absolute_error": 5.325601071248798e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/initial/output_prob/identity/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/correct/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/correct/linear_cka",
+      "production": 0.14200547433480493,
+      "independent": 0.14200547433480493,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/correct/debiased_cka",
+      "production": 0.05112550140010036,
+      "independent": 0.05112550140010036,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/correct/knn_overlap",
+      "production": 0.4390625,
+      "independent": 0.4390625,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/correct/procrustes",
+      "production": -1.6293381760905252,
+      "independent": -1.629338176090526,
+      "absolute_error": 6.661338147750939e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/correct/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/wrong/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/wrong/linear_cka",
+      "production": 0.10607548664398037,
+      "independent": 0.10607548664398041,
+      "absolute_error": 4.163336342344337e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/wrong/debiased_cka",
+      "production": 0.000980681012556323,
+      "independent": 0.0009806810125563348,
+      "absolute_error": 1.1926223897340549e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/wrong/knn_overlap",
+      "production": 0.35000000000000003,
+      "independent": 0.35,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/wrong/procrustes",
+      "production": -1.5892689680947005,
+      "independent": -1.5892689680946999,
+      "absolute_error": 6.661338147750939e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/wrong/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/identity/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/identity/linear_cka",
+      "production": 0.13631727707556365,
+      "independent": 0.13631727707556365,
+      "absolute_error": 0.0,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/identity/debiased_cka",
+      "production": 0.04710542454947975,
+      "independent": 0.047105424549479746,
+      "absolute_error": 6.938893903907228e-18,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/identity/knn_overlap",
+      "production": 0.3671875,
+      "independent": 0.3671875,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/identity/procrustes",
+      "production": -1.3758743728631835,
+      "independent": -1.3758743728631837,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/prefix_final/identity/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/trained/output_prob/correct/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/correct/linear_cka",
+      "production": 0.020075928578921844,
+      "independent": 0.02007592857892186,
+      "absolute_error": 1.734723475976807e-17,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/correct/debiased_cka",
+      "production": 0.024660099783026246,
+      "independent": 0.024660099783026242,
+      "absolute_error": 3.469446951953614e-18,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/correct/knn_overlap",
+      "production": 0.3296875,
+      "independent": 0.3296875,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/correct/procrustes",
+      "production": -9.618131446268174,
+      "independent": -9.618131446268166,
+      "absolute_error": 8.881784197001252e-15,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/correct/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/trained/output_prob/wrong/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/wrong/linear_cka",
+      "production": 0.007662328857729391,
+      "independent": 0.0076623288577294,
+      "absolute_error": 8.673617379884035e-18,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/wrong/debiased_cka",
+      "production": 0.002329617471525452,
+      "independent": 0.0023296174715254523,
+      "absolute_error": 4.336808689942018e-19,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/wrong/knn_overlap",
+      "production": 0.31875000000000003,
+      "independent": 0.31875000000000003,
+      "absolute_error": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/wrong/procrustes",
+      "production": -4.769452513463936,
+      "independent": -4.769452513463938,
+      "absolute_error": 2.6645352591003757e-15,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/wrong/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    },
+    {
+      "check": "answer_strata/trained/output_prob/identity/centering_max_abs",
+      "production": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/identity/linear_cka",
+      "production": 0.00398566465889115,
+      "independent": 0.003985664658891154,
+      "absolute_error": 4.336808689942018e-18,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/identity/debiased_cka",
+      "production": 0.00481709078208021,
+      "independent": 0.0048170907820802075,
+      "absolute_error": 2.6020852139652106e-18,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/identity/knn_overlap",
+      "production": 0.34062500000000007,
+      "independent": 0.340625,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/identity/procrustes",
+      "production": -5.648422325565073,
+      "independent": -5.64842232556507,
+      "absolute_error": 2.6645352591003757e-15,
+      "tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "answer_strata/trained/output_prob/identity/left_neighbor_ID_sets",
+      "status": "passed",
+      "changed_sets": 0
+    }
+  ],
+  "input_kernel_checks": [
+    {
+      "control": "raw_within_n",
+      "action": "identity",
+      "fit_test_cross_gram_max_abs": 0.0,
+      "independent_cka": 1.0,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "raw_within_n",
+      "action": "R",
+      "fit_test_cross_gram_max_abs": 0.0,
+      "independent_cka": 1.0,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "raw_within_n",
+      "action": "WR",
+      "fit_test_cross_gram_max_abs": 0.0,
+      "independent_cka": 1.0,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "raw_within_n",
+      "action": "C",
+      "fit_test_cross_gram_max_abs": 0.0,
+      "independent_cka": 1.0,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "raw_within_n",
+      "action": "WC",
+      "fit_test_cross_gram_max_abs": 0.0,
+      "independent_cka": 1.0,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "answer_strata",
+      "action": "identity",
+      "fit_test_cross_gram_max_abs": 0.0,
+      "independent_cka": 0.9999999999999994,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "answer_strata",
+      "action": "R",
+      "fit_test_cross_gram_max_abs": 1.0658141036401503e-14,
+      "independent_cka": 0.9999999999999994,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "answer_strata",
+      "action": "WR",
+      "fit_test_cross_gram_max_abs": 1.0658141036401503e-14,
+      "independent_cka": 0.9999999999999996,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "answer_strata",
+      "action": "C",
+      "fit_test_cross_gram_max_abs": 1.7763568394002505e-15,
+      "independent_cka": 0.9999999999999993,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    },
+    {
+      "control": "answer_strata",
+      "action": "WC",
+      "fit_test_cross_gram_max_abs": 7.105427357601002e-15,
+      "independent_cka": 0.9999999999999996,
+      "independent_knn_overlap": 1.0,
+      "kernel_has_variance": true,
+      "status": "passed",
+      "static_no_B0_or_Delta": true
+    }
+  ],
+  "failure_count": 0,
+  "wall_seconds": 5.030493755999487,
+  "new_training": false,
+  "new_forward": false,
+  "scientific_metric_definition_changed": false,
+  "fixed64_subset_is_numerical_verification_only": true
+}

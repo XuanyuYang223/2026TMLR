@@ -1,0 +1,113 @@
+{
+  "status": "read_review_passed",
+  "reviewed_utc": "2026-10-11T11:27:10.504001+00:00",
+  "actual_results_read": true,
+  "actual_tables_and_figures_read": true,
+  "inference_scope": {
+    "exploratory": true,
+    "PermWorld_worlds": 1,
+    "GraphWorld_worlds": 1,
+    "initializations_per_architecture": 1,
+    "relation_and_condition_counts_are_not_independent_repetitions": true,
+    "matched_learning_not_established": true,
+    "model_capacity_unmatched": true,
+    "no_confirmatory_statistics": true,
+    "no_equivalence_claim": true,
+    "no_mechanism_identification": true,
+    "no_domain_only_causal_effect": true,
+    "automatic_followup": false
+  },
+  "findings": {
+    "permworld_primary": {
+      "control": "answer_strata",
+      "endpoint": "final_norm",
+      "metric": "linear_cka",
+      "within_n_weight": "1/21",
+      "cells": 32,
+      "Bt_positive": 26,
+      "Bt_negative": 6,
+      "Delta_positive": 18,
+      "Delta_negative": 14
+    },
+    "encoding": {
+      "pairs": 16,
+      "B0_sign_flips": 16,
+      "Bt_sign_flips": 6,
+      "Delta_sign_flips": 14,
+      "Delta_flip_without_Bt_flip": 9
+    },
+    "metric_consistency": {
+      "Bt_all_three": 32,
+      "Delta_all_three": 30,
+      "U_primary_signs_same": true
+    },
+    "length_consistency": {
+      "Bt_all_positive": 22,
+      "Bt_all_negative": 2,
+      "Bt_mixed": 8,
+      "Delta_all_positive": 18,
+      "Delta_all_negative": 13,
+      "Delta_mixed": 1
+    },
+    "graphworld_primary": {
+      "control": "answer_strata",
+      "metric": "linear_cka",
+      "within_n_weight": "1/3",
+      "relations": 4,
+      "Bt_positive": 2,
+      "Bt_negative": 2,
+      "Delta_positive": 0,
+      "Delta_negative": 4,
+      "Delta": [
+        -0.035156931,
+        -0.043921271,
+        -0.09438129,
+        -0.310829368
+      ],
+      "independent_actual_checks": {
+        "passed": 151,
+        "undefined_consistent": 3,
+        "failed": 0
+      }
+    },
+    "interpretation": "Training reshapes pairing selectivity; positive Delta need not raise correct similarity or preserve Bt sign. Output-associated explanations remain unresolved.",
+    "unknown_GPU_active_seconds": null
+  },
+  "input_hashes": {
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html": "b5d2e75b062b2c5a4b40b2996a71f7453217eae9a3282ca4e07c89fb739f7185",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/combined_report.txt": "264a810b1d5882a17abf7a38cf8483823e22f843a28d27c0333a030f817f504d",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/combined_input_hashes.json": "9881c18cbd3927cceecc7ed8067d46a8cc8e5ce9438c219b16fca48b69853665",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/final_audit.json": "1f8f972a8f6848f24fbcc4b3d8cdc70c95415107b8bb40c22dded3f5d864c7bf",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/actual_perm_interpretation_review.txt": "e688a7fcb98fcaf962343d2d7f21b9df183536d08b98febf332b9562041bb4c3",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/actual_perm_reader_notes.txt": "17eecd8b20d2de7600d973be7da2be791e4696a1f129642c4373a1d09a19a240",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/actual_graph_scope_review.json": "0062330ae637861aee6339938630edb602d527948fe60bfc8ca65483ad5763a6",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/timing_discrepancy_review.json": "a9aa7d59ddb992a16ddfb5b7569e2a103c719f5836ae17292386c26f7523c156",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/graph_evaluation_environment_repair_01/repair.json": "b2eecd75f455512c54e333b65205a3a857d7d6747ff690db37a96279f3ed9c80",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/root_result_review.txt": "5a1444d5e089a19d527d720ba52ea665d31ba7ba129fd22dc5be1e517e938d4a",
+    "diagnostics/permworld_eight_relations_20261010/final_review/root_result_review.txt": "063d432851b66e1c6700e60e9d6f786fdec4fd3bb945e156cad74dca839e822d",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/archive_metadata_repair_01/repair.json": "706bb2bd303d7e4e9a219cfbcf949f53bf99d5448d0d05cd621794b74a4d1db2"
+  },
+  "metrics_recomputed": 0,
+  "training_updates": 0,
+  "delivery_metadata_repair": {
+    "status": "metadata_schema_compatibility_repaired",
+    "registered_utc": "2026-10-11T11:29:00.566867+00:00",
+    "failure": "KeyError: 'graph_driver' at frozen update_archive.py line255 (closed log reference collection); no index/manifest output had been written.",
+    "updater_source_unchanged": true,
+    "updater_sha256": "cb4a249cf00df608dcfabc064f1e93ebb28d8b874d197d73f770bd448559ac79",
+    "updater_freeze_sha256": "b9af8f86c16879fe76538b259ef4146bb393ebf1ef3afb1301b4eba4ddd6ff96",
+    "bridge_before_sha256": "2b1bc0b03fe9719b62d0b20a69e272a33e1f90448a1124ed9040462eebe38cb6",
+    "bridge_after_sha256": "c3988d624c17ec15cab89ae0859d1e1e376e24c0c4bb3d2616305738b084139d",
+    "actual_completed_driver_log_sha256": "72e868b92b3f38e36a0ddaf39fcb5db510ed988d005d6b1a6b7790b00579bb3d",
+    "actual_completed_driver_source_sha256": "edb5b18c8ddcb4a02ea5b11498f012ca6399a9f53108efd2d2e726c21b61ed77",
+    "protected_or_audited_scientific_file_changed": false,
+    "scientific_protocol_changed": false,
+    "training_updates": 0,
+    "forward": 0,
+    "metrics": 0,
+    "initial_failed_archive_output_written": false,
+    "timing_seconds": null,
+    "timing_limitation": "Failed logical index attempt was not independently timed; keep unknown.",
+    "scope": "Add a truthful existing completed-driver log reference to unprotected closure metadata, preserving its exact status and scientific completion counts. Do not edit the frozen archive updater."
+  }
+}

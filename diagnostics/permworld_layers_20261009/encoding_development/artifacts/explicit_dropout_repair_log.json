@@ -1,0 +1,108 @@
+{
+  "revision": "explicit-torch-interlayer-gru-dropout/v4",
+  "reason": "Native multi-layer cuDNN dropout opaque state was not restored by ordinary CPU/CUDA RNG checkpoint; explicit torch dropout passed separate CUDA engineering fixture.",
+  "cuda_fixture": "diagnostics/permworld_layers_20261009/engineering/gru_cuda_resume_explicit.json",
+  "cuda_fixture_sha256": "d7cc3e51ff01a3cdda1a292e30929899be80cff0ced144fa4de519eac99cc9d0",
+  "source_optimizer_updates": 0,
+  "protocol_sha256_unchanged": true,
+  "original_gru_step0_sha256": "1714244f6ada652c35af4ddca7002681d31f237346296a48d19cc2cc9154a83d",
+  "migrated_gru_step0_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+  "original_gru_parameter_sha256": "5a766f8777a47de8332fbd958b6292e5fc38899a30b883870ba329f7605ad18c",
+  "migrated_gru_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+  "canonical_coordinate_sha256": "5a766f8777a47de8332fbd958b6292e5fc38899a30b883870ba329f7605ad18c",
+  "all_corresponding_tensors_bitwise_equal": true,
+  "tensors_checked": 21,
+  "parameter_mapping": {
+    "token_embedding.weight": "token_embedding.weight",
+    "position_embedding.weight": "position_embedding.weight",
+    "gru.weight_ih_l0": "recurrent_layers.0.weight_ih_l0",
+    "gru.weight_hh_l0": "recurrent_layers.0.weight_hh_l0",
+    "gru.bias_ih_l0": "recurrent_layers.0.bias_ih_l0",
+    "gru.bias_hh_l0": "recurrent_layers.0.bias_hh_l0",
+    "gru.weight_ih_l1": "recurrent_layers.1.weight_ih_l0",
+    "gru.weight_hh_l1": "recurrent_layers.1.weight_hh_l0",
+    "gru.bias_ih_l1": "recurrent_layers.1.bias_ih_l0",
+    "gru.bias_hh_l1": "recurrent_layers.1.bias_hh_l0",
+    "gru.weight_ih_l2": "recurrent_layers.2.weight_ih_l0",
+    "gru.weight_hh_l2": "recurrent_layers.2.weight_hh_l0",
+    "gru.bias_ih_l2": "recurrent_layers.2.bias_ih_l0",
+    "gru.bias_hh_l2": "recurrent_layers.2.bias_hh_l0",
+    "gru.weight_ih_l3": "recurrent_layers.3.weight_ih_l0",
+    "gru.weight_hh_l3": "recurrent_layers.3.weight_hh_l0",
+    "gru.bias_ih_l3": "recurrent_layers.3.bias_ih_l0",
+    "gru.bias_hh_l3": "recurrent_layers.3.bias_hh_l0",
+    "final_norm.weight": "final_norm.weight",
+    "final_norm.bias": "final_norm.bias",
+    "lm_head.weight": "lm_head.weight"
+  },
+  "constructor_seed_coordinates_match_verified": true,
+  "head_embedding_tied": true,
+  "parameters": 1660416,
+  "native_cell_dropout": 0.0,
+  "explicit_interlayer_dropout": 0.1,
+  "explicit_interlayer_dropouts": 3,
+  "embedding_dropout_unchanged": 0.1,
+  "eval_cpu_actual_input_checks": [
+    {
+      "encoding": "one_line",
+      "length": 10,
+      "vectors": 24,
+      "feature_max_difference": 0.0,
+      "logit_max_difference": 0.0
+    },
+    {
+      "encoding": "one_line",
+      "length": 20,
+      "vectors": 24,
+      "feature_max_difference": 0.0,
+      "logit_max_difference": 0.0
+    },
+    {
+      "encoding": "one_line",
+      "length": 30,
+      "vectors": 24,
+      "feature_max_difference": 0.0,
+      "logit_max_difference": 0.0
+    },
+    {
+      "encoding": "canonical_cycle",
+      "length": 10,
+      "vectors": 24,
+      "feature_max_difference": 0.0,
+      "logit_max_difference": 0.0
+    },
+    {
+      "encoding": "canonical_cycle",
+      "length": 20,
+      "vectors": 24,
+      "feature_max_difference": 0.0,
+      "logit_max_difference": 0.0
+    },
+    {
+      "encoding": "canonical_cycle",
+      "length": 30,
+      "vectors": 24,
+      "feature_max_difference": 0.0,
+      "logit_max_difference": 0.0
+    }
+  ],
+  "initialization_stage": "value_preserving_key_migration_of_saved_actual_initialization_before_source_training_for_explicit_interlayer_dropout",
+  "tensor_dtype_unchanged": true,
+  "changed_sources": [
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "old_sha256": "66944f630eb95039b85718256de1901cf680407e380c55a310707873b02739e2",
+      "new_sha256": "62e7e9153eaa714f7ad4e8f843b36eecee9a9690219109ac0e19488340525398"
+    },
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/common.py",
+      "old_sha256": "5822e61a361317efaafdbf260faca538bc73f9af19c6029108a26c2ad69b3a4e",
+      "new_sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b"
+    }
+  ],
+  "old_freeze_sha256": "542aca01747e32cd6f4eb69f3470a9cd36fc9fcce80daa3479281089f7626008",
+  "new_freeze_sha256": "6accfc2dbd078c901d6e0495aef85883021c84681b2fcfb77d77f0965f0c2bf5",
+  "TF_step0_unchanged_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+  "data_sha256_unchanged": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "old_source_retained": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/engineering/common_before_explicit_dropout_fix.py"
+}

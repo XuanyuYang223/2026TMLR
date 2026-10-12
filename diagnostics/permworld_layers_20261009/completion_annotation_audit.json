@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-10T10:18:25.497926+00:00",
+  "presentation_only": true,
+  "original_report_unchanged": true,
+  "original_tables_byte_identical": true,
+  "training_started": false,
+  "source_report_sha256": {
+    "completion_report.html": "f3b6b3f9aaa4bd0b314dc730d87a99706f72f97955b6355d2970f0ac372c793d",
+    "completion_report.txt": "eb820195d86144fe3eb06de6ef9c4153606b0fa47ba91fca32f204ca61b44564"
+  },
+  "reader_report_sha256": {
+    "completion_reader_report.html": "3c1bfcebcd53138885aff8e95fe1ff1dc0aa4b2202b486778b2b09adf6a33a26",
+    "completion_reader_report.txt": "cb7bff561fae002f2e7a7ae571c2122956fb9e23ce5a15f2443fe7628e6bccc8"
+  },
+  "stop_audit_sha256": "85439b4c7d26c5a67dc0f6087a7577f9dd1921302d0f52f213b9512b9de0020d"
+}

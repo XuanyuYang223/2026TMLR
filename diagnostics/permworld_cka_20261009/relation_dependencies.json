@@ -1,0 +1,77 @@
+{
+  "relations": [
+    {
+      "pair_id": "descent_inverse",
+      "left": "descents",
+      "right": "recoils",
+      "input_transform": "inverse",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "peak_complement",
+      "left": "peaks",
+      "right": "valleys",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "fixed_complement",
+      "left": "fixed_points",
+      "right": "anti_fixed_points",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "exceedance_inverse",
+      "left": "exceedances",
+      "right": "deficiencies",
+      "input_transform": "inverse",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "subsequence_complement",
+      "left": "lis_length",
+      "right": "lds_length",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "run_complement",
+      "left": "longest_increasing_run",
+      "right": "longest_decreasing_run",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "record_complement",
+      "left": "left_to_right_maxima",
+      "right": "left_to_right_minima",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "decomposition_complement",
+      "left": "global_descents",
+      "right": "components",
+      "input_transform": "complement",
+      "right_label_offset": 1
+    }
+  ],
+  "shared_data": "All eight relations and all seeds use identical 2688 test orbit anchors; bootstrap indices are coupled.",
+  "transform_families": {
+    "inverse": [
+      "descent_inverse",
+      "exceedance_inverse"
+    ],
+    "complement": [
+      "peak_complement",
+      "fixed_complement",
+      "subsequence_complement",
+      "run_complement",
+      "record_complement",
+      "decomposition_complement"
+    ]
+  },
+  "tasks": "Eight pairs use sixteen distinct tasks, but transformations, statistics and input orbits share structure.",
+  "inferential_policy": "No relation-population confidence interval or seed-count inflated relation sample size. Leave-one-relation results are descriptive sensitivity."
+}

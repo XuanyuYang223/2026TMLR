@@ -1,0 +1,50 @@
+{
+  "status": "frozen",
+  "utc": "2026-10-11T21:46:56.277701+00:00",
+  "protocol_sha256": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+  "source_sha256": {
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/__init__.py": "d4c8c4f91df914a2d3b7e0dc005bd589504044df0f1fe96d95494220a75f9cd7",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/analysis.py": "2899670467172b22df18e242176197cc7dcf4f2facf8b41e0f01185e786ffbbb",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/budget.py": "754d15ca3f830e0b8c881ca0e85c3764e9760f84e24ee7cbe51502b70f108b2f",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/common.py": "68e856bb48d57ea86d5ceb3af8004415f3a43f65445979f64e8df8746b57b385",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/core.py": "a3fd4e1cdeecf76c954f0f8ee47e59b760d14c619bfb49028bcc2858fdae2ee3",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/data.py": "2825c6402f00f0a8fd33e5a383a178d46877f4ac814daa1393d5c13de619ec35",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/driver.py": "2f48d5cadc8e4197b8465ecb071647d4ae052898bd75368d100a38846156c4bb",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/engineering.py": "f9bec77281fa87a5c12210c0ad20dd5bb3e61310df1222ea1b7ca7f9632d71d7",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/evaluation.py": "09f0dd8cfbec9752bb87ca6940066ae80969d89280e3ed950e391226c58450aa",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/math_checks.py": "0bf0177a69d47f39bb6f3e444e505b1bebf42b272fd737f23678eeed4aca6fdb",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/model_runtime.py": "0fbbf70c6b6691beec0f21127789198808cacdf965ec16ebd5eb3273c8832567",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/training.py": "9921d09e3195a4dd4ab4fd87a6c11b0cca46b6f52699647ecd1b9590f0505d9a",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/verification.py": "aa3a967bdac07c0ad5c3989233b0f67e97b85842a2de7173f26a63fad79c0793",
+    "/home/yangx/ICML/experiments/permworld_encoding/core.py": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+    "/home/yangx/ICML/experiments/longrun_attention.py": "5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918",
+    "/home/yangx/ICML/external/neurips/src/neurips_permutations/models.py": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6",
+    "/home/yangx/ICML/external/neurips/src/neurips_permutations/passage.py": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+    "/home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/metrics.py": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/freeze.py": "14a1aaf719b60a9aac9bafcf1d39e247dfb9da1a0df0a54d8911867ef8b7f112"
+  },
+  "source_version_sha256": "ada7c9305ce357ab44db232200860cfcc9ec354ef4300f0f0dc770927edd394e",
+  "candidate_manifest_sha256": "9bb3581a089b9fba390a26b9afc08ac67e0e2116eb2562ebdf93ceaea12f441e",
+  "training_manifest_sha256": "8b96bdf3a3ca8610b1340cdf67b61e8b793021e1cb53659741c4112b8bddf1dd",
+  "git_HEAD": "e4e9ded9648aa2dc92a1cceef929cc9521546418",
+  "git_status": "?? CURRENT_RESEARCH.txt\n?? archive_index.csv\n?? cleanup_candidates.csv\n?? diagnostics/graphworld_pilot_20261010/\n?? diagnostics/matrixgroupworld_20261011/\n?? diagnostics/permworld_cka_20261009/\n?? diagnostics/permworld_controlled_comparison_20261010/\n?? diagnostics/permworld_eight_relations_20261010/\n?? diagnostics/permworld_encoding_plan_20261009/\n?? diagnostics/permworld_fullset_eval_20261010/\n?? diagnostics/permworld_layers_20261009/\n?? diagnostics/permworld_learnability_20261010/\n?? diagnostics/representation_pairing_review_20261011/\n?? experiments/graphworld_pilot_20261010/\n?? experiments/matrixgroupworld_20261011/\n?? experiments/permworld_eight_relations_20261010/\n?? experiments/permworld_encoding/\n?? experiments/permworld_encoding_archdev_20261009/\n?? experiments/permworld_encoding_preflight.py\n?? experiments/permworld_learnability_20261010/\n?? results/permworld_encoding_plan_20261009/\n?? results/permworld_encoding_preflight_20261009/\n",
+  "Python": "3.13.13",
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "formal_training_started": false,
+  "geometry_computed": false,
+  "final_labels_generated": false,
+  "known_previous_results": true,
+  "no_confirmatory_relabel": true,
+  "initial_parameter_sha256": {
+    "unit001": "d88f3b16ff72c86e2a64754517e5b8f86d80537fcf5456639828f1d6f735a78b",
+    "unit002": "5489795dde7032d49a61ca58607c0c6f0e1a7a80ca2c64dafadcdc1e9803863f"
+  },
+  "GPU_deadline_monotonic": 186194.323694138,
+  "cost_rechecked_remaining_seconds": 14245.375980946003,
+  "predicted_remaining_seconds_with_headroom": 8690.589222052915
+}

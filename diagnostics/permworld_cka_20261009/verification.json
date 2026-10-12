@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "numeric_checks": 11497,
+  "maximum_absolute_discrepancy": 1.3322676295501878e-15,
+  "checks_by_name": {
+    "U_center_vs_unbiased_HSIC_trace": 3,
+    "equal_length_weight_1_over_21": 432,
+    "historical_pooled_k_CKA": 25,
+    "orthogonal_coordinate_invariance": 3,
+    "per_cell_matched_initial_delta": 9072,
+    "saved_cell_independent_debiased": 864,
+    "saved_cell_independent_ordinary": 864,
+    "weighted_CKA_vs_explicit_resampling": 9,
+    "within_length_k_independent_feature_CKA": 225
+  },
+  "original_initial_identity_claims_checked": true,
+  "protected_files_checked": 1214,
+  "protected_files_changed": [],
+  "git_head_unchanged": true,
+  "tracked_worktree_unchanged": true,
+  "training_started": false
+}

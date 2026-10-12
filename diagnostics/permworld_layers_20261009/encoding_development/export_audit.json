@@ -1,0 +1,542 @@
+{
+  "status": "passed",
+  "fixture_only": false,
+  "source_directory": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev",
+  "source_models": 16,
+  "fixed_final_updates": 20000,
+  "component_rows": 128,
+  "interaction_rows": 64,
+  "length_rows": 2688,
+  "accuracy_length_rows": 2016,
+  "plots": 40,
+  "all_four_conditions_two_relations_controls_metrics_present": true,
+  "original_undefined_values_retained": true,
+  "no_confirmatory_inference": true,
+  "no_model_weights_read": true,
+  "no_GPU_or_training_started": true,
+  "original_source_artifacts_unmodified": true,
+  "engineering_status": "passed",
+  "source_small_artifacts": [
+    {
+      "source_relative": "cpu_check.json",
+      "export_relative": "artifacts/cpu_check.json",
+      "bytes": 1876,
+      "sha256": "2f7737f118542494d4827cea5ad655713c00c7a4857855743c07f5eaeaff0371"
+    },
+    {
+      "source_relative": "cpu_check_before_development_exclusion_fix.json",
+      "export_relative": "artifacts/cpu_check_before_development_exclusion_fix.json",
+      "bytes": 1876,
+      "sha256": "4ea5cfe0034e9863334a84e9ed2a7e13541ba0fe9799e05ce82b902b72d54531"
+    },
+    {
+      "source_relative": "cpu_check_before_explicit_dropout_fix.json",
+      "export_relative": "artifacts/cpu_check_before_explicit_dropout_fix.json",
+      "bytes": 1876,
+      "sha256": "4ea5cfe0034e9863334a84e9ed2a7e13541ba0fe9799e05ce82b902b72d54531"
+    },
+    {
+      "source_relative": "cpu_check_before_resume_activation_fix.json",
+      "export_relative": "artifacts/cpu_check_before_resume_activation_fix.json",
+      "bytes": 1876,
+      "sha256": "4ea5cfe0034e9863334a84e9ed2a7e13541ba0fe9799e05ce82b902b72d54531"
+    },
+    {
+      "source_relative": "data_ready.json",
+      "export_relative": "artifacts/data_ready.json",
+      "bytes": 720,
+      "sha256": "504608bb22c8bf0113754a4254e5b73367c3ffbc4728a1141a580cf804055010"
+    },
+    {
+      "source_relative": "data_ready_before_development_exclusion_fix.json",
+      "export_relative": "artifacts/data_ready_before_development_exclusion_fix.json",
+      "bytes": 262,
+      "sha256": "832139ea160cf69aade810275b0c18990186b4ed34853a6002d9bb61a307bd99"
+    },
+    {
+      "source_relative": "development_exclusion_final_audit.json",
+      "export_relative": "artifacts/development_exclusion_final_audit.json",
+      "bytes": 756,
+      "sha256": "4a7ed4438358d6b9ac1f5f1bddd497394445df18523627376c919ca20f512555"
+    },
+    {
+      "source_relative": "development_exclusion_repair_log.json",
+      "export_relative": "artifacts/development_exclusion_repair_log.json",
+      "bytes": 3135,
+      "sha256": "0de91f5566f453446bde5ad79635986e0c7895cf4a6efbbbc1e5f24bf7d11f38"
+    },
+    {
+      "source_relative": "encoding_interactions.csv",
+      "export_relative": "artifacts/encoding_interactions.csv",
+      "bytes": 10765,
+      "sha256": "11bd56a60b73228f47d06db7bce10b53fc75804e454d119abadfa6b3552540db"
+    },
+    {
+      "source_relative": "engineering_complete.json",
+      "export_relative": "artifacts/engineering_complete.json",
+      "bytes": 416,
+      "sha256": "ad5f526f283b7ca437b8ff99e9f83c4c486838fdec7b49f9e6c5e343de161f38"
+    },
+    {
+      "source_relative": "engineering_repair_log.json",
+      "export_relative": "artifacts/engineering_repair_log.json",
+      "bytes": 1950,
+      "sha256": "bd2e023ec9f0db88a41b6e3125f21b10738e9319f1c72eaf39401b9dce799e2b"
+    },
+    {
+      "source_relative": "evaluation_complete.json",
+      "export_relative": "artifacts/evaluation_complete.json",
+      "bytes": 508,
+      "sha256": "b1ab5ae3f318e35d78e10c922819ca805277fbd4f584948d90dcb03ce0481872"
+    },
+    {
+      "source_relative": "explicit_dropout_repair_log.json",
+      "export_relative": "artifacts/explicit_dropout_repair_log.json",
+      "bytes": 4781,
+      "sha256": "eff07d00706d58db723756c3a26d15621f773f6185a58ea217822137586c770e"
+    },
+    {
+      "source_relative": "freeze_manifest.json",
+      "export_relative": "artifacts/freeze_manifest.json",
+      "bytes": 4805,
+      "sha256": "6accfc2dbd078c901d6e0495aef85883021c84681b2fcfb77d77f0965f0c2bf5"
+    },
+    {
+      "source_relative": "freeze_manifest_before_development_exclusion_fix.json",
+      "export_relative": "artifacts/freeze_manifest_before_development_exclusion_fix.json",
+      "bytes": 4826,
+      "sha256": "eb1d5b80599a96407424f72c513fe2d223f2245d4c898da9a5b77b0074323f25"
+    },
+    {
+      "source_relative": "freeze_manifest_before_explicit_dropout_fix.json",
+      "export_relative": "artifacts/freeze_manifest_before_explicit_dropout_fix.json",
+      "bytes": 4810,
+      "sha256": "542aca01747e32cd6f4eb69f3470a9cd36fc9fcce80daa3479281089f7626008"
+    },
+    {
+      "source_relative": "freeze_manifest_before_resume_activation_fix.json",
+      "export_relative": "artifacts/freeze_manifest_before_resume_activation_fix.json",
+      "bytes": 4585,
+      "sha256": "d1e8b42688a0d6db15736b90fa162ee24e3bc388b2b24d0f3545eb9f5d658ee4"
+    },
+    {
+      "source_relative": "geometry_length.csv",
+      "export_relative": "artifacts/geometry_length.csv",
+      "bytes": 886761,
+      "sha256": "fba99c3628525bfe3eb359d9fa595f5fe828bdc34b0d3bac5221a376ef2a5b38"
+    },
+    {
+      "source_relative": "geometry_summary.csv",
+      "export_relative": "artifacts/geometry_summary.csv",
+      "bytes": 40740,
+      "sha256": "765843527bba45ffb60daa79f0cc9f9a0bcc9ae2d4b9d9b6ab0a0e2a8909f93d"
+    },
+    {
+      "source_relative": "gold_baseline_length.csv",
+      "export_relative": "artifacts/gold_baseline_length.csv",
+      "bytes": 948370,
+      "sha256": "638810d2290003552553a2088abcab8bc9bf84949d887fd9cdc66eebf571f6bc"
+    },
+    {
+      "source_relative": "independent_evaluation.json",
+      "export_relative": "artifacts/independent_evaluation.json",
+      "bytes": 54605,
+      "sha256": "de6350595c8a9288b3294dc6063549b466d8c479e2db30ca993c0d9f03fe17ab"
+    },
+    {
+      "source_relative": "initializations/execution_binding_v4.json",
+      "export_relative": "artifacts/initializations/execution_binding_v4.json",
+      "bytes": 843,
+      "sha256": "f95035a9a9a9b6c04f8771cb988af5babc792dc2bd46742baca9eb8560c3d87a"
+    },
+    {
+      "source_relative": "initializations/gru/step0.json",
+      "export_relative": "artifacts/initializations/gru/step0.json",
+      "bytes": 939,
+      "sha256": "97026ab425edbe35bdff20483bec1f51b101fced8266c7c1129af59177280182"
+    },
+    {
+      "source_relative": "initializations/gru/step0_before_explicit_dropout_fix.json",
+      "export_relative": "artifacts/initializations/gru/step0_before_explicit_dropout_fix.json",
+      "bytes": 367,
+      "sha256": "9ee540b6ab2b2d7826abc43bf306103de7c8e5aa86705ab0878a2a6a9ec0d25f"
+    },
+    {
+      "source_relative": "initializations/transformer/step0.json",
+      "export_relative": "artifacts/initializations/transformer/step0.json",
+      "bytes": 375,
+      "sha256": "6d9ff0dc6495b7ac6672b40cad736a20d0406b12cc84bb6e23c1a0ded1a91662"
+    },
+    {
+      "source_relative": "models/archdev001_gru_canonical_cycle_descents/completed.json",
+      "export_relative": "artifacts/models/archdev001_gru_canonical_cycle_descents/completed.json",
+      "bytes": 5257,
+      "sha256": "c1e55fe5a7d2162c00b1bcc19ec5bc140ca1ac7d7ce04b6bbe5421863ca6375b"
+    },
+    {
+      "source_relative": "models/archdev001_gru_canonical_cycle_peaks/completed.json",
+      "export_relative": "artifacts/models/archdev001_gru_canonical_cycle_peaks/completed.json",
+      "bytes": 5230,
+      "sha256": "5025223955f2cb8e7d82f12d1602edf237a413b780667afb33f834419163794b"
+    },
+    {
+      "source_relative": "models/archdev001_gru_canonical_cycle_recoils/completed.json",
+      "export_relative": "artifacts/models/archdev001_gru_canonical_cycle_recoils/completed.json",
+      "bytes": 5205,
+      "sha256": "d10b0206589d2291ad78a2b7cd9669d49648b36e9432f678da38661b8d7be991"
+    },
+    {
+      "source_relative": "models/archdev001_gru_canonical_cycle_valleys/completed.json",
+      "export_relative": "artifacts/models/archdev001_gru_canonical_cycle_valleys/completed.json",
+      "bytes": 5219,
+      "sha256": "be0cb8b0a1f941c6a7e7885e16e22d737ad0073f242f4f6a74def3e4cb4d9647"
+    },
+    {
+      "source_relative": "models/archdev001_gru_one_line_descents/completed.json",
+      "export_relative": "artifacts/models/archdev001_gru_one_line_descents/completed.json",
+      "bytes": 5172,
+      "sha256": "6ea2f2aa12cc48910fb3b8c1931b1482aaf01b5eae0f932d912d80ec2ba703b6"
+    },
+    {
+      "source_relative": "models/archdev001_gru_one_line_peaks/completed.json",
+      "export_relative": "artifacts/models/archdev001_gru_one_line_peaks/completed.json",
+      "bytes": 5045,
+      "sha256": "64ef25ca28787042a708e6df9447e36b26cd3d686a2c75d698d1185ffab17c6c"
+    },
+    {
+      "source_relative": "models/archdev001_gru_one_line_recoils/completed.json",
+      "export_relative": "artifacts/models/archdev001_gru_one_line_recoils/completed.json",
+      "bytes": 5227,
+      "sha256": "fed62f787e08268198fdac6c36fa0f36ef1f7463c11dfd503bb6a088ad816675"
+    },
+    {
+      "source_relative": "models/archdev001_gru_one_line_valleys/completed.json",
+      "export_relative": "artifacts/models/archdev001_gru_one_line_valleys/completed.json",
+      "bytes": 5221,
+      "sha256": "73c2a5d70bd98e6eb2e22d24b104117cc6cb7c5465b9625241e072e0cfa3ca46"
+    },
+    {
+      "source_relative": "models/archdev001_transformer_canonical_cycle_descents/completed.json",
+      "export_relative": "artifacts/models/archdev001_transformer_canonical_cycle_descents/completed.json",
+      "bytes": 5269,
+      "sha256": "b65753be96eee40e64b1b3ba1d332006b04336892d5bb473d9c785149272bf45"
+    },
+    {
+      "source_relative": "models/archdev001_transformer_canonical_cycle_peaks/completed.json",
+      "export_relative": "artifacts/models/archdev001_transformer_canonical_cycle_peaks/completed.json",
+      "bytes": 5244,
+      "sha256": "d8cbb2119f330add099aa7e478a3d4b2b4d1b15a7ec8c1a805a7b97d6673bba4"
+    },
+    {
+      "source_relative": "models/archdev001_transformer_canonical_cycle_recoils/completed.json",
+      "export_relative": "artifacts/models/archdev001_transformer_canonical_cycle_recoils/completed.json",
+      "bytes": 5222,
+      "sha256": "4f8cc344e56caf9f920156a9aa99671746cfc2df5576da8ee64fafca22e63c1b"
+    },
+    {
+      "source_relative": "models/archdev001_transformer_canonical_cycle_valleys/completed.json",
+      "export_relative": "artifacts/models/archdev001_transformer_canonical_cycle_valleys/completed.json",
+      "bytes": 5252,
+      "sha256": "ee5efffc483160412a1508598b35cbbc860e42d611248bef6670a8c7b845c824"
+    },
+    {
+      "source_relative": "models/archdev001_transformer_one_line_descents/completed.json",
+      "export_relative": "artifacts/models/archdev001_transformer_one_line_descents/completed.json",
+      "bytes": 5225,
+      "sha256": "7514fe76f6698405166f728f8129c0c5b3e71ebb92f27866fbd741fe5b440003"
+    },
+    {
+      "source_relative": "models/archdev001_transformer_one_line_peaks/completed.json",
+      "export_relative": "artifacts/models/archdev001_transformer_one_line_peaks/completed.json",
+      "bytes": 5202,
+      "sha256": "7e6d7a45a6c76f996e988ef2afb0e8973064ac9ef5a5a3884c065993fc56fe31"
+    },
+    {
+      "source_relative": "models/archdev001_transformer_one_line_recoils/completed.json",
+      "export_relative": "artifacts/models/archdev001_transformer_one_line_recoils/completed.json",
+      "bytes": 5228,
+      "sha256": "97118cf492031d9f45a3335ab34e7d314b94764d7e4ad048fd93408d1192a5f1"
+    },
+    {
+      "source_relative": "models/archdev001_transformer_one_line_valleys/completed.json",
+      "export_relative": "artifacts/models/archdev001_transformer_one_line_valleys/completed.json",
+      "bytes": 5243,
+      "sha256": "cc831c15cd886878a3ffd6769102609a320c5eda6141278bbf39e73a836007a4"
+    },
+    {
+      "source_relative": "overfit/gru_canonical_cycle_descents/result.json",
+      "export_relative": "artifacts/overfit/gru_canonical_cycle_descents/result.json",
+      "bytes": 2141,
+      "sha256": "a2f84d461643423f229f3f74fde55b7f80bb688da71dbb0cbc5566562ccdc7c7"
+    },
+    {
+      "source_relative": "overfit/gru_canonical_cycle_peaks/result.json",
+      "export_relative": "artifacts/overfit/gru_canonical_cycle_peaks/result.json",
+      "bytes": 2111,
+      "sha256": "1e76348bdcfd92e8c4faeeabc6181a49888440c7dd94c7a5e64bf5ee13dcc315"
+    },
+    {
+      "source_relative": "overfit/gru_canonical_cycle_recoils/result.json",
+      "export_relative": "artifacts/overfit/gru_canonical_cycle_recoils/result.json",
+      "bytes": 2115,
+      "sha256": "67ba6363392ca32adbbcb150a59f1b0e9885cf1bc77a1646c1b6418ed830c67b"
+    },
+    {
+      "source_relative": "overfit/gru_canonical_cycle_valleys/result.json",
+      "export_relative": "artifacts/overfit/gru_canonical_cycle_valleys/result.json",
+      "bytes": 2116,
+      "sha256": "3007805941c44900a821c06da64c97695981657c1ea3e8e7a89125fb3839c9f8"
+    },
+    {
+      "source_relative": "overfit/gru_one_line_descents/result.json",
+      "export_relative": "artifacts/overfit/gru_one_line_descents/result.json",
+      "bytes": 2115,
+      "sha256": "9a3530dafec948ebe456e2430810d5ca2d2d06ad25fea6ae6bfaedf8df80ee1d"
+    },
+    {
+      "source_relative": "overfit/gru_one_line_peaks/result.json",
+      "export_relative": "artifacts/overfit/gru_one_line_peaks/result.json",
+      "bytes": 2102,
+      "sha256": "40a4d5a1e50412afca9be75f7f585a3275bfcb77af9ad1b92e6a21d5f16aa207"
+    },
+    {
+      "source_relative": "overfit/gru_one_line_recoils/result.json",
+      "export_relative": "artifacts/overfit/gru_one_line_recoils/result.json",
+      "bytes": 2083,
+      "sha256": "27a6b7677890af14d711c56c6b6121f4fdf65fc9c1e1538f79a62d4afdbb7d61"
+    },
+    {
+      "source_relative": "overfit/gru_one_line_valleys/result.json",
+      "export_relative": "artifacts/overfit/gru_one_line_valleys/result.json",
+      "bytes": 2134,
+      "sha256": "c04a457f4c2a3f3fde780aca53ad5e5c4b86485aecbe4a009e335ad071d32849"
+    },
+    {
+      "source_relative": "overfit/transformer_canonical_cycle_descents/result.json",
+      "export_relative": "artifacts/overfit/transformer_canonical_cycle_descents/result.json",
+      "bytes": 2061,
+      "sha256": "3e3cbda6e46f6be9d0d863f9e16c7f1db436cd75c693091cb82fd34c098a4692"
+    },
+    {
+      "source_relative": "overfit/transformer_canonical_cycle_peaks/result.json",
+      "export_relative": "artifacts/overfit/transformer_canonical_cycle_peaks/result.json",
+      "bytes": 2057,
+      "sha256": "3958a5bd7b9a110efe70b0db9bdb9ee6ed1bfe9fbca7b6bf5958e4caba11a2e7"
+    },
+    {
+      "source_relative": "overfit/transformer_canonical_cycle_recoils/result.json",
+      "export_relative": "artifacts/overfit/transformer_canonical_cycle_recoils/result.json",
+      "bytes": 2059,
+      "sha256": "c2e6edb8465c44ba647e0151dec1241f2ef8a997caff776f17f243375ed8adcf"
+    },
+    {
+      "source_relative": "overfit/transformer_canonical_cycle_valleys/result.json",
+      "export_relative": "artifacts/overfit/transformer_canonical_cycle_valleys/result.json",
+      "bytes": 2060,
+      "sha256": "1a7a4924064fee618057467d27bbb73d50784597c63a8802018e788324af6271"
+    },
+    {
+      "source_relative": "overfit/transformer_one_line_descents/result.json",
+      "export_relative": "artifacts/overfit/transformer_one_line_descents/result.json",
+      "bytes": 2054,
+      "sha256": "9e8c96884d31ba54eee42210ad1527e17860ad072d136c8e03030c79291768c2"
+    },
+    {
+      "source_relative": "overfit/transformer_one_line_peaks/result.json",
+      "export_relative": "artifacts/overfit/transformer_one_line_peaks/result.json",
+      "bytes": 2050,
+      "sha256": "acfdf632121d2976b7306cd0fb70aa79422d58539c68b5505070c7245ec28fa6"
+    },
+    {
+      "source_relative": "overfit/transformer_one_line_recoils/result.json",
+      "export_relative": "artifacts/overfit/transformer_one_line_recoils/result.json",
+      "bytes": 2053,
+      "sha256": "a269ddb78920d968dd664e6a7f5135ba58fb47c8dd0f85aa9b5cc40a5246cccf"
+    },
+    {
+      "source_relative": "overfit/transformer_one_line_valleys/result.json",
+      "export_relative": "artifacts/overfit/transformer_one_line_valleys/result.json",
+      "bytes": 2051,
+      "sha256": "1c771c90d8dee9c7936707c95049602b1c8088884525b6cf5b99389a80bba4d5"
+    },
+    {
+      "source_relative": "overfit_summary.json",
+      "export_relative": "artifacts/overfit_summary.json",
+      "bytes": 39796,
+      "sha256": "8dc13e56c8c295dba2066254ac573276cd323bb0f28a9fbc91f97e3ac1ad3b50"
+    },
+    {
+      "source_relative": "parallel_execution.json",
+      "export_relative": "artifacts/parallel_execution.json",
+      "bytes": 1684,
+      "sha256": "df605cea95dff9f6a149f427c91f667a15ef9b7086f19e02d6720cefb4249e6c"
+    },
+    {
+      "source_relative": "parallel_middle_execution.json",
+      "export_relative": "artifacts/parallel_middle_execution.json",
+      "bytes": 1194,
+      "sha256": "93482a67708151ab888fa6619527a857db586d72d08e34d7cea94aa959def29d"
+    },
+    {
+      "source_relative": "parallel_recoils_execution.json",
+      "export_relative": "artifacts/parallel_recoils_execution.json",
+      "bytes": 541,
+      "sha256": "d1b8ebbf340cfbb4b369746174d6dc03dad90375fc8d9952d23913ddbc65f60b"
+    },
+    {
+      "source_relative": "parallel_reserved_execution.json",
+      "export_relative": "artifacts/parallel_reserved_execution.json",
+      "bytes": 542,
+      "sha256": "766d50b40b6207c9f52532737e8f580f84eaab2d1436bc55bfb0e9d9f97a22d3"
+    },
+    {
+      "source_relative": "preflight_driver_state.json",
+      "export_relative": "artifacts/preflight_driver_state.json",
+      "bytes": 145,
+      "sha256": "6b4d1a3aa459a0704c25aa49d8692fea29568d70286f780bec7dade30056962e"
+    },
+    {
+      "source_relative": "protocol.json",
+      "export_relative": "artifacts/protocol.json",
+      "bytes": 29346,
+      "sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9"
+    },
+    {
+      "source_relative": "repair_cpu_evaluation_check.json",
+      "export_relative": "artifacts/repair_cpu_evaluation_check.json",
+      "bytes": 2552,
+      "sha256": "bb93385aba86c313b6c7bace00b89613de930f0dbe2fa0005661f91853dd10fa"
+    },
+    {
+      "source_relative": "repair_cpu_evaluation_check_before_development_exclusion_fix.json",
+      "export_relative": "artifacts/repair_cpu_evaluation_check_before_development_exclusion_fix.json",
+      "bytes": 2431,
+      "sha256": "c3c76b9430c2e1a1c21b9d3b652f92e616a72a9c5b17dfab43c5d8b473e2ecbe"
+    },
+    {
+      "source_relative": "repair_cpu_evaluation_check_before_explicit_dropout_fix.json",
+      "export_relative": "artifacts/repair_cpu_evaluation_check_before_explicit_dropout_fix.json",
+      "bytes": 2516,
+      "sha256": "f7e019bc310fff488918e90601cefe04a832fef2388484778fadc860e0ff4dfd"
+    },
+    {
+      "source_relative": "report.txt",
+      "export_relative": "artifacts/report.txt",
+      "bytes": 10912,
+      "sha256": "5f8dbb11a88a4caf59b0cce93c6e9ca76f9ff2d1390719daa2fdd1cfda391b9d"
+    },
+    {
+      "source_relative": "resume/gru_canonical_cycle/result.json",
+      "export_relative": "artifacts/resume/gru_canonical_cycle/result.json",
+      "bytes": 996,
+      "sha256": "5cc91bec6a74e917e2371a4b0e7cab92b3e11b82982ab687b678aac90a579941"
+    },
+    {
+      "source_relative": "resume/gru_one_line/result.json",
+      "export_relative": "artifacts/resume/gru_one_line/result.json",
+      "bytes": 975,
+      "sha256": "5ff50abfade0a27714102f227532c2b00bd4b0742a154611e0bc4afd4c51ab87"
+    },
+    {
+      "source_relative": "resume/transformer_canonical_cycle/result.json",
+      "export_relative": "artifacts/resume/transformer_canonical_cycle/result.json",
+      "bytes": 1020,
+      "sha256": "30209021a18f8af09312e36b2988c5731d37b44eff827e739b3fdf13e3e2b7d9"
+    },
+    {
+      "source_relative": "resume/transformer_one_line/result.json",
+      "export_relative": "artifacts/resume/transformer_one_line/result.json",
+      "bytes": 999,
+      "sha256": "25e6372a7272f38c2af2116c7efd5d9ededb4b3edbadf8b239ba09544f287062"
+    },
+    {
+      "source_relative": "resume_summary.json",
+      "export_relative": "artifacts/resume_summary.json",
+      "bytes": 4447,
+      "sha256": "c5719aaaf12576b6968a59a42eebd4b2ec4057bb105dc64b358149a94a0f8fca"
+    },
+    {
+      "source_relative": "source_learning.csv",
+      "export_relative": "artifacts/source_learning.csv",
+      "bytes": 2178,
+      "sha256": "9323e6aeac42ffe36bda37f361ac990eb140efa1a3f710df6636d53fd4f43faf"
+    },
+    {
+      "source_relative": "task_accuracy_length.csv",
+      "export_relative": "artifacts/task_accuracy_length.csv",
+      "bytes": 138578,
+      "sha256": "9fd8a699325441ac63a00750f918f3a74a11864b8c9826897014d33bfe904de8"
+    },
+    {
+      "source_relative": "training_complete.json",
+      "export_relative": "artifacts/training_complete.json",
+      "bytes": 326,
+      "sha256": "545d7b4c440db9a335f78749f5e701af534d12725bb5e1411cf11fb7f976259b"
+    },
+    {
+      "source_relative": "training_manifest.json",
+      "export_relative": "artifacts/training_manifest.json",
+      "bytes": 4491,
+      "sha256": "85d18a28ddf76549de669aebf352cb13dc101a3fa02569568faa3d52c7b2a778"
+    },
+    {
+      "source_relative": "worlds/archdev001/data_audit.json",
+      "export_relative": "artifacts/worlds/archdev001/data_audit.json",
+      "bytes": 2102,
+      "sha256": "9a48d9aec89809a2f3d5672ac186a1e3006be9620d9bb5cdad11042f193dba74"
+    },
+    {
+      "source_relative": "worlds/historical_input_hashes.json",
+      "export_relative": "artifacts/worlds/historical_input_hashes.json",
+      "bytes": 708,
+      "sha256": "7a599b3d8ec4943cdff8dfacb6b17c0ef9e13ae249caca1796f3dcd7c91a264c"
+    }
+  ],
+  "script_sha256": "d74b74e7c81fed7b0f6c814d490b8170f389545b50fe5b49f86b09417992aa3f",
+  "length_baseline_supplement": {
+    "status": "complete",
+    "added_utc": "2026-10-10T10:10:20.667856+00:00",
+    "added_client_date": "2026-10-10",
+    "client_timezone": "America/Los_Angeles",
+    "post_protocol_descriptive": true,
+    "fixture_only": false,
+    "reason": "Engineering review noted that step-0+10pp gate and roughly30% early accuracy can reflect length-dependent label majority; added to describe content-blind baseline, not modify main metrics or gates.",
+    "fixed_training_majority_rule": "For each task/length use only source train label counts; ties choose smallest label. Apply same frozen predictor to every test action and every model.",
+    "tasks": [
+      "descents",
+      "recoils",
+      "peaks",
+      "valleys"
+    ],
+    "actions": [
+      "identity",
+      "complement",
+      "inverse"
+    ],
+    "label_array_order": [
+      "anti_fixed_points",
+      "components",
+      "deficiencies",
+      "descents",
+      "exceedances",
+      "fixed_points",
+      "global_descents",
+      "lds_length",
+      "left_to_right_maxima",
+      "left_to_right_minima",
+      "lis_length",
+      "longest_decreasing_run",
+      "longest_increasing_run",
+      "peaks",
+      "recoils",
+      "valleys"
+    ],
+    "source_data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+    "statistic": "Model accuracy minus training-defined length-majority accuracy, fixed1/21 average; no p-values.",
+    "main_metric_or_gate_or_budget_changed": false,
+    "no_selected_samples_or_retraining": true,
+    "counts_rows": 10416,
+    "complete_model_length_rows": 2016,
+    "interpretation": "Above this baseline shows more than this particular length-only predictor; below does not prove absence of permutation-content use."
+  }
+}

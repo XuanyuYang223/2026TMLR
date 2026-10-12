@@ -1,0 +1,39 @@
+{
+  "hook_and_suffix_checks": 198,
+  "max_abs": 7.62939453125e-06,
+  "parameters_unchanged": true,
+  "input_geometry_checks": {
+    "status": "passed",
+    "new_source_training": 0,
+    "device": "CPU",
+    "rng_seed": 2026100961,
+    "maximum_absolute_errors": {
+      "position_centering": 1.3322676295501878e-15,
+      "position_metric_invariance": 4.440892098500626e-16,
+      "token_lookup_gram": 1.1368683772161603e-13,
+      "gram_feature_metrics": 3.1086244689504383e-15,
+      "independent_covariance_cka": 2.220446049250313e-16,
+      "onehot_theoretical_cka": 0.0
+    },
+    "controls_checked": [
+      "within_length",
+      "answer_strata"
+    ],
+    "duplicate_exclusion_and_sample_id_ties": true,
+    "static_onehot_has_no_initialization_or_increment": true,
+    "relation_rows_schema_and_same_initial_trained_zero_delta": true,
+    "onehot_tie_numerical_boundary": {
+      "equal_gram_under_inverse": true,
+      "frozen_float_feature_knn": 0.8825,
+      "exact_integer_distance_knn": 1.0,
+      "interpretation": "Floating centering can spuriously split exact onehot distance ties. Input within-length KNN uses raw integer Gram, mathematically identical Euclidean distances, with the predeclared sample-ID tie rule. Hidden feature metrics are unchanged."
+    },
+    "structural_constant_branches": {
+      "embedding_end": "ONE_END token and its position are fixed within length.",
+      "embedding_value_mean": "Every value 1..n occurs once; the mean discards order."
+    },
+    "frozen_metric_code": "/home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/metrics.py",
+    "note": "Exact algebraic input metric implementation; source weights and source outputs unchanged."
+  },
+  "threshold": 2e-05
+}

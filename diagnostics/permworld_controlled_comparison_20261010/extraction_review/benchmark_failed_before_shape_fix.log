@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers.py", line 463, in <module>
+    {'benchmark':benchmark,'extract':extract}[args.stage](args.protocol)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers.py", line 326, in benchmark
+    assert layer_error <= TOLERANCE and legacy_error <= TOLERANCE, (key,n,action,layer_error,legacy_error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('archdev001_transformer_one_line_descents|trained|test', 10, 0, 4.100799560546875e-05, 0.0)

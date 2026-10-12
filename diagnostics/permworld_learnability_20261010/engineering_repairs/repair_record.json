@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-10T16:30:39.775681+00:00",
+  "freeze_before_sha256": "0950267c11c196c35193e7a0a3b8164068ee93ddf795287ed206e13826a90e47",
+  "source_version_before": "05751d8922314e2e2ff905c3e06806b3e0ca6db60c9ab7c728061bf2b7cec861",
+  "source_version_after": "ef34bae9d23f2f1cd81233d8b677d41710404a8d913a1e432127925f67ba0ef5",
+  "changed_files": {
+    "experiments/permworld_learnability_20261010/report.py": {
+      "before": "657c773b155fd3a303d7ae1dbee5c6522b19de23c19ca9b9802282f6776fc22b",
+      "after": "6bbe03f2eab958893e1972934d0d982c693b880843d25e648b1a812124a3c651"
+    },
+    "experiments/permworld_learnability_20261010/checks.py": {
+      "before": "cccf2f8f72917689f9da04d76978eec46f74cfe11b41cd23e3f83a76ee82f746",
+      "after": "5e8984e0dcff8111887968d84e39de7b2e77496724c20343e6bbe344af3e51b5"
+    }
+  },
+  "reason": "CPU-only engineering repairs: independent CE FP32 rounding and reporter train1/validation3 action-axis schema.",
+  "protocol_unchanged": true,
+  "training_code_unchanged": true,
+  "model_data_initial_weights_unchanged": true,
+  "new_learning_results_observed": false,
+  "GPU_budget_started": false,
+  "actual_step0_retains_original_constructor_source_version": true,
+  "FP32_probe_max_difference": 1.430511474609375e-06,
+  "FP64_probe_max_difference": 2.6645352591003757e-15
+}

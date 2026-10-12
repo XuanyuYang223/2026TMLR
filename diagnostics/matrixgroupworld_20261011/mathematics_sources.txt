@@ -1,0 +1,11 @@
+定义来源（2026-10-11读取）
+SageMath GL(n,R)官方定义：
+https://doc.sagemath.org/html/en/reference/groups/sage/groups/matrix_gps/linear.html
+其定义为在基环R上可逆的n×n矩阵；本任务基域F2，满秩按GF2精确消元。
+SageMath精确矩阵参考：
+https://doc.sagemath.org/html/en/reference/matrices/sage/matrix/matrix2.html
+外部定义不替代本轮独立公式、运算、编码及闭合轨道校验，也不意味着使用Sage生成数据。
+
+报告必须保留：转置是群反自同构；左右乘固定群元素是作用而不是群同态。
+四关系实例只有转置和固定乘法两类，公式也成立于一般二值方阵。
+weight是普通整数计数，数据含GF2线性混合；不主张GL特有学习、学会群乘法或覆盖群论。

@@ -1,0 +1,11 @@
+{
+  "reason": "Under100MiB scientific CSV/HTML belong in ordinary Git; portable checker and frozen report relative links need them. Original bytes kept.",
+  "paths": [
+    "CURRENT_RESEARCH.txt",
+    "README.md",
+    "diagnostics/permworld_eight_relations_20261010/per_length_results.csv",
+    "diagnostics/permworld_layers_20261009/layer_metric_results.csv",
+    "requirements-dev.txt",
+    "requirements.txt"
+  ]
+}

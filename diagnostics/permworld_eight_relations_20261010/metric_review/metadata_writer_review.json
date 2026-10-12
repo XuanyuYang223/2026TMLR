@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "review_type": "read_only_CPU_metadata_writer_review",
+  "writer_source_sha256": {
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/runner.py": "c5dbef4980658952d2f317b0c3eed1c277a9b6455510bc5fad02ab1b646d48df",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/queue.py": "829bb95ed4eee20674aed88a3541bd621b3763cf64cc5e8e50a2360a513dacf6"
+  },
+  "protocol_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+  "training_source_version_sha256": "27cb40ee43341fa326e6b455d989b6e70b31ee421d86f923262117448d7cf476",
+  "all_training_source_hashes_match": true,
+  "saved_failure_exactly_matches_guard": true,
+  "checkpoint_run_id": "eightrel001_transformer_one_line_anti_fixed_points",
+  "checkpoint_sha256": "4c6bd2ea4e953ea5c3cf37f6ab8160cb16bbc333e46d779284793de1b567eb6c",
+  "checkpoint_step": 20000,
+  "finite_gradient_updates": 20000,
+  "validation_checkpoint_steps": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000,
+    7000,
+    8000,
+    9000,
+    10000,
+    11000,
+    12000,
+    13000,
+    14000,
+    15000,
+    16000,
+    17000,
+    18000,
+    19000,
+    20000
+  ],
+  "parameters_finite": true,
+  "checkpoint_bytes_unchanged_after_review": true,
+  "source_updates_by_reviewer": 0,
+  "real_model_forward_or_optimizer_steps": 0,
+  "synthetic_routing_checks": [
+    "partial_checkpoint_routes_to_frozen_training",
+    "exact_20k_checkpoint_routes_to_validated_sidecar",
+    "unrelated_TypeError_rejected",
+    "same_message_wrong_source_rejected",
+    "non_TypeError_propagates",
+    "exact_frozen_writer_failure_routes_to_finalizer",
+    "finalizer_rejects_step_mismatch_before_write",
+    "finalizer_rejects_finite_gradient_updates_mismatch_before_write",
+    "finalizer_rejects_data_sha256_mismatch_before_write",
+    "finalizer_rejects_initial_parameter_sha256_mismatch_before_write",
+    "finalizer_rejects_starting_rng_hash_mismatch_before_write"
+  ],
+  "limitations": [
+    "CPU model construction in the finalizer reseeds temporary process RNG. The guaranteed invariance concerns saved checkpoint parameter/optimizer/RNG bytes and training trajectory; subprocess isolation prevents carrying this transient state into another source job.",
+    "The repair proves endpoint/provenance and metadata integrity; it adds no learning or mechanism evidence.",
+    "Unrelated TypeErrors fail via assertions retaining exception context; they are not repaired."
+  ]
+}

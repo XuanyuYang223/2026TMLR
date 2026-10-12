@@ -1,0 +1,139 @@
+Read-only source and current Git-tree selection review
+
+The reviewed workspace is /home/yangx/ICML; its origin is
+https://github.com/XuanyuYang223/2026TMLR.git. No Git mutation, upload, original
+file edit, model import/construction, forward pass, or scientific score was
+performed by this review. All outputs are outside the repository.
+
+The candidate inventory contains 6,916 original-workspace paths. Of the 5,518
+tracked paths, 440 are conservatively retained and 5,078 are suggested for
+index-only exit. This is a per-file suggestion; the parent must review the
+explicit staged changes and preserve the local originals and old history.
+The keep list contains 1,838 current/support paths, including 299 release
+artifact candidates. The 1,539 ordinary Git/entry candidates occupy about
+528.75 MB in apparent bytes; release candidates in this workspace alone occupy
+13.26 GB. This is not the complete three-domain F-drive artifact inventory,
+not SHA-deduplicated package size, and not physical disk occupancy.
+
+Current scientific scope retained:
+  PermWorld: 64 fixed 20k sources, consisting of 16 exactly reused first-round
+    sources and 48 added sources; eight relations, two encodings and two model
+    configurations. Keep the actual protocols, freeze/amendment chain,
+    completion manifest, source learning, whole signed/undefined result tables,
+    model/cache identity metadata, final readers and engineering failure logs.
+  GraphWorld: four fixed 20k sources, one data world, four dependent relation
+    instances; preserve raw, answer and answer+density controls and all signs.
+  MatrixGroupWorld: eight fixed 20k sources, two independent data/init units;
+    R1/R3 primary, R2/R4 supplemental. Preserve the original
+    completed_with_verification_caveat status, scientific_analysis_complete
+    false, and 64 passed / 2 failed / 6 undefined-consistent fixed checks.
+  representation_pairing_review: 480 PermWorld and 12 GraphWorld candidate
+    model pairs, three mathematical catalogue categories including the empty
+    other_known_exact category, all candidate distributions/ranks, actual W
+    formula counts, original designated score checks and independent readers.
+
+Direct support is retained from the old CKA initialization audit, the
+82-source multi-layer diagnostic, encoding engineering/development, controlled
+comparison, learnability and fullset source-score checks. These include null
+and negative results and failed original engineering runs. The 8k learning
+development cohort remains separate from the main 20k cohort. Older
+constructor-rebuilt initialization references remain grade C and identity
+unverified; they are not new real step-0 files. True saved step-0/RNG sources
+and their exact sharing identities are a different, newer provenance chain.
+
+The mixed scope inventory has 624 historical model rows and includes unrelated
+F17/F5/poly sources. Keeping its frozen audit/provenance does not select all
+624 checkpoints or their independent results. Actual 82-source extraction
+selects evaluation_pairs' (cohort,left/right_id) joined to training_inventory's
+(cohort,logical_position). Do not use stale left_checkpoint/right_checkpoint
+strings in the pair record. The old CKA inventory separately selects 98
+specialist/Property32 models. The artifact reviewer owns their large-file SHA
+and physical package inventory.
+
+The resolved conservative Python source closure contains 196 files and 1,605
+import/provenance edges. Required old common implementations include
+experiments/longrun_attention.py, permutation_audit.py, algebra.py, analysis.py,
+permworld_combinations.py and longrun_engine.py. All current code uses the
+original model/vocabulary/property definitions through permworld_encoding.
+The exact inherited metrics.py and independent_metrics.py are required.
+Only named modules are retained; associated LIS, finite-field, polynomial,
+F17 composition/readout-null/GELU results and paper remain outside the current
+tree. The current paper/*.tex files describe unseen composition and readout
+nullspace experiments; no current representation-pairing manuscript was found.
+
+Two small conservative helper candidates, experiments/models.py and
+field_symmetry.py, are function-local imports of the inherited mixed
+evaluator's unused evaluate_field stage. They are explicitly flagged, rather
+than silently including the old field study. The parent can retain the few
+unchanged helper files for a complete module closure or declare the new
+wrapper restricted to PermWorld stages and record their omission. No old
+field result, config or checkpoint is selected by this exception.
+
+The 14-file upstream subset and its exact small-file hashes are listed in
+source_snapshot_manifest.csv / source_closure_review.json. The clean local
+external/neurips checkout is at 74f0de2017115f06f11b7285366b66e7e8431d30.
+The subset includes the relation TOML and the __init__, math_ops, passage,
+models, training, generate, CKA and recursively imported definitions. The
+upstream checkout has no discovered LICENSE/COPYING/NOTICE, and pyproject has
+no license declaration. Record this fact and origin; do not invent a license.
+The frozen pyproject advertises extra unrelated legacy commands not in this
+minimal module subset. Do not promise that all those commands are bundled.
+external/neurips has a nested .git and is ignored: add specific blob paths or
+copy them to a provenance snapshot, not the whole nested repository/gitlink.
+
+498 source-freeze references were checked against candidate small-file SHA:
+472 match the current logical file, and 12 older references have matching
+preserved copies (including the authentic F-drive before-dropout common.py
+copy). 14 repeated references (7 unique expected source hashes) still refer
+to pre-repair versions not located across the full related artifact inventory. These
+are historical development/preflight before-freeze copies, not missing current
+main-study source definitions. The artifact reviewer was asked to locate the
+original small code copies in the support F roots. Preserve before manifests,
+amendments and missing-status information; never synthesize source bytes or
+change expected historical SHA. See frozen_source_reference_audit.csv.
+
+All six unresolved local import records are source copies preserved before an
+engineering repair. They require the original package context for execution;
+they are forensic evidence, not standalone new runtime modules. No unresolved
+current Python runtime import was found by this static review. AST analysis
+cannot establish all dynamic CLI/data dependencies and does not execute them.
+
+Publication tooling needs explicit versioned absolute-path mapping. Frozen
+scientific source/config contains original /home and F paths; add wrappers
+without editing metrics, thresholds, samples, source labels or result values.
+Keep the original named-file start/end protection audit as historical evidence,
+not a requirement to restore every removed F17 file and not a whole-disk or
+continuous execution proof. Upstream 16m source-corpus manifests are relevant
+to historical exclusion and probe provenance. Fixed cached-input replay uses
+the saved datasets; regenerating historical exclusions requires its shards.
+Any unbundled shard coverage must be stated separately.
+
+The current broad requirements files do not pin the actual recorded environment.
+The Matrix record is Python 3.13.13, torch 2.11.0+cu128, numpy 2.4.4,
+matplotlib 3.11.2, threadpoolctl 3.6.0. Add a publication-specific dependency
+lock and separate standard-library saved-table checks from full feature metric
+runtime. Some retained legacy tests construct models or do forward/backward;
+they are not part of this task's no-new-forward publication verification.
+CURRENT_RESEARCH is outdated for Matrix/pairing-review and must be updated.
+README, ignore rules and CI/test scope are entry/tooling changes, not frozen
+scientific file changes. No blanket JSON/CSV/NPZ ignore is proposed here.
+
+Machine outputs:
+  keep_candidates.txt / .nul: ordinary Git paths to review/add explicitly
+  exit_tracked_candidates.txt / .nul: exact index-only exit candidates
+  release_candidate_paths.txt: existing workspace science artifact candidates
+  file_selection_candidates.csv: every path, rationale, size, small-file SHA,
+    upload method and reverse dependencies
+  dependency_edges.csv: imports, frozen source bindings, provenance-only edges
+  source_snapshot_manifest.csv: resolved Python source bytes and provenance
+  frozen_source_reference_audit.csv: current/before-version identity evidence
+  directory_decisions.csv: counts and size overview; mixed directories are
+    governed by per-file decisions, not directory-wide deletion globs
+  unresolved_imports.csv / uncertain_items.csv / source_closure_review.json
+
+Only files <=16 MiB were hashed here. Large checkpoint/array/package hashes
+are delegated to artifact_review to avoid duplicate disk reads. Long CSV/HTML
+and exact duplicate copied reports can move to a release package with logical
+path/SHA mapping and download links; scientific scope cannot be dropped.
+This review stops at suggestions. The parent performs the authorized normal
+commit/push/release and clean-clone validation, without rewriting history.

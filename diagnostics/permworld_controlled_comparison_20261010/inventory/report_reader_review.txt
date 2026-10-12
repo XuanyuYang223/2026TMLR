@@ -1,0 +1,41 @@
+首轮20k PermWorld受控比较：独立读者核查（通过）
+核查UTC：2026-10-10T21:19:50.637936+00:00
+范围：仅读CSV、JSON、生成的HTML/txt与主图；不载入模型/激活/原始标签，不重新计算CKA/邻域/Procrustes，不前向、不训练。
+冻结report.py SHA256：e20bdc5fcab530bbf4c39a1d465d11ee7f7532061584d8b2df84249ab6302add
+首次真实报表已生成。completion此刻为scientific_analysis_complete_report_pending，最终停止状态由根代理更新后刷新报表。
+
+一、首屏四类比较及图核查
+A 指标：8个配置×编码×关系单元的Bt三指标符号8/8同向，Delta7/8同向，全部主条件24行有效。8/8指指标之间同向，非8项全部为正：Transformer轮换取逆Bt三指标均负。
+唯一Delta方向不一致是GRU/一行/峰谷：CKA+0.257354，邻域-0.008532，负NRMSE Procrustes+0.411554。不可称三个指标完全一致，也不按绝对大小平均。
+B 配置：四项固定CKA主配置差及完整四分支均保留；TF3240448与GRU1660416参数未匹配。图B为所有条件的B0/Bt，GRU−TF差值在报告表中，不声称纯架构因果。
+C 编码：2/4出现Delta随编码翻转而Bt未翻转，分别Transformer峰谷、GRU取逆。Transformer取逆Bt也翻转，GRU峰谷Delta不翻转，均完整保留。
+  GRU取逆：一行B0=-0.616923、Bt=+0.067502、Delta=+0.684425；轮换B0=+0.800957、Bt=+0.079276、Delta=-0.721681。Gamma0=+1.417880，Gammat=+0.011774，GammaDelta=-1.406106。训练后两者仍偏好正确配对，不能把Delta翻转写成学习关系偏好翻转。
+  Transformer峰谷：一行B0=+0.600315、Bt=+0.338195、Delta=-0.262120；轮换B0=-0.780431、Bt=+0.056991、Delta=+0.837422。Gamma0=-1.380746，Gammat=-0.281204，GammaDelta=+1.099542。
+D 层：2/8固定CKA的Bt跨层变号，分别GRU一行取逆（-0.299907,-0.109719,+0.002726,+0.070542,+0.067502）与GRU轮换峰谷（-0.114372,-0.078519,+0.015328,+0.517251,+0.514493）；四层与final_norm分开，输入结束embedding32汇总行均未定义。
+主图four_part_main.png已实际目视检查：A三个独立指标坐标、B八条件、C四编码对照、D两关系的全部四分支/四层/最终归一化齐全；未定义embedding以图注明确，不绘浮点噪声或零效果。没有选取成功任务、层或长度。图C长配置名位于左侧边缘，数值、点及行身份仍可辨识。
+
+二、分解与完整性
+独立CSV算术核查主24条件B0/Bt/dc/dw/Delta，最大绝对误差=2.22e-16。完整288条件×21长度=6048行，每组长度10..30一一齐备，固定1/21，无按剩余长度重加权。
+主final_norm及output_prob两分支均完整含两控制×四指标；其它层按冻结范围只有CKA及U-centered敏感性。HTML保留raw、输出概率、U-centered、静态真值、同任务跨配置、全部contrast及全部逐长度表。
+对主三指标训练后正确/错误的解释保留原相似度：如Transformer一行取逆CKA，正确0.065974→0.119120（dc+0.053146），错误0.670857→0.026002（dw-0.644855），Delta+0.698000主要来自错误配对下降。不可写成正确表征大幅趋同。
+输出概率是从188词表logits中选合法数字0..30再归一化的条件概率；新增答案CE基于完整188词表，二者不同。不能以隐藏Delta减输出Delta推导额外机制。
+
+三、真实初始化与任务学习限制
+本次唯一主队列为首轮16模型20k。库存及提取审计已验证两编码在各配置内真实克隆step0；TF初始参数哈希03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab，GRU2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0。GRU显式dropout工程迁移保留21tensor逐值证据，不是重新seed重构；跨配置初始参数不相同。
+源学习4032行=192完整21长度组，所有init/trained、validation/test、identity/complement/inverse均呈现。八轮换模型validation identity准确率30.060%–41.685%，相对训练定义长度众数增量-0.428至+1.897pp；接近长度众数，不能称已掌握排列内容。一行GRU recoils也偏弱（38.802%，长度基线30.487%），弱条件未删除。
+因此编码/配置几何比较是固定预算结果，混有学习程度差异；单world和每配置单init不支撑确认性显著性、等价性或总体推广。第二轮8k模型完全排除；历史82仅附引用且真实初始化身份未验证。
+
+四、冻结report的两个展示缺口及独立附注建议（不改科学脚本）
+1. 初始答案CE共2016项NaN是已预声明缺失，不是模型数值失败：原缓存未保存；共享初始hidden不意味着任务特定logits/CE共享，故未新增任务特定初始化CE。原因已在source_learning.csv的answer_ce_reason及source_learning_audit.json，冻结报告仅展示未定义/缺失，建议最终reader附注明确。
+2. 冻结正文解释EOS为旧validation teacher-forced准确率，但未直接链接source_validation_eos_original.csv。该表16源齐全，旧EOS均100%，新旧原验证答案准确率signed差均0，新增CE为答案位置完整词表、不新增EOS前向。建议最终独立附注链接此表，不能把EOS当答案掌握。
+对应文件（报告根目录相对inventory）：../source_learning.csv；../source_learning_audit.json；../source_validation_eos_original.csv。
+
+五、审计与停止
+根独立validation审计passed：6048逐长度行、40602算术检查、996旧保护文件哈希不变；生成report_export_audit passed、无缺失绘图单元、无不完整source长度组。
+实际GPU提取管线壁钟160.16秒、CPU指标管线649.64秒包含I/O/校验，不是内核时间或核小时；并行阶段不能求和当任务总壁钟。
+本核查文件是报表后读者审查，不改变冻结数据、指标、模型、预算或分析选择。后续仅由根代理写最终completion并刷新展示停止状态；没有自动下一实验/训练。
+
+本次首次报表输出SHA（最终停止状态刷新会改变文本/HTML）：
+  reader_report.html adaa54840f973cff4b4fc511b5473a5cba4cf9d5d7e25be004b068d749db9dac
+  reader_report.txt 74de3350fd65ce2c2dd8b040359acfe9bb2062ef9f4bb3bcbdb32cc580d8e61a
+  four_part_main.png a4b0e6de3e24c7d9c2b26cbd1517ad45a081f528490a18fae1779829d49b1899

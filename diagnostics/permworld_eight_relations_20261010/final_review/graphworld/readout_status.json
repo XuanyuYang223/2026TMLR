@@ -1,0 +1,21 @@
+{
+  "status": "completed_readout",
+  "scientific_metrics_recomputed": 0,
+  "training_updates": 0,
+  "source_models": 4,
+  "relation_instances": 4,
+  "transform_types": 2,
+  "independent_worlds": 1,
+  "counts_are_coupled_not_independent_repetitions": true,
+  "primary_relation_rows": 4,
+  "component_coverage_rows": 2880,
+  "input_sha256": {
+    "geometry_per_n.csv": "7f34df10cc5ae58639e5038ec32a48da488e44ebd5382ebc70f7d967592c33eb",
+    "geometry_summary.csv": "473be0c62a53d6d80bfcc8d4105fa6bf00123b7b0bc98180271146cb320168e8",
+    "source_learning.csv": "0a387fa5c3f2f8b0df76765cc0a4146b01f84a8204871b4b2788084d97321d94",
+    "evaluation_complete.json": "a9597a0d0b05d8674aacf7499df1d29e27248a88f9671f5d5013ffbeb5a14b80"
+  },
+  "fixture_only": false,
+  "reader_sha256": "6c417d11426122d83da9568c26f43679033241e51c9ed10b49637a0a566a68e3",
+  "readout_freeze_sha256": "6a694aea9f316675ec5f232419207ae22ac1ca736761eb6aa80f9220bb14cc3c"
+}

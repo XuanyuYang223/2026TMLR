@@ -1,0 +1,189 @@
+PermWorld new development data/initializer identity review
+Status: PASS
+Scope: read-only integrity review. No source training, no geometry, no test-label decoding or outcome selection. Reserved test permutations were read only to verify orbit separation; no test labels, encodings, probabilities, predictions, or task accuracy were read.
+Preset: one new world; n10,11,12; four tasks x two encodings x two architectures =16; fixed8000 updates; persistentGPU wall-clock cap7200seconds.
+Train labels use identity-only action-axis1; validation labels use identity/complement/inverse action-axis3. Learning report decodes only identity from each. A reporter schema repair was independently detected before GPU source training; scientific data/training remain unchanged.
+Integrity checks:
+{
+  "cross_architecture_initial_parameter_identity_claimed": false,
+  "new_history_overlap": 0,
+  "new_orbit_members_checked": 86016,
+  "old_split_anchor_counts": {
+    "test": 10752,
+    "train": 86016,
+    "validation": 5376
+  },
+  "prior_archive_orbit_members_verified": 817152,
+  "same_saved_schedule_for_16_manifest_models": true,
+  "schedule_length_counts": {
+    "10": 2667,
+    "11": 2666,
+    "12": 2667
+  },
+  "test_length_counts": {
+    "10": 512,
+    "11": 512,
+    "12": 512
+  },
+  "train_length_counts": {
+    "10": 2048,
+    "11": 2048,
+    "12": 2048
+  },
+  "train_validation_encodings_decoded": 30720,
+  "train_validation_mathematical_label_cells": 245760,
+  "validation_length_counts": {
+    "10": 1024,
+    "11": 1024,
+    "12": 1024
+  }
+}
+Actual saved initializer checks:
+{
+  "gru": {
+    "actual_constructor_step0_verified": true,
+    "checkpoint_sha256": "ffbb94206e789fea3c839585d27161649041d71cab83dc4840bdba94fd1832e7",
+    "model_seed": 96100002,
+    "parameter_sha256": "4d3e260aebb1f5a88cf31d4767ccb05444988041f09297c6b364786d5cde7aaf",
+    "parameters": 1660416,
+    "saved_constructor_source_version_sha256": "05751d8922314e2e2ff905c3e06806b3e0ca6db60c9ab7c728061bf2b7cec861",
+    "tied_embeddings_verified": true,
+    "within_architecture_manifest_shared_initializer": true
+  },
+  "transformer": {
+    "actual_constructor_step0_verified": true,
+    "checkpoint_sha256": "91d86fc4c13e681a2a5035137d2f068c0a62164d8198e7058cd041b1562742bd",
+    "model_seed": 96100001,
+    "parameter_sha256": "c664ac301a7237dd5f0c9c8d546228e578304f083f6ef305945997708567c3d2",
+    "parameters": 3240448,
+    "saved_constructor_source_version_sha256": "05751d8922314e2e2ff905c3e06806b3e0ca6db60c9ab7c728061bf2b7cec861",
+    "tied_embeddings_verified": true,
+    "within_architecture_manifest_shared_initializer": true
+  }
+}
+Train-only majority baselines, scored on validation (never test):
+[
+  {
+    "n": 10,
+    "task": "descents",
+    "train_count": 744,
+    "train_fraction": 0.36328125,
+    "train_mode": 4,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.3671875
+  },
+  {
+    "n": 11,
+    "task": "descents",
+    "train_count": 817,
+    "train_fraction": 0.39892578125,
+    "train_mode": 5,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.3974609375
+  },
+  {
+    "n": 12,
+    "task": "descents",
+    "train_count": 708,
+    "train_fraction": 0.345703125,
+    "train_mode": 6,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.333984375
+  },
+  {
+    "n": 10,
+    "task": "recoils",
+    "train_count": 755,
+    "train_fraction": 0.36865234375,
+    "train_mode": 4,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.3779296875
+  },
+  {
+    "n": 11,
+    "task": "recoils",
+    "train_count": 824,
+    "train_fraction": 0.40234375,
+    "train_mode": 5,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.451171875
+  },
+  {
+    "n": 12,
+    "task": "recoils",
+    "train_count": 712,
+    "train_fraction": 0.34765625,
+    "train_mode": 6,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.345703125
+  },
+  {
+    "n": 10,
+    "task": "peaks",
+    "train_count": 1038,
+    "train_fraction": 0.5068359375,
+    "train_mode": 3,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.5205078125
+  },
+  {
+    "n": 11,
+    "task": "peaks",
+    "train_count": 1091,
+    "train_fraction": 0.53271484375,
+    "train_mode": 3,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.521484375
+  },
+  {
+    "n": 12,
+    "task": "peaks",
+    "train_count": 971,
+    "train_fraction": 0.47412109375,
+    "train_mode": 3,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.4521484375
+  },
+  {
+    "n": 10,
+    "task": "valleys",
+    "train_count": 1055,
+    "train_fraction": 0.51513671875,
+    "train_mode": 3,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.4990234375
+  },
+  {
+    "n": 11,
+    "task": "valleys",
+    "train_count": 1085,
+    "train_fraction": 0.52978515625,
+    "train_mode": 3,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.5390625
+  },
+  {
+    "n": 12,
+    "task": "valleys",
+    "train_count": 930,
+    "train_fraction": 0.4541015625,
+    "train_mode": 3,
+    "train_samples": 2048,
+    "validation_mode_accuracy": 0.466796875
+  }
+]
+Limitations: saved-initial identity is independently hashed/tensor-verified; no claim that two architectures share weights. Clone usage is enforced by the fixed manifest/training loader; actual trained checkpoint identity will require later source-stage audit. Hash-based historical rejection has a theoretical128-bit collision risk that rejects extra objects rather than admitting identical prior inputs. Only one data world is planned, and shared task models do not constitute independent world repetitions.
+Input SHA256:
+{
+  "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/historical_input_hashes.npy": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/initializations/gru/step0.json": "74c3682e40b84432e3fa01ca274e2e9f07b856368f4da783d2fbf2c76c97967c",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/initializations/gru/step0.pt": "ffbb94206e789fea3c839585d27161649041d71cab83dc4840bdba94fd1832e7",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/initializations/transformer/step0.json": "8b3bb1a7b1556766e3d7fba99f434fa4459c9318172a336b572716b40d0d5874",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/initializations/transformer/step0.pt": "91d86fc4c13e681a2a5035137d2f068c0a62164d8198e7058cd041b1562742bd",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/protocol.json": "1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/worlds/historical_input_hashes.npy": "c5a245c96a36b8286cd1172af2bd4a7df593be3ca4294a590b30c9869dc9c743",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/worlds/learningdev001/batch_indices.npy": "877b7f85289677ee44833005e58e8403cfc633fd39c72444aeca0e48c434026a",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/worlds/learningdev001/batch_lengths.npy": "27058f3d12ed9f6e5e9558ecc3b63f76105c33e74ce60f24a231021a48e80069",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/worlds/learningdev001/data.npz": "fdcfe9fa7d0089af4ec6f7b90108237ab6e1f57f2b80fb1140e051410938b8af"
+}

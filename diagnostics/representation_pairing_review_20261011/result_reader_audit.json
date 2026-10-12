@@ -1,0 +1,566 @@
+{
+  "status": "passed",
+  "protocol_sha256": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c",
+  "analysis_completion_sha256": "1076f5c0b7f7b833475f3f9ee28f54ae001a3104fdc7bd9230924282ba67a54c",
+  "analysis_audit_sha256": "1a1d528a7a1729e034e7a11463b1f26b053754ad4bcaedc98b8e7e5ee8b8ede4",
+  "reader_script_sha256": "bee33f6915bf4ccd403f180d2c8072469bb8e2e61328303c72d1d066bbed6396",
+  "candidate_scope": {
+    "mathematical_manifest_rows": 132,
+    "permworld_candidate_pairs": 480,
+    "graphworld_candidate_pairs": 12,
+    "designated_model_pairs": 36
+  },
+  "coverage": {
+    "pair_length_control_rows": 20268,
+    "pair_summary_rows": 996,
+    "category_summary_rows": 456,
+    "category_comparison_rows": 304,
+    "Gcat_rows": 228,
+    "group_count": 76
+  },
+  "stored_arithmetic_checks": {
+    "fixed_selected_pair_ids": [
+      "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in",
+      "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in",
+      "permworld__descent_inverse__gru__canonical_cycle__anti_fixed_points",
+      "permworld__descent_inverse__gru__canonical_cycle__recoils",
+      "permworld__descent_inverse__gru__one_line__anti_fixed_points",
+      "permworld__descent_inverse__gru__one_line__recoils",
+      "permworld__descent_inverse__transformer__canonical_cycle__anti_fixed_points",
+      "permworld__descent_inverse__transformer__canonical_cycle__recoils",
+      "permworld__descent_inverse__transformer__one_line__anti_fixed_points",
+      "permworld__descent_inverse__transformer__one_line__recoils"
+    ],
+    "fixed_selected_pair_phase_summaries": 44,
+    "pair_length_training_changes": 20268,
+    "pair_summary_training_changes": 996,
+    "category_all_mean_median": 456,
+    "category_comparisons": 304,
+    "common_support_comparisons": 228
+  },
+  "fixed_selected_summary_checks": [
+    {
+      "pair_id": "permworld__descent_inverse__transformer__one_line__anti_fixed_points",
+      "control": "raw_within_length",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.06675038205648487,
+      "stored_score": 0.06675038205648487,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__one_line__anti_fixed_points",
+      "control": "raw_within_length",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.007694423457954453,
+      "stored_score": 0.007694423457954453,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__one_line__anti_fixed_points",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.06380301852697158,
+      "stored_score": 0.06380301852697158,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__one_line__anti_fixed_points",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.01875582371902772,
+      "stored_score": 0.01875582371902772,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__canonical_cycle__anti_fixed_points",
+      "control": "raw_within_length",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.8101069767877498,
+      "stored_score": 0.8101069767877498,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__canonical_cycle__anti_fixed_points",
+      "control": "raw_within_length",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.008486891656438662,
+      "stored_score": 0.008486891656438662,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__canonical_cycle__anti_fixed_points",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.6584250315393066,
+      "stored_score": 0.6584250315393066,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__canonical_cycle__anti_fixed_points",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.010575983539979565,
+      "stored_score": 0.010575983539979565,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__one_line__anti_fixed_points",
+      "control": "raw_within_length",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.07626539191139065,
+      "stored_score": 0.07626539191139065,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__one_line__anti_fixed_points",
+      "control": "raw_within_length",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.008407963319852033,
+      "stored_score": 0.008407963319852033,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__one_line__anti_fixed_points",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.0770518049896737,
+      "stored_score": 0.0770518049896737,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__one_line__anti_fixed_points",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.029432169547390457,
+      "stored_score": 0.029432169547390457,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__canonical_cycle__anti_fixed_points",
+      "control": "raw_within_length",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.8146488812152196,
+      "stored_score": 0.8146488812152196,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__canonical_cycle__anti_fixed_points",
+      "control": "raw_within_length",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.14038045361451745,
+      "stored_score": 0.14038045361451745,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__canonical_cycle__anti_fixed_points",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.5034621732387917,
+      "stored_score": 0.5034621732387917,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__canonical_cycle__anti_fixed_points",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.10980594671124544,
+      "stored_score": 0.10980594671124544,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__one_line__recoils",
+      "control": "raw_within_length",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.06675038205648487,
+      "stored_score": 0.06675038205648487,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__one_line__recoils",
+      "control": "raw_within_length",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.7131805942449879,
+      "stored_score": 0.7131805942449879,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__one_line__recoils",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.06597382232124731,
+      "stored_score": 0.06597382232124731,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__one_line__recoils",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.11911957159536814,
+      "stored_score": 0.11911957159536814,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__canonical_cycle__recoils",
+      "control": "raw_within_length",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.8101069767877498,
+      "stored_score": 0.8101069767877498,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__canonical_cycle__recoils",
+      "control": "raw_within_length",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.05361884074397216,
+      "stored_score": 0.05361884074397216,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__canonical_cycle__recoils",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.8115096058957699,
+      "stored_score": 0.8115096058957699,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__transformer__canonical_cycle__recoils",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.04694268575558239,
+      "stored_score": 0.04694268575558239,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__one_line__recoils",
+      "control": "raw_within_length",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.07626539191139065,
+      "stored_score": 0.07626539191139065,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__one_line__recoils",
+      "control": "raw_within_length",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.30445015228949746,
+      "stored_score": 0.30445015228949746,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__one_line__recoils",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.07912335408730585,
+      "stored_score": 0.07912335408730585,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__one_line__recoils",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.10347294944431852,
+      "stored_score": 0.10347294944431852,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__canonical_cycle__recoils",
+      "control": "raw_within_length",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.8146488812152196,
+      "stored_score": 0.8146488812152196,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__canonical_cycle__recoils",
+      "control": "raw_within_length",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.10736910753941861,
+      "stored_score": 0.10736910753941861,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__canonical_cycle__recoils",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.8169134799244492,
+      "stored_score": 0.8169134799244492,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "permworld__descent_inverse__gru__canonical_cycle__recoils",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 21,
+      "recomputed_complete_equal_length_mean": 0.10908341888068598,
+      "stored_score": 0.10908341888068598,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in",
+      "control": "raw_within_n",
+      "phase": "initial",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.9784898318546883,
+      "stored_score": 0.9784898318546883,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in",
+      "control": "raw_within_n",
+      "phase": "trained",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.7407059052946042,
+      "stored_score": 0.7407059052946042,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.6170599312681556,
+      "stored_score": 0.6170599312681556,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.07016833975587654,
+      "stored_score": 0.07016833975587654,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in",
+      "control": "answer_density_strata",
+      "phase": "initial",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.018418678377138554,
+      "stored_score": 0.018418678377138554,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in",
+      "control": "answer_density_strata",
+      "phase": "trained",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.05566139976672008,
+      "stored_score": 0.05566139976672008,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in",
+      "control": "raw_within_n",
+      "phase": "initial",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.9784898318546883,
+      "stored_score": 0.9784898318546883,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in",
+      "control": "raw_within_n",
+      "phase": "trained",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.3605266202903712,
+      "stored_score": 0.3605266202903712,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in",
+      "control": "answer_strata",
+      "phase": "initial",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.46342744169406513,
+      "stored_score": 0.46342744169406513,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in",
+      "control": "answer_strata",
+      "phase": "trained",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.031655831021163344,
+      "stored_score": 0.031655831021163344,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in",
+      "control": "answer_density_strata",
+      "phase": "initial",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.012502100207195374,
+      "stored_score": 0.012502100207195374,
+      "undefined_lengths": [],
+      "passed": true
+    },
+    {
+      "pair_id": "graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in",
+      "control": "answer_density_strata",
+      "phase": "trained",
+      "length_count": 3,
+      "recomputed_complete_equal_length_mean": 0.0483150718559028,
+      "stored_score": 0.0483150718559028,
+      "undefined_lengths": [],
+      "passed": true
+    }
+  ],
+  "missing_support": [
+    {
+      "domain": "graphworld",
+      "control": "answer_density_strata",
+      "initial_undefined_pairs": 0,
+      "initial_undefined_length_cells": 0,
+      "trained_undefined_pairs": 0,
+      "trained_undefined_length_cells": 0
+    },
+    {
+      "domain": "graphworld",
+      "control": "answer_strata",
+      "initial_undefined_pairs": 0,
+      "initial_undefined_length_cells": 0,
+      "trained_undefined_pairs": 0,
+      "trained_undefined_length_cells": 0
+    },
+    {
+      "domain": "graphworld",
+      "control": "raw_within_n",
+      "initial_undefined_pairs": 0,
+      "initial_undefined_length_cells": 0,
+      "trained_undefined_pairs": 0,
+      "trained_undefined_length_cells": 0
+    },
+    {
+      "domain": "permworld",
+      "control": "answer_strata",
+      "initial_undefined_pairs": 0,
+      "initial_undefined_length_cells": 0,
+      "trained_undefined_pairs": 0,
+      "trained_undefined_length_cells": 0
+    },
+    {
+      "domain": "permworld",
+      "control": "raw_within_length",
+      "initial_undefined_pairs": 0,
+      "initial_undefined_length_cells": 0,
+      "trained_undefined_pairs": 0,
+      "trained_undefined_length_cells": 0
+    }
+  ],
+  "category_status_counts": {
+    "empty_fixed_category": 152,
+    "no_defined_candidates": 0,
+    "finite_candidate_description": 304
+  },
+  "category_common_support_pair_exposures": {
+    "designated": 76,
+    "other_known_exact": 0,
+    "not_designated": 920
+  },
+  "original_designated_score_checks": {
+    "pair_count": 36,
+    "phase_length_control_comparisons": 2760,
+    "maximum_absolute_error": 1.9984014443252818e-15,
+    "tolerance": 1e-08
+  },
+  "producer_verification_tables": {
+    "designated_endpoint_verification.csv": {
+      "rows": 2760,
+      "passed": 2760,
+      "maximum_stored_absolute_error": 1.9984014443252818e-15
+    },
+    "designated_aggregate_verification.csv": {
+      "rows": 152,
+      "passed": 152,
+      "maximum_stored_absolute_error": 3.3306690738754696e-16
+    },
+    "independent_covariance_verification.csv": {
+      "rows": 40,
+      "passed": 40,
+      "maximum_stored_absolute_error": 4.440892098500626e-16
+    }
+  },
+  "weights": "Exactly complete 21/3 length grids, fixed equal1/21 or1/3. Any undefined length leaves pair-phase aggregate undefined.",
+  "category_policy": "Empty other_known_exact retained separately. Non-designated category uses finite complete-length candidate aggregates and records phase-specific supports; Gcat uses identical both-phase finite candidate support.",
+  "limits": "Arithmetic/scope audit of saved scores only, not new CKA or new independent confirmation. Pair-specific answer selectors may differ between right tasks; categories are a limited known-exact catalogue, not algebraic independence. Candidate cells share specialists/inputs/world/init.",
+  "no_model_imports": true,
+  "no_forward": true,
+  "no_new_metrics": true,
+  "no_training": true,
+  "no_old_output_writes": true
+}

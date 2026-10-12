@@ -1,0 +1,19 @@
+{
+  "status": "repaired_before_root_freeze",
+  "scope": "Original count-table branch filtering only; no formula, data, selector, CKA, classification row or old artifact changed.",
+  "first_attempt": "CPU audit-w emitted assertion failure after successfully writing raw W and summary files; old count-table matching found Graph rows but no Perm rows because Perm branch is hidden, not prefix_final.",
+  "first_stderr_retention": "Exact terminal traceback copied below from tool output; no independent stderr log file was created and no failed attempt was rerun.",
+  "old_line": "if row['branch']!='prefix_final' or row['metric']!='linear_cka':continue",
+  "new_lines": [
+    "expected_branch='prefix_final' if domain=='graphworld' else 'hidden'",
+    "if row['branch']!=expected_branch or row['metric']!='linear_cka':continue"
+  ],
+  "classification_manifest_sha256_unchanged": "69ab57a9a8429cbd07ed8ccd866baf12f40be28b1bf2c643ab45b8b43171ba94",
+  "success_original_count_checks": 372,
+  "frozen_final_script_sha256": "82a08128a8d687ccdb279b0b393af32c2a0823b02c6122424563be50cb89de50",
+  "no_models": true,
+  "no_forward": true,
+  "no_training": true,
+  "no_cka": true,
+  "first_traceback": "Traceback (most recent call last):\n  File \"/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/classification_and_W.py\", line 240, in <module>\n    args=parser.parse_args();classify() if args.stage=='classify' else audit_w()\n                                                                       ~~~~~~~^^\n  File \"/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/classification_and_W.py\", line 218, in audit_w\n    assert len(checks)==372\n           ^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

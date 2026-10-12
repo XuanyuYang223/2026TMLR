@@ -1,0 +1,13 @@
+seed_pair_type,control,metric,relation_count,delta_mean,delta_median,positive_relations
+same_seed,length,ordinary,8,0.25134672286510995,-0.021754333643411075,4
+same_seed,length,debiased,8,0.2324131659564138,-0.06759784766403942,3
+same_seed,length,input_adjusted,8,0.2694685449144248,0.018579859539072766,4
+same_seed,answer_strata,ordinary,8,-0.10929204850844992,-0.2900788509549462,2
+same_seed,answer_strata,debiased,8,-0.1322052646562698,-0.3515897139572123,2
+same_seed,answer_strata,input_adjusted,8,-0.09391524123957776,-0.25516433161236707,2
+cross_seed,length,ordinary,8,0.2561491223787832,-0.005722701344949791,4
+cross_seed,length,debiased,8,0.23779765452418145,-0.05038895095534501,4
+cross_seed,length,input_adjusted,8,0.27509509130133253,0.03641474649755895,4
+cross_seed,answer_strata,ordinary,8,-0.09635057092177216,-0.2781252856268321,2
+cross_seed,answer_strata,debiased,8,-0.11853347229448956,-0.33919945153995146,2
+cross_seed,answer_strata,input_adjusted,8,-0.07954717540008965,-0.24179623800513456,2

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "frozen_report_writer_sha256": "e20bdc5fcab530bbf4c39a1d465d11ee7f7532061584d8b2df84249ab6302add",
+  "original_writer_report_sha256": "0088950072ab8b54c9afff6a1649899cc88ea0ed8392bc0b31df3eeca32665b4",
+  "preserved_writer_report_sha256": "0088950072ab8b54c9afff6a1649899cc88ea0ed8392bc0b31df3eeca32665b4",
+  "annotated_report_sha256": "8c8f2595a50bf540d3b20db1d1bc920af682252c60170f8f7864477cb8403e98",
+  "annotation_helper_sha256": "1047788539bcf392ee24a7b2806a0d891b3689cd6d88b1a740e63db4d8f0e686",
+  "metric_values_changed": false,
+  "actual_main_Bt_direction_agreement": 8,
+  "actual_main_Delta_direction_agreement": 7,
+  "source_CE_missing_rows": 2016,
+  "teacher_forced_EOS_separate": true
+}

@@ -1,0 +1,17 @@
+{
+  "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "geometry_rows": 2688,
+  "gold_rows": 8064,
+  "models": 16,
+  "relations": 2,
+  "metric_checks": {
+    "cka_rotation_and_independent_formula": true,
+    "constant_undefined": true,
+    "heldout_rotation_error_zero": true,
+    "manual_neighbor_swap_overlap_zero": true,
+    "exact_tie_by_input_id": true
+  },
+  "source_unseen_geometry_test": true,
+  "final_layer_primary": true,
+  "formal_training_started": false
+}

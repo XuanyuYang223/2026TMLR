@@ -1,0 +1,25 @@
+unit,relation,main,left_task,right_task,correct_transform,designated_right_task,category,formula,comparison_formula,proof,pair_id
+unit001,R1,True,F1,F2,transpose,F2,designated,F2(transpose(A)) = F1(A),F2(transpose(A)) = F1(A),F2(A^T)=wt((A^T)^T e1)=wt(A e1)=F1(A).,unit001__R1__F2
+unit001,R1,True,F1,F3,transpose,F2,not_designated,,F3(transpose(A)) = F1(A),,unit001__R1__F3
+unit001,R1,True,F1,F4,transpose,F2,not_designated,,F4(transpose(A)) = F1(A),,unit001__R1__F4
+unit001,R2,False,F3,F1,transpose,F4,not_designated,,F1(transpose(A)) = F3(A),,unit001__R2__F1
+unit001,R2,False,F3,F2,transpose,F4,not_designated,,F2(transpose(A)) = F3(A),,unit001__R2__F2
+unit001,R2,False,F3,F4,transpose,F4,designated,F4(transpose(A)) = F3(A),F4(transpose(A)) = F3(A),F4(A^T)=wt((A^T)^T s)=wt(A s)=F3(A).,unit001__R2__F4
+unit001,R3,True,F1,F2,right_Q,F3,not_designated,,F2(right_Q(A)) = F1(A),,unit001__R3__F2
+unit001,R3,True,F1,F3,right_Q,F3,designated,F3(right_Q(A)) = F1(A),F3(right_Q(A)) = F1(A),"Q s=e1, hence F3(AQ)=wt(A Q s)=wt(A e1)=F1(A).",unit001__R3__F3
+unit001,R3,True,F1,F4,right_Q,F3,not_designated,,F4(right_Q(A)) = F1(A),,unit001__R3__F4
+unit001,R4,False,F2,F1,left_Qt,F4,not_designated,,F1(left_Qt(A)) = F2(A),,unit001__R4__F1
+unit001,R4,False,F2,F3,left_Qt,F4,not_designated,,F3(left_Qt(A)) = F2(A),,unit001__R4__F3
+unit001,R4,False,F2,F4,left_Qt,F4,designated,F4(left_Qt(A)) = F2(A),F4(left_Qt(A)) = F2(A),"Q s=e1, hence F4(Q^T A)=wt((Q^T A)^T s)=wt(A^T Q s)=F2(A).",unit001__R4__F4
+unit002,R1,True,F1,F2,transpose,F2,designated,F2(transpose(A)) = F1(A),F2(transpose(A)) = F1(A),F2(A^T)=wt((A^T)^T e1)=wt(A e1)=F1(A).,unit002__R1__F2
+unit002,R1,True,F1,F3,transpose,F2,not_designated,,F3(transpose(A)) = F1(A),,unit002__R1__F3
+unit002,R1,True,F1,F4,transpose,F2,not_designated,,F4(transpose(A)) = F1(A),,unit002__R1__F4
+unit002,R2,False,F3,F1,transpose,F4,not_designated,,F1(transpose(A)) = F3(A),,unit002__R2__F1
+unit002,R2,False,F3,F2,transpose,F4,not_designated,,F2(transpose(A)) = F3(A),,unit002__R2__F2
+unit002,R2,False,F3,F4,transpose,F4,designated,F4(transpose(A)) = F3(A),F4(transpose(A)) = F3(A),F4(A^T)=wt((A^T)^T s)=wt(A s)=F3(A).,unit002__R2__F4
+unit002,R3,True,F1,F2,right_Q,F3,not_designated,,F2(right_Q(A)) = F1(A),,unit002__R3__F2
+unit002,R3,True,F1,F3,right_Q,F3,designated,F3(right_Q(A)) = F1(A),F3(right_Q(A)) = F1(A),"Q s=e1, hence F3(AQ)=wt(A Q s)=wt(A e1)=F1(A).",unit002__R3__F3
+unit002,R3,True,F1,F4,right_Q,F3,not_designated,,F4(right_Q(A)) = F1(A),,unit002__R3__F4
+unit002,R4,False,F2,F1,left_Qt,F4,not_designated,,F1(left_Qt(A)) = F2(A),,unit002__R4__F1
+unit002,R4,False,F2,F3,left_Qt,F4,not_designated,,F3(left_Qt(A)) = F2(A),,unit002__R4__F3
+unit002,R4,False,F2,F4,left_Qt,F4,designated,F4(left_Qt(A)) = F2(A),F4(left_Qt(A)) = F2(A),"Q s=e1, hence F4(Q^T A)=wt((Q^T A)^T s)=wt(A^T Q s)=F2(A).",unit002__R4__F4

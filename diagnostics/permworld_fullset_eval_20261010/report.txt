@@ -1,0 +1,164 @@
+PermWorld 既有16模型：完整训练集与验证集诊断
+生成时间 UTC：2026-10-10T18:45:28.693070+00:00
+所有评价仅使用既有固定8k模型，不更新任何参数。
+核心问题：此前很低的末批训练loss，是否对应完整训练集的充分拟合？
+覆盖四任务×两架构×两编码=16模型；train与validation各三个长度10/11/12，共96逐长度单元。三个长度固定等权1/3，不选择任务、长度或检查点。
+答案accuracy采用全词表argmax，答案CE采用全词表交叉熵；EOS在真实答案token上teacher forcing，不能替代答案评价。combinedCE=(答案CE+EOS CE)/2，另列报告。
+末批训练loss只保留为旧诊断线索，本轮的训练表现由完整训练集重新评价确定，不能用单批loss估算全训练准确率。
+沿用旧mean答案accuracy≥90%、每长度≥85%作描述性分类；这不是新资格检验，不修改旧的两编码joint0/8结果，不改变任何通过门槛。
+训练充分、验证不足→泛化不足候选；两者不足→拟合/优化不足候选；两者充分→本条件掌握。以上均不证明失败原因、数学编码机制或跨世界泛化。
+训练/验证两者充分只说明这一数据世界与固定模型的单条件表现；不能替代两编码学习程度匹配，也不能自动开启表征评估或新训练。
+
+描述分类数量：{"两者不足：拟合/优化不足候选": 5, "两者充分：本条件掌握": 6, "训练充分、验证不足：泛化不足候选": 5}
+
+完整16模型主表（accuracy单位%，CE独立列出）：
+learningdev001_transformer_one_line_descents: train答案acc=64.811%、min长度=59.229%、答案CE=0.801344、EOS acc=100.000%、EOS CE=0.000008、combinedCE=0.400676; validation答案acc=56.673%、min长度=48.340%、答案CE=0.976158、EOS acc=100.000%、EOS CE=0.000009、combinedCE=0.488083; 两者不足：拟合/优化不足候选。
+learningdev001_transformer_canonical_cycle_descents: train答案acc=40.706%、min长度=39.062%、答案CE=1.343523、EOS acc=100.000%、EOS CE=0.000004、combinedCE=0.671764; validation答案acc=39.225%、min长度=37.305%、答案CE=1.383104、EOS acc=100.000%、EOS CE=0.000004、combinedCE=0.691554; 两者不足：拟合/优化不足候选。
+learningdev001_transformer_one_line_recoils: train答案acc=100.000%、min长度=100.000%、答案CE=0.000096、EOS acc=100.000%、EOS CE=0.000007、combinedCE=0.000052; validation答案acc=99.870%、min长度=99.609%、答案CE=0.004109、EOS acc=100.000%、EOS CE=0.000008、combinedCE=0.002059; 两者充分：本条件掌握。
+learningdev001_transformer_canonical_cycle_recoils: train答案acc=41.683%、min长度=40.674%、答案CE=1.322179、EOS acc=100.000%、EOS CE=0.000013、combinedCE=0.661096; validation答案acc=40.755%、min长度=36.523%、答案CE=1.377649、EOS acc=100.000%、EOS CE=0.000016、combinedCE=0.688832; 两者不足：拟合/优化不足候选。
+learningdev001_transformer_one_line_peaks: train答案acc=99.170%、min长度=98.535%、答案CE=0.028820、EOS acc=100.000%、EOS CE=0.000006、combinedCE=0.014413; validation答案acc=90.592%、min长度=88.477%、答案CE=0.363371、EOS acc=100.000%、EOS CE=0.000009、combinedCE=0.181690; 两者充分：本条件掌握。
+learningdev001_transformer_canonical_cycle_peaks: train答案acc=51.579%、min长度=48.926%、答案CE=1.055134、EOS acc=100.000%、EOS CE=0.000001、combinedCE=0.527567; validation答案acc=49.967%、min长度=47.754%、答案CE=1.089687、EOS acc=100.000%、EOS CE=0.000001、combinedCE=0.544844; 两者不足：拟合/优化不足候选。
+learningdev001_transformer_one_line_valleys: train答案acc=90.446%、min长度=86.816%、答案CE=0.249400、EOS acc=100.000%、EOS CE=0.000028、combinedCE=0.124714; validation答案acc=80.990%、min长度=77.441%、答案CE=0.529962、EOS acc=100.000%、EOS CE=0.000022、combinedCE=0.264992; 训练充分、验证不足：泛化不足候选。
+learningdev001_transformer_canonical_cycle_valleys: train答案acc=54.557%、min长度=54.199%、答案CE=1.019804、EOS acc=100.000%、EOS CE=0.000020、combinedCE=0.509912; validation答案acc=50.163%、min长度=46.289%、答案CE=1.128732、EOS acc=100.000%、EOS CE=0.000019、combinedCE=0.564376; 两者不足：拟合/优化不足候选。
+learningdev001_gru_one_line_descents: train答案acc=100.000%、min长度=100.000%、答案CE=0.000040、EOS acc=100.000%、EOS CE=0.000003、combinedCE=0.000021; validation答案acc=99.967%、min长度=99.902%、答案CE=0.003172、EOS acc=99.967%、EOS CE=0.000408、combinedCE=0.001790; 两者充分：本条件掌握。
+learningdev001_gru_canonical_cycle_descents: train答案acc=100.000%、min长度=100.000%、答案CE=0.000122、EOS acc=100.000%、EOS CE=0.000005、combinedCE=0.000063; validation答案acc=35.254%、min长度=31.543%、答案CE=5.223680、EOS acc=100.000%、EOS CE=0.000002、combinedCE=2.611841; 训练充分、验证不足：泛化不足候选。
+learningdev001_gru_one_line_recoils: train答案acc=100.000%、min长度=100.000%、答案CE=0.000069、EOS acc=100.000%、EOS CE=0.000004、combinedCE=0.000036; validation答案acc=99.837%、min长度=99.707%、答案CE=0.004676、EOS acc=100.000%、EOS CE=0.000004、combinedCE=0.002340; 两者充分：本条件掌握。
+learningdev001_gru_canonical_cycle_recoils: train答案acc=100.000%、min长度=100.000%、答案CE=0.000148、EOS acc=100.000%、EOS CE=0.000005、combinedCE=0.000076; validation答案acc=36.035%、min长度=33.301%、答案CE=5.219937、EOS acc=100.000%、EOS CE=0.000003、combinedCE=2.609970; 训练充分、验证不足：泛化不足候选。
+learningdev001_gru_one_line_peaks: train答案acc=100.000%、min长度=100.000%、答案CE=0.000019、EOS acc=100.000%、EOS CE=0.000003、combinedCE=0.000011; validation答案acc=100.000%、min长度=100.000%、答案CE=0.000020、EOS acc=100.000%、EOS CE=0.000003、combinedCE=0.000012; 两者充分：本条件掌握。
+learningdev001_gru_canonical_cycle_peaks: train答案acc=100.000%、min长度=100.000%、答案CE=0.000102、EOS acc=100.000%、EOS CE=0.000005、combinedCE=0.000054; validation答案acc=48.665%、min长度=46.289%、答案CE=4.086424、EOS acc=100.000%、EOS CE=0.000003、combinedCE=2.043213; 训练充分、验证不足：泛化不足候选。
+learningdev001_gru_one_line_valleys: train答案acc=100.000%、min长度=100.000%、答案CE=0.000016、EOS acc=100.000%、EOS CE=0.000002、combinedCE=0.000009; validation答案acc=99.967%、min长度=99.902%、答案CE=0.000543、EOS acc=100.000%、EOS CE=0.000002、combinedCE=0.000272; 两者充分：本条件掌握。
+learningdev001_gru_canonical_cycle_valleys: train答案acc=100.000%、min长度=100.000%、答案CE=0.000084、EOS acc=100.000%、EOS CE=0.000004、combinedCE=0.000044; validation答案acc=48.014%、min长度=43.652%、答案CE=4.148294、EOS acc=100.000%、EOS CE=0.000002、combinedCE=2.074148; 训练充分、验证不足：泛化不足候选。
+
+逐长度完整结果：
+learningdev001_transformer_one_line_descents/train/n10,样本=2048: 答案acc=69.385%,答案CE=0.717609,EOS acc=100.000%,EOS CE=0.000009,combinedCE=0.358809。
+learningdev001_transformer_one_line_descents/train/n11,样本=2048: 答案acc=65.820%,答案CE=0.773622,EOS acc=100.000%,EOS CE=0.000008,combinedCE=0.386815。
+learningdev001_transformer_one_line_descents/train/n12,样本=2048: 答案acc=59.229%,答案CE=0.912801,EOS acc=100.000%,EOS CE=0.000008,combinedCE=0.456405。
+learningdev001_transformer_one_line_descents/validation/n10,样本=1024: 答案acc=63.086%,答案CE=0.815150,EOS acc=100.000%,EOS CE=0.000009,combinedCE=0.407580。
+learningdev001_transformer_one_line_descents/validation/n11,样本=1024: 答案acc=58.594%,答案CE=0.935449,EOS acc=100.000%,EOS CE=0.000008,combinedCE=0.467728。
+learningdev001_transformer_one_line_descents/validation/n12,样本=1024: 答案acc=48.340%,答案CE=1.177874,EOS acc=100.000%,EOS CE=0.000009,combinedCE=0.588942。
+learningdev001_transformer_canonical_cycle_descents/train/n10,样本=2048: 答案acc=42.139%,答案CE=1.306985,EOS acc=100.000%,EOS CE=0.000001,combinedCE=0.653493。
+learningdev001_transformer_canonical_cycle_descents/train/n11,样本=2048: 答案acc=40.918%,答案CE=1.346242,EOS acc=100.000%,EOS CE=0.000005,combinedCE=0.673123。
+learningdev001_transformer_canonical_cycle_descents/train/n12,样本=2048: 答案acc=39.062%,答案CE=1.377342,EOS acc=100.000%,EOS CE=0.000007,combinedCE=0.688675。
+learningdev001_transformer_canonical_cycle_descents/validation/n10,样本=1024: 答案acc=40.820%,答案CE=1.348154,EOS acc=100.000%,EOS CE=0.000001,combinedCE=0.674078。
+learningdev001_transformer_canonical_cycle_descents/validation/n11,样本=1024: 答案acc=39.551%,答案CE=1.359274,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.679639。
+learningdev001_transformer_canonical_cycle_descents/validation/n12,样本=1024: 答案acc=37.305%,答案CE=1.441883,EOS acc=100.000%,EOS CE=0.000008,combinedCE=0.720945。
+learningdev001_transformer_one_line_recoils/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000099,EOS acc=100.000%,EOS CE=0.000009,combinedCE=0.000054。
+learningdev001_transformer_one_line_recoils/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000060,EOS acc=100.000%,EOS CE=0.000006,combinedCE=0.000033。
+learningdev001_transformer_one_line_recoils/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000129,EOS acc=100.000%,EOS CE=0.000007,combinedCE=0.000068。
+learningdev001_transformer_one_line_recoils/validation/n10,样本=1024: 答案acc=100.000%,答案CE=0.000365,EOS acc=100.000%,EOS CE=0.000008,combinedCE=0.000187。
+learningdev001_transformer_one_line_recoils/validation/n11,样本=1024: 答案acc=100.000%,答案CE=0.000147,EOS acc=100.000%,EOS CE=0.000009,combinedCE=0.000078。
+learningdev001_transformer_one_line_recoils/validation/n12,样本=1024: 答案acc=99.609%,答案CE=0.011814,EOS acc=100.000%,EOS CE=0.000007,combinedCE=0.005911。
+learningdev001_transformer_canonical_cycle_recoils/train/n10,样本=2048: 答案acc=43.213%,答案CE=1.266006,EOS acc=100.000%,EOS CE=0.000014,combinedCE=0.633010。
+learningdev001_transformer_canonical_cycle_recoils/train/n11,样本=2048: 答案acc=41.162%,答案CE=1.331094,EOS acc=100.000%,EOS CE=0.000009,combinedCE=0.665551。
+learningdev001_transformer_canonical_cycle_recoils/train/n12,样本=2048: 答案acc=40.674%,答案CE=1.369436,EOS acc=100.000%,EOS CE=0.000016,combinedCE=0.684726。
+learningdev001_transformer_canonical_cycle_recoils/validation/n10,样本=1024: 答案acc=42.090%,答案CE=1.327089,EOS acc=100.000%,EOS CE=0.000017,combinedCE=0.663553。
+learningdev001_transformer_canonical_cycle_recoils/validation/n11,样本=1024: 答案acc=43.652%,答案CE=1.375989,EOS acc=100.000%,EOS CE=0.000015,combinedCE=0.688002。
+learningdev001_transformer_canonical_cycle_recoils/validation/n12,样本=1024: 答案acc=36.523%,答案CE=1.429867,EOS acc=100.000%,EOS CE=0.000016,combinedCE=0.714942。
+learningdev001_transformer_one_line_peaks/train/n10,样本=2048: 答案acc=99.756%,答案CE=0.013455,EOS acc=100.000%,EOS CE=0.000005,combinedCE=0.006730。
+learningdev001_transformer_one_line_peaks/train/n11,样本=2048: 答案acc=98.535%,答案CE=0.043952,EOS acc=100.000%,EOS CE=0.000007,combinedCE=0.021980。
+learningdev001_transformer_one_line_peaks/train/n12,样本=2048: 答案acc=99.219%,答案CE=0.029052,EOS acc=100.000%,EOS CE=0.000005,combinedCE=0.014528。
+learningdev001_transformer_one_line_peaks/validation/n10,样本=1024: 答案acc=94.336%,答案CE=0.206518,EOS acc=100.000%,EOS CE=0.000005,combinedCE=0.103261。
+learningdev001_transformer_one_line_peaks/validation/n11,样本=1024: 答案acc=88.477%,答案CE=0.457804,EOS acc=100.000%,EOS CE=0.000019,combinedCE=0.228912。
+learningdev001_transformer_one_line_peaks/validation/n12,样本=1024: 答案acc=88.965%,答案CE=0.425793,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.212898。
+learningdev001_transformer_canonical_cycle_peaks/train/n10,样本=2048: 答案acc=52.881%,答案CE=1.018058,EOS acc=100.000%,EOS CE=0.000001,combinedCE=0.509029。
+learningdev001_transformer_canonical_cycle_peaks/train/n11,样本=2048: 答案acc=52.930%,答案CE=1.054609,EOS acc=100.000%,EOS CE=0.000001,combinedCE=0.527305。
+learningdev001_transformer_canonical_cycle_peaks/train/n12,样本=2048: 答案acc=48.926%,答案CE=1.092735,EOS acc=100.000%,EOS CE=0.000001,combinedCE=0.546368。
+learningdev001_transformer_canonical_cycle_peaks/validation/n10,样本=1024: 答案acc=50.488%,答案CE=1.056937,EOS acc=100.000%,EOS CE=0.000001,combinedCE=0.528469。
+learningdev001_transformer_canonical_cycle_peaks/validation/n11,样本=1024: 答案acc=51.660%,答案CE=1.079101,EOS acc=100.000%,EOS CE=0.000001,combinedCE=0.539551。
+learningdev001_transformer_canonical_cycle_peaks/validation/n12,样本=1024: 答案acc=47.754%,答案CE=1.133022,EOS acc=100.000%,EOS CE=0.000001,combinedCE=0.566512。
+learningdev001_transformer_one_line_valleys/train/n10,样本=2048: 答案acc=94.434%,答案CE=0.159969,EOS acc=100.000%,EOS CE=0.000076,combinedCE=0.080023。
+learningdev001_transformer_one_line_valleys/train/n11,样本=2048: 答案acc=90.088%,答案CE=0.248967,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.124486。
+learningdev001_transformer_one_line_valleys/train/n12,样本=2048: 答案acc=86.816%,答案CE=0.339263,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.169633。
+learningdev001_transformer_one_line_valleys/validation/n10,样本=1024: 答案acc=85.059%,答案CE=0.400041,EOS acc=100.000%,EOS CE=0.000058,combinedCE=0.200050。
+learningdev001_transformer_one_line_valleys/validation/n11,样本=1024: 答案acc=80.469%,答案CE=0.504852,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.252428。
+learningdev001_transformer_one_line_valleys/validation/n12,样本=1024: 答案acc=77.441%,答案CE=0.684994,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.342499。
+learningdev001_transformer_canonical_cycle_valleys/train/n10,样本=2048: 答案acc=55.078%,答案CE=0.987834,EOS acc=100.000%,EOS CE=0.000023,combinedCE=0.493928。
+learningdev001_transformer_canonical_cycle_valleys/train/n11,样本=2048: 答案acc=54.395%,答案CE=1.043609,EOS acc=100.000%,EOS CE=0.000020,combinedCE=0.521815。
+learningdev001_transformer_canonical_cycle_valleys/train/n12,样本=2048: 答案acc=54.199%,答案CE=1.027968,EOS acc=100.000%,EOS CE=0.000017,combinedCE=0.513993。
+learningdev001_transformer_canonical_cycle_valleys/validation/n10,样本=1024: 答案acc=51.367%,答案CE=1.076580,EOS acc=100.000%,EOS CE=0.000023,combinedCE=0.538301。
+learningdev001_transformer_canonical_cycle_valleys/validation/n11,样本=1024: 答案acc=52.832%,答案CE=1.085482,EOS acc=100.000%,EOS CE=0.000018,combinedCE=0.542750。
+learningdev001_transformer_canonical_cycle_valleys/validation/n12,样本=1024: 答案acc=46.289%,答案CE=1.224135,EOS acc=100.000%,EOS CE=0.000018,combinedCE=0.612076。
+learningdev001_gru_one_line_descents/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000035,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.000020。
+learningdev001_gru_one_line_descents/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000033,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000018。
+learningdev001_gru_one_line_descents/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000050,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000027。
+learningdev001_gru_one_line_descents/validation/n10,样本=1024: 答案acc=99.902%,答案CE=0.008802,EOS acc=99.902%,EOS CE=0.001217,combinedCE=0.005010。
+learningdev001_gru_one_line_descents/validation/n11,样本=1024: 答案acc=100.000%,答案CE=0.000043,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000023。
+learningdev001_gru_one_line_descents/validation/n12,样本=1024: 答案acc=100.000%,答案CE=0.000669,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000336。
+learningdev001_gru_canonical_cycle_descents/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000142,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.000073。
+learningdev001_gru_canonical_cycle_descents/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000110,EOS acc=100.000%,EOS CE=0.000006,combinedCE=0.000058。
+learningdev001_gru_canonical_cycle_descents/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000113,EOS acc=100.000%,EOS CE=0.000005,combinedCE=0.000059。
+learningdev001_gru_canonical_cycle_descents/validation/n10,样本=1024: 答案acc=36.035%,答案CE=4.917142,EOS acc=100.000%,EOS CE=0.000002,combinedCE=2.458572。
+learningdev001_gru_canonical_cycle_descents/validation/n11,样本=1024: 答案acc=38.184%,答案CE=5.097384,EOS acc=100.000%,EOS CE=0.000002,combinedCE=2.548693。
+learningdev001_gru_canonical_cycle_descents/validation/n12,样本=1024: 答案acc=31.543%,答案CE=5.656513,EOS acc=100.000%,EOS CE=0.000002,combinedCE=2.828257。
+learningdev001_gru_one_line_recoils/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000062,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.000033。
+learningdev001_gru_one_line_recoils/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000055,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000029。
+learningdev001_gru_one_line_recoils/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000091,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.000048。
+learningdev001_gru_one_line_recoils/validation/n10,样本=1024: 答案acc=100.000%,答案CE=0.000188,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000096。
+learningdev001_gru_one_line_recoils/validation/n11,样本=1024: 答案acc=99.805%,答案CE=0.008639,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.004322。
+learningdev001_gru_one_line_recoils/validation/n12,样本=1024: 答案acc=99.707%,答案CE=0.005200,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.002602。
+learningdev001_gru_canonical_cycle_recoils/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000203,EOS acc=100.000%,EOS CE=0.000005,combinedCE=0.000104。
+learningdev001_gru_canonical_cycle_recoils/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000119,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.000061。
+learningdev001_gru_canonical_cycle_recoils/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000121,EOS acc=100.000%,EOS CE=0.000006,combinedCE=0.000063。
+learningdev001_gru_canonical_cycle_recoils/validation/n10,样本=1024: 答案acc=38.281%,答案CE=4.902212,EOS acc=100.000%,EOS CE=0.000004,combinedCE=2.451108。
+learningdev001_gru_canonical_cycle_recoils/validation/n11,样本=1024: 答案acc=36.523%,答案CE=5.272612,EOS acc=100.000%,EOS CE=0.000001,combinedCE=2.636307。
+learningdev001_gru_canonical_cycle_recoils/validation/n12,样本=1024: 答案acc=33.301%,答案CE=5.484987,EOS acc=100.000%,EOS CE=0.000002,combinedCE=2.742495。
+learningdev001_gru_one_line_peaks/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000018,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000010。
+learningdev001_gru_one_line_peaks/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000015,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000009。
+learningdev001_gru_one_line_peaks/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000026,EOS acc=100.000%,EOS CE=0.000002,combinedCE=0.000014。
+learningdev001_gru_one_line_peaks/validation/n10,样本=1024: 答案acc=100.000%,答案CE=0.000015,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000009。
+learningdev001_gru_one_line_peaks/validation/n11,样本=1024: 答案acc=100.000%,答案CE=0.000016,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000009。
+learningdev001_gru_one_line_peaks/validation/n12,样本=1024: 答案acc=100.000%,答案CE=0.000030,EOS acc=100.000%,EOS CE=0.000002,combinedCE=0.000016。
+learningdev001_gru_canonical_cycle_peaks/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000107,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.000055。
+learningdev001_gru_canonical_cycle_peaks/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000098,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.000051。
+learningdev001_gru_canonical_cycle_peaks/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000103,EOS acc=100.000%,EOS CE=0.000006,combinedCE=0.000055。
+learningdev001_gru_canonical_cycle_peaks/validation/n10,样本=1024: 答案acc=52.344%,答案CE=3.559548,EOS acc=100.000%,EOS CE=0.000002,combinedCE=1.779775。
+learningdev001_gru_canonical_cycle_peaks/validation/n11,样本=1024: 答案acc=47.363%,答案CE=4.154271,EOS acc=100.000%,EOS CE=0.000002,combinedCE=2.077137。
+learningdev001_gru_canonical_cycle_peaks/validation/n12,样本=1024: 答案acc=46.289%,答案CE=4.545451,EOS acc=100.000%,EOS CE=0.000004,combinedCE=2.272728。
+learningdev001_gru_one_line_valleys/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000015,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000009。
+learningdev001_gru_one_line_valleys/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000015,EOS acc=100.000%,EOS CE=0.000002,combinedCE=0.000008。
+learningdev001_gru_one_line_valleys/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000019,EOS acc=100.000%,EOS CE=0.000002,combinedCE=0.000010。
+learningdev001_gru_one_line_valleys/validation/n10,样本=1024: 答案acc=100.000%,答案CE=0.000024,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000013。
+learningdev001_gru_one_line_valleys/validation/n11,样本=1024: 答案acc=100.000%,答案CE=0.000013,EOS acc=100.000%,EOS CE=0.000002,combinedCE=0.000008。
+learningdev001_gru_one_line_valleys/validation/n12,样本=1024: 答案acc=99.902%,答案CE=0.001591,EOS acc=100.000%,EOS CE=0.000002,combinedCE=0.000796。
+learningdev001_gru_canonical_cycle_valleys/train/n10,样本=2048: 答案acc=100.000%,答案CE=0.000085,EOS acc=100.000%,EOS CE=0.000004,combinedCE=0.000045。
+learningdev001_gru_canonical_cycle_valleys/train/n11,样本=2048: 答案acc=100.000%,答案CE=0.000076,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000040。
+learningdev001_gru_canonical_cycle_valleys/train/n12,样本=2048: 答案acc=100.000%,答案CE=0.000091,EOS acc=100.000%,EOS CE=0.000003,combinedCE=0.000047。
+learningdev001_gru_canonical_cycle_valleys/validation/n10,样本=1024: 答案acc=50.488%,答案CE=3.743406,EOS acc=100.000%,EOS CE=0.000002,combinedCE=1.871704。
+learningdev001_gru_canonical_cycle_valleys/validation/n11,样本=1024: 答案acc=49.902%,答案CE=3.978674,EOS acc=100.000%,EOS CE=0.000001,combinedCE=1.989338。
+learningdev001_gru_canonical_cycle_valleys/validation/n12,样本=1024: 答案acc=43.652%,答案CE=4.722801,EOS acc=100.000%,EOS CE=0.000002,combinedCE=2.361402。
+
+验证重现表：原、新数值及signed_diff由validation_reproduction.csv保存；正值表示新值减旧值，不改成绝对值。
+验证重现CSV行数：320。具体数值及数值容差由独立审计检查。
+数据/初始化/检查点/代码版本的provenance与独立审计由单独产物提供；本report不加载权重或原始预测。
+本轮是诊断，不是新的确认实验。只有一个数据世界和每架构一个源初始化；模型与长度不能充作独立世界重复，Transformer/GRU容量未匹配。
+完成后停止。没有新训练、测试标签/预测评价、CKA/Delta、GroupWorld、零空间或F17操作。
+评价执行记录（耗时属于推理；不称训练或GPU利用小时）：
+{
+  "status": "completed",
+  "started_epoch": 1791657896.409166,
+  "finished_utc": "2026-10-10T18:45:17.054129+00:00",
+  "completed_models": 16,
+  "elapsed_seconds": 20.644973278045654,
+  "device": "cuda",
+  "length_cells": 96,
+  "sample_model_pairs": 147456,
+  "validation_reproduction_passed": true,
+  "validation_reproduction_failed_rows": [],
+  "optimizer_constructed": false,
+  "backward_called": false,
+  "parameters_changed": false,
+  "decoded_arrays": [
+    "train_lengths",
+    "train_labels",
+    "train_one_line_input",
+    "train_canonical_cycle_input",
+    "validation_lengths",
+    "validation_labels",
+    "validation_one_line_input",
+    "validation_canonical_cycle_input"
+  ],
+  "test_arrays_decoded": false,
+  "geometry_evaluated": false,
+  "new_training": false
+}
+原始预测留在F盘 prediction_manifest.json 的路径；本report仅读清单，不加载预测数组。

@@ -1,0 +1,33 @@
+PermWorld 完整训练集／现有验证集诊断（2026-10-10）
+
+入口：report.html；纯文本：report.txt。
+主表：metrics_summary.csv（16模型×2 split）；逐长度表：metrics_by_length.csv（96单元）。
+答案准确率、答案CE、EOS准确率、EOS CE、combined CE分别保留。
+每个模型完整训练集6144输入、验证集3072输入；n10/11/12先各自计算，再固定1/3汇总。
+
+本轮只复用既有8k检查点，不构造优化器，不反向传播，不更新参数。
+未解码预留test数组；未进行CKA、GroupWorld或新开发训练。
+原报告、代码、检查点及受保护的旧项目产物548文件哈希一致。
+F17矩阵论文及发布产物保持不变。本轮完成后停止。
+
+来源记录：protocol.json、freeze.json、protected_before.json、prediction_manifest.json。
+完整logits及逐样本预测存于F盘：
+/mnt/yangx-projects-f/20261010/permworld_fullset_eval/<run_id>/predictions.npz
+原推理日志：/mnt/yangx-projects-f/20261010/permworld_fullset_eval/evaluation.log
+脚本沿用冻结旧模型构造与batch代码；读取原checkpoint，不调用旧initial()。
+
+从保存的产物重建报告／复核（不重新推理）：
+在 /home/yangx/ICML 运行：
+.venv/bin/python diagnostics/permworld_fullset_eval_20261010/report.py --root /home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010
+.venv/bin/python diagnostics/permworld_fullset_eval_20261010/independent_audit.py --run-real
+.venv/bin/python diagnostics/permworld_fullset_eval_20261010/full_eval.py --stage audit
+这些命令会刷新相应报告或审计时间；因此归档后运行会改变该文件的归档哈希。
+本轮未重复执行完整前向；已有execution记录存在时，evaluate命令会拒绝静默重跑。
+
+原执行顺序：CPU已知logits检查 → 代码审查 → setup冻结 → evaluate一次 → 报告与独立数值审查 → 保护/停止审计。
+验证重现320比较全部通过；答案/EOS准确率要求完全一致，CE容差在前向前冻结。
+独立全词表argmax和float64 CE各294912次核对通过；数值检查未改变FP32主结果。
+
+解释边界：这是一个开发数据世界的探索诊断；16模型不代表16独立重复。
+完整训练拟合而验证失败支持优先检查泛化；两者均不足支持优先检查拟合/优化。
+当前结果不能从这些候选原因中识别唯一因果解释。两编码共同学习资格仍为0/8。

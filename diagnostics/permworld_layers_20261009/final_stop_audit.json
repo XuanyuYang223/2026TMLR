@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-10T10:11:00.934860+00:00",
+  "completed_development_models": 16,
+  "updates_per_model": 20000,
+  "active_owned_training_commands": [],
+  "formal_training_started": false,
+  "stop_after_report": true,
+  "source_execution_owners": [
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "execution_owner": "parallel_execution.json"
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "execution_owner": "parallel_execution.json"
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "execution_owner": "parallel_execution.json"
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "execution_owner": "parallel_execution.json"
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "execution_owner": "parallel_middle_execution.json"
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "execution_owner": "parallel_middle_execution.json"
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "execution_owner": "parallel_reserved_execution.json"
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "execution_owner": "parallel_recoils_execution.json"
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "execution_owner": "serial_main"
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "execution_owner": "serial_main"
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "execution_owner": "serial_main"
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "execution_owner": "serial_main"
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "execution_owner": "serial_main"
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "execution_owner": "serial_main"
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "execution_owner": "serial_main"
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "execution_owner": "serial_main"
+    }
+  ],
+  "source_execution_owner_count_per_model": {
+    "archdev001_gru_canonical_cycle_valleys": 1,
+    "archdev001_gru_canonical_cycle_peaks": 1,
+    "archdev001_gru_canonical_cycle_recoils": 1,
+    "archdev001_gru_canonical_cycle_descents": 1,
+    "archdev001_gru_one_line_valleys": 1,
+    "archdev001_gru_one_line_peaks": 1,
+    "archdev001_gru_one_line_descents": 1,
+    "archdev001_gru_one_line_recoils": 1,
+    "archdev001_transformer_one_line_descents": 1,
+    "archdev001_transformer_one_line_recoils": 1,
+    "archdev001_transformer_one_line_peaks": 1,
+    "archdev001_transformer_one_line_valleys": 1,
+    "archdev001_transformer_canonical_cycle_descents": 1,
+    "archdev001_transformer_canonical_cycle_recoils": 1,
+    "archdev001_transformer_canonical_cycle_peaks": 1,
+    "archdev001_transformer_canonical_cycle_valleys": 1
+  },
+  "training_stage_observed_start_utc": "2026-10-10T07:16:09Z",
+  "final_source_completed_utc": "2026-10-10T10:03:27.246678+00:00",
+  "source_stage_wall_seconds": 10038.2466776371,
+  "sum_model_loop_elapsed_seconds": 30045.50872068799,
+  "timing_scope": "Wall time from recorded training driver stage start to last completion file; per-model loop elapsed includes validation/checkpoint costs and overlaps across processes. Neither measures GPU compute hours.",
+  "gpu_compute_hours_measured": false,
+  "protected_f17_files_unchanged": 191
+}

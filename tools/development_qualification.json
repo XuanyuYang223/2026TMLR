@@ -1,0 +1,21 @@
+{
+  "status": "passed_local_relocation_fixture",
+  "scope": "Local copy of frozen saved inputs, not a git clone and not a remote download test",
+  "system_python": "/usr/bin/python3",
+  "positive_check": {
+    "status": "passed_saved_table_arithmetic_with_preserved_verification_caveat",
+    "checks_total": 79125,
+    "failure_count": 0,
+    "elapsed_seconds": 3.9334117649996188
+  },
+  "absolute_path_rejection": {
+    "status": "failed_saved_table_checks",
+    "error": "ValueError: Layout paths must be safe repository-relative paths: pair_protocol"
+  },
+  "external_symlink_rejection": {
+    "status": "failed_saved_table_checks",
+    "error": "ValueError: External symlink/host fallback is forbidden: pair_protocol"
+  },
+  "scientific_inputs_modified": false,
+  "model_or_metric_calls": 0
+}

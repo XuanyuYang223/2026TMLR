@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "generated_utc": "2026-10-10T16:58:10.849897+00:00",
+  "auditor_sha256": "78504cf10ad1e3c6bcf42cb24e04e40df6f7fc4fd4914f32e1da0abfcca6e372",
+  "checks": {
+    "all16_and8pairs_match_frozen_synthetic_reporter": true,
+    "train_tie_uses_lowest_answer": true,
+    "no_test_object_decoded": true,
+    "weak_length_fails_despite_mean_above90": true,
+    "length_gap_rejected_even_when_means_match": true,
+    "exact_five_pp_development_boundary_allowed": true,
+    "incorrect_report_number_rejected": true,
+    "partial_manifest_rejected_before_labels": true
+  },
+  "synthetic_CPU_only": true,
+  "real_model_results_read": false,
+  "real_train_or_validation_labels_read": false,
+  "test_arrays_decoded": false,
+  "GPU_used": false,
+  "training_started": false,
+  "temporary_sources_removed": true
+}

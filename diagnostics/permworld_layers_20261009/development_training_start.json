@@ -1,0 +1,11 @@
+{
+  "captured_utc": "2026-10-10T09:26:47.641606+00:00",
+  "observed_training_driver_state": {
+    "stage": "train",
+    "status": "running",
+    "development_only": true,
+    "formal_training_started": false,
+    "started_utc": "2026-10-10T07:16:09Z"
+  },
+  "purpose": "Preserve already-recorded training stage start for honest wall-time reporting; not an experimental endpoint"
+}

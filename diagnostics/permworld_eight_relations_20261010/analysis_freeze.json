@@ -1,0 +1,25 @@
+{
+  "protocol_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+  "source_sha256": {
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/analysis.py": "119e0770d1723ef4948f69c411fb1c0051b4669345ba5f32475a45a4c1f3c945",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/analysis_helpers.py": "e3171a8035ba5dbf0f04959f3cd2dea5546fbed46737a2c4ff29810c5ad4ca9a",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/extract.py": "216380df1c7224e852449dd973a1c8f664c9da233240c6d29cbc94c42d936c79",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/report.py": "95fa3ad68d9a5480bb3dbfaf4e295fa5ea31c1c15c9dfab16ffafd8a0b97f2bc",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.py": "f5be5d9dc90c7fb577efb3bd2c0ff2614733d561209d403d26da688db29bd6b3",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/metric_review/preparation_fixture.py": "72ee54fb08518052f1beee73cb032bcdbf2c8fc4b6d954fa80d9f38a8c5ff77a",
+    "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers.py": "4693a3dd79a0e96d792dca64c94de5a9458cbbc41847af6e12b1a58f82ed58c4",
+    "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/metric_review/independent_metrics.py": "6dbb804d22b7c4559bc8e3b41140efc50df5008c8a24698652525d57ebf0b8a3",
+    "/home/yangx/ICML/experiments/algebra.py": "758fa9839a31dc27b1d09d25d140821395b86f6eddbe4663a9a002d4f7fee6e3",
+    "/home/yangx/ICML/experiments/__init__.py": "eb5ff1d8c35c49b27364ffcbc40cbd0eacc71cde97aaff0ebfe018a3d947f745",
+    "/home/yangx/ICML/experiments/permworld_encoding/__init__.py": "d8344f473b24a5845bedeca52a3a94e1c02eb1f8c21f89ccec3a4eed313f3f7f",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/__init__.py": "000d98e3781bc5bf1377fea89d5e035da57d19580fb78b509929a01c49b0ff6b"
+  },
+  "registered_utc": "2026-10-10T22:08:23.611908+00:00",
+  "before_new_geometry": true,
+  "before_new_activation_extraction": true,
+  "fixed_metrics_and_masks": true,
+  "training_source_version_sha256": "27cb40ee43341fa326e6b455d989b6e70b31ee421d86f923262117448d7cf476",
+  "metric_abs_tolerance": 1e-08,
+  "activation_abs_tolerance": 2e-05,
+  "source_models_missing_at_freeze": 47
+}

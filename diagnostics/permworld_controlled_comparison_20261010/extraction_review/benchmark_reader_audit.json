@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "scope": "Read-only benchmark metadata/coverage audit; no extra model forward/training/metric evaluation",
+  "protocol_sha256": "9c8b6dfac09bf809410f87b2648cf9c8a12a5a17b77a17dae9de5a6bf11415ea",
+  "benchmark_sha256": "d3cf80c47e3bffd2bea6c377e4d1bc4d5db2a2331801bdd4e162def5e510b626",
+  "frozen_source_file_count": 25,
+  "frozen_source_differences": [],
+  "records": 180,
+  "unique_model_conditions": 20,
+  "unique_key_length_action_cells": 180,
+  "trained_records": 144,
+  "initial_records": 36,
+  "batch_size": 128,
+  "independent_vectors_per_case": 8,
+  "independent_vectors_total": 1440,
+  "independent_layers_per_vector": 5,
+  "gate_tolerance": 2e-05,
+  "gate_maxima": {
+    "manual_same_shape_layers_max_abs": 0.0,
+    "manual_prefix_final_norm_max_abs": 6.109476089477539e-06,
+    "old_final_norm_max_abs": 0.0
+  },
+  "same_shape_per_layer_maxima": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "prefix_only_raw_per_layer_maxima": [
+    6.4849853515625e-05,
+    6.866455078125e-05,
+    6.866455078125e-05,
+    6.866455078125e-05,
+    6.109476089477539e-06
+  ],
+  "prefix_only_raw_shape_discrepancy_max": 6.866455078125e-05,
+  "prefix_only_raw_cases_above_2e5": 63,
+  "prefix_raw_diagnostic_not_gate": true,
+  "old_cache_zero_error_cases": 180,
+  "initial_sharing_bitwise_cases": 32,
+  "physical_split_count": 40,
+  "logical_split_count": 64,
+  "estimated_full_forward_seconds_independently_recomputed": 51.47689432113839,
+  "benchmark_wall_seconds_as_recorded": 12.693732682993868,
+  "estimated_forward_gpu_hours": 0.01429913731142733,
+  "cost_scope": "128-example forward plus5 endpoint transfers; excludes file hashing, CP loading and memmap writes; n11..29 interpolated, not an actual total.",
+  "benchmark_wall_scope": "The script timer begins after protocol/data/cache-plan hashing; it is not whole command wall time and not full extraction time.",
+  "repair_validated_by_same_shape_benchmark": true,
+  "protocol_unchanged_across_shape_repair": true,
+  "retained_old_script_and_failed_log_verified": true,
+  "new_scientific_result_conclusion": null
+}

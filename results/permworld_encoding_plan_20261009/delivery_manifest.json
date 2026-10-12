@@ -1,0 +1,43 @@
+{
+  "delivered_utc": "2026-10-09T21:06:40.818959+00:00",
+  "status": "steps_1_2_complete_stopped_before_formal_data_and_training",
+  "model_user_confirmed": {
+    "d_model": 256,
+    "layers": 4,
+    "heads": 8
+  },
+  "precision_selection": "Previously stated default simultaneous95% halfwidth0.10, assumed unit-effect sd0.20; this is a planning scenario, not a verified variance bound.",
+  "units": 24,
+  "models": 768,
+  "protocol_sha256": "f8abbc9e7b125f667fa264f2ef7047d8836532f02328ac0e526477b8dcc81800",
+  "files": {
+    "experiments/permworld_encoding/__init__.py": "d8344f473b24a5845bedeca52a3a94e1c02eb1f8c21f89ccec3a4eed313f3f7f",
+    "experiments/permworld_encoding/benchmark.py": "6d598919a23e25c7c43cbb58e8bd41b4f3b21e33f22669db22c2967167f1b31a",
+    "experiments/permworld_encoding/checks.py": "6b260964e805daf17bc2af19cae8bdae1dc008b137abb09e9ed37ea829911221",
+    "experiments/permworld_encoding/core.py": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+    "experiments/permworld_encoding/data.py": "8a89976c6c0b390f9233eba4ff23593d7c1545eb21f6af4e87a92122fdb7c75d",
+    "experiments/permworld_encoding/evaluate.py": "227fa70c583d396972b313f64df0c4fc94a5f0a78df92843c0b38230ac2845e8",
+    "experiments/permworld_encoding/plan.py": "02912c6880aec37282b7ad40930ab433a83d10b6e1ded4f1a2d32ef44546dcad",
+    "experiments/permworld_encoding/profile_analysis.py": "7df0eaa4d0096b8aa2c46c653891557d0baf84198924af230480224a0fae8af5",
+    "experiments/permworld_encoding/train.py": "9fb5272c99397a1cd071d84b466d76cf012b8b042727e776ef1ea3497829540a",
+    "experiments/permworld_encoding/validate.py": "7a80fcb6551754e078ee8f3efe6feb8c4c8af2c497d9e3a75cd4436d0a53fa69",
+    "results/permworld_encoding_plan_20261009/README.txt": "db20ebe8e4d3f9d01eb02aafe09d55c221b19d83c418ee9627423da9a284f44f",
+    "results/permworld_encoding_plan_20261009/analysis_profile.json": "52aa78ab5583f92dd2bac296747baacc2d7e2885454c438577b01d04049d65f7",
+    "results/permworld_encoding_plan_20261009/benchmark.json": "cc54ac2282032987d981e6c837a56a184a51a63d1ef5db0bea70ef28ce1374e6",
+    "results/permworld_encoding_plan_20261009/cost_estimate.csv": "3798f76d75a48792a86f16a893965a5809841b4c759b37554d4e929aa54ddfc7",
+    "results/permworld_encoding_plan_20261009/encoding_validation.json": "ac4613958bcc3ddd98b68e077b6363d5c04d98a1df16a72d7ebe1058d84c3045",
+    "results/permworld_encoding_plan_20261009/freeze_manifest.json": "4d03ebddc289aec61d77fc84af08e88973a598b9eeb95ce352358ceb5668ad5c",
+    "results/permworld_encoding_plan_20261009/freeze_manifest_before_dependency_audit.json": "cebbf4f88fa458113ed74da0273b391a73ce2213569de1d2a68975a4fa5b1049",
+    "results/permworld_encoding_plan_20261009/integration_checks.json": "6aced8fb3388faf416123b37ede61ed666263d783d1afb891be23bb82e1a915a",
+    "results/permworld_encoding_plan_20261009/planning_candidate.json": "9ebe22bf508aa875e2eb6adb8c0bbb5655178809fb0e4ce8d5ed95fe2b260a94",
+    "results/permworld_encoding_plan_20261009/precision_sensitivity.csv": "907c2824c990f8fd4404a3500e8d2249f1d4a65b14e80bc65b58b57c0c2c8591",
+    "results/permworld_encoding_plan_20261009/protocol.json": "f8abbc9e7b125f667fa264f2ef7047d8836532f02328ac0e526477b8dcc81800",
+    "results/permworld_encoding_plan_20261009/readiness_audit.json": "e5ae4d30ea4b3bbb3109561b824b0d2c8fb7e0221db60a87b7c4b8939fca103a",
+    "results/permworld_encoding_plan_20261009/readiness_check.py": "405d00dc2cafaa983e42ac09f3b1dda0d86fdef2083b8c57aad9c28a65a4ec88",
+    "results/permworld_encoding_plan_20261009/report.txt": "5fdea577acd85d4b2f241111ccfc315988fb1228a329bc21adeddde62e4126fb",
+    "results/permworld_encoding_plan_20261009/training_manifest.csv": "ec7446d1e2f1b40a7eb2216e8de77ff431542d6d0ef7eeea5dba48e71903878d",
+    "results/permworld_encoding_plan_20261009/vocabulary.json": "d4e0836072d9a7906fa73901fdf35e2f2cbebb230ab393589a02de6ae51ff728"
+  },
+  "formal_training_started": false,
+  "formal_output_directory_absent": true
+}

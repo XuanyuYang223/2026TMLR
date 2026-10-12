@@ -1,0 +1,3 @@
+independent_units,unique_models_per_unit,models,formal_updates,empirical_source_process_wall_seconds,empirical_source_process_wall_hours,checkpoint_apparent_bytes_reference,actual_initial_apparent_bytes_reference,cache_bytes_reference,accuracy_or_power_guarantee,scope
+1,12,12,240000,9818.149047048006,2.7272636241800017,315584884,19671098,,False,Budget scenario only; measured apparent checkpoint bytes exclude new world/cache/engineering/logs
+2,12,24,480000,19636.29809409601,5.454527248360003,631169768,39342196,,False,Budget scenario only; measured apparent checkpoint bytes exclude new world/cache/engineering/logs

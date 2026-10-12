@@ -1,0 +1,355 @@
+{
+  "status": "ready_for_full_hash_audit",
+  "registered_utc": "2026-10-11T11:19:11.769538+00:00",
+  "missing": [],
+  "problems": [],
+  "completed_metadata_endpoints": 68,
+  "expected_endpoints": 68,
+  "completed_metadata": [
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_transformer_one_line_descents",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_gru_one_line_descents",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_gru_one_line_recoils",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_gru_one_line_peaks",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_gru_one_line_valleys",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_anti_fixed_points",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_components",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_deficiencies",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_exceedances",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_fixed_points",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_global_descents",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_lds_length",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_left_to_right_maxima",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_left_to_right_minima",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_lis_length",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_longest_decreasing_run",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_one_line_longest_increasing_run",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_anti_fixed_points",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_components",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_deficiencies",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_exceedances",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_fixed_points",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_global_descents",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_lds_length",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_left_to_right_maxima",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_left_to_right_minima",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_lis_length",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_longest_decreasing_run",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_transformer_canonical_cycle_longest_increasing_run",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_anti_fixed_points",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_components",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_deficiencies",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_exceedances",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_fixed_points",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_global_descents",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_lds_length",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_left_to_right_maxima",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_left_to_right_minima",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_lis_length",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_longest_decreasing_run",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_one_line_longest_increasing_run",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_anti_fixed_points",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_components",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_deficiencies",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_exceedances",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_fixed_points",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_global_descents",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_lds_length",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_left_to_right_maxima",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_left_to_right_minima",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_lis_length",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_longest_decreasing_run",
+      "step": 20000
+    },
+    {
+      "domain": "permworld",
+      "run_id": "eightrel001_gru_canonical_cycle_longest_increasing_run",
+      "step": 20000
+    },
+    {
+      "domain": "graphworld",
+      "run_id": "graphpilot001_max_out",
+      "step": 20000
+    },
+    {
+      "domain": "graphworld",
+      "run_id": "graphpilot001_min_out",
+      "step": 20000
+    },
+    {
+      "domain": "graphworld",
+      "run_id": "graphpilot001_max_in",
+      "step": 20000
+    },
+    {
+      "domain": "graphworld",
+      "run_id": "graphpilot001_min_in",
+      "step": 20000
+    }
+  ],
+  "metadata_only": true,
+  "weights_or_raw_cache_opened": false,
+  "GPU_started": false,
+  "training": false,
+  "final_complete_written": false
+}

@@ -1,0 +1,257 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "records": [
+    {
+      "control": "raw_within_n",
+      "metric": "linear_cka",
+      "actual": 0.1715988305971257,
+      "independent": 0.17159883059712572,
+      "absolute_error": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "control": "raw_within_n",
+      "metric": "knn_overlap",
+      "actual": 0.1515625,
+      "independent": 0.15156250000000002,
+      "absolute_error": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "control": "raw_within_n",
+      "metric": "procrustes",
+      "actual": -1.570704050580175,
+      "independent": -1.5707040505801746,
+      "absolute_error": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "control": "answer_strata",
+      "metric": "linear_cka",
+      "actual": 0.19500544872622994,
+      "independent": 0.19500544872622996,
+      "absolute_error": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "control": "answer_strata",
+      "metric": "knn_overlap",
+      "actual": 0.17500000000000002,
+      "independent": 0.17500000000000002,
+      "absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "control": "answer_strata",
+      "metric": "procrustes",
+      "actual": -1.486417227550425,
+      "independent": -1.4864172275504255,
+      "absolute_error": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "check": "fit-only shuffle changes held-out map without refitting final",
+      "perfect_error": 1.5514076113225481e-15,
+      "shuffled_fit_error": 1.538873132142083,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "validation",
+      "relation": "R1",
+      "control": "raw_within_n",
+      "selected": 80,
+      "residual_df": 79,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "validation",
+      "relation": "R1",
+      "control": "answer_strata",
+      "selected": 72,
+      "residual_df": 54,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "validation",
+      "relation": "R2",
+      "control": "raw_within_n",
+      "selected": 80,
+      "residual_df": 79,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "validation",
+      "relation": "R2",
+      "control": "answer_strata",
+      "selected": 72,
+      "residual_df": 54,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "validation",
+      "relation": "R3",
+      "control": "raw_within_n",
+      "selected": 80,
+      "residual_df": 79,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "validation",
+      "relation": "R3",
+      "control": "answer_strata",
+      "selected": 73,
+      "residual_df": 55,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "validation",
+      "relation": "R4",
+      "control": "raw_within_n",
+      "selected": 80,
+      "residual_df": 79,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "validation",
+      "relation": "R4",
+      "control": "answer_strata",
+      "selected": 72,
+      "residual_df": 54,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "analysis",
+      "relation": "R1",
+      "control": "raw_within_n",
+      "selected": 80,
+      "residual_df": 79,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "analysis",
+      "relation": "R1",
+      "control": "answer_strata",
+      "selected": 73,
+      "residual_df": 56,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "analysis",
+      "relation": "R2",
+      "control": "raw_within_n",
+      "selected": 80,
+      "residual_df": 79,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "analysis",
+      "relation": "R2",
+      "control": "answer_strata",
+      "selected": 72,
+      "residual_df": 54,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "analysis",
+      "relation": "R3",
+      "control": "raw_within_n",
+      "selected": 80,
+      "residual_df": 79,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "analysis",
+      "relation": "R3",
+      "control": "answer_strata",
+      "selected": 72,
+      "residual_df": 54,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "analysis",
+      "relation": "R4",
+      "control": "raw_within_n",
+      "selected": 80,
+      "residual_df": 79,
+      "passed": true
+    },
+    {
+      "check": "independent joint tuple Counter selection",
+      "split": "analysis",
+      "relation": "R4",
+      "control": "answer_strata",
+      "selected": 72,
+      "residual_df": 54,
+      "passed": true
+    },
+    {
+      "check": "exact shifted answer and EOS supervision/CE",
+      "task": "F1",
+      "passed": true
+    },
+    {
+      "check": "exact shifted answer and EOS supervision/CE",
+      "task": "F2",
+      "passed": true
+    },
+    {
+      "check": "exact shifted answer and EOS supervision/CE",
+      "task": "F3",
+      "passed": true
+    },
+    {
+      "check": "exact shifted answer and EOS supervision/CE",
+      "task": "F4",
+      "passed": true
+    }
+  ],
+  "count": 27,
+  "metric_source_sha256": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+  "independent_source_sha256": "6dbb804d22b7c4559bc8e3b41140efc50df5008c8a24698652525d57ebf0b8a3",
+  "source_updates": 0,
+  "real_final_labels_read": false,
+  "models_constructed": 0,
+  "new_forward": 0,
+  "actual_plan": {
+    "unit": "first manifest unit",
+    "relation": "R1",
+    "n": 6,
+    "fit_anchors": 64,
+    "analysis_anchors": 64,
+    "controls": [
+      "raw_within_n",
+      "answer_strata"
+    ],
+    "phases": [
+      "initial",
+      "trained"
+    ],
+    "roles": [
+      "correct",
+      "wrong",
+      "identity"
+    ],
+    "branches": [
+      "prefix_final",
+      "output_prob"
+    ],
+    "tolerance": 1e-08,
+    "insufficient_support": "unavailable; no batch replacement, threshold relaxation or rank adaptation"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "started_epoch": 1791657896.409166,
+  "finished_utc": "2026-10-10T18:45:17.054129+00:00",
+  "completed_models": 16,
+  "elapsed_seconds": 20.644973278045654,
+  "device": "cuda",
+  "length_cells": 96,
+  "sample_model_pairs": 147456,
+  "validation_reproduction_passed": true,
+  "validation_reproduction_failed_rows": [],
+  "optimizer_constructed": false,
+  "backward_called": false,
+  "parameters_changed": false,
+  "decoded_arrays": [
+    "train_lengths",
+    "train_labels",
+    "train_one_line_input",
+    "train_canonical_cycle_input",
+    "validation_lengths",
+    "validation_labels",
+    "validation_one_line_input",
+    "validation_canonical_cycle_input"
+  ],
+  "test_arrays_decoded": false,
+  "geometry_evaluated": false,
+  "new_training": false
+}

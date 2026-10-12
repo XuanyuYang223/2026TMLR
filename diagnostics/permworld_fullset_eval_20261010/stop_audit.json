@@ -1,0 +1,17 @@
+{
+  "status": "completed_and_stopped",
+  "generated_utc": "2026-10-10T18:46:32.796718+00:00",
+  "existing_8k_checkpoints": 16,
+  "sample_model_pairs": 147456,
+  "length_cells": 96,
+  "report_status": "passed",
+  "independent_audit_status": "passed",
+  "protected_old_files": 548,
+  "protected_hash_differences": [],
+  "new_training": false,
+  "test_used": false,
+  "new_CKA": false,
+  "GroupWorld": false,
+  "F17_changed": false,
+  "auto_continuation": false
+}

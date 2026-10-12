@@ -1,0 +1,46 @@
+{
+  "registered_utc": "2026-10-10T22:32:26.378683+00:00",
+  "source_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/audit.py": "75c0abbbb5a1a0a616ad324ec39ce8bbd81eb088f0395ea2e01fe1b5afb2c6fc"
+  },
+  "policy": {
+    "version": "permworld-eight-relations-final-provenance/v1",
+    "expected_perm_models": 64,
+    "expected_reused": 16,
+    "expected_perm_new": 48,
+    "expected_graph_new": 4,
+    "fixed_updates": 20000,
+    "exposures_per_model": 1280000,
+    "supervised_tokens_per_model": 2560000,
+    "successful_perm_engineering_updates": 240,
+    "failed_preformal_perm_engineering_updates": 40,
+    "perm_cache_logical_records": 256,
+    "graph_cache_logical_records": 16,
+    "protected_perm_files": 1223,
+    "expected_git_HEAD": "e4e9ded9648aa2dc92a1cceef929cc9521546418",
+    "pre_run_git_diff_byte_snapshot_available": false,
+    "git_claim": "Final tracked files/index equal stated HEAD; protected old files match frozen SHA. No pre-run diff snapshot claim.",
+    "no_model_construction": true,
+    "no_forward": true,
+    "no_training": true,
+    "no_scientific_metrics": true,
+    "GPU_kernel_time": "unknown unless independently measured; never set to0 from CPU-only audit",
+    "incomplete_phases": "--run writes pending/failure only, never a completed audit",
+    "required_extra_CPU_readout_phases": {
+      "perm_result_readout": "permworld",
+      "graph_result_readout": "graphworld"
+    }
+  },
+  "protocol_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+  "graph_protocol_sha256": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+  "input_manifests_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/training_freeze.json": "e47cd04f85703899177bac2b1f53f5c227fa153ada6beaee1edb7cfeb6386261",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/analysis_freeze.json": "38d4a132a145f13f30278c7d996d218e40a264e78e6126f341c117869f3d8848",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/metadata_writer_freeze.json": "37b1c5c33d3a3740bf2372267dc5c28bab50d72b2b3509059207fd7fa14fb008",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protected_files.json": "d677de97c4723dbc41a699262503707b032b01b5adb7a090ec022c62ec9a2823",
+    "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/freeze_manifest.json": "af8c4499dfd5c47d2af48319e323c317fb7868240f5e19da259083971cb88556",
+    "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/verification_freeze.json": "d4d3f8d0d4f8977e3201f2ac6dd0d4d94c5f7eb46d56fe08571f03b500a235bb",
+    "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/protected_files.json": "ffa03ee0e70ec8c81cae891411cdda88631fcd356580ebe858fe1a7102645b43",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/readout_freeze.json": "6a694aea9f316675ec5f232419207ae22ac1ca736761eb6aa80f9220bb14cc3c"
+  }
+}

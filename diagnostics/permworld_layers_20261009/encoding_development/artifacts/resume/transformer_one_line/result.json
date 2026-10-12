@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "architecture": "transformer",
+  "encoding": "one_line",
+  "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "execution_source_version_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+  "uninterrupted_reference_from_step0": true,
+  "reference_directory": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/resume/transformer_one_line/continuous_attempts/attempt001",
+  "split_directory": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/resume/transformer_one_line/split",
+  "independent_process_resume": true,
+  "from_step": 1000,
+  "until_step": 2000,
+  "parameter_max_difference": 0.0,
+  "optimizer_max_difference": 0.0,
+  "logit_max_difference": 0.0,
+  "rng_identity": true,
+  "continuous_sha256": "e308be037676119cbace637dbb11845c8109dd464c31ad529181131829a7ff7d",
+  "replayed_sha256": "c6a86577dc4d91d1193b6a4e2897827bed3893ecd081df889051a56045ba1979"
+}

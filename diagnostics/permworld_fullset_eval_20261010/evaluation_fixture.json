@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "CPU_only": true,
+  "known_logit_accuracy_and_CE": true,
+  "answer_and_EOS_positions_checked": true,
+  "complete_sample_coverage": true,
+  "complete_train_and_validation": true,
+  "combined_loss_identity": true,
+  "validation_reproduction_identity": true,
+  "training_mode_rejected": true,
+  "reserved_test_rejected": true,
+  "model_forward_in_inference_mode": true,
+  "source_models_loaded": false,
+  "full_eval_sha256": "33b22c6f593d07da82ae6a88229c6d27c4c7b192242b345f2ebd78e896641e4a"
+}

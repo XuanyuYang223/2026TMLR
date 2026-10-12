@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "fixture_only": false,
+  "created_utc": "2026-10-10T10:15:23.031555+00:00",
+  "read_completed_export_only": true,
+  "source_models": 16,
+  "development_relations": [
+    "descent_inverse",
+    "peak_complement"
+  ],
+  "original_second_inverse_confirmed": false,
+  "geometry_summary_rows": 128,
+  "interaction_rows": 64,
+  "geometry_length_rows": 2688,
+  "source_learning_rows": 16,
+  "source_accuracy_length_rows": 2016,
+  "baseline_model_condition_action_rows": 96,
+  "all_fixed_conditions_retained": true,
+  "missing_lengths_reweighted": false,
+  "actual_initialization_within_architecture_verified": true,
+  "same_initializer_across_architectures_claimed": false,
+  "formal_training_started": false,
+  "GroupWorld_started": false,
+  "new_training_started_by_this_script": false,
+  "torch_or_GPU_imported": false,
+  "engineering_status": "passed",
+  "confirmatory_pvalues_generated": false,
+  "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "source_version_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+  "script_sha256": "2b1a974fe489ed5997e15ff43ac22118513174357fbed7c55deb18a129f42369",
+  "input_sha256": {
+    "summary_audit.json": "9def543ae4a0e6b84e65296ac6db57502bfaea06d44f955f6769f475c54a9f73",
+    "final_audit.json": "912b2443458b72b363cfcb06f093ba343083692cb2f1cfe2113108fd4ec08403",
+    "existing_final_audit.json": "db2f7792678f75ff26dbfcf7a838e205183d5da169b9c19547332e09289f547f",
+    "statistical_review.json": "503fb959085b99943fba2c671a57cc079aea576851e7005a65b79611b3e05c5a",
+    "relation_metric_summary.csv": "05e4452ed3d9e28285dc7999c55d7751b8994a1ce2cbefd0adb74bc5221a9de6",
+    "encoding_development/export_audit.json": "2d60fd7fae6efaa9aa7945d69a423ea9f782897cb8de7be48dfa5fb9573d1130"
+  },
+  "output_sha256": {
+    "completion_report.html": "e680fa31ba2ff0c8a502dfe470bb87af3e2f86ff64bb89627c046f61f0eaface",
+    "completion_report.txt": "f806046332b2e18d12621d3c055c5382abb85b1dbe9c3741b9b1eb287431212d"
+  }
+}

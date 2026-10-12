@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "synthetic_inputs_only": true,
+  "no_real_cache_read": true,
+  "no_real_new_CKA": true,
+  "no_training": true,
+  "no_forward": true,
+  "source_sha256": "e174d55ba88c5f58006d2b929550fc7ffaff1c8541f673fffb0146f787925fca",
+  "fixture_source_sha256": "0cd7e7b11a684f8128088b0b429b0e0b5d1838c6a05af1222b15ca78e359c078",
+  "metric_source_sha256": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+  "checks": [
+    {
+      "check": "synthetic_Gram_vs_covariance_raw",
+      "passed": true
+    },
+    {
+      "check": "synthetic_Gram_vs_covariance_joint_strata",
+      "passed": true
+    },
+    {
+      "check": "constant_CKA_undefined",
+      "passed": true
+    },
+    {
+      "check": "fixed_weights_no_partial_NaN_reweight",
+      "passed": true
+    },
+    {
+      "check": "fixed_weights_all_lengths",
+      "passed": true
+    },
+    {
+      "check": "original_three_right_roles_retained",
+      "passed": true
+    },
+    {
+      "check": "plus1_coordinate_shift_same_partition",
+      "passed": true
+    },
+    {
+      "check": "residual_degrees_of_freedom",
+      "passed": true
+    },
+    {
+      "check": "raw_uses_original_anchor_indices",
+      "passed": true
+    },
+    {
+      "check": "empty_exact_category_retained",
+      "passed": true
+    },
+    {
+      "check": "phase_intersection_common_support",
+      "passed": true
+    },
+    {
+      "check": "Gcat_formula_on_identical_pair_support",
+      "passed": true
+    },
+    {
+      "check": "no_Torch_import",
+      "passed": true
+    }
+  ]
+}

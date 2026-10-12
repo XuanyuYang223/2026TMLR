@@ -1,0 +1,17 @@
+run_id,architecture,encoding,task,parameters,initial_validation_accuracy,final_validation_accuracy,gain,learning_gate_passed
+archdev001_transformer_one_line_descents,transformer,one_line,descents,3240448,0.0,0.9905133928571429,0.9905133928571429,True
+archdev001_transformer_one_line_recoils,transformer,one_line,recoils,3240448,0.0,0.7228422619047619,0.7228422619047619,True
+archdev001_transformer_one_line_peaks,transformer,one_line,peaks,3240448,0.002418154761904762,0.8543526785714286,0.8519345238095238,True
+archdev001_transformer_one_line_valleys,transformer,one_line,valleys,3240448,0.005208333333333333,0.9146205357142857,0.9094122023809523,True
+archdev001_transformer_canonical_cycle_descents,transformer,canonical_cycle,descents,3240448,0.0,0.31045386904761907,0.31045386904761907,True
+archdev001_transformer_canonical_cycle_recoils,transformer,canonical_cycle,recoils,3240448,0.0,0.3125,0.3125,True
+archdev001_transformer_canonical_cycle_peaks,transformer,canonical_cycle,peaks,3240448,0.0,0.40829613095238093,0.40829613095238093,True
+archdev001_transformer_canonical_cycle_valleys,transformer,canonical_cycle,valleys,3240448,0.0,0.4049479166666667,0.4049479166666667,True
+archdev001_gru_one_line_descents,gru,one_line,descents,1660416,0.0,0.9998139880952381,0.9998139880952381,True
+archdev001_gru_one_line_recoils,gru,one_line,recoils,1660416,0.0,0.3880208333333333,0.3880208333333333,True
+archdev001_gru_one_line_peaks,gru,one_line,peaks,1660416,0.0020461309523809525,1.0,0.9979538690476191,True
+archdev001_gru_one_line_valleys,gru,one_line,valleys,1660416,0.0033482142857142855,0.9996279761904762,0.9962797619047619,True
+archdev001_gru_canonical_cycle_descents,gru,canonical_cycle,descents,1660416,0.0,0.31436011904761907,0.31436011904761907,True
+archdev001_gru_canonical_cycle_recoils,gru,canonical_cycle,recoils,1660416,0.0,0.3005952380952381,0.3005952380952381,True
+archdev001_gru_canonical_cycle_peaks,gru,canonical_cycle,peaks,1660416,0.0020461309523809525,0.41685267857142855,0.4148065476190476,True
+archdev001_gru_canonical_cycle_valleys,gru,canonical_cycle,valleys,1660416,0.0033482142857142855,0.41220238095238093,0.40885416666666663,True

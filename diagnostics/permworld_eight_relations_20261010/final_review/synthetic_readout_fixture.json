@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "no_real_geometry_read": true,
+  "no_metrics_recomputed": true,
+  "no_training": true,
+  "permworld": {
+    "status": "completed_readout",
+    "scientific_metrics_recomputed": 0,
+    "training_updates": 0,
+    "source_models": 64,
+    "relation_instances": 8,
+    "transform_types": 2,
+    "independent_worlds": 1,
+    "counts_are_coupled_not_independent_repetitions": true,
+    "component_coverage_rows": 13824,
+    "primary_condition_rows": 32,
+    "metric_direction_rows": 32,
+    "all_layer_rows": 768,
+    "encoding_rows": 16,
+    "source_learning_rows": 64,
+    "curve_rows": 1280,
+    "missing_graph_not_imputed": true,
+    "input_sha256": {
+      "per_length_results.csv": "9999a76ab4c1882b553e77e4a5782f72519e8ad94bf0d29e11ddb7dfa82b8a60",
+      "contrast_summary.csv": "6742e9c77fb64a15f5f5ab0744d14821adcda9c3ecbf879c3c03040a62f98e17",
+      "source_learning.csv": "3b446b98c805286cfb4f236f1f572ed5844608768c4815347fd83377b90a0c9e",
+      "source_learning_summary.csv": "1c4fc70781be0a26274746b19d423705856564a7843726bf16fe07cc0a1b6591"
+    },
+    "fixture_only": true
+  },
+  "graphworld": {
+    "status": "completed_readout",
+    "scientific_metrics_recomputed": 0,
+    "training_updates": 0,
+    "source_models": 4,
+    "relation_instances": 4,
+    "transform_types": 2,
+    "independent_worlds": 1,
+    "counts_are_coupled_not_independent_repetitions": true,
+    "primary_relation_rows": 4,
+    "component_coverage_rows": 2880,
+    "input_sha256": {
+      "geometry_per_n.csv": "f7d2de7d987db40638345b25c727a40c835ba4f97d3363824b12e76eb3b8085c",
+      "geometry_summary.csv": "91cca53590ec173f68bdf60c88c1d7f50ac2b569e94454af5b77d37d45aa77f9",
+      "source_learning.csv": "29deee8511e1b173bbfe2094f372114d640aa3268e9a37bfbced284cf0f3fa4c",
+      "evaluation_complete.json": "0cb87b61f0afab118ac222a0af92bc06c579959aeea208461294d16becf11b39"
+    },
+    "fixture_only": true
+  },
+  "graph_pending_case_passed": true,
+  "identity_only_undefined_case_passed": true,
+  "Delta_flip_without_Bt_flip_case_passed": true,
+  "all_layers_and_undefined_flip_case_passed": true,
+  "source_sha256": "6c417d11426122d83da9568c26f43679033241e51c9ed10b49637a0a566a68e3"
+}

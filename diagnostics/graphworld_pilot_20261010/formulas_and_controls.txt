@@ -1,0 +1,16 @@
+Exact graph formulas and negative control
+
+A_ij=1 means i->j; diagonal0. Outdegree d_out(i)=sum_j A_ij; indegree d_in(i)=sum_j A_ji. R(A)=A^T, so d_out^A(i)=d_in^R(A)(i). Maxima and minima over the same vertex set give both R relations exactly. C(A)_ij=1-A_ij for i!=j and0 otherwise, so d_out^C(A)(i)=n-1-d_out^A(i), and similarly for indegrees. Taking minima yields max_out(A)=n-1-min_out(C(A)) and max_in(A)=n-1-min_in(C(A)).
+
+W is a fixed permutation of unordered vertex pairs, built by Random(20261010+n) shuffle and adjacent swaps; odd last pair stays fixed. Both oriented slots of a pair move together, preserving the low->high slot orientation. Thus W^2=Id; R^2=C^2=Id; W commutes with R because both orientations move together, W commutes with C because C complements every non-diagonal slot, and R commutes with C. They generate at most2^3=8 transformed arrays. W preserves edge count. WR/WC therefore match their respective R/C controls in n and edge count.
+
+Any vertex-induced permutation of unordered pairs preserves pair intersections. mathematics_audit.json supplies explicit original intersecting pairs whose W images are disjoint for n6/7/8, proving this W is not a vertex relabeling. It also supplies concrete adjacency counterexamples for every wrong relation at each n, and the unselected random samples' accidental-match fractions. Accidental matches are retained in training/evaluation; no W seed is selected by outcome.
+
+The fixed positional binary two-class-onehot kernel keeps vertex-pair positions. R and W permute slots; C exchanges00/01 coordinates in every slot, hence all act as orthogonal coordinate permutations. Centering globally or within the identical fixed strata commutes with that fixed coordinate map; fit/test centered self and cross Grams are unchanged. The input reference cannot distinguish correct versus wrong here. Constant size/boundary positions vanish under within-n centering.
+
+NetworkX local3.6.1 independently checked A_ij direction, reverse and loopless complement. Official reference pages inspected without changing environment:
+https://networkx.org/documentation/stable/reference/classes/generated/networkx.DiGraph.reverse.html
+https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.operators.unary.complement.html
+https://networkx.org/documentation/stable/reference/generated/networkx.linalg.graphmatrix.adjacency_matrix.html
+
+Graph-specific task labels reinterpret four fixed original token slots at random step0; no semantic transfer from a trained PermWorld model is claimed. Original actual TF constructor checkpoint and archived descents starting random states are copied byte-for-byte and shared across all four tasks.

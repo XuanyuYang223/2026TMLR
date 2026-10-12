@@ -1,0 +1,49 @@
+{
+  "status": "passed_synthetic_artifact_fixture",
+  "checks": [
+    {
+      "check": "correct_split_stream_object_SHA_regular_materialization",
+      "passed": true
+    },
+    {
+      "check": "idempotent_download_and_object_cache_reuse",
+      "passed": true
+    },
+    {
+      "check": "different_existing_download_not_overwritten",
+      "passed": true
+    },
+    {
+      "check": "different_materialized_file_not_overwritten",
+      "passed": true
+    },
+    {
+      "check": "multiple_Zstd_frames_and_arbitrary_split_boundaries",
+      "passed": true
+    },
+    {
+      "check": "different_existing_object_not_overwritten",
+      "passed": true
+    },
+    {
+      "check": "reject_tar_traversal",
+      "passed": true
+    },
+    {
+      "check": "reject_tar_symlink",
+      "passed": true
+    },
+    {
+      "check": "cached_objects_do_not_bypass_archive_safety",
+      "passed": true
+    },
+    {
+      "check": "reject_manifest_restore_path_traversal",
+      "passed": true
+    }
+  ],
+  "count": 10,
+  "remote_network_reads": 0,
+  "science_files_or_models_used": 0,
+  "zstandard_version": "0.25.0"
+}

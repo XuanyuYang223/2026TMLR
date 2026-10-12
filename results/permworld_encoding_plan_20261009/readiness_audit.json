@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "protocol_sha256": "f8abbc9e7b125f667fa264f2ef7047d8836532f02328ac0e526477b8dcc81800",
+  "frozen_source_and_vocabulary_identity": true,
+  "manifest_models": 768,
+  "manifest_units": 24,
+  "manifest_complete": true,
+  "code_syntax_and_three_cli_entrypoints": true,
+  "synthetic_statistics": {
+    "known_encoding_effects_and_t_intervals": true,
+    "undefined_gold_preserved": true,
+    "undefined_length_not_reweighted": true,
+    "fixtures_deleted": true
+  },
+  "synthetic_history": {
+    "historical_json_and_both_archive_layouts": true,
+    "historical_index_cache_identity": true,
+    "fixtures_deleted": true
+  },
+  "protected_artifacts": [
+    {
+      "inventory": "diagnostics/permworld_cka_20261009/protected_before.json",
+      "matched_files": 1214,
+      "all_unchanged": true
+    },
+    {
+      "inventory": "diagnostics/permworld_cka_20261009/deliverable_manifest.json",
+      "matched_files": 61,
+      "all_unchanged": true
+    },
+    {
+      "inventory": "diagnostics/permworld_encoding_plan_20261009/manifest.json",
+      "matched_files": 9,
+      "all_unchanged": true
+    }
+  ],
+  "tracked_worktree_unchanged": true,
+  "formal_output_directory_absent": true,
+  "formal_training_started": false
+}

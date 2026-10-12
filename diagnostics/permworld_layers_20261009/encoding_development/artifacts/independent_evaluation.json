@@ -1,0 +1,1846 @@
+{
+  "status": "passed",
+  "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "execution_source_version_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+  "activation_vectors_checked": 2304,
+  "max_saved_activation_difference": 5.155801773071289e-06,
+  "max_prefix_suffix_causal_difference": 2.7120113372802734e-06,
+  "max_cka_covariance_difference": 4.440892098500626e-15,
+  "activation_checks": [
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.337860107421875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.9206275939941406e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.0994415283203125e-06,
+      "suffix_causal_max_difference": 1.5497207641601562e-06
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 4.5299530029296875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 4.76837158203125e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 5.155801773071289e-06,
+      "suffix_causal_max_difference": 1.9073486328125e-06
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.337860107421875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.9206275939941406e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.0994415283203125e-06,
+      "suffix_causal_max_difference": 1.5497207641601562e-06
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.86102294921875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.337860107421875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.86102294921875e-06,
+      "suffix_causal_max_difference": 1.1920928955078125e-06
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.337860107421875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.9206275939941406e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.0994415283203125e-06,
+      "suffix_causal_max_difference": 1.5497207641601562e-06
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.7865171432495117e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.86102294921875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.3245811462402344e-06,
+      "suffix_causal_max_difference": 9.5367431640625e-07
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.337860107421875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.9206275939941406e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.0994415283203125e-06,
+      "suffix_causal_max_difference": 1.5497207641601562e-06
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.0994415283203125e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.5762786865234375e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.6954879760742188e-06,
+      "suffix_causal_max_difference": 1.0728836059570312e-06
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.6954879760742188e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.2186508178710938e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.814697265625e-06,
+      "suffix_causal_max_difference": 1.4938414096832275e-06
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.86102294921875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.384185791015625e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.384185791015625e-06,
+      "suffix_causal_max_difference": 9.5367431640625e-07
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.6954879760742188e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.2186508178710938e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.814697265625e-06,
+      "suffix_causal_max_difference": 1.4938414096832275e-06
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.86102294921875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.6226043701171875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.86102294921875e-06,
+      "suffix_causal_max_difference": 9.5367431640625e-07
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.6954879760742188e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.2186508178710938e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.814697265625e-06,
+      "suffix_causal_max_difference": 1.4938414096832275e-06
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.0265579223632812e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.6226043701171875e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.384185791015625e-06,
+      "suffix_causal_max_difference": 7.152557373046875e-07
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.6954879760742188e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.2186508178710938e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.814697265625e-06,
+      "suffix_causal_max_difference": 1.4938414096832275e-06
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.384185791015625e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 3.814697265625e-06,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 1.9073486328125e-06,
+      "suffix_causal_max_difference": 9.5367431640625e-07
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 8.344650268554688e-07,
+      "suffix_causal_max_difference": 8.344650268554688e-07
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 2.7120113372802734e-06,
+      "suffix_causal_max_difference": 2.7120113372802734e-06
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 8.344650268554688e-07,
+      "suffix_causal_max_difference": 8.344650268554688e-07
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 1.5795230865478516e-06,
+      "suffix_causal_max_difference": 1.5795230865478516e-06
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 8.344650268554688e-07,
+      "suffix_causal_max_difference": 8.344650268554688e-07
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 1.3113021850585938e-06,
+      "suffix_causal_max_difference": 1.3113021850585938e-06
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 8.344650268554688e-07,
+      "suffix_causal_max_difference": 8.344650268554688e-07
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 1.516193151473999e-06,
+      "suffix_causal_max_difference": 1.516193151473999e-06
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 9.5367431640625e-07,
+      "suffix_causal_max_difference": 9.5367431640625e-07
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 1.6391277313232422e-06,
+      "suffix_causal_max_difference": 1.6391277313232422e-06
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 9.5367431640625e-07,
+      "suffix_causal_max_difference": 9.5367431640625e-07
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 1.9669532775878906e-06,
+      "suffix_causal_max_difference": 1.9669532775878906e-06
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 9.5367431640625e-07,
+      "suffix_causal_max_difference": 9.5367431640625e-07
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 1.0728836059570312e-06,
+      "suffix_causal_max_difference": 1.0728836059570312e-06
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "condition": "initial",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 9.5367431640625e-07,
+      "suffix_causal_max_difference": 9.5367431640625e-07
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "condition": "initial",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "condition": "initial",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "condition": "trained",
+      "length": 10,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 1.0877265594899654e-06,
+      "suffix_causal_max_difference": 1.0877265594899654e-06
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "condition": "trained",
+      "length": 20,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "condition": "trained",
+      "length": 30,
+      "vectors": 24,
+      "prefix_only_cache_max_difference": 0.0,
+      "suffix_causal_max_difference": 0.0
+    }
+  ],
+  "cka_checks": [
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.12475849749138951,
+      "recorded_cka": 0.12475849749138937
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.734924724168262,
+      "recorded_cka": 0.7349247241682623
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 1.0,
+      "recorded_cka": 0.9999999999999996
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.804638011294938,
+      "recorded_cka": 0.8046380112949365
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.07706768470301188,
+      "recorded_cka": 0.0770676847030118
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.07391263457848112,
+      "recorded_cka": 0.07391263457848109
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.10436787749824084,
+      "recorded_cka": 0.10436787749824109
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.5991880954253227,
+      "recorded_cka": 0.5991880954253235
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.9996066798015587,
+      "recorded_cka": 0.9996066798015584
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.9564824686669359,
+      "recorded_cka": 0.9564824686669366
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.04171859956547926,
+      "recorded_cka": 0.04171859956547928
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.035121752598299326,
+      "recorded_cka": 0.03512175259829933
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.11203470163701248,
+      "recorded_cka": 0.11203470163701237
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.7329791528560253,
+      "recorded_cka": 0.732979152856025
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 1.0000000000000002,
+      "recorded_cka": 0.9999999999999993
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.14256778739282647,
+      "recorded_cka": 0.14256778739282658
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.08938724879122563,
+      "recorded_cka": 0.08938724879122562
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.021614056134955064,
+      "recorded_cka": 0.02161405613495508
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.09596343967957693,
+      "recorded_cka": 0.09596343967957681
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.6004388658178023,
+      "recorded_cka": 0.6004388658178018
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.9996020808934962,
+      "recorded_cka": 0.9996020808934959
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.002553094820537557,
+      "recorded_cka": 0.0025530948205375594
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.0007015301411403866,
+      "recorded_cka": 0.0007015301411403864
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.0009265252114634472,
+      "recorded_cka": 0.0009265252114634473
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.9650448604001436,
+      "recorded_cka": 0.9650448604001446
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.023015800406140756,
+      "recorded_cka": 0.023015800406140752
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 1.0000000000000004,
+      "recorded_cka": 1.0000000000000018
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.06685139889537765,
+      "recorded_cka": 0.06685139889537767
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.2156287624772098,
+      "recorded_cka": 0.21562876247720958
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.2524960678596966,
+      "recorded_cka": 0.2524960678596963
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.919305816673039,
+      "recorded_cka": 0.9193058166730385
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.02814501115823339,
+      "recorded_cka": 0.028145011158233344
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.999636421341304,
+      "recorded_cka": 0.9996364213413035
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.11604103859804271,
+      "recorded_cka": 0.11604103859804273
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.09017559871708984,
+      "recorded_cka": 0.09017559871708983
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.1836027125042021,
+      "recorded_cka": 0.1836027125042021
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.9646429038168197,
+      "recorded_cka": 0.9646429038168199
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.03173365318513152,
+      "recorded_cka": 0.03173365318513153
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 1.0000000000000002,
+      "recorded_cka": 1.0000000000000002
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.049283375427771,
+      "recorded_cka": 0.049283375427770997
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.1765424443071661,
+      "recorded_cka": 0.1765424443071662
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.2237591861699557,
+      "recorded_cka": 0.2237591861699557
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.9192311644592039,
+      "recorded_cka": 0.9192311644592038
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.035344310060823836,
+      "recorded_cka": 0.03534431006082384
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.9996345108130803,
+      "recorded_cka": 0.9996345108130795
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.04771394079379475,
+      "recorded_cka": 0.04771394079379475
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.04851516136409859,
+      "recorded_cka": 0.04851516136409863
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.1451265348285568,
+      "recorded_cka": 0.14512653482855686
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.11831415103978356,
+      "recorded_cka": 0.1183141510397834
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.8973793284221014,
+      "recorded_cka": 0.8973793284221017
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 1.0000000000000004,
+      "recorded_cka": 0.9999999999999987
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.639908805524637,
+      "recorded_cka": 0.6399088055246354
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.10392866168188789,
+      "recorded_cka": 0.10392866168188772
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.10220599476121002,
+      "recorded_cka": 0.10220599476120987
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.07721643469221717,
+      "recorded_cka": 0.07721643469221698
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.5719820930850125,
+      "recorded_cka": 0.5719820930850102
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.999992749997858,
+      "recorded_cka": 0.9999927499978536
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.42488392521271384,
+      "recorded_cka": 0.42488392521271406
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.040701794799477206,
+      "recorded_cka": 0.040701794799477206
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.0365459416728602,
+      "recorded_cka": 0.036545941672860204
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.12216481031842401,
+      "recorded_cka": 0.12216481031842401
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.8961922016631024,
+      "recorded_cka": 0.8961922016631015
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 1.0000000000000004,
+      "recorded_cka": 0.9999999999999979
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.19265693989686544,
+      "recorded_cka": 0.19265693989686555
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.08027667114378562,
+      "recorded_cka": 0.0802766711437857
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.07716838189629292,
+      "recorded_cka": 0.07716838189629298
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.07398291075317034,
+      "recorded_cka": 0.07398291075317032
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.5683253811015025,
+      "recorded_cka": 0.5683253811015023
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.9999928674049872,
+      "recorded_cka": 0.9999928674049872
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.002192519586952619,
+      "recorded_cka": 0.002192519586952618
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.0011490480265701505,
+      "recorded_cka": 0.0011490480265701512
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.0011360577185089485,
+      "recorded_cka": 0.00113605771850895
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.8397697543426048,
+      "recorded_cka": 0.839769754342605
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.01906528915064085,
+      "recorded_cka": 0.019065289150640888
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 1.0000000000000004,
+      "recorded_cka": 1.0000000000000009
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.08453693929737191,
+      "recorded_cka": 0.08453693929737181
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.030671935420039202,
+      "recorded_cka": 0.030671935420039154
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.13088411285395596,
+      "recorded_cka": 0.13088411285395565
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.6715364792635178,
+      "recorded_cka": 0.6715364792635184
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.013451537028400405,
+      "recorded_cka": 0.013451537028400424
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.9999968451637721,
+      "recorded_cka": 0.9999968451637734
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 512,
+      "independent_cka": 0.09510687787193302,
+      "recorded_cka": 0.09510687787193298
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 512,
+      "independent_cka": 0.03651666099513628,
+      "recorded_cka": 0.03651666099513624
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "raw_within_length",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 512,
+      "independent_cka": 0.11263075639751957,
+      "recorded_cka": 0.11263075639751939
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.8436861375282063,
+      "recorded_cka": 0.8436861375282071
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.024382465533230622,
+      "recorded_cka": 0.024382465533230646
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.9999999999999992,
+      "recorded_cka": 1.0000000000000009
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.09604147950391356,
+      "recorded_cka": 0.09604147950391352
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.023094357733576775,
+      "recorded_cka": 0.023094357733576786
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "prefix_final",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.14819527947548228,
+      "recorded_cka": 0.1481952794754825
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.6790004064245996,
+      "recorded_cka": 0.6790004064245992
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.015101286464577207,
+      "recorded_cka": 0.015101286464577196
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "initial",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.999996867338187,
+      "recorded_cka": 0.999996867338187
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "correct",
+      "samples": 500,
+      "independent_cka": 0.05727225988025662,
+      "recorded_cka": 0.05727225988025663
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "wrong",
+      "samples": 500,
+      "independent_cka": 0.010456772987029577,
+      "recorded_cka": 0.010456772987029572
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "control": "answer_strata",
+      "branch": "output_prob",
+      "condition": "trained",
+      "role": "identity",
+      "samples": 500,
+      "independent_cka": 0.09146965493458992,
+      "recorded_cka": 0.09146965493458996
+    }
+  ],
+  "methods": "Explicit embedding/positions->blocks or GRU->norm on prefix-only input; suffix causal comparison. Feature covariance CKA with independent strata design-matrix centering.",
+  "fixed_lengths": [
+    10,
+    20,
+    30
+  ],
+  "fixed_samples_per_length": 8,
+  "fixed_cka_relation": "descent_inverse",
+  "fixed_cka_length": 10
+}

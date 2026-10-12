@@ -1,0 +1,804 @@
+{
+  "status": "passed",
+  "generated_utc": "2026-10-10T16:59:40.755260+00:00",
+  "protocol_sha256": "1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69",
+  "execution_source_version_sha256": "ef34bae9d23f2f1cd81233d8b677d41710404a8d913a1e432127925f67ba0ef5",
+  "protected_legacy_files": 407,
+  "legacy_hash_differences": [],
+  "frozen_source_files": 26,
+  "actual_initializations": {
+    "transformer": {
+      "checkpoint_sha256": "91d86fc4c13e681a2a5035137d2f068c0a62164d8198e7058cd041b1562742bd",
+      "parameter_sha256": "c664ac301a7237dd5f0c9c8d546228e578304f083f6ef305945997708567c3d2",
+      "protocol_sha256": "1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69",
+      "architecture": "transformer",
+      "actual_initial_identity_verified": true,
+      "model_seed": 96100001,
+      "parameters": 3240448
+    },
+    "gru": {
+      "checkpoint_sha256": "ffbb94206e789fea3c839585d27161649041d71cab83dc4840bdba94fd1832e7",
+      "parameter_sha256": "4d3e260aebb1f5a88cf31d4767ccb05444988041f09297c6b364786d5cde7aaf",
+      "protocol_sha256": "1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69",
+      "architecture": "gru",
+      "actual_initial_identity_verified": true,
+      "model_seed": 96100002,
+      "parameters": 1660416
+    }
+  },
+  "stage_checkpoint_hashes": {
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/checkpoint_step_2000.pt": "3d504e1cb7e24d0bdee34de96d7f7a9c183d185ada48bfbbc9d1f91b4745676e",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/checkpoint_step_4000.pt": "5d9ae259b09ca4ab7aa31a3ade0d8ec7785d68a6cde581b3d5ad9d6fa581d8f3",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/checkpoint_step_8000.pt": "08af292d3347c5bacc7a0dd1d186b535086d25d699ea51d7f394ae176c55c293",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/checkpoint_step_2000.pt": "15a107f651a11ec5424569626d8cc6c657e7b0ab9520a8361aace66cdacae43f",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/checkpoint_step_4000.pt": "70bc5f27f67028ece4d1e562d07b7704355a6eddacd9521378e50cc01c9c9a88",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/checkpoint_step_8000.pt": "773ac557ec9d2158cd549ac1701bc39d5473ff98a1427f519cf293bcf4f7781a",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/checkpoint_step_2000.pt": "729387a0aef20571043b8262ca2dba951b40cfc070d556e24cce3525b7bb3fdb",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/checkpoint_step_4000.pt": "88b9158dc426948b0e2a41ab446ace5c6e033688f3450e9f064f51364b93a428",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/checkpoint_step_8000.pt": "01117461cb9e2677cfefb5e00a465b7fff9cb340e97cd4836f83d4060c236006",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/checkpoint_step_2000.pt": "a344b2db17b428dc3b5b4db243e6cbadd02d774d06d81d2a9f44f2c2bb6792d0",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/checkpoint_step_4000.pt": "f63e47551c0c4c04cd9a98ce85d32c02a2f8ea69e23b3fc0135f8386fd64eebe",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/checkpoint_step_8000.pt": "0952ef35a73b1ca9cfbcf563e5e8942893931ebb7bb49326576464ecba270a28",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/checkpoint_step_2000.pt": "07ba350179173e77c7b969a31c40adcb87df85c811e50efad7cb06515e7eae6c",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/checkpoint_step_4000.pt": "8f7624573ede02cf4b98cc11416abca7dfb6e042af1b4b5c59064f0cb650dc1e",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/checkpoint_step_8000.pt": "b57ed6d3afd17f8227e1b456a5c43bfa3723b4c95fb5e43e81dd5afd58224784",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/checkpoint_step_2000.pt": "0f24fc624bb9b080931a9b3cb14c9cf502c159974a77a4dd0836c374b51ef42c",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/checkpoint_step_4000.pt": "d3e9d6eac05a83c31ce0ebb82696cbd5cdb3811b6d606ef29e6417f14cf973ed",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/checkpoint_step_8000.pt": "bedd97c0132d86c8fad8544da11cb09237b9e949d3cd2bc5cb799d38ac28aedd",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/checkpoint_step_2000.pt": "205f0bbee50cb77ef323da8c571cbef75af84bc90482020048456428b35479ac",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/checkpoint_step_4000.pt": "5866ef378c13d88e9ac13da8b94697724789476c9ed19321d9d9e4a79b37b7ab",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/checkpoint_step_8000.pt": "c575059112e31be4fc203c1ad4bcde9014d710f4957305c76c10875ee783099d",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/checkpoint_step_2000.pt": "80a24e2c08a4808eb237857f3c5e91c7dfcb32fa0e7d8b31e523b91a3583fd67",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/checkpoint_step_4000.pt": "5eee81dfea928c5344a1674ba3ce6f9d51d9ac2a5f6057b11a0b82f8ee05748b",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/checkpoint_step_8000.pt": "e78c71e1836eccb71d7cce9453286ed1b6826f9e365b02054a9f0f812c0fb1ab",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/checkpoint_step_2000.pt": "b20b55aede5b861df4fa65d8705022740f3aaa723e6bd2b859bc73aafc60d67b",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/checkpoint_step_4000.pt": "0a969282cf1541d3eb9d0cd806018e308d57b56bf4674a7a700ffd4eff49d359",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/checkpoint_step_8000.pt": "98e6a20db6d7c888b2cfa4907d37642a8e3c24d23c09360495ab7d04ecc1b6be",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/checkpoint_step_2000.pt": "5f4c07553e380938cf7f4b58bae139fa66557063572b984dd951cfe94b34597d",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/checkpoint_step_4000.pt": "0bf3bb00ab34a4ceab228598b078176dceb03e8cc0ee6f5d205b96ffe6e5a59a",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/checkpoint_step_8000.pt": "53dfdad3aa376b8f0e5120af5afb13bbdfde3dc99f205334e5b7bff2f1fe7dc0",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/checkpoint_step_2000.pt": "7eb8a2a6a38b02c3948b9bad8a6bf87f97840d4abde11df1406b3a15530e504a",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/checkpoint_step_4000.pt": "4ea55559d866a638f6465f11a35e86b46de63be2b0d9077c77d21596db9e2bb4",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/checkpoint_step_8000.pt": "d84735446d13e2c309e89e6ab82b2eae0ef64c0759f5186a1ccc1186af3a52e1",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/checkpoint_step_2000.pt": "a40d739fd729e82317d3d0e80e2b43b792479d00b889a429d9640e0a9d092ccf",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/checkpoint_step_4000.pt": "656e6260978ad662a3760087960b390e491694752d8cab5f1f4e74bf6b7cc3fc",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/checkpoint_step_8000.pt": "1d2eca5dce398e10ec10d2be7e948157dffffe98b9d4c6af4b1f840dd5a86993",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/checkpoint_step_2000.pt": "3e7d7babaf5cea3aab728b133de26ecf908777b6ed7d08d22c90c2fba8a6bb40",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/checkpoint_step_4000.pt": "a3b046b60d28463f5cbe592666123a5e3980b65c341b540d6d0331b675d435a4",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/checkpoint_step_8000.pt": "09bd0ccf33346ebda0b9433c6c0450f65d8ba868929aaabd19c821f15bdc4d48",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/checkpoint_step_2000.pt": "a31caccab94b6de8b2ba2d9d0e19c860eaa57722c200e9fec52a839c2e5cbb93",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/checkpoint_step_4000.pt": "c81efdf3170e71305a4ef92dd226c62f624bbb55ed088ee0e011965103098020",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/checkpoint_step_8000.pt": "ac0463a77d3aaa324f4d9b1eecdad337e7bfa248f54f5d9107b2b384b3065235",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/checkpoint_step_2000.pt": "ed1575a645abee1c73f3c3c15d44f37c501c854a42d4622595e7f140fa07ad2f",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/checkpoint_step_4000.pt": "81a279ba1f6720fa5d2b837cc6a19e11fd27d7bd46daeb0fb0f85cfab61a02e6",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/checkpoint_step_8000.pt": "6a07a3de1e669749928ff19d197ff9dc373b31894b04c9bc6d502abb9017d79a",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/checkpoint_step_2000.pt": "83d9305f73fe4b52c11855134710364d7c8d4afb48d93576d24b1a3e13bc609d",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/checkpoint_step_4000.pt": "140f4fa1259e2c83b22eca215977744ddaaad2cd8780696132d456a0a8fcd483",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/checkpoint_step_8000.pt": "a615a47818a96b73fd8d7954180457188a44b78f7dee6d78753fc74e50c4ff52"
+  },
+  "stage_records": [
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "step": 2000,
+      "checkpoint_sha256": "3d504e1cb7e24d0bdee34de96d7f7a9c183d185ada48bfbbc9d1f91b4745676e",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "step": 4000,
+      "checkpoint_sha256": "5d9ae259b09ca4ab7aa31a3ade0d8ec7785d68a6cde581b3d5ad9d6fa581d8f3",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "step": 8000,
+      "checkpoint_sha256": "08af292d3347c5bacc7a0dd1d186b535086d25d699ea51d7f394ae176c55c293",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "step": 2000,
+      "checkpoint_sha256": "15a107f651a11ec5424569626d8cc6c657e7b0ab9520a8361aace66cdacae43f",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "step": 4000,
+      "checkpoint_sha256": "70bc5f27f67028ece4d1e562d07b7704355a6eddacd9521378e50cc01c9c9a88",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "step": 8000,
+      "checkpoint_sha256": "773ac557ec9d2158cd549ac1701bc39d5473ff98a1427f519cf293bcf4f7781a",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "step": 2000,
+      "checkpoint_sha256": "729387a0aef20571043b8262ca2dba951b40cfc070d556e24cce3525b7bb3fdb",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "step": 4000,
+      "checkpoint_sha256": "88b9158dc426948b0e2a41ab446ace5c6e033688f3450e9f064f51364b93a428",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "step": 8000,
+      "checkpoint_sha256": "01117461cb9e2677cfefb5e00a465b7fff9cb340e97cd4836f83d4060c236006",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "step": 2000,
+      "checkpoint_sha256": "a344b2db17b428dc3b5b4db243e6cbadd02d774d06d81d2a9f44f2c2bb6792d0",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "step": 4000,
+      "checkpoint_sha256": "f63e47551c0c4c04cd9a98ce85d32c02a2f8ea69e23b3fc0135f8386fd64eebe",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "step": 8000,
+      "checkpoint_sha256": "0952ef35a73b1ca9cfbcf563e5e8942893931ebb7bb49326576464ecba270a28",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "step": 2000,
+      "checkpoint_sha256": "07ba350179173e77c7b969a31c40adcb87df85c811e50efad7cb06515e7eae6c",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "step": 4000,
+      "checkpoint_sha256": "8f7624573ede02cf4b98cc11416abca7dfb6e042af1b4b5c59064f0cb650dc1e",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "step": 8000,
+      "checkpoint_sha256": "b57ed6d3afd17f8227e1b456a5c43bfa3723b4c95fb5e43e81dd5afd58224784",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "step": 2000,
+      "checkpoint_sha256": "0f24fc624bb9b080931a9b3cb14c9cf502c159974a77a4dd0836c374b51ef42c",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "step": 4000,
+      "checkpoint_sha256": "d3e9d6eac05a83c31ce0ebb82696cbd5cdb3811b6d606ef29e6417f14cf973ed",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "step": 8000,
+      "checkpoint_sha256": "bedd97c0132d86c8fad8544da11cb09237b9e949d3cd2bc5cb799d38ac28aedd",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "step": 2000,
+      "checkpoint_sha256": "205f0bbee50cb77ef323da8c571cbef75af84bc90482020048456428b35479ac",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "step": 4000,
+      "checkpoint_sha256": "5866ef378c13d88e9ac13da8b94697724789476c9ed19321d9d9e4a79b37b7ab",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "step": 8000,
+      "checkpoint_sha256": "c575059112e31be4fc203c1ad4bcde9014d710f4957305c76c10875ee783099d",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "step": 2000,
+      "checkpoint_sha256": "80a24e2c08a4808eb237857f3c5e91c7dfcb32fa0e7d8b31e523b91a3583fd67",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "step": 4000,
+      "checkpoint_sha256": "5eee81dfea928c5344a1674ba3ce6f9d51d9ac2a5f6057b11a0b82f8ee05748b",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "step": 8000,
+      "checkpoint_sha256": "e78c71e1836eccb71d7cce9453286ed1b6826f9e365b02054a9f0f812c0fb1ab",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "step": 2000,
+      "checkpoint_sha256": "b20b55aede5b861df4fa65d8705022740f3aaa723e6bd2b859bc73aafc60d67b",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "step": 4000,
+      "checkpoint_sha256": "0a969282cf1541d3eb9d0cd806018e308d57b56bf4674a7a700ffd4eff49d359",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "step": 8000,
+      "checkpoint_sha256": "98e6a20db6d7c888b2cfa4907d37642a8e3c24d23c09360495ab7d04ecc1b6be",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "step": 2000,
+      "checkpoint_sha256": "5f4c07553e380938cf7f4b58bae139fa66557063572b984dd951cfe94b34597d",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "step": 4000,
+      "checkpoint_sha256": "0bf3bb00ab34a4ceab228598b078176dceb03e8cc0ee6f5d205b96ffe6e5a59a",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "step": 8000,
+      "checkpoint_sha256": "53dfdad3aa376b8f0e5120af5afb13bbdfde3dc99f205334e5b7bff2f1fe7dc0",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "step": 2000,
+      "checkpoint_sha256": "7eb8a2a6a38b02c3948b9bad8a6bf87f97840d4abde11df1406b3a15530e504a",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "step": 4000,
+      "checkpoint_sha256": "4ea55559d866a638f6465f11a35e86b46de63be2b0d9077c77d21596db9e2bb4",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "step": 8000,
+      "checkpoint_sha256": "d84735446d13e2c309e89e6ab82b2eae0ef64c0759f5186a1ccc1186af3a52e1",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "step": 2000,
+      "checkpoint_sha256": "a40d739fd729e82317d3d0e80e2b43b792479d00b889a429d9640e0a9d092ccf",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "step": 4000,
+      "checkpoint_sha256": "656e6260978ad662a3760087960b390e491694752d8cab5f1f4e74bf6b7cc3fc",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "step": 8000,
+      "checkpoint_sha256": "1d2eca5dce398e10ec10d2be7e948157dffffe98b9d4c6af4b1f840dd5a86993",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "step": 2000,
+      "checkpoint_sha256": "3e7d7babaf5cea3aab728b133de26ecf908777b6ed7d08d22c90c2fba8a6bb40",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "step": 4000,
+      "checkpoint_sha256": "a3b046b60d28463f5cbe592666123a5e3980b65c341b540d6d0331b675d435a4",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "step": 8000,
+      "checkpoint_sha256": "09bd0ccf33346ebda0b9433c6c0450f65d8ba868929aaabd19c821f15bdc4d48",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "step": 2000,
+      "checkpoint_sha256": "a31caccab94b6de8b2ba2d9d0e19c860eaa57722c200e9fec52a839c2e5cbb93",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "step": 4000,
+      "checkpoint_sha256": "c81efdf3170e71305a4ef92dd226c62f624bbb55ed088ee0e011965103098020",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "step": 8000,
+      "checkpoint_sha256": "ac0463a77d3aaa324f4d9b1eecdad337e7bfa248f54f5d9107b2b384b3065235",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "step": 2000,
+      "checkpoint_sha256": "ed1575a645abee1c73f3c3c15d44f37c501c854a42d4622595e7f140fa07ad2f",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "step": 4000,
+      "checkpoint_sha256": "81a279ba1f6720fa5d2b837cc6a19e11fd27d7bd46daeb0fb0f85cfab61a02e6",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "step": 8000,
+      "checkpoint_sha256": "6a07a3de1e669749928ff19d197ff9dc373b31894b04c9bc6d502abb9017d79a",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "step": 2000,
+      "checkpoint_sha256": "83d9305f73fe4b52c11855134710364d7c8d4afb48d93576d24b1a3e13bc609d",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "step": 4000,
+      "checkpoint_sha256": "140f4fa1259e2c83b22eca215977744ddaaad2cd8780696132d456a0a8fcd483",
+      "status": "stage_complete"
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "step": 8000,
+      "checkpoint_sha256": "a615a47818a96b73fd8d7954180457188a44b78f7dee6d78753fc74e50c4ff52",
+      "status": "stage_complete"
+    }
+  ],
+  "paired_initial_and_rng": [
+    {
+      "architecture": "transformer",
+      "task": "descents",
+      "available": 2,
+      "initial_and_starting_rng_matched": true,
+      "completed_steps": [
+        8000,
+        8000
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "task": "recoils",
+      "available": 2,
+      "initial_and_starting_rng_matched": true,
+      "completed_steps": [
+        8000,
+        8000
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "task": "peaks",
+      "available": 2,
+      "initial_and_starting_rng_matched": true,
+      "completed_steps": [
+        8000,
+        8000
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "task": "valleys",
+      "available": 2,
+      "initial_and_starting_rng_matched": true,
+      "completed_steps": [
+        8000,
+        8000
+      ]
+    },
+    {
+      "architecture": "gru",
+      "task": "descents",
+      "available": 2,
+      "initial_and_starting_rng_matched": true,
+      "completed_steps": [
+        8000,
+        8000
+      ]
+    },
+    {
+      "architecture": "gru",
+      "task": "recoils",
+      "available": 2,
+      "initial_and_starting_rng_matched": true,
+      "completed_steps": [
+        8000,
+        8000
+      ]
+    },
+    {
+      "architecture": "gru",
+      "task": "peaks",
+      "available": 2,
+      "initial_and_starting_rng_matched": true,
+      "completed_steps": [
+        8000,
+        8000
+      ]
+    },
+    {
+      "architecture": "gru",
+      "task": "valleys",
+      "available": 2,
+      "initial_and_starting_rng_matched": true,
+      "completed_steps": [
+        8000,
+        8000
+      ]
+    }
+  ],
+  "fixed8k_complete_models": 16,
+  "available_models": 16,
+  "fixed8k_completion_is_not_learning_qualification": true,
+  "learning_qualification_computed_by": "Frozen report.py from validation-only criteria",
+  "execution_status": "completed",
+  "active_gpu_budget_seconds": 7200,
+  "execution_wall_seconds": 1703.4707593917847,
+  "measured_source_process_intervals": [
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "step": 2000,
+      "start_epoch": 1791649917.111818,
+      "end_epoch": 1791649941.5937405,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "step": 4000,
+      "start_epoch": 1791650343.1339543,
+      "end_epoch": 1791650367.4461231,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "step": 8000,
+      "start_epoch": 1791650776.2893631,
+      "end_epoch": 1791650823.400323,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "step": 2000,
+      "start_epoch": 1791649942.9714458,
+      "end_epoch": 1791649967.7538426,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "step": 4000,
+      "start_epoch": 1791650368.791238,
+      "end_epoch": 1791650393.468459,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "step": 8000,
+      "start_epoch": 1791650824.8675482,
+      "end_epoch": 1791650871.8771014,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "step": 2000,
+      "start_epoch": 1791649969.1304677,
+      "end_epoch": 1791649994.8919394,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "step": 4000,
+      "start_epoch": 1791650394.7908654,
+      "end_epoch": 1791650419.6027775,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "step": 8000,
+      "start_epoch": 1791650873.3072777,
+      "end_epoch": 1791650918.741652,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "step": 2000,
+      "start_epoch": 1791649996.3330872,
+      "end_epoch": 1791650021.1979816,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "step": 4000,
+      "start_epoch": 1791650420.9678948,
+      "end_epoch": 1791650445.6612494,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "step": 8000,
+      "start_epoch": 1791650920.0669487,
+      "end_epoch": 1791650966.2453756,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "step": 2000,
+      "start_epoch": 1791650022.6097503,
+      "end_epoch": 1791650047.0882034,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "step": 4000,
+      "start_epoch": 1791650447.1313171,
+      "end_epoch": 1791650471.8038416,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "step": 8000,
+      "start_epoch": 1791650967.6278665,
+      "end_epoch": 1791651014.9653945,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "step": 2000,
+      "start_epoch": 1791650048.4695203,
+      "end_epoch": 1791650073.4732623,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "step": 4000,
+      "start_epoch": 1791650473.268772,
+      "end_epoch": 1791650498.4251494,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "step": 8000,
+      "start_epoch": 1791651016.327325,
+      "end_epoch": 1791651065.16514,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "step": 2000,
+      "start_epoch": 1791650074.7935362,
+      "end_epoch": 1791650099.1959577,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "step": 4000,
+      "start_epoch": 1791650499.8682508,
+      "end_epoch": 1791650525.0284207,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "step": 8000,
+      "start_epoch": 1791651066.6259592,
+      "end_epoch": 1791651115.7215579,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "step": 2000,
+      "start_epoch": 1791650100.630226,
+      "end_epoch": 1791650124.7817879,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "step": 4000,
+      "start_epoch": 1791650526.4688897,
+      "end_epoch": 1791650552.5839014,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "step": 8000,
+      "start_epoch": 1791651117.187371,
+      "end_epoch": 1791651163.000679,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "step": 2000,
+      "start_epoch": 1791650126.0922177,
+      "end_epoch": 1791650152.1553152,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "step": 4000,
+      "start_epoch": 1791650554.0483856,
+      "end_epoch": 1791650581.7777977,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "step": 8000,
+      "start_epoch": 1791651164.3659291,
+      "end_epoch": 1791651213.1326382,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "step": 2000,
+      "start_epoch": 1791650153.5300138,
+      "end_epoch": 1791650178.778062,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "step": 4000,
+      "start_epoch": 1791650583.2478073,
+      "end_epoch": 1791650610.7572148,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "step": 8000,
+      "start_epoch": 1791651214.507777,
+      "end_epoch": 1791651262.879617,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "step": 2000,
+      "start_epoch": 1791650180.0683393,
+      "end_epoch": 1791650206.215474,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "step": 4000,
+      "start_epoch": 1791650612.227544,
+      "end_epoch": 1791650640.4274185,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "step": 8000,
+      "start_epoch": 1791651264.2665083,
+      "end_epoch": 1791651312.360914,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "step": 2000,
+      "start_epoch": 1791650207.6489587,
+      "end_epoch": 1791650233.4397647,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "step": 4000,
+      "start_epoch": 1791650641.8904037,
+      "end_epoch": 1791650668.0713768,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "step": 8000,
+      "start_epoch": 1791651313.687552,
+      "end_epoch": 1791651362.1895804,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "step": 2000,
+      "start_epoch": 1791650234.7283025,
+      "end_epoch": 1791650260.7159638,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "step": 4000,
+      "start_epoch": 1791650669.4075313,
+      "end_epoch": 1791650694.8905547,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "step": 8000,
+      "start_epoch": 1791651363.5653145,
+      "end_epoch": 1791651411.79973,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "step": 2000,
+      "start_epoch": 1791650262.0363572,
+      "end_epoch": 1791650287.8087273,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "step": 4000,
+      "start_epoch": 1791650696.247175,
+      "end_epoch": 1791650721.7628784,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "step": 8000,
+      "start_epoch": 1791651413.1644754,
+      "end_epoch": 1791651462.3248847,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "step": 2000,
+      "start_epoch": 1791650289.2092416,
+      "end_epoch": 1791650314.7807653,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "step": 4000,
+      "start_epoch": 1791650723.113981,
+      "end_epoch": 1791650748.3046799,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "step": 8000,
+      "start_epoch": 1791651463.6684291,
+      "end_epoch": 1791651511.4235837,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "step": 2000,
+      "start_epoch": 1791650316.1332622,
+      "end_epoch": 1791650341.6954381,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "step": 4000,
+      "start_epoch": 1791650749.6064308,
+      "end_epoch": 1791650774.8878279,
+      "ended_within_budget": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "step": 8000,
+      "start_epoch": 1791651512.7917202,
+      "end_epoch": 1791651560.5194232,
+      "ended_within_budget": true
+    }
+  ],
+  "all_source_intervals_ended_within_budget": true,
+  "own_training_workers": [],
+  "automatic_continuation_started": false,
+  "test_labels_loaded_by_this_audit": false,
+  "geometry_evaluated": false,
+  "GroupWorld_started": false,
+  "F17_changed": false,
+  "statistical_independence": "One new data world and one initializer per architecture; 16 models are not 16 independent worlds."
+}

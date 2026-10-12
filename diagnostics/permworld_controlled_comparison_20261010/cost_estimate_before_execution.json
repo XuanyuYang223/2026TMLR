@@ -1,0 +1,15 @@
+{
+  "status": "estimated_before_full_extraction",
+  "basis": "Actual fixed-checkpoint128-batch forwards at n10/20/30 and real cached CKA timings at same lengths",
+  "gpu_forward_estimated_seconds": 51.47689432113839,
+  "CPU_metric_estimated_seconds": 51.54111361771356,
+  "physical_feature_splits": 40,
+  "logical_splits": 64,
+  "new_forward_sequences": 967680,
+  "new_feature_estimated_bytes": 4954521600,
+  "estimates_exclude_CP_loading_hashing_IO_report": true,
+  "expected_end_to_end_analysis_wall_minutes": "5–15 including IO/audits; extrapolation, not measured GPU utilization",
+  "initial_failed_validation_record": "extraction_review/engineering_repair.json",
+  "frozen_protocol_sha256": "9c8b6dfac09bf809410f87b2648cf9c8a12a5a17b77a17dae9de5a6bf11415ea",
+  "new_training": false
+}

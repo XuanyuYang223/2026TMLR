@@ -1,0 +1,29 @@
+GraphWorld preparation and frozen-report review, before any graph GPU training
+
+Fixed primary protocol SHA:8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1. Main28-source version:d1bc69d82b6422d1709a1d9907fb550e131f7f6b27205141b66bae4a1d38557c. Independent verification freeze SHA:d4d3f8d0d4f8977e3201f2ac6dd0d4d94c5f7eb46d56fe08571f03b500a235bb.
+
+This preparation trains zero source models. Original actual TF step0 is copied byte-for-byte, parameter hash03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab. The actual archived descents start RNG is copied and reused for all four tasks. Initialization identity is directly verified, not inferred from a common seed. Graph task names reinterpret four existing vocabulary slots; no learned PermWorld source is transferred.
+
+Independent full-world CPU check verified291840 degree-label fields,58368 relation equalities,14592 selected anchors, and all three splits' complete<R,C,W> orbit members with zero overlap. The fixed wrong tables were reproduced directly from Random(20261010+n), independently of the transform function. Accidental wrong-label matches are retained and reported for every split/n. Batch schedule is20000 rows of64 distinct anchors at a common n with counts6666/6667/6667. There is one data world, four task models and two transformations, not four independent replications.
+
+Main extraction is final_norm at n*n+3 before task, in eval/inference_mode/FP32 with TF32 disabled; original query is n*n+5. Both supervised targets have the original shifted answer+EOS CE rule. The maximum full sequence is72. Four task masks, independent CE and causal suffix checks passed on CPU. CUDA gradient/resume checks remain pending and will not assess geometric signs or require high task accuracy.
+
+Independent verification register fixes reverse_max/n6, raw and answer strata, first64 qualifying fit and analysis anchors before model outcomes. Counts are256/512 raw and233/494 answer-controlled; each supports64. This64 subset is a numerical verification fixture only. Its own strata centering is compared across explicit independent covariance CKA, direct Euclidean stable-ID k10, covariance-eigen PCA8/fit-RMS/held-out Procrustes, and explicit U-centering. The independent fixture has14 passed checks. Original functions supply only production reference values; they do not supply the independent expected computations. Undefined variance/rank stays undefined; no rank reduction or mask threshold relaxation is allowed. Actual activation-cache checks have not yet run.
+
+Report/code review: S direction is consistent, including negative Procrustes error. Both similarities and B0/Bt/dc/dw/di/Delta are retained; a static gold/input reference has no initial score or invented training increment. No output-Delta subtraction estimates a mechanism. All3 n values require complete1/3 aggregation; missing cells become None/blank, not zero or reweighted. Main summary contains240 cells and per-n table720 cells; three metrics are not independent replications. The two ordinary answer controls are primary parallels; adding exact anchor edge count is separately marked density sensitivity, with the same minimum3 rule.
+
+The original frozen report's cell coverage file uses defined/undefined and retains dependence in a separate string; incomplete source endpoints prevent reporting. The additional frozen validate.py --stage audit-report produces coverage_review.csv with explicit completed/coupled/undefined/missing states, without rewriting that report. It records missing pre-GPU endpoints honestly and verifies source receipts against the protocol, start RNG, actual initialization and CP digest. Final root audit should also seal and cross-check scientific CSV hashes, complete720 unique keys,240 fixed1/3 summaries, and all16 cache signatures; this review does not claim those future products exist.
+
+Cost: source receipts time the training loop, validation and checkpoint work after source/data/model initialization; they are neither the whole CLI process nor independently measured GPU-active time. Original8 TF20k receipt median1261.11 seconds gives a rough4-source extrapolation6060.35--7114.52 seconds after sequence scaling. Validation size differs, historical contention may affect timing, and actual GPU工程 timing is still pending. CP/parameter and inference cache storage estimates are explicit; report completion later records actual storage/peak allocated CUDA memory. Preparation/data audit wall is13.23 seconds, additional independent full-world data audit124.97 seconds; these are distinct CPU phases and are not GPU hours.
+
+The fixed position-wise binary onehot kernel is analytically invariant under R/C/W coordinate permutations. It cannot be used to distinguish correct/wrong pairing. The independent script checks fit/test/cross Gram invariance on the frozen actual64 inputs. Arbitrary graph isomorphism classes are not excluded. Any final result remains one configuration, one encoding and one world in a new system, not a domain-only causal comparison.
+
+Next root-authorized GPU commands, after PermWorld training/analysis finish:
+python -m experiments.graphworld_pilot_20261010 --stage engineering
+python -m experiments.graphworld_pilot_20261010 --stage train-all
+python -m experiments.graphworld_pilot_20261010 --stage evaluate
+python -m experiments.graphworld_pilot_20261010.validate --stage actual
+python -m experiments.graphworld_pilot_20261010 --stage report
+python -m experiments.graphworld_pilot_20261010.validate --stage audit-report
+
+No source training, GPU extraction, parameter updates or main geometry results were produced by this preparation. Existing PermWorld/F17 code and products remain untouched.

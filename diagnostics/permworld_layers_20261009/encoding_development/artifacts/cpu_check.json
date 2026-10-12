@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "architecture": "transformer",
+      "parameters": 3240448,
+      "shared_parameter_hash": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "actual_step0_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "paired_parameter_identity_verified": true,
+      "prefix_causal_max_difference": 0.0,
+      "answer_future_causal_max_difference": 0.0,
+      "independent_loss_max_difference": 9.5367431640625e-07,
+      "loss_mask_gradients_checked": true,
+      "cpu_fixture_optimizer_updates": 3,
+      "cpu_fixture_resume_parameter_error": 0.0,
+      "cpu_fixture_resume_optimizer_error": 0.0,
+      "fixture_parameter_changed": true,
+      "source_model_optimizer_updates": 0
+    },
+    {
+      "architecture": "gru",
+      "parameters": 1660416,
+      "shared_parameter_hash": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "actual_step0_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "paired_parameter_identity_verified": true,
+      "prefix_causal_max_difference": 0.0,
+      "answer_future_causal_max_difference": 0.0,
+      "independent_loss_max_difference": 4.76837158203125e-07,
+      "loss_mask_gradients_checked": true,
+      "cpu_fixture_optimizer_updates": 3,
+      "cpu_fixture_resume_parameter_error": 0.0,
+      "cpu_fixture_resume_optimizer_error": 0.0,
+      "fixture_parameter_changed": true,
+      "source_model_optimizer_updates": 0
+    }
+  ],
+  "metrics_checks": {
+    "cka_rotation_and_independent_formula": true,
+    "constant_undefined": true,
+    "heldout_rotation_error_zero": true,
+    "manual_neighbor_swap_overlap_zero": true,
+    "exact_tie_by_input_id": true
+  },
+  "GPU_forward_started": false,
+  "formal_training_started": false,
+  "development_source_training_started": false
+}

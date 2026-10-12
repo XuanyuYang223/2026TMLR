@@ -1,0 +1,22 @@
+Read-only queue supervision complete:48/48 newly authorized sources finished exactly20k updates.
+Frozen source/protocol identity,20-stage receipts and actual checkpoint SHA256 were checked as each source completed. No failed queue, non20k endpoint or frozen/weight hash anomaly was observed. Clock-domain divergence is a separate unresolved observation, not counted as a hash/endpoint failure.
+No training/inference was launched by this observer and no training process was stopped, signalled or changed. The observer exited normally after the48-source completion; its tool polling and health readers have also ended.
+
+Recorded source monotonic time sum=36539.456721s (10.149849h). Queue calendar-clock wall=43101.467763s (11.972630h), including the preserved pre-wrapper elapsed. These are different clock domains and are not exact GPU-active time.
+Resource snapshots:795, 2026-10-10T22:13:14.299059+00:00 to 2026-10-11T09:55:37.029060+00:00; monotonic observation elapsed=35730.366623s. Target sampling cadence was45 monotonic seconds.
+Observed adjacent-snapshot process CPU increments: user=24198.09s, system=8684.11s. They are incomplete monitoring-window increments, not full training CPU core-hours. Source1 and the failed first metadata writer precede the monitor; each process's pre-first-observation and post-last-observation CPU tail is also omitted.
+
+Clock discrepancy: samples310->311 cross UTC02:04:59.338823->03:52:36.957526 with6457.619 calendar seconds but46.145 recorded monotonic seconds. The approximately106.9-minute UTC/monotonic offset shift is retained in timing_discrepancy_review.txt/json. Clock adjustment versus system/VM clock behavior cannot be distinguished; no human pause or actual GPU idle interval is inferred. Exact source start/end UTC are unavailable because queue stdout has no UTC fields and queue_state overwrites prior events.
+
+GPU statistics below describe samples with saved queue_status=running only. They are instantaneous device-wide values, not per-source active time, integrated energy or guaranteed maxima. The last completed-state sample (09:55:37UTC) follows the authorized extraction start09:55:18UTC, so it is excluded from these training-window descriptive ranges; the complete raw CSV is preserved.
+  utilization_percent:N=794, min=0.0, median=31.0, max=69.0
+  memory_used_mib:N=794, min=1080.0, median=2014.0, max=4090.0
+  power_watts:N=794, min=38.7, median=62.71, max=93.16
+
+Saved20k identity-validation endpoints are listed for all48 sources in source_endpoint_validation.csv. No task, encoding or source was dropped for poor accuracy; this table contains saved validation statistics, not new forward passes, held-out test results or CKA conclusions.
+  transformer/one_line:12 sources, monotonic sum=7193.845961s, full-vocabulary answer-accuracy range=84.7656%..99.9628%.
+  transformer/canonical_cycle:12 sources, monotonic sum=7225.789582s, full-vocabulary answer-accuracy range=37.8906%..99.9628%.
+  gru/one_line:12 sources, monotonic sum=10949.388633s, full-vocabulary answer-accuracy range=83.2217%..100.0000%.
+  gru/canonical_cycle:12 sources, monotonic sum=11170.432545s, full-vocabulary answer-accuracy range=39.2485%..100.0000%.
+
+Resources are now closed. Subsequent Perm extraction/analysis and Graph training belong to the fixed bridge, not this supervisor. No further monitoring/GPU work is initiated here.

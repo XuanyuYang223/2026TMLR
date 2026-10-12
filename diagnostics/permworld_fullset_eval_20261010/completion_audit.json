@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "generated_utc": "2026-10-10T18:45:30.847771+00:00",
+  "protected_old_files": 548,
+  "protected_hash_differences": [],
+  "checkpoints_reused": 16,
+  "complete_train_and_validation_evaluated": true,
+  "source_weights_unchanged": true,
+  "sample_model_pairs": 147456,
+  "length_cells": 96,
+  "validation_reproduction_passed": true,
+  "source_protocol_sha256": "1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69",
+  "evaluation_protocol_sha256": "6221a77fe29ef46dca14dc6e3c14805c43a142da3ed1e12bab3595b2ebf49350",
+  "train_workers": [],
+  "new_training": false,
+  "heldout_test_used": false,
+  "new_CKA": false,
+  "GroupWorld": false,
+  "F17_changed": false,
+  "complete_and_stopped": true
+}

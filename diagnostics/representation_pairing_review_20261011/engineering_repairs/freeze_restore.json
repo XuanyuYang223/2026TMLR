@@ -1,0 +1,11 @@
+{
+  "status": "precisely_restored_original_freeze",
+  "before_source_sha256": "b164d1710d3a6c0943eccccff668a0f6c1cc7f32179d604f183d95553453c59c",
+  "restored_source_sha256": "e174d55ba88c5f58006d2b929550fc7ffaff1c8541f673fffb0146f787925fca",
+  "freeze_sha256": "59060ee8f02c42638a8e6de60468fcf2cbea4d240df3321fe8532ab6368dea7f",
+  "protocol_sha256": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c",
+  "reason": "Selector-only memoization was written before receiving root freeze notice; root had frozen preceding version. Root explicitly authorized restoring exact original bytes without changing protocol or freeze.",
+  "no_real_new_CKA_started": true,
+  "no_training_or_forward": true,
+  "restored_utc": "2026-10-11T14:26:49.453754+00:00"
+}

@@ -1,0 +1,16 @@
+首轮20k16模型指标与固定规则：只读审查完成
+
+原始代码与全部17项冻结source哈希一致。64份旧cache元数据定位；本审查未重复解码/哈希1.64GB旧特征，saved SHA来源明确，完整raw哈希验证由本轮总库存负责。
+原结果2688几何行、8064真值基线行、2016任务准确率行；每关系/架构/编码/控制/指标完整21长度。
+CKA、k10稳定ID平方欧氏邻域、留出rank8 PCA Procrustes、U-centered与用户描述一致。指标预处理单独保留，不宣称不同指标处理完全相同。
+原答案分层joint key=[n,left(identity),right(identity),right(complement),right(inverse)]，每split组≥3，fit/eval各减自身组均值；raw也各减自身长度均值。同一mask用于三配对、两状态、四条件、所有指标。eval减均值是oracle测量控制，不是部署预测步骤。
+validation256/n做fit，原test512/n做eval；source data audit记录完整8元轨道隔离与零split重叠。此审查仅读保存审计，没有生成或读取新测试输入。anchor ID是固定global split ordinal；duplicates是该anchor的完整padding排列，距相同对象均排除。
+Procrustes r=min(8,dleft,dright)，rank不足不降rank；PCA与fit RMS、正交映射仅fit；eval按右侧投影能量归一化。原score=-NRMSE，旧wrong/identity rawerror可直接取score负值恢复。
+19个output_prob/raw/procrustes逐长度Delta未定义，不能重加权其余长度。共同答案控制不排除置信度、错误结构；不得用隐藏Delta减输出Delta解释额外机制。
+旧prefix_final是final_norm前任务input-end；旧output_prob仅0..30条件softmax，因此不能恢复full188 CE或EOS。新增源任务CE需原固定输入前向另保存，不混用数字条件CE。
+middle层尚无原cache，需新eval提取后固定CKA/U-centered；final端点所有三主指标与输出/真值基线原值复用。结束token embedding按结构常量保留NaN。
+跨架构same-task辅助仅ordinary CKA，自己的控制key=[n,y_id,y_C,y_I]，与关系jointkey不同；不能声称采用同一分层定义，也不能解释为数学关系效应。
+四格配置参数不匹配；一个数据世界、每架构一个初始化；21长度/16模型/3指标不是独立世界，不做p值/TOST。8k队列和旧82模型均不进入主队列。
+独立CPU合成fixture14项通过，含三个主指标＋U-centering、rank8不降阶、稳定ID并列、重复对象排除、常量undefined及21长度不补权重；没有真实几何结果的新选择。
+
+详情和可复用位置：rules_index.json、independent_metrics.py、fixed_fixture.json。

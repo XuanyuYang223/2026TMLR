@@ -1,0 +1,14 @@
+Independent completed-result arithmetic audit: PASSED.
+132 mathematical catalogue rows expand to480 PermWorld +12 GraphWorld candidate pairs; all right tasks exclude the left task. Classification is unchanged, and the empty other_known_exact category is retained.
+20268 unique length/control rows and996 pair/control summaries are complete. Raw and answer controls remain separate; Graph density is a third separate control.
+The fixed ten-pair reader plan independently recomputed44 initial/trained summaries from saved per-length scores. All use fixed equal weights; an undefined length is never dropped or reweighted.
+All456 category mean/median/count rows,304 designated-minus-category rows and228 common-support Gcat rows were independently reaggregated. Empty category state rows:152; no-defined nonempty category state rows:0.
+All36 designated model pairs reproduced the original saved per-length correct scores in2760 phase/length/control comparisons; maximum absolute difference:1.9984014443252818e-15. Producer independent covariance fixture:40 passed; this reader checks its saved verification and provenance, without rerunning that metric.
+Pair-phase missing support by domain/control:
+{"domain": "graphworld", "control": "answer_density_strata", "initial_undefined_pairs": 0, "initial_undefined_length_cells": 0, "trained_undefined_pairs": 0, "trained_undefined_length_cells": 0}
+{"domain": "graphworld", "control": "answer_strata", "initial_undefined_pairs": 0, "initial_undefined_length_cells": 0, "trained_undefined_pairs": 0, "trained_undefined_length_cells": 0}
+{"domain": "graphworld", "control": "raw_within_n", "initial_undefined_pairs": 0, "initial_undefined_length_cells": 0, "trained_undefined_pairs": 0, "trained_undefined_length_cells": 0}
+{"domain": "permworld", "control": "answer_strata", "initial_undefined_pairs": 0, "initial_undefined_length_cells": 0, "trained_undefined_pairs": 0, "trained_undefined_length_cells": 0}
+{"domain": "permworld", "control": "raw_within_length", "initial_undefined_pairs": 0, "initial_undefined_length_cells": 0, "trained_undefined_pairs": 0, "trained_undefined_length_cells": 0}
+The pair-specific answer masks and finite candidate supports differ between tasks. Neither a category mean nor Gcat is a pure relation intervention, original Bt/Delta, or independent-replication estimate.
+No model/activation/metric computation, training, additional input generation or old artifact editing was performed.

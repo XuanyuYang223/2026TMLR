@@ -1,0 +1,15 @@
+{
+  "repairs": [
+    {
+      "change": "Make freeze stage idempotent; refuse changed source files instead of replacing existing frozen protocol.",
+      "timing": "Before layer validation/extraction/evaluation; no new neural result had been calculated."
+    },
+    {
+      "change": "If prefix-only GPU shape exceeds original2e-5 activation tolerance, re-extract with exact legacy task suffix (which is causally after all measured states). Do not loosen tolerance. Record both errors and method.",
+      "observed_model": "six_hour_session_single fixed_points seed17 trained",
+      "prefix_only_legacy_max_abs": 3.764033317565918e-05,
+      "exact_legacy_suffix_max_abs": 0.0,
+      "timing": "109 feature conditions produced, no new geometry metric rows calculated. Existing validated cache bytes retained with frozen lineage."
+    }
+  ]
+}

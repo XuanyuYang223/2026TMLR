@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 3.8857226639956934,
+  "reusable_models": 16,
+  "missing_models": 48,
+  "target_source_models": 64,
+  "relations": 8,
+  "relation_configuration_conditions": 32,
+  "historical_rejected_candidates": 98,
+  "cumulative_process_wall_estimate_hours": 25.037923933906658,
+  "checkpoint_bytes_estimate": 1414364256,
+  "feature_bytes_estimate": 11911023821,
+  "disk_free_bytes": 3769728569344,
+  "archive_rows": 699,
+  "cleanup_candidate_rows": 13,
+  "inventory_script_sha256": "888deb6264316ae9b3a777b016445de6f7a832cd3f4ded3c8ec4214de95e8927",
+  "no_original_artifact_writes": true,
+  "training_started": false,
+  "forward": false,
+  "files_deleted": false,
+  "files_moved": false
+}

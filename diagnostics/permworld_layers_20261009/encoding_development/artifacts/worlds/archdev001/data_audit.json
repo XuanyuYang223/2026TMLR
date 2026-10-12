@@ -1,0 +1,62 @@
+{
+  "unit": "archdev001",
+  "data_seed": 95200001,
+  "batch_seed": 95300001,
+  "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "batch_indices_sha256": "e6d053511b0847e9687df72c6e37f7f39e6106d2a2b018874432ccf47a48e182",
+  "batch_lengths_sha256": "b6ed71210e5474a022c207c75c5c683d01aee8d4821c700856a73680d8d87024",
+  "historical_index": {
+    "signature": "3bf058f55eecd95ace97fc824cd5929a2d6a8f1c7b6612a9142ac2442dc5c91f",
+    "sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+    "unique_inputs": 18260223,
+    "previous_index_sha256": "331a02b4f93ec3f7343ee9dc83c81c765ac2b8b5e1a733bb087c1213252754b5",
+    "appended_prior_development_orbit_members": 817152,
+    "appended_prior_development_anchors": 102144,
+    "prior_development_split_counts": {
+      "train": 86016,
+      "validation": 5376,
+      "test": 10752
+    },
+    "archive_parser": "all-three-development-permutation-splits/full-eight-orbits/v2",
+    "policy": "Reuse SHA-verified historical index, append all prior development input orbits; no historical inputs admitted."
+  },
+  "split_audit": [
+    {
+      "split": "train",
+      "anchors": 86016,
+      "per_length": 4096,
+      "attempts": 102104,
+      "actions": [
+        "identity"
+      ]
+    },
+    {
+      "split": "validation",
+      "anchors": 5376,
+      "per_length": 256,
+      "attempts": 6350,
+      "actions": [
+        "identity",
+        "complement",
+        "inverse"
+      ]
+    },
+    {
+      "split": "test",
+      "anchors": 10752,
+      "per_length": 512,
+      "attempts": 12716,
+      "actions": [
+        "identity",
+        "complement",
+        "inverse"
+      ]
+    }
+  ],
+  "orbit_count": 102144,
+  "within_world_orbit_overlap": 0,
+  "across_encodings_identical_objects_labels_splits_batches": true,
+  "cross_world_disjointness_enforced": false,
+  "independent_world_policy": "Independent seeded sampling conditional on the fixed historical exclusion universe. Different worlds may overlap; no cross-world model pairs are primary endpoints.",
+  "elapsed_seconds": 20.293005581996113
+}

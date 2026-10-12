@@ -1,0 +1,70 @@
+Read-only localization of the two frozen MatrixGroupWorld kNN check failures
+
+Scope: unit001 / R1 / n=6 / raw_within_n / output_prob / trained, correct and
+wrong roles. The exact original first 64 analysis anchors, k=10, sample IDs,
+orbit exclusions and source arrays were preserved. No model, optimizer,
+forward pass, new input, production score, or production metric was created.
+
+Both original arithmetic paths reproduced their saved scores:
+  correct: production 0.6000000000 versus independent 0.6015625000
+  wrong:   production 0.1656250000 versus independent 0.1671875000
+Each difference is exactly one additional shared neighbor out of 64*10.
+
+The common left-side neighbor sets agree for all 64 anchors. The changed sets
+are confined to the right output-probability arrays:
+  correct/sample 48: production selects 53; independent selects 27.
+    Shared neighbors increase 6 -> 7. The direct squared distances are
+    d(48,27)=1.4022492956389385e-13 and d(48,53)=1.404426690930623e-13.
+    Gram distances instead rank 53 before 27 at 1.4033219031261979e-13 and
+    1.4077627952246985e-13, respectively.
+  correct/sample 57: production selects 11; independent selects 27.
+    This changes a neighbor set but leaves its overlap count unchanged.
+    Production has a rounded exact boundary tie at 1.3367085216486885e-13;
+    the fixed ascending-ID tie rule picks 11. Direct distances distinguish
+    the candidates, with 27 closer by 4.174235858336072e-16.
+  wrong/sample 17: production selects 10; independent selects 60.
+    Shared neighbors increase 2 -> 3. Production has a rounded exact tie at
+    5.639932965095795e-14, so the fixed ascending-ID tie rule picks 10.
+    Direct distances are 5.694098815872158e-14 for 10 and
+    5.636360765246321e-14 for 60, separated by 5.773805062583718e-16.
+
+The cached softmax vectors are near onehot, rather than exactly saturated or
+identical: right-side median maximal probabilities are 0.9999984503 (correct)
+and 0.9999985695 (wrong); no maximal probability equals 1 and no 64-row raw
+duplicate occurs. Tiny same-output squared distances make the Gram formula
+||x||^2+||y||^2-2<x,y> susceptible to cancellation. Gram-versus-direct maximum
+distance differences are approximately 2.9e-15, sufficient to reverse these
+neighbor boundaries. Neither clipping negative distances nor changing an
+exact sample-ID/duplicate rule caused these cases: no eligible Gram distance
+was negative, and both paths use the same IDs and orbit exclusions.
+
+The arithmetic localization controls retain these original input arrays.
+Using direct distances with either original or independent centering gives
+the independent scores. Centering alone does not change direct neighbor sets.
+For the wrong role, changing the Gram path's centering by at most 1.39e-17
+also resolves its rounded boundary tie; the Gram path is therefore sensitive
+to both cancellation and preceding centering roundoff. These crossed paths
+and 100-digit cached-raw distance calculations are diagnosis only. They are
+not replacements for the frozen method and are not successful verification.
+
+Conclusion: these are real fixed-tolerance numerical check discrepancies,
+localized to near-tie ranking in the output-probability kNN branch. The
+original verification remains FAILED: 64 fixed checks passed, 6 were
+undefined-consistent, 2 failed; all 288 fixed selector checks passed. The 64
+passed checks include the fixed hidden kNN and ordinary CKA/Procrustes scope,
+not a claim that every production table cell was independently recomputed.
+The original producer scores, failed JSON, threshold 1e-8, k=10, samples,
+centering methods, tie rules, and result tables remain unchanged.
+
+Artifacts:
+  knn_failure_diagnostic.py: reproducible read-only localizer
+  knn_failure_diagnostic.json: hashes, original scores, sample sets, scope
+  knn_failure_boundary_distances.csv: fixed boundary candidates, full anchor
+    IDs, ranks, both distances/hex values and high-precision diagnostic values
+
+The script was run using the existing .venv/bin/python with all original CPU
+BLAS thread limits set to 2. Its successful diagnostic took approximately 1.2s.
+A preliminary launch with system Python stopped at import because that
+interpreter lacks threadpoolctl; it read no scientific inputs. No dependency
+was installed or changed. The successful diagnostic verified 26 protected
+source/table/cache/data hashes unchanged before and after reading them.

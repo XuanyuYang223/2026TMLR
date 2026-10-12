@@ -1,4 +1,3 @@
-numpy>=2.0
-torch>=2.5
-matplotlib>=3.8
-scipy>=1.14
+# Minimal saved-table replay uses only Python's standard library.
+# Optional byte downloads/decompression: requirements-artifacts.txt.
+# Original numerical/model runtime: requirements-science.lock.txt.

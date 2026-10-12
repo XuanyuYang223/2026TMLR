@@ -1,0 +1,15 @@
+{
+  "status": "failed",
+  "protocol_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+  "queue_source_sha256": "c022159a98e2063a24d518a9e44fc90e7528786f919456a6f883e05ef54ff443",
+  "authorized_missing_models": 48,
+  "completed_models": 0,
+  "current_run": "eightrel001_transformer_one_line_anti_fixed_points",
+  "updated_utc": "2026-10-10T22:04:32.959205+00:00",
+  "queue_wall_seconds": 599.8782908916473,
+  "source_process_wall_seconds": 0,
+  "no_metric_based_selection": true,
+  "no_extra_training": true,
+  "model_budget_unchanged": true,
+  "error": "child exit code 1; see /mnt/yangx-projects-f/20261010/permworld_eight_relations/logs/eightrel001_transformer_one_line_anti_fixed_points.log"
+}

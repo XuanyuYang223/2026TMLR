@@ -1,0 +1,132 @@
+{
+  "source_sha256": "d532f59bdf4f1b1330e834e809541db81af980e367e7863e21eff124b338fb2c",
+  "perm_stages": [
+    [
+      "perm_extract",
+      [
+        "-B",
+        "-m",
+        "experiments.permworld_eight_relations_20261010.extract",
+        "--stage",
+        "extract"
+      ]
+    ],
+    [
+      "perm_extraction_validation",
+      [
+        "-B",
+        "-m",
+        "experiments.permworld_eight_relations_20261010.extract",
+        "--stage",
+        "validate"
+      ]
+    ],
+    [
+      "perm_geometry",
+      [
+        "-B",
+        "-m",
+        "experiments.permworld_eight_relations_20261010.analysis",
+        "--run"
+      ]
+    ],
+    [
+      "perm_report",
+      [
+        "-B",
+        "-m",
+        "experiments.permworld_eight_relations_20261010.report"
+      ]
+    ],
+    [
+      "perm_reader_audit",
+      [
+        "-B",
+        "diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.py"
+      ]
+    ]
+  ],
+  "graph_stages": [
+    [
+      "graph_verify",
+      [
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "verify"
+      ]
+    ],
+    [
+      "graph_engineering",
+      [
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "engineering"
+      ]
+    ],
+    [
+      "graph_train_four",
+      [
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "train-all"
+      ]
+    ],
+    [
+      "graph_evaluate",
+      [
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "evaluate"
+      ]
+    ],
+    [
+      "graph_independent_metrics",
+      [
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010.validate",
+        "--stage",
+        "actual"
+      ]
+    ],
+    [
+      "graph_report",
+      [
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "report"
+      ]
+    ],
+    [
+      "graph_reader_audit",
+      [
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010.validate",
+        "--stage",
+        "audit-report"
+      ]
+    ]
+  ],
+  "dependent_freeze_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/training_freeze.json": "e47cd04f85703899177bac2b1f53f5c227fa153ada6beaee1edb7cfeb6386261",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/analysis_freeze.json": "38d4a132a145f13f30278c7d996d218e40a264e78e6126f341c117869f3d8848",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/metadata_writer_freeze.json": "37b1c5c33d3a3740bf2372267dc5c28bab50d72b2b3509059207fd7fa14fb008",
+    "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/freeze_manifest.json": "af8c4499dfd5c47d2af48319e323c317fb7868240f5e19da259083971cb88556",
+    "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/verification_freeze.json": "d4d3f8d0d4f8977e3201f2ac6dd0d4d94c5f7eb46d56fe08571f03b500a235bb"
+  },
+  "registered_utc": "2026-10-10T22:17:04.564537+00:00",
+  "not_a_scientific_protocol_change": true,
+  "no_training_or_metrics_started_at_registration": true,
+  "graph_phase_requires_completed_perm_analysis": true
+}

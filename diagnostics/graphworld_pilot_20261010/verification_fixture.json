@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "synthetic_seed": 202610103041,
+  "original_metrics_path": "/home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/metrics.py",
+  "original_metrics_sha256": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+  "checks": [
+    {
+      "check": "ordinary CKA: feature covariance versus original Gram",
+      "original": 0.247593900236291,
+      "independent": 0.24759390023629108,
+      "absolute_error": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "U-centered CKA: explicit off-diagonal row loops",
+      "original": -0.034934094489652415,
+      "independent": -0.034934094489652415,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "k10 overlap: direct Euclidean distances/stable IDs/duplicate exclusion",
+      "original": 0.3451612903225807,
+      "independent": 0.34516129032258064,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "all k10 neighbor ID sets equal",
+      "samples": 31,
+      "passed": true
+    },
+    {
+      "check": "joint-stratum centering: loop versus indicator design matrix",
+      "original": 0.0,
+      "independent": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "held-out rank8 PCA/fit RMS/orthogonal map/error: covariance-eigen PCA",
+      "original": 1.3197969738177746,
+      "independent": 1.3197969738177742,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "Procrustes score is negative raw NRMSE",
+      "original": -1.3197969738177746,
+      "independent": -1.3197969738177746,
+      "absolute_error": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    },
+    {
+      "check": "exact distance ties use ascending stable ID with k10",
+      "passed": true
+    },
+    {
+      "check": "constant CKA undefined",
+      "original": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "constant k10 undefined",
+      "original": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "insufficient U-centering sample count remains undefined",
+      "original": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "rank8 never adaptively reduces to rank7",
+      "original": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "fewer than10 eligible neighbors undefined",
+      "original": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "fixed21 complete-length rule does not renormalize missing cells",
+      "original": null,
+      "independent": null,
+      "absolute_error": null,
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  ],
+  "checks_count": 14,
+  "fixed_procrustes_rank": 8,
+  "fixed_knn_k": 10,
+  "scientific_definition_changed": false,
+  "trained": false,
+  "real_feature_arrays_loaded": false,
+  "new_test_read": false,
+  "original_verify": {
+    "cka_rotation_and_independent_formula": true,
+    "constant_undefined": true,
+    "heldout_rotation_error_zero": true,
+    "manual_neighbor_swap_overlap_zero": true,
+    "exact_tie_by_input_id": true
+  }
+}

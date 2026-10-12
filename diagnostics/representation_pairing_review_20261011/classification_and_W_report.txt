@@ -1,0 +1,49 @@
+Mathematical catalogue and saved-input wrong-transform audit
+
+This catalogue was fixed before the new representation-pairing CKA calculation. It contains 120 PermWorld mathematical cells (8 relations x 15 right tasks excluding the left task) and 12 GraphWorld cells (4 x 3). There are 12 designated rows, no additionally proved other_known_exact rows, and 120 not_designated rows. The empty category is retained. Not_designated means not included in this known-exact binary catalogue; it does not mean mathematically independent or unrelated. No finite candidate search was used to prove absence of a relation, and no new CKA was used for classification.
+
+Proofs and actual registry references are in classification_audit.json. formula is an asserted exact identity only for designated rows. comparison_formula for other rows is the inherited original mapping applied to a candidate right task; it is a proposed comparison equation, not a universal mathematical assertion. The original offset is preserved for every candidate within a relation, including components(C(pi))-1 for decomposition_complement.
+
+All saved input anchors were retained in W_actual_per_anchor.csv: 10752 distinct PermWorld test inputs (512 at each n=10,...,30), and 1536 distinct GraphWorld analysis inputs (512 at n=6,7,8). The 92160 relation-anchor rows reuse those base inputs. Architecture and encoding do not create extra inputs or independent worlds. All 12 original correct formulas hold on all their saved anchors. No model or metric was run, no new input generated, and no original transform changed.
+
+The 372 per-length/control retained counts reproduce the original completed CKA tables exactly: 336 PermWorld raw/answer-strata cells and 36 GraphWorld raw/answer/density-strata cells. W_reader_validation.json independently reaggregates all booleans and 28 pooled/equal-length summaries. Graph labels were also checked directly against the already saved five-action adjacency arrays.
+
+Original selection rules:
+PermWorld: joint [n,left(identity),right(identity),right(complement),right(inverse)] after the original right-label offset. Retain strata with count >=3 independently in validation and test. The joint keys include correct and wrong answers, not only the correctly transformed answer.
+GraphWorld: joint [n,left(identity),mapped-right(identity),mapped-right(correct),mapped-right(wrong)]. Density adds the identity-input edge count. Retain strata with count >=3 independently in validation and analysis. This audit keeps all raw anchors and adds retention flags; it never deletes coincidentally formula-preserving wrong-transform cases.
+
+GraphWorld actual wrong-formula matches, numerator/retained denominator (n=6,7,8). These are actual analysis anchors, not random mathematics-check graphs:
+reverse_max     raw_within_n          : n=6 319/512, n=7 286/512, n=8 267/512; equal-n rate=56.771%; pooled=872/1536 (56.771%).
+reverse_max     answer_strata         : n=6 315/494, n=7 285/486, n=8 258/468; equal-n rate=59.178%; pooled=858/1448 (59.254%).
+reverse_max     answer_density_strata : n=6 268/344, n=7 201/275, n=8 163/217; equal-n rate=75.371%; pooled=632/836 (75.598%).
+reverse_min     raw_within_n          : n=6 314/512, n=7 257/512, n=8 271/512; equal-n rate=54.818%; pooled=842/1536 (54.818%).
+reverse_min     answer_strata         : n=6 309/481, n=7 253/479, n=8 266/473; equal-n rate=57.765%; pooled=828/1433 (57.781%).
+reverse_min     answer_density_strata : n=6 253/348, n=7 158/257, n=8 150/225; equal-n rate=66.949%; pooled=561/830 (67.590%).
+complement_out  raw_within_n          : n=6 319/512, n=7 286/512, n=8 267/512; equal-n rate=56.771%; pooled=872/1536 (56.771%).
+complement_out  answer_strata         : n=6 317/498, n=7 283/494, n=8 260/474; equal-n rate=58.598%; pooled=860/1466 (58.663%).
+complement_out  answer_density_strata : n=6 264/376, n=7 202/280, n=8 171/235; equal-n rate=71.707%; pooled=637/891 (71.493%).
+complement_in   raw_within_n          : n=6 339/512, n=7 308/512, n=8 270/512; equal-n rate=59.701%; pooled=917/1536 (59.701%).
+complement_in   answer_strata         : n=6 338/497, n=7 305/487, n=8 259/479; equal-n rate=61.569%; pooled=902/1463 (61.654%).
+complement_in   answer_density_strata : n=6 285/352, n=7 217/272, n=8 152/221; equal-n rate=76.508%; pooled=654/845 (77.396%).
+
+Across actual raw GraphWorld relation/n cells, wrong-formula fulfillment ranges from 50.195% to 66.211%; each relation has 1536 raw anchors. Equal-n wrong-formula rates are 56.771%, 54.818%, 56.771%, 59.701% for reverse_max, reverse_min, complement_out, complement_in. Answer-strata equal-n rates are respectively 59.178%, 57.765%, 58.598%, 61.569%; density-strata rates are 75.371%, 66.949%, 71.707%, 76.508%. Higher rates after the original selector describe the retained inputs and do not establish a learned representation mechanism.
+
+The earlier random mathematics audit used 3000 graphs per n and yielded 51.9% to 65.5667% across its relation/n cells. Those separate numbers and their original source hash are copied to W_original_random_math_reference.csv and W_actual_audit.json. They are never combined with the actual analysis denominators.
+
+GraphWorld dependency: reverse_max and complement_out have identical raw wrong-formula truth values on all 1536 base inputs. Algebraically, W commutes with R and C, so both events reduce to max_out(A)=max_out(W(A)). Their original joint answer/density selectors nevertheless differ. Four relation rows are therefore not four independent observations.
+
+PermWorld actual equal-length wrong-formula rates (raw / original answer-strata; latter pooled retained count):
+descent_inverse          : 19.401% / 19.998%; answer-strata retains 10320/10752.
+peak_complement          : 31.166% / 32.406%; answer-strata retains 10053/10752.
+fixed_complement         : 30.487% / 30.867%; answer-strata retains 10569/10752.
+exceedance_inverse       : 21.596% / 23.699%; answer-strata retains 8983/10752.
+subsequence_complement   : 22.210% / 22.617%; answer-strata retains 10483/10752.
+run_complement           : 36.496% / 38.216%; answer-strata retains 9992/10752.
+record_complement        : 17.653% / 18.159%; answer-strata retains 10371/10752.
+decomposition_complement : 77.000% / 77.239%; answer-strata retains 10719/10752.
+
+Decomposition_complement has frequent answer-level accidental matches under the original wrong inverse transform: raw 313/512 at n=10 and 447/512 at n=30; raw equal-length mean 76.9996%. This concerns the specified task formula, not equality of the input transforms or absence/presence of a hidden algebraic mechanism.
+
+Files: classification_manifest.csv; classification_audit.json; classification_and_W.py; W_actual_per_anchor.csv; W_actual_per_length.csv; W_actual_summary.csv; W_actual_audit.json; W_original_random_math_reference.csv; W_reader_validation.py/json.
+
+Limits: one shared data world per domain; directed relation/task dependencies remain; classification is an explicitly limited known-exact catalogue. This audit is an exploratory mathematics/input accounting step. It supplies no new CKA, functional accuracy, learning or causality result.

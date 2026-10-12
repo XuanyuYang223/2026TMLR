@@ -1,0 +1,95 @@
+PermWorld controlled representation comparison, 2026-10-10
+
+Scope
+Only first archdev001 sixteen specialist models, final step20000, n10..30.
+Four tasks x two encodings x two configurations, one data world and one real
+saved initial state per configuration. No optimizer, backward, new sample or
+training. Later8k models and historical82 models are excluded from main effects.
+Final-layer/output scores reuse the original2688 rows exactly. Intermediate
+layers and same-task cross-configuration CKA are the newly computed analyses.
+F17 and original experiment artifacts are protected by protected_before.json.
+
+Reader entry: reader_report.html; four_part_main.png has four controlled panels.
+The full result tables retain all21 lengths with fixed1/21 aggregation.
+NaN is retained with its reason and is never assigned zero or reweighted away.
+Procrustes is negative held-out NRMSE, with positive original error columns.
+No score averaging across metric scales, significance tests or equivalence claim.
+
+Paths and versions
+Workspace: /home/yangx/ICML
+Python: /home/yangx/ICML/.venv/bin/python
+Primary original artifacts:
+ /mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev
+Original metric source:
+ /home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/metrics.py
+New large caches:
+ /mnt/yangx-projects-f/20261010/permworld_controlled_comparison
+ layers/index.json maps40 physical files to64 logical model/phase/split units.
+ shared initials refer only to hidden features, never task-specific logits.
+ fixed_selections.npz contains the original frozen masks/strata keys.
+ inventory/model_inventory.csv and inventory/source_index.json identify each
+ actual checkpoint, initial, code, vocabulary, parameter and cache hash.
+ protocol.json binds the fixed dataset/anchor rules and complete comparison list.
+ comparison_manifest_before_extraction.csv is the immutable pre-extraction list;
+ comparison_manifest.csv adds observed feature hashes without changing endpoints.
+ freeze.json binds all scientific scripts; retained preceding freeze files and
+ engineering_repair.json/schema_alignment records document the two code fixes.
+ artifact_manifest.json (delivery) binds final files and external cache index.
+
+Initialize nothing; use saved real step0. Same seed is not identity evidence.
+GRU saved native21 tensors were migrated exactly into the explicit four-layer
+implementation, validated bitwise. Input-end embedding is structurally constant
+within length and no floating-point residual is interpreted as structure.
+
+Replay from verified existing caches (working directory /home/yangx/ICML)
+These commands overwrite ONLY this new diagnostic's generated tables/report;
+copy the diagnostic before replay if retaining delivery timestamps is needed.
+
+.venv/bin/python -c "import sys; sys.path.insert(0,'diagnostics/permworld_controlled_comparison_20261010'); import common; common.verify(); print('freeze passed')"
+.venv/bin/python diagnostics/permworld_controlled_comparison_20261010/metric_review/analyze.py --run
+.venv/bin/python diagnostics/permworld_controlled_comparison_20261010/source_learning.py
+.venv/bin/python diagnostics/permworld_controlled_comparison_20261010/contrasts.py
+.venv/bin/python diagnostics/permworld_controlled_comparison_20261010/validate.py
+.venv/bin/python diagnostics/permworld_controlled_comparison_20261010/inventory/report.py --directory /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010
+.venv/bin/python diagnostics/permworld_controlled_comparison_20261010/finish_delivery.py annotate
+
+The published completion.json/cost_estimate.json describe the original execution,
+not the replay; do not interpret them as new timing measurements. Independent
+reader audit scripts/results are retained under metric_review and
+extraction_review. Hash equality protects old artifacts; it is not a scientific
+independent replication.
+
+If new middle-layer caches are unavailable, rebuild only those existing anchors:
+.venv/bin/python diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers.py --stage benchmark
+.venv/bin/python diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers.py --stage extract
+Check the frozen script's --help first. Original checkpoint/data/cache paths and
+hashes must be present. Do not run any training script or generate new anchors.
+
+Engineering notes
+The first benchmark failed the unchanged2e-5 tolerance on an independent
+prefix-only smaller-batch intermediate-layer path. The repair uses the exact
+same full-prompt128-example shape for manual-versus-hook validation. It retains
+the original2e-5 gate, extraction code, metrics and fixed endpoint. Prefix-only
+raw-layer deviations remain explicitly reported as numerical sensitivity;
+prefix-only final normalization and new-versus-old final arrays also pass.
+The contrast parser was aligned to the actual column names nan_reason and
+initial_similarity/trained_similarity/similarity_change before full metrics.
+This repair did not alter the formulas or original values.
+
+Output and learning controls
+output_prob is the original conditional distribution over numeric tokens0..30.
+Final answer CE is FP32 full-vocabulary cross entropy at the answer position.
+Initial answer CE was not originally cached: all2016 cells remain explicitly
+missing. Initial answer accuracy remains available from original predictions.
+source_validation_eos_original.csv retains answer and EOS teacher-forced results
+separately; EOS is not a measure of mathematical-task learning.
+Length-majority labels are chosen only from original training labels, then fixed
+for validation/test. Main geometry is jointly answer-stratified; confidence and
+prediction-error structure are not thereby removed.
+
+Stop boundary
+This is exploratory analysis, not a new preregistered confirmation. Sixteen
+models,21 lengths and multiple metrics are not independent replicates. TF/GRU
+capacity differs. Low-learning cycle conditions remain in every comparison.
+No GroupWorld,768-model confirmation, later8k tuning, zero-space, finite-field,
+GELU or F17 experiment is scheduled by this delivery. No GitHub push is included.

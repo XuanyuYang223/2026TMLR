@@ -1,0 +1,56 @@
+{
+  "started_utc": "2026-10-10T07:19:54.150589+00:00",
+  "development_only": true,
+  "formal_training_started": false,
+  "unchanged_fixed_manifest": true,
+  "models_added": 0,
+  "source_code_modified": false,
+  "purpose": "Independent fixed tail jobs overlap serial driver to reduce wall time",
+  "preassigned_manifest_indices": [
+    15,
+    14,
+    13,
+    12
+  ],
+  "minimum_start_gap": 6,
+  "jobs": [
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "manifest_index": 15,
+      "serial_first_pending_index": 0,
+      "started_utc": "2026-10-10T07:19:54.160704+00:00",
+      "updates": 20000,
+      "finished_utc": "2026-10-10T07:55:39.979490+00:00",
+      "returncode": 0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "manifest_index": 14,
+      "serial_first_pending_index": 1,
+      "started_utc": "2026-10-10T07:55:39.993585+00:00",
+      "updates": 20000,
+      "finished_utc": "2026-10-10T08:34:57.716524+00:00",
+      "returncode": 0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "manifest_index": 13,
+      "serial_first_pending_index": 3,
+      "started_utc": "2026-10-10T08:34:57.731305+00:00",
+      "updates": 20000,
+      "finished_utc": "2026-10-10T09:24:30.681415+00:00",
+      "returncode": 0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "manifest_index": 12,
+      "serial_first_pending_index": 5,
+      "started_utc": "2026-10-10T09:24:30.701727+00:00",
+      "updates": 20000,
+      "finished_utc": "2026-10-10T09:56:14.656124+00:00",
+      "returncode": 0
+    }
+  ],
+  "finished_utc": "2026-10-10T09:56:14.668304+00:00",
+  "status": "completed"
+}

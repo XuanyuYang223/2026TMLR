@@ -1,0 +1,95 @@
+"""Fixed equal-length summaries and additive differences; no inference tests."""
+from common import *
+import shutil
+
+KEYS=['architecture','encoding','relation','control','branch','layer','metric']
+def main():
+    protocol=verify();source=rows(DIAG/'per_length_results.csv');groups={}
+    for r in source:groups.setdefault(tuple(r[k] for k in KEYS),[]).append(r)
+    table=[];index={}
+    for key,group in groups.items():
+        assert sorted(int(r['length']) for r in group)==protocol['lengths']
+        record=dict(zip(KEYS,key));record.update(contrast_type='condition_summary',left_condition='',right_condition='',
+            length_count=21,weights='1/21 fixed; any undefined length makes corresponding aggregate NaN')
+        for field in FIELDS:record[field]=equal_length([number(r.get(field)) for r in group])
+        record['undefined_lengths']=sum(not math.isfinite(number(r.get('Delta'))) for r in group)
+        record['undefined_reason']='; '.join(sorted(set(r.get('undefined_reason',r.get('nan_reason','')) for r in group if r.get('undefined_reason',r.get('nan_reason','')) not in ('','{}'))))
+        for phase in ['initial','trained']:
+            for role in ['correct','wrong','identity']:
+                field=f'error_{phase}_{role}'
+                record[field]=equal_length([number(r.get(field)) for r in group])
+        table.append(record);index[key]=record
+    def diff(kind,left,right,**identity):
+        row={k:right[k] for k in KEYS};row.update(identity)
+        row.update(contrast_type=kind,left_condition=json.dumps({k:left[k] for k in KEYS},sort_keys=True),
+            right_condition=json.dumps({k:right[k] for k in KEYS},sort_keys=True),length_count=21,
+            weights='Difference of corresponding fixed1/21 summaries; no incomplete renormalization')
+        for field in FIELDS:row[field]=right[field]-left[field]
+        row['undefined_reason']='; '.join(x for x in [left.get('undefined_reason',''),right.get('undefined_reason','')] if x)
+        table.append(row);return row
+    encoding_differences={}
+    for key,left in list(index.items()):
+        a,e,r,c,b,l,m=key
+        if e=='one_line':
+            right=index[a,'canonical_cycle',r,c,b,l,m]
+            out=diff('encoding_difference',left,right,encoding='cycle-minus-line')
+            for field,name in [('B0','Gamma0'),('Bt','Gammat'),('dc','Gammac'),('dw','Gammaw'),('Delta','GammaDelta')]:out[name]=out[field]
+            encoding_differences[a,r,c,b,l,m]=out
+        if a=='transformer' and l in ['final_norm','embedding','output']:
+            right=index['gru',e,r,c,b,l,m]
+            diff('configuration_difference',left,right,architecture='GRU-minus-Transformer')
+        if b=='hidden' and m in ['linear_cka','debiased_cka']:
+            last='block4' if a=='transformer' else 'layer4'
+            if l!=last:
+                diff('layer_difference',index[a,e,r,c,b,last,m],left,
+                    layer=l+'-minus-'+last,
+                    intended_changed_fields='normalization only' if l=='final_norm' else 'extraction layer',
+                    norm_comparison=(l=='final_norm'))
+    for key,left in encoding_differences.items():
+        a,r,c,b,l,m=key
+        if a!='transformer' or l not in ['final_norm','embedding','output']:continue
+        right=encoding_differences['gru',r,c,b,l,m]
+        out=diff('interaction',left,right,architecture='GRU-minus-Transformer',encoding='cycle-minus-line')
+        out.update(I0=out['B0'],It=out['Bt'],I=out['Delta'],
+            interpretation='Exploratory configuration by encoding; capacities and initializations unmatched')
+    # Compare directions, not magnitudes across metric coordinate systems.
+    directions={}
+    for key,r in index.items():
+        a,e,rel,c,b,l,m=key
+        if l!='final_norm' or b!='hidden' or m not in ['linear_cka','knn_overlap','procrustes']:continue
+        directions.setdefault((a,e,rel,c,b,l),{})[m]=r
+    for key,items in directions.items():
+        assert set(items)=={'linear_cka','knn_overlap','procrustes'}
+        out=dict(zip(KEYS[:-1],key));out.update(contrast_type='metric_direction',metric='direction_only',length_count=21)
+        for f in ['B0','Bt','dc','dw','Delta']:
+            values={m:v[f] for m,v in items.items()}
+            signs={m:('undefined' if not math.isfinite(v) else '+' if v>0 else '-' if v<0 else '0') for m,v in values.items()}
+            out[f+'_directions']=json.dumps(signs,sort_keys=True)
+            out[f+'_direction_consistent']=len(set(signs.values()))==1 and 'undefined' not in signs.values()
+        # Full21 lengthwise sign patterns are kept rather than chosen by trend.
+        for m in items:
+            k=tuple(list(key)+[m]);g=sorted(groups[k],key=lambda r:int(r['length']))
+            out[m+'_Bt_length_signs']=''.join('?' if not math.isfinite(number(r['Bt'])) else '+' if number(r['Bt'])>0 else '-' if number(r['Bt'])<0 else '0' for r in g)
+        table.append(out)
+    csv_write(DIAG/'contrast_summary.csv',table)
+    shutil.copyfile(SOURCE_ROOT/'gold_baseline_length.csv',DIAG/'gold_baseline_length.csv')
+    csv_write(DIAG/'gold_baseline_provenance.csv',[dict(source=str(SOURCE_ROOT/'gold_baseline_length.csv'),
+        source_sha256=sha(SOURCE_ROOT/'gold_baseline_length.csv'),destination_sha256=sha(DIAG/'gold_baseline_length.csv'),
+        static_no_initial_or_training_delta=True,rows=len(rows(DIAG/'gold_baseline_length.csv')))])
+    # Secondary same-task models have a distinct interpretation and grouping.
+    cross=rows(DIAG/'cross_arch_same_task.csv');crossgroups={}
+    for r in cross:
+        key=tuple(r[k] for k in ['task','encoding','control','metric'])
+        crossgroups.setdefault(key,[]).append(r)
+    crosssummary=[]
+    for key,g in crossgroups.items():
+        assert sorted(int(r['length']) for r in g)==protocol['lengths']
+        r=dict(zip(['task','encoding','control','metric'],key));r['length_count']=21
+        for field,source_field in [('initial','initial_similarity'),('trained','trained_similarity'),('change','similarity_change')]:
+            r[field]=equal_length([number(x[source_field]) for x in g])
+        r['undefined_reason']='; '.join(sorted(set(x.get('undefined_reason',x.get('nan_reason','')) for x in g if x.get('undefined_reason',x.get('nan_reason','')) not in ('','{}'))))
+        crosssummary.append(r)
+    csv_write(DIAG/'cross_arch_same_task_summary.csv',crosssummary)
+    print(dict(summary_rows=len(table),condition_rows=len(index),cross_arch_summary_rows=len(crosssummary)),flush=True)
+
+if __name__=='__main__':main()

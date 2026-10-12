@@ -1,0 +1,11 @@
+replicate,metric,k1,k16,k16_minus_k1,increasing_adjacent_steps,adjacent_steps,spearman_k,interpretation
+r0,intermodel_cka,0.1715345550441623,0.28698320721954296,0.11544865217538067,2,4,0.6,"descriptive fixed-run trajectory, not independent five-point inference"
+r0,mean_self_initial_cka,0.11315838987051094,0.2213656827356345,0.10820729286512357,4,4,0.9999999999999999,"descriptive fixed-run trajectory, not independent five-point inference"
+r1,intermodel_cka,0.08953335646355627,0.15300555971923635,0.06347220325568008,2,4,0.6,"descriptive fixed-run trajectory, not independent five-point inference"
+r1,mean_self_initial_cka,0.07787932610443331,0.16991478134812385,0.09203545524369054,3,4,0.8999999999999998,"descriptive fixed-run trajectory, not independent five-point inference"
+r2,intermodel_cka,0.12539080481445047,0.21591680237822697,0.0905259975637765,3,4,0.8999999999999998,"descriptive fixed-run trajectory, not independent five-point inference"
+r2,mean_self_initial_cka,0.08446632944393831,0.2068228869812453,0.12235655753730698,4,4,0.9999999999999999,"descriptive fixed-run trajectory, not independent five-point inference"
+r3,intermodel_cka,0.14747790010261588,0.20654540627659201,0.05906750617397613,3,4,0.49999999999999994,"descriptive fixed-run trajectory, not independent five-point inference"
+r3,mean_self_initial_cka,0.1620501757703428,0.2292837063902292,0.0672335306198864,2,4,0.6,"descriptive fixed-run trajectory, not independent five-point inference"
+r4,intermodel_cka,0.07349097213773115,0.2474449070658626,0.17395393492813147,4,4,0.9999999999999999,"descriptive fixed-run trajectory, not independent five-point inference"
+r4,mean_self_initial_cka,0.09154299090864039,0.21856397046584977,0.12702097955720937,4,4,0.9999999999999999,"descriptive fixed-run trajectory, not independent five-point inference"

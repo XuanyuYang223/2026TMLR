@@ -1,0 +1,21 @@
+本轮新研究入口：MatrixGroupWorld 小规模第三领域检验
+日期：2026-10-11
+
+读者入口：同目录 report.html / report.txt。
+精确状态：completion.json / diagnostic_closure.json。
+协议和来源：protocol.json / freeze_manifest.json / source_inventory.json。
+真实初始化与20k终点：initialization_inventory.json / training_manifest.csv；
+大文件目录 /mnt/yangx-projects-f/20261011/matrixgroupworld。
+
+本轮研究：数学输入变换与表征配对选择性；只含一种架构/编码、两个独立单元。
+两项原输出概率kNN独立核验失败保留，不能称全部数值核验通过。
+表完整、数值核验有保留，两者分开报告。普通CKA为主，固定指标为敏感性。
+GL输入本身不证明群特有机制，左右乘法作用不能误称群同态。
+
+论文主线可保留：数学对应常伴随观察性几何选择性；答案控制、初始化偏好、
+任务掌握程度与指标读数改变解释。正确-错误Bt与初始化增量Delta分别拆解。
+固定同一变换比较其他任务属于另一个问题，不能同原Bt/Delta混合计数。
+本轮不识别几何的功能收益、不做数学机制或普适规律断言。
+
+旧仓库 CURRENT_RESEARCH.txt 受保护，本文件作为追加入口，不替换或修改旧索引。
+范围已完成并停止：8×20k，禁止自动续训、扩大世界、发布或修改F17。

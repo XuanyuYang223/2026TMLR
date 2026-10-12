@@ -1,0 +1,1024 @@
+[
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_anti_fixed_points_s17.npz",
+    "sha256": "136aa6322c12c0bf0f3f4bea3b774a1083709f230ce340f678ef57b195f7f9e1",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_anti_fixed_points_s17.npz",
+    "sha256": "f324f33babb12dfbc8b9eee1abc91813d43ba874d11f8f3d7d825533fa469f91",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.0994415283203125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_anti_fixed_points_s42.npz",
+    "sha256": "b640cc783de3caa1942e48a1250f4ea5239be199884b9e45ed1a1a073abd7eab",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.2782554626464844e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_anti_fixed_points_s42.npz",
+    "sha256": "b699df15c276c0d0985369daac00ed51a21656865dd35d413132241bc45bc96f",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.5033950805664062e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_anti_fixed_points_s101.npz",
+    "sha256": "12321f266af4d1a536e560430ea70f908220c02676a0b64a3a58d0d616cf8d1e",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_anti_fixed_points_s101.npz",
+    "sha256": "a45e3579892ac74e4a69c857b9125a9a0fb7d22b0069a3dcee3c635f57ab80fb",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.205371856689453e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_components_s17.npz",
+    "sha256": "846575d6530fc65171e03fb4e50be38d688bac47137d83c7733cde3efa9b10c8",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_components_s17.npz",
+    "sha256": "aa6d3e2b3b49323d4316ad5591a3b4592da9c035af71502f3ffd01f6645c9b51",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 1.6689300537109375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_components_s42.npz",
+    "sha256": "3b04ff7369b192034266646761e2653717340cc71db95fdffd6e0ac0c18838f9",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.2782554626464844e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_components_s42.npz",
+    "sha256": "3943f8cc80a55da4e4c799bb01b1444eddf51bfdfd19266442b65921f3c3cfaa",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.4139881134033203e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_components_s101.npz",
+    "sha256": "89baf7c8fc57cc3aa3df82df8ae58fa76438598a61988f4e2eed558a563c41cb",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_components_s101.npz",
+    "sha256": "9c9daa2319113ec7e1088afebcf329b8e2cd54a068d2bf3364d2ccfdb4037414",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.0994415283203125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_deficiencies_s17.npz",
+    "sha256": "8660f5efa666a668f6ba22f76b90acd03ab7ea3770ed7a4d2d6930ce4ef5581d",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_deficiencies_s17.npz",
+    "sha256": "e662e0ba8a68ef76573500a568d09e010751ec69b5993436da497e22c2ada11f",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 4.0531158447265625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_deficiencies_s42.npz",
+    "sha256": "e983185d8397a3bde3f9f69fc9d7749630e820e1bdf27dc51bfcedfc4a9b3d8b",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.2782554626464844e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_deficiencies_s42.npz",
+    "sha256": "65d7f1fcc720758a007c978929c32241bb13b68294eeb48281783408c0def04c",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 5.0067901611328125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_deficiencies_s101.npz",
+    "sha256": "31c81d2d632e4d9413ab8e8053cc6163ae62210110539b683cb3d3e0dfea1599",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_deficiencies_s101.npz",
+    "sha256": "86bd688b67ff7dfa400c650a16e8ba3edc9e63924f49e519eddee3267efd1ef9",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 5.9604644775390625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_descents_s17.npz",
+    "sha256": "943bde25b4bba7f615f7d5bd73e9cee9dae11a3079f13bb6c95213663b25a045",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.3974647521972656e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_descents_s17.npz",
+    "sha256": "415ab86a2cde20e63365d0758b35d4bdf0c40ed4eb73b8b84b9625c874ac7961",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 4.291534423828125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-a-transformer-tasks01-seed17.pt",
+    "sha256": "faa1c31bd1512bc3025a0126c9f818cdca7bb3942afa2b3e0e58493b19347cf7",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 4.291534423828125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_descents_s42.npz",
+    "sha256": "611312c710b477357f3008445c316421d8b89908bd388c81d0004ca434014fb9",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_descents_s42.npz",
+    "sha256": "e3c9bd61f77162db565ea48c5d6bb890e4549ec3165cf6d82eb81490fea109ee",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 5.4836273193359375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_descents_s101.npz",
+    "sha256": "2969aa7bf3ed3d944f58ea70323e6ade2548c864b1d8ab4a6211c0f010f13e5b",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_descents_s101.npz",
+    "sha256": "bf3b5d445ed226666166b2d63458985b5bf7094dbf8b4ccd0e4669316d8f68cd",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.635883331298828e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-b-transformer-tasks01-seed101.pt",
+    "sha256": "4eaddc4bfd849f9ed478aa40bcdba0f58d2403a3f7540bc3fabadd07d922dce4",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 3.4570693969726562e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_exceedances_s17.npz",
+    "sha256": "c96b43bb4f1e778d122b81311a8f8fd4dcbc576fb2f35d9bd3a040f7a15bf625",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.3974647521972656e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_exceedances_s17.npz",
+    "sha256": "45bd34f40f25100dfa4fbead6111c143137454e639af26387ae9cf7eed52e131",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 4.351139068603516e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_exceedances_s42.npz",
+    "sha256": "266b89fc63506315618db965137b9fa162e7d6463aa9ec9f8cf88ec88262dd21",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_exceedances_s42.npz",
+    "sha256": "95a37ea6514595b807bb52dc8e2810c7cb943463736263df2b09a479676f7b5b",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 4.887580871582031e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_exceedances_s101.npz",
+    "sha256": "2e831f8bf21efec4ca0aaeb46230a8a2814ca7c40861876bf0473e4e8d21f370",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_exceedances_s101.npz",
+    "sha256": "396ed747ea20d7fdddddf9d39da5c0ae00bc8e42df3e693639fec7223fa7d0f1",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 8.881092071533203e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_fixed_points_s17.npz",
+    "sha256": "eae12a09f5e2d8167d166e0996c3b22632cbe216767da56f1770b396779194fe",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.3974647521972656e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_fixed_points_s17.npz",
+    "sha256": "dbb6938df6bd1344b373c4a0c56a2e6d907cb12e1861da85bfcfddd381632c51",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.518296241760254e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_fixed_points_s42.npz",
+    "sha256": "f51dacc8be407c32dd8fd80a197513dd3cb7765a5c15e27c6bd27c2226bf25ba",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_fixed_points_s42.npz",
+    "sha256": "895db1a2f9181c4ea2955b54ba88e54bf2fc10a79f717ed5a78f7224cb628790",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_fixed_points_s101.npz",
+    "sha256": "f2f074551c45b4e3bf68d4775909da739a01f5958144bf6979420893a5f31617",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_fixed_points_s101.npz",
+    "sha256": "6978ba2ae2ba636f4f04c138540eb7fb676cb847d81ad92360a7518357152d60",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_global_descents_s17.npz",
+    "sha256": "0ce6a9036dfeccb40452b4d94a00909d3c2b65dc8c947f2a5ad872afd39c9406",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.3974647521972656e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_global_descents_s17.npz",
+    "sha256": "37bb05b7b848ad77802bafe46d6af493c2e2d490dadf90c9dbab3eb819ae87f7",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_global_descents_s42.npz",
+    "sha256": "778aa9eebe9349c4ca192256e1625bd9626090a7d67360a1b646c6391dd190a9",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_global_descents_s42.npz",
+    "sha256": "7cce1f4bf69efffb03632c687d58370dad424a055dfe2f4fb1c303a8bc80d031",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 1.430511474609375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_global_descents_s101.npz",
+    "sha256": "ea0f01202c26cf716ca7eb34fb7e331f369a28f1606cb98247b1858934af2a20",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_global_descents_s101.npz",
+    "sha256": "ca5d5c441ef885a4c4c1fcb1ea958f173f3b28256c58f09de3c321aa3d82092b",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 1.9669532775878906e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_lds_length_s17.npz",
+    "sha256": "067732bedfefeb048c9ac5c9d5d5011a0fa9ddcf6043cd76961e7e83abd92ce6",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_lds_length_s17.npz",
+    "sha256": "80939b9dd19515878211b1b9f299f12b03d202c44f15385cebe7c9dbafc594c9",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 4.172325134277344e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_lds_length_s42.npz",
+    "sha256": "b00e15abcfeed740146f66c78aef39125bbdce867b57e1e8aa3f1a368b021ef6",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.2782554626464844e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_lds_length_s42.npz",
+    "sha256": "7c1efa2d85d8874266486708165e67d08315bb9f20bd146aff5fc5765226c680",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 4.380941390991211e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_lds_length_s101.npz",
+    "sha256": "40d080b215b9f15b449eadcfdd80b07d51a6af185c6bbd05030b0cd9557f8e7c",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_lds_length_s101.npz",
+    "sha256": "d791453df3cbe382f9ddfca81718ba11545d860aff50cde93320a72218bdec2e",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 4.5299530029296875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_left_to_right_maxima_s17.npz",
+    "sha256": "bb62cb6281706337cd0e19fbd34487e32b1eabf069ac8b5a523b5ab2d8540d59",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.3974647521972656e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_left_to_right_maxima_s17.npz",
+    "sha256": "7525242958734948371456e025476eec9e491e0f4d75c4973fae39ab58c360c0",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.3208558559417725e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_left_to_right_maxima_s42.npz",
+    "sha256": "f90445019c66110b3107dfe9c0007f736cfc9ce582b9a39c382d9ffeb0b7fa49",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_left_to_right_maxima_s42.npz",
+    "sha256": "6054fb49a458d4270503b195d2085c0a24dcdc41e522da1b3f69c0a8083c358c",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.205371856689453e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_left_to_right_maxima_s101.npz",
+    "sha256": "562bf2b2d3efd819080bacda44b5220c43c4a5a99522a4d0f54f576354979f41",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_left_to_right_maxima_s101.npz",
+    "sha256": "854a7fe565cc638a1db4fb5beacdcfa61899e9dbb395988c7033b766f8016eb0",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.5033950805664062e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_left_to_right_minima_s17.npz",
+    "sha256": "3eaab635b9f60fee33609950217c78ae487ecbb6a979f4768dab7f4d146e17e9",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_left_to_right_minima_s17.npz",
+    "sha256": "27c4e4ea01cbcb10a6b163c8e59c87bfcf099d6a75f7a0291bd2bfaa74c60942",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_left_to_right_minima_s42.npz",
+    "sha256": "e1b4491cadeb6583cf36dfca49b07390bb7a26d8986ff5eb7e841df7987fce87",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.2782554626464844e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_left_to_right_minima_s42.npz",
+    "sha256": "a87bcefafdee6d2d849dc0b91b37d7e76eb835d2452c6dcce17d31e03dfb0a0a",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_left_to_right_minima_s101.npz",
+    "sha256": "c155ef8d51152e67ee7137d3bd06b589ffbe515dc40fd079efb4e33e1501ce74",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_left_to_right_minima_s101.npz",
+    "sha256": "828159c6b968bd34618d0644d000dac79cb52e904bd1ef066eff06e8b31f8cda",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_lis_length_s17.npz",
+    "sha256": "893edbbe02b6f22d4633ff12e2bdf338faa2d0ff4b06e4d672046f1f81ed05cc",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.3974647521972656e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_lis_length_s17.npz",
+    "sha256": "01ad30a82b766df85ec6e3ad2355bb796daaeb9402745c683287ba36d69e8645",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.4437904357910156e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_lis_length_s42.npz",
+    "sha256": "016c45d31d2e5556e2d0134d8c50aafb45cdbbc5e9f714674adcda7065835fe0",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_lis_length_s42.npz",
+    "sha256": "1c3c85e355e3a23d78bd07c512ab6fea94f110a7f9530988ec0374786724d39a",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_lis_length_s101.npz",
+    "sha256": "2849198bb2926bc3e0b5d4c2632c8c0a3ea67b446974ce8f0d3daaeefac125af",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_lis_length_s101.npz",
+    "sha256": "9ffc5aea46525d5323ac4d26d0d2883d00900ed8bdcfbda8296cf448ce31547d",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.0994415283203125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_longest_decreasing_run_s17.npz",
+    "sha256": "e657855adec97d71072ce7f9af6380aa97a31351dba17139c093c5013e478e80",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_longest_decreasing_run_s17.npz",
+    "sha256": "b453aa654bce4ced331965f3f8dfe5df685cc45821e040f9e7ea1b3259bc9c45",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.0265579223632812e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_longest_decreasing_run_s42.npz",
+    "sha256": "d163b02849d813472fb1e2b626cb1bd7dcc0e0c2169ffdc567aee7b4fc3a6d94",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.2782554626464844e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_longest_decreasing_run_s42.npz",
+    "sha256": "7584ba08d56121a180e772473b31eb93c9ddf4da91f85a44b98af0bc0087bd2b",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 1.9073486328125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_longest_decreasing_run_s101.npz",
+    "sha256": "d10dfdd09c5a3150af10fe25212b62570e28f62c8f48aa8eaadc3d0ebdf82e53",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_longest_decreasing_run_s101.npz",
+    "sha256": "88118630b3e3129b68e60587791d4756dae77c58d7dd77dc1ab330113d06a11d",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.86102294921875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_longest_increasing_run_s17.npz",
+    "sha256": "59d4afd0bf217c7dd21ae0f45fc35f23063030235f2e80b6d071680e3f88e1d9",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.3974647521972656e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_longest_increasing_run_s17.npz",
+    "sha256": "d45a9921b17b9b17d09bcb0d1992afa55af62aec3d226aa896c78c2a302fd987",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_longest_increasing_run_s42.npz",
+    "sha256": "c1b33972088ea54e21e4639857bff89171b205ca50afd0198e310d68f2c74738",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_longest_increasing_run_s42.npz",
+    "sha256": "9929bb4bd85ed973b12cbdcfad9481bee2ad55134db3779fbf30933830f663ec",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.159046173095703e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_longest_increasing_run_s101.npz",
+    "sha256": "346789316fd8c0729cb2f3ac89366a4a25cec4471635d3e8c82648338d7a11df",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_longest_increasing_run_s101.npz",
+    "sha256": "6b6799095506746409ba07dfa3f6f02c071a9f4eac5b90a1b3f9ff9dcf602628",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.473592758178711e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_peaks_s17.npz",
+    "sha256": "702410d5eb030e2a829dccc336fed498feaf614b1a60546048f37e35663bbb18",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.3974647521972656e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_peaks_s17.npz",
+    "sha256": "48417ef3286c26b4eaf36a048762ca2b99156531823064a148cbf15b075cd504",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.7641654014587402e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_peaks_s42.npz",
+    "sha256": "2ad6c2dfa9ae4b5061d5c9c88d0b571eec2c4d48046e0aab169de8d262b13612",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_peaks_s42.npz",
+    "sha256": "7d9ac326d10aa3d935f935d2b72dc51ce062d13c726bc66d7db5f177e75db289",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-a-transformer-tasks01-seed42.pt",
+    "sha256": "a65531c017fd3fed1d2f244fa6bcd7fcf7264bad0ea666e118a84a08c3a9beb3",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_peaks_s101.npz",
+    "sha256": "08fc58a7fbbb91d00ff1462c9c72cf9e389bec250f4c354956f35a6080508935",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_peaks_s101.npz",
+    "sha256": "11ddd35823a1c41e3393733e72525f13cc15d00eb01a5eb76966c48b58d7902c",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.0265579223632812e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_recoils_s17.npz",
+    "sha256": "b6d7fb3006dff9c4643d32d166cb342792cb65cf0900be251db92e1a431dd8dc",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_recoils_s17.npz",
+    "sha256": "7d80a1e79c2aaff8ce5593583877f89ee8f23c6c69f9ff5cd366241d6d1d8cbe",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.771615982055664e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-b-transformer-tasks01-seed17.pt",
+    "sha256": "56b2f6553d83bc2337eebbb23149988f8ec581820d7a03a8294b6a2474c56df4",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_recoils_s42.npz",
+    "sha256": "1fcd1e8f65dd9cceadf5bb1ecc1a7c976dd5e243ef7e63598256e8579f9f6778",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.2782554626464844e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_recoils_s42.npz",
+    "sha256": "9267e2145e2a6d10600c4ff3a5d2a64aa299a9af066021d7efe6525d85ce5e7d",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 5.0067901611328125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_recoils_s101.npz",
+    "sha256": "d236046c1281b3c55cc0c8fab2cab2f5f853ef78b17a916a33965f0159e69e07",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_recoils_s101.npz",
+    "sha256": "6355be1ac7bdfdbb85129e074dbd4290d207781a3077a45de38f254641713512",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 4.76837158203125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_valleys_s17.npz",
+    "sha256": "fa531a5b9f992f3e4d0d10f182b3fcbfde798040be712fa596025a4aaacc7b0d",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.5762786865234375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_valleys_s17.npz",
+    "sha256": "d42b375d360dc12176e5ae76eb0a656ccbe530150ddebe21c406b1178776794b",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.6954879760742188e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_valleys_s42.npz",
+    "sha256": "d4eb1982bc8063d59b1d36cffd4265db209c10f3d25632291173414da8156a92",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 3.2782554626464844e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_valleys_s42.npz",
+    "sha256": "ffb867901ea58de2fec1425669ba5da671222fcc2a42e6a978f7e80e89b2fa88",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 3.2186508178710938e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/matched_init_valleys_s101.npz",
+    "sha256": "70482ea15684d971793005d80bd5c82fafc6e640ea876715350913f822aa398b",
+    "kind": "matched_init",
+    "prefix_only_sample_max_abs_error": 2.950429916381836e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/ICML/results/specialist_cka_controls/features/trained_valleys_s101.npz",
+    "sha256": "9d0084f345129b5117423eefe616440e6332d84674596df0360c37a514834129",
+    "kind": "trained",
+    "prefix_only_sample_max_abs_error": 2.9206275939941406e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-a-transformer-tasks02-seed17.pt",
+    "sha256": "d446fe5cd17b30d1263dcfa08d7d070761bd74f8f2ffd46d2c1e6b142f69db64",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.5033950805664062e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-b-transformer-tasks02-seed17.pt",
+    "sha256": "d31de85344b101b364a51a85b6cae767f56e6b6d2eb647e499b7c783d813954b",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-a-transformer-tasks04-seed17.pt",
+    "sha256": "d1e1d62bdb34a30388f05420e56c0df939de7f6933c57e172d35614ba10a56fe",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.0265579223632812e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-b-transformer-tasks04-seed17.pt",
+    "sha256": "1d6eac80b179a91962bfe09e77e9209111ab1564c23e711b42c9353d5eb95faf",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.5033950805664062e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-a-transformer-tasks08-seed17.pt",
+    "sha256": "f41645a8aac4e185477cc52bba3128eddc5adb88add34632633b8e7f48eadb0f",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-b-transformer-tasks08-seed17.pt",
+    "sha256": "10944807a12568cc28025f2774d600f8b635b9c735081115fc4632716b525921",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.9073486328125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-a-transformer-tasks16-seed17.pt",
+    "sha256": "3eef517d362b0fa6b7ae60d779fb37479693b25b9bab1efda77f4f069597fd14",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.562999725341797e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r0/cka/cache/property-b-transformer-tasks16-seed17.pt",
+    "sha256": "899b2dba4b6ae5abc4a0817902df9eb86bada739f56813f834531bfae0f7d142",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-b-transformer-tasks01-seed42.pt",
+    "sha256": "f524dc9e54111486ed9b405d9b335b08d83dd0057526af46bebe763ffbc69a80",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-a-transformer-tasks02-seed42.pt",
+    "sha256": "02d02658058d590812f38d0a0824b35d46f29414f0f453e5a0ecb08bf2a5561b",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.9073486328125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-b-transformer-tasks02-seed42.pt",
+    "sha256": "196944b6ad2700e248be1c1ff23fc341ca0c6bbdf09e8eb90790aff2e2b83665",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.205371856689453e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-a-transformer-tasks04-seed42.pt",
+    "sha256": "b21a033c40fc4b2829ccc75ed662286fac76347ed9bd8162e62d5ffe864fb591",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.0265579223632812e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-b-transformer-tasks04-seed42.pt",
+    "sha256": "0053b43735fd50f84216cb3a61aaa7d837450bb4a541134b1a169b0ae26324a7",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.8477439880371094e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-a-transformer-tasks08-seed42.pt",
+    "sha256": "c868ad2e57d4abe913519d5c2c600b4a43343b61b08bfc5b601d18f577a2a2e9",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.7418136596679688e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-b-transformer-tasks08-seed42.pt",
+    "sha256": "a9395d0a5512ca8edaa61d5d6ba6f730be189c2157b041abf6700bbedee4b7af",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.0265579223632812e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-a-transformer-tasks16-seed42.pt",
+    "sha256": "811188cd6800ee1e1a3ea65e8b738dc072d59ec9c1b622ee4ab7926348aee08b",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.86102294921875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r1/cka/cache/property-b-transformer-tasks16-seed42.pt",
+    "sha256": "d5c48d235217b39e9b9b4cc8022cda8e56eef3b69d5712f1cd564bc41f2f736d",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.6689300537109375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-a-transformer-tasks01-seed101.pt",
+    "sha256": "4715d9dca3ff3539ce56d0c13c6921af0bf991628a9981cf18abf1e9ea042124",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.86102294921875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-a-transformer-tasks02-seed101.pt",
+    "sha256": "02ae37175ce9a27484dfaa22b2d06eb414995ec51c8e9de14642ce02efde9723",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 5.0067901611328125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-b-transformer-tasks02-seed101.pt",
+    "sha256": "6cebcaafa1f7862c6ab469d344a31f20382234a19517fff83e3d49b7e75d894f",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 3.7550926208496094e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-a-transformer-tasks04-seed101.pt",
+    "sha256": "dace3e8fe6f2fb9de13d0edd160d18671807762b902b268e35a35b7e607fb261",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-b-transformer-tasks04-seed101.pt",
+    "sha256": "94891bc299be7680899b3dacb1a2a02539db667ce80227e6520260672ab57610",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.6689300537109375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-a-transformer-tasks08-seed101.pt",
+    "sha256": "695ea43a097bdd76e490da79e342dfc9331f743b07058c9e20141b960dd2ca01",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.8477439880371094e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-b-transformer-tasks08-seed101.pt",
+    "sha256": "33f21d63e009014eebb4eb297fdf000302dadf169c2695787dc09269d87a41cd",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.5497207641601562e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-a-transformer-tasks16-seed101.pt",
+    "sha256": "fa1ba0c50e6aad444f63c220cfbbcbbf1b6defe38184682549f64c95cce522f9",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.7881393432617188e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/replicates/r2/cka/cache/property-b-transformer-tasks16-seed101.pt",
+    "sha256": "1822be33650deab1fe919b7c9da425c798a0308ccb4d9bb925a4bf65dc747e93",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-a-transformer-tasks01-seed17.pt",
+    "sha256": "4c1954e6d5ede7a2b4a439ddaaa9a9c371ac112129a950afc5f699a0667e5d54",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.6689300537109375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-b-transformer-tasks01-seed17.pt",
+    "sha256": "98f3f40993906ef655c060403eb312eca92de4b34e346aa08cb49caf2444949a",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.430511474609375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-a-transformer-tasks02-seed17.pt",
+    "sha256": "a4d1f9b599407c7474286e08c6bdcc0a60b9f0867140fd7905a2b5c69acc184a",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.384185791015625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-b-transformer-tasks02-seed17.pt",
+    "sha256": "a7546d610cc294039b5589e23140181759e5b00b9c9f40ebc38387b82a612f3b",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.86102294921875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-a-transformer-tasks04-seed17.pt",
+    "sha256": "0e07599b04edad8e0e2d401852068ab2d58362a679eae7101d505ae84b9fa336",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.384185791015625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-b-transformer-tasks04-seed17.pt",
+    "sha256": "f252c257f7c675fb47ad17d88bf52da6aa10550a4e8a518311ae5bad92a7ee6c",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.86102294921875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-a-transformer-tasks08-seed17.pt",
+    "sha256": "b5c511a4789005ee6873881866ee650bfa9521a38069a6de96784fc1af24c3f8",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.5033950805664062e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-b-transformer-tasks08-seed17.pt",
+    "sha256": "5a28fdd0d5416f4c2b1feab48aea11d62ae99573f279a41e8a9450097f16975b",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.9073486328125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-a-transformer-tasks16-seed17.pt",
+    "sha256": "883ab78e27d7b8718209af6c42ae3af6b8611f97328986a385f010ddbe272537",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.430511474609375e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r3/cka/cache/property-b-transformer-tasks16-seed17.pt",
+    "sha256": "e5522dd2cb75b082ae867fdfce1ad7b3de9a4b5112ab145a56ab32c4be5a867c",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-a-transformer-tasks01-seed17.pt",
+    "sha256": "9ff983432256598170da68e0a79d1557976d27052b2a3eb87249b9c34c2c82d7",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 3.4570693969726562e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-b-transformer-tasks01-seed17.pt",
+    "sha256": "e4e021a33868234ab41008e574f8c7066e2e8e197cda0af1a33bb238d0f52bfa",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.086162567138672e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-a-transformer-tasks02-seed17.pt",
+    "sha256": "542965898e116f676081069aa00596b690700da24f26099c80f82aeab4608b28",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 5.081295967102051e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-b-transformer-tasks02-seed17.pt",
+    "sha256": "e823eb7328ec3b26c6c734a2311a5311f61fd8005c72eb61a1d3234a80d91c4d",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 1.7881393432617188e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-a-transformer-tasks04-seed17.pt",
+    "sha256": "8d78987c81d89ca52561f9ecfb86b03afdbe06521899e650d149bb27b3bb4106",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 3.0994415283203125e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-b-transformer-tasks04-seed17.pt",
+    "sha256": "525dd4273ce0f722472b06a0c93f3fb8e74e86a0fb245846a0a5c398686913df",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.2649765014648438e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-a-transformer-tasks08-seed17.pt",
+    "sha256": "5010618a6e9818078a74ccfddefa9e23bbbe2e6bd221d438654141a25f03f449",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.6226043701171875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-b-transformer-tasks08-seed17.pt",
+    "sha256": "57d22f799afd1152e0c7b52fdbb82ab2239e27d8e58413de2234f7bd1e2136b4",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.86102294921875e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-a-transformer-tasks16-seed17.pt",
+    "sha256": "6a9e1cf76c80812bfe7c29c4f082d63296c335b3418b1dea24b5923446129af9",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 2.1457672119140625e-06,
+    "original_init_identity_verified": false
+  },
+  {
+    "path": "/home/yangx/neurips/results/property32-zero-overlap/subset-replicates/r4/cka/cache/property-b-transformer-tasks16-seed17.pt",
+    "sha256": "2356a806467e57842241a850254a67d35cc42e7b7c89020884bbe65d91e31f7b",
+    "kind": "trained_k",
+    "prefix_only_sample_max_abs_error": 3.337860107421875e-06,
+    "original_init_identity_verified": false
+  }
+]

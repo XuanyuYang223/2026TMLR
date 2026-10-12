@@ -1,0 +1,12 @@
+{
+  "status": "stopped",
+  "start_monotonic": 171794.323694138,
+  "deadline_monotonic": 186194.323694138,
+  "limit_seconds": 14400,
+  "serial_no_parallel": true,
+  "scope": "From true initialization/engineering setup through last requested GPU extraction, including validation, saving and stage gaps; not active GPU kernel time.",
+  "cpu_before_gpu_seconds": 991.2436142700026,
+  "end_monotonic": 178956.16661862,
+  "reason": "Frozen source/inference stage ended; inspect execution_state for completeness",
+  "stage_wall_seconds": 7161.842924481985
+}

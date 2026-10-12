@@ -1,0 +1,30 @@
+{
+  "status": "completed_before_analysis_freeze",
+  "registered_utc": "2026-10-10T22:06:48.561044+00:00",
+  "before_source_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/engineering_repairs/extract_before_saved_evidence.py",
+  "before_source_sha256": "6a91003ff59daf0d5b80dfd7aa17e007699de8e3f4d9f38cf77ebe7e0f659e48",
+  "after_source_path": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/extract.py",
+  "after_source_sha256": "216380df1c7224e852449dd973a1c8f664c9da233240c6d29cbc94c42d936c79",
+  "reason": "Record real old NPZ field-to-mmap bitwise/hash checks and independent manual-to-saved-layer/primary-norm evidence, rather than only live-hook evidence.",
+  "scope": "Fixed first8 test anchors at n10/20/30, each of3 actions, same full128-example prompt. Validation mmap arrays are not independently sampled. New initial shared hidden aliases are checked both on all anchors and in saved descriptors.",
+  "fixture_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/extract_synthetic_fixture.json",
+  "fixture_checks": {
+    "old_arrays_original_to_saved_hash_and_bitwise_equal": true,
+    "primary_original_norm_not_packed_norm": true,
+    "array_hash_matches_frozen_convention": true,
+    "original_prediction_dtype_preserved": true,
+    "numeric_conditioning_not_full_vocab_prediction": true,
+    "CE_full188_including_outside_numeric_tokens": true,
+    "labels_zero_to_thirty_no_offset": true,
+    "answer_ce_float64": true,
+    "readonly_mmap_metadata": true,
+    "direct_manual_to_saved_arrays_path_verified": true,
+    "incorrect_saved_arrays_rejected": true,
+    "saved_initial_alias_metadata_verified": true,
+    "incorrect_initial_alias_metadata_rejected": true
+  },
+  "no_new_inputs_or_metrics": true,
+  "training_sources_protocol_and_weights_unchanged": true,
+  "real_inputs_read": false,
+  "GPU_started": false
+}

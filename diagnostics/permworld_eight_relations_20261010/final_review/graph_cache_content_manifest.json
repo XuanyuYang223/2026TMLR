@@ -1,0 +1,215 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "task": "max_out",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_validation.npz",
+      "sha256": "733b09e360998575321d2d5b5490002524e6483459f3db11336f21810ae931e1",
+      "array_sha256": {
+        "prefix_final": "f891f09e497d32a1fd53bdfe5d2caedde6389c09de13f64aab442ab3e0838181",
+        "output_prob": "2d00a2695bfd02936bb94ec82ca60702aa6c6961594f22078b4c2feaa8638302",
+        "prediction": "0d3faa5cd0e22e2297457808a97a3dba16dd72f14097435a16e30d97e2b2607c",
+        "answer_ce": "8f544d3530f8d817f1946bc17c8332a4a6dc8421c69a2eb03a84a3be3c9dd44a"
+      }
+    },
+    {
+      "task": "max_out",
+      "condition": "initial",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_analysis.npz",
+      "sha256": "fe9be329149be9d45f8db3c26d14bb3681503dba2e07d5933dfbcea866929c5b",
+      "array_sha256": {
+        "prefix_final": "1bc181b5d377e455aff014530eb1daa53b514cedc278d372f4cffc0ce43a8dd4",
+        "output_prob": "c7e85343fef9b3731d8d4ed9e45f56bd281e892273395a55bef4f373936d73e9",
+        "prediction": "3916cfa6386189db8a4bd9baab0c0b5e8ff356b703a4acc9119530a10d3329ce",
+        "answer_ce": "fa370bb5e4ff67b4969cc6e547c6560175f895735bfdb5d73e2d85fadf0a17e1"
+      }
+    },
+    {
+      "task": "max_out",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_validation.npz",
+      "sha256": "9a5383969d28d44fbe928bd39e1beab1fb2f9994c2cd7bdadb0e71c150a6e531",
+      "array_sha256": {
+        "prefix_final": "ad76fc7e58c4349ee87989cbd624b4686f7daf052d412f29bf61d199a264181d",
+        "output_prob": "59af08281843f66adc7b05b123f35f6d55dc4c174b89daa0d8516e74bea650c5",
+        "prediction": "0ddebe66ba74d0aa6d2201ccba39a6909609ed7c308c663bf493162ea7acc814",
+        "answer_ce": "1852d21a43a365cf008269ade338a33ef3c3f5eaeb71888060f3d237b116e898"
+      }
+    },
+    {
+      "task": "max_out",
+      "condition": "trained",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_analysis.npz",
+      "sha256": "160280b54fb74f7495058a944010475affe207ecec218c8ad8edb0e16c55cbec",
+      "array_sha256": {
+        "prefix_final": "f2a2e1320735c18bd467b2434c6caeeae6fd3693d026aed642c8be2f154bba04",
+        "output_prob": "75032bae7d96eac9ac9e7ed31d527cf7e5143709696ab79f93c6d23a81c0fbf5",
+        "prediction": "5ab4c2eae7da879707a23140b9f6c2bdb1fc40119a7ca3da7971b429fcbab4c6",
+        "answer_ce": "18ff52d64e75b007f493d5dd4280870083e319a4837757347ef43dd66b6b4b24"
+      }
+    },
+    {
+      "task": "min_out",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_validation.npz",
+      "sha256": "ebd4e0543dff6b8356f0d9f506b57298dee142de4667974a5392a4e994ee96cd",
+      "array_sha256": {
+        "prefix_final": "f891f09e497d32a1fd53bdfe5d2caedde6389c09de13f64aab442ab3e0838181",
+        "output_prob": "e01737b7b4975b9e60876e0c26379bc06ff95edfb1010978c99735f2e1e4ae8d",
+        "prediction": "0ea8664a5a09444ec12722d6f78ba99b70c0a07ae4932acd2202a827518c5ae7",
+        "answer_ce": "719cca7516b80f39c75864c238240f276be16e1b24a2b1522ce89b4c16450a2d"
+      }
+    },
+    {
+      "task": "min_out",
+      "condition": "initial",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_analysis.npz",
+      "sha256": "98e45fff9d5286d595f2f8515837639e33de02b0eca47bab6d9c02675d08e5ed",
+      "array_sha256": {
+        "prefix_final": "1bc181b5d377e455aff014530eb1daa53b514cedc278d372f4cffc0ce43a8dd4",
+        "output_prob": "fe52055fadcce33b0dbdaf37114ca71805f3676b6b53e8b3e17c8f745ed403a9",
+        "prediction": "db0499da0c536d050fe61b39702e37db96f77d7af8b0244c6a2b6213689d59b0",
+        "answer_ce": "9f61616f04aa06016d170549cad4ee59ad6b207f7cfab8df73442fbc218599f7"
+      }
+    },
+    {
+      "task": "min_out",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_validation.npz",
+      "sha256": "41ddc7135e00a14e83bd37cf4504f2b387fb9ce5d8e6a8c3cf54009910c7225c",
+      "array_sha256": {
+        "prefix_final": "68288977bc75e726b30751b855f5c2b139db9ee0f3e0a599893f96e1ffff6a7f",
+        "output_prob": "0ed2f8253cda3308781599313cb87ae8b6066d417e75e3bee9564fd0668e6a17",
+        "prediction": "cbed4867980fd6557e0564d1cc92ca8e0b4e1352528941942725b079d26c23e3",
+        "answer_ce": "e878291c289e1123b657f4346fd695d6968dc25afd32d613448aeed6aa5ba5ed"
+      }
+    },
+    {
+      "task": "min_out",
+      "condition": "trained",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_analysis.npz",
+      "sha256": "8b3df654c133b88e91e64cb5177f38b218e2e45958839e265713fdf66aeeaeda",
+      "array_sha256": {
+        "prefix_final": "7bbedc24b04109d8c902a0cabcd2f6fabbe2ab60cedeed2314ff7968cf3f6855",
+        "output_prob": "692a8e0bfca7bd35ffc56d1751f98946e64c6b23d955e0917a341fb584b06548",
+        "prediction": "4bf33e7a78cf1568872a5009cc34d1ddfe5d40e5d31d0031fdec6e71915f1839",
+        "answer_ce": "29a0a541edd5e9d09a5d076e6b806efce7e4cdda346b8f129ba9eab08b83e60b"
+      }
+    },
+    {
+      "task": "max_in",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_validation.npz",
+      "sha256": "00dc40b6506e020651a55bfb4897ba60903ae69102c2f373ef83193967198f20",
+      "array_sha256": {
+        "prefix_final": "f891f09e497d32a1fd53bdfe5d2caedde6389c09de13f64aab442ab3e0838181",
+        "output_prob": "c1976ca8a04cecf29fc2094625221ed0256b47e5deb38d51d847c7b8023629f2",
+        "prediction": "7496178339752eeb7a8de914c97ca81e7e8e06ebee71d3d7462d047bd8625f65",
+        "answer_ce": "6064cdf26850c6eb4c3c162cc69a56bf25e518a1049698668e1096a05239267c"
+      }
+    },
+    {
+      "task": "max_in",
+      "condition": "initial",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_analysis.npz",
+      "sha256": "a003f7334f24043f4b4297d6ed53490e609a017924dbf7376be0e899f89a952c",
+      "array_sha256": {
+        "prefix_final": "1bc181b5d377e455aff014530eb1daa53b514cedc278d372f4cffc0ce43a8dd4",
+        "output_prob": "eade20684f74e904b2619281e0e4d9d7371d08537ca7a32c299bedc3af8d8951",
+        "prediction": "01e72d2bb4e3027e3d5c41faedc82bca1622e5ffbf89db4bf5e7e782cc79cab6",
+        "answer_ce": "e35dc63e94dad7bc8dfb26b0c652ef51d822f60425028011457920083ae34832"
+      }
+    },
+    {
+      "task": "max_in",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_validation.npz",
+      "sha256": "b9ac63f5b05a24cb9517ee67ca8b7d90f2b65f00831aafff1bcdddb2da025a00",
+      "array_sha256": {
+        "prefix_final": "2a62055ea8a63783f9e1301746f4107d1786b21e882dc311535c72381a7b2d85",
+        "output_prob": "edf0f1c5a52be2af74f47f076854266bcdee0b9b2d06511a0d10758dbd240f25",
+        "prediction": "53680a61d0323bce48d559e89c6be1c220aa7bf0c93b30f6ca77e961d5aa7725",
+        "answer_ce": "eab1d53fb3e36869b36d2e718ea9a395ed615710f511c6abcf2bfb8cb18ae55e"
+      }
+    },
+    {
+      "task": "max_in",
+      "condition": "trained",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_analysis.npz",
+      "sha256": "afcd1abffb94d69c3cec379630ff956ad8b73a0ef51e0d1f7079f4164c5ba709",
+      "array_sha256": {
+        "prefix_final": "93452badeb492d97aec24e548225acc8b839658105205aea108bbf4da2091408",
+        "output_prob": "a09dcc1a7e2082bd0185d46504dfaec30ab9e10d46bdcd3cd9171bdc574a1723",
+        "prediction": "603b19d4d16396ba9a2e4f19bf67aabb1498e082d93e719ba3df528321646645",
+        "answer_ce": "3252b8832abc81173093fc6f85eecddf11162dec834168307029b5d87548e618"
+      }
+    },
+    {
+      "task": "min_in",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_validation.npz",
+      "sha256": "504be5ce4c36994db00f922355d078a81022499f0d8bba9445dca7a618b207a0",
+      "array_sha256": {
+        "prefix_final": "f891f09e497d32a1fd53bdfe5d2caedde6389c09de13f64aab442ab3e0838181",
+        "output_prob": "1476412bd4f384a3b01cde5e72a7b2a6a56b154f6c1d1f725c270e5d3830de88",
+        "prediction": "80ad1227cf44567ed7c3a2d9fe3b292d9f5032f7483b608544e8c84a4bc2f8ad",
+        "answer_ce": "a09e488e96243846aad975075f1d4513a21832e0abc07505581ca7f24095e591"
+      }
+    },
+    {
+      "task": "min_in",
+      "condition": "initial",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_analysis.npz",
+      "sha256": "18422d92b254a1aaa4bf56f393446e38406142082e6ec444847c8cafae7386fb",
+      "array_sha256": {
+        "prefix_final": "1bc181b5d377e455aff014530eb1daa53b514cedc278d372f4cffc0ce43a8dd4",
+        "output_prob": "9ada8627f42cde5683f3e2d345705ea154d452071aa1d8b67a996efbffb4768f",
+        "prediction": "dddd76e3e0dce146530d5435dd9d858f1336440ef5133d35c92670a7132d1c7e",
+        "answer_ce": "032e5f03df4bc2554354584057e09cf3d84db300808563ed6fe27f623b664bdc"
+      }
+    },
+    {
+      "task": "min_in",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_validation.npz",
+      "sha256": "54dd222f15d4c5ffa3ef5cff95754ffa44e81a2905b9740257aeb9800bcc10dc",
+      "array_sha256": {
+        "prefix_final": "3f239a08fc2a8e1b83061c918fe66ed0d228a4a5436618983a67a81e3289b239",
+        "output_prob": "1f8ddc82fff22e6fa850b845e89e3158aebfbd8b7d54c36af0520afccd1775d6",
+        "prediction": "f51b4ccf943de8509b41cbc6bc32edcc0fb36efab7f7d859b094abacb894fcf1",
+        "answer_ce": "b15d0bc3cf0142a6710cd163bd2c39b167c465b1f6d82655a07d95d38b08c619"
+      }
+    },
+    {
+      "task": "min_in",
+      "condition": "trained",
+      "split": "analysis",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_analysis.npz",
+      "sha256": "41f34acdd959ab06c1e96b75e0ba416fe574d676ec4d28090f91276138ff57bb",
+      "array_sha256": {
+        "prefix_final": "ba0bc818986adc41ee2a8baa7f3b2a253a676fd1ab796cd3da68b619bb27a523",
+        "output_prob": "6f2ff7f68e5d5155962d8ac942b0fd791e62aed65a17f1e0fb672cdae7a8d7e0",
+        "prediction": "427cd0b5136a042a1c6306dd783024b90d684c8d49dd88cb3aa9623975554518",
+        "answer_ce": "2b18e00e54f9354918954411b8fb9b56d0a83dcf35a895357396596d768433a3"
+      }
+    }
+  ],
+  "logical_cache_count": 16,
+  "unique_physical_NPZ_files": 16
+}

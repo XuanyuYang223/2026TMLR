@@ -1,0 +1,54 @@
+PermWorld learnability：loss 精度工程修复独立审查
+日期：2026-10-10
+结论：修复合理，无新增阻断。它把公式正确性与 FP32 归约舍入分开验证，没有修改训练损失、训练实现、学习门槛、数据、模型或实际初始权重。当前实际 CPU 检查已通过；CUDA 恢复仍应由正在执行的真实门槛决定。
+
+一、核对当前冻结身份
+
+当前 checks.py SHA256：
+5e8984e0dcff8111887968d84e39de7b2e77496724c20343e6bbe344af3e51b5
+当前 training.py SHA256：
+661a1c09eb382f20108e712813f72c378484d63fa297ee7c796b8acf5a0f7c2c
+协议 SHA256：
+1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69
+
+独立读取当前 freeze.json 并计算源码/协议哈希，均匹配。与 freeze_before_engineering_fix.json 比较，只有 checks.py 和 report.py 两个源码哈希改变，协议未变，training 与 core.loss 字节未变。report schema 修复由另一个审查负责，本文不以它推断学习成绩。
+
+repair_record.json 明确记录源 aggregate version 从 05751d8922314e2e2ff905c3e06806b3e0ca6db60c9ab7c728061bf2b7cec861 到 ef34bae9d23f2f1cd81233d8b677d41710404a8d913a1e432127925f67ba0ef5 的变动。已保存的真实 step0 仍保留修复前构造时的 aggregate version。这是历史来源信息，不应抹掉或伪称由新检查代码构造。模型构造代码未变、保存的真实初始权重不改，后续检查和训练使用已重新冻结的执行版本，两者通过修复记录衔接；这不是当前哈希阻断。
+
+二、公式与精度检查
+
+原 loss 是 shift 后的完整序列 cross_entropy(ignore_index=-100)。每个样本恰好两个有效监督 token：答案与 EOS。对 N 个样本，原 loss 等于两组各 N 项 CE 均值再取一半。这个等式在实数算术下成立；两种 FP32 归约顺序不保证逐位相同。
+
+修复保留原随机 FP32 toy logits，使用 toy.detach().double() 逐值转换，没有重新抽样 logits、改变标签、改变位置或重生成模型。然后在同一 logits 的 float64 版本比较：
+  0.5×(答案位置 CE + EOS 位置 CE)
+与原 shift/ignore-index loss，并严格要求差 <1e-12。
+
+FP32 差另受 8×eps(float32)×max(1,|actual loss|) 的明确尺度约束。它是针对当前工程 fixture 的舍入容差，不是对任何输入、任何 backend 都成立的普适数值误差定理。高精度公式检查同时存在，避免仅放宽一个 FP32 阈值掩盖公式错误。
+
+actual.backward() 仍来自原 FP32 loss；精度复核没有替换其梯度计算。原监督位置梯度 mask 检查与因果 forward 比较均保留。训练使用的 core.loss 和训练 BF16/FP32设置也未变。
+
+三、独立 CPU fixture
+
+在 CPU 上用16个固定工程种子的12×32×188随机 logits，使用 n10/11/12 的不同答案位置。没有加载任何源模型、训练或验证排列、测试标签或学习预测；没有 optimizer、GPU 或参数更新。原 loss 函数从冻结 core.py 的 AST 独立提取，另加直接 logsumexp−真值 logit 的 float64 解析计算作为第三条路径。
+
+结果保存在 loss_precision_fixture.json：
+  最大 FP32 两种归约差：1.430511474609375e-06；
+  最大 float64 两种归约差：1.7763568394002505e-15；
+  最大 float64 loss 与解析计算差：1.7763568394002505e-15；
+  16例的 FP32 差全部落在新尺度界内；
+  16例的监督位置梯度 mask 全部精确正确；
+  将 target 故意错移一步时，最小错误差0.021464646395364717，仍被高精度检查拒绝。
+
+该 fixture 独立复现了导致旧1e-6门槛失败的误差量级，同时说明新双精度约束没有接受明显移位错误。它只验证数值工程，不提供任务学习或几何证据。
+
+四、实际 CPU 门槛的只读复核
+
+独立只读 /mnt/yangx-projects-f/20261010/permworld_learnability/cpu_check.json 的工程状态和精度字段；未读取任何新学习成绩。协议 SHA 匹配，status=passed，记录16个 architecture×encoding×task 条件：
+  最大 float64 独立 loss 差：2.6645352591003757e-15；
+  最大 FP32 两种归约差：1.430511474609375e-06；
+  最大 FP32差/舍入界：0.2579705312479268；
+  已知-logits metric_fixture=passed。
+
+因此这里可以说实际 CPU loss/位置工程检查通过，不能据此说源任务已学会、16个8k模型已完成或 CUDA 恢复已通过。两小时绝对 GPU 上限、2k/4k/8k 固定清单、n10..12 验证选择规则和测试保留边界保持不变。
+
+审查没有修改冻结源码、协议、训练清单、数据、旧产物或 F17。唯一新写入是本审查文本与独立 CPU fixture JSON。

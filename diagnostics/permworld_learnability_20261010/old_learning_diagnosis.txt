@@ -1,0 +1,51 @@
+旧16模型可学习性诊断：主分析仅用validation；旧test单独标为描述性。
+只读取固定20k completed.json曲线、标签/长度和缓存prediction IDs；不读CKA、Delta、隐表征、输出概率或模型权重。
+这是一个数据世界/源初始化开发单元，无多世界或新源确认。所有16条件和长度10..30均保留。
+训练长度众数由4096个/长度训练标签确定，并列选最小答案；验证256个/长度，旧test512个/长度。
+曲线仅每1000步保存聚合validation准确率；逐长度只保存最终预测。没有逐长度逐步validation轨迹或validation loss，不能补称已有。
+train_loss为某一次更新的微批损失，不是整训练集或验证损失；其尖峰不能单独证明退化。固定1k..5k与16k..20k中位数仅描述早/晚趋势，不选最优检查点。
+逐长度是否>基线仅描述样本比例，不能称显著或可复现。paired_sampling_se_pp只条件于当前模型/输入样本，不能代表源或任务世界不确定性。
+
+最终identity验证（固定1/21平均）：
+transformer / one_line / descents: acc=99.05%, baseline=29.54%, gain=+69.51pp; mode-agreement=29.71%; non-majority acc=98.88%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+transformer / one_line / recoils: acc=72.28%, baseline=30.49%, gain=+41.80pp; mode-agreement=32.72%; non-majority acc=69.54%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+transformer / one_line / peaks: acc=85.44%, baseline=40.64%, gain=+44.79pp; mode-agreement=41.44%; non-majority acc=83.66%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+transformer / one_line / valleys: acc=91.46%, baseline=40.29%, gain=+51.17pp; mode-agreement=41.00%; non-majority acc=90.43%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+transformer / canonical_cycle / descents: acc=31.05%, baseline=29.54%, gain=+1.51pp; mode-agreement=66.54%; non-majority acc=14.84%; observed-above-baseline lengths=[10,11,12,13,14,16,17,18,21,22,23,25,26,28,29,30]
+transformer / canonical_cycle / recoils: acc=31.25%, baseline=30.49%, gain=+0.76pp; mode-agreement=70.46%; non-majority acc=13.51%; observed-above-baseline lengths=[10,11,13,14,16,17,19,20,21,22,24,25]
+transformer / canonical_cycle / peaks: acc=40.83%, baseline=40.64%, gain=+0.19pp; mode-agreement=75.91%; non-majority acc=14.65%; observed-above-baseline lengths=[10,12,13,15,18,19,21,27,28,30]
+transformer / canonical_cycle / valleys: acc=40.49%, baseline=40.29%, gain=+0.20pp; mode-agreement=83.33%; non-majority acc=10.06%; observed-above-baseline lengths=[10,15,16,17,18,20,21,22,23,29]
+gru / one_line / descents: acc=99.98%, baseline=29.54%, gain=+70.44pp; mode-agreement=29.54%; non-majority acc=99.98%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+gru / one_line / recoils: acc=38.80%, baseline=30.49%, gain=+8.31pp; mode-agreement=41.09%; non-majority acc=33.85%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,26,27,28,30]
+gru / one_line / peaks: acc=100.00%, baseline=40.64%, gain=+59.36pp; mode-agreement=40.64%; non-majority acc=100.00%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+gru / one_line / valleys: acc=99.96%, baseline=40.29%, gain=+59.67pp; mode-agreement=40.33%; non-majority acc=99.95%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+gru / canonical_cycle / descents: acc=31.44%, baseline=29.54%, gain=+1.90pp; mode-agreement=67.88%; non-majority acc=14.65%; observed-above-baseline lengths=[10,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30]
+gru / canonical_cycle / recoils: acc=30.06%, baseline=30.49%, gain=-0.43pp; mode-agreement=72.62%; non-majority acc=11.57%; observed-above-baseline lengths=[11,13,15,16,20,22,24,25,27]
+gru / canonical_cycle / peaks: acc=41.69%, baseline=40.64%, gain=+1.04pp; mode-agreement=73.64%; non-majority acc=17.14%; observed-above-baseline lengths=[11,13,15,18,19,21,24,25,27,28,30]
+gru / canonical_cycle / valleys: acc=41.22%, baseline=40.29%, gain=+0.93pp; mode-agreement=76.23%; non-majority acc=15.25%; observed-above-baseline lengths=[10,12,13,15,16,17,18,21,22,23,28,30]
+
+固定窗口学习趋势：
+transformer / one_line / descents: val1k=27.33%, val10k=91.26%, val20k=99.05%, late accuracy gain=+7.79pp; early/late minibatch-loss medians=0.8345/0.0044
+transformer / one_line / recoils: val1k=28.22%, val10k=34.93%, val20k=72.28%, late accuracy gain=+37.35pp; early/late minibatch-loss medians=0.8939/0.5377
+transformer / one_line / peaks: val1k=35.62%, val10k=61.94%, val20k=85.44%, late accuracy gain=+23.49pp; early/late minibatch-loss medians=0.7461/0.2816
+transformer / one_line / valleys: val1k=37.61%, val10k=73.57%, val20k=91.46%, late accuracy gain=+17.89pp; early/late minibatch-loss medians=0.7300/0.2401
+transformer / canonical_cycle / descents: val1k=27.86%, val10k=30.32%, val20k=31.05%, late accuracy gain=+0.73pp; early/late minibatch-loss medians=0.9029/0.8399
+transformer / canonical_cycle / recoils: val1k=26.77%, val10k=30.56%, val20k=31.25%, late accuracy gain=+0.69pp; early/late minibatch-loss medians=0.9059/0.8594
+transformer / canonical_cycle / peaks: val1k=38.86%, val10k=40.62%, val20k=40.83%, late accuracy gain=+0.20pp; early/late minibatch-loss medians=0.7831/0.7328
+transformer / canonical_cycle / valleys: val1k=35.31%, val10k=39.23%, val20k=40.49%, late accuracy gain=+1.26pp; early/late minibatch-loss medians=0.7699/0.6940
+gru / one_line / descents: val1k=28.20%, val10k=99.83%, val20k=99.98%, late accuracy gain=+0.15pp; early/late minibatch-loss medians=0.8414/0.0005
+gru / one_line / recoils: val1k=27.44%, val10k=35.01%, val20k=38.80%, late accuracy gain=+3.79pp; early/late minibatch-loss medians=0.8905/0.8239
+gru / one_line / peaks: val1k=38.30%, val10k=99.89%, val20k=100.00%, late accuracy gain=+0.11pp; early/late minibatch-loss medians=0.6387/0.0001
+gru / one_line / valleys: val1k=38.39%, val10k=99.89%, val20k=99.96%, late accuracy gain=+0.07pp; early/late minibatch-loss medians=0.6810/0.0002
+gru / canonical_cycle / descents: val1k=27.98%, val10k=30.19%, val20k=31.44%, late accuracy gain=+1.25pp; early/late minibatch-loss medians=0.9074/0.8361
+gru / canonical_cycle / recoils: val1k=28.87%, val10k=29.71%, val20k=30.06%, late accuracy gain=+0.35pp; early/late minibatch-loss medians=0.9107/0.8612
+gru / canonical_cycle / peaks: val1k=38.73%, val10k=40.42%, val20k=41.69%, late accuracy gain=+1.26pp; early/late minibatch-loss medians=0.8010/0.7264
+gru / canonical_cycle / valleys: val1k=36.33%, val10k=39.73%, val20k=41.22%, late accuracy gain=+1.49pp; early/late minibatch-loss medians=0.7655/0.6889
+
+轮换编码验证总结：平均增益范围-0.43..+1.90pp；10k→20k验证提升范围+0.20..+1.49pp。相对一行编码，学习趋势明显停滞于接近长度答案基线，尚不能称内容任务已学会。
+长度[]是八个轮换编码模型都观察到>0增益的长度；这是描述性符号交集，不是成功筛选或显著性检验，也未提供同等任务掌握的依据。
+解释边界：接近众数基线或较高mode-agreement不证明模型完全不使用排列内容；非众数样本的正确预测和换出的错误预测均完整报告。
+较低单一众数一致率也不等于学会排列内容：选择同长度下另一个常见答案就会产生部分非众数正确，整体收益仍可能很小。
+长度建议：原10..30全范围保留为目标，不能根据旧test或几何结果删长度。鉴于轮换编码八个模型在20k依然接近长度基线且后半程增长较小，旧validation不足以推荐某个已成功的长度子集。若仅工程调试，先固定原协议最小长度n=10，再按连续10..12窗口检查全部四任务和两架构；这是减小输入负担的固定规则，不是只挑旧结果成功长度，也没有保证该窗口会学会，仍须独立开发数据。
+不能把“某些长度均值略高于众数”当作支持缩短后的成功确认。应在新开发validation中预定超过训练众数的实际幅度及所有任务覆盖，未达则如实记失败，不把成功长度拿去作主结论。
+本脚本不训练，也不改变旧报告、冻结协议或F17。

@@ -1,0 +1,6 @@
+{
+  "status": "timing_only_not_frozen_training_protocol",
+  "lengths": [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
+  "model": {"d_model":256,"layers":4,"heads":8,"mlp_ratio":4,"dropout":0.1,"tie_embeddings":true,"max_seq_len":128,"vocab_size":188},
+  "training": {"updates":20000,"micro_batch":16,"accumulation":4,"effective_batch":64}
+}

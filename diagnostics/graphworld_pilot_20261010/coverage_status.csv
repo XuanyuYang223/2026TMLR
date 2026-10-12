@@ -1,0 +1,721 @@
+relation,n,control,branch,metric,fit_count,analysis_count,status,dependence,reason
+reverse_max,6,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,prefix_final,linear_cka,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,prefix_final,knn_overlap,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,prefix_final,procrustes,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,prefix_final,debiased_cka,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,output_prob,linear_cka,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,output_prob,knn_overlap,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,output_prob,procrustes,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,output_prob,debiased_cka,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,gold_onehot,linear_cka,233,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_strata,gold_onehot,knn_overlap,233,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_strata,gold_onehot,procrustes,233,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_strata,gold_onehot,debiased_cka,233,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_strata,gold_scalar,linear_cka,233,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_strata,gold_scalar,knn_overlap,233,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_strata,gold_scalar,procrustes,233,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_strata,gold_scalar,debiased_cka,233,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_strata,input_onehot,linear_cka,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,input_onehot,knn_overlap,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,input_onehot,procrustes,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_strata,input_onehot,debiased_cka,233,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,prefix_final,linear_cka,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,prefix_final,knn_overlap,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,prefix_final,procrustes,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,prefix_final,debiased_cka,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,output_prob,linear_cka,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,output_prob,knn_overlap,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,output_prob,procrustes,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,output_prob,debiased_cka,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,gold_onehot,linear_cka,128,344,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_density_strata,gold_onehot,knn_overlap,128,344,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_density_strata,gold_onehot,procrustes,128,344,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_density_strata,gold_onehot,debiased_cka,128,344,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_density_strata,gold_scalar,linear_cka,128,344,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_density_strata,gold_scalar,knn_overlap,128,344,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_density_strata,gold_scalar,procrustes,128,344,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_density_strata,gold_scalar,debiased_cka,128,344,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,6,answer_density_strata,input_onehot,linear_cka,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,input_onehot,knn_overlap,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,input_onehot,procrustes,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,6,answer_density_strata,input_onehot,debiased_cka,128,344,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,prefix_final,linear_cka,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,prefix_final,knn_overlap,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,prefix_final,procrustes,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,prefix_final,debiased_cka,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,output_prob,linear_cka,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,output_prob,knn_overlap,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,output_prob,procrustes,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,output_prob,debiased_cka,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,gold_onehot,linear_cka,229,486,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_strata,gold_onehot,knn_overlap,229,486,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_strata,gold_onehot,procrustes,229,486,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_strata,gold_onehot,debiased_cka,229,486,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_strata,gold_scalar,linear_cka,229,486,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_strata,gold_scalar,knn_overlap,229,486,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_strata,gold_scalar,procrustes,229,486,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_strata,gold_scalar,debiased_cka,229,486,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_strata,input_onehot,linear_cka,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,input_onehot,knn_overlap,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,input_onehot,procrustes,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_strata,input_onehot,debiased_cka,229,486,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,prefix_final,linear_cka,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,prefix_final,knn_overlap,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,prefix_final,procrustes,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,prefix_final,debiased_cka,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,output_prob,linear_cka,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,output_prob,knn_overlap,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,output_prob,procrustes,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,output_prob,debiased_cka,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,gold_onehot,linear_cka,85,275,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_density_strata,gold_onehot,knn_overlap,85,275,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_density_strata,gold_onehot,procrustes,85,275,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_density_strata,gold_onehot,debiased_cka,85,275,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_density_strata,gold_scalar,linear_cka,85,275,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_density_strata,gold_scalar,knn_overlap,85,275,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_density_strata,gold_scalar,procrustes,85,275,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_density_strata,gold_scalar,debiased_cka,85,275,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,7,answer_density_strata,input_onehot,linear_cka,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,input_onehot,knn_overlap,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,input_onehot,procrustes,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,7,answer_density_strata,input_onehot,debiased_cka,85,275,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,prefix_final,linear_cka,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,prefix_final,knn_overlap,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,prefix_final,procrustes,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,prefix_final,debiased_cka,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,output_prob,linear_cka,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,output_prob,knn_overlap,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,output_prob,procrustes,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,output_prob,debiased_cka,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,gold_onehot,linear_cka,224,468,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_strata,gold_onehot,knn_overlap,224,468,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_strata,gold_onehot,procrustes,224,468,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_strata,gold_onehot,debiased_cka,224,468,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_strata,gold_scalar,linear_cka,224,468,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_strata,gold_scalar,knn_overlap,224,468,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_strata,gold_scalar,procrustes,224,468,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_strata,gold_scalar,debiased_cka,224,468,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_strata,input_onehot,linear_cka,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,input_onehot,knn_overlap,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,input_onehot,procrustes,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_strata,input_onehot,debiased_cka,224,468,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,prefix_final,linear_cka,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,prefix_final,knn_overlap,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,prefix_final,procrustes,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,prefix_final,debiased_cka,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,output_prob,linear_cka,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,output_prob,knn_overlap,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,output_prob,procrustes,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,output_prob,debiased_cka,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,gold_onehot,linear_cka,69,217,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_density_strata,gold_onehot,knn_overlap,69,217,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_density_strata,gold_onehot,procrustes,69,217,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_density_strata,gold_onehot,debiased_cka,69,217,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_density_strata,gold_scalar,linear_cka,69,217,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_density_strata,gold_scalar,knn_overlap,69,217,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_density_strata,gold_scalar,procrustes,69,217,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_density_strata,gold_scalar,debiased_cka,69,217,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_max,8,answer_density_strata,input_onehot,linear_cka,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,input_onehot,knn_overlap,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,input_onehot,procrustes,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_max,8,answer_density_strata,input_onehot,debiased_cka,69,217,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,prefix_final,linear_cka,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,prefix_final,knn_overlap,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,prefix_final,procrustes,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,prefix_final,debiased_cka,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,output_prob,linear_cka,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,output_prob,knn_overlap,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,output_prob,procrustes,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,output_prob,debiased_cka,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,gold_onehot,linear_cka,235,481,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_strata,gold_onehot,knn_overlap,235,481,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_strata,gold_onehot,procrustes,235,481,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_strata,gold_onehot,debiased_cka,235,481,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_strata,gold_scalar,linear_cka,235,481,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_strata,gold_scalar,knn_overlap,235,481,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_strata,gold_scalar,procrustes,235,481,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_strata,gold_scalar,debiased_cka,235,481,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_strata,input_onehot,linear_cka,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,input_onehot,knn_overlap,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,input_onehot,procrustes,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_strata,input_onehot,debiased_cka,235,481,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,prefix_final,linear_cka,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,prefix_final,knn_overlap,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,prefix_final,procrustes,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,prefix_final,debiased_cka,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,output_prob,linear_cka,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,output_prob,knn_overlap,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,output_prob,procrustes,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,output_prob,debiased_cka,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,gold_onehot,linear_cka,116,348,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_density_strata,gold_onehot,knn_overlap,116,348,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_density_strata,gold_onehot,procrustes,116,348,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_density_strata,gold_onehot,debiased_cka,116,348,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_density_strata,gold_scalar,linear_cka,116,348,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_density_strata,gold_scalar,knn_overlap,116,348,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_density_strata,gold_scalar,procrustes,116,348,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_density_strata,gold_scalar,debiased_cka,116,348,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,6,answer_density_strata,input_onehot,linear_cka,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,input_onehot,knn_overlap,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,input_onehot,procrustes,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,6,answer_density_strata,input_onehot,debiased_cka,116,348,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,prefix_final,linear_cka,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,prefix_final,knn_overlap,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,prefix_final,procrustes,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,prefix_final,debiased_cka,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,output_prob,linear_cka,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,output_prob,knn_overlap,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,output_prob,procrustes,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,output_prob,debiased_cka,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,gold_onehot,linear_cka,230,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_strata,gold_onehot,knn_overlap,230,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_strata,gold_onehot,procrustes,230,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_strata,gold_onehot,debiased_cka,230,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_strata,gold_scalar,linear_cka,230,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_strata,gold_scalar,knn_overlap,230,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_strata,gold_scalar,procrustes,230,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_strata,gold_scalar,debiased_cka,230,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_strata,input_onehot,linear_cka,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,input_onehot,knn_overlap,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,input_onehot,procrustes,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_strata,input_onehot,debiased_cka,230,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,prefix_final,linear_cka,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,prefix_final,knn_overlap,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,prefix_final,procrustes,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,prefix_final,debiased_cka,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,output_prob,linear_cka,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,output_prob,knn_overlap,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,output_prob,procrustes,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,output_prob,debiased_cka,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,gold_onehot,linear_cka,106,257,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_density_strata,gold_onehot,knn_overlap,106,257,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_density_strata,gold_onehot,procrustes,106,257,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_density_strata,gold_onehot,debiased_cka,106,257,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_density_strata,gold_scalar,linear_cka,106,257,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_density_strata,gold_scalar,knn_overlap,106,257,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_density_strata,gold_scalar,procrustes,106,257,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_density_strata,gold_scalar,debiased_cka,106,257,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,7,answer_density_strata,input_onehot,linear_cka,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,input_onehot,knn_overlap,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,input_onehot,procrustes,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,7,answer_density_strata,input_onehot,debiased_cka,106,257,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,prefix_final,linear_cka,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,prefix_final,knn_overlap,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,prefix_final,procrustes,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,prefix_final,debiased_cka,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,output_prob,linear_cka,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,output_prob,knn_overlap,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,output_prob,procrustes,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,output_prob,debiased_cka,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,gold_onehot,linear_cka,215,473,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_strata,gold_onehot,knn_overlap,215,473,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_strata,gold_onehot,procrustes,215,473,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_strata,gold_onehot,debiased_cka,215,473,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_strata,gold_scalar,linear_cka,215,473,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_strata,gold_scalar,knn_overlap,215,473,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_strata,gold_scalar,procrustes,215,473,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_strata,gold_scalar,debiased_cka,215,473,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_strata,input_onehot,linear_cka,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,input_onehot,knn_overlap,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,input_onehot,procrustes,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_strata,input_onehot,debiased_cka,215,473,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,prefix_final,linear_cka,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,prefix_final,knn_overlap,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,prefix_final,procrustes,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,prefix_final,debiased_cka,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,output_prob,linear_cka,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,output_prob,knn_overlap,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,output_prob,procrustes,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,output_prob,debiased_cka,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,gold_onehot,linear_cka,69,225,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_density_strata,gold_onehot,knn_overlap,69,225,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_density_strata,gold_onehot,procrustes,69,225,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_density_strata,gold_onehot,debiased_cka,69,225,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_density_strata,gold_scalar,linear_cka,69,225,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_density_strata,gold_scalar,knn_overlap,69,225,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_density_strata,gold_scalar,procrustes,69,225,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_density_strata,gold_scalar,debiased_cka,69,225,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+reverse_min,8,answer_density_strata,input_onehot,linear_cka,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,input_onehot,knn_overlap,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,input_onehot,procrustes,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+reverse_min,8,answer_density_strata,input_onehot,debiased_cka,69,225,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,prefix_final,linear_cka,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,prefix_final,knn_overlap,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,prefix_final,procrustes,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,prefix_final,debiased_cka,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,output_prob,linear_cka,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,output_prob,knn_overlap,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,output_prob,procrustes,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,output_prob,debiased_cka,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,gold_onehot,linear_cka,241,498,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_strata,gold_onehot,knn_overlap,241,498,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_strata,gold_onehot,procrustes,241,498,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_strata,gold_onehot,debiased_cka,241,498,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_strata,gold_scalar,linear_cka,241,498,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_strata,gold_scalar,knn_overlap,241,498,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_strata,gold_scalar,procrustes,241,498,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_strata,gold_scalar,debiased_cka,241,498,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_strata,input_onehot,linear_cka,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,input_onehot,knn_overlap,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,input_onehot,procrustes,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_strata,input_onehot,debiased_cka,241,498,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,prefix_final,linear_cka,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,prefix_final,knn_overlap,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,prefix_final,procrustes,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,prefix_final,debiased_cka,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,output_prob,linear_cka,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,output_prob,knn_overlap,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,output_prob,procrustes,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,output_prob,debiased_cka,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,gold_onehot,linear_cka,135,376,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_density_strata,gold_onehot,knn_overlap,135,376,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_density_strata,gold_onehot,procrustes,135,376,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_density_strata,gold_onehot,debiased_cka,135,376,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_density_strata,gold_scalar,linear_cka,135,376,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_density_strata,gold_scalar,knn_overlap,135,376,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_density_strata,gold_scalar,procrustes,135,376,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_density_strata,gold_scalar,debiased_cka,135,376,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,6,answer_density_strata,input_onehot,linear_cka,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,input_onehot,knn_overlap,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,input_onehot,procrustes,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,6,answer_density_strata,input_onehot,debiased_cka,135,376,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,prefix_final,linear_cka,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,prefix_final,knn_overlap,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,prefix_final,procrustes,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,prefix_final,debiased_cka,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,output_prob,linear_cka,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,output_prob,knn_overlap,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,output_prob,procrustes,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,output_prob,debiased_cka,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,gold_onehot,linear_cka,232,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_strata,gold_onehot,knn_overlap,232,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_strata,gold_onehot,procrustes,232,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_strata,gold_onehot,debiased_cka,232,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_strata,gold_scalar,linear_cka,232,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_strata,gold_scalar,knn_overlap,232,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_strata,gold_scalar,procrustes,232,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_strata,gold_scalar,debiased_cka,232,494,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_strata,input_onehot,linear_cka,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,input_onehot,knn_overlap,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,input_onehot,procrustes,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_strata,input_onehot,debiased_cka,232,494,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,prefix_final,linear_cka,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,prefix_final,knn_overlap,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,prefix_final,procrustes,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,prefix_final,debiased_cka,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,output_prob,linear_cka,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,output_prob,knn_overlap,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,output_prob,procrustes,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,output_prob,debiased_cka,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,gold_onehot,linear_cka,92,280,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_density_strata,gold_onehot,knn_overlap,92,280,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_density_strata,gold_onehot,procrustes,92,280,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_density_strata,gold_onehot,debiased_cka,92,280,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_density_strata,gold_scalar,linear_cka,92,280,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_density_strata,gold_scalar,knn_overlap,92,280,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_density_strata,gold_scalar,procrustes,92,280,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_density_strata,gold_scalar,debiased_cka,92,280,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,7,answer_density_strata,input_onehot,linear_cka,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,input_onehot,knn_overlap,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,input_onehot,procrustes,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,7,answer_density_strata,input_onehot,debiased_cka,92,280,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,prefix_final,linear_cka,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,prefix_final,knn_overlap,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,prefix_final,procrustes,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,prefix_final,debiased_cka,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,output_prob,linear_cka,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,output_prob,knn_overlap,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,output_prob,procrustes,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,output_prob,debiased_cka,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,gold_onehot,linear_cka,221,474,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_strata,gold_onehot,knn_overlap,221,474,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_strata,gold_onehot,procrustes,221,474,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_strata,gold_onehot,debiased_cka,221,474,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_strata,gold_scalar,linear_cka,221,474,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_strata,gold_scalar,knn_overlap,221,474,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_strata,gold_scalar,procrustes,221,474,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_strata,gold_scalar,debiased_cka,221,474,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_strata,input_onehot,linear_cka,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,input_onehot,knn_overlap,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,input_onehot,procrustes,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_strata,input_onehot,debiased_cka,221,474,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,prefix_final,linear_cka,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,prefix_final,knn_overlap,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,prefix_final,procrustes,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,prefix_final,debiased_cka,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,output_prob,linear_cka,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,output_prob,knn_overlap,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,output_prob,procrustes,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,output_prob,debiased_cka,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,gold_onehot,linear_cka,68,235,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_density_strata,gold_onehot,knn_overlap,68,235,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_density_strata,gold_onehot,procrustes,68,235,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_density_strata,gold_onehot,debiased_cka,68,235,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_density_strata,gold_scalar,linear_cka,68,235,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_density_strata,gold_scalar,knn_overlap,68,235,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_density_strata,gold_scalar,procrustes,68,235,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_density_strata,gold_scalar,debiased_cka,68,235,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_out,8,answer_density_strata,input_onehot,linear_cka,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,input_onehot,knn_overlap,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,input_onehot,procrustes,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_out,8,answer_density_strata,input_onehot,debiased_cka,68,235,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,prefix_final,linear_cka,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,prefix_final,knn_overlap,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,prefix_final,procrustes,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,prefix_final,debiased_cka,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,output_prob,linear_cka,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,output_prob,knn_overlap,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,output_prob,procrustes,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,output_prob,debiased_cka,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,gold_onehot,linear_cka,235,497,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_strata,gold_onehot,knn_overlap,235,497,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_strata,gold_onehot,procrustes,235,497,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_strata,gold_onehot,debiased_cka,235,497,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_strata,gold_scalar,linear_cka,235,497,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_strata,gold_scalar,knn_overlap,235,497,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_strata,gold_scalar,procrustes,235,497,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_strata,gold_scalar,debiased_cka,235,497,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_strata,input_onehot,linear_cka,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,input_onehot,knn_overlap,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,input_onehot,procrustes,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_strata,input_onehot,debiased_cka,235,497,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,prefix_final,linear_cka,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,prefix_final,knn_overlap,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,prefix_final,procrustes,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,prefix_final,debiased_cka,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,output_prob,linear_cka,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,output_prob,knn_overlap,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,output_prob,procrustes,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,output_prob,debiased_cka,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,gold_onehot,linear_cka,135,352,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_density_strata,gold_onehot,knn_overlap,135,352,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_density_strata,gold_onehot,procrustes,135,352,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_density_strata,gold_onehot,debiased_cka,135,352,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_density_strata,gold_scalar,linear_cka,135,352,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_density_strata,gold_scalar,knn_overlap,135,352,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_density_strata,gold_scalar,procrustes,135,352,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_density_strata,gold_scalar,debiased_cka,135,352,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,6,answer_density_strata,input_onehot,linear_cka,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,input_onehot,knn_overlap,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,input_onehot,procrustes,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,6,answer_density_strata,input_onehot,debiased_cka,135,352,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,output_prob,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,prefix_final,linear_cka,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,prefix_final,knn_overlap,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,prefix_final,procrustes,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,prefix_final,debiased_cka,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,output_prob,linear_cka,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,output_prob,knn_overlap,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,output_prob,procrustes,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,output_prob,debiased_cka,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,gold_onehot,linear_cka,236,487,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_strata,gold_onehot,knn_overlap,236,487,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_strata,gold_onehot,procrustes,236,487,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_strata,gold_onehot,debiased_cka,236,487,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_strata,gold_scalar,linear_cka,236,487,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_strata,gold_scalar,knn_overlap,236,487,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_strata,gold_scalar,procrustes,236,487,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_strata,gold_scalar,debiased_cka,236,487,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_strata,input_onehot,linear_cka,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,input_onehot,knn_overlap,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,input_onehot,procrustes,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_strata,input_onehot,debiased_cka,236,487,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,prefix_final,linear_cka,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,prefix_final,knn_overlap,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,prefix_final,procrustes,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,prefix_final,debiased_cka,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,output_prob,linear_cka,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,output_prob,knn_overlap,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,output_prob,procrustes,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,output_prob,debiased_cka,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,gold_onehot,linear_cka,74,272,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_density_strata,gold_onehot,knn_overlap,74,272,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_density_strata,gold_onehot,procrustes,74,272,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_density_strata,gold_onehot,debiased_cka,74,272,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_density_strata,gold_scalar,linear_cka,74,272,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_density_strata,gold_scalar,knn_overlap,74,272,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_density_strata,gold_scalar,procrustes,74,272,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_density_strata,gold_scalar,debiased_cka,74,272,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,7,answer_density_strata,input_onehot,linear_cka,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,input_onehot,knn_overlap,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,input_onehot,procrustes,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,7,answer_density_strata,input_onehot,debiased_cka,74,272,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,prefix_final,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,prefix_final,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,prefix_final,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,prefix_final,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,output_prob,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,output_prob,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,output_prob,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,raw_within_n,output_prob,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,gold_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,gold_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,gold_onehot,procrustes,256,512,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,raw_within_n,gold_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,gold_scalar,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,gold_scalar,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,gold_scalar,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,gold_scalar,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,input_onehot,linear_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,input_onehot,knn_overlap,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,input_onehot,procrustes,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,raw_within_n,input_onehot,debiased_cka,256,512,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,prefix_final,linear_cka,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,prefix_final,knn_overlap,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,prefix_final,procrustes,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,prefix_final,debiased_cka,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,output_prob,linear_cka,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,output_prob,knn_overlap,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,output_prob,procrustes,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,output_prob,debiased_cka,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,gold_onehot,linear_cka,214,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_strata,gold_onehot,knn_overlap,214,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_strata,gold_onehot,procrustes,214,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_strata,gold_onehot,debiased_cka,214,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_strata,gold_scalar,linear_cka,214,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_strata,gold_scalar,knn_overlap,214,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_strata,gold_scalar,procrustes,214,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_strata,gold_scalar,debiased_cka,214,479,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_strata,input_onehot,linear_cka,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,input_onehot,knn_overlap,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,input_onehot,procrustes,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_strata,input_onehot,debiased_cka,214,479,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,prefix_final,linear_cka,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,prefix_final,knn_overlap,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,prefix_final,procrustes,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,prefix_final,debiased_cka,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,output_prob,linear_cka,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,output_prob,knn_overlap,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,output_prob,procrustes,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,output_prob,debiased_cka,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,gold_onehot,linear_cka,57,221,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_density_strata,gold_onehot,knn_overlap,57,221,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_density_strata,gold_onehot,procrustes,57,221,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_density_strata,gold_onehot,debiased_cka,57,221,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_density_strata,gold_scalar,linear_cka,57,221,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_density_strata,gold_scalar,knn_overlap,57,221,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_density_strata,gold_scalar,procrustes,57,221,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_density_strata,gold_scalar,debiased_cka,57,221,undefined,"Shared4tasks,2transforms,1world,1trueinitial",No threshold relaxation or length reweighting
+complement_in,8,answer_density_strata,input_onehot,linear_cka,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,input_onehot,knn_overlap,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,input_onehot,procrustes,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell
+complement_in,8,answer_density_strata,input_onehot,debiased_cka,57,221,defined,"Shared4tasks,2transforms,1world,1trueinitial",Exploratory cell

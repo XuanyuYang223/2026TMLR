@@ -1,0 +1,18 @@
+{
+  "status": "complete_stopped",
+  "completed_utc": "2026-10-09T18:11:38.826922+00:00",
+  "training_started": false,
+  "stable_positive_relations": [
+    "descent_inverse",
+    "exceedance_inverse"
+  ],
+  "original_initial_identity_verified": false,
+  "protected_files_unchanged": 1214,
+  "scope": "existing PermWorld checkpoints only",
+  "unanswered": [
+    "Original initialization bitwise identity",
+    "All input-encoding/soft-output effects",
+    "Internal algebraic mechanism",
+    "New data-world replication"
+  ]
+}

@@ -1,0 +1,31 @@
+冻结分析/报告/独立审计管线只读准备审查
+
+本轮依据：用户附件78f9e…全文；analysis.py、analysis_helpers.py、report.py、final_reader_audit.py、preparation_fixture.py及实际extract.py、训练/分析协议与冻结哈希。12个分析依赖SHA均匹配，原五文件未修改。新几何尚未生成，本审查没有读取新几何成绩。
+
+覆盖兑现：
+1. 八实例×两架构×两编码=32关系条件，16性质×四配置=64源模型；两控制、21长度、六配对状态均完整。final hidden/output保留三主指标及U-centered敏感性；四个中间层和final norm明确分开，仅用两种CKA；embedding结构常量保留NaN。固定24192逐长度单元和1152条件/指标/层/控制组。
+2. 最终主表先列六个S原值，再B0/Bt/dc/dw/Delta。编码、现有配置、全部层差异和四部分总图齐全；同任务跨架构32配对单独报告。完整22图合成CPU管线已通过；未挑选最佳层、长度、关系或指标。
+3. +1关系用components(Cpi)=global_descents(pi)+1逐样本核验。分层对三个right答案全部int64减1，是双射坐标变化；原真实标签与源准确率保持实际数字。旧int16 key字节哈希保持原CSV，另审计int64逐值、分区和中心化一致性。
+4. 每个长度独立测量后严格1/21；全部21长度缺一即失败，任一分量NaN则该分量汇总NaN；无0填补、混合长度替代或重新分配权重。符号计数仅描述，不当显著性检验。
+5. 原两关系6048行、同任务672行、gold8064行、source learning4032行逐值复制；cache hashes确认对应原激活与固定anchor。主final_norm读原prefix_final，不拿仅容差一致的packed norm替代。旧64 NPZ一次解包为read-only mmap，转换保存逐字段原数组哈希、目标数组哈希和bitwise证据，避免重复80GB解压。
+6. 实际完整分析拒绝不完整cache/256记录及任一缺失20k端点。目前cache仅64旧logical records且status明确pending，不能误运行完整新结果。固定48独立数值核验和额外预定+1小批、保存层路径校验由实际分析/提取继续执行。原指标公式、固定k10、稳定全局ID/重复排除、PCA rank8/fit-eval边界保持不变。
+7. final_reader_audit为只读表格审计，无模型/输入/激活；使用Decimal核对分解/严格21均值、binary64核对原值、全固定网格、同源激活/anchor哈希和共同初始化同变换的raw相等性，不假设不同关系答案分层相等。
+
+非阻断的展示限制与独立补充：
+- 冻结coverage_status只按Delta缺失长度分类，不能把completed当作所有分量定义。独立supplementary_component_coverage.csv逐1152组×12个FIELDS=13824行列出每分量缺失长度和汇总定义状态；不改旧表、指标或权重。
+- 冻结report.html链接静态gold表但没有内联全部384个静态汇总。最终研究入口可补显示/链接；gold原值保留，没有推断隐藏Delta减输出Delta。
+- 阶段学习曲线在64个completed.json中保留，主报告仅显示20k汇总。独立source_learning_curves.csv展示全部记录但明确不用于端点选择；source64_learning_and_baseline.csv保留准确率、CE、最差长度、众数增量和模型参数，不设置新学习门槛。
+- 原报告链接列表没有final_reader_audit、extraction_validation和protected_files。最终总入口应补这些可复现审计链接，不能把代码自报no_F17_changes替代Root最终逐文件保护哈希审计。
+- 当前冻结报告没有数据驱动的最终解释正文。独立readout保留全部32主条件、三指标方向、完整层和编码Gamma分解，供Root在实际结果齐全后撰写，不能现在预写正结果。
+
+科学解释边界：
+64模型、32条件、21长度和三指标不是独立重复；共享数据/轨道和每架构一次初始化。八实例只取逆与补排列两类。容量和源学习不匹配，配置差异不能识别纯架构因果效应；答案分层不去除置信度、错误结构和全部非线性标签信息。未定义不等于无关系信号，不显著或符号不一致不等于没有学习。
+
+可复现命令顺序（数据/模型齐备后由Root执行）：
+1. .venv/bin/python -B -m experiments.permworld_eight_relations_20261010.analysis --run
+2. .venv/bin/python -B -m experiments.permworld_eight_relations_20261010.report
+3. .venv/bin/python -B diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.py
+4. .venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/result_readout.py --stage permworld
+5. 图论既定测量完成后同脚本 --stage graphworld；缺少图产物只输出pending状态，不生成伪图论读数。
+
+独立辅助脚本readout_freeze.json单独冻结，不修改训练或科学分析冻结。合成schema检查通过：13824分量覆盖、32主条件、32指标方向、768层读数、16编码分解、64源和1280合成曲线；图论4关系/2880分量；identity单独NaN但Delta定义、Delta翻转而Bt不翻转、固定层翻转、常量层未定义和图缺产物pending均已验证。未训练，未指标复算，未修改F17/旧产物。

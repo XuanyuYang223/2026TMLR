@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "architecture": "gru",
+  "encoding": "canonical_cycle",
+  "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "execution_source_version_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+  "uninterrupted_reference_from_step0": true,
+  "reference_directory": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/resume/gru_canonical_cycle/continuous_attempts/attempt001",
+  "split_directory": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/resume/gru_canonical_cycle/split",
+  "independent_process_resume": true,
+  "from_step": 1000,
+  "until_step": 2000,
+  "parameter_max_difference": 0.0,
+  "optimizer_max_difference": 0.0,
+  "logit_max_difference": 0.0,
+  "rng_identity": true,
+  "continuous_sha256": "4954fb1be809582d1a92da58d24cdf7d64e4f1d6addc542667894b81d0bc26fd",
+  "replayed_sha256": "5f786686d8431d74317690c9cc99a9d69ba8d7df42b3d8cd67d58731f4d75f06"
+}

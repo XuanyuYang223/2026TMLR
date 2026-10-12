@@ -1,0 +1,38 @@
+{
+  "frozen_utc": "2026-10-09T21:01:25.337185+00:00",
+  "config_sha256": "f8abbc9e7b125f667fa264f2ef7047d8836532f02328ac0e526477b8dcc81800",
+  "code_sha256": {
+    "experiments/longrun_attention.py": "5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918",
+    "experiments/permutation_audit.py": "d02b667d8d1951c547ad4a4a6a84875535f6ee59255db96bb6abef241b5b267e",
+    "experiments/permworld_encoding/__init__.py": "d8344f473b24a5845bedeca52a3a94e1c02eb1f8c21f89ccec3a4eed313f3f7f",
+    "experiments/permworld_encoding/benchmark.py": "6d598919a23e25c7c43cbb58e8bd41b4f3b21e33f22669db22c2967167f1b31a",
+    "experiments/permworld_encoding/checks.py": "6b260964e805daf17bc2af19cae8bdae1dc008b137abb09e9ed37ea829911221",
+    "experiments/permworld_encoding/core.py": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+    "experiments/permworld_encoding/data.py": "8a89976c6c0b390f9233eba4ff23593d7c1545eb21f6af4e87a92122fdb7c75d",
+    "experiments/permworld_encoding/evaluate.py": "227fa70c583d396972b313f64df0c4fc94a5f0a78df92843c0b38230ac2845e8",
+    "experiments/permworld_encoding/plan.py": "12dc9dc9295c891dd8610eeedb2a0f28fdc61f4c644a698ef9d084dbd2ca2577",
+    "experiments/permworld_encoding/profile_analysis.py": "7df0eaa4d0096b8aa2c46c653891557d0baf84198924af230480224a0fae8af5",
+    "experiments/permworld_encoding/train.py": "9fb5272c99397a1cd071d84b466d76cf012b8b042727e776ef1ea3497829540a",
+    "experiments/permworld_encoding/validate.py": "7a80fcb6551754e078ee8f3efe6feb8c4c8af2c497d9e3a75cd4436d0a53fa69",
+    "experiments/specialist_input_adjustment.py": "624fd9ad8a202a7bd462c19c6a730ec2d1b96afeeb63cd736a0b0984dd7ba889",
+    "external/neurips/src/neurips_permutations/math_ops.py": "968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c",
+    "external/neurips/src/neurips_permutations/models.py": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6",
+    "external/neurips/src/neurips_permutations/passage.py": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6"
+  },
+  "vocabulary_sha256": "d4e0836072d9a7906fa73901fdf35e2f2cbebb230ab393589a02de6ae51ff728",
+  "training_manifest_sha256": "ec7446d1e2f1b40a7eb2216e8de77ff431542d6d0ef7eeea5dba48e71903878d",
+  "validation_sha256": "ac4613958bcc3ddd98b68e077b6363d5c04d98a1df16a72d7ebe1058d84c3045",
+  "integration_checks_sha256": "6aced8fb3388faf416123b37ede61ed666263d783d1afb891be23bb82e1a915a",
+  "timing_sha256": "cc54ac2282032987d981e6c837a56a184a51a63d1ef5db0bea70ef28ce1374e6",
+  "analysis_profile_sha256": "52aa78ab5583f92dd2bac296747baacc2d7e2885454c438577b01d04049d65f7",
+  "workspace_commit": "1073dcb3be4db90ec23476bab8f503c9e00f364b",
+  "original_upstream_commit": "74f0de2017115f06f11b7285366b66e7e8431d30",
+  "source_capture": "New uncommitted code is frozen by exact file hashes; no historical training commit is inferred.",
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "python": "3.13.13",
+    "cuda": "12.8"
+  },
+  "formal_training_started": false
+}

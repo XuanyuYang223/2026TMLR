@@ -1,0 +1,43 @@
+Actual GraphWorld fixed-scope delivery review
+
+Status: passed
+Actual source_count=4; four true20k checkpoints, one graph world and one shared true initialization.
+All16 task/condition/split caches and720 unique n-level/240 summary/240 learning rows checked; source initialization and checkpoint bytes are bound.
+Actual independent metric failures=0; statuses={'passed': 151, 'undefined_consistent': 3}.
+Fixed64 verification controls available=['raw_within_n', 'answer_strata']; unavailable=[]. Unavailable is not a failed score and is not counted as a completed numerical check.
+Four-state actual reader coverage={'completed': 509, 'coupled': 4, 'undefined': 215}; undefined n-level cells=215.
+Same-shape extraction checks=120, maximum absolute error=0.
+Source recorded monotonic process wall=2564.122309386s (0.712256h); PyTorch allocation peak=206638592 bytes.
+Original dependency-failed evaluation attempt=17.262815118s, retained separately; recovered CPU/resource record={'user_cpu_seconds': 13.51, 'system_cpu_seconds': 1.88, 'max_rss_kib': 1408516, 'exit_code': 1}.
+
+Actual20k validation endpoints (full188 answer argmax; teacher-conditioned EOS):
+max_out: answer=100.000000000%; EOS=100.000000000%; samples=768; elapsed=640.613867s; peak=181177856bytes; invocation_start=0,updates=20000.
+min_out: answer=100.000000000%; EOS=100.000000000%; samples=768; elapsed=640.370178s; peak=189664768bytes; invocation_start=0,updates=20000.
+max_in: answer=100.000000000%; EOS=100.000000000%; samples=768; elapsed=641.663502s; peak=198151680bytes; invocation_start=0,updates=20000.
+min_in: answer=94.661458333%; EOS=100.000000000%; samples=768; elapsed=641.474761s; peak=206638592bytes; invocation_start=0,updates=20000.
+
+Per fixed metric actual numerical verification (unavailable/undefined are not numeric passes):
+linear_cka: checks=24; statuses={'passed': 24}; unavailable_controls=[].
+knn_overlap: checks=24; statuses={'passed': 24}; unavailable_controls=[].
+procrustes: checks=24; statuses={'passed': 21, 'undefined_consistent': 3}; unavailable_controls=[].
+  raw_within_n/trained/output_prob/correct/procrustes: undefined_consistent; Both paths returned undefined under the frozen rank/variance rules.
+  raw_within_n/trained/output_prob/wrong/procrustes: undefined_consistent; Both paths returned undefined under the frozen rank/variance rules.
+  raw_within_n/trained/output_prob/identity/procrustes: undefined_consistent; Both paths returned undefined under the frozen rank/variance rules.
+debiased_cka: checks=24; statuses={'passed': 24}; unavailable_controls=[].
+
+Scope and interpretation limits:
+- Four trained tasks, two transformations, one graph world, one shared true step0/start RNG; the four relations are coupled and are not four independent replications.
+- Analysis is the fixed graph analysis split, with n=6,7,8 equally weighted; full specified transformation orbits were excluded across splits, arbitrary vertex isomorphism classes were not.
+- The independent actual metric check uses only frozen reverse_max/n=6 first64 qualifying anchors in raw/answer strata, both conditions, hidden/output branches and three roles; it verifies numerics, not every720 endpoint independently.
+- Undefined/rank-deficient/zero-variance cells remain undefined. Complete table coverage is not complete finite-metric coverage, and missing values are never imputed as zero.
+- Hidden state is final_norm at graph-end before task; answer accuracy uses the full188-vocabulary argmax, output_prob is conditional on numeric0..30. Geometry extraction did not score EOS; saved source validation EOS uses teacher-conditioned answers.
+- Input position-wise binary onehot Grams are exact isometries under R/C/W; they cannot distinguish correct and wrong in this fixed pilot and have no fabricated initialization increment.
+- Graph peak_cuda_memory_bytes and Perm peak_cuda_allocated_bytes both derive from torch.cuda.max_memory_allocated(), not total-device usage or reserved-memory peak. They include live PyTorch allocations in the process, not isolated incremental model memory. Graph resets per invocation; Perm retains the maximum across resume invocations. These graph receipts disclose whether training was continuous.
+- Recorded monotonic process wall includes validation/checkpoint IO and is not GPU-active time. CPU core-time, utilization-integrated GPU time and energy were not measured by this review.
+- The preparation report_reader_audit had source_count=0 (SHA59947c6e0e8e864abbfe75ef920ab8ebec3230d5f29dd1504338efc7d8c5dae0); final conclusions use the actual four-source audit recorded here.
+- The first graph evaluation stopped after16 extraction caches on a missing threadpoolctl dependency, before geometry. Root pinned threadpoolctl3.6.0 without changing existing package versions or scientific code/protocol, and resumed only the five fixed remaining stages. All4 checkpoints/16 cache hashes match the pre-repair snapshot; the failed17.262815s attempt and its recovered CPU/resource record are preserved separately rather than counted as success or erased.
+- This reader verifies frozen code, receipts, cache bytes/shapes and saved arithmetic without new inference/metric calculation or old scientific-artifact edits. Existing actual audit supplies protected-old-file checks; this reader does not rehash the entire protected manifest.
+- Cross-system results change size, encoding, tasks and distribution together; neither a domain-only causal effect nor a mathematical encoding mechanism follows from CKA alone.
+
+Problems:
+None found within this read-only delivery scope.

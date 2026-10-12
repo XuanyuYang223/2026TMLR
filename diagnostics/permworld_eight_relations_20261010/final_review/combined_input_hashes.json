@@ -1,0 +1,1417 @@
+{
+  "status": "completed_reader_generation_pending_root_read_review",
+  "generated_utc": "2026-10-11T11:24:25.023437+00:00",
+  "source_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/build_combined_reader.py",
+  "source_sha256": "c17f7e8c0e5cb283cd096f7d955a230f4464d46a42063a4989d89f238d07c488",
+  "input_hashes": [
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/answer_control_decomposition.png",
+      "sha256": "a698ae388b7ad607df730429992bb06766ac404f18d791081ffced9e4b1030f4",
+      "bytes": 194029,
+      "mtime_ns": 1791717462554981611,
+      "reasons": [
+        "original graph pilot figure"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/completion.json",
+      "sha256": "c5be90a4bb8ef35743757a447ac6fb6c2ffc3029a7373b24f5ef05fbc63c159e",
+      "bytes": 1133,
+      "mtime_ns": 1791717473696389584,
+      "reasons": [
+        "fixed graph completion",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/coverage_status.csv",
+      "sha256": "aa8cce668920ba48f3c129a7b01cead4f23fdd6eac23a629ea37ac385212db29",
+      "bytes": 105057,
+      "mtime_ns": 1791717462039491592,
+      "reasons": [
+        "original graph validation/coverage counterpart",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/evaluation_complete.json",
+      "sha256": "a9597a0d0b05d8674aacf7499df1d29e27248a88f9671f5d5013ffbeb5a14b80",
+      "bytes": 439,
+      "mtime_ns": 1791717454503445797,
+      "reasons": [
+        "supplementary source identity"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/freeze_manifest.json",
+      "sha256": "af8c4499dfd5c47d2af48319e323c317fb7868240f5e19da259083971cb88556",
+      "bytes": 4140,
+      "mtime_ns": 1791669305544475359,
+      "reasons": [
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/geometry_per_n.csv",
+      "sha256": "7f34df10cc5ae58639e5038ec32a48da488e44ebd5382ebc70f7d967592c33eb",
+      "bytes": 163346,
+      "mtime_ns": 1791717410545388087,
+      "reasons": [
+        "supplementary source identity",
+        "audited complete graph table",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/geometry_summary.csv",
+      "sha256": "473be0c62a53d6d80bfcc8d4105fa6bf00123b7b0bc98180271146cb320168e8",
+      "bytes": 43653,
+      "mtime_ns": 1791717410547439414,
+      "reasons": [
+        "supplementary source identity",
+        "audited complete graph table",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/independent_actual_small_batch.json",
+      "sha256": "6094f4d3f62081796c60c47dd6cce42e49bfb1a1a1d888a5cdcc85855cfbd41b",
+      "bytes": 38896,
+      "mtime_ns": 1791717460972651304,
+      "reasons": [
+        "original graph validation/coverage counterpart",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/protocol.json",
+      "sha256": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+      "bytes": 54897,
+      "mtime_ns": 1791669305532957940,
+      "reasons": [
+        "fixed GraphWorld protocol",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/report.html",
+      "sha256": "dda67a51d408c1291f72973d1cf0daad2b4a260c16191560c2190ada6e3d7ecf",
+      "bytes": 11208,
+      "mtime_ns": 1791717462558313601,
+      "reasons": [
+        "original graph report"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/report_reader_audit.json",
+      "sha256": "624499db243e6aebbe47e55fa9fbb002de7c771ff8b9a216127d7d6ca875181f",
+      "bytes": 151342,
+      "mtime_ns": 1791717485614747537,
+      "reasons": [
+        "independent graph reader audit",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/source_learning.csv",
+      "sha256": "0a387fa5c3f2f8b0df76765cc0a4146b01f84a8204871b4b2788084d97321d94",
+      "bytes": 26660,
+      "mtime_ns": 1791717392807669722,
+      "reasons": [
+        "supplementary source identity",
+        "audited complete graph table",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/verification_freeze.json",
+      "sha256": "d4d3f8d0d4f8977e3201f2ac6dd0d4d94c5f7eb46d56fe08571f03b500a235bb",
+      "bytes": 15457,
+      "mtime_ns": 1791669659347172715,
+      "reasons": [
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/analysis_freeze.json",
+      "sha256": "38d4a132a145f13f30278c7d996d218e40a264e78e6126f341c117869f3d8848",
+      "bytes": 2338,
+      "mtime_ns": 1791670103612069378,
+      "reasons": [
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/contrast_summary.csv",
+      "sha256": "99a307f42fdf441106b92b9ad825b8dcfb14399a104877838099ce1b862fe4ce",
+      "bytes": 2262344,
+      "mtime_ns": 1791714546330827025,
+      "reasons": [
+        "supplementary source identity",
+        "independently audited scientific table",
+        "all original fixed-weight decompositions",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/coverage_status.csv",
+      "sha256": "c4f016eb2bb25e8d3099b7f929783936687b05f27cf1f7e94e123beb25b33f4c",
+      "bytes": 211835,
+      "mtime_ns": 1791714561979372787,
+      "reasons": [
+        "original validation/coverage counterpart",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/cross_arch_same_task.csv",
+      "sha256": "ff077cdd46cccb157ee1583cdf97ef31e8354debf29593e7bc2abe6b73ce7c25",
+      "bytes": 2805509,
+      "mtime_ns": 1791714546352142909,
+      "reasons": [
+        "independently audited scientific table",
+        "all direct same-task per-length comparisons",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/cross_arch_same_task_summary.csv",
+      "sha256": "365ae0a3b7f683390840d493c6f969dd2d7269a972cd0269b104db0e1ed5cb3f",
+      "bytes": 25096,
+      "mtime_ns": 1791714546354533207,
+      "reasons": [
+        "independently audited scientific table",
+        "all direct same-task aggregates",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/extraction_validation.json",
+      "sha256": "9848ced37a153ff40e2cb4c55258a3fa3691e81d60ad5c1748959bba6dd3f2d4",
+      "bytes": 1340,
+      "mtime_ns": 1791713608513980676,
+      "reasons": [
+        "original validation/coverage counterpart",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/all_lengths_answer_strata.png",
+      "sha256": "c0f4e551c79de5e7cd7f58582d5a23cd841c55728ad85d1e71cbd3e720a58782",
+      "bytes": 224552,
+      "mtime_ns": 1791714560957106821,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/all_lengths_raw_within_length.png",
+      "sha256": "692c39e6d0e0b934d2e61d034bf275cfeaeb95223800439fcb3547c4a2a0b9e9",
+      "bytes": 224002,
+      "mtime_ns": 1791714554985108082,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/configuration_difference_answer_strata.png",
+      "sha256": "1eecea9bd8076896d7827c843c9baa5f0063fe94ed3e9dc799770d2518bf2763",
+      "bytes": 94514,
+      "mtime_ns": 1791714556251394102,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/configuration_difference_raw_within_length.png",
+      "sha256": "8be59ff1bcb6c322a3752867183c9beca1b271c50bb947ad8e1caba933caac66",
+      "bytes": 98181,
+      "mtime_ns": 1791714549842028363,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/decomposition_answer_strata_debiased_cka.png",
+      "sha256": "24165057caa14b588f4c7983d184c025eb8a9bac86c173c5f42d4a9e62a3c099",
+      "bytes": 190022,
+      "mtime_ns": 1791714557905792323,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/decomposition_answer_strata_knn_overlap.png",
+      "sha256": "b62ac53ec7ab90a4fb02489e7f88d81cc5896381a9b67b056c428db47c95e6ac",
+      "bytes": 188146,
+      "mtime_ns": 1791714557027259929,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/decomposition_answer_strata_linear_cka.png",
+      "sha256": "152ae9d860b0006cde272482e0672cc38dea7359bbe933073997ca5f922598ad",
+      "bytes": 188783,
+      "mtime_ns": 1791714556621107639,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/decomposition_answer_strata_procrustes.png",
+      "sha256": "d59ed35a1aeeb599193a136190580f8c76f14ae8d621fd8503e5bb4e2617b307",
+      "bytes": 187615,
+      "mtime_ns": 1791714557520779380,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/decomposition_raw_within_length_debiased_cka.png",
+      "sha256": "75354dfac5b340e3d8f44dd48b3924754a700231b5ee0027e238433542a8c825",
+      "bytes": 188907,
+      "mtime_ns": 1791714551433506447,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/decomposition_raw_within_length_knn_overlap.png",
+      "sha256": "faac4ebe38f25607c602455c3b545bffc543152c1a51296b86cb76aa8bf323be",
+      "bytes": 187962,
+      "mtime_ns": 1791714550681025292,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/decomposition_raw_within_length_linear_cka.png",
+      "sha256": "19a647c61939416bdc801a4620c092dd1f131ac00b3ed4b77baf1e31731e4387",
+      "bytes": 187510,
+      "mtime_ns": 1791714550302178606,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/decomposition_raw_within_length_procrustes.png",
+      "sha256": "4eb1fd3f208f3af4ac6a0fd989779dcf8fba11d4bbcec7342e6cc3d8c284b0e0",
+      "bytes": 187062,
+      "mtime_ns": 1791714551052122843,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/encoding_difference_answer_strata.png",
+      "sha256": "daec212e41ab43f07144557be1c20feac1f878fa5d1758eee8c2f965e1e798c0",
+      "bytes": 107168,
+      "mtime_ns": 1791714556020590921,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/encoding_difference_raw_within_length.png",
+      "sha256": "11ca8aaa9931d487442a9f69b3bb2cdabf43ed410300f12ecbb071df4e20997e",
+      "bytes": 99807,
+      "mtime_ns": 1791714549507197442,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/four_controlled_comparisons.png",
+      "sha256": "60d551be26136d5651c4323661cf269b42bd7e795bf8b1cedf4147f9eaddf8d1",
+      "bytes": 526403,
+      "mtime_ns": 1791714561972229680,
+      "reasons": [
+        "original four-part figure",
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/layers_answer_strata_debiased_cka.png",
+      "sha256": "3ad8fd191988869b52b5d78b3a8df1503cfa88f87e4d59e3510c2b978912e0ef",
+      "bytes": 924209,
+      "mtime_ns": 1791714560519799835,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/layers_answer_strata_linear_cka.png",
+      "sha256": "814d12ca5649a3abcc389909feed4a90122bd87fe53b10aa68b53b96cd6db477",
+      "bytes": 924441,
+      "mtime_ns": 1791714559161107159,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/layers_raw_within_length_debiased_cka.png",
+      "sha256": "3689698eddc679cb971bf4c436aee8c479425d5245be404669e33487e598c164",
+      "bytes": 942441,
+      "mtime_ns": 1791714554333108021,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/layers_raw_within_length_linear_cka.png",
+      "sha256": "1581e1a1789dedcf313bb14be46b09992eb4d11f9cd2f2d4eede9ddd651fd1a5",
+      "bytes": 943085,
+      "mtime_ns": 1791714552989107677,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/similarity_answer_strata.png",
+      "sha256": "8f506da620daf904669f71618905499f733f82c6e963c07e2f36ca0bb875c8bc",
+      "bytes": 554149,
+      "mtime_ns": 1791714555769107857,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/similarity_raw_within_length.png",
+      "sha256": "12d09791451f7f6651c176e8d26ab5d00b61d531048eab34cb59d20e21cedfb6",
+      "bytes": 596018,
+      "mtime_ns": 1791714549166944654,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/figures/source_learning.png",
+      "sha256": "edf9df04c359ef7bb33443f92666bdac137be27b28e522de530a9aeaac5775b2",
+      "bytes": 222318,
+      "mtime_ns": 1791714561150057606,
+      "reasons": [
+        "complete original fixed figure inventory"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/combined_reader_freeze.json",
+      "sha256": "80060c3ab4ffb2b064329b28df2a40be7a53626fd0493c8e7e388a93a74d28a2",
+      "bytes": 626,
+      "mtime_ns": 1791674865694015524,
+      "reasons": [
+        "combined writer source/protocol binding",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/final_audit.json",
+      "sha256": "1f8f972a8f6848f24fbcc4b3d8cdc70c95415107b8bb40c22dded3f5d864c7bf",
+      "bytes": 29267,
+      "mtime_ns": 1791717834747628272,
+      "reasons": [
+        "completed provenance audit",
+        "provenance metadata identity",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/graphworld/graph_component_coverage.csv",
+      "sha256": "5039fea54cb104bb55c8514e3c41220d1f9dde713508846876a76f24082088e9",
+      "bytes": 574315,
+      "mtime_ns": 1791717485865987264,
+      "reasons": [
+        "complete graph supplementary g_coverage",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/graphworld/graph_main4_readout.csv",
+      "sha256": "6b5e97990630184f691a362b4aba2e8d3fa5df26660cd97cd27d7e2e0c80ccc8",
+      "bytes": 19565,
+      "mtime_ns": 1791717485866636481,
+      "reasons": [
+        "complete graph supplementary g_main",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/graphworld/graph_source4_learning.csv",
+      "sha256": "b7fd4fdfafd9d8d5f4c106a2e30bfbdd0bba7920e5060821be9ee26e3048053b",
+      "bytes": 1350,
+      "mtime_ns": 1791717485866967220,
+      "reasons": [
+        "complete graph supplementary g_source4",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/graphworld/graph_three_metric_directions4.csv",
+      "sha256": "c209bab23cc9ec16294a2e580998b6d37f0bd87ed5b1c5bbf5790535365b05c4",
+      "bytes": 11126,
+      "mtime_ns": 1791717485866791599,
+      "reasons": [
+        "complete graph supplementary g_directions",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/graphworld/readout_status.json",
+      "sha256": "dadd065028c418bac3ac98c387287d300eac98b3cceda235b685b0f2010ad155",
+      "bytes": 938,
+      "mtime_ns": 1791717485867608102,
+      "reasons": [
+        "audited supplementary reader status",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/all_layer_directions.csv",
+      "sha256": "27ce27d6ceec09da57516050b76752069d61f7cac0ed0562496bcc6fc4cc7964",
+      "bytes": 397783,
+      "mtime_ns": 1791714576378168872,
+      "reasons": [
+        "complete supplementary layers",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/encoding16_decomposition.csv",
+      "sha256": "defdd1f3d398c5a5e01f0ba723da3ad5e66f04861a150cf991eb2f10db7e84af",
+      "bytes": 25074,
+      "mtime_ns": 1791714576378519212,
+      "reasons": [
+        "complete supplementary encoding",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv",
+      "sha256": "23afa052be98c5a6175fbd5504c145160b477147c521ea3aa25460dbe06b5bc4",
+      "bytes": 79297,
+      "mtime_ns": 1791714576372732617,
+      "reasons": [
+        "complete supplementary main",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/readout_status.json",
+      "sha256": "a395c6e6b0f2a1845183eeea9348c6a2a8ed4571dbe90acdefd3f6b974778bf3",
+      "bytes": 1117,
+      "mtime_ns": 1791714576811624971,
+      "reasons": [
+        "audited supplementary reader status",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/source64_learning_and_baseline.csv",
+      "sha256": "7149f239d60c4beb6f8467165845416af9788713781f015ef43c3a80b7217f00",
+      "bytes": 35454,
+      "mtime_ns": 1791714576737995411,
+      "reasons": [
+        "complete supplementary source64",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/source_learning_curves.csv",
+      "sha256": "aeddd5d2641ad29995bbf098aaa93f5df8eb891980c76a901ddabc5ac5d30216",
+      "bytes": 329800,
+      "mtime_ns": 1791714576742314608,
+      "reasons": [
+        "all archived validation curves",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/supplementary_component_coverage.csv",
+      "sha256": "f2026dbb8f055d160e52fd06c90a0f32fc0a15d899c59f39d90c5b999087a8e0",
+      "bytes": 3380990,
+      "mtime_ns": 1791714576361662340,
+      "reasons": [
+        "complete supplementary coverage",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/three_metric_directions32.csv",
+      "sha256": "a23706c6af93a5087847c02ef2c0e8f7c32dac8013f86208aab0a94a00a81464",
+      "bytes": 50499,
+      "mtime_ns": 1791714576373211805,
+      "reasons": [
+        "complete supplementary directions",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/physical_file_manifest.json",
+      "sha256": "6f7a17ecc333d91660805215524a46df4aaf5e6119920304129e6b3a068b8214",
+      "bytes": 781125,
+      "mtime_ns": 1791717834747077296,
+      "reasons": [
+        "completed physical SHA ledger",
+        "provenance metadata identity",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/readout_freeze.json",
+      "sha256": "6a694aea9f316675ec5f232419207ae22ac1ca736761eb6aa80f9220bb14cc3c",
+      "bytes": 1331,
+      "mtime_ns": 1791671004094552802,
+      "reasons": [
+        "frozen supplementary reader source binding"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/gold_baseline_length.csv",
+      "sha256": "0b6e59498ef2047c03ae974cce91198e6d9bae016c3a9e8bcafd4be2579711c7",
+      "bytes": 6976785,
+      "mtime_ns": 1791714546441941712,
+      "reasons": [
+        "independently audited scientific table",
+        "all original static answer geometry",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.json",
+      "sha256": "5357be5d26709132e1e9d110e6571ccf6d04e132df43ff2d37c24aae2b92cd7e",
+      "bytes": 69932,
+      "mtime_ns": 1791714563730531827,
+      "reasons": [
+        "independent PermWorld table audit",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/metric_review/independent_metric_actual.json",
+      "sha256": "c4831b54359a0871542d60debea67c51a3841922d843d46d6736b67cca570630",
+      "bytes": 89237,
+      "mtime_ns": 1791713676375531471,
+      "reasons": [
+        "original validation/coverage counterpart",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/orchestration_freeze.json",
+      "sha256": "209b09b4262573419e759fd68a40649995550aff227f0ed15add73815a122875",
+      "bytes": 3348,
+      "mtime_ns": 1791670641317254404,
+      "reasons": [
+        "fixed stage list"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/per_length_results.csv",
+      "sha256": "af0c1bee947232a5168cc902a9424b8330afe5266f45f2a9e0eeb127f01ad62e",
+      "bytes": 98933566,
+      "mtime_ns": 1791714546301958903,
+      "reasons": [
+        "supplementary source identity",
+        "independently audited scientific table",
+        "all original per-length scientific cells",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/phase_timing.json",
+      "sha256": "3ba4387e612b1c5570f883cf6c9af6d4d2ac3718d0b8535d3fc462cb0b41c38f",
+      "bytes": 11795,
+      "mtime_ns": 1791717485877944952,
+      "reasons": [
+        "finalized fixed phases"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json",
+      "sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+      "bytes": 353015,
+      "mtime_ns": 1791669019201865491,
+      "reasons": [
+        "fixed PermWorld protocol",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/relation_label_alignment.csv",
+      "sha256": "6c23787496e8e9542b9557176e9485cb5ba0021cc22a88a8e0a39f1ea09d12e8",
+      "bytes": 66980,
+      "mtime_ns": 1791714546523417984,
+      "reasons": [
+        "original validation/coverage counterpart",
+        "linked original artifact"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/report.html",
+      "sha256": "a63920d80e8802e84a70ae8b71cfb4f4f4eccdb11b6f7e268a0e33d8af83f7b8",
+      "bytes": 111080,
+      "mtime_ns": 1791714561981662359,
+      "reasons": [
+        "original PermWorld report"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/report_audit.json",
+      "sha256": "acd5062a6203f7cdd549f45728e855d323b4bf0260fd072e6be114fbe77b7854",
+      "bytes": 3170,
+      "mtime_ns": 1791714561985197166,
+      "reasons": [
+        "complete frozen PermWorld reader audit"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/source_learning.csv",
+      "sha256": "6e900cb17f537dc7b499bc3cebc97bee8c32c87bad745225840da4c9f7352b22",
+      "bytes": 6258353,
+      "mtime_ns": 1791714546516663507,
+      "reasons": [
+        "supplementary source identity",
+        "independently audited scientific table",
+        "all source per-length learning",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/source_learning_summary.csv",
+      "sha256": "dd2b566aa30d35081661c5d73c303532c082eb37b1207ef37c67b16a98ccf641",
+      "bytes": 141034,
+      "mtime_ns": 1791714546519235937,
+      "reasons": [
+        "supplementary source identity",
+        "independently audited scientific table",
+        "all source fixed-weight learning",
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/training_freeze.json",
+      "sha256": "e47cd04f85703899177bac2b1f53f5c227fa153ada6beaee1edb7cfeb6386261",
+      "bytes": 3471,
+      "mtime_ns": 1791669203852566069,
+      "reasons": [
+        "linked original artifact"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/completed.json",
+      "sha256": "c1e55fe5a7d2162c00b1bcc19ec5bc140ca1ac7d7ce04b6bbe5421863ca6375b",
+      "bytes": 5257,
+      "mtime_ns": 1791626173682160000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/completed.json",
+      "sha256": "5025223955f2cb8e7d82f12d1602edf237a413b780667afb33f834419163794b",
+      "bytes": 5230,
+      "mtime_ns": 1791621297139856800,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/completed.json",
+      "sha256": "d10b0206589d2291ad78a2b7cd9669d49648b36e9432f678da38661b8d7be991",
+      "bytes": 5205,
+      "mtime_ns": 1791624269196652100,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/completed.json",
+      "sha256": "be0cb8b0a1f941c6a7e7885e16e22d737ad0073f242f4f6a74def3e4cb4d9647",
+      "bytes": 5219,
+      "mtime_ns": 1791618938441743400,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/completed.json",
+      "sha256": "6ea2f2aa12cc48910fb3b8c1931b1482aaf01b5eae0f932d912d80ec2ba703b6",
+      "bytes": 5172,
+      "mtime_ns": 1791624156458853900,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/completed.json",
+      "sha256": "64ef25ca28787042a708e6df9447e36b26cd3d686a2c75d698d1185ffab17c6c",
+      "bytes": 5045,
+      "mtime_ns": 1791622546706212000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/completed.json",
+      "sha256": "fed62f787e08268198fdac6c36fa0f36ef1f7463c11dfd503bb6a088ad816675",
+      "bytes": 5227,
+      "mtime_ns": 1791625541180784300,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/completed.json",
+      "sha256": "73c2a5d70bd98e6eb2e22d24b104117cc6cb7c5465b9625241e072e0cfa3ca46",
+      "bytes": 5221,
+      "mtime_ns": 1791619857503715100,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/completed.json",
+      "sha256": "b65753be96eee40e64b1b3ba1d332006b04336892d5bb473d9c785149272bf45",
+      "bytes": 5269,
+      "mtime_ns": 1791623113056792900,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/completed.json",
+      "sha256": "d8cbb2119f330add099aa7e478a3d4b2b4d1b15a7ec8c1a805a7b97d6673bba4",
+      "bytes": 5244,
+      "mtime_ns": 1791625802617247500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/completed.json",
+      "sha256": "4f8cc344e56caf9f920156a9aa99671746cfc2df5576da8ee64fafca22e63c1b",
+      "bytes": 5222,
+      "mtime_ns": 1791624597177045200,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/completed.json",
+      "sha256": "ee5efffc483160412a1508598b35cbbc860e42d611248bef6670a8c7b845c824",
+      "bytes": 5252,
+      "mtime_ns": 1791626607246677700,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/completed.json",
+      "sha256": "7514fe76f6698405166f728f8129c0c5b3e71ebb92f27866fbd741fe5b440003",
+      "bytes": 5225,
+      "mtime_ns": 1791617715780795300,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/completed.json",
+      "sha256": "7e6d7a45a6c76f996e988ef2afb0e8973064ac9ef5a5a3884c065993fc56fe31",
+      "bytes": 5202,
+      "mtime_ns": 1791620245812840100,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/completed.json",
+      "sha256": "97118cf492031d9f45a3335ab34e7d314b94764d7e4ad048fd93408d1192a5f1",
+      "bytes": 5228,
+      "mtime_ns": 1791618982244185700,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/completed.json",
+      "sha256": "cc831c15cd886878a3ffd6769102609a320c5eda6141278bbf39e73a836007a4",
+      "bytes": 5243,
+      "mtime_ns": 1791621619614064500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/completed.json",
+      "sha256": "5f90e2ddb23675f7d1234ddd4bf8691d0ffc40ca44fb7ec5bc95c9daf1002dac",
+      "bytes": 7986,
+      "mtime_ns": 1791702366228252400,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_components/completed.json",
+      "sha256": "f61632427f8a54358b3a20f75a56d2be46762b909f40d99666276d1bba558e8b",
+      "bytes": 8033,
+      "mtime_ns": 1791703440382335900,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_deficiencies/completed.json",
+      "sha256": "e3b2d8aa73113a91b15dfefc4f0b81bce255ece823adb7d9198d7266e2d8ba7e",
+      "bytes": 7830,
+      "mtime_ns": 1791704523073084000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_exceedances/completed.json",
+      "sha256": "83d025632c67f0c41a92b713fc9c87b491f46933b7da20c14ac1c2786080f14b",
+      "bytes": 7913,
+      "mtime_ns": 1791705632839436900,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_fixed_points/completed.json",
+      "sha256": "7796cfb0b088494d039b81746545e5e681ddcd7e94ceebdc3fbf9b18027fe24e",
+      "bytes": 7570,
+      "mtime_ns": 1791706509485909600,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_global_descents/completed.json",
+      "sha256": "bf73dcab8119b61a8543daa9fc49a02265cc99bd72a09af1c74af1148e9a4f47",
+      "bytes": 8020,
+      "mtime_ns": 1791707366064693500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_lds_length/completed.json",
+      "sha256": "8eccc5e0017170cd9713cb290513f7782a7cb2d802c554ac1402e85216a2ff2d",
+      "bytes": 7996,
+      "mtime_ns": 1791708225100267700,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_left_to_right_maxima/completed.json",
+      "sha256": "7de041be1e77c1a6db1571eb9e4a729a8b32884a55b0882136e0be85844bd339",
+      "bytes": 8039,
+      "mtime_ns": 1791709078193247600,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_left_to_right_minima/completed.json",
+      "sha256": "a60e964de087a3e84626b6c46c461040c74701e404a958b344fa77e3519b5b2d",
+      "bytes": 8015,
+      "mtime_ns": 1791709931981332600,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_lis_length/completed.json",
+      "sha256": "1f9bb6b8412eca3a23b1b0d98999db7dadf9f92e3982adcfc96ec49b17d87132",
+      "bytes": 7964,
+      "mtime_ns": 1791710788356430700,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_longest_decreasing_run/completed.json",
+      "sha256": "0893d213b7b24153d137034a153e690b16ba29d1db45961141b1deebce4c3b45",
+      "bytes": 8041,
+      "mtime_ns": 1791711643852753500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_longest_increasing_run/completed.json",
+      "sha256": "53fd4eea7570364a056da04400dc68a5b4000ce952f9d9bb735a1876ca09f93b",
+      "bytes": 8025,
+      "mtime_ns": 1791712501377105400,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_anti_fixed_points/completed.json",
+      "sha256": "02610756216fd1d87759f18e3693523d69caa352a01177b76fb2e6f76b804dc4",
+      "bytes": 7998,
+      "mtime_ns": 1791691181778591200,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_components/completed.json",
+      "sha256": "f7e7b6f1c33867f6e5d53d9687989c9e94021f9ae101fbd2c1bbc4e0ab384007",
+      "bytes": 8235,
+      "mtime_ns": 1791692025724287900,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_deficiencies/completed.json",
+      "sha256": "bf3769027226217b676fc596d8d720a1f8bf3cc200d5250b0035b97e62fb7aec",
+      "bytes": 7996,
+      "mtime_ns": 1791692871546827500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_exceedances/completed.json",
+      "sha256": "cc71c66dfe7f1d130a90102c0a1ed055ff8c0ccb222a09294c4d1fd3aeb74b82",
+      "bytes": 7990,
+      "mtime_ns": 1791693705627907900,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/completed.json",
+      "sha256": "71f625d0087085e1a9ddbc91cf72fcc757e6d48d1cafea81d4db8099a4bdef47",
+      "bytes": 8009,
+      "mtime_ns": 1791694551612946100,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_global_descents/completed.json",
+      "sha256": "1052645112c8b328060d58a6615a71f2609f348af9c967492779f4eba67fd978",
+      "bytes": 7983,
+      "mtime_ns": 1791695402592431500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_lds_length/completed.json",
+      "sha256": "612b1ee2ae59e3fb7d31c3bcdf6a1097fd5ca9f0615600553ca01239d10f10be",
+      "bytes": 7964,
+      "mtime_ns": 1791696248249686900,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_left_to_right_maxima/completed.json",
+      "sha256": "02e16516dd7cb747e5fa6a7ea4b3696ec0367c0d094faca6fc1485b9ea3e6a35",
+      "bytes": 8014,
+      "mtime_ns": 1791697107801920400,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_left_to_right_minima/completed.json",
+      "sha256": "38f372e10eb5bece8976a68c22a71e2e8885814b0e59f4726d1637cc4dbc9f33",
+      "bytes": 7917,
+      "mtime_ns": 1791698097833498300,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_lis_length/completed.json",
+      "sha256": "b86084997feaf0c6aee4d7e9bae5b0d4a24d09243f7d77d9329ae8a9758ab10d",
+      "bytes": 7970,
+      "mtime_ns": 1791699159038237100,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_longest_decreasing_run/completed.json",
+      "sha256": "01d880c7aca4f6cf41ab800c5b4b7abf78964373f9ef78ca66f4dde4d42a622a",
+      "bytes": 8024,
+      "mtime_ns": 1791700231392375600,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_longest_increasing_run/completed.json",
+      "sha256": "c666ffd6f9d914ce76f4999f85a4fe0807cf4a3d3bda3a33e0676887eb743a58",
+      "bytes": 7922,
+      "mtime_ns": 1791701294334552600,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_anti_fixed_points/completed.json",
+      "sha256": "4e43b8005211c2aebb1ca375d5a11c0daad78abed6fd486704f8c55d592ca8d5",
+      "bytes": 8043,
+      "mtime_ns": 1791677244154680600,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_components/completed.json",
+      "sha256": "0b6ec8a7b146a36233e9522c8db1f9c17e334e4c22c63658b4231c85bca8d3cb",
+      "bytes": 8339,
+      "mtime_ns": 1791677839971546300,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_deficiencies/completed.json",
+      "sha256": "779e5b4021900313eb45f2f41dd4fbe03235db05fd17a736e3a7b8bb21b54aee",
+      "bytes": 8012,
+      "mtime_ns": 1791678451944075400,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_exceedances/completed.json",
+      "sha256": "586316f4e660b2dc26c78d33483f915ff44bbac82869147cba392e1d8f2ea0e9",
+      "bytes": 8025,
+      "mtime_ns": 1791679050200299000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_fixed_points/completed.json",
+      "sha256": "296612fcb64f8f3e3ae2cb871d7129404170e789e40f3827d2af87315c9d4b72",
+      "bytes": 7955,
+      "mtime_ns": 1791679674069694800,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_global_descents/completed.json",
+      "sha256": "ce6f05aeb953a4ce619ed1e6614a7aee2c9291e4ab54a761e3fb192c3a01716f",
+      "bytes": 8049,
+      "mtime_ns": 1791680297200691600,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_lds_length/completed.json",
+      "sha256": "4eb4ccf09a18964ce03c52866f5c855a9050020ce7f9e50aece2d4561efd24c8",
+      "bytes": 8041,
+      "mtime_ns": 1791680893403072300,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_left_to_right_maxima/completed.json",
+      "sha256": "8764dce7acc8c6ebf53143ef1edd68007e819412fc7c0a67d52b2276434858b8",
+      "bytes": 8047,
+      "mtime_ns": 1791681491637962000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_left_to_right_minima/completed.json",
+      "sha256": "0cc7c0147de284687265fd547f4c4861d1e701cf6b1f106eedb24f0eb1e6c82e",
+      "bytes": 8060,
+      "mtime_ns": 1791682094109497100,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_lis_length/completed.json",
+      "sha256": "78f8e704d6a79c1a22e065a454289b88558d6d480684a9d8210e6b9e5183815e",
+      "bytes": 8022,
+      "mtime_ns": 1791682702739574500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_longest_decreasing_run/completed.json",
+      "sha256": "ec0b40cf247d52fa2cdf2eee8d483ae919a8d66ff7752760f72441c48f04bd0d",
+      "bytes": 8053,
+      "mtime_ns": 1791683297881244000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_longest_increasing_run/completed.json",
+      "sha256": "b29bd8e3fdfa46bc8dd24a098926b61c30dd6de19e63a31f9de800e4427bc854",
+      "bytes": 8130,
+      "mtime_ns": 1791683895982610500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_anti_fixed_points/completed.json",
+      "sha256": "e55cf9662541eb73b8b58e1ae2e1d002f8e6b4dc43e96f4a77d9891497c51187",
+      "bytes": 8011,
+      "mtime_ns": 1791670001825210700,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_components/completed.json",
+      "sha256": "e50aa3287799fe347f0d360289aca7ca65b48044157919dc82da5ec724161f12",
+      "bytes": 8057,
+      "mtime_ns": 1791670601901833400,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_deficiencies/completed.json",
+      "sha256": "611e85e92abbe9bf80b855e75e9c57c474a55c30adc0784baed41257a29019ef",
+      "bytes": 8035,
+      "mtime_ns": 1791671208821432700,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_exceedances/completed.json",
+      "sha256": "f5207a9fa1bdf81fbf73d4512e43f34fbe928f0189e55b4acef96d912dca7f54",
+      "bytes": 8045,
+      "mtime_ns": 1791671804085542500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_fixed_points/completed.json",
+      "sha256": "ffd6cbcee515d513b157940be08dceb94e33ea791c362291124d362448320854",
+      "bytes": 8052,
+      "mtime_ns": 1791672395673425500,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_global_descents/completed.json",
+      "sha256": "2b21cc048440a92822f69120d3e533208ee576b55b47c1f8fdf759fc0f09015f",
+      "bytes": 8058,
+      "mtime_ns": 1791673005601009100,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_lds_length/completed.json",
+      "sha256": "faf55d5ba29c008ff4ce24d4664ba08f1058cf9342f3c01a458503aa9a47e32b",
+      "bytes": 8004,
+      "mtime_ns": 1791673622296380000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_left_to_right_maxima/completed.json",
+      "sha256": "3411b38ac4f6f31ab4ef50defe0833e1657acbb9d237044a4b17b2d6da05097a",
+      "bytes": 8059,
+      "mtime_ns": 1791674224877708000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_left_to_right_minima/completed.json",
+      "sha256": "f12139962e641ce2bb0d875a71e86f9753356455aded00d43917346981d34016",
+      "bytes": 8081,
+      "mtime_ns": 1791674828281708900,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_lis_length/completed.json",
+      "sha256": "f60f7f0b1e97298102fbf6cd47d0260378072ba8ba090bc8d8cd50b4fd2339a9",
+      "bytes": 7971,
+      "mtime_ns": 1791675418510431200,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_longest_decreasing_run/completed.json",
+      "sha256": "337a8020e15f5bf5d5627e20cb7fa21d6175502b74cb28b48fecad784016754f",
+      "bytes": 8060,
+      "mtime_ns": 1791676031164978200,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_longest_increasing_run/completed.json",
+      "sha256": "9e6f438242d2809b8f83e45813a466dde750d9d944e6e62b7bd26236f946c095",
+      "bytes": 8054,
+      "mtime_ns": 1791676632924361000,
+      "reasons": [
+        "audited source curve sidecar"
+      ],
+      "verified_against_existing_audit": true
+    }
+  ],
+  "outputs": {
+    "combined_report.html": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html",
+      "sha256": "b5d2e75b062b2c5a4b40b2996a71f7453217eae9a3282ca4e07c89fb739f7185"
+    },
+    "combined_report.txt": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/combined_report.txt",
+      "sha256": "264a810b1d5882a17abf7a38cf8483823e22f843a28d27c0333a030f817f504d"
+    }
+  },
+  "original_scientific_artifacts_unchanged": true,
+  "all32_coupled_conditions_displayed": true,
+  "all16_encoding_pairs_displayed": true,
+  "all4_graph_relations_displayed": true,
+  "scientific_metrics_recomputed": 0,
+  "statistical_tests": 0,
+  "models_constructed": 0,
+  "activations_loaded": 0,
+  "raw_data_loaded": 0,
+  "training_updates": 0,
+  "GPU_started": false,
+  "root_must_review_actual_values_and_interpretation": true,
+  "no_automatic_followup": true
+}

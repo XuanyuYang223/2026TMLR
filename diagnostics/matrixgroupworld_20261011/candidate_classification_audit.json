@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "rows": 24,
+  "mathematical_types": 12,
+  "categories": [
+    "designated",
+    "other_known_exact",
+    "not_designated"
+  ],
+  "counts": {
+    "designated": 8,
+    "other_known_exact": 0,
+    "not_designated": 16
+  },
+  "designated_proofs": {
+    "R1": "F2(A^T)=wt((A^T)^T e1)=wt(A e1)=F1(A).",
+    "R2": "F4(A^T)=wt((A^T)^T s)=wt(A s)=F3(A).",
+    "R3": "Q s=e1, hence F3(AQ)=wt(A Q s)=wt(A e1)=F1(A).",
+    "R4": "Q s=e1, hence F4(Q^T A)=wt((Q^T A)^T s)=wt(A^T Q s)=F2(A)."
+  },
+  "manifest_sha256": "9bb3581a089b9fba390a26b9afc08ac67e0e2116eb2562ebdf93ceaea12f441e",
+  "math_audit_sha256": "cea05b3436edbe027d944e976cf3faa6ac51bfb88f1c387ab744528a59208df0",
+  "source_sha256": "2899670467172b22df18e242176197cc7dcf4f2facf8b41e0f01185e786ffbbb",
+  "counterexamples": [
+    {
+      "relation": "R1",
+      "right_task": "F3",
+      "n": 2,
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "left_answer": 1,
+      "transformed_candidate_answer": 2,
+      "scope": "Counterexample only to candidate g(T(A))=f(A); not proof of absence of other relations."
+    },
+    {
+      "relation": "R1",
+      "right_task": "F4",
+      "n": 2,
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "left_answer": 1,
+      "transformed_candidate_answer": 2,
+      "scope": "Counterexample only to candidate g(T(A))=f(A); not proof of absence of other relations."
+    },
+    {
+      "relation": "R2",
+      "right_task": "F1",
+      "n": 2,
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "left_answer": 2,
+      "transformed_candidate_answer": 1,
+      "scope": "Counterexample only to candidate g(T(A))=f(A); not proof of absence of other relations."
+    },
+    {
+      "relation": "R2",
+      "right_task": "F2",
+      "n": 2,
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "left_answer": 2,
+      "transformed_candidate_answer": 1,
+      "scope": "Counterexample only to candidate g(T(A))=f(A); not proof of absence of other relations."
+    },
+    {
+      "relation": "R3",
+      "right_task": "F2",
+      "n": 2,
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "left_answer": 1,
+      "transformed_candidate_answer": 2,
+      "scope": "Counterexample only to candidate g(T(A))=f(A); not proof of absence of other relations."
+    },
+    {
+      "relation": "R4",
+      "right_task": "F1",
+      "n": 2,
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "left_answer": 1,
+      "transformed_candidate_answer": 2,
+      "scope": "Counterexample only to candidate g(T(A))=f(A); not proof of absence of other relations."
+    },
+    {
+      "relation": "R3",
+      "right_task": "F4",
+      "n": 3,
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "left_answer": 1,
+      "transformed_candidate_answer": 3,
+      "scope": "Counterexample only to candidate g(T(A))=f(A); not proof of absence of other relations."
+    },
+    {
+      "relation": "R4",
+      "right_task": "F3",
+      "n": 3,
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "left_answer": 1,
+      "transformed_candidate_answer": 3,
+      "scope": "Counterexample only to candidate g(T(A))=f(A); not proof of absence of other relations."
+    }
+  ],
+  "possible_not_proven": [],
+  "scope": "Fixed known-exact binary catalogue; not_designated means not listed, not mathematically independent. No exhaustive absence claim. Small-n counterexamples can only disprove specific equations.",
+  "other_known_exact_is_empty": true,
+  "classification_fixed_before_geometry": true,
+  "no_geometry_read": true,
+  "no_models": true,
+  "shared_relations": "R1/R2 share transpose; R3/R4 are fixed actions. Four relation instances are not four independent relation types."
+}

@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "synthetic_fixture": false,
+  "reporter_sha256": "94ec1cbcea3ed5736821c51660a8fc28e0988000a4030b2f9957fa22f14ee3d6",
+  "input_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/protocol.json": "6221a77fe29ef46dca14dc6e3c14805c43a142da3ed1e12bab3595b2ebf49350",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/metrics_summary.csv": "c710bcc5c404cb39b3fb6cd604ae7c9433521f6d1d7a42ca3d09d086799cd498",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/metrics_by_length.csv": "e73e6e4c1070441a64ddf79143028d64d973214793338955a7ef6fbd7d75ecf3",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/validation_reproduction.csv": "a2df3c6a918c46d873480c895bf8401fe47082204633b36f79d7d8bba8b0797b",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/evaluation_execution.json": "0bf4113b7119892e103377c015016b1ce5345197826b54eeaff18e54e8cbbcb1",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/prediction_manifest.json": "e74328d1d9c1429ffa55d7077059b2f6c822601f713a2cfa14dc85a163f60d4d"
+  },
+  "model_conditions": 16,
+  "split_conditions": 32,
+  "length_conditions": 96,
+  "fixed_lengths": [
+    10,
+    11,
+    12
+  ],
+  "length_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "category_counts": {
+    "两者不足：拟合/优化不足候选": 5,
+    "两者充分：本条件掌握": 6,
+    "训练充分、验证不足：泛化不足候选": 5
+  },
+  "descriptive_thresholds": {
+    "mean_answer_accuracy_min": 0.9,
+    "per_length_answer_accuracy_min": 0.85
+  },
+  "original_encoding_joint_qualification_unchanged": "0/8",
+  "validation_reproduction_rows": 320,
+  "signed_differences_preserved": true,
+  "scope": {
+    "training_started": false,
+    "checkpoints_loaded": false,
+    "raw_predictions_read": false,
+    "test_read": false,
+    "geometry_read": false,
+    "old_artifacts_modified": false,
+    "F17_modified": false
+  },
+  "metadata_reference_files": [
+    "evaluation_execution.json",
+    "prediction_manifest.json"
+  ],
+  "output_sha256": {
+    "report.html": "07edea53c6dc56fca8010fa7893e6520537fba71d4fbf08adf9fa85d8664cae8",
+    "report.txt": "1dce0734a96ad788d5fd4ad2b5337d142948e2abf8a3d3061302e7ccc8513cba",
+    "answer_accuracy_all_conditions.png": "3b50563405876b275a79d9ad894b1bf5504277eeeb50341572cf677ed052902c",
+    "answer_ce_all_conditions.png": "c10117723414cce059238b78a8736fe13db641171c1b846be9a1c81e3d3abefb"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "real_development_results_read": false,
+  "all_128_components_64_interactions_21_lengths_preserved": true,
+  "failed_engineering_gates_preserved": true,
+  "Delta_flip_with_equal_Bt_fixture": true,
+  "undefined_preserved": true,
+  "rejected_cases": [
+    "missing_combined_final_audit",
+    "missing_condition",
+    "missing_length",
+    "incorrect_Gamma0",
+    "export_hash_mismatch"
+  ],
+  "training_or_GPU_started": false,
+  "outputs_written_only_in_temporary_directory": true
+}

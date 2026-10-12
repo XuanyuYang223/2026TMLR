@@ -1,0 +1,24 @@
+{
+  "schema_version": "independent-supplementary-table-reader/v1",
+  "source_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/result_readout.py",
+  "source_sha256": "6c417d11426122d83da9568c26f43679033241e51c9ed10b49637a0a566a68e3",
+  "registered_utc": "2026-10-10T22:23:24.094205+00:00",
+  "protocol_sha256": {
+    "permworld": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+    "graphworld": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1"
+  },
+  "user_instruction_attachment_path": "/home/yangx/.codex/attachments/78f9e781-bd22-44d0-b213-5c0b95b1024e/Pasted text.txt",
+  "user_instruction_attachment_sha256": "76a19e2f889bc840bf64c68e1c2de58a22159a4f8bc4d178d967fe82751b530a",
+  "analysis_freeze_sha256": "38d4a132a145f13f30278c7d996d218e40a264e78e6126f341c117869f3d8848",
+  "before_new_geometry_read": true,
+  "scientific_frozen_sources_modified": false,
+  "table_only": true,
+  "no_inference": true,
+  "no_new_metrics": true,
+  "no_significance_tests": true,
+  "no_training": true,
+  "all_condition_layer_control_grids_fixed": true,
+  "undefined_weights_never_reallocated": true,
+  "graph_missing_status": "pending; do not produce scientific tables",
+  "synthetic_fixture_sha256": "fa92d37f80a5b2de207c7f9529bc5d7e2bc74744b7e6a652af04700dfb222742"
+}

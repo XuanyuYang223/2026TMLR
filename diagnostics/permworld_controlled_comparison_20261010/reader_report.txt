@@ -1,0 +1,385 @@
+PermWorld 首轮16模型：受控表征比较
+生成 UTC：2026-10-10T21:20:19.406947+00:00
+唯一主队列：首轮四任务×两编码×两配置，固定20k、n10..30、真实保存step-0。
+先回答四类控制比较（均为探索性描述，不是确认性检验）：
+A 指标：在8个配置×编码×关系主条件中，三主指标对训练后Bt方向同向8/8、对Delta方向同向7/8；未定义分别0、0。不同指标不比较绝对分值或Delta大小，不平均成总分。
+B 模型配置：固定CKA、编码、任务对、底层输入和20k预算，共保留4项主配置差（GRU−Transformer），完整B0/Bt/dc/dw/Delta列在表中；324万与166万参数未匹配，不能解释为纯架构因果效应。
+C 编码：四个配置内的关系对照均保留Gamma0/Gammat/Gammac/Gammaw/GammaDelta；其中Delta随编码翻转而Bt不翻转的单元为2/4。这类变化不能写成训练后的关系偏好翻转。
+D 提取层：两配置两编码两关系均展示四层及独立final_norm；8条件中Bt方向跨层变化2，存在未定义层0。输入结束token的embedding常量读数保留未定义，不画浮点噪声；归一化变化与层变化分开。
+
+共同固定项：同一数据world/轨道划分/anchor顺序；每长度先计算，再固定1/21汇总；共同答案分层控制为主，raw未调整、输出概率及真值基线并列保留。未定义长度导致整项固定权重汇总未定义，不按剩余长度重加权。
+每条件保留正确、错误、恒等原始相似度：B0=S正确,初始−S错误,初始；Bt=S正确,训练−S错误,训练；dc/dw分别为正确/错误变化；Delta=Bt−B0=dc−dw。正Delta不保证正确相似度提高，初始化配对起点必须单独看。
+两编码在各配置内共享真实初始参数和词表；编码输入几何仍可不同。GRU为显式层间dropout版，保存的原初始化21tensor逐值迁移，非用相同seed冒充相同权重。跨配置初始权重不相同。
+Procrustes使用负留出NRMSE并保留原误差：独立validation拟合8维PCA/正交映射，test只评价。kNN k=10、欧氏距离、稳定anchor ID并列排序；普通CKA与U-centered敏感性沿旧定义。不同指标专属预处理详见protocol。
+答案分层并不证明排除了输出概率、置信度及错误结构；不能用隐藏Delta减输出Delta估算额外机制。静态真值基线没有伪造初始化/训练Delta。
+下降—逆下降和峰—谷是不同任务对与输出统计的两个关系实例；其差异不是只改变数学关系的因果实验。正确/错误配对选择性也不证明神经网络实现了代数计算机制。
+所有低任务成绩条件保留：比较是固定预算下的编码/配置差异，不是同等任务掌握程度下的机制差异。没有90%通过门槛、补训或最佳checkpoint选择。EOS旧validation teacher-forced准确率不能替代答案准确率。
+一个数据world、每配置一个初始权重；16模型、21长度与三指标不是独立重复。不报告确认p值、等价性检验或总体推广置信度。逐项比较仍不能排除因素交互；架构×编码交互仅探索性列出。
+历史82模型多层结果单独留作引用 diagnostics/permworld_layers_20261009/，初始化按原程序重建、真实身份未验证；未并入主队列。第二轮8k可学习性模型完全排除。
+本轮只前向/指标与报告；不创建优化器、不反传、不增加样本/更新、不调参，不开展GroupWorld、768确认、有限域、GELU、零空间或F17工作。
+最终核查/停止状态：见validation_audit.json及completion.json；本report不自行修改执行状态。
+
+三主指标方向表（数值符号，非显著性）：
+[
+  {
+    "architecture": "transformer",
+    "encoding": "one_line",
+    "relation": "descent_inverse",
+    "B0_direction": "同向",
+    "Bt_direction": "同向",
+    "Delta_direction": "同向"
+  },
+  {
+    "architecture": "transformer",
+    "encoding": "one_line",
+    "relation": "peak_complement",
+    "B0_direction": "同向",
+    "Bt_direction": "同向",
+    "Delta_direction": "同向"
+  },
+  {
+    "architecture": "transformer",
+    "encoding": "canonical_cycle",
+    "relation": "descent_inverse",
+    "B0_direction": "同向",
+    "Bt_direction": "同向",
+    "Delta_direction": "同向"
+  },
+  {
+    "architecture": "transformer",
+    "encoding": "canonical_cycle",
+    "relation": "peak_complement",
+    "B0_direction": "同向",
+    "Bt_direction": "同向",
+    "Delta_direction": "同向"
+  },
+  {
+    "architecture": "gru",
+    "encoding": "one_line",
+    "relation": "descent_inverse",
+    "B0_direction": "同向",
+    "Bt_direction": "同向",
+    "Delta_direction": "同向"
+  },
+  {
+    "architecture": "gru",
+    "encoding": "one_line",
+    "relation": "peak_complement",
+    "B0_direction": "同向",
+    "Bt_direction": "同向",
+    "Delta_direction": "不同向"
+  },
+  {
+    "architecture": "gru",
+    "encoding": "canonical_cycle",
+    "relation": "descent_inverse",
+    "B0_direction": "同向",
+    "Bt_direction": "同向",
+    "Delta_direction": "同向"
+  },
+  {
+    "architecture": "gru",
+    "encoding": "canonical_cycle",
+    "relation": "peak_complement",
+    "B0_direction": "同向",
+    "Bt_direction": "同向",
+    "Delta_direction": "同向"
+  }
+]
+
+编码分解：
+[
+  {
+    "architecture": "transformer",
+    "relation": "descent_inverse",
+    "Gamma0": 1.3894151479617056,
+    "Gammat": -0.12516156392536876,
+    "Gammac": -0.8177126694143086,
+    "Gammaw": 0.6968640424727657,
+    "GammaDelta": -1.514576711887074,
+    "Delta翻转而Bt未翻转": false
+  },
+  {
+    "architecture": "transformer",
+    "relation": "peak_complement",
+    "Gamma0": -1.3807459057340314,
+    "Gammat": -0.2812040064664097,
+    "Gammac": 0.3617391442873391,
+    "Gammaw": -0.7378027549802827,
+    "GammaDelta": 1.0995418992676218,
+    "Delta翻转而Bt未翻转": true
+  },
+  {
+    "architecture": "gru",
+    "relation": "descent_inverse",
+    "Gamma0": 1.417879965805093,
+    "Gammat": 0.011773549218258988,
+    "Gammac": -0.7321796564007761,
+    "Gammaw": 0.6739267601860578,
+    "GammaDelta": -1.4061064165868342,
+    "Delta翻转而Bt未翻转": true
+  },
+  {
+    "architecture": "gru",
+    "relation": "peak_complement",
+    "Gamma0": -1.4160626616697276,
+    "Gammat": -0.3599680119962809,
+    "Gammac": 0.3220842560264171,
+    "Gammaw": -0.7340103936470297,
+    "GammaDelta": 1.056094649673447,
+    "Delta翻转而Bt未翻转": false
+  }
+]
+
+全部主条件B0/Bt/dc/dw/Delta及原始正确/错误/恒等：
+transformer/one_line/descent_inverse/answer_strata/hidden/final_norm/linear_cka | initial_correct=0.065974, initial_wrong=0.670857, initial_identity=1.000000, trained_correct=0.119120, trained_wrong=0.026002, trained_identity=0.016583, B0=-0.604883, Bt=0.093118, dc=0.053146, dw=-0.644855, di=-0.983417, Delta=0.698000 | 
+transformer/one_line/descent_inverse/answer_strata/hidden/final_norm/knn_overlap | initial_correct=0.033228, initial_wrong=0.391867, initial_identity=1.000000, trained_correct=0.074416, trained_wrong=0.025653, trained_identity=0.023694, B0=-0.358639, Bt=0.048763, dc=0.041188, dw=-0.366214, di=-0.976306, Delta=0.407401 | 
+transformer/one_line/descent_inverse/answer_strata/hidden/final_norm/procrustes | initial_correct=-1.373936, initial_wrong=-0.873634, initial_identity=-0.000000, trained_correct=-1.235908, trained_wrong=-1.376864, trained_identity=-1.400714, B0=-0.500303, Bt=0.140956, dc=0.138029, dw=-0.503230, di=-1.400714, Delta=0.641259 | 
+transformer/one_line/peak_complement/answer_strata/hidden/final_norm/linear_cka | initial_correct=0.672191, initial_wrong=0.071877, initial_identity=1.000000, trained_correct=0.349841, trained_wrong=0.011646, trained_identity=0.280229, B0=0.600315, Bt=0.338195, dc=-0.322350, dw=-0.060231, di=-0.719771, Delta=-0.262120 | 
+transformer/one_line/peak_complement/answer_strata/hidden/final_norm/knn_overlap | initial_correct=0.392730, initial_wrong=0.035781, initial_identity=1.000000, trained_correct=0.147254, trained_wrong=0.022822, trained_identity=0.133802, B0=0.356950, Bt=0.124432, dc=-0.245476, dw=-0.012959, di=-0.866198, Delta=-0.232517 | 
+transformer/one_line/peak_complement/answer_strata/hidden/final_norm/procrustes | initial_correct=-0.878630, initial_wrong=-1.377351, initial_identity=-0.000000, trained_correct=-1.013267, trained_wrong=-1.414886, trained_identity=-1.108387, B0=0.498721, Bt=0.401619, dc=-0.134637, dw=-0.037535, di=-1.108387, Delta=-0.097102 | 
+transformer/canonical_cycle/descent_inverse/answer_strata/hidden/final_norm/linear_cka | initial_correct=0.811510, initial_wrong=0.026977, initial_identity=1.000000, trained_correct=0.046943, trained_wrong=0.078986, trained_identity=0.117154, B0=0.784532, Bt=-0.032044, dc=-0.764567, dw=0.052009, di=-0.882846, Delta=-0.816576 | 
+transformer/canonical_cycle/descent_inverse/answer_strata/hidden/final_norm/knn_overlap | initial_correct=0.159665, initial_wrong=0.036310, initial_identity=1.000000, trained_correct=0.025432, trained_wrong=0.032088, trained_identity=0.037814, B0=0.123356, Bt=-0.006657, dc=-0.134234, dw=-0.004221, di=-0.962186, Delta=-0.130012 | 
+transformer/canonical_cycle/descent_inverse/answer_strata/hidden/final_norm/procrustes | initial_correct=-0.880420, initial_wrong=-1.367028, initial_identity=-0.000000, trained_correct=-1.325695, trained_wrong=-1.270534, trained_identity=-1.209576, B0=0.486608, Bt=-0.055161, dc=-0.445275, dw=0.096494, di=-1.209576, Delta=-0.541769 | 
+transformer/canonical_cycle/peak_complement/answer_strata/hidden/final_norm/linear_cka | initial_correct=0.028021, initial_wrong=0.808452, initial_identity=1.000000, trained_correct=0.067410, trained_wrong=0.010419, trained_identity=0.057426, B0=-0.780431, Bt=0.056991, dc=0.039389, dw=-0.798033, di=-0.942574, Delta=0.837422 | 
+transformer/canonical_cycle/peak_complement/answer_strata/hidden/final_norm/knn_overlap | initial_correct=0.036888, initial_wrong=0.154169, initial_identity=1.000000, trained_correct=0.036121, trained_wrong=0.022667, trained_identity=0.036437, B0=-0.117281, Bt=0.013454, dc=-0.000767, dw=-0.131502, di=-0.963563, Delta=0.130735 | 
+transformer/canonical_cycle/peak_complement/answer_strata/hidden/final_norm/procrustes | initial_correct=-1.367299, initial_wrong=-0.885419, initial_identity=-0.000000, trained_correct=-1.296916, trained_wrong=-1.400967, trained_identity=-1.291938, B0=-0.481880, Bt=0.104051, dc=0.070383, dw=-0.515548, di=-1.291938, Delta=0.585931 | 
+gru/one_line/descent_inverse/answer_strata/hidden/final_norm/linear_cka | initial_correct=0.079123, initial_wrong=0.696046, initial_identity=1.000000, trained_correct=0.103473, trained_wrong=0.035971, trained_identity=0.041788, B0=-0.616923, Bt=0.067502, dc=0.024350, dw=-0.660075, di=-0.958212, Delta=0.684425 | 
+gru/one_line/descent_inverse/answer_strata/hidden/final_norm/knn_overlap | initial_correct=0.036325, initial_wrong=0.509830, initial_identity=1.000000, trained_correct=0.052010, trained_wrong=0.033350, trained_identity=0.034789, B0=-0.473505, Bt=0.018660, dc=0.015685, dw=-0.476481, di=-0.965211, Delta=0.492165 | 
+gru/one_line/descent_inverse/answer_strata/hidden/final_norm/procrustes | initial_correct=-1.373887, initial_wrong=-0.856054, initial_identity=-0.000000, trained_correct=-1.283835, trained_wrong=-1.360915, trained_identity=-1.342705, B0=-0.517833, Bt=0.077080, dc=0.090052, dw=-0.504861, di=-1.342705, Delta=0.594912 | 
+gru/one_line/peak_complement/answer_strata/hidden/final_norm/linear_cka | initial_correct=0.697907, initial_wrong=0.080801, initial_identity=1.000000, trained_correct=0.886041, trained_wrong=0.011580, trained_identity=0.157837, B0=0.617107, Bt=0.874461, dc=0.188134, dw=-0.069220, di=-0.842163, Delta=0.257354 | 
+gru/one_line/peak_complement/answer_strata/hidden/final_norm/knn_overlap | initial_correct=0.502688, initial_wrong=0.035987, initial_identity=1.000000, trained_correct=0.490469, trained_wrong=0.032300, trained_identity=0.270827, B0=0.466701, Bt=0.458169, dc=-0.012219, dw=-0.003687, di=-0.729173, Delta=-0.008532 | 
+gru/one_line/peak_complement/answer_strata/hidden/final_norm/procrustes | initial_correct=-0.851634, initial_wrong=-1.376539, initial_identity=-0.000000, trained_correct=-0.483181, trained_wrong=-1.419640, trained_identity=-1.159197, B0=0.524905, Bt=0.936459, dc=0.368453, dw=-0.043101, di=-1.159197, Delta=0.411554 | 
+gru/canonical_cycle/descent_inverse/answer_strata/hidden/final_norm/linear_cka | initial_correct=0.816913, initial_wrong=0.015956, initial_identity=1.000000, trained_correct=0.109083, trained_wrong=0.029808, trained_identity=0.178999, B0=0.800957, Bt=0.079276, dc=-0.707830, dw=0.013851, di=-0.821001, Delta=-0.721681 | 
+gru/canonical_cycle/descent_inverse/answer_strata/hidden/final_norm/knn_overlap | initial_correct=0.235482, initial_wrong=0.023307, initial_identity=1.000000, trained_correct=0.043069, trained_wrong=0.023455, trained_identity=0.072518, B0=0.212175, Bt=0.019614, dc=-0.192413, dw=0.000148, di=-0.927482, Delta=-0.192561 | 
+gru/canonical_cycle/descent_inverse/answer_strata/hidden/final_norm/procrustes | initial_correct=-0.739075, initial_wrong=-1.410669, initial_identity=-0.000000, trained_correct=-1.222934, trained_wrong=-1.363972, trained_identity=-1.123194, B0=0.671594, Bt=0.141038, dc=-0.483859, dw=0.046697, di=-1.123194, Delta=-0.530557 | 
+gru/canonical_cycle/peak_complement/answer_strata/hidden/final_norm/linear_cka | initial_correct=0.016743, initial_wrong=0.815699, initial_identity=1.000000, trained_correct=0.526961, trained_wrong=0.012468, trained_identity=0.369002, B0=-0.798956, Bt=0.514493, dc=0.510218, dw=-0.803231, di=-0.630998, Delta=1.313449 | 
+gru/canonical_cycle/peak_complement/answer_strata/hidden/final_norm/knn_overlap | initial_correct=0.023941, initial_wrong=0.227852, initial_identity=1.000000, trained_correct=0.083694, trained_wrong=0.034443, trained_identity=0.146656, B0=-0.203912, Bt=0.049251, dc=0.059753, dw=-0.193409, di=-0.853344, Delta=0.253162 | 
+gru/canonical_cycle/peak_complement/answer_strata/hidden/final_norm/procrustes | initial_correct=-1.416394, initial_wrong=-0.743483, initial_identity=-0.000000, trained_correct=-0.982206, trained_wrong=-1.368882, trained_identity=-0.943559, B0=-0.672911, Bt=0.386677, dc=0.434188, dw=-0.625399, di=-0.943559, Delta=1.059587 | 
+
+源任务固定21长度成绩汇总（全部condition/split/action保留）：
+gru/canonical_cycle/descents/initial/test/complement | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=30.13%, min-length acc=0.00% | 
+gru/canonical_cycle/descents/initial/test/identity | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=30.44%, min-length acc=0.00% | 
+gru/canonical_cycle/descents/initial/test/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.53%, min-length acc=0.00% | 
+gru/canonical_cycle/descents/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.95%, min-length acc=0.00% | 
+gru/canonical_cycle/descents/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.54%, min-length acc=0.00% | 
+gru/canonical_cycle/descents/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.43%, min-length acc=0.00% | 
+gru/canonical_cycle/descents/trained/test/complement | answer acc=32.06%, answerCE=1.634197, train-defined长度众数=30.13%, min-length acc=22.07% | 
+gru/canonical_cycle/descents/trained/test/identity | answer acc=31.92%, answerCE=1.634002, train-defined长度众数=30.44%, min-length acc=22.85% | 
+gru/canonical_cycle/descents/trained/test/inverse | answer acc=31.24%, answerCE=1.639327, train-defined长度众数=29.53%, min-length acc=22.66% | 
+gru/canonical_cycle/descents/trained/validation/complement | answer acc=30.77%, answerCE=1.634388, train-defined长度众数=29.95%, min-length acc=21.09% | 
+gru/canonical_cycle/descents/trained/validation/identity | answer acc=31.44%, answerCE=1.634097, train-defined长度众数=29.54%, min-length acc=23.44% | 
+gru/canonical_cycle/descents/trained/validation/inverse | answer acc=31.60%, answerCE=1.646797, train-defined长度众数=30.43%, min-length acc=23.83% | 
+gru/canonical_cycle/peaks/initial/test/complement | answer acc=0.33%, answerCE=未定义/缺失, train-defined长度众数=39.31%, min-length acc=0.00% | 
+gru/canonical_cycle/peaks/initial/test/identity | answer acc=0.35%, answerCE=未定义/缺失, train-defined长度众数=39.82%, min-length acc=0.00% | 
+gru/canonical_cycle/peaks/initial/test/inverse | answer acc=0.24%, answerCE=未定义/缺失, train-defined长度众数=40.13%, min-length acc=0.00% | 
+gru/canonical_cycle/peaks/initial/validation/complement | answer acc=0.33%, answerCE=未定义/缺失, train-defined长度众数=40.29%, min-length acc=0.00% | 
+gru/canonical_cycle/peaks/initial/validation/identity | answer acc=0.20%, answerCE=未定义/缺失, train-defined长度众数=40.64%, min-length acc=0.00% | 
+gru/canonical_cycle/peaks/initial/validation/inverse | answer acc=0.30%, answerCE=未定义/缺失, train-defined长度众数=40.79%, min-length acc=0.00% | 
+gru/canonical_cycle/peaks/trained/test/complement | answer acc=40.46%, answerCE=1.337885, train-defined长度众数=39.31%, min-length acc=31.84% | 
+gru/canonical_cycle/peaks/trained/test/identity | answer acc=40.69%, answerCE=1.333884, train-defined长度众数=39.82%, min-length acc=29.88% | 
+gru/canonical_cycle/peaks/trained/test/inverse | answer acc=41.27%, answerCE=1.318603, train-defined长度众数=40.13%, min-length acc=28.52% | 
+gru/canonical_cycle/peaks/trained/validation/complement | answer acc=41.61%, answerCE=1.329832, train-defined长度众数=40.29%, min-length acc=32.42% | 
+gru/canonical_cycle/peaks/trained/validation/identity | answer acc=41.69%, answerCE=1.332313, train-defined长度众数=40.64%, min-length acc=31.64% | 
+gru/canonical_cycle/peaks/trained/validation/inverse | answer acc=41.65%, answerCE=1.330073, train-defined长度众数=40.79%, min-length acc=33.59% | 
+gru/canonical_cycle/recoils/initial/test/complement | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=29.70%, min-length acc=0.00% | 
+gru/canonical_cycle/recoils/initial/test/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.70%, min-length acc=0.00% | 
+gru/canonical_cycle/recoils/initial/test/inverse | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=30.19%, min-length acc=0.00% | 
+gru/canonical_cycle/recoils/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.59%, min-length acc=0.00% | 
+gru/canonical_cycle/recoils/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.49%, min-length acc=0.00% | 
+gru/canonical_cycle/recoils/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.95%, min-length acc=0.00% | 
+gru/canonical_cycle/recoils/trained/test/complement | answer acc=30.18%, answerCE=1.679073, train-defined长度众数=29.70%, min-length acc=23.83% | 
+gru/canonical_cycle/recoils/trained/test/identity | answer acc=30.07%, answerCE=1.674163, train-defined长度众数=29.70%, min-length acc=23.44% | 
+gru/canonical_cycle/recoils/trained/test/inverse | answer acc=30.91%, answerCE=1.666944, train-defined长度众数=30.19%, min-length acc=23.83% | 
+gru/canonical_cycle/recoils/trained/validation/complement | answer acc=30.51%, answerCE=1.667914, train-defined长度众数=29.59%, min-length acc=23.83% | 
+gru/canonical_cycle/recoils/trained/validation/identity | answer acc=30.06%, answerCE=1.669110, train-defined长度众数=30.49%, min-length acc=21.48% | 
+gru/canonical_cycle/recoils/trained/validation/inverse | answer acc=29.89%, answerCE=1.666710, train-defined长度众数=29.95%, min-length acc=21.88% | 
+gru/canonical_cycle/valleys/initial/test/complement | answer acc=0.35%, answerCE=未定义/缺失, train-defined长度众数=39.82%, min-length acc=0.00% | 
+gru/canonical_cycle/valleys/initial/test/identity | answer acc=0.33%, answerCE=未定义/缺失, train-defined长度众数=39.31%, min-length acc=0.00% | 
+gru/canonical_cycle/valleys/initial/test/inverse | answer acc=0.24%, answerCE=未定义/缺失, train-defined长度众数=40.85%, min-length acc=0.00% | 
+gru/canonical_cycle/valleys/initial/validation/complement | answer acc=0.20%, answerCE=未定义/缺失, train-defined长度众数=40.64%, min-length acc=0.00% | 
+gru/canonical_cycle/valleys/initial/validation/identity | answer acc=0.33%, answerCE=未定义/缺失, train-defined长度众数=40.29%, min-length acc=0.00% | 
+gru/canonical_cycle/valleys/initial/validation/inverse | answer acc=0.24%, answerCE=未定义/缺失, train-defined长度众数=40.05%, min-length acc=0.00% | 
+gru/canonical_cycle/valleys/trained/test/complement | answer acc=41.25%, answerCE=1.333389, train-defined长度众数=39.82%, min-length acc=32.03% | 
+gru/canonical_cycle/valleys/trained/test/identity | answer acc=41.09%, answerCE=1.330597, train-defined长度众数=39.31%, min-length acc=31.25% | 
+gru/canonical_cycle/valleys/trained/test/inverse | answer acc=42.76%, answerCE=1.309124, train-defined长度众数=40.85%, min-length acc=30.47% | 
+gru/canonical_cycle/valleys/trained/validation/complement | answer acc=41.93%, answerCE=1.330115, train-defined长度众数=40.64%, min-length acc=30.86% | 
+gru/canonical_cycle/valleys/trained/validation/identity | answer acc=41.22%, answerCE=1.330237, train-defined长度众数=40.29%, min-length acc=30.47% | 
+gru/canonical_cycle/valleys/trained/validation/inverse | answer acc=42.00%, answerCE=1.317957, train-defined长度众数=40.05%, min-length acc=29.69% | 
+gru/one_line/descents/initial/test/complement | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=30.13%, min-length acc=0.00% | 
+gru/one_line/descents/initial/test/identity | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=30.44%, min-length acc=0.00% | 
+gru/one_line/descents/initial/test/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.53%, min-length acc=0.00% | 
+gru/one_line/descents/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.95%, min-length acc=0.00% | 
+gru/one_line/descents/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.54%, min-length acc=0.00% | 
+gru/one_line/descents/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.43%, min-length acc=0.00% | 
+gru/one_line/descents/trained/test/complement | answer acc=99.98%, answerCE=0.001398, train-defined长度众数=30.13%, min-length acc=99.80% | 
+gru/one_line/descents/trained/test/identity | answer acc=99.98%, answerCE=0.000972, train-defined长度众数=30.44%, min-length acc=99.80% | 
+gru/one_line/descents/trained/test/inverse | answer acc=99.99%, answerCE=0.000723, train-defined长度众数=29.53%, min-length acc=99.80% | 
+gru/one_line/descents/trained/validation/complement | answer acc=100.00%, answerCE=0.000300, train-defined长度众数=29.95%, min-length acc=100.00% | 
+gru/one_line/descents/trained/validation/identity | answer acc=99.98%, answerCE=0.000778, train-defined长度众数=29.54%, min-length acc=99.61% | 
+gru/one_line/descents/trained/validation/inverse | answer acc=99.96%, answerCE=0.001563, train-defined长度众数=30.43%, min-length acc=99.22% | 
+gru/one_line/peaks/initial/test/complement | answer acc=0.33%, answerCE=未定义/缺失, train-defined长度众数=39.31%, min-length acc=0.00% | 
+gru/one_line/peaks/initial/test/identity | answer acc=0.35%, answerCE=未定义/缺失, train-defined长度众数=39.82%, min-length acc=0.00% | 
+gru/one_line/peaks/initial/test/inverse | answer acc=0.24%, answerCE=未定义/缺失, train-defined长度众数=40.13%, min-length acc=0.00% | 
+gru/one_line/peaks/initial/validation/complement | answer acc=0.33%, answerCE=未定义/缺失, train-defined长度众数=40.29%, min-length acc=0.00% | 
+gru/one_line/peaks/initial/validation/identity | answer acc=0.20%, answerCE=未定义/缺失, train-defined长度众数=40.64%, min-length acc=0.00% | 
+gru/one_line/peaks/initial/validation/inverse | answer acc=0.30%, answerCE=未定义/缺失, train-defined长度众数=40.79%, min-length acc=0.00% | 
+gru/one_line/peaks/trained/test/complement | answer acc=100.00%, answerCE=0.000247, train-defined长度众数=39.31%, min-length acc=100.00% | 
+gru/one_line/peaks/trained/test/identity | answer acc=100.00%, answerCE=0.000246, train-defined长度众数=39.82%, min-length acc=100.00% | 
+gru/one_line/peaks/trained/test/inverse | answer acc=100.00%, answerCE=0.000240, train-defined长度众数=40.13%, min-length acc=100.00% | 
+gru/one_line/peaks/trained/validation/complement | answer acc=100.00%, answerCE=0.000256, train-defined长度众数=40.29%, min-length acc=100.00% | 
+gru/one_line/peaks/trained/validation/identity | answer acc=100.00%, answerCE=0.000246, train-defined长度众数=40.64%, min-length acc=100.00% | 
+gru/one_line/peaks/trained/validation/inverse | answer acc=100.00%, answerCE=0.000242, train-defined长度众数=40.79%, min-length acc=100.00% | 
+gru/one_line/recoils/initial/test/complement | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=29.70%, min-length acc=0.00% | 
+gru/one_line/recoils/initial/test/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.70%, min-length acc=0.00% | 
+gru/one_line/recoils/initial/test/inverse | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=30.19%, min-length acc=0.00% | 
+gru/one_line/recoils/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.59%, min-length acc=0.00% | 
+gru/one_line/recoils/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.49%, min-length acc=0.00% | 
+gru/one_line/recoils/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.95%, min-length acc=0.00% | 
+gru/one_line/recoils/trained/test/complement | answer acc=38.60%, answerCE=1.416801, train-defined长度众数=29.70%, min-length acc=25.00% | 
+gru/one_line/recoils/trained/test/identity | answer acc=39.47%, answerCE=1.405947, train-defined长度众数=29.70%, min-length acc=27.34% | 
+gru/one_line/recoils/trained/test/inverse | answer acc=39.56%, answerCE=1.400344, train-defined长度众数=30.19%, min-length acc=26.76% | 
+gru/one_line/recoils/trained/validation/complement | answer acc=39.81%, answerCE=1.408980, train-defined长度众数=29.59%, min-length acc=23.83% | 
+gru/one_line/recoils/trained/validation/identity | answer acc=38.80%, answerCE=1.418291, train-defined长度众数=30.49%, min-length acc=23.83% | 
+gru/one_line/recoils/trained/validation/inverse | answer acc=38.37%, answerCE=1.400845, train-defined长度众数=29.95%, min-length acc=23.05% | 
+gru/one_line/valleys/initial/test/complement | answer acc=0.35%, answerCE=未定义/缺失, train-defined长度众数=39.82%, min-length acc=0.00% | 
+gru/one_line/valleys/initial/test/identity | answer acc=0.33%, answerCE=未定义/缺失, train-defined长度众数=39.31%, min-length acc=0.00% | 
+gru/one_line/valleys/initial/test/inverse | answer acc=0.24%, answerCE=未定义/缺失, train-defined长度众数=40.85%, min-length acc=0.00% | 
+gru/one_line/valleys/initial/validation/complement | answer acc=0.20%, answerCE=未定义/缺失, train-defined长度众数=40.64%, min-length acc=0.00% | 
+gru/one_line/valleys/initial/validation/identity | answer acc=0.33%, answerCE=未定义/缺失, train-defined长度众数=40.29%, min-length acc=0.00% | 
+gru/one_line/valleys/initial/validation/inverse | answer acc=0.24%, answerCE=未定义/缺失, train-defined长度众数=40.05%, min-length acc=0.00% | 
+gru/one_line/valleys/trained/test/complement | answer acc=100.00%, answerCE=0.000397, train-defined长度众数=39.82%, min-length acc=100.00% | 
+gru/one_line/valleys/trained/test/identity | answer acc=99.99%, answerCE=0.001211, train-defined长度众数=39.31%, min-length acc=99.80% | 
+gru/one_line/valleys/trained/test/inverse | answer acc=99.98%, answerCE=0.001345, train-defined长度众数=40.85%, min-length acc=99.61% | 
+gru/one_line/valleys/trained/validation/complement | answer acc=99.98%, answerCE=0.001906, train-defined长度众数=40.64%, min-length acc=99.61% | 
+gru/one_line/valleys/trained/validation/identity | answer acc=99.96%, answerCE=0.001894, train-defined长度众数=40.29%, min-length acc=99.22% | 
+gru/one_line/valleys/trained/validation/inverse | answer acc=99.96%, answerCE=0.002133, train-defined长度众数=40.05%, min-length acc=99.22% | 
+transformer/canonical_cycle/descents/initial/test/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.13%, min-length acc=0.00% | 
+transformer/canonical_cycle/descents/initial/test/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.44%, min-length acc=0.00% | 
+transformer/canonical_cycle/descents/initial/test/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.53%, min-length acc=0.00% | 
+transformer/canonical_cycle/descents/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.95%, min-length acc=0.00% | 
+transformer/canonical_cycle/descents/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.54%, min-length acc=0.00% | 
+transformer/canonical_cycle/descents/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.43%, min-length acc=0.00% | 
+transformer/canonical_cycle/descents/trained/test/complement | answer acc=32.06%, answerCE=1.632143, train-defined长度众数=30.13%, min-length acc=24.61% | 
+transformer/canonical_cycle/descents/trained/test/identity | answer acc=31.88%, answerCE=1.634786, train-defined长度众数=30.44%, min-length acc=24.02% | 
+transformer/canonical_cycle/descents/trained/test/inverse | answer acc=31.58%, answerCE=1.638294, train-defined长度众数=29.53%, min-length acc=24.02% | 
+transformer/canonical_cycle/descents/trained/validation/complement | answer acc=31.70%, answerCE=1.632521, train-defined长度众数=29.95%, min-length acc=21.48% | 
+transformer/canonical_cycle/descents/trained/validation/identity | answer acc=31.05%, answerCE=1.629989, train-defined长度众数=29.54%, min-length acc=23.05% | 
+transformer/canonical_cycle/descents/trained/validation/inverse | answer acc=30.30%, answerCE=1.642244, train-defined长度众数=30.43%, min-length acc=23.83% | 
+transformer/canonical_cycle/peaks/initial/test/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=39.31%, min-length acc=0.00% | 
+transformer/canonical_cycle/peaks/initial/test/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=39.82%, min-length acc=0.00% | 
+transformer/canonical_cycle/peaks/initial/test/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=40.13%, min-length acc=0.00% | 
+transformer/canonical_cycle/peaks/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=40.29%, min-length acc=0.00% | 
+transformer/canonical_cycle/peaks/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=40.64%, min-length acc=0.00% | 
+transformer/canonical_cycle/peaks/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=40.79%, min-length acc=0.00% | 
+transformer/canonical_cycle/peaks/trained/test/complement | answer acc=40.18%, answerCE=1.349921, train-defined长度众数=39.31%, min-length acc=31.05% | 
+transformer/canonical_cycle/peaks/trained/test/identity | answer acc=40.09%, answerCE=1.354302, train-defined长度众数=39.82%, min-length acc=27.93% | 
+transformer/canonical_cycle/peaks/trained/test/inverse | answer acc=40.86%, answerCE=1.336724, train-defined长度众数=40.13%, min-length acc=29.69% | 
+transformer/canonical_cycle/peaks/trained/validation/complement | answer acc=41.42%, answerCE=1.347435, train-defined长度众数=40.29%, min-length acc=31.64% | 
+transformer/canonical_cycle/peaks/trained/validation/identity | answer acc=40.83%, answerCE=1.353330, train-defined长度众数=40.64%, min-length acc=32.03% | 
+transformer/canonical_cycle/peaks/trained/validation/inverse | answer acc=40.70%, answerCE=1.348072, train-defined长度众数=40.79%, min-length acc=30.08% | 
+transformer/canonical_cycle/recoils/initial/test/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.70%, min-length acc=0.00% | 
+transformer/canonical_cycle/recoils/initial/test/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.70%, min-length acc=0.00% | 
+transformer/canonical_cycle/recoils/initial/test/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.19%, min-length acc=0.00% | 
+transformer/canonical_cycle/recoils/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.59%, min-length acc=0.00% | 
+transformer/canonical_cycle/recoils/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.49%, min-length acc=0.00% | 
+transformer/canonical_cycle/recoils/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.95%, min-length acc=0.00% | 
+transformer/canonical_cycle/recoils/trained/test/complement | answer acc=30.90%, answerCE=1.672787, train-defined长度众数=29.70%, min-length acc=23.24% | 
+transformer/canonical_cycle/recoils/trained/test/identity | answer acc=30.65%, answerCE=1.668037, train-defined长度众数=29.70%, min-length acc=22.27% | 
+transformer/canonical_cycle/recoils/trained/test/inverse | answer acc=31.38%, answerCE=1.664590, train-defined长度众数=30.19%, min-length acc=23.44% | 
+transformer/canonical_cycle/recoils/trained/validation/complement | answer acc=30.60%, answerCE=1.661942, train-defined长度众数=29.59%, min-length acc=21.09% | 
+transformer/canonical_cycle/recoils/trained/validation/identity | answer acc=31.25%, answerCE=1.665563, train-defined长度众数=30.49%, min-length acc=21.48% | 
+transformer/canonical_cycle/recoils/trained/validation/inverse | answer acc=30.17%, answerCE=1.662240, train-defined长度众数=29.95%, min-length acc=23.05% | 
+transformer/canonical_cycle/valleys/initial/test/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=39.82%, min-length acc=0.00% | 
+transformer/canonical_cycle/valleys/initial/test/identity | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=39.31%, min-length acc=0.00% | 
+transformer/canonical_cycle/valleys/initial/test/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=40.85%, min-length acc=0.00% | 
+transformer/canonical_cycle/valleys/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=40.64%, min-length acc=0.00% | 
+transformer/canonical_cycle/valleys/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=40.29%, min-length acc=0.00% | 
+transformer/canonical_cycle/valleys/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=40.05%, min-length acc=0.00% | 
+transformer/canonical_cycle/valleys/trained/test/complement | answer acc=40.11%, answerCE=1.359450, train-defined长度众数=39.82%, min-length acc=31.64% | 
+transformer/canonical_cycle/valleys/trained/test/identity | answer acc=39.79%, answerCE=1.358802, train-defined长度众数=39.31%, min-length acc=31.25% | 
+transformer/canonical_cycle/valleys/trained/test/inverse | answer acc=41.23%, answerCE=1.340396, train-defined长度众数=40.85%, min-length acc=29.30% | 
+transformer/canonical_cycle/valleys/trained/validation/complement | answer acc=41.29%, answerCE=1.353047, train-defined长度众数=40.64%, min-length acc=32.81% | 
+transformer/canonical_cycle/valleys/trained/validation/identity | answer acc=40.49%, answerCE=1.355174, train-defined长度众数=40.29%, min-length acc=26.95% | 
+transformer/canonical_cycle/valleys/trained/validation/inverse | answer acc=40.79%, answerCE=1.350837, train-defined长度众数=40.05%, min-length acc=30.08% | 
+transformer/one_line/descents/initial/test/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.13%, min-length acc=0.00% | 
+transformer/one_line/descents/initial/test/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.44%, min-length acc=0.00% | 
+transformer/one_line/descents/initial/test/inverse | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=29.53%, min-length acc=0.00% | 
+transformer/one_line/descents/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.95%, min-length acc=0.00% | 
+transformer/one_line/descents/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.54%, min-length acc=0.00% | 
+transformer/one_line/descents/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.43%, min-length acc=0.00% | 
+transformer/one_line/descents/trained/test/complement | answer acc=98.96%, answerCE=0.028404, train-defined长度众数=30.13%, min-length acc=85.74% | 
+transformer/one_line/descents/trained/test/identity | answer acc=99.21%, answerCE=0.025796, train-defined长度众数=30.44%, min-length acc=90.82% | 
+transformer/one_line/descents/trained/test/inverse | answer acc=99.03%, answerCE=0.027948, train-defined长度众数=29.53%, min-length acc=85.55% | 
+transformer/one_line/descents/trained/validation/complement | answer acc=99.09%, answerCE=0.027768, train-defined长度众数=29.95%, min-length acc=85.16% | 
+transformer/one_line/descents/trained/validation/identity | answer acc=99.05%, answerCE=0.028871, train-defined长度众数=29.54%, min-length acc=87.11% | 
+transformer/one_line/descents/trained/validation/inverse | answer acc=99.11%, answerCE=0.026832, train-defined长度众数=30.43%, min-length acc=87.11% | 
+transformer/one_line/peaks/initial/test/complement | answer acc=0.30%, answerCE=未定义/缺失, train-defined长度众数=39.31%, min-length acc=0.00% | 
+transformer/one_line/peaks/initial/test/identity | answer acc=0.24%, answerCE=未定义/缺失, train-defined长度众数=39.82%, min-length acc=0.00% | 
+transformer/one_line/peaks/initial/test/inverse | answer acc=0.23%, answerCE=未定义/缺失, train-defined长度众数=40.13%, min-length acc=0.00% | 
+transformer/one_line/peaks/initial/validation/complement | answer acc=0.28%, answerCE=未定义/缺失, train-defined长度众数=40.29%, min-length acc=0.00% | 
+transformer/one_line/peaks/initial/validation/identity | answer acc=0.24%, answerCE=未定义/缺失, train-defined长度众数=40.64%, min-length acc=0.00% | 
+transformer/one_line/peaks/initial/validation/inverse | answer acc=0.15%, answerCE=未定义/缺失, train-defined长度众数=40.79%, min-length acc=0.00% | 
+transformer/one_line/peaks/trained/test/complement | answer acc=85.83%, answerCE=0.387656, train-defined长度众数=39.31%, min-length acc=55.47% | 
+transformer/one_line/peaks/trained/test/identity | answer acc=85.44%, answerCE=0.390274, train-defined长度众数=39.82%, min-length acc=55.66% | 
+transformer/one_line/peaks/trained/test/inverse | answer acc=85.47%, answerCE=0.393332, train-defined长度众数=40.13%, min-length acc=55.86% | 
+transformer/one_line/peaks/trained/validation/complement | answer acc=85.77%, answerCE=0.378769, train-defined长度众数=40.29%, min-length acc=55.47% | 
+transformer/one_line/peaks/trained/validation/identity | answer acc=85.44%, answerCE=0.391382, train-defined长度众数=40.64%, min-length acc=50.78% | 
+transformer/one_line/peaks/trained/validation/inverse | answer acc=85.92%, answerCE=0.386973, train-defined长度众数=40.79%, min-length acc=55.86% | 
+transformer/one_line/recoils/initial/test/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.70%, min-length acc=0.00% | 
+transformer/one_line/recoils/initial/test/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.70%, min-length acc=0.00% | 
+transformer/one_line/recoils/initial/test/inverse | answer acc=0.01%, answerCE=未定义/缺失, train-defined长度众数=30.19%, min-length acc=0.00% | 
+transformer/one_line/recoils/initial/validation/complement | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.59%, min-length acc=0.00% | 
+transformer/one_line/recoils/initial/validation/identity | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=30.49%, min-length acc=0.00% | 
+transformer/one_line/recoils/initial/validation/inverse | answer acc=0.00%, answerCE=未定义/缺失, train-defined长度众数=29.95%, min-length acc=0.00% | 
+transformer/one_line/recoils/trained/test/complement | answer acc=72.02%, answerCE=0.740676, train-defined长度众数=29.70%, min-length acc=33.79% | 
+transformer/one_line/recoils/trained/test/identity | answer acc=72.75%, answerCE=0.731775, train-defined长度众数=29.70%, min-length acc=40.43% | 
+transformer/one_line/recoils/trained/test/inverse | answer acc=72.89%, answerCE=0.732217, train-defined长度众数=30.19%, min-length acc=39.45% | 
+transformer/one_line/recoils/trained/validation/complement | answer acc=73.18%, answerCE=0.732279, train-defined长度众数=29.59%, min-length acc=34.38% | 
+transformer/one_line/recoils/trained/validation/identity | answer acc=72.28%, answerCE=0.740551, train-defined长度众数=30.49%, min-length acc=36.72% | 
+transformer/one_line/recoils/trained/validation/inverse | answer acc=73.51%, answerCE=0.724456, train-defined长度众数=29.95%, min-length acc=34.77% | 
+transformer/one_line/valleys/initial/test/complement | answer acc=0.60%, answerCE=未定义/缺失, train-defined长度众数=39.82%, min-length acc=0.00% | 
+transformer/one_line/valleys/initial/test/identity | answer acc=0.48%, answerCE=未定义/缺失, train-defined长度众数=39.31%, min-length acc=0.00% | 
+transformer/one_line/valleys/initial/test/inverse | answer acc=0.49%, answerCE=未定义/缺失, train-defined长度众数=40.85%, min-length acc=0.00% | 
+transformer/one_line/valleys/initial/validation/complement | answer acc=0.52%, answerCE=未定义/缺失, train-defined长度众数=40.64%, min-length acc=0.00% | 
+transformer/one_line/valleys/initial/validation/identity | answer acc=0.52%, answerCE=未定义/缺失, train-defined长度众数=40.29%, min-length acc=0.00% | 
+transformer/one_line/valleys/initial/validation/inverse | answer acc=0.35%, answerCE=未定义/缺失, train-defined长度众数=40.05%, min-length acc=0.00% | 
+transformer/one_line/valleys/trained/test/complement | answer acc=91.80%, answerCE=0.247200, train-defined长度众数=39.82%, min-length acc=67.58% | 
+transformer/one_line/valleys/trained/test/identity | answer acc=91.82%, answerCE=0.246759, train-defined长度众数=39.31%, min-length acc=65.43% | 
+transformer/one_line/valleys/trained/test/inverse | answer acc=91.65%, answerCE=0.247528, train-defined长度众数=40.85%, min-length acc=65.62% | 
+transformer/one_line/valleys/trained/validation/complement | answer acc=91.28%, answerCE=0.254263, train-defined长度众数=40.64%, min-length acc=60.94% | 
+transformer/one_line/valleys/trained/validation/identity | answer acc=91.46%, answerCE=0.249526, train-defined长度众数=40.29%, min-length acc=67.97% | 
+transformer/one_line/valleys/trained/validation/inverse | answer acc=92.47%, answerCE=0.239596, train-defined长度众数=40.05%, min-length acc=69.14% | 
+
+原始逐长度结果、全部差值与恒等配对见per_length_results.csv/contrast_summary.csv；所有NaN及原因保留。
+同任务跨配置直接相似度单列cross_arch_same_task.csv，回答模型本身相似程度，不与关系选择性混成同一效应。
+计算预算及成本来源：
+{
+  "status": "completed_actual_stage_costs_with_original_estimate",
+  "basis": "Actual fixed-checkpoint128-batch forwards at n10/20/30 and real cached CKA timings at same lengths",
+  "gpu_forward_estimated_seconds": 51.47689432113839,
+  "CPU_metric_estimated_seconds": 51.54111361771356,
+  "physical_feature_splits": 40,
+  "logical_splits": 64,
+  "new_forward_sequences": 967680,
+  "new_feature_estimated_bytes": 4954521600,
+  "estimates_exclude_CP_loading_hashing_IO_report": true,
+  "expected_end_to_end_analysis_wall_minutes": "5–15 including IO/audits; extrapolation, not measured GPU utilization",
+  "initial_failed_validation_record": "extraction_review/engineering_repair.json",
+  "frozen_protocol_sha256": "9c8b6dfac09bf809410f87b2648cf9c8a12a5a17b77a17dae9de5a6bf11415ea",
+  "new_training": false,
+  "original_estimate_path": "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/cost_estimate_before_execution.json",
+  "original_estimate_sha256": "f46094371a3e1b22432447b2f7bf54809e71d702e2c1310ded07cffdcd19207c",
+  "actual_inventory_wall_seconds": 8.35076809801103,
+  "actual_setup_wall_seconds": 16.03905250999378,
+  "actual_gpu_extraction_pipeline_wall_seconds": 160.1566785019968,
+  "actual_forward_and_store_seconds_sum": 129.52611333805544,
+  "actual_cpu_metric_pipeline_wall_seconds": 649.6424138310103,
+  "actual_extraction_readonly_audit_wall_seconds": 46.00232994100952,
+  "actual_validation_wall_seconds": 26.174405435012886,
+  "actual_new_cache_bytes": 4962926592,
+  "timing_interpretation": "GPU pipeline wall includes encoding, transfer and IO; CPU pipeline wall includes hashes, cache IO, preprocessing and metrics. Neither is device-kernel time or CPU-core hours. Parallel stage times must not be added as an elapsed-turn duration.",
+  "cuda_kernel_seconds_measured": false,
+  "real_costs_exclude_agent_reasoning_and_report_generation": true
+}
+完成可行比较、独立核对、报告后停止。缺失项明确报告，不自动扩展训练或下一系统。

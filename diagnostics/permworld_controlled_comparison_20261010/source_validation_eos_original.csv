@@ -1,0 +1,17 @@
+run_id,new_original_validation_answer_accuracy,old_validation_answer_accuracy,signed_accuracy_difference_from_teacher_forced_old_curve,old_curve_accuracy_exactly_reproduced,old_validation_teacher_forced_eos_accuracy,old_validation_samples,eos_not_newly_evaluated,predictions_exact
+archdev001_transformer_one_line_descents,0.9905133928571429,0.9905133928571429,0.0,True,1.0,5376,True,True
+archdev001_transformer_one_line_recoils,0.7228422619047619,0.7228422619047619,0.0,True,1.0,5376,True,True
+archdev001_transformer_one_line_peaks,0.8543526785714286,0.8543526785714286,0.0,True,1.0,5376,True,True
+archdev001_transformer_one_line_valleys,0.9146205357142857,0.9146205357142857,0.0,True,1.0,5376,True,True
+archdev001_transformer_canonical_cycle_descents,0.31045386904761907,0.31045386904761907,0.0,True,1.0,5376,True,True
+archdev001_transformer_canonical_cycle_recoils,0.3125,0.3125,0.0,True,1.0,5376,True,True
+archdev001_transformer_canonical_cycle_peaks,0.40829613095238093,0.40829613095238093,0.0,True,1.0,5376,True,True
+archdev001_transformer_canonical_cycle_valleys,0.4049479166666667,0.4049479166666667,0.0,True,1.0,5376,True,True
+archdev001_gru_one_line_descents,0.9998139880952381,0.9998139880952381,0.0,True,1.0,5376,True,True
+archdev001_gru_one_line_recoils,0.3880208333333333,0.3880208333333333,0.0,True,1.0,5376,True,True
+archdev001_gru_one_line_peaks,1.0,1.0,0.0,True,1.0,5376,True,True
+archdev001_gru_one_line_valleys,0.9996279761904762,0.9996279761904762,0.0,True,1.0,5376,True,True
+archdev001_gru_canonical_cycle_descents,0.31436011904761907,0.31436011904761907,0.0,True,1.0,5376,True,True
+archdev001_gru_canonical_cycle_recoils,0.3005952380952381,0.3005952380952381,0.0,True,1.0,5376,True,True
+archdev001_gru_canonical_cycle_peaks,0.41685267857142855,0.41685267857142855,0.0,True,1.0,5376,True,True
+archdev001_gru_canonical_cycle_valleys,0.41220238095238093,0.41220238095238093,0.0,True,1.0,5376,True,True

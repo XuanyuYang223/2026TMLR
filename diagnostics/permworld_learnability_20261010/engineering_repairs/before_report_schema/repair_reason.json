@@ -1,0 +1,6 @@
+{
+  "reason": "Real data generation saves train identity labels with action axis=1, validation identity/complement/inverse with axis=3. Reporter asserted3 for both; synthetic fixture repeated mistaken train schema. Fix only reporting schema and CPU synthetic fixture; no scientific protocol, data, models, weights, or training changes.",
+  "before_reporter_sha256": "657c773b155fd3a303d7ae1dbee5c6522b19de23c19ca9b9802282f6776fc22b",
+  "real_learning_results_observed": false,
+  "gpu_source_training_started": false
+}

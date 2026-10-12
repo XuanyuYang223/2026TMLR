@@ -1,0 +1,35 @@
+{
+  "status": "implemented_not_rerun",
+  "reason": "Previous independent gate simultaneously changed batch128 to8 and full prompt to prefix-only. It mixed same-path extraction validation with numerical execution-shape sensitivity.",
+  "observed_failure": {
+    "source_key": "archdev001_transformer_one_line_descents|trained|test",
+    "length": 10,
+    "action": 0,
+    "manual_prefix_raw_layer_max_abs": 4.100799560546875e-05,
+    "old_final_norm_cache_max_abs": 0.0
+  },
+  "old_script_path": "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers_before_same_shape_validation_fix.txt",
+  "old_script_sha256": "0726bf14eb704f6a68ec670f2be107288a54de14a4abe7257f41920beb1e8abd",
+  "new_script_path": "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers.py",
+  "new_script_sha256": "4693a3dd79a0e96d792dca64c94de5a9458cbbc41847af6e12b1a58f82ed58c4",
+  "failed_log_original_path": "/mnt/yangx-projects-f/20261010/permworld_controlled_comparison/forward_benchmark.log",
+  "failed_log_retained_path": "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/extraction_review/benchmark_failed_before_shape_fix.log",
+  "failed_log_sha256": "43fcf4f294522a2a82b0c034368f7155a48712df6fdb0020308618aa52e84b5b",
+  "protocol_sha256_unchanged": "9c8b6dfac09bf809410f87b2648cf9c8a12a5a17b77a17dae9de5a6bf11415ea",
+  "changes": {
+    "main_activation_extraction": "unchanged full original prompt, batch128, FP32, same end position",
+    "primary_final_norm_values": "unchanged old per-logical-key cached values",
+    "same_shape_gate": "independent explicit full128 prompt path versus hook first8 all5 layers, tolerance2e-5",
+    "prefix_only_final_norm_gate": "prefix-only8 versus full128 final_norm, tolerance2e-5",
+    "prefix_only_raw_layers": "reported max and per-layer discrepancy; not a primary extraction gate",
+    "old_final_norm_gate": "unchanged first8 compare against original cache, tolerance2e-5"
+  },
+  "no_tolerance_increase": true,
+  "no_main_model_data_metrics_change": true,
+  "root_cause_limit": "This correction does not separately identify batch-size versus sequence-length numerical contributions. No additional isolated-shape experiment launched.",
+  "frozen_code_update_owned_by": "root; compatibility log and new source digest pending",
+  "training_performed": false,
+  "new_GPU_forward_performed_by_this_repair": false,
+  "CPU_AST_validation": "passed",
+  "required_next_action": "Root updates freeze compatibility record then performs one authorized benchmark rerun; no automatic rerun by this agent."
+}

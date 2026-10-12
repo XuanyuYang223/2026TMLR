@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "reviewed_utc": "2026-10-11T14:42:10.603751+00:00",
+  "method": "Root viewed all three generated PNGs with view_image and read the actual Chinese report and bilingual paragraph; HTML links checked as file targets, no browser rendering claim.",
+  "images": {
+    "perm_all_candidate_scores.png": "1e01a44652e60a8c0c4a616d04357225c965dfbb7bc300c3b86e783004b3f2be",
+    "perm_designated_contrasts.png": "d60ed8f3b521ab8c5707261aeb6cd1e4d79f5f661874e7d382405fb3666407ba",
+    "graph_all_candidate_scores.png": "5d34b5e7783686cf49954ddca145626a6da8f7d60c96b67c925ad1effe00d396"
+  },
+  "checks": [
+    "Full eight-relation/four-condition/two-control Perm grid retained; all15 allowed right tasks and excluded-self cells visible.",
+    "Designated stars and fixed transform captions correct.",
+    "Raw and answer views separated; final21-length weighting explicit.",
+    "Graph all12 candidates and three control versions displayed; density labelled sensitivity.",
+    "Numerical contrast labels agree with saved trained category differences.",
+    "Legends, task labels and axes visible; no task/layer/result-dependent visualization subset.",
+    "Reader text preserves oldBt vs new fixed-transform contrast, bounded protection and exploratory evidence scope."
+  ],
+  "new_forward": 0,
+  "new_training": 0,
+  "old_writes": 0
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "updater_sha256": "cb4a249cf00df608dcfabc064f1e93ebb28d8b874d197d73f770bd448559ac79",
+  "checks": {
+    "new_root_old_alias_remains_dependency2": true,
+    "copied_actual_step0_remains_dependency2": true,
+    "old_import_dependency2": true,
+    "protection_alone_does_not_turn_F17_into_current_dependency": true,
+    "new_weight_current1_immutable": true,
+    "unbound_new_log_observation_never_mutable_exemption": true,
+    "closed_small_log_SHA_is_supplementary_only": true,
+    "postaudit_file_size_change_refuses_without_large_rehash": true,
+    "original_raw_prefix_and_duplicate_rows_preserved": true,
+    "independent_project3_protection_preserved": true,
+    "existing_role_entries_not_duplicated": true,
+    "incomplete_gate_has_no_directory_walk": true,
+    "complete_fourteen_phases_and_final_audit_accept_gate": true,
+    "missing_readout_phase_refuses_gate": true,
+    "unpassed_final_audit_refuses_gate": true,
+    "no_deletions_or_moves": true
+  },
+  "real_archive_modified": false,
+  "real_cleanup_modified": false,
+  "real_models_or_arrays_opened": false,
+  "large_artifact_hash_scans": 0,
+  "GPU_started": false,
+  "training": false
+}

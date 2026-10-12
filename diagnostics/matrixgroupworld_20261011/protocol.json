@@ -1,0 +1,457 @@
+{
+  "protocol_version": "matrixgroupworld-third-domain-bounded/v1-frozen",
+  "exploratory": true,
+  "worlds": 2,
+  "model": {
+    "d_model": 256,
+    "layers": 4,
+    "heads": 8,
+    "mlp_ratio": 4,
+    "dropout": 0.1,
+    "tie_embeddings": true,
+    "max_seq_len": 128,
+    "vocab_size": 188
+  },
+  "lengths": [
+    6,
+    8,
+    10
+  ],
+  "length_weights": {
+    "6": 0.3333333333333333,
+    "8": 0.3333333333333333,
+    "10": 0.3333333333333333
+  },
+  "tasks": [
+    "F1",
+    "F2",
+    "F3",
+    "F4"
+  ],
+  "actions": [
+    "identity",
+    "transpose",
+    "P_transpose",
+    "Qt_transpose",
+    "right_Q",
+    "right_Qt",
+    "left_Qt",
+    "left_Q"
+  ],
+  "units": [
+    {
+      "unit": "unit001",
+      "data_seed": 98100011,
+      "batch_seed": 99100011,
+      "model_seed": 97100011
+    },
+    {
+      "unit": "unit002",
+      "data_seed": 98100012,
+      "batch_seed": 99100012,
+      "model_seed": 97100012
+    }
+  ],
+  "training": {
+    "updates": 20000,
+    "micro_batch": 16,
+    "accumulation": 4,
+    "effective_batch": 64,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "warmup_updates": 1000,
+    "minimum_lr_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "precision": "FP32 parameters, CUDA BF16 autocast, TF32 disabled; FP32 CPU fallback",
+    "attention": "validated equivalent SDPA",
+    "loss": "Answer token plus EOS, shifted causal CE, other targets ignored; same two supervised tokens/example in both encodings.",
+    "length_schedule": "Uniform balanced random permutation blocks of n6/8/10, fixed20k; counts differ by<=1.",
+    "batch_schedule": "Saved64 distinct anchors at scheduled n, same four tasks per unit.",
+    "validation_every": 1000,
+    "checkpoint_every": 1000,
+    "endpoint": "Fixed final20k update checkpoint; no best-checkpoint or early-stopping selection.",
+    "execution": "Single CUDA device serial8 jobs; strict absolute monotonic deadline; interrupted endpoints are not20k.",
+    "batch_size": 64
+  },
+  "data": {
+    "per_n": {
+      "train": 4096,
+      "validation": 256,
+      "analysis": 512
+    },
+    "algorithm": "Uniform iid GF2 entries, exact full-rank rejection, canonical72-orbit rejection; not uniform over accepted canonical orbits.",
+    "analysis_labels": "Separate file generated/sealed only after final protocol freeze.",
+    "training_inputs": "Identity only; geometry transform views excluded from optimization.",
+    "train_per_length": 4096,
+    "validation_per_length": 256,
+    "analysis_per_length": 512
+  },
+  "engineering": {
+    "overfit_samples": 32,
+    "overfit_n": 6,
+    "overfit_updates": 500,
+    "overfit_tasks": 4,
+    "overfit_learning_rate": 0.0003,
+    "overfit_threshold_full_vocabulary_answer_accuracy": 0.95,
+    "resume_from": 16,
+    "resume_until": 32,
+    "parameter_tolerance": 1e-05,
+    "optimizer_tolerance": 1e-05,
+    "logit_tolerance": 0.0001,
+    "no_geometry_gate": true,
+    "seed": 98000031,
+    "samples": 32,
+    "length": 6
+  },
+  "bounds": {
+    "formal_models": 8,
+    "formal_updates_per_model": 20000,
+    "gpu_stage_wall_seconds": 14400,
+    "cpu_external_wall_seconds": 7200,
+    "new_apparent_bytes": 21474836480
+  },
+  "relations": [
+    {
+      "relation": "R1",
+      "left": "F1",
+      "right": "F2",
+      "correct": "transpose",
+      "wrong": "P_transpose",
+      "primary": true,
+      "correct_formula": "F2(A.T)=F1(A)",
+      "wrong_formula": "F2(P@A.T)=weight(column2(A))"
+    },
+    {
+      "relation": "R2",
+      "left": "F3",
+      "right": "F4",
+      "correct": "transpose",
+      "wrong": "Qt_transpose",
+      "primary": false,
+      "correct_formula": "F4(A.T)=F3(A)",
+      "wrong_formula": "F4(Q.T@A.T)=F1(A)"
+    },
+    {
+      "relation": "R3",
+      "left": "F1",
+      "right": "F3",
+      "correct": "right_Q",
+      "wrong": "right_Qt",
+      "primary": true,
+      "correct_formula": "F3(A@Q)=F1(A)",
+      "wrong_formula": "F3(A@Q.T)=weight(column2(A))"
+    },
+    {
+      "relation": "R4",
+      "left": "F2",
+      "right": "F4",
+      "correct": "left_Qt",
+      "wrong": "left_Q",
+      "primary": false,
+      "correct_formula": "F4(Q.T@A)=F2(A)",
+      "wrong_formula": "F4(Q@A)=weight(row2(A))"
+    }
+  ],
+  "training_manifest": [
+    {
+      "run_id": "unit001_F1",
+      "unit": "unit001",
+      "task": "F1",
+      "updates": 20000,
+      "architecture": "transformer",
+      "encoding": "row_major_binary_full",
+      "model_seed": 97100011,
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/step0.pt",
+      "initial_checkpoint_sha256": "ab7ac159c74b7851f1219b5dd68353449db99b613dc3afebc358b85b5c09f66a",
+      "initial_parameter_sha256": "d88f3b16ff72c86e2a64754517e5b8f86d80537fcf5456639828f1d6f735a78b",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/starting_rng.pt",
+      "starting_rng_sha256": "7dbce517144465a059f9253cf3095ae2ff211b98ce66e1d170066176f50c0cf2",
+      "starting_rng_hash": "2c6b7f6ce12d1e15c063f3e089b396516e812126bae93eda4b37cb816388254b",
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data.npz",
+      "data_sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+      "batch_schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/schedule.npz",
+      "batch_schedule_sha256": "70c2fc314663378046cff2bf15fab3aae9f25a0b0289cf257016b10df1fbef37",
+      "checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F1/checkpoint.pt"
+    },
+    {
+      "run_id": "unit001_F2",
+      "unit": "unit001",
+      "task": "F2",
+      "updates": 20000,
+      "architecture": "transformer",
+      "encoding": "row_major_binary_full",
+      "model_seed": 97100011,
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/step0.pt",
+      "initial_checkpoint_sha256": "ab7ac159c74b7851f1219b5dd68353449db99b613dc3afebc358b85b5c09f66a",
+      "initial_parameter_sha256": "d88f3b16ff72c86e2a64754517e5b8f86d80537fcf5456639828f1d6f735a78b",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/starting_rng.pt",
+      "starting_rng_sha256": "7dbce517144465a059f9253cf3095ae2ff211b98ce66e1d170066176f50c0cf2",
+      "starting_rng_hash": "2c6b7f6ce12d1e15c063f3e089b396516e812126bae93eda4b37cb816388254b",
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data.npz",
+      "data_sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+      "batch_schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/schedule.npz",
+      "batch_schedule_sha256": "70c2fc314663378046cff2bf15fab3aae9f25a0b0289cf257016b10df1fbef37",
+      "checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F2/checkpoint.pt"
+    },
+    {
+      "run_id": "unit001_F3",
+      "unit": "unit001",
+      "task": "F3",
+      "updates": 20000,
+      "architecture": "transformer",
+      "encoding": "row_major_binary_full",
+      "model_seed": 97100011,
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/step0.pt",
+      "initial_checkpoint_sha256": "ab7ac159c74b7851f1219b5dd68353449db99b613dc3afebc358b85b5c09f66a",
+      "initial_parameter_sha256": "d88f3b16ff72c86e2a64754517e5b8f86d80537fcf5456639828f1d6f735a78b",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/starting_rng.pt",
+      "starting_rng_sha256": "7dbce517144465a059f9253cf3095ae2ff211b98ce66e1d170066176f50c0cf2",
+      "starting_rng_hash": "2c6b7f6ce12d1e15c063f3e089b396516e812126bae93eda4b37cb816388254b",
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data.npz",
+      "data_sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+      "batch_schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/schedule.npz",
+      "batch_schedule_sha256": "70c2fc314663378046cff2bf15fab3aae9f25a0b0289cf257016b10df1fbef37",
+      "checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F3/checkpoint.pt"
+    },
+    {
+      "run_id": "unit001_F4",
+      "unit": "unit001",
+      "task": "F4",
+      "updates": 20000,
+      "architecture": "transformer",
+      "encoding": "row_major_binary_full",
+      "model_seed": 97100011,
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/step0.pt",
+      "initial_checkpoint_sha256": "ab7ac159c74b7851f1219b5dd68353449db99b613dc3afebc358b85b5c09f66a",
+      "initial_parameter_sha256": "d88f3b16ff72c86e2a64754517e5b8f86d80537fcf5456639828f1d6f735a78b",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/starting_rng.pt",
+      "starting_rng_sha256": "7dbce517144465a059f9253cf3095ae2ff211b98ce66e1d170066176f50c0cf2",
+      "starting_rng_hash": "2c6b7f6ce12d1e15c063f3e089b396516e812126bae93eda4b37cb816388254b",
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data.npz",
+      "data_sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+      "batch_schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/schedule.npz",
+      "batch_schedule_sha256": "70c2fc314663378046cff2bf15fab3aae9f25a0b0289cf257016b10df1fbef37",
+      "checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F4/checkpoint.pt"
+    },
+    {
+      "run_id": "unit002_F1",
+      "unit": "unit002",
+      "task": "F1",
+      "updates": 20000,
+      "architecture": "transformer",
+      "encoding": "row_major_binary_full",
+      "model_seed": 97100012,
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/step0.pt",
+      "initial_checkpoint_sha256": "dc28e2d3d7d110e52cf3ce323e733e00568b442093a12a343235030c3cc38ce2",
+      "initial_parameter_sha256": "5489795dde7032d49a61ca58607c0c6f0e1a7a80ca2c64dafadcdc1e9803863f",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/starting_rng.pt",
+      "starting_rng_sha256": "e212cd85dce70591f70a6b868b2379950b986fc959707822eae8258aa9a2a805",
+      "starting_rng_hash": "de8657e167cee1b429ac207d1dd4e9da0cc5204662c7495577713cb1367516ee",
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data.npz",
+      "data_sha256": "239d405749fd6539e3bbbe88d185c15084dc96812e7232ffcbb5bb08994c02b8",
+      "batch_schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/schedule.npz",
+      "batch_schedule_sha256": "3dbe237bc3ae017135960b7e711e3c3d4bc779d57b0c72bb42d4643a34d47764",
+      "checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F1/checkpoint.pt"
+    },
+    {
+      "run_id": "unit002_F2",
+      "unit": "unit002",
+      "task": "F2",
+      "updates": 20000,
+      "architecture": "transformer",
+      "encoding": "row_major_binary_full",
+      "model_seed": 97100012,
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/step0.pt",
+      "initial_checkpoint_sha256": "dc28e2d3d7d110e52cf3ce323e733e00568b442093a12a343235030c3cc38ce2",
+      "initial_parameter_sha256": "5489795dde7032d49a61ca58607c0c6f0e1a7a80ca2c64dafadcdc1e9803863f",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/starting_rng.pt",
+      "starting_rng_sha256": "e212cd85dce70591f70a6b868b2379950b986fc959707822eae8258aa9a2a805",
+      "starting_rng_hash": "de8657e167cee1b429ac207d1dd4e9da0cc5204662c7495577713cb1367516ee",
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data.npz",
+      "data_sha256": "239d405749fd6539e3bbbe88d185c15084dc96812e7232ffcbb5bb08994c02b8",
+      "batch_schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/schedule.npz",
+      "batch_schedule_sha256": "3dbe237bc3ae017135960b7e711e3c3d4bc779d57b0c72bb42d4643a34d47764",
+      "checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F2/checkpoint.pt"
+    },
+    {
+      "run_id": "unit002_F3",
+      "unit": "unit002",
+      "task": "F3",
+      "updates": 20000,
+      "architecture": "transformer",
+      "encoding": "row_major_binary_full",
+      "model_seed": 97100012,
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/step0.pt",
+      "initial_checkpoint_sha256": "dc28e2d3d7d110e52cf3ce323e733e00568b442093a12a343235030c3cc38ce2",
+      "initial_parameter_sha256": "5489795dde7032d49a61ca58607c0c6f0e1a7a80ca2c64dafadcdc1e9803863f",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/starting_rng.pt",
+      "starting_rng_sha256": "e212cd85dce70591f70a6b868b2379950b986fc959707822eae8258aa9a2a805",
+      "starting_rng_hash": "de8657e167cee1b429ac207d1dd4e9da0cc5204662c7495577713cb1367516ee",
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data.npz",
+      "data_sha256": "239d405749fd6539e3bbbe88d185c15084dc96812e7232ffcbb5bb08994c02b8",
+      "batch_schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/schedule.npz",
+      "batch_schedule_sha256": "3dbe237bc3ae017135960b7e711e3c3d4bc779d57b0c72bb42d4643a34d47764",
+      "checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F3/checkpoint.pt"
+    },
+    {
+      "run_id": "unit002_F4",
+      "unit": "unit002",
+      "task": "F4",
+      "updates": 20000,
+      "architecture": "transformer",
+      "encoding": "row_major_binary_full",
+      "model_seed": 97100012,
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/step0.pt",
+      "initial_checkpoint_sha256": "dc28e2d3d7d110e52cf3ce323e733e00568b442093a12a343235030c3cc38ce2",
+      "initial_parameter_sha256": "5489795dde7032d49a61ca58607c0c6f0e1a7a80ca2c64dafadcdc1e9803863f",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/starting_rng.pt",
+      "starting_rng_sha256": "e212cd85dce70591f70a6b868b2379950b986fc959707822eae8258aa9a2a805",
+      "starting_rng_hash": "de8657e167cee1b429ac207d1dd4e9da0cc5204662c7495577713cb1367516ee",
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data.npz",
+      "data_sha256": "239d405749fd6539e3bbbe88d185c15084dc96812e7232ffcbb5bb08994c02b8",
+      "batch_schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/schedule.npz",
+      "batch_schedule_sha256": "3dbe237bc3ae017135960b7e711e3c3d4bc779d57b0c72bb42d4643a34d47764",
+      "checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F4/checkpoint.pt"
+    }
+  ],
+  "evaluation": {
+    "primary_state": "final_norm input-end before same query token",
+    "controls": [
+      "raw_within_n",
+      "answer_strata"
+    ],
+    "metrics": [
+      "linear_cka",
+      "knn_overlap",
+      "procrustes"
+    ],
+    "branches": [
+      "prefix_final",
+      "output_prob",
+      "gold_onehot"
+    ],
+    "knn_k": 10,
+    "procrustes_rank_cap": 8,
+    "fit_split": "validation",
+    "analysis_split": "analysis",
+    "joint_answer_key": [
+      "n",
+      "left_identity",
+      "right_identity",
+      "right_correct",
+      "right_wrong"
+    ],
+    "stratum_minimum": 3,
+    "centering": "Original within_joint_group means fitted/subtracted independently on fit and analysis groups.",
+    "undefined_policy": "No zero fill; any undefined n leaves equal-weight aggregate undefined, no reweighting.",
+    "fixed_transform_candidates": "Only ordinary linear CKA; allother3 tasks; separately named and counted from originalBt/Delta.",
+    "output_baseline": "Full188-token softmax at query equality position, FP32. Static gold onehot188 with no invented initial/training increment.",
+    "similarity_direction": "Higher-is-more-similar; Procrustes score is negative heldoutNRMSE; rawNRMSE preserved.",
+    "primary_relations": [
+      "R1",
+      "R3"
+    ],
+    "supplementary_relations": [
+      "R2",
+      "R4"
+    ],
+    "batch_size": 64
+  },
+  "initializations": {
+    "unit001": {
+      "unit": "unit001",
+      "model_seed": 97100011,
+      "init_spec_sha256": "72b1b343b148d827a36a243ff65e239b45ad262829e3e1c747cc5e213ab81d78",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/step0.pt",
+      "initial_checkpoint_sha256": "ab7ac159c74b7851f1219b5dd68353449db99b613dc3afebc358b85b5c09f66a",
+      "initial_parameter_sha256": "d88f3b16ff72c86e2a64754517e5b8f86d80537fcf5456639828f1d6f735a78b",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/starting_rng.pt",
+      "starting_rng_sha256": "7dbce517144465a059f9253cf3095ae2ff211b98ce66e1d170066176f50c0cf2",
+      "starting_rng_hash": "2c6b7f6ce12d1e15c063f3e089b396516e812126bae93eda4b37cb816388254b",
+      "actual_initial_identity_verified": true,
+      "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+      "parameters": 3240448,
+      "model_config": {
+        "vocab_size": 188,
+        "max_seq_len": 128,
+        "d_model": 256,
+        "layers": 4,
+        "dropout": 0.1,
+        "heads": 8,
+        "mlp_ratio": 4,
+        "tie_embeddings": true
+      }
+    },
+    "unit002": {
+      "unit": "unit002",
+      "model_seed": 97100012,
+      "init_spec_sha256": "06782a56704c8f2ce6444c51fae57c8dd3f9a4587ef5a93ee803a3b6abb1cf99",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/step0.pt",
+      "initial_checkpoint_sha256": "dc28e2d3d7d110e52cf3ce323e733e00568b442093a12a343235030c3cc38ce2",
+      "initial_parameter_sha256": "5489795dde7032d49a61ca58607c0c6f0e1a7a80ca2c64dafadcdc1e9803863f",
+      "starting_rng_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/starting_rng.pt",
+      "starting_rng_sha256": "e212cd85dce70591f70a6b868b2379950b986fc959707822eae8258aa9a2a805",
+      "starting_rng_hash": "de8657e167cee1b429ac207d1dd4e9da0cc5204662c7495577713cb1367516ee",
+      "actual_initial_identity_verified": true,
+      "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+      "parameters": 3240448,
+      "model_config": {
+        "vocab_size": 188,
+        "max_seq_len": 128,
+        "d_model": 256,
+        "layers": 4,
+        "dropout": 0.1,
+        "heads": 8,
+        "mlp_ratio": 4,
+        "tie_embeddings": true
+      }
+    }
+  },
+  "data_units": [
+    {
+      "unit": "unit001",
+      "data_seed": 98100011,
+      "batch_seed": 99100011,
+      "model_seed": 97100011,
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data.npz",
+      "data_sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+      "schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/schedule.npz",
+      "schedule_sha256": "70c2fc314663378046cff2bf15fab3aae9f25a0b0289cf257016b10df1fbef37"
+    },
+    {
+      "unit": "unit002",
+      "data_seed": 98100012,
+      "batch_seed": 99100012,
+      "model_seed": 97100012,
+      "data_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data.npz",
+      "data_sha256": "239d405749fd6539e3bbbe88d185c15084dc96812e7232ffcbb5bb08994c02b8",
+      "schedule_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/schedule.npz",
+      "schedule_sha256": "3dbe237bc3ae017135960b7e711e3c3d4bc779d57b0c72bb42d4643a34d47764"
+    }
+  ],
+  "freeze": {
+    "utc": "2026-10-11T21:46:56.277701+00:00",
+    "scope": "Exploratory third-domain pilot. Freeze is prospective for these new endpoints/geometry; earlier PermWorld/GraphWorld outcomes have been viewed.",
+    "engineering_path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/gpu_engineering.json",
+    "engineering_sha256": "381a26837d62bc847fd61e60e05f8f2e316ee1d39fb89cefdf685a9da1a6668d",
+    "data_ready_sha256": "d140f380024bfc84d950dfb2fcdc4ed659e72f2b6c9f524b45936ca654b9ba86",
+    "draft_sha256": "349a1b1544d3f121a898c59166167b315031cd2401f3bf78f2fba6515a08fe67",
+    "candidate_manifest_sha256": "9bb3581a089b9fba390a26b9afc08ac67e0e2116eb2562ebdf93ceaea12f441e",
+    "candidate_classification_audit_sha256": "c8ccb469323ee7afb0d65941923e5d0a440073e3768c0c3d552c2bc7220b112d",
+    "protected_old_files": 2664,
+    "old_frozen_research_modified": false,
+    "formal_training_started": false,
+    "final_analysis_labels_generated": false,
+    "learning_criterion": "Report all fixed20k endpoints and full-vocabulary accuracy versus train-derived mode. No source-accuracy-based selection or retraining; near-baseline endpoints limit interpretation.",
+    "independent_units": 2,
+    "relation_types": 2,
+    "new_formal_conditions": 8,
+    "budget_origin_is_once_saved": true,
+    "stop_after_requested_report": true
+  }
+}

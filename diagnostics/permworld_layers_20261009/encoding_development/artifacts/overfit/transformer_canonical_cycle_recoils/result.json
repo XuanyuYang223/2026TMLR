@@ -1,0 +1,99 @@
+{
+  "architecture": "transformer",
+  "encoding": "canonical_cycle",
+  "task": "recoils",
+  "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "samples": 48,
+  "classes": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "parameter_changed": true,
+  "finite_gradient_updates": 1000,
+  "minimum_gradient_norm": 0.003965211100876331,
+  "maximum_gradient_norm": 19.957340240478516,
+  "future_answer_logit_difference": 0.0,
+  "loss_mask_independently_checked": true,
+  "final": {
+    "step": 1000,
+    "answer_accuracy": 1.0,
+    "numeric_accuracy": 1.0,
+    "eos_accuracy": 1.0,
+    "samples": 48
+  },
+  "passed": true,
+  "curve": [
+    {
+      "step": 100,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 200,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 300,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 400,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 500,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 600,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 700,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 800,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 900,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    },
+    {
+      "step": 1000,
+      "answer_accuracy": 1.0,
+      "numeric_accuracy": 1.0,
+      "eos_accuracy": 1.0,
+      "samples": 48
+    }
+  ]
+}

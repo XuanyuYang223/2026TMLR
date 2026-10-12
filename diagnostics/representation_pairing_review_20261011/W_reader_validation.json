@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "per_anchor_unique_relation_units": 92160,
+  "per_length_checks": 372,
+  "aggregate_checks": 28,
+  "unique_base_anchors": {
+    "permworld": 10752,
+    "graphworld": 1536
+  },
+  "graph_reverse_max_complement_out_raw_wrong_criterion_identical_anchor_count": 1536,
+  "dependency_proof": "Because W commutes with R and C, both raw wrong-formula events are max_out(A)=max_out(W(A)). This dependency does not imply their joint answer/density selectors are identical.",
+  "inputs": {
+    "W_actual_per_anchor.csv": "9289fa1c7f92bfe51d193c2ce952c7698cdc97654d92b96b45d431a4edc3baff",
+    "W_actual_per_length.csv": "4e351d0a00ac9d984a5e22062e3b1f5f22e505febb65b28ebac85f334150efbb",
+    "W_actual_summary.csv": "668b10fa1bc9f549e860156558ee72413247b2542db58a54b156150456c1c63d"
+  },
+  "script_sha256": "c0391580c6a3eec4c64808b126711dd86b9b5f9a665237b7b16cab66e66f647d",
+  "no_models": true,
+  "no_forward": true,
+  "no_training": true,
+  "no_cka": true,
+  "no_new_inputs": true
+}

@@ -1,0 +1,5644 @@
+{
+  "status": "passed",
+  "protocol_sha256": "9c8b6dfac09bf809410f87b2648cf9c8a12a5a17b77a17dae9de5a6bf11415ea",
+  "device": "cuda",
+  "records": [
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.7407052680064226,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.8312206268310547e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        8.344650268554688e-07,
+        7.450580596923828e-07,
+        2.8312206268310547e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.8312206268310547e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005233599993516691,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.6954879760742188e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.470348358154297e-07,
+        6.109476089477539e-07,
+        6.556510925292969e-07,
+        9.834766387939453e-07,
+        3.6954879760742188e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.6954879760742188e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004435438007931225,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.86102294921875e-06,
+      "manual_prefix_per_layer_max_abs": [
+        5.811452865600586e-07,
+        5.364418029785156e-07,
+        7.748603820800781e-07,
+        7.748603820800781e-07,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.00573749300383497,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.337860107421875e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.172325134277344e-07,
+        5.364418029785156e-07,
+        6.258487701416016e-07,
+        8.493661880493164e-07,
+        3.337860107421875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.337860107421875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005927652993705124,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.2186508178710938e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.172325134277344e-07,
+        5.066394805908203e-07,
+        7.599592208862305e-07,
+        8.344650268554688e-07,
+        3.2186508178710938e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.2186508178710938e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004855330000282265,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.9206275939941406e-06,
+      "manual_prefix_per_layer_max_abs": [
+        3.8743019104003906e-07,
+        4.76837158203125e-07,
+        6.407499313354492e-07,
+        7.748603820800781e-07,
+        2.9206275939941406e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.9206275939941406e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.00883232499472797,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.682209014892578e-06,
+      "manual_prefix_per_layer_max_abs": [
+        5.066394805908203e-07,
+        5.960464477539062e-07,
+        6.258487701416016e-07,
+        6.854534149169922e-07,
+        2.682209014892578e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.682209014892578e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007733947990345769,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.2186508178710938e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.023313522338867e-07,
+        5.066394805908203e-07,
+        6.258487701416016e-07,
+        8.493661880493164e-07,
+        3.2186508178710938e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.2186508178710938e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.00748833900433965,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.9802322387695312e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.172325134277344e-07,
+        4.917383193969727e-07,
+        6.854534149169922e-07,
+        7.450580596923828e-07,
+        2.9802322387695312e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.9802322387695312e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.00485662100254558,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.100799560546875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.1444091796875e-05,
+        1.52587890625e-05,
+        2.765655517578125e-05,
+        4.100799560546875e-05,
+        5.0067901611328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 5.0067901611328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.004067176007083617,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.47955322265625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.71661376953125e-05,
+        1.52587890625e-05,
+        1.621246337890625e-05,
+        2.47955322265625e-05,
+        3.814697265625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.814697265625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004268157994374633,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.62396240234375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.239776611328125e-05,
+        1.430511474609375e-05,
+        2.0503997802734375e-05,
+        3.62396240234375e-05,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004828013989026658,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.811981201171875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.239776611328125e-05,
+        1.52587890625e-05,
+        1.33514404296875e-05,
+        1.811981201171875e-05,
+        3.337860107421875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.337860107421875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005000546996598132,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.47955322265625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.33514404296875e-05,
+        1.71661376953125e-05,
+        2.09808349609375e-05,
+        2.47955322265625e-05,
+        5.0067901611328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 5.0067901611328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004674725991208106,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.193450927734375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.430511474609375e-05,
+        1.33514404296875e-05,
+        1.33514404296875e-05,
+        2.193450927734375e-05,
+        4.0531158447265625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 4.0531158447265625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.0076035689999116585,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.621246337890625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        8.106231689453125e-06,
+        9.5367431640625e-06,
+        9.5367431640625e-06,
+        1.621246337890625e-05,
+        3.5762786865234375e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.5762786865234375e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007674256004975177,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.9073486328125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        9.5367431640625e-06,
+        9.5367431640625e-06,
+        1.049041748046875e-05,
+        1.9073486328125e-05,
+        5.424022674560547e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 5.424022674560547e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007571680995170027,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.288818359375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        8.58306884765625e-06,
+        9.059906005859375e-06,
+        1.049041748046875e-05,
+        2.288818359375e-05,
+        6.109476089477539e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 6.109476089477539e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005047516999184154,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.09808349609375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.9073486328125e-05,
+        2.002716064453125e-05,
+        1.9073486328125e-05,
+        2.09808349609375e-05,
+        2.384185791015625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.384185791015625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.004191230997093953,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.288818359375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.52587890625e-05,
+        1.621246337890625e-05,
+        1.811981201171875e-05,
+        2.288818359375e-05,
+        2.7418136596679688e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.7418136596679688e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004028905008453876,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.288818359375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.288818359375e-05,
+        1.9073486328125e-05,
+        1.71661376953125e-05,
+        2.09808349609375e-05,
+        2.1457672119140625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.1457672119140625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004819282999960706,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0517578125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.09808349609375e-05,
+        2.09808349609375e-05,
+        2.288818359375e-05,
+        3.0517578125e-05,
+        2.9802322387695312e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.9802322387695312e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.004721199002233334,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.6702880859375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.09808349609375e-05,
+        2.09808349609375e-05,
+        2.1457672119140625e-05,
+        2.6702880859375e-05,
+        3.0994415283203125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.0994415283203125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.0047527009883197024,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0517578125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.288818359375e-05,
+        2.288818359375e-05,
+        2.47955322265625e-05,
+        3.0517578125e-05,
+        2.9802322387695312e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.9802322387695312e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007631106011103839,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.71661376953125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.71661376953125e-05,
+        1.33514404296875e-05,
+        1.52587890625e-05,
+        1.71661376953125e-05,
+        2.1457672119140625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.1457672119140625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007599814998684451,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.288818359375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.71661376953125e-05,
+        1.71661376953125e-05,
+        2.09808349609375e-05,
+        2.288818359375e-05,
+        2.6226043701171875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.6226043701171875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007397280991426669,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.6702880859375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.193450927734375e-05,
+        2.47955322265625e-05,
+        2.6702880859375e-05,
+        2.6702880859375e-05,
+        2.7418136596679688e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.7418136596679688e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004597688996000215,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.288818359375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.811981201171875e-05,
+        1.9073486328125e-05,
+        2.288818359375e-05,
+        2.288818359375e-05,
+        2.6226043701171875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.6226043701171875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.0040189630090026185,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.09808349609375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.52587890625e-05,
+        1.621246337890625e-05,
+        1.71661376953125e-05,
+        2.09808349609375e-05,
+        2.4437904357910156e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.4437904357910156e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.0040500659961253405,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.193450927734375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.52587890625e-05,
+        1.52587890625e-05,
+        1.71661376953125e-05,
+        2.193450927734375e-05,
+        2.6226043701171875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.6226043701171875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004851667006732896,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.09808349609375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.52587890625e-05,
+        1.621246337890625e-05,
+        1.52587890625e-05,
+        2.09808349609375e-05,
+        2.9206275939941406e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.9206275939941406e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005209637994994409,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.002716064453125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.811981201171875e-05,
+        1.811981201171875e-05,
+        1.71661376953125e-05,
+        2.002716064453125e-05,
+        3.5762786865234375e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.5762786865234375e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005315311005688272,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.193450927734375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.52587890625e-05,
+        1.52587890625e-05,
+        1.71661376953125e-05,
+        2.193450927734375e-05,
+        3.2186508178710938e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.2186508178710938e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007646031997865066,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.47955322265625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.71661376953125e-05,
+        2.09808349609375e-05,
+        2.288818359375e-05,
+        2.47955322265625e-05,
+        2.682209014892578e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.682209014892578e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007445868002832867,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.6702880859375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.71661376953125e-05,
+        1.71661376953125e-05,
+        1.71661376953125e-05,
+        2.6702880859375e-05,
+        2.1457672119140625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.1457672119140625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007693779989494942,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.71661376953125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.33514404296875e-05,
+        1.33514404296875e-05,
+        1.33514404296875e-05,
+        1.71661376953125e-05,
+        1.8477439880371094e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.8477439880371094e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004827762997592799,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.9550323486328125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        6.67572021484375e-06,
+        7.152557373046875e-06,
+        1.9550323486328125e-05,
+        1.9073486328125e-05,
+        2.9206275939941406e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.9206275939941406e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.004023428991786204,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.9073486328125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        9.059906005859375e-06,
+        1.1444091796875e-05,
+        1.621246337890625e-05,
+        1.9073486328125e-05,
+        2.4437904357910156e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.4437904357910156e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.003967106997151859,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.002716064453125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        9.059906005859375e-06,
+        9.5367431640625e-06,
+        2.002716064453125e-05,
+        1.811981201171875e-05,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.00478594699234236,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.621246337890625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.5735626220703125e-05,
+        1.52587890625e-05,
+        1.621246337890625e-05,
+        1.621246337890625e-05,
+        2.6226043701171875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.6226043701171875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.004721828998299316,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.71661376953125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.239776611328125e-05,
+        1.239776611328125e-05,
+        1.33514404296875e-05,
+        1.71661376953125e-05,
+        2.9802322387695312e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.9802322387695312e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004730877990368754,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.765655517578125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.239776611328125e-05,
+        1.1444091796875e-05,
+        1.52587890625e-05,
+        2.765655517578125e-05,
+        3.2186508178710938e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.2186508178710938e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007862230995669961,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.09808349609375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        9.5367431640625e-06,
+        9.5367431640625e-06,
+        1.049041748046875e-05,
+        2.09808349609375e-05,
+        3.337860107421875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.337860107421875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007859350997023284,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.384185791015625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        8.58306884765625e-06,
+        1.239776611328125e-05,
+        1.33514404296875e-05,
+        2.384185791015625e-05,
+        5.125999450683594e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 5.125999450683594e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_one_line_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.008140207006363198,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.193450927734375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.33514404296875e-05,
+        1.239776611328125e-05,
+        1.430511474609375e-05,
+        2.193450927734375e-05,
+        3.3974647521972656e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.3974647521972656e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005386040997109376,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.814697265625e-06,
+      "manual_prefix_per_layer_max_abs": [
+        5.364418029785156e-07,
+        6.556510925292969e-07,
+        7.748603820800781e-07,
+        9.5367431640625e-07,
+        3.814697265625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.814697265625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.003971326004830189,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.5762786865234375e-06,
+      "manual_prefix_per_layer_max_abs": [
+        3.8743019104003906e-07,
+        5.662441253662109e-07,
+        6.854534149169922e-07,
+        9.238719940185547e-07,
+        3.5762786865234375e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.5762786865234375e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.003873955996823497,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.3974647521972656e-06,
+      "manual_prefix_per_layer_max_abs": [
+        6.854534149169922e-07,
+        6.258487701416016e-07,
+        8.493661880493164e-07,
+        9.08970832824707e-07,
+        3.3974647521972656e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.3974647521972656e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004762716998811811,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.7418136596679688e-06,
+      "manual_prefix_per_layer_max_abs": [
+        5.960464477539062e-07,
+        5.811452865600586e-07,
+        5.960464477539062e-07,
+        6.854534149169922e-07,
+        2.7418136596679688e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.7418136596679688e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005830655005411245,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0994415283203125e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.172325134277344e-07,
+        6.854534149169922e-07,
+        8.940696716308594e-07,
+        8.344650268554688e-07,
+        3.0994415283203125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.0994415283203125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.0049765809962991625,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0994415283203125e-06,
+      "manual_prefix_per_layer_max_abs": [
+        5.960464477539062e-07,
+        5.960464477539062e-07,
+        7.301568984985352e-07,
+        8.642673492431641e-07,
+        3.0994415283203125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.0994415283203125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.00750802100810688,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0994415283203125e-06,
+      "manual_prefix_per_layer_max_abs": [
+        3.725290298461914e-07,
+        5.811452865600586e-07,
+        7.748603820800781e-07,
+        8.046627044677734e-07,
+        3.0994415283203125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.0994415283203125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.0076506110053742304,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.0067901611328125e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.980232238769531e-07,
+        7.301568984985352e-07,
+        1.043081283569336e-06,
+        1.3113021850585938e-06,
+        5.0067901611328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 5.0067901611328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|initial|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007498688995838165,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0994415283203125e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.023313522338867e-07,
+        6.854534149169922e-07,
+        7.152557373046875e-07,
+        8.344650268554688e-07,
+        3.0994415283203125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.0994415283203125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005128931006765924,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0517578125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.86102294921875e-05,
+        2.86102294921875e-05,
+        3.0517578125e-05,
+        3.0517578125e-05,
+        2.0265579223632812e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.0265579223632812e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.003980640001827851,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.24249267578125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.0517578125e-05,
+        3.0517578125e-05,
+        3.24249267578125e-05,
+        3.24249267578125e-05,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004609897005138919,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.6702880859375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-05,
+        2.6702880859375e-05,
+        2.6702880859375e-05,
+        2.6702880859375e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004923732005408965,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.00543212890625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        4.00543212890625e-05,
+        3.0517578125e-05,
+        3.0517578125e-05,
+        3.0517578125e-05,
+        2.1457672119140625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.1457672119140625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.004914553996059112,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0517578125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.47955322265625e-05,
+        3.0517578125e-05,
+        2.6702880859375e-05,
+        2.6702880859375e-05,
+        2.1457672119140625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.1457672119140625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005217398997046985,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.38690185546875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        4.38690185546875e-05,
+        4.38690185546875e-05,
+        4.38690185546875e-05,
+        4.38690185546875e-05,
+        3.0994415283203125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.0994415283203125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.008137012002407573,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.814697265625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.814697265625e-05,
+        3.814697265625e-05,
+        3.814697265625e-05,
+        3.814697265625e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007892177993198857,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.57763671875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        4.38690185546875e-05,
+        4.1961669921875e-05,
+        4.57763671875e-05,
+        4.57763671875e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_descents|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.00781017700501252,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.57763671875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.0517578125e-05,
+        3.4332275390625e-05,
+        4.1961669921875e-05,
+        4.57763671875e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.0057514669897500426,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.1961669921875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        4.00543212890625e-05,
+        4.1961669921875e-05,
+        3.814697265625e-05,
+        3.814697265625e-05,
+        2.1457672119140625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.1457672119140625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.004742584002087824,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.57763671875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        4.00543212890625e-05,
+        4.57763671875e-05,
+        3.814697265625e-05,
+        3.814697265625e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.00447057701239828,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.4332275390625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.4332275390625e-05,
+        3.4332275390625e-05,
+        3.4332275390625e-05,
+        3.24249267578125e-05,
+        2.384185791015625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.384185791015625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005238088997430168,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 6.103515625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        6.103515625e-05,
+        5.7220458984375e-05,
+        5.340576171875e-05,
+        5.340576171875e-05,
+        2.6226043701171875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.6226043701171875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005295266004395671,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 6.103515625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        5.7220458984375e-05,
+        5.340576171875e-05,
+        5.7220458984375e-05,
+        6.103515625e-05,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.0055253089958569035,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 6.866455078125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        6.4849853515625e-05,
+        6.866455078125e-05,
+        6.4849853515625e-05,
+        6.103515625e-05,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.0080763870064402,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.1961669921875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.86102294921875e-05,
+        3.4332275390625e-05,
+        3.814697265625e-05,
+        4.1961669921875e-05,
+        1.6689300537109375e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.6689300537109375e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.008135916999890469,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.340576171875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.814697265625e-05,
+        4.9591064453125e-05,
+        5.340576171875e-05,
+        4.57763671875e-05,
+        2.384185791015625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.384185791015625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_recoils|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007953476990223862,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.57763671875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.0517578125e-05,
+        3.814697265625e-05,
+        4.57763671875e-05,
+        4.57763671875e-05,
+        2.1457672119140625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.1457672119140625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005435193990706466,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.6702880859375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.621246337890625e-05,
+        2.288818359375e-05,
+        2.47955322265625e-05,
+        2.6702880859375e-05,
+        2.2649765014648438e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.2649765014648438e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.00432077600271441,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.09808349609375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.09808349609375e-05,
+        2.09808349609375e-05,
+        2.09808349609375e-05,
+        2.09808349609375e-05,
+        1.5497207641601562e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.5497207641601562e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004691848997026682,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.4332275390625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        1.71661376953125e-05,
+        2.288818359375e-05,
+        3.24249267578125e-05,
+        3.4332275390625e-05,
+        2.7418136596679688e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.7418136596679688e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005130363002535887,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.86102294921875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.09808349609375e-05,
+        2.6702880859375e-05,
+        2.86102294921875e-05,
+        2.6702880859375e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005188094000914134,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.6702880859375e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.288818359375e-05,
+        2.288818359375e-05,
+        2.6702880859375e-05,
+        2.6702880859375e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005390831007389352,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0517578125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.6702880859375e-05,
+        3.0517578125e-05,
+        3.0517578125e-05,
+        3.0517578125e-05,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007771994001814164,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.814697265625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.288818359375e-05,
+        2.6702880859375e-05,
+        3.814697265625e-05,
+        3.814697265625e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.00804875600442756,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.340576171875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.0517578125e-05,
+        4.1961669921875e-05,
+        4.57763671875e-05,
+        5.340576171875e-05,
+        2.1457672119140625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.1457672119140625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_peaks|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.008024741007830016,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.57763671875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.24249267578125e-05,
+        3.4332275390625e-05,
+        4.1961669921875e-05,
+        4.57763671875e-05,
+        2.384185791015625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.384185791015625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004647615001886152,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.57763671875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        4.57763671875e-05,
+        4.1961669921875e-05,
+        4.00543212890625e-05,
+        3.814697265625e-05,
+        2.384185791015625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.384185791015625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.004379610007163137,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.1961669921875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.814697265625e-05,
+        4.1961669921875e-05,
+        4.1961669921875e-05,
+        4.1961669921875e-05,
+        2.384185791015625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.384185791015625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.0044704119936795905,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 6.103515625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        6.103515625e-05,
+        5.7220458984375e-05,
+        5.7220458984375e-05,
+        5.340576171875e-05,
+        2.384185791015625e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.384185791015625e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.004729756998131052,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.57763671875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        4.1961669921875e-05,
+        4.57763671875e-05,
+        4.57763671875e-05,
+        4.57763671875e-05,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.00520398399385158,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.340576171875e-05,
+      "manual_prefix_per_layer_max_abs": [
+        5.340576171875e-05,
+        5.340576171875e-05,
+        4.9591064453125e-05,
+        4.9591064453125e-05,
+        2.6226043701171875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.6226043701171875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004790313003468327,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 6.866455078125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        5.7220458984375e-05,
+        6.866455078125e-05,
+        6.866455078125e-05,
+        6.866455078125e-05,
+        3.0994415283203125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 3.0994415283203125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007456302002537996,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.814697265625e-05,
+      "manual_prefix_per_layer_max_abs": [
+        3.24249267578125e-05,
+        3.0517578125e-05,
+        3.814697265625e-05,
+        3.814697265625e-05,
+        1.6689300537109375e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.6689300537109375e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007863654012908228,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 3.0517578125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        2.47955322265625e-05,
+        3.0517578125e-05,
+        3.0517578125e-05,
+        3.0517578125e-05,
+        1.430511474609375e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.430511474609375e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_transformer_canonical_cycle_valleys|trained|test",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007755920989438891,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.9591064453125e-05,
+      "manual_prefix_per_layer_max_abs": [
+        4.9591064453125e-05,
+        4.57763671875e-05,
+        4.57763671875e-05,
+        4.57763671875e-05,
+        1.9073486328125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.9073486328125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.032324654996045865,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.955777406692505e-08,
+        2.9802322387695312e-08,
+        3.725290298461914e-08,
+        3.725290298461914e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005528950001462363,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.862645149230957e-08,
+        2.9802322387695312e-08,
+        3.725290298461914e-08,
+        3.166496753692627e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005059329007053748,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        2.0489096641540527e-08,
+        2.9802322387695312e-08,
+        3.725290298461914e-08,
+        4.0978193283081055e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.009383229000377469,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        3.725290298461914e-08,
+        2.9802322387695312e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007822391999070533,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        4.470348358154297e-08,
+        2.9802322387695312e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.008792214008281007,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 8.344650268554688e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        4.470348358154297e-08,
+        3.3527612686157227e-08,
+        4.470348358154297e-08,
+        8.344650268554688e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 8.344650268554688e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.01146321500709746,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        3.725290298461914e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.009875912001007237,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "initial",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.009873218994471245,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        4.470348358154297e-08,
+        3.725290298461914e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.006281863010372035,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.682209014892578e-06,
+      "manual_prefix_per_layer_max_abs": [
+        7.003545761108398e-07,
+        4.991888999938965e-07,
+        5.364418029785156e-07,
+        1.043081283569336e-06,
+        2.682209014892578e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.682209014892578e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005279831995721906,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.250075340270996e-06,
+      "manual_prefix_per_layer_max_abs": [
+        6.246846169233322e-07,
+        5.513429641723633e-07,
+        7.301568984985352e-07,
+        1.0468065738677979e-06,
+        2.250075340270996e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.250075340270996e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005555940995691344,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.4139881134033203e-06,
+      "manual_prefix_per_layer_max_abs": [
+        4.172325134277344e-07,
+        6.854534149169922e-07,
+        7.115304470062256e-07,
+        8.940696716308594e-07,
+        2.4139881134033203e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.4139881134033203e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007693847001064569,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3709068298339844e-06,
+      "manual_prefix_per_layer_max_abs": [
+        5.364418029785156e-07,
+        6.556510925292969e-07,
+        7.152557373046875e-07,
+        6.556510925292969e-07,
+        1.3709068298339844e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3709068298339844e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007550798996817321,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.16066837310791e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.8312206268310547e-07,
+        8.344650268554688e-07,
+        8.344650268554688e-07,
+        9.648501873016357e-07,
+        2.16066837310791e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.16066837310791e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007866584011935629,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 9.5367431640625e-07,
+      "manual_prefix_per_layer_max_abs": [
+        3.2782554626464844e-07,
+        5.066394805908203e-07,
+        6.556510925292969e-07,
+        5.140900611877441e-07,
+        9.5367431640625e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 9.5367431640625e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.010175713003263809,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.86102294921875e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.980232238769531e-07,
+        5.587935447692871e-07,
+        1.5385448932647705e-06,
+        1.4603137969970703e-06,
+        2.86102294921875e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.86102294921875e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.010865189993637614,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.5497207641601562e-06,
+      "manual_prefix_per_layer_max_abs": [
+        5.662441253662109e-07,
+        6.556510925292969e-07,
+        8.791685104370117e-07,
+        8.344650268554688e-07,
+        1.5497207641601562e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.5497207641601562e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.010601522008073516,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.4437904357910156e-06,
+      "manual_prefix_per_layer_max_abs": [
+        9.834766387939453e-07,
+        5.960464477539062e-07,
+        1.0058283805847168e-06,
+        1.2218952178955078e-06,
+        2.4437904357910156e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.4437904357910156e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005725213006371632,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 9.5367431640625e-07,
+      "manual_prefix_per_layer_max_abs": [
+        3.2782554626464844e-07,
+        4.023313522338867e-07,
+        3.5762786865234375e-07,
+        4.76837158203125e-07,
+        9.5367431640625e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 9.5367431640625e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005018783995183185,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.0728836059570312e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        4.76837158203125e-07,
+        3.5762786865234375e-07,
+        5.066394805908203e-07,
+        1.0728836059570312e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.0728836059570312e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005351799991331063,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.5497207641601562e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.086162567138672e-07,
+        4.172325134277344e-07,
+        3.8743019104003906e-07,
+        7.450580596923828e-07,
+        1.5497207641601562e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.5497207641601562e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007597754010930657,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 6.854534149169922e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-07,
+        2.980232238769531e-07,
+        3.5762786865234375e-07,
+        3.5762786865234375e-07,
+        6.854534149169922e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 6.854534149169922e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.008304275004775263,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.2516975402832031e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        2.682209014892578e-07,
+        4.470348358154297e-07,
+        6.407499313354492e-07,
+        1.2516975402832031e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.2516975402832031e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.008346906004589982,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.748603820800781e-07,
+      "manual_prefix_per_layer_max_abs": [
+        2.086162567138672e-07,
+        3.2782554626464844e-07,
+        4.470348358154297e-07,
+        3.725290298461914e-07,
+        7.748603820800781e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.748603820800781e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.010807133992784657,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.8014183044433594e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        4.731118679046631e-07,
+        4.172325134277344e-07,
+        1.4901161193847656e-06,
+        2.8014183044433594e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.8014183044433594e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.010139621997950599,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.2814998626708984e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.6391277313232422e-07,
+        5.066394805908203e-07,
+        3.8743019104003906e-07,
+        7.636845111846924e-07,
+        1.2814998626708984e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.2814998626708984e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.01149771999916993,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.3543834686279297e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.9371509552001953e-07,
+        3.7997961044311523e-07,
+        5.364418029785156e-07,
+        1.1920928955078125e-06,
+        2.3543834686279297e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.3543834686279297e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.006324016998405568,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.0728836059570312e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.086162567138672e-07,
+        7.748603820800781e-07,
+        5.364418029785156e-07,
+        5.960464477539062e-07,
+        1.0728836059570312e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.0728836059570312e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005486875001224689,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3113021850585938e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        4.76837158203125e-07,
+        7.152557373046875e-07,
+        6.258487701416016e-07,
+        1.3113021850585938e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3113021850585938e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.0053910760034341365,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.1324882507324219e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.905726432800293e-07,
+        7.599592208862305e-07,
+        4.76837158203125e-07,
+        6.258487701416016e-07,
+        1.1324882507324219e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.1324882507324219e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.008049996002228,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3560056686401367e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        4.76837158203125e-07,
+        4.76837158203125e-07,
+        8.009374141693115e-07,
+        1.3560056686401367e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3560056686401367e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007983515999512747,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 9.741634130477905e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        4.172325134277344e-07,
+        4.76837158203125e-07,
+        6.48200511932373e-07,
+        9.741634130477905e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 9.741634130477905e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.008145300002070144,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3560056686401367e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        4.76837158203125e-07,
+        7.748603820800781e-07,
+        8.307397365570068e-07,
+        1.3560056686401367e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3560056686401367e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.011136459012050182,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.1920928955078125e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        8.828938007354736e-07,
+        4.6193599700927734e-07,
+        6.705522537231445e-07,
+        1.1920928955078125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.1920928955078125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.011121920004370622,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 9.834766387939453e-07,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        6.854534149169922e-07,
+        6.444752216339111e-07,
+        5.364418029785156e-07,
+        9.834766387939453e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 9.834766387939453e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.011856096010887995,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 8.940696716308594e-07,
+      "manual_prefix_per_layer_max_abs": [
+        4.172325134277344e-07,
+        5.960464477539062e-07,
+        5.252659320831299e-07,
+        4.76837158203125e-07,
+        8.940696716308594e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 8.940696716308594e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005863382000825368,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 2.130866050720215e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.086162567138672e-07,
+        4.172325134277344e-07,
+        6.332993507385254e-07,
+        1.1064112186431885e-06,
+        2.130866050720215e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 2.130866050720215e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005261651996988803,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.1399388313293457e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        4.917383193969727e-07,
+        9.275972843170166e-07,
+        6.407499313354492e-07,
+        1.1399388313293457e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.1399388313293457e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.004879839994828217,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.519918441772461e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        4.172325134277344e-07,
+        5.513429641723633e-07,
+        8.046627044677734e-07,
+        1.519918441772461e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.519918441772461e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.008152523005264811,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.0728836059570312e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        4.76837158203125e-07,
+        5.21540641784668e-07,
+        6.109476089477539e-07,
+        1.0728836059570312e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.0728836059570312e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.008383114996831864,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 9.5367431640625e-07,
+      "manual_prefix_per_layer_max_abs": [
+        2.7567148208618164e-07,
+        5.066394805908203e-07,
+        5.811452865600586e-07,
+        5.364418029785156e-07,
+        9.5367431640625e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 9.5367431640625e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.00792001599620562,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3709068298339844e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        5.550682544708252e-07,
+        5.662441253662109e-07,
+        7.450580596923828e-07,
+        1.3709068298339844e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3709068298339844e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.01034801198693458,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3113021850585938e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.5331974029541016e-07,
+        5.960464477539062e-07,
+        4.917383193969727e-07,
+        8.046627044677734e-07,
+        1.3113021850585938e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3113021850585938e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.010509842002647929,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.4901161193847656e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.384185791015625e-07,
+        9.5367431640625e-07,
+        5.662441253662109e-07,
+        8.642673492431641e-07,
+        1.4901161193847656e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.4901161193847656e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_one_line_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.010947317990940064,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.6689300537109375e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.980232238769531e-07,
+        8.344650268554688e-07,
+        5.289912223815918e-07,
+        8.046627044677734e-07,
+        1.6689300537109375e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.6689300537109375e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.006681319995550439,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005555320996791124,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 9.5367431640625e-07,
+      "manual_prefix_per_layer_max_abs": [
+        2.2351741790771484e-08,
+        2.2351741790771484e-08,
+        5.21540641784668e-08,
+        4.470348358154297e-08,
+        9.5367431640625e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 9.5367431640625e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005536097000003792,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        2.2351741790771484e-08,
+        3.166496753692627e-08,
+        4.470348358154297e-08,
+        2.9802322387695312e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.008005687996046618,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        4.0978193283081055e-08,
+        3.725290298461914e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007744052985799499,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.748603820800781e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        4.0978193283081055e-08,
+        7.748603820800781e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.748603820800781e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.008024298993404955,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.1175870895385742e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.011528216011356562,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.960464477539062e-07,
+      "manual_prefix_per_layer_max_abs": [
+        2.2351741790771484e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        3.073364496231079e-08,
+        5.960464477539062e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.960464477539062e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.010354069992899895,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-08,
+        2.9802322387695312e-08,
+        3.725290298461914e-08,
+        2.9802322387695312e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|initial|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "initial",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.010671226991689764,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.862645149230957e-08,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08,
+        3.725290298461914e-08,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.006093838004744612,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.519918441772461e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.1920928955078125e-07,
+        2.384185791015625e-07,
+        3.5762786865234375e-07,
+        8.791685104370117e-07,
+        1.519918441772461e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.519918441772461e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005659172005834989,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.1920928955078125e-07,
+        1.9371509552001953e-07,
+        5.066394805908203e-07,
+        4.172325134277344e-07,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005340516989235766,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.1920928955078125e-07,
+        1.7881393432617188e-07,
+        3.5762786865234375e-07,
+        4.628673195838928e-07,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007668089994695038,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.76837158203125e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.2665987014770508e-07,
+        1.7881393432617188e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        4.76837158203125e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 4.76837158203125e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007708895995165221,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.6689300537109375e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.043081283569336e-07,
+        1.4901161193847656e-07,
+        2.086162567138672e-07,
+        7.152557373046875e-07,
+        1.6689300537109375e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.6689300537109375e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007836595003027469,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.960464477539062e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.6763806343078613e-07,
+        1.7881393432617188e-07,
+        1.7881393432617188e-07,
+        2.980232238769531e-07,
+        5.960464477539062e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.960464477539062e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.010232852000626735,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.960464477539062e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.6391277313232422e-07,
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        3.5762786865234375e-07,
+        5.960464477539062e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.960464477539062e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.010659840001608245,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 8.642673492431641e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        4.76837158203125e-07,
+        8.642673492431641e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 8.642673492431641e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_descents|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.012770076005836017,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.450580596923828e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.6391277313232422e-07,
+        2.086162567138672e-07,
+        3.5762786865234375e-07,
+        3.725290298461914e-07,
+        7.450580596923828e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.450580596923828e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.006167968007503077,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.5050172805786133e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.341104507446289e-07,
+        2.384185791015625e-07,
+        2.682209014892578e-07,
+        8.23289155960083e-07,
+        1.5050172805786133e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.5050172805786133e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005077691006590612,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.6838312149047852e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.1920928955078125e-07,
+        2.384185791015625e-07,
+        2.682209014892578e-07,
+        7.82310962677002e-07,
+        1.6838312149047852e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.6838312149047852e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.00562399800401181,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.1622905731201172e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.9371509552001953e-07,
+        2.384185791015625e-07,
+        3.2782554626464844e-07,
+        6.034970283508301e-07,
+        1.1622905731201172e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.1622905731201172e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.007809684000676498,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.0132789611816406e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.341104507446289e-07,
+        1.1920928955078125e-07,
+        1.4901161193847656e-07,
+        4.470348358154297e-07,
+        1.0132789611816406e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.0132789611816406e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007836756005417556,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.960464477539062e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.043081283569336e-07,
+        1.4901161193847656e-07,
+        2.384185791015625e-07,
+        2.086162567138672e-07,
+        5.960464477539062e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.960464477539062e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.00784721999661997,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.043081283569336e-07,
+        1.1920928955078125e-07,
+        1.4901161193847656e-07,
+        3.2782554626464844e-07,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.010711027993238531,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 9.238719940185547e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.043081283569336e-07,
+        2.086162567138672e-07,
+        1.7881393432617188e-07,
+        5.066394805908203e-07,
+        9.238719940185547e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 9.238719940185547e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.01057914899138268,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 6.705522537231445e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        2.086162567138672e-07,
+        2.384185791015625e-07,
+        3.6135315895080566e-07,
+        6.705522537231445e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 6.705522537231445e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_recoils|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.01032684399979189,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.960464477539062e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.043081283569336e-07,
+        2.086162567138672e-07,
+        4.470348358154297e-07,
+        2.980232238769531e-07,
+        5.960464477539062e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.960464477539062e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005707434000214562,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.0132789611816406e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-07,
+        2.682209014892578e-07,
+        2.980232238769531e-07,
+        5.364418029785156e-07,
+        1.0132789611816406e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.0132789611816406e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005056850000983104,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.341104507446289e-07,
+        1.7881393432617188e-07,
+        2.682209014892578e-07,
+        3.8743019104003906e-07,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005075420005596243,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.1324882507324219e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-07,
+        2.682209014892578e-07,
+        8.344650268554688e-07,
+        5.066394805908203e-07,
+        1.1324882507324219e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.1324882507324219e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.008366120993741788,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 6.556510925292969e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.341104507446289e-07,
+        2.086162567138672e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        6.556510925292969e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 6.556510925292969e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.007560723999631591,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 9.834766387939453e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-07,
+        2.384185791015625e-07,
+        2.8312206268310547e-07,
+        4.76837158203125e-07,
+        9.834766387939453e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 9.834766387939453e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007928653998533264,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.4901161193847656e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.341104507446289e-07,
+        2.384185791015625e-07,
+        2.682209014892578e-07,
+        9.387731552124023e-07,
+        1.4901161193847656e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.4901161193847656e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.009886965999612585,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 7.152557373046875e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.341104507446289e-07,
+        2.682209014892578e-07,
+        2.849847078323364e-07,
+        3.8743019104003906e-07,
+        7.152557373046875e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 7.152557373046875e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.010884390998398885,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.960464477539062e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-07,
+        2.5331974029541016e-07,
+        2.4586915969848633e-07,
+        2.980232238769531e-07,
+        5.960464477539062e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.960464477539062e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_peaks|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.009907342988299206,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.960464477539062e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.341104507446289e-07,
+        2.384185791015625e-07,
+        2.682209014892578e-07,
+        2.980232238769531e-07,
+        5.960464477539062e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.960464477539062e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.005744248002883978,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.1920928955078125e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        3.46451997756958e-07,
+        4.76837158203125e-07,
+        1.1920928955078125e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.1920928955078125e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.005697460990631953,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3022508937865496e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        2.980232238769531e-07,
+        2.4959444999694824e-07,
+        7.264316082000732e-07,
+        1.3022508937865496e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3022508937865496e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 10,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.005732217003242113,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.0132789611816406e-06,
+      "manual_prefix_per_layer_max_abs": [
+        2.086162567138672e-07,
+        2.384185791015625e-07,
+        4.0978193283081055e-07,
+        5.662441253662109e-07,
+        1.0132789611816406e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.0132789611816406e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.008097541009192355,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3187527656555176e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.1920928955078125e-07,
+        1.4901161193847656e-07,
+        2.8312206268310547e-07,
+        6.277114152908325e-07,
+        1.3187527656555176e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3187527656555176e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.008342111992533319,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 1.3113021850585938e-06,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        3.427267074584961e-07,
+        2.384185791015625e-07,
+        5.960464477539062e-07,
+        1.3113021850585938e-06
+      ],
+      "manual_prefix_final_norm_max_abs": 1.3113021850585938e-06,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 20,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.007576667994726449,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.364418029785156e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.1920928955078125e-07,
+        2.384185791015625e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        5.364418029785156e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.364418029785156e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 0,
+      "batch_size": 128,
+      "forward_seconds": 0.010246006000670604,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.76837158203125e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-07,
+        2.086162567138672e-07,
+        2.384185791015625e-07,
+        2.980232238769531e-07,
+        4.76837158203125e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 4.76837158203125e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 1,
+      "batch_size": 128,
+      "forward_seconds": 0.010860799011425115,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 4.76837158203125e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.7881393432617188e-07,
+        2.384185791015625e-07,
+        3.8743019104003906e-07,
+        2.384185791015625e-07,
+        4.76837158203125e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 4.76837158203125e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    },
+    {
+      "source_key": "archdev001_gru_canonical_cycle_valleys|trained|test",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "condition": "trained",
+      "length": 30,
+      "action": 2,
+      "batch_size": 128,
+      "forward_seconds": 0.010109529001056217,
+      "independent_vectors": 8,
+      "manual_same_shape_layers_max_abs": 0.0,
+      "manual_same_shape_per_layer_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "manual_prefix_layers_max_abs": 5.960464477539062e-07,
+      "manual_prefix_per_layer_max_abs": [
+        1.4901161193847656e-07,
+        2.384185791015625e-07,
+        2.682209014892578e-07,
+        2.682209014892578e-07,
+        5.960464477539062e-07
+      ],
+      "manual_prefix_final_norm_max_abs": 5.960464477539062e-07,
+      "prefix_only_raw_layers_are_shape_diagnostic_not_gate": true,
+      "old_final_norm_max_abs": 0.0
+    }
+  ],
+  "tolerance": 2e-05,
+  "initial_shared_exact": true,
+  "initial_equality": [
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "split": "validation",
+      "representative_run_id": "archdev001_transformer_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "split": "validation",
+      "representative_run_id": "archdev001_transformer_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "split": "validation",
+      "representative_run_id": "archdev001_transformer_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "split": "validation",
+      "representative_run_id": "archdev001_transformer_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "split": "test",
+      "representative_run_id": "archdev001_transformer_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "split": "test",
+      "representative_run_id": "archdev001_transformer_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "split": "test",
+      "representative_run_id": "archdev001_transformer_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "split": "test",
+      "representative_run_id": "archdev001_transformer_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "split": "validation",
+      "representative_run_id": "archdev001_transformer_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "split": "validation",
+      "representative_run_id": "archdev001_transformer_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "split": "validation",
+      "representative_run_id": "archdev001_transformer_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "split": "validation",
+      "representative_run_id": "archdev001_transformer_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "split": "test",
+      "representative_run_id": "archdev001_transformer_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "split": "test",
+      "representative_run_id": "archdev001_transformer_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "split": "test",
+      "representative_run_id": "archdev001_transformer_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "split": "test",
+      "representative_run_id": "archdev001_transformer_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "split": "validation",
+      "representative_run_id": "archdev001_gru_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "split": "validation",
+      "representative_run_id": "archdev001_gru_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "split": "validation",
+      "representative_run_id": "archdev001_gru_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "split": "validation",
+      "representative_run_id": "archdev001_gru_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "split": "test",
+      "representative_run_id": "archdev001_gru_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "split": "test",
+      "representative_run_id": "archdev001_gru_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "split": "test",
+      "representative_run_id": "archdev001_gru_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "split": "test",
+      "representative_run_id": "archdev001_gru_one_line_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "split": "validation",
+      "representative_run_id": "archdev001_gru_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "split": "validation",
+      "representative_run_id": "archdev001_gru_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "split": "validation",
+      "representative_run_id": "archdev001_gru_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "split": "validation",
+      "representative_run_id": "archdev001_gru_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "split": "test",
+      "representative_run_id": "archdev001_gru_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "split": "test",
+      "representative_run_id": "archdev001_gru_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "split": "test",
+      "representative_run_id": "archdev001_gru_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "split": "test",
+      "representative_run_id": "archdev001_gru_canonical_cycle_descents",
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    }
+  ],
+  "physical_split_count": 40,
+  "logical_split_count": 64,
+  "estimated_full_extraction_forward_seconds": 51.47689432113839,
+  "estimated_full_extraction_forward_gpu_hours": 0.01429913731142733,
+  "cost_scope": "128-example forward plus5 endpoint transfers; excludes file hashing, CP loading and memmap writes; n11..29 interpolated, not an actual total.",
+  "activation_gate": "Same128-example full-prompt explicit manual layers versus hook first8, prefix-only8 final_norm, and original cache final_norm; each tolerance2e-5. Smaller-batch prefix raw-layer discrepancies reported separately.",
+  "benchmark_wall_seconds": 12.693732682993868,
+  "source_updates": 0,
+  "old_cache_final_norm_retained_as_primary": true
+}

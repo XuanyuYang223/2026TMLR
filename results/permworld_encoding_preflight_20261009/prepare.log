@@ -1,0 +1,13 @@
+{'history_shards': 1, 'records': 80000}
+{'history_shards': 21, 'records': 1680000}
+{'history_shards': 41, 'records': 3280000}
+{'history_shards': 61, 'records': 4880000}
+{'history_shards': 81, 'records': 6480000}
+{'history_shards': 101, 'records': 8080000}
+{'history_shards': 121, 'records': 9680000}
+{'history_shards': 141, 'records': 11280000}
+{'history_shards': 161, 'records': 12880000}
+{'history_shards': 181, 'records': 14480000}
+{'world': 'dev001', 'split': 'train', 'anchors': 86016}
+{'world': 'dev001', 'split': 'validation', 'anchors': 5376}
+{'world': 'dev001', 'split': 'test', 'anchors': 10752}

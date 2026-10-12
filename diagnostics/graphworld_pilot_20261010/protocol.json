@@ -1,0 +1,2866 @@
+{
+  "protocol_version": "graphworld-fixed-four-task-pilot/v1",
+  "registered_utc": "2026-10-10T21:55:05.361660+00:00",
+  "exploratory": true,
+  "worlds": 1,
+  "reference_architecture": "transformer",
+  "encodings": [
+    "row_major_offdiagonal_binary"
+  ],
+  "lengths": [
+    6,
+    7,
+    8
+  ],
+  "length_weights": {
+    "6": 0.3333333333333333,
+    "7": 0.3333333333333333,
+    "8": 0.3333333333333333
+  },
+  "tasks": [
+    "max_out",
+    "min_out",
+    "max_in",
+    "min_in"
+  ],
+  "actions": [
+    "identity",
+    "R",
+    "WR",
+    "C",
+    "WC"
+  ],
+  "relations": [
+    {
+      "relation": "reverse_max",
+      "left": "max_out",
+      "right": "max_in",
+      "correct": "R",
+      "wrong": "WR",
+      "mapping": "identity"
+    },
+    {
+      "relation": "reverse_min",
+      "left": "min_out",
+      "right": "min_in",
+      "correct": "R",
+      "wrong": "WR",
+      "mapping": "identity"
+    },
+    {
+      "relation": "complement_out",
+      "left": "max_out",
+      "right": "min_out",
+      "correct": "C",
+      "wrong": "WC",
+      "mapping": "n_minus_1_minus_y"
+    },
+    {
+      "relation": "complement_in",
+      "left": "max_in",
+      "right": "min_in",
+      "correct": "C",
+      "wrong": "WC",
+      "mapping": "n_minus_1_minus_y"
+    }
+  ],
+  "source_root": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev",
+  "source_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "original_execution_source_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+  "source_artifacts_sha256": {
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/protocol.json": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/freeze_manifest.json": "6accfc2dbd078c901d6e0495aef85883021c84681b2fcfb77d77f0965f0c2bf5",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.json": "6d9ff0dc6495b7ac6672b40cad736a20d0406b12cc84bb6e23c1a0ded1a91662",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_descents.pt": "37d238e3c7388e2e4003d933187e89339374cf5ef627b18f916a52275fea1827",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/completed.json": "b65753be96eee40e64b1b3ba1d332006b04336892d5bb473d9c785149272bf45",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/completed.json": "d8cbb2119f330add099aa7e478a3d4b2b4d1b15a7ec8c1a805a7b97d6673bba4",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/completed.json": "4f8cc344e56caf9f920156a9aa99671746cfc2df5576da8ee64fafca22e63c1b",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/completed.json": "ee5efffc483160412a1508598b35cbbc860e42d611248bef6670a8c7b845c824",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/completed.json": "7514fe76f6698405166f728f8129c0c5b3e71ebb92f27866fbd741fe5b440003",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/completed.json": "7e6d7a45a6c76f996e988ef2afb0e8973064ac9ef5a5a3884c065993fc56fe31",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/completed.json": "97118cf492031d9f45a3335ab34e7d314b94764d7e4ad048fd93408d1192a5f1",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/completed.json": "cc831c15cd886878a3ffd6769102609a320c5eda6141278bbf39e73a836007a4"
+  },
+  "model": {
+    "d_model": 256,
+    "layers": 4,
+    "heads": 8,
+    "mlp_ratio": 4,
+    "dropout": 0.1,
+    "tie_embeddings": true,
+    "max_seq_len": 128,
+    "vocab_size": 188
+  },
+  "model_seed": 95100001,
+  "training": {
+    "updates": 20000,
+    "micro_batch": 16,
+    "accumulation": 4,
+    "effective_batch": 64,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "warmup_updates": 1000,
+    "minimum_lr_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "precision": "FP32 parameters, CUDA BF16 autocast, TF32 disabled; FP32 CPU fallback",
+    "attention": "validated equivalent SDPA",
+    "loss": "Answer token plus EOS, shifted causal CE, other targets ignored; same two supervised tokens/example in both encodings.",
+    "length_schedule": "Uniform permutations of n6/7/8, repeated/truncated to20k; final counts differ by<=1.",
+    "batch_schedule": "Fixed64 distinct graph anchors at the scheduled n; same saved table and start RNG for all4 models.",
+    "validation_every": 1000,
+    "checkpoint_every": 1000,
+    "endpoint": "Fixed final20k update checkpoint; no best-checkpoint or early-stopping selection.",
+    "execution": "Single GPU, serial jobs; no concurrent step0 creation. Resume only when protocol/data/start hashes agree."
+  },
+  "initial_checkpoint_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/step0.pt",
+  "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+  "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+  "actual_initial_identity_verified": true,
+  "starting_rng_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/start_rng.pt",
+  "starting_rng_sha256": "37d238e3c7388e2e4003d933187e89339374cf5ef627b18f916a52275fea1827",
+  "starting_rng_hash": "68090e92faa9dd77322a05780bc92b3843bde422f7f36089859acc42e4f3a669",
+  "starting_rng_origin": "Actual archived TF descents starting Python/NumPy/CPU/CUDA states, copied once and shared across all4 new graph tasks; no same-seed identity assumption.",
+  "data_seed": 2026101001,
+  "batch_seed": 2026101002,
+  "data": {
+    "per_n": {
+      "train": 4096,
+      "validation": 256,
+      "analysis": 512
+    },
+    "p": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "sampling": "Uniform p-category draw, independent off-diagonal Bernoulli edges, global full<R,C,W> orbit rejection in train/validation/analysis order; all accidental wrong-label matches retained."
+  },
+  "wrong_tables": [
+    {
+      "n": 6,
+      "seed": 20261016,
+      "actual_wrong_table": [
+        {
+          "source": [
+            0,
+            1
+          ],
+          "target": [
+            0,
+            2
+          ]
+        },
+        {
+          "source": [
+            0,
+            2
+          ],
+          "target": [
+            0,
+            1
+          ]
+        },
+        {
+          "source": [
+            0,
+            3
+          ],
+          "target": [
+            0,
+            3
+          ]
+        },
+        {
+          "source": [
+            0,
+            4
+          ],
+          "target": [
+            0,
+            5
+          ]
+        },
+        {
+          "source": [
+            0,
+            5
+          ],
+          "target": [
+            0,
+            4
+          ]
+        },
+        {
+          "source": [
+            1,
+            2
+          ],
+          "target": [
+            4,
+            5
+          ]
+        },
+        {
+          "source": [
+            1,
+            3
+          ],
+          "target": [
+            3,
+            5
+          ]
+        },
+        {
+          "source": [
+            1,
+            4
+          ],
+          "target": [
+            2,
+            3
+          ]
+        },
+        {
+          "source": [
+            1,
+            5
+          ],
+          "target": [
+            2,
+            5
+          ]
+        },
+        {
+          "source": [
+            2,
+            3
+          ],
+          "target": [
+            1,
+            4
+          ]
+        },
+        {
+          "source": [
+            2,
+            4
+          ],
+          "target": [
+            3,
+            4
+          ]
+        },
+        {
+          "source": [
+            2,
+            5
+          ],
+          "target": [
+            1,
+            5
+          ]
+        },
+        {
+          "source": [
+            3,
+            4
+          ],
+          "target": [
+            2,
+            4
+          ]
+        },
+        {
+          "source": [
+            3,
+            5
+          ],
+          "target": [
+            1,
+            3
+          ]
+        },
+        {
+          "source": [
+            4,
+            5
+          ],
+          "target": [
+            1,
+            2
+          ]
+        }
+      ],
+      "wrong_table_sha256": "3d3a6fa10a8b0121719dd50be4f039b095814558e14140540a10b340eca1e2c5",
+      "non_vertex_induced_witness": {
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          1,
+          2
+        ],
+        "mapped_first": [
+          0,
+          2
+        ],
+        "mapped_second": [
+          4,
+          5
+        ],
+        "original_intersection": 1,
+        "mapped_intersection": 0
+      },
+      "counterexamples": {
+        "reverse_max": {
+          "adjacency": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 2,
+          "correct_mapped_right": 2,
+          "wrong_mapped_right": 3,
+          "wrong_adjacency": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "reverse_min": {
+          "adjacency": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 0,
+          "correct_mapped_right": 0,
+          "wrong_mapped_right": 1,
+          "wrong_adjacency": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "complement_out": {
+          "adjacency": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 2,
+          "correct_mapped_right": 2,
+          "wrong_mapped_right": 3,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        "complement_in": {
+          "adjacency": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 3,
+          "correct_mapped_right": 3,
+          "wrong_mapped_right": 4,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      "random_samples": 3000,
+      "accidental_relation_fraction": {
+        "reverse_max": 0.6556666666666666,
+        "reverse_min": 0.646,
+        "complement_out": 0.6556666666666666,
+        "complement_in": 0.6543333333333333
+      }
+    },
+    {
+      "n": 7,
+      "seed": 20261017,
+      "actual_wrong_table": [
+        {
+          "source": [
+            0,
+            1
+          ],
+          "target": [
+            2,
+            6
+          ]
+        },
+        {
+          "source": [
+            0,
+            2
+          ],
+          "target": [
+            3,
+            5
+          ]
+        },
+        {
+          "source": [
+            0,
+            3
+          ],
+          "target": [
+            1,
+            2
+          ]
+        },
+        {
+          "source": [
+            0,
+            4
+          ],
+          "target": [
+            0,
+            6
+          ]
+        },
+        {
+          "source": [
+            0,
+            5
+          ],
+          "target": [
+            3,
+            6
+          ]
+        },
+        {
+          "source": [
+            0,
+            6
+          ],
+          "target": [
+            0,
+            4
+          ]
+        },
+        {
+          "source": [
+            1,
+            2
+          ],
+          "target": [
+            0,
+            3
+          ]
+        },
+        {
+          "source": [
+            1,
+            3
+          ],
+          "target": [
+            4,
+            6
+          ]
+        },
+        {
+          "source": [
+            1,
+            4
+          ],
+          "target": [
+            1,
+            4
+          ]
+        },
+        {
+          "source": [
+            1,
+            5
+          ],
+          "target": [
+            1,
+            6
+          ]
+        },
+        {
+          "source": [
+            1,
+            6
+          ],
+          "target": [
+            1,
+            5
+          ]
+        },
+        {
+          "source": [
+            2,
+            3
+          ],
+          "target": [
+            2,
+            5
+          ]
+        },
+        {
+          "source": [
+            2,
+            4
+          ],
+          "target": [
+            5,
+            6
+          ]
+        },
+        {
+          "source": [
+            2,
+            5
+          ],
+          "target": [
+            2,
+            3
+          ]
+        },
+        {
+          "source": [
+            2,
+            6
+          ],
+          "target": [
+            0,
+            1
+          ]
+        },
+        {
+          "source": [
+            3,
+            4
+          ],
+          "target": [
+            4,
+            5
+          ]
+        },
+        {
+          "source": [
+            3,
+            5
+          ],
+          "target": [
+            0,
+            2
+          ]
+        },
+        {
+          "source": [
+            3,
+            6
+          ],
+          "target": [
+            0,
+            5
+          ]
+        },
+        {
+          "source": [
+            4,
+            5
+          ],
+          "target": [
+            3,
+            4
+          ]
+        },
+        {
+          "source": [
+            4,
+            6
+          ],
+          "target": [
+            1,
+            3
+          ]
+        },
+        {
+          "source": [
+            5,
+            6
+          ],
+          "target": [
+            2,
+            4
+          ]
+        }
+      ],
+      "wrong_table_sha256": "f66c66453e96e9adee993821fc594c3c8b26b8478b73b8d871e835e1df4d0ed2",
+      "non_vertex_induced_witness": {
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          0,
+          2
+        ],
+        "mapped_first": [
+          2,
+          6
+        ],
+        "mapped_second": [
+          3,
+          5
+        ],
+        "original_intersection": 1,
+        "mapped_intersection": 0
+      },
+      "counterexamples": {
+        "reverse_max": {
+          "adjacency": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 5,
+          "correct_mapped_right": 5,
+          "wrong_mapped_right": 4,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "complement_out": {
+          "adjacency": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 5,
+          "correct_mapped_right": 5,
+          "wrong_mapped_right": 4,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        "reverse_min": {
+          "adjacency": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 2,
+          "correct_mapped_right": 2,
+          "wrong_mapped_right": 1,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        "complement_in": {
+          "adjacency": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 5,
+          "correct_mapped_right": 5,
+          "wrong_mapped_right": 4,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "random_samples": 3000,
+      "accidental_relation_fraction": {
+        "reverse_max": 0.551,
+        "reverse_min": 0.557,
+        "complement_out": 0.551,
+        "complement_in": 0.5383333333333333
+      }
+    },
+    {
+      "n": 8,
+      "seed": 20261018,
+      "actual_wrong_table": [
+        {
+          "source": [
+            0,
+            1
+          ],
+          "target": [
+            4,
+            7
+          ]
+        },
+        {
+          "source": [
+            0,
+            2
+          ],
+          "target": [
+            1,
+            3
+          ]
+        },
+        {
+          "source": [
+            0,
+            3
+          ],
+          "target": [
+            2,
+            4
+          ]
+        },
+        {
+          "source": [
+            0,
+            4
+          ],
+          "target": [
+            1,
+            2
+          ]
+        },
+        {
+          "source": [
+            0,
+            5
+          ],
+          "target": [
+            1,
+            7
+          ]
+        },
+        {
+          "source": [
+            0,
+            6
+          ],
+          "target": [
+            3,
+            4
+          ]
+        },
+        {
+          "source": [
+            0,
+            7
+          ],
+          "target": [
+            1,
+            5
+          ]
+        },
+        {
+          "source": [
+            1,
+            2
+          ],
+          "target": [
+            0,
+            4
+          ]
+        },
+        {
+          "source": [
+            1,
+            3
+          ],
+          "target": [
+            0,
+            2
+          ]
+        },
+        {
+          "source": [
+            1,
+            4
+          ],
+          "target": [
+            3,
+            7
+          ]
+        },
+        {
+          "source": [
+            1,
+            5
+          ],
+          "target": [
+            0,
+            7
+          ]
+        },
+        {
+          "source": [
+            1,
+            6
+          ],
+          "target": [
+            2,
+            5
+          ]
+        },
+        {
+          "source": [
+            1,
+            7
+          ],
+          "target": [
+            0,
+            5
+          ]
+        },
+        {
+          "source": [
+            2,
+            3
+          ],
+          "target": [
+            4,
+            6
+          ]
+        },
+        {
+          "source": [
+            2,
+            4
+          ],
+          "target": [
+            0,
+            3
+          ]
+        },
+        {
+          "source": [
+            2,
+            5
+          ],
+          "target": [
+            1,
+            6
+          ]
+        },
+        {
+          "source": [
+            2,
+            6
+          ],
+          "target": [
+            2,
+            7
+          ]
+        },
+        {
+          "source": [
+            2,
+            7
+          ],
+          "target": [
+            2,
+            6
+          ]
+        },
+        {
+          "source": [
+            3,
+            4
+          ],
+          "target": [
+            0,
+            6
+          ]
+        },
+        {
+          "source": [
+            3,
+            5
+          ],
+          "target": [
+            5,
+            7
+          ]
+        },
+        {
+          "source": [
+            3,
+            6
+          ],
+          "target": [
+            4,
+            5
+          ]
+        },
+        {
+          "source": [
+            3,
+            7
+          ],
+          "target": [
+            1,
+            4
+          ]
+        },
+        {
+          "source": [
+            4,
+            5
+          ],
+          "target": [
+            3,
+            6
+          ]
+        },
+        {
+          "source": [
+            4,
+            6
+          ],
+          "target": [
+            2,
+            3
+          ]
+        },
+        {
+          "source": [
+            4,
+            7
+          ],
+          "target": [
+            0,
+            1
+          ]
+        },
+        {
+          "source": [
+            5,
+            6
+          ],
+          "target": [
+            6,
+            7
+          ]
+        },
+        {
+          "source": [
+            5,
+            7
+          ],
+          "target": [
+            3,
+            5
+          ]
+        },
+        {
+          "source": [
+            6,
+            7
+          ],
+          "target": [
+            5,
+            6
+          ]
+        }
+      ],
+      "wrong_table_sha256": "052b3a1b75eea71ee72852d55b742633cf32412892752bc8dadeaecf587b1765",
+      "non_vertex_induced_witness": {
+        "first": [
+          0,
+          1
+        ],
+        "second": [
+          0,
+          2
+        ],
+        "mapped_first": [
+          4,
+          7
+        ],
+        "mapped_second": [
+          1,
+          3
+        ],
+        "original_intersection": 1,
+        "mapped_intersection": 0
+      },
+      "counterexamples": {
+        "reverse_max": {
+          "adjacency": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 4,
+          "correct_mapped_right": 4,
+          "wrong_mapped_right": 3,
+          "wrong_adjacency": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "complement_out": {
+          "adjacency": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 4,
+          "correct_mapped_right": 4,
+          "wrong_mapped_right": 3,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        "complement_in": {
+          "adjacency": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 3,
+          "correct_mapped_right": 3,
+          "wrong_mapped_right": 5,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        "reverse_min": {
+          "adjacency": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "left_answer": 5,
+          "correct_mapped_right": 5,
+          "wrong_mapped_right": 4,
+          "wrong_adjacency": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "random_samples": 3000,
+      "accidental_relation_fraction": {
+        "reverse_max": 0.5223333333333333,
+        "reverse_min": 0.5253333333333333,
+        "complement_out": 0.5223333333333333,
+        "complement_in": 0.519
+      }
+    }
+  ],
+  "mathematics_audit_sha256": "344d4b3765ad81607560bf097a87045ff5ac25e62ec3e19d36eb5e51c008daa4",
+  "serialization": {
+    "prefix": "BOS SIZE n ARG_START; row-major non-diagonal00/01, existing| between rows; ARG_END",
+    "vocabulary": {
+      "00": 0,
+      "01": 1,
+      "02": 2,
+      "03": 3,
+      "04": 4,
+      "05": 5,
+      "06": 6,
+      "07": 7,
+      "08": 8,
+      "09": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24,
+      "25": 25,
+      "26": 26,
+      "27": 27,
+      "28": 28,
+      "29": 29,
+      "30": 30,
+      "31": 31,
+      "32": 32,
+      "33": 33,
+      "34": 34,
+      "35": 35,
+      "36": 36,
+      "37": 37,
+      "38": 38,
+      "39": 39,
+      "40": 40,
+      "41": 41,
+      "42": 42,
+      "43": 43,
+      "44": 44,
+      "45": 45,
+      "46": 46,
+      "47": 47,
+      "48": 48,
+      "49": 49,
+      "50": 50,
+      "51": 51,
+      "52": 52,
+      "53": 53,
+      "54": 54,
+      "55": 55,
+      "56": 56,
+      "57": 57,
+      "58": 58,
+      "59": 59,
+      "60": 60,
+      "61": 61,
+      "62": 62,
+      "63": 63,
+      "64": 64,
+      "65": 65,
+      "66": 66,
+      "67": 67,
+      "68": 68,
+      "69": 69,
+      "70": 70,
+      "71": 71,
+      "72": 72,
+      "73": 73,
+      "74": 74,
+      "75": 75,
+      "76": 76,
+      "77": 77,
+      "78": 78,
+      "79": 79,
+      "80": 80,
+      "81": 81,
+      "82": 82,
+      "83": 83,
+      "84": 84,
+      "85": 85,
+      "86": 86,
+      "87": 87,
+      "88": 88,
+      "89": 89,
+      "90": 90,
+      "91": 91,
+      "92": 92,
+      "93": 93,
+      "94": 94,
+      "95": 95,
+      "96": 96,
+      "97": 97,
+      "98": 98,
+      "99": 99,
+      "<NUM_START>": 100,
+      "<NUM_END>": 101,
+      "<BOS>": 102,
+      "<EOS>": 103,
+      "<PAD>": 104,
+      "<ONE_START>": 105,
+      "<ONE_END>": 106,
+      "<CYCLE_START>": 107,
+      "<CYCLE_END>": 108,
+      "<LEHMER_START>": 109,
+      "<LEHMER_END>": 110,
+      "<INVEC_START>": 111,
+      "<INVEC_END>": 112,
+      ",": 113,
+      ";": 114,
+      "<LENGTH>": 115,
+      "<PARITY>": 116,
+      "<PEAKS>": 117,
+      "<EXCEEDANCES>": 118,
+      "<FIXED_POINTS>": 119,
+      "<DESCENTS>": 120,
+      "<RECOILS>": 121,
+      "<LIS_LENGTH>": 122,
+      "<SIZE>": 123,
+      "=": 124,
+      "+": 125,
+      "-": 126,
+      "*": 127,
+      "/": 128,
+      "<YT_ROW_START>": 129,
+      "<YT_ROW_END>": 130,
+      "<YT_COL_START>": 131,
+      "<YT_COL_END>": 132,
+      "|": 133,
+      "<P_TABLEAU>": 134,
+      "<Q_TABLEAU>": 135,
+      "<TO_CYCLE>": 136,
+      "<TO_LEHMER>": 137,
+      "<TO_INVERSION_VECTOR>": 138,
+      "<TO_REDUCED_WORD>": 139,
+      "<CYCLE_TYPE>": 140,
+      "<RSK_SHAPE>": 141,
+      "<LDS_LENGTH>": 142,
+      "<PATTERN_AVOIDANCE>": 143,
+      "<INVERSE>": 144,
+      "<COMPOSE>": 145,
+      "<POWER>": 146,
+      "<CONJUGATE>": 147,
+      "<COMMUTATOR>": 148,
+      "<RIGHT_MULTIPLY_SIMPLE>": 149,
+      "<BRUHAT_LEQ>": 150,
+      "<ARG_START>": 151,
+      "<ARG_END>": 152,
+      "<PATTERN_START>": 153,
+      "<PATTERN_END>": 154,
+      "<EXPONENT>": 155,
+      "<SIMPLE_INDEX>": 156,
+      "<REDUCED_WORD_START>": 157,
+      "<REDUCED_WORD_END>": 158,
+      "<CYCLE_TYPE_START>": 159,
+      "<CYCLE_TYPE_END>": 160,
+      "<RSK_SHAPE_START>": 161,
+      "<RSK_SHAPE_END>": 162,
+      "<VALLEYS>": 163,
+      "<DOUBLE_ASCENTS>": 164,
+      "<DOUBLE_DESCENTS>": 165,
+      "<SUCCESSIONS>": 166,
+      "<ADJACENCIES>": 167,
+      "<ANTI_FIXED_POINTS>": 168,
+      "<DEFICIENCIES>": 169,
+      "<LEFT_TO_RIGHT_MAXIMA>": 170,
+      "<LEFT_TO_RIGHT_MINIMA>": 171,
+      "<RIGHT_TO_LEFT_MAXIMA>": 172,
+      "<RIGHT_TO_LEFT_MINIMA>": 173,
+      "<CYCLE_COUNT>": 174,
+      "<TWO_CYCLE_COUNT>": 175,
+      "<THREE_CYCLE_COUNT>": 176,
+      "<EVEN_CYCLE_COUNT>": 177,
+      "<ODD_CYCLE_COUNT>": 178,
+      "<LONGEST_CYCLE>": 179,
+      "<SHORTEST_CYCLE>": 180,
+      "<NONTRIVIAL_CYCLE_COUNT>": 181,
+      "<LONGEST_INCREASING_RUN>": 182,
+      "<LONGEST_DECREASING_RUN>": 183,
+      "<GLOBAL_DESCENTS>": 184,
+      "<COMPONENTS>": 185,
+      "<MAX_DISPLACEMENT>": 186,
+      "<DISPLACEMENT_ONE_COUNT>": 187
+    },
+    "task_tokens": {
+      "max_out": "<EXCEEDANCES>",
+      "min_out": "<DEFICIENCIES>",
+      "max_in": "<LEFT_TO_RIGHT_MAXIMA>",
+      "min_in": "<LEFT_TO_RIGHT_MINIMA>"
+    },
+    "task_ids": {
+      "max_out": 118,
+      "min_out": 169,
+      "max_in": 170,
+      "min_in": 171
+    },
+    "end_position": "n*n+3 before task",
+    "answer_query_position": "n*n+5 at equals",
+    "prefix_lengths": {
+      "6": 40,
+      "7": 53,
+      "8": 68
+    },
+    "supervised_lengths": {
+      "6": 44,
+      "7": 57,
+      "8": 72
+    },
+    "reused_token_semantics": "Graph-specific serializer and task token meanings; original permutation parser untouched. Existing random token IDs are reinterpreted, no new vocabulary."
+  },
+  "evaluation": {
+    "fit_split": "validation",
+    "test_split": "analysis",
+    "batch": 128,
+    "primary_state": "final_norm/input-end before task",
+    "model_mode": "eval",
+    "autocast": false,
+    "dtype": "float32",
+    "TF32": false,
+    "controls": [
+      "raw_within_n",
+      "answer_strata",
+      "answer_density_strata"
+    ],
+    "minimum_stratum_count": 3,
+    "strata": "Joint[n,left identity,mapped right identity/correct/wrong], independently>=3 in fit/test; density adds exact anchor edge count m. Masks fixed across all models/branches.",
+    "metrics": [
+      "linear_cka",
+      "knn_overlap",
+      "procrustes"
+    ],
+    "sensitivity": [
+      "debiased_cka"
+    ],
+    "knn_k": 10,
+    "procrustes_rank_cap": 8,
+    "pooling": "input-end only",
+    "input_kernel": "Position-wise binary two-class onehot, exact common Gram under fixed slot/category isometries; static input reference, no fabricated initialization/training Delta.",
+    "procrustes_similarity": "negative held-out RMS normalized error; larger is more similar",
+    "baselines": [
+      "numeric0..30 conditional output probabilities",
+      "gold answer onehot31",
+      "gold scalar",
+      "fixed positional binary onehot input"
+    ],
+    "fields": [
+      "initial_correct",
+      "initial_wrong",
+      "initial_identity",
+      "trained_correct",
+      "trained_wrong",
+      "trained_identity",
+      "B0",
+      "Bt",
+      "dc",
+      "dw",
+      "di",
+      "Delta"
+    ],
+    "undefined_policy": "NaN/None retained; fixed1/3 aggregate undefined if any n missing, never reweighted."
+  },
+  "engineering": {
+    "real_learning_updates": 32,
+    "resume_from": 16,
+    "resume_until": 32,
+    "parameter_tolerance": 1e-05,
+    "optimizer_tolerance": 1e-05,
+    "activation_tolerance": 2e-05,
+    "logit_tolerance": 0.0001,
+    "task_learning_not_a_gate": true,
+    "geometry_not_a_gate": true,
+    "samples": 48,
+    "supervision": "Independent mask/shifted CE, finite nonzero gradient, changed parameter, task/EOS scores retained; no accuracy threshold."
+  },
+  "limits": {
+    "source_models": 4,
+    "source_endpoint": 20000,
+    "no_tuning": true,
+    "no_added_seeds": true,
+    "no_added_tasks": true,
+    "no_GroupWorld": true,
+    "no_F17_changes": true,
+    "no_automatic_training": true,
+    "stop_after_report": true
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.4.4",
+    "networkx": "3.6.1"
+  },
+  "limitations": [
+    "Four relationships share four tasks and two transformations; not4 independent mathematical replications.",
+    "One graph world and one shared initialization; configuration-specific exploratory transfer across systems.",
+    "Vertex relabeling/isomorphism classes are not excluded, only the specified<R,C,W> orbits.",
+    "Different size/encoding/task/distribution from PermWorld; no domain-only causal contrast."
+  ],
+  "training_manifest": [
+    {
+      "run_id": "graphpilot001_max_out",
+      "task": "max_out",
+      "architecture": "transformer",
+      "encoding": "row_major_offdiagonal_binary",
+      "updates": 20000
+    },
+    {
+      "run_id": "graphpilot001_min_out",
+      "task": "min_out",
+      "architecture": "transformer",
+      "encoding": "row_major_offdiagonal_binary",
+      "updates": 20000
+    },
+    {
+      "run_id": "graphpilot001_max_in",
+      "task": "max_in",
+      "architecture": "transformer",
+      "encoding": "row_major_offdiagonal_binary",
+      "updates": 20000
+    },
+    {
+      "run_id": "graphpilot001_min_in",
+      "task": "min_in",
+      "architecture": "transformer",
+      "encoding": "row_major_offdiagonal_binary",
+      "updates": 20000
+    }
+  ]
+}

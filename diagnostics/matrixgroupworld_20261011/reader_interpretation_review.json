@@ -1,0 +1,1200 @@
+{
+  "status": "passed_current_report_snapshot",
+  "review_utc": "2026-10-11T23:58:58.823409+00:00",
+  "report_version_read_sha256": "3cc68837c2a9bb0db799863c2ea8391b8a87d6f0e855f721571798829cee2175",
+  "report_audit_version_read_sha256": "a84a8e0f78f2c3ecfd87a1e815e62f8cabb3d99fee9ab20c6af60ba423b1c96a",
+  "report_version_binding": "Review of these captured bytes only; a future rebuild is not silently covered. If the report is updated, re-read the modified paragraph and record a separate closing version audit.",
+  "inputs_read_sha256": {
+    "report.txt": "3cc68837c2a9bb0db799863c2ea8391b8a87d6f0e855f721571798829cee2175",
+    "report_audit.json": "a84a8e0f78f2c3ecfd87a1e815e62f8cabb3d99fee9ab20c6af60ba423b1c96a",
+    "geometry_summary.csv": "0b5c9360f5a307d13fbee322cd0cd1ef891fbad9634a53bc9266a30bcba44d09",
+    "geometry_per_n.csv": "67e52eed74bbd1d0a90bd4833ab942ff68725856125ca6ecb22ed3fc99c2b8ab",
+    "designated_rank.csv": "0f23013e41cb0c7970531c498fba9a4553d7c1c88570dad70d99da4609dbd291",
+    "pair_summary.csv": "b3635492af2ece49d745043aad00ebec85a832a3d624d6bfad8fb25b37fd2748",
+    "source_learning.csv": "1a6832d30e3a9bfff9a0e99796817df21eb1a7cc2bfcd60175bb0ec3d4eb58fc",
+    "actual_numerical_verification.json": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+    "protection_start.json": "e5f3fccf7cf2861879903f22b41634a38af32f35128b5ac8c0ac074d0295d808",
+    "protection_end.json": "a44f5e2b97279c7be475f9341d42d517c85e78b96720f03819c26449d2d61eb8",
+    "table_arithmetic_audit.json": "9259e1aeb59c6b838d0da4a97e56033e9f3abe78c8e713e5486f62d8054b2fe4"
+  },
+  "input_versions_unchanged_during_review": {
+    "report.txt": true,
+    "report_audit.json": true,
+    "geometry_summary.csv": true,
+    "geometry_per_n.csv": true,
+    "designated_rank.csv": true,
+    "pair_summary.csv": true,
+    "source_learning.csv": true,
+    "actual_numerical_verification.json": true,
+    "protection_start.json": true,
+    "protection_end.json": true,
+    "table_arithmetic_audit.json": true
+  },
+  "check_count": 106,
+  "failure_count": 0,
+  "failures": [],
+  "checks": [
+    {
+      "check": "report_audit_output_SHA_matches_the_read_report_version",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_geometry_summary.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_geometry_per_n.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_designated_rank.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_pair_summary.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_source_learning.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_actual_numerical_verification.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_protection_start.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_protection_end.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_input_SHA_table_arithmetic_audit.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "complete_tables_do_not_claim_complete_scientific_verification",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_table_count_geometry_summary.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_table_count_geometry_per_n.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_table_count_designated_rank.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_table_count_pair_summary.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_table_count_source_learning.csv",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "ordinary_CKA_sign_counts_raw_within_n",
+      "passed": true,
+      "details": {
+        "Bt": {
+          "positive": 8,
+          "negative": 0,
+          "zero": 0,
+          "undefined": 0,
+          "total": 8
+        },
+        "Delta": {
+          "positive": 6,
+          "negative": 2,
+          "zero": 0,
+          "undefined": 0,
+          "total": 8
+        }
+      }
+    },
+    {
+      "check": "ordinary_CKA_sign_counts_answer_strata",
+      "passed": true,
+      "details": {
+        "Bt": {
+          "positive": 5,
+          "negative": 3,
+          "zero": 0,
+          "undefined": 0,
+          "total": 8
+        },
+        "Delta": {
+          "positive": 5,
+          "negative": 3,
+          "zero": 0,
+          "undefined": 0,
+          "total": 8
+        }
+      }
+    },
+    {
+      "check": "rounded_main_report_unit001_R1_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit001_R1_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit001_R1_dc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit001_R1_du",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "R1_negative_CKA_Bt_and_Delta_unit001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main_three_scales_and_equal_weight_unit001_R1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R1_B0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R1_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R1_dc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R1_du",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R1_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit001_R3_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit001_R3_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit001_R3_dc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit001_R3_du",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "R3_positive_increment_with_both_CKA_branches_declining_unit001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main_three_scales_and_equal_weight_unit001_R3",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R3_B0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R3_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R3_dc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R3_du",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit001_R3_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit002_R1_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit002_R1_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit002_R1_dc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit002_R1_du",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "R1_negative_CKA_Bt_and_Delta_unit002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main_three_scales_and_equal_weight_unit002_R1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R1_B0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R1_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R1_dc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R1_du",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R1_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit002_R3_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit002_R3_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit002_R3_dc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "rounded_main_report_unit002_R3_du",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "R3_positive_increment_with_both_CKA_branches_declining_unit002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main_three_scales_and_equal_weight_unit002_R3",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R3_B0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R3_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R3_dc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R3_du",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved_main_aggregate_unit002_R3_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "controlled_eight_CKA_decompositions_saved_arithmetic",
+      "passed": true,
+      "details": {
+        "max_error": 2.220446049250313e-16,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "check": "fixed_T_rank_counts_raw_within_n",
+      "passed": true,
+      "details": {
+        "total": 8,
+        "first": 8,
+        "unique_complete_first": 8,
+        "above_nondesignated_mean": 8,
+        "complete_three_candidate_count": 8
+      }
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit001_R1_raw_within_n",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit001_R2_raw_within_n",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit001_R3_raw_within_n",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit001_R4_raw_within_n",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit002_R1_raw_within_n",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit002_R2_raw_within_n",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit002_R3_raw_within_n",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit002_R4_raw_within_n",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_rank_counts_answer_strata",
+      "passed": true,
+      "details": {
+        "total": 8,
+        "first": 4,
+        "unique_complete_first": 4,
+        "above_nondesignated_mean": 5,
+        "complete_three_candidate_count": 8
+      }
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit001_R1_answer_strata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "R1_fixed_T_first_and_CKA_Bt_negative_are_distinct_comparisons_unit001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit001_R2_answer_strata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit001_R3_answer_strata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit001_R4_answer_strata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit002_R1_answer_strata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "R1_fixed_T_first_and_CKA_Bt_negative_are_distinct_comparisons_unit002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit002_R2_answer_strata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit002_R3_answer_strata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "fixed_T_designated_score_not_Bt_unit002_R4_answer_strata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "three_metric_answer_control_direction_count_Bt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "three_metric_answer_control_direction_count_Delta",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "reported_two_unit_three_of_four_is_ordinary_CKA",
+      "passed": true,
+      "details": {
+        "Bt": {
+          "linear_cka": 3,
+          "knn_overlap": 4,
+          "procrustes": 4
+        },
+        "Delta": {
+          "linear_cka": 3,
+          "knn_overlap": 3,
+          "procrustes": 3
+        }
+      }
+    },
+    {
+      "check": "F3_n10_report_accuracy_unit001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F3_n10_report_baseline_unit001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F3_n10_report_CE_unit001",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F3_n10_report_accuracy_unit002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F3_n10_report_baseline_unit002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F3_n10_report_CE_unit002",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F3_n10_both_unit_readouts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "reported_source_mean_accuracy_range",
+      "passed": true,
+      "details": [
+        0.6809895833333334,
+        1.0
+      ]
+    },
+    {
+      "check": "reported_source_baseline_gain_range",
+      "passed": true,
+      "details": [
+        39.25781250000001,
+        71.94010416666667
+      ]
+    },
+    {
+      "check": "original_numerical_status_and_subset_scope_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "report_retains_failed_checks_and_does_not_call_the_tables_fully_verified",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "two_units_not_extra_relations_scales_metrics_replications",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "group_input_does_not_assert_learned_group_mechanism",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "old_artifact_protection_is_named_start_end_only_protection_start.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "old_artifact_protection_is_named_start_end_only_protection_end.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "added_complete_n10_source_report_unit001_F3",
+      "passed": true,
+      "details": [
+        "train=45.61% (CE=1.213319)",
+        "validation=40.23% (CE=1.345720)",
+        "analysis=35.55% (CE=1.339555)"
+      ]
+    },
+    {
+      "check": "added_complete_n10_source_report_unit001_F4",
+      "passed": true,
+      "details": [
+        "train=99.73% (CE=0.009258)",
+        "validation=99.22% (CE=0.033273)",
+        "analysis=99.80% (CE=0.012523)"
+      ]
+    },
+    {
+      "check": "added_complete_n10_source_report_unit002_F3",
+      "passed": true,
+      "details": [
+        "train=39.21% (CE=1.437446)",
+        "validation=31.25% (CE=1.689814)",
+        "analysis=31.64% (CE=1.582684)"
+      ]
+    },
+    {
+      "check": "added_complete_n10_source_report_unit002_F4",
+      "passed": true,
+      "details": [
+        "train=48.49% (CE=1.175277)",
+        "validation=35.55% (CE=1.493230)",
+        "analysis=31.25% (CE=1.679454)"
+      ]
+    },
+    {
+      "check": "ordinary_CKA_qualification_present_in_both_language_direction_paragraphs",
+      "passed": true,
+      "details": [
+        "Bt方向：三指标一致 5/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。",
+        "Delta方向：三指标一致 6/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。",
+        "Bt directions agree across the three metrics in 5/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.",
+        "Delta directions agree across the three metrics in 6/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement."
+      ]
+    }
+  ],
+  "ordinary_CKA_counts": {
+    "raw_within_n": {
+      "Bt": {
+        "positive": 8,
+        "negative": 0,
+        "zero": 0,
+        "undefined": 0,
+        "total": 8
+      },
+      "Delta": {
+        "positive": 6,
+        "negative": 2,
+        "zero": 0,
+        "undefined": 0,
+        "total": 8
+      }
+    },
+    "answer_strata": {
+      "Bt": {
+        "positive": 5,
+        "negative": 3,
+        "zero": 0,
+        "undefined": 0,
+        "total": 8
+      },
+      "Delta": {
+        "positive": 5,
+        "negative": 3,
+        "zero": 0,
+        "undefined": 0,
+        "total": 8
+      }
+    }
+  },
+  "controlled_primary_decomposition": [
+    {
+      "unit": "unit001",
+      "relation": "R1",
+      "initial_correct": 0.8347456779121828,
+      "initial_wrong": 0.8333824746106187,
+      "trained_correct": 0.13258923950886928,
+      "trained_wrong": 0.15197311715656364,
+      "B0": 0.0013632033015642901,
+      "Bt": -0.019383877647694368,
+      "dc": -0.7021564384033137,
+      "du": -0.6814093574540548,
+      "Delta": -0.02074708094925866
+    },
+    {
+      "unit": "unit001",
+      "relation": "R3",
+      "initial_correct": 0.8394270900709867,
+      "initial_wrong": 0.8634604329783279,
+      "trained_correct": 0.03865449484594735,
+      "trained_wrong": 0.014190277926952951,
+      "B0": -0.024033342907341198,
+      "Bt": 0.024464216918994402,
+      "dc": -0.8007725952250393,
+      "du": -0.849270155051375,
+      "Delta": 0.0484975598263356
+    },
+    {
+      "unit": "unit002",
+      "relation": "R1",
+      "initial_correct": 0.9123449975028882,
+      "initial_wrong": 0.9118160166030217,
+      "trained_correct": 0.09141501514299762,
+      "trained_wrong": 0.10543687867288108,
+      "B0": 0.0005289808998664528,
+      "Bt": -0.01402186352988345,
+      "dc": -0.8209299823598905,
+      "du": -0.8063791379301407,
+      "Delta": -0.014550844429749903
+    },
+    {
+      "unit": "unit002",
+      "relation": "R3",
+      "initial_correct": 0.8819928421535049,
+      "initial_wrong": 0.8957171962721425,
+      "trained_correct": 0.12625690961986277,
+      "trained_wrong": 0.018648787962851927,
+      "B0": -0.01372435411863763,
+      "Bt": 0.10760812165701084,
+      "dc": -0.7557359325336422,
+      "du": -0.8770684083092907,
+      "Delta": 0.12133247577564847
+    }
+  ],
+  "R1_rank_vs_Bt": [
+    {
+      "unit": "unit001",
+      "fixed_T_CKA": 0.13258923950886928,
+      "rank": 1,
+      "ordinary_correct_minus_wrong_Bt": -0.019383877647694368,
+      "Delta": -0.02074708094925866
+    },
+    {
+      "unit": "unit002",
+      "fixed_T_CKA": 0.09141501514299762,
+      "rank": 1,
+      "ordinary_correct_minus_wrong_Bt": -0.01402186352988345,
+      "Delta": -0.014550844429749903
+    }
+  ],
+  "fixed_T_counts": {
+    "raw_within_n": {
+      "total": 8,
+      "first": 8,
+      "unique_complete_first": 8,
+      "above_nondesignated_mean": 8,
+      "complete_three_candidate_count": 8
+    },
+    "answer_strata": {
+      "total": 8,
+      "first": 4,
+      "unique_complete_first": 4,
+      "above_nondesignated_mean": 5,
+      "complete_three_candidate_count": 8
+    }
+  },
+  "three_metric_direction_agreement": {
+    "Bt": {
+      "complete_cells": 8,
+      "same_sign_cells": 5,
+      "cells": [
+        {
+          "unit": "unit001",
+          "relation": "R1",
+          "signs": {
+            "linear_cka": -1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": false
+        },
+        {
+          "unit": "unit001",
+          "relation": "R2",
+          "signs": {
+            "linear_cka": -1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": false
+        },
+        {
+          "unit": "unit001",
+          "relation": "R3",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit001",
+          "relation": "R4",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit002",
+          "relation": "R1",
+          "signs": {
+            "linear_cka": -1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": false
+        },
+        {
+          "unit": "unit002",
+          "relation": "R2",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit002",
+          "relation": "R3",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit002",
+          "relation": "R4",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        }
+      ]
+    },
+    "Delta": {
+      "complete_cells": 8,
+      "same_sign_cells": 6,
+      "cells": [
+        {
+          "unit": "unit001",
+          "relation": "R1",
+          "signs": {
+            "linear_cka": -1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": false
+        },
+        {
+          "unit": "unit001",
+          "relation": "R2",
+          "signs": {
+            "linear_cka": -1,
+            "knn_overlap": -1,
+            "procrustes": -1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit001",
+          "relation": "R3",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit001",
+          "relation": "R4",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit002",
+          "relation": "R1",
+          "signs": {
+            "linear_cka": -1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": false
+        },
+        {
+          "unit": "unit002",
+          "relation": "R2",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit002",
+          "relation": "R3",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        },
+        {
+          "unit": "unit002",
+          "relation": "R4",
+          "signs": {
+            "linear_cka": 1,
+            "knn_overlap": 1,
+            "procrustes": 1
+          },
+          "complete": true,
+          "same_sign": true
+        }
+      ]
+    }
+  },
+  "two_unit_direction_agreement_by_metric": {
+    "Bt": {
+      "linear_cka": 3,
+      "knn_overlap": 4,
+      "procrustes": 4
+    },
+    "Delta": {
+      "linear_cka": 3,
+      "knn_overlap": 3,
+      "procrustes": 3
+    }
+  },
+  "F3_n10_identity_source_readouts": [
+    {
+      "unit": "unit001",
+      "task": "F3",
+      "n": "10",
+      "samples": "512",
+      "full_vocab_answer_accuracy": 0.35546875,
+      "training_mode_accuracy": 0.283203125,
+      "answer_ce": 1.3395551098510623,
+      "eos_accuracy": 1.0
+    },
+    {
+      "unit": "unit002",
+      "task": "F3",
+      "n": "10",
+      "samples": "512",
+      "full_vocab_answer_accuracy": 0.31640625,
+      "training_mode_accuracy": 0.2421875,
+      "answer_ce": 1.5826838949578814,
+      "eos_accuracy": 1.0
+    }
+  ],
+  "source_identity_analysis_summary": [
+    {
+      "unit": "unit001",
+      "task": "F1",
+      "three_n_equal_weight_accuracy": 1.0,
+      "baseline": 0.2805989583333333,
+      "gain_pp": 71.94010416666667
+    },
+    {
+      "unit": "unit001",
+      "task": "F2",
+      "three_n_equal_weight_accuracy": 1.0,
+      "baseline": 0.2838541666666667,
+      "gain_pp": 71.61458333333333
+    },
+    {
+      "unit": "unit001",
+      "task": "F3",
+      "three_n_equal_weight_accuracy": 0.6809895833333334,
+      "baseline": 0.2884114583333333,
+      "gain_pp": 39.25781250000001
+    },
+    {
+      "unit": "unit001",
+      "task": "F4",
+      "three_n_equal_weight_accuracy": 0.9993489583333334,
+      "baseline": 0.283203125,
+      "gain_pp": 71.61458333333334
+    },
+    {
+      "unit": "unit002",
+      "task": "F1",
+      "three_n_equal_weight_accuracy": 1.0,
+      "baseline": 0.2819010416666667,
+      "gain_pp": 71.80989583333333
+    },
+    {
+      "unit": "unit002",
+      "task": "F2",
+      "three_n_equal_weight_accuracy": 1.0,
+      "baseline": 0.28515625,
+      "gain_pp": 71.484375
+    },
+    {
+      "unit": "unit002",
+      "task": "F3",
+      "three_n_equal_weight_accuracy": 0.7623697916666666,
+      "baseline": 0.2786458333333333,
+      "gain_pp": 48.37239583333333
+    },
+    {
+      "unit": "unit002",
+      "task": "F4",
+      "three_n_equal_weight_accuracy": 0.7682291666666666,
+      "baseline": 0.287109375,
+      "gain_pp": 48.111979166666664
+    }
+  ],
+  "protection_audit_scope": [
+    {
+      "path": "protection_start.json",
+      "status": "passed",
+      "named_file_count": 2664,
+      "limitation": "Beginning/end SHA checks establish identity only for these named files, not all files or all intermediate execution states. Current research entry protected and left unchanged this task."
+    },
+    {
+      "path": "protection_end.json",
+      "status": "passed",
+      "named_file_count": 2664,
+      "limitation": "Beginning/end SHA checks establish identity only for these named files, not all files or all intermediate execution states. Current research entry protected and left unchanged this task."
+    }
+  ],
+  "minor_wording_clarification": {
+    "issue": "The earlier unqualified two-unit 3/4 phrasing was clarified in the captured report snapshot; no outstanding wording issue in these bytes.",
+    "blocking": false,
+    "root_notified": true,
+    "Bt_two_unit_agreement": {
+      "linear_cka": "3/4",
+      "knn_overlap": "4/4",
+      "procrustes": "4/4"
+    },
+    "Delta_two_unit_agreement": {
+      "linear_cka": "3/4",
+      "knn_overlap": "3/4",
+      "procrustes": "3/4"
+    },
+    "resolved_in_reviewed_report_version": true,
+    "current_report_clarifies_ordinary_CKA": true
+  },
+  "interpretations": [
+    "Raw ordinary CKA correct-versus-wrong preference is positive in 8/8 saved unit/relation means; answer-controlled positivity is 5/8, and this is not a causal estimate.",
+    "R1 negative controlled CKA Bt/Delta and fixed-T designated rank 1 in both units concern distinct comparisons; the fixed-T score is trained_correct, not correct-minus-wrong.",
+    "R3 positive Delta occurs while both correct and wrong CKA decrease; the wrong branch decreases more. F3 n10 learning limits require retention.",
+    "The fixed three metrics have answer-controlled Bt sign agreement 5/8 and Delta agreement 6/8; signs do not imply significance or proven absence.",
+    "Two independently sampled data/initialization units repeat this GL pilot only. Shared tasks, actions, sizes and metrics are descriptive dependent cells, not additional independent worlds.",
+    "Transpose is an anti-automorphism and fixed multiplication gives group actions, not the claimed acquisition of a group homomorphism or internal mechanism. The identities also hold outside GL.",
+    "Original numerical verification remains failed. Cause localization and arithmetic table checks cannot overwrite that independent numerical status.",
+    "Old named 2664-file start/end identity checks do not establish whole-disk coverage or identity at every intermediate execution state."
+  ],
+  "scientific_metric_calls": 0,
+  "model_calls": 0,
+  "new_forward": 0,
+  "training_updates": 0,
+  "analysis_label_arrays_read": false,
+  "report_edited": false,
+  "frozen_source_edited": false,
+  "existing_audits_edited": false,
+  "tolerance_policy": {
+    "saved_arithmetic": 1e-12,
+    "designated_original_score": 1e-08,
+    "report_display": "Exact expected formatted strings; no numerical tolerance relaxed."
+  },
+  "reviewed_direction_paragraphs": [
+    "Bt方向：三指标一致 5/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。",
+    "Delta方向：三指标一致 6/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。",
+    "Bt directions agree across the three metrics in 5/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.",
+    "Delta directions agree across the three metrics in 6/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement."
+  ],
+  "added_complete_n10_source_readouts": [
+    {
+      "unit": "unit001",
+      "task": "F3",
+      "split": "train",
+      "full_vocab_answer_accuracy": 0.4560546875,
+      "answer_ce": 1.2133188076986698
+    },
+    {
+      "unit": "unit001",
+      "task": "F3",
+      "split": "validation",
+      "full_vocab_answer_accuracy": 0.40234375,
+      "answer_ce": 1.3457204203587025
+    },
+    {
+      "unit": "unit001",
+      "task": "F3",
+      "split": "analysis",
+      "full_vocab_answer_accuracy": 0.35546875,
+      "answer_ce": 1.3395551098510623
+    },
+    {
+      "unit": "unit001",
+      "task": "F4",
+      "split": "train",
+      "full_vocab_answer_accuracy": 0.997314453125,
+      "answer_ce": 0.009257889797861463
+    },
+    {
+      "unit": "unit001",
+      "task": "F4",
+      "split": "validation",
+      "full_vocab_answer_accuracy": 0.9921875,
+      "answer_ce": 0.03327334690833794
+    },
+    {
+      "unit": "unit001",
+      "task": "F4",
+      "split": "analysis",
+      "full_vocab_answer_accuracy": 0.998046875,
+      "answer_ce": 0.012523091239707185
+    },
+    {
+      "unit": "unit002",
+      "task": "F3",
+      "split": "train",
+      "full_vocab_answer_accuracy": 0.39208984375,
+      "answer_ce": 1.4374464782158611
+    },
+    {
+      "unit": "unit002",
+      "task": "F3",
+      "split": "validation",
+      "full_vocab_answer_accuracy": 0.3125,
+      "answer_ce": 1.6898141882847995
+    },
+    {
+      "unit": "unit002",
+      "task": "F3",
+      "split": "analysis",
+      "full_vocab_answer_accuracy": 0.31640625,
+      "answer_ce": 1.5826838949578814
+    },
+    {
+      "unit": "unit002",
+      "task": "F4",
+      "split": "train",
+      "full_vocab_answer_accuracy": 0.48486328125,
+      "answer_ce": 1.175277473593269
+    },
+    {
+      "unit": "unit002",
+      "task": "F4",
+      "split": "validation",
+      "full_vocab_answer_accuracy": 0.35546875,
+      "answer_ce": 1.4932297577615827
+    },
+    {
+      "unit": "unit002",
+      "task": "F4",
+      "split": "analysis",
+      "full_vocab_answer_accuracy": 0.3125,
+      "answer_ce": 1.6794544496224262
+    }
+  ],
+  "validation_curve_scope": "The updated report includes existing validation curves; this interpretation review verifies the saved source CSV and reported endpoints, not each of the480 saved curve points. The reporter agent supplies the separate curve audit."
+}

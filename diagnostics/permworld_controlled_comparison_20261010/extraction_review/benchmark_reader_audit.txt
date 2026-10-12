@@ -1,0 +1,25 @@
+20k主队列benchmark：独立只读复核
+
+20个模型条件、180个唯一condition×n(10/20/30)×action完整覆盖；trained16条件
+144记录、共享initial4条件36记录。每个case实际128样本同完整prompt计时，
+首8核对5层：共1440个vector，7200个层状态检查。无8k/历史82混入。
+
+同shape手工层路径最大误差 0；prefix-only8 final_norm最大误差
+6.10947608948e-06；旧final_norm缓存最大误差 0。三条gate全部满足
+固定2e-5，旧缓存180/180项逐值误差0。prefix-only raw中层shape诊断最大
+6.86645507812e-05，63/180案例超过2e-5；它不进入主提取gate，也不能被抹去。
+这支持分开报告同shape提取一致性与执行shape数值敏感性，不独立区分
+batch-size和sequence-length各自贡献。
+
+32项initial exact共享全部bitwise为0；40物理split与64逻辑映射计划合法。
+实际冻结源文件25项SHA全匹配；protocol摘要在修复前后相同；原脚本
+字节、失败日志和修复记录摘要一致，门槛未扩大，主前向/数据/指标未改。
+
+独立重算GPU forward插值估计 51.476894s（0.014299小时），与benchmark
+一致；benchmark记录墙钟 12.693733s。前者由三长度128批实测median插值
+21长度估计，仅forward+5端点转移，不含CP/哈希/memmap IO；后者timer起点
+也在protocol/data/cache-plan hash之后，不能当成整条命令墙钟，更不能当
+全提取实测总成本。实际提取完成成本必须以后续execution/index记录为准。
+
+本复核没有跑任何额外GPU前向或训练，没有读取正在提取的部分层结果，
+不预判完整40split成功或任何CKA结论。

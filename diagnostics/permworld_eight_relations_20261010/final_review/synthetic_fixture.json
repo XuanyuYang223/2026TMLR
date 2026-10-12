@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "auditor_sha256": "75c0abbbb5a1a0a616ad324ec39ce8bbd81eb088f0395ea2e01fe1b5afb2c6fc",
+  "checks": {
+    "logical_alias_deduplicated_to_one_physical_hash_scan": true,
+    "physical_size_not_logical_sum": true,
+    "wrong_content_SHA_rejected": true,
+    "wrong_array_shape_rejected": true,
+    "mutation_during_audit_rejected": true,
+    "partial256_is_not_complete": true,
+    "formal_and_engineering_update_counts_separate": true,
+    "git_final_equality_does_not_fabricate_pre_diff_snapshot": true,
+    "incomplete_run_refuses_before_hash_ledger_or_completion_write": true,
+    "all64_perm_and4_graph_receipt_schemas_accepted": true,
+    "old_receipt_missing_identity_fields_verified_in_raw_checkpoint": true,
+    "new_sparse_inventory_vocabulary_bound_from_frozen_training_manifest": true,
+    "stale_inventory_status_not_used_as_endpoint_evidence": true,
+    "wrong_raw_checkpoint_initial_identity_rejected": true
+  },
+  "real_models_or_raw_data_or_caches_opened": false,
+  "GPU_started": false,
+  "training": false
+}

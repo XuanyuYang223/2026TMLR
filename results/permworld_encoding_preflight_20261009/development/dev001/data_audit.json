@@ -1,0 +1,55 @@
+{
+  "unit": "dev001",
+  "data_seed": 94200001,
+  "batch_seed": 94300001,
+  "data_sha256": "4e9c07e00b0e020a6a131871d16c21e0450d20be41c305e0d3546fb13f533206",
+  "batch_indices_sha256": "c93a21fcbe1e253c2633f44b98eeaec1ffec287a91562b2a984290c0bb970cb4",
+  "batch_lengths_sha256": "7355ee862d5a6b2957b85d5400950f413022c5c7f7c929e0ab88a04f9f2cb9f5",
+  "historical_index": {
+    "signature": "9c3d0372631ae00c745cc1b746b0353b3d59fea2f2967b6c3323ac26a295c1b3",
+    "sha256": "331a02b4f93ec3f7343ee9dc83c81c765ac2b8b5e1a733bb087c1213252754b5",
+    "records": 23727284,
+    "unique_inputs": 17443071,
+    "elapsed_seconds": 108.68985314699967,
+    "policy": "128-bit hash matches conservatively reject candidate orbits. Collisions can reject extra candidates but cannot admit an identical historical input."
+  },
+  "split_audit": [
+    {
+      "split": "train",
+      "anchors": 86016,
+      "per_length": 4096,
+      "attempts": 100961,
+      "actions": [
+        "identity"
+      ]
+    },
+    {
+      "split": "validation",
+      "anchors": 5376,
+      "per_length": 256,
+      "attempts": 6357,
+      "actions": [
+        "identity",
+        "complement",
+        "inverse"
+      ]
+    },
+    {
+      "split": "test",
+      "anchors": 10752,
+      "per_length": 512,
+      "attempts": 12667,
+      "actions": [
+        "identity",
+        "complement",
+        "inverse"
+      ]
+    }
+  ],
+  "orbit_count": 102144,
+  "within_world_orbit_overlap": 0,
+  "across_encodings_identical_objects_labels_splits_batches": true,
+  "cross_world_disjointness_enforced": false,
+  "independent_world_policy": "Independent seeded sampling conditional on the fixed historical exclusion universe. Different worlds may overlap; no cross-world model pairs are primary endpoints.",
+  "elapsed_seconds": 16.44807927399961
+}

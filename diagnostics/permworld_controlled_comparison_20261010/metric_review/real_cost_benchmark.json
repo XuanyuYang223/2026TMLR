@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "cost_only": true,
+  "fixed_architecture": "transformer",
+  "fixed_encoding": "one_line",
+  "fixed_relation": "descent_inverse",
+  "fixed_lengths": [
+    10,
+    20,
+    30
+  ],
+  "controls": [
+    "raw_within_length",
+    "answer_strata"
+  ],
+  "records": [
+    {
+      "length": 10,
+      "control": "raw_within_length",
+      "metric": "linear_cka",
+      "fit_samples": 256,
+      "test_samples": 512,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.003839497992885299,
+        0.003017214999999851,
+        0.0028074629954062402,
+        0.0028363909950712696,
+        0.0029975549987284467,
+        0.0029893019964220002
+      ],
+      "median_pair_seconds": 0.0029934284975752234
+    },
+    {
+      "length": 10,
+      "control": "raw_within_length",
+      "metric": "debiased_cka",
+      "fit_samples": 256,
+      "test_samples": 512,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.0036545759940054268,
+        0.003422173991566524,
+        0.003397654989385046,
+        0.0034062699996866286,
+        0.003425474002142437,
+        0.003550218010786921
+      ],
+      "median_pair_seconds": 0.0034238239968544804
+    },
+    {
+      "length": 10,
+      "control": "answer_strata",
+      "metric": "linear_cka",
+      "fit_samples": 247,
+      "test_samples": 500,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.002938933001132682,
+        0.0024882989964680746,
+        0.0023420210054609925,
+        0.002342662002774887,
+        0.0026353959983680397,
+        0.002445887992507778
+      ],
+      "median_pair_seconds": 0.0024670934944879264
+    },
+    {
+      "length": 10,
+      "control": "answer_strata",
+      "metric": "debiased_cka",
+      "fit_samples": 247,
+      "test_samples": 500,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.0032729340018704534,
+        0.0035612270003184676,
+        0.003042811993509531,
+        0.003029242987395264,
+        0.003039641000214033,
+        0.003022438002517447
+      ],
+      "median_pair_seconds": 0.003041226496861782
+    },
+    {
+      "length": 20,
+      "control": "raw_within_length",
+      "metric": "linear_cka",
+      "fit_samples": 256,
+      "test_samples": 512,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.003409706987440586,
+        0.003457340004388243,
+        0.003051117993891239,
+        0.0028758150001522154,
+        0.002970586996525526,
+        0.0029212490044301376
+      ],
+      "median_pair_seconds": 0.0030108524952083826
+    },
+    {
+      "length": 20,
+      "control": "raw_within_length",
+      "metric": "debiased_cka",
+      "fit_samples": 256,
+      "test_samples": 512,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.003596598995500244,
+        0.003567032006685622,
+        0.003548143999068998,
+        0.0036271639983169734,
+        0.003658581990748644,
+        0.003556193012627773
+      ],
+      "median_pair_seconds": 0.003581815501092933
+    },
+    {
+      "length": 20,
+      "control": "answer_strata",
+      "metric": "linear_cka",
+      "fit_samples": 230,
+      "test_samples": 489,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.002772428997559473,
+        0.002318163009476848,
+        0.0022045960067771375,
+        0.0022321990109048784,
+        0.0021905539906583726,
+        0.0021539279987337068
+      ],
+      "median_pair_seconds": 0.002218397508841008
+    },
+    {
+      "length": 20,
+      "control": "answer_strata",
+      "metric": "debiased_cka",
+      "fit_samples": 230,
+      "test_samples": 489,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.002758235001238063,
+        0.0027180990000488237,
+        0.002813700004480779,
+        0.0028366030019242316,
+        0.002818392007611692,
+        0.0027534529945114627
+      ],
+      "median_pair_seconds": 0.002785967502859421
+    },
+    {
+      "length": 30,
+      "control": "raw_within_length",
+      "metric": "linear_cka",
+      "fit_samples": 256,
+      "test_samples": 512,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.0032682489982107654,
+        0.002976906005642377,
+        0.0029292690014699474,
+        0.003035753994481638,
+        0.0029623239970533177,
+        0.0029727009969064966
+      ],
+      "median_pair_seconds": 0.0029748035012744367
+    },
+    {
+      "length": 30,
+      "control": "raw_within_length",
+      "metric": "debiased_cka",
+      "fit_samples": 256,
+      "test_samples": 512,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.0036004879948450252,
+        0.0036485979944700375,
+        0.00409778299217578,
+        0.0037608889979310334,
+        0.003936717999749817,
+        0.0035852150031132624
+      ],
+      "median_pair_seconds": 0.0037047434962005354
+    },
+    {
+      "length": 30,
+      "control": "answer_strata",
+      "metric": "linear_cka",
+      "fit_samples": 224,
+      "test_samples": 480,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.0026362829958088696,
+        0.0024735280021559447,
+        0.0023311560071306303,
+        0.0026492479955777526,
+        0.002368334011407569,
+        0.002271504999953322
+      ],
+      "median_pair_seconds": 0.002420931006781757
+    },
+    {
+      "length": 30,
+      "control": "answer_strata",
+      "metric": "debiased_cka",
+      "fit_samples": 224,
+      "test_samples": 480,
+      "fixed_pair_calls": 6,
+      "pair_seconds": [
+        0.0028451969992602244,
+        0.002777800997137092,
+        0.0027244170050835237,
+        0.0033179799938807264,
+        0.002765943994745612,
+        0.0027742649981519207
+      ],
+      "median_pair_seconds": 0.0027760329976445064
+    }
+  ],
+  "planned_new_CKA_calls": 17472,
+  "estimated_CPU_metric_seconds": 51.54111361771356,
+  "estimate_excludes_IO_hashing_bookkeeping_and_GPU_forward": true,
+  "source_old_cache_hashes_checked": 8,
+  "protocol_sha256": "9c8b6dfac09bf809410f87b2648cf9c8a12a5a17b77a17dae9de5a6bf11415ea",
+  "final_scores_recomputed_for_timing_only_not_replaced": true,
+  "no_selection_by_scores": true,
+  "new_inputs": false,
+  "new_training": false,
+  "optimizer_constructed": false,
+  "cached_existing_test_only": true
+}

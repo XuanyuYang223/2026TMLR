@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "reporter_sha256": "e20bdc5fcab530bbf4c39a1d465d11ee7f7532061584d8b2df84249ab6302add",
+  "checks": {
+    "all24_main_metric_conditions": true,
+    "all8_direction_conditions": true,
+    "no_metric_averaged_score": true,
+    "undefined_embedding_retained": true,
+    "Delta_flip_not_Bt_flip_identified": true,
+    "source_validation_missing_baseline_not_zero": true,
+    "four_part_main_generated": true,
+    "missing_final_audit_not_claimed_complete": true,
+    "all16_source_models_both_splits": true,
+    "21_fixed_lengths": true
+  },
+  "synthetic_CPU_only": true,
+  "real_new_results_read": false,
+  "GPU_started": false,
+  "training_started": false,
+  "fixtures_removed": true
+}

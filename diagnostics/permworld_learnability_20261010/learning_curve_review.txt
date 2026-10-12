@@ -1,0 +1,626 @@
+PermWorld final validation-only learning-curve review
+Snapshot UTC: 2026-10-10T17:01:06.976809+00:00
+Status: all16 fixed manifest models completed8000updates with complete final validation. Driver exited successfully; persistent GPU-phase orchestrator wall time=1703.4707593917847seconds. This includes engineering/validation/save overhead, not GPU-utilization hours.
+Scope: every fixed source and all saved1k..8k validation points; no test labels, test predictions, representation metrics, output probabilities, or weights read. This review does not alter the frozen report, protocol, budget, model, or F17. No configuration/checkpoint/model/length selection or new training.
+Training last-batch CE is the answer-plus-EOS masked causal CE on one64-example minibatch, computed before its optimizer update. Validation answer CE covers3072 identity samples after the saved update. Validation combined CE=(answer CE+teacher-forced EOS CE)/2. The directly normalized comparison is therefore train last-batch combined CE versus validation combined CE. A last-batch loss is not full-training-set loss or accuracy.
+The training-length majority is defined from identity training labels only, smallest-label tie break, then scored on validation. Lengths10,11,12 retain equalweights1/3. No test labels were decoded.
+A growing minibatch/validation loss gap is compatible with memorization/poor generalization, but does not alone prove full-training-set memorization or isolate its cause. All final budgets now match, but unequal achieved task performance still limits architectural/encoding interpretations.
+Final descriptive interpretation (all16 sources retained):
+transformer cycle final validation accuracy by task: descents=39.225%, recoils=40.755%, peaks=49.967%, valleys=50.163%.
+Transformer cycle trajectories remain near train-length-majority performance: answerCE stays around1.09..1.38 rather than falling substantially; final last-batch combinedCE remains around0.50..0.73 and validation combinedCE around0.54..0.69. This is a learning-stagnation candidate, with small/variable batch-validation gaps. It does not demonstrate successful source learning.
+gru cycle final validation accuracy by task: descents=35.254%, recoils=36.035%, peaks=48.665%, valleys=48.014%.
+GRU cycle trajectories differ: last-batch combinedCE falls to approximately0.00005..0.00008, while validation answerCE rises from roughly1.09..1.38 at2k to4.09..5.22 at8k. Validation accuracies remain about35..49%; final matched-normalization loss gaps are2.04..2.61. This supports investigating poor generalization/confident errors and memorization as candidate explanations. One batch cannot establish full-training-set fitting, and no causal training intervention was run.
+One-line Transformer is also incomplete as a learning control: descents and valleys fail the fixed mean/min-length accuracy gates at56.673% and80.990%; recoils and peaks pass individual gates at99.870% and90.592%. Thus the weakness is not exclusively cycle encoding.
+One-line GRU passes the four individual source-learning gates, at99.967%,99.837%,100.000%,99.967%. This does not cause the complete8-model GRU encoding unit to pass: its cycle counterparts fail and the paired encoding gaps are large.
+Overall individual passes=6/16; all16 models pass the EOS gate, but both complete architecture-by-two-encoding units fail their joint learning readiness. No independent verification training or geometry analysis is launched by this review.
+These are one exploratory data world and one initializer per architecture. Models/lengths do not become independent world replications. TF/GRU parameter counts differ. The combined preset changed six development factors; results do not isolate which change caused an observed difference.
+No better earlier validation checkpoint, successful subset, task, or length is promoted to a replacement endpoint. The frozen final report remains the authoritative full-gate output.
+
+
+learningdev001_transformer_one_line_descents | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.6724432110786438 | 1.317250 | 0.000554 | 0.658902 | 42.155% | n10=44.336%, n11=42.871%, n12=39.258%
+2000 | 0.645646870136261 | 1.352840 | 0.000034 | 0.676437 | 40.430% | n10=39.355%, n11=41.992%, n12=39.941%
+3000 | 0.6220141053199768 | 1.271811 | 0.000046 | 0.635929 | 44.108% | n10=46.777%, n11=45.117%, n12=40.430%
+4000 | 0.6296643614768982 | 1.272573 | 0.000120 | 0.636346 | 42.415% | n10=45.996%, n11=41.895%, n12=39.355%
+5000 | 0.5970479249954224 | 1.144893 | 0.000006 | 0.572450 | 49.154% | n10=52.051%, n11=50.195%, n12=45.215%
+6000 | 0.44937628507614136 | 1.045754 | 0.000006 | 0.522880 | 53.678% | n10=57.324%, n11=54.102%, n12=49.609%
+7000 | 0.37082239985466003 | 1.009298 | 0.000006 | 0.504652 | 55.729% | n10=60.742%, n11=57.715%, n12=48.730%
+8000 | 0.43364274501800537 | 0.976158 | 0.000009 | 0.488083 | 56.673% | n10=63.086%, n11=58.594%, n12=48.340%
+Fixed2k ->4k ->8k progression: answerCE 1.352840 -> 1.272573 -> 0.976158; full-vocabulary validation answer accuracy 40.430% -> 42.415% -> 56.673%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=36.621%; mean answer gain=20.052pp; min-length answer accuracy=48.340%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy.
+Final same-normalization loss gap=validation combinedCE 0.488083 minus last-training-minibatch combinedCE 0.433643 = 0.054440. This is not a full-training accuracy estimate.
+
+learningdev001_transformer_canonical_cycle_descents | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.6996527910232544 | 1.394637 | 0.000216 | 0.697427 | 38.900% | n10=40.723%, n11=38.867%, n12=37.109%
+2000 | 0.6732410192489624 | 1.406706 | 0.000057 | 0.703381 | 38.379% | n10=40.039%, n11=40.234%, n12=34.863%
+3000 | 0.6186891794204712 | 1.386663 | 0.000015 | 0.693339 | 39.909% | n10=41.309%, n11=40.820%, n12=37.598%
+4000 | 0.6549695730209351 | 1.397793 | 0.000003 | 0.698898 | 37.630% | n10=41.895%, n11=35.449%, n12=35.547%
+5000 | 0.6964752078056335 | 1.382817 | 0.000005 | 0.691411 | 39.583% | n10=41.895%, n11=40.039%, n12=36.816%
+6000 | 0.6516138315200806 | 1.385284 | 0.000012 | 0.692648 | 38.965% | n10=41.211%, n11=39.062%, n12=36.621%
+7000 | 0.6524360179901123 | 1.384434 | 0.000005 | 0.692220 | 38.704% | n10=41.699%, n11=39.160%, n12=35.254%
+8000 | 0.6709623336791992 | 1.383104 | 0.000004 | 0.691554 | 39.225% | n10=40.820%, n11=39.551%, n12=37.305%
+Fixed2k ->4k ->8k progression: answerCE 1.406706 -> 1.397793 -> 1.383104; full-vocabulary validation answer accuracy 38.379% -> 37.630% -> 39.225%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=36.621%; mean answer gain=2.604pp; min-length answer accuracy=37.305%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy,gain_over_train_length_majority_pp.
+Final same-normalization loss gap=validation combinedCE 0.691554 minus last-training-minibatch combinedCE 0.670962 = 0.020592. This is not a full-training accuracy estimate.
+
+learningdev001_transformer_one_line_recoils | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.5596643686294556 | 1.116951 | 0.000250 | 0.558600 | 50.879% | n10=58.105%, n11=49.219%, n12=45.312%
+2000 | 0.3713589012622833 | 0.687587 | 0.000043 | 0.343815 | 71.615% | n10=77.441%, n11=71.973%, n12=65.430%
+3000 | 0.16932015120983124 | 0.369248 | 0.000197 | 0.184723 | 84.798% | n10=85.742%, n11=86.328%, n12=82.324%
+4000 | 0.009705407544970512 | 0.041534 | 0.000034 | 0.020784 | 98.796% | n10=99.219%, n11=99.609%, n12=97.559%
+5000 | 0.0002495432272553444 | 0.005971 | 0.000024 | 0.002998 | 99.870% | n10=100.000%, n11=100.000%, n12=99.609%
+6000 | 9.56440344452858e-05 | 0.003720 | 0.000011 | 0.001866 | 99.870% | n10=100.000%, n11=100.000%, n12=99.609%
+7000 | 3.3340416848659515e-05 | 0.004126 | 0.000012 | 0.002069 | 99.870% | n10=100.000%, n11=100.000%, n12=99.609%
+8000 | 7.168296724557877e-05 | 0.004109 | 0.000008 | 0.002059 | 99.870% | n10=100.000%, n11=100.000%, n12=99.609%
+Fixed2k ->4k ->8k progression: answerCE 0.687587 -> 0.041534 -> 0.004109; full-vocabulary validation answer accuracy 71.615% -> 98.796% -> 99.870%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=39.160%; mean answer gain=60.710pp; min-length answer accuracy=99.609%; EOS=100.000%; fixed individual learning gates=PASS.
+Final same-normalization loss gap=validation combinedCE 0.002059 minus last-training-minibatch combinedCE 0.000072 = 0.001987. This is not a full-training accuracy estimate.
+
+learningdev001_transformer_canonical_cycle_recoils | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.7498966455459595 | 1.404536 | 0.000100 | 0.702318 | 37.956% | n10=38.184%, n11=39.941%, n12=35.742%
+2000 | 0.6699686646461487 | 1.372188 | 0.000032 | 0.686110 | 39.095% | n10=38.477%, n11=45.117%, n12=33.691%
+3000 | 0.7033777236938477 | 1.374875 | 0.000020 | 0.687447 | 40.853% | n10=40.625%, n11=43.945%, n12=37.988%
+4000 | 0.6744140386581421 | 1.376363 | 0.000082 | 0.688222 | 40.072% | n10=39.551%, n11=44.434%, n12=36.230%
+5000 | 0.6927503943443298 | 1.382291 | 0.000003 | 0.691147 | 38.835% | n10=38.672%, n11=42.188%, n12=35.645%
+6000 | 0.6641608476638794 | 1.367943 | 0.000008 | 0.683975 | 40.885% | n10=41.406%, n11=45.215%, n12=36.035%
+7000 | 0.6394392251968384 | 1.374857 | 0.000007 | 0.687432 | 40.104% | n10=39.648%, n11=45.410%, n12=35.254%
+8000 | 0.7326730489730835 | 1.377649 | 0.000016 | 0.688832 | 40.755% | n10=42.090%, n11=43.652%, n12=36.523%
+Fixed2k ->4k ->8k progression: answerCE 1.372188 -> 1.376363 -> 1.377649; full-vocabulary validation answer accuracy 39.095% -> 40.072% -> 40.755%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=39.160%; mean answer gain=1.595pp; min-length answer accuracy=36.523%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy,gain_over_train_length_majority_pp.
+Final same-normalization loss gap=validation combinedCE 0.688832 minus last-training-minibatch combinedCE 0.732673 = -0.043841. This is not a full-training accuracy estimate.
+
+learningdev001_transformer_one_line_peaks | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.44935834407806396 | 0.849284 | 0.000110 | 0.424697 | 64.323% | n10=69.336%, n11=63.281%, n12=60.352%
+2000 | 0.29248982667922974 | 0.726511 | 0.000075 | 0.363293 | 69.271% | n10=73.340%, n11=70.312%, n12=64.160%
+3000 | 0.3510964512825012 | 0.623239 | 0.000014 | 0.311627 | 74.154% | n10=79.004%, n11=71.289%, n12=72.168%
+4000 | 0.24355830252170563 | 0.496031 | 0.000165 | 0.248098 | 80.957% | n10=87.109%, n11=79.199%, n12=76.562%
+5000 | 0.09234829246997833 | 0.428619 | 0.000031 | 0.214325 | 84.473% | n10=89.746%, n11=80.273%, n12=83.398%
+6000 | 0.01961129531264305 | 0.301757 | 0.000021 | 0.150889 | 88.867% | n10=92.773%, n11=85.742%, n12=88.086%
+7000 | 0.07464461028575897 | 0.337251 | 0.000010 | 0.168630 | 89.193% | n10=93.164%, n11=86.719%, n12=87.695%
+8000 | 0.011354278773069382 | 0.363371 | 0.000009 | 0.181690 | 90.592% | n10=94.336%, n11=88.477%, n12=88.965%
+Fixed2k ->4k ->8k progression: answerCE 0.726511 -> 0.496031 -> 0.363371; full-vocabulary validation answer accuracy 69.271% -> 80.957% -> 90.592%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=49.805%; mean answer gain=40.788pp; min-length answer accuracy=88.477%; EOS=100.000%; fixed individual learning gates=PASS.
+Final same-normalization loss gap=validation combinedCE 0.181690 minus last-training-minibatch combinedCE 0.011354 = 0.170336. This is not a full-training accuracy estimate.
+
+learningdev001_transformer_canonical_cycle_peaks | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.5382785797119141 | 1.100777 | 0.000134 | 0.550455 | 50.521% | n10=52.051%, n11=52.148%, n12=47.363%
+2000 | 0.5771290063858032 | 1.115363 | 0.000026 | 0.557695 | 49.870% | n10=52.246%, n11=52.148%, n12=45.215%
+3000 | 0.5430663228034973 | 1.113894 | 0.000016 | 0.556955 | 49.837% | n10=51.855%, n11=50.977%, n12=46.680%
+4000 | 0.5427924990653992 | 1.104176 | 0.000012 | 0.552094 | 50.163% | n10=52.344%, n11=52.148%, n12=45.996%
+5000 | 0.568507194519043 | 1.081857 | 0.000030 | 0.540943 | 50.911% | n10=53.125%, n11=52.148%, n12=47.461%
+6000 | 0.5444037318229675 | 1.081179 | 0.000002 | 0.540590 | 49.967% | n10=51.562%, n11=52.148%, n12=46.191%
+7000 | 0.5752882361412048 | 1.081000 | 0.000013 | 0.540507 | 49.674% | n10=51.855%, n11=51.855%, n12=45.312%
+8000 | 0.5254215002059937 | 1.089687 | 0.000001 | 0.544844 | 49.967% | n10=50.488%, n11=51.660%, n12=47.754%
+Fixed2k ->4k ->8k progression: answerCE 1.115363 -> 1.104176 -> 1.089687; full-vocabulary validation answer accuracy 49.870% -> 50.163% -> 49.967%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=49.805%; mean answer gain=0.163pp; min-length answer accuracy=47.754%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy,gain_over_train_length_majority_pp.
+Final same-normalization loss gap=validation combinedCE 0.544844 minus last-training-minibatch combinedCE 0.525422 = 0.019422. This is not a full-training accuracy estimate.
+
+learningdev001_transformer_one_line_valleys | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.4906023442745209 | 0.923828 | 0.000162 | 0.461995 | 58.496% | n10=61.328%, n11=58.594%, n12=55.566%
+2000 | 0.4584684371948242 | 0.929998 | 0.001023 | 0.465510 | 61.003% | n10=67.773%, n11=63.086%, n12=52.148%
+3000 | 0.4699150621891022 | 0.829434 | 0.000071 | 0.414752 | 63.607% | n10=68.066%, n11=66.211%, n12=56.543%
+4000 | 0.4038465619087219 | 0.719186 | 0.000029 | 0.359608 | 70.117% | n10=75.293%, n11=72.363%, n12=62.695%
+5000 | 0.3389214277267456 | 0.634407 | 0.000055 | 0.317231 | 73.828% | n10=78.809%, n11=74.707%, n12=67.969%
+6000 | 0.13140356540679932 | 0.556819 | 0.000033 | 0.278426 | 77.409% | n10=81.836%, n11=76.660%, n12=73.730%
+7000 | 0.18836861848831177 | 0.521769 | 0.000043 | 0.260906 | 80.469% | n10=83.789%, n11=79.980%, n12=77.637%
+8000 | 0.16502714157104492 | 0.529962 | 0.000022 | 0.264992 | 80.990% | n10=85.059%, n11=80.469%, n12=77.441%
+Fixed2k ->4k ->8k progression: answerCE 0.929998 -> 0.719186 -> 0.529962; full-vocabulary validation answer accuracy 61.003% -> 70.117% -> 80.990%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=50.163%; mean answer gain=30.827pp; min-length answer accuracy=77.441%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy.
+Final same-normalization loss gap=validation combinedCE 0.264992 minus last-training-minibatch combinedCE 0.165027 = 0.099965. This is not a full-training accuracy estimate.
+
+learningdev001_transformer_canonical_cycle_valleys | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.543632984161377 | 1.099474 | 0.000120 | 0.549797 | 51.432% | n10=53.809%, n11=54.004%, n12=46.484%
+2000 | 0.6156126260757446 | 1.100066 | 0.004704 | 0.552385 | 51.074% | n10=52.930%, n11=53.906%, n12=46.387%
+3000 | 0.6391634941101074 | 1.117086 | 0.000007 | 0.558546 | 48.047% | n10=51.367%, n11=53.516%, n12=39.258%
+4000 | 0.5288751721382141 | 1.110840 | 0.000340 | 0.555590 | 51.009% | n10=49.902%, n11=53.906%, n12=49.219%
+5000 | 0.5495312213897705 | 1.101851 | 0.000197 | 0.551024 | 50.488% | n10=51.562%, n11=53.711%, n12=46.191%
+6000 | 0.5661941170692444 | 1.112147 | 0.000004 | 0.556075 | 49.023% | n10=50.488%, n11=51.953%, n12=44.629%
+7000 | 0.5681489706039429 | 1.114023 | 0.000006 | 0.557015 | 50.228% | n10=51.562%, n11=53.613%, n12=45.508%
+8000 | 0.5003132224082947 | 1.128732 | 0.000019 | 0.564376 | 50.163% | n10=51.367%, n11=52.832%, n12=46.289%
+Fixed2k ->4k ->8k progression: answerCE 1.100066 -> 1.110840 -> 1.128732; full-vocabulary validation answer accuracy 51.074% -> 51.009% -> 50.163%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=50.163%; mean answer gain=0.000pp; min-length answer accuracy=46.289%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy,gain_over_train_length_majority_pp.
+Final same-normalization loss gap=validation combinedCE 0.564376 minus last-training-minibatch combinedCE 0.500313 = 0.064063. This is not a full-training accuracy estimate.
+
+learningdev001_gru_one_line_descents | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.06267870217561722 | 0.082868 | 0.000396 | 0.041632 | 97.819% | n10=99.121%, n11=97.852%, n12=96.484%
+2000 | 0.003461410291492939 | 0.039129 | 0.000278 | 0.019703 | 98.796% | n10=99.414%, n11=99.121%, n12=97.852%
+3000 | 7.362384349107742e-05 | 0.003167 | 0.000298 | 0.001732 | 99.967% | n10=99.902%, n11=100.000%, n12=100.000%
+4000 | 7.49826431274414e-05 | 0.003040 | 0.000319 | 0.001680 | 99.967% | n10=99.902%, n11=100.000%, n12=100.000%
+5000 | 3.725569695234299e-05 | 0.003074 | 0.000355 | 0.001715 | 99.967% | n10=99.902%, n11=100.000%, n12=100.000%
+6000 | 4.009995609521866e-05 | 0.003065 | 0.000368 | 0.001716 | 99.967% | n10=99.902%, n11=100.000%, n12=100.000%
+7000 | 2.819392830133438e-05 | 0.003129 | 0.000391 | 0.001760 | 99.967% | n10=99.902%, n11=100.000%, n12=100.000%
+8000 | 1.7909333109855652e-05 | 0.003172 | 0.000408 | 0.001790 | 99.967% | n10=99.902%, n11=100.000%, n12=100.000%
+Fixed2k ->4k ->8k progression: answerCE 0.039129 -> 0.003040 -> 0.003172; full-vocabulary validation answer accuracy 98.796% -> 99.967% -> 99.967%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=36.621%; mean answer gain=63.346pp; min-length answer accuracy=99.902%; EOS=99.967%; fixed individual learning gates=PASS.
+Final same-normalization loss gap=validation combinedCE 0.001790 minus last-training-minibatch combinedCE 0.000018 = 0.001772. This is not a full-training accuracy estimate.
+
+learningdev001_gru_canonical_cycle_descents | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.7010940313339233 | 1.371265 | 0.000130 | 0.685697 | 39.323% | n10=41.504%, n11=37.988%, n12=38.477%
+2000 | 0.6312504410743713 | 1.383764 | 0.000069 | 0.691916 | 39.453% | n10=41.504%, n11=41.602%, n12=35.254%
+3000 | 0.1598450094461441 | 2.322134 | 0.000071 | 1.161103 | 34.147% | n10=37.500%, n11=35.059%, n12=29.883%
+4000 | 0.007906080223619938 | 4.181082 | 0.000023 | 2.090552 | 35.547% | n10=35.352%, n11=37.695%, n12=33.594%
+5000 | 0.00017943140119314194 | 4.807973 | 0.000006 | 2.403989 | 35.449% | n10=36.719%, n11=37.891%, n12=31.738%
+6000 | 0.00011930614709854126 | 5.007594 | 0.000003 | 2.503799 | 35.547% | n10=36.328%, n11=38.477%, n12=31.836%
+7000 | 0.00014557503163814545 | 5.127735 | 0.000002 | 2.563868 | 35.417% | n10=36.133%, n11=38.574%, n12=31.543%
+8000 | 5.4251402616500854e-05 | 5.223680 | 0.000002 | 2.611841 | 35.254% | n10=36.035%, n11=38.184%, n12=31.543%
+Fixed2k ->4k ->8k progression: answerCE 1.383764 -> 4.181082 -> 5.223680; full-vocabulary validation answer accuracy 39.453% -> 35.547% -> 35.254%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=36.621%; mean answer gain=-1.367pp; min-length answer accuracy=31.543%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy,gain_over_train_length_majority_pp.
+Final same-normalization loss gap=validation combinedCE 2.611841 minus last-training-minibatch combinedCE 0.000054 = 2.611787. This is not a full-training accuracy estimate.
+
+learningdev001_gru_one_line_recoils | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.735644519329071 | 1.276399 | 0.000260 | 0.638329 | 43.294% | n10=46.289%, n11=45.215%, n12=38.379%
+2000 | 0.08094567060470581 | 0.156624 | 0.000090 | 0.078357 | 94.303% | n10=98.633%, n11=94.043%, n12=90.234%
+3000 | 0.0011689234524965286 | 0.037910 | 0.000024 | 0.018967 | 98.730% | n10=99.707%, n11=98.926%, n12=97.559%
+4000 | 0.00013135652989149094 | 0.006528 | 0.000013 | 0.003270 | 99.805% | n10=100.000%, n11=99.805%, n12=99.609%
+5000 | 7.909722626209259e-05 | 0.005580 | 0.000008 | 0.002794 | 99.837% | n10=100.000%, n11=99.805%, n12=99.707%
+6000 | 4.784576594829559e-05 | 0.004988 | 0.000006 | 0.002497 | 99.837% | n10=100.000%, n11=99.805%, n12=99.707%
+7000 | 2.4745240807533264e-05 | 0.004789 | 0.000004 | 0.002397 | 99.837% | n10=100.000%, n11=99.805%, n12=99.707%
+8000 | 5.1530078053474426e-05 | 0.004676 | 0.000004 | 0.002340 | 99.837% | n10=100.000%, n11=99.805%, n12=99.707%
+Fixed2k ->4k ->8k progression: answerCE 0.156624 -> 0.006528 -> 0.004676; full-vocabulary validation answer accuracy 94.303% -> 99.805% -> 99.837%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=39.160%; mean answer gain=60.677pp; min-length answer accuracy=99.707%; EOS=100.000%; fixed individual learning gates=PASS.
+Final same-normalization loss gap=validation combinedCE 0.002340 minus last-training-minibatch combinedCE 0.000052 = 0.002288. This is not a full-training accuracy estimate.
+
+learningdev001_gru_canonical_cycle_recoils | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.7648260593414307 | 1.406901 | 0.000103 | 0.703502 | 38.346% | n10=37.793%, n11=41.113%, n12=36.133%
+2000 | 0.6375126242637634 | 1.347905 | 0.000146 | 0.674025 | 40.234% | n10=38.965%, n11=44.141%, n12=37.598%
+3000 | 0.1111937165260315 | 2.475822 | 0.000106 | 1.237964 | 36.100% | n10=38.379%, n11=37.109%, n12=32.812%
+4000 | 0.0015138499438762665 | 4.163011 | 0.000015 | 2.081513 | 36.263% | n10=38.086%, n11=36.914%, n12=33.789%
+5000 | 0.00026926398277282715 | 4.799249 | 0.000011 | 2.399630 | 35.775% | n10=37.598%, n11=37.988%, n12=31.738%
+6000 | 0.0004355562850832939 | 5.001984 | 0.000005 | 2.500995 | 36.816% | n10=38.574%, n11=38.281%, n12=33.594%
+7000 | 0.00012159440666437149 | 5.131606 | 0.000003 | 2.565805 | 36.068% | n10=38.379%, n11=36.523%, n12=33.301%
+8000 | 7.607322186231613e-05 | 5.219937 | 0.000003 | 2.609970 | 36.035% | n10=38.281%, n11=36.523%, n12=33.301%
+Fixed2k ->4k ->8k progression: answerCE 1.347905 -> 4.163011 -> 5.219937; full-vocabulary validation answer accuracy 40.234% -> 36.263% -> 36.035%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=39.160%; mean answer gain=-3.125pp; min-length answer accuracy=33.301%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy,gain_over_train_length_majority_pp.
+Final same-normalization loss gap=validation combinedCE 2.609970 minus last-training-minibatch combinedCE 0.000076 = 2.609894. This is not a full-training accuracy estimate.
+
+learningdev001_gru_one_line_peaks | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.0005954960361123085 | 0.001208 | 0.000121 | 0.000665 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+2000 | 0.00026224832981824875 | 0.000599 | 0.000037 | 0.000318 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+3000 | 6.380490958690643e-05 | 0.000136 | 0.000016 | 0.000076 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+4000 | 4.8588961362838745e-05 | 0.000069 | 0.000009 | 0.000039 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+5000 | 2.9401853680610657e-05 | 0.000044 | 0.000006 | 0.000025 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+6000 | 1.4076940715312958e-05 | 0.000032 | 0.000004 | 0.000018 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+7000 | 1.0378658771514893e-05 | 0.000025 | 0.000003 | 0.000014 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+8000 | 1.2196600437164307e-05 | 0.000020 | 0.000003 | 0.000012 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+Fixed2k ->4k ->8k progression: answerCE 0.000599 -> 0.000069 -> 0.000020; full-vocabulary validation answer accuracy 100.000% -> 100.000% -> 100.000%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=49.805%; mean answer gain=50.195pp; min-length answer accuracy=100.000%; EOS=100.000%; fixed individual learning gates=PASS.
+Final same-normalization loss gap=validation combinedCE 0.000012 minus last-training-minibatch combinedCE 0.000012 = -0.000001. This is not a full-training accuracy estimate.
+
+learningdev001_gru_canonical_cycle_peaks | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.5321474075317383 | 1.080823 | 0.000465 | 0.540644 | 51.204% | n10=52.344%, n11=52.148%, n12=49.121%
+2000 | 0.5220704078674316 | 1.085543 | 0.000108 | 0.542825 | 51.790% | n10=56.348%, n11=52.344%, n12=46.680%
+3000 | 0.055937569588422775 | 2.009301 | 0.000042 | 1.004672 | 49.284% | n10=53.223%, n11=48.926%, n12=45.703%
+4000 | 0.0008166125044226646 | 3.159492 | 0.000015 | 1.579753 | 49.251% | n10=52.637%, n11=47.461%, n12=47.656%
+5000 | 0.002079947851598263 | 3.626982 | 0.000006 | 1.813494 | 49.154% | n10=54.492%, n11=47.266%, n12=45.703%
+6000 | 0.0001398799940943718 | 3.879353 | 0.000005 | 1.939679 | 48.665% | n10=52.246%, n11=47.363%, n12=46.387%
+7000 | 7.830653339624405e-05 | 4.007725 | 0.000004 | 2.003864 | 48.763% | n10=52.734%, n11=47.266%, n12=46.289%
+8000 | 6.04875385761261e-05 | 4.086424 | 0.000003 | 2.043213 | 48.665% | n10=52.344%, n11=47.363%, n12=46.289%
+Fixed2k ->4k ->8k progression: answerCE 1.085543 -> 3.159492 -> 4.086424; full-vocabulary validation answer accuracy 51.790% -> 49.251% -> 48.665%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=49.805%; mean answer gain=-1.139pp; min-length answer accuracy=46.289%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy,gain_over_train_length_majority_pp.
+Final same-normalization loss gap=validation combinedCE 2.043213 minus last-training-minibatch combinedCE 0.000060 = 2.043153. This is not a full-training accuracy estimate.
+
+learningdev001_gru_one_line_valleys | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.015027692541480064 | 0.039471 | 0.000419 | 0.019945 | 99.023% | n10=99.219%, n11=98.730%, n12=99.121%
+2000 | 0.00014185626059770584 | 0.000250 | 0.000026 | 0.000138 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+3000 | 5.6590884923934937e-05 | 0.000132 | 0.000013 | 0.000072 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+4000 | 2.5045126676559448e-05 | 0.000175 | 0.000008 | 0.000091 | 100.000% | n10=100.000%, n11=100.000%, n12=100.000%
+5000 | 1.9951723515987396e-05 | 0.000339 | 0.000005 | 0.000172 | 99.967% | n10=100.000%, n11=100.000%, n12=99.902%
+6000 | 1.4326535165309906e-05 | 0.000465 | 0.000004 | 0.000234 | 99.967% | n10=100.000%, n11=100.000%, n12=99.902%
+7000 | 1.2986361980438232e-05 | 0.000505 | 0.000003 | 0.000254 | 99.967% | n10=100.000%, n11=100.000%, n12=99.902%
+8000 | 1.2345612049102783e-05 | 0.000543 | 0.000002 | 0.000272 | 99.967% | n10=100.000%, n11=100.000%, n12=99.902%
+Fixed2k ->4k ->8k progression: answerCE 0.000250 -> 0.000175 -> 0.000543; full-vocabulary validation answer accuracy 100.000% -> 100.000% -> 99.967%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=50.163%; mean answer gain=49.805pp; min-length answer accuracy=99.902%; EOS=100.000%; fixed individual learning gates=PASS.
+Final same-normalization loss gap=validation combinedCE 0.000272 minus last-training-minibatch combinedCE 0.000012 = 0.000260. This is not a full-training accuracy estimate.
+
+learningdev001_gru_canonical_cycle_valleys | actual saved step=8000 | status=stage_complete
+step | last-training-minibatch combined CE | validation answer CE | validation EOS CE | validation combined CE | validation full-vocab answer accuracy | validation n10/n11/n12 answer accuracy
+1000 | 0.5271317362785339 | 1.078416 | 0.000147 | 0.539281 | 51.139% | n10=52.832%, n11=53.516%, n12=47.070%
+2000 | 0.5951260924339294 | 1.157930 | 0.000103 | 0.579016 | 50.065% | n10=55.469%, n11=50.977%, n12=43.750%
+3000 | 0.05262906849384308 | 2.169257 | 0.000042 | 1.084650 | 47.135% | n10=48.926%, n11=49.609%, n12=42.871%
+4000 | 0.038412924855947495 | 3.368262 | 0.000017 | 1.684139 | 48.438% | n10=51.367%, n11=50.977%, n12=42.969%
+5000 | 0.0001759398728609085 | 3.822146 | 0.000005 | 1.911075 | 47.819% | n10=50.293%, n11=49.707%, n12=43.457%
+6000 | 7.063336670398712e-05 | 3.971271 | 0.000003 | 1.985637 | 48.014% | n10=50.293%, n11=50.195%, n12=43.555%
+7000 | 6.402097642421722e-05 | 4.069892 | 0.000002 | 2.034947 | 47.949% | n10=50.391%, n11=49.902%, n12=43.555%
+8000 | 5.023926496505737e-05 | 4.148294 | 0.000002 | 2.074148 | 48.014% | n10=50.488%, n11=49.902%, n12=43.652%
+Fixed2k ->4k ->8k progression: answerCE 1.157930 -> 3.368262 -> 4.148294; full-vocabulary validation answer accuracy 50.065% -> 48.438% -> 48.014%. Earlier stages are trajectory points, not selectable final checkpoints.
+Final training-length-mode baseline=50.163%; mean answer gain=-2.148pp; min-length answer accuracy=43.652%; EOS=100.000%; fixed individual learning gates=FAIL: mean_answer_accuracy,minimum_length_accuracy,gain_over_train_length_majority_pp.
+Final same-normalization loss gap=validation combinedCE 2.074148 minus last-training-minibatch combinedCE 0.000050 = 2.074098. This is not a full-training accuracy estimate.
+
+All16 final endpoint details:
+[
+  {
+    "answer_accuracy": 0.5667317708333334,
+    "architecture": "transformer",
+    "combined_loss_gap": 0.05444045062128566,
+    "encoding": "one_line",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy"
+    ],
+    "gain_pp": 20.052083333333336,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.3662109375,
+    "minimum_length_accuracy": 0.4833984375,
+    "run_id": "learningdev001_transformer_one_line_descents",
+    "task": "descents",
+    "train_last_batch_combined_ce": 0.43364274501800537,
+    "validation_answer_ce": 0.9761577025055885,
+    "validation_combined_ce": 0.48808319563929103
+  },
+  {
+    "answer_accuracy": 0.3922526041666667,
+    "architecture": "transformer",
+    "combined_loss_gap": 0.020591612689123906,
+    "encoding": "canonical_cycle",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy",
+      "gain_over_train_length_majority_pp"
+    ],
+    "gain_pp": 2.6041666666666687,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.3662109375,
+    "minimum_length_accuracy": 0.373046875,
+    "run_id": "learningdev001_transformer_canonical_cycle_descents",
+    "task": "descents",
+    "train_last_batch_combined_ce": 0.6709623336791992,
+    "validation_answer_ce": 1.3831036786238353,
+    "validation_combined_ce": 0.6915539463683231
+  },
+  {
+    "answer_accuracy": 0.9986979166666666,
+    "architecture": "transformer",
+    "combined_loss_gap": 0.0019868257096599487,
+    "encoding": "one_line",
+    "eos_accuracy": 1.0,
+    "failed_gates": [],
+    "gain_pp": 60.709635416666664,
+    "individual_learning_gate_pass": true,
+    "length_mode_validation_baseline": 0.3916015625,
+    "minimum_length_accuracy": 0.99609375,
+    "run_id": "learningdev001_transformer_one_line_recoils",
+    "task": "recoils",
+    "train_last_batch_combined_ce": 7.168296724557877e-05,
+    "validation_answer_ce": 0.004108957084251112,
+    "validation_combined_ce": 0.0020585086769055274
+  },
+  {
+    "answer_accuracy": 0.4075520833333333,
+    "architecture": "transformer",
+    "combined_loss_gap": -0.04384088735279568,
+    "encoding": "canonical_cycle",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy",
+      "gain_over_train_length_majority_pp"
+    ],
+    "gain_pp": 1.5950520833333315,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.3916015625,
+    "minimum_length_accuracy": 0.365234375,
+    "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+    "task": "recoils",
+    "train_last_batch_combined_ce": 0.7326730489730835,
+    "validation_answer_ce": 1.3776485472917557,
+    "validation_combined_ce": 0.6888321616202878
+  },
+  {
+    "answer_accuracy": 0.9059244791666666,
+    "architecture": "transformer",
+    "combined_loss_gap": 0.17033611133661944,
+    "encoding": "one_line",
+    "eos_accuracy": 1.0,
+    "failed_gates": [],
+    "gain_pp": 40.787760416666664,
+    "individual_learning_gate_pass": true,
+    "length_mode_validation_baseline": 0.498046875,
+    "minimum_length_accuracy": 0.884765625,
+    "run_id": "learningdev001_transformer_one_line_peaks",
+    "task": "peaks",
+    "train_last_batch_combined_ce": 0.011354278773069382,
+    "validation_answer_ce": 0.36337145635237295,
+    "validation_combined_ce": 0.18169039010968882
+  },
+  {
+    "answer_accuracy": 0.4996744791666667,
+    "architecture": "transformer",
+    "combined_loss_gap": 0.01942233836315188,
+    "encoding": "canonical_cycle",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy",
+      "gain_over_train_length_majority_pp"
+    ],
+    "gain_pp": 0.16276041666666852,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.498046875,
+    "minimum_length_accuracy": 0.4775390625,
+    "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+    "task": "peaks",
+    "train_last_batch_combined_ce": 0.5254215002059937,
+    "validation_answer_ce": 1.0896867339809735,
+    "validation_combined_ce": 0.5448438385691455
+  },
+  {
+    "answer_accuracy": 0.8098958333333334,
+    "architecture": "transformer",
+    "combined_loss_gap": 0.09996501767953703,
+    "encoding": "one_line",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy"
+    ],
+    "gain_pp": 30.826822916666675,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.5016276041666666,
+    "minimum_length_accuracy": 0.7744140625,
+    "run_id": "learningdev001_transformer_one_line_valleys",
+    "task": "valleys",
+    "train_last_batch_combined_ce": 0.16502714157104492,
+    "validation_answer_ce": 0.5299622236440579,
+    "validation_combined_ce": 0.26499215925058195
+  },
+  {
+    "answer_accuracy": 0.5016276041666666,
+    "architecture": "transformer",
+    "combined_loss_gap": 0.06406262052538148,
+    "encoding": "canonical_cycle",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy",
+      "gain_over_train_length_majority_pp"
+    ],
+    "gain_pp": 0.0,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.5016276041666666,
+    "minimum_length_accuracy": 0.462890625,
+    "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+    "task": "valleys",
+    "train_last_batch_combined_ce": 0.5003132224082947,
+    "validation_answer_ce": 1.1287322094043095,
+    "validation_combined_ce": 0.5643758429336762
+  },
+  {
+    "answer_accuracy": 0.9996744791666666,
+    "architecture": "gru",
+    "combined_loss_gap": 0.0017716916957913516,
+    "encoding": "one_line",
+    "eos_accuracy": 0.9996744791666666,
+    "failed_gates": [],
+    "gain_pp": 63.346354166666664,
+    "individual_learning_gate_pass": true,
+    "length_mode_validation_baseline": 0.3662109375,
+    "minimum_length_accuracy": 0.9990234375,
+    "run_id": "learningdev001_gru_one_line_descents",
+    "task": "descents",
+    "train_last_batch_combined_ce": 1.7909333109855652e-05,
+    "validation_answer_ce": 0.003171535803782414,
+    "validation_combined_ce": 0.0017896010289012072
+  },
+  {
+    "answer_accuracy": 0.3525390625,
+    "architecture": "gru",
+    "combined_loss_gap": 2.6117865881575923,
+    "encoding": "canonical_cycle",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy",
+      "gain_over_train_length_majority_pp"
+    ],
+    "gain_pp": -1.3671875,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.3662109375,
+    "minimum_length_accuracy": 0.3154296875,
+    "run_id": "learningdev001_gru_canonical_cycle_descents",
+    "task": "descents",
+    "train_last_batch_combined_ce": 5.4251402616500854e-05,
+    "validation_answer_ce": 5.223679840564728,
+    "validation_combined_ce": 2.611840839560209
+  },
+  {
+    "answer_accuracy": 0.9983723958333334,
+    "architecture": "gru",
+    "combined_loss_gap": 0.002288235181021984,
+    "encoding": "one_line",
+    "eos_accuracy": 1.0,
+    "failed_gates": [],
+    "gain_pp": 60.677083333333336,
+    "individual_learning_gate_pass": true,
+    "length_mode_validation_baseline": 0.3916015625,
+    "minimum_length_accuracy": 0.9970703125,
+    "run_id": "learningdev001_gru_one_line_recoils",
+    "task": "recoils",
+    "train_last_batch_combined_ce": 5.1530078053474426e-05,
+    "validation_answer_ce": 0.0046758816689968325,
+    "validation_combined_ce": 0.0023397652590754583
+  },
+  {
+    "answer_accuracy": 0.3603515625,
+    "architecture": "gru",
+    "combined_loss_gap": 2.6098937889716396,
+    "encoding": "canonical_cycle",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy",
+      "gain_over_train_length_majority_pp"
+    ],
+    "gain_pp": -3.125,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.3916015625,
+    "minimum_length_accuracy": 0.3330078125,
+    "run_id": "learningdev001_gru_canonical_cycle_recoils",
+    "task": "recoils",
+    "train_last_batch_combined_ce": 7.607322186231613e-05,
+    "validation_answer_ce": 5.2199371457099915,
+    "validation_combined_ce": 2.609969862193502
+  },
+  {
+    "answer_accuracy": 1.0,
+    "architecture": "gru",
+    "combined_loss_gap": -6.748507009509321e-07,
+    "encoding": "one_line",
+    "eos_accuracy": 1.0,
+    "failed_gates": [],
+    "gain_pp": 50.1953125,
+    "individual_learning_gate_pass": true,
+    "length_mode_validation_baseline": 0.498046875,
+    "minimum_length_accuracy": 1.0,
+    "run_id": "learningdev001_gru_one_line_peaks",
+    "task": "peaks",
+    "train_last_batch_combined_ce": 1.2196600437164307e-05,
+    "validation_answer_ce": 2.0442986397029017e-05,
+    "validation_combined_ce": 1.1521749736213375e-05
+  },
+  {
+    "answer_accuracy": 0.4866536458333333,
+    "architecture": "gru",
+    "combined_loss_gap": 2.0431527261954727,
+    "encoding": "canonical_cycle",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy",
+      "gain_over_train_length_majority_pp"
+    ],
+    "gain_pp": -1.1393229166666685,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.498046875,
+    "minimum_length_accuracy": 0.462890625,
+    "run_id": "learningdev001_gru_canonical_cycle_peaks",
+    "task": "peaks",
+    "train_last_batch_combined_ce": 6.04875385761261e-05,
+    "validation_answer_ce": 4.086423556009929,
+    "validation_combined_ce": 2.043213213734049
+  },
+  {
+    "answer_accuracy": 0.9996744791666666,
+    "architecture": "gru",
+    "combined_loss_gap": 0.00026013282439881397,
+    "encoding": "one_line",
+    "eos_accuracy": 1.0,
+    "failed_gates": [],
+    "gain_pp": 49.8046875,
+    "individual_learning_gate_pass": true,
+    "length_mode_validation_baseline": 0.5016276041666666,
+    "minimum_length_accuracy": 0.9990234375,
+    "run_id": "learningdev001_gru_one_line_valleys",
+    "task": "valleys",
+    "train_last_batch_combined_ce": 1.2345612049102783e-05,
+    "validation_answer_ce": 0.0005425122016807412,
+    "validation_combined_ce": 0.00027247843644791675
+  },
+  {
+    "answer_accuracy": 0.4801432291666667,
+    "architecture": "gru",
+    "combined_loss_gap": 2.0740976291305215,
+    "encoding": "canonical_cycle",
+    "eos_accuracy": 1.0,
+    "failed_gates": [
+      "mean_answer_accuracy",
+      "minimum_length_accuracy",
+      "gain_over_train_length_majority_pp"
+    ],
+    "gain_pp": -2.1484374999999947,
+    "individual_learning_gate_pass": false,
+    "length_mode_validation_baseline": 0.5016276041666666,
+    "minimum_length_accuracy": 0.4365234375,
+    "run_id": "learningdev001_gru_canonical_cycle_valleys",
+    "task": "valleys",
+    "train_last_batch_combined_ce": 5.023926496505737e-05,
+    "validation_answer_ce": 4.148294011751811,
+    "validation_combined_ce": 2.0741478683954866
+  }
+]
+Source SHA256:
+{
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/development_execution.json": "62babcfb581841a99d7f05ef7827b90ae42ebcf28089e0b6b83ff7784eca54f3",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/completed.json": "79d316ff11b755f38c59085090d1f00311edc466e6bd34e6e7e2e9ce80b9af7d",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/stage_2000.json": "e6348a9b7ed29ad5df6c93bd2ba33fcf2e0affe5e64065add45bbcfd7162afad",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/stage_4000.json": "973036ab0dd5aaf075e441ba4d645f0989d8f6b5c4bdef431163e402d63b1405",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/stage_8000.json": "6d18ec7d6121bb418381a0a2923f118de4be34e15c078122bf7d23543fdbd275",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/completed.json": "dc44d814ecdef91a811730c4798e3e8a0685c7b00ca597ad24f8c1da0cf58c68",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/stage_2000.json": "dc1f6dc45b9eea2013fb01baa3cb3aaa89fe0f1960ebeff761774eec55f38764",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/stage_4000.json": "16732bd0687319bae212ec69d7a98e67a68c209b0efd1565ac0f6917319e2489",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/stage_8000.json": "c20f33d36565f1d3f43718a630f516f3a5f672ce4eada65249a4e98eeaecf34f",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/completed.json": "ff42012250bd36b8261e79ac1daa2ccd6b6475956e10a184769c86e806c5b742",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/stage_2000.json": "6e156a6bd3a68fcae4dc6c58b293a1bf39b9d6d9d5c91e34f420927df7d0309f",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/stage_4000.json": "779d0179493b17a241c55751710bbcc884c2f035725904b81f891c131ae13f18",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/stage_8000.json": "7504e3370ac2cbed0eefe1f99c5c30931666b21299e86a0cc8891748a177451d",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/completed.json": "50d62dd10ec59176185c180b50ec9776a47e3fdd78906decb8a8bafc2b14c079",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/stage_2000.json": "c0228747790b61a00030808feb1d4bb07148ee5159b94c0f2c31a80727048479",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/stage_4000.json": "757806b74315472b9f4bae9496f43e71acf973b04a13d4faebe94fd07a12b681",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/stage_8000.json": "376edd45af17a03f227dd96a79abcded17df6f88055040b2a2960e81e3698dee",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/completed.json": "583d0d35a253b7dd87166fc12bf93cc1ef16714b0adc9a75efb00eb6e6cabde4",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/stage_2000.json": "f65f2b4a07560645474c210e9994d7e413dd990dad6f7251e3282db2930ad1ad",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/stage_4000.json": "9246c9cfe18b92bc139460562be6e21975d1522f7faf721edaa0320dfcdbc8b8",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/stage_8000.json": "55b03dfc64bc78b9505fc89c3c9b791536db0cd2b07a564f8245854d7b4321a2",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/completed.json": "32b254788a6829feef335d0bb9241c68d1ec13e24561cbecce60f6f0b3f04a89",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/stage_2000.json": "e92484d8af9bffc8d67d08ade244d0b25b6db6315f34bf57b653f7a5b35672ff",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/stage_4000.json": "2c152a49ce696a7a0a3f631435d3049970a53b384ad20c2e6eec21c49f220060",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/stage_8000.json": "0baa595dfeb3872d1a51358736cc28fa76d098accc25357fbd3981c9157f1a80",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/completed.json": "beaa8a26679f5527b0911211cadb8cc26282d99f563f3f77b420f87d3633d011",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/stage_2000.json": "db759c9ae695b825882227b878ece880b9abf5575079f70bc0a7d89903d251de",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/stage_4000.json": "7565b1727a4ed60d25bf6353973e1fbf0155a94fe88c8763e2d4751b0db9e573",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/stage_8000.json": "1bc2f48801cd7beebe0632fe8cc690082cf8b51ed264e288426c62578456fd46",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/completed.json": "5b4f150c6b897ed7337633ffc4e02c28b5d15d6c8a800cd12e34671661330cc7",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/stage_2000.json": "bbd98738d4649cbbc029e87e4a18019971b737ae09035668737a4513414109b1",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/stage_4000.json": "423dbc0abe53da77d7f3195cf3042b93d9da3396ec5f542ec1af32bc0281fdc2",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/stage_8000.json": "1a2ec04c78178b3ddcacb78c9a2aaacf8422694edf26bbcdd4077cd3b4a0950e",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/completed.json": "6f3d79ac99cd9337e9d9bde5fe6e2a6801d7b1c8da24df497c3393107b181663",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/stage_2000.json": "d52e828835522d298efc62e93b46d626ac417c7c039e741dc36cd872b90b820d",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/stage_4000.json": "50293693b3540338e984ee4cd6effab4ab7ec5b2c812599a399e9b5e033db4ad",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/stage_8000.json": "c0d2787cc763a469266dd6ebad8073b371dec137a164ae02e1874fe1e7e9b103",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/completed.json": "747a7efb9da72c315a4a26c62fc588bb2f35cc79c7a14d33c50ce0ca37f50b7b",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/stage_2000.json": "7cac99bd8e06c92f2b0374b30e5e375a9bb39855592501dc44f559ef82a32ad6",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/stage_4000.json": "e1e5f12e82eae429d8e51a5c29ff2c2b3feefbc399910b83961335e844ee213b",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/stage_8000.json": "44340b5e78ccf3b55d5c5371a65e69053941333c4d92e904fe6225b3b263d82e",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/completed.json": "d91ce1fd454b2dd07f6a075b50c3650b027b3d7e436b54f807817e3dddec392f",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/stage_2000.json": "143373615b2ea85272364c554e7b08e0ed2da005f1907febbed36f6b1a2ca101",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/stage_4000.json": "0ccede1b02b7844b3efce354134867bd6301f7402659eaa540f217c9f5ddfa8e",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/stage_8000.json": "2165cb1878cd47e5e8d270c82ff8cde3b3f7fef352ad862172d4bb3a6474a548",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/completed.json": "e0274f8cc8806295f6455796ef14c05b9bf10913d4aeec7ae5314f3faae49830",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/stage_2000.json": "0b89a1ad0c0f2f570efcdecc038d5ccdad8ea9d0e37b95c345bad11b94bd7373",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/stage_4000.json": "9233b5ac9e3b98bd259dc24d3a1c9dccf065e24447d2b607db38cc6db4b067f4",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/stage_8000.json": "b20ed4e65b77ca78f1055c46485b22b4b90df95f155477d8a4c83bfea0b9bc0c",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/completed.json": "ab5086e31ec42d102af6b5ea42d16cce4f5b143247cb3abe810fe268a21a1238",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/stage_2000.json": "9cb6c953dd89686365cb1a3386e3e677ec99b90696544c795bf93207930e467f",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/stage_4000.json": "8ae32eafd6a9d2a639b69cc9d2d830f8b13affdf129574c5fa7afea604924ce4",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/stage_8000.json": "8fe7bd78b4d2f020ad10ff66c0749107fdd213c2c895b323cdf9b3b60823cbe7",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/completed.json": "3d101c6d7ac3414aa18d57468eb8a688b40a93875ab1507965506dca6c5d9a57",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/stage_2000.json": "6f17118e43baf8adf4822369c21f4f0a48b6f528d02838969ea687d63411d875",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/stage_4000.json": "f972dd9a3cad091a18814c4f7c24ca39e8edcd63b20878352074b19b8d829655",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/stage_8000.json": "3c0d4081c8a2ec7658074d777cef925b1e80edb31e66018403832312e38ac379",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/completed.json": "2a3f3785bcdb9ae6cdd8527a553c160ed200a2e0c3510fcd1ccb76934d776bbc",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/stage_2000.json": "e6315b4a24c82d7cdcdd5631f2e140a88cd10774bc7f914f89fc395255afe1bd",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/stage_4000.json": "7beaaab687cd0fb7d7314c0e9e8320193799d499713c298002cc10188386628e",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/stage_8000.json": "04a47c4dc6a9a589e16d9cdf3274c959f4864472ad72ed617904064f037f2185",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/completed.json": "ebda140044e32bfccebc5395e3d4a9022d9dfee141ff5465fd2de11002fd440b",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/stage_2000.json": "6d235fe97d74dc750c0868e4e73a921770043202d4e934f130ec92c002720896",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/stage_4000.json": "e3c8a599e4105ca2ac5ccc3ca340c68a82ab4281b64982b96c83fbc6bbf51e34",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/stage_8000.json": "0395a9cb5230034b804775a6c79255c7d75b502e076d1a4fc3d7d30a19baa192",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/protocol.json": "1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69",
+  "/mnt/yangx-projects-f/20261010/permworld_learnability/worlds/learningdev001/data.npz": "fdcfe9fa7d0089af4ec6f7b90108237ab6e1f57f2b80fb1140e051410938b8af"
+}

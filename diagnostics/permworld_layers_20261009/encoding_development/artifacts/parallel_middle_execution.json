@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-10-10T07:32:52.280835+00:00",
+  "development_only": true,
+  "formal_training_started": false,
+  "unchanged_fixed_manifest": true,
+  "models_added": 0,
+  "source_code_modified": false,
+  "purpose": "Independent fixed tail jobs overlap serial driver to reduce wall time",
+  "preassigned_manifest_indices": [
+    11,
+    10,
+    9,
+    8
+  ],
+  "worker": "middle",
+  "minimum_start_gap": 6,
+  "jobs": [
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "manifest_index": 11,
+      "serial_first_pending_index": 0,
+      "started_utc": "2026-10-10T07:32:52.285885+00:00",
+      "updates": 20000,
+      "finished_utc": "2026-10-10T08:10:58.710025+00:00",
+      "returncode": 0
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "manifest_index": 10,
+      "serial_first_pending_index": 2,
+      "started_utc": "2026-10-10T08:10:58.725446+00:00",
+      "updates": 20000,
+      "finished_utc": "2026-10-10T08:55:48.307601+00:00",
+      "returncode": 0
+    }
+  ],
+  "stopped_taking_jobs_reason": "Fixed manifest gap narrowed; serial driver completes remaining jobs",
+  "finished_utc": "2026-10-10T08:55:48.328625+00:00",
+  "status": "completed"
+}

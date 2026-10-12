@@ -1,0 +1,11 @@
+{
+  "cpu_external_wall_seconds": 1372.7028029480134,
+  "cpu_limit_seconds": 7200,
+  "GPU_stage_wall_seconds": 7161.842924481985,
+  "GPU_stage_limit_seconds": 14400,
+  "new_apparent_bytes": 1484936514,
+  "new_apparent_limit_bytes": 21474836480,
+  "gpu_kernel_active_time_unknown": true,
+  "parallel_training": false,
+  "accounting_limitation": "Task budget clock was saved at creation of the isolated directories, after initial read-only request/source discovery; preceding short discovery is not represented as GPU time."
+}

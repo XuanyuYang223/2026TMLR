@@ -1,0 +1,260 @@
+{
+  "status": "passed_read_only_source_dependency_inventory",
+  "registered_utc": "2026-10-10T22:06:48.560763+00:00",
+  "extractor_sha256": "216380df1c7224e852449dd973a1c8f664c9da233240c6d29cbc94c42d936c79",
+  "sources": [
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/extract.py",
+      "sha256": "216380df1c7224e852449dd973a1c8f664c9da233240c6d29cbc94c42d936c79",
+      "covered_by_current_training_freeze": false,
+      "imports": [
+        ".common",
+        "__future__",
+        "argparse",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "tempfile",
+        "time",
+        "torch",
+        "torch.nn"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers.py",
+      "sha256": "4693a3dd79a0e96d792dca64c94de5a9458cbbc41847af6e12b1a58f82ed58c4",
+      "covered_by_current_training_freeze": false,
+      "imports": [
+        "__future__",
+        "argparse",
+        "experiments.permworld_encoding.core",
+        "experiments.permworld_encoding_archdev_20261009.common",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "torch",
+        "torch.nn"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/common.py",
+      "sha256": "d0038289de9d100f96f6107a9732937efbdccfb5c03ccd8daba351b2a468283c",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        "csv",
+        "experiments.permworld_encoding.core",
+        "experiments.permworld_encoding.train",
+        "experiments.permworld_encoding_archdev_20261009",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/common.py",
+      "sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        "copy",
+        "datetime",
+        "experiments.longrun_attention",
+        "experiments.permworld_encoding.core",
+        "experiments.permworld_encoding.train",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "types"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "sha256": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        "experiments.permutation_audit",
+        "hashlib",
+        "json",
+        "neurips_permutations.math_ops",
+        "neurips_permutations.models",
+        "neurips_permutations.passage",
+        "numpy",
+        "pathlib",
+        "random",
+        "sys",
+        "tomllib",
+        "torch",
+        "torch.nn.functional"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding/train.py",
+      "sha256": "9fb5272c99397a1cd071d84b466d76cf012b8b042727e776ef1ea3497829540a",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        ".core",
+        "argparse",
+        "copy",
+        "datetime",
+        "experiments.longrun_attention",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/longrun_attention.py",
+      "sha256": "5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        "torch",
+        "torch.nn",
+        "types"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permutation_audit.py",
+      "sha256": "d02b667d8d1951c547ad4a4a6a84875535f6ee59255db96bb6abef241b5b267e",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        ".algebra",
+        "argparse",
+        "csv",
+        "hashlib",
+        "itertools",
+        "json",
+        "neurips_permutations.math_ops",
+        "numpy",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tomllib"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/algebra.py",
+      "sha256": "758fa9839a31dc27b1d09d25d140821395b86f6eddbe4663a9a002d4f7fee6e3",
+      "covered_by_current_training_freeze": false,
+      "imports": [
+        "itertools",
+        "numpy"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/metrics.py",
+      "sha256": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        "numpy"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/external/neurips/configs/property_task_geometry.toml",
+      "sha256": "8a3b21366ca344c0cb50f5a26108375b96eceb3ca49720ff001749ef09155e88",
+      "covered_by_current_training_freeze": true,
+      "imports": []
+    },
+    {
+      "path": "/home/yangx/ICML/external/neurips/src/neurips_permutations/passage.py",
+      "sha256": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/external/neurips/src/neurips_permutations/math_ops.py",
+      "sha256": "968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        "__future__",
+        "bisect",
+        "collections.abc",
+        "itertools"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/external/neurips/src/neurips_permutations/models.py",
+      "sha256": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "math",
+        "torch",
+        "torch.nn",
+        "typing"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/external/neurips/src/neurips_permutations/__init__.py",
+      "sha256": "ab87fbaa3acb307adaba99368b62ab1fb3fae955ddc9c6fe4cc072dba1c4c950",
+      "covered_by_current_training_freeze": true,
+      "imports": [
+        ".math_ops"
+      ]
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/__init__.py",
+      "sha256": "eb5ff1d8c35c49b27364ffcbc40cbd0eacc71cde97aaff0ebfe018a3d947f745",
+      "covered_by_current_training_freeze": false,
+      "imports": []
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding/__init__.py",
+      "sha256": "d8344f473b24a5845bedeca52a3a94e1c02eb1f8c21f89ccec3a4eed313f3f7f",
+      "covered_by_current_training_freeze": false,
+      "imports": []
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/__init__.py",
+      "sha256": "42f6526cc435b26ef230cf5c97d69a4b3c1a4dfb97772b5454ee2aff44306b35",
+      "covered_by_current_training_freeze": true,
+      "imports": []
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/__init__.py",
+      "sha256": "000d98e3781bc5bf1377fea89d5e035da57d19580fb78b509929a01c49b0ff6b",
+      "covered_by_current_training_freeze": false,
+      "imports": []
+    }
+  ],
+  "extra_analysis_freeze_paths": [
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/extract.py",
+    "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/extraction_review/extract_layers.py",
+    "/home/yangx/ICML/experiments/algebra.py",
+    "/home/yangx/ICML/experiments/__init__.py",
+    "/home/yangx/ICML/experiments/permworld_encoding/__init__.py",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/__init__.py"
+  ],
+  "stdlib_and_installed_numpy_torch": "Pinned by execution environment; no package source copied or changed.",
+  "algebra_import_scope": "Imported at permutation_audit module load; rank_mod is not used by feature extraction. Freeze as import-closure evidence only.",
+  "training_freeze_modified": false,
+  "GPU_started": false,
+  "real_forward_started": false
+}

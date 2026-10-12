@@ -1,0 +1,12 @@
+architecture,encoding,relation,control,component,linear_cka,linear_cka_sign,knn_overlap,knn_overlap_sign,procrustes,procrustes_sign,all_three_defined,all_three_direction_agreement
+gru,one_line,peak_complement,answer_strata,Delta,0.25735390516041623,+,-0.008532170157172246,-,0.4115538469888255,+,True,False
+gru,one_line,run_complement,answer_strata,Delta,0.15606503849356798,+,-0.009456059115733953,-,0.3699376948269556,+,True,False
+gru,canonical_cycle,decomposition_complement,raw_within_length,Bt,0.40193616430052376,+,-0.040438988095238104,-,0.17242125950045525,+,True,False
+transformer,one_line,peak_complement,raw_within_length,Delta,0.023020212431892347,+,-0.1933221726190476,-,0.16501005208728042,+,True,False
+transformer,one_line,run_complement,raw_within_length,Delta,0.2899098523068522,+,-0.1952845982142857,-,0.5081620380837002,+,True,False
+transformer,one_line,record_complement,raw_within_length,Delta,0.08473196295459276,+,-0.14086681547619045,-,0.1948001451630337,+,True,False
+transformer,canonical_cycle,exceedance_inverse,raw_within_length,Delta,-0.19488054372494876,-,0.07999441964285714,+,0.18825720249133526,+,True,False
+gru,one_line,peak_complement,raw_within_length,Delta,0.35466406012002033,+,-0.019187127976190477,-,0.6940761810175134,+,True,False
+gru,one_line,fixed_complement,raw_within_length,Delta,0.04356783694342341,+,-0.4361793154761905,-,0.09335060587479904,+,True,False
+gru,one_line,subsequence_complement,raw_within_length,Delta,0.1345802005373252,+,-0.2211123511904762,-,0.2743158113482504,+,True,False
+gru,one_line,record_complement,raw_within_length,Delta,0.24124216499694895,+,-0.11154203869047619,-,0.4398982381015557,+,True,False

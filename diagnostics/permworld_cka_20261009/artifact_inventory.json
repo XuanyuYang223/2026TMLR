@@ -1,0 +1,62 @@
+{
+  "completed_utc": "2026-10-09T17:56:29.190355+00:00",
+  "workspace_commit": "1073dcb3be4db90ec23476bab8f503c9e00f364b",
+  "upstream_commit": "74f0de2017115f06f11b7285366b66e7e8431d30",
+  "configs": [
+    {
+      "path": "/home/yangx/neurips/configs/property32_zero_overlap_pilot.toml",
+      "sha256": "5cd3fc692880d83773e7fc80c006d16367b7c3aeebcdfa678659bf7fa189b2b3"
+    },
+    {
+      "path": "/home/yangx/neurips/configs/property32_zero_overlap_r1.toml",
+      "sha256": "5d7453fa2ffde847cc74813f83da8dabddccbc893132002084eeff3ac4524693"
+    },
+    {
+      "path": "/home/yangx/neurips/configs/property32_zero_overlap_r2.toml",
+      "sha256": "1a1c1247555fbbb5e6b3df0df3216580a7acffb914639ad47b55a18079bdac18"
+    },
+    {
+      "path": "/home/yangx/neurips/configs/property32_zero_overlap_r3.toml",
+      "sha256": "42a95f2237b971127f54d5f9bf5337fab530b8d0f5e035eace25a94ca08b6a26"
+    },
+    {
+      "path": "/home/yangx/neurips/configs/property32_zero_overlap_r4.toml",
+      "sha256": "50252aa8505b63d66e2d1ef6d9f72b3484966dc487beb637afe2d4e846022e67"
+    },
+    {
+      "path": "/home/yangx/neurips/configs/property_task_geometry.toml",
+      "sha256": "8a3b21366ca344c0cb50f5a26108375b96eceb3ca49720ff001749ef09155e88"
+    }
+  ],
+  "source_hashes": {
+    "models.py": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6",
+    "training.py": "b09bdd90a349e18cbf71d1345a05a1e075de945956d30d4940806fd3d8712183",
+    "passage.py": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+    "math_ops.py": "968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c",
+    "cka.py": "baaf8805426260d95412137235fab618a4be6cee8befe8a0c340e3064970cf7f"
+  },
+  "dataset_sha256": "e353558d7ac211637a9a783461b5eeb198dad6b99e95e2ec5946924f3280e65e",
+  "parent_protocol_sha256": "67dd6c7c0f4f8eb945aae013ef0857398d77b525f7b4ad7536148e124b289721",
+  "k_probe": "7df2ce6d75c95873061ac540ba6998f886921eaa0585d3ca0f14d6fec6fa7b91",
+  "torch_version": "2.11.0+cu128",
+  "numpy_version": "2.4.4",
+  "python_version": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:00:33) [GCC 14.3.0]",
+  "reused": [
+    "specialist per-length ordinary/input-adjusted CKA, answer strata, gold/output baselines",
+    "specialist checkpoint and initialization feature archives",
+    "Property32 fifty trained activation caches and random-seed17/42 caches"
+  ],
+  "missing": [
+    "Original specialist/Property32 step-0 weight artifacts and checksums",
+    "Original training commit/environment records",
+    "Property32 seed101 initial forward cache (completed by inference in this directory)"
+  ],
+  "added": [
+    "nine ordered existing-seed pairs",
+    "debiased/per-length permutation sensitivity",
+    "paired input bootstrap",
+    "own-initialization k-series drift",
+    "prefix-only cache verification"
+  ],
+  "training_started": false
+}

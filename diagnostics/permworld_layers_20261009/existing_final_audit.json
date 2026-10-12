@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-10T07:28:12.827441+00:00",
+  "status": "passed",
+  "protected_f17_files_unchanged": 191,
+  "existing": {
+    "rows": 187488,
+    "unique_cells": 187488,
+    "complete_length_groups": 8928,
+    "lengths": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "decomposition_checks": {
+      "preference_identities": 289577,
+      "delta_identities": 134743,
+      "change_identities": 134743
+    },
+    "inherited_rows_exact": 52080,
+    "inherited_string_fields_exact": 2239440,
+    "frozen_dependencies": 15,
+    "original_initial_weight_identity_verified": false,
+    "initialization_grade": "C",
+    "new_existing_source_updates": 0
+  },
+  "audit_scope": "Coverage, hashes and arithmetic; independent activation/metric checks have their separately stated scopes"
+}

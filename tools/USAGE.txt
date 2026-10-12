@@ -1,0 +1,79 @@
+Portable saved-table check
+==========================
+
+Dependencies: Python 3.10 or later, standard library only. NumPy, Torch, CUDA,
+threadpoolctl, the original experiment environment and artifact downloads are
+not needed for this table-only check. Original scientific runtime versions and
+large-asset requirements are documented separately by the repository.
+
+Install these three files in the publication repository's tools/ directory:
+  recompute_tables.py
+  table_checksums.json
+  USAGE.txt
+
+From a clean clone, run:
+  python3 -B tools/recompute_tables.py --self-test
+  python3 -B tools/recompute_tables.py --repo-root . --output /tmp/representation-table-check.json
+
+The repository must contain the 17 exact frozen CSV/JSON inputs listed in
+table_checksums.json at their repository-relative paths. The path keys are also
+declared in DEFAULT_LAYOUT in the script. --layout relative_layout.json can
+override locations when needed; its dictionary maps input keys to paths inside
+the clone. Absolute paths, parent traversal and external symlink targets are
+rejected. Historical /home/... and F-disk paths in the original provenance are
+preserved as evidence but never opened or used as filesystem fallbacks.
+
+The optional --checksums alternate_manifest.json changes the checksum manifest
+location, not the expected frozen data, formulas, metrics or tolerances.
+The original scientific files must retain their bytes. Do not regenerate them
+or change protocols to make the portable check pass.
+
+Actual coverage:
+  * SHA256 and byte sizes of 17 published scientific inputs.
+  * PermWorld's 480 and GraphWorld's 12 frozen fixed-T candidate task pairs.
+  * 20,268 saved per-length/control rows -> 996 equal-length aggregates.
+    PermWorld retains all 21 lengths 10..30 with weights 1/21; GraphWorld
+    retains n6/7/8 with weights 1/3. A missing/undefined scale leaves the
+    aggregate undefined; weights are never redistributed and NaN is not zero.
+  * All original raw, answer and Graph answer+exact-edge-count controls stay
+    separate. Candidate-specific supports are not assumed identical.
+  * 2,760 designated per-length/phase comparisons with the original correct
+    ordinary CKA values and 152 designated aggregate/phase comparisons.
+    The original endpoint tolerance 1e-8 is unchanged.
+  * Frozen candidate classifications and 456 saved category mean/median/count
+    rows. The empty other_known_exact category is retained explicitly.
+  * MatrixGroupWorld's predeclared main R1/R3 relations: 24 per-n and 8
+    per-control/unit ordinary prefix-CKA cells, B0/Bt/dc/du/Delta from the saved
+    six scores, and the fixed 1/3 aggregates. The recorded table arithmetic
+    tolerance is 1e-12. Supplemental R2/R4 are checked as protocol definitions,
+    not silently made primary.
+  * The original Matrix run state completed_with_verification_caveat, 8/8
+    20k endpoints and scientific_analysis_complete=false. Its numerical
+    checks remain 64 passed, 2 failed and 6 undefined_consistent; all 288
+    saved selector checks and the exact failed subset are preserved.
+  * The four frozen matrix identities and wrong-formula expressions in the
+    six n2 mathematical cases; no formal scientific inputs are generated.
+
+This tool does NOT recompute CKA/kNN/Procrustes from hidden arrays, run a model,
+evaluate a checkpoint, train, create new scientific results, download assets,
+or replace the failed original numerical verification. A successful exit
+means saved-table arithmetic and expected identities match, not that every
+activation metric was independently reproduced or a mathematical mechanism
+was proved. Fixed-T training_score_change is not original Bt or Delta.
+
+On success, the JSON status is:
+  passed_saved_table_arithmetic_with_preserved_verification_caveat
+and Matrix scientific_analysis_complete remains false. The report records
+check counts, per-group maximum differences, all relative input SHA256 values,
+the two preserved failed checks and a precise scope. Exceptions or mismatches
+produce a nonzero exit status. --output writes only the requested check report;
+none of the scientific inputs is modified.
+
+Development qualification:
+The original developer ran this against saved local inputs using system
+Python, outside the experiment virtual environment. That local check is not
+called a remote clean-clone test. The publication owner must perform and
+record the separate clean clone after commit/push, using only files available
+from the published repository/assets. The table test needs no large model
+assets; downloading/reassembling and verifying those assets is a separate
+publication check with its own stated remote-readback coverage.

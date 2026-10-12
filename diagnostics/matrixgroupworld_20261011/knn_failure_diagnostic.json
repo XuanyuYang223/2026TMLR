@@ -1,0 +1,332 @@
+{
+  "status": "cause_localized_original_verification_remains_failed",
+  "scope": {
+    "unit": "unit001",
+    "relation": "R1",
+    "n": 6,
+    "control": "raw_within_n",
+    "phase": "trained",
+    "branch": "output_prob",
+    "sample_count": 64,
+    "neighbors_k": 10,
+    "original_sample_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+    "original_orbit_exclusion": true,
+    "roles": [
+      "correct",
+      "wrong"
+    ]
+  },
+  "source_script_sha256": "a7d6e27b24973d73a6201ed13a46fcf7eedd0bc6a09848fbb1ba636059a8c053",
+  "metrics_source_sha256": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+  "independent_source_sha256": "6dbb804d22b7c4559bc8e3b41140efc50df5008c8a24698652525d57ebf0b8a3",
+  "protocol_sha256": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+  "original_verification_sha256": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+  "original_verification_status": "failed",
+  "original_status_counts": {
+    "passed": 64,
+    "failed": 2,
+    "undefined_consistent": 6
+  },
+  "retained_verified_scope": "64 passed and 6 undefined-consistent fixed checks; all288 fixed selector checks passed. The2 output-probability/raw/trained kNN checks remain failed.",
+  "cpu_blas_threads": 2,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/yangx/miniforge3/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "features": {
+    "left_identity": {
+      "raw_shape": [
+        64,
+        188
+      ],
+      "raw_dtype": "float32",
+      "raw_array_sha256": "9ca78a7c1efb021a8557a015e2566764749cc99e0d979f20e0317cda5c0e9f2f",
+      "max_centering_absolute_difference": 1.1102230246251565e-16,
+      "exact_duplicate_raw_rows": 0,
+      "maximal_probability": {
+        "min": 0.9996317625045776,
+        "median": 0.9999959468841553,
+        "max": 0.9999988079071045,
+        "exactly_one_count": 0
+      },
+      "median_nonmax_probability": 1.699850926684121e-09,
+      "max_gram_vs_direct_distance_absolute_difference": 3.332075246175224e-15,
+      "negative_unclipped_gram_distance_count": 0,
+      "changed_neighbor_sample_count": 0,
+      "changed_sample_ids": [],
+      "centering_only_direct_set_changes": 0,
+      "centering_only_gram_set_changes": 0,
+      "same_production_center_gram_vs_direct_set_changes": 0
+    },
+    "right_correct": {
+      "raw_shape": [
+        64,
+        188
+      ],
+      "raw_dtype": "float32",
+      "raw_array_sha256": "84f330e8097dfc64074505fc461b13733e721ac108724eb780d09aa053569fd7",
+      "max_centering_absolute_difference": 1.1102230246251565e-16,
+      "exact_duplicate_raw_rows": 0,
+      "maximal_probability": {
+        "min": 0.99994957447052,
+        "median": 0.9999984502792358,
+        "max": 0.9999990463256836,
+        "exactly_one_count": 0
+      },
+      "median_nonmax_probability": 1.4587158148060553e-09,
+      "max_gram_vs_direct_distance_absolute_difference": 2.939320091403212e-15,
+      "negative_unclipped_gram_distance_count": 0,
+      "changed_neighbor_sample_count": 2,
+      "changed_sample_ids": [
+        48,
+        57
+      ],
+      "centering_only_direct_set_changes": 0,
+      "centering_only_gram_set_changes": 0,
+      "same_production_center_gram_vs_direct_set_changes": 2,
+      "changed_rows": [
+        {
+          "sample_id": 48,
+          "anchor_id": "681676405e8cd4f19364bd3daa3bc1f17681bfb4dc413f130a79dede65fc4209",
+          "orbit_id": "064262635c60",
+          "production_neighbors": [
+            1,
+            11,
+            15,
+            34,
+            40,
+            41,
+            53,
+            56,
+            57,
+            59
+          ],
+          "independent_neighbors": [
+            1,
+            11,
+            15,
+            27,
+            34,
+            40,
+            41,
+            56,
+            57,
+            59
+          ],
+          "production_only": [
+            53
+          ],
+          "independent_only": [
+            27
+          ],
+          "production_boundary_gap": 4.440892098500626e-16,
+          "independent_boundary_gap": 2.1773952916845812e-16,
+          "production_boundary_tie": false,
+          "independent_boundary_tie": false
+        },
+        {
+          "sample_id": 57,
+          "anchor_id": "4bc2f2a14a7d70fd7ba07e97596b5234589b8b9d6b01112600508f3bcc07cef0",
+          "orbit_id": "06464158f4a0",
+          "production_neighbors": [
+            1,
+            11,
+            15,
+            34,
+            40,
+            41,
+            48,
+            53,
+            56,
+            59
+          ],
+          "independent_neighbors": [
+            1,
+            15,
+            27,
+            34,
+            40,
+            41,
+            48,
+            53,
+            56,
+            59
+          ],
+          "production_only": [
+            11
+          ],
+          "independent_only": [
+            27
+          ],
+          "production_boundary_gap": 0.0,
+          "independent_boundary_gap": 4.174235858336072e-16,
+          "production_boundary_tie": true,
+          "independent_boundary_tie": false
+        }
+      ]
+    },
+    "right_wrong": {
+      "raw_shape": [
+        64,
+        188
+      ],
+      "raw_dtype": "float32",
+      "raw_array_sha256": "a19357b13c22ead9ebc42b1375e3833c5a1d93d8b7a7505b0e21d5835adb8850",
+      "max_centering_absolute_difference": 1.3877787807814457e-17,
+      "exact_duplicate_raw_rows": 0,
+      "maximal_probability": {
+        "min": 0.9999532699584961,
+        "median": 0.9999985694885254,
+        "max": 0.9999990463256836,
+        "exactly_one_count": 0
+      },
+      "median_nonmax_probability": 1.5886115756202912e-09,
+      "max_gram_vs_direct_distance_absolute_difference": 2.8600310349866255e-15,
+      "negative_unclipped_gram_distance_count": 0,
+      "changed_neighbor_sample_count": 1,
+      "changed_sample_ids": [
+        17
+      ],
+      "centering_only_direct_set_changes": 0,
+      "centering_only_gram_set_changes": 1,
+      "same_production_center_gram_vs_direct_set_changes": 1,
+      "changed_rows": [
+        {
+          "sample_id": 17,
+          "anchor_id": "a59231b8bc57a743608f910b824407695134f22613cf8845e404e80c95b1d9b9",
+          "orbit_id": "061529cf7be0",
+          "production_neighbors": [
+            1,
+            10,
+            13,
+            19,
+            32,
+            45,
+            47,
+            51,
+            53,
+            59
+          ],
+          "independent_neighbors": [
+            1,
+            13,
+            19,
+            32,
+            45,
+            47,
+            51,
+            53,
+            59,
+            60
+          ],
+          "production_only": [
+            10
+          ],
+          "independent_only": [
+            60
+          ],
+          "production_boundary_gap": 0.0,
+          "independent_boundary_gap": 5.773805062583718e-16,
+          "production_boundary_tie": true,
+          "independent_boundary_tie": false
+        }
+      ]
+    }
+  },
+  "failed_score_reproduction": [
+    {
+      "role": "correct",
+      "original_failure_status": "failed",
+      "frozen_production": 0.6,
+      "frozen_independent": 0.6015625,
+      "production_path_reproduced": 0.6,
+      "independent_path_reproduced": 0.6015625,
+      "score_difference": 0.0015625000000000222,
+      "shared_neighbor_count_difference": 1,
+      "changed_overlap_rows": [
+        {
+          "sample_id": 48,
+          "production_shared_neighbors": 6,
+          "independent_shared_neighbors": 7,
+          "count_change": 1,
+          "left_set_changed": false,
+          "right_set_changed": true
+        }
+      ],
+      "crossed_arithmetic_localization_only": {
+        "direct_distance_production_center": 0.6015625,
+        "gram_distance_independent_center": 0.6
+      }
+    },
+    {
+      "role": "wrong",
+      "original_failure_status": "failed",
+      "frozen_production": 0.16562500000000002,
+      "frozen_independent": 0.16718750000000002,
+      "production_path_reproduced": 0.16562500000000002,
+      "independent_path_reproduced": 0.16718750000000002,
+      "score_difference": 0.0015624999999999944,
+      "shared_neighbor_count_difference": 1,
+      "changed_overlap_rows": [
+        {
+          "sample_id": 17,
+          "production_shared_neighbors": 2,
+          "independent_shared_neighbors": 3,
+          "count_change": 1,
+          "left_set_changed": false,
+          "right_set_changed": true
+        }
+      ],
+      "crossed_arithmetic_localization_only": {
+        "direct_distance_production_center": 0.16718750000000002,
+        "gram_distance_independent_center": 0.16718750000000002
+      }
+    }
+  ],
+  "protected_file_hashes": {
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/protocol.json": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/freeze_manifest.json": "2e52c0957d646a4dad261ffd0d0b63120ef8ee4e9f3118a179b142cf4c305e3c",
+    "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/index.json": "a2c2f3570947ca45edf5677a808d57eafd9a0e3e43d992e74d640d7211f1237d",
+    "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data.npz": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+    "/home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/metrics.py": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+    "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/metric_review/independent_metrics.py": "6dbb804d22b7c4559bc8e3b41140efc50df5008c8a24698652525d57ebf0b8a3",
+    "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_analysis.npz": "b2ec975ab392f8f1b228821055efd517993a3d3a43980a7b160e5025ceddaedd",
+    "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_analysis.npz": "8fb7274d3469fabf696ee909251a9f732f3d4b2d011a27191399df955e375069",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/__init__.py": "d4c8c4f91df914a2d3b7e0dc005bd589504044df0f1fe96d95494220a75f9cd7",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/analysis.py": "2899670467172b22df18e242176197cc7dcf4f2facf8b41e0f01185e786ffbbb",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/budget.py": "754d15ca3f830e0b8c881ca0e85c3764e9760f84e24ee7cbe51502b70f108b2f",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/common.py": "68e856bb48d57ea86d5ceb3af8004415f3a43f65445979f64e8df8746b57b385",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/core.py": "a3fd4e1cdeecf76c954f0f8ee47e59b760d14c619bfb49028bcc2858fdae2ee3",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/data.py": "2825c6402f00f0a8fd33e5a383a178d46877f4ac814daa1393d5c13de619ec35",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/driver.py": "2f48d5cadc8e4197b8465ecb071647d4ae052898bd75368d100a38846156c4bb",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/engineering.py": "f9bec77281fa87a5c12210c0ad20dd5bb3e61310df1222ea1b7ca7f9632d71d7",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/evaluation.py": "09f0dd8cfbec9752bb87ca6940066ae80969d89280e3ed950e391226c58450aa",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/math_checks.py": "0bf0177a69d47f39bb6f3e444e505b1bebf42b272fd737f23678eeed4aca6fdb",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/model_runtime.py": "0fbbf70c6b6691beec0f21127789198808cacdf965ec16ebd5eb3273c8832567",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/training.py": "9921d09e3195a4dd4ab4fd87a6c11b0cca46b6f52699647ecd1b9590f0505d9a",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/verification.py": "aa3a967bdac07c0ad5c3989233b0f67e97b85842a2de7173f26a63fad79c0793",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/geometry_per_n.csv": "67e52eed74bbd1d0a90bd4833ab942ff68725856125ca6ecb22ed3fc99c2b8ab",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/geometry_summary.csv": "0b5c9360f5a307d13fbee322cd0cd1ef891fbad9634a53bc9266a30bcba44d09",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/pair_per_n.csv": "4f77ff8a51eee4799c76cfd859218b7b8c21fbb0c0f844686d0b13b24ca135c5",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/pair_summary.csv": "b3635492af2ece49d745043aad00ebec85a832a3d624d6bfad8fb25b37fd2748"
+  },
+  "protected_file_count": 26,
+  "protected_hashes_unchanged": true,
+  "models_constructed": 0,
+  "new_forward": 0,
+  "training_updates": 0,
+  "new_production_metrics": 0,
+  "frozen_parameters_changed": false,
+  "failed_status_replaced": false,
+  "tolerance_relaxed": false,
+  "wall_seconds": 1.2126231199945323
+}

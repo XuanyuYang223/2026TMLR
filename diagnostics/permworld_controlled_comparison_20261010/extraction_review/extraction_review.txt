@@ -1,0 +1,111 @@
+PermWorld受控比较：20k主队列层提取与缓存审查
+日期：2026-10-10；范围严格为首轮archdev001，不含8k或历史82。
+
+真实来源
+源根 /mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev
+protocol/training_manifest定义4任务×2编码×2架构=16模型，固定20k终点，
+n10..30、每长度train4096/validation256/test512。原protocol SHA：
+2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9
+实际执行源摘要 d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a
+真实step0与final位置：initializations/<architecture>/step0.pt/.json；
+models/<run_id>/checkpoint.pt + completed.json；不是按标题推测路径。
+
+缓存已核实
+64 evaluation_cache/<arch>_<enc>_<task>_<initial|trained>_<validation|test>
+.npz/.json实际SHA、源protocol/data/split/CP签名全部一致；16终点CP实际
+SHA与completed匹配且step=finite_updates=20000。缓存总1640949534字节；
+本次CPU字节审计13.79秒，没有新模型前向。详细清单是同目录
+cache_inventory.csv及cache_inventory_audit.json。
+
+NPZ只有prefix_final、output_prob、prediction；prefix_final为final_norm
+后、task前结束位置的256维状态。validation shape[5376,3,256]、test
+shape[10752,3,256]；actions原顺序identity/complement/inverse；所有三个
+数组保留原行序。不存在该20k队列的中间层缓存；历史82的多层缓存
+不能代替本队列，second8k也不能填充缺项。
+
+原evaluation.extract用完整prompt prefix+task+'='，final_norm hook取
+end=2n+3。输出概率是等号2n+5处前31数字token的条件softmax，prediction
+是全188类argmax。旧final_norm为本次主读数，必须逐值复用原缓存。
+只有numeric conditional probs不能重建全188类answer CE；原prompt没有
+真实答案/EOS，不能从该缓存补出teacher-forced EOS成绩。
+
+初始化证据
+各architecture只有一个真实保存step0，8个源模型都加载该架构原权重。
+完成记录initial_parameter_sha256与step0 metadata一致。旧保存TF权重
+SHA 2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda。
+GRU当前SHA 7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa，
+为训练前真实native4-layer权重逐值不变的显式4个单层GRU key迁移；
+canonical参数摘要5a766f8777a47de8332fbd958b6292e5fc38899a30b883870ba329f7605ad18c。
+保存旧容器SHA 1714244f6ada652c35af4ddca7002681d31f237346296a48d19cc2cc9154a83d；
+初始化parameter_hash名字改变而数值不变，不能把摘要变化说成重新初始化。
+本次直接torch-load旧/新初始model，按原迁移映射独立逐tensor核对21项
+shape/dtype/bitwise值，全部相同；记录initial_migration_audit.json。
+execution_binding_v4.json是当前版本的外部绑定，保留原历史容器字段；
+不把旧容器内部旧协议摘要重写成新来源，不把“相同种子”当身份。
+
+对arch×encoding×split所有initial prefix_final跨4task独立array_equal检查，
+32项均逐值相同且max_abs=0。因此新中间hidden可用descents代表，4初始
+arch×encoding +16 trained=20条件，validation/test共40物理split；全部
+16×2condition×2split=64逻辑key依旧保留。共享仅限hidden；初始各task
+query logits/CE不同，不可把descents初始CE继承给别的task。
+
+新增层的路径
+TF net.blocks[0..3] hook输出是各完整residual block后状态，固定取2n+3；
+final_norm后状态另列（同一位置，但层归一化改变几何，不能混称block4）。
+GRU使用当前实际显式版本 net.recurrent_layers[0..3] 的output[0]，每层
+4个独立1-layer cuDNN GRU。三处interlayer_dropout是torch.Dropout；eval
+时恒等，所以hook在下一dropout前等于实际送往下一层的状态。
+不得用老native GRU多层内部hook虚构中间状态。
+同n末token embedding=E[ONE_END/CYCLE_END]+P[2n+3]常量，因此结构性
+undefined；不存浮点残差来制造输入层指标。
+
+验证路径
+旧independent_evaluation.json已经对32条件、n10/20/30首8×3action检查
+2304vector：缓存误差5.1558e-6、prefix-only/fullprompt误差2.7120e-6，原
+门槛2e-5。本轮新路径须再次在冻结协议后检查，不当旧哈希校验是科学
+新复现。新的Capture hooks与独立manual embedding→blocks/recurrent→norm
+路径分别计算；manual只给prefix，核对suffix因果隔离，并固定2e-5。
+模型eval/inference_mode、FP32参数/forward、无autocast/TF32、原batch128。
+全量每batch新norm与原cache核对，全188 argmax也与原prediction核对；
+错误不自动调容差、不换模型或重训。before/after parameter_hash与grad
+None检查表明新前向不更新权重。
+
+新输出布局
+新F根 /mnt/yangx-projects-f/20261010/permworld_controlled_comparison
+layers/index.json；每physical source_key一个features.npy memmap，
+shape[N,3,5,256] float32。TF层名block_01..04/final_norm；GRU layer_01..04/
+final_norm。只有中间4层进入新增科学分析，新norm只核对旧主缓存。
+index.job_condition_split_map覆盖64逻辑key；logical_old_cache_map保存每个
+原logical key缓存路径/SHA，而不是用初始representative替换旧主值。
+trained另存answer_ce.npy float64与answer_argmax.npy int16，两split三action；
+CE全188类，输入仅原prompt。EOS新值缺失，若展示必须注明未测，或注明
+来源/范围的原validation EOS；不拿旧EOS代替新的test EOS。
+
+补前向与成本
+可复用64个finalnorm/outputprob/pred缓存及静态标签基线；需新前向中间
+4层，并在同一前向补trained的全188类CE。共享后的总输入序列数为
+20×(5376+10752)×3=967680。新features含norm核对数组共4954521600字节
+（约4.61GiB）；CE/argmax约7.74MB，此外有lengths、index与小审计文件。
+大缓存只写新F路径，旧NPZ不转写；原固定20k训练库存不做额外前向。
+CPU分析指标成本不包含在新GPU前向成本，应另计；禁止凭20k训练耗时
+直接猜推理GPU小时。extract_layers.py的benchmark在新protocol+freeze
+齐备后才允许前向，以n10/20/30真实batch128吞吐插值21长度，给GPU
+forward估计及实际benchmark墙钟；文件hash/CP读取/写memmap单独说明。
+当前这里只完成CPU来源审查与代码实现，尚未执行新benchmark或提取。
+
+执行边界
+可调用新脚本 --stage benchmark 或extract，但协议缺失/摘要不符立即
+拒绝；extract必须先通过本次benchmark与两路径激活校验。初始化只读
+实际文件，不调用initial()；不建立optimizer、无backward/更新。所有新
+输出局限新diagnostic/F根，不修改旧产物、F17，不启动训练/GroupWorld。
+
+工程验证修复补记（首轮root benchmark失败后）
+失败门槛把“首8prefix-only”同时与“完整prompt/batch128”比较，中间raw层
+最大差4.1008e-5，而同前向旧final_norm缓存差为0。当前验证已改为同shape
+128完整prompt的独立manual与hook首8层状态比较，所有层门槛仍2e-5；
+prefix-only8另记录各层shape数值敏感性，只对final_norm保留2e-5门槛。
+初审正文中manual-prefix-only承担所有层2e-5 gate的描述由此补记取代。
+不把raw数值shape差解释成主提取错误；也尚未把它精确归因于batch或
+sequence某一个因素。未扩大容差、未改主提取/数据/模型/指标；完整旧
+脚本/失败日志与engineering_repair.json保留，root更新freeze后重跑。
+本agent仅实施该工程修复，没有额外GPU前向或训练。

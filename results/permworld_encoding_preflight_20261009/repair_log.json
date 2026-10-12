@@ -1,0 +1,16 @@
+{
+  "changes": [
+    {
+      "file": "experiments/permworld_encoding/evaluate.py",
+      "reason": "Evaluate configured task/relationship subset in a development unit; retain full16 label indices. No CKA equation or formal scope changes.",
+      "old_sha256": "227fa70c583d396972b313f64df0c4fc94a5f0a78df92843c0b38230ac2845e8",
+      "new_sha256": "d7935fe014a79df8d7d674ac1afb70e3ed7fe24992eb5e4f001a9bf14d8ee8db"
+    },
+    {
+      "file": "experiments/permworld_encoding_preflight.py",
+      "reason": "Initial and final source-learning gate use the same validation samples rather than mixing initial test and final validation. Threshold/model/data/training unchanged; before actual training."
+    }
+  ],
+  "original_formal_protocol_preserved": true,
+  "formal_execution_not_started": true
+}

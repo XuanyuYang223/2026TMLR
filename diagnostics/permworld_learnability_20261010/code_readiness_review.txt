@@ -1,0 +1,106 @@
+PermWorld 轮换编码可学习性：代码就绪审查
+日期：2026-10-10（America/Los_Angeles）
+
+范围
+只读审查已有 archdev 的 training/common、共用 encoding/core/data、上游
+passage/models/math_ops 及 SDPA 适配器。读取了训练曲线和既有工程检查状态，
+没有读取 CKA 产物、运行训练/GPU、修改旧冻结代码或重新执行已通过检查。
+17 项冻结依赖当前 SHA256 全部匹配。以下区分已核实的实现与待检验解释。
+
+已核实：没有找到新的训练阻断问题
+1. batch 中 END=2n+3，task=END+1，等号=END+2，answer=END+3，
+   EOS=END+4。target 只在 answer/EOS 两处非 -100，loss 右移后在等号
+   位置预测答案、答案位置预测 EOS。当前数值词表 00..99 的 ID 就是
+   整数，故 accuracy 的数值真值比较正确。既有 CPU 梯度位置检查和
+   独立手算两项 CE、future-answer 因果检查均已通过，不重复执行。
+2. 同一个排列先得到公共精确标签，再分别编码；轮换编码没有另算一套
+   标签。cycle 访问方向是 p[current-1]，与数学性质使用的一行排列一致。
+3. 单元素 cycle 保留，cycle 内逗号、cycle 间分号，两种边界标记明确。
+   n 个数值加 n-1 个分隔符，序列长度仍是 2n+4；分号没有增加长度或
+   丢掉闭环信息。闭环从最后元素回指本 cycle 首元素由序列规范表达，
+   不是额外输出 token。解码要求每 cycle 最小值在首、cycle 按首值排序，
+   并重新编码比对；不存在把轮换表示当作一行数值列表计算标签的问题。
+4. 训练最长宽度 2*30+8=68，小于 max_seq_len=128。位置 embedding 与
+   mask 长度足够。Transformer 的 bool allowed mask 与 SDPA 语义一致；
+   GRU 只沿过去传播，尾部 PAD 的状态不能改变之前的有效 token。
+5. 训练每个 update 只用一种长度，21 长度均衡置换循环；batch64、4次
+   micro16，答案/EOS 每样本各一次且损失按 accumulation 除以4。
+   两编码共用索引与初始化和同任务起始 RNG。warmup 与 cosine 按全局
+   step 计算，完整 optimizer/RNG/step 保存；已有 resume 检查通过。
+6. BF16 autocast 使用 FP32 参数，loss/总梯度范数有限性明确检查，step0
+   与最终参数摘要不同。既有16个48样本/4答案类别过拟合检查都通过。
+   这些证据排除简单的答案位置错位、只有 EOS 被监督或根本没有更新，
+   但不能证明新输入上的完整规则已学会。
+
+学习停滞的观察（只引用既有训练曲线）
+轮换 Transformer/GRU 下降数在1k验证约.279，20k约.310/.314；峰数在
+2k已约.407，20k约.408/.417。它们的 EOS 从1k起为1，numeric 与全词表
+答案准确率相等。困难位于数值答案，不是输出非数 token 或 EOS 失败。
+train_loss 只记录当前一次 update 的答案+EOS 联合 CE；当次长度在变，
+所以其波动不是完整训练集损失，也不能单凭曲线摆动认定优化发散。
+
+更具体的候选原因：任务算法改变，而非序列变长
+一行下降数直接比较相邻 p(i),p(i+1)，峰/谷比较相邻三个值。轮换记号
+需要先识别每个数值的 cycle 后继，包括 cycle 尾部回指首部，再按数值
+索引重组 p(i)，最后比较相邻坐标。原序列相邻 token 通常不是相邻
+输入坐标。逆下降还需要逆排列的相邻值位置；一行记号下它也非局部。
+这些是数学上的计算要求变化，不是已验证的网络机制解释。
+
+数值 token 是无数值先验的 embedding；固定 absolute position 表示的是
+cycle 序列位置，不能直接当成排列坐标。只有最后两 token 的监督，没有
+中间映射或 counting 的监督。GRU 还要在一个终端状态保留这些关系，
+Transformer 虽可直接访问所有前缀，仍要学习索引/后继/比较的组合。
+两架构都停滞，不能只归因为 GRU 记忆长度，也不能证明模型族不可表达。
+
+20k更新=1,280,000样本曝光，但均分21长度，每长度只有952/953更新；
+每长度4096训练对象平均约14.88遍。全长度混训与全局LR衰减可能未提供
+足够优化机会；dropout、学习率和损失分配也是候选因素，尚未分别验证。
+答案+EOS等权联合CE的整体下降可能掩盖答案停滞，必须单列答案CE。
+
+旧实现可复用的接口
+- core.encode/decode/labels、TOKEN_TO_ID/TASKS：纯数学与编码接口；
+  core.batch(prefixes, ns, task, answers, device) 与 core.loss(logits,target)
+  可保持旧答案监督，不改词表或标签。
+- core.make_model(config,seed)+longrun_attention.accelerate；common.CausalGRU
+  或 common.model(config,architecture,seed,device)：可构造新模型。model
+  会重置Python/NumPy/Torch RNG，构造后应再次固定训练/dropout起始RNG。
+- 原 accuracy 的逻辑可复用，但新开发应另存逐长度全词表/数字答案准确率、
+  answer CE、EOS CE与联合CE，避免把最后一个 minibatch 的loss当整体loss。
+- 不直接调用旧 setup/initial/run_job/child/source_version：它们有硬编码
+  ROOT/CONFIG、检查点输出路径和固定8e5历史计数，会写或验证旧实验目录。
+  新 driver 与初始/协议/数据/阶段产物必须位于新独立根目录。
+- generate_world 原宽度64/max n30可沿用，但短长度不能盲目沿用4096样本
+  和“轨道必须8成员”。很小的 S_n 容量不足，或全轨道都非8成员，会使
+  固定拒绝采样耗尽。若用短长度开发，应显式冻结可行数量及排除规则；
+  不能静默放宽历史/轨道排除或自动改长度。
+
+新开发需要的检查（不重复旧检查）
+1. 仅对新 driver/config 接口验证真实 step0 复制、参数更新、全局step/LR
+   恢复一致、data/schedule/protocol/source hashes，阶段恢复不能重置cosine。
+2. 若改变mask/损失族/编码或优化器，才针对改变部分重新做手算与小样本
+   检查。分开答案/EOS CE并按样本数汇总，验证只取identity训练/验证输入。
+3. 使用训练集确定并固定逐长度答案众数/概率基线；只用验证集的答案
+   准确率、答案CE及超过该基线的收益选择配置。初始化常输出非数字，
+   “准确率提高>.10”只能做工程门槛，不能替代学会内容的标准。
+4. 固定少量配置及2k/4k/8k阶段，记录实际训练曝光与成本；两编码共享
+   数据和更新预算。只看训练/验证，不调用test或CKA选择配置。开发选择
+   不计入正式确认；若全部配置停滞，按预定停止标准报告，不自动扩容。
+
+已发现的文档残留与潜在移植风险
+旧protocol的batch_schedule写“all32 models”，实际16模型。读取相同
+schedule的代码没有因此产生曝光差异。新driver应该写清16而非沿用文字。
+accuracy 当前比较 argmax token ID 与整数标签，仅因为数值ID=整数而正确；
+新词表若改变顺序须显式映射。当前没有该bug。旧load_data/prepare中的
+固定历史计数仅适合旧世界，直接移植会误验证；新世界必须独立审计。
+没有发现需解冻旧结果修复的工程问题。上述候选原因均需新验证学习数据
+检验，不应在发现前把轮换的低准确率解释为表征机制。
+
+审查时关键依赖SHA256（17项冻结文件全部匹配）
+archdev/common.py 6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b
+archdev/training.py eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8
+encoding/core.py 4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f
+encoding/data.py 8a89976c6c0b390f9233eba4ff23593d7c1545eb21f6af4e87a92122fdb7c75d
+longrun_attention.py 5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918
+passage.py d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6
+models.py 286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6
+math_ops.py 968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c

@@ -1,0 +1,1590 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0029010779689997435,
+      "maximum_gradient_norm": 19.826793670654297,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0036382696125656366,
+      "maximum_gradient_norm": 19.879512786865234,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0041710627265274525,
+      "maximum_gradient_norm": 19.927616119384766,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.003965211100876331,
+      "maximum_gradient_norm": 19.957340240478516,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.003969971090555191,
+      "maximum_gradient_norm": 21.605894088745117,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.002588368020951748,
+      "maximum_gradient_norm": 20.445690155029297,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.005689906422048807,
+      "maximum_gradient_norm": 20.42745018005371,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0025321170687675476,
+      "maximum_gradient_norm": 20.465890884399414,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0047976234927773476,
+      "maximum_gradient_norm": 48.33245086669922,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 0.4166666666666667,
+          "numeric_accuracy": 0.4166666666666667,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 0.5625,
+          "numeric_accuracy": 0.5625,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 0.6041666666666666,
+          "numeric_accuracy": 0.6041666666666666,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 0.875,
+          "numeric_accuracy": 0.875,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.00314137851819396,
+      "maximum_gradient_norm": 25.292083740234375,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 0.5208333333333334,
+          "numeric_accuracy": 0.5208333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 0.8958333333333334,
+          "numeric_accuracy": 0.8958333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 0.9791666666666666,
+          "numeric_accuracy": 0.9791666666666666,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0028719131369143724,
+      "maximum_gradient_norm": 30.491016387939453,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 0.5,
+          "numeric_accuracy": 0.5,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 0.625,
+          "numeric_accuracy": 0.625,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 0.8541666666666666,
+          "numeric_accuracy": 0.8541666666666666,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 0.875,
+          "numeric_accuracy": 0.875,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.002557725179940462,
+      "maximum_gradient_norm": 15.938817024230957,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 0.625,
+          "numeric_accuracy": 0.625,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 0.7291666666666666,
+          "numeric_accuracy": 0.7291666666666666,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 0.9583333333333334,
+          "numeric_accuracy": 0.9583333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.004347139969468117,
+      "maximum_gradient_norm": 26.725486755371094,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 0.5208333333333334,
+          "numeric_accuracy": 0.5208333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 0.8958333333333334,
+          "numeric_accuracy": 0.8958333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0040921359322965145,
+      "maximum_gradient_norm": 17.87240982055664,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 0.4166666666666667,
+          "numeric_accuracy": 0.4166666666666667,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 0.75,
+          "numeric_accuracy": 0.75,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 0.8958333333333334,
+          "numeric_accuracy": 0.8958333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0023524584248661995,
+      "maximum_gradient_norm": 17.29697036743164,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 0.5208333333333334,
+          "numeric_accuracy": 0.5208333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 0.7083333333333334,
+          "numeric_accuracy": 0.7083333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 0.9583333333333334,
+          "numeric_accuracy": 0.9583333333333334,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "samples": 48,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parameter_changed": true,
+      "finite_gradient_updates": 1000,
+      "minimum_gradient_norm": 0.0026450715959072113,
+      "maximum_gradient_norm": 14.299164772033691,
+      "future_answer_logit_difference": 0.0,
+      "loss_mask_independently_checked": true,
+      "final": {
+        "step": 1000,
+        "answer_accuracy": 1.0,
+        "numeric_accuracy": 1.0,
+        "eos_accuracy": 1.0,
+        "samples": 48
+      },
+      "passed": true,
+      "curve": [
+        {
+          "step": 100,
+          "answer_accuracy": 0.4583333333333333,
+          "numeric_accuracy": 0.4583333333333333,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 200,
+          "answer_accuracy": 0.6041666666666666,
+          "numeric_accuracy": 0.6041666666666666,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 300,
+          "answer_accuracy": 0.875,
+          "numeric_accuracy": 0.875,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 400,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 500,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 600,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 700,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 800,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 900,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        },
+        {
+          "step": 1000,
+          "answer_accuracy": 1.0,
+          "numeric_accuracy": 1.0,
+          "eos_accuracy": 1.0,
+          "samples": 48
+        }
+      ]
+    }
+  ],
+  "geometry_not_used_for_gate": true
+}

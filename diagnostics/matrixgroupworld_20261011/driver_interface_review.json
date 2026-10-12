@@ -1,0 +1,57 @@
+{
+  "status": "passed_current_interface_with_metadata_preflight_recommended",
+  "source_hashes": {
+    "experiments/matrixgroupworld_20261011/driver.py": "2f48d5cadc8e4197b8465ecb071647d4ae052898bd75368d100a38846156c4bb",
+    "experiments/matrixgroupworld_20261011/evaluation.py": "09f0dd8cfbec9752bb87ca6940066ae80969d89280e3ed950e391226c58450aa",
+    "experiments/matrixgroupworld_20261011/analysis.py": "2899670467172b22df18e242176197cc7dcf4f2facf8b41e0f01185e786ffbbb",
+    "experiments/matrixgroupworld_20261011/verification.py": "aa3a967bdac07c0ad5c3989233b0f67e97b85842a2de7173f26a63fad79c0793",
+    "experiments/matrixgroupworld_20261011/common.py": "68e856bb48d57ea86d5ceb3af8004415f3a43f65445979f64e8df8746b57b385"
+  },
+  "protocol_sha256": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+  "freeze_manifest_sha256": "2e52c0957d646a4dad261ffd0d0b63120ef8ee4e9f3118a179b142cf4c305e3c",
+  "checks": {
+    "formal_source19_sha_current": true,
+    "evaluation_batch_size64": true,
+    "all8job_identity_fields": [
+      "unit001_F1",
+      "unit001_F2",
+      "unit001_F3",
+      "unit001_F4",
+      "unit002_F1",
+      "unit002_F2",
+      "unit002_F3",
+      "unit002_F4"
+    ],
+    "data_ready_bound_to_protocol": "driver.load_training/load_evaluation compare data_ready_sha256 to formal c.freeze; training compares frozen c.data_units and job source data/schedule digests.",
+    "initial_identity_bound_to_protocol": "driver.run_gpu requires saved initialization inventory==c.initializations and each manifest task path/digest/parameter/RNG binding matches its unit ref.",
+    "sealed_final_label_origin": "driver.load_evaluation verifies seal status, protocol SHA, labels SHA, source data SHA and freeze_manifest SHA; evaluator checks actions/tasks and labels/length/id/orbit row identity against that archive.",
+    "evaluation_interface": "prepare_evaluation_data->evaluate(c,map,deadline,device=cuda); fixed step0/20k only, full188 FP32 eval/noautocast/TF32disabled, separate teacher-forced EOS.",
+    "analysis_interface": "analyze(c,map,index,cpu_deadline); 432/144 geometry rows/summaries,144/48 candidate rows/summaries, fixed1/3 missing-value propagation.",
+    "verification_interface": "verify_actual(c,map,index,cpu_deadline); fixed first unit/R1/n6,72 records if support>=64;288 independent selector checks. No model/forward/new source in this stage.",
+    "completion_status_read_from_actual_file": "driver.run_cpu records analysis_completion.status and its digest rather than absent tables.status.",
+    "fixed_candidate_current_SHA_matches_formal_protocol": true,
+    "remaining_preflight_suggestion": "Before CPU analysis, root wrapper should explicitly recheck formal candidate_manifest/candidate_classification_audit digests; analyze internally only checks their current self-consistency. No stable source modification requested.",
+    "independent_metric_origin": "verification hard-coded exact6dbb804d22b7c4559bc8e3b41140efc50df5008c8a24698652525d57ebf0b8a3 at source import, and actual audit records that digest. It is not one of the19 source manifest entries."
+  },
+  "CPU_cost_scope": {
+    "source_model_calls": 0,
+    "new_forward_calls": 0,
+    "actual_metric_cells": 72,
+    "actual_selected_fit_rows": 64,
+    "actual_selected_final_rows": 64,
+    "independent_selection_checks": 288,
+    "maximum_feature_width": 256,
+    "ordinary_full_geometry_metric_bundles": 720,
+    "fixed_T_CKA_phase_cells": 288,
+    "fixture27_checks_elapsed_seconds_observed": 0.92826178,
+    "time_estimate_limitation": "Fixture timing uses synthetic12/13-feature arrays, not actual256-dimensional learned arrays. The fixed actual check sizes and per-group absolute deadlines provide a bounded planned scope, not a guaranteed measured runtime. No extra benchmark or actual feature check was launched."
+  },
+  "restrictions": {
+    "stable_sources_modified": false,
+    "final_labels_read": false,
+    "final_geometry_read": false,
+    "models_constructed": false,
+    "GPU_started_by_reviewer": false,
+    "new_statistics": false
+  }
+}

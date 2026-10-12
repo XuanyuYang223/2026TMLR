@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "reporter_sha256": "94ec1cbcea3ed5736821c51660a8fc28e0988000a4030b2f9957fa22f14ee3d6",
+  "checks": {
+    "both_sufficient": true,
+    "full_train_fit_validation_weak": true,
+    "both_weak": true,
+    "mean_does_not_replace_min_length_gate": true,
+    "all16_models_32_splits_96_lengths": true,
+    "all_conditions_are_generalization_candidates": true,
+    "two_fixed_complete_plots": true,
+    "answer_eos_combined_are_separate": true,
+    "old_joint_qualification_unchanged": true,
+    "all320_signed_reproduction_rows_retained": true,
+    "negative_reproduction_difference_not_made_absolute": true,
+    "missing_length_cannot_be_silently_dropped": true
+  },
+  "synthetic_cpu_only": true,
+  "real_new_results_read": false,
+  "test_read": false,
+  "geometry_read": false,
+  "training_started": false,
+  "fixtures_removed": true
+}

@@ -1,0 +1,61 @@
+PermWorld 多层结果独立统计复核（探索性；仅已有检查点）
+
+范围与复核方式
+本审查只读 layer_metric_results.csv 及其汇总；独立实现位于 engineering/statistical_review.py，未导入 summarize.py 的计算函数。以 Python statistics.fmean/median/stdev 重算，每个 source 都要求 10–30 的全部 21 个长度，权重各为 1/21。缺一个未定义长度，source 均值即未定义。没有把分层分析替换为合并或中心化后的整体计算。逐长度表、来源、哈希和全分支数值见 statistical_review.json。
+
+结果：通过。
+原始单元 187,488；source 汇总 8,928；relation 汇总 3,312；逐长度汇总 69,552；留一关系/家族 6,336。所有 source 的长度集合完整。source 21 长度均值与关系统计重算最大绝对差均为 2.27e-13；逐长度 source 统计最大差 1.82e-12。这些差异来自计算路径的浮点舍入。检查计数只是标量一致性检查数，不能当作实验重复或统计证据数量。
+
+还直接逐字段比对旧 permutation_metric_results.csv 的 52,080 个单元，仅把旧 prefix_final_norm 的名称映射为 final_norm_end：全部旧字段逐字一致。因此新层边界不是重算旧主位置时更改了原始分数。
+
+全部保留固定三个主指标 linear_cka、knn_overlap、procrustes 及 debiased_cka 敏感性；五个层位置各有 end 与 value_mean，共十个上下文分支，加四个输入/embedding 分支及四个答案/输出/查询分支。两控制、全部 cohort 与全部可用 source 都有输出。24 张全部分支/五分量热图与 6 张完整长度曲线存在。未选择效果最好的层。
+
+留一关系和共享 family 的删除严格按 cohort、kind、branch、control、metric 分组。每条关系先对可分析 source 汇总，再对剩余关系等权；某关系未定义时，不对剩余关系重加权。自不变关系与跨任务关系保持分开。independent_relation_inference 全部为 False；source 标准差是共享世界内初始化变化的描述，不是独立世界的置信区间。当前固定输入没有生成新的输入抽样不确定性。
+
+未定义的保留
+embedding_end 和无序 embedding_value_mean 在固定长度内数学上为常量，指标未定义。总计 2,629 个 source 的 Delta 未定义；其中不仅有数学常量/答案控制，也有覆盖全部长度却因个别长度不足而不能汇总的单元。six_hour 的 double_complement/double_reverse 答案控制下，kNN 只有 19/21 个定义长度，debiased CKA 只有 20/21，已严格保留为未定义。输出概率的个别 Procrustes 或答案控制单元也有缺定义长度，不能默认为零效应。详见 JSON 完整名单。
+
+两条取逆关系：普通 CKA、答案分层、specialist16 三源等权
+
+下降数—逆下降数（descent_inverse）：
+位置                  B0        Bt        dc        dw        Delta
+block_01_end       -0.062462  0.037328 -0.347036 -0.446826  0.099790
+block_02_end       -0.520533  0.026571 -0.088248 -0.635352  0.547104
+block_03_end       -0.516984  0.034735 -0.065193 -0.616911  0.551718
+block_04_end       -0.507063  0.085090 -0.033259 -0.625412  0.592153
+final_norm_end     -0.505974  0.082991 -0.033851 -0.622816  0.588965
+final_norm_mean    -0.514190  0.083141 -0.035711 -0.633042  0.597331
+
+end 普通 CKA 的正确配对变化在五层均为负，正 Delta 主要由错误配对下降带来。block1 三源的长度均值都为正，但每源普通 CKA 均有一个负 Delta 长度；Procrustes 有 2–5 个负长度。block2 到 final 四指标均为每源每长度正 Delta。value_mean 则从 block1 起，两关系的四指标均是每源每长度正 Delta。
+
+但“正确配对没有改善”不是跨指标结论：下降关系 final end 的 dc，在普通 CKA 为 -0.033851，kNN 为 +0.013147，Procrustes 为 +0.059000，debiased CKA 为 +0.027224。四指标 Delta 的正方向一致，dc 的方向不同。Procrustes 是负归一化误差的相似度分数，因此 dc 正表示留出误差下降。
+
+超越数—亏缺数（exceedance_inverse）：
+位置                  B0        Bt        dc        dw        Delta
+block_01_end       -0.049453  0.131176 -0.303180 -0.483809  0.180629
+block_02_end       -0.472080  0.514824  0.371656 -0.615247  0.986903
+block_03_end       -0.470041  0.443236  0.327822 -0.585455  0.913277
+block_04_end       -0.463129  0.173268  0.014305 -0.622092  0.636397
+final_norm_end     -0.462154  0.179308  0.020471 -0.620990  0.641461
+final_norm_mean    -0.469818  0.351892  0.256799 -0.564912  0.821711
+
+只看 final end 会遗漏中层正确配对的增长：block2/3 的普通 CKA dc 达 +0.371656/+0.327822，错误配对同时下降；block4/final end 的 dc 才缩小到约 +0.014/+0.020。mean pooling 的正确 CKA 增长从 block1 即出现，final dc 仍为 +0.256799。三个主指标和 debiased 都保留对应的中层/mean 正变化，但数值不可直接跨指标比大小。
+
+深度与初始化须一起解释
+下降关系从 block1 end 到 block2 end，Delta 增长约 +0.4473，Bt 反而减少约 0.0108，而 B0 更负约 0.4581。因此不能把这一层际变化直接叙述为“第二层首次学会了更强关系偏好”；大部分层际 Delta 差来自该层初始化参照的几何差异。超越关系 block1 到 block2 则同时有 Bt 上升与 B0 下降。所有层都须并列看 B0、Bt、dc、dw 和 Delta。
+
+与旧 final_norm_end 结论不同的边界
+1. peak_complement 在三 cohort 的 block1 end，普通 CKA Delta 来源均值全部为正：specialist16 +0.158718（3源）、native +0.096931（5源）、six_hour +0.162296（2源），到 block2/final 又转为负。block1 仍有负 Delta 长度。这不是训练后“正确优于错误”的方向翻转：以 specialist 为例，Bt 从 block1 约 +0.216 到 final 约 +0.250 仍为正且稍增，Delta 的翻转主要因为层际 B0 变化。不能挑 block1 来把旧补排列负结果改成稳定正结论。
+2. specialist16/run_complement 的 final mean 普通 CKA Delta=+0.286468（3源均值都正，2源所有长度正），Procrustes=+0.328；kNN=-0.017。final end 三指标均负。该候选明确依赖 pooling 和指标，不能新增为跨指标稳健关系。
+3. six_hour/double_complement 从 final end 普通 CKA -0.3178 到 final mean +0.2777；mean 两源各21长度正，但 Procrustes 只有均值正，kNN/debiased 按完整长度规则未定义。它也是局部测量边界。double_reverse 的 final mean CKA +0.0594，但 Procrustes -0.116，方向更不一致。
+4. 自不变关系的 positive Delta 不意味着每层训练后正确配对占优：specialist LIS 的 block2/3 end、LDS 的 block2 end 仍有负 Bt；final end 才为正。它们与跨任务关系分开报告，不能增加独立跨任务关系数。
+5. specialist 跨任务等关系权平均普通 CKA Delta：block1 end +0.05630，block2 end -0.20308，final end -0.19889，final mean -0.11513。final end 删除任一关系家族后仍为负。这与两条取逆关系的局部正 Delta 可以同时成立，不能把单个关系推广成总体学习增量。
+
+答案、输出与输入参照
+答案分层减弱了两取逆关系的 end 正 Delta，但未消去；within_length 的 final end 普通 CKA Delta 分别约 +0.993578/+1.379408，答案分层分别 +0.588965/+0.641461。输出概率也有答案分层正 Delta +0.336123/+0.331151，仍构成解释限制。不能用隐藏 Delta 减输出 Delta 来估算额外机制。
+位置化数值 embedding 输入参照的答案分层 Delta 为 -0.120777/-0.082482，未复现这两条隐藏正方向；它是位置化 token embedding 的静态输入读数，也包含训练后的 embedding 权重变化，不能据此排除更一般的编码贡献。onehot 输入参照没有模型初始化条件，不给它制造 Delta。固定长度 embedding 的常量不是反证，也不能靠浮点求和噪声补成指标。
+
+解释范围与后续
+现有全层结果继续支持“训练相对构造器初始化改变了变换配对的相对偏好，改变依赖关系类型、层和读数”。两条取逆关系的 Delta 在 block2 到 final 及从 block1 的 mean 都有跨固定指标的一致正方向；不能写成所有层均正确表征大幅趋同。所有历史 source 初始化身份仍为 C：只对按原程序重建的参照有上述一致性，原始真实 step-0 未获验证。当前审查没有解决编码/输出相关几何与独立代数机制的区分。
+
+下一步已授权的编码×架构开发预跑应报告 Gamma0、Gammat、Gamma(dc)、Gamma(dw)、GammaDelta：共享真实 step-0 和底层输入后，检查编码改变主要发生在初始化 B0，还是训练后 Bt/具体正确与错误变化。开发世界与模型不计入正式确认；任务可学习性和工程恢复一致性不以 Gamma 的符号为通过门槛。本次统计审查不启动训练、GroupWorld、零空间或更大模型。

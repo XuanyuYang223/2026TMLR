@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "gates": {
+    "cpu_check.json": "passed",
+    "overfit_summary.json": "passed",
+    "resume_summary.json": "passed",
+    "independent_evaluation.json": "passed"
+  },
+  "models": 16,
+  "development_only": true,
+  "geometry_not_used_for_gate": true,
+  "formal_training_started": false,
+  "stop_after_report": true,
+  "no_confirmation_pvalues": true,
+  "parameter_counts_not_matched": true
+}

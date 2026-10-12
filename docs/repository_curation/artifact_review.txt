@@ -1,0 +1,27 @@
+当前表征研究：只读大产物盘点；未打包、未上传、未训练、未修改原件。
+
+现存逻辑文件 5366；唯一内容对象 4959；唯一总bytes 71338282465。
+
+建议release去重对象payload 70823685969 bytes；原容积分包建议 75包、单包不超过1.5GiB。Root可进一步采用约1.3GiB raw bins并Zstd压缩。
+
+最大实际单文件 305238128 bytes：/mnt/yangx-projects-f/20261010/permworld_learnability/worlds/historical_input_hashes.npy；无单源超1.5GiB。
+
+实际引用文件缺失 0；记录SHA不一致 0（详见inventory_summary.json，不能静默改科学文件）。
+
+历史初始化原身份未验证 180 个逻辑位置 / 128 个独立checkpoint内容；此科学缺口不会用同seed训练或重建补成verified。
+
+当前64 Perm+4 Graph+8 Matrix共76源终点使用真实保存initial引用；旧C级构造重建来源单列，不升级为真实step0。
+
+旧2026-10-09 release本地记录 5包，共8423198720 bytes；与本次逐文件SHA相同的既有成员228。仅元数据盘点，未重新下载远程、未改已有release、不默认替代本次新release。
+
+完整历史16m原训练corpus的200manifest列出shards已纳入：当前固定表/激活复算不依赖重抽全corpus，历史输入排除/生成重跑则需它们。
+
+scope_inventory的624混合源库存未全部纳入，仅evaluation_pairs实际(cohort,id) join的82层诊断源与oldCKA98源选择。Pair内陈旧checkpoint字符串不用于文件选择。
+
+不扫描整盘/venv、不上传已有tar临时重复件、不纳入pure protected_old F17、独立LIS迁移/零空间/GELU/旧矩阵组合研究。
+
+输出接口：publish_mapping.jsonl 每行含logical_path/source_path/bytes/sha256/experiment/role；content_objects.json提供每SHA唯一regular-file源，所有logical_paths仍保留。
+
+原科学冻结绝对路径不改字节；发布恢复工具必须依据logical mapping迁移路径，不通过重训练替代缺失原权重。
+
+Matrix caveat原样：completed_with_verification_caveat；8/8 true20k；64 passed、2 failed、6 undefined_consistent；scientific_analysis_complete=false。盘点/发布成功不等于科学核验通过。

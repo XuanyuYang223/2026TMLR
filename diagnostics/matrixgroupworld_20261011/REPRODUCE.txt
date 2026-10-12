@@ -1,0 +1,55 @@
+MatrixGroupWorld 2026-10-11：执行与复核入口
+
+本轮只执行冻结的8个正式20k模型（2个独立数据+初始化单元×4任务），
+没有复训、追加模型、选取最佳终点或改变数学/指标协议。运行已停止。
+本目录为交付目录；大文件根目录为：
+  /mnt/yangx-projects-f/20261011/matrixgroupworld
+冻结源码为：
+  /home/yangx/ICML/experiments/matrixgroupworld_20261011
+protocol.json / freeze_manifest.json 保存协议、依赖和源码身份。
+
+状态须同时看这三项，不能把“表已齐全”当作数值核验全部通过：
+  analysis_completion.json：全部固定结果表已生成；
+  actual_numerical_verification.json：64 passed、6 undefined_consistent、2 failed；
+  completion.json / diagnostic_closure.json：completed_with_verification_caveat。
+冻结CPU驱动在 independent_saved_feature_verification 阶段抛出断言。
+execution_state.json 与 CPU_analysis_run.log 保留该真实历史，不补写为成功。
+knn_failure_diagnostic.txt 定位两失败各1/640的邻居边界差异，不替代独立验证通过。
+
+下面为已执行的阶段入口，列出供复现程序核查，切勿在原已完成目录再次训练：
+  .venv/bin/python -B diagnostics/matrixgroupworld_20261011/run_engineering.py
+  .venv/bin/python -B diagnostics/matrixgroupworld_20261011/freeze.py
+  .venv/bin/python -B -m experiments.matrixgroupworld_20261011.driver --stage gpu
+  OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 \
+    .venv/bin/python -B -m diagnostics.matrixgroupworld_20261011.run_cpu
+CPU末段原命令返回非零，完整日志已保留。不得删去失败、放宽容差或重置状态重跑。
+历史工程、正式GPU和CPU日志分别为 engineering_run.log、formal_GPU_run.log、
+CPU_analysis_run.log；单模型 completed.json / stage_*.json 保存20k身份及曲线。
+
+不训练、不做前向的独立读取路径（会写入本轮诊断产物；只在复制的诊断工作区重跑）：
+  diagnostics/matrixgroupworld_20261011/knn_failure_diagnostic.py
+    仅读取原预定64行保存数组，复现距离路径，保留原失败状态；
+  diagnostics/matrixgroupworld_20261011/table_arithmetic_audit.py
+    只复算已保存CSV的算术、权重、指定对应和方向一致性；不是重新计算激活指标；
+  diagnostics/matrixgroupworld_20261011/build_report.py
+    仅读取已保存产物生成TXT、HTML和图，不构造模型，不调用科学指标；
+  diagnostics/matrixgroupworld_20261011/completion_audit.py
+    只验证命名产物/绑定并封存新目录；已封存后不要再次运行改写封存。
+
+主要表：
+  geometry_per_n.csv / geometry_summary.csv：B0、Bt、dc、du、Delta及原始三种配对；
+  source_learning.csv：全词表答案准确率、CE、EOS、实际训练众数；
+  validation_curves_per_n.csv / validation_curves_equal_n.csv：8模型的20个既有验证点；
+  validation_curve_endpoint_checks.csv：曲线20k与独立保存终点评估的72项一致性；
+  pair_per_n.csv / pair_summary.csv：固定T遍历右任务的24候选，不能叫原Bt/Delta；
+  selection_masks.csv：固定joint-answer控制与样本支持/残差自由度；
+  W_actual_per_anchor.csv / W_actual_per_n.csv：实际U偶然保持答案公式的记录。
+所有规模等权1/3；缺值不填0、不重分权重。两个新单元仅重复MatrixGroupWorld。
+
+validation_accuracy_curves.png 为逐规模验证准确率曲线；训练CE字段是
+当时单个batch的损失，不代替source_learning.csv的完整训练集评估。
+report.html / report.txt 为读者报告。保护审计只证明2664明确命名旧文件
+开始/结束SHA以及tracked/index Git状态相同，不涵盖所有文件或全过程事件。
+实际GPU阶段墙钟（包括工程、验证、保存、提取和间隔）约1.99小时，
+活跃GPU kernel时长未知；GPU外CPU墙钟与表观存储另外计账。
+没有上传、发布、修改F17、移动/删除旧项目或启动下一阶段。

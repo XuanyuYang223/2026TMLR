@@ -1,0 +1,185 @@
+{
+  "static_edges": [
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding/train.py",
+      "dependency": "/home/yangx/ICML/experiments/longrun_attention.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/training.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/training.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/data.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "dependency": "/home/yangx/ICML/experiments/permutation_audit.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/train.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/common.py",
+      "dependency": "/home/yangx/ICML/experiments/longrun_attention.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/checks.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/graphworld_pilot_20261010/core.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/graphworld_pilot_20261010/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/common.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/graphworld_pilot_20261010/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/graphworld_pilot_20261010/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/train.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/setup.py",
+      "dependency": "/home/yangx/ICML/experiments/permutation_audit.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/__init__.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/common.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_encoding/train.py",
+      "evidence": "static Python import"
+    },
+    {
+      "source": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/analysis.py",
+      "dependency": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/analysis_helpers.py",
+      "evidence": "static Python import"
+    }
+  ],
+  "exact_declared_dependencies": [
+    "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/cost_estimate.json",
+    "/home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/inventory/sources.json",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/inventory/inventory.py",
+    "/home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/metrics.py",
+    "/home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/training_inventory.csv",
+    "/home/yangx/ICML/experiments/graphworld_pilot_20261010/__init__.py",
+    "/home/yangx/ICML/experiments/graphworld_pilot_20261010/checks.py",
+    "/home/yangx/ICML/experiments/graphworld_pilot_20261010/common.py",
+    "/home/yangx/ICML/experiments/graphworld_pilot_20261010/core.py",
+    "/home/yangx/ICML/experiments/graphworld_pilot_20261010/data.py",
+    "/home/yangx/ICML/experiments/graphworld_pilot_20261010/setup.py",
+    "/home/yangx/ICML/experiments/graphworld_pilot_20261010/training.py",
+    "/home/yangx/ICML/experiments/longrun_attention.py",
+    "/home/yangx/ICML/experiments/permutation_audit.py",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/__init__.py",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/analysis.py",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/analysis_helpers.py",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/common.py",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/setup.py",
+    "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/train.py",
+    "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+    "/home/yangx/ICML/experiments/permworld_encoding/data.py",
+    "/home/yangx/ICML/experiments/permworld_encoding/train.py",
+    "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/__init__.py",
+    "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/__main__.py",
+    "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/checks.py",
+    "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/common.py",
+    "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/evaluation.py",
+    "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/training.py",
+    "/home/yangx/ICML/external/neurips/configs/property_task_geometry.toml",
+    "/home/yangx/ICML/external/neurips/src/neurips_permutations/__init__.py",
+    "/home/yangx/ICML/external/neurips/src/neurips_permutations/math_ops.py",
+    "/home/yangx/ICML/external/neurips/src/neurips_permutations/models.py",
+    "/home/yangx/ICML/external/neurips/src/neurips_permutations/passage.py",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/explicit_dropout_repair_log.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/freeze_manifest.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_descents.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_peaks.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_recoils.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_valleys.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0_before_explicit_dropout_fix.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_descents.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_peaks.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_recoils.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_valleys.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/checkpoint.pt",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/completed.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/protocol.json",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/batch_indices.npy",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/batch_lengths.npy",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data_audit.json"
+  ],
+  "dynamic_dependency_caveat": "New extension/graph source paths may still be under implementation. Reconcile this logical index after final freeze without changing protected artifacts.",
+  "files_deleted": false,
+  "files_moved": false
+}

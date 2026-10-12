@@ -1,0 +1,4483 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "passed": true,
+      "detail": "Scientific protocol SHA unchanged"
+    },
+    {
+      "passed": true,
+      "detail": "Frozen 492 candidate list unchanged"
+    },
+    {
+      "passed": true,
+      "detail": "Pre-score classification unchanged"
+    },
+    {
+      "passed": true,
+      "detail": "Pre-score proof audit unchanged"
+    },
+    {
+      "passed": true,
+      "detail": "Frozen source /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/protection_audit.py"
+    },
+    {
+      "passed": true,
+      "detail": "Frozen source /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/freeze_protocol.py"
+    },
+    {
+      "passed": true,
+      "detail": "Frozen source /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/classification_and_W.py"
+    },
+    {
+      "passed": true,
+      "detail": "Frozen source /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/existing_results_review.py"
+    },
+    {
+      "passed": true,
+      "detail": "Frozen source /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/fixed_transform_analysis.py"
+    },
+    {
+      "passed": true,
+      "detail": "Frozen source /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/engineering_fixture.py"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/pair_per_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/pair_masks.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/pair_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/category_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/designated_category_comparisons.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/common_support_training_comparisons.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/designated_endpoint_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/designated_aggregate_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/independent_covariance_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Analysis output /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/loaded_endpoint_manifest.json"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review recomputed_main32.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review main32_by_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review six_negative_bt.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review six_negative_bt_by_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review three_metric_directions.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review metric_disagreements.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review gru_exceedance_encoding_case.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review control_sensitivity.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review layer_sensitivity.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review undefined_component_boundaries.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review historical_receipt_costs.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review historical_cost_groups.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review replication_candidate_costs.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review replication_budget_scenarios.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Existing table review replication_candidates.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Actual W output W_actual_per_anchor.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Actual W output W_actual_per_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Actual W output W_actual_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Actual W output W_original_random_math_reference.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader output reader_report.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Reader output reader_report.html"
+    },
+    {
+      "passed": true,
+      "detail": "Reader output results_paragraph_zh_en.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Reader output perm_all_candidate_scores.png"
+    },
+    {
+      "passed": true,
+      "detail": "Reader output perm_designated_contrasts.png"
+    },
+    {
+      "passed": true,
+      "detail": "Reader output graph_all_candidate_scores.png"
+    },
+    {
+      "passed": true,
+      "detail": "Completed audit protection_start.json"
+    },
+    {
+      "passed": true,
+      "detail": "Completed audit protection_end.json"
+    },
+    {
+      "passed": true,
+      "detail": "Completed audit analysis_audit.json"
+    },
+    {
+      "passed": true,
+      "detail": "Completed audit existing_results_review.json"
+    },
+    {
+      "passed": true,
+      "detail": "Completed audit result_reader_audit.json"
+    },
+    {
+      "passed": true,
+      "detail": "Completed audit W_actual_audit.json"
+    },
+    {
+      "passed": true,
+      "detail": "Completed audit W_reader_validation.json"
+    },
+    {
+      "passed": true,
+      "detail": "Completed audit engineering_fixture.json"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count candidate_pairs.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count classification_manifest.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count recomputed_main32.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count six_negative_bt.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count six_negative_bt_by_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count pair_per_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count pair_masks.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count pair_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count category_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count designated_category_comparisons.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count common_support_training_comparisons.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count W_actual_per_anchor.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count W_actual_per_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count W_actual_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count designated_endpoint_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count designated_aggregate_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Complete row count independent_covariance_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "All frozen domain candidates"
+    },
+    {
+      "passed": true,
+      "detail": "No duplicate candidate identities"
+    },
+    {
+      "passed": true,
+      "detail": "All six old negative primary cells identified"
+    },
+    {
+      "passed": true,
+      "detail": "Length-mode source retained for both tasks"
+    },
+    {
+      "passed": true,
+      "detail": "Complete new score support; empty mathematical class remains separately undefined"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__transformer__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__descent_inverse__gru__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__transformer__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__peak_complement__gru__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__transformer__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__fixed_complement__gru__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__transformer__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__exceedance_inverse__gru__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__transformer__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__subsequence_complement__gru__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__transformer__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__run_complement__gru__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__global_descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__global_descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__transformer__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__record_complement__gru__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__anti_fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__anti_fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__components/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__components/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__deficiencies/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__deficiencies/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__descents/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__descents/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__exceedances/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__exceedances/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__fixed_points/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__fixed_points/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__lds_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__lds_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__left_to_right_maxima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__left_to_right_maxima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__left_to_right_minima/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__left_to_right_minima/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__lis_length/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__lis_length/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__longest_decreasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__longest_decreasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__longest_increasing_run/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__longest_increasing_run/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__peaks/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__peaks/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__recoils/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__recoils/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__transformer__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__one_line__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__valleys/raw_within_length"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score permworld__decomposition_complement__gru__canonical_cycle__valleys/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_out/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_out/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_out/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__max_in/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_max__transformer__row_major_offdiagonal_binary__min_in/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__max_out/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__max_out/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__max_out/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__max_in/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__max_in/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__max_in/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__min_in/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__min_in/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__reverse_min__transformer__row_major_offdiagonal_binary__min_in/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__min_out/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__min_out/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__min_out/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__max_in/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__max_in/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__max_in/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__min_in/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__min_in/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_out__transformer__row_major_offdiagonal_binary__min_in/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__max_out/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__max_out/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__max_out/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__min_out/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__min_out/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__min_out/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__min_in/raw_within_n"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__min_in/answer_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Finite saved score graphworld__complement_in__transformer__row_major_offdiagonal_binary__min_in/answer_density_strata"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image perm_all_candidate_scores.png"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image perm_designated_contrasts.png"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image graph_all_candidate_scores.png"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image W_actual_per_anchor.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image W_actual_per_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image W_actual_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image W_original_random_math_reference.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image candidate_pairs.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image category_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image classification_manifest.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image common_support_training_comparisons.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image control_sensitivity.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image designated_aggregate_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image designated_category_comparisons.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image designated_endpoint_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image gru_exceedance_encoding_case.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image historical_cost_groups.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image historical_receipt_costs.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image independent_covariance_verification.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image layer_sensitivity.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image main32_by_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image metric_disagreements.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image pair_masks.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image pair_per_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image pair_summary.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image recomputed_main32.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image replication_budget_scenarios.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image replication_candidate_costs.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image six_negative_bt.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image six_negative_bt_by_length.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image three_metric_directions.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image undefined_component_boundaries.csv"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image REPRODUCE.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image protocol.json"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image results_paragraph_zh_en.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Reader link/image replication_candidates.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Delivery entry REPRODUCE.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Delivery entry next_phase_candidates.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Delivery entry replication_candidates.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Delivery entry results_paragraph_zh_en.txt"
+    },
+    {
+      "passed": true,
+      "detail": "Named2580 protected bytes and tracked Git snapshots match"
+    },
+    {
+      "passed": true,
+      "detail": "Fixed concrete protection scope count"
+    }
+  ],
+  "check_count": 1113,
+  "csv_row_counts": {
+    "candidate_pairs.csv": 492,
+    "classification_manifest.csv": 132,
+    "recomputed_main32.csv": 32,
+    "six_negative_bt.csv": 6,
+    "six_negative_bt_by_length.csv": 126,
+    "pair_per_length.csv": 20268,
+    "pair_masks.csv": 20268,
+    "pair_summary.csv": 996,
+    "category_summary.csv": 456,
+    "designated_category_comparisons.csv": 304,
+    "common_support_training_comparisons.csv": 228,
+    "W_actual_per_anchor.csv": 92160,
+    "W_actual_per_length.csv": 372,
+    "W_actual_summary.csv": 28,
+    "designated_endpoint_verification.csv": 2760,
+    "designated_aggregate_verification.csv": 152,
+    "independent_covariance_verification.csv": 40
+  },
+  "pair_summary_rows_missing_phase_scores": 0,
+  "report_links_checked": 36,
+  "new_scientific_metrics": 0,
+  "new_forward": 0,
+  "new_training": 0,
+  "scope": "Saved delivery hashes, row coverage and report links only. Does not rerun CKA or training."
+}

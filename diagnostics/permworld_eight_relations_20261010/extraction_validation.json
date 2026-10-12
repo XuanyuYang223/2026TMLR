@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "index_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+  "index_sha256": "16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6",
+  "logical_records": 256,
+  "source_models": 64,
+  "old_models_reused": 16,
+  "new_fixed20k_models": 48,
+  "actual_unique_mmap_files": 1032,
+  "old_initial_CE_missing_records": 32,
+  "new_task_initial_outputs_forwarded": true,
+  "initial_hidden_alias_all_anchors_bitwise": true,
+  "primary_norm_separate": true,
+  "layer_order": {
+    "transformer": [
+      "block_01",
+      "block_02",
+      "block_03",
+      "block_04",
+      "final_norm"
+    ],
+    "gru": [
+      "layer_01",
+      "layer_02",
+      "layer_03",
+      "layer_04",
+      "final_norm"
+    ]
+  },
+  "full_vocab_CE188": true,
+  "conditional_numeric_probability31": true,
+  "fixed_manual_lengths": [
+    10,
+    20,
+    30
+  ],
+  "manual_first8_from_full128_prompt": true,
+  "manual_scope": "Each of48 new sources, both initial/trained, fixed test anchors only, all3 actions",
+  "direct_manual_to_saved_packed_and_primary_norm_verified": true,
+  "saved_initial_alias_fields_verified": true,
+  "old_conversion_exact_arrays": 192,
+  "source_updates": 0,
+  "optimizer_constructed": false,
+  "backward": false,
+  "new_inputs": false,
+  "old_artifacts_modified": false
+}

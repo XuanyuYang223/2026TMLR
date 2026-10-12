@@ -1,0 +1,68 @@
+PermWorld full_eval.py 独立只读代码审查
+日期：2026-10-10；工程freeze/真实前向之前
+审查脚本SHA256：0f3616d688f379089ce8cca2b67ad6e9005d4489cb7ac52db5e562cb88179da3
+
+结论
+未发现完整train/validation前向的数值、位置或覆盖阻断问题。该实现复用
+固定既有16×8k模型，无optimizer/backward/initial创建调用；无test解码或
+CKA。这里只审查代码，不预先认定真实汇总/验证复现已经通过。
+
+evaluate_split
+1. 只接受train/validation；数据由协议decoded_arrays明确列出两split的
+   lengths、labels和两编码input，共8个字段。不是解码NPZ全部数组。
+2. action固定0，label选择TASKS.index(job.task)，编码input随job选择。
+   外层检查仅n10/11/12，每n train2048、validation1024；ascending indices
+   每批128，visited逐样本去重且末尾allTrue。6144+3072例/model，16模型
+   共147456模型×样本；96 model×split×n汇总单元，没有随机train子采样。
+3. batch返回equals被断言为2n+5，答案取该位置，EOS取equals+1=2n+6。
+   这与冻结shifted causal监督一致，真实答案作为下一token输入；EOS
+   是给定真实答案后的teacher-forced统计，不是自由生成seq准确率。
+4. 模型eval，全submodule eval断言，inference_mode使grad关闭；每次forward
+   明确autocast disabled、输出FP32。参数整体FP32，device_setup关闭TF32，
+   同一Transformer SDPA/GRU构造与原validation接口。因此与原accuracy
+   相同前向精度、同样完整supervised序列、长度分批与batch128路径。
+5. 保存188维原始answer/EOS logits、对应gold/pred IDs、全词表CE；完整
+   前向前后parameter_hash相同，grad均None。numeric条件指标没有伪装成
+   full-vocab准确率，必要时可由保存的logits按词表单独重算。
+
+summarize_arrays / reproduce
+6. 每n计数显式校验，两split内三长度样本相等；summary等权三长度与原
+   accuracy sample-weighted整体相等。answerCE与EOSCE分别全188类计算，
+   combined=(answerCE+EOSCE)/2，固定两监督token/样本口径正确。
+7. 与stage_8000.validation逐n及overall的5个字段比较，共320单元；准确率
+   容差0，CE绝对1e-5+相对1e-6，在protocol冻结，不搜索结果。FP32每样本
+   CE先保存float64再fsum，与旧GPU batch-sum reduction可有微小舍入差。
+   出现差异会保留failed rows与completed_with_reproduction_difference，
+   不重跑选好值。completion_audit.status=passed本身不等于复现差异全无，
+   后者必须读validation_reproduction_passed字段。
+
+checkpoint / protected绑定
+8. setup固定16manifest job、stage_8000与completed内容逐项一致，stage
+   run_id/architecture/encoding/task与manifest绑定。checkpoint必须位于
+   该model目录且为checkpoint_step_8000.pt，文件SHA匹配原stage；两类
+   step0文件必须已存在且检查原保存SHA，完全没有调用initial()。
+9. evaluate固定checkpoint SHA与stage SHA，加载CP后将run_id、architecture、
+   step、原protocol/source/data/init/starting RNG字段与stage逐项核对；
+   step与finite_gradient_updates均8000，source_model_run为True。
+   strict=True加载model，整个前向前后权重摘要相同，没有optimizer。
+10. protected_before覆盖原407登记文件、旧learnability artifact_manifest
+    及其原报告文件、26冻结源码、16选定8kCP/stage/completed、各架构真实
+    step0、源NPZ/audit/protocol；audit复算登记SHA并确认没有遗留训练进程。
+    保护证明只针对该登记集合；无须声称所有未登记旧二进制也逐项校验。
+
+冻结前来源硬化建议（已发根代理；不是当前真实产物错误）
+- 目前CP data摘要显式核对stage，NPZ显式核对protocol/data_audit，但
+  setup尚未将stage.data_sha256直接与protocol.source_data_sha256比较。
+  旧完成审计已经验证所有stage的数据链，当前不是实测误绑定；新独立
+  审计最好加这个断言把链闭合，不依赖外部通过状态。
+- 同样可断言CP fixed_endpoint_step=8000、output_directory为源model目录。
+  这两项原writer已固定，当前forward不依赖其值，属身份审计强化。
+- 若想冻结保护清单本身身份，将protected_before.json摘要记录在freeze；
+  目前audit复用该清单，不能独立排除清单被替换。不过新writer只写新ROOT
+  且其源码受freeze保护，常规诊断未发现会修改旧目录的路径。
+
+限制
+本次没有加载模型权重作数值前向，也未读新预测或test数组。真值EOS条件、
+full-train拟合与validation泛化、开发数据世界非确认集等解释限制仍在。
+真实16模型覆盖、独立logits聚合与原validation逐字段一致性由完成后的
+产物审计确认，不能仅凭这份代码审查宣称已经通过。

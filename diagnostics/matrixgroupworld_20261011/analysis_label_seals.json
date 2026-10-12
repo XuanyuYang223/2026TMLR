@@ -1,0 +1,36 @@
+[
+  {
+    "status": "sealed",
+    "unit": "unit001",
+    "sealed_utc": "2026-10-11T21:47:03.911357+00:00",
+    "protocol_sha256": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+    "freeze_manifest_sha256": "2e52c0957d646a4dad261ffd0d0b63120ef8ee4e9f3118a179b142cf4c305e3c",
+    "data_sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+    "labels_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/analysis_labels.npz",
+    "labels_sha256": "e934f9ce2a6813dcbe96ca329179ced6563db78fe340db4d40938fc1cf1e2cb3",
+    "shape": [
+      1536,
+      8,
+      4
+    ],
+    "labels_generated_after_protocol_freeze": true,
+    "no_model_or_geometry_calls": true
+  },
+  {
+    "status": "sealed",
+    "unit": "unit002",
+    "sealed_utc": "2026-10-11T21:47:05.614462+00:00",
+    "protocol_sha256": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+    "freeze_manifest_sha256": "2e52c0957d646a4dad261ffd0d0b63120ef8ee4e9f3118a179b142cf4c305e3c",
+    "data_sha256": "239d405749fd6539e3bbbe88d185c15084dc96812e7232ffcbb5bb08994c02b8",
+    "labels_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/analysis_labels.npz",
+    "labels_sha256": "d51518cfc3fe7ca5d9189cbe7067d96a4e65193afb09c04f33aa14695b2e65d7",
+    "shape": [
+      1536,
+      8,
+      4
+    ],
+    "labels_generated_after_protocol_freeze": true,
+    "no_model_or_geometry_calls": true
+  }
+]

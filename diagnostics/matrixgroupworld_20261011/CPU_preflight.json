@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/candidate_manifest.csv",
+      "sha256": "9bb3581a089b9fba390a26b9afc08ac67e0e2116eb2562ebdf93ceaea12f441e",
+      "expected": "9bb3581a089b9fba390a26b9afc08ac67e0e2116eb2562ebdf93ceaea12f441e",
+      "passed": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/candidate_classification_audit.json",
+      "sha256": "c8ccb469323ee7afb0d65941923e5d0a440073e3768c0c3d552c2bc7220b112d",
+      "expected": "c8ccb469323ee7afb0d65941923e5d0a440073e3768c0c3d552c2bc7220b112d",
+      "passed": true
+    }
+  ],
+  "actual_20k_endpoints": 8,
+  "new_GPU_forward": 0,
+  "new_training": 0
+}

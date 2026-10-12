@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/train.py", line 152, in <module>
+    a=p.parse_args();engineering() if a.stage=='engineering' else run_job(a.run_id)
+                     ~~~~~~~~~~~^^
+  File "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/train.py", line 125, in engineering
+    disk=ROOT/'engineering'/f'{arch}_{enc}'/'step20.pt';atomic_checkpoint(disk,middle)
+                                                        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/yangx/ICML/experiments/permworld_encoding/train.py", line 37, in atomic_checkpoint
+    path=Path(path);temporary=path.with_name(path.name+'.tmp');torch.save(payload,temporary);os.replace(temporary,path)
+                                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/serialization.py", line 1003, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/serialization.py", line 865, in _open_zipfile_writer
+    return container(name_or_buffer)  # type: ignore[arg-type]
+  File "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/serialization.py", line 829, in __init__
+    torch._C.PyTorchFileWriter(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.name, get_crc32_options(), _get_storage_alignment()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Parent directory /mnt/yangx-projects-f/20261010/permworld_eight_relations/engineering/transformer_one_line does not exist.

@@ -1,0 +1,151 @@
+{
+  "scope": "Read-only installed-backend review and tiny synthetic CUDA engineering fixtures, excluded from PermWorld source experiments.",
+  "torch": "2.11.0+cu128",
+  "torch_git_commit": "70d99e998b4955e0049d13a98d77ae1b14db1f45",
+  "cuda": "12.8",
+  "cudnn": 91900,
+  "local_sources": [
+    "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/nn/modules/rnn.py",
+    "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/backends/cudnn/rnn.py",
+    "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/include/ATen/cuda/CUDAGeneratorImpl.h",
+    "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/include/ATen/ops/_cudnn_rnn_ops.h"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://github.com/pytorch/pytorch/blob/70d99e998b4955e0049d13a98d77ae1b14db1f45/aten/src/ATen/native/cudnn/RNN.cpp#L2250-L2339",
+      "finding": "cuDNN RNN dropout state is a lazily initialized Tensor buffer in a static per-device C++ cache. Standard nn.GRU state_dict does not contain this buffer."
+    },
+    {
+      "url": "https://github.com/pytorch/pytorch/blob/70d99e998b4955e0049d13a98d77ae1b14db1f45/aten/src/ATen/cuda/CUDAGeneratorImpl.cpp#L307-L348",
+      "finding": "CUDA generator serialization contains seed and Philox offset. Restoring state invokes set_current_seed, which resets the RNN-state flag. The subsequent dropout-enabled cuDNN call reinitializes its buffer."
+    },
+    {
+      "url": "https://github.com/pytorch/pytorch/blob/70d99e998b4955e0049d13a98d77ae1b14db1f45/aten/src/ATen/native/cudnn/RNN.cpp#L2167-L2184",
+      "finding": "The private initializer returns the dropout-state Tensor, and private _cudnn_rnn accepts an explicit dropout-state Tensor. Such a user-owned Tensor is serializable, but standard nn.GRU offers no supported public exporter/importer for its C++ cached buffer."
+    }
+  ],
+  "interpretation": "Native fixture confirms the current ordinary-checkpoint path fails exact fresh-process CUDA continuation. Source inspection identifies uncheckpointed cuDNN dropout state as a concrete mechanism. This is an engineering finding, not a PermWorld scientific result or a claim about all RNN implementations.",
+  "fallback": {
+    "implementation": "Four single-layer GRUs with internal dropout0, explicit torch.nn.Dropout(.1) between first three recurrent layers; preserve embedding dropout, final normalization, tied output head.",
+    "initialization": "Value-preserving mapping from the actually saved native step0; not seed-only regeneration. Record original file/parameter hashes, mapping, per-tensor equality, new checkpoint/hash, vocabulary/model configuration and RNG provenance. Parameter names differ, so name-sensitive parameter hash differs even if corresponding tensors are equal.",
+    "validation": "Tiny CPU eval logits/gradients and CPU replay exact. Tiny CUDA initial-tensor equality and parameter count preserved; eval logits error3.5762786865234375e-7. Fresh-process explicit-dropout CUDA replay has exact parameters, optimizer, RNG and loss.",
+    "limits": "The stochastic backend changes; keep failed native evidence, version and refreeze before source training. Tiny fixture does not replace fixed1000-update overfit or genuine2000-update source-data resume gate. Do not merge source results across backend versions or relax tolerances."
+  },
+  "fixtures": {
+    "gru_cuda_resume_native.json": {
+      "status": "failed",
+      "layout": "native",
+      "software_engineering_fixture": true,
+      "PermWorld_source_models": 0,
+      "experimental_data_read": false,
+      "formal_training_started": false,
+      "model_seed": 98741001,
+      "synthetic_data_seed": 98741002,
+      "stochastic_seed": 98741003,
+      "width": 256,
+      "layers": 4,
+      "native_interlayer_dropout": 0.1,
+      "explicit_torch_interlayer_dropout": 0.0,
+      "embedding_dropout": 0.1,
+      "updates_before_save": 3,
+      "updates_after_save": 3,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "sequence_length": 24,
+      "precision": "FP32 parameters; BF16 CUDA autocast; TF32 disabled",
+      "optimizer": "fused AdamW lr3e-4 betas(.9,.999) eps1e-8 weight_decay.01; gradient clip1",
+      "parameter_max_abs": 0.0012215673923492432,
+      "optimizer_max_abs": 0.0006990954279899597,
+      "RNG_identity": false,
+      "resumed_loss_max_abs": 0.003662109375,
+      "continuous_losses": [
+        3.731201171875,
+        3.36962890625,
+        3.0850830078125
+      ],
+      "resumed_losses": [
+        3.7275390625,
+        3.370361328125,
+        3.082763671875
+      ],
+      "parameter_tolerance": 1e-05,
+      "optimizer_tolerance": 1e-05,
+      "RNG_exact_required": true,
+      "torch": "2.11.0+cu128",
+      "torch_git_commit": "70d99e998b4955e0049d13a98d77ae1b14db1f45",
+      "cuda": "12.8",
+      "cudnn": 91900,
+      "fixture_checkpoint_directory": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/gru_cuda_engineering_fixture/native",
+      "elapsed_seconds": 10.850316126998223,
+      "fixture_source_sha256": "ab54231baed317fcbd563d977aee978ee6d58b30702afa8b51f63553692be64c",
+      "fixture_source_snapshot": "/home/yangx/ICML/diagnostics/permworld_layers_20261009/engineering/gru_cuda_resume_fixture_native_v1.py"
+    },
+    "gru_cuda_resume_explicit.json": {
+      "status": "passed",
+      "layout": "explicit",
+      "software_engineering_fixture": true,
+      "PermWorld_source_models": 0,
+      "experimental_data_read": false,
+      "formal_training_started": false,
+      "model_seed": 98741001,
+      "synthetic_data_seed": 98741002,
+      "stochastic_seed": 98741003,
+      "width": 256,
+      "layers": 4,
+      "native_interlayer_dropout": 0.0,
+      "explicit_torch_interlayer_dropout": 0.1,
+      "embedding_dropout": 0.1,
+      "updates_before_save": 3,
+      "updates_after_save": 3,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "sequence_length": 24,
+      "precision": "FP32 parameters; BF16 CUDA autocast; TF32 disabled",
+      "optimizer": "fused AdamW lr3e-4 betas(.9,.999) eps1e-8 weight_decay.01; gradient clip1",
+      "parameter_max_abs": 0.0,
+      "optimizer_max_abs": 0.0,
+      "RNG_identity": true,
+      "resumed_loss_max_abs": 0.0,
+      "continuous_losses": [
+        3.724609375,
+        3.369873046875,
+        3.079833984375
+      ],
+      "resumed_losses": [
+        3.724609375,
+        3.369873046875,
+        3.079833984375
+      ],
+      "parameter_tolerance": 1e-05,
+      "optimizer_tolerance": 1e-05,
+      "RNG_exact_required": true,
+      "torch": "2.11.0+cu128",
+      "torch_git_commit": "70d99e998b4955e0049d13a98d77ae1b14db1f45",
+      "cuda": "12.8",
+      "cudnn": 91900,
+      "fixture_source_sha256": "976c0b2ba5565c3edf595e48f691f2a49d0d4441109a18132599aaed25846994",
+      "initial_tensor_migration": {
+        "toy_native_initial_parameter_coordinate_sha256": "38e3e7aaffc35756407a59902e3089e7ccbed8cc8f8c150a29e38b45e87b6f13",
+        "corresponding_initial_tensors_exact": true,
+        "weight_tying_preserved": true,
+        "original_parameters": 1660416,
+        "migrated_parameters": 1660416,
+        "initialized_from": "Native constructor at MODEL_SEED, then value-preserving tensor mapping; not seed-only identity assertion.",
+        "mapping": "gru.{weight_ih,weight_hh,bias_ih,bias_hh}_l{i} -> layers.{i}.{same}_l0",
+        "eval_cuda_logit_max_abs": 3.5762786865234375e-07,
+        "eval_cuda_tolerance": 2e-05
+      },
+      "fixture_checkpoint_directory": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/gru_cuda_engineering_fixture/explicit",
+      "elapsed_seconds": 12.136367952996807
+    }
+  },
+  "F17_and_frozen_sources_modified": false,
+  "PermWorld_source_models_trained": 0,
+  "experimental_data_read_by_fixtures": false,
+  "local_source_sha256": {
+    "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/nn/modules/rnn.py": "5be3167a71ab06e2690ca16792dfe302be2afd462f24708dc29e09a3eb3b97aa",
+    "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/backends/cudnn/rnn.py": "bdd09d04c1a8092d494f601b5f4f4682048af60de9ee04af8498e8b621fc4ac6",
+    "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/include/ATen/cuda/CUDAGeneratorImpl.h": "f302681ac2f1803a09ef85a9afaf7b3304ac9857b0daba4b62bdbc387af296a1",
+    "/home/yangx/miniforge3/lib/python3.13/site-packages/torch/include/ATen/ops/_cudnn_rnn_ops.h": "3ac54f8f602a4417de0d6c6e814505887310b2efb2864aa6eb38cb0e034c4955"
+  }
+}

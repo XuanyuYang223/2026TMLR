@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "source_version_sha256": "92a7a0bf24a383c7d1f834c299e17307191ed74d80e177fc3ef9a80716572cd2",
+  "actual_initial_forward_records": [
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "length": 10,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "length": 20,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "length": 30,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "length": 10,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "length": 20,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "length": 30,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "length": 10,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "length": 20,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "length": 30,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "length": 10,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "length": 20,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "length": 30,
+      "actual_initial_test_vectors": 24,
+      "manual_hook_max_difference": 0.0
+    }
+  ],
+  "independent_strata_projection_verified": true,
+  "CPU_only": true,
+  "source_optimizer_updates": 0
+}

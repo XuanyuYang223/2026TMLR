@@ -1,0 +1,626 @@
+{
+  "status": "passed",
+  "registered_utc": "2026-10-11T11:23:45.592314+00:00",
+  "auditor_sha256": "75c0abbbb5a1a0a616ad324ec39ce8bbd81eb088f0395ea2e01fe1b5afb2c6fc",
+  "audit_freeze_sha256": "e5df72d4ded0716b87fe164ba313660d27f87c4c1bc2e8be79ab8ce4de10b781",
+  "formal_sources": {
+    "permworld_successful_engineering_updates": 240,
+    "permworld_failed_preformal_engineering_updates": 40,
+    "permworld_actual_engineering_updates": 280,
+    "graphworld_actual_engineering_updates": 192,
+    "formal_new_models": 52,
+    "formal_new_updates": 1040000,
+    "reused_original_models": 16,
+    "reused_updates_this_round": 0,
+    "engineering_paths_not_formal_endpoints": true,
+    "includes_previous_toy_checks": false,
+    "scope": "Successful bounded engineering plus preserved first40-update mkdir failure, derived from failed log/control flow; prior development and external CUDA toy fixtures are separate historical artifacts."
+  },
+  "actual_saved_initializations": [
+    {
+      "architecture": "transformer",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+      "actual_container_stage": "actual_constructor_output_before_optimizer_or_training_forward",
+      "actual_container_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "evidence": "CPU-loaded saved tensor state; no constructor or seed reconstruction"
+    },
+    {
+      "architecture": "gru",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+      "actual_container_stage": "value_preserving_key_migration_of_saved_actual_initialization_before_source_training_for_explicit_interlayer_dropout",
+      "actual_container_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "evidence": "CPU-loaded saved tensor state; no constructor or seed reconstruction"
+    },
+    {
+      "architecture": "graph_transformer",
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/step0.pt",
+      "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+      "actual_container_stage": "actual_constructor_output_before_optimizer_or_training_forward",
+      "actual_container_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+      "evidence": "CPU-loaded saved tensor state; no constructor or seed reconstruction"
+    }
+  ],
+  "saved_RNG_streams": [
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_descents.pt",
+      "checkpoint_sha256": "37d238e3c7388e2e4003d933187e89339374cf5ef627b18f916a52275fea1827",
+      "rng_hash": "68090e92faa9dd77322a05780bc92b3843bde422f7f36089859acc42e4f3a669",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_recoils.pt",
+      "checkpoint_sha256": "5948c174ab2a3861d2db6ab631dba0cd47d832d5b0e2f6ae2a75a64221ecd936",
+      "rng_hash": "483b222e3b1f462b7b30bf4791f49fe7d9e0b06b72b75d25fe9e1bc7338e6284",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_peaks.pt",
+      "checkpoint_sha256": "763bd564337635d156fe5154be090e1627a5fc353d640148734156862cd3a363",
+      "rng_hash": "1ee00c6b86de5f7aaf4c4868f8ec1022f0af99b07b512fbf7ebd4c8124910657",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_valleys.pt",
+      "checkpoint_sha256": "bfd4d977cbbd696e20ec8b137805146e1b9bd13be4e284146b711f99202548e0",
+      "rng_hash": "0e66c07a50a5399b401f4d7773a35e92fbcfef59f889f744330ea1e3561f7c77",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_descents.pt",
+      "checkpoint_sha256": "0a79de4b0d345a01d5c5317788e0ac171a283b8150e12cd4febefcc3fdf0dec8",
+      "rng_hash": "b719b74fb36d959f314d532c0811abaaa83c0b123dc9c773e6301f7d119e5d27",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_recoils.pt",
+      "checkpoint_sha256": "63e34a2e3eadf933e46e04cac06b9e3a477f5fb9a1fef116d6e0270798f2e97f",
+      "rng_hash": "8681ebb3bca9dca6f8cbc1851e38d00d828ae9da724fe20d82c093f058671031",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_peaks.pt",
+      "checkpoint_sha256": "fc1bc5a142fd490494e5e778440a57c35c76fc09ccf51cc401aa2847510b1d45",
+      "rng_hash": "50530f121b8de9c1d206853ab65f7827b10c398c1e8e99d23500ed9a12980b1d",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_valleys.pt",
+      "checkpoint_sha256": "11e0d8400172440af635b10033f097fff8967adca1a042361fcfe4e8263c9695",
+      "rng_hash": "2d1a2b73d3f854f8dcf1d3fe00e4ca9bbb7908b8dec8557681e3a58dd5e9cfe1",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/start_rng.pt",
+      "checkpoint_sha256": "37d238e3c7388e2e4003d933187e89339374cf5ef627b18f916a52275fea1827",
+      "rng_hash": "68090e92faa9dd77322a05780bc92b3843bde422f7f36089859acc42e4f3a669",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+    }
+  ],
+  "source_versions": {
+    "perm_training": "27cb40ee43341fa326e6b455d989b6e70b31ee421d86f923262117448d7cf476",
+    "perm_analysis": "495cd4f9850f4fc5ef14f554b7b56c7380bfbec56e641686949048f33750c48d",
+    "graph_training": "d1bc69d82b6422d1709a1d9907fb550e131f7f6b27205141b66bae4a1d38557c",
+    "old": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a"
+  },
+  "permworld_cache": {
+    "logical_records": 256,
+    "logical_array_references": 1248,
+    "unique_physical_arrays": 1032,
+    "original_initial_CE_missing_records": 32,
+    "new_initial_alias_records": 96,
+    "saved_manual_comparisons": 864,
+    "saved_manual_scope": "Each48new×2conditions×test n10/20/30×3actions, first8fromsame128prompt; no validation sampling claim"
+  },
+  "graphworld_cache": {
+    "logical_records": 16,
+    "unique_physical_cache_files": 16,
+    "all_cache_file_SHA_and_raw_array_hashes_verified": true,
+    "hidden_initial_task_independent_content_SHA_equal": true,
+    "manual_scope": "Graph production checks compare live manual/forward fixed validation samples; this audit does not rerun a model"
+  },
+  "old_artifact_protection": {
+    "manifest_file_counts": {
+      "permworld": 1223,
+      "graphworld": 996
+    },
+    "unique_protected_files": 1223,
+    "all_SHA_unchanged": true
+  },
+  "tracked_git": {
+    "HEAD": "e4e9ded9648aa2dc92a1cceef929cc9521546418",
+    "working_tree_vs_HEAD_bytes": 0,
+    "working_tree_vs_HEAD_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "index_vs_HEAD_bytes": 0,
+    "index_vs_HEAD_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final_tracked_files_equal_HEAD": true,
+    "pre_run_tracked_diff_byte_snapshot_available": false,
+    "limitation": "Starting HEAD was retained; no pre-run tracked diff byte snapshot was located. This does not prove the tracked diff stayed constant throughout execution.",
+    "untracked_new_experiment_outputs_excluded_from_tracked_equality": true
+  },
+  "timing": {
+    "recorded_training_process_wall_seconds": {
+      "old_reused": 30045.50872068799,
+      "permworld": 36539.456720795,
+      "graphworld": 2564.1223093860026
+    },
+    "GPU_kernel_seconds": null,
+    "GPU_active_seconds": null,
+    "GPU_measurement_status": "Not independently measured; unknown, not zero.",
+    "process_wall_scope": "Source receipt elapsed_seconds includes validation/IO and is not active GPU time. Old16 timings are historical, not new training cost.",
+    "permworld_queue_wall_seconds": 43101.4677631855,
+    "permworld_queue_wall_scope": "Recorded queue wall includes its saved resume accounting; does not imply unique GPU kernel duration.",
+    "instrumented_phase_timings": [
+      {
+        "phase": "perm_extract",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.permworld_eight_relations_20261010.extract",
+          "--stage",
+          "extract"
+        ],
+        "start_utc": "2026-10-11T09:55:18.011219+00:00",
+        "finish_utc": "2026-10-11T10:10:58.238665+00:00",
+        "wall_seconds": 940.2259013459843,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_extract.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_extract.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 271.86,
+        "system_cpu_seconds": 118.24,
+        "max_rss_kib": 1632428,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "perm_extraction_validation",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.permworld_eight_relations_20261010.extract",
+          "--stage",
+          "validate"
+        ],
+        "start_utc": "2026-10-11T10:10:58.241589+00:00",
+        "finish_utc": "2026-10-11T10:13:28.745655+00:00",
+        "wall_seconds": 150.50198060501134,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_extraction_validation.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_extraction_validation.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 14.82,
+        "system_cpu_seconds": 14.49,
+        "max_rss_kib": 693016,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "perm_geometry",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.permworld_eight_relations_20261010.analysis",
+          "--run"
+        ],
+        "start_utc": "2026-10-11T10:13:28.748613+00:00",
+        "finish_utc": "2026-10-11T10:29:07.640242+00:00",
+        "wall_seconds": 938.8897905480117,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_geometry.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_geometry.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 1410.8,
+        "system_cpu_seconds": 26.19,
+        "max_rss_kib": 20958616,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "perm_report",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.permworld_eight_relations_20261010.report"
+        ],
+        "start_utc": "2026-10-11T10:29:07.642731+00:00",
+        "finish_utc": "2026-10-11T10:29:22.249547+00:00",
+        "wall_seconds": 14.604921933001606,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_report.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_report.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 14.15,
+        "system_cpu_seconds": 0.44,
+        "max_rss_kib": 464352,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "perm_reader_audit",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.py"
+        ],
+        "start_utc": "2026-10-11T10:29:22.253441+00:00",
+        "finish_utc": "2026-10-11T10:29:23.827279+00:00",
+        "wall_seconds": 1.5713948810007423,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_reader_audit.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_reader_audit.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 1.35,
+        "system_cpu_seconds": 0.15,
+        "max_rss_kib": 337356,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "perm_result_readout",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "diagnostics/permworld_eight_relations_20261010/final_review/result_readout.py",
+          "--stage",
+          "permworld"
+        ],
+        "start_utc": "2026-10-11T10:29:35.632010+00:00",
+        "finish_utc": "2026-10-11T10:29:36.854654+00:00",
+        "wall_seconds": 1.22131189898937,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_result_readout.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_result_readout.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 0.73,
+        "system_cpu_seconds": 0.1,
+        "max_rss_kib": 234744,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "graph_verify",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.graphworld_pilot_20261010",
+          "--stage",
+          "verify"
+        ],
+        "start_utc": "2026-10-11T10:29:36.896872+00:00",
+        "finish_utc": "2026-10-11T10:29:38.121513+00:00",
+        "wall_seconds": 1.2230787760054227,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_verify.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_verify.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 3.16,
+        "system_cpu_seconds": 0.16,
+        "max_rss_kib": 668480,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "graph_engineering",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.graphworld_pilot_20261010",
+          "--stage",
+          "engineering"
+        ],
+        "start_utc": "2026-10-11T10:29:38.123938+00:00",
+        "finish_utc": "2026-10-11T10:30:02.602230+00:00",
+        "wall_seconds": 24.476333272992633,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_engineering.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_engineering.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 21.61,
+        "system_cpu_seconds": 4.86,
+        "max_rss_kib": 1947284,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "graph_train_four",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.graphworld_pilot_20261010",
+          "--stage",
+          "train-all"
+        ],
+        "start_utc": "2026-10-11T10:30:02.604693+00:00",
+        "finish_utc": "2026-10-11T11:12:49.540801+00:00",
+        "wall_seconds": 2566.9347220780037,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_train_four.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_train_four.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 1901.61,
+        "system_cpu_seconds": 609.71,
+        "max_rss_kib": 1906864,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "graph_evaluate",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.graphworld_pilot_20261010",
+          "--stage",
+          "evaluate"
+        ],
+        "start_utc": "2026-10-11T11:16:28.447676+00:00",
+        "finish_utc": "2026-10-11T11:17:34.822205+00:00",
+        "wall_seconds": 66.37282357100048,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_evaluate.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_evaluate.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 40.54,
+        "system_cpu_seconds": 1.46,
+        "max_rss_kib": 787344,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "graph_independent_metrics",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.graphworld_pilot_20261010.validate",
+          "--stage",
+          "actual"
+        ],
+        "start_utc": "2026-10-11T11:17:34.826232+00:00",
+        "finish_utc": "2026-10-11T11:17:41.211062+00:00",
+        "wall_seconds": 6.382574835995911,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_independent_metrics.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_independent_metrics.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 10.29,
+        "system_cpu_seconds": 0.4,
+        "max_rss_kib": 682040,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "graph_report",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.graphworld_pilot_20261010",
+          "--stage",
+          "report"
+        ],
+        "start_utc": "2026-10-11T11:17:41.213366+00:00",
+        "finish_utc": "2026-10-11T11:17:53.959462+00:00",
+        "wall_seconds": 12.744769759010524,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_report.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_report.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 4.45,
+        "system_cpu_seconds": 1.12,
+        "max_rss_kib": 717500,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "graph_reader_audit",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "-m",
+          "experiments.graphworld_pilot_20261010.validate",
+          "--stage",
+          "audit-report"
+        ],
+        "start_utc": "2026-10-11T11:17:53.961284+00:00",
+        "finish_utc": "2026-10-11T11:18:05.809355+00:00",
+        "wall_seconds": 11.84625549800694,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_reader_audit.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_reader_audit.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 4.15,
+        "system_cpu_seconds": 0.88,
+        "max_rss_kib": 668972,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      },
+      {
+        "phase": "graph_result_readout",
+        "command": [
+          "/home/yangx/ICML/.venv/bin/python",
+          "-B",
+          "diagnostics/permworld_eight_relations_20261010/final_review/result_readout.py",
+          "--stage",
+          "graphworld"
+        ],
+        "start_utc": "2026-10-11T11:18:05.810350+00:00",
+        "finish_utc": "2026-10-11T11:18:05.877781+00:00",
+        "wall_seconds": 0.0663798869936727,
+        "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_result_readout.log",
+        "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_result_readout.resources.json",
+        "timing_scope": "nonoverlapping orchestrated process phase",
+        "user_cpu_seconds": 0.03,
+        "system_cpu_seconds": 0.01,
+        "max_rss_kib": 23836,
+        "exit_code": 0,
+        "interpretation": "Command process wall/user/system CPU observations; GPU kernel duration is unknown."
+      }
+    ],
+    "phase_timing_missing": false,
+    "perm_math_recorded_CPU_pipeline_wall_seconds": 6.941081258992199,
+    "perm_successful_engineering_recorded_pipeline_wall_seconds": 12.64124596399779,
+    "perm_failed_preformal_engineering_wall_seconds": null,
+    "perm_failed_preformal_engineering_timing_reason": "The first40-update mkdir failure is preserved, but no independent phase duration is present in its sidecar.",
+    "perm_reuse_recorded_pipeline_wall_seconds": 213.66918336800882,
+    "perm_extract_recorded_pipeline_wall_seconds": 789.2609328319959,
+    "graph_evaluate_recorded_pipeline_wall_seconds": 65.1614043059817,
+    "graph_engineering_recorded_pipeline_wall_seconds": 23.272293630987406
+  },
+  "physical_storage": {
+    "audited_references": {
+      "unique_hashed_physical_files": 2395,
+      "unique_physical_bytes": 27446351391,
+      "groups": {
+        "batch_schedule": {
+          "unique_physical_files": 4,
+          "physical_bytes": 10560512
+        },
+        "cache_index": {
+          "unique_physical_files": 2,
+          "physical_bytes": 2753916
+        },
+        "cache_metadata": {
+          "unique_physical_files": 16,
+          "physical_bytes": 35649
+        },
+        "completed_metadata": {
+          "unique_physical_files": 68,
+          "physical_bytes": 569020
+        },
+        "data_metadata": {
+          "unique_physical_files": 4,
+          "physical_bytes": 71581
+        },
+        "engineering_metadata": {
+          "unique_physical_files": 5,
+          "physical_bytes": 21905
+        },
+        "freezes": {
+          "unique_physical_files": 7,
+          "physical_bytes": 30669
+        },
+        "frozen_source": {
+          "unique_physical_files": 48,
+          "physical_bytes": 564196
+        },
+        "graph_cache": {
+          "unique_physical_files": 16,
+          "physical_bytes": 98039895
+        },
+        "graph_source_dependency": {
+          "unique_physical_files": 13,
+          "physical_bytes": 13092877
+        },
+        "initial_weights": {
+          "unique_physical_files": 3,
+          "physical_bytes": 32672631
+        },
+        "new_formal_weights": {
+          "unique_physical_files": 52,
+          "physical_bytes": 1570266380
+        },
+        "original_cache": {
+          "unique_physical_files": 64,
+          "physical_bytes": 1640949534
+        },
+        "perm_cache": {
+          "unique_physical_files": 1032,
+          "physical_bytes": 21669970944
+        },
+        "perm_cache_new_physical": {
+          "unique_physical_files": 960,
+          "physical_bytes": 16709246976
+        },
+        "perm_cache_reused_physical": {
+          "unique_physical_files": 72,
+          "physical_bytes": 4960723968
+        },
+        "perm_cache_shared_alias_targets": {
+          "unique_physical_files": 16,
+          "physical_bytes": 1189087232
+        },
+        "phase_timing": {
+          "unique_physical_files": 1,
+          "physical_bytes": 11795
+        },
+        "protected_old": {
+          "unique_physical_files": 1223,
+          "physical_bytes": 8925539724
+        },
+        "protection_manifest": {
+          "unique_physical_files": 2,
+          "physical_bytes": 397703
+        },
+        "protocol": {
+          "unique_physical_files": 3,
+          "physical_bytes": 437258
+        },
+        "reports": {
+          "unique_physical_files": 4,
+          "physical_bytes": 133906
+        },
+        "reused_weights": {
+          "unique_physical_files": 16,
+          "physical_bytes": 471454368
+        },
+        "saved_start_RNG": {
+          "unique_physical_files": 9,
+          "physical_bytes": 134637
+        },
+        "scientific_table": {
+          "unique_physical_files": 7,
+          "physical_bytes": 117402687
+        },
+        "training_manifest": {
+          "unique_physical_files": 1,
+          "physical_bytes": 94458
+        },
+        "verification_metadata": {
+          "unique_physical_files": 9,
+          "physical_bytes": 357105
+        },
+        "world_data": {
+          "unique_physical_files": 2,
+          "physical_bytes": 9607945
+        }
+      },
+      "group_totals_overlap_not_additive": true,
+      "scope": "Referenced files hashed by this audit; unique resolved paths, not logical references or total disk usage."
+    },
+    "actual_new_F_roots": {
+      "permworld_new_root": {
+        "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations",
+        "unique_physical_files": 1402,
+        "physical_bytes": 18255099096,
+        "unhashed_files_stat_only": 345,
+        "leftover_temporary_paths": []
+      },
+      "graphworld_new_root": {
+        "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot",
+        "unique_physical_files": 148,
+        "physical_bytes": 508970602,
+        "unhashed_files_stat_only": 102,
+        "leftover_temporary_paths": []
+      }
+    },
+    "new_F_roots_unique_physical_files": 1550,
+    "new_F_roots_unique_physical_bytes": 18764069698,
+    "scope": "F-root totals include logs, engineering checkpoints and metadata; stat-only totals are separate from SHA-verified scientific references.",
+    "initial_alias_targets_do_not_add_storage": true,
+    "unique_path_convention": "Resolved absolute path; no content-deduplication assumption about distinct files."
+  },
+  "CPU_audit_pipeline_wall_seconds": 282.9450867739797,
+  "models_constructed": false,
+  "forward": false,
+  "optimizers_constructed": false,
+  "training": false,
+  "scientific_metrics_recalculated": false,
+  "GPU_started": false,
+  "CPU_only_does_not_imply_original_GPU_kernel_seconds_zero": true,
+  "all_fixed_stages_complete": true,
+  "old_artifacts_modified": false,
+  "stopping_boundary": "Fixed48 PermWorld new +4 GraphWorld pilot complete; no extra training, metrics, tasks, seeds or publication."
+}

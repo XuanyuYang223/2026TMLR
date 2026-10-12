@@ -1,0 +1,15 @@
+{
+  "signature": "3bf058f55eecd95ace97fc824cd5929a2d6a8f1c7b6612a9142ac2442dc5c91f",
+  "sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+  "unique_inputs": 18260223,
+  "previous_index_sha256": "331a02b4f93ec3f7343ee9dc83c81c765ac2b8b5e1a733bb087c1213252754b5",
+  "appended_prior_development_orbit_members": 817152,
+  "appended_prior_development_anchors": 102144,
+  "prior_development_split_counts": {
+    "train": 86016,
+    "validation": 5376,
+    "test": 10752
+  },
+  "archive_parser": "all-three-development-permutation-splits/full-eight-orbits/v2",
+  "policy": "Reuse SHA-verified historical index, append all prior development input orbits; no historical inputs admitted."
+}

@@ -1,0 +1,65 @@
+{
+  "status": "recorded",
+  "audit_seed": 98000021,
+  "audit_gl_samples_per_n": 32,
+  "iid_proposals_per_n": {
+    "6": 105,
+    "8": 101,
+    "10": 82
+  },
+  "audit_input_key_count": 96,
+  "audit_orbit_key_count": 96,
+  "formal_world_intersections": [
+    {
+      "unit": "unit001",
+      "split": "train",
+      "raw_anchor_overlap": 0,
+      "canonical_orbit_overlap": 0,
+      "raw_overlap_keys": [],
+      "orbit_overlap_keys": []
+    },
+    {
+      "unit": "unit001",
+      "split": "validation",
+      "raw_anchor_overlap": 0,
+      "canonical_orbit_overlap": 0,
+      "raw_overlap_keys": [],
+      "orbit_overlap_keys": []
+    },
+    {
+      "unit": "unit001",
+      "split": "analysis",
+      "raw_anchor_overlap": 0,
+      "canonical_orbit_overlap": 0,
+      "raw_overlap_keys": [],
+      "orbit_overlap_keys": []
+    },
+    {
+      "unit": "unit002",
+      "split": "train",
+      "raw_anchor_overlap": 0,
+      "canonical_orbit_overlap": 0,
+      "raw_overlap_keys": [],
+      "orbit_overlap_keys": []
+    },
+    {
+      "unit": "unit002",
+      "split": "validation",
+      "raw_anchor_overlap": 0,
+      "canonical_orbit_overlap": 0,
+      "raw_overlap_keys": [],
+      "orbit_overlap_keys": []
+    },
+    {
+      "unit": "unit002",
+      "split": "analysis",
+      "raw_anchor_overlap": 0,
+      "canonical_orbit_overlap": 0,
+      "raw_overlap_keys": [],
+      "orbit_overlap_keys": []
+    }
+  ],
+  "source_isolation": "Different fixed seed; actual input/orbit intersections recorded here rather than inferred from seed identity.",
+  "no_world_modification_or_resampling": true,
+  "no_label_calls": true
+}

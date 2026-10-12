@@ -1,0 +1,81 @@
+Artifact download and byte-preserving restoration
+
+This engineering tool verifies and restores selected release assets. It does
+not run models, compute representations, or change scientific verification
+statuses. The saved-table checker requires no downloaded large artifacts.
+
+Requirements: Python 3.10 or newer; zstandard==0.25.0 for artifact restoration.
+Install the artifact-only dependency from a clean repository clone:
+
+  python3 -m pip install -r requirements-artifacts.txt
+
+From the repository root, download the selected minimal profile:
+
+  python3 -B tools/download_artifacts.py \
+    --manifest artifacts_manifest.json --profile minimal \
+    --directory artifacts/downloads --restore-dir artifacts/restored \
+    --output /tmp/representation-download-audit.json
+
+Use --profile full to request every package listed by that manifest profile.
+The profiles are explicit lists of package IDs, not inferred from filenames.
+Only HTTP(S) release URLs are accepted by the public command. Authentication
+credentials and signed redirect URLs are never written to its audit output.
+
+The default result contains ordinary immutable files at:
+
+  artifacts/restored/objects/<sha256>
+  artifacts/restored/path_map.json
+
+path_map.json is a plain JSON mapping from the historical logical_path string
+to the restore-root-relative objects/<sha256> string. Historical absolute
+paths are keys only; the tool never writes into those historical locations.
+New consistent keys can be appended when a larger profile is restored; an
+existing key cannot be remapped to different content.
+
+Optional regular copies at each manifest files[].restore_path:
+
+  python3 -B tools/download_artifacts.py \
+    --manifest artifacts_manifest.json --profile full \
+    --directory artifacts/downloads --restore-dir artifacts/restored \
+    --materialize --output /tmp/representation-materialize-audit.json
+
+Materialization preserves the original file bytes and uses regular copies,
+without hard links or symlinks. It requires additional disk space for each
+logical copy. The audit reports selected compressed bytes, unique object
+bytes, and the upper bound for additional materialized copies. Verified
+staging can temporarily require space for an additional asset or object.
+No full concatenated compressed file is written to disk.
+
+Each selected asset is checked against its declared size and SHA256. Parts
+are read in the manifest package order, with increasing unique part indices;
+their concatenated compressed stream is checked against the package SHA256.
+One Zstandard frame split at arbitrary byte boundaries and concatenated
+Zstandard frames are both supported. Tar members must be regular, expected
+objects/<sha256> files plus exactly one bounded, valid PACKAGE_INDEX.json.
+Unexpected members, links, directories, devices, traversal and duplicate
+members are rejected. Every object is checked against its size and SHA256.
+
+Repeated runs revalidate downloaded cache files and reuse matching objects.
+Matching objects skip writes; the archive is still scanned and verified.
+An existing different download, object or materialized file is retained and
+causes failure. The tool does not replace such files with new content. Select
+a new empty download/restore directory or resolve the collision explicitly.
+
+A successful audit means the selected downloaded or reused bytes matched the
+manifest, joined-stream hashes and object hashes. remote_assets_read records
+which assets were actually read from the network in that invocation. Cached
+local bytes are reported separately. A cache-only run is not evidence that
+every published remote asset has been re-downloaded, and a minimal run makes
+no claim about unselected packages. Release-wide remote readback is a separate
+publication qualification, performed by the release owner.
+
+Small local fixture; no release network access and no scientific artifacts:
+
+  python3 -B tools/download_artifacts.py --self-test \
+    --output /tmp/representation-download-fixture.json
+
+The fixture covers split streams, multiple Zstandard frames, exact-cache
+reuse, refusal to overwrite different files, unsafe tar entries, unsafe
+restoration paths, and archive safety when all expected objects are cached.
+Its successful result is an engineering fixture qualification, not a fresh
+Git clone test or a published release remote-readback claim.

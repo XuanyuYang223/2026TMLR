@@ -1,0 +1,9 @@
+PermWorld 已有检查点多层探索诊断
+新增源训练：0。旧初始化参照均C，无法验证原step-0身份。
+主位置final_norm_end、答案分层、全部可用源三主指标均正Δ的候选：six_hour_session_single/exceedance_inverse（1源）；six_hour_session_single/fixed_points_inverse_self（1源）；six_hour_session_single/max_min_record_inverse（1源）；specialist16/descent_inverse（3源）；specialist16/exceedance_inverse（3源）；specialist16/fixed_points_inverse_self（3源）；specialist16/lds_length_inverse_self（3源）；specialist16/lis_length_inverse_self（3源）。
+主位置三指标Bt/Δ方向分歧单元：3；普通/debiased方向差异：2。
+所有层、长度、关系和固定pooling均保留；Δ拆分为正确变化减错误变化。
+Embedding结束位置和无序数值均值数学上恒定，相关指标未定义。
+任务数系列沿用旧诊断，未重复计算；不能精确分解相似度来源。
+下一步编码实验回答B0还是Bt改变，需真实step-0与共同底层数据。
+CKA、邻域与Procrustes都不单独识别数学机制；源与关系依赖保留，无新确认p值。

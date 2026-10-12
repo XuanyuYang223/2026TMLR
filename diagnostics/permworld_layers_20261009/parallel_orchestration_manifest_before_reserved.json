@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-10-10T07:32:52.187253+00:00",
+  "first_tail_script_sha256": "73475cdfcbd50241633cc1a0e60757915008bc19f4c416d189bef704cc125996",
+  "first_tail_indices": [
+    15,
+    14,
+    13,
+    12
+  ],
+  "second_worker_indices": [
+    11,
+    10,
+    9,
+    8
+  ],
+  "minimum_start_gap": 6,
+  "source_training_code_and_budget_unchanged": true,
+  "purpose": "Run additional disjoint jobs from the same16model manifest concurrently; no scientific condition added"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "models": 16,
+  "lengths": 21,
+  "anchor_rows": 16128,
+  "selections": 168,
+  "comparisons": 464,
+  "protected_files": 996,
+  "elapsed_seconds": 16.03905250999378,
+  "validation_test_orbits_disjoint": true,
+  "training_orbit_proof_reused": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data_audit.json",
+  "source_training_updates": 20000,
+  "new_training": false
+}

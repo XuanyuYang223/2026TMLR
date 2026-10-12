@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "protocol_sha256": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+  "data_sha256": "f4dc57ba9f1fd668b0de956e82e80cfa9a5efbfa99067e5f4dcc984ecc520560",
+  "batch_indices_sha256": "e06ca6008b5cc0fe8a31644680a5ac661b6f3f9cd256a04be64cc92fd123ecfe",
+  "length_schedule_sha256": "7ea3d1f8e6203c64b93181a51c89d8155334647b67c363cf0f00909afe84cb31",
+  "anchor_index_sha256": "73124f6028817d867078d01e2ebae86518fdcbf94666190a31741992c70a7f0e",
+  "p_counts": {
+    "train": {
+      "6": {
+        "0.5": 1364,
+        "0.75": 1338,
+        "0.25": 1394
+      },
+      "7": {
+        "0.5": 1421,
+        "0.25": 1355,
+        "0.75": 1320
+      },
+      "8": {
+        "0.25": 1384,
+        "0.75": 1334,
+        "0.5": 1378
+      }
+    },
+    "validation": {
+      "6": {
+        "0.75": 100,
+        "0.25": 68,
+        "0.5": 88
+      },
+      "7": {
+        "0.5": 81,
+        "0.75": 86,
+        "0.25": 89
+      },
+      "8": {
+        "0.25": 88,
+        "0.5": 91,
+        "0.75": 77
+      }
+    },
+    "analysis": {
+      "6": {
+        "0.25": 183,
+        "0.75": 166,
+        "0.5": 163
+      },
+      "7": {
+        "0.5": 175,
+        "0.75": 174,
+        "0.25": 163
+      },
+      "8": {
+        "0.5": 156,
+        "0.25": 182,
+        "0.75": 174
+      }
+    }
+  },
+  "rejections": {
+    "train_n6_p0.75": 11,
+    "train_n6_p0.25": 12,
+    "validation_n6_p0.75": 1,
+    "validation_n6_p0.25": 1,
+    "analysis_n6_p0.25": 1,
+    "analysis_n6_p0.75": 2
+  },
+  "selected_anchors": 14592,
+  "full_orbit_cross_split_overlap": 0,
+  "orbit_member_counts": {
+    "train": 98264,
+    "validation": 6144,
+    "analysis": 12284
+  },
+  "length_schedule_counts": {
+    "6": 6666,
+    "7": 6667,
+    "8": 6667
+  },
+  "independent_world_count": 1,
+  "graph_isomorphisms_not_excluded": true,
+  "wall_seconds": 13.22751647500263,
+  "data_bytes": 7569200,
+  "no_gpu_calls": true,
+  "no_training": true
+}

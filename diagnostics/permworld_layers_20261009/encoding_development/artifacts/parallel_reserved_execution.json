@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-10-10T08:31:36.049801+00:00",
+  "status": "completed",
+  "development_only": true,
+  "formal_training_started": false,
+  "fixed_manifest_index": 8,
+  "run_id": "archdev001_gru_one_line_descents",
+  "serial_first_pending_index": 3,
+  "minimum_start_gap": 4,
+  "models_added": 0,
+  "updates": 20000,
+  "source_code_modified": false,
+  "hyperparameters_modified": false,
+  "purpose": "Overlap one remaining fixed job; no score-based scheduling",
+  "finished_utc": "2026-10-10T09:22:38.812685+00:00",
+  "returncode": 0
+}

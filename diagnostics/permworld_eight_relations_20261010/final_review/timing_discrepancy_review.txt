@@ -1,0 +1,18 @@
+Timing discrepancy review (read-only; no science code or model changed)
+
+The calendar/monotonic discrepancy is localized to adjacent resource samples 310 and 311:
+  2026-10-11T02:04:59.338823+00:00 -> 2026-10-11T03:52:36.957526+00:00
+  UTC separation: 6457.618703 seconds.
+  Recorded monotonic separation: 46.145261 seconds.
+  Difference: 6411.473442 seconds, approximately106.9 minutes.
+Observer elapsed values are captured after hashes/GPU-query work, whereas UTC is captured near sample start, so small processing offsets must not be treated as exact clock-step magnitudes. Across samples310->312 the calendar-minus-monotonic change is about6412.624s.
+
+The same queue PID363553 and source25 PID417551, with the same /proc start_ticks, appear on both sides. Source25 user+system CPU increased by 45.48s. This is consistent with the roughly46s monotonic interval and does not supply CPU/GPU measurements over the unsampled calendar span.
+
+queue.py uses time.time() for queue_wall_seconds and preserves elapsed_before across the metadata-wrapper queue restart. train.py uses time.monotonic() for elapsed_seconds. The observer records both UTC and monotonic elapsed, with the processing-boundary caveat above. These costs are different clock domains and should remain separate.
+
+Source25 completed at step20000 with elapsed_seconds=870.486928275. Its completed.json mtime is 2026-10-11T03:59:41.778591+00:00; source24's mtime is 2026-10-11T01:58:15.982610+00:00. Their file-write calendar separation is 7285.795981s. Queue stdout confirms the ordered source24 completed -> source25 starting -> source25 completed -> source26 starting events, but contains no UTC timestamps; queue_state retains only its latest event. Exact per-source start/end UTC cannot be reconstructed from those artifacts.
+
+The evidence rules out interpreting the entire calendar span as870s of instrumented training. It also does not support attributing the missing calendar span solely to observer descheduling while its monotonic clock advanced normally. The underlying cause remains unidentified: civil-clock change and clock behavior during system/VM suspension are possible examples, not diagnoses. No human pause, actual GPU idleness, GPU-active time or energy is inferred. There are no GPU measurements inside the large UTC gap.
+
+Read-only monitoring continued at its fixed45s monotonic cadence. No training process was launched, stopped, signalled or altered for this review. The original CSV and frozen queue/train scripts remain unchanged. JSON retains the exact selected resource rows, receipt byte hashes, queue state, ordered log evidence and clock-domain limits.

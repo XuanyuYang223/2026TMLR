@@ -1,0 +1,17 @@
+{
+  "monotonic": 170803.080079868,
+  "utc": "2026-10-11T21:27:50.446422+00:00",
+  "gpu_wall_limit_seconds": 14400,
+  "cpu_external_wall_limit_seconds": 7200,
+  "new_apparent_size_limit_bytes": 21474836480,
+  "source_head": "e4e9ded9648aa2dc92a1cceef929cc9521546418",
+  "git_status": "?? CURRENT_RESEARCH.txt\n?? archive_index.csv\n?? cleanup_candidates.csv\n?? diagnostics/graphworld_pilot_20261010/\n?? diagnostics/matrixgroupworld_20261011/\n?? diagnostics/permworld_cka_20261009/\n?? diagnostics/permworld_controlled_comparison_20261010/\n?? diagnostics/permworld_eight_relations_20261010/\n?? diagnostics/permworld_encoding_plan_20261009/\n?? diagnostics/permworld_fullset_eval_20261010/\n?? diagnostics/permworld_layers_20261009/\n?? diagnostics/permworld_learnability_20261010/\n?? diagnostics/representation_pairing_review_20261011/\n?? experiments/graphworld_pilot_20261010/\n?? experiments/permworld_eight_relations_20261010/\n?? experiments/permworld_encoding/\n?? experiments/permworld_encoding_archdev_20261009/\n?? experiments/permworld_encoding_preflight.py\n?? experiments/permworld_learnability_20261010/\n?? results/permworld_encoding_plan_20261009/\n?? results/permworld_encoding_preflight_20261009/\n",
+  "tracked_diff": "",
+  "index_diff": "",
+  "user_instruction_sha256": "dcad7264f0406680add1aa0d22a0527117792d691a7c7ecdf34854eeb753564d",
+  "new_dirs": [
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011",
+    "/mnt/yangx-projects-f/20261011/matrixgroupworld"
+  ]
+}

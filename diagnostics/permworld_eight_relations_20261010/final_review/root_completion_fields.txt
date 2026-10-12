@@ -1,0 +1,167 @@
+最终根 completion 字段与写入顺序复核（2026-10-10）
+
+范围：本说明只读核对已冻结 audit.py、update_archive.py、result_readout.py 及科学报告代码。
+本轮仍在执行；本文不是完成凭证，不含未生成的真实结果，不运行大审计、前向、训练或新指标。
+根完成文件：diagnostics/permworld_eight_relations_20261010/completion.json。
+图论自己的 diagnostics/graphworld_pilot_20261010/completion.json 已属于科学阶段和审计输入，不能用综合完成字段覆盖它。
+
+一、唯一允许的终结顺序
+
+1. 等固定48个新PermWorld终点及固定4个GraphWorld终点全部20k；14个科学/只读阶段全部exit0且finish_utc存在。
+   Perm原16个20k只复用，不重复训练。Graph执行条件是Perm报告及独立审计已通过，不按几何成绩筛选。
+   scope_bridge_state.json保留 scientific_scope_completed_report_review_pending；
+   orchestration_state.json保留 all_fixed_scientific_stages_completed。
+   这两个是历史交接状态。update_archive.ready依赖其准确字符串，不应为好看提前改为completed_and_stopped。
+
+2. 执行独立CPU最终审计：
+   .venv/bin/python diagnostics/permworld_eight_relations_20261010/final_review/audit.py --run
+   只有exit0、final_review/final_audit.json.status=passed 且 all_fixed_stages_complete=true，才能继续。
+   GNU time等本次审计资源数据写独立新文件；不追加到phase_timing.json，不能成为第15个科学阶段。
+   incomplete只pending/refused，synthetic_fixture或--freeze不能替代真实--run。
+
+3. 根代理根据已完成真实CSV写独立综合报告/解释附注和CURRENT_RESEARCH.txt。
+   使用新文件路径。不要追加或改写已被审计SHA绑定的两个科学report.html/report.txt、readout CSV、协议或源代码。
+   如发现解释文字问题，使用独立更正附注；科学输入本体不晚改。
+   CURRENT正文、综合报告的最终字节必须在归档更新前写定；它们只供读者阅读，不作为科学来源或训练选择条件。
+
+4. 执行独立逻辑归档：
+   .venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/update_archive.py --run
+   只在14个阶段已结束且最终审计passed时运行，要求exit0和archive_update_audit.json.status=passed。
+   保存archive_index.csv原699条字节前缀、重复行和保护理由，仅追加。
+   cleanup_candidates.csv的13项、旧README/F17/发布物不改，不删除、不移动。
+   生成scope_artifact_manifest.json、current_entry_manifest.csv、archive_update_audit.json。
+   science大文件SHA来自已通过的最终审计；updater只stat科学文件并核对已记录size，不重新扫描大权重或缓存。
+
+5. 只在上述都通过后写根completion.json，状态建议 completed_and_stopped，记录实际finished_utc。
+   根completion反向绑定报告、CURRENT、归档、最终审计及scope manifest的最终SHA；它不绑定自身SHA。
+   update_archive已显式排除根completion及自写scope/archive元数据，避免自引用或假造尚未完成的文件。
+   此后停止，不重跑报告/归档/审计以刷新时间戳，不增训练/种子/任务/指标，不自动发布。
+
+二、完成与覆盖字段：从真实已通过产物抄取，不从库存旧status猜测
+
+建议status、finished_utc、all_fixed_stages_complete、stopped、automatic_followup=false、publication_performed=false。
+status只能在所有真实门槛通过后填写完成。stopped需实际停止后续工作，不由fixture推出。
+
+source_manifest：
+  Perm：completed_checkpoint_manifest.json；status=passed，models=64，reused=16，new=48。
+  Graph：final_review/graph_completed_checkpoint_manifest.json；status=passed，models=4。
+  全部源终点=68，其中本轮正式新增52、复用16。每个真实step20k及身份由审计绑定。
+  原training_manifest/receipt可能仍保留status=missing_authorized，这是库存阶段标签；不得用它认定终点缺失或完成。
+  根completion可引用最终派生manifest，不改原frozen64清单的空最终哈希。
+
+formal_sources：直接保留final_audit.json.formal_sources全部字段。
+  formal_new_models=52；formal_new_updates=1040000；reused_original_models=16；reused_updates_this_round=0。
+  Perm工程成功240、失败预正式40，实际280；Graph工程192。工程与正式104万更新分开，不计入源20k身份。
+  不混入此前16模型开发、8k可学习性、外部CUDA toy或旧F17训练。
+  曝光和监督token若需要总计，从两个实际completed manifest按reused_existing/domain分组求和。
+  不能将16个旧终点的历史曝光称为本轮新增监督量。
+
+cache_coverage：
+  直接保留final_audit.permworld_cache、graphworld_cache，不从文件个数猜逻辑记录数。
+  Perm logical_records=256；original_initial_CE_missing_records=32；new_initial_alias_records=96；saved_manual_comparisons=864。
+  Graph logical_records=16。唯一物理路径与逻辑别名数分列。
+  Perm人工独立复核范围：48新源×initial/trained×test的n10/20/30×三action，
+  每次与相同128条full prompt中的前8条保存数组比较。不是所有validation/所有长度逐样本人工复核。
+  Graph scope来自graphworld_cache.manual_scope，不能套用Perm的saved-array证据或样本数量。
+  原16的initial答案CE确实缺失；保留缺失声明，不填0，不把EOS旧验证记录当新全部评估。
+
+report_coverage：
+  Perm metric_review/final_reader_audit.json：per_length_rows=24192、source_learning_rows=16128。
+  Perm report_audit.json：source_models_displayed、displayed_primary_conditions、plots、coverage_rows等取真实记录。
+  final_review/permworld/readout_status.json：status=completed_readout、source_models=64、relation_instances=8、
+  primary_condition_rows=32、metric_direction_rows=32、all_layer_rows=768、encoding_rows=16、component_coverage_rows=13824。
+  final_review/graphworld/readout_status.json：status=completed_readout、source_models=4、relation_instances=4、
+  primary_relation_rows=4；其它计数直接取实际readout_status。
+  Graph evaluation_complete.json的动态计数：per_n_rows=720、summary_rows=240、source_learning_rows=240、cache_count=16。
+  与Graph completion.json的geometry_length_rows/geometry_summary_rows/source_learning_rows交叉对应，保留原完成文件。
+  所有undefined/NaN、弱任务和负结果完整保留；不存在自动缩短长度或更换权重。
+
+inference_scope：
+  一份Perm数据世界、每架构一份真实保存初始化，两编码真实克隆；新12任务共享该架构已保存descents RNG流。
+  旧4任务保留各自真实原RNG；无原same-task新任务流，不应写“用相同seed重建成功”。
+  Graph一世界、一Transformer、一输入编码、四耦合任务，两类变换，真实复用旧TF初始化/RNG。
+  8+4关系实例、32个配置条件以及种子/层/长度单元不是独立确认重复；不声称功效、等价性或普遍数学机制。
+  架构参数量不匹配，跨系统改变任务/输入/尺寸/分布；不做纯架构或领域因果归因。
+  output_prob明确为合法数字0..30条件概率；答案accuracy基于完整188词表argmax，答案CE为完整词表CE。
+  Perm主指标是linear_cka，knn_overlap/留出Procrustes保持预定角色；debiased_cka为敏感性分析。
+  三主指标的方向读数不可替代全部敏感性表。Bt、B0、dc、dw、Delta和编码交互分开，不用Delta翻转称学习偏好翻转。
+
+三、成本字段和禁止重复加总的部分
+
+权威来源：final_audit.json.timing。完整拷贝该对象最不容易更改口径。
+  recorded_training_process_wall_seconds.old_reused：16旧模型历史累计进程墙钟，非本轮新成本。
+  recorded_training_process_wall_seconds.permworld：48新模型累计源进程墙钟。
+  recorded_training_process_wall_seconds.graphworld：4新模型累计源进程墙钟。
+  含验证/IO；都不是独立测得的GPU-active/kernel小时。历史并行争用会影响旧16计时。
+  permworld_queue_wall_seconds：含失败writer阶段及恢复累计的真实队列墙钟；与48源elapsed重叠，不再次相加。
+  instrumented_phase_timings：14个阶段逐条保留command/start/finish/wall/user/system/maxRSS/exit_code/log。
+  GPU_kernel_seconds和GPU_active_seconds=null，unknown而不是0；GNU time的CPU user/system不等于GPU时间。
+  CPU_audit_pipeline_wall_seconds另列；其外部GNU time同一进程也不能加一次。
+
+不能加总：
+  Graph源elapsed四模型之和 与 graph_train_four.phase.wall（后者包含前者）。
+  Graph工程/evaluate产物记录wall 与同名timed phase wall；Perm extract/reuse的内部wall 与相应外部phase wall。
+  perm_extract的完整index pipeline wall可能已经含旧CPUreuse；reuse另作分项，不默认额外相加。
+  phase wall 与包含它的graph_driver墙钟；Perm等待/root bridge等待与同时运行的队列/阶段。
+  记录source elapsed与queue墙钟；它们是两种观察，不能合成实际端到端时间。
+  源receipt训练wall、GPU kernel时间及CPU user/system是不同量，不能互相代替。
+
+要给“实际端到端wall”，只能用明确保存的整段开始/结束时间跨度，并注明是否含人工/准备/等待。
+没有完整时间跨度就保留分项，不用各phase+queue+driver+receipt胡乱合成。
+Perm失败40-update工程wall是null（无独立计时），不得填0或声称全部前置成本已经精确覆盖。
+内部Perm标签审查CPUwall、成功工程wall、旧reusewall等可列分项，与整个跨度不是相加的第二份实验时长。
+源码中的旧25.04累计进程小时是外推，不是本轮完成后的真实wall或GPU小时，应由实际receipt分项替换。
+
+storage：取final_audit.physical_storage。
+  audited_references是经过SHA核验的唯一resolved-path字节；group totals重叠，不相加。
+  actual_new_F_roots是包括日志/工程权重/元信息的stat字节；与audited_references范围不同且重叠，不相加。
+  new_F_roots_unique_physical_bytes是两新F根路径去重文件size合计，不含整个旧项目存储。
+  这是stat表观文件字节，并非测量磁盘已分配块；不同路径同内容不能默认内容去重/硬链接节省。
+  共享初始化alias不增加物理缓存存储；旧转存/mmap别名必须保留旧依赖身份。
+  该snapshot在最终CPU审计时采样，后写报告/归档元信息并未被它神奇预先计入；不要改写snapshot伪称终止瞬间全盘总量。
+  GPU显存峰值如需报告，从实际新source receipts读peak_cuda_memory_bytes，旧无记录填unknown；
+  Graph旧report用or0聚合的数字不能证明缺记录源的真实峰值为0。
+
+四、最终completion应该反向绑定的SHA
+
+按文件实际最终字节计算。正文用路径+SHA映射，不只抄脚本名或Git commit。
+  科学协议/来源：Perm protocol.json、training_freeze.json、analysis_freeze.json、metadata_writer_freeze.json；
+  Graph protocol.json、freeze_manifest.json、verification_freeze.json；两个protected_files.json。
+  调度/读数：orchestration_freeze.json、scope_bridge_freeze.json、final_review/readout_freeze.json、phase_timing.json；
+  两个readout_status.json（已各自绑定输入CSV和读数源码）。
+  最终审计：audit_freeze.json、final_audit.json/.txt、physical_file_manifest.json；
+  completed_checkpoint_manifest.csv/.json、graph_completed_checkpoint_manifest.json、graph_cache_content_manifest.json。
+  读者报告：两个冻结科学report.html/report.txt、report_audit/reader_audit；根新综合报告/附注和CURRENT_RESEARCH.txt。
+  图：Perm report_audit.figures_sha256中的实际图；Graph answer_control_decomposition.png需最终小文件SHA绑定。
+  最终归档：archive_update_freeze.json、archive_update_audit.json、scope_artifact_manifest.json、current_entry_manifest.csv；
+  工作区archive_index.csv、cleanup_candidates.csv（仍13项、0删除0移动）。
+  如保存最终审计GNU time/resource文件，也绑定该独立文件，不能为此晚改phase_timing.json。
+
+权重、真实step0、RNG、世界、batch、词表和巨cache无需在completion里再逐个重复哈希：
+  通过已通过的final_audit/physical_file_manifest及最终source manifests反向绑定。
+  CSV绑定字段注意：Perm final_reader_audit.input_sha256列直接表哈希，且科学表进入physical_file_manifest；
+  Graph report_reader_audit没有input_sha256。Graph三张CSV用final_review/graphworld/readout_status.json.input_sha256绑定，
+  该readout_status本身由finalaudit ledger核验。综合reader生成前可核对小CSV当前SHA，不能假设Graph reader audit存在同名哈希字段。
+  可复制actual_saved_initializations、saved_RNG_streams、source_versions字段，保留实际容器原stage/protocol及GRU迁移证据。
+  不把旧step0容器的protocol/hash改成新协议；相同真实参数与元数据绑定通过已有审计表达。
+  scope_artifact_manifest.provenance_SHA_verified表示继承最终审计快照，不是归档器新核巨文件的SHA。
+  updater仅对明确闭合的新小日志补充观测SHA，没有可变豁免；科学权重/缓存/日志依旧不能晚改。
+
+只绑定最终根completion以外的文件；它的sha不能存在它自己的内容中。
+若外部最终receipt要记录根completion SHA，可以在独立文件记录，不能又反向把该receipt SHA写回根completion形成循环。
+最终scope manifest也明确排除root completion和自写元数据；不可为“全部目录文件都有SHA”而破坏这条边界。
+
+五、保护与停止字段的准确解释
+
+old_artifact_protection直接复制final_audit字段：各manifest_file_counts及unique_protected_files分列。
+Perm1223与Graph保护文件有重叠，不将1223+996称唯一旧文件总数。
+tracked_git直接复制审计：最终tracked文件/index等于保存HEAD；pre_run_tracked_diff_byte_snapshot_available=false。
+没有原diff字节快照，不能写“从开始到结束工作树diff一直未变”。冻结源码SHA给出未tracked新代码的实际身份。
+no_F17_changes/old_artifacts_modified=false依据受保护SHA与tracked审计表达；未检查文件不能扩大为全磁盘从未变动。
+deleted_files=0、moved_files=0、cleanup_unchanged=true由archive_update_audit支持。
+正式训练上限是新增48+4；没有额外种子、系统、编码/架构网格、轮换/零空间/GELU新组合或发布动作。
+最后根completion是全任务权威停止状态；两阶段原handoff文件保留各自真实历史状态，不晚改它们刷新好看的完成文字。
+
+复核结果：已冻结命令、14phase状态名、audit输出键、update_archive自引用排除和实际report/readout接口相符。
+发现需提醒而非改脚本的限制：旧inventory status可能陈旧；Graph显存or0不是缺失测量值；
+科学报告/phase/Graph completion已在最终audit绑定，综合交付必须用独立文件和根completion。

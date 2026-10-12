@@ -1,0 +1,43 @@
+当前表征研究入口：PermWorld / GraphWorld / MatrixGroupWorld
+日期：2026-10-11（本轮为Git整理与发布，不生成新的科学结果）
+
+研究问题：精确数学对应是否伴随表征配对选择性，以及现象如何依赖编码、模型配置、层、指标、初始化参照和答案控制。
+先读README.md。定义与证据边界：docs/representation_research.md。
+发布/恢复/无训练表重算：docs/representation_reproduction.md；artifacts_manifest.json。
+取舍与本地原件保护：docs/repository_curation/。
+
+PermWorld主分析：八关系、16性质、两编码×Transformer/GRU，64个真实20k终点。
+答案分层、final norm、n10–30逐长度各1/21，Bt正26/32、Delta正18/32。
+完整报告 diagnostics/permworld_eight_relations_20261010/report.html；
+32格和跨域旧reader diagnostics/permworld_eight_relations_20261010/final_review/。
+原初始化/多层/编码和可学习性诊断保留，弱任务、失败、负值、NaN及历史重建身份限制不删除。
+
+GraphWorld：四源、四有向反向/补图关系，n6/7/8各1/3。
+原始四关系Bt/Delta均正；答案控制Bt正2/4、Delta正0/4。
+答案+精确边数敏感性另列，不替换答案控制主读数。
+报告 diagnostics/graphworld_pilot_20261010/report.html。
+
+固定T、改变右侧任务的独立比较：Perm480 / Graph12候选；
+目录 diagnostics/representation_pairing_review_20261011/。
+这不是原正确-错误输入Bt/Delta，不当作480/12独立重复。
+实际错误变换偶然保持答案公式的记录保留，不删满足公式的样本。
+
+MatrixGroupWorld：GL(n,F2), n6/8/10；四单性质，两独立数据+真实初始化单元，8/8真实20k终点。
+R1/R3主要，R2/R4补充；raw Bt正8/8，答案控制Bt/Delta均正5/8。
+R1答案控制普通CKA Delta两单元负；R3为+.048498/+.121332，但F3 n10未充分学习。
+固定T另比较24候选，指定raw首位8/8，答案控制首位4/8、高于其他候选均值5/8。
+报告 diagnostics/matrixgroupworld_20261011/report.html；short report.txt和全部CSV同目录。
+状态 completed_with_verification_caveat、scientific_analysis_complete=false。
+原核验64 passed、2 failed、6 undefined_consistent；两失败在第一单元R1/n6固定64样本的训练后raw输出概率kNN。
+原失败值、1e-8容差、诊断及覆盖范围都保留；不能称全432格均独立核验。
+
+B0=correct0-wrong0；Bt=correctt-wrongt；dc=correctt-correct0；du=wrongt-wrong0；Delta=Bt-B0=dc-du。
+正Delta不保证正Bt，也不保证正确CKA本身提高。
+几何与功能/数学机制不同；当前探索观察不单独识别数学结构机制。
+不同领域、任务、规模、控制和重复结构不合并成跨领域比例效应。
+
+真实大产物在独立表征selectivity release；通过artifacts_manifest的SHA/URL/路径映射下载恢复。
+旧绝对路径只作来源，不当作GitHub已经交付数据。新无训练重算工具只打开clone内固定输入。
+独立F17组合/GELU/零空间论文退出当前Git树，本地原件、旧提交/tag/release保留。
+先前CURRENT_RESEARCH原件保存在仓库外整理备份；冻结报告/协议/结果保持原字节。
+整理/上传/干净克隆SHA或表算术通过不改变科学核验状态。本任务完成后停止，不自动续训。

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": {
+    "hash_index_boundary_cases": true,
+    "delta_sign_flip_without_trained_preference_flip": true,
+    "fixed_token_kernel_independently_verified": true,
+    "fixture_orbit_split_and_batch_identity": true,
+    "real_step0_save_load_clone_and_rng_replay": true,
+    "fixture_actual_optimizer_updates": 0,
+    "fixture_research_models_saved": false
+  },
+  "formal_training_started": false
+}

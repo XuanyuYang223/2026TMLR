@@ -1,0 +1,112 @@
+{
+  "status": "completed_readonly_monitoring",
+  "scientific_geometry_not_evaluated_by_this_review": true,
+  "source_models_verified": 48,
+  "source_updates": 960000,
+  "groups": [
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "source_models": 12,
+      "sum_recorded_source_monotonic_seconds": 7193.845960813967,
+      "endpoint_answer_accuracy_min": 0.84765625,
+      "endpoint_answer_accuracy_max": 0.9996279761904762
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "source_models": 12,
+      "sum_recorded_source_monotonic_seconds": 7225.789581785008,
+      "endpoint_answer_accuracy_min": 0.37890625,
+      "endpoint_answer_accuracy_max": 0.9996279761904762
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "source_models": 12,
+      "sum_recorded_source_monotonic_seconds": 10949.388633283015,
+      "endpoint_answer_accuracy_min": 0.8322172619047619,
+      "endpoint_answer_accuracy_max": 1.0
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "source_models": 12,
+      "sum_recorded_source_monotonic_seconds": 11170.432544913012,
+      "endpoint_answer_accuracy_min": 0.39248511904761907,
+      "endpoint_answer_accuracy_max": 1.0
+    }
+  ],
+  "protocol_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+  "source_endpoint_csv_sha256": "89b775a95411e48d906b1711a5a4b186838e84c706406464d7ad1ed189f61d6a",
+  "resource_csv_sha256": "8f42364a996983d73c5b77736f7be0e0134d438efb19b43e5eab4b8af895f06a",
+  "monitor_source_sha256": "70ed244769ace2d398b227e62236bcaa4886bff1e5b762b74350f5b4f12826ba",
+  "receipt_sum_monotonic_seconds": 36539.456720795,
+  "queue_calendar_wall_seconds": 43101.4677631855,
+  "first_monitor_utc": "2026-10-10T22:13:14.299059+00:00",
+  "last_monitor_utc": "2026-10-11T09:55:37.029060+00:00",
+  "samples": 795,
+  "monitor_monotonic_elapsed_seconds": 35730.366623122,
+  "monitor_calendar_elapsed_seconds": 42142.73000097275,
+  "observed_process_user_delta_seconds": 24198.09,
+  "observed_process_system_delta_seconds": 8684.11,
+  "cpu_total_training_core_hours_available": false,
+  "cpu_scope": "Cumulative process user/system snapshots and observed adjacent-sample deltas only. Not complete CPU core-hours. Time before each process first observation and its final tail after last observation are unobserved; first source and first failed metadata writer predate monitoring.",
+  "source_completion_anomalies": [],
+  "clock_domain_discrepancies": [
+    {
+      "before_sample": 310,
+      "after_sample": 311,
+      "before_utc": "2026-10-11T02:04:59.338823+00:00",
+      "after_utc": "2026-10-11T03:52:36.957526+00:00",
+      "calendar_seconds": 6457.618702888489,
+      "monotonic_seconds": 46.1452612770081,
+      "difference_seconds": 6411.473441611481
+    }
+  ],
+  "clock_cause_identified": false,
+  "gpu_snapshot_all": {
+    "utilization_percent": {
+      "samples": 795,
+      "minimum": 0.0,
+      "median": 31.0,
+      "maximum": 69.0
+    },
+    "memory_used_mib": {
+      "samples": 795,
+      "minimum": 1080.0,
+      "median": 2014.0,
+      "maximum": 4090.0
+    },
+    "power_watts": {
+      "samples": 795,
+      "minimum": 38.7,
+      "median": 62.71,
+      "maximum": 99.63
+    }
+  },
+  "gpu_snapshot_queue_running_only": {
+    "utilization_percent": {
+      "samples": 794,
+      "minimum": 0.0,
+      "median": 31.0,
+      "maximum": 69.0
+    },
+    "memory_used_mib": {
+      "samples": 794,
+      "minimum": 1080.0,
+      "median": 2014.0,
+      "maximum": 4090.0
+    },
+    "power_watts": {
+      "samples": 794,
+      "minimum": 38.7,
+      "median": 62.71,
+      "maximum": 93.16
+    }
+  },
+  "gpu_scope": "Instantaneous device-wide samples only; no GPU-active time or energy estimate. Final completed-state sample may include authorized Perm extraction begun09:55:18UTC, after queue completion09:55:01.986533UTC.",
+  "no_training_or_inference_launched": true,
+  "no_training_process_signalled": true,
+  "observer_and_health_polling_closed": true
+}

@@ -1,0 +1,228 @@
+{
+  "status": "passed",
+  "scope": "20k archdev001 actual initialization only; no model constructor/forward",
+  "old_checkpoint_sha256": "1714244f6ada652c35af4ddca7002681d31f237346296a48d19cc2cc9154a83d",
+  "new_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+  "21_native_to_explicit_state_tensors": [
+    {
+      "old_name": "token_embedding.weight",
+      "new_name": "token_embedding.weight",
+      "shape": [
+        188,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "position_embedding.weight",
+      "new_name": "position_embedding.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.weight_ih_l0",
+      "new_name": "recurrent_layers.0.weight_ih_l0",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.weight_hh_l0",
+      "new_name": "recurrent_layers.0.weight_hh_l0",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.bias_ih_l0",
+      "new_name": "recurrent_layers.0.bias_ih_l0",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.bias_hh_l0",
+      "new_name": "recurrent_layers.0.bias_hh_l0",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.weight_ih_l1",
+      "new_name": "recurrent_layers.1.weight_ih_l0",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.weight_hh_l1",
+      "new_name": "recurrent_layers.1.weight_hh_l0",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.bias_ih_l1",
+      "new_name": "recurrent_layers.1.bias_ih_l0",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.bias_hh_l1",
+      "new_name": "recurrent_layers.1.bias_hh_l0",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.weight_ih_l2",
+      "new_name": "recurrent_layers.2.weight_ih_l0",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.weight_hh_l2",
+      "new_name": "recurrent_layers.2.weight_hh_l0",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.bias_ih_l2",
+      "new_name": "recurrent_layers.2.bias_ih_l0",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.bias_hh_l2",
+      "new_name": "recurrent_layers.2.bias_hh_l0",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.weight_ih_l3",
+      "new_name": "recurrent_layers.3.weight_ih_l0",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.weight_hh_l3",
+      "new_name": "recurrent_layers.3.weight_hh_l0",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.bias_ih_l3",
+      "new_name": "recurrent_layers.3.bias_ih_l0",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "gru.bias_hh_l3",
+      "new_name": "recurrent_layers.3.bias_hh_l0",
+      "shape": [
+        768
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "final_norm.weight",
+      "new_name": "final_norm.weight",
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "final_norm.bias",
+      "new_name": "final_norm.bias",
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    },
+    {
+      "old_name": "lm_head.weight",
+      "new_name": "lm_head.weight",
+      "shape": [
+        188,
+        256
+      ],
+      "dtype": "torch.float32",
+      "bitwise_equal": true
+    }
+  ],
+  "old_internal_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "new_internal_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "external_execution_binding": {
+    "source_version_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+    "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+    "binding_is_external_not_rewritten_historical_provenance": true,
+    "transformer": {
+      "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "container_unchanged": true,
+      "constructor_branch_unchanged": true
+    },
+    "gru": {
+      "current_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "previous_actual_checkpoint_sha256": "1714244f6ada652c35af4ddca7002681d31f237346296a48d19cc2cc9154a83d",
+      "initialization_stage": "value_preserving_key_migration_of_saved_actual_initialization_before_source_training",
+      "original_parameter_values_bitwise_preserved": true
+    }
+  },
+  "no_forward": true,
+  "no_training": true
+}

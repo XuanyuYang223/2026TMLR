@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "added_utc": "2026-10-10T10:10:20.667856+00:00",
+  "added_client_date": "2026-10-10",
+  "client_timezone": "America/Los_Angeles",
+  "post_protocol_descriptive": true,
+  "fixture_only": false,
+  "reason": "Engineering review noted that step-0+10pp gate and roughly30% early accuracy can reflect length-dependent label majority; added to describe content-blind baseline, not modify main metrics or gates.",
+  "fixed_training_majority_rule": "For each task/length use only source train label counts; ties choose smallest label. Apply same frozen predictor to every test action and every model.",
+  "tasks": [
+    "descents",
+    "recoils",
+    "peaks",
+    "valleys"
+  ],
+  "actions": [
+    "identity",
+    "complement",
+    "inverse"
+  ],
+  "label_array_order": [
+    "anti_fixed_points",
+    "components",
+    "deficiencies",
+    "descents",
+    "exceedances",
+    "fixed_points",
+    "global_descents",
+    "lds_length",
+    "left_to_right_maxima",
+    "left_to_right_minima",
+    "lis_length",
+    "longest_decreasing_run",
+    "longest_increasing_run",
+    "peaks",
+    "recoils",
+    "valleys"
+  ],
+  "source_data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "statistic": "Model accuracy minus training-defined length-majority accuracy, fixed1/21 average; no p-values.",
+  "main_metric_or_gate_or_budget_changed": false,
+  "no_selected_samples_or_retraining": true,
+  "counts_rows": 10416,
+  "complete_model_length_rows": 2016,
+  "interpretation": "Above this baseline shows more than this particular length-only predictor; below does not prove absence of permutation-content use."
+}

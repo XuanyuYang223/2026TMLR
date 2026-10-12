@@ -1,0 +1,55 @@
+{
+  "revision": "complete-prior-development-orbit-exclusion/v3",
+  "changed_sources": [
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/training.py",
+      "old_sha256": "ef187e5eed3d63d43d6171140522a41802b693d287e82c7febe1fc332a56d623",
+      "new_sha256": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8"
+    }
+  ],
+  "old_freeze_sha256": "eb1d5b80599a96407424f72c513fe2d223f2245d4c898da9a5b77b0074323f25",
+  "new_freeze_sha256": "542aca01747e32cd6f4eb69f3470a9cd36fc9fcce80daa3479281089f7626008",
+  "protocol_sha256_unchanged": true,
+  "reason": "Generic old archive reader silently skipped prefixed development NPZ arrays; explicitly parse all three splits and append complete input orbits.",
+  "snapshots": [
+    {
+      "old_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/historical_input_hashes.npy",
+      "snapshot_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/historical_input_hashes_before_development_exclusion_fix.npy"
+    },
+    {
+      "old_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/historical_input_hashes.json",
+      "snapshot_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/historical_input_hashes_before_development_exclusion_fix.json"
+    },
+    {
+      "old_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001",
+      "snapshot_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001_before_development_exclusion_fix"
+    },
+    {
+      "old_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/data_ready.json",
+      "snapshot_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/data_ready_before_development_exclusion_fix.json"
+    },
+    {
+      "old_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/cpu_check.json",
+      "snapshot_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/cpu_check_before_development_exclusion_fix.json"
+    },
+    {
+      "old_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/repair_cpu_evaluation_check.json",
+      "snapshot_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/repair_cpu_evaluation_check_before_development_exclusion_fix.json"
+    }
+  ],
+  "expected_prior_anchors": 102144,
+  "expected_prior_orbit_members": 817152,
+  "source_training_started": false,
+  "GPU_training_started": false,
+  "data_seed_unchanged": 95200001,
+  "initializations_unchanged": [
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "sha256": "1714244f6ada652c35af4ddca7002681d31f237346296a48d19cc2cc9154a83d"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+    }
+  ]
+}

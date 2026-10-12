@@ -1,0 +1,14 @@
+{
+  "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+  "parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+  "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "architecture": "gru",
+  "actual_initial_identity_verified": true,
+  "parameters": 1660416,
+  "initialization_stage": "value_preserving_key_migration_of_saved_actual_initialization_before_source_training_for_explicit_interlayer_dropout",
+  "original_initial_checkpoint_sha256": "1714244f6ada652c35af4ddca7002681d31f237346296a48d19cc2cc9154a83d",
+  "original_initial_parameter_sha256": "5a766f8777a47de8332fbd958b6292e5fc38899a30b883870ba329f7605ad18c",
+  "canonical_parameter_sha256": "5a766f8777a47de8332fbd958b6292e5fc38899a30b883870ba329f7605ad18c",
+  "constructor_seed_coordinates_match_verified": true,
+  "initialization_migrated_without_optimization": true
+}

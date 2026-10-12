@@ -1,0 +1,24 @@
+{
+  "source_sha256": {
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/core.py": "a3fd4e1cdeecf76c954f0f8ee47e59b760d14c619bfb49028bcc2858fdae2ee3",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/data.py": "2825c6402f00f0a8fd33e5a383a178d46877f4ac814daa1393d5c13de619ec35",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/math_checks.py": "0bf0177a69d47f39bb6f3e444e505b1bebf42b272fd737f23678eeed4aca6fdb",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/common.py": "68e856bb48d57ea86d5ceb3af8004415f3a43f65445979f64e8df8746b57b385",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/budget.py": "754d15ca3f830e0b8c881ca0e85c3764e9760f84e24ee7cbe51502b70f108b2f",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/model_runtime.py": "0fbbf70c6b6691beec0f21127789198808cacdf965ec16ebd5eb3273c8832567",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/training.py": "9921d09e3195a4dd4ab4fd87a6c11b0cca46b6f52699647ecd1b9590f0505d9a",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/engineering.py": "f9bec77281fa87a5c12210c0ad20dd5bb3e61310df1222ea1b7ca7f9632d71d7",
+    "/home/yangx/ICML/experiments/permworld_encoding/core.py": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+    "/home/yangx/ICML/experiments/longrun_attention.py": "5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918",
+    "/home/yangx/ICML/external/neurips/src/neurips_permutations/models.py": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6",
+    "/home/yangx/ICML/external/neurips/src/neurips_permutations/passage.py": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/run_engineering.py": "c7306e0ba915e47cd2901077d44be7bdf842d75229ff0a5c3c35d8b5272a0763"
+  },
+  "binding": {
+    "protocol_sha256": "349a1b1544d3f121a898c59166167b315031cd2401f3bf78f2fba6515a08fe67",
+    "source_version_sha256": "b46ae8a0171bfe4077482ac2a698fc2a3c8e38ee3a6f463163e24ab30aecd535",
+    "data_sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+    "batch_schedule_sha256": "70c2fc314663378046cff2bf15fab3aae9f25a0b0289cf257016b10df1fbef37"
+  },
+  "data_ready_sha256": "d140f380024bfc84d950dfb2fcdc4ed659e72f2b6c9f524b45936ca654b9ba86"
+}

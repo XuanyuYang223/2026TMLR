@@ -1,0 +1,294 @@
+{
+  "phases": [
+    {
+      "phase": "perm_extract",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.permworld_eight_relations_20261010.extract",
+        "--stage",
+        "extract"
+      ],
+      "start_utc": "2026-10-11T09:55:18.011219+00:00",
+      "finish_utc": "2026-10-11T10:10:58.238665+00:00",
+      "wall_seconds": 940.2259013459843,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_extract.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_extract.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 271.86,
+      "system_cpu_seconds": 118.24,
+      "max_rss_kib": 1632428,
+      "exit_code": 0
+    },
+    {
+      "phase": "perm_extraction_validation",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.permworld_eight_relations_20261010.extract",
+        "--stage",
+        "validate"
+      ],
+      "start_utc": "2026-10-11T10:10:58.241589+00:00",
+      "finish_utc": "2026-10-11T10:13:28.745655+00:00",
+      "wall_seconds": 150.50198060501134,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_extraction_validation.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_extraction_validation.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 14.82,
+      "system_cpu_seconds": 14.49,
+      "max_rss_kib": 693016,
+      "exit_code": 0
+    },
+    {
+      "phase": "perm_geometry",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.permworld_eight_relations_20261010.analysis",
+        "--run"
+      ],
+      "start_utc": "2026-10-11T10:13:28.748613+00:00",
+      "finish_utc": "2026-10-11T10:29:07.640242+00:00",
+      "wall_seconds": 938.8897905480117,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_geometry.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_geometry.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 1410.8,
+      "system_cpu_seconds": 26.19,
+      "max_rss_kib": 20958616,
+      "exit_code": 0
+    },
+    {
+      "phase": "perm_report",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.permworld_eight_relations_20261010.report"
+      ],
+      "start_utc": "2026-10-11T10:29:07.642731+00:00",
+      "finish_utc": "2026-10-11T10:29:22.249547+00:00",
+      "wall_seconds": 14.604921933001606,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_report.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_report.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 14.15,
+      "system_cpu_seconds": 0.44,
+      "max_rss_kib": 464352,
+      "exit_code": 0
+    },
+    {
+      "phase": "perm_reader_audit",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.py"
+      ],
+      "start_utc": "2026-10-11T10:29:22.253441+00:00",
+      "finish_utc": "2026-10-11T10:29:23.827279+00:00",
+      "wall_seconds": 1.5713948810007423,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_reader_audit.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_reader_audit.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 1.35,
+      "system_cpu_seconds": 0.15,
+      "max_rss_kib": 337356,
+      "exit_code": 0
+    },
+    {
+      "phase": "perm_result_readout",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "diagnostics/permworld_eight_relations_20261010/final_review/result_readout.py",
+        "--stage",
+        "permworld"
+      ],
+      "start_utc": "2026-10-11T10:29:35.632010+00:00",
+      "finish_utc": "2026-10-11T10:29:36.854654+00:00",
+      "wall_seconds": 1.22131189898937,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_result_readout.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/perm_result_readout.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 0.73,
+      "system_cpu_seconds": 0.1,
+      "max_rss_kib": 234744,
+      "exit_code": 0
+    },
+    {
+      "phase": "graph_verify",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "verify"
+      ],
+      "start_utc": "2026-10-11T10:29:36.896872+00:00",
+      "finish_utc": "2026-10-11T10:29:38.121513+00:00",
+      "wall_seconds": 1.2230787760054227,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_verify.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_verify.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 3.16,
+      "system_cpu_seconds": 0.16,
+      "max_rss_kib": 668480,
+      "exit_code": 0
+    },
+    {
+      "phase": "graph_engineering",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "engineering"
+      ],
+      "start_utc": "2026-10-11T10:29:38.123938+00:00",
+      "finish_utc": "2026-10-11T10:30:02.602230+00:00",
+      "wall_seconds": 24.476333272992633,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_engineering.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_engineering.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 21.61,
+      "system_cpu_seconds": 4.86,
+      "max_rss_kib": 1947284,
+      "exit_code": 0
+    },
+    {
+      "phase": "graph_train_four",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "train-all"
+      ],
+      "start_utc": "2026-10-11T10:30:02.604693+00:00",
+      "finish_utc": "2026-10-11T11:12:49.540801+00:00",
+      "wall_seconds": 2566.9347220780037,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_train_four.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_train_four.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 1901.61,
+      "system_cpu_seconds": 609.71,
+      "max_rss_kib": 1906864,
+      "exit_code": 0
+    },
+    {
+      "phase": "graph_evaluate",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "evaluate"
+      ],
+      "start_utc": "2026-10-11T11:16:28.447676+00:00",
+      "finish_utc": "2026-10-11T11:17:34.822205+00:00",
+      "wall_seconds": 66.37282357100048,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_evaluate.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_evaluate.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 40.54,
+      "system_cpu_seconds": 1.46,
+      "max_rss_kib": 787344,
+      "exit_code": 0
+    },
+    {
+      "phase": "graph_independent_metrics",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010.validate",
+        "--stage",
+        "actual"
+      ],
+      "start_utc": "2026-10-11T11:17:34.826232+00:00",
+      "finish_utc": "2026-10-11T11:17:41.211062+00:00",
+      "wall_seconds": 6.382574835995911,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_independent_metrics.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_independent_metrics.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 10.29,
+      "system_cpu_seconds": 0.4,
+      "max_rss_kib": 682040,
+      "exit_code": 0
+    },
+    {
+      "phase": "graph_report",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010",
+        "--stage",
+        "report"
+      ],
+      "start_utc": "2026-10-11T11:17:41.213366+00:00",
+      "finish_utc": "2026-10-11T11:17:53.959462+00:00",
+      "wall_seconds": 12.744769759010524,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_report.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_report.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 4.45,
+      "system_cpu_seconds": 1.12,
+      "max_rss_kib": 717500,
+      "exit_code": 0
+    },
+    {
+      "phase": "graph_reader_audit",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "-m",
+        "experiments.graphworld_pilot_20261010.validate",
+        "--stage",
+        "audit-report"
+      ],
+      "start_utc": "2026-10-11T11:17:53.961284+00:00",
+      "finish_utc": "2026-10-11T11:18:05.809355+00:00",
+      "wall_seconds": 11.84625549800694,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_reader_audit.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_reader_audit.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 4.15,
+      "system_cpu_seconds": 0.88,
+      "max_rss_kib": 668972,
+      "exit_code": 0
+    },
+    {
+      "phase": "graph_result_readout",
+      "command": [
+        "/home/yangx/ICML/.venv/bin/python",
+        "-B",
+        "diagnostics/permworld_eight_relations_20261010/final_review/result_readout.py",
+        "--stage",
+        "graphworld"
+      ],
+      "start_utc": "2026-10-11T11:18:05.810350+00:00",
+      "finish_utc": "2026-10-11T11:18:05.877781+00:00",
+      "wall_seconds": 0.0663798869936727,
+      "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_result_readout.log",
+      "resource_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_result_readout.resources.json",
+      "timing_scope": "nonoverlapping orchestrated process phase",
+      "user_cpu_seconds": 0.03,
+      "system_cpu_seconds": 0.01,
+      "max_rss_kib": 23836,
+      "exit_code": 0
+    }
+  ],
+  "CPU_scope": "GNU time process user/system including children; host CPU, not device kernels",
+  "GPU_kernel_seconds": null,
+  "GPU_kernel_seconds_reason": "No CUDA kernel-time instrumentation",
+  "phase_wall_times_must_not_be_added_to_overlapping_queue_wait": true
+}

@@ -1,0 +1,16 @@
+{
+  "source_version_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+  "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "binding_is_external_not_rewritten_historical_provenance": true,
+  "transformer": {
+    "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+    "container_unchanged": true,
+    "constructor_branch_unchanged": true
+  },
+  "gru": {
+    "current_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+    "previous_actual_checkpoint_sha256": "1714244f6ada652c35af4ddca7002681d31f237346296a48d19cc2cc9154a83d",
+    "initialization_stage": "value_preserving_key_migration_of_saved_actual_initialization_before_source_training",
+    "original_parameter_values_bitwise_preserved": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "chosen_before_final_geometry": true,
+  "OPENBLAS_NUM_THREADS": 2,
+  "OMP_NUM_THREADS": 2,
+  "MKL_NUM_THREADS": 2,
+  "reason": "Bound CPU resource use for fixed metric implementation; no mathematical metric, support, tolerance or endpoint changes.",
+  "utc": "2026-10-11T23:16:04.150528+00:00"
+}

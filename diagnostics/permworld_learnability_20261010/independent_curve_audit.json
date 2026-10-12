@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "generated_utc": "2026-10-10T17:01:32.164839+00:00",
+  "auditor_sha256": "f120b9786626caa7098090d1fb99d9827c2147b53557c1e2141a10f46a2e4dd3",
+  "original_endpoint_auditor_sha256": "78504cf10ad1e3c6bcf42cb24e04e40df6f7fc4fd4914f32e1da0abfcca6e372",
+  "protocol_sha256": "1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69",
+  "source_version_sha256": "ef34bae9d23f2f1cd81233d8b677d41710404a8d913a1e432127925f67ba0ef5",
+  "models": 16,
+  "saved_steps": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000,
+    7000,
+    8000
+  ],
+  "saved_curve_rows": 128,
+  "saved_length_rows": 384,
+  "CSV_comparisons": {
+    "validation_curves": {
+      "rows": 128,
+      "fields_compared": 1536,
+      "sha256": "da0f05200c539e525f7e64233fa96f426d41ffc5a0b61df995b69fced5b3682d"
+    },
+    "validation_length": {
+      "rows": 384,
+      "fields_compared": 6912,
+      "sha256": "15d99f827c6743ef7882eec8ecdf4779d31cac53f0b97761822924dbbdc212d8"
+    }
+  },
+  "input_sha256": {
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_descents/stage_8000.json": "8fe7bd78b4d2f020ad10ff66c0749107fdd213c2c895b323cdf9b3b60823cbe7",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_descents/stage_8000.json": "c0d2787cc763a469266dd6ebad8073b371dec137a164ae02e1874fe1e7e9b103",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_recoils/stage_8000.json": "04a47c4dc6a9a589e16d9cdf3274c959f4864472ad72ed617904064f037f2185",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_recoils/stage_8000.json": "2165cb1878cd47e5e8d270c82ff8cde3b3f7fef352ad862172d4bb3a6474a548",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_peaks/stage_8000.json": "3c0d4081c8a2ec7658074d777cef925b1e80edb31e66018403832312e38ac379",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_peaks/stage_8000.json": "44340b5e78ccf3b55d5c5371a65e69053941333c4d92e904fe6225b3b263d82e",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_one_line_valleys/stage_8000.json": "0395a9cb5230034b804775a6c79255c7d75b502e076d1a4fc3d7d30a19baa192",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_transformer_canonical_cycle_valleys/stage_8000.json": "b20ed4e65b77ca78f1055c46485b22b4b90df95f155477d8a4c83bfea0b9bc0c",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_descents/stage_8000.json": "55b03dfc64bc78b9505fc89c3c9b791536db0cd2b07a564f8245854d7b4321a2",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_descents/stage_8000.json": "6d18ec7d6121bb418381a0a2923f118de4be34e15c078122bf7d23543fdbd275",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_recoils/stage_8000.json": "1bc2f48801cd7beebe0632fe8cc690082cf8b51ed264e288426c62578456fd46",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_recoils/stage_8000.json": "7504e3370ac2cbed0eefe1f99c5c30931666b21299e86a0cc8891748a177451d",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_peaks/stage_8000.json": "0baa595dfeb3872d1a51358736cc28fa76d098accc25357fbd3981c9157f1a80",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_peaks/stage_8000.json": "c20f33d36565f1d3f43718a630f516f3a5f672ce4eada65249a4e98eeaecf34f",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_one_line_valleys/stage_8000.json": "1a2ec04c78178b3ddcacb78c9a2aaacf8422694edf26bbcdd4077cd3b4a0950e",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/models/learningdev001_gru_canonical_cycle_valleys/stage_8000.json": "376edd45af17a03f227dd96a79abcded17df6f88055040b2a2960e81e3698dee",
+    "/mnt/yangx-projects-f/20261010/permworld_learnability/worlds/learningdev001/data.npz": "fdcfe9fa7d0089af4ec6f7b90108237ab6e1f57f2b80fb1140e051410938b8af",
+    "/home/yangx/ICML/diagnostics/permworld_learnability_20261010/validation_curves.csv": "da0f05200c539e525f7e64233fa96f426d41ffc5a0b61df995b69fced5b3682d",
+    "/home/yangx/ICML/diagnostics/permworld_learnability_20261010/validation_length.csv": "15d99f827c6743ef7882eec8ecdf4779d31cac53f0b97761822924dbbdc212d8"
+  },
+  "scope": {
+    "decoded_npz_arrays": [
+      "train_lengths",
+      "train_labels",
+      "validation_lengths",
+      "validation_labels"
+    ],
+    "test_arrays_decoded": false,
+    "checkpoint_tensors_loaded": false,
+    "GPU_used": false,
+    "training_started": false,
+    "representation_metrics_read": false,
+    "best_checkpoint_selection": false,
+    "earlier_points_do_not_replace_fixed8k_endpoint": true,
+    "accuracies_derived_from_saved_validation_records_not_new_predictions": true,
+    "supplementary_rule_is_table_arithmetic_not_new_hypothesis": true
+  }
+}

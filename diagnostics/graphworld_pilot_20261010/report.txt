@@ -1,0 +1,58 @@
+GraphWorld four-task pilot: fixed-budget exploratory results.
+
+Question: does hidden-state similarity change with the exact graph correspondence, relative to the wrong pairing and the actual initialization?
+Four source models use the original256-wide four-layer eight-head Transformer,188 tokens, cloned true step0 and the archived descents start RNG; only graph data/task semantics differ.
+The four relations share four tasks and two transformations. One graph world and one initialization do not establish universal effects or independent replications.
+Primary state is final_norm at the graph-end token before the task token. Similarity is higher-is-more-similar; Procrustes uses negative held-out normalized error.
+All3 n values have fixed1/3 weight. Missing strata/rank/variance leave the aggregate undefined. No model, relation, n or metric is selected by its outcome.
+
+Primary CKA by relation/control: original similarities are preserved in the CSV; decompositions follow.
+reverse_max | raw_within_n | initial_correct=0.9784898318546883 | initial_wrong=0.9725979888601555 | initial_identity=1.0000000000000002 | trained_correct=0.7407059052946042 | trained_wrong=0.3472430775712008 | trained_identity=0.3174169948701233 | B0=0.005891842994532863 | Bt=0.3934628277234034 | dc=-0.23778392656008407 | dw=-0.6253549112889546 | di=-0.682583005129877 | Delta=0.3875709847288706
+reverse_max | answer_strata | initial_correct=0.6170599312681556 | initial_wrong=0.5727744411106749 | initial_identity=1.0000000000000002 | trained_correct=0.07016833975587654 | trained_wrong=0.06103978085569336 | trained_identity=0.03853245268141292 | B0=0.04428549015748077 | Bt=0.009128558900183173 | dc=-0.5468915915122791 | dw=-0.5117346602549815 | di=-0.9614675473185872 | Delta=-0.035156931257297595
+reverse_max | answer_density_strata | initial_correct=0.018418678377138554 | initial_wrong=0.07877031957335816 | initial_identity=1.0 | trained_correct=0.05566139976672008 | trained_wrong=0.03681391507251542 | trained_identity=0.030529974584556824 | B0=-0.06035164119621961 | Bt=0.01884748469420466 | dc=0.037242721389581526 | dw=-0.04195640450084274 | di=-0.9694700254154432 | Delta=0.07919912589042427
+reverse_min | raw_within_n | initial_correct=0.9784898318546883 | initial_wrong=0.9725979888601555 | initial_identity=1.0000000000000002 | trained_correct=0.5748782582321191 | trained_wrong=0.33752869286076703 | trained_identity=0.31281527439355533 | B0=0.005891842994532863 | Bt=0.23734956537135207 | dc=-0.4036115736225692 | dw=-0.6350692959993884 | di=-0.6871847256064448 | Delta=0.2314577223768192
+reverse_min | answer_strata | initial_correct=0.6467186297939959 | initial_wrong=0.6140669948724303 | initial_identity=0.9999999999999999 | trained_correct=0.02332931839551301 | trained_wrong=0.034598954660244666 | trained_identity=0.03149006813356089 | B0=0.03265163492156561 | Bt=-0.011269636264731653 | dc=-0.6233893113984829 | dw=-0.5794680402121856 | di=-0.9685099318664391 | Delta=-0.04392127118629726
+reverse_min | answer_density_strata | initial_correct=0.008621764124597671 | initial_wrong=0.1249237709047953 | initial_identity=1.0000000000000002 | trained_correct=0.023700582226025228 | trained_wrong=0.02783498050671987 | trained_identity=0.05143752455639872 | B0=-0.11630200678019764 | Bt=-0.004134398280694641 | dc=0.01507881810142756 | dw=-0.09708879039807543 | di=-0.9485624754436016 | Delta=0.11216760849950298
+complement_out | raw_within_n | initial_correct=0.9988522652470194 | initial_wrong=0.9880496212637349 | initial_identity=1.0000000000000002 | trained_correct=0.7248193997584892 | trained_wrong=0.29269905712401934 | trained_identity=0.22306860458822023 | B0=0.010802643983284602 | Bt=0.4321203426344699 | dc=-0.2740328654885303 | dw=-0.6953505641397156 | di=-0.77693139541178 | Delta=0.4213176986511853
+complement_out | answer_strata | initial_correct=0.9955290949201951 | initial_wrong=0.711148821594476 | initial_identity=1.0000000000000002 | trained_correct=0.2243478542692722 | trained_wrong=0.03434887131061561 | trained_identity=0.14823446925790634 | B0=0.28438027332571925 | Bt=0.1899989829586566 | dc=-0.771181240650923 | dw=-0.6767999502838603 | di=-0.851765530742094 | Delta=-0.09438129036706262
+complement_out | answer_density_strata | initial_correct=0.9983292839793277 | initial_wrong=0.27190720698526827 | initial_identity=1.0 | trained_correct=0.23678928460310644 | trained_wrong=0.03401627697926235 | trained_identity=0.16464434876862344 | B0=0.7264220769940595 | Bt=0.20277300762384412 | dc=-0.7615399993762213 | dw=-0.23789093000600592 | di=-0.8353556512313766 | Delta=-0.5236490693702155
+complement_in | raw_within_n | initial_correct=0.9988522652470194 | initial_wrong=0.9880496212637349 | initial_identity=1.0000000000000002 | trained_correct=0.5510607806788818 | trained_wrong=0.41722861180676457 | trained_identity=0.3544263876956246 | B0=0.010802643983284602 | Bt=0.13383216887211713 | dc=-0.44779148456813783 | dw=-0.5708210094569702 | di=-0.6455736123043757 | Delta=0.12302952488883252
+complement_in | answer_strata | initial_correct=0.9953046524128508 | initial_wrong=0.686328720914687 | initial_identity=1.0000000000000002 | trained_correct=0.03441852645283058 | trained_wrong=0.03627196275979493 | trained_identity=0.02679999871261239 | B0=0.3089759314981638 | Bt=-0.0018534363069643456 | dc=-0.9608861259600201 | dw=-0.6500567581548921 | di=-0.9732000012873877 | Delta=-0.3108293678051282
+complement_in | answer_density_strata | initial_correct=0.9979519163180846 | initial_wrong=0.25648378998260074 | initial_identity=1.0000000000000002 | trained_correct=0.03559517806773734 | trained_wrong=0.04174586437453675 | trained_identity=0.035229656816296424 | B0=0.7414681263354838 | Bt=-0.006150686306799412 | dc=-0.9623567382503472 | dw=-0.214737925608064 | di=-0.9647703431837039 | Delta=-0.7476188126422832
+
+Source task learning (trained,identity); full-vocabulary answer accuracy, answer CE and fixed training-mode baseline:
+task=max_out | split=validation | n=6 | answer_accuracy=1.0 | answer_ce=2.959531083490674e-05 | mode_accuracy=0.34765625 | density_mean=0.5192708333333333
+task=max_out | split=validation | n=7 | answer_accuracy=1.0 | answer_ce=6.717571940040301e-06 | mode_accuracy=0.265625 | density_mean=0.49060639880952384
+task=max_out | split=validation | n=8 | answer_accuracy=1.0 | answer_ce=2.283638369515728e-05 | mode_accuracy=0.234375 | density_mean=0.4906529017857143
+task=max_out | split=analysis | n=6 | answer_accuracy=1.0 | answer_ce=1.387686350873274e-05 | mode_accuracy=0.32421875 | density_mean=0.4899088541666667
+task=max_out | split=analysis | n=7 | answer_accuracy=1.0 | answer_ce=1.0265950817434089e-05 | mode_accuracy=0.287109375 | density_mean=0.5067894345238095
+task=max_out | split=analysis | n=8 | answer_accuracy=1.0 | answer_ce=1.688099179242286e-05 | mode_accuracy=0.236328125 | density_mean=0.49466378348214285
+task=min_out | split=validation | n=6 | answer_accuracy=1.0 | answer_ce=3.441326806097322e-05 | mode_accuracy=0.296875 | density_mean=0.5192708333333333
+task=min_out | split=validation | n=7 | answer_accuracy=1.0 | answer_ce=3.474957648563759e-05 | mode_accuracy=0.27734375 | density_mean=0.49060639880952384
+task=min_out | split=validation | n=8 | answer_accuracy=1.0 | answer_ce=5.893813706947526e-05 | mode_accuracy=0.26953125 | density_mean=0.4906529017857143
+task=min_out | split=analysis | n=6 | answer_accuracy=1.0 | answer_ce=3.4069623950472305e-05 | mode_accuracy=0.357421875 | density_mean=0.4899088541666667
+task=min_out | split=analysis | n=7 | answer_accuracy=1.0 | answer_ce=4.355590139404342e-05 | mode_accuracy=0.265625 | density_mean=0.5067894345238095
+task=min_out | split=analysis | n=8 | answer_accuracy=1.0 | answer_ce=5.83130785472008e-05 | mode_accuracy=0.271484375 | density_mean=0.49466378348214285
+task=max_in | split=validation | n=6 | answer_accuracy=1.0 | answer_ce=9.561579154393485e-05 | mode_accuracy=0.35546875 | density_mean=0.5192708333333333
+task=max_in | split=validation | n=7 | answer_accuracy=1.0 | answer_ce=0.00017695567292008718 | mode_accuracy=0.26171875 | density_mean=0.49060639880952384
+task=max_in | split=validation | n=8 | answer_accuracy=1.0 | answer_ce=0.0009863136711416587 | mode_accuracy=0.2265625 | density_mean=0.4906529017857143
+task=max_in | split=analysis | n=6 | answer_accuracy=1.0 | answer_ce=0.0001287707208401656 | mode_accuracy=0.3203125 | density_mean=0.4899088541666667
+task=max_in | split=analysis | n=7 | answer_accuracy=1.0 | answer_ce=0.00011564552786680338 | mode_accuracy=0.29296875 | density_mean=0.5067894345238095
+task=max_in | split=analysis | n=8 | answer_accuracy=1.0 | answer_ce=0.0007653977127830558 | mode_accuracy=0.22265625 | density_mean=0.49466378348214285
+task=min_in | split=validation | n=6 | answer_accuracy=1.0 | answer_ce=0.004848970472721703 | mode_accuracy=0.30859375 | density_mean=0.5192708333333333
+task=min_in | split=validation | n=7 | answer_accuracy=0.98828125 | answer_ce=0.04905034573755529 | mode_accuracy=0.26953125 | density_mean=0.49060639880952384
+task=min_in | split=validation | n=8 | answer_accuracy=0.8515625 | answer_ce=0.3880455622655461 | mode_accuracy=0.25 | density_mean=0.4906529017857143
+task=min_in | split=analysis | n=6 | answer_accuracy=0.998046875 | answer_ce=0.007208340205409058 | mode_accuracy=0.359375 | density_mean=0.4899088541666667
+task=min_in | split=analysis | n=7 | answer_accuracy=0.966796875 | answer_ce=0.0819747129470656 | mode_accuracy=0.287109375 | density_mean=0.5067894345238095
+task=min_in | split=analysis | n=8 | answer_accuracy=0.888671875 | answer_ce=0.2903428317848693 | mode_accuracy=0.263671875 | density_mean=0.49466378348214285
+
+Interpretation limits:
+Positive Delta can result from declining wrong-pair similarity; it does not require increasing correct-pair similarity. Bt and B0 must be read separately.
+Output probabilities remain a parallel reference; subtracting their Delta from hidden Delta is not a mechanism estimate.
+The positional binary onehot input kernel is invariant under the fixed slot/category isometries. It cannot distinguish correct from wrong in this pilot; its high similarity is an input reference.
+Density control adds exact anchor edge count to the same answer-stratum key. Too few samples remain undefined; the threshold3 is never loosened.
+Full<R,C,W> orbit exclusion prevents the specified transformations leaking across splits; arbitrary vertex-isomorphic graphs may still cross splits.
+Weak source-task performance remains in the report and does not trigger retraining or make an equal-learning mechanism comparison possible.
+This cross-system comparison also changes size, encoding, task and distribution. No domain-only causal effect is identified.
+EOS was measured during source validation under teacher-conditioned answer input, not during prompt-only geometry extraction.
+Completed fixed manifest; STOP. No further models, seeds, architectures, encodings or tuning are launched.

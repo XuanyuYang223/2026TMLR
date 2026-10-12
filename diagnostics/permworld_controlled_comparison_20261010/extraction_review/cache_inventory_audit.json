@@ -1,0 +1,3634 @@
+{
+  "status": "passed",
+  "source_root": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev",
+  "source_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+  "source_version_sha256": "d8fc9e153e45c15f2ad82997fdf34bf4988c92f0fa6a78afdc70aa454d8bdc3a",
+  "checkpoint_records": [
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "unit": "archdev001",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "model_seed": 95100001,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/checkpoint.pt",
+      "checkpoint_sha256": "653660f52c68c32a8fdea425adb6de49a80afb81029993792e9f14f75404e69f",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/completed.json",
+      "completed_sha256": "7514fe76f6698405166f728f8129c0c5b3e71ebb92f27866fbd741fe5b440003"
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "unit": "archdev001",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "model_seed": 95100001,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/checkpoint.pt",
+      "checkpoint_sha256": "24875ab316604f1440d89c3149edcf7dc4d1c6fd73c3e3cb2faff133f4a1bdec",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/completed.json",
+      "completed_sha256": "97118cf492031d9f45a3335ab34e7d314b94764d7e4ad048fd93408d1192a5f1"
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "unit": "archdev001",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "model_seed": 95100001,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/checkpoint.pt",
+      "checkpoint_sha256": "0de9e43eb3fe0466b245e7a876309c49ccbc3a9d62ed804edc2fb6850103696f",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/completed.json",
+      "completed_sha256": "7e6d7a45a6c76f996e988ef2afb0e8973064ac9ef5a5a3884c065993fc56fe31"
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "unit": "archdev001",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "model_seed": 95100001,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/checkpoint.pt",
+      "checkpoint_sha256": "4c4b0065c34602f88c44b6d2e47ec087d478250f66d26e9c1f3d460b15298899",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/completed.json",
+      "completed_sha256": "cc831c15cd886878a3ffd6769102609a320c5eda6141278bbf39e73a836007a4"
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "unit": "archdev001",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "model_seed": 95100001,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/checkpoint.pt",
+      "checkpoint_sha256": "25880add881eddd0dd6c9c9fc0e73ee0bcf92624fde798a350584e7dea16b636",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/completed.json",
+      "completed_sha256": "b65753be96eee40e64b1b3ba1d332006b04336892d5bb473d9c785149272bf45"
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "unit": "archdev001",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "model_seed": 95100001,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/checkpoint.pt",
+      "checkpoint_sha256": "893c87301ee8fbaa2cf9f80971ee68f53f489fe4ffc543aace3d1e0ba94463e9",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/completed.json",
+      "completed_sha256": "4f8cc344e56caf9f920156a9aa99671746cfc2df5576da8ee64fafca22e63c1b"
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "unit": "archdev001",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "model_seed": 95100001,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/checkpoint.pt",
+      "checkpoint_sha256": "d3c5c532e40eb8417bd3364b1d4a56be1f00f86dacd9f7b251d19e3101dd577f",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/completed.json",
+      "completed_sha256": "d8cbb2119f330add099aa7e478a3d4b2b4d1b15a7ec8c1a805a7b97d6673bba4"
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "unit": "archdev001",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "model_seed": 95100001,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/checkpoint.pt",
+      "checkpoint_sha256": "d82e07bdab9fcf0b8da090b895d179964685ad7d32e6f4570402564616c90ac9",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "initial_checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "initial_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/completed.json",
+      "completed_sha256": "ee5efffc483160412a1508598b35cbbc860e42d611248bef6670a8c7b845c824"
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "unit": "archdev001",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "model_seed": 95100002,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/checkpoint.pt",
+      "checkpoint_sha256": "6056d63f790cc1b63961c2147f6fe231587b99e18e710407448e97fad9b1c2ef",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/completed.json",
+      "completed_sha256": "6ea2f2aa12cc48910fb3b8c1931b1482aaf01b5eae0f932d912d80ec2ba703b6"
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "unit": "archdev001",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "model_seed": 95100002,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/checkpoint.pt",
+      "checkpoint_sha256": "5737d8ee863a01d681f0800b88704a6b66df21009636659346816f47822904f3",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/completed.json",
+      "completed_sha256": "fed62f787e08268198fdac6c36fa0f36ef1f7463c11dfd503bb6a088ad816675"
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "unit": "archdev001",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "model_seed": 95100002,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+      "checkpoint_sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/completed.json",
+      "completed_sha256": "64ef25ca28787042a708e6df9447e36b26cd3d686a2c75d698d1185ffab17c6c"
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "unit": "archdev001",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "model_seed": 95100002,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+      "checkpoint_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/completed.json",
+      "completed_sha256": "73c2a5d70bd98e6eb2e22d24b104117cc6cb7c5465b9625241e072e0cfa3ca46"
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "unit": "archdev001",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "model_seed": 95100002,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/checkpoint.pt",
+      "checkpoint_sha256": "49ea820e97d4687532aeb9cf83822bf96f6a7f74f73f98e0c9cc871b1cc568c1",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/completed.json",
+      "completed_sha256": "c1e55fe5a7d2162c00b1bcc19ec5bc140ca1ac7d7ce04b6bbe5421863ca6375b"
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "unit": "archdev001",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "model_seed": 95100002,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/checkpoint.pt",
+      "checkpoint_sha256": "d022dcea8aa17717c0968863ef0dd485caa5a0e12948062bfa137b00cdfedb34",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/completed.json",
+      "completed_sha256": "d10b0206589d2291ad78a2b7cd9669d49648b36e9432f678da38661b8d7be991"
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "unit": "archdev001",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "model_seed": 95100002,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/checkpoint.pt",
+      "checkpoint_sha256": "b38089da362e705d1b5d1b0d19edeafb07bd0456057b16efb32ae2902c70bc1b",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/completed.json",
+      "completed_sha256": "5025223955f2cb8e7d82f12d1602edf237a413b780667afb33f834419163794b"
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "unit": "archdev001",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "model_seed": 95100002,
+      "data_seed": 95200001,
+      "batch_seed": 95300001,
+      "updates": 20000,
+      "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/checkpoint.pt",
+      "checkpoint_sha256": "e9d15f72b6b3f596a28848244b031b56affcc0e7579f9328c5e9e6cde4db424b",
+      "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "completed_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/completed.json",
+      "completed_sha256": "be0cb8b0a1f941c6a7e7885e16e22d737ad0073f242f4f6a74def3e4cb4d9647"
+    }
+  ],
+  "cache_records": [
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_initial_validation.npz",
+      "sha256": "fab02d6489ec7e77cfb2ccb510e7e45b354412b9ed6955a795462d19713ccb62",
+      "size_bytes": 17057352,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_initial_test.npz",
+      "sha256": "f90e416d7cd0a3849d3a9628f7f83039e6954f4af2df32379879fbbfaa627a62",
+      "size_bytes": 34115235,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_trained_validation.npz",
+      "sha256": "d68325aadd60b2d4eaebf4a70870193100aa7bc58bf846bfb253198801d17f23",
+      "size_bytes": 17185449,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "653660f52c68c32a8fdea425adb6de49a80afb81029993792e9f14f75404e69f"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_descents",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_descents_trained_test.npz",
+      "sha256": "adf1ef6a9d6d88994648e8f0feca85c061b61783b7fbea994663a73fcf6ada7c",
+      "size_bytes": 34369689,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "653660f52c68c32a8fdea425adb6de49a80afb81029993792e9f14f75404e69f"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_initial_validation.npz",
+      "sha256": "6642c74d9d0e8829170ed6591ca70cd84fbd367f38b279d9911d2226dedbaef8",
+      "size_bytes": 17057441,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_initial_test.npz",
+      "sha256": "147e19bdc89b6a41226b83e36121faa0bc882efb910284a53c728258b2b5443d",
+      "size_bytes": 34115344,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_trained_validation.npz",
+      "sha256": "656dff0dc0cedca2242ab8628c1be3c24aff69aaa2f55783aa3861e331bc673f",
+      "size_bytes": 17149776,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "24875ab316604f1440d89c3149edcf7dc4d1c6fd73c3e3cb2faff133f4a1bdec"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_recoils",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_recoils_trained_test.npz",
+      "sha256": "1af7fe592bd1e8075c657faa6b850e0235517caa13206b1efe3f23aedb0f66de",
+      "size_bytes": 34299090,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "24875ab316604f1440d89c3149edcf7dc4d1c6fd73c3e3cb2faff133f4a1bdec"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_initial_validation.npz",
+      "sha256": "63f443462f8a91c6333fc9144625132c5e8c454a642e8cd0c41b779cfef3b7a2",
+      "size_bytes": 17057832,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_initial_test.npz",
+      "sha256": "e83a68744857c2628a65a53b30ec888402ef021f5e79f275636b85a87effe1b4",
+      "size_bytes": 34116253,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_trained_validation.npz",
+      "sha256": "113f296e88b02bacc6186a4a4a106ef5533eade273e2f09f8187ef72dc9cc95b",
+      "size_bytes": 17160090,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "0de9e43eb3fe0466b245e7a876309c49ccbc3a9d62ed804edc2fb6850103696f"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_peaks",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_peaks_trained_test.npz",
+      "sha256": "58e0693d07750a7daab9bd737c2f9223c790189d92db47295aadea7e39fedb68",
+      "size_bytes": 34318602,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "0de9e43eb3fe0466b245e7a876309c49ccbc3a9d62ed804edc2fb6850103696f"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_initial_validation.npz",
+      "sha256": "a3bd3d85a977c3801f26b2b61b0f5384dcf746c1851496481117474913da8d5b",
+      "size_bytes": 17057781,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_initial_test.npz",
+      "sha256": "657ebc6af848411cb2b4d8ac3a8550ea48f5eec12b12b7c25a18cb6747dacc88",
+      "size_bytes": 34116519,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_trained_validation.npz",
+      "sha256": "d96abc840d5e18316e9780ed746259c14a2f33f82c3412bed6a2972d0207cc1d",
+      "size_bytes": 17160200,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "4c4b0065c34602f88c44b6d2e47ec087d478250f66d26e9c1f3d460b15298899"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_one_line_valleys",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_one_line_valleys_trained_test.npz",
+      "sha256": "2fed127f396d40bf486b6022455611038b8a8097bc188f798bcf5b5e9a4cf111",
+      "size_bytes": 34319319,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "4c4b0065c34602f88c44b6d2e47ec087d478250f66d26e9c1f3d460b15298899"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_initial_validation.npz",
+      "sha256": "44da45febb50eb9fd79144c6094d997163e56cf052da7daebf39611b004c9228",
+      "size_bytes": 17037663,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_initial_test.npz",
+      "sha256": "04334447d3bcdaca5960be58b2cc070ded79b80ec61bce6b4ce575de385a4776",
+      "size_bytes": 34073734,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_trained_validation.npz",
+      "sha256": "65abbb11fbc43b4d00d90dc837e943864d197ecebb64ee9fcb54010e7080e1ff",
+      "size_bytes": 17195711,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "25880add881eddd0dd6c9c9fc0e73ee0bcf92624fde798a350584e7dea16b636"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_descents",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_descents_trained_test.npz",
+      "sha256": "60761005c2e11dc0b115ee612039fadc74ff50b2bae52e91f1ba35cb39146efa",
+      "size_bytes": 34389385,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "25880add881eddd0dd6c9c9fc0e73ee0bcf92624fde798a350584e7dea16b636"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_initial_validation.npz",
+      "sha256": "652cc3f357a8205b1d55b88311ba31cf8e22c6be0ca7aaf4b336b31e3010a6b1",
+      "size_bytes": 17037489,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_initial_test.npz",
+      "sha256": "671fdbe41b6afbeff709dc821fc97ef74c0616918fc72084554a4dcf8d5ffcf8",
+      "size_bytes": 34073266,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_trained_validation.npz",
+      "sha256": "59ea06cfbf440d6b3eedff08a839e353dbd231b94fd82674f9984a86a074fea5",
+      "size_bytes": 17311092,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "893c87301ee8fbaa2cf9f80971ee68f53f489fe4ffc543aace3d1e0ba94463e9"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_recoils",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_recoils_trained_test.npz",
+      "sha256": "3981776ac15586e795f564eb6f089f8772260f9c13969fbb89c0654ce03d22cb",
+      "size_bytes": 34621498,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "893c87301ee8fbaa2cf9f80971ee68f53f489fe4ffc543aace3d1e0ba94463e9"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_initial_validation.npz",
+      "sha256": "2d9685e814405e6de431cfbc4b9071e4eb7a2f711b60eb512a54fa78771c7c25",
+      "size_bytes": 17038455,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_initial_test.npz",
+      "sha256": "deed24294cd3aafca6d90dd4ef2ebe65bb4768947e3200738d8f4bb70c70f227",
+      "size_bytes": 34075150,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_trained_validation.npz",
+      "sha256": "9d4d5bf0e6c0c625f384183522c3de12bda5432f2699c69b7e778516a55b1866",
+      "size_bytes": 17084524,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "d3c5c532e40eb8417bd3364b1d4a56be1f00f86dacd9f7b251d19e3101dd577f"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_peaks",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_peaks_trained_test.npz",
+      "sha256": "e076499a60f01c9b57864b61c91cd733579720da077224d5ce204e3c1c9ecfed",
+      "size_bytes": 34169116,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "d3c5c532e40eb8417bd3364b1d4a56be1f00f86dacd9f7b251d19e3101dd577f"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_initial_validation.npz",
+      "sha256": "a4307fb35b8d53afe97e3eb1ccd0a377d0240640aff8be1a4ec390be926e167e",
+      "size_bytes": 17038237,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_initial_test.npz",
+      "sha256": "8dcbc9f2a4bd369960979e7f8a10391bb5e4b59008e1266fac7b619d7f81d295",
+      "size_bytes": 34075231,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_trained_validation.npz",
+      "sha256": "54c6a089ae35125e169fdc4a8233c3f88bd67d8bfd3737f08151ca064fc58c40",
+      "size_bytes": 17192088,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "d82e07bdab9fcf0b8da090b895d179964685ad7d32e6f4570402564616c90ac9"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_transformer_canonical_cycle_valleys",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/transformer_canonical_cycle_valleys_trained_test.npz",
+      "sha256": "8c5b5e16dfa72c6678bdf20c441aa945d706d158d16304252db212fa122d71f1",
+      "size_bytes": 34382282,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "d82e07bdab9fcf0b8da090b895d179964685ad7d32e6f4570402564616c90ac9"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_initial_validation.npz",
+      "sha256": "56d896c0207a37f40bcd8630704dd1eff2e1b8ccff6b0ca154f5d519773f4dfb",
+      "size_bytes": 16979406,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_initial_test.npz",
+      "sha256": "c085fa9844818983b9d7f461c5f73ad46ec93cb59c222f3ee7611607fdb4b49c",
+      "size_bytes": 33956575,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_trained_validation.npz",
+      "sha256": "64b584934169b722127da9de44eb20add176d2c5c42718d5184b59f03ef01062",
+      "size_bytes": 17115197,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "6056d63f790cc1b63961c2147f6fe231587b99e18e710407448e97fad9b1c2ef"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_descents",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_descents_trained_test.npz",
+      "sha256": "4432a0398a51aff84e1a8e4d8a754b9743572200692b5cabbbd38dae2f0e5dbf",
+      "size_bytes": 34228729,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "6056d63f790cc1b63961c2147f6fe231587b99e18e710407448e97fad9b1c2ef"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_initial_validation.npz",
+      "sha256": "9e3a15e395795fa93205e56eb9b936226032a4841cf6c879dddfdb7a468d2e72",
+      "size_bytes": 16980304,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_initial_test.npz",
+      "sha256": "3037d70ebe95c1a790af9ae48a452af563beaad93c1b664023779ee3b988ac82",
+      "size_bytes": 33957475,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_trained_validation.npz",
+      "sha256": "5e9f7acc2a87f3b9e002d685a5e8110683fd37e5d835d8ff6e0e377b2d992dd5",
+      "size_bytes": 17192169,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "5737d8ee863a01d681f0800b88704a6b66df21009636659346816f47822904f3"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_recoils",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_recoils_trained_test.npz",
+      "sha256": "7029c7fc82517d26c9eadc188704c09d5c506d43743dcefe168e35536852ad30",
+      "size_bytes": 34380187,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "5737d8ee863a01d681f0800b88704a6b66df21009636659346816f47822904f3"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_initial_validation.npz",
+      "sha256": "99ba2246e833818a18bfde823d79b4947e909e64e8504ee088a345ad1e5e4d8e",
+      "size_bytes": 16979388,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_initial_test.npz",
+      "sha256": "abc2f1e77eedadd422c90c0eb84d387a9671e227d35293003ed091f5ff807c25",
+      "size_bytes": 33956270,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_trained_validation.npz",
+      "sha256": "e993725a92be582d5b2bc2083eff38bd0805bef6a0a2c8005d0bdca02da012f9",
+      "size_bytes": 16899755,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_peaks",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_peaks_trained_test.npz",
+      "sha256": "85a6c9d29ddaf3e5289d9790d7f07b7743a1f8c5a378124bb37849aaec86bf52",
+      "size_bytes": 33795813,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_initial_validation.npz",
+      "sha256": "8400a05af8b445cd532e18a4e2a728959521875b49c79883335675f71a38a20c",
+      "size_bytes": 16977578,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_initial_test.npz",
+      "sha256": "32fc387f9e146d5f2614e41d9fde6d23808dc39dc5b96a725b0f40ae56fa5ed8",
+      "size_bytes": 33952588,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_trained_validation.npz",
+      "sha256": "bd6a5b7bf599eb6868d79edf455f6eafeadcf76ddf383e207974402745aa29a7",
+      "size_bytes": 16919294,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_one_line_valleys",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_one_line_valleys_trained_test.npz",
+      "sha256": "56c39ee3e392f54f3423dbd34a572f9c379e44c4d81fdf9024b395b89c712b92",
+      "size_bytes": 33837476,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_initial_validation.npz",
+      "sha256": "25ed8a57c4a018f0f30d0d9b1563204cdb5d971e763e7f1472bdbeb0669f4674",
+      "size_bytes": 16982223,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_initial_test.npz",
+      "sha256": "4026f5e52b9b124ffd83da22ed636ee3eed07dc1ca202d5c0817947654b93b3a",
+      "size_bytes": 33964897,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_trained_validation.npz",
+      "sha256": "45ecd66bacf7da428ea45f26c89bc82892e8652aacaa9b1cb8b6bf53367b7a6e",
+      "size_bytes": 17350745,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "49ea820e97d4687532aeb9cf83822bf96f6a7f74f73f98e0c9cc871b1cc568c1"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_descents",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_descents_trained_test.npz",
+      "sha256": "c0e7f1a3b71649a1ef928468b8019cdb8d6396c22ad5238544a11390c030fa48",
+      "size_bytes": 34699515,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "49ea820e97d4687532aeb9cf83822bf96f6a7f74f73f98e0c9cc871b1cc568c1"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_initial_validation.npz",
+      "sha256": "81ce121fcbecd2b508fb7443e7b6a1596d9d05fda0c68826bf8d26220029bcac",
+      "size_bytes": 16983379,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_initial_test.npz",
+      "sha256": "f2597f169ca9597a1537c2bd7c1c67859c50c3fc2aee59d13cd863010d77b0a1",
+      "size_bytes": 33967087,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_trained_validation.npz",
+      "sha256": "8ff1c061ece4e66e071f77d03a5f8e9b4c7b907bb8326accc7f13e3b00c94b47",
+      "size_bytes": 17382971,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "d022dcea8aa17717c0968863ef0dd485caa5a0e12948062bfa137b00cdfedb34"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_recoils",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_recoils_trained_test.npz",
+      "sha256": "ddf38ad9cbfd9f3c377b56363c70e0abc837524a20f0193be2d9e01ba3197b7a",
+      "size_bytes": 34762304,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "d022dcea8aa17717c0968863ef0dd485caa5a0e12948062bfa137b00cdfedb34"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_initial_validation.npz",
+      "sha256": "9d79c064667b584387fe3c17175a2bbaefe806ab8a8076a06428ac0faeab642c",
+      "size_bytes": 16982334,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_initial_test.npz",
+      "sha256": "a17f4a857e5ac69a751f33f2a27a22371568c23308d9650b0f3e920626b0774f",
+      "size_bytes": 33965186,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_trained_validation.npz",
+      "sha256": "19d739fb37b954cd7dca8a56862dbe79afd2903a130a25875cdd1c8163384d77",
+      "size_bytes": 17226555,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "b38089da362e705d1b5d1b0d19edeafb07bd0456057b16efb32ae2902c70bc1b"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_peaks",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_peaks_trained_test.npz",
+      "sha256": "571ce96f5c5f4e3fffff00c8b706f7a13700bac34fa12c4926742318e9efce0d",
+      "size_bytes": 34452923,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "b38089da362e705d1b5d1b0d19edeafb07bd0456057b16efb32ae2902c70bc1b"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "condition": "initial",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_initial_validation.npz",
+      "sha256": "2a9a57fcf2c9136f24e9fde32fd5eafb233b54b3bfb1901af2b6fc00f150919c",
+      "size_bytes": 16981084,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "condition": "initial",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_initial_test.npz",
+      "sha256": "bc869622b4d51b9144cc0272ef2df043ca97a2c0089f71d91a1011666ebc01cf",
+      "size_bytes": 33963303,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "condition": "trained",
+      "split": "validation",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_trained_validation.npz",
+      "sha256": "aec60f2f08020749eb971cfca83f3c316253afd1183478449daa99012c4e5f93",
+      "size_bytes": 17242074,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "validation",
+        "checkpoint_sha256": "e9d15f72b6b3f596a28848244b031b56affcc0e7579f9328c5e9e6cde4db424b"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            5376,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            5376,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    },
+    {
+      "run_id": "archdev001_gru_canonical_cycle_valleys",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "condition": "trained",
+      "split": "test",
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/evaluation_cache/gru_canonical_cycle_valleys_trained_test.npz",
+      "sha256": "7cb20ea3cb2089c0a9e004e14797d21addc98f5d96a4734c9eefbb30dd236b04",
+      "size_bytes": 34483857,
+      "signature": {
+        "protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+        "split": "test",
+        "checkpoint_sha256": "e9d15f72b6b3f596a28848244b031b56affcc0e7579f9328c5e9e6cde4db424b"
+      },
+      "arrays": {
+        "prefix_final": {
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "output_prob": {
+          "shape": [
+            10752,
+            3,
+            31
+          ],
+          "dtype": "float32",
+          "fortran": false
+        },
+        "prediction": {
+          "shape": [
+            10752,
+            3
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      }
+    }
+  ],
+  "cached_multilayer_arrays_present": false,
+  "initial_prefix_final_exact": [
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "split": "validation",
+      "task": "descents",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "split": "validation",
+      "task": "recoils",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "split": "validation",
+      "task": "peaks",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "split": "validation",
+      "task": "valleys",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "split": "test",
+      "task": "descents",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "split": "test",
+      "task": "recoils",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "split": "test",
+      "task": "peaks",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "split": "test",
+      "task": "valleys",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "split": "validation",
+      "task": "descents",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "split": "validation",
+      "task": "recoils",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "split": "validation",
+      "task": "peaks",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "split": "validation",
+      "task": "valleys",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "split": "test",
+      "task": "descents",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "split": "test",
+      "task": "recoils",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "split": "test",
+      "task": "peaks",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "split": "test",
+      "task": "valleys",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "split": "validation",
+      "task": "descents",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "split": "validation",
+      "task": "recoils",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "split": "validation",
+      "task": "peaks",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "split": "validation",
+      "task": "valleys",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "split": "test",
+      "task": "descents",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "split": "test",
+      "task": "recoils",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "split": "test",
+      "task": "peaks",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "one_line",
+      "split": "test",
+      "task": "valleys",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "split": "validation",
+      "task": "descents",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "split": "validation",
+      "task": "recoils",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "split": "validation",
+      "task": "peaks",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "split": "validation",
+      "task": "valleys",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        5376,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "split": "test",
+      "task": "descents",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "split": "test",
+      "task": "recoils",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "split": "test",
+      "task": "peaks",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    },
+    {
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "split": "test",
+      "task": "valleys",
+      "representative": "descents",
+      "bitwise_array_equal": true,
+      "max_abs": 0.0,
+      "shape": [
+        10752,
+        3,
+        256
+      ]
+    }
+  ],
+  "initial_sharing_allowed": true,
+  "elapsed_seconds": 13.790891513999668,
+  "no_model_forward": true,
+  "no_training": true,
+  "source_scope": "archdev001 20k only; no8k/nohistorical82"
+}

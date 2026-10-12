@@ -1,0 +1,86 @@
+{
+  "status": "frozen_before_new_layer_results",
+  "exploratory": true,
+  "new_source_training": 0,
+  "source_checkpoint_count": 82,
+  "source_conditions": 164,
+  "main": "Inherited final_norm input end before task; exact inherited metric rows retained.",
+  "layers": [
+    "block_01",
+    "block_02",
+    "block_03",
+    "block_04",
+    "final_norm"
+  ],
+  "new_branches": [
+    "block_01_end",
+    "block_01_value_mean",
+    "block_02_end",
+    "block_02_value_mean",
+    "block_03_end",
+    "block_03_value_mean",
+    "block_04_end",
+    "block_04_value_mean",
+    "final_norm_end",
+    "final_norm_value_mean"
+  ],
+  "pooling": "ONE_END at2n+3; sensitivity is contextual numeric-token mean positions4,6,...,2n+2 only.",
+  "extraction_numerics": "Prefix-only by default; if legacy comparison exceeds2e-5, use exact original task suffix and require original2e-5 tolerance. Measured states causally precede task, unchanged mathematically. Log both errors/method; no effect-based method selection.",
+  "structural_constants": [
+    "embedding_end",
+    "embedding_value_mean"
+  ],
+  "constant_rule": "Same length embedding end and unordered mean are mathematically constant; mark all metrics undefined, do not analyze summation noise.",
+  "input_baselines": [
+    "position_numeric_onehot",
+    "position_numeric_embedding"
+  ],
+  "input_position_rule": "Flatten numeric token embeddings by position. Position and punctuation contributions are sample-constant within length and cancel under centering.",
+  "onehot_neighbor_numerics": "Within-length onehot Euclidean distances use their exact integer Gram before centering (translation does not alter distances). This preserves predeclared sample-ID tie handling rather than floating-point tie breaking. Answer-strata use the centered Gram. Hidden-state neighbor implementation is unchanged.",
+  "controls": [
+    "within_length",
+    "answer_strata"
+  ],
+  "metrics": "Inherited linear CKA, k10 Euclidean neighbor overlap, fitted rank8 heldout Procrustes; debiased CKA sensitivity.",
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "weights": "Each length1/21; any undefined length leaves the overall value undefined.",
+  "splits": "Exactly inherited independent fitting/test orbits and input order; no new inputs or source weights.",
+  "answers": "Reuse inherited true-answer onehot/scalar and numeric output probability controls; no subtraction of output CKA from hidden CKA.",
+  "initialization": "All existing sources grade C constructor rebuild; original step0 identity unverified. No seed-only exact identity claims.",
+  "decomposition": "B0=initial correct-wrong;Bt=trained correct-wrong;dc=trained correct-initial correct;dw=trained wrong-initial wrong;Delta=Bt-B0=dc-dw.",
+  "summaries": "All available same-seed pairs, each cohort separate; complete length means, relation/source medians, leave-one-relation and shared-family removals. No independent-relation or world CI from seeds.",
+  "validation": {
+    "hooks_max_abs": 2e-05,
+    "legacy_activation_max_abs": 2e-05,
+    "independent_metric_max_abs": 1e-08
+  },
+  "selection": "No choice of favorable layer, task, length, metric or kernel after results.",
+  "storage": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/layers_cache",
+  "F17": "Existing F17 artifacts and all inherited files stay unchanged.",
+  "scope": "Complete analysis and authorized engineering preflight only; no formal bulk training or GroupWorld.",
+  "git_head": "e4e9ded9648aa2dc92a1cceef929cc9521546418",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.4.4"
+}

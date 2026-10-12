@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "fixed_seed": 202610104112,
+  "benchmark_samples": 512,
+  "benchmark_features": 256,
+  "calls": 24,
+  "seconds": 0.12442940298933536,
+  "seconds_per_CKA_call": 0.005184558457888973,
+  "planned_new_CKA_calls": 17472,
+  "estimated_metric_seconds": 90.58460537623614,
+  "estimate_excludes_cache_IO_hashing_feature_extraction_and_final_reuse_bookkeeping": true,
+  "final_layer_original_metrics_reused_not_recomputed": true,
+  "old_result_values_loaded": false,
+  "new_result_values_computed": false,
+  "cpu_threads": 2,
+  "independent_fixture_checks": 14,
+  "three_metric_fixed_fixture_status": "passed"
+}

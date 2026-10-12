@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "rows": 4032,
+  "source_conditions": 16,
+  "length_count": 21,
+  "summary_rows": 192,
+  "trained_predictions_exactly_equal_old_cache": true,
+  "original_validation_accuracy_exactly_reproduced": true,
+  "old_curve_comparison_scope": "Old answer+EOS teacher-forced full sequence versus original prompt-only cached predictions; signed differences retained",
+  "length_mode_test_exactly_reused": true,
+  "initial_CE_missing": true,
+  "reason": "Shared initial hidden extraction is not shared task-specific logits",
+  "new_source_training": false,
+  "new_evaluation_anchors": false,
+  "old8k_excluded": true,
+  "baseline_source": "/home/yangx/ICML/diagnostics/permworld_layers_20261009/encoding_development/length_baseline_accuracy_supplemental.csv",
+  "baseline_source_sha256": "091a3a0759959f281f739f08c41f19dc444b3fb23099772f220bc3419cee009b"
+}

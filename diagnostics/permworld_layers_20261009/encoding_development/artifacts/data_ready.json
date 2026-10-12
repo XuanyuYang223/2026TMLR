@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "history_signature": "3bf058f55eecd95ace97fc824cd5929a2d6a8f1c7b6612a9142ac2442dc5c91f",
+  "history_sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+  "prior_development_anchors": 102144,
+  "prior_development_orbit_members": 817152,
+  "all_prior_orbit_representatives_present": 102144,
+  "split_counts": {
+    "train": 86016,
+    "validation": 5376,
+    "test": 10752
+  },
+  "all_prior_development_orbit_members_present": true,
+  "within_world_orbit_disjoint": true,
+  "shared_underlying_objects_and_batches": true,
+  "development_only": true,
+  "formal_training_started": false
+}

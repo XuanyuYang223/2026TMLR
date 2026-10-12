@@ -1,0 +1,2786 @@
+{
+  "status": "passed",
+  "datasets": {
+    "permworld": {
+      "file": {
+        "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+        "sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e"
+      },
+      "split": "test",
+      "actions": [
+        "identity",
+        "complement",
+        "inverse"
+      ],
+      "tasks": [
+        "anti_fixed_points",
+        "components",
+        "deficiencies",
+        "descents",
+        "exceedances",
+        "fixed_points",
+        "global_descents",
+        "lds_length",
+        "left_to_right_maxima",
+        "left_to_right_minima",
+        "lis_length",
+        "longest_decreasing_run",
+        "longest_increasing_run",
+        "peaks",
+        "recoils",
+        "valleys"
+      ],
+      "arrays": {
+        "test_lengths": {
+          "shape": [
+            10752
+          ],
+          "dtype": "int16"
+        },
+        "test_labels": {
+          "shape": [
+            10752,
+            3,
+            16
+          ],
+          "dtype": "uint8"
+        },
+        "test_permutations": {
+          "shape": [
+            10752,
+            30
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "unique_anchor_count": 10752,
+      "rows_per_length": 512,
+      "unique_orbit_count": null,
+      "original_count_table": {
+        "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/per_length_results.csv",
+        "sha256": "af0c1bee947232a5168cc902a9424b8330afe5266f45f2a9e0eeb127f01ad62e"
+      }
+    },
+    "graphworld": {
+      "file": {
+        "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/world/data.npz",
+        "sha256": "f4dc57ba9f1fd668b0de956e82e80cfa9a5efbfa99067e5f4dcc984ecc520560"
+      },
+      "split": "analysis",
+      "actions": [
+        "identity",
+        "R",
+        "WR",
+        "C",
+        "WC"
+      ],
+      "tasks": [
+        "max_out",
+        "min_out",
+        "max_in",
+        "min_in"
+      ],
+      "arrays": {
+        "analysis_lengths": {
+          "shape": [
+            1536
+          ],
+          "dtype": "int16"
+        },
+        "analysis_labels": {
+          "shape": [
+            1536,
+            5,
+            4
+          ],
+          "dtype": "int16"
+        },
+        "analysis_anchor_id": {
+          "shape": [
+            1536
+          ],
+          "dtype": "<U32"
+        },
+        "analysis_orbit_id": {
+          "shape": [
+            1536
+          ],
+          "dtype": "<U64"
+        },
+        "analysis_edges": {
+          "shape": [
+            1536,
+            5
+          ],
+          "dtype": "int16"
+        },
+        "analysis_graphs": {
+          "shape": [
+            1536,
+            5,
+            8,
+            8
+          ],
+          "dtype": "uint8"
+        }
+      },
+      "unique_anchor_count": 1536,
+      "rows_per_length": 512,
+      "unique_orbit_count": 1536,
+      "original_count_table": {
+        "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/geometry_per_n.csv",
+        "sha256": "7f34df10cc5ae58639e5038ec32a48da488e44ebd5382ebc70f7d967592c33eb"
+      }
+    }
+  },
+  "per_anchor_rows": 92160,
+  "per_length_control_rows": 372,
+  "correct_formula_all_true": {
+    "descent_inverse": 10752,
+    "peak_complement": 10752,
+    "fixed_complement": 10752,
+    "exceedance_inverse": 10752,
+    "subsequence_complement": 10752,
+    "run_complement": 10752,
+    "record_complement": 10752,
+    "decomposition_complement": 10752,
+    "reverse_max": 1536,
+    "reverse_min": 1536,
+    "complement_out": 1536,
+    "complement_in": 1536
+  },
+  "old_analysis_count_checks": [
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 6,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 6,
+      "control": "answer_strata",
+      "count": 494
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 6,
+      "control": "answer_density_strata",
+      "count": 344
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 7,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 7,
+      "control": "answer_strata",
+      "count": 486
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 7,
+      "control": "answer_density_strata",
+      "count": 275
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 8,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 8,
+      "control": "answer_strata",
+      "count": 468
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_max",
+      "n": 8,
+      "control": "answer_density_strata",
+      "count": 217
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 6,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 6,
+      "control": "answer_strata",
+      "count": 481
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 6,
+      "control": "answer_density_strata",
+      "count": 348
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 7,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 7,
+      "control": "answer_strata",
+      "count": 479
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 7,
+      "control": "answer_density_strata",
+      "count": 257
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 8,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 8,
+      "control": "answer_strata",
+      "count": 473
+    },
+    {
+      "domain": "graphworld",
+      "relation": "reverse_min",
+      "n": 8,
+      "control": "answer_density_strata",
+      "count": 225
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 6,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 6,
+      "control": "answer_strata",
+      "count": 498
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 6,
+      "control": "answer_density_strata",
+      "count": 376
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 7,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 7,
+      "control": "answer_strata",
+      "count": 494
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 7,
+      "control": "answer_density_strata",
+      "count": 280
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 8,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 8,
+      "control": "answer_strata",
+      "count": 474
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_out",
+      "n": 8,
+      "control": "answer_density_strata",
+      "count": 235
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 6,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 6,
+      "control": "answer_strata",
+      "count": 497
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 6,
+      "control": "answer_density_strata",
+      "count": 352
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 7,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 7,
+      "control": "answer_strata",
+      "count": 487
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 7,
+      "control": "answer_density_strata",
+      "count": 272
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 8,
+      "control": "raw_within_n",
+      "count": 512
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 8,
+      "control": "answer_strata",
+      "count": 479
+    },
+    {
+      "domain": "graphworld",
+      "relation": "complement_in",
+      "n": 8,
+      "control": "answer_density_strata",
+      "count": 221
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 10,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 10,
+      "control": "answer_strata",
+      "count": 500
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 11,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 11,
+      "control": "answer_strata",
+      "count": 502
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 12,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 12,
+      "control": "answer_strata",
+      "count": 496
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 13,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 13,
+      "control": "answer_strata",
+      "count": 501
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 14,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 14,
+      "control": "answer_strata",
+      "count": 498
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 15,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 15,
+      "control": "answer_strata",
+      "count": 496
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 16,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 16,
+      "control": "answer_strata",
+      "count": 502
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 17,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 17,
+      "control": "answer_strata",
+      "count": 496
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 18,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 18,
+      "control": "answer_strata",
+      "count": 492
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 19,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 19,
+      "control": "answer_strata",
+      "count": 494
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 20,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 20,
+      "control": "answer_strata",
+      "count": 489
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 21,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 21,
+      "control": "answer_strata",
+      "count": 489
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 22,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 22,
+      "control": "answer_strata",
+      "count": 489
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 23,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 23,
+      "control": "answer_strata",
+      "count": 488
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 24,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 24,
+      "control": "answer_strata",
+      "count": 478
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 25,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 25,
+      "control": "answer_strata",
+      "count": 492
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 26,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 26,
+      "control": "answer_strata",
+      "count": 494
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 27,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 27,
+      "control": "answer_strata",
+      "count": 491
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 28,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 28,
+      "control": "answer_strata",
+      "count": 482
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 29,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 29,
+      "control": "answer_strata",
+      "count": 471
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 30,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "descent_inverse",
+      "n": 30,
+      "control": "answer_strata",
+      "count": 480
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 10,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 10,
+      "control": "answer_strata",
+      "count": 500
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 11,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 11,
+      "control": "answer_strata",
+      "count": 495
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 12,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 12,
+      "control": "answer_strata",
+      "count": 493
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 13,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 13,
+      "control": "answer_strata",
+      "count": 493
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 14,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 14,
+      "control": "answer_strata",
+      "count": 493
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 15,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 15,
+      "control": "answer_strata",
+      "count": 487
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 16,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 16,
+      "control": "answer_strata",
+      "count": 484
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 17,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 17,
+      "control": "answer_strata",
+      "count": 474
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 18,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 18,
+      "control": "answer_strata",
+      "count": 486
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 19,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 19,
+      "control": "answer_strata",
+      "count": 481
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 20,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 20,
+      "control": "answer_strata",
+      "count": 482
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 21,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 21,
+      "control": "answer_strata",
+      "count": 472
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 22,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 22,
+      "control": "answer_strata",
+      "count": 477
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 23,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 23,
+      "control": "answer_strata",
+      "count": 481
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 24,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 24,
+      "control": "answer_strata",
+      "count": 473
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 25,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 25,
+      "control": "answer_strata",
+      "count": 475
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 26,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 26,
+      "control": "answer_strata",
+      "count": 472
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 27,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 27,
+      "control": "answer_strata",
+      "count": 468
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 28,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 28,
+      "control": "answer_strata",
+      "count": 449
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 29,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 29,
+      "control": "answer_strata",
+      "count": 461
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 30,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "peak_complement",
+      "n": 30,
+      "control": "answer_strata",
+      "count": 457
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 10,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 10,
+      "control": "answer_strata",
+      "count": 506
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 11,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 11,
+      "control": "answer_strata",
+      "count": 505
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 12,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 12,
+      "control": "answer_strata",
+      "count": 508
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 13,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 13,
+      "control": "answer_strata",
+      "count": 503
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 14,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 14,
+      "control": "answer_strata",
+      "count": 502
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 15,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 15,
+      "control": "answer_strata",
+      "count": 501
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 16,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 16,
+      "control": "answer_strata",
+      "count": 507
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 17,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 17,
+      "control": "answer_strata",
+      "count": 503
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 18,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 18,
+      "control": "answer_strata",
+      "count": 496
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 19,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 19,
+      "control": "answer_strata",
+      "count": 506
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 20,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 20,
+      "control": "answer_strata",
+      "count": 503
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 21,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 21,
+      "control": "answer_strata",
+      "count": 507
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 22,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 22,
+      "control": "answer_strata",
+      "count": 506
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 23,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 23,
+      "control": "answer_strata",
+      "count": 506
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 24,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 24,
+      "control": "answer_strata",
+      "count": 500
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 25,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 25,
+      "control": "answer_strata",
+      "count": 499
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 26,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 26,
+      "control": "answer_strata",
+      "count": 503
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 27,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 27,
+      "control": "answer_strata",
+      "count": 504
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 28,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 28,
+      "control": "answer_strata",
+      "count": 499
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 29,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 29,
+      "control": "answer_strata",
+      "count": 502
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 30,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "fixed_complement",
+      "n": 30,
+      "control": "answer_strata",
+      "count": 503
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 10,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 10,
+      "control": "answer_strata",
+      "count": 471
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 11,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 11,
+      "control": "answer_strata",
+      "count": 464
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 12,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 12,
+      "control": "answer_strata",
+      "count": 466
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 13,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 13,
+      "control": "answer_strata",
+      "count": 462
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 14,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 14,
+      "control": "answer_strata",
+      "count": 459
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 15,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 15,
+      "control": "answer_strata",
+      "count": 448
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 16,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 16,
+      "control": "answer_strata",
+      "count": 435
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 17,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 17,
+      "control": "answer_strata",
+      "count": 441
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 18,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 18,
+      "control": "answer_strata",
+      "count": 420
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 19,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 19,
+      "control": "answer_strata",
+      "count": 420
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 20,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 20,
+      "control": "answer_strata",
+      "count": 420
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 21,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 21,
+      "control": "answer_strata",
+      "count": 434
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 22,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 22,
+      "control": "answer_strata",
+      "count": 423
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 23,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 23,
+      "control": "answer_strata",
+      "count": 434
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 24,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 24,
+      "control": "answer_strata",
+      "count": 397
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 25,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 25,
+      "control": "answer_strata",
+      "count": 412
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 26,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 26,
+      "control": "answer_strata",
+      "count": 405
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 27,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 27,
+      "control": "answer_strata",
+      "count": 395
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 28,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 28,
+      "control": "answer_strata",
+      "count": 400
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 29,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 29,
+      "control": "answer_strata",
+      "count": 381
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 30,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "exceedance_inverse",
+      "n": 30,
+      "control": "answer_strata",
+      "count": 396
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 10,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 10,
+      "control": "answer_strata",
+      "count": 504
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 11,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 11,
+      "control": "answer_strata",
+      "count": 507
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 12,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 12,
+      "control": "answer_strata",
+      "count": 504
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 13,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 13,
+      "control": "answer_strata",
+      "count": 500
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 14,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 14,
+      "control": "answer_strata",
+      "count": 495
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 15,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 15,
+      "control": "answer_strata",
+      "count": 506
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 16,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 16,
+      "control": "answer_strata",
+      "count": 498
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 17,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 17,
+      "control": "answer_strata",
+      "count": 504
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 18,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 18,
+      "control": "answer_strata",
+      "count": 495
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 19,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 19,
+      "control": "answer_strata",
+      "count": 502
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 20,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 20,
+      "control": "answer_strata",
+      "count": 498
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 21,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 21,
+      "control": "answer_strata",
+      "count": 495
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 22,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 22,
+      "control": "answer_strata",
+      "count": 506
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 23,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 23,
+      "control": "answer_strata",
+      "count": 500
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 24,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 24,
+      "control": "answer_strata",
+      "count": 503
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 25,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 25,
+      "control": "answer_strata",
+      "count": 489
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 26,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 26,
+      "control": "answer_strata",
+      "count": 498
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 27,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 27,
+      "control": "answer_strata",
+      "count": 497
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 28,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 28,
+      "control": "answer_strata",
+      "count": 498
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 29,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 29,
+      "control": "answer_strata",
+      "count": 494
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 30,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "subsequence_complement",
+      "n": 30,
+      "control": "answer_strata",
+      "count": 490
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 10,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 10,
+      "control": "answer_strata",
+      "count": 493
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 11,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 11,
+      "control": "answer_strata",
+      "count": 486
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 12,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 12,
+      "control": "answer_strata",
+      "count": 487
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 13,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 13,
+      "control": "answer_strata",
+      "count": 476
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 14,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 14,
+      "control": "answer_strata",
+      "count": 479
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 15,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 15,
+      "control": "answer_strata",
+      "count": 477
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 16,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 16,
+      "control": "answer_strata",
+      "count": 482
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 17,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 17,
+      "control": "answer_strata",
+      "count": 484
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 18,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 18,
+      "control": "answer_strata",
+      "count": 467
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 19,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 19,
+      "control": "answer_strata",
+      "count": 473
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 20,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 20,
+      "control": "answer_strata",
+      "count": 468
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 21,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 21,
+      "control": "answer_strata",
+      "count": 464
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 22,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 22,
+      "control": "answer_strata",
+      "count": 469
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 23,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 23,
+      "control": "answer_strata",
+      "count": 456
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 24,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 24,
+      "control": "answer_strata",
+      "count": 471
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 25,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 25,
+      "control": "answer_strata",
+      "count": 472
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 26,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 26,
+      "control": "answer_strata",
+      "count": 475
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 27,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 27,
+      "control": "answer_strata",
+      "count": 485
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 28,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 28,
+      "control": "answer_strata",
+      "count": 474
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 29,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 29,
+      "control": "answer_strata",
+      "count": 476
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 30,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "run_complement",
+      "n": 30,
+      "control": "answer_strata",
+      "count": 478
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 10,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 10,
+      "control": "answer_strata",
+      "count": 507
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 11,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 11,
+      "control": "answer_strata",
+      "count": 509
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 12,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 12,
+      "control": "answer_strata",
+      "count": 499
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 13,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 13,
+      "control": "answer_strata",
+      "count": 496
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 14,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 14,
+      "control": "answer_strata",
+      "count": 496
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 15,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 15,
+      "control": "answer_strata",
+      "count": 499
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 16,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 16,
+      "control": "answer_strata",
+      "count": 492
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 17,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 17,
+      "control": "answer_strata",
+      "count": 500
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 18,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 18,
+      "control": "answer_strata",
+      "count": 496
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 19,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 19,
+      "control": "answer_strata",
+      "count": 493
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 20,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 20,
+      "control": "answer_strata",
+      "count": 493
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 21,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 21,
+      "control": "answer_strata",
+      "count": 486
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 22,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 22,
+      "control": "answer_strata",
+      "count": 488
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 23,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 23,
+      "control": "answer_strata",
+      "count": 496
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 24,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 24,
+      "control": "answer_strata",
+      "count": 490
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 25,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 25,
+      "control": "answer_strata",
+      "count": 491
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 26,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 26,
+      "control": "answer_strata",
+      "count": 488
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 27,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 27,
+      "control": "answer_strata",
+      "count": 490
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 28,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 28,
+      "control": "answer_strata",
+      "count": 494
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 29,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 29,
+      "control": "answer_strata",
+      "count": 482
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 30,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "record_complement",
+      "n": 30,
+      "control": "answer_strata",
+      "count": 486
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 10,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 10,
+      "control": "answer_strata",
+      "count": 509
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 11,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 11,
+      "control": "answer_strata",
+      "count": 511
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 12,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 12,
+      "control": "answer_strata",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 13,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 13,
+      "control": "answer_strata",
+      "count": 510
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 14,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 14,
+      "control": "answer_strata",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 15,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 15,
+      "control": "answer_strata",
+      "count": 509
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 16,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 16,
+      "control": "answer_strata",
+      "count": 511
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 17,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 17,
+      "control": "answer_strata",
+      "count": 511
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 18,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 18,
+      "control": "answer_strata",
+      "count": 510
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 19,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 19,
+      "control": "answer_strata",
+      "count": 511
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 20,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 20,
+      "control": "answer_strata",
+      "count": 511
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 21,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 21,
+      "control": "answer_strata",
+      "count": 511
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 22,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 22,
+      "control": "answer_strata",
+      "count": 509
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 23,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 23,
+      "control": "answer_strata",
+      "count": 510
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 24,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 24,
+      "control": "answer_strata",
+      "count": 511
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 25,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 25,
+      "control": "answer_strata",
+      "count": 510
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 26,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 26,
+      "control": "answer_strata",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 27,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 27,
+      "control": "answer_strata",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 28,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 28,
+      "control": "answer_strata",
+      "count": 509
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 29,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 29,
+      "control": "answer_strata",
+      "count": 511
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 30,
+      "control": "raw_within_length",
+      "count": 512
+    },
+    {
+      "domain": "permworld",
+      "relation": "decomposition_complement",
+      "n": 30,
+      "control": "answer_strata",
+      "count": 507
+    }
+  ],
+  "old_analysis_count_check_count": 372,
+  "classification_manifest_sha256": "69ab57a9a8429cbd07ed8ccd866baf12f40be28b1bf2c643ab45b8b43171ba94",
+  "classification_audit_sha256": "28d50441e3382ddb95fd7854ac772eb30e005a10f1730d2a180dcbc55b341afd",
+  "script": {
+    "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/classification_and_W.py",
+    "sha256": "82a08128a8d687ccdb279b0b393af32c2a0823b02c6122424563be50cb89de50"
+  },
+  "outputs": {
+    "W_actual_per_anchor.csv": "9289fa1c7f92bfe51d193c2ce952c7698cdc97654d92b96b45d431a4edc3baff",
+    "W_actual_per_length.csv": "4e351d0a00ac9d984a5e22062e3b1f5f22e505febb65b28ebac85f334150efbb",
+    "W_actual_summary.csv": "668b10fa1bc9f549e860156558ee72413247b2542db58a54b156150456c1c63d",
+    "W_original_random_math_reference.csv": "a5112470b1644d7a56511a084ada5a31568c270b7450b79482014c7f4affbd17"
+  },
+  "perm_selector": "Joint[n,left(identity),right(identity),right(complement),right(inverse)] after original offset; retain joint count>=3 independently per split.",
+  "graph_selector": "Joint[n,left(identity),mappedright(identity),mappedright(correct),mappedright(wrong)]; retain joint count>=3 independently per split; density adds identity edge count.",
+  "raw_anchor_policy": "Every original 512 anchor row per length retained in the per-anchor table, including accidentally formula-preserving wrong transforms.",
+  "weights": "Fixed equal 1/21 Perm or 1/3 Graph length mean, separately reported from pooled numerator/denominator.",
+  "dependency_limit": "Relations reuse anchors. 92160 relation-anchor exposures are only 10752 Perm and 1536 Graph unique base inputs; architecture/encoding copies are not additional anchors.",
+  "random_math_reference": {
+    "path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/mathematics_audit.json",
+    "sha256": "344d4b3765ad81607560bf097a87045ff5ac25e62ec3e19d36eb5e51c008daa4"
+  },
+  "random_reference_scope": "Prior 3000 random mathematics-check graphs per n; not the actual analysis sample and never used in actual numerator/denominator.",
+  "no_models": true,
+  "no_forward": true,
+  "no_training": true,
+  "no_cka": true,
+  "no_new_inputs": true
+}

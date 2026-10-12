@@ -1,0 +1,337 @@
+{
+  "protocol_version": "permworld-validation-only-learnability/v1",
+  "registered_utc": "2026-10-10T16:24:50.916331+00:00",
+  "client_date": "2026-10-10",
+  "client_timezone": "America/Los_Angeles",
+  "purpose": "Exploratory learning development. Does not confirm any geometry hypothesis.",
+  "output": "/mnt/yangx-projects-f/20261010/permworld_learnability/worlds",
+  "units": [
+    {
+      "unit": "learningdev001",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "dropout_seed_base": 96400000
+    }
+  ],
+  "lengths": [
+    10,
+    11,
+    12
+  ],
+  "tasks": [
+    "descents",
+    "recoils",
+    "peaks",
+    "valleys"
+  ],
+  "encodings": [
+    "one_line",
+    "canonical_cycle"
+  ],
+  "architectures": [
+    "transformer",
+    "gru"
+  ],
+  "model": {
+    "d_model": 256,
+    "layers": 4,
+    "heads": 8,
+    "mlp_ratio": 4,
+    "dropout": 0.0,
+    "tie_embeddings": true,
+    "max_seq_len": 128,
+    "vocab_size": 188
+  },
+  "training": {
+    "updates": 8000,
+    "micro_batch": 64,
+    "accumulation": 1,
+    "effective_batch": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "warmup_updates": 400,
+    "minimum_lr_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "precision": "FP32 parameters, CUDA BF16 autocast, TF32 disabled; FP32 CPU fallback",
+    "attention": "validated equivalent SDPA",
+    "loss": "Answer token plus EOS, shifted causal CE, other targets ignored; same two supervised tokens/example in both encodings.",
+    "length_schedule": "Uniform random permutations of the fixed n10,11,12 window; shared saved schedule.",
+    "batch_schedule": "64 distinct train anchors per update, shared by all16 development models.",
+    "validation_every": 1000,
+    "checkpoint_every": 1000,
+    "endpoint": "Fixed8k endpoint, staged2k/4k/8k; no performance-dependent checkpoint selection.",
+    "execution": "Serial jobs, global2h active-GPU wall-clock cap; safe partial checkpoints remain explicit."
+  },
+  "architecture_model_seeds": {
+    "transformer": 96100001,
+    "gru": 96100002
+  },
+  "data": {
+    "examples_per_length": {
+      "train": 2048,
+      "validation": 1024,
+      "test": 512
+    },
+    "maximum_attempts_per_world": 2000000,
+    "split_rule": "Fresh seeded uniform permutations; reject historical inputs and within-world orbit overlap. No answer balancing.",
+    "training_actions": [
+      "identity"
+    ],
+    "validation_selection_actions": [
+      "identity"
+    ],
+    "test_policy": "Reserved, not read by learning selector or this development driver."
+  },
+  "history": {
+    "index_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/historical_input_hashes.npy",
+    "index_sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+    "last_development_archive": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+    "last_development_archive_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+    "rule": "Append every last development orbit member to the verified complete historical index."
+  },
+  "development_choice": {
+    "candidate_count": 1,
+    "length_choice": "Contiguous first three old lengths chosen to reduce joint length/sequence burden, not because they previously succeeded.",
+    "changed_factors": [
+      "length window10..30 to10..12",
+      "train examples/length4096 to2048",
+      "learning rate3e-4 to1e-3",
+      "dropout.1 to0",
+      "microbatch16x4 to64x1",
+      "fixed updates20k to8k"
+    ],
+    "interpretation": "Combined training-development change; cannot attribute any improvement to one factor.",
+    "no_CKA_or_Delta_configuration_selection": true
+  },
+  "learning_gate": {
+    "primary": "Identity validation full-vocabulary answer accuracy.",
+    "per_model_equal_length_accuracy_min": 0.9,
+    "per_length_accuracy_min": 0.85,
+    "per_model_gain_over_training_length_majority_min_pp": 20.0,
+    "paired_encoding_accuracy_gap_max_pp": 5.0,
+    "paired_encoding_per_length_accuracy_gap_max_pp": 5.0,
+    "per_model_eos_accuracy_min": 0.99,
+    "losses": "Validation answer CE and combined answer+EOS CE fully reported; no extra loss threshold.",
+    "joint_acceptance": "Every four tasks and both encodings within an architecture pass; report architectures separately and overall16 acceptance.",
+    "checkpoints": "Only the completed fixed8k endpoint qualifies. Partial2k/4k checkpoints never substitute."
+  },
+  "budget": {
+    "active_gpu_wall_seconds": 7200,
+    "finalization_reserve_seconds": 30,
+    "starts": "Immediately before first GPU engineering invocation; data/CPU-only preparation excluded.",
+    "deadline_rule": "Stop updates30s before the absolute2h deadline; reserve that time for validation/checkpoint cleanup. No new GPU validation after deadline. Explicitly missing measurements cannot qualify.",
+    "additional_candidates": 0,
+    "budget_extension": false
+  },
+  "scope": {
+    "geometry_used_for_selection": false,
+    "geometry_evaluated_in_development": false,
+    "test_used_for_selection": false,
+    "F17_changes": false,
+    "old_artifact_changes": false,
+    "GroupWorld_started": false,
+    "continuation": "Report completed development. If a setting qualifies, freeze its independent verification manifest; do not call this development result confirmation."
+  },
+  "initialization": "One new actual saved step0 per architecture, cloned across four tasks and both encodings; no cross-architecture weight identity.",
+  "inference": "One exploratory world/initializer per architecture; lengths/models do not count as independent worlds; no confirmation p-values.",
+  "training_manifest": [
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "unit": "learningdev001",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96400000
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "unit": "learningdev001",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96400000
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "unit": "learningdev001",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96400001
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "unit": "learningdev001",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96400001
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "unit": "learningdev001",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96400002
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "unit": "learningdev001",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96400002
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "unit": "learningdev001",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96400003
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "unit": "learningdev001",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "model_seed": 96100001,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96400003
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "unit": "learningdev001",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "model_seed": 96100002,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96401000
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "unit": "learningdev001",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "model_seed": 96100002,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96401000
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "unit": "learningdev001",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "model_seed": 96100002,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96401001
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "unit": "learningdev001",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "model_seed": 96100002,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96401001
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "unit": "learningdev001",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "model_seed": 96100002,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96401002
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "unit": "learningdev001",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "model_seed": 96100002,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96401002
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "unit": "learningdev001",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "model_seed": 96100002,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96401003
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "unit": "learningdev001",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "model_seed": 96100002,
+      "data_seed": 96200001,
+      "batch_seed": 96300001,
+      "updates": 8000,
+      "stochastic_seed": 96401003
+    }
+  ]
+}

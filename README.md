@@ -1,97 +1,80 @@
-# Correct relational geometry and unseen composition
+# Mathematical correspondences and representation pairing selectivity
 
-Code, fixed protocols, results, and manuscript for **When Does Correct Relational Geometry Support Unseen Composition?** Findings concern supplied correspondences in relation-prepared representations.
+Do exact mathematical correspondences accompany geometric pairing preferences in trained neural networks, and how do those observations depend on input encoding, model configuration, layer, metric, initialization reference, and answer controls?
 
-## Paper and results
+This branch contains the **PermWorld / GraphWorld / MatrixGroupWorld representation study**. It retains exploratory, negative, weak-learning, and undefined results. Geometry alone does not establish a mathematics-specific mechanism or functional benefit.
 
-- [Revised manuscript PDF](paper/manuscript.pdf) and [LaTeX source](paper/manuscript.tex).
-- [New-field confirmation report](results/reviewer_fresh_reporting_v2/report.html), [all 17 units](results/reviewer_fresh_confirmation/results.json), [frozen protocol](results/reviewer_fresh_confirmation/protocol.json), and [independent audit](results/reviewer_fresh_audit/verification.json).
-- [Expanded old-model diagnostic report](results/reviewer_revision_reporting/report.html): larger tests, natural-state swaps, full ridge path, and secondary TOST.
-- [Earlier five-initialization results](results/final_mechanism_confirmation/results.json) and [frozen reviewer controls](results/null_space_review_reporting/report.html).
-- [Related work: 13 primary studies](paper/literature_review.csv) and [historical experiment documentation](docs/README_history.md).
-- [New archives](https://github.com/XuanyuYang223/2026TMLR/releases/tag/reviewer-revision-2026-10-09) and [earlier archives](https://github.com/XuanyuYang223/2026TMLR/releases/tag/experiment-snapshot-2026-10-07).
+## Scope and current results
 
-The frozen F17 confirmation uses **17 independently sampled datasets and source initializations**, width 512 (four times the old width), and 2,000 collision pairs plus 512 IID inputs per unit. All registered fits finish before composite testing. GELU correct/answer-matched incorrect compound accuracy is **11.52% / 6.36%**, a **5.157pp** source-level difference (marginal 95% CI **[1.924, 8.391]**, Holm p **0.003807**); every unit's difference is positive. The second-step noise candidate is selected using known single-step validation only. Original second operators are also reported.
-
-Both stronger gates **fail**: compound accuracy remains below the declared 40%, and same-future-answer natural null swaps change **28.10%** of predictions versus a 5% threshold. Distinct-future null donors are followed in 52.02% of cases, versus 2.70% for row donors; row swaps are a localization diagnostic and change first logits. Null swaps preserve all first logits. These outcomes support downstream answer-information transport, not natural mathematics-specific causal encoding. The selected robustness intervention does not improve mean compound accuracy over the original second operator (11.52% versus 11.82%).
-
-In the old five-initialization study, adequate unregularized affine fitting largely recovers GELU's functional benefit. Expanded old-world tests narrow the difference, but validation-selected ridge fits lose much of the benefit. **Additional expressivity advantage remains unconfirmed in that old unregularized diagnostic; equivalence is secondary and posthoc.** F17 has no converged-affine comparison. Different fields, widths, coverage, and robustness procedures cannot be compared as a width-only intervention.
-
-## Repository and archives
-
-Implementations, fixed configurations, and tests are in `experiments/`, `configs/`, and `tests/`. Readable results, reports, original manifests, and figures are tracked in Git. Checkpoints, arrays, and full data are in checksum-verified release archives.
-
-| Archive | Contents | Release |
+| Study | Fixed scope | Saved primary ordinary-CKA readout |
 |---|---|---|
-| `mechanism-confirmations.tar.gz` | Five-source confirmation, preceding activation confirmation, mechanisms, historical test shards | 2026-10-07 |
-| `directional-loss-confirmation.tar.gz` | Full/null-only correct/incorrect confirmation in matrix and permutation domains | 2026-10-07 |
-| `initial-cross-domain.tar.gz` | Initial joint affine matrix and polynomial experiments | 2026-10-07 |
-| `historical-inputs.tar.gz` | Portable inputs referenced by historical dataset aliases | 2026-10-07 |
-| `reviewer-controls.tar.gz` | Frozen reviewer controls, held-out inputs, probes, numerical replay | 2026-10-07 |
-| `reviewer-revision-diagnostics.tar.gz` | Enlarged old-model census, balanced natural donors, ridge fits, expanded collision pairing, independent audit | 2026-10-09 |
-| `fresh-confirmation-f17.tar.gz` | All 17 new source datasets/checkpoints, 68 first predictors, 51 second candidates, predictions, audits, reports | 2026-10-09 |
+| PermWorld | 16 specialists, eight directed relations, one-line/canonical-cycle encoding × Transformer/GRU; 64 true 20k endpoints in one paired data world | Answer-stratified final-layer, per-length equal weighting: positive trained preference `Bt` in **26/32**, positive increment `Delta` in **18/32** |
+| GraphWorld | Four specialists and four directed reversal/complement relations; one Transformer/configuration, n=6/7/8 equally weighted | Answer control: positive `Bt` in **2/4**, positive `Delta` in **0/4**; raw and answer-plus-exact-edge-count sensitivity results remain available |
+| MatrixGroupWorld | GL(n,F2), n=6/8/10; four specialists; two independent data/true-initialization units; eight true 20k endpoints | Raw `Bt` positive **8/8**; joint-answer-controlled `Bt` and `Delta` positive **5/8** each |
 
-Per-file SHA-256 inventories and [asset metadata](docs/artifact_inventory.json) specify all contents. Historical workspace aliases are dereferenced as regular files. Early exploratory bulk caches and legacy permutation transformer weights from the 133 GB local workspace are excluded; their code, protocols, and readable results remain available. Third-party full-text papers are excluded.
+These counts use different tasks, inputs, controls and dependencies. They are **not** pooled independent replications or estimates of a cross-domain causal effect. The new matrix units independently repeat only MatrixGroupWorld.
 
-[Publication verification](docs/reviewer_revision_publication_audit.json) records the clean GitHub checkout, seven-archive restore, 1,686 manifest entries, 181 passing tests, and independent replays. All five new public downloads and the public manuscript match their local SHA-256 checksums. New-world replay reconstructs 2,161,059 entries; expanded old-world replay reconstructs 468,150. These are computation checks, not independent statistical repetitions.
+The primary matrix relationships are **R1 (transpose, column/row weight)** and **R3 (right multiplication, column/XOR-column weight)**; R2/R4 are supplementary. Under answer control, ordinary-CKA `Delta` is negative for R1 in both units, while R3 is +0.048498/+0.121332. R3's positive increment comes from a larger decline in the wrong-pairing score; the correct score also declines. F3 at n=10 remains weak in both units. The complete per-size train, validation and held-out source scores are retained.
 
-## Install and reproduce
+MatrixGroupWorld is **`completed_with_verification_caveat`**, with `scientific_analysis_complete=false` in its original saved state. The prescribed independent saved-feature check records **64 passed, 2 failed, 6 undefined_consistent**. Both failures concern trained raw **output-probability kNN** on the fixed first-unit R1/n=6 subset of 64 inputs. Each difference is one neighbor count out of 640; a read-only diagnostic localizes near-onehot Gram-distance roundoff. The original failed values, fixed tolerance, numerical methods and failure status remain unchanged. This is not independent validation of all 432 production cells.
 
-Use Python 3.11 or newer. Current runs use Python 3.13 and PyTorch 2.11; hardware/library changes can affect exact replay.
+## Comparisons and definitions
+
+For a fixed source task pair and relation, compare the correct transformed input with the original wrong transformed input:
+
+```text
+B0    = S_correct(initial) - S_wrong(initial)
+Bt    = S_correct(trained) - S_wrong(trained)
+dc    = S_correct(trained) - S_correct(initial)
+du    = S_wrong(trained)   - S_wrong(initial)
+Delta = Bt - B0 = dc - du
+```
+
+Keep all four original scores. Positive `Delta` need not mean positive `Bt`, or an increase in the correct score. Real step-0, reconstructed historical references and unavailable initial identities are explicitly distinguished.
+
+The **fixed-transform task comparison** instead holds the left model, transform and anchor inputs fixed and varies the right specialist. It contains Perm480 / Graph12 / Matrix24 logical candidates, classified before their new scores as designated, other-known-exact, or not-designated. The last label does not mean mathematically unrelated. Its `fixed_transform_score_initial/trained`, candidate ranks and category contrasts are separate from `Bt/Delta`. Shared models, inputs, tasks and transforms create dependencies.
+
+The main state is taken at the input end **before the task query**, with final normalization. The original protocols specify within-size/length computation and fixed equal weights; undefined components are not set to zero and weights are not redistributed. Ordinary linear CKA is primary. Fixed kNN overlap and held-out Procrustes, other layers, pooling, output-probability and answer-geometry baselines are reported only in their original prescribed scopes. Joint-answer controls use pair-specific retained strata and support, so their between-task contrast is not a pure causal effect of mathematical correspondence.
+
+GL inputs add finite-field linear mixing. Transpose is an anti-automorphism; left/right multiplication by a fixed invertible element is an action, not a group homomorphism. These weight identities also hold for general binary matrices and are related to graph-degree statistics. They do not demonstrate learned group multiplication or a group-specific mechanism.
+
+## Reports, tables and provenance
+
+- [Current research index](CURRENT_RESEARCH.txt) and [scope/formula notes](docs/representation_research.md).
+- [PermWorld eight-relation report](diagnostics/permworld_eight_relations_20261010/report.html), [combined Perm/Graph reader](diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html), and [32 primary cells](diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv).
+- [GraphWorld report](diagnostics/graphworld_pilot_20261010/report.html), [frozen protocol](diagnostics/graphworld_pilot_20261010/protocol.json), and [full geometry](diagnostics/graphworld_pilot_20261010/geometry_summary.csv).
+- [Fixed-transform review](diagnostics/representation_pairing_review_20261011/reader_report.html), [protocol](diagnostics/representation_pairing_review_20261011/protocol.json), candidate tables and wrong-formula preservation diagnostics.
+- [MatrixGroupWorld report](diagnostics/matrixgroupworld_20261011/report.html), [short bilingual results](diagnostics/matrixgroupworld_20261011/report.txt), [protocol](diagnostics/matrixgroupworld_20261011/protocol.json), [full geometry](diagnostics/matrixgroupworld_20261011/geometry_summary.csv), [source learning](diagnostics/matrixgroupworld_20261011/source_learning.csv), [original numerical verification](diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json), and [failure diagnosis](diagnostics/matrixgroupworld_20261011/knn_failure_diagnostic.txt).
+- Directly supporting older initialization, layer, encoding and learnability diagnostics remain under `diagnostics/`; the curation inventory records why each retained source/record belongs here.
+
+Frozen scientific sources, tables, protocols, reports and failure records retain their original bytes. Publication metadata and portable wrappers are separate; original absolute paths remain provenance and are mapped explicitly rather than silently edited.
+
+## Minimal reproduction: no training or model forward
+
+Use Python 3.11 or newer for the standard-library table replay. A fresh clone needs no local F-drive paths, upstream checkout, CUDA, weights or hidden caches to check the saved aggregates:
 
 ```bash
+git clone https://github.com/XuanyuYang223/2026TMLR.git
+cd 2026TMLR
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements-dev.txt
-git clone https://github.com/XuanyuYang223/neurips.git external/neurips
-git -C external/neurips checkout 74f0de2017115f06f11b7285366b66e7e8431d30
-python -m pytest -q
+python tools/recompute_tables.py --help
 ```
 
-The pinned upstream supplies PermWorld definitions and transformer code, without modification. Download both releases into one directory:
+The exact replay command, download profiles and published verification record are specified in [reproduction instructions](docs/representation_reproduction.md). The replay independently aggregates Perm/Graph fixed-transform tables and Matrix R1/R3 decompositions and checks the preserved 64/2/6 caveat. This checks saved-table arithmetic and integrity, **not** all model forwards, all activation metrics, training reproducibility, or independent statistical replication.
 
-```bash
-gh release download experiment-snapshot-2026-10-07 --repo XuanyuYang223/2026TMLR --dir downloads --pattern '*.tar.gz' --pattern '*.inventory.json'
-gh release download reviewer-revision-2026-10-09 --repo XuanyuYang223/2026TMLR --dir downloads --pattern '*.tar.gz' --pattern '*.inventory.json'
-python -m experiments.restore_public_artifacts --directory downloads
-python -m experiments.public_reproduction --replay-final
-python -m experiments.reviewer_fresh_verify --output results/my_fresh_audit
-```
+The science environment records Python 3.13.13, NumPy 2.4.4, PyTorch 2.11.0+cu128, Matplotlib 3.11.2 and threadpoolctl 3.6.0. Full-source dependencies and the pinned upstream snapshot are retained separately from the minimal table checker. CI performs only lightweight saved-result checks; it never starts training.
 
-Restore checks archives and individual files and refuses to overwrite differing local files. Historical absolute manifest paths are resolved relative to the checkout. `public_reproduction --allow-missing` inventories omitted binaries explicitly. The new-field verifier reconstructs labels, orbit splits, matched pairing, every compound prediction, numerical swaps, single-step noise selection, and the two primary corrected tests. It requires CUDA for encoder replay and writes to a new audit directory, preserving archived audits.
+## Data, weights and caches
 
-The expanded old-model diagnostic verifier also writes to a separate audit directory:
+Related original data, genuine step-0/RNG, final weights, arrays and essential logs are published through the **independent representation-selectivity artifact release** and [artifacts manifest](artifacts_manifest.json). Every logical file maps to a content SHA, a release asset, download URL and extraction path. Packages contain real file bytes, not links to a local disk. SHA-identical contents are stored once; all logical aliases remain recorded. No missing historical initial identity is replaced with a newly trained or unverified model.
 
-```bash
-python -m experiments.reviewer_revision_verify --output results/my_old_audit
-```
+[Download/restore instructions](docs/representation_reproduction.md) distinguish full publication, the smaller clean-clone download profile, per-file local checks and the exact remote bytes actually downloaded again. A successful upload or checksum does not resolve a scientific verification failure.
 
-For cold training, use separate-output wrappers rather than rerunning against a sealed directory:
+## Previous independent work and licensing
 
-```bash
-python -m experiments.retrain_final_confirmation --output results/my_old_training --stage prepare
-python -m experiments.retrain_final_confirmation --output results/my_old_training --stage run
-python -m experiments.retrain_fresh_confirmation --output results/my_f17_training --stage register
-python -m experiments.retrain_fresh_confirmation --output results/my_f17_training --stage run
-```
+The independent F17 composition/null-space/GELU manuscript and its dedicated experiments have exited this branch's current tree. Their local originals, original history, tags and releases remain intact; the [pre-curation source tree](https://github.com/XuanyuYang223/2026TMLR/tree/e4e9ded9648aa2dc92a1cceef929cc9521546418) is still accessible. The preservation ref and explicit Git-only removals are recorded in the curation audit. Shared historical modules are retained only where this study depends on their exact bytes.
 
-The F17 wrapper retains all scientific settings and seeds, changing only the output root. All 17 units and every declared fit complete before composite evaluation. These are reproductions of existing protocols, not new prospective confirmations. Source preparation and fitting require CUDA. Restore historical shards before reproducing the old study.
+The upstream PermWorld snapshot comes from `XuanyuYang223/neurips` at `74f0de2017115f06f11b7285366b66e7e8431d30`. Its original attribution and any provided license files are retained. The inspected upstream snapshot did not supply a LICENSE/COPYING/NOTICE or package license declaration; this publication does not invent or relicense upstream terms. See [upstream provenance](docs/upstream_provenance.json).
 
-## Rebuild the paper
-
-```bash
-python -m experiments.manuscript_revision
-python -m experiments.null_space_review_report
-python -m experiments.reviewer_revision_report
-python -m experiments.reviewer_fresh_report
-cd paper
-tectonic --untrusted --keep-logs manuscript.tex
-```
-
-The last reporting stage sets the current abstract, introduction, discussion and new-field tables. It uses completed records and performs no new model selection. Compiler intermediates are excluded; Tectonic 0.17.0 built the PDF. Initial protocol/interface records and the presentation-only correction are retained.
-
-## Evidence boundaries
-
-The old five sources share corpus and tests; their bootstraps and expanded TOST are secondary or descriptive. The new 17 units vary both data and initialization in **one** previously untrained field; cross-unit overlap is permitted. The legacy joint-preparation batch-index schedule is shared, while ordinary source training, initialization and predictor-fitting random streams vary. Primary t tests use the dataset/source unit, with Holm correction for two contrasts and marginal 95% intervals.
-
-Answer-matched hidden targets preserve visible gold answers, not necessarily identical teacher probability distributions. Every arm uses the same correct soft supervision. Null components are invisible to one fixed linear readout, not all answer information. True-state repairs and oracle-calibrated random donors are diagnostics. Natural components do not guarantee natural hybrids. Every failed source or gate is retained, and no candidate is added after composite testing. Polynomial primitive failures remain reported. No spontaneous algebra-discovery, universal causal-mechanism, or prospective affine-equivalence claim is made.
+Repository curation, release publication and byte integrity are engineering checks. They do not prove mathematical representation mechanisms. This task ends after publication and clean-clone verification; it does not launch more training or another world.

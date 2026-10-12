@@ -1,0 +1,14 @@
+只读生产提取口径复核（encoding_readiness，2026-10-11 UTC）
+
+没有执行模型、前向、指标或新测试，没有修改冻结源码。
+旧 extract_layers.py::extract 和新 extract.py 均调用同一 original.forward，batch128，完整提示至等号。
+提示宽度2n+6，任务前输入结束位置2n+3；真实step0、eval FP32、TF32关闭及旧数据行序一致。
+旧源码SHA4693a3dd79a0e96d792dca64c94de5a9458cbbc41847af6e12b1a58f82ed58c4；
+新源码SHA216380df1c7224e852449dd973a1c8f664c9da233240c6d29cbc94c42d936c79。
+
+既往6.866455078125e-5是独立8样本prefix-only宽2n+4备选路径与生产full-prompt batch128比较的中间层诊断。
+该备选路径不用于生产缓存。旧benchmark_reader_audit记录180单元同形状五层manual最大误差0；旧finalnorm最大误差0。
+旧40物理/64逻辑缓存记录的finalnorm与原NPZ差异均0，argmax分歧0；8物理initial记录也均0。
+
+没有已知生产缓存别名阻断，但新48源的初始五层/独立finalnorm全样本bitwise runtime gate仍待正式提取执行。
+本复核不能代替其实际通过凭据；最终判断以extraction_validation、缓存身份审计及真实提取日志为准。

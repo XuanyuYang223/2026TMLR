@@ -1,0 +1,31 @@
+{
+  "config_sha256": "e0e7e5de0ddbdff034f8b6ac3e118aeea31f13d68bd3db4b37632490615b0a61",
+  "code_sha256": {
+    "experiments/__init__.py": "eb5ff1d8c35c49b27364ffcbc40cbd0eacc71cde97aaff0ebfe018a3d947f745",
+    "experiments/algebra.py": "758fa9839a31dc27b1d09d25d140821395b86f6eddbe4663a9a002d4f7fee6e3",
+    "experiments/analysis.py": "19e8a60044b0901c4836c6a44b1193420fe7052c276fd51396dfba9e1d77abb1",
+    "experiments/longrun_attention.py": "5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918",
+    "experiments/longrun_engine.py": "c40cede331cb3a92e61a3a501421c067db2ce862ad1a5934dd31ec28b6802bca",
+    "experiments/permutation_audit.py": "d02b667d8d1951c547ad4a4a6a84875535f6ee59255db96bb6abef241b5b267e",
+    "experiments/permworld_combinations.py": "b14ac19b0be4c5695998d04782f43220f4b05a4634435f1715d6d1cdf3b0cdc0",
+    "experiments/permworld_encoding/__init__.py": "d8344f473b24a5845bedeca52a3a94e1c02eb1f8c21f89ccec3a4eed313f3f7f",
+    "experiments/permworld_encoding/benchmark.py": "6d598919a23e25c7c43cbb58e8bd41b4f3b21e33f22669db22c2967167f1b31a",
+    "experiments/permworld_encoding/checks.py": "6b260964e805daf17bc2af19cae8bdae1dc008b137abb09e9ed37ea829911221",
+    "experiments/permworld_encoding/core.py": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+    "experiments/permworld_encoding/data.py": "8a89976c6c0b390f9233eba4ff23593d7c1545eb21f6af4e87a92122fdb7c75d",
+    "experiments/permworld_encoding/evaluate.py": "d7935fe014a79df8d7d674ac1afb70e3ed7fe24992eb5e4f001a9bf14d8ee8db",
+    "experiments/permworld_encoding/plan.py": "02912c6880aec37282b7ad40930ab433a83d10b6e1ded4f1a2d32ef44546dcad",
+    "experiments/permworld_encoding/profile_analysis.py": "7df0eaa4d0096b8aa2c46c653891557d0baf84198924af230480224a0fae8af5",
+    "experiments/permworld_encoding/train.py": "9fb5272c99397a1cd071d84b466d76cf012b8b042727e776ef1ea3497829540a",
+    "experiments/permworld_encoding/validate.py": "7a80fcb6551754e078ee8f3efe6feb8c4c8af2c497d9e3a75cd4436d0a53fa69",
+    "experiments/permworld_encoding_preflight.py": "a173adf67c464f47e3eab10a3297dd5713e7c1e912da1fafd2c1f6b1c910facd",
+    "experiments/specialist_input_adjustment.py": "624fd9ad8a202a7bd462c19c6a730ec2d1b96afeeb63cd736a0b0984dd7ba889",
+    "external/neurips/configs/property_task_geometry.toml": "8a3b21366ca344c0cb50f5a26108375b96eceb3ca49720ff001749ef09155e88",
+    "external/neurips/src/neurips_permutations/__init__.py": "ab87fbaa3acb307adaba99368b62ab1fb3fae955ddc9c6fe4cc072dba1c4c950",
+    "external/neurips/src/neurips_permutations/math_ops.py": "968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c",
+    "external/neurips/src/neurips_permutations/models.py": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6",
+    "external/neurips/src/neurips_permutations/passage.py": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6"
+  },
+  "purpose": "engineering preflight only; formal v1 refrozen as an explicit revision after preflight",
+  "formal_training_started": false
+}

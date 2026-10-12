@@ -1,0 +1,11 @@
+{
+  "reason": "Terminal completion metadata duplicate checkpoint_sha256 keyword; checkpoint already saved at20k. Frozen training files unchanged. Add separately frozen metadata-only sidecar writer.",
+  "protocol_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+  "frozen_training_source_version_sha256": "27cb40ee43341fa326e6b455d989b6e70b31ee421d86f923262117448d7cf476",
+  "existing_completed_model_count": 0,
+  "existing_final20k_checkpoint_run": "eightrel001_transformer_one_line_anti_fixed_points",
+  "existing_checkpoint_sha256": "4c6bd2ea4e953ea5c3cf37f6ab8160cb16bbc333e46d779284793de1b567eb6c",
+  "no_parameter_or_optimizer_or_rng_changes": true,
+  "no_retraining": true,
+  "no_geometry_seen": true
+}

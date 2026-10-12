@@ -1,0 +1,51 @@
+{
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:00:33) [GCC 14.3.0]",
+  "executable": "/home/yangx/ICML/.venv/bin/python",
+  "old_model": {
+    "d_model": 256,
+    "layers": 4,
+    "heads": 8,
+    "mlp_ratio": 4,
+    "dropout": 0.1,
+    "tie_embeddings": true,
+    "max_seq_len": 128,
+    "vocab_size": 188
+  },
+  "old_training": {
+    "updates": 20000,
+    "micro_batch": 16,
+    "accumulation": 4,
+    "effective_batch": 64,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "warmup_updates": 1000,
+    "minimum_lr_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "precision": "FP32 parameters, CUDA BF16 autocast, TF32 disabled; FP32 CPU fallback",
+    "attention": "validated equivalent SDPA",
+    "loss": "Answer token plus EOS, shifted causal CE, other targets ignored; same two supervised tokens/example in both encodings.",
+    "length_schedule": "Uniform permutations of n6/7/8, repeated/truncated to20k; final counts differ by<=1.",
+    "batch_schedule": "Fixed64 distinct graph anchors at the scheduled n; same saved table and start RNG for all4 models.",
+    "validation_every": 1000,
+    "checkpoint_every": 1000,
+    "endpoint": "Fixed final20k update checkpoint; no best-checkpoint or early-stopping selection.",
+    "execution": "Single GPU, serial jobs; no concurrent step0 creation. Resume only when protocol/data/start hashes agree."
+  },
+  "old_primary_protocol_path": "diagnostics/graphworld_pilot_20261010/protocol.json",
+  "old_primary_protocol_sha256": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+  "current_pairing_completion_sha256": "71f32daccb539a55bb55d77f584074331f87fd3b04d001bbc32accbe9c2c2dc4",
+  "existing_GPU": "NVIDIA GeForce RTX5070,12GiB",
+  "model_configuration_changed": false,
+  "capacity_comparison_performed": false
+}

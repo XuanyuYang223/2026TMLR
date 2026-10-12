@@ -1,0 +1,20 @@
+{
+  "status": "index_curation_completed_originals_preserved",
+  "old_HEAD": "e4e9ded9648aa2dc92a1cceef929cc9521546418",
+  "index_only_exit_count": 5078,
+  "entry_rewrites": [
+    "README.md",
+    ".gitignore",
+    "CURRENT_RESEARCH.txt",
+    "requirements.txt",
+    "requirements-dev.txt"
+  ],
+  "entry_originals_backed_up_outside_repository": true,
+  "no_scientific_algorithm_or_result_changes": true,
+  "staged_from_explicit_white_list": true,
+  "whitelist_files": 1559,
+  "no_history_rewrite": true,
+  "no_push_performed_yet": true,
+  "original_file_checks_count": 5078,
+  "original_file_check_failed_count": 0
+}

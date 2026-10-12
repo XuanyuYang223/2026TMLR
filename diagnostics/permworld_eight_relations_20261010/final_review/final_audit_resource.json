@@ -1,0 +1,11 @@
+{
+  "wall_seconds": 283.64,
+  "user_cpu_seconds": 17.03,
+  "system_cpu_seconds": 17.97,
+  "max_rss_kib": 714612,
+  "status": "completed",
+  "exit_code": 0,
+  "command": ".venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/audit.py --run",
+  "scope": "External GNU time measurement of final CPU provenance audit only; not training/GPU active time or an additional scientific phase.",
+  "GPU_started": false
+}

@@ -1,0 +1,27 @@
+{
+  "status": "completed_readout",
+  "scientific_metrics_recomputed": 0,
+  "training_updates": 0,
+  "source_models": 64,
+  "relation_instances": 8,
+  "transform_types": 2,
+  "independent_worlds": 1,
+  "counts_are_coupled_not_independent_repetitions": true,
+  "component_coverage_rows": 13824,
+  "primary_condition_rows": 32,
+  "metric_direction_rows": 32,
+  "all_layer_rows": 768,
+  "encoding_rows": 16,
+  "source_learning_rows": 64,
+  "curve_rows": 1280,
+  "missing_graph_not_imputed": true,
+  "input_sha256": {
+    "per_length_results.csv": "af0c1bee947232a5168cc902a9424b8330afe5266f45f2a9e0eeb127f01ad62e",
+    "contrast_summary.csv": "99a307f42fdf441106b92b9ad825b8dcfb14399a104877838099ce1b862fe4ce",
+    "source_learning.csv": "6e900cb17f537dc7b499bc3cebc97bee8c32c87bad745225840da4c9f7352b22",
+    "source_learning_summary.csv": "dd2b566aa30d35081661c5d73c303532c082eb37b1207ef37c67b16a98ccf641"
+  },
+  "fixture_only": false,
+  "reader_sha256": "6c417d11426122d83da9568c26f43679033241e51c9ed10b49637a0a566a68e3",
+  "readout_freeze_sha256": "6a694aea9f316675ec5f232419207ae22ac1ca736761eb6aa80f9220bb14cc3c"
+}

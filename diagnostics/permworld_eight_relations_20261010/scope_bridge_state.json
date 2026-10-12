@@ -1,0 +1,20 @@
+{
+  "status": "scientific_scope_completed_report_review_pending",
+  "finish_utc": "2026-10-11T11:18:06.662168+00:00",
+  "fixed_perm_new": 48,
+  "reused_perm": 16,
+  "fixed_graph_new": 4,
+  "automatic_followup": false,
+  "geometry_based_selection": false,
+  "explicit_environment_recovery": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/graph_evaluation_environment_repair_01/repair.json",
+  "original_failed_bridge_preserved": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/graph_evaluation_environment_repair_01/scope_bridge_state.failed.json",
+  "graph_driver": {
+    "log_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/pipeline_logs/graph_environment_recovery.log",
+    "driver_source": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/graph_evaluation_environment_repair_01/resume_remaining.py",
+    "exit_code": 0,
+    "scope": "Successful five-stage fixed remainder driver after dependency repair; original failed bridge and failed graph evaluation remain preserved separately.",
+    "training_updates": 0,
+    "recorded_finish_utc": "2026-10-11T11:18:06.662168+00:00"
+  },
+  "delivery_metadata_repair": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/archive_metadata_repair_01/repair.json"
+}

@@ -1,0 +1,10 @@
+# Original Linux science environment, Python 3.13.13.
+# PyTorch has CUDA 12.8 local version metadata in the original environment.
+# This snapshot is separate from the standard-library table checks.
+numpy==2.4.4
+torch==2.11.0+cu128
+matplotlib==3.11.2
+scipy==1.18.1
+threadpoolctl==3.6.0
+packaging==26.2
+pytest==9.1.1

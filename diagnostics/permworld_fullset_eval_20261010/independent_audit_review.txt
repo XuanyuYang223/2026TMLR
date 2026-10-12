@@ -1,0 +1,2249 @@
+PermWorld 完整训练/验证评价：独立统计审查
+状态：passed
+合成fixture：False
+此审查只读取保存的数值产物和四个源train/validation长度/标签数组；不运行模型、不训练、不反序列化检查点张量、不访问测试或CKA。
+先核对冻结协议与源/数据/预测哈希，再从每个完整188维logits独立复算argmax和float64 logsumexp CE。
+主报告CE保留原FP32逐样本CE；float64路径是数值验证，不改主终点或原值。
+逐长度先汇总；n10/n11/n12固定各1/3。EOS与答案单列；combined CE为两项CE平均。
+验证重现保留旧值、新值、有符号差；准确率容差0、CE预算1e-5+1e-6×|旧值|。
+独立logit CE预算2e-6+2e-6×|原FP32CE|，不根据观察扩大。
+前向精度同时核对冻结evaluation设定；仅保存logits为float32不能证明内部前向没有autocast。
+这是一个既有开发数据世界的数值审计；16模型不作为16独立世界，不提供等价性或机制结论。
+若数值超界，保留原产物并报告失败。不会追加训练或自动开启表征研究。
+
+机器审计结果：
+{
+  "status": "passed",
+  "generated_utc": "2026-10-10T18:45:34.536282+00:00",
+  "synthetic_fixture": false,
+  "auditor_sha256": "d75756e796bef9f8f52b2ef1c643c8bb2a79e8d1daa643f9a56546b4d3c8f65a",
+  "input_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/protocol.json": "6221a77fe29ef46dca14dc6e3c14805c43a142da3ed1e12bab3595b2ebf49350",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/freeze.json": "71ddb0dbec16093d01ba84a67f41efd4e3a19d6f6c97eb7556a4fd20d9b15977",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/prediction_manifest.json": "e74328d1d9c1429ffa55d7077059b2f6c822601f713a2cfa14dc85a163f60d4d",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/evaluation_execution.json": "0bf4113b7119892e103377c015016b1ce5345197826b54eeaff18e54e8cbbcb1",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/metrics_by_length.csv": "e73e6e4c1070441a64ddf79143028d64d973214793338955a7ef6fbd7d75ecf3",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/metrics_summary.csv": "c710bcc5c404cb39b3fb6cd604ae7c9433521f6d1d7a42ca3d09d086799cd498",
+    "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/validation_reproduction.csv": "a2df3c6a918c46d873480c895bf8401fe47082204633b36f79d7d8bba8b0797b"
+  },
+  "models": 16,
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "lengths": [
+    10,
+    11,
+    12
+  ],
+  "length_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "length_rows": 96,
+  "summary_rows": 32,
+  "samples_model_pairs": 147456,
+  "all_vocabulary_argmax_comparisons": 294912,
+  "per_sample_ce_comparisons": 294912,
+  "independent_ce_float64": true,
+  "primary_saved_fp32_ce_preserved": true,
+  "independent_logit_ce_tolerance": {
+    "absolute": 2e-06,
+    "relative": 2e-06
+  },
+  "max_independent_ce_absolute_difference": 1.9549354668413343e-06,
+  "worst_independent_ce_sample": {
+    "run_id": "learningdev001_gru_one_line_recoils",
+    "split": "train",
+    "kind": "answer",
+    "sample_index": 2469,
+    "length": 11,
+    "saved_fp32_ce": 0.00011252723925281316,
+    "independent_float64_ce": 0.00011303489428904356,
+    "signed_difference": 5.076550362304033e-07,
+    "absolute_difference": 5.076550362304033e-07,
+    "tolerance": 2.0002250544785054e-06,
+    "tolerance_ratio": 0.2537989588190405
+  },
+  "validation_reproduction_tolerances": {
+    "accuracy_absolute": 0.0,
+    "ce_absolute": 1e-05,
+    "ce_relative": 1e-06
+  },
+  "validation_reproduction_comparisons": 320,
+  "validation_reproduction_passed": true,
+  "validation_reproduction_failed_rows": [],
+  "table_checks": [
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/metrics_by_length.csv",
+      "rows": 96,
+      "fields_compared": 864,
+      "passed": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/metrics_summary.csv",
+      "rows": 32,
+      "fields_compared": 288,
+      "passed": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_fullset_eval_20261010/validation_reproduction.csv",
+      "rows": 320,
+      "fields_compared": 2880,
+      "passed": true
+    }
+  ],
+  "source_arrays_decoded": [
+    "train_lengths",
+    "train_labels",
+    "validation_lengths",
+    "validation_labels"
+  ],
+  "prediction_arrays_decoded": [
+    "train_answer_ce",
+    "train_answer_logits",
+    "train_eos_ce",
+    "train_eos_logits",
+    "train_eos_predicted_token",
+    "train_gold_answer_token",
+    "train_lengths",
+    "train_predicted_answer_token",
+    "train_sample_index",
+    "validation_answer_ce",
+    "validation_answer_logits",
+    "validation_eos_ce",
+    "validation_eos_logits",
+    "validation_eos_predicted_token",
+    "validation_gold_answer_token",
+    "validation_lengths",
+    "validation_predicted_answer_token",
+    "validation_sample_index"
+  ],
+  "declared_fp32_eval_configuration_verified": true,
+  "full_fp32_forward_not_inferred_from_logits_dtype_alone": true,
+  "trained": false,
+  "evaluated_models": false,
+  "checkpoint_tensors_loaded": false,
+  "test_arrays_decoded": false,
+  "geometry_evaluated": false,
+  "F17_modified": false,
+  "independent_world_count": 1,
+  "interpretation": "Numerical audit of one existing development world; not confirmation, TOST, causal mechanism or independent-world replication.",
+  "models_summary": [
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 0.6481119791666666,
+      "answer_ce": 0.8013438758292372,
+      "eos_accuracy": 1.0,
+      "eos_ce": 8.249394622220999e-06,
+      "combined_ce": 0.4006760626119297
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.5667317708333334,
+      "answer_ce": 0.9761577058719316,
+      "eos_accuracy": 1.0,
+      "eos_ce": 8.68877299320392e-06,
+      "combined_ce": 0.4880831973224624
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 0.4070638020833333,
+      "answer_ce": 1.343522945486863,
+      "eos_accuracy": 1.0,
+      "eos_ce": 4.471314455402793e-06,
+      "combined_ce": 0.671763708400659
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.3922526041666667,
+      "answer_ce": 1.3831036703389448,
+      "eos_accuracy": 1.0,
+      "eos_ce": 4.214112795090467e-06,
+      "combined_ce": 0.69155394222587
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 9.596653973028187e-05,
+      "eos_accuracy": 1.0,
+      "eos_ce": 7.410493744290185e-06,
+      "combined_ce": 5.168851673728603e-05
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.9986979166666666,
+      "answer_ce": 0.004108957320680655,
+      "eos_accuracy": 1.0,
+      "eos_ce": 8.06026955331903e-06,
+      "combined_ce": 0.0020585087951169867
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 0.4168294270833333,
+      "answer_ce": 1.3221788008959265,
+      "eos_accuracy": 1.0,
+      "eos_ce": 1.316812142005778e-05,
+      "combined_ce": 0.6610959845086734
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.4075520833333333,
+      "answer_ce": 1.3776485484753114,
+      "eos_accuracy": 1.0,
+      "eos_ce": 1.577594882088788e-05,
+      "combined_ce": 0.6888321622120662
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 0.99169921875,
+      "answer_ce": 0.02881954614162711,
+      "eos_accuracy": 1.0,
+      "eos_ce": 5.724101532267323e-06,
+      "combined_ce": 0.014412635121579689
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.9059244791666666,
+      "answer_ce": 0.36337145677083643,
+      "eos_accuracy": 1.0,
+      "eos_ce": 9.323866777997495e-06,
+      "combined_ce": 0.1816903903188072
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 0.5157877604166666,
+      "answer_ce": 1.0551339478358084,
+      "eos_accuracy": 1.0,
+      "eos_ce": 9.523153718232295e-07,
+      "combined_ce": 0.52756745007559
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.4996744791666667,
+      "answer_ce": 1.0896867101740402,
+      "eos_accuracy": 1.0,
+      "eos_ce": 9.431573280057245e-07,
+      "combined_ce": 0.5448438266656842
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 0.9044596354166666,
+      "answer_ce": 0.24939964139431461,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.7949091180881624e-05,
+      "combined_ce": 0.12471379524274777
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.8098958333333334,
+      "answer_ce": 0.5299622207641997,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.2094856970050758e-05,
+      "combined_ce": 0.2649921578105849
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 0.5455729166666666,
+      "answer_ce": 1.0198035453552923,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.0174585168897252e-05,
+      "combined_ce": 0.5099118599702307
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.5016276041666666,
+      "answer_ce": 1.1287322010757634,
+      "eos_accuracy": 1.0,
+      "eos_ce": 1.9476463232119084e-05,
+      "combined_ce": 0.5643758387694978
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 3.960114116304444e-05,
+      "eos_accuracy": 1.0,
+      "eos_ce": 3.1776231180699146e-06,
+      "combined_ce": 2.1389382140557175e-05
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.9996744791666666,
+      "answer_ce": 0.003171535725501329,
+      "eos_accuracy": 0.9996744791666666,
+      "eos_ce": 0.00040766625268782764,
+      "combined_ce": 0.0017896009890945783
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 0.00012152075808959568,
+      "eos_accuracy": 1.0,
+      "eos_ce": 5.06549447838849e-06,
+      "combined_ce": 6.329312628399209e-05
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.3525390625,
+      "answer_ce": 5.223679861188014,
+      "eos_accuracy": 1.0,
+      "eos_ce": 1.838555673293792e-06,
+      "combined_ce": 2.6118408498718435
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 6.912539496561898e-05,
+      "eos_accuracy": 1.0,
+      "eos_ce": 3.761808149857493e-06,
+      "combined_ce": 3.644360155773824e-05
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.9983723958333334,
+      "answer_ce": 0.004675881594340403,
+      "eos_accuracy": 1.0,
+      "eos_ce": 3.648849121129505e-06,
+      "combined_ce": 0.0023397652217307663
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 0.00014770188111409843,
+      "eos_accuracy": 1.0,
+      "eos_ce": 4.9758483188234075e-06,
+      "combined_ce": 7.633886471646092e-05
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.3603515625,
+      "answer_ce": 5.219937171002459,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.5786769122423023e-06,
+      "combined_ce": 2.609969874839685
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 1.9471734699812632e-05,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.754365684337623e-06,
+      "combined_ce": 1.1113050192075128e-05
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 1.0,
+      "answer_ce": 2.0442986308063144e-05,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.6005130431457544e-06,
+      "combined_ce": 1.152174967560445e-05
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 0.00010242288350111502,
+      "eos_accuracy": 1.0,
+      "eos_ce": 4.869946238221974e-06,
+      "combined_ce": 5.36464148696685e-05
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.4866536458333333,
+      "answer_ce": 4.08642351580109,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.8714580605817184e-06,
+      "combined_ce": 2.043213193629575
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 1.5908032605057205e-05,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.3700427874880545e-06,
+      "combined_ce": 9.13903769627263e-06
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.9996744791666666,
+      "answer_ce": 0.0005425121948815873,
+      "eos_accuracy": 1.0,
+      "eos_ce": 2.4446712131309667e-06,
+      "combined_ce": 0.00027247843304735914
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "split": "train",
+      "samples": 6144,
+      "answer_accuracy": 1.0,
+      "answer_ce": 8.41365756218219e-05,
+      "eos_accuracy": 1.0,
+      "eos_ce": 3.6316586690248822e-06,
+      "combined_ce": 4.388411714542339e-05
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "split": "validation",
+      "samples": 3072,
+      "answer_accuracy": 0.4801432291666667,
+      "answer_ce": 4.14829394774837,
+      "eos_accuracy": 1.0,
+      "eos_ce": 1.725039134402769e-06,
+      "combined_ce": 2.0741478363937524
+    }
+  ],
+  "per_model_logit_checks": [
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 5.215436242878013e-07,
+          "maximum_tolerance_ratio": 0.12813265336588472,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_descents",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 3155,
+            "length": 11,
+            "saved_fp32_ce": 0.2534183859825134,
+            "independent_float64_ce": 0.2534180647748663,
+            "signed_difference": -3.212076471470482e-07,
+            "absolute_difference": 3.212076471470482e-07,
+            "tolerance": 2.5068367719650267e-06,
+            "tolerance_ratio": 0.12813265336588472
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 3.382858260181365e-07,
+          "maximum_tolerance_ratio": 0.16914200566310483,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_descents",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 4459,
+            "length": 12,
+            "saved_fp32_ce": 5.364403477869928e-06,
+            "independent_float64_ce": 5.702689303888064e-06,
+            "signed_difference": 3.382858260181365e-07,
+            "absolute_difference": 3.382858260181365e-07,
+            "tolerance": 2.0000107288069554e-06,
+            "tolerance_ratio": 0.16914200566310483
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_descents",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 5.044518012198296e-07,
+          "maximum_tolerance_ratio": 0.10547875886309431,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_descents",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 1550,
+            "length": 11,
+            "saved_fp32_ce": 0.2425461858510971,
+            "independent_float64_ce": 0.24254592372663808,
+            "signed_difference": -2.6212445902729087e-07,
+            "absolute_difference": 2.6212445902729087e-07,
+            "tolerance": 2.4850923717021942e-06,
+            "tolerance_ratio": 0.10547875886309431
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 3.2646515890633054e-07,
+          "maximum_tolerance_ratio": 0.16323180110513932,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_descents",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 2776,
+            "length": 12,
+            "saved_fp32_ce": 4.768360213347478e-06,
+            "independent_float64_ce": 5.094825372253808e-06,
+            "signed_difference": 3.2646515890633054e-07,
+            "absolute_difference": 3.2646515890633054e-07,
+            "tolerance": 2.0000095367204267e-06,
+            "tolerance_ratio": 0.16323180110513932
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.1515533677483063e-07,
+          "maximum_tolerance_ratio": 0.0767144652379444,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_descents",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 3498,
+            "length": 11,
+            "saved_fp32_ce": 0.9045637845993042,
+            "independent_float64_ce": 0.9045634923841197,
+            "signed_difference": -2.9221518449418227e-07,
+            "absolute_difference": 2.9221518449418227e-07,
+            "tolerance": 3.809127569198608e-06,
+            "tolerance_ratio": 0.0767144652379444
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.9648035670959416e-07,
+          "maximum_tolerance_ratio": 0.1482349301662811,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_descents",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 6114,
+            "length": 12,
+            "saved_fp32_ce": 3.540453326422721e-05,
+            "independent_float64_ce": 3.5701013620936806e-05,
+            "signed_difference": 2.9648035670959416e-07,
+            "absolute_difference": 2.9648035670959416e-07,
+            "tolerance": 2.0000708090665285e-06,
+            "tolerance_ratio": 0.1482349301662811
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_descents",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 4.4855558822831654e-07,
+          "maximum_tolerance_ratio": 0.06356084842312866,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_descents",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 835,
+            "length": 10,
+            "saved_fp32_ce": 0.7821352481842041,
+            "independent_float64_ce": 0.7821354747322609,
+            "signed_difference": 2.2654805675870193e-07,
+            "absolute_difference": 2.2654805675870193e-07,
+            "tolerance": 3.564270496368408e-06,
+            "tolerance_ratio": 0.06356084842312866
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.893448360907769e-07,
+          "maximum_tolerance_ratio": 0.14466864125433587,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_descents",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 1773,
+            "length": 11,
+            "saved_fp32_ce": 2.610649426060263e-05,
+            "independent_float64_ce": 2.6395839096693408e-05,
+            "signed_difference": 2.893448360907769e-07,
+            "absolute_difference": 2.893448360907769e-07,
+            "tolerance": 2.000052212988521e-06,
+            "tolerance_ratio": 0.14466864125433587
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.5597072784175907e-07,
+          "maximum_tolerance_ratio": 0.22797297177542308,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_recoils",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 978,
+            "length": 10,
+            "saved_fp32_ce": 5.435795901576057e-05,
+            "independent_float64_ce": 5.481392974360233e-05,
+            "signed_difference": 4.5597072784175907e-07,
+            "absolute_difference": 4.5597072784175907e-07,
+            "tolerance": 2.0001087159180313e-06,
+            "tolerance_ratio": 0.22797297177542308
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.3046608532695245e-07,
+          "maximum_tolerance_ratio": 0.11522985584662652,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_recoils",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 813,
+            "length": 10,
+            "saved_fp32_ce": 2.7656173188006505e-05,
+            "independent_float64_ce": 2.7886639273333458e-05,
+            "signed_difference": 2.3046608532695245e-07,
+            "absolute_difference": 2.3046608532695245e-07,
+            "tolerance": 2.0000553123463757e-06,
+            "tolerance_ratio": 0.11522985584662652
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_recoils",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 4.552122554457583e-07,
+          "maximum_tolerance_ratio": 0.22759513974859436,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_recoils",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 1104,
+            "length": 11,
+            "saved_fp32_ce": 4.827859811484814e-05,
+            "independent_float64_ce": 4.8733810370293895e-05,
+            "signed_difference": 4.552122554457583e-07,
+            "absolute_difference": 4.552122554457583e-07,
+            "tolerance": 2.0000965571962294e-06,
+            "tolerance_ratio": 0.22759513974859436
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 1.9723635347190793e-07,
+          "maximum_tolerance_ratio": 0.09861648388634252,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_recoils",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 738,
+            "length": 10,
+            "saved_fp32_ce": 1.7165990357170813e-05,
+            "independent_float64_ce": 1.736322671064272e-05,
+            "signed_difference": 1.9723635347190793e-07,
+            "absolute_difference": 1.9723635347190793e-07,
+            "tolerance": 2.0000343319807143e-06,
+            "tolerance_ratio": 0.09861648388634252
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.554076635798765e-07,
+          "maximum_tolerance_ratio": 0.0878655898253817,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 3840,
+            "length": 11,
+            "saved_fp32_ce": 0.7113696336746216,
+            "independent_float64_ce": 0.711369332933617,
+            "signed_difference": -3.007410045441361e-07,
+            "absolute_difference": 3.007410045441361e-07,
+            "tolerance": 3.4227392673492432e-06,
+            "tolerance_ratio": 0.0878655898253817
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 3.5079285964911833e-07,
+          "maximum_tolerance_ratio": 0.17539553074947795,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 3909,
+            "length": 11,
+            "saved_fp32_ce": 5.125986263010418e-06,
+            "independent_float64_ce": 5.476779122659536e-06,
+            "signed_difference": 3.5079285964911833e-07,
+            "absolute_difference": 3.5079285964911833e-07,
+            "tolerance": 2.000010251972526e-06,
+            "tolerance_ratio": 0.17539553074947795
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 3.5900669548283304e-07,
+          "maximum_tolerance_ratio": 0.06609779602120375,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 1191,
+            "length": 11,
+            "saved_fp32_ce": 0.5264984965324402,
+            "independent_float64_ce": 0.5264986983288127,
+            "signed_difference": 2.0179637250095084e-07,
+            "absolute_difference": 2.0179637250095084e-07,
+            "tolerance": 3.05299699306488e-06,
+            "tolerance_ratio": 0.06609779602120375
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 3.310756433450024e-07,
+          "maximum_tolerance_ratio": 0.16553677579917722,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_recoils",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 759,
+            "length": 10,
+            "saved_fp32_ce": 6.318072337307967e-06,
+            "independent_float64_ce": 6.64914798065297e-06,
+            "signed_difference": 3.310756433450024e-07,
+            "absolute_difference": 3.310756433450024e-07,
+            "tolerance": 2.0000126361446745e-06,
+            "tolerance_ratio": 0.16553677579917722
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.4581907943097576e-07,
+          "maximum_tolerance_ratio": 0.22029659376900074,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_peaks",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 642,
+            "length": 10,
+            "saved_fp32_ce": 0.011861036531627178,
+            "independent_float64_ce": 0.01186148235070661,
+            "signed_difference": 4.4581907943097576e-07,
+            "absolute_difference": 4.4581907943097576e-07,
+            "tolerance": 2.0237220730632544e-06,
+            "tolerance_ratio": 0.22029659376900074
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 3.082189721226314e-07,
+          "maximum_tolerance_ratio": 0.15410873284424298,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_peaks",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 2314,
+            "length": 11,
+            "saved_fp32_ce": 4.887569048150908e-06,
+            "independent_float64_ce": 5.19578802027354e-06,
+            "signed_difference": 3.082189721226314e-07,
+            "absolute_difference": 3.082189721226314e-07,
+            "tolerance": 2.0000097751380963e-06,
+            "tolerance_ratio": 0.15410873284424298
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_peaks",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 9.673757705996877e-07,
+          "maximum_tolerance_ratio": 0.20282246738597134,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_peaks",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 1719,
+            "length": 11,
+            "saved_fp32_ce": 0.0009919252479448915,
+            "independent_float64_ce": 0.000992331295249116,
+            "signed_difference": 4.060473042244439e-07,
+            "absolute_difference": 4.060473042244439e-07,
+            "tolerance": 2.0019838504958896e-06,
+            "tolerance_ratio": 0.20282246738597134
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.7005664904322657e-07,
+          "maximum_tolerance_ratio": 0.1350272138677789,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_peaks",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 618,
+            "length": 10,
+            "saved_fp32_ce": 8.22540732769994e-06,
+            "independent_float64_ce": 8.495463976743167e-06,
+            "signed_difference": 2.7005664904322657e-07,
+            "absolute_difference": 2.7005664904322657e-07,
+            "tolerance": 2.000016450814655e-06,
+            "tolerance_ratio": 0.1350272138677789
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 3.3965619294917815e-07,
+          "maximum_tolerance_ratio": 0.10226415000982167,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 1744,
+            "length": 10,
+            "saved_fp32_ce": 0.477042019367218,
+            "independent_float64_ce": 0.4770423214641113,
+            "signed_difference": 3.020968932787582e-07,
+            "absolute_difference": 3.020968932787582e-07,
+            "tolerance": 2.954084038734436e-06,
+            "tolerance_ratio": 0.10226415000982167
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.89233419437096e-07,
+          "maximum_tolerance_ratio": 0.1446165545618997,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 5141,
+            "length": 12,
+            "saved_fp32_ce": 1.0728830375228426e-06,
+            "independent_float64_ce": 1.3621164569599387e-06,
+            "signed_difference": 2.89233419437096e-07,
+            "absolute_difference": 2.89233419437096e-07,
+            "tolerance": 2.0000021457660748e-06,
+            "tolerance_ratio": 0.1446165545618997
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 3.9009522367905447e-07,
+          "maximum_tolerance_ratio": 0.08490409461246942,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 983,
+            "length": 10,
+            "saved_fp32_ce": 0.4444611072540283,
+            "independent_float64_ce": 0.4444608619727033,
+            "signed_difference": -2.4528132502865674e-07,
+            "absolute_difference": 2.4528132502865674e-07,
+            "tolerance": 2.8889222145080566e-06,
+            "tolerance_ratio": 0.08490409461246942
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.754225256751397e-07,
+          "maximum_tolerance_ratio": 0.13771113150606326,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_peaks",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 1098,
+            "length": 11,
+            "saved_fp32_ce": 9.536738616588991e-07,
+            "independent_float64_ce": 1.2290963873340388e-06,
+            "signed_difference": 2.754225256751397e-07,
+            "absolute_difference": 2.754225256751397e-07,
+            "tolerance": 2.0000019073477233e-06,
+            "tolerance_ratio": 0.13771113150606326
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.0161983250186495e-07,
+          "maximum_tolerance_ratio": 0.19721738436902853,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_valleys",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 4204,
+            "length": 12,
+            "saved_fp32_ce": 0.018216101452708244,
+            "independent_float64_ce": 0.018215699832875742,
+            "signed_difference": -4.0161983250186495e-07,
+            "absolute_difference": 4.0161983250186495e-07,
+            "tolerance": 2.036432202905416e-06,
+            "tolerance_ratio": 0.19721738436902853
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.743939226945713e-07,
+          "maximum_tolerance_ratio": 0.1371958655652015,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_valleys",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 812,
+            "length": 10,
+            "saved_fp32_ce": 7.986990567587782e-06,
+            "independent_float64_ce": 8.261384490282353e-06,
+            "signed_difference": 2.743939226945713e-07,
+            "absolute_difference": 2.743939226945713e-07,
+            "tolerance": 2.000015973981135e-06,
+            "tolerance_ratio": 0.1371958655652015
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_one_line_valleys",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 4.925341254846671e-07,
+          "maximum_tolerance_ratio": 0.1871292824529832,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_valleys",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 2036,
+            "length": 11,
+            "saved_fp32_ce": 0.002212102524936199,
+            "independent_float64_ce": 0.0022124776113994216,
+            "signed_difference": 3.750864632223738e-07,
+            "absolute_difference": 3.750864632223738e-07,
+            "tolerance": 2.0044242050498723e-06,
+            "tolerance_ratio": 0.1871292824529832
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.6208654979598123e-07,
+          "maximum_tolerance_ratio": 0.13104213453789382,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_one_line_valleys",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 1931,
+            "length": 11,
+            "saved_fp32_ce": 8.702239938429557e-06,
+            "independent_float64_ce": 8.964326488225538e-06,
+            "signed_difference": 2.6208654979598123e-07,
+            "absolute_difference": 2.6208654979598123e-07,
+            "tolerance": 2.0000174044798767e-06,
+            "tolerance_ratio": 0.13104213453789382
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.4820514855103966e-07,
+          "maximum_tolerance_ratio": 0.10570809309539587,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 5243,
+            "length": 12,
+            "saved_fp32_ce": 0.19705183804035187,
+            "independent_float64_ce": 0.19705209111648614,
+            "signed_difference": 2.530761342711685e-07,
+            "absolute_difference": 2.530761342711685e-07,
+            "tolerance": 2.3941036760807035e-06,
+            "tolerance_ratio": 0.10570809309539587
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 3.4101979906608904e-07,
+          "maximum_tolerance_ratio": 0.17050674903399415,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 3981,
+            "length": 11,
+            "saved_fp32_ce": 1.847726889536716e-05,
+            "independent_float64_ce": 1.881828869443325e-05,
+            "signed_difference": 3.4101979906608904e-07,
+            "absolute_difference": 3.4101979906608904e-07,
+            "tolerance": 2.0000369545377905e-06,
+            "tolerance_ratio": 0.17050674903399415
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 4.790137202448363e-07,
+          "maximum_tolerance_ratio": 0.09250554776577019,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 1852,
+            "length": 11,
+            "saved_fp32_ce": 0.43313828110694885,
+            "independent_float64_ce": 0.4331380159604654,
+            "signed_difference": -2.651464834357853e-07,
+            "absolute_difference": 2.651464834357853e-07,
+            "tolerance": 2.8662765622138977e-06,
+            "tolerance_ratio": 0.09250554776577019
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 3.1708341197145273e-07,
+          "maximum_tolerance_ratio": 0.15853751043141853,
+          "worst_sample": {
+            "run_id": "learningdev001_transformer_canonical_cycle_valleys",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 2027,
+            "length": 11,
+            "saved_fp32_ce": 2.6464111215318553e-05,
+            "independent_float64_ce": 2.61470278033471e-05,
+            "signed_difference": -3.1708341197145273e-07,
+            "absolute_difference": 3.1708341197145273e-07,
+            "tolerance": 2.0000529282224305e-06,
+            "tolerance_ratio": 0.15853751043141853
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 3.546199636161873e-07,
+          "maximum_tolerance_ratio": 0.1772168199906812,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_descents",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 4668,
+            "length": 12,
+            "saved_fp32_ce": 0.0005256939912214875,
+            "independent_float64_ce": 0.0005260486111851037,
+            "signed_difference": 3.546199636161873e-07,
+            "absolute_difference": 3.546199636161873e-07,
+            "tolerance": 2.0010513879824427e-06,
+            "tolerance_ratio": 0.1772168199906812
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.4564703693386036e-07,
+          "maximum_tolerance_ratio": 0.12282252284312477,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_descents",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 271,
+            "length": 10,
+            "saved_fp32_ce": 8.106198947643861e-06,
+            "independent_float64_ce": 8.351845984577722e-06,
+            "signed_difference": 2.4564703693386036e-07,
+            "absolute_difference": 2.4564703693386036e-07,
+            "tolerance": 2.0000162123978953e-06,
+            "tolerance_ratio": 0.12282252284312477
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_descents",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 3.4830668838026213e-07,
+          "maximum_tolerance_ratio": 0.1740791099139018,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_descents",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 2960,
+            "length": 12,
+            "saved_fp32_ce": 0.000426439888542518,
+            "independent_float64_ce": 0.0004267881952308983,
+            "signed_difference": 3.4830668838026213e-07,
+            "absolute_difference": 3.4830668838026213e-07,
+            "tolerance": 2.000852879777085e-06,
+            "tolerance_ratio": 0.1740791099139018
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.3417068106823535e-07,
+          "maximum_tolerance_ratio": 0.11708522887299531,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_descents",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 2577,
+            "length": 12,
+            "saved_fp32_ce": 9.536738616588991e-07,
+            "independent_float64_ce": 1.1878445427271345e-06,
+            "signed_difference": 2.3417068106823535e-07,
+            "absolute_difference": 2.3417068106823535e-07,
+            "tolerance": 2.0000019073477233e-06,
+            "tolerance_ratio": 0.11708522887299531
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.141135168111987e-07,
+          "maximum_tolerance_ratio": 0.20703385629937615,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_descents",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 170,
+            "length": 10,
+            "saved_fp32_ce": 0.00011062010162277147,
+            "independent_float64_ce": 0.00011103421513958267,
+            "signed_difference": 4.141135168111987e-07,
+            "absolute_difference": 4.141135168111987e-07,
+            "tolerance": 2.0002212402032454e-06,
+            "tolerance_ratio": 0.20703385629937615
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.929312152843977e-07,
+          "maximum_tolerance_ratio": 0.1464631807539105,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_descents",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 1572,
+            "length": 10,
+            "saved_fp32_ce": 1.6569954823353328e-05,
+            "independent_float64_ce": 1.6862886038637726e-05,
+            "signed_difference": 2.929312152843977e-07,
+            "absolute_difference": 2.929312152843977e-07,
+            "tolerance": 2.0000331399096464e-06,
+            "tolerance_ratio": 0.1464631807539105
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_descents",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 1.3449553293298777e-06,
+          "maximum_tolerance_ratio": 0.19697606075762628,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_descents",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 24,
+            "length": 10,
+            "saved_fp32_ce": 0.028063606470823288,
+            "independent_float64_ce": 0.02806401147866211,
+            "signed_difference": 4.050078388218026e-07,
+            "absolute_difference": 4.050078388218026e-07,
+            "tolerance": 2.0561272129416467e-06,
+            "tolerance_ratio": 0.19697606075762628
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.412029473930488e-07,
+          "maximum_tolerance_ratio": 0.12060135868216096,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_descents",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 2966,
+            "length": 12,
+            "saved_fp32_ce": 9.536738616588991e-07,
+            "independent_float64_ce": 1.194876809051948e-06,
+            "signed_difference": 2.412029473930488e-07,
+            "absolute_difference": 2.412029473930488e-07,
+            "tolerance": 2.0000019073477233e-06,
+            "tolerance_ratio": 0.12060135868216096
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 5.076550362304033e-07,
+          "maximum_tolerance_ratio": 0.2537989588190405,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_recoils",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 2469,
+            "length": 11,
+            "saved_fp32_ce": 0.00011252723925281316,
+            "independent_float64_ce": 0.00011303489428904356,
+            "signed_difference": 5.076550362304033e-07,
+            "absolute_difference": 5.076550362304033e-07,
+            "tolerance": 2.0002250544785054e-06,
+            "tolerance_ratio": 0.2537989588190405
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.700010917067175e-07,
+          "maximum_tolerance_ratio": 0.13499998259070467,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_recoils",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 4231,
+            "length": 12,
+            "saved_fp32_ce": 4.172316494077677e-06,
+            "independent_float64_ce": 4.442317585784394e-06,
+            "signed_difference": 2.700010917067175e-07,
+            "absolute_difference": 2.700010917067175e-07,
+            "tolerance": 2.0000083446329883e-06,
+            "tolerance_ratio": 0.13499998259070467
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_recoils",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 4.2398707478241704e-07,
+          "maximum_tolerance_ratio": 0.21197084713809614,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_recoils",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 769,
+            "length": 10,
+            "saved_fp32_ce": 0.0001070442158379592,
+            "independent_float64_ce": 0.00010746820291274162,
+            "signed_difference": 4.2398707478241704e-07,
+            "absolute_difference": 4.2398707478241704e-07,
+            "tolerance": 2.0002140884316757e-06,
+            "tolerance_ratio": 0.21197084713809614
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.5953482207796696e-07,
+          "maximum_tolerance_ratio": 0.12976713258922026,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_recoils",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 1563,
+            "length": 11,
+            "saved_fp32_ce": 2.145764938177308e-06,
+            "independent_float64_ce": 2.405299760255275e-06,
+            "signed_difference": 2.5953482207796696e-07,
+            "absolute_difference": 2.5953482207796696e-07,
+            "tolerance": 2.000004291529876e-06,
+            "tolerance_ratio": 0.12976713258922026
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 3.9474316970711243e-07,
+          "maximum_tolerance_ratio": 0.19736189181511773,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_recoils",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 3794,
+            "length": 11,
+            "saved_fp32_ce": 4.911301948595792e-05,
+            "independent_float64_ce": 4.950776265566503e-05,
+            "signed_difference": 3.9474316970711243e-07,
+            "absolute_difference": 3.9474316970711243e-07,
+            "tolerance": 2.000098226038972e-06,
+            "tolerance_ratio": 0.19736189181511773
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.8495433568309636e-07,
+          "maximum_tolerance_ratio": 0.14247370310924978,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_recoils",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 6105,
+            "length": 12,
+            "saved_fp32_ce": 2.4318398573086597e-05,
+            "independent_float64_ce": 2.4603352908769693e-05,
+            "signed_difference": 2.8495433568309636e-07,
+            "absolute_difference": 2.8495433568309636e-07,
+            "tolerance": 2.0000486367971462e-06,
+            "tolerance_ratio": 0.14247370310924978
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_recoils",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 1.9549354668413343e-06,
+          "maximum_tolerance_ratio": 0.1549555120765759,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_recoils",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 2908,
+            "length": 12,
+            "saved_fp32_ce": 0.0010411086259409785,
+            "independent_float64_ce": 0.0010414188596161722,
+            "signed_difference": 3.1023367519367184e-07,
+            "absolute_difference": 3.1023367519367184e-07,
+            "tolerance": 2.002082217251882e-06,
+            "tolerance_ratio": 0.1549555120765759
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.640968297384916e-07,
+          "maximum_tolerance_ratio": 0.13204430655615443,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_recoils",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 2966,
+            "length": 12,
+            "saved_fp32_ce": 3.111314072157256e-05,
+            "independent_float64_ce": 3.1377237551311055e-05,
+            "signed_difference": 2.640968297384916e-07,
+            "absolute_difference": 2.640968297384916e-07,
+            "tolerance": 2.000062226281443e-06,
+            "tolerance_ratio": 0.13204430655615443
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 3.734048501513598e-07,
+          "maximum_tolerance_ratio": 0.1866978848821026,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_peaks",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 4247,
+            "length": 12,
+            "saved_fp32_ce": 2.4318398573086597e-05,
+            "independent_float64_ce": 2.4691803423237957e-05,
+            "signed_difference": 3.734048501513598e-07,
+            "absolute_difference": 3.734048501513598e-07,
+            "tolerance": 2.0000486367971462e-06,
+            "tolerance_ratio": 0.1866978848821026
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.830519445495838e-07,
+          "maximum_tolerance_ratio": 0.14152462259725063,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_peaks",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 5350,
+            "length": 12,
+            "saved_fp32_ce": 9.536697689327411e-06,
+            "independent_float64_ce": 9.819749633876995e-06,
+            "signed_difference": 2.830519445495838e-07,
+            "absolute_difference": 2.830519445495838e-07,
+            "tolerance": 2.0000190733953784e-06,
+            "tolerance_ratio": 0.14152462259725063
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_peaks",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 4.2303781633279414e-07,
+          "maximum_tolerance_ratio": 0.2114895891955645,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_peaks",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 3040,
+            "length": 12,
+            "saved_fp32_ce": 0.00013863079948350787,
+            "independent_float64_ce": 0.00013820776166717508,
+            "signed_difference": -4.2303781633279414e-07,
+            "absolute_difference": 4.2303781633279414e-07,
+            "tolerance": 2.0002772615989668e-06,
+            "tolerance_ratio": 0.2114895891955645
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.615237271186288e-07,
+          "maximum_tolerance_ratio": 0.13076142709667687,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_peaks",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 200,
+            "length": 10,
+            "saved_fp32_ce": 3.3378546504536644e-06,
+            "independent_float64_ce": 3.599378377572293e-06,
+            "signed_difference": 2.615237271186288e-07,
+            "absolute_difference": 2.615237271186288e-07,
+            "tolerance": 2.000006675709301e-06,
+            "tolerance_ratio": 0.13076142709667687
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.342481236818685e-07,
+          "maximum_tolerance_ratio": 0.21706178776754742,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_peaks",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 5908,
+            "length": 12,
+            "saved_fp32_ce": 0.00028689560713246465,
+            "independent_float64_ce": 0.0002873298552561465,
+            "signed_difference": 4.342481236818685e-07,
+            "absolute_difference": 4.342481236818685e-07,
+            "tolerance": 2.000573791214265e-06,
+            "tolerance_ratio": 0.21706178776754742
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 3.0107951332070115e-07,
+          "maximum_tolerance_ratio": 0.15053760321799722,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_peaks",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 5946,
+            "length": 12,
+            "saved_fp32_ce": 1.4305012882687151e-05,
+            "independent_float64_ce": 1.4606092396007853e-05,
+            "signed_difference": 3.0107951332070115e-07,
+            "absolute_difference": 3.0107951332070115e-07,
+            "tolerance": 2.000028610025765e-06,
+            "tolerance_ratio": 0.15053760321799722
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_peaks",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 1.2469983232676896e-06,
+          "maximum_tolerance_ratio": 0.2225595978573346,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_peaks",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 2092,
+            "length": 12,
+            "saved_fp32_ce": 0.014765388332307339,
+            "independent_float64_ce": 0.014765840023860832,
+            "signed_difference": 4.516915534935606e-07,
+            "absolute_difference": 4.516915534935606e-07,
+            "tolerance": 2.0295307766646147e-06,
+            "tolerance_ratio": 0.2225595978573346
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.672126448999279e-07,
+          "maximum_tolerance_ratio": 0.13360566944302932,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_peaks",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 2421,
+            "length": 12,
+            "saved_fp32_ce": 4.887569048150908e-06,
+            "independent_float64_ce": 5.154781693050836e-06,
+            "signed_difference": 2.672126448999279e-07,
+            "absolute_difference": 2.672126448999279e-07,
+            "tolerance": 2.0000097751380963e-06,
+            "tolerance_ratio": 0.13360566944302932
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.04974143108916e-07,
+          "maximum_tolerance_ratio": 0.20248487500132184,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_valleys",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 2444,
+            "length": 11,
+            "saved_fp32_ce": 1.0847986231965479e-05,
+            "independent_float64_ce": 1.1252960375074395e-05,
+            "signed_difference": 4.04974143108916e-07,
+            "absolute_difference": 4.04974143108916e-07,
+            "tolerance": 2.0000216959724636e-06,
+            "tolerance_ratio": 0.20248487500132184
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.522105866376023e-07,
+          "maximum_tolerance_ratio": 0.12610473710432904,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_valleys",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 369,
+            "length": 10,
+            "saved_fp32_ce": 4.410734163684538e-06,
+            "independent_float64_ce": 4.66294475032214e-06,
+            "signed_difference": 2.522105866376023e-07,
+            "absolute_difference": 2.522105866376023e-07,
+            "tolerance": 2.000008821468327e-06,
+            "tolerance_ratio": 0.12610473710432904
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_one_line_valleys",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 3.915719535285689e-07,
+          "maximum_tolerance_ratio": 0.1957837828874785,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_valleys",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 1686,
+            "length": 11,
+            "saved_fp32_ce": 1.1205610462639015e-05,
+            "independent_float64_ce": 1.1597182416167584e-05,
+            "signed_difference": 3.915719535285689e-07,
+            "absolute_difference": 3.915719535285689e-07,
+            "tolerance": 2.0000224112209252e-06,
+            "tolerance_ratio": 0.1957837828874785
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.6008880738004336e-07,
+          "maximum_tolerance_ratio": 0.1300441866555477,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_one_line_valleys",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 113,
+            "length": 10,
+            "saved_fp32_ce": 1.6689286894688848e-06,
+            "independent_float64_ce": 1.929017496848928e-06,
+            "signed_difference": 2.6008880738004336e-07,
+            "absolute_difference": 2.6008880738004336e-07,
+            "tolerance": 2.0000033378573787e-06,
+            "tolerance_ratio": 0.1300441866555477
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "split": "train",
+      "samples": 6144,
+      "argmax_comparisons": {
+        "answer": 6144,
+        "eos": 6144
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 6144,
+          "max_absolute_difference": 4.0238641041412393e-07,
+          "maximum_tolerance_ratio": 0.20116704365829358,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_valleys",
+            "split": "train",
+            "kind": "answer",
+            "sample_index": 6131,
+            "length": 12,
+            "saved_fp32_ce": 0.00013004888023715466,
+            "independent_float64_ce": 0.0001304512666475688,
+            "signed_difference": 4.0238641041412393e-07,
+            "absolute_difference": 4.0238641041412393e-07,
+            "tolerance": 2.0002600977604744e-06,
+            "tolerance_ratio": 0.20116704365829358
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 6144,
+          "max_absolute_difference": 2.8356536319051884e-07,
+          "maximum_tolerance_ratio": 0.14172683721587917,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_valleys",
+            "split": "train",
+            "kind": "eos",
+            "sample_index": 319,
+            "length": 10,
+            "saved_fp32_ce": 0.00039402826223522425,
+            "independent_float64_ce": 0.00039431182759841477,
+            "signed_difference": 2.8356536319051884e-07,
+            "absolute_difference": 2.8356536319051884e-07,
+            "tolerance": 2.0007880565244704e-06,
+            "tolerance_ratio": 0.14172683721587917
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    },
+    {
+      "run_id": "learningdev001_gru_canonical_cycle_valleys",
+      "split": "validation",
+      "samples": 3072,
+      "argmax_comparisons": {
+        "answer": 3072,
+        "eos": 3072
+      },
+      "independent_ce": {
+        "answer": {
+          "samples": 3072,
+          "max_absolute_difference": 1.4207370213625836e-06,
+          "maximum_tolerance_ratio": 0.17119633390436592,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_valleys",
+            "split": "validation",
+            "kind": "answer",
+            "sample_index": 1583,
+            "length": 11,
+            "saved_fp32_ce": 0.0013447299133986235,
+            "independent_float64_ce": 0.0013450727664920947,
+            "signed_difference": 3.428530934712626e-07,
+            "absolute_difference": 3.428530934712626e-07,
+            "tolerance": 2.0026894598267972e-06,
+            "tolerance_ratio": 0.17119633390436592
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        },
+        "eos": {
+          "samples": 3072,
+          "max_absolute_difference": 2.336128339663901e-07,
+          "maximum_tolerance_ratio": 0.11680516380643438,
+          "worst_sample": {
+            "run_id": "learningdev001_gru_canonical_cycle_valleys",
+            "split": "validation",
+            "kind": "eos",
+            "sample_index": 1671,
+            "length": 11,
+            "saved_fp32_ce": 1.07287787614041e-05,
+            "independent_float64_ce": 1.0962391595370491e-05,
+            "signed_difference": 2.336128339663901e-07,
+            "absolute_difference": 2.336128339663901e-07,
+            "tolerance": 2.0000214575575227e-06,
+            "tolerance_ratio": 0.11680516380643438
+          },
+          "passed": true,
+          "primary_ce_preserved": true
+        }
+      },
+      "exact_source_identity_gold": true,
+      "complete_unique_sample_coverage": true
+    }
+  ]
+}

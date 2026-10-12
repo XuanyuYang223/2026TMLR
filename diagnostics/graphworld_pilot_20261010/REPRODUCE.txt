@@ -1,0 +1,14 @@
+Run from /home/yangx/ICML. Explicit stages only; preparation never cascades into training.
+
+python -m experiments.graphworld_pilot_20261010 --stage prepare
+python -m experiments.graphworld_pilot_20261010 --stage verify
+
+Root schedules the fixed small engineering check; no formal graph fitting before PermWorld train+analysis finish:
+python -m experiments.graphworld_pilot_20261010 --stage engineering
+
+Only after root starts the four-job fixed manifest:
+python -m experiments.graphworld_pilot_20261010 --stage train-all
+python -m experiments.graphworld_pilot_20261010 --stage evaluate
+python -m experiments.graphworld_pilot_20261010 --stage report
+
+Each final source is20k, no best-checkpoint choice or task learning/geometry gate. The engineering paths do not produce formal completed endpoints. Recovery may explicitly call train-one with run_id graphpilot001_<task> and fixed stop-step<=20000; --output is restricted to the new engineering subtree. All sources, data, true initial and start RNG are hash-bound. Freeze/protected originals are not rewritten. report writes completion=completed_and_stopped and starts no followup.
