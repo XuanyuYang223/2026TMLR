@@ -1,0 +1,41 @@
+{
+  "status": "local_bytes_verified_remote_publication_and_clean_clone_pending",
+  "recorded_utc": "2026-10-12T06:06:09.817955+00:00",
+  "repository": "XuanyuYang223/2026TMLR",
+  "default_branch": "main",
+  "pre_curation_commit": "e4e9ded9648aa2dc92a1cceef929cc9521546418",
+  "scientific_source_commit": "83325c2b6a2e41c69fc8b2e8f25e0cb58b80aca2",
+  "release_tag": "representation-selectivity-2026-10-11-caveat",
+  "release_id": 410204953,
+  "release_url": "https://github.com/XuanyuYang223/2026TMLR/releases/tag/representation-selectivity-2026-10-11-caveat",
+  "local_packaging": {
+    "packages": 89,
+    "unique_objects": 4959,
+    "logical_files": 5366,
+    "raw_unique_bytes": 71338282465,
+    "compressed_bytes": 66287959144,
+    "all_actual_stream_and_member_SHA256_verified": true,
+    "source_bytes_changed": false
+  },
+  "git_curation": {
+    "index_only_exits": 5078,
+    "original_named_files_SHA_checked": 6579,
+    "original_named_file_loss": 0,
+    "original_named_file_SHA_changes_except_authorized_entries": 0,
+    "history_rewritten": false,
+    "old_releases_or_tags_modified": false
+  },
+  "scientific_caveat": {
+    "MatrixGroupWorld_status": "completed_with_verification_caveat",
+    "original_numerical_status_counts": {
+      "passed": 64,
+      "failed": 2,
+      "undefined_consistent": 6
+    },
+    "scientific_analysis_complete": false,
+    "historical_before_repair_source_SHA_gaps": 7,
+    "old_reconstructed_initials_upgraded": false
+  },
+  "publication_chronology": "Early asset uploads preceded complete actual local archive stream checks. Every real archive and member has now passed; remaining uploads require the complete local receipt. See docs/repository_curation/upload_ordering_caveat.txt and exact timeline.",
+  "validation_scope": "Current source dependency checks, original named-file integrity, local actual archive streams and saved-table arithmetic qualified. Remote release-wide provider metadata and fresh clone/minimal actual byte readback are pending and will be recorded separately. No model forward or training was run."
+}

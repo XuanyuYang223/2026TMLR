@@ -58,7 +58,8 @@ git clone https://github.com/XuanyuYang223/2026TMLR.git
 cd 2026TMLR
 python -m venv .venv
 source .venv/bin/activate
-python tools/recompute_tables.py --help
+python -B tools/recompute_tables.py --self-test
+python -B tools/recompute_tables.py --repo-root . --output /tmp/representation-table-check.json
 ```
 
 The exact replay command, download profiles and published verification record are specified in [reproduction instructions](docs/representation_reproduction.md). The replay independently aggregates Perm/Graph fixed-transform tables and Matrix R1/R3 decompositions and checks the preserved 64/2/6 caveat. This checks saved-table arithmetic and integrity, **not** all model forwards, all activation metrics, training reproducibility, or independent statistical replication.
@@ -67,7 +68,7 @@ The science environment records Python 3.13.13, NumPy 2.4.4, PyTorch 2.11.0+cu12
 
 ## Data, weights and caches
 
-Related original data, genuine step-0/RNG, final weights, arrays and essential logs are published through the **independent representation-selectivity artifact release** and [artifacts manifest](artifacts_manifest.json). Every logical file maps to a content SHA, a release asset, download URL and extraction path. Packages contain real file bytes, not links to a local disk. SHA-identical contents are stored once; all logical aliases remain recorded. No missing historical initial identity is replaced with a newly trained or unverified model.
+Related original data, genuine step-0/RNG, final weights, arrays and essential logs are published through the [independent representation-selectivity artifact prerelease](https://github.com/XuanyuYang223/2026TMLR/releases/tag/representation-selectivity-2026-10-11-caveat) and [artifacts manifest](artifacts_manifest.json). Every logical file maps to a content SHA, a release asset, download URL and extraction path. Packages contain real file bytes, not links to a local disk. SHA-identical contents are stored once; all logical aliases remain recorded. No missing historical initial identity is replaced with a newly trained or unverified model.
 
 [Download/restore instructions](docs/representation_reproduction.md) distinguish full publication, the smaller clean-clone download profile, per-file local checks and the exact remote bytes actually downloaded again. A successful upload or checksum does not resolve a scientific verification failure.
 

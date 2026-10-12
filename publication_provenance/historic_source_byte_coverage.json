@@ -1,0 +1,222 @@
+{
+  "status": "audited_scope_lookup_only",
+  "unlocated_reference_rows": 20,
+  "unique_expected_source_SHAs": 8,
+  "artifact_byte_matches": 6,
+  "rows": [
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_development_exclusion_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "expected_sha256": "66944f630eb95039b85718256de1901cf680407e380c55a310707873b02739e2",
+      "current_source_sha256": "62e7e9153eaa714f7ad4e8f843b36eecee9a9690219109ac0e19488340525398",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_development_exclusion_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/common.py",
+      "expected_sha256": "5822e61a361317efaafdbf260faca538bc73f9af19c6029108a26c2ad69b3a4e",
+      "current_source_sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": [
+        "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/engineering/common_before_explicit_dropout_fix.py"
+      ]
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_development_exclusion_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/training.py",
+      "expected_sha256": "ef187e5eed3d63d43d6171140522a41802b693d287e82c7febe1fc332a56d623",
+      "current_source_sha256": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_development_exclusion_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "expected_sha256": "66944f630eb95039b85718256de1901cf680407e380c55a310707873b02739e2",
+      "current_source_sha256": "62e7e9153eaa714f7ad4e8f843b36eecee9a9690219109ac0e19488340525398",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_development_exclusion_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/common.py",
+      "expected_sha256": "5822e61a361317efaafdbf260faca538bc73f9af19c6029108a26c2ad69b3a4e",
+      "current_source_sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": [
+        "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/engineering/common_before_explicit_dropout_fix.py"
+      ]
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_development_exclusion_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/training.py",
+      "expected_sha256": "ef187e5eed3d63d43d6171140522a41802b693d287e82c7febe1fc332a56d623",
+      "current_source_sha256": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_explicit_dropout_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "expected_sha256": "66944f630eb95039b85718256de1901cf680407e380c55a310707873b02739e2",
+      "current_source_sha256": "62e7e9153eaa714f7ad4e8f843b36eecee9a9690219109ac0e19488340525398",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_explicit_dropout_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/common.py",
+      "expected_sha256": "5822e61a361317efaafdbf260faca538bc73f9af19c6029108a26c2ad69b3a4e",
+      "current_source_sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": [
+        "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/engineering/common_before_explicit_dropout_fix.py"
+      ]
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_explicit_dropout_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "expected_sha256": "66944f630eb95039b85718256de1901cf680407e380c55a310707873b02739e2",
+      "current_source_sha256": "62e7e9153eaa714f7ad4e8f843b36eecee9a9690219109ac0e19488340525398",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_explicit_dropout_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/common.py",
+      "expected_sha256": "5822e61a361317efaafdbf260faca538bc73f9af19c6029108a26c2ad69b3a4e",
+      "current_source_sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": [
+        "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/engineering/common_before_explicit_dropout_fix.py"
+      ]
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_resume_activation_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "expected_sha256": "96d72852f82a4ee2da88157fd8b60bd326840bf1d6f3fdd6c55d43ecf1843ec1",
+      "current_source_sha256": "62e7e9153eaa714f7ad4e8f843b36eecee9a9690219109ac0e19488340525398",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_resume_activation_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/common.py",
+      "expected_sha256": "5822e61a361317efaafdbf260faca538bc73f9af19c6029108a26c2ad69b3a4e",
+      "current_source_sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": [
+        "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/engineering/common_before_explicit_dropout_fix.py"
+      ]
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_resume_activation_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/training.py",
+      "expected_sha256": "e0110bef13d0afc731ef39824a2420f692cf520372e4c545c7898581c86f4710",
+      "current_source_sha256": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_resume_activation_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "expected_sha256": "96d72852f82a4ee2da88157fd8b60bd326840bf1d6f3fdd6c55d43ecf1843ec1",
+      "current_source_sha256": "62e7e9153eaa714f7ad4e8f843b36eecee9a9690219109ac0e19488340525398",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_resume_activation_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/common.py",
+      "expected_sha256": "5822e61a361317efaafdbf260faca538bc73f9af19c6029108a26c2ad69b3a4e",
+      "current_source_sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": [
+        "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/engineering/common_before_explicit_dropout_fix.py"
+      ]
+    },
+    {
+      "reference_record": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/freeze_manifest_before_resume_activation_fix.json",
+      "logical_source_path": "experiments/permworld_encoding_archdev_20261009/training.py",
+      "expected_sha256": "e0110bef13d0afc731ef39824a2420f692cf520372e4c545c7898581c86f4710",
+      "current_source_sha256": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "results/permworld_encoding_preflight_20261009/freeze_manifest.json",
+      "logical_source_path": "experiments/permworld_encoding/evaluate.py",
+      "expected_sha256": "d7935fe014a79df8d7d674ac1afb70e3ed7fe24992eb5e4f001a9bf14d8ee8db",
+      "current_source_sha256": "227fa70c583d396972b313f64df0c4fc94a5f0a78df92843c0b38230ac2845e8",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "results/permworld_encoding_preflight_20261009/before/development_freeze_before_baseline_check.json",
+      "logical_source_path": "experiments/permworld_encoding/evaluate.py",
+      "expected_sha256": "d7935fe014a79df8d7d674ac1afb70e3ed7fe24992eb5e4f001a9bf14d8ee8db",
+      "current_source_sha256": "227fa70c583d396972b313f64df0c4fc94a5f0a78df92843c0b38230ac2845e8",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "results/permworld_encoding_preflight_20261009/before/development_freeze_before_baseline_check.json",
+      "logical_source_path": "experiments/permworld_encoding_preflight.py",
+      "expected_sha256": "a173adf67c464f47e3eab10a3297dd5713e7c1e912da1fafd2c1f6b1c910facd",
+      "current_source_sha256": "87938fed1b1c978632b165a016fb9e73b335e6a119eaafdaf709e49fee758499",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    },
+    {
+      "reference_record": "results/permworld_encoding_plan_20261009/freeze_manifest_before_dependency_audit.json",
+      "logical_source_path": "experiments/permworld_encoding/plan.py",
+      "expected_sha256": "12dc9dc9295c891dd8610eeedb2a0f28fdc61f4c644a698ef9d084dbd2ca2577",
+      "current_source_sha256": "02912c6880aec37282b7ad40930ab433a83d10b6e1ded4f1a2d32ef44546dcad",
+      "current_source_equals_expected": "False",
+      "matching_kept_original_byte_copies": "",
+      "note": "Historic freeze version may intentionally precede recorded engineering repair; retain before copy and amendment, never rewrite expected SHA.",
+      "matching_artifact_original_byte_copies": []
+    }
+  ],
+  "no_source_reconstructed_or_edited": true,
+  "main_current_freezes_are_separate_from_before_repair_versions": true
+}

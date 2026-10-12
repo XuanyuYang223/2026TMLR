@@ -1,0 +1,66 @@
+Post-publication clean-clone qualification
+
+The driver is a separate publication wrapper and does nothing
+remote by default. It must only be run after Root explicitly confirms that
+the release is published and final metadata has been pushed to main.
+
+Execution template (replace the final-main and manifest hash placeholders):
+
+  python3 -B tools/verify_publication.py --run --release-published \
+    --directory /absolute/path/to/new-publication-check \
+    --expected-commit <final_main_40_hex_commit> \
+    --scientific-source-commit 83325c2b6a2e41c69fc8b2e8f25e0cb58b80aca2 \
+    --expected-manifest-sha256 <final_artifacts_manifest_64_hex_sha256> \
+    --release-tag representation-selectivity-2026-10-11-caveat \
+    --python /home/yangx/miniforge3/bin/python3
+
+The selected directory must not already exist and must be outside the
+original research workspace. The driver checks the actual unauthenticated
+public release metadata before cloning public main, verifies the exact main
+commit and original portable tool bytes, and rejects stale/missing metadata.
+
+It creates a new minimal venv without system-site packages, inherited
+PYTHONPATH, Git global URL rewrites, pip config/cache or inherited auth tokens.
+It installs only the artifact decoder requirements from public PyPI. The
+explicit base interpreter above is Python 3.13.13 with ensurepip, used only
+to create the new venv with --copies and its standard library. Neither base
+scientific packages nor the original research .venv are copied or inherited.
+The driver records its actual interpreter path/version/prefix and requires
+a base interpreter. The system /usr/bin/python3 is unsuitable on this host:
+it is Python 3.14.4 without ensurepip. No system package installation is needed.
+
+It downloads every selected minimal-profile asset via the clone's portable
+downloader into new directories. Its gate requires actual remote reads for
+all selected assets and rejects any reused download/object-cache claims.
+The clone's downloader checks each asset, ordered compressed stream and
+decoded content SHA/bytes, with regular safe expected members only.
+
+The standard-library saved-table fixture and exact 17-input replay then run
+from the clone. A final independent saved-JSON check preserves Matrix's
+eight genuine 20k receipt fields, two units, original 64 passed / 2 failed /
+6 undefined_consistent record counts, 288 selector checks and stopped state.
+It explicitly keeps scientific_analysis_complete=false.
+
+Outputs live entirely under the new qualification directory:
+  clone/                          fresh public main checkout
+  minimal_venv/                  minimal isolated Python environment
+  fresh_downloads/               newly read selected release bytes
+  fresh_restored/objects/        verified regular CAS bytes
+  fresh_restored/path_map.json   provenance-to-CAS mapping
+  logs/                         actual phase logs and hash bindings
+  public_minimal_download_audit.json
+  saved_table_check.json
+  matrix_preserved_caveat_check.json
+  clean_clone_audit.json
+
+Success is limited to the actual minimal download profile plus saved-table
+arithmetic/integrity and saved-state preservation. Public metadata/size
+checks for other packages are not independent full remote byte readback.
+No checkpoint is loaded; no model forward, hidden metric, optimizer, new
+replication or training is performed. Nothing in a publication pass turns
+the original Matrix failed numerical checks into passed checks.
+
+Preparation-only invocation:
+  python3 -B tools/verify_publication.py
+
+This prints the stop boundary and makes no clone, API or download request.

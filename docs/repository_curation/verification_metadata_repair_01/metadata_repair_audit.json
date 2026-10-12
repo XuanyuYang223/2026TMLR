@@ -1,0 +1,19 @@
+{
+  "status": "metadata_only_reconstructed_from_saved89_success_records",
+  "repaired_utc": "2026-10-12T06:02:31.906748+00:00",
+  "original_wrapper_process_exit_code": 1,
+  "original_error": "KeyError: finished_utc in timestamp audit after valid gate JSON had already been written",
+  "original_wrapper_sha256": "338f4aff80ef6590650d5b90a4ca8f8fb414ba9a6017f24e6954fcbb9e7a68a3",
+  "before_wrapper_copy_sha256": "338f4aff80ef6590650d5b90a4ca8f8fb414ba9a6017f24e6954fcbb9e7a68a3",
+  "repaired_wrapper_sha256": "644808fcb48fa02cbad6a6a2f046765ccba20251451b8efb8df28143d31871ee",
+  "before_execution_audit_sha256": "3d9537783c587b4ffc929ae4162d44a187f736a2bfe6c9608467e6f8be082b64",
+  "original_run_log_sha256": "c211d719c5d52ed219635a5ae8fc74ec6f4948f4c93946faa677eff4a9095d86",
+  "original_verifier_source_sha256": "c6c550900aeae2ef9e8e71e3df631f041637c30347513e08c3b12412412752d0",
+  "actual_gate_sha256": "9b12f4ab32193015a8ecf7a0c11de7edd6656c21a2253c8a4bb5dbd842585aee",
+  "package_manifest_sha256": "860f059b633b3f6f974fed9bfcbb7e2fedda9b0998efe26f0bf30775e357bebf",
+  "additional_package_decompressions": 0,
+  "original_gate_edited": false,
+  "original_manifest_edited": false,
+  "scientific_source_edited": false,
+  "original_exception_preserved": true
+}
