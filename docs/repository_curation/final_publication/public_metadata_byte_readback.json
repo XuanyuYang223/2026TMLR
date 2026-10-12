@@ -1,0 +1,29 @@
+{
+  "status": "passed_actual_public_metadata_byte_readback",
+  "utc": "2026-10-12T11:05:18.507566+00:00",
+  "release_id": 410204953,
+  "records": [
+    {
+      "name": "representation-artifacts-manifest-20261011.json",
+      "public_URL": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-artifacts-manifest-20261011.json",
+      "bytes_read": 8948715,
+      "sha256": "f1ef48da6915a4ad6632e100ab09171f2f74690e2d4fcd49d9254436a7ce394f",
+      "source": "actual_unauthenticated_public_network",
+      "verified": true,
+      "elapsed_seconds": 0.6511262010026257
+    },
+    {
+      "name": "representation-package-checksums-20261011.csv",
+      "public_URL": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-package-checksums-20261011.csv",
+      "bytes_read": 35288,
+      "sha256": "3ecbae445f2a3c5b1144be19d440e823acbe4f467e9a3cb6215b3cc98a182380",
+      "source": "actual_unauthenticated_public_network",
+      "verified": true,
+      "elapsed_seconds": 0.5286104969854932
+    }
+  ],
+  "actual_remote_bytes_read": 8984003,
+  "no_auth_header": true,
+  "effective_signed_redirect_URLs_logged": false,
+  "scope": "Only two release metadata assets, separate from 89 package provider checks and thirteen-package minimal actual readback."
+}

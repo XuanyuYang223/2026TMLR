@@ -1,0 +1,23 @@
+{
+  "status": "passed_readonly_schema_review_no_current_blocker",
+  "reviewed_utc": "2026-10-12T11:12:55.876721+00:00",
+  "script_sha256": "a7351c94b113d91187d10ea040d0b0c54cacb6445c4f23117436ddce72b45fd8",
+  "scope": "Static source/AST only; no actual helper invocation or partial/final clean-clone/CAS result reading.",
+  "findings": [
+    "Default --run absent exits before inspecting clone/restore results; actual execution first gates the exact successful clone status/main/source/tag.",
+    "Manifest and required CSV identities are SHA bound; 206 CSV aliases and unique objects are compared with frozen profile detail, manifest files/objects, path_map and current regular CAS sizes.",
+    "Actual network source claims derive from the bound downloader audit (13 remote assets, exact digest/bytes, no reused downloads), not fabricated by this helper.",
+    "Verified package/object audit counts and complete selected SHA identities are reconciled before required mapping checks.",
+    "Input root and all input path components reject symlinks/outside paths; no host dataset/cache fallback or model/scientific import.",
+    "Default pass does not independently reread CAS payload SHA; fields and SHA_scope make that explicit. Optional --rehash-required hashes only206 unique required objects/1.55GB.",
+    "New output only under external BASE, exclusive creation; existing audit is preserved. No network/Git/model/training performed."
+  ],
+  "limits": [
+    "Fixed engineering helper for the exact run001/main/manifest; cannot be treated as a generic verifier for future clones.",
+    "Current CAS content integrity without optional rehash relies on the earlier bound actual downloader SHA; ending regular-size check alone is not a new content hash.",
+    "No real clean clone completion or actual mapping outcome is asserted by this review."
+  ],
+  "script_modified": false,
+  "actual_invocations": 0,
+  "new_scientific_computations": 0
+}

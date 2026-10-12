@@ -1,0 +1,56 @@
+{
+  "status": "static_preparation_review_no_actual_cleanclone_dependency_execution",
+  "source_sha256": "a7351c94b113d91187d10ea040d0b0c54cacb6445c4f23117436ddce72b45fd8",
+  "AST": "passed",
+  "imports": [
+    "__future__",
+    "argparse",
+    "csv",
+    "datetime",
+    "hashlib",
+    "json",
+    "pathlib",
+    "stat",
+    "time"
+  ],
+  "dependencies": "Python standard library only",
+  "input_schema": {
+    "required_csv": [
+      "logical_path",
+      "restore_path",
+      "sha256",
+      "bytes",
+      "package_id",
+      "selection_reasons"
+    ],
+    "required_csv_sha256": "7f732b783dce84faa9a1c2054524ec17d04cafe61c65ba97be29ae917b9a7e99",
+    "manifest_sha256": "f1ef48da6915a4ad6632e100ab09171f2f74690e2d4fcd49d9254436a7ce394f",
+    "path_map": "plain logical_path -> objects/<sha>",
+    "actual_download_object": "sha256,bytes,source=verified_tar_object,verified=true",
+    "actual_download_asset": "name,bytes_expected,bytes_read,sha256,source=remote_network,network_read=true,verified=true",
+    "actual_package": "package_id,compressed_stream_verified=true,extraction=verified_regular_expected_members_only,objects,package_index_present=true"
+  },
+  "gate": "Requires fixed run001 actual_clean_clone_audit success and original main/source/tag/manifest bindings before reading any pending clone/restore result.",
+  "expected_scopes": {
+    "required_logical_files": 206,
+    "required_unique_objects": 206,
+    "required_unique_bytes": 1549329772,
+    "actual_minimal_assets": 13,
+    "actual_minimal_compressed_bytes": 3771371797,
+    "selected_unique_CAS_objects": 1974,
+    "all_selected_path_map_aliases": 2074,
+    "collateral_unique_objects": 1768,
+    "collateral_logical_aliases": 1868,
+    "materialized_copies": 0
+  },
+  "hash_policy": "Default independently checks metadata/path-map/current regular-file sizes and bound actual stream SHA records; no duplicate CAS data read. Optional --rehash-required rereads only206 required CAS files,1.55GB, not all1974 or full release71GB.",
+  "execution_not_performed": true,
+  "original_driver_waiter_commands_expected_commit_not_changed": true,
+  "network_calls": 0,
+  "model_forwards": 0,
+  "checkpoint_loads": 0,
+  "training_updates": 0,
+  "scientific_source_edits": 0,
+  "Git_mutations": 0,
+  "path_policy": "Fixed roots and all components reject symlinks/external paths; historical logical_path only looked up as a map key, never opened."
+}

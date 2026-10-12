@@ -1,0 +1,33 @@
+Git整理与实际产物发布报告（2026-10-12）
+
+目标：XuanyuYang223/2026TMLR，公开仓库，默认分支main。
+仓库：https://github.com/XuanyuYang223/2026TMLR
+独立prerelease：https://github.com/XuanyuYang223/2026TMLR/releases/tag/representation-selectivity-2026-10-11-caveat
+
+提交来源
+整理前：e4e9ded9648aa2dc92a1cceef929cc9521546418；本地archive/pre-representation-curation-20261011保留。
+科学源码及新tag：83325c2b6a2e41c69fc8b2e8f25e0cb58b80aca2。
+完整manifest发布：e66b561e88394340fc1a43bc48c639e36d57eb6a。
+真正干净克隆并核验的main：29ec0802987fda8d1c5b9986426233d4ceb4b4c8。
+本报告及最终审计随后以普通main元数据提交发布；其SHA见本文件Git历史（避免自引用SHA）。
+历史：https://github.com/XuanyuYang223/2026TMLR/commits/main/docs/repository_curation/FINAL_REPORT.txt
+
+当前树与原件
+保留PermWorld64/GraphWorld4/MatrixGroupWorld8真实20k终点对应代码、协议、任务/模型配置、完整正负及NaN表、旧初始化/多层/编码可学习性诊断、Perm480/Graph12固定T对照、最小依赖闭包及14个精确上游源码文件。196个固定源文件、84个相关协议/冻结清单有具体SHA记录；7个独特历史before-repair源码SHA仍无法定位，不用当前源码冒充。
+独立F17/LIS/旧矩阵多项式组合、专用论文/测试/CI等5078个显式路径只退出当前Git索引，本地原件未删除或移动。旧提交、3个旧release及3个旧tag仍保留；选定238项旧远端元数据检查和tag所指commit保持一致，旧latest未变。未重写历史，未推送neurips或其他仓库。
+结束检查覆盖6579个有SHA的原目录非入口文件及明确索引字节；README/.gitignore/CURRENT/两个requirements是5个已授权入口重写，其整理前原件均在仓库外备份。全部原目录存在，所查原文件无意外SHA差异。另266个固定小依赖结束SHA通过，4959个canonical包装源结束stat与打包结束时一致；未重复哈希71GB或声称全盘保护。精确范围见final_publication/final_index_and_original_integrity.json和post_publication_dependencies_and_source_stats.json。
+
+真实上传与回读
+上传4959个唯一SHA实体（原始71,338,282,465bytes），映射5366个逻辑原文件；89包共66,287,959,144bytes，每包小于1.5GiB。全部真实包在本地完整解压、成员逐SHA验证；远端89包加2个metadata全部uploaded、大小/digest/正式URL匹配，未上传的已定位相关产物为0。全部URL/大小/SHA/所属实验/初始身份/解包位置见根artifacts_manifest.json，manifest SHA=f1ef48da6915a4ad6632e100ab09171f2f74690e2d4fcd49d9254436a7ce394f。
+实际公开回下载仅最小13包，共3,771,371,797bytes；1974个CAS实体、2074个逻辑路径别名，默认没有复制2074个逻辑实体。206个固定必需文件（206unique，1,549,329,772bytes）另经CSV/manifest/path_map/当前regular大小与真实下载SHA链独立核对。其覆盖Matrix全部8终点、Graph全部4终点及固定字母顺序选定的1个Perm终点、对应真实step-0/RNG/data/schedule，Matrix48和Graph16缓存；不保证最小包覆盖全部Perm激活。另2个metadata共8,984,003bytes实际公开取回SHA匹配。其余76包有全本地解包与远端provider检查，未宣称全部66GB独立远端字节复读。
+
+实际干净克隆
+新公开clone、新最小venv、仅zstandard0.25.0解包依赖，无继承研究环境/下载缓存/本机科学路径fallback。7个阶段都exit0：克隆、基础Python身份、新venv、依赖安装、工具fixture、实际13包恢复、保存表重算。
+17个固定输入，79,125项保存表算术/一致性检查，0项失败：独立聚合Perm480/Graph12逐长度及固定权重汇总、原指定对应与类别，复算Matrix主要R1/R3的B0/Bt/dc/du/Delta与核验状态。核验不含新前向、checkpoint加载、隐藏指标重算、重新训练或新的统计复现。
+
+科研状态和工程记录
+Matrix原状态保持completed_with_verification_caveat，8/8真实20k，64 passed、2 failed、6 undefined_consistent，scientific_analysis_complete=false。两失败仍是unit001/R1/n6/固定64输入的训练后raw输出概率kNN，原1e-8容差及1/640差值保留；原audit SHA=c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f。不能称全432生产格独立核验，发布成功也不证明数学机制或功能收益。
+保留7个历史源码版本缺口、旧重建初始化身份限制、2个冻结历史HTML的24个旧导航缺口；不补训、不改旧文件。
+早期上传尝试先于真实包全量解包核验，已完整补做89包/4959对象核验并将其设为后续上传门槛；该顺序偏差如实保留。一次新资产HTTP404导致的自有失败starter占位被严格限定清理后，同字节重传成功；旧资产和原件未删。v1草稿URL检查误将当前临时untagged地址要求为正式地址，未PATCH即停止；v2仅限定草稿阶段修正，公开后91/91正式URL严格匹配。所有原失败、修复版本和实际检查收据保留。
+
+完成后停止：不新增训练/科学分析/世界，不改旧论文或科研结论。下载与表重算命令见docs/representation_reproduction.md；逐文件取舍见docs/repository_curation/；实际最终证据见docs/representation_publication_audit.json及final_publication/。

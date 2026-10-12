@@ -1,0 +1,12 @@
+{
+  "status": "publication_finalization_failed_no_success_claim",
+  "recorded_utc": "2026-10-12T09:39:41.741838+00:00",
+  "release_id": 410204953,
+  "tag_name": "representation-selectivity-2026-10-11-caveat",
+  "only_new_release_PATCH_performed": false,
+  "error_type": "RuntimeError",
+  "error": "Asset provider metadata mismatch: representation-controlled-comparison-data-b93efeac59-001-c751554a5068a03d.tar.zst",
+  "old_release_tag_mutations_attempted": false,
+  "asset_deletion_or_retry_or_training_attempted": false,
+  "corrective_actions_require_root_review": true
+}

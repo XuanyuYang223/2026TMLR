@@ -1,0 +1,72 @@
+{
+  "schema": "single_native_upload_pilot_failure_summary_v1",
+  "status": "failed_upload_not_provider_verified",
+  "recorded_utc": "2026-10-12T07:06:52.017630+00:00",
+  "asset_name": "representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst",
+  "expected_bytes": 1072191555,
+  "expected_sha256": "16274cdd892224effb43be9d0d28e1f8171949c97b711f098a58408692239d9b",
+  "release_id": 410204953,
+  "repo": "XuanyuYang223/2026TMLR",
+  "release_tag": "representation-selectivity-2026-10-11-caveat",
+  "copy_seconds": 14.370757976023015,
+  "copy_MB_per_second": 74.60925560008073,
+  "native_readback_seconds": 0.3659701780125033,
+  "CLI_exit_code": 1,
+  "CLI_error": "HTTP 404: Not Found (https://uploads.github.com/repos/XuanyuYang223/2026TMLR/releases/410204953/assets?label=&name=representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst)",
+  "CLI_seconds": 3206.8802472869866,
+  "attempt_total_seconds": 3230.499881263997,
+  "upload_started_utc": "2026-10-12T06:11:00.306186+00:00",
+  "CLI_finished_utc": "2026-10-12T07:04:27.186409+00:00",
+  "provider_observed_utc": "2026-10-12T07:04:35.479718+00:00",
+  "provider_asset": {
+    "id": 632876448,
+    "name": "representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst",
+    "state": "starter",
+    "size": 1072191555,
+    "digest": null,
+    "created_at": "2026-10-12T06:19:11Z",
+    "updated_at": "2026-10-12T06:19:11Z",
+    "browser_download_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst"
+  },
+  "checks": {
+    "copy_bytes_match": true,
+    "copy_sha256_match": true,
+    "native_persisted_sha256_match": true,
+    "CLI_succeeded": false,
+    "provider_state_uploaded": false,
+    "provider_size_match": true,
+    "provider_digest_match": false
+  },
+  "largest_recorded_process_rchar": 1075827346,
+  "largest_recorded_rchar_utc": "2026-10-12T07:04:08.985303+00:00",
+  "concurrent_io_window": {
+    "status": "read_only_concurrent_local_io_window",
+    "first_utc": "2026-10-12T06:18:55.378875+00:00",
+    "second_utc": "2026-10-12T06:20:05.669735+00:00",
+    "elapsed_seconds": 70.29085971001768,
+    "matched_processes": 12,
+    "native_MBps": [
+      0.33518676677448866
+    ],
+    "F_process_count": 11,
+    "F_median_MBps": 0.34921715428246003,
+    "F_min_MBps": 0.3214000240315786,
+    "F_max_MBps": 0.41536734819362264,
+    "F_aggregate_MBps": 3.908148287462892,
+    "limitation": "A simultaneous observational application-read window while sharing upload resources, not remote completed-byte throughput, randomized benchmark, or filesystem-only causal attribution."
+  },
+  "interpretation": "The shared contemporaneous local process-I/O window showed no clear native advantage: 0.335 MB/s versus F median 0.349 MB/s. The actual native upload failed with HTTP 404; no successful upload throughput or remote object hash validation can be claimed. A same-name starter asset is still present with no digest. Its creation timestamp differs from the native CLI start, so the saved metadata alone cannot attribute that starter to a particular concurrent request or identify the HTTP404 cause.",
+  "operation_scope": "One fixed real package copy and one no-clobber gh upload attempt only. Original F package retained. No retry, deletion, overwrite, second package, Git operation, manifest/source edit, or scientific computation. Both own processes ended (uploader exit1, read-only monitor exit0).",
+  "next_owner": "Root publisher informed; any starter recovery or additional upload must be a separate authorized root action. This reviewer stopped.",
+  "attempt_notes": "Optional system-Python psutil import was unavailable; no install performed. Actual recorded monitoring uses standard-library /proc. Root reported coordinating concurrent same-name queue handling; no cause attributed beyond saved metadata.",
+  "source_paths": {
+    "selection": "/home/yangx/representation_publication_scratch_20261011/pilot/selection.json",
+    "failure": "/home/yangx/representation_publication_scratch_20261011/pilot/failure.json",
+    "CLI_log": "/home/yangx/representation_publication_scratch_20261011/pilot/gh_upload.log",
+    "full_log": "/home/yangx/representation_publication_scratch_20261011/pilot/run.log",
+    "provider_after": "/home/yangx/representation_publication_scratch_20261011/pilot/remote_after_upload.json",
+    "io_window": "/home/yangx/representation_publication_scratch_20261011/pilot/concurrent_io_window.json",
+    "process_samples": "/home/yangx/representation_publication_scratch_20261011/pilot/upload_process_samples.jsonl",
+    "coordination_note": "/home/yangx/representation_publication_scratch_20261011/pilot/concurrency_coordination_note.json"
+  }
+}

@@ -81,3 +81,5 @@ The independent F17 composition/null-space/GELU manuscript and its dedicated exp
 The upstream PermWorld snapshot comes from `XuanyuYang223/neurips` at `74f0de2017115f06f11b7285366b66e7e8431d30`. Its original attribution and any provided license files are retained. The inspected upstream snapshot did not supply a LICENSE/COPYING/NOTICE or package license declaration; this publication does not invent or relicense upstream terms. See [upstream provenance](docs/upstream_provenance.json).
 
 Repository curation, release publication and byte integrity are engineering checks. They do not prove mathematical representation mechanisms. This task ends after publication and clean-clone verification; it does not launch more training or another world.
+
+Final publication qualification: [curation and upload report](docs/repository_curation/FINAL_REPORT.txt) and [actual public-readback audit](docs/representation_publication_audit.json). The recorded clean-clone scope is 13 package assets and saved-table arithmetic; original scientific caveats remain.

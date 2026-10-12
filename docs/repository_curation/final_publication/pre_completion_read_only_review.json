@@ -1,0 +1,592 @@
+{
+  "schema": "representation-publication-final-audit-review/v1",
+  "status": "read_only_final_audit_field_review_completed_publication_and_clean_clone_pending",
+  "recorded_utc": "2026-10-12T09:05:45.407403+00:00",
+  "repository": "XuanyuYang223/2026TMLR",
+  "review_scope": "Static read-only existing publication documentation, entrypoint links, baseline protection script and finalizer/qualification gates. No remote API requests, release changes, Git writes, model import, new metric, checkpoint reading or training. Only this outside-repository review JSON is written.",
+  "original_audit": {
+    "path": "/home/yangx/ICML/docs/representation_publication_audit.json",
+    "status": "local_bytes_verified_remote_publication_and_clean_clone_pending",
+    "sha256": "382dcf376db4d1048f1ea0d6d229054c720824d3bfb90cf6c1c4ff8df5d19381"
+  },
+  "current_local_HEAD": "29ec0802987fda8d1c5b9986426233d4ceb4b4c8",
+  "background_waiter_unchanged": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/wait_and_publish_new_release.py",
+    "sha256": "8b4110a0b5020db51bea2804cebe2d9c672b154dc134c051832410470d81bbaa",
+    "matches_original_frozen_8b4110": true,
+    "status_read": "waiting_for_exact_provider_verified_all89",
+    "publication_patch_performed": false,
+    "progress_verified_assets": 72,
+    "progress_verified_bytes": 49558009248,
+    "progress_status": "uploading_locally_verified_packages",
+    "no_restart_or_edit_by_review": true
+  },
+  "completion_evidence_currently_present": {
+    "publication_live_json": false,
+    "clean_clone_audit": false,
+    "clean_clone_wait_status": "waiting_for_actual_public_release_receipt"
+  },
+  "input_fingerprints": [
+    {
+      "path": "/home/yangx/ICML/docs/representation_publication_audit.json",
+      "bytes": 2075,
+      "sha256": "382dcf376db4d1048f1ea0d6d229054c720824d3bfb90cf6c1c4ff8df5d19381"
+    },
+    {
+      "path": "/home/yangx/ICML/README.md",
+      "bytes": 10992,
+      "sha256": "10253fa09a5291406e7ac524eab1216b0511f562ad970a4243cb824dc53059c3"
+    },
+    {
+      "path": "/home/yangx/ICML/CURRENT_RESEARCH.txt",
+      "bytes": 3330,
+      "sha256": "e1cdffac61bf433c8c74a564e6157ba96b72bed7fe58df8c825767515504d4da"
+    },
+    {
+      "path": "/home/yangx/ICML/docs/representation_reproduction.md",
+      "bytes": 6971,
+      "sha256": "acf31df0dbd15adec024c42d42af3e6542dcf1d2dc46599b4ca29cbb7792dc73"
+    },
+    {
+      "path": "/home/yangx/ICML/docs/representation_research.md",
+      "bytes": 6933,
+      "sha256": "daf99fe0a92ba8de5e4558033ce168b51ba40dd9d0c73cbf536e7da569f186e7"
+    },
+    {
+      "path": "/home/yangx/ICML/tools/verify_publication.py",
+      "bytes": 18415,
+      "sha256": "2ce1e0c056c2cc395dcd554cc6273c8ab907d64bb6a48c6d2d1355b2fa3c2186"
+    },
+    {
+      "path": "/home/yangx/ICML/tools/CLEAN_CLONE_VERIFICATION.txt",
+      "bytes": 3622,
+      "sha256": "cf3e94e862823caa01428acd717ff1a4a6c2b88dd8d0c6a77ffc113cb55e5aeb"
+    },
+    {
+      "path": "/home/yangx/ICML/artifacts_manifest.json",
+      "bytes": 8948715,
+      "sha256": "f1ef48da6915a4ad6632e100ab09171f2f74690e2d4fcd49d9254436a7ce394f"
+    },
+    {
+      "path": "/home/yangx/ICML/publication_provenance/existing_execution_versions.json",
+      "bytes": 95522,
+      "sha256": "86d43a92a672980e1deb8a5c015e04190e73577ade5438eb7e580694a8c75989"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/remote_state_checks.py",
+      "bytes": 2907,
+      "sha256": "112912b625e217fd1f1921eea7d5484cc45dc6110ed3f7c1d40aa40b7fd56cca"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/wait_and_publish_new_release.py",
+      "bytes": 15156,
+      "sha256": "8b4110a0b5020db51bea2804cebe2d9c672b154dc134c051832410470d81bbaa"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/state_before/remote_releases.json",
+      "bytes": 52398,
+      "sha256": "38fa207c9312cd7077d36029245c2ce58264506390bef74c0623eb0939093945"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/state_before/remote_tags.json",
+      "bytes": 1627,
+      "sha256": "ef7a0b915e0da9138659ea89b96fdfe66b799396915036ad0aed728690d606d3"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/release_metadata/metadata_binding.json",
+      "bytes": 814,
+      "sha256": "662d2d32b281e68bfc47f9e13bdd2bed673f50ceacfdf7a9155dad08eef042bd"
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/failed_placeholder_recovery.json",
+      "bytes": 1040,
+      "sha256": "b63929e8f99321380e9cc1d7afb95c8f21ced7c76309053a0da1302abb0453aa"
+    }
+  ],
+  "input_bytes_unchanged_during_review": true,
+  "current_entry_link_audit": {
+    "documents": [
+      "README.md",
+      "docs/representation_reproduction.md",
+      "docs/representation_research.md"
+    ],
+    "relative_link_count": 24,
+    "missing": [],
+    "outside_repository": [],
+    "records": [
+      {
+        "document": "README.md",
+        "label": "Current research index",
+        "target": "CURRENT_RESEARCH.txt",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "scope/formula notes",
+        "target": "docs/representation_research.md",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "PermWorld eight-relation report",
+        "target": "diagnostics/permworld_eight_relations_20261010/report.html",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "combined Perm/Graph reader",
+        "target": "diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "32 primary cells",
+        "target": "diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "GraphWorld report",
+        "target": "diagnostics/graphworld_pilot_20261010/report.html",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "frozen protocol",
+        "target": "diagnostics/graphworld_pilot_20261010/protocol.json",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "full geometry",
+        "target": "diagnostics/graphworld_pilot_20261010/geometry_summary.csv",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "Fixed-transform review",
+        "target": "diagnostics/representation_pairing_review_20261011/reader_report.html",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "protocol",
+        "target": "diagnostics/representation_pairing_review_20261011/protocol.json",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "MatrixGroupWorld report",
+        "target": "diagnostics/matrixgroupworld_20261011/report.html",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "short bilingual results",
+        "target": "diagnostics/matrixgroupworld_20261011/report.txt",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "protocol",
+        "target": "diagnostics/matrixgroupworld_20261011/protocol.json",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "full geometry",
+        "target": "diagnostics/matrixgroupworld_20261011/geometry_summary.csv",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "source learning",
+        "target": "diagnostics/matrixgroupworld_20261011/source_learning.csv",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "original numerical verification",
+        "target": "diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "failure diagnosis",
+        "target": "diagnostics/matrixgroupworld_20261011/knn_failure_diagnostic.txt",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "reproduction instructions",
+        "target": "docs/representation_reproduction.md",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "artifacts manifest",
+        "target": "artifacts_manifest.json",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "Download/restore instructions",
+        "target": "docs/representation_reproduction.md",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "README.md",
+        "label": "upstream provenance",
+        "target": "docs/upstream_provenance.json",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "docs/representation_reproduction.md",
+        "label": "tools/verify_publication.py",
+        "target": "../tools/verify_publication.py",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "docs/representation_reproduction.md",
+        "label": "its usage",
+        "target": "../tools/CLEAN_CLONE_VERIFICATION.txt",
+        "exists": true,
+        "inside_repository": true
+      },
+      {
+        "document": "docs/representation_reproduction.md",
+        "label": "preserved legacy HTML navigation gaps",
+        "target": "repository_curation/legacy_link_coverage.json",
+        "exists": true,
+        "inside_repository": true
+      }
+    ],
+    "remote_URLs_not_requested": true
+  },
+  "required_final_audit_sections": [
+    {
+      "group": "publication_state",
+      "final_fields": [
+        "status",
+        "recorded_utc",
+        "public",
+        "draft",
+        "prerelease",
+        "release_id",
+        "release_tag",
+        "release_url",
+        "published_at"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live.json",
+      "required_content": "Use actual successful public receipt and saved PATCH response; exact release410204953/tag representation-selectivity-2026-10-11-caveat, draft=false, prerelease=true, unauthenticated tag GET HTTP200.",
+      "interpretation_limit": "Pending until live certificate exists; README/CURRENT release links are declared entrypoints, not proof of current availability.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "three_commit_identities",
+      "final_fields": [
+        "scientific_source_commit",
+        "tag_commit",
+        "publication_metadata_commit",
+        "qualified_remote_main_sha",
+        "default_branch",
+        "final_audit_metadata_commit_if_later"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live.json",
+      "required_content": "Keep source83325c2b6a2e41c69fc8b2e8f25e0cb58b80aca2, metadatae66b561e88394340fc1a43bc48c639e36d57eb6a, qualified main29ec0802987fda8d1c5b9986426233d4ceb4b4c8 separate. A later audit-only commit must not replace the SHA actually clean-cloned.",
+      "interpretation_limit": "Do not push a new main commit before the pinned publication and clean-clone checks finish; original scientific source commit is not an original experiment timestamp or execution version.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "all_package_provider_validation",
+      "final_fields": [
+        "package_assets_provider_verified",
+        "unique_asset_names",
+        "asset_name_id_state_size_digest_url_records",
+        "provider_audit_paths_and_sha256",
+        "package_asset_bytes"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_finalizer/provider_gates_after_publication.json",
+      "required_content": "All89 package assets plus2 metadata names, no duplicate or unexpected names/starter placeholders, all state uploaded, expected size/sha256 digest and release URL, total package bytes66287959144.",
+      "interpretation_limit": "Provider digest/size/URL checks do not independently re-download all66.288GB.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "metadata_assets_binding",
+      "final_fields": [
+        "metadata_assets_provider_verified",
+        "manifest_sha256",
+        "checksum_csv_sha256",
+        "metadata_commit_binding"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/release_metadata/metadata_binding.json",
+      "required_content": "Both metadata objects must match exact saved e66 commit bytes: manifest f1ef48da6915a4ad6632e100ab09171f2f74690e2d4fcd49d9254436a7ce394f (8948715B), checksums3ecbae445f2a3c5b1144be19d440e823acbe4f467e9a3cb6215b3cc98a182380 (35288B). Final browser URLs must use fixed release tag, not early untagged draft URLs.",
+      "interpretation_limit": "Earlier metadata_provider_audit.json is a dated draft provider receipt; use final public URL gate, not its early untagged URL.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "authorized_release_payload",
+      "final_fields": [
+        "publication_request_sha256",
+        "saved_response_sha256",
+        "public_body_matches_requested_body",
+        "make_latest_requested",
+        "scientific_caveat_retained"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_finalizer/publish_authorized_new_release_response.json",
+      "required_content": "Retain exact request/response SHAs; read-only compare returned public body with requested body and verify source target, draft=false/prerelease=true/make_latest=false plus source/main/metadata and Matrix caveat.",
+      "interpretation_limit": "Current publisher gates identity/state/target explicitly; final body-byte comparison is a useful closing read-only check, not a reason to change the waiting script.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "old_release_and_tag_preservation",
+      "final_fields": [
+        "old_releases_tags_unchanged",
+        "protected_release_count",
+        "protected_tag_count",
+        "baseline_sha256",
+        "old_checks_count",
+        "before_and_after_audit_paths_and_sha256",
+        "latest_release_before_after_id"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_finalizer/old_preservation_after_publication.json",
+      "required_content": "Report exact3 protected releases,3 tag commit targets, before/after provider checks and latest ID equality. Compare request make_latest=false with actual latest API result.",
+      "interpretation_limit": "Old checker covers chosen release/asset metadata and tag commit targets; it does not reread old asset payloads or all ignored metadata. Latest API equality is immediate pre/post publication, not a separately saved start-of-task latest baseline.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "clean_clone_execution",
+      "final_fields": [
+        "clean_clone_status",
+        "actual_clone_commit",
+        "origin",
+        "qualification_directory",
+        "base_interpreter_identity",
+        "minimal_venv_isolation",
+        "tool_hashes",
+        "phase_returncodes",
+        "audit_sha256"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/clean_clone_audit.json",
+      "required_content": "Require passed_actual_public_clean_clone_minimal_readback_with_preserved_scientific_caveat and actual fresh public main29ec with fixed manifest/source bindings, fresh minimal venv and recorded command receipts.",
+      "interpretation_limit": "Preparation reviews and wait_state are not successful actual qualification. No checkpoint loading, inference or training occurs.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "actual_minimal_remote_bytes",
+      "final_fields": [
+        "selected_profile",
+        "actual_asset_names",
+        "actual_remote_bytes_read",
+        "restored_object_count",
+        "restored_bytes",
+        "stream_and_object_sha_verification",
+        "no_existing_cache_reuse",
+        "download_audit_sha256"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/public_minimal_download_audit.json",
+      "required_content": "13 fixed packages/assets,3771371797 compressedB,1974 collateral+required content objects totaling4492917962 uncompressedB;206 required unique logical objects1549329772B. Gate every selected asset source=remote_network, no reused downloads/objects. Record actual receipt values and compare to manifest.",
+      "interpretation_limit": "Minimal covers all current Matrix+Graph data/init/RNG/checkpoints/caches plus fixed alphabetical real Perm source/shared data; it does not guarantee full Perm activation-level reproduction or download all89 packages.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "saved_table_replay",
+      "final_fields": [
+        "saved_table_status",
+        "checks_total",
+        "failure_count",
+        "input_files_count",
+        "input_sha256",
+        "maximum_arithmetic_differences",
+        "scope"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/saved_table_check.json",
+      "required_content": "Recheck the exact17 published repository-local inputs via standard-library replay; record actual fresh-clone status/check count and immutable SHA list. Existing local receipt79125 checks/0fails must be identified as local precommit evidence only.",
+      "interpretation_limit": "Scope Perm480/Graph12 fixed-transform aggregates/designated endpoints/categories and Matrix primaryR1/R3 B0/Bt/dc/du/Delta plus preserved state; not all forward, hidden CKA/kNN/Procrustes, training, or significance.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "preserved_scientific_failure",
+      "final_fields": [
+        "MatrixGroupWorld_status",
+        "Matrix_scientific_analysis_complete",
+        "original_numerical_status_counts",
+        "original_failure_record_scope",
+        "original_numerical_json_sha256",
+        "selector_checks",
+        "formal_endpoint_count",
+        "independent_unit_count"
+      ],
+      "evidence_path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/matrix_preserved_caveat_check.json",
+      "required_content": "Matrix status completed_with_verification_caveat, scientific_analysis_complete=false,64passed/2failed/6undefined_consistent;8true20k endpoints/2units; original firstunitR1/n6/64sample trained raw output-probability kNN failures and1e-8 unchanged; retain original JSON SHA c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f.",
+      "interpretation_limit": "Engineering/table/byte integrity pass does not turn original failed numerical records into passed or imply all432production cells independently verified.",
+      "status_at_review": "pending"
+    },
+    {
+      "group": "identity_and_history_limits",
+      "final_fields": [
+        "current_true_initial_scope",
+        "historical_unverified_initial_scope",
+        "historical_missing_before_source_SHA_count",
+        "existing_execution_versions_reference"
+      ],
+      "evidence_path": "/home/yangx/ICML/publication_provenance/initialization_identity_scope.json",
+      "required_content": "Preserve current Perm64+Graph4+Matrix8 actual saved-init/RNG identity scope separately from reconstructed/unverified historic models;7 unique missing before-repair source bytes remain. Link actual execution version sidecar without filling original freeze None fields.",
+      "interpretation_limit": "No re-training, fabricated historic source copies, or promotion of reconstructed initials to verified originals.",
+      "status_at_review": "already_documented_keep_unchanged"
+    },
+    {
+      "group": "local_bytes_and_curation",
+      "final_fields": [
+        "local_packaging",
+        "git_curation",
+        "local_archive_receipt_sha256",
+        "upload_chronology",
+        "placeholder_recovery_record"
+      ],
+      "evidence_path": "/home/yangx/ICML/docs/representation_publication_audit.json",
+      "required_content": "Keep89packages4959objects5366logicalfiles/71338282465 rawbytes, full local actual stream/member verification,5078 index-only exits and6579 original named-file checks without original loss or history rewrite; retain exact chronology and failed-placeholder recovery audit.",
+      "interpretation_limit": "No local archive success is remote full-readback; one owned failed new draft starter asset was removed under separate Root guard, not old scientific assets.",
+      "status_at_review": "already_documented_keep_unchanged"
+    },
+    {
+      "group": "navigation_and_replay_scope",
+      "final_fields": [
+        "current_entry_link_coverage",
+        "legacy_navigation_gaps",
+        "legacy_absolute_path_policy",
+        "source_snapshot_portability"
+      ],
+      "evidence_path": "/home/yangx/ICML/docs/repository_curation/legacy_link_coverage.json",
+      "required_content": "Current24 inspected README/reproduction/research relative Markdown links exist and stay inside repo. Keep2 frozen historical HTML files24 preserved navigation gaps separately; absolute frozen paths resolve only clone/restored CAS through portable resolver.",
+      "interpretation_limit": "Local relative link existence is not live GitHub release availability or complete historical runtime portability.",
+      "status_at_review": "locally_reviewed_current_links_keep_legacy_limit"
+    }
+  ],
+  "old_protection_coverage": {
+    "script": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/remote_state_checks.py",
+    "protected_releases": [
+      {
+        "release_id": 408606952,
+        "tag_name": "permworld-existing-checkpoints-2026-10-09",
+        "asset_count": 10
+      },
+      {
+        "release_id": 408151368,
+        "tag_name": "reviewer-revision-2026-10-09",
+        "asset_count": 5
+      },
+      {
+        "release_id": 406346143,
+        "tag_name": "experiment-snapshot-2026-10-07",
+        "asset_count": 11
+      }
+    ],
+    "protected_tags": [
+      {
+        "tag": "reviewer-revision-2026-10-09",
+        "peeled_commit_sha": "e95527bc6af09fbe910ef74eba19fe7b43431471"
+      },
+      {
+        "tag": "permworld-existing-checkpoints-2026-10-09",
+        "peeled_commit_sha": "e4e9ded9648aa2dc92a1cceef929cc9521546418"
+      },
+      {
+        "tag": "experiment-snapshot-2026-10-07",
+        "peeled_commit_sha": "5e16df200e33a40e2fbf9b74823f55f49a9d0e08"
+      }
+    ],
+    "release_compared_fields": [
+      "id",
+      "tag_name",
+      "name",
+      "target_commitish",
+      "draft",
+      "prerelease",
+      "published_at",
+      "body"
+    ],
+    "asset_compared_fields": [
+      "id",
+      "name",
+      "size",
+      "state",
+      "digest",
+      "created_at",
+      "updated_at",
+      "content_type"
+    ],
+    "asset_ID_set_unchanged_required": true,
+    "old_release_asset_count": 26,
+    "tag_check": "Reference resolves to identical commit target; one annotated-tag dereference is supported by existing checker.",
+    "recorded_previous_remote_audit": {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/remote_preservation_provider_audit.json",
+      "recorded_utc": "2026-10-12T05:46:31.793191+00:00",
+      "checks_count": 238,
+      "false_unchanged_checks": 0,
+      "fresh_remote_validation_not_run_by_this_review": true
+    },
+    "combined_finalizer_additions": [
+      "Exact91asset names from paginated full assets endpoint, no hidden starter placeholders/duplicates",
+      "All89package+2metadata state,size,digest and fixedtagbrowserURL",
+      "Publicrepo/defaultmain29ec and source-tag83325",
+      "Onlynewrelease410204953 PATCH has fixedtag/source,draft=false,prerelease=true,make_latest=false",
+      "Immediately-pre/post latest ID equality",
+      "Before/after old protection receipts retained separately",
+      "Unauthenticated public tag GETHTTP200"
+    ],
+    "coverage_limits": [
+      "Old asset payload bytes are not downloaded by protection checker; digest metadata is compared.",
+      "Ignored old fields include release updated_at/immutable/author and asset label/browser_download_url; do not claim every API metadata byte was compared.",
+      "Old tags are checked by commit target, not annotated-tag message/ref-object byte identity.",
+      "The current baseline has remote release/tag snapshots but no separate task-start latest-release selection; finalizer checks immediate pre/post latest selection.",
+      "Old checker alone does not assert all newpackage checks; combined finalizer explicitly does, and uses full assets endpoint for exact91name set."
+    ]
+  },
+  "documentation_notes": [
+    {
+      "severity": "pending_scope",
+      "note": "Current docs audit pending state is accurate. README/CURRENT use final-publication wording and point to declared future tag; before actual public receipt these are not proof that upload/release/qualification already finished."
+    },
+    {
+      "severity": "retain_existing_science_limit",
+      "note": "All existing Matrix64/2/6, weak-task, dependence, initialization, candidate-specific support and fixed-T versus Bt/Delta limitations are explicit; do not remove them when publication succeeds."
+    },
+    {
+      "severity": "avoid_commit_race",
+      "note": "Finalizer and cleanclone are pinned to main29ec. If Root later writes/pushes the final audit, name the later metadata commit separately from main29ec actually qualified, and do not retag83325."
+    },
+    {
+      "severity": "scope_wording",
+      "note": "Final response should say all89 provider assets verified and13assets actually re-downloaded/restored, not entire release independently re-downloaded."
+    },
+    {
+      "severity": "historical_record_not_current_blocker",
+      "note": "Earlier review_new_entry.json snapshot lists precommit issues. Current tools/ARTIFACTS_USAGE uses rootrequirements-artifacts.txt; actualreader_report link and mandatoryper_length CSV/manifest/audit entries are now present and tracked; preserve earlier audit chronology rather than reporting resolved issues as current blockers."
+    }
+  ],
+  "no_new_blocking_static_interface_problem_found": true,
+  "finalization_still_requires_actual_evidence": true
+}

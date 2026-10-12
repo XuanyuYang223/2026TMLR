@@ -1,0 +1,11 @@
+{
+  "status": "versioned_engineering_draft_URL_gate_correction_not_executed_yet",
+  "utc": "2026-10-12T11:04:05.576780+00:00",
+  "original_script_SHA256": "8b4110a0b5020db51bea2804cebe2d9c672b154dc134c051832410470d81bbaa",
+  "corrected_script_SHA256": "29edaacd65806b889f3af397577a59828fd544ecabab5c847a618d1167527ec9",
+  "preserved_original_failed_audit_SHA256": "ac8026c0dcaaf9a8bc55ac905aebe95f4bf1c2b022dee9cd00e2997ad8310acb",
+  "original_PATCH_performed": false,
+  "change": "Before publication only, compare asset URL with exact temporary slug in the current id-bound draft release HTML URL; after publication retain exact immutable manifest URL. Size, SHA, ID set, old releases/tags, source/main commits and caveat guards unchanged.",
+  "scientific_file_changes": 0,
+  "asset_reuploads_or_deletions": 0
+}

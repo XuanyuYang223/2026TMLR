@@ -1,0 +1,10 @@
+{
+  "status": "passed_original_named_and_index_snapshot_with_separately_checked_receipt",
+  "recorded_utc": "2026-10-12T11:21:49.542005+00:00",
+  "before_final_metadata_commit_HEAD": "29ec0802987fda8d1c5b9986426233d4ceb4b4c8",
+  "snapshot_index_files": 1638,
+  "original_named_SHA_count": 6579,
+  "integrity_receipt_SHA256": "a4ce263701e86c775fdee09ec7b7a93e5da9c66344c1e25d30051a7a60b31a63",
+  "integrity_checker_SHA256": "f512fb505d80cef779671a854790ef4407d5186b5278e6aec81e2a103c7df172",
+  "scope": "Index snapshot precedes addition of this receipt and this binding JSON. Both later metadata files are checked separately for exact staged Git-blob bytes; no whole-filesystem protection claim."
+}

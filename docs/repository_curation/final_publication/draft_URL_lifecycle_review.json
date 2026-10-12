@@ -1,0 +1,1095 @@
+{
+  "status": "read_only_draft_url_lifecycle_review_passed_current_release",
+  "recorded_utc": "2026-10-12T11:05:53.350729+00:00",
+  "repository": "XuanyuYang223/2026TMLR",
+  "release_id": 410204953,
+  "scope": "Only read existing v1/v2 receipts, actual GET metadata and official GitHub docs; no PATCH, delete, main/tag/source edit, forward, activation metric or training by reviewer.",
+  "original_v1_failure_preserved": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live_failed.json",
+    "sha256": "ac8026c0dcaaf9a8bc55ac905aebe95f4bf1c2b022dee9cd00e2997ad8310acb",
+    "bytes": 573
+  },
+  "original_v1_source": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/wait_and_publish_new_release.py",
+    "sha256": "8b4110a0b5020db51bea2804cebe2d9c672b154dc134c051832410470d81bbaa",
+    "bytes": 15156
+  },
+  "original_v1_source_matches_original": true,
+  "v1_stopped_before_patch": true,
+  "v1_all89_state_size_digest_passed": true,
+  "v1_release_was_draft": true,
+  "v1_draft_html_url": "https://github.com/XuanyuYang223/2026TMLR/releases/tag/untagged-41132d0c0b9632d70375",
+  "root_v2_source": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/wait_and_publish_new_release_v2.py",
+    "sha256": "29edaacd65806b889f3af397577a59828fd544ecabab5c847a618d1167527ec9",
+    "bytes": 16189
+  },
+  "v2_before_receipt": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_finalizer_v2/provider_gates_before_publication.json",
+    "sha256": "7732cc700a08ba1e9a66c5517d2335bded7494c3909d49ffc03a55a1646abfb4",
+    "bytes": 104032
+  },
+  "v2_after_receipt": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_finalizer_v2/provider_gates_after_publication.json",
+    "sha256": "0c5ec7d269a016fdfeab2afba0336a3abd843d740f1c02f763f3c396b43fdae4",
+    "bytes": 106761
+  },
+  "actual_GET_observation": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/draft_asset_url_observation.json",
+    "sha256": "ba0954104e5f51c3dfcd9e0eb120dd8177d2d8c947fcf16a6fe23ae726e37cd9",
+    "bytes": 87237
+  },
+  "public_live_receipt": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live.json",
+    "sha256": "edf1112ae99611051a70e65d3110e9552dc52f56fd6366a9b46f8e44463153ea",
+    "bytes": 2987
+  },
+  "allowed_fix_boundary": {
+    "only_phase": "before_publication with current release draft=true",
+    "unchanged_identity_checks": [
+      "same repo current release ID410204953",
+      "exact expected91name set from current release assets endpoint",
+      "no duplicate names or extra starter assets",
+      "uploaded state, exact size, exact sha256digest",
+      "fixedmain29ec/source-tag83325/old3releases+3tags protection"
+    ],
+    "temporary_url_rule": "Bind every actual browser_download_url to HTTPS github.com/XuanyuYang223/2026TMLR/releases/download/<slug-from-this-release-html_url>/<exact asset name>; allow only declared TAG or current validated untagged-alphanumeric draft slug. It is not an arbitrary same-repository asset URL exception.",
+    "after_and_public_rule": "release must be draft=false and every URL exactly equals unchanged manifest fixedTAG URL; no untagged exception remains."
+  },
+  "actual_root_v2_boundary_review": {
+    "before_uses_actual_current_release_slug_only": true,
+    "after_requires_published_state_and_exact_manifest_URL": true,
+    "no_manifest_rewrite": true,
+    "v1_original_failure_and_source_retained": true
+  },
+  "actual_transition": {
+    "total_unique_assets": 91,
+    "same_names_before_after": true,
+    "asset_ID_state_size_digest_preserved_count": 91,
+    "strict_public_URL_matches_count": 91,
+    "before_draft_slugs": [
+      "untagged-41132d0c0b9632d70375"
+    ],
+    "after_public_slugs": [
+      "representation-selectivity-2026-10-11-caveat"
+    ],
+    "current_actual_GET_strict_public_URL_matches_count": 91,
+    "public_live_status": "published_prerelease_provider_verified",
+    "readback_of_payload_bytes_not_performed": true,
+    "per_asset_records": [
+      {
+        "name": "representation-controlled-comparison-data-b93efeac59-001-c751554a5068a03d.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-controlled-comparison-data-b93efeac59-001-c751554a5068a03d.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-controlled-comparison-data-b93efeac59-001-c751554a5068a03d.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-controlled-comparison-metadata-2e6363ed0c-001-ea02e9002d83c549.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-controlled-comparison-metadata-2e6363ed0c-001-ea02e9002d83c549.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-controlled-comparison-metadata-2e6363ed0c-001-ea02e9002d83c549.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-current-entry-metadata-4c69749266-001-b737c772a092bf5f.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-current-entry-metadata-4c69749266-001-b737c772a092bf5f.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-current-entry-metadata-4c69749266-001-b737c772a092bf5f.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-encoding-development-data-5d07e3479b-001-0057b38704aa1355.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-encoding-development-data-5d07e3479b-001-0057b38704aa1355.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-encoding-development-data-5d07e3479b-001-0057b38704aa1355.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-encoding-development-metadata-4d545b1944-001-5577b91870d3d3ec.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-encoding-development-metadata-4d545b1944-001-5577b91870d3d3ec.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-encoding-development-metadata-4d545b1944-001-5577b91870d3d3ec.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-encoding-development-weights-be41efe0b4-001-bab085265403f62f.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-encoding-development-weights-be41efe0b4-001-bab085265403f62f.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-encoding-development-weights-be41efe0b4-001-bab085265403f62f.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-encoding-plan-metadata-8caf4b5f9d-001-f21ce52f439e6ea0.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-encoding-plan-metadata-8caf4b5f9d-001-f21ce52f439e6ea0.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-encoding-plan-metadata-8caf4b5f9d-001-f21ce52f439e6ea0.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-fixed-transform-pairing-metadata-d60df81016-001-3f31f19ecdd1b197.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-fixed-transform-pairing-metadata-d60df81016-001-3f31f19ecdd1b197.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-fixed-transform-pairing-metadata-d60df81016-001-3f31f19ecdd1b197.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-fullset-eval-cache-0d78cab3e8-001-cedf335717cf3644.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-fullset-eval-cache-0d78cab3e8-001-cedf335717cf3644.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-fullset-eval-cache-0d78cab3e8-001-cedf335717cf3644.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-fullset-eval-metadata-3ff2da6245-001-4a0c4d6541ae2b85.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-fullset-eval-metadata-3ff2da6245-001-4a0c4d6541ae2b85.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-fullset-eval-metadata-3ff2da6245-001-4a0c4d6541ae2b85.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-graphworld-cache-001-0e7f41cd9d2229f6.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-graphworld-cache-001-0e7f41cd9d2229f6.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-graphworld-cache-001-0e7f41cd9d2229f6.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-graphworld-data-001-81012d928b04c91e.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-graphworld-data-001-81012d928b04c91e.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-graphworld-data-001-81012d928b04c91e.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-graphworld-metadata-001-dc7fe84aabb7df03.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-graphworld-metadata-001-dc7fe84aabb7df03.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-graphworld-metadata-001-dc7fe84aabb7df03.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-graphworld-weights-001-71d12a74f8c9ba77.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-graphworld-weights-001-71d12a74f8c9ba77.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-graphworld-weights-001-71d12a74f8c9ba77.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-cka-cache-0637ade96f-001-846184c32491958c.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-cka-cache-0637ade96f-001-846184c32491958c.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-cka-cache-0637ade96f-001-846184c32491958c.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-cka-data-61777fe8da-001-1e792eab2d442c04.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-cka-data-61777fe8da-001-1e792eab2d442c04.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-cka-data-61777fe8da-001-1e792eab2d442c04.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-cka-metadata-b3d52ce720-001-56714ba5c061ab86.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-cka-metadata-b3d52ce720-001-56714ba5c061ab86.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-cka-metadata-b3d52ce720-001-56714ba5c061ab86.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-cka-weights-a6a9e2aaa4-001-ee1adbd56fa0a587.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-cka-weights-a6a9e2aaa4-001-ee1adbd56fa0a587.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-cka-weights-a6a9e2aaa4-001-ee1adbd56fa0a587.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-cka-weights-a6a9e2aaa4-002-dc8bfa77164aa0f6.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-cka-weights-a6a9e2aaa4-002-dc8bfa77164aa0f6.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-cka-weights-a6a9e2aaa4-002-dc8bfa77164aa0f6.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-001-949911d1098cc70c.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-001-949911d1098cc70c.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-001-949911d1098cc70c.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-002-7a819d5bf16630fc.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-002-7a819d5bf16630fc.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-002-7a819d5bf16630fc.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-003-f1225bb0d49c911d.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-003-f1225bb0d49c911d.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-003-f1225bb0d49c911d.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-004-92e908e74c0dc0fc.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-004-92e908e74c0dc0fc.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-004-92e908e74c0dc0fc.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-005-c30ed00e73e05f69.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-005-c30ed00e73e05f69.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-005-c30ed00e73e05f69.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-006-7b671f2be0d65333.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-006-7b671f2be0d65333.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-006-7b671f2be0d65333.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-007-fa7e0223391b8dec.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-007-fa7e0223391b8dec.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-007-fa7e0223391b8dec.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-008-696ee311116435ee.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-008-696ee311116435ee.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-008-696ee311116435ee.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-009-02bb06e1db9e8940.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-009-02bb06e1db9e8940.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-009-02bb06e1db9e8940.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-010-b49aecddc1d78459.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-010-b49aecddc1d78459.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-010-b49aecddc1d78459.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-011-5c5df52abe5936af.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-011-5c5df52abe5936af.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-011-5c5df52abe5936af.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-012-02c56be704d45354.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-012-02c56be704d45354.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-012-02c56be704d45354.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-013-db39bf35894c6b6c.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-013-db39bf35894c6b6c.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-013-db39bf35894c6b6c.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-015-ccdbcd0fea4dfcc8.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-015-ccdbcd0fea4dfcc8.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-015-ccdbcd0fea4dfcc8.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-016-66f220942602ed21.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-016-66f220942602ed21.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-016-66f220942602ed21.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-017-8987cc499eba61b8.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-017-8987cc499eba61b8.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-017-8987cc499eba61b8.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-018-e95f556cae2bce53.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-018-e95f556cae2bce53.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-018-e95f556cae2bce53.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-019-b66d83e25cdaac99.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-019-b66d83e25cdaac99.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-019-b66d83e25cdaac99.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-cache-4de7965998-020-dd058b9839c83db2.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-cache-4de7965998-020-dd058b9839c83db2.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-cache-4de7965998-020-dd058b9839c83db2.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-data-836869ef5e-001-cd6731f57bc170a5.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-data-836869ef5e-001-cd6731f57bc170a5.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-data-836869ef5e-001-cd6731f57bc170a5.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-metadata-478de1d573-001-0a6234682125fd3a.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-metadata-478de1d573-001-0a6234682125fd3a.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-metadata-478de1d573-001-0a6234682125fd3a.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-weights-ff9a520a33-001-0fc41aa68ec09957.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-weights-ff9a520a33-001-0fc41aa68ec09957.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-weights-ff9a520a33-001-0fc41aa68ec09957.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-weights-ff9a520a33-002-2bdcd9f3908b5b01.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-weights-ff9a520a33-002-2bdcd9f3908b5b01.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-weights-ff9a520a33-002-2bdcd9f3908b5b01.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-multilayer-weights-ff9a520a33-003-be5ff937b27ef785.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-multilayer-weights-ff9a520a33-003-be5ff937b27ef785.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-weights-ff9a520a33-003-be5ff937b27ef785.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-scope-cache-3890b73011-001-02a48703617fc757.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-scope-cache-3890b73011-001-02a48703617fc757.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-scope-cache-3890b73011-001-02a48703617fc757.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-scope-cache-3890b73011-002-a6dad19cd5255e9b.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-scope-cache-3890b73011-002-a6dad19cd5255e9b.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-scope-cache-3890b73011-002-a6dad19cd5255e9b.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-scope-cache-3890b73011-003-90103d19b9380203.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-scope-cache-3890b73011-003-90103d19b9380203.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-scope-cache-3890b73011-003-90103d19b9380203.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-scope-data-5c27e244cd-001-c7a4b80eedb646eb.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-scope-data-5c27e244cd-001-c7a4b80eedb646eb.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-scope-data-5c27e244cd-001-c7a4b80eedb646eb.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-scope-metadata-8e2c9584ae-001-ad7370bfd2bb412b.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-scope-metadata-8e2c9584ae-001-ad7370bfd2bb412b.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-scope-metadata-8e2c9584ae-001-ad7370bfd2bb412b.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-training-corpus-data-7bdb3e5ce9-001-d17afe2a7a18188e.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-training-corpus-data-7bdb3e5ce9-001-d17afe2a7a18188e.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-training-corpus-data-7bdb3e5ce9-001-d17afe2a7a18188e.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-historical-training-corpus-metadata-7c34f6791f-001-32fc9654f2d2a664.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-historical-training-corpus-metadata-7c34f6791f-001-32fc9654f2d2a664.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-training-corpus-metadata-7c34f6791f-001-32fc9654f2d2a664.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-learnability-development-data-8ac4094932-001-f45ff7c98ddf4dc4.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-learnability-development-data-8ac4094932-001-f45ff7c98ddf4dc4.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-learnability-development-data-8ac4094932-001-f45ff7c98ddf4dc4.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-learnability-development-metadata-7f3fcfb409-001-088a8dcb877fcae7.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-learnability-development-metadata-7f3fcfb409-001-088a8dcb877fcae7.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-learnability-development-metadata-7f3fcfb409-001-088a8dcb877fcae7.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-learnability-development-weights-08c9ae465c-001-30efecff3d9f98fc.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-learnability-development-weights-08c9ae465c-001-30efecff3d9f98fc.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-learnability-development-weights-08c9ae465c-001-30efecff3d9f98fc.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-learnability-development-weights-08c9ae465c-002-e86fef0e26423390.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-learnability-development-weights-08c9ae465c-002-e86fef0e26423390.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-learnability-development-weights-08c9ae465c-002-e86fef0e26423390.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-matrixgroupworld-cache-001-6cab89ac0c1b4afa.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-matrixgroupworld-cache-001-6cab89ac0c1b4afa.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-matrixgroupworld-cache-001-6cab89ac0c1b4afa.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-matrixgroupworld-data-001-fb4d18b88ed9055b.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-matrixgroupworld-data-001-fb4d18b88ed9055b.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-matrixgroupworld-data-001-fb4d18b88ed9055b.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-matrixgroupworld-metadata-001-86163206396e2dfc.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-matrixgroupworld-metadata-001-86163206396e2dfc.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-matrixgroupworld-metadata-001-86163206396e2dfc.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-matrixgroupworld-weights-001-e1e8c0c6ac43c89f.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-matrixgroupworld-weights-001-e1e8c0c6ac43c89f.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-matrixgroupworld-weights-001-e1e8c0c6ac43c89f.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-graph-direct-dependency-metadata-67d56d2606-001-89e00f85f5755b9a.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-graph-direct-dependency-metadata-67d56d2606-001-89e00f85f5755b9a.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-graph-direct-dependency-metadata-67d56d2606-001-89e00f85f5755b9a.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-001-022cdf0692fd777a.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-001-022cdf0692fd777a.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-001-022cdf0692fd777a.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-002-385a10d6420ff71e.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-002-385a10d6420ff71e.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-002-385a10d6420ff71e.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-003-59880f5c11b3e46b.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-003-59880f5c11b3e46b.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-003-59880f5c11b3e46b.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-004-89317d4415f302be.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-004-89317d4415f302be.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-004-89317d4415f302be.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-005-e7dbc92d44e5877a.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-005-e7dbc92d44e5877a.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-005-e7dbc92d44e5877a.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-006-75e582e5f051ea58.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-006-75e582e5f051ea58.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-006-75e582e5f051ea58.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-007-71ffe07817e0c83f.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-007-71ffe07817e0c83f.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-007-71ffe07817e0c83f.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-008-44701462774dadd8.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-008-44701462774dadd8.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-008-44701462774dadd8.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-009-92756aa0105a14f1.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-009-92756aa0105a14f1.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-009-92756aa0105a14f1.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-010-8f4a76e1da29118f.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-010-8f4a76e1da29118f.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-010-8f4a76e1da29118f.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-011-4307c56a9e45d67f.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-011-4307c56a9e45d67f.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-011-4307c56a9e45d67f.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-012-2dcdb7077fa57462.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-012-2dcdb7077fa57462.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-012-2dcdb7077fa57462.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-013-566fb5e9c8a01c64.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-013-566fb5e9c8a01c64.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-013-566fb5e9c8a01c64.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-014-bdd3bde5119ef199.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-014-bdd3bde5119ef199.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-014-bdd3bde5119ef199.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-015-7bf7c9a7929949c4.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-015-7bf7c9a7929949c4.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-015-7bf7c9a7929949c4.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-016-eb444e80c25474c5.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-016-eb444e80c25474c5.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-016-eb444e80c25474c5.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-017-a83bda60981a0b07.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-017-a83bda60981a0b07.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-017-a83bda60981a0b07.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-cache-e4f16504b3-018-f66210d909274bdf.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-cache-e4f16504b3-018-f66210d909274bdf.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-cache-e4f16504b3-018-f66210d909274bdf.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-data-2e4df4144a-001-29a454a3bc398500.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-data-2e4df4144a-001-29a454a3bc398500.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-data-2e4df4144a-001-29a454a3bc398500.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-metadata-d3510dc542-001-05fa81597581180d.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-metadata-d3510dc542-001-05fa81597581180d.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-metadata-d3510dc542-001-05fa81597581180d.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-specialist-controls-cache-8a1c3c6c40-001-57ade47092df23cd.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-specialist-controls-cache-8a1c3c6c40-001-57ade47092df23cd.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-specialist-controls-cache-8a1c3c6c40-001-57ade47092df23cd.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-specialist-controls-cache-8a1c3c6c40-002-fadab05905c6c3e9.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-specialist-controls-cache-8a1c3c6c40-002-fadab05905c6c3e9.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-specialist-controls-cache-8a1c3c6c40-002-fadab05905c6c3e9.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-specialist-controls-cache-8a1c3c6c40-003-98e7f459355a56c3.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-specialist-controls-cache-8a1c3c6c40-003-98e7f459355a56c3.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-specialist-controls-cache-8a1c3c6c40-003-98e7f459355a56c3.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-specialist-controls-cache-8a1c3c6c40-004-a97521dc93f5734e.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-specialist-controls-cache-8a1c3c6c40-004-a97521dc93f5734e.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-specialist-controls-cache-8a1c3c6c40-004-a97521dc93f5734e.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-specialist-controls-cache-8a1c3c6c40-005-5c758245b370751f.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-specialist-controls-cache-8a1c3c6c40-005-5c758245b370751f.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-specialist-controls-cache-8a1c3c6c40-005-5c758245b370751f.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-specialist-controls-data-a4e76f3e31-001-6781604c1fa105a2.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-specialist-controls-data-a4e76f3e31-001-6781604c1fa105a2.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-specialist-controls-data-a4e76f3e31-001-6781604c1fa105a2.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-specialist-controls-metadata-6d016ef5bc-001-b7248a21f3e7fafc.tar.zst",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-specialist-controls-metadata-6d016ef5bc-001-b7248a21f3e7fafc.tar.zst",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-specialist-controls-metadata-6d016ef5bc-001-b7248a21f3e7fafc.tar.zst",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-artifacts-manifest-20261011.json",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-artifacts-manifest-20261011.json",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-artifacts-manifest-20261011.json",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      },
+      {
+        "name": "representation-package-checksums-20261011.csv",
+        "same_asset_id": true,
+        "same_bytes": true,
+        "same_sha256": true,
+        "same_provider_digest": true,
+        "before_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/untagged-41132d0c0b9632d70375/representation-package-checksums-20261011.csv",
+        "after_url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-package-checksums-20261011.csv",
+        "before_matches_actual_draft_url": true,
+        "after_matches_declared_public_url": true
+      }
+    ]
+  },
+  "official_sources": [
+    {
+      "url": "https://docs.github.com/en/rest/releases/releases#update-a-release",
+      "supported_statement": "The update-release draft parameter false publishes the release; make_latest supports false; release identity/target and public tag GET are separate API fields."
+    },
+    {
+      "url": "https://docs.github.com/en/rest/releases/assets#list-release-assets",
+      "supported_statement": "Release assets are listed by exact repository/release ID, and response records provide assetID/name/state/size/digest/browser_download_url."
+    }
+  ],
+  "source_inference_limit": "The official REST docs used here do not specify the synthetic untagged slug format or universally guarantee its transition timing. The exact untagged→declaredtag URL transition is directly observed in this one release existing provider receipts, backed by unchanged91asset IDs/bytes/digests; do not generalize as a universal undocumented API promise.",
+  "new_blocking_problem_found": false
+}

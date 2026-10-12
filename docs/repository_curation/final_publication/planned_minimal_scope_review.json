@@ -1,0 +1,3283 @@
+{
+  "status": "prepared_read_only_collection_plan_no_actual_clone_results",
+  "utc": "2026-10-12T08:55:25.045676+00:00",
+  "manifest_input": {
+    "path": "/home/yangx/ICML/artifacts_manifest.json",
+    "sha256": "f1ef48da6915a4ad6632e100ab09171f2f74690e2d4fcd49d9254436a7ce394f",
+    "scientific_source_commit": "83325c2b6a2e41c69fc8b2e8f25e0cb58b80aca2",
+    "release_tag": "representation-selectivity-2026-10-11-caveat",
+    "planned_clone_main_commit": "29ec0802987fda8d1c5b9986426233d4ceb4b4c8"
+  },
+  "counts_are_manifest_derived_expectations_not_actual_readback": true,
+  "expected_minimal_counts": {
+    "required_logical_files": 206,
+    "required_unique_content_objects": 206,
+    "required_unique_content_bytes": 1549329772,
+    "selected_package_assets": 13,
+    "selected_packages": 13,
+    "selected_compressed_asset_bytes": 3771371797,
+    "selected_unique_CAS_objects": 1974,
+    "selected_unique_CAS_bytes": 4492917962,
+    "collateral_unique_CAS_objects": 1768,
+    "collateral_unique_CAS_bytes": 2943588190,
+    "all_selected_logical_aliases_in_default_path_map": 2074,
+    "collateral_logical_aliases_beyond_required_set": 1868,
+    "materialized_regular_logical_copies_requested": 0
+  },
+  "required_role_counts": {
+    "protocol_manifest_or_metadata": 109,
+    "saved_rng": 4,
+    "initial_checkpoint": 4,
+    "fixed_input_or_training_data": 8,
+    "batch_schedule": 4,
+    "activation_probability_or_prediction_cache": 64,
+    "trained_checkpoint": 13
+  },
+  "selection_rule": "Complete Matrix formal8 and Graph formal4 actual checkpoint/data/initial/RNG/allcache coverage; plus Perm first lexicographic(architecture,encoding,task,run_id), never by metrics or accuracy.",
+  "selected_Perm_source": {
+    "domain": "permworld",
+    "run_id": "eightrel001_gru_canonical_cycle_anti_fixed_points",
+    "architecture": "gru",
+    "encoding": "canonical_cycle",
+    "task": "anti_fixed_points",
+    "model_seed": 95100002,
+    "data_seed": 95200001,
+    "batch_seed": 95300001,
+    "reused_existing": false,
+    "step": 20000,
+    "finite_gradient_updates": 20000,
+    "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/checkpoint.pt",
+    "checkpoint_sha256": "8d4dfc896701c1e46938886d133bc37d2fcf4e5c39d7314850613acdf6d86aaf",
+    "parameter_sha256": "7f015f61634dcb0882e6f96e032507139465ed987fdaf4506e7e7bff6f6fdd8d",
+    "completed_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/completed.json",
+    "completed_sha256": "5f90e2ddb23675f7d1234ddd4bf8691d0ffc40ca44fb7ec5bc95c9daf1002dac",
+    "initial_checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+    "initial_checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+    "initial_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+    "starting_rng_hash": "b719b74fb36d959f314d532c0811abaaa83c0b123dc9c773e6301f7d119e5d27",
+    "starting_rng_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_descents.pt",
+    "starting_rng_checkpoint_sha256": "0a79de4b0d345a01d5c5317788e0ac171a283b8150e12cd4febefcc3fdf0dec8",
+    "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+    "protocol_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+    "execution_source_version_sha256": "27cb40ee43341fa326e6b455d989b6e70b31ee421d86f923262117448d7cf476",
+    "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+    "batch_schedule_sha256": "e6d053511b0847e9687df72c6e37f7f39e6106d2a2b018874432ccf47a48e182",
+    "batch_binding": "Explicit checkpoint+receipt SHA",
+    "exposures": 1280000,
+    "supervised_tokens": 2560000,
+    "parameters": 1660416,
+    "elapsed_process_wall_seconds": 1068.5093477490009,
+    "status": "completed_fixed20k_verified",
+    "actual_initial_identity_verified": true,
+    "source_origin": "new fixed20k",
+    "receipt_inventory_status_not_completion_gate": "missing_authorized"
+  },
+  "minimal_scope": {
+    "formal_source_checkpoints_required": 13,
+    "matrix_formal_checkpoints": 8,
+    "graph_formal_checkpoints": 4,
+    "Perm_selected_formal_checkpoints": 1,
+    "matrix_cache_records": 48,
+    "graph_cache_records": 16,
+    "Perm_activation_geometry_caches_guaranteed": false,
+    "historical_initial_identity_limitations": "Old reconstructed/unverified initial references remain limited; no missing initial/source identity is repaired by this package/profile or any training."
+  },
+  "packages": [
+    {
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "parts": [
+        "representation-graphworld-cache-001-0e7f41cd9d2229f6.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-graphworld-cache-001-0e7f41cd9d2229f6.tar.zst",
+          "bytes": 98057505,
+          "sha256": "ed8299daf49e583ba54a38517cf5192e97690d10bdd60f4f7a19f0df71ae90ab",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-graphworld-cache-001-0e7f41cd9d2229f6.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "ed8299daf49e583ba54a38517cf5192e97690d10bdd60f4f7a19f0df71ae90ab",
+      "compressed_bytes": 98057505,
+      "selected_unique_content_objects": 16,
+      "required_unique_content_objects": 16,
+      "collateral_unique_content_objects": 0,
+      "selected_unique_content_bytes": 98039895
+    },
+    {
+      "package_id": "graphworld-data-001-81012d928b04c91e",
+      "parts": [
+        "representation-graphworld-data-001-81012d928b04c91e.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-graphworld-data-001-81012d928b04c91e.tar.zst",
+          "bytes": 5170177,
+          "sha256": "b95f489fda0ac5b129cf5c3a061ce958bfeba4c157cefa4cf6cb1576fe089ab5",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-graphworld-data-001-81012d928b04c91e.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "b95f489fda0ac5b129cf5c3a061ce958bfeba4c157cefa4cf6cb1576fe089ab5",
+      "compressed_bytes": 5170177,
+      "selected_unique_content_objects": 3,
+      "required_unique_content_objects": 3,
+      "collateral_unique_content_objects": 0,
+      "selected_unique_content_bytes": 7729328
+    },
+    {
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "parts": [
+        "representation-graphworld-metadata-001-dc7fe84aabb7df03.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-graphworld-metadata-001-dc7fe84aabb7df03.tar.zst",
+          "bytes": 1007226,
+          "sha256": "0878f7fa8b40c53b0cbd10d3246a9e508c69117a6173a5fd7533e1e1b12f83c6",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-graphworld-metadata-001-dc7fe84aabb7df03.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "0878f7fa8b40c53b0cbd10d3246a9e508c69117a6173a5fd7533e1e1b12f83c6",
+      "compressed_bytes": 1007226,
+      "selected_unique_content_objects": 144,
+      "required_unique_content_objects": 26,
+      "collateral_unique_content_objects": 118,
+      "selected_unique_content_bytes": 3071622
+    },
+    {
+      "package_id": "graphworld-weights-001-71d12a74f8c9ba77",
+      "parts": [
+        "representation-graphworld-weights-001-71d12a74f8c9ba77.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-graphworld-weights-001-71d12a74f8c9ba77.tar.zst",
+          "bytes": 359440620,
+          "sha256": "e59855900422076efa063cdfc87e21f595145ba08df9287423fdbccc371e84bb",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-graphworld-weights-001-71d12a74f8c9ba77.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "e59855900422076efa063cdfc87e21f595145ba08df9287423fdbccc371e84bb",
+      "compressed_bytes": 359440620,
+      "selected_unique_content_objects": 10,
+      "required_unique_content_objects": 4,
+      "collateral_unique_content_objects": 6,
+      "selected_unique_content_bytes": 389697134
+    },
+    {
+      "package_id": "historical-multilayer-metadata-478de1d573-001-0a6234682125fd3a",
+      "parts": [
+        "representation-historical-multilayer-metadata-478de1d573-001-0a6234682125fd3a.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-historical-multilayer-metadata-478de1d573-001-0a6234682125fd3a.tar.zst",
+          "bytes": 71249614,
+          "sha256": "51f370c772eb73e5a65b38a0004fc9a582657a75cc1be56e40c31c0679de7658",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-historical-multilayer-metadata-478de1d573-001-0a6234682125fd3a.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "51f370c772eb73e5a65b38a0004fc9a582657a75cc1be56e40c31c0679de7658",
+      "compressed_bytes": 71249614,
+      "selected_unique_content_objects": 602,
+      "required_unique_content_objects": 1,
+      "collateral_unique_content_objects": 601,
+      "selected_unique_content_bytes": 253723615
+    },
+    {
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "parts": [
+        "representation-matrixgroupworld-cache-001-6cab89ac0c1b4afa.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-matrixgroupworld-cache-001-6cab89ac0c1b4afa.tar.zst",
+          "bytes": 796361997,
+          "sha256": "1dae26e1c44887e91ff1d6caac1d47b761ddb9bede9e6c58a1c0de4747e2808d",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-matrixgroupworld-cache-001-6cab89ac0c1b4afa.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "1dae26e1c44887e91ff1d6caac1d47b761ddb9bede9e6c58a1c0de4747e2808d",
+      "compressed_bytes": 796361997,
+      "selected_unique_content_objects": 48,
+      "required_unique_content_objects": 48,
+      "collateral_unique_content_objects": 0,
+      "selected_unique_content_bytes": 883839168
+    },
+    {
+      "package_id": "matrixgroupworld-data-001-fb4d18b88ed9055b",
+      "parts": [
+        "representation-matrixgroupworld-data-001-fb4d18b88ed9055b.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-matrixgroupworld-data-001-fb4d18b88ed9055b.tar.zst",
+          "bytes": 8930400,
+          "sha256": "423c5fad786e12452e30d37e765710a27bf348d7a08c8caa7dba63fe67bd8701",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-matrixgroupworld-data-001-fb4d18b88ed9055b.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "423c5fad786e12452e30d37e765710a27bf348d7a08c8caa7dba63fe67bd8701",
+      "compressed_bytes": 8930400,
+      "selected_unique_content_objects": 7,
+      "required_unique_content_objects": 6,
+      "collateral_unique_content_objects": 1,
+      "selected_unique_content_bytes": 9088763
+    },
+    {
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "parts": [
+        "representation-matrixgroupworld-metadata-001-86163206396e2dfc.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-matrixgroupworld-metadata-001-86163206396e2dfc.tar.zst",
+          "bytes": 2521553,
+          "sha256": "c40fee8aef112047a2f574b90bd29d9ccbb102ae142569e1809549db69539820",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-matrixgroupworld-metadata-001-86163206396e2dfc.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "c40fee8aef112047a2f574b90bd29d9ccbb102ae142569e1809549db69539820",
+      "compressed_bytes": 2521553,
+      "selected_unique_content_objects": 352,
+      "required_unique_content_objects": 77,
+      "collateral_unique_content_objects": 275,
+      "selected_unique_content_bytes": 11367987
+    },
+    {
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "parts": [
+        "representation-matrixgroupworld-weights-001-e1e8c0c6ac43c89f.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-matrixgroupworld-weights-001-e1e8c0c6ac43c89f.tar.zst",
+          "bytes": 528567583,
+          "sha256": "ede8f368c76bd799684eefe95ec67c2b53b59da14064b464876cccf88675316f",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-matrixgroupworld-weights-001-e1e8c0c6ac43c89f.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "ede8f368c76bd799684eefe95ec67c2b53b59da14064b464876cccf88675316f",
+      "compressed_bytes": 528567583,
+      "selected_unique_content_objects": 19,
+      "required_unique_content_objects": 12,
+      "collateral_unique_content_objects": 7,
+      "selected_unique_content_bytes": 584605301
+    },
+    {
+      "package_id": "permworld-main-data-2e4df4144a-001-29a454a3bc398500",
+      "parts": [
+        "representation-permworld-main-data-2e4df4144a-001-29a454a3bc398500.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-permworld-main-data-2e4df4144a-001-29a454a3bc398500.tar.zst",
+          "bytes": 13886480,
+          "sha256": "c90c7bc90f897792cb81666282b3401d33b3aad6df7c1e2cc049dd27f90cb550",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-data-2e4df4144a-001-29a454a3bc398500.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "c90c7bc90f897792cb81666282b3401d33b3aad6df7c1e2cc049dd27f90cb550",
+      "compressed_bytes": 13886480,
+      "selected_unique_content_objects": 36,
+      "required_unique_content_objects": 3,
+      "collateral_unique_content_objects": 33,
+      "selected_unique_content_bytes": 25775595
+    },
+    {
+      "package_id": "permworld-main-metadata-d3510dc542-001-05fa81597581180d",
+      "parts": [
+        "representation-permworld-main-metadata-d3510dc542-001-05fa81597581180d.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-permworld-main-metadata-d3510dc542-001-05fa81597581180d.tar.zst",
+          "bytes": 27201115,
+          "sha256": "8b3fc5d1f865ab3807d38da8a7af734b76184734f8f074a02f7a1e72c6c7b5bb",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-metadata-d3510dc542-001-05fa81597581180d.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "8b3fc5d1f865ab3807d38da8a7af734b76184734f8f074a02f7a1e72c6c7b5bb",
+      "compressed_bytes": 27201115,
+      "selected_unique_content_objects": 658,
+      "required_unique_content_objects": 5,
+      "collateral_unique_content_objects": 653,
+      "selected_unique_content_bytes": 202514183
+    },
+    {
+      "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b",
+      "parts": [
+        "representation-permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b.tar.zst",
+          "bytes": 1227754971,
+          "sha256": "3a1c8635887f61ac31b371af8ee47353a12ad74f86e3f7b0c307d0deea86ff99",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "3a1c8635887f61ac31b371af8ee47353a12ad74f86e3f7b0c307d0deea86ff99",
+      "compressed_bytes": 1227754971,
+      "selected_unique_content_objects": 50,
+      "required_unique_content_objects": 4,
+      "collateral_unique_content_objects": 46,
+      "selected_unique_content_bytes": 1333337188
+    },
+    {
+      "package_id": "permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa",
+      "parts": [
+        "representation-permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa.tar.zst"
+      ],
+      "assets": [
+        {
+          "name": "representation-permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa.tar.zst",
+          "bytes": 631222556,
+          "sha256": "355d20184461e2960e699c54317e9b2db03070afabdd8044aa9ab741c6438d44",
+          "part_index": 1,
+          "url": "https://github.com/XuanyuYang223/2026TMLR/releases/download/representation-selectivity-2026-10-11-caveat/representation-permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa.tar.zst"
+        }
+      ],
+      "compressed_stream_sha256": "355d20184461e2960e699c54317e9b2db03070afabdd8044aa9ab741c6438d44",
+      "compressed_bytes": 631222556,
+      "selected_unique_content_objects": 29,
+      "required_unique_content_objects": 1,
+      "collateral_unique_content_objects": 28,
+      "selected_unique_content_bytes": 690128183
+    }
+  ],
+  "required_logical_files": [
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/completion.json",
+      "sha256": "c5be90a4bb8ef35743757a447ac6fb6c2ffc3029a7373b24f5ef05fbc63c159e",
+      "bytes": 1133,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/completion.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/freeze_manifest.json",
+      "sha256": "af8c4499dfd5c47d2af48319e323c317fb7868240f5e19da259083971cb88556",
+      "bytes": 4140,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/freeze_manifest.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/protocol.json",
+      "sha256": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+      "bytes": 54897,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/protocol.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "fixed_transform_pairing",
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/verification_freeze.json",
+      "sha256": "d4d3f8d0d4f8977e3201f2ac6dd0d4d94c5f7eb46d56fe08571f03b500a235bb",
+      "bytes": 15457,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/graphworld_pilot_20261010/verification_freeze.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json",
+      "sha256": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+      "bytes": 138974,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/completion.json",
+      "sha256": "d5c3c4d42c7b1840646f46828e1b0db46c2e5d1a8ea58980a70dacabaa6402ef",
+      "bytes": 8370,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/completion.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/freeze_manifest.json",
+      "sha256": "2e52c0957d646a4dad261ffd0d0b63120ef8ee4e9f3118a179b142cf4c305e3c",
+      "bytes": 4913,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/freeze_manifest.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/math_audit.json",
+      "sha256": "cea05b3436edbe027d944e976cf3faa6ac51bfb88f1c387ab744528a59208df0",
+      "bytes": 5041,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/math_audit.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/protocol.json",
+      "sha256": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+      "bytes": 21279,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/protocol.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/training_complete.json",
+      "sha256": "8c5d8c0c3df842e27f6d549b3f82c4014ce784175cfdf8ea279eefbc3ba3bea0",
+      "bytes": 731021,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/training_complete.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/analysis_freeze.json",
+      "sha256": "38d4a132a145f13f30278c7d996d218e40a264e78e6126f341c117869f3d8848",
+      "bytes": 2338,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/analysis_freeze.json",
+      "package_id": "permworld-main-metadata-d3510dc542-001-05fa81597581180d",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/completed_checkpoint_manifest.json",
+      "sha256": "9a04a6ac7902059d12734fd10e08f51479bf143afcc297f605e0eaa1729f8a1f",
+      "bytes": 166790,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/completed_checkpoint_manifest.json",
+      "package_id": "permworld-main-metadata-d3510dc542-001-05fa81597581180d",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json",
+      "sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+      "bytes": 353015,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json",
+      "package_id": "permworld-main-metadata-d3510dc542-001-05fa81597581180d",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "fixed_transform_pairing",
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/training_freeze.json",
+      "sha256": "e47cd04f85703899177bac2b1f53f5c227fa153ada6beaee1edb7cfeb6386261",
+      "bytes": 3471,
+      "restore_path": "logical/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/training_freeze.json",
+      "package_id": "permworld-main-metadata-d3510dc542-001-05fa81597581180d",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_descents.pt",
+      "sha256": "0a79de4b0d345a01d5c5317788e0ac171a283b8150e12cd4febefcc3fdf0dec8",
+      "bytes": 14997,
+      "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_descents.pt",
+      "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b",
+      "roles": [
+        "saved_rng"
+      ],
+      "experiments": [
+        "controlled_comparison",
+        "encoding_development",
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "bytes": 6669565,
+      "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b",
+      "roles": [
+        "initial_checkpoint"
+      ],
+      "experiments": [
+        "controlled_comparison",
+        "encoding_development",
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/batch_indices.npy",
+      "sha256": "e6d053511b0847e9687df72c6e37f7f39e6106d2a2b018874432ccf47a48e182",
+      "bytes": 5120128,
+      "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/batch_indices.npy",
+      "package_id": "permworld-main-data-2e4df4144a-001-29a454a3bc398500",
+      "roles": [
+        "fixed_input_or_training_data"
+      ],
+      "experiments": [
+        "encoding_development",
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/batch_lengths.npy",
+      "sha256": "b6ed71210e5474a022c207c75c5c683d01aee8d4821c700856a73680d8d87024",
+      "bytes": 160128,
+      "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/batch_lengths.npy",
+      "package_id": "permworld-main-data-2e4df4144a-001-29a454a3bc398500",
+      "roles": [
+        "batch_schedule"
+      ],
+      "experiments": [
+        "encoding_development",
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "bytes": 7158873,
+      "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "package_id": "permworld-main-data-2e4df4144a-001-29a454a3bc398500",
+      "roles": [
+        "fixed_input_or_training_data"
+      ],
+      "experiments": [
+        "controlled_comparison",
+        "encoding_development",
+        "fixed_transform_pairing",
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data_audit.json",
+      "sha256": "9a48d9aec89809a2f3d5672ac186a1e3006be9620d9bb5cdad11042f193dba74",
+      "bytes": 2102,
+      "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data_audit.json",
+      "package_id": "historical-multilayer-metadata-478de1d573-001-0a6234682125fd3a",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "encoding_development",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/index.json",
+      "sha256": "a5178fcd4e6dc74b5b4680ab3cf42d0041ba0b74f2f898005fd05ace740afa7d",
+      "bytes": 48713,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/index.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "fixed_transform_pairing",
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_analysis.json",
+      "sha256": "7ab6e5b4621a972bf4acf743cfa4660fa78b8093a7f3d0741fd2c56d0a3016a3",
+      "bytes": 1343,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_analysis.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_analysis.npz",
+      "sha256": "a003f7334f24043f4b4297d6ed53490e609a017924dbf7376be0e899f89a952c",
+      "bytes": 8158993,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_analysis.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_validation.json",
+      "sha256": "116b06b62f78a246b822ead67cb9dbcf3d2991b4728198e5a1fc8328312d6803",
+      "bytes": 3095,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_validation.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_validation.npz",
+      "sha256": "00dc40b6506e020651a55bfb4897ba60903ae69102c2f373ef83193967198f20",
+      "bytes": 4080876,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_initial_validation.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_analysis.json",
+      "sha256": "9f5f6dfb759c972e5a338e4160c09a4762324314d1a4d4622e842e4dc7748100",
+      "bytes": 1359,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_analysis.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_analysis.npz",
+      "sha256": "afcd1abffb94d69c3cec379630ff956ad8b73a0ef51e0d1f7079f4164c5ba709",
+      "bytes": 8176123,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_analysis.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_validation.json",
+      "sha256": "b7fb3682e22886314987f348dc7b1f79fafcd4130472fb703356fb68faa6c9f7",
+      "bytes": 3112,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_validation.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_validation.npz",
+      "sha256": "b9ac63f5b05a24cb9517ee67ca8b7d90f2b65f00831aafff1bcdddb2da025a00",
+      "bytes": 4090232,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_in_trained_validation.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_analysis.json",
+      "sha256": "f6b0e443ea9f8f1320726cb6fee7df4f96a8c028ec8ab05b3e5deac1b32d0928",
+      "bytes": 1344,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_analysis.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_analysis.npz",
+      "sha256": "fe9be329149be9d45f8db3c26d14bb3681503dba2e07d5933dfbcea866929c5b",
+      "bytes": 8158838,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_analysis.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_validation.json",
+      "sha256": "ac8b8c837fe6baaab09aa3467f53ea38926d54ddddee2410937117cdd4e623bd",
+      "bytes": 3096,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_validation.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_validation.npz",
+      "sha256": "733b09e360998575321d2d5b5490002524e6483459f3db11336f21810ae931e1",
+      "bytes": 4080780,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_initial_validation.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_analysis.json",
+      "sha256": "11a736e718cc408d964d95b43fdeb28777ba4d9dd02e3a17f0c2172831cda8fc",
+      "bytes": 1362,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_analysis.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_analysis.npz",
+      "sha256": "160280b54fb74f7495058a944010475affe207ecec218c8ad8edb0e16c55cbec",
+      "bytes": 8164085,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_analysis.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_validation.json",
+      "sha256": "016156ff86dd14b5f224327bfc8298160b71cb4bb49f48227881606d6118d9d6",
+      "bytes": 3114,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_validation.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_validation.npz",
+      "sha256": "9a5383969d28d44fbe928bd39e1beab1fb2f9994c2cd7bdadb0e71c150a6e531",
+      "bytes": 4083812,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/max_out_trained_validation.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_analysis.json",
+      "sha256": "35929626f1b3edde915c203347455aa6d29e8e0126736418879d917f95218cd4",
+      "bytes": 1343,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_analysis.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_analysis.npz",
+      "sha256": "18422d92b254a1aaa4bf56f393446e38406142082e6ec444847c8cafae7386fb",
+      "bytes": 8158185,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_analysis.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_validation.json",
+      "sha256": "41a8d2f1cf8ce511f3aad9ae708567a75776768cfe6b9b9090ff0f1a4652e554",
+      "bytes": 3095,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_validation.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_validation.npz",
+      "sha256": "504be5ce4c36994db00f922355d078a81022499f0d8bba9445dca7a618b207a0",
+      "bytes": 4080564,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_initial_validation.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_analysis.json",
+      "sha256": "e5788ea1308c4158a94c1e11c77ae4a175d7f32f32cb45e3181ce0f0536329c2",
+      "bytes": 1360,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_analysis.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_analysis.npz",
+      "sha256": "41f34acdd959ab06c1e96b75e0ba416fe574d676ec4d28090f91276138ff57bb",
+      "bytes": 8204041,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_analysis.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_validation.json",
+      "sha256": "8a6af6df7d0afaacc4d25b993442a8fe17cde3fb9f03527a649259665f8ff640",
+      "bytes": 3112,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_validation.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_validation.npz",
+      "sha256": "54dd222f15d4c5ffa3ef5cff95754ffa44e81a2905b9740257aeb9800bcc10dc",
+      "bytes": 4103462,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_in_trained_validation.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_analysis.json",
+      "sha256": "5cbc850dd849635e9b23e91daf3ad7e38b751ee15f29c0b2e8153b7e75f8d654",
+      "bytes": 1344,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_analysis.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_analysis.npz",
+      "sha256": "98e45fff9d5286d595f2f8515837639e33de02b0eca47bab6d9c02675d08e5ed",
+      "bytes": 8157936,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_analysis.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_validation.json",
+      "sha256": "ef4e81c6bfcaacdfe9b0074ce07f09eaad42e513a4b532c8ecb808eceb355ee9",
+      "bytes": 3095,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_validation.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_validation.npz",
+      "sha256": "ebd4e0543dff6b8356f0d9f506b57298dee142de4667974a5392a4e994ee96cd",
+      "bytes": 4080355,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_initial_validation.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_analysis.json",
+      "sha256": "6f14d592759cd26e43a6a8327d1f7a1bcc8b4f3838d389877f602e97057c7c3f",
+      "bytes": 1361,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_analysis.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_analysis.npz",
+      "sha256": "8b3df654c133b88e91e64cb5177f38b218e2e45958839e265713fdf66aeeaeda",
+      "bytes": 8173194,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_analysis.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_validation.json",
+      "sha256": "f964fd228fb13a7090def8287d5c4bb8632e65d6fdc024a91e8e583249dc8031",
+      "bytes": 3114,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_validation.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_validation.npz",
+      "sha256": "41ddc7135e00a14e83bd37cf4504f2b387fb9ce5d8e6a8c3cf54009910c7225c",
+      "bytes": 4088419,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/evaluation_cache/min_out_trained_validation.npz",
+      "package_id": "graphworld-cache-001-0e7f41cd9d2229f6",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/start_rng.pt",
+      "sha256": "37d238e3c7388e2e4003d933187e89339374cf5ef627b18f916a52275fea1827",
+      "bytes": 14933,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/start_rng.pt",
+      "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b",
+      "roles": [
+        "saved_rng"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/step0.pt",
+      "sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "bytes": 13001533,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/step0.pt",
+      "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b",
+      "roles": [
+        "initial_checkpoint"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_max_in/checkpoint.pt",
+      "sha256": "870dc1e0513c29303411d4dae3fa1cf88dc8a595f4b53b69f89d32133690ac3f",
+      "bytes": 38974379,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_max_in/checkpoint.pt",
+      "package_id": "graphworld-weights-001-71d12a74f8c9ba77",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_max_in/completed.json",
+      "sha256": "3c7de52f263411571260242018ccc390fad62b4802c73e71768d2738fb708823",
+      "bytes": 25315,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_max_in/completed.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_max_out/checkpoint.pt",
+      "sha256": "25eb76f738fa4e7c0b38600edaa11ab5367b7c61e5ccbe1c1243682bf3644d5c",
+      "bytes": 38974379,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_max_out/checkpoint.pt",
+      "package_id": "graphworld-weights-001-71d12a74f8c9ba77",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_max_out/completed.json",
+      "sha256": "62baa16561bbfd0c48c070997fd0be80b747ccdc822e922781fe02ebe1866792",
+      "bytes": 25108,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_max_out/completed.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_min_in/checkpoint.pt",
+      "sha256": "2d8c1d70f7985a3b806aba8dc3160b30fdb8f966d07307e44337a89f013f30b2",
+      "bytes": 38974379,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_min_in/checkpoint.pt",
+      "package_id": "graphworld-weights-001-71d12a74f8c9ba77",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_min_in/completed.json",
+      "sha256": "48dd6db73584e572830374e3f0769b1f82b5707723140904e4eaa72191d1b84a",
+      "bytes": 25440,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_min_in/completed.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_min_out/checkpoint.pt",
+      "sha256": "2814113331bafdef18adc8930d682838fb7f8ff5ee4bb86ce833aa6b0e899559",
+      "bytes": 38974379,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_min_out/checkpoint.pt",
+      "package_id": "graphworld-weights-001-71d12a74f8c9ba77",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_min_out/completed.json",
+      "sha256": "6427272bbaa0825385586aeb8c10867a7a8b09349789bbbde9c935699714f62c",
+      "bytes": 24979,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/models/graphpilot001_min_out/completed.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/world/batch_indices.npy",
+      "sha256": "e06ca6008b5cc0fe8a31644680a5ac661b6f3f9cd256a04be64cc92fd123ecfe",
+      "bytes": 5120128,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/world/batch_indices.npy",
+      "package_id": "graphworld-data-001-81012d928b04c91e",
+      "roles": [
+        "fixed_input_or_training_data"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/world/data.npz",
+      "sha256": "f4dc57ba9f1fd668b0de956e82e80cfa9a5efbfa99067e5f4dcc984ecc520560",
+      "bytes": 2449072,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/world/data.npz",
+      "package_id": "graphworld-data-001-81012d928b04c91e",
+      "roles": [
+        "fixed_input_or_training_data"
+      ],
+      "experiments": [
+        "fixed_transform_pairing",
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/world/data_audit.json",
+      "sha256": "3d3ba5ae26fbb6055b21f9790516d8d9c00e3074fba91f7588c76a23e130f3eb",
+      "bytes": 1940,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/world/data_audit.json",
+      "package_id": "graphworld-metadata-001-dc7fe84aabb7df03",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "graphworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/world/length_schedule.npy",
+      "sha256": "7ea3d1f8e6203c64b93181a51c89d8155334647b67c363cf0f00909afe84cb31",
+      "bytes": 160128,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/graphworld_pilot/world/length_schedule.npy",
+      "package_id": "graphworld-data-001-81012d928b04c91e",
+      "roles": [
+        "batch_schedule"
+      ],
+      "experiments": [
+        "graphworld",
+        "permworld_graph_direct_dependency"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/checkpoint.pt",
+      "sha256": "8d4dfc896701c1e46938886d133bc37d2fcf4e5c39d7314850613acdf6d86aaf",
+      "bytes": 19964185,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/checkpoint.pt",
+      "package_id": "permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/completed.json",
+      "sha256": "5f90e2ddb23675f7d1234ddd4bf8691d0ffc40ca44fb7ec5bc95c9daf1002dac",
+      "bytes": 7986,
+      "restore_path": "logical/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/completed.json",
+      "package_id": "permworld-main-metadata-d3510dc542-001-05fa81597581180d",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "permworld_graph_direct_dependency",
+        "permworld_main"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/index.json",
+      "sha256": "a2c2f3570947ca45edf5677a808d57eafd9a0e3e43d992e74d640d7211f1237d",
+      "bytes": 206470,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/index.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_analysis.json",
+      "sha256": "2fbb89c50718227b500c080ddb9f8da591984705f15c27162abd66046b583e1b",
+      "bytes": 1973,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_analysis.npz",
+      "sha256": "afae1122df286c7b933d9548217882c877d8e445d9859ea56eb0b64251a15b63",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_train.json",
+      "sha256": "c75a9e66931d3e738da09fba1a6d2f8df0e9ff03168796ffb4be007081868b65",
+      "bytes": 1977,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_train.npz",
+      "sha256": "71f7e2fa9bafc23b34a7ab2a4af22965becca096b581f81b47df85eb3bf310ad",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_validation.json",
+      "sha256": "d2af3daab02531fd5ba3676b6ada57274422d125bfd3e8d92e751c5711c9be41",
+      "bytes": 5806,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_validation.npz",
+      "sha256": "5da6b9b4cd91f53639f37bd5c6de5d8eeeb0040721d8c086f8c4316a083e9990",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_initial_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_analysis.json",
+      "sha256": "a779d152327685d1c4ac7830495d7f81384587ac58dee4f4e4ca2b20204d4daa",
+      "bytes": 1972,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_analysis.npz",
+      "sha256": "b2ec975ab392f8f1b228821055efd517993a3d3a43980a7b160e5025ceddaedd",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_train.json",
+      "sha256": "aa870f1df0e7b1a59393aa06f4151a0fda41cd05a64e5425f0c31ef519cc9daf",
+      "bytes": 1976,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_train.npz",
+      "sha256": "92a30fbb740bfc9aef9e8f43e59fa8ed5d90d2c4f4226ae48487b01905117492",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_validation.json",
+      "sha256": "54ac15462b2708957bf03c2953f34d5fde45a6c55c403f45b357ff47fe0845d2",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_validation.npz",
+      "sha256": "21fd7ed6ada321065752954753139e9ac29cd71bf5fb14c23c3da9397c9afc11",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F1_trained_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_analysis.json",
+      "sha256": "6817924eb3c64812d675d398cd9b88f4a7bc9c817847111ef3c8d474ce9f0841",
+      "bytes": 1973,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_analysis.npz",
+      "sha256": "ace003370c2f8b709c882c67e22a9a973004ca018df7bf6912241bea6ff9df91",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_train.json",
+      "sha256": "92f60730f664f9026b3402b0593e314f9d0b4bf327f4bdefe0052fcd844bacc8",
+      "bytes": 1977,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_train.npz",
+      "sha256": "1e780034156ab892c05a7a9d74ba7136a5272422351c7bedaebd5387d3688d77",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_validation.json",
+      "sha256": "cdac9dc2f2afed4a92cc96b2548ba9796cc2481ddb9fe2bd3f1b40b0ca1b527d",
+      "bytes": 5806,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_validation.npz",
+      "sha256": "3b34ef1cddacdfde906255f80a491160b7b5f063254007153c2872db79f7357b",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_initial_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_analysis.json",
+      "sha256": "078d455277a675700fc69a3c57a46195619316851881854aff1351cbf64135f3",
+      "bytes": 1971,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_analysis.npz",
+      "sha256": "8fb7274d3469fabf696ee909251a9f732f3d4b2d011a27191399df955e375069",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_train.json",
+      "sha256": "9243bd822731913715f7d7dad8ac63f1fc7b4232a08686c6ca48242e1849ef5e",
+      "bytes": 1976,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_train.npz",
+      "sha256": "992f37b047cbf3cff80ed418f872d9e6ac43a729bf5c39127cdfef9a445f592a",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_validation.json",
+      "sha256": "9a68e44ee636dd5e34cfa9190c4e81a98257e353ec102ab1dd276c53aea64a25",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_validation.npz",
+      "sha256": "3a141839ed795be61028545ef4a92b46b7c5aa2a37380ad733ed5cafa19ac55b",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F2_trained_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_analysis.json",
+      "sha256": "6537755a1abd318a1afdb1bb7b9ede0f64db1ffdffc447bdcc5af904b5f7c96a",
+      "bytes": 1973,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_analysis.npz",
+      "sha256": "9ebbae8403ce749d18ed9e7fa43813ebdf80470b7d94b70cc2b84b0619cbbf82",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_train.json",
+      "sha256": "c82cf14494bd399874161f43936b24632d171ef19a7c57f84eecb5cc505a5574",
+      "bytes": 1977,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_train.npz",
+      "sha256": "0dbbc2bf3c377de336a5737d3840949221c076fa5e2ceb16498762be6dce5fd0",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_validation.json",
+      "sha256": "b43fe5dc5a3de186df90cbbf8059e842500e9953d0e27c34789c62a6372121ab",
+      "bytes": 5806,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_validation.npz",
+      "sha256": "0bb4674da0fb66c68efc7068f17f00fdc15acc2aa59080cb1a95e9c5a757375f",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_initial_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_analysis.json",
+      "sha256": "8746ffb0eacf39f8a9645641e8f001cde623815fdd6c359da8cb95b50e5d83d7",
+      "bytes": 1972,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_analysis.npz",
+      "sha256": "3a4bfe7323074a6e6ac761553f27841ef85cddc200a061b545ac21f4fea15e3d",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_train.json",
+      "sha256": "2adabb4e4ccf5ff586258ae488dffba49f23e9f87eac80a6aa1f20a8c968abdb",
+      "bytes": 1975,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_train.npz",
+      "sha256": "dd42af9cdb50e09419880a1f9b6191a21f0344f6b300eccdcc26fcbc7cfc6f13",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_validation.json",
+      "sha256": "76ea98026b2ed27ff5029ebbc691d0ef22020abe702131cdff917683a4721845",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_validation.npz",
+      "sha256": "4390e157c7e5d3712f2f6dd9ee784cc88d1ab8a617099959902d9ceb828adc98",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F3_trained_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_analysis.json",
+      "sha256": "b2c0d468ce438817d0a1b6c43f92ea4b1118f689c46703a8d549add8efae13ef",
+      "bytes": 1973,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_analysis.npz",
+      "sha256": "63556b0b3747526c2006fa4db30a3c96b949bb23965000bf7abf0cfc5922fbe2",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_train.json",
+      "sha256": "528bc7ad9839c1dfd115a54f001ffe84f2f36bb496ac118c1655267280433731",
+      "bytes": 1976,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_train.npz",
+      "sha256": "7391129704d1d14e8b1224ce2ad36e5ab4ce5a05ccf4c81fa9ae16a1fa480122",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_validation.json",
+      "sha256": "29af318c5ceb4f000c6507d50a1bea7446179af0d77d7c7281d021ed2adc30ca",
+      "bytes": 5806,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_validation.npz",
+      "sha256": "8487afdecf818aa6c4aa0779fdfb5568316f9a9b4506bb583d59d820a48a790e",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_initial_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_analysis.json",
+      "sha256": "a0b8f9813615805fa22f01bf3685241a418438f7b5a87e6a8c0fe5c7d7ac2f4b",
+      "bytes": 1972,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_analysis.npz",
+      "sha256": "8450d16b654bbff8cae192e68f27d6c719f3ab923c40fea06adb48c45dc7e4d2",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_train.json",
+      "sha256": "39bca3b04b9c67eaa3a4d8ca9b01a4eab23c3d67187cd93193cd70c736eb7ef4",
+      "bytes": 1975,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_train.npz",
+      "sha256": "49040897768126ce60cfed374712133764e645e532e672ec7db7231d3abe378a",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_validation.json",
+      "sha256": "c834f04bfb772d492044e485163129bea1edd66ca2c3bbfc5f8953c756317d24",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_validation.npz",
+      "sha256": "c97942b9a696048f7a7aa35841452a8ef4ce6d2252a6535e4847bad44448e4f3",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit001/F4_trained_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_analysis.json",
+      "sha256": "58e85bd1c1de60cfc7549e0e06b6050ee88357c15c358c2d1a22e09dbf0d2aee",
+      "bytes": 1973,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_analysis.npz",
+      "sha256": "53619f30026156641c9ead291f7edcb4eff2125e81e84a629c5d1acbcd2fca43",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_train.json",
+      "sha256": "13ef245fa100f2758001075f62d3d7402cd7c2b116696ff0be3d933788a47ca0",
+      "bytes": 1977,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_train.npz",
+      "sha256": "25fcc585debeeb2315f09765a5af209939c3ad8c684bd599684ee4e9923fafac",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_validation.json",
+      "sha256": "7933345c3736263af8a832639c3b1a52760d3ee77ea85f4fd340a231a8749ec0",
+      "bytes": 5806,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_validation.npz",
+      "sha256": "5662c2a66a60385a13d7a6459a9dbe5c187372952477dff3dff31f9e7f81943c",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_initial_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_analysis.json",
+      "sha256": "5257b78271015d9bc0652741d62bd540814ca7dee11ad4edb986738b3c506c1d",
+      "bytes": 1972,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_analysis.npz",
+      "sha256": "eb4f423aa5f450d46b30da09cd7e54db663bc2235ee8215ac126d5db7eec3b7f",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_train.json",
+      "sha256": "1b8e52ffab18d5f85f0e3236e3efa6686089c96ef90f972d9c076ce9cff641be",
+      "bytes": 1976,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_train.npz",
+      "sha256": "99cd33112adeb217b1c213694856b5810baad3737890bd0825875af35aa2f661",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_validation.json",
+      "sha256": "f0db1866b98ad85cf8fe12695ab02ec9252c055ab06d340b5d408a3836fe908e",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_validation.npz",
+      "sha256": "0f9eb8b558c0a26f590151b516c6aac91b7405f46d6e4fbd74a9529c9e49e53b",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F1_trained_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_analysis.json",
+      "sha256": "78781ffcba532e163a86787983c788c50abc86856db408a99a2648c54e27f0e1",
+      "bytes": 1973,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_analysis.npz",
+      "sha256": "94e1cd4e6a7d0a45121ab84c4745eabd21ef08daa6e28109cf373426b69b059e",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_train.json",
+      "sha256": "8fada7b07257f658550175d4a64da748300acbbe4be45bf7d583b3ac514b78f4",
+      "bytes": 1976,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_train.npz",
+      "sha256": "f9e89bab74539d885298333ecbf497e7b2093ff3fc3f1ddea8e83163601a32dc",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_validation.json",
+      "sha256": "65640c3a5e8ccc64f58166ae97beff3bc4f43bd44430a4b73036269b252e5ce5",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_validation.npz",
+      "sha256": "788091858c62586b67a783a764aac87d1a27978e6d78f157ed8c56d6ed929dad",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_initial_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_analysis.json",
+      "sha256": "5489eb6b148674314df57d4d5687ba2e1ebbb0d035341d0e85cd1b56548aef68",
+      "bytes": 1972,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_analysis.npz",
+      "sha256": "7ebe0d5c445aa1e62e9362c17d8f2bccc9ea0ae5b5340fe28ba62674b1226552",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_train.json",
+      "sha256": "8060897d007bef44314bb180a1a20cfe44a857d2d7909bd8924575e3d31cecb3",
+      "bytes": 1976,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_train.npz",
+      "sha256": "9aeda1f8a6b8cb0390e15d4b6bbefff12fdd89d8e13a5b3cff78622db0f996ee",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_validation.json",
+      "sha256": "367e73904b34781d0a6048fe2fe99d98b9773da8aa2b2ea1506d50693de34b92",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_validation.npz",
+      "sha256": "486bb56aa6774d2c5b6982f85f10d52cedefe0f19f5dedbf41bf6d292b06c0bb",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F2_trained_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_analysis.json",
+      "sha256": "19671be24911d18615c4f3f51a15b9c1087999dcb3fa2935b5cd918918251b50",
+      "bytes": 1972,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_analysis.npz",
+      "sha256": "06b82dedc6f84a65b42700c5b4daee2459c9a147661aa61d8e00d78c995f901c",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_train.json",
+      "sha256": "1e82657fd67029f6215ce55fc32fcaea181d53558809609323b2efefcbdd9ab1",
+      "bytes": 1977,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_train.npz",
+      "sha256": "6fde1b682d51e536729d9854d027eb51ef4706a5189d4aab4048c1f9bccd2ff6",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_validation.json",
+      "sha256": "23fe9157deb2408ed8a7efa6b147eeeac6ab6e1a224c72d9ef0ec41c1064186a",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_validation.npz",
+      "sha256": "757d62aa4d15e28cfec82a7df528666d2fc701ef68ca419e7f548884573b3183",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_initial_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_analysis.json",
+      "sha256": "df243619e5ea2299e5f504ba17c10051344f32ccc9ca088035cf0966682055dd",
+      "bytes": 1971,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_analysis.npz",
+      "sha256": "29503f33003ed35d5f922bd07bcd44a209e0dd5477e53b8f6383376845c79580",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_train.json",
+      "sha256": "15dae312c02a2ac47f93cfb0c10174ecab589badd62ccc818237833ffdfaa963",
+      "bytes": 1975,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_train.npz",
+      "sha256": "bc27329a1efd933febac5980b16b070aaa5e4b043ee4e77e66cd956fd0b735b4",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_validation.json",
+      "sha256": "2b61075458b8c9f543083552fcad0acbfec02ad11d564ef41aeca78af9183058",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_validation.npz",
+      "sha256": "4eb12e9449b3d3f4a064a3f2dd4c12c2e02ea2423603fd73a2282095ab485354",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F3_trained_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_analysis.json",
+      "sha256": "062145dd363dee6def1a1d7d1f5be4abb4e8af03af7300792437b6a2daaa9bd4",
+      "bytes": 1973,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_analysis.npz",
+      "sha256": "f2a4ea620bf6969cd1be4f4b17975ca46682f1035ff53296af63c66cccfa5909",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_train.json",
+      "sha256": "ef2ce1ab0dfaa36ffbcac7248d64cf7d2ef1b64ce685cb66111d3d78ebe648be",
+      "bytes": 1977,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_train.npz",
+      "sha256": "12e247be39344491a4e5cfc1f2265f0b57fd94494c0d6fda7709d94ba39d5aa1",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_validation.json",
+      "sha256": "898cda6d5a234fdf4fd17da970b2636820345a9870b5b67967cd7eecc555e01b",
+      "bytes": 5806,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_validation.npz",
+      "sha256": "a211313b0e7bbc7d1367444193fb0af131271e0a517c9fae6ab5d6e45191ce22",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_initial_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_analysis.json",
+      "sha256": "9b950af9152ae7b67065b47bec0539d6c28b2b809c0618c3f6b1c2beb2793d12",
+      "bytes": 1972,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_analysis.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_analysis.npz",
+      "sha256": "d2fd2ee40146bace9d976bf4771a0450c44ee1b82a7af876e0d8933d3a084885",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_analysis.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_train.json",
+      "sha256": "0b49a018ed2e017364e67b8f8250ec70771eb89a8f2380395b774e25910741c9",
+      "bytes": 1976,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_train.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_train.npz",
+      "sha256": "c06f3d143804a93ca7c933577b5473bf42fcf85597c86e69c9fdea7dd17d8ad0",
+      "bytes": 22095620,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_train.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_validation.json",
+      "sha256": "bb72f8deba8979ef37f41f447904e42ec0c5c94d994a8254d07d5f0561afa12f",
+      "bytes": 5805,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_validation.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_validation.npz",
+      "sha256": "4d4541c359a05b3b4ad37a255439b4676402f818bc6aef5f619913562c49ba57",
+      "bytes": 11048708,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/evaluation_cache/unit002/F4_trained_validation.npz",
+      "package_id": "matrixgroupworld-cache-001-6cab89ac0c1b4afa",
+      "roles": [
+        "activation_probability_or_prediction_cache"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/identity.json",
+      "sha256": "3ffc3f321d3aa2c3b91acb14ea3f8f0db71af3ed4a2065b8759361859b9affe3",
+      "bytes": 1100,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/starting_rng.pt",
+      "sha256": "7dbce517144465a059f9253cf3095ae2ff211b98ce66e1d170066176f50c0cf2",
+      "bytes": 15205,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/starting_rng.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "saved_rng"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/step0.pt",
+      "sha256": "ab7ac159c74b7851f1219b5dd68353449db99b613dc3afebc358b85b5c09f66a",
+      "bytes": 13189371,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit001/step0.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "initial_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/identity.json",
+      "sha256": "1fd58e72b11acd32d168b94f2f892aa82e3229b89ff2e9e226cc722c01d4c4fa",
+      "bytes": 1100,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/starting_rng.pt",
+      "sha256": "e212cd85dce70591f70a6b868b2379950b986fc959707822eae8258aa9a2a805",
+      "bytes": 15141,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/starting_rng.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "saved_rng"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/step0.pt",
+      "sha256": "dc28e2d3d7d110e52cf3ce323e733e00568b442093a12a343235030c3cc38ce2",
+      "bytes": 13189371,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/initializations/unit002/step0.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "initial_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F1/checkpoint.pt",
+      "sha256": "00fd93d9701185bd365eb6b17665e60dbd6f0f9c5bf22e6a633807cbf098da45",
+      "bytes": 39180783,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F1/checkpoint.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F1/checkpoint_identity.json",
+      "sha256": "3045db352b577d98eaea86aa64f22f697f9a4de5cc7d873b080cd906fa146d6c",
+      "bytes": 1217,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F1/checkpoint_identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F1/completed.json",
+      "sha256": "505e8fe609c944f0ec48be33e53541ed4fd0fd0e78df940edfff813815b348c8",
+      "bytes": 82113,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F1/completed.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F2/checkpoint.pt",
+      "sha256": "0b189cf010ac100452370c916afc1a102c1b068be76acd474d1aa5a5a3dd2580",
+      "bytes": 39180783,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F2/checkpoint.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F2/checkpoint_identity.json",
+      "sha256": "58f50ba2c42429e3e14d4eb18abc22636942f1207acd26fd5e43e562433daf65",
+      "bytes": 1217,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F2/checkpoint_identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F2/completed.json",
+      "sha256": "40480759b49593ef80c3b0730cea8a733eedd1056b958c4999d5523e96dfe79e",
+      "bytes": 81505,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F2/completed.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F3/checkpoint.pt",
+      "sha256": "b62a4dfbdf1b7dcd8bd7f3d0827bb22f6916ee49be7a54f109d97d0ff8841352",
+      "bytes": 39180783,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F3/checkpoint.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F3/checkpoint_identity.json",
+      "sha256": "1b20236f6011d7642a25534c2ed86f1563d708a66e5f9c3db70e858cd90e77c3",
+      "bytes": 1217,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F3/checkpoint_identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F3/completed.json",
+      "sha256": "c49661cbf03b3ea4bdd2dc2beb9d6518a8eebd8bef1f80c632a8f9011336ff05",
+      "bytes": 81920,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F3/completed.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F4/checkpoint.pt",
+      "sha256": "4e6cb5c9532515905f10797283c982d3975014506500cf1a519e52e2c1154b9c",
+      "bytes": 39180783,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F4/checkpoint.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F4/checkpoint_identity.json",
+      "sha256": "1dd06ac265fe57f931da71b3d55b0e1c7233add5d6507aa4069a15060d257bd4",
+      "bytes": 1217,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F4/checkpoint_identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F4/completed.json",
+      "sha256": "abc09397fb3861528bd24e79236896b6c1691cc3e3433eb63d3d7725a4b02916",
+      "bytes": 81567,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit001_F4/completed.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F1/checkpoint.pt",
+      "sha256": "406a84ba0fab6e71928a951a151030368c2472af433995d1da1906d92caeb8c7",
+      "bytes": 39180719,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F1/checkpoint.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F1/checkpoint_identity.json",
+      "sha256": "e322ea0af18541d307cd588d986ce645e26b1bc65ce2e1ddff54fe6831f2e93d",
+      "bytes": 1217,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F1/checkpoint_identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F1/completed.json",
+      "sha256": "8a0653d0b7f9bfcc04b7eef73389fd9a209d391334fb245e7b4a1cce6cf8a71b",
+      "bytes": 81578,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F1/completed.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F2/checkpoint.pt",
+      "sha256": "cc12f8a8d4b69778c3a1f6a03960de3a2ba34ae66605ab1ac109a80159c7b406",
+      "bytes": 39180719,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F2/checkpoint.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F2/checkpoint_identity.json",
+      "sha256": "0f100f02bde112babbe000369516243cbaa3b7681c419509d3ee81be70c6a31f",
+      "bytes": 1217,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F2/checkpoint_identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F2/completed.json",
+      "sha256": "4ff345b59fb8454c323a697a49ba9e121a5f6cdab3bdc1b5e6bbf9f5b0231f94",
+      "bytes": 81707,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F2/completed.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F3/checkpoint.pt",
+      "sha256": "c14884886ec0b7ee190670f4a344a5dda1b007e3a3a5928e3ee0961b3affac93",
+      "bytes": 39180719,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F3/checkpoint.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F3/checkpoint_identity.json",
+      "sha256": "95f1ea2f5a8d9d426c7ae409bb4569c7edf7000c96df647addde18cb0634be1e",
+      "bytes": 1217,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F3/checkpoint_identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F3/completed.json",
+      "sha256": "34c18970313aa87d046a0dd203d587e4a13672434fb01cda0d1f2b3b566f0247",
+      "bytes": 81663,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F3/completed.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F4/checkpoint.pt",
+      "sha256": "a4e812e4a51eb1d8cb1cf5eee2bc755097d10045422cc6d4e35ad0aaab0e1ddf",
+      "bytes": 39180719,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F4/checkpoint.pt",
+      "package_id": "matrixgroupworld-weights-001-e1e8c0c6ac43c89f",
+      "roles": [
+        "trained_checkpoint"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F4/checkpoint_identity.json",
+      "sha256": "78185898893299e977bcd5693704b6f811a837c803cd5d9d045c610c48a9341d",
+      "bytes": 1217,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F4/checkpoint_identity.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F4/completed.json",
+      "sha256": "4fc448c3ca193d94ee4936238075b69a6023543f46ac178eb270e79805f48c9a",
+      "bytes": 81877,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/models/unit002_F4/completed.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/analysis_label_seal.json",
+      "sha256": "ca2d6c52c681a6a96031ac120a290619a05841c0f65f8e8d960eb48a0e6e814b",
+      "bytes": 687,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/analysis_label_seal.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/analysis_labels.npz",
+      "sha256": "e934f9ce2a6813dcbe96ca329179ced6563db78fe340db4d40938fc1cf1e2cb3",
+      "bytes": 138331,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/analysis_labels.npz",
+      "package_id": "matrixgroupworld-data-001-fb4d18b88ed9055b",
+      "roles": [
+        "fixed_input_or_training_data"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data.npz",
+      "sha256": "a1399c0e43490a31fb8fefab13d7043083e8c7683a0e25414e62cadd6fa42709",
+      "bytes": 1439821,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data.npz",
+      "package_id": "matrixgroupworld-data-001-fb4d18b88ed9055b",
+      "roles": [
+        "fixed_input_or_training_data"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data_audit.json",
+      "sha256": "7110ccf659439b7152016e91af3d5808771dc73c80d9530a284ded782dc5c42d",
+      "bytes": 20882,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/data_audit.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/schedule.npz",
+      "sha256": "70c2fc314663378046cff2bf15fab3aae9f25a0b0289cf257016b10df1fbef37",
+      "bytes": 2963953,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit001/schedule.npz",
+      "package_id": "matrixgroupworld-data-001-fb4d18b88ed9055b",
+      "roles": [
+        "batch_schedule"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/analysis_label_seal.json",
+      "sha256": "061bbc8319f66f4f9f07f9286daa1a6a41f72ed8ddeaf5059c68568d38ed2b5a",
+      "bytes": 687,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/analysis_label_seal.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/analysis_labels.npz",
+      "sha256": "d51518cfc3fe7ca5d9189cbe7067d96a4e65193afb09c04f33aa14695b2e65d7",
+      "bytes": 138187,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/analysis_labels.npz",
+      "package_id": "matrixgroupworld-data-001-fb4d18b88ed9055b",
+      "roles": [
+        "fixed_input_or_training_data"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data.npz",
+      "sha256": "239d405749fd6539e3bbbe88d185c15084dc96812e7232ffcbb5bb08994c02b8",
+      "bytes": 1440198,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data.npz",
+      "package_id": "matrixgroupworld-data-001-fb4d18b88ed9055b",
+      "roles": [
+        "fixed_input_or_training_data"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data_audit.json",
+      "sha256": "083006624f24f8a817e32c0c7db745de0434578b46885c56ccd334b693a61acc",
+      "bytes": 21171,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/data_audit.json",
+      "package_id": "matrixgroupworld-metadata-001-86163206396e2dfc",
+      "roles": [
+        "protocol_manifest_or_metadata"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    },
+    {
+      "logical_path": "/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/schedule.npz",
+      "sha256": "3dbe237bc3ae017135960b7e711e3c3d4bc779d57b0c72bb42d4643a34d47764",
+      "bytes": 2964041,
+      "restore_path": "logical/mnt/yangx-projects-f/20261011/matrixgroupworld/worlds/unit002/schedule.npz",
+      "package_id": "matrixgroupworld-data-001-fb4d18b88ed9055b",
+      "roles": [
+        "batch_schedule"
+      ],
+      "experiments": [
+        "matrixgroupworld"
+      ]
+    }
+  ],
+  "future_audit_outputs": {
+    "clean_clone_audit.json": {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/clean_clone_audit.json",
+      "required_status": "passed_actual_public_clean_clone_minimal_readback_with_preserved_scientific_caveat",
+      "collect": [
+        "actual_clone_commit",
+        "manifest",
+        "tool_hashes",
+        "base_interpreter",
+        "public_release",
+        "phases",
+        "actual_remote_minimal_readback",
+        "saved_table_check",
+        "matrix_preserved_caveat",
+        "matrix_preserved_caveat_check_sha256",
+        "elapsed_process_wall_seconds"
+      ],
+      "note": "Record the exact declared main/source/manifest bindings; success preserves false scientific_analysis_complete, not fully-passed original numerical verification."
+    },
+    "public_minimal_download_audit.json": {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/public_minimal_download_audit.json",
+      "required_status": "passed_selected_artifact_restore",
+      "collect": [
+        "manifest_sha256",
+        "profile",
+        "selected_package_ids",
+        "selected_packages",
+        "selected_unique_objects",
+        "remote_assets_read",
+        "reused_download_assets",
+        "remote_bytes_read",
+        "assets",
+        "packages",
+        "objects",
+        "path_map",
+        "materialized",
+        "storage_estimate",
+        "scope"
+      ],
+      "gates": [
+        "remote_assets_read names exactly the 13 declared selected assets",
+        "remote bytes sum 3771371797 and each asset bytes/SHA verified",
+        "reused_download_assets empty; every asset source remote_network and verified true",
+        "13 package streams verified, with exact ordered parts",
+        "1974 distinct object records, all verified_tar_object; hashes/sizes match selected manifest objects",
+        "path_map plain JSON has 2074 selected logical aliases, including all206 required paths mapped to their exact objects/<sha>",
+        "materialized is empty because the fixed driver does not pass --materialize"
+      ]
+    },
+    "saved_table_check.json": {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/saved_table_check.json",
+      "required_status": "passed_saved_table_arithmetic_with_preserved_verification_caveat",
+      "collect": [
+        "checks_total",
+        "failure_count",
+        "failures",
+        "check_counts",
+        "input_sha256",
+        "maximum_absolute_differences",
+        "pairing",
+        "matrix",
+        "source_sha256",
+        "repository_root",
+        "host_absolute_path_fallbacks",
+        "external_dependencies",
+        "models_constructed",
+        "forward_calls",
+        "training_updates",
+        "activation_metric_recomputations",
+        "scope"
+      ],
+      "expected_checks_total": 79125,
+      "expected_failures": 0,
+      "expected_exact_published_inputs": 17,
+      "note": "Table integrity/arithmetic only; not geometric activation or model recomputation."
+    },
+    "matrix_preserved_caveat_check.json": {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/matrix_preserved_caveat_check.json",
+      "required_status": "passed_preserved_state_check_with_original_failures",
+      "collect": [
+        "inputs",
+        "formal_models",
+        "real_20k_receipts",
+        "independent_units",
+        "status_counts",
+        "failed_records",
+        "scientific_analysis_complete",
+        "scope"
+      ],
+      "expected_numerical_input_sha256": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+      "expected_record_counts": {
+        "passed": 64,
+        "failed": 2,
+        "undefined_consistent": 6
+      },
+      "expected_real20k_receipts": 8,
+      "expected_independent_units": 2,
+      "expected_scientific_analysis_complete": false,
+      "note": "Saved receipt/state fields only; no checkpoint load or forward. Original failed subset and1e-8 tolerance retained."
+    },
+    "restored_path_map": {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/fresh_restored/path_map.json",
+      "schema": "plain historical_logical_path -> restore-root relative objects/<sha256>",
+      "required_keys_count": 206,
+      "expected_total_keys": 2074,
+      "note": "206 is a required subset, not count of files actually restored into CAS and not count of network assets."
+    },
+    "clean_clone_wait_state.json": {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_wait_state.json",
+      "required_status": "passed_exactly_one_actual_clean_clone_qualification",
+      "collect": [
+        "clone_attempts",
+        "live_receipt_sha256",
+        "driver_command",
+        "driver_exit_code",
+        "driver_log_path",
+        "driver_log_sha256",
+        "qualification_audit_path",
+        "qualification_audit_sha256",
+        "qualification_status",
+        "elapsed_wait_plus_qualification_seconds"
+      ],
+      "expected_attempts": 1,
+      "note": "If failure occurs before actual Git clone, describe which completed driver phases exist instead of claiming a clone was completed merely from reserved attempt count."
+    },
+    "public_release_receipt": {
+      "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live.json",
+      "required_status": "published_prerelease_provider_verified",
+      "note": "Provider metadata proof for89 package assets+2 metadata assets, not full actual remote byte reread. Root publisher preserves3 existing releases/tags."
+    },
+    "phase_logs": {
+      "directory": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/logs",
+      "collect": "exact command/exitcode/wall_seconds/log SHA for each driver phase; bind outer driver_run001.log separately",
+      "expected_phases": [
+        "fresh_public_main_clone",
+        "base_interpreter_identity",
+        "fresh_minimal_venv",
+        "install_artifact_only_dependency",
+        "portable_fixture",
+        "actual_public_minimal_asset_restore",
+        "saved_table_arithmetic_and_integrity"
+      ],
+      "note": "wall_seconds is process elapsed including CPU/network/wait; not GPU-active hours. Source-science full runtime is neither installed nor used."
+    }
+  },
+  "collection_sequence": [
+    "Wait for completed fixed qualification; do not alter its command, expected commit, source or manifest SHA.",
+    "Bind waitstate, public-release receipt and exact actual driver audit/status; reject missing or failed outputs.",
+    "Read downloader audit and manifest to separate13 remote assets,206 required logical files,1974 restored CAS objects and2074 mapping aliases.",
+    "Confirm all206 required mappings point to already-verified selected CAS hashes; count extras separately. Do not rehash4.49GB blindly: downloader already verified every selected object.",
+    "Bind17-input arithmetic check+79,125 checks and Matrix saved-state/audit-original-SHA preservation.",
+    "Record tool/interpreter/manifest/clone identities, stdout logs, actual network bytes and process wall separately.",
+    "If any stage failed, retain partial logs and explicit unverified scope; no new clone/automatic repeated downloads or model execution."
+  ],
+  "wording_to_avoid": [
+    "206 files downloaded: actual downloads are13 compressed assets and restore1974 unique content objects.",
+    "Full release independently remotely re-read: this invocation covers only13 minimal assets, while89+2 provider metadata is separate.",
+    "2074 restored regular logical copies: default CAS has1974 regular objects plus path_map;2074 are aliases, no --materialize.",
+    "13 independently replicated science models: required endpoint coverage does not change shared-data/task dependence or historical identity limits.",
+    "All Matrix numerical checks pass: original64/2/6 andscientific_analysis_complete=false remain."
+  ],
+  "no_current_execution": {
+    "actual_clone_results_present": false,
+    "remote_requests_for_this_collection": 0,
+    "new_source_or_commands_modified": false,
+    "model_forwards": 0,
+    "training_updates": 0,
+    "Git_mutations": 0
+  }
+}

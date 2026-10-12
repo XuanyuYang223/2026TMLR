@@ -1,0 +1,137 @@
+{
+  "status": "actual_public_readback_and_qualification_proof_bytes_saved",
+  "records": [
+    {
+      "path": "docs/repository_curation/final_publication/clean_clone_audit.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/clean_clone_audit.json",
+      "bytes": 11600,
+      "sha256": "4d124532c536d82f0489738c9ddfa8e4b6c92c07cfabf0ce19413cc355827c2f"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_minimal_download_audit.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/public_minimal_download_audit.json",
+      "bytes": 367554,
+      "sha256": "0147f302ebdf955accec4c76a6e23764f113cbc4422c2e3c2e0c7aff74afd86d"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/saved_table_recomputation.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/saved_table_check.json",
+      "bytes": 11804,
+      "sha256": "29907433d31ffe4216b5a99c4b74f7a1c2cc93ce06a3c4ffba32a8ec81b5b157"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/matrix_preserved_caveat_check.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/matrix_preserved_caveat_check.json",
+      "bytes": 2127,
+      "sha256": "6515f2ec85c68679bf0b8183e81e146d4c5bb15fa3c72678dc0b734ad3fe17a1"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/minimal_required_mapping_audit.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/minimal_required_mapping_audit.json",
+      "bytes": 257497,
+      "sha256": "68cb22bf6b7ebe0a5f7e7af4c7a813340a0232c391a3669c7deed1d7eb91b201"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/clean_clone_v2_execution_binding.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/final_clone_execution_mode_v2.json",
+      "bytes": 2503,
+      "sha256": "cd4356f62cc0ec8376204fb02477da1b88f4eb4ac5fae5f3eb09a4672dfc4011"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/post_publication_dependencies_and_source_stats.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/post_publication_dependency_and_source_stat_review.json",
+      "bytes": 5211509,
+      "sha256": "94c32684bf1448704463e37bd9efa4cd474d17be484eda5b969053bc28097c76"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/remote_old_preservation_and_packages.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/remote_preservation_provider_audit.json",
+      "bytes": 68309,
+      "sha256": "b45273fcbc67c1287b0b5c9e744aa640dd9a6ee9c8ceedb07e0b12753f174378"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/public_release_body_readback.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/public_release_body_readback_audit.json",
+      "bytes": 510,
+      "sha256": "5de57d0e99bc15bfa8652e13a7fcbe8f275175c31c32cde90408644935e4e661"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/engineering_sources/publication_gate_v1.py",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/wait_and_publish_new_release.py",
+      "bytes": 15156,
+      "sha256": "8b4110a0b5020db51bea2804cebe2d9c672b154dc134c051832410470d81bbaa"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/engineering_sources/publication_gate_v2.py",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/wait_and_publish_new_release_v2.py",
+      "bytes": 16189,
+      "sha256": "29edaacd65806b889f3af397577a59828fd544ecabab5c847a618d1167527ec9"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/engineering_sources/minimal_required_mapping.py",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/verify_minimal_required_mapping.py",
+      "bytes": 13132,
+      "sha256": "a7351c94b113d91187d10ea040d0b0c54cacb6445c4f23117436ddce72b45fd8"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/engineering_sources/required_mapping_static_review.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/verify_minimal_required_mapping_static_review.json",
+      "bytes": 2414,
+      "sha256": "f30599e654f83ebf25c5ab641e9eeec6448d2ea8b5923e05bb4fdd6229012abd"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/engineering_sources/required_mapping_independent_schema_review.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/publication_tools/verify_minimal_required_mapping_independent_schema_review.json",
+      "bytes": 1945,
+      "sha256": "235b5ba0e8f4afc83f6c81cdf2f32b42d4b5a3a9794c9183f35ec462b84c77c2"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_clean_clone_logs/actual_public_minimal_asset_restore.log",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/logs/actual_public_minimal_asset_restore.log",
+      "bytes": 138,
+      "sha256": "d40aae9a5d5162087c0a9d579444e23ae1cb326e8b358261b929a7c97f8cc318"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_clean_clone_logs/base_interpreter_identity.log",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/logs/base_interpreter_identity.log",
+      "bytes": 252,
+      "sha256": "3dcf9b98e309f326c3afb7b247563f875b443428461dbffb889445e945016f84"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_clean_clone_logs/fresh_minimal_venv.log",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/logs/fresh_minimal_venv.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_clean_clone_logs/fresh_public_main_clone.log",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/logs/fresh_public_main_clone.log",
+      "bytes": 3903,
+      "sha256": "af9a74a7272796d5a0241ecef519a95ee4d36ac1b64471fbea3ae1e568aae5f6"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_clean_clone_logs/install_artifact_only_dependency.log",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/logs/install_artifact_only_dependency.log",
+      "bytes": 515,
+      "sha256": "e02888c28c5b3967b5c4630ce7c15d8353e53626bc5e6a1066d39f78504bdfbf"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_clean_clone_logs/portable_fixture.log",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/logs/portable_fixture.log",
+      "bytes": 36,
+      "sha256": "e433d555ed4e5173cbf21b5c74c5f1de9d0ca1df1a3c50e156e7101c37c1ab3f"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_clean_clone_logs/saved_table_arithmetic_and_integrity.log",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/logs/saved_table_arithmetic_and_integrity.log",
+      "bytes": 160,
+      "sha256": "a59953641a523a3b739637a2e7a38cd3bbbbacdc0f8bc7b85ac6543c15e92544"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/actual_clean_clone_summary.json",
+      "source": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/actual_clean_clone_summary.json",
+      "bytes": 12468,
+      "sha256": "9c168ca56252392bc541ae4da51cb72ff019befd195dee8cc0f7ac77a102bbb8"
+    }
+  ]
+}

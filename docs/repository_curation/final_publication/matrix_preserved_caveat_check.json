@@ -1,0 +1,67 @@
+{
+  "status": "passed_preserved_state_check_with_original_failures",
+  "inputs": [
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/completion.json",
+      "sha256": "d5c3c4d42c7b1840646f46828e1b0db46c2e5d1a8ea58980a70dacabaa6402ef",
+      "bytes": 8370
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json",
+      "sha256": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+      "bytes": 138974
+    }
+  ],
+  "formal_models": 8,
+  "real_20k_receipts": 8,
+  "independent_units": 2,
+  "status_counts": {
+    "passed": 64,
+    "failed": 2,
+    "undefined_consistent": 6
+  },
+  "failed_records": [
+    {
+      "unit": "unit001",
+      "relation": "R1",
+      "n": 6,
+      "control": "raw_within_n",
+      "branch": "output_prob",
+      "phase": "trained",
+      "role": "correct",
+      "metric": "knn_overlap",
+      "status": "failed",
+      "production": 0.6,
+      "independent": 0.6015625,
+      "absolute_error": 0.0015625000000000222,
+      "tolerance": 1e-08,
+      "fit_count": 64,
+      "analysis_count": 64,
+      "fit_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+      "analysis_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+      "fixed_rank": 8
+    },
+    {
+      "unit": "unit001",
+      "relation": "R1",
+      "n": 6,
+      "control": "raw_within_n",
+      "branch": "output_prob",
+      "phase": "trained",
+      "role": "wrong",
+      "metric": "knn_overlap",
+      "status": "failed",
+      "production": 0.16562500000000002,
+      "independent": 0.16718750000000002,
+      "absolute_error": 0.0015624999999999944,
+      "tolerance": 1e-08,
+      "fit_count": 64,
+      "analysis_count": 64,
+      "fit_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+      "analysis_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+      "fixed_rank": 8
+    }
+  ],
+  "scientific_analysis_complete": false,
+  "scope": "Reads saved JSON state/receipt fields only; not model, activation or training verification."
+}

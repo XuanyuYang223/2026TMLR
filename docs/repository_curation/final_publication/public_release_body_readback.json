@@ -1,0 +1,11 @@
+{
+  "status": "passed_published_body_matches_exact_authorized_request",
+  "request_sha256": "95f25b696a53d877dd8654687e8be3af8b54dbbea9a1e315d2bcb7fae68b5f0b",
+  "body_sha256": "005b28ce06eaf4fc57608aa26d6188466f78639db50e12bdf81983185515403d",
+  "release_id": 410204953,
+  "tag_name": "representation-selectivity-2026-10-11-caveat",
+  "body_bytes": 2970,
+  "draft": false,
+  "prerelease": true,
+  "scope": "Exact current new public release body/state only. No old release mutations or public body changes."
+}

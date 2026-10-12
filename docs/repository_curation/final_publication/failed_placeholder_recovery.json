@@ -1,0 +1,18 @@
+{
+  "status": "only_own_failed_new_draft_placeholder_removed_for_byte_identical_retry",
+  "recorded_utc": "2026-10-12T07:11:01.650036+00:00",
+  "release_id": 410204953,
+  "asset_before": {
+    "id": 632876448,
+    "name": "representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst",
+    "state": "starter",
+    "size": 1072191555,
+    "digest": null,
+    "created_at": "2026-10-12T06:19:11Z",
+    "updated_at": "2026-10-12T06:19:11Z"
+  },
+  "reason": "Both own uploading processes for this filename have ended; native pilot HTTP404, terminated duplicate coordinator request. A stale noncompleted placeholder blocks a byte-identical retry. This operation affects only the new task draft and preserves all old releases/tags/assets and local scientific/package bytes.",
+  "first_membership_guard_attempt": "Stopped before DELETE: embedded release assets omit incomplete starters; full release-asset listing is used for actual ownership membership.",
+  "old_release_assets_touched": false,
+  "local_files_deleted": 0
+}

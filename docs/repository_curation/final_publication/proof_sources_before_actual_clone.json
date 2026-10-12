@@ -1,0 +1,83 @@
+{
+  "status": "published_provider_proofs_saved_actual_clone_not_yet_complete",
+  "records": [
+    {
+      "path": "docs/repository_curation/final_publication/public_release_provider_audit.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live.json",
+      "bytes": 2987,
+      "sha256": "edf1112ae99611051a70e65d3110e9552dc52f56fd6366a9b46f8e44463153ea"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/provider_gates_before_publication.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_finalizer_v2/provider_gates_before_publication.json",
+      "bytes": 104032,
+      "sha256": "7732cc700a08ba1e9a66c5517d2335bded7494c3909d49ffc03a55a1646abfb4"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/provider_gates_after_publication.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_finalizer_v2/provider_gates_after_publication.json",
+      "bytes": 106761,
+      "sha256": "0c5ec7d269a016fdfeab2afba0336a3abd843d740f1c02f763f3c396b43fdae4"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/public_metadata_byte_readback.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/release_metadata/public_metadata_readback_audit.json",
+      "bytes": 1381,
+      "sha256": "284f431b7eb7cbf4d20b20e469ea5f8d16813c730e8d7f4e43868d888543b19e"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/original_publication_gate_failure.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live_failed.json",
+      "bytes": 573,
+      "sha256": "ac8026c0dcaaf9a8bc55ac905aebe95f4bf1c2b022dee9cd00e2997ad8310acb"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/draft_URL_gate_repair.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/publication_draft_URL_gate_repair.json",
+      "bytes": 813,
+      "sha256": "6a04325b41ec03226d0f3db420d4f13ddde11fc2cdfc33d99d00ad7a60340d89"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/draft_URL_lifecycle_review.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/draft_url_lifecycle_review.json",
+      "bytes": 72628,
+      "sha256": "1ab3dc0e6138ec5052e55576ae1fd1d15b57f8174bd576ae68cb48dd6e869c98"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/failed_placeholder_recovery.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/failed_placeholder_recovery.json",
+      "bytes": 1040,
+      "sha256": "b63929e8f99321380e9cc1d7afb95c8f21ced7c76309053a0da1302abb0453aa"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/dependency_end_protection.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/final_protection_dependency_review.json",
+      "bytes": 5211161,
+      "sha256": "e2e3c8f1df070b8a0662024e08a606ab2b955416a0d929f8523844f27ed76c2e"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/pre_completion_read_only_review.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/final_audit_review.json",
+      "bytes": 27438,
+      "sha256": "76627900fe06683fd46ac176cc2e7d98b5941e25a6d6399879b2a17539a6b7fa"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/planned_minimal_scope_review.json",
+      "source_path": "/mnt/yangx-projects-f/20261011/representation_publication/source_review/final_clone_audit_collection.json",
+      "bytes": 143271,
+      "sha256": "349721387e710c6c7f15aae03879efae170e444c5b93cc6c766c5413efc23cf4"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/failed_pilot_summary.json",
+      "source_path": "/home/yangx/representation_publication_scratch_20261011/pilot/failed_pilot_summary.json",
+      "bytes": 4831,
+      "sha256": "e6f3186d90605bdfa4974456303112a6f5917e1ca599e897382c51a57c326d58"
+    },
+    {
+      "path": "docs/repository_curation/final_publication/failed_pilot_summary.txt",
+      "source_path": "/home/yangx/representation_publication_scratch_20261011/pilot/failed_pilot_summary.txt",
+      "bytes": 973,
+      "sha256": "37862e299db688cffaaa3d0cdc8ce9d156dc55da61fb18acd59cfec8f50aced2"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Single fixed native upload pilot: FAILED (not provider verified).
+
+Asset: representation-historical-multilayer-cache-4de7965998-014-700e0b261fac7049.tar.zst
+Expected bytes: 1072191555; SHA256: 16274cdd892224effb43be9d0d28e1f8171949c97b711f098a58408692239d9b
+Copy + full native readback hashes matched. Copy: 14.371s, 74.609 MB/s.
+Native gh upload: CLI exit 1; 3206.880s; HTTP404. Total attempt: 3230.500s.
+Final provider GET: asset 632876448, state=starter, size=1072191555, digest=None. Size alone is not success.
+Concurrent local read window: native 0.335MB/s vs F median 0.349MB/s. No clear native advantage observed; not an isolated filesystem or network experiment. Successful upload throughput is unavailable.
+Same-name starter creation 06:19:11UTC differs from native CLI start 06:11:00UTC; attribution and HTTP404 cause unresolved.
+No retry/deletion/overwrite/new package performed. Original retained; own processes ended. Root was notified to coordinate recovery.

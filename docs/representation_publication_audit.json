@@ -1,6 +1,6 @@
 {
-  "status": "local_bytes_verified_remote_publication_and_clean_clone_pending",
-  "recorded_utc": "2026-10-12T06:06:09.817955+00:00",
+  "status": "published_repository_and_artifacts_with_passed_engineering_qualification_and_preserved_scientific_caveat",
+  "recorded_utc": "2026-10-12T11:19:21.817369+00:00",
   "repository": "XuanyuYang223/2026TMLR",
   "default_branch": "main",
   "pre_curation_commit": "e4e9ded9648aa2dc92a1cceef929cc9521546418",
@@ -37,5 +37,95 @@
     "old_reconstructed_initials_upgraded": false
   },
   "publication_chronology": "Early asset uploads preceded complete actual local archive stream checks. Every real archive and member has now passed; remaining uploads require the complete local receipt. See docs/repository_curation/upload_ordering_caveat.txt and exact timeline.",
-  "validation_scope": "Current source dependency checks, original named-file integrity, local actual archive streams and saved-table arithmetic qualified. Remote release-wide provider metadata and fresh clone/minimal actual byte readback are pending and will be recorded separately. No model forward or training was run."
+  "validation_scope": "All actual local package streams/member SHA checks; all89 public package provider identity/size/digest/URL checks; actual clean public clone and13 package/two metadata actual readbacks; saved CSV/JSON arithmetic and unchanged saved caveat;206 required file mappings. No model forward, training reproduction, hidden-metric recomputation or new statistical/scientific replication.",
+  "publication_metadata_commit": "e66b561e88394340fc1a43bc48c639e36d57eb6a",
+  "qualified_remote_main_commit": "29ec0802987fda8d1c5b9986426233d4ceb4b4c8",
+  "final_audit_commit": "This metadata is committed after the qualified main; see this file Git history. Its self-referential commit SHA is not embedded.",
+  "public": true,
+  "draft": false,
+  "prerelease": true,
+  "remote_publication": {
+    "package_assets": 89,
+    "package_bytes": 66287959144,
+    "metadata_assets": 2,
+    "metadata_bytes": 8984003,
+    "all_package_size_digest_and_exact_public_URL_provider_verified": true,
+    "unauthenticated_public_release_HTTP": 200,
+    "old_releases_and_tag_commit_targets_unchanged": true,
+    "protected_old_releases": 3,
+    "protected_old_tags": 3,
+    "previous_latest_release_id": 408151368,
+    "previous_latest_unchanged": true,
+    "scope": "Exact new release assets; selected old release/asset metadata and old tag commit targets. Old asset bytes and annotation text were not independently reread."
+  },
+  "actual_remote_byte_readback": {
+    "minimal_packages": 13,
+    "compressed_package_bytes": 3771371797,
+    "unique_restored_CAS_objects": 1974,
+    "restored_unique_payload_bytes": 4492917962,
+    "logical_path_map_aliases": 2074,
+    "materialized_logical_copies": 0,
+    "required_logical_files_independently_reconciled": 206,
+    "required_unique_objects": 206,
+    "required_unique_payload_bytes": 1549329772,
+    "independent_current_CAS_rehash_objects": 0,
+    "metadata_assets": 2,
+    "metadata_bytes": 8984003,
+    "remaining_package_assets_not_independently_redownloaded": 76,
+    "scope": "13 actual public package streams and all1974 unpacked-object SHAs, plus two actual public metadata assets;206 required identities/current regular sizes independently reconciled using that verified stream chain. Not full release-byte reread."
+  },
+  "clean_clone": {
+    "actual_commit": "29ec0802987fda8d1c5b9986426233d4ceb4b4c8",
+    "audit_SHA256": "4d124532c536d82f0489738c9ddfa8e4b6c92c07cfabf0ce19413cc355827c2f",
+    "new_public_clone": true,
+    "new_minimal_venv": true,
+    "download_or_restore_cache_reused": false,
+    "original_host_science_inputs_opened": 0,
+    "table_checks": 79125,
+    "table_failures": 0,
+    "input_files": 17,
+    "fixed_transform_candidates": {
+      "PermWorld": 480,
+      "GraphWorld": 12
+    },
+    "Matrix_primary_relations": [
+      "R1",
+      "R3"
+    ],
+    "model_forwards": 0,
+    "checkpoint_loads": 0,
+    "training_updates": 0,
+    "scope": "Fresh public main clone, fresh minimal venv, public minimal byte downloads/restoration, saved-table replay and unchanged saved Matrix state. No checkpoint loading, model forward, hidden-metric recomputation, statistical replication or training."
+  },
+  "end_protection": {
+    "original_named_SHA_checked": 6579,
+    "authorized_old_entry_rewrites": 5,
+    "original_named_missing": 0,
+    "original_named_unexpected_SHA_change": 0,
+    "actual_end_dependency_SHA_unique_paths": 266,
+    "packed_source_end_stat_checked": 4959,
+    "large_payload_current_end_SHA_rehashed": false,
+    "scope": "Named original root-tree files and explicit index snapshot, fixed scientific dependencies, and canonical packed-source full end stat. Earlier full source/package SHA checks remain separately bound. Not whole-filesystem protection. The final snapshot receipt is added after its snapshot and its own staged Git blob is checked separately.",
+    "receipt": "docs/repository_curation/final_publication/final_index_and_original_integrity.json"
+  },
+  "engineering_recovery": {
+    "original_draft_URL_gate_failed_without_PATCH": true,
+    "versioned_v2_before_only_draft_URL_handling": true,
+    "published_asset_URLs_exact": true,
+    "original_gate_failure_preserved": true,
+    "failed_native_upload_HTTP404_preserved": true,
+    "own_new_failed_placeholder_deleted_for_same_byte_retry": 1,
+    "old_assets_deleted": 0,
+    "local_originals_deleted_or_moved": 0,
+    "retry_immutable_asset_SHA256": "16274cdd892224effb43be9d0d28e1f8171949c97b711f098a58408692239d9b",
+    "retry_provider_verified": true
+  },
+  "stop": {
+    "task_complete_after_final_metadata_commit_and_push": true,
+    "new_training": false,
+    "new_model_forwards": false,
+    "new_worlds": false,
+    "scientific_results_changed": false,
+    "no_automatic_next_stage": true
+  }
 }

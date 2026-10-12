@@ -1,0 +1,38 @@
+{
+  "status": "v2_actual_public_receipt_qualified_original_fixed_driver_running",
+  "utc": "2026-10-12T11:08:20.419092+00:00",
+  "execution_mode": "Root-authorized direct original fixed driver after firstV1 draft-provider URL gate failed and old waiter stopped without cloning. No old waiter restart and no clone retry.",
+  "live_receipt": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live.json",
+    "sha256": "edf1112ae99611051a70e65d3110e9552dc52f56fd6366a9b46f8e44463153ea",
+    "release_id": 410204953,
+    "status": "published_prerelease_provider_verified",
+    "public": true,
+    "source_commit": "83325c2b6a2e41c69fc8b2e8f25e0cb58b80aca2",
+    "main_commit": "29ec0802987fda8d1c5b9986426233d4ceb4b4c8"
+  },
+  "preserved_first_failure": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/publication_release_live_failed.json",
+    "sha256": "ac8026c0dcaaf9a8bc55ac905aebe95f4bf1c2b022dee9cd00e2997ad8310acb"
+  },
+  "preserved_stopped_old_waiter": {
+    "path": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_wait_state.json",
+    "sha256": "bbe3dc786948dc55e468b66b2183962d533ff4e207d2abffc994dddf0e31d823",
+    "status": "stopped_publication_failed_no_clone",
+    "clone_attempts": 0,
+    "required_to_be_successful_for_this_direct_run": false
+  },
+  "actual_clone_attempts": 1,
+  "driver_sha256": "2ce1e0c056c2cc395dcd554cc6273c8ab907d64bb6a48c6d2d1355b2fa3c2186",
+  "expected_main": "29ec0802987fda8d1c5b9986426233d4ceb4b4c8",
+  "expected_source": "83325c2b6a2e41c69fc8b2e8f25e0cb58b80aca2",
+  "expected_manifest_sha256": "f1ef48da6915a4ad6632e100ab09171f2f74690e2d4fcd49d9254436a7ce394f",
+  "fixed_run_directory": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001",
+  "driver_outer_log": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_driver_run001.log",
+  "required_future_success_proof": "/mnt/yangx-projects-f/20261011/representation_publication/clean_clone_runs/run001/clean_clone_audit.json",
+  "collection_plan_adjustment": "Original final_clone_audit_collection.json waiter-success prerequisite belonged to the initial waiting plan. Retain that original plan, but final actual collection must use direct driver audit plus this v2 execution binding; the old waiter correctly remains stopped with clone_attempts0.",
+  "original_scientific_sources_modified": false,
+  "models_loaded": 0,
+  "forward_calls": 0,
+  "training_updates": 0
+}
