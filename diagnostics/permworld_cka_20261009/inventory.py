@@ -15,7 +15,7 @@ from neurips_permutations.training import TrainConfig, _default_model_factory, _
 from neurips_permutations.cka import ProbeExample, select_probe_examples, probe_identity, extract_landmark_activations
 from neurips_permutations.passage import TOKEN_TO_ID, ID_TO_TOKEN
 
-STATUS = '按原初始化程序重建，但无法直接验证原始权重'
+STATUS = 'Reconstructed with the original initialization procedure; original weights not directly verifiable'
 PARENT = WORKSPACE/'results/specialist_cka_controls'
 
 

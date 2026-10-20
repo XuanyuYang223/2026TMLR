@@ -10,10 +10,10 @@
   "original_rows_order_and_protection_reasons_preserved": true,
   "updated_archive_sha256": "d16632ac1dbae2cff6cfef6509a34baca41ea4c9d8ea50460023fd1275a4a8d2",
   "category_counts": {
-    "2_当前主线旧依赖": 412,
-    "1_当前PermWorld图论主线": 1599,
-    "3_独立旧研究": 589,
-    "4_可再生临时文件": 13
+    "2_legacy_dependencies_of_current_research": 412,
+    "1_current_PermWorld_graph_research": 1599,
+    "3_independent_legacy_research": 589,
+    "4_regenerable_temporary_files": 13
   },
   "cleanup_rows": 13,
   "cleanup_sha256": "e03ff6ff38c95c78ff12444157ec3790c38be9e5a8df5b1350b69430f0da0d8d",

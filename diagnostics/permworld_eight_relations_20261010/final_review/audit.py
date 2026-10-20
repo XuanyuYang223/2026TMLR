@@ -640,11 +640,11 @@ def run():
     serial=[{k:v for k,v in item.items() if k!='signature'}|dict(groups=sorted(item['groups'])) for item in ledger.files.values()]
     write(REVIEW/'physical_file_manifest.json',dict(status='passed',records=serial,one_hash_scan_per_resolved_file=True))
     write(REVIEW/'final_audit.json',result)
-    (REVIEW/'final_audit.txt').write_text('最终CPU来源审计通过：64 PermWorld=16原20k复用+48新20k；GraphWorld4新20k。\n'
-        '正式新增52模型/104万更新；Perm工程240成功+40失败、Graph工程192更新分开记录。256+16逻辑缓存按唯一物理路径核验，旧1223保护文件哈希保持一致。\n'
-        '真实step-0、保存RNG、世界、batch、词表、来源代码、权重和缓存哈希已核对；未构造模型或执行前向。\n'
-        '最终tracked文件与保留HEAD一致；运行前diff字节快照缺失，不能声称过程中的diff始终相同。\n'
-        '成本分开列累计进程时间与阶段壁钟；GPU核/活跃时间未知。完成固定范围后停止。\n')
+    (REVIEW/'final_audit.txt').write_text('Final CPU provenance audit passed:64 PermWorld=16 original20k reused+48 new20k;GraphWorld4 new20k.\n'
+        'Formal additions52 models/1,040,000 updates;Perm engineering240 successful+40 failed updates and Graph engineering192 updates are separate.256+16 logical caches are verified by unique physical paths;1223 earlier protected-file hashes remain identical.\n'
+        'Genuine step-0,saved RNG,world,batches,vocabulary,source code,weight/cache hashes verified;no model construction or forward passes.\n'
+        'Final tracked files match the retained HEAD;the pre-run diff-byte snapshot is missing,so unchanged diffs throughout execution cannot be claimed.\n'
+        'Costs separate cumulative process time and phase wall time;GPU-kernel/active time is Unknown.Stop after the fixed scope.\n')
     print(json.dumps(dict(status='passed',path=str(REVIEW/'final_audit.json'),sources=68,unique_physical_files=len(ledger.files),wall_seconds=result['CPU_audit_pipeline_wall_seconds'])));return 0
 
 

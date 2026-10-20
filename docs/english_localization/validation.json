@@ -1,0 +1,227 @@
+{
+  "status": "passed",
+  "checks": {
+    "utf8_text_files_scanned": 1549,
+    "JSON_syntax": 848,
+    "Python_syntax": 207,
+    "historical_SHA_reference_preservation": 163,
+    "CSV_shape_preservation": 11,
+    "JSON_typed_value_preservation": 22,
+    "Python_nontext_AST_preservation": 38,
+    "CSV_numeric_cells": 11592,
+    "CSV_embedded_JSON_preservation": 4643
+  },
+  "errors": [],
+  "excluded_from_nontext_AST": "tools/recompute_tables.py explicitly extends the allowed checksum scope to the English edition; checksum enforcement and numeric methods remain intact.",
+  "scope": "Current tracked files plus the existing local manuscript; no ignored data/model artifacts, Git history, release downloads, training, or inference.",
+  "edition_date": "2026-10-15",
+  "timezone": "America/Los_Angeles",
+  "tracked_files_modified": 164,
+  "current_git_HEAD": "d9a113d20d34db3c21cf69cf546cff4a0ab4904a",
+  "ASCII_key_review": "All original ASCII JSON keys are preserved. Eight unnecessary edits to already-English files were restored. Remaining ASCII source-string changes are HTML language tags, docstring language descriptions, or diagnostic-message spacing.",
+  "scientific_operations": {
+    "training_updates": 0,
+    "checkpoint_loads": 0,
+    "model_forwards": 0,
+    "new_representation_metrics": 0,
+    "saved_table_arithmetic_replay": true
+  },
+  "saved_table_check": {
+    "status": "passed_saved_table_arithmetic_with_preserved_verification_caveat",
+    "checks_total": 79125,
+    "failure_count": 0,
+    "file": "saved_table_check.json",
+    "sha256": "fdc0bd995a2cecae61a933e08af96a4ad2c0195d8fe6e5d8ad67cea0a749feb0"
+  },
+  "fixtures": {
+    "table_replay": "passed_synthetic_only",
+    "artifact_download": "passed_synthetic_artifact_fixture, 10 checks",
+    "artifact_packaging": "passed_synthetic_packaging_fixture_only, 14 checks"
+  },
+  "English_manuscript_archive": {
+    "status": "passed_current_English_source_bundle",
+    "edition_date": "2026-10-15",
+    "archive": "manuscript_source.zip",
+    "sha256": "a0983b5198a9e81cfcdd73d42ffb9cc750dc79f899bb32ee5345f20a6a575406",
+    "bytes": 732152,
+    "file_count": 41,
+    "UTF8_text_members_scanned": 33,
+    "remaining_Han": 0,
+    "fresh_source_compilation_exit_code": 0,
+    "note": "A new English working-draft source package. The earlier bundle_validation.json is a translated historical receipt for the original 2026-10-12 package, not this current archive. No model or scientific analysis was executed."
+  },
+  "named_old_F17_file_protection": {
+    "files": 30,
+    "all_SHA_unchanged": true,
+    "records": [
+      {
+        "path": "paper/main_final.tex",
+        "original_sha256": "6c5b828290fc4868c3c97c09ce02f6b39e8e11ed41a7f5e1e89a0eb4eaa8ffc9",
+        "current_sha256": "6c5b828290fc4868c3c97c09ce02f6b39e8e11ed41a7f5e1e89a0eb4eaa8ffc9"
+      },
+      {
+        "path": "paper/generated_cross_domain.tex",
+        "original_sha256": "f3d51970132af49eff94686f450f12f1ddf80cb51214df62cd5cc8ac1bd63e1e",
+        "current_sha256": "f3d51970132af49eff94686f450f12f1ddf80cb51214df62cd5cc8ac1bd63e1e"
+      },
+      {
+        "path": "paper/generated_readout_null.tex",
+        "original_sha256": "6e93bbfb917d1c1a4495c3c72b177263d1cd8765812e1c2b3bc7a22ac8ff729e",
+        "current_sha256": "6e93bbfb917d1c1a4495c3c72b177263d1cd8765812e1c2b3bc7a22ac8ff729e"
+      },
+      {
+        "path": "paper/operator_capacity_confirmation.tex",
+        "original_sha256": "3b8b233ee6e1bac56d8abd37cb3571ceb5d7ff2cc5849fbcef3f1b6dde58b505",
+        "current_sha256": "3b8b233ee6e1bac56d8abd37cb3571ceb5d7ff2cc5849fbcef3f1b6dde58b505"
+      },
+      {
+        "path": "paper/manuscript.tex",
+        "original_sha256": "85caf6e3d684c40267ebcc866c1581ade76e2b35b68fd87e1746dbdaf2904b08",
+        "current_sha256": "85caf6e3d684c40267ebcc866c1581ade76e2b35b68fd87e1746dbdaf2904b08"
+      },
+      {
+        "path": "paper/generated_final_mechanism.tex",
+        "original_sha256": "32ba81328dca3a8b4326b93b9d46c67cd4a57b1d21444d1645f1d298e95ab49f",
+        "current_sha256": "32ba81328dca3a8b4326b93b9d46c67cd4a57b1d21444d1645f1d298e95ab49f"
+      },
+      {
+        "path": "paper/references.bib",
+        "original_sha256": "02c5bdffff2a03037f3422185f35bef38b139dfd74f75f35eba9519220a913f3",
+        "current_sha256": "02c5bdffff2a03037f3422185f35bef38b139dfd74f75f35eba9519220a913f3"
+      },
+      {
+        "path": "paper/main_final.pdf",
+        "original_sha256": "71a003712335050a574ad7926f8ec077edd5a8319a487f47bd712d2a167f8b05",
+        "current_sha256": "71a003712335050a574ad7926f8ec077edd5a8319a487f47bd712d2a167f8b05"
+      },
+      {
+        "path": "paper/references_revised.bib",
+        "original_sha256": "00d886e6a0b768a7d12a62d7f04d85500e7907dc96f7eed2406984f05dbb09f9",
+        "current_sha256": "00d886e6a0b768a7d12a62d7f04d85500e7907dc96f7eed2406984f05dbb09f9"
+      },
+      {
+        "path": "paper/main.tex",
+        "original_sha256": "9b3278505d14c84058ad40876fa3282172deabe21dc2681778c4fda5ae2e1ab4",
+        "current_sha256": "9b3278505d14c84058ad40876fa3282172deabe21dc2681778c4fda5ae2e1ab4"
+      },
+      {
+        "path": "paper/main_readout_null.tex",
+        "original_sha256": "2f3ca8014295c25b9b097f334561291a6739c817ee5d7ad104fac6c5d31b6179",
+        "current_sha256": "2f3ca8014295c25b9b097f334561291a6739c817ee5d7ad104fac6c5d31b6179"
+      },
+      {
+        "path": "paper/manuscript.pdf",
+        "original_sha256": "4dcb9ce389807a792bed64b5b426709f747e6bec3b6fd19b3d57cff80a4498dd",
+        "current_sha256": "4dcb9ce389807a792bed64b5b426709f747e6bec3b6fd19b3d57cff80a4498dd"
+      },
+      {
+        "path": "paper/generated_permworld.tex",
+        "original_sha256": "cd6c9359310e2b1767b75c429b87c28b64e5a2b08f1c97a209d725a7dd055abe",
+        "current_sha256": "cd6c9359310e2b1767b75c429b87c28b64e5a2b08f1c97a209d725a7dd055abe"
+      },
+      {
+        "path": "paper/figures/reviewer_revision.pdf",
+        "original_sha256": "2c240c081c7102f5d095e6befcb682494518a963b64d51adda2bab5eba0f8a71",
+        "current_sha256": "2c240c081c7102f5d095e6befcb682494518a963b64d51adda2bab5eba0f8a71"
+      },
+      {
+        "path": "paper/figures/final_contrasts.pdf",
+        "original_sha256": "c46752106012ae53ed62faf7e91d9eaf8dda54910e327daf330943baf45f5591",
+        "current_sha256": "c46752106012ae53ed62faf7e91d9eaf8dda54910e327daf330943baf45f5591"
+      },
+      {
+        "path": "paper/figures/reviewer_controls.pdf",
+        "original_sha256": "2accd9addf86febe90f3328960e1b33e86f3d4e2dc87ce7cb2fdf5d8dcd91c75",
+        "current_sha256": "2accd9addf86febe90f3328960e1b33e86f3d4e2dc87ce7cb2fdf5d8dcd91c75"
+      },
+      {
+        "path": "paper/figures/reviewer_fresh.pdf",
+        "original_sha256": "9a3bb95c89d2b846e6bcb896055fa56c52c2f4d9d43dbaa4358c027541fed08c",
+        "current_sha256": "9a3bb95c89d2b846e6bcb896055fa56c52c2f4d9d43dbaa4358c027541fed08c"
+      },
+      {
+        "path": "paper/sections/reviewer_controls.tex",
+        "original_sha256": "a4c382be40e83fab36513dd8151914adb859d885ad7ddb664b1d827e6354ec4a",
+        "current_sha256": "a4c382be40e83fab36513dd8151914adb859d885ad7ddb664b1d827e6354ec4a"
+      },
+      {
+        "path": "paper/sections/results.tex",
+        "original_sha256": "7f59fe63a261f31a04531a2ac177cf06b485861e26b021029e98e7a4283e1627",
+        "current_sha256": "7f59fe63a261f31a04531a2ac177cf06b485861e26b021029e98e7a4283e1627"
+      },
+      {
+        "path": "paper/sections/reviewer_fresh.tex",
+        "original_sha256": "8d29cc71513f32ed964d43120d38931751aee3112dec97ab8cde5c209503c652",
+        "current_sha256": "8d29cc71513f32ed964d43120d38931751aee3112dec97ab8cde5c209503c652"
+      },
+      {
+        "path": "paper/sections/appendix.tex",
+        "original_sha256": "f6f579b51c6c77799ee06f34a4dc22c3ce48d9f0a73ff3c233c4a07cd5f226ab",
+        "current_sha256": "f6f579b51c6c77799ee06f34a4dc22c3ce48d9f0a73ff3c233c4a07cd5f226ab"
+      },
+      {
+        "path": "paper/sections/related_work.tex",
+        "original_sha256": "095b11f27335c081190a6a47146ac36aef97e66cce14906ea4d22bdf4e6a3da1",
+        "current_sha256": "095b11f27335c081190a6a47146ac36aef97e66cce14906ea4d22bdf4e6a3da1"
+      },
+      {
+        "path": "paper/sections/appendix_results.tex",
+        "original_sha256": "701cbace11acc2d451f4d05f17a068704a2149e54a11e88b996d3e1f7371895f",
+        "current_sha256": "701cbace11acc2d451f4d05f17a068704a2149e54a11e88b996d3e1f7371895f"
+      },
+      {
+        "path": "paper/sections/abstract.tex",
+        "original_sha256": "4cc79e6198b8088f947758f0a5d1d7fbc52fb98de32e51432b61c1cc82bbcd8c",
+        "current_sha256": "4cc79e6198b8088f947758f0a5d1d7fbc52fb98de32e51432b61c1cc82bbcd8c"
+      },
+      {
+        "path": "paper/sections/reviewer_revision.tex",
+        "original_sha256": "8dc9ba059cc89e445364686a17cc3e110e1b5b3d16a8353b77816d17b02cb0be",
+        "current_sha256": "8dc9ba059cc89e445364686a17cc3e110e1b5b3d16a8353b77816d17b02cb0be"
+      },
+      {
+        "path": "paper/sections/introduction.tex",
+        "original_sha256": "3ac8cf4d143e5e80e715c9c0112fd20df41cf0bcecfcc54a1c602ca2c2005fbe",
+        "current_sha256": "3ac8cf4d143e5e80e715c9c0112fd20df41cf0bcecfcc54a1c602ca2c2005fbe"
+      },
+      {
+        "path": "paper/sections/supporting_studies.tex",
+        "original_sha256": "8ea2b0f4769ec8e861eaa7e5152a37f94e60a3938509dfef7d68a38c8074ccdf",
+        "current_sha256": "8ea2b0f4769ec8e861eaa7e5152a37f94e60a3938509dfef7d68a38c8074ccdf"
+      },
+      {
+        "path": "paper/sections/discussion.tex",
+        "original_sha256": "7a38c653843bd8f15a1018f22c1d5c6a26b214722ec719f7166dbe8dad11d56f",
+        "current_sha256": "7a38c653843bd8f15a1018f22c1d5c6a26b214722ec719f7166dbe8dad11d56f"
+      },
+      {
+        "path": "paper/sections/supporting_tables.tex",
+        "original_sha256": "f02541efb73be8ad1c57e1c46b4052cdffec4045c1b5940a0c30cb3e093be0d8",
+        "current_sha256": "f02541efb73be8ad1c57e1c46b4052cdffec4045c1b5940a0c30cb3e093be0d8"
+      },
+      {
+        "path": "paper/sections/method.tex",
+        "original_sha256": "bf2baffc55ff115f688d906194c4ec04dc8c8a9ec96cacc197f6c68244a7ec14",
+        "current_sha256": "bf2baffc55ff115f688d906194c4ec04dc8c8a9ec96cacc197f6c68244a7ec14"
+      }
+    ],
+    "limit": "Only these named paper files were rehashed; no claim of complete disk monitoring."
+  },
+  "original_matrix_numerical_audit_SHA_unchanged": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+  "git_diff_whitespace_check": "passed",
+  "historical_SHA_handling": "Original source/protocol/checkpoint/report hashes retained as historical identities. tools/table_checksums.json explicitly binds the English metadata derivative; historical_table_checksums.json retains the original inventory.",
+  "publication": {
+    "git_commit": false,
+    "git_push": false,
+    "release_upload": false,
+    "history_rewrite": false
+  },
+  "final_language_scan": {
+    "status": "passed",
+    "UTF8_text_files": 1554,
+    "JSON_files_parsed": 852,
+    "English_archive_text_members": 33,
+    "remaining_Chinese_findings": [],
+    "scope": "Tracked and non-ignored untracked working-tree files; decoded Unicode escapes and manuscript ZIP included; Git history, ignored legacy projects, and external release payloads excluded."
+  }
+}

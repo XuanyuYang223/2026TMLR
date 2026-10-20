@@ -1,5 +1,5 @@
 {
-  "scope": "Frozen published scientific inputs; table/math/state checks only",
+  "scope": "English working-tree edition; preserved numerical tables and translated metadata",
   "inputs": {
     "pair_protocol": {
       "repository_relative_path": "diagnostics/representation_pairing_review_20261011/protocol.json",
@@ -73,8 +73,10 @@
     },
     "matrix_report_audit": {
       "repository_relative_path": "diagnostics/matrixgroupworld_20261011/report_audit.json",
-      "sha256": "a84a8e0f78f2c3ecfd87a1e815e62f8cabb3d99fee9ab20c6af60ba423b1c96a",
-      "bytes": 28114
+      "sha256": "f340c80a79d78d43c6d5d856d6d4833c8b7fa8e2eb20f70f580c41853bc76d14",
+      "bytes": 28754,
+      "original_publication_sha256": "a84a8e0f78f2c3ecfd87a1e815e62f8cabb3d99fee9ab20c6af60ba423b1c96a",
+      "original_publication_bytes": 28114
     },
     "matrix_math_audit": {
       "repository_relative_path": "diagnostics/matrixgroupworld_20261011/math_audit.json",
@@ -87,6 +89,16 @@
       "bytes": 206492
     }
   },
-  "original_inputs_not_modified": true,
-  "source_sha256": "b37053658f993ddbb29220b08fe10a465b8ca17c1022ce32022a2f94467d30de"
+  "original_inputs_not_modified": false,
+  "source_sha256": "dd5b694114a8f1930fd3993fd48193c55670e58eaad387feab15edd1e50de27d",
+  "original_publication_source_sha256": "b37053658f993ddbb29220b08fe10a465b8ca17c1022ce32022a2f94467d30de",
+  "english_language_edition": {
+    "date": "2026-10-15",
+    "historical_checksum_manifest": "docs/english_localization/historical_table_checksums.json",
+    "translated_inputs": [
+      "matrix_report_audit"
+    ],
+    "numerical_values_preserved": true,
+    "scope_note": "Current SHA records bind translated metadata; original publication hashes are retained separately and never relabeled as translated-file identities."
+  }
 }

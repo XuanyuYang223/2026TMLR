@@ -1,7 +1,7 @@
-"""首轮20k既有模型的中文受控比较报表，仅读新分析CSV。
+"""Controlled-comparison report for existing first-round20k models; reads only new analysis CSVs.
 
-不拟合模型、不加载权重或原始输入；三个指标保持各自坐标，不制造总分。
-缺失/未定义值完整保留，主分析固定answer_strata、hidden、final_norm。
+No model fitting or weight/raw-input loading; the three metrics retain separate coordinates, without a composite score.
+Retain all missing/undefined values. Primary analysis is fixed at answer_strata, hidden, final_norm.
 """
 from __future__ import annotations
 
@@ -30,9 +30,9 @@ FIELDS = ('initial_correct', 'initial_wrong', 'initial_identity',
 NUMERIC = set(FIELDS) | {'length', 'samples', 'answer_accuracy', 'answer_ce',
                        'length_majority_accuracy', 'value', 'error',
                        'initial_correct_error', 'trained_correct_error'}
-LABELS = dict(descent_inverse='下降—逆下降／取逆', peak_complement='峰—谷／补排列',
-              transformer='Transformer', gru='GRU', one_line='一行', canonical_cycle='轮换',
-              linear_cka='线性 CKA', knn_overlap='邻域重叠 k=10', procrustes='留出 Procrustes（负 NRMSE）')
+LABELS = dict(descent_inverse='Descents—Inverse descents / Inverse', peak_complement='Peaks—Valleys / Complement',
+              transformer='Transformer', gru='GRU', one_line='one-line', canonical_cycle='canonical cycle',
+              linear_cka='Linear CKA', knn_overlap='Neighborhood overlap k=10', procrustes='Held-out Procrustes (negative NRMSE)')
 
 
 def sha(path):
@@ -69,16 +69,16 @@ def finite(value):
 def display(value, percentage=False):
     if isinstance(value, (float, int)):
         if not math.isfinite(value):
-            return '未定义/缺失'
+            return 'undefined/missing'
         return f'{100*value:.2f}%' if percentage else f'{value:.6f}'
     return str(value)
 
 
 def direction(values):
     if any(not finite(v) for v in values):
-        return '未定义'
+        return 'undefined'
     signs = [1 if v > 0 else -1 if v < 0 else 0 for v in values]
-    return '同向' if len(set(signs)) == 1 else '不同向'
+    return 'same direction' if len(set(signs)) == 1 else 'different directions'
 
 
 def collect(directory):
@@ -95,7 +95,7 @@ def collect(directory):
     assert len(lookup) == len(conditions), 'Duplicate condition summaries'
     main_keys = [(a, e, r, 'answer_strata', 'hidden', 'final_norm', m)
                  for a in ARCHITECTURES for e in ENCODINGS for r in RELATIONS for m in METRICS]
-    assert all(k in lookup for k in main_keys), '固定主分析缺少条件，不可挑选子集生成报告'
+    assert all(k in lookup for k in main_keys), 'The fixed primary analysis lacks conditions; do not select a subset to generate a report'
     # These equations are identities, not significance or mechanism tests.
     for row in conditions:
         if all(finite(row.get(f)) for f in ('B0', 'Bt', 'dc', 'dw', 'Delta')):
@@ -126,7 +126,7 @@ def collect(directory):
             summary[field] = math.fsum(values) / 21 if complete and all(finite(v) for v in values) else float('nan')
         summary['lengths_complete'] = complete
         summary['minimum_length_answer_accuracy'] = min(r['answer_accuracy'] for r in group_rows) if complete and all(finite(r.get('answer_accuracy')) for r in group_rows) else float('nan')
-        summary['undefined_reason'] = '' if complete else '不是完整固定21长度；未按剩余长度重加权'
+        summary['undefined_reason'] = '' if complete else 'Incomplete fixed21-length support; remaining lengths are not reweighted'
         source_summary.append(summary)
     encoding_changes = []
     for a in ARCHITECTURES:
@@ -136,7 +136,7 @@ def collect(directory):
             change = dict(architecture=a, relation=relation)
             for name, field in (('Gamma0', 'B0'), ('Gammat', 'Bt'), ('Gammac', 'dc'), ('Gammaw', 'dw'), ('GammaDelta', 'Delta')):
                 change[name] = cycle[field] - line[field] if finite(cycle[field]) and finite(line[field]) else float('nan')
-            change['Delta翻转而Bt未翻转'] = all(finite(r[f]) for r in (line, cycle) for f in ('Bt', 'Delta')) and line['Delta'] * cycle['Delta'] < 0 and line['Bt'] * cycle['Bt'] > 0
+            change['Delta reverses while Bt does not'] = all(finite(r[f]) for r in (line, cycle) for f in ('Bt', 'Delta')) and line['Delta'] * cycle['Delta'] < 0 and line['Bt'] * cycle['Bt'] > 0
             encoding_changes.append(change)
     metadata = {name: json.loads((directory / name).read_text()) for name in ('cost_estimate.json', 'validation_audit.json', 'completion.json') if (directory / name).exists()}
     gold = read_csv(directory / 'gold_baseline_length.csv') if (directory / 'gold_baseline_length.csv').exists() else []
@@ -237,7 +237,7 @@ def main_figure(result, output):
 
 def table(rows, columns=None):
     if not rows:
-        return '<p>未提供；保留缺失，不补造结果。</p>'
+        return '<p>Not provided; retain missing status without fabricating results.</p>'
     columns = columns or list(dict.fromkeys(k for row in rows for k in row))
     return '<div class="scroll"><table><thead><tr>' + ''.join('<th>' + html.escape(k) + '</th>' for k in columns) + '</tr></thead><tbody>' + ''.join('<tr>' + ''.join('<td>' + html.escape(display(row.get(k, ''))) + '</td>' for k in columns) + '</tr>' for row in rows) + '</tbody></table></div>'
 
@@ -246,11 +246,11 @@ def render(result, output, fixture=False):
     output = Path(output); output.mkdir(parents=True, exist_ok=True)
     undefined_plot = main_figure(result, output)
     directions = result['directions']
-    bt_agree = sum(r['Bt_direction']=='同向' for r in directions)
-    delta_agree = sum(r['Delta_direction']=='同向' for r in directions)
-    bt_missing = sum(r['Bt_direction']=='未定义' for r in directions)
-    delta_missing = sum(r['Delta_direction']=='未定义' for r in directions)
-    flip_without_bt = sum(r['Delta翻转而Bt未翻转'] for r in result['encoding_changes'])
+    bt_agree = sum(r['Bt_direction']=='same direction' for r in directions)
+    delta_agree = sum(r['Delta_direction']=='same direction' for r in directions)
+    bt_missing = sum(r['Bt_direction']=='undefined' for r in directions)
+    delta_missing = sum(r['Delta_direction']=='undefined' for r in directions)
+    flip_without_bt = sum(r['Delta reverses while Bt does not'] for r in result['encoding_changes'])
     configuration = [r for r in result['contrast_rows'] if r['contrast_type']=='configuration_difference' and r.get('metric')=='linear_cka' and r.get('branch')=='hidden' and r.get('layer')=='final_norm' and r.get('control')=='answer_strata']
     layer_changes = [r for r in result['contrast_rows'] if r['contrast_type']=='layer_difference' and r.get('metric')=='linear_cka' and r.get('branch')=='hidden' and r.get('control')=='answer_strata']
     interactions = [r for r in result['contrast_rows'] if r['contrast_type']=='interaction']
@@ -262,69 +262,69 @@ def render(result, output, fixture=False):
                 names = [f'{"block" if a=="transformer" else "layer"}{i}' for i in range(1, 5)] + ['final_norm']
                 values = [result['lookup'].get((a,e,relation,'answer_strata','hidden',layer,'linear_cka'),{}).get('Bt',float('nan')) for layer in names]
                 status = direction(values)
-                layer_sign_change += status == '不同向'; layer_incomplete += status == '未定义'
+                layer_sign_change += status == 'different directions'; layer_incomplete += status == 'undefined'
     text = [
-        'PermWorld 首轮16模型：受控表征比较',
-        '生成 UTC：' + datetime.now(timezone.utc).isoformat(),
-        '合成CPU fixture；不是真实结果。' if fixture else '唯一主队列：首轮四任务×两编码×两配置，固定20k、n10..30、真实保存step-0。',
-        '先回答四类控制比较（均为探索性描述，不是确认性检验）：',
-        f'A 指标：在8个配置×编码×关系主条件中，三主指标对训练后Bt方向同向{bt_agree}/8、对Delta方向同向{delta_agree}/8；未定义分别{bt_missing}、{delta_missing}。不同指标不比较绝对分值或Delta大小，不平均成总分。',
-        f'B 模型配置：固定CKA、编码、任务对、底层输入和20k预算，共保留{len(configuration)}项主配置差（GRU−Transformer），完整B0/Bt/dc/dw/Delta列在表中；324万与166万参数未匹配，不能解释为纯架构因果效应。',
-        f'C 编码：四个配置内的关系对照均保留Gamma0/Gammat/Gammac/Gammaw/GammaDelta；其中Delta随编码翻转而Bt不翻转的单元为{flip_without_bt}/4。这类变化不能写成训练后的关系偏好翻转。',
-        f'D 提取层：两配置两编码两关系均展示四层及独立final_norm；8条件中Bt方向跨层变化{layer_sign_change}，存在未定义层{layer_incomplete}。输入结束token的embedding常量读数保留未定义，不画浮点噪声；归一化变化与层变化分开。',
+        'PermWorld first-round 16 models: controlled representation comparison',
+        'Generated UTC: ' + datetime.now(timezone.utc).isoformat(),
+        'Synthetic CPU fixture, not actual results.' if fixture else 'Only primary queue: first-round four tasks×two encodings×two configurations, fixed20k, n10..30, genuine saved step-0.',
+        'First answer four controlled comparisons (all exploratory descriptions, not confirmatory tests):',
+        f'A Metrics: across8 configuration×encoding×relation primary conditions, the three primary metrics agree on trained Bt direction in{bt_agree}/8 and on Delta direction in{delta_agree}/8; undefined counts are respectively{bt_missing}, {delta_missing}. Do not compare absolute scores/Delta magnitudes across metrics or average them into a composite.',
+        f'B Model configuration: holding CKA, encoding, task pair, underlying inputs, and20k budget fixed, retain{len(configuration)} primary configuration contrasts (GRU−Transformer), with full B0/Bt/dc/dw/Delta in the table;3.24 million and1.66 million parameter counts are unmatched, precluding a pure architectural causal interpretation.',
+        f'C Encoding: all four within-configuration relation contrasts retain Gamma0/Gammat/Gammac/Gammaw/GammaDelta; the count reversing Delta without reversing Bt across encodings is{flip_without_bt}/4. Such changes are not reversals of trained relation preference.',
+        f'D Extraction layer: show four layers and separate final_norm for both configurations, encodings, and relations; among8 conditions, Bt changes direction across layers in{layer_sign_change}, and conditions with undefined layers number{layer_incomplete}. Constant input-end-token embeddings remain undefined, without plotting floating-point noise; distinguish normalization changes from layer changes.',
         '',
-        '共同固定项：同一数据world/轨道划分/anchor顺序；每长度先计算，再固定1/21汇总；共同答案分层控制为主，raw未调整、输出概率及真值基线并列保留。未定义长度导致整项固定权重汇总未定义，不按剩余长度重加权。',
-        '每条件保留正确、错误、恒等原始相似度：B0=S正确,初始−S错误,初始；Bt=S正确,训练−S错误,训练；dc/dw分别为正确/错误变化；Delta=Bt−B0=dc−dw。正Delta不保证正确相似度提高，初始化配对起点必须单独看。',
-        '两编码在各配置内共享真实初始参数和词表；编码输入几何仍可不同。GRU为显式层间dropout版，保存的原初始化21tensor逐值迁移，非用相同seed冒充相同权重。跨配置初始权重不相同。',
-        'Procrustes使用负留出NRMSE并保留原误差：独立validation拟合8维PCA/正交映射，test只评价。kNN k=10、欧氏距离、稳定anchor ID并列排序；普通CKA与U-centered敏感性沿旧定义。不同指标专属预处理详见protocol。',
-        '答案分层并不证明排除了输出概率、置信度及错误结构；不能用隐藏Delta减输出Delta估算额外机制。静态真值基线没有伪造初始化/训练Delta。',
-        '下降—逆下降和峰—谷是不同任务对与输出统计的两个关系实例；其差异不是只改变数学关系的因果实验。正确/错误配对选择性也不证明神经网络实现了代数计算机制。',
-        '所有低任务成绩条件保留：比较是固定预算下的编码/配置差异，不是同等任务掌握程度下的机制差异。没有90%通过门槛、补训或最佳checkpoint选择。EOS旧validation teacher-forced准确率不能替代答案准确率。',
-        '一个数据world、每配置一个初始权重；16模型、21长度与三指标不是独立重复。不报告确认p值、等价性检验或总体推广置信度。逐项比较仍不能排除因素交互；架构×编码交互仅探索性列出。',
-        '历史82模型多层结果单独留作引用 diagnostics/permworld_layers_20261009/，初始化按原程序重建、真实身份未验证；未并入主队列。第二轮8k可学习性模型完全排除。',
-        '本轮只前向/指标与报告；不创建优化器、不反传、不增加样本/更新、不调参，不开展GroupWorld、768确认、有限域、GELU、零空间或F17工作。',
+        'Shared fixed items: the same data world/orbit split/anchor order; compute per length before fixed1/21 aggregation. Joint-answer stratification is primary, with raw unadjusted, output-probability, and ground-truth baselines alongside. An undefined length makes the fixed-weight aggregate undefined; do not reweight remaining lengths.',
+        'Retain correct, wrong, and identity raw similarities in each condition: B0=S_correct,initial−S_wrong,initial; Bt=S_correct,trained−S_wrong,trained; dc/dw are correct/wrong changes; Delta=Bt−B0=dc−dw. Positive Delta does not guarantee increased correct similarity; initial pairing preferences require separate inspection.',
+        'The two encodings share genuine initial parameters and vocabulary within each configuration, but encoded-input geometry may differ. GRU uses explicit interlayer dropout with exact migration of21 original initialization tensors, rather than assuming equal seeds imply equal weights. Initial weights differ across configurations.',
+        'Procrustes uses negative held-out NRMSE and retains raw errors: fit8-dimensional PCA/orthogonal maps on independent validation data and evaluate only on test data. kNN uses k=10, Euclidean distance, and stable anchor-ID tie breaking. Ordinary CKA and U-centered sensitivity retain previous definitions. See protocol for metric-specific preprocessing.',
+        'Answer stratification does not establish removal of output probabilities, confidence, or error structure. Do not subtract output Delta from hidden Delta to estimate extra mechanisms. No initialization/training Delta is invented for static ground-truth baselines.',
+        'Descents–inverse descents and peaks–valleys are two relation instances with different task pairs and output statistics; comparing them is not a causal experiment changing only the mathematical relation. Correct/wrong pairing selectivity also does not establish an algebraic computation mechanism.',
+        'Retain all low-performing task conditions. These compare encoding/configuration under a fixed budget, not mechanisms at matched mastery. No90% pass threshold, additional training, or best-checkpoint selection is used. Previous teacher-forced validation EOS accuracy cannot replace answer accuracy.',
+        'There is one data world and one initialization per configuration. The16 models,21 lengths, and three metrics are not independent replications. No confirmatory p-values, equivalence tests, or population-generalization confidence claims are reported. Individual contrasts do not rule out interactions; architecture×encoding interactions are exploratory only.',
+        'Historical82-model multilayer results remain a separate reference at diagnostics/permworld_layers_20261009/; initialization was reconstructed by the original procedure but exact identity is unverified. They are excluded from the primary queue, as are all second-round8k learnability models.',
+        'This round performs forward passes/metrics/reporting only: no optimizer, backward pass, added samples/updates, or tuning; no GroupWorld,768-model confirmation, finite-field, GELU, null-space, or F17 work.',
     ]
     metadata_ready = 'validation_audit.json' in result['metadata'] and 'completion.json' in result['metadata']
-    text.append('最终核查/停止状态：' + ('见validation_audit.json及completion.json；本report不自行修改执行状态。' if metadata_ready else '最终审计或completion尚缺，当前报告保留“待核查”，不能冒称本轮全完成。'))
-    text += ['', '三主指标方向表（数值符号，非显著性）：', json.dumps(directions, ensure_ascii=False, indent=2),
-             '', '编码分解：', json.dumps([{k:(v if not isinstance(v,float) or math.isfinite(v) else None) for k,v in r.items()} for r in result['encoding_changes']],ensure_ascii=False,indent=2),
-             '', '全部主条件B0/Bt/dc/dw/Delta及原始正确/错误/恒等：']
+    text.append('Final verification/stopping status: ' + ('see validation_audit.json and completion.json; this report does not modify execution state.' if metadata_ready else 'Final audit or completion is missing; this report remains pending verification and does not claim full completion.'))
+    text += ['', 'Three-primary-metric direction table (numerical signs, not significance):', json.dumps(directions, ensure_ascii=False, indent=2),
+             '', 'Encoding decomposition:', json.dumps([{k:(v if not isinstance(v,float) or math.isfinite(v) else None) for k,v in r.items()} for r in result['encoding_changes']],ensure_ascii=False,indent=2),
+             '', 'All primary-condition B0/Bt/dc/dw/Delta and raw correct/wrong/identity scores:']
     for row in result['main']:
         text.append('/'.join(str(v) for v in key(row)) + ' | ' + ', '.join(f'{f}={display(row.get(f,float("nan")))}' for f in FIELDS) + ' | ' + row.get('undefined_reason',''))
-    text += ['', '源任务固定21长度成绩汇总（全部condition/split/action保留）：']
+    text += ['', 'Source-performance summaries over fixed21 lengths (all condition/split/action values retained):']
     for row in result['source_summary']:
         text.append('/'.join(str(row[k]) for k in ('architecture','encoding','task','condition','split','action')) +
-                    f' | answer acc={display(row["answer_accuracy"],True)}, answerCE={display(row["answer_ce"])}, train-defined长度众数={display(row["length_majority_accuracy"],True)}, min-length acc={display(row["minimum_length_answer_accuracy"],True)} | {row["undefined_reason"]}')
-    text += ['', '原始逐长度结果、全部差值与恒等配对见per_length_results.csv/contrast_summary.csv；所有NaN及原因保留。',
-             '同任务跨配置直接相似度单列cross_arch_same_task.csv，回答模型本身相似程度，不与关系选择性混成同一效应。',
-             '计算预算及成本来源：', json.dumps(result['metadata'].get('cost_estimate.json',{}), ensure_ascii=False,indent=2),
-             '完成可行比较、独立核对、报告后停止。缺失项明确报告，不自动扩展训练或下一系统。']
+                    f' | answer acc={display(row["answer_accuracy"],True)}, answerCE={display(row["answer_ce"])}, train-defined per-length mode={display(row["length_majority_accuracy"],True)}, min-length acc={display(row["minimum_length_answer_accuracy"],True)} | {row["undefined_reason"]}')
+    text += ['', 'See per_length_results.csv/contrast_summary.csv for raw per-length results, all differences, and identity pairings; retain all NaNs and reasons.',
+             'Direct same-task cross-configuration similarity is separate in cross_arch_same_task.csv; it describes model similarity and is not combined with relation selectivity as one effect.',
+             'Compute budget and cost sources:', json.dumps(result['metadata'].get('cost_estimate.json',{}), ensure_ascii=False,indent=2),
+             'Stop after feasible comparisons, independent checks, and reporting. Identify missing items explicitly; do not automatically expand training or start another system.']
     (output / 'reader_report.txt').write_text('\n'.join(text) + '\n')
     links = ['comparison_manifest.csv','per_length_results.csv','contrast_summary.csv','source_learning.csv',
              'cross_arch_same_task.csv','gold_baseline_length.csv','scope_status.csv','validation_audit.json','completion.json']
-    main_html = '<h1>PermWorld 受控表征比较</h1><pre>' + html.escape('\n'.join(text[:9])) + '</pre><p>' + ' · '.join(f'<a href="{name}">{name}</a>' for name in links) + '</p>'
-    main_html += '<img class="main" src="four_part_main.png" alt="指标、配置、编码、层四部分固定图">'
-    main_html += '<p>图的所有主条件均固定答案分层。未定义绘图单元数：'+str(len(undefined_plot))+'；具体单元见report_export_audit.json。embedding未定义单独保留，不代表零效果。不同指标轴独立。</p>'
-    main_html += '<details open><summary>能判断与仍不能判断</summary><pre>' + html.escape('\n'.join(text[9:20])) + '</pre></details>'
-    main_html += '<h2>A 主指标方向与完整主条件</h2>' + table(directions) + table(result['main'], ['architecture','encoding','relation','metric',*FIELDS,'undefined_reason','undefined_lengths'])
-    main_html += '<h2>B 配置差：GRU−Transformer</h2>' + table(configuration)
-    main_html += '<h2>C 编码差：轮换−一行</h2>' + table(result['encoding_changes'])
-    main_html += '<h2>D 全部层差与embedding未定义</h2>' + table(layer_changes) + table(embedding)
-    main_html += '<h2>架构×编码交互：探索性、初始化与训练后分开</h2>' + table(interactions)
-    main_html += '<h2>源任务成绩：固定21长度，全条件保留</h2>' + table(result['source_summary'])
+    main_html = '<h1>PermWorld controlled representation comparison</h1><pre>' + html.escape('\n'.join(text[:9])) + '</pre><p>' + ' · '.join(f'<a href="{name}">{name}</a>' for name in links) + '</p>'
+    main_html += '<img class="main" src="four_part_main.png" alt="Fixed four-part figure: metrics, configuration, encoding, and layers">'
+    main_html += '<p>All primary plotted conditions use fixed answer strata. Undefined plotted-cell count:'+str(len(undefined_plot))+'; see report_export_audit.json for cells. Undefined embeddings are retained separately, not interpreted as zero effects. Metrics have separate axes.</p>'
+    main_html += '<details open><summary>What can and cannot be concluded</summary><pre>' + html.escape('\n'.join(text[9:20])) + '</pre></details>'
+    main_html += '<h2>A Primary metric directions and complete primary conditions</h2>' + table(directions) + table(result['main'], ['architecture','encoding','relation','metric',*FIELDS,'undefined_reason','undefined_lengths'])
+    main_html += '<h2>B Configuration difference: GRU−Transformer</h2>' + table(configuration)
+    main_html += '<h2>C Encoding difference: canonical cycle−one-line</h2>' + table(result['encoding_changes'])
+    main_html += '<h2>D All layer differences and undefined embeddings</h2>' + table(layer_changes) + table(embedding)
+    main_html += '<h2>Architecture×encoding interactions: exploratory, separating initial and trained states</h2>' + table(interactions)
+    main_html += '<h2>Source performance: fixed21 lengths, all conditions retained</h2>' + table(result['source_summary'])
     for title, subset in (
-        ('raw未调整并列读数', [r for r in result['conditions'] if r.get('control')=='raw_within_length']),
-        ('输出概率基线：合法数字0..30条件概率', [r for r in result['conditions'] if r.get('branch')=='output_prob']),
-        ('U-centered CKA既定敏感性', [r for r in result['conditions'] if r.get('metric')=='debiased_cka']),
-        ('同任务跨配置直接相似度，含真实初始化参照', result['cross_arch']),
+        ('Raw unadjusted readings alongside controls', [r for r in result['conditions'] if r.get('control')=='raw_within_length']),
+        ('Output-probability baseline: conditional probabilities over valid numbers0..30', [r for r in result['conditions'] if r.get('branch')=='output_prob']),
+        ('Prespecified U-centered CKA sensitivity', [r for r in result['conditions'] if r.get('metric')=='debiased_cka']),
+        ('Direct same-task cross-configuration similarity, with genuine initialization references', result['cross_arch']),
     ):
         main_html += '<details><summary>'+title+'</summary>' + table(subset) + '</details>'
-    main_html += '<details><summary>完整静态真值基线逐长度：无伪造Delta</summary>' + table(result['gold']) + '</details>'
-    main_html += '<details><summary>全部contrast行／不挑选条件</summary>' + table(result['contrast_rows']) + '</details>'
-    main_html += '<details><summary>全部逐长度表／未重加权缺失</summary>' + table(result['length_rows']) + '</details>'
+    main_html += '<details><summary>Complete per-length static ground-truth baseline: no invented Delta</summary>' + table(result['gold']) + '</details>'
+    main_html += '<details><summary>All contrast rows / no condition selection</summary>' + table(result['contrast_rows']) + '</details>'
+    main_html += '<details><summary>All per-length tables / no missing-length reweighting</summary>' + table(result['length_rows']) + '</details>'
     main_html += '<pre>' + html.escape(text[18]+'\n'+text[19]) + '</pre>'
-    main_html += '<details><summary>成本、最终核查与停止记录</summary><pre>' + html.escape(json.dumps(result['metadata'],ensure_ascii=False,indent=2)) + '</pre></details>'
-    (output / 'reader_report.html').write_text('<!doctype html><meta charset="utf-8"><title>PermWorld 受控比较</title><style>body{max-width:1350px;margin:25px auto;padding:0 20px;font:15px/1.5 system-ui}pre{white-space:pre-wrap}.main{width:100%}.scroll{overflow:auto}table{border-collapse:collapse;white-space:nowrap;font-size:12px}td,th{border:1px solid #ddd;padding:5px}th{background:#edf1f5}details{margin:18px 0}summary{font-weight:600;cursor:pointer}</style>'+main_html)
+    main_html += '<details><summary>Costs, final checks, and stopping records</summary><pre>' + html.escape(json.dumps(result['metadata'],ensure_ascii=False,indent=2)) + '</pre></details>'
+    (output / 'reader_report.html').write_text('<!doctype html><meta charset="utf-8"><title>PermWorld controlled comparison</title><style>body{max-width:1350px;margin:25px auto;padding:0 20px;font:15px/1.5 system-ui}pre{white-space:pre-wrap}.main{width:100%}.scroll{overflow:auto}table{border-collapse:collapse;white-space:nowrap;font-size:12px}td,th{border:1px solid #ddd;padding:5px}th{background:#edf1f5}details{margin:18px 0}summary{font-weight:600;cursor:pointer}</style>'+main_html)
     audit = dict(status='passed', generated_utc=datetime.now(timezone.utc).isoformat(), fixture=fixture,
         reporter_sha256=sha(__file__), input_sha256=result['input_sha256'],
         main_conditions=24, metric_direction_conditions=8,
@@ -390,7 +390,7 @@ def fixture():
         check('all8_direction_conditions',len(result['directions'])==8)
         check('no_metric_averaged_score',audit['main_metric_scales_not_averaged'])
         check('undefined_embedding_retained',all(not finite(r['B0']) for r in result['conditions'] if r['layer']=='embedding'))
-        check('Delta_flip_not_Bt_flip_identified',all(r['Delta翻转而Bt未翻转'] for r in result['encoding_changes']))
+        check('Delta_flip_not_Bt_flip_identified',all(r['Delta reverses while Bt does not'] for r in result['encoding_changes']))
         check('source_validation_missing_baseline_not_zero',all(not finite(r['length_majority_accuracy']) for r in result['source_summary'] if r['split']=='validation'))
         check('four_part_main_generated',(directory/'four_part_main.png').is_file())
         check('missing_final_audit_not_claimed_complete',not audit['final_audit_and_completion_available'])

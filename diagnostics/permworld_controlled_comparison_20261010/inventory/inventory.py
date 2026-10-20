@@ -313,23 +313,23 @@ def run():
                    new_test_forward=False, new_cache_activation_payload_read=False,
                    checkpoint_states_loaded_CPU_for_hash=True, old_artifacts_modified=False),
         inventory_elapsed_seconds=time.monotonic()-start))
-    lines = ['首轮20k PermWorld 16模型来源与匹配审计',
-        '状态：PASS；仅库存核查，没有训练或新测试评价。',
-        '唯一队列：archdev001，下降/逆下降/峰/谷×一行/规范轮换×Transformer/GRU；全部20000更新，n10..30。',
-        '模型、原始配置、step0、最终权重、词表与数据哈希以model_inventory.csv/json和source_index.json为准，不根据标题推测。',
-        '固定项：同一底层world、标签、orbit split、batch_indices、有效batch64、1.28M样本曝光、2.56M答案+EOS监督token、20k固定末点；两编码每架构共享实际step0和词表188。',
-        'GRU为4个单层GRU和3个显式dropout(.1)，实际初始权重迁移21tensor逐值保存；原PT与绑定记录均存在。Transformer为256d、4层、8头；参数3240448，GRU1660416，跨架构仅配置比较。',
-        '已有源任务validationaccuracy覆盖全部16模型（5376身份输入）；已有test任务accuracy覆盖16×2condition×21长度×3action=2016单元。此处只复用旧CSV，不新读test标签/输入或做新前向。',
-        '长度众数已有训练标签固定的补充结果；identity测试baseline和模型相对差已加入model_inventory。',
-        '缺失答案CE/EOS CE/全数据combined CE：不能把末批loss或数字0..30条件概率当作这些量；需要按新协议用既有检查点与冻结评估输入前向补齐。',
-        '已有64个 final_norm缓存共'+str(round(sum(c['bytes'] for c in caches)/2**30,3))+'GiB，全部SHA/signature/NPYheader核验通过；不用重复最终层前向。中间4层尚未保存。',
-        '新增中间层工作量参考：16个trained＋4个可去重的architecture×encoding真实init，validation5376＋test10752 anchors，3actions，共967680 prefix实例；128batch、按长度分组约7560forward batches。GPU耗时必须实测小批后外推，本库存不虚构GPU小时。',
-        '库存CPU实测耗时：'+str(round(time.monotonic()-start,3))+'秒（包含2个step0、16个CP参数哈希和64个cache容器哈希；不算GPU前向）。',
-        '原batch文字all32与serial措辞继承旧规划，真实清单16、实际disjoint并行日志需作为成本来源；不影响已核验的样本/预算匹配，但不要拿模型elapsed之和当实际GPU小时。',
-        '', '实际16清单与已有accuracy（val身份/旧test身份/baseline）：']
+    lines = ['First-round20k PermWorld16-model source and matching audit',
+        'Status:PASS; inventory checks only, without training or new test evaluation.',
+        'Only queue:archdev001, descents/inverse descents/peaks/valleys×one-line/canonical cycle×Transformer/GRU; all20000 updates, n10..30.',
+        'Use model_inventory.csv/json and source_index.json for models, original configurations, step0, final weights, vocabulary, and data hashes; do not infer these from titles.',
+        'Fixed items: the same underlying world, labels, orbit split, batch_indices, effective batch64,1.28M sample exposures,2.56M answer+EOS supervised tokens, fixed20k endpoints. Encodings share actual step0 and188-token vocabulary within each architecture.',
+        'GRU comprises4 single-layer GRUs and3 explicit dropout(.1) modules, with exact migration of21 genuine initial tensors. Original PT and bindings are present. Transformer is256d,4 layers,8 heads,3240448 parameters versus GRU1660416; cross-architecture contrasts are configuration comparisons only.',
+        'Existing validation source accuracy covers all16 models (5376 identity inputs). Existing test accuracy covers16×2condition×21 lengths×3action=2016 cells. Only previous CSVs are reused here; no new test labels/inputs or forward passes are read/run.',
+        'Supplementary per-length-mode results are fixed from training labels; identity-test baselines and model-relative differences are included in model_inventory.',
+        'Answer CE/EOS CE/full-dataset combined CE are missing. Last-batch loss and conditional numeric0..30 probabilities are not these quantities; completing them requires existing-checkpoint forward passes on frozen evaluation inputs under the new protocol.',
+        'Existing64 final_norm caches total'+str(round(sum(c['bytes'] for c in caches)/2**30,3))+'GiB; all SHA/signature/NPYheader checks passed. No repeated final-layer forward is needed;4 intermediate layers remain unsaved.',
+        'Additional intermediate-layer workload reference:16 trained plus4 deduplicated architecture×encoding genuine initializations, validation5376+test10752 anchors,3 actions,967680 prefix instances; batch128 grouped by length gives approximately7560 forward batches. Extrapolate GPU costs only after measuring small batches; no GPU hours are invented here.',
+        'Measured inventory CPU time: '+str(round(time.monotonic()-start,3))+' seconds (including2 step0,16 CP parameter hashes,64 cache-container hashes; excluding GPU forwards).',
+        'Original batch wording all32/serial inherits an old plan. The actual manifest16 and disjoint parallel logs determine cost accounting. Verified sample/budget matching is unaffected, but summed model elapsed time is not actual GPU hours.',
+        '', 'Actual16-model manifest and existing accuracy (validation identity/previous test identity/baseline):']
     for m in models:
-        lines.append(f'{m["run_id"]}: val={m["final_validation_answer_accuracy"]*100:.3f}%,旧test={m["existing_test_identity_answer_accuracy"]*100:.3f}%,长度baseline={m["existing_test_identity_training_length_majority_accuracy"]*100:.3f}%,gain={m["existing_test_identity_gain_over_length_majority_pp"]:.3f}pp,CP={m["checkpoint_path"]}。')
-    lines += ['', '本任务没有读取第二轮8k文件，不修改旧代码/结果/F17；只在新inventory子目录落盘。']
+        lines.append(f'{m["run_id"]}: val={m["final_validation_answer_accuracy"]*100:.3f}%,previous_test={m["existing_test_identity_answer_accuracy"]*100:.3f}%,length_baseline={m["existing_test_identity_training_length_majority_accuracy"]*100:.3f}%,gain={m["existing_test_identity_gain_over_length_majority_pp"]:.3f}pp,CP={m["checkpoint_path"]}.')
+    lines += ['', 'This task did not read second-round8k files or modify previous code/results/F17; writes are confined to the new inventory subdirectory.']
     (OUTPUT / 'match_audit.txt').write_text('\n'.join(lines) + '\n')
     return dict(status='passed', model_count=16, cache_count=64,
                 inventory_elapsed_seconds=time.monotonic()-start, output=str(OUTPUT),

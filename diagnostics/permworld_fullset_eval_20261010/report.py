@@ -1,7 +1,7 @@
-"""完整训练集/验证集评价的独立中文报表；不训练、不读取测试或几何。
+"""Independent English full-training/validation report; no training, test reading, or geometry.
 
-先以 --fixture 运行 CPU 合成验证。真实结果仅由显式 --root 调用读取。
-所有16个固定模型、两split、三个长度均展示；描述分类不改变旧联合资格。
+First run CPU synthetic verification with --fixture. Actual results are read only with explicit --root.
+All 16 fixed models, both splits, and three lengths are shown; descriptive categories do not change historical joint qualification.
 """
 from __future__ import annotations
 
@@ -26,9 +26,9 @@ ENCODINGS = ('one_line', 'canonical_cycle')
 SPLITS = ('train', 'validation')
 LENGTHS = (10, 11, 12)
 FIELDS = ('answer_accuracy', 'answer_ce', 'eos_accuracy', 'eos_ce', 'combined_ce')
-NAMES = dict(descents='下降数', recoils='逆下降数', peaks='峰数', valleys='谷数',
-             transformer='Transformer', gru='GRU', one_line='一行记号',
-             canonical_cycle='规范轮换记号', train='完整训练集', validation='完整验证集')
+NAMES = dict(descents='Descents', recoils='Recoils', peaks='Peaks', valleys='Valleys',
+             transformer='Transformer', gru='GRU', one_line='One-line notation',
+             canonical_cycle='Canonical-cycle notation', train='Full training set', validation='Full validation set')
 
 
 def sha(path):
@@ -53,7 +53,7 @@ def read_csv(path, by_length=False):
             row['length'] = int(row['length'])
         for field in FIELDS:
             row[field] = float(row[field])
-            assert math.isfinite(row[field]), ('非有限评价指标', field, row['run_id'])
+            assert math.isfinite(row[field]), ('Nonfinite evaluation metric', field, row['run_id'])
         assert row['samples'] > 0
         assert 0 <= row['answer_accuracy'] <= 1 and 0 <= row['eos_accuracy'] <= 1
         assert all(row[field] >= 0 for field in ('answer_ce', 'eos_ce', 'combined_ce'))
@@ -72,13 +72,13 @@ def description(train, validation, protocol):
     train_ok = train['answer_accuracy'] + 1e-10 >= mean_min and train['minimum_length_accuracy'] + 1e-10 >= length_min
     val_ok = validation['answer_accuracy'] + 1e-10 >= mean_min and validation['minimum_length_accuracy'] + 1e-10 >= length_min
     if train_ok and val_ok:
-        category = '两者充分：本条件掌握'
+        category = 'Both sufficient: mastery in this condition'
     elif train_ok:
-        category = '训练充分、验证不足：泛化不足候选'
+        category = 'Training sufficient, validation insufficient: candidate generalization deficit'
     elif not val_ok:
-        category = '两者不足：拟合/优化不足候选'
+        category = 'Both insufficient: candidate fitting/optimization deficit'
     else:
-        category = '训练不足、验证充分：反向差异，需谨慎解释'
+        category = 'Training insufficient, validation sufficient: reversed discrepancy requiring cautious interpretation'
     return dict(training_sufficient=train_ok, validation_sufficient=val_ok,
                 category=category, descriptive_only=True)
 
@@ -95,9 +95,9 @@ def collect(root, output):
     summary = read_csv(summary_path)
     lengths = read_csv(length_path, True)
     keys = {(a, e, t, s) for a in ARCHITECTURES for e in ENCODINGS for t in TASKS for s in SPLITS}
-    assert len(summary) == 32 and {condition(row) for row in summary} == keys, '必须保留完整16模型×2split'
+    assert len(summary) == 32 and {condition(row) for row in summary} == keys, 'All 16 models×2 splits must be retained'
     assert len(lengths) == 96 and {(condition(row), row['length']) for row in lengths} == {
-        (key, n) for key in keys for n in LENGTHS}, '必须保留完整16模型×2split×3长度'
+        (key, n) for key in keys for n in LENGTHS}, 'All 16 models×2 splits×3 lengths must be retained'
     lookup = {condition(row): row for row in summary}
     assert len(lookup) == 32
     lookup_length = {(condition(row), row['length']): row for row in lengths}
@@ -107,15 +107,15 @@ def collect(root, output):
     manifest_ids = {(j['architecture'], j['encoding'], j['task']): j['run_id'] for j in manifest}
     assert len(manifest_ids) == 16
     for row in summary:
-        assert row['run_id'] == manifest_ids[row['architecture'], row['encoding'], row['task']], '评价模型身份不属于冻结清单'
+        assert row['run_id'] == manifest_ids[row['architecture'], row['encoding'], row['task']], 'Evaluated model identity is not in the frozen manifest'
     for key, row in lookup.items():
         rows = [lookup_length[key, n] for n in LENGTHS]
-        assert len({r['samples'] for r in rows}) == 1, '各split三个长度必须等样本且等权'
+        assert len({r['samples'] for r in rows}) == 1, 'Three lengths within each split must have equal sample counts and equal weights'
         assert row['samples'] == sum(r['samples'] for r in rows)
         assert all(r['run_id'] == row['run_id'] for r in rows)
         for field in FIELDS:
             equal = math.fsum(r[field] for r in rows) / 3
-            assert abs(equal - row[field]) <= 1e-6, ('汇总不是固定三长度等权', key, field)
+            assert abs(equal - row[field]) <= 1e-6, ('Summary is not the fixed equal-three-length aggregate', key, field)
         row['minimum_length_accuracy'] = min(r['answer_accuracy'] for r in rows)
     models = []
     for architecture in ARCHITECTURES:
@@ -134,7 +134,7 @@ def collect(root, output):
         inputs[str(reproduction_path)] = sha(reproduction_path)
         with reproduction_path.open(newline='') as f:
             reproduction = list(csv.DictReader(f))
-        assert len(reproduction) == 320, '必须保留全部16模型×4长度汇总×5重现指标'
+        assert len(reproduction) == 320, 'All 16 models×4 length summaries×5 reproduction metrics must be retained'
         assert {(r['run_id'], r['length'], r['metric']) for r in reproduction} == {
             (j['run_id'], n, metric) for j in manifest for n in ('10', '11', '12', 'equal_length') for metric in FIELDS}
         for row in reproduction:
@@ -214,18 +214,18 @@ def render(result, output, fixture=False):
     for model in result['models']:
         counts[model['category']] = counts.get(model['category'], 0) + 1
     text = [
-        'PermWorld 既有16模型：完整训练集与验证集诊断',
-        '生成时间 UTC：' + datetime.now(timezone.utc).isoformat(),
-        '合成CPU fixture，不是真实实验结果。' if fixture else '所有评价仅使用既有固定8k模型，不更新任何参数。',
-        '核心问题：此前很低的末批训练loss，是否对应完整训练集的充分拟合？',
-        '覆盖四任务×两架构×两编码=16模型；train与validation各三个长度10/11/12，共96逐长度单元。三个长度固定等权1/3，不选择任务、长度或检查点。',
-        '答案accuracy采用全词表argmax，答案CE采用全词表交叉熵；EOS在真实答案token上teacher forcing，不能替代答案评价。combinedCE=(答案CE+EOS CE)/2，另列报告。',
-        '末批训练loss只保留为旧诊断线索，本轮的训练表现由完整训练集重新评价确定，不能用单批loss估算全训练准确率。',
-        '沿用旧mean答案accuracy≥90%、每长度≥85%作描述性分类；这不是新资格检验，不修改旧的两编码joint0/8结果，不改变任何通过门槛。',
-        '训练充分、验证不足→泛化不足候选；两者不足→拟合/优化不足候选；两者充分→本条件掌握。以上均不证明失败原因、数学编码机制或跨世界泛化。',
-        '训练/验证两者充分只说明这一数据世界与固定模型的单条件表现；不能替代两编码学习程度匹配，也不能自动开启表征评估或新训练。',
-        '', '描述分类数量：' + json.dumps(counts, ensure_ascii=False, sort_keys=True),
-        '', '完整16模型主表（accuracy单位%，CE独立列出）：',
+        'Existing 16 PermWorld models: full training-set and validation-set diagnostics',
+        'Generated UTC:' + datetime.now(timezone.utc).isoformat(),
+        'Synthetic CPU fixture, not genuine experimental results.' if fixture else 'All evaluations use existing fixed 8k models only, without any parameter updates.',
+        'Core question: did the previously low final-batch training loss correspond to sufficient full-training-set fitting?',
+        'Four tasks×two architectures×two encodings=16 models; train/validation each have lengths10/11/12, totaling96 per-length cells. All lengths have fixed1/3 weights, without task/length/checkpoint selection.',
+        'Answer accuracy uses full-vocabulary argmax and answer CE full-vocabulary cross entropy; EOS is teacher-forced on the true answer token, not a replacement for answer evaluation. combinedCE=(answer CE+EOS CE)/2 is separate.',
+        'Final-batch training loss is retained only as a historical diagnostic clue; this round’s training performance is established by full-training-set reevaluation, not estimated from single-batch loss.',
+        'Retain historical mean answer accuracy ≥90% and each length≥85% for descriptive classification; not a new qualification test, changing neither historical two-encoding joint0/8 results nor passing gates.',
+        'Sufficient training/insufficient validation→candidate generalization deficit; both insufficient→candidate fitting/optimization deficit; both sufficient→mastery in this condition. None proves failure causes, mathematical-encoding mechanisms, or cross-world generalization.',
+        'Sufficient training/validation describes one condition in this data world/fixed model only; it does not establish matched learning across encodings or automatically start representation evaluation/new training.',
+        '', 'Descriptive category counts:' + json.dumps(counts, ensure_ascii=False, sort_keys=True),
+        '', 'Complete 16-model primary table (accuracy in %, CE listed separately):',
     ]
     rows = []
     for m in result['models']:
@@ -239,44 +239,44 @@ def render(result, output, fixture=False):
             training_combined_ce=t['combined_ce'], validation_combined_ce=v['combined_ce'],
             category=m['category'])
         rows.append(row)
-        text.append(f'{m["run_id"]}: train答案acc={t["answer_accuracy"]*100:.3f}%、min长度={t["minimum_length_accuracy"]*100:.3f}%、答案CE={t["answer_ce"]:.6f}、EOS acc={t["eos_accuracy"]*100:.3f}%、EOS CE={t["eos_ce"]:.6f}、combinedCE={t["combined_ce"]:.6f}; '
-                    f'validation答案acc={v["answer_accuracy"]*100:.3f}%、min长度={v["minimum_length_accuracy"]*100:.3f}%、答案CE={v["answer_ce"]:.6f}、EOS acc={v["eos_accuracy"]*100:.3f}%、EOS CE={v["eos_ce"]:.6f}、combinedCE={v["combined_ce"]:.6f}; {m["category"]}。')
-    text += ['', '逐长度完整结果：']
+        text.append(f'{m["run_id"]}: train answer acc={t["answer_accuracy"]*100:.3f}%, min length={t["minimum_length_accuracy"]*100:.3f}%, answer CE={t["answer_ce"]:.6f}, EOS acc={t["eos_accuracy"]*100:.3f}%, EOS CE={t["eos_ce"]:.6f}, combinedCE={t["combined_ce"]:.6f}; '
+                    f'validation answer acc={v["answer_accuracy"]*100:.3f}%, min length={v["minimum_length_accuracy"]*100:.3f}%, answer CE={v["answer_ce"]:.6f}, EOS acc={v["eos_accuracy"]*100:.3f}%, EOS CE={v["eos_ce"]:.6f}, combinedCE={v["combined_ce"]:.6f}; {m["category"]}.')
+    text += ['', 'Complete per-length results:']
     for r in sorted(result['lengths'], key=lambda r: (ARCHITECTURES.index(r['architecture']), TASKS.index(r['task']), ENCODINGS.index(r['encoding']), SPLITS.index(r['split']), r['length'])):
-        text.append(f'{r["run_id"]}/{r["split"]}/n{r["length"]},样本={r["samples"]}: 答案acc={r["answer_accuracy"]*100:.3f}%,答案CE={r["answer_ce"]:.6f},EOS acc={r["eos_accuracy"]*100:.3f}%,EOS CE={r["eos_ce"]:.6f},combinedCE={r["combined_ce"]:.6f}。')
-    text += ['', '验证重现表：原、新数值及signed_diff由validation_reproduction.csv保存；正值表示新值减旧值，不改成绝对值。',
-             '验证重现CSV行数：' + str(len(result['reproduction'])) + '。具体数值及数值容差由独立审计检查。',
-             '数据/初始化/检查点/代码版本的provenance与独立审计由单独产物提供；本report不加载权重或原始预测。',
-             '本轮是诊断，不是新的确认实验。只有一个数据世界和每架构一个源初始化；模型与长度不能充作独立世界重复，Transformer/GRU容量未匹配。',
-             '完成后停止。没有新训练、测试标签/预测评价、CKA/Delta、GroupWorld、零空间或F17操作。']
+        text.append(f'{r["run_id"]}/{r["split"]}/n{r["length"]},samples={r["samples"]}: answer acc={r["answer_accuracy"]*100:.3f}%,answer CE={r["answer_ce"]:.6f},EOS acc={r["eos_accuracy"]*100:.3f}%,EOS CE={r["eos_ce"]:.6f},combinedCE={r["combined_ce"]:.6f}.')
+    text += ['', 'Validation reproduction table: validation_reproduction.csv retains original/new values and signed_diff; positive means new minus old, without replacing by absolute differences.',
+             'Validation-reproduction CSV row count:' + str(len(result['reproduction'])) + '. Independent audits check specific values and numerical tolerances.',
+             'Data/initialization/checkpoint/code-version provenance and independent audits are separate artifacts; this report loads no weights or raw predictions.',
+             'This round is diagnostic, not a new confirmation experiment. One data world and one source initialization per architecture; models/lengths are not independent-world replicates, and Transformer/GRU capacities are unmatched.',
+             'Stop after completion. No new training, test-label/prediction evaluation, CKA/Delta, GroupWorld, null-space, or F17 operations.']
     if 'evaluation_execution.json' in result['metadata']:
-        text += ['评价执行记录（耗时属于推理；不称训练或GPU利用小时）：',
+        text += ['Evaluation-execution records (time is inference, not training or GPU-utilization hours):',
                  json.dumps(result['metadata']['evaluation_execution.json'], ensure_ascii=False, indent=2)]
     if 'prediction_manifest.json' in result['metadata']:
-        text += ['原始预测留在F盘 prediction_manifest.json 的路径；本report仅读清单，不加载预测数组。']
+        text += ['Raw predictions remain at F-drive paths in prediction_manifest.json; this report reads only the manifest, not prediction arrays.']
     (output / 'report.txt').write_text('\n'.join(text) + '\n')
     columns = [
-        ('architecture', '架构', False), ('task', '任务', False), ('encoding', '编码', False),
-        ('training_answer_accuracy', '训练答案acc', True), ('validation_answer_accuracy', '验证答案acc', True),
-        ('training_min_length_accuracy', '训练min长度acc', True), ('validation_min_length_accuracy', '验证min长度acc', True),
-        ('training_answer_ce', '训练答案CE', False), ('validation_answer_ce', '验证答案CE', False),
-        ('training_eos_accuracy', '训练EOS acc', True), ('validation_eos_accuracy', '验证EOS acc', True),
-        ('training_eos_ce', '训练EOS CE', False), ('validation_eos_ce', '验证EOS CE', False),
-        ('training_combined_ce', '训练combinedCE', False), ('validation_combined_ce', '验证combinedCE', False),
-        ('category', '描述分类', False)]
-    length_columns = [('architecture', '架构', False), ('task', '任务', False), ('encoding', '编码', False),
-                      ('split', 'split', False), ('length', '长度', False), ('samples', '样本', False),
-                      ('answer_accuracy', '答案acc', True), ('answer_ce', '答案CE', False),
+        ('architecture', 'Architecture', False), ('task', 'Task', False), ('encoding', 'Encoding', False),
+        ('training_answer_accuracy', 'Training answer acc', True), ('validation_answer_accuracy', 'Validation answer acc', True),
+        ('training_min_length_accuracy', 'Training min-length acc', True), ('validation_min_length_accuracy', 'Validation min-length acc', True),
+        ('training_answer_ce', 'Training answer CE', False), ('validation_answer_ce', 'Validation answer CE', False),
+        ('training_eos_accuracy', 'Training EOS acc', True), ('validation_eos_accuracy', 'Validation EOS acc', True),
+        ('training_eos_ce', 'Training EOS CE', False), ('validation_eos_ce', 'Validation EOS CE', False),
+        ('training_combined_ce', 'Training combinedCE', False), ('validation_combined_ce', 'Validation combinedCE', False),
+        ('category', 'Descriptive category', False)]
+    length_columns = [('architecture', 'Architecture', False), ('task', 'Task', False), ('encoding', 'Encoding', False),
+                      ('split', 'split', False), ('length', 'Length', False), ('samples', 'Samples', False),
+                      ('answer_accuracy', 'answer acc', True), ('answer_ce', 'answer CE', False),
                       ('eos_accuracy', 'EOS acc', True), ('eos_ce', 'EOS CE', False), ('combined_ce', 'combinedCE', False)]
-    main = '<h1>PermWorld 完整训练集与验证集诊断</h1><pre>' + html.escape('\n'.join(text[:13])) + '</pre>'
-    main += '<p><a href="report.txt">完整文本与全部逐长度数值</a> · <a href="report_audit.json">报告审计</a></p>'
+    main = '<h1>PermWorld full-training-set and validation-set diagnostics</h1><pre>' + html.escape('\n'.join(text[:13])) + '</pre>'
+    main += '<p><a href="report.txt">Complete text and every per-length value</a> · <a href="report_audit.json">Report audit</a></p>'
     main += '<div class="wide">' + table(rows, columns) + '</div>'
-    main += ''.join('<figure><img src="' + name + '" alt="全部条件固定图"></figure>' for name in images)
-    main += '<h2>全部96个逐长度结果</h2><div class="wide">' + table(result['lengths'], length_columns) + '</div>'
+    main += ''.join('<figure><img src="' + name + '" alt="Fixed figures for all conditions"></figure>' for name in images)
+    main += '<h2>All96 per-length results</h2><div class="wide">' + table(result['lengths'], length_columns) + '</div>'
     if result['reproduction']:
-        main += '<h2>验证重现：保留有符号差</h2><div class="wide">' + table(result['reproduction'], [(k, k, False) for k in result['reproduction'][0]]) + '</div>'
+        main += '<h2>Validation reproduction: retain signed differences</h2><div class="wide">' + table(result['reproduction'], [(k, k, False) for k in result['reproduction'][0]]) + '</div>'
     main += '<pre>' + html.escape('\n'.join(text[-7:])) + '</pre>'
-    (output / 'report.html').write_text('<!doctype html><meta charset="utf-8"><title>PermWorld 完整集学习诊断</title>'
+    (output / 'report.html').write_text('<!doctype html><meta charset="utf-8"><title>PermWorld fullset learning diagnostic</title>'
         '<style>body{max-width:1350px;margin:25px auto;padding:0 20px;font:15px/1.55 system-ui}pre{white-space:pre-wrap}img{width:100%}.wide{overflow:auto}table{border-collapse:collapse;white-space:nowrap;font-size:12px}th,td{border:1px solid #ddd;padding:6px}th{background:#eef2f5}figure{margin:20px 0}</style>' + main)
     audit = dict(status='passed', synthetic_fixture=fixture, reporter_sha256=sha(__file__),
         input_sha256=result['input_sha256'], model_conditions=16, split_conditions=32,
@@ -308,9 +308,9 @@ def fixture():
         checks[name] = True
     def measurement(acc, minimum=None):
         return dict(answer_accuracy=acc, minimum_length_accuracy=acc if minimum is None else minimum)
-    check('both_sufficient', description(measurement(.95), measurement(.94), protocol)['category'].startswith('两者充分'))
-    check('full_train_fit_validation_weak', description(measurement(.99), measurement(.4), protocol)['category'].startswith('训练充分'))
-    check('both_weak', description(measurement(.4), measurement(.4), protocol)['category'].startswith('两者不足'))
+    check('both_sufficient', description(measurement(.95), measurement(.94), protocol)['category'].startswith('Both sufficient'))
+    check('full_train_fit_validation_weak', description(measurement(.99), measurement(.4), protocol)['category'].startswith('Training sufficient'))
+    check('both_weak', description(measurement(.4), measurement(.4), protocol)['category'].startswith('Both insufficient'))
     check('mean_does_not_replace_min_length_gate', not description(measurement(.99, .84), measurement(.95), protocol)['training_sufficient'])
     with tempfile.TemporaryDirectory(prefix='permworld-fullset-report-fixture-') as tmp:
         root = Path(tmp) / 'root'; out = Path(tmp) / 'out'; root.mkdir(); out.mkdir()
@@ -342,9 +342,9 @@ def fixture():
         csv_write(root / 'validation_reproduction.csv', reproduction)
         result = collect(root, out); audit = render(result, out, fixture=True)
         check('all16_models_32_splits_96_lengths', audit['model_conditions'] == 16 and audit['split_conditions'] == 32 and audit['length_conditions'] == 96)
-        check('all_conditions_are_generalization_candidates', audit['category_counts'].get('训练充分、验证不足：泛化不足候选') == 16)
+        check('all_conditions_are_generalization_candidates', audit['category_counts'].get('Training sufficient, validation insufficient: candidate generalization deficit') == 16)
         check('two_fixed_complete_plots', len([p for p in out.glob('*.png')]) == 2)
-        check('answer_eos_combined_are_separate', all(k in (out / 'report.html').read_text() for k in ('答案CE', 'EOS CE', 'combinedCE')))
+        check('answer_eos_combined_are_separate', all(k in (out / 'report.html').read_text() for k in ('answer CE', 'EOS CE', 'combinedCE')))
         check('old_joint_qualification_unchanged', audit['original_encoding_joint_qualification_unchanged'] == '0/8')
         check('all320_signed_reproduction_rows_retained', audit['validation_reproduction_rows'] == 320)
         check('negative_reproduction_difference_not_made_absolute', any(float(r['signed_difference']) < 0 for r in result['reproduction']))

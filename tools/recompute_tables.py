@@ -111,7 +111,10 @@ class Review:
 
 def verify_checksums(review, checksum_path):
     values = json.loads(Path(checksum_path).read_text())
-    if values['scope'] != 'Frozen published scientific inputs; table/math/state checks only':
+    if values['scope'] not in {
+        'Frozen published scientific inputs; table/math/state checks only',
+        'English working-tree edition; preserved numerical tables and translated metadata',
+    }:
         raise ValueError('Unexpected checksum manifest scope')
     for key, record in values['inputs'].items():
         path = review.path(key)

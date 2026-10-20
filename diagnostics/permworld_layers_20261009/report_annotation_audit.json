@@ -3,8 +3,8 @@
   "original_sha256": "09d18120ce67d864660975498148a3dc33ff637287cbb56960bd8b0b82da023e",
   "annotated_sha256": "7ed87d300a3fcf6887623b318a19fdb12a9c6940d02b840942be5d82ef8915f9",
   "correction": {
-    "original": "源间标准差只反映共享世界中的初始化差异",
-    "corrected": "源间标准差描述固定任务／数据世界内的训练种子变异，包含初始化、dropout、batch／优化随机性"
+    "original": "The between-source standard deviation reflects only initialization differences within the shared world",
+    "corrected": "The between-source standard deviation describes training-seed variability within fixed tasks and the shared data world, including initialization, dropout, and batch/optimization randomness"
   },
   "numeric_outputs_changed": false,
   "frozen_analysis_code_changed": false,

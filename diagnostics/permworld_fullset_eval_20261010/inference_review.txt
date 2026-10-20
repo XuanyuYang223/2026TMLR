@@ -1,123 +1,123 @@
-PermWorld 已有8k检查点完整train/validation前向：只读接口审查
-日期：2026-10-10（America/Los_Angeles）
+Full train/validation forwards for existing PermWorld8k checkpoints: read-only interface review
+Date: 2026-10-10 (America/Los_Angeles)
 
-范围与版本
-审查learnability/common.py、training.py，及其导入的core.batch/loss、
-archdev.common.model/CausalGRU/device_setup、上游CausalTransformer、
-longrun_attention.accelerate、冻结数据构造与协议。只读代码与协议；未执行
-train、develop、模型前向或统计分析，没有加载test标签/CKA结果，没有
-修改旧报告、源检查点、冻结代码或F17。未发现适用AGENTS.md。
-26项冻结源码当前SHA全部匹配；原冻结协议SHA：
+Scope and version
+Reviewed learnability/common.py, training.py, imported core.batch/loss,
+archdev.common.model/CausalGRU/device_setup, upstream CausalTransformer,
+longrun_attention.accelerate, frozen data construction, and protocol. Read-only code/protocol; no
+train, develop, model forwards, or statistics; no test labels/CKA results loaded, and no
+historical reports, source checkpoints, frozen code, or F17 edits. No applicable AGENTS.md found.
+All26 frozen-source current SHAs match; original frozen-protocol SHA:
 1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69
-关键源码SHA：
+Key source SHA:
 common.py 01cf3b29b57ba4478d558123d7d8539dafd4e822f5f8cff360d141bde7cde37f
 training.py 661a1c09eb382f20108e712813f72c378484d63fa297ee7c796b8acf5a0f7c2c
 core.py 4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f
 archdev/common.py 6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b
 longrun_attention.py 5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918
 
-一、正确位置与完整监督口径
-两编码输入前缀均长2n+4（零起始位置）：
-0 BOS，1 SIZE，2 n，3编码START，4..2n+2数值/分隔，2n+3编码END；
-任务token位于2n+4；等号位于2n+5；真实答案位于2n+6；EOS位于2n+7。
-因此完整监督序列长2n+8。
+I. Correct positions and complete supervision definitions
+Both encoded input prefixes have length2n+4 (zero-based positions):
+0 BOS,1 SIZE,2 n,3 encoding START,4..2n+2 numeric/delimiters,2n+3 encoding END;
+task token at2n+4, equals at2n+5, true answer at2n+6, EOS at2n+7.
+Thus the full supervised sequence has length2n+8.
 
-答案预测必须取logits[:,2n+5,:]，真值是答案token ID，不是直接使用
-属性整数作全词表索引的隐含假设。EOS预测取logits[:,2n+6,:]，真值为
-TOKEN_TO_ID['<EOS>']。不要取答案输入位置预测答案；那已读到真实答案。
-EOS统计是给定真值答案的teacher-forced EOS准确率，并非自由生成序列
-正确率。正确描述应保留这个条件；不可将答案与EOS两个各自准确率相加
-或平均后称为任务准确率。
+Answer prediction must use logits[:,2n+5,:], with truth as answer-token ID rather than assuming directly that
+property integers index the full vocabulary. EOS prediction uses logits[:,2n+6,:], with truth
+TOKEN_TO_ID['<EOS>']. Do not predict answers from their input positions, where the true answer has already been read.
+EOS statistics are teacher-forced EOS accuracy given true answers, not free-generated sequence
+accuracy. Preserve that condition; do not add or average separate answer/EOS accuracies
+and call the result task accuracy.
 
-原loss对logits[:,:-1]与target[:,1:]做全词表交叉熵，ignore=-100。
-每个样本只有答案和EOS两处有效target，故combined_ce严格为
-(answer_ce + eos_ce)/2。忽略的prefix/task/等号/padding绝不能计入分母。
-新前向应独立根据n构造位置，再核对batch返回equals=2n+5与两处target；
-这样可以发现同一个helper被重复使用而未发现的off-by-one错误。
-原输入拼接可直接核对：prefix[:2n+4] + [TASK,'=',truth,EOS]。
-正确词表内准确率用全部188类argmax；numeric辅助准确率只在00..30的
-31个token ID中argmax，再与属性整数0..30比较。不把它当作188类准确率。
-答案CE/EOS CE都基于188类logits；不得先条件化为31类再计算原答案CE。
-单位为自然对数nats，无label smoothing、温度、额外样本权重。
+Original loss applies to logits[:,:-1]andtarget[:,1:]using full-vocabulary cross entropy, ignore=-100.
+Each sample has valid targets only at answer/EOS, so combined_ce is exactly
+(answer_ce + eos_ce)/2. Ignored prefix/task/equals/padding positions must never enter the denominator.
+New forwards should construct positions independently from n, then check batch returns equals=2n+5 and both targets;
+this can reveal off-by-one errors hidden by repeatedly reusing the same helper.
+Original input concatenation can be directly checked: prefix[:2n+4] + [TASK,'=',truth,EOS].
+Full-vocabulary accuracy uses argmax over all188 classes; auxiliary numeric accuracy uses only00..30,
+31 token IDs, then compares with property integers0..30. It is not188-class accuracy.
+Answer CE/EOS CE both use188-class logits; do not condition to31 classes before calculating original answer CE.
+Units are natural-log nats, without label smoothing, temperature, or extra sample weights.
 
-二、推理数值条件
-原accuracy是torch.inference_mode()、net.eval()，使用FP32参数，未进入
-BF16 autocast；训练中的BF16 autocast不应沿用到诊断。原device_setup
-关闭CUDA matmul/cudnn TF32、设置cudnn.deterministic=True与2CPU线程。
-新诊断应采用相同配置，显式确保所有浮点参数FP32并禁用autocast。
-只把输出logits.float()不能保证内部前向为FP32，须在前向前检查参数dtype。
+II. Numerical inference settings
+Original accuracy uses torch.inference_mode(), net.eval(), and FP32 parameters, without
+BF16 autocast; training BF16 autocast must not carry into diagnostics. Original device_setup
+disables CUDA matmul/cudnn TF32, sets cudnn.deterministic=True, and uses2 CPU threads.
+New diagnostics should use identical settings, explicitly ensuring FP32 floating parameters and disabled autocast.
+Calling output logits.float() alone does not ensure internal FP32 forwards; check parameter dtype before forwarding.
 
-Transformer调用同一accelerate包装，SDPA带相同strict causal/key mask，
-eval时attention dropout为0；GRU从相同token+position embedding开始、
-四层独立causal GRU、final_norm和绑定lm_head，末尾padding不会回溯影响
-早期状态。模型输出是原始188类logits，无额外softmax。
+Transformer uses the same accelerate wrapper and SDPA strict causal/key mask;
+attention dropout is0 in eval. GRU starts from identical token+position embeddings,
+uses four independent causal GRU layers, final_norm, and tied lm_head; trailing padding cannot change
+earlier states. Outputs are original188-class logits, without additional softmax.
 
-建议独立前向按n分组、原数据索引顺序、每batch128进行，与原validation
-完全相同的batch形状以减少浮点路径差异；full supervised输入和mask
-必须一致。按样本保存FP32答案/EOS logits，CPU上独立logsumexp聚合，
-不把新诊断与原训练curve的最后一个train minibatch loss混为全train CE。
-前向没有optimizer、backward、load/restore optimizer或更新状态。
-如调用原accuracy仅作复核，它会恢复net.training模式；主独立路径仍在
-eval/inference_mode下，不能使用其恢复后的training模式继续取预测。
+Group independent forwards by n, original data-index order, batch128, matching original validation
+batch shapes to reduce floating-path differences; full supervised inputs and masks
+must match. Save per-sample FP32 answer/EOS logits and independently aggregate logsumexp on CPU,
+without conflating new diagnostics or the final training minibatch loss with complete-train CE.
+Forwards have no optimizer, backward, optimizer loading/restoration, or state updates.
+If original accuracy is called for verification, it restores net.training mode; the primary independent path remains
+in eval/inference_mode and must not continue extracting predictions in restored training mode.
 
-三、数据覆盖与禁止测试
-固定16模型=2架构×2编码×4任务。只取train/validation的identity action
-索引0：labels[:,0,TASKS.index(task)]与对应编码input[:,0,:]。
-train每n2048例、validation每n1024例，n为10,11,12：每模型train6144和
-validation3072例，共147456个模型×样本前向读数，96个模型×split×n单元。
-两编码使用相同底层样本、标签、索引及长度，不做答案平衡/子采样。
-只有一个数据世界、每架构一个真实初始化；16模型不是16个独立世界。
+III. Data coverage and prohibited test access
+Fixed16 models = 2 architectures×2 encodings×4 tasks. Use only train/validation identity action
+index0: labels[:,0,TASKS.index(task)]and corresponding encoded input[:,0,:].
+train has2048 examples/n, validation1024/n, n10,11,12: train6144 and
+validation3072/model, totaling147456 model×sample forward readouts and96 model×split×n cells.
+Both encodings share underlying samples, labels, indices, and lengths, without answer balancing/subsampling.
+One data world and one genuine initialization per architecture;16 models are not16 independent worlds.
 
-np.load archive后仅解码train_/validation_字段；不能用dict遍历所有NPZ
-数组，不能读取test标签/输入/预测。读取NPZ.files名称或整文件SHA仅是
-来源核对，不是test评分。该轮不提取hidden，不计算CKA，也不选新配置。
-完整train准确率是8k终点对固定训练库存的拟合情况，不代表对新输入
-泛化。validation早先用于学习开发门槛，也不是新确认集。
+After np.load archive, decode only train_/validation_ fields; do not iterate all NPZ arrays into a dict
+or read test labels/inputs/predictions. Reading NPZ.files names or whole-file SHA only checks
+provenance, not test scoring. This round extracts no hidden states, computes no CKA, and selects no new configuration.
+Full-train accuracy describes8k endpoint fitting to the fixed training inventory, not generalization to new
+inputs. Validation was already used for learnability-development gates and is not a new confirmation set.
 
-四、检查点身份绑定与无副作用读取
-1. 验证旧protocol、26项冻结源码、F根protocol副本、固定manifest及数据
-   NPZ与data_audit SHA。新诊断用自己的独立protocol/source摘要。
-2. 固定选择每run的checkpoint_step_8000.pt；绑定stage_8000.json与
-   completed.json逐字段身份一致。不能选最高准确率stage或latest可变
-   checkpoint。要求step=8000、fixed_endpoint_completed、source_model_run、
-   非缺失validation、原protocol/source/data/初始checkpoint摘要一致。
-3. 读取真实step0前先assert step0.pt与step0.json存在，再直接校验SHA并
-   torch.load(map_location='cpu')；不要调用common.initial()。该helper
-   若缺文件会创建初始权重，不能用于严格只读完成诊断。
-4. 对最终CP先核文件SHA再读取；内部检查run_id、architecture、step、
-   fixed_endpoint_step=8000、source_model_run、output_directory、
-   protocol_sha256、execution_source_version_sha256、data_sha256、
-   initial_parameter_sha256、initial_checkpoint_sha256、starting_rng_hash、
-   finite_gradient_updates。CP未单独存task/encoding字段，它们必须通过
-   唯一run_id↔manifest↔stage绑定，而非臆造CP不存在的字段。
-5. 固定model(config,job.architecture,job.model_seed,device)仅构造内存模块，
-   strict=True加载CP['model']；确保token/position/层数/参数形状及权重绑定
-   与冻结model配置一致，记录加载后parameter_hash。model构造虽会重置
-  进程RNG但不写权重；不需要restore_rng(CP)或优化器以做eval。
-6. 可在该模型推理前后比较parameter_hash，证明前向未改参数；原始CP、
-   stage、data及保护清单SHA应在本轮前后保持。新产物只写新诊断/F根。
-   原checkpoint含RNG等对象，若需weights_only=False，仅读取自身已通过
-   SHA绑定的本地CP，模型state_dict仍应严格加载。
+IV. Checkpoint identity binding and reading without side effects
+1. Verify historical protocol,26 frozen sources, F-root protocol copy, fixed manifest, data
+   NPZ, and data_audit SHA. New diagnostics have their own independent protocol/source digests.
+2. Fix each run to checkpoint_step_8000.pt; bind stage_8000.json and
+   completed.json fieldwise identity. No maximum-accuracy stage or mutable latest
+   checkpoint. Require step=8000, fixed_endpoint_completed, source_model_run,
+   complete validation and matching original protocol/source/data/initial-checkpoint digests.
+3. Assert genuine step0.pt and step0.json exist before reading, then directly check SHA and
+   torch.load(map_location='cpu'); do not call common.initial(). That helper
+   creates initial weights for missing files, unsuitable for strictly read-only completion diagnostics.
+4. Check final-checkpoint file SHA before reading; inspect internal run_id, architecture, step,
+   fixed_endpoint_step=8000, source_model_run, output_directory,
+   protocol_sha256, execution_source_version_sha256, data_sha256,
+   initial_parameter_sha256, initial_checkpoint_sha256, starting_rng_hash,
+   and finite_gradient_updates. Checkpoints do not separately store task/encoding; bind them through
+   unique run_id↔manifest↔stage rather than inventing nonexistent checkpoint fields.
+5. Fixed model(config,job.architecture,job.model_seed,device) constructs an in-memory module only;
+   strict=True loads checkpoint['model']; ensure token/position/layer counts/parameter shapes/weight tying
+   match frozen model configuration, recording loaded parameter_hash. Construction resets
+  process RNG but writes no weights; eval needs no restore_rng(CP) or optimizer.
+6. Compare parameter_hash before/after model inference to establish no parameter updates; original checkpoint,
+   stage, data, and protection-list SHAs should match before/after. New writes stay in new diagnostics/F-root.
+   Original checkpoints contain RNG objects, etc.; if weights_only=False is needed, read only local checkpoints already
+   SHA-bound by this work, with strict model-state loading.
 
-五、应保存与独立复核
-逐样本建议包含run_id来源（或manifest sidecar）、split、sample_index、
-n、task整数真值、truth_token_ID、answer/EOS位置、全词表answer/EOS
-logits、full-vocab/numeric/EOS预测；不要只保存已经求好的聚合指标。
-NPZ应明确188维词表顺序与FP32 dtype，sidecar记录原CP/data/source/协议
-SHA和新诊断代码摘要。可另存每样本CE，但独立聚合必须从原始logits
-重算，避免两个实现共享同一错误标量。
+V. What to save and independently verify
+Per-sample records should include run_id provenance (or manifest sidecar), split, sample_index,
+n, integer task truth, truth_token_ID, answer/EOS positions, full-vocabulary answer/EOS
+logits, and full-vocab/numeric/EOS predictions, not just precalculated aggregate metrics.
+NPZ should specify188-dimensional vocabulary order and FP32 dtype; sidecars record original checkpoint/data/source/protocol
+SHAs and new diagnostic-code digests. Per-sample CE may also be saved, but independent aggregation must recompute
+from original logits to avoid two implementations sharing one wrong scalar.
 
-独立复核先检查每split完整唯一索引与三个长度样本数，再从logits重算
-各n和sample-weighted整体accuracies/CE。两个split内部每n计数相等，
-故sample-weighted整体等于equal-length均值；保留两者公式而非隐含假定。
-validation应对比原stage_8000.validation全部n及整体读数；分类准确率
-预期完全一致，CE因CPU float64与GPU分batch reduction存在极小浮点差。
-容差在评价前冻结，并单列差异；不能因为差异改精度/样本/模型直到通过。
-每样本answer_ce与EOS_ce平均应匹配两监督token的原loss口径；必要的
-位置/mask检查可用train/validation小批次，不引入test或新训练。
+Independent verification first checks complete unique indices and three length counts per split, then recomputes from logits
+per-n and sample-weighted overall accuracies/CE. Counts per n are equal within each split,
+so sample-weighted overall equals the equal-length mean; retain both formulas rather than implicitly assume this.
+Compare validation with original stage_8000.validation for every n and overall; classification accuracies
+should match exactly, while CPU float64 versus GPU batch-reduction CE can differ by tiny rounding amounts.
+Freeze tolerances before evaluation and list differences separately; do not change precision/samples/models until passing.
+Mean per-sample answer_ce/EOS_ce should match original two-supervised-token loss definitions; necessary
+position/mask checks may use small train/validation batches, without test inputs or new training.
 
-结论
-当前冻结模型、batch和loss未见阻碍该完整train/validation诊断的工程
-问题。关键解释限制是：EOS为teacher-forced，combined CE含EOS，numeric
-accuracy为条件指标，训练库存拟合与新输入泛化要分开。最终模型拟合是否
-满足学习门槛，应由全量逐样本独立汇总回答，而非从本次代码审查预判。
+Conclusion
+No engineering issue in current frozen models, batch, or loss was found to block complete train/validation
+diagnostics. Key interpretive limits: EOS is teacher-forced, combined CE includes EOS, numeric
+accuracy is conditional, and training-inventory fit differs from new-input generalization. Whether final fitting
+meets learning gates must be answered by complete independent per-sample aggregation, not predicted from code review.

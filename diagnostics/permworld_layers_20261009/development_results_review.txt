@@ -1,32 +1,32 @@
-PermWorld 编码 × 架构开发结果：独立只读审查
-日期：2026-10-10（America/Los_Angeles）
+PermWorld encoding × architecture development results: independent read-only review
+Date: 2026-10-10 (America/Los_Angeles)
 
-范围与核对方法
-只读核对已完成的开发 CSV 与评价审计；没有改冻结代码/协议/结果、运行 GPU、
-训练或增加统计检验。独立算术路径直接用原始 CKA/分数列重算 B0、Bt、
-三侧变化、Delta、21 长度等权均值与两编码 Gamma，未调用原摘要函数。
-这不是重新提取激活或重算全部底层指标；底层独立校验引用原固定审计。
+Scope and checking method
+Read-only checks of completed development CSVs and evaluation audits; no changes to frozen code/protocol/results, GPU use,
+training, or added statistical tests. The independent arithmetic path directly recomputes B0, Bt,
+three-side changes, Delta, 21-length equal-weight means, and two-encoding Gamma from raw CKA/score columns, without calling original summary functions.
+This does not re-extract activations or recompute all underlying metrics; underlying independent verification refers to the original fixed audits.
 
-完整性与算术
-geometry_length 2,688 唯一单元，128 组每组完整覆盖 n=10..30；
-geometry_summary 128 行，encoding_interactions 64 行，分支/指标/控制均完整。
-2架构×2编码×2关系×2控制×2分支×4指标=128，逐长度为128×21。
-独立核对18,751个已定义数值关系及129次空值传播，最大误差2.27596e-15。
-64交互均采用 canonical_cycle-one_line，GammaDelta=Gammat-Gamma0
-=Gamma_correct-Gamma_wrong（已定义项均符合）。没有根据可用长度重新加权。
-84个关系/控制/长度单元的 fit/test 样本数跨架构、编码、分支、指标完全一致。
-raw固定fit256/test512；答案分层：取逆fit219..248/test471..502，
-峰谷fit202..241/test449..500。数量一致与代码中的共用索引相符；本审查
-没有再次逐样本重读全部输入缓存。
+Completeness and arithmetic
+geometry_length has 2,688 unique cells and 128 groups, each covering n=10..30 completely;
+geometry_summary has 128 rows and encoding_interactions 64 rows, with complete branch/metric/control coverage.
+2 architectures × 2 encodings × 2 relations × 2 controls × 2 branches × 4 metrics = 128; per length, 128×21.
+Independent checks cover 18,751 defined numerical relations and 129 null propagations; maximum error 2.27596e-15.
+All 64 interactions use canonical_cycle-one_line, with GammaDelta=Gammat-Gamma0
+=Gamma_correct-Gamma_wrong for defined entries. No reweighting by available length occurred.
+Fit/test sample counts match across architecture, encoding, branch, and metric for 84 relation/control/length cells.
+Raw uses fixed fit256/test512; answer-stratified counts are inverse fit219..248/test471..502,
+and peaks/valleys fit202..241/test449..500. Matching counts agree with shared indexing in code; this review
+did not reread every input-cache sample.
 
-19个逐长度Delta未定义，全部是GRU/one_line/raw_within_length/output_prob/
-Procrustes：取逆n14..16共3，峰谷n10..25共16。它们正确传播为2个汇总
-及2个交互的空Delta。主prefix_final/answer_strata全部定义，未定义不作0。
-静态真值基线在答案分层后全部变为结构常量，故均未定义；raw onehot的
-Procrustes也有416个未定义单元，应保留其固定秩门槛的解释。
+19 per-length Delta values are undefined, all GRU/one_line/raw_within_length/output_prob/
+Procrustes: inverse n14..16 accounts for 3 and peaks/valleys n10..25 for 16. They correctly propagate to 2 summary
+and 2 interaction null Delta values. All primary prefix_final/answer_strata entries are defined; undefined values are not 0.
+Static ground-truth baselines become structural constants after answer stratification and are all undefined; raw one-hot
+Procrustes also has 416 undefined cells, whose fixed-rank-threshold interpretation must be retained.
 
-主读数（final_norm输入结束状态，答案分层，21长度等权）
-分数越大越相似；Procrustes使用-NRMSE。以下数值保留6位，不作显著性判断。
+Primary readouts (final_norm at input end, answer stratification, equal weights across 21 lengths)
+Higher scores mean more similarity; Procrustes uses -NRMSE. Values below retain 6 decimals, without significance claims.
 arch encoding relation metric B0 Bt change_correct change_wrong Delta
 transformer one_line descent_inverse linear_cka -0.604883 +0.093118 +0.053146 -0.644855 +0.698000
 transformer one_line descent_inverse debiased_cka -0.622225 +0.094449 +0.072479 -0.644195 +0.716674
@@ -61,7 +61,7 @@ gru canonical_cycle peak_complement debiased_cka -0.810069 +0.518489 +0.522139 -
 gru canonical_cycle peak_complement knn_overlap -0.203912 +0.049251 +0.059753 -0.193409 +0.253162
 gru canonical_cycle peak_complement procrustes -0.672911 +0.386677 +0.434188 -0.625399 +1.059587
 
-对应原始CKA（C0/Ct正确，W0/Wt错误；不是Delta）
+Corresponding raw CKA (C0/Ct correct, W0/Wt wrong; not Delta)
 arch encoding relation C0 Ct W0 Wt
 transformer one_line descent_inverse 0.065974 0.119120 0.670857 0.026002
 transformer canonical_cycle descent_inverse 0.811510 0.046943 0.026977 0.078986
@@ -72,7 +72,7 @@ transformer canonical_cycle peak_complement 0.028021 0.067410 0.808452 0.010419
 gru one_line peak_complement 0.697907 0.886041 0.080801 0.011580
 gru canonical_cycle peak_complement 0.016743 0.526961 0.815699 0.012468
 
-编码交互：canonical_cycle-one_line
+Encoding interaction: canonical_cycle-one_line
 arch relation metric Gamma0 Gammat Gamma_correct Gamma_wrong GammaDelta
 transformer descent_inverse linear_cka +1.389415 -0.125162 -0.817713 +0.696864 -1.514577
 transformer descent_inverse debiased_cka +1.416357 -0.127232 -0.838747 +0.704841 -1.543588
@@ -91,8 +91,8 @@ gru peak_complement debiased_cka -1.446494 -0.365557 +0.325427 -0.755511 +1.0809
 gru peak_complement knn_overlap -0.670613 -0.408918 +0.071972 -0.189722 +0.261694
 gru peak_complement procrustes -1.197816 -0.549782 +0.065735 -0.582298 +0.648033
 
-逐长度方向，未挑长度或指标
-arch encoding relation metric B0>0 Bt>0 Delta>0（各自/21）
+Per-length signs, without selecting lengths or metrics
+arch encoding relation metric B0>0 Bt>0 Delta>0 (each out of /21)
 transformer one_line descent_inverse linear_cka 0/21 21/21 21/21
 transformer one_line descent_inverse debiased_cka 0/21 21/21 21/21
 transformer one_line descent_inverse knn_overlap 0/21 21/21 21/21
@@ -126,38 +126,38 @@ gru canonical_cycle peak_complement debiased_cka 0/21 21/21 21/21
 gru canonical_cycle peak_complement knn_overlap 0/21 21/21 21/21
 gru canonical_cycle peak_complement procrustes 0/21 21/21 21/21
 
-解释要点
-1. 编码明显改变的是本开发世界里测得的初始化相对偏好：两架构一行
-   记号取逆B0负、补值B0正；轮换记号方向相反。所有21长度、三个
-   主指标与debiased读数的初始方向一致。本审查没有新增统计检验。
-2. 两架构取逆GammaDelta在所有21长度、三个主指标及debiased均负；
-   峰谷均正。这支持预定编码干预下配对选择性重塑不同，不能只从
-   GammaDelta断言训练后偏好翻转。尤其GRU取逆：两编码CKA Bt均正
-   （+.067502、+.079276），Gammat只有+.011774；GammaDelta=-1.406106
-   很大程度来自Gamma0=+1.417880。其Gammat逐长度CKA仅10/21为正，
-   Procrustes16/21为正，不能假设训练后编码差异统一方向。
-3. Transformer取逆答案分层的Bt确实从一行正（+.093118）变为轮换负
-   （-.032044），三主指标均如此；但源任务学习程度明显不匹配，且
-   只有一个单元，因此它不是普遍训练偏好翻转或编码机制的确认。
-   峰谷两架构两编码Bt均正，但轮换的Bt均低于一行；不能把峰谷
-   GammaDelta为正解释为轮换训练后更偏好正确关系。
-4. 取逆一行的正Delta主要来自错误配对下降：Transformer dc=+.053146、
-   dw=-.644855，GRU dc=+.024350、dw=-.660075；不能写成正确表征
-   大幅趋同。轮换取逆的负Delta主要来自初始很高的正确CKA下降，
-   不能仅据负Delta声称没有学习。峰谷GRU一行则同时正确侧提高、
-   错误侧下降，属于不同的分解。
-5. 个别条件的Delta仍依赖指标/控制：GRU一行峰谷的答案控制CKA
-   +.257354、Procrustes+.411554，邻域重叠-.008532（11/21长度正）；
-   Transformer一行峰谷普通CKA raw Delta=+.023020，答案控制后
-   -.262120。编码GammaDelta方向跨两控制/指标一致，不代表各条件
-   训练Delta方向都稳健。普通与debiased CKA在主汇总方向一致。
-6. 输出相关解释仍开放。答案控制output_prob的取逆CKA Delta在一行
-   为+.373154(T)/+.427486(G)，轮换为-.684445/-.643132；峰谷相应
-   为-.302842/-.301157与+.932516/+1.232557。输出概率也体现大编码
-   交互，不能用隐藏Delta减输出Delta估算额外机制。output_prob仅
-   数值答案0..30范围内归一化，不是完整词表概率。
+Interpretive points
+1. Encoding clearly changes the measured relative initialization preference in this development world: in both architectures, one-line
+   inverse B0 is negative and complement B0 positive; cycle notation reverses these directions. Initialization directions agree across all 21 lengths, three
+   primary metrics, and debiased readouts. This review adds no statistical test.
+2. Both architectures have negative inverse GammaDelta across all 21 lengths, three primary metrics, and debiased CKA;
+   peaks/valleys are positive throughout. This supports different pairing-selectivity reshaping under the prespecified encoding intervention, but
+   GammaDelta alone does not establish a trained-preference reversal. In particular, GRU inverse CKA Bt is positive for both encodings
+   (+.067502, +.079276), with Gammat only +.011774; GammaDelta=-1.406106
+   largely reflects Gamma0=+1.417880. Its per-length Gammat is positive for CKA at only 10/21 lengths,
+   and Procrustes at 16/21; trained encoding differences cannot be assumed to share one direction.
+3. Transformer inverse answer-stratified Bt does change from positive one-line (+.093118) to negative cycle
+   (-.032044), consistently across three primary metrics; however, source-task mastery is clearly unmatched,
+   and there is only one unit, so this does not confirm a universal trained-preference reversal or encoding mechanism.
+   Both architectures and encodings have positive peaks/valleys Bt, but cycle Bt is lower than one-line;
+   positive peaks/valleys GammaDelta cannot mean that cycle training produces stronger correct-relation preference.
+4. Positive Delta for one-line inverse mainly reflects wrong-pair declines: Transformer dc=+.053146,
+   dw=-.644855, GRU dc=+.024350, dw=-.660075; this is not substantial convergence
+   of correct representations. Negative cycle inverse Delta mainly reflects declining initially high correct CKA,
+   and cannot alone establish no learning. In contrast, GRU one-line peaks/valleys improve on the correct side
+   and decline on the wrong side, a different decomposition.
+5. Individual conditions' Delta still depends on metric/control: GRU one-line peaks/valleys answer-controlled CKA
+   is +.257354, Procrustes +.411554, neighborhood overlap -.008532 (positive at 11/21 lengths);
+   Transformer one-line peaks/valleys ordinary-CKA raw Delta is +.023020 and answer-controlled
+   Delta -.262120. Agreement in encoding GammaDelta direction across both controls/metrics does not mean each condition's
+   training Delta direction is robust. Ordinary and debiased CKA agree in primary aggregate direction.
+6. Output-related explanations remain open. Answer-controlled output_prob inverse CKA Delta for one-line
+   is +.373154(T)/+.427486(G), versus -.684445/-.643132 for cycle; peaks/valleys respectively
+   give -.302842/-.301157 and +.932516/+1.232557. Output probabilities also show large encoding
+   interactions; hidden Delta minus output Delta cannot estimate an additional mechanism. output_prob is normalized only over
+   numeric answers 0..30, not the full-vocabulary distribution.
 
-源任务学习差异：最终identity测试为21长度等权平均
+Source-task learning differences: final identity-test values are equal-weight means over 21 lengths
 arch encoding task params initial_validation final_validation final_identity_test
 transformer one_line descents 3240448 0.000000 0.990513 0.992094
 transformer one_line recoils 3240448 0.000000 0.722842 0.727493
@@ -176,34 +176,34 @@ gru canonical_cycle recoils 1660416 0.000000 0.300595 0.300688
 gru canonical_cycle peaks 1660416 0.002046 0.416853 0.406901
 gru canonical_cycle valleys 1660416 0.003348 0.412202 0.410900
 
-全部16模型通过预定“相对初始化验证准确率提高≥.10”的工程门槛。
-但轮换记号四任务新测试约30%..41%；Transformer一行约73%..99%；
-GRU一行下降/峰/谷近100%，逆下降仅39.47%。工程通过证明任务输出
-可训练与流程完整，不能保证源模型已充分学习或跨编码能力匹配。编码
-可能改变初始化几何及学习难度，当前结果不能隔离两条影响路径。
+All 16 models pass the prespecified engineering gate “validation accuracy improves by ≥.10 over initialization.”
+But cycle notation gives approximately 30%..41% on new tests across four tasks; Transformer one-line approximately 73%..99%;
+GRU one-line descents/peaks/valleys nearly 100%, with recoils only 39.47%. Engineering success establishes trainable task outputs
+and a complete pipeline, not sufficiently learned source models or matched cross-encoding capability. Encoding
+can affect initialization geometry and learning difficulty; current results cannot separate these two paths.
 
-初始化、范围及不确定性
-本开发使用实际保存、架构内共享的step-0；历史多层诊断的重建初始化
-仍是C级，不能混称身份验证。两架构参数量3,240,448与1,660,416，
-初始化族/种子不同，不能单独识别容量与架构。仅一个新共享数据世界、
-两条关系、每条件一个源；21长度不是21独立世界，16模型不是16关系。
-本轮为开发结果，不新增显著性、置信区间或确认性主张。评价中前向有
-task/等号suffix，测量位置在task之前；因果模型使该状态不依赖当前
-suffix。权重仍由任务训练产生，不宜称完全任务无关表征。
+Initialization, scope, and uncertainty
+This development uses genuinely saved step-0 shared within architecture; reconstructed initializations in historical multilayer diagnostics
+remain grade C and must not be conflated with verified identity. Architectural parameter counts are 3,240,448 and 1,660,416,
+with different initialization families/seeds, preventing separate identification of capacity and architecture. There is one new shared data world,
+two relations, and one source per condition; 21 lengths are not 21 independent worlds, and 16 models are not 16 relations.
+This round reports development results without added significance tests, confidence intervals, or confirmatory claims. Evaluation forwards include
+task/equals suffixes, while measurement is before the task; causal models make this state independent of the current
+suffix. Weights still arise from task training, so these should not be called wholly task-independent representations.
 
-固定独立校验（只读已有审计，未重跑）
-2,304激活向量：保存/手动prefix差最大5.15580e-6，suffix因果比较最大
-2.71201e-6；独立协方差CKA差最大4.44089e-15，均通过固定门槛。
-工程审计passed；formal_training_started=false，stop_after_report=true。
+Fixed independent validation (read-only existing audits, not rerun)
+2,304 activation vectors: saved/manual-prefix maximum difference 5.15580e-6; suffix-causality comparison maximum
+2.71201e-6; independent covariance-CKA maximum difference 4.44089e-15; all pass fixed thresholds.
+Engineering audits passed; formal_training_started=false, stop_after_report=true.
 
-审查结论
-可报告：在这个开发单元中，编码改变初始化偏好，并改变训练对正确/
-错误配对的相对重塑；编码GammaDelta方向跨两架构、预定指标和长度
-稳定。但训练后Bt并不普遍翻转，源学习差异很大，输出几何也出现类似
-交互。尚不能把这些结果称为已识别的独立数学编码机制或跨架构确认。
-完成本次核查后停止；未建议或启动追加训练、正式清单或新领域。
+Review conclusion
+Reportable: in this development unit, encoding changes initialization preference and the relative reshaping of correct/
+wrong pairs during training; encoding GammaDelta direction is stable across architectures, prespecified metrics, and lengths.
+However, trained Bt does not universally reverse, source-learning differences are large, and output geometry shows similar
+interactions. These results do not establish an independent mathematical-encoding mechanism or cross-architecture confirmation.
+Stop after this review; no additional training, formal manifest, or new domain was recommended or started.
 
-审查时产物SHA256
+Artifact SHA256 at review time
 protocol.json 2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9
 geometry_length.csv fba99c3628525bfe3eb359d9fa595f5fe828bdc34b0d3bac5221a376ef2a5b38
 geometry_summary.csv 765843527bba45ffb60daa79f0cc9f9a0bcc9ae2d4b9d9b6ab0a0e2a8909f93d

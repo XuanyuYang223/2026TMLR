@@ -1,17 +1,17 @@
-PermWorld 本轮完成报告
+PermWorld completion report for this round
 
-用户授权边界为“多层分析＋16模型开发预跑，完成后停止”。本轮已完成已有 PermWorld 检查点的多层探索诊断，以及固定16模型的编码×架构工程开发实验。正式训练清单未启动，GroupWorld 未启动；F17论文、实验结果与发布产物保持原样。开发报告后停止，不自动追加训练。
+The authorized boundary was “multilayer analysis plus a 16-model development pilot, then stop.” This round completed exploratory multilayer diagnostics of existing PermWorld checkpoints and the fixed 16-model encoding × architecture engineering experiment. The formal training manifest and GroupWorld were not started; the F17 paper, experimental results, and release artifacts remain unchanged. Stop after the development report; no automatic additional training.
 
 
-已有检查点：正增量与正确对齐增长须区分
+Existing checkpoints: positive increments must be distinguished from increases in correct alignment
 
-旧多层诊断没有新增源模型训练。历史初始化参照全部为 C 级：按原程序重建，但原真实 step-0 权重身份无法验证。结论只对应这些重建参照；不能将相同种子解释为精确匹配初始化。
+The historical multilayer diagnostic added no source-model training. All historical initialization references are grade C: reconstructed with the original procedure, but the identity of the original genuine step-0 weights cannot be verified. Conclusions apply only to those reconstructed references; the same seed must not be interpreted as an exactly matched initialization.
 
 relation	sources	B0	Bt	dc	dw	Delta
 descent_inverse	+3.00000	-0.50597	+0.08299	-0.03385	-0.62282	+0.58897
 exceedance_inverse	+3.00000	-0.46215	+0.17931	+0.02047	-0.62099	+0.64146
 
-两条取逆关系在旧主位置有稳定的正 Δ 候选，但 final end 普通 CKA 的大增量主要来自错误配对下降，而非正确配对大幅趋同。全部关系、源、长度、层和固定指标均保留；多层新增结果仍是探索性诊断。
+The two inverse relations have stable positive Δ candidates at the historical primary position, but the large final-end ordinary-CKA increments mainly reflect declining wrong-pair similarity, rather than substantial convergence of correct pairs. All relations, sources, lengths, layers, and fixed metrics are retained; the added multilayer results remain exploratory diagnostics.
 
 relation	branch	B0	Bt	dc	dw	Delta
 descent_inverse	block_01_end	-0.06246	+0.03733	-0.34704	-0.44683	+0.09979
@@ -27,22 +27,22 @@ exceedance_inverse	block_04_end	-0.46313	+0.17327	+0.01430	-0.62209	+0.63640
 exceedance_inverse	final_norm_end	-0.46215	+0.17931	+0.02047	-0.62099	+0.64146
 exceedance_inverse	final_norm_value_mean	-0.46982	+0.35189	+0.25680	-0.56491	+0.82171
 
-下降—逆下降从 block1 到 block2：Δ 的层际变化为 +0.44731，Bt 的变化为 -0.01076，B0 的变化为 -0.45807。这次 Δ 跃升主要对应初始化偏好的层际变化，不能写成第二层训练后偏好更强。
+For descents–recoils from block1 to block2, the between-layer change in Δ is +0.44731, the change in Bt is -0.01076, and the change in B0 is -0.45807. This Δ jump mainly corresponds to the between-layer change in initialization preference and must not be described as a stronger trained preference in the second layer.
 
-超越—亏缺在中层以及数值 token mean pooling 中，正确 CKA 的增长明显大于 final end。下降关系的正确变化 dc 也有指标方向差异。因此 final end 的拆解不能代替所有层或所有指标的结论。三主指标为 CKA、邻域重叠、留出 Procrustes；debiased CKA 为固定敏感性，不按结果挑层、长度或指标。
+For exceedances–deficiencies, correct CKA increases substantially more in intermediate layers and numeric-token mean pooling than at the final end. The descents relation also has metric-dependent signs for the correct-pair change dc. Therefore, the final-end decomposition cannot replace conclusions about every layer or metric. The three primary metrics are CKA, neighborhood overlap, and held-out Procrustes; debiased CKA is a fixed sensitivity analysis, with no selection of layers, lengths, or metrics based on results.
 
-均按10–30逐长度计算、固定1/21汇总；缺定义长度不重新加权。embedding结束位置及无序数值均值是同长度结构常量，指标未定义。源间离散程度可包含初始化、dropout、数据顺序和优化随机性，不能精确拆分，也不形成独立数据世界置信区间。共享任务/轨道的关系保留依赖结构，留一关系和留一家族是敏感性分析。
+Each length 10–30 is evaluated separately and aggregated with fixed weights of 1/21; undefined lengths are not reweighted. The embedding at the end position and the unordered numeric mean are structural constants within a length, so their metrics are undefined. Between-source dispersion can include initialization, dropout, data order, and optimization randomness; these cannot be precisely separated and do not yield confidence intervals for independent data worlds. Relations sharing tasks/orbits retain their dependence; leave-one-relation and leave-one-family analyses are sensitivity analyses.
 
 
-新开发：一条取逆＋一条补排列，四条件共16模型
+New development: one inverse relation plus one complement relation; 16 models across four conditions
 
-开发任务为下降数、逆下降数、峰、谷；关系仅 descent_inverse 与 peak_complement。四任务×一行/规范轮换两编码×Transformer/GRU两架构=16模型，新数据世界、每架构一个真实初始化单元。它不是原来两条取逆关系的新确认实验。
+The development tasks are descents, recoils, peaks, and valleys; the only relations are descent_inverse and peak_complement. Four tasks × two encodings (one-line/canonical-cycle) × two architectures (Transformer/GRU) = 16 models, with a new data world and one genuine initialization unit per architecture. This is not a new confirmation experiment for the two original inverse relations.
 
-每个架构内的两编码和四任务复制相同真实保存 step-0，跨架构不声称权重相同。GRU的原始真实初始化经过逐tensor保持数值的键迁移，使用四个单层GRU与显式层间Dropout；迁移和恢复检查的完整证据保留。两编码共底层排列、轨道划分、批次及20,000更新，保存固定最终检查点，不选择最佳阶段。
+Within each architecture, both encodings and all four tasks copy the same genuinely saved step-0 parameters; identical weights are not claimed across architectures. The GRU's original genuine initialization underwent a tensor-value-preserving key migration, using four single-layer GRUs and explicit inter-layer Dropout; all evidence for migration and restoration checks is retained. Both encodings share underlying permutations, orbit splits, batches, and 20,000 updates. Fixed final checkpoints are saved without selecting the best stage.
 
-Transformer 256维、4层、8头，共3,240,448参数；GRU 256维、4层，共1,660,416参数。容量和计算量未匹配。源任务学习程度不同、单世界与单初始化共同限制架构解释；不作确认性p值或等价性判断。
+The Transformer has width 256, 4 layers, 8 heads, and 3,240,448 parameters; the GRU has width 256, 4 layers, and 1,660,416 parameters. Capacity and computation are not matched. Differences in source-task mastery, one world, and one initialization jointly limit architectural interpretation; no confirmatory p-values or equivalence claims are made.
 
-工程完成状态：passed。失败的门槛和弱任务同样完整保留，报告生成不把失败改为通过，也不延长固定预算。
+Engineering completion status: passed. Failed gates and weak tasks are also fully retained; report generation neither changes failures to passes nor extends the fixed budget.
 
 architecture	relation	Gamma0	Gammat	Gamma_correct	Gamma_wrong	GammaDelta
 transformer	descent_inverse	+1.38942	-0.12516	-0.81771	+0.69686	-1.51458
@@ -50,10 +50,10 @@ transformer	peak_complement	-1.38075	-0.28120	+0.36174	-0.73780	+1.09954
 gru	descent_inverse	+1.41788	+0.01177	-0.73218	+0.67393	-1.40611
 gru	peak_complement	-1.41606	-0.35997	+0.32208	-0.73401	+1.05609
 
-上表只是事先固定的主读数：任务前最终层、答案分层、普通CKA。编码交互为规范轮换减一行：ΓΔ=Γt−Γ0，同时等于Γcorrect−Γwrong。必须区分初始化偏好改变、训练后偏好改变、正确增长和错误下降；Δ随编码变号不等于训练后关系偏好翻转。
+The table above contains only the prespecified primary readouts: the pre-task final layer, answer stratification, and ordinary CKA. The encoding interaction is canonical-cycle minus one-line: ΓΔ=Γt−Γ0, also equal to Γcorrect−Γwrong. Changes in initialization preference, trained pairing preference, correct-pair increases, and wrong-pair decreases must be distinguished; a sign change in Δ across encodings is not a reversal of trained relation preference.
 
 
-全部源模型精度与长度参照
+All source-model accuracies and length reference baselines
 
 run_id	architecture	encoding	task	parameters	initial_validation_accuracy	final_validation_accuracy	gain	learning_gate_passed
 archdev001_transformer_one_line_descents	transformer	one_line	descents	+3240448.00000	+0.00000	+0.99051	+0.99051	True
@@ -91,12 +91,12 @@ gru	canonical_cycle	recoils	+0.30069	+0.30069	+0.29697	+0.37202
 gru	canonical_cycle	peaks	+0.40690	+0.40690	+0.39816	+0.87426
 gru	canonical_cycle	valleys	+0.41090	+0.41090	+0.39314	+1.77641
 
-验证精度是完整词表的答案位置准确率；numeric_accuracy限制于数字词表，单独报告。相对初始化提升10个百分点只是工程学习门槛。长度众数基线在冻结协议后作为描述性补充：仅由各任务/长度的训练标签定众数，并列取最小标签，再固定用于全部测试action。它不改变主指标、门槛或训练预算。超过该基线排除了这一个长度预测器，低于它不证明完全没有使用排列内容。
+Validation accuracy is answer-position accuracy over the full vocabulary; numeric_accuracy is restricted to the numeric vocabulary and reported separately. A 10-percentage-point improvement over initialization is only an engineering learning gate. The length-mode baseline is a descriptive supplement added after protocol freezing: the mode is determined only from training labels for each task/length, with ties resolved to the smallest label, then fixed for all test actions. It changes neither primary metrics, gates, nor training budgets. Exceeding this baseline excludes this particular length-only predictor; falling below it does not prove that permutation content is completely unused.
 
 
-全部预定分解和编码交互
+All prespecified decompositions and encoding interactions
 
-下表保留两分支（任务前隐藏、输出概率）、两控制、三主指标和debiased敏感性；不减去输出Δ来估算额外机制。答案分层不能去除全部置信度或预测误差结构。Procrustes分数为负归一化预测误差，分数增加表示留出误差降低。
+The table below retains both branches (pre-task hidden states and output probabilities), both controls, the three primary metrics, and the debiased sensitivity analysis; hidden Δ minus output Δ is not used to estimate an additional mechanism. Answer stratification cannot remove all confidence or prediction-error structure. The Procrustes score is negative normalized prediction error, so a score increase indicates lower held-out error.
 
 
 prefix_final / raw_within_length / linear_cka
@@ -296,16 +296,16 @@ transformer	one_line	descent_inverse	-0.42284	+0.66438	+0.66282	-0.42440	+1.0872
 transformer	one_line	peak_complement	+0.41896	+0.97241	+0.49956	-0.05389	+0.55345	+0.00000
 transformer	canonical_cycle	descent_inverse	+0.40336	-0.05047	-0.25523	+0.19859	-0.45382	+0.00000
 transformer	canonical_cycle	peak_complement	-0.40739	+0.51937	+0.45234	-0.47442	+0.92676	+0.00000
-gru	one_line	descent_inverse	-0.44567	未定义	未定义	未定义	未定义	+3.00000
-gru	one_line	peak_complement	+0.44528	未定义	未定义	未定义	未定义	+16.00000
+gru	one_line	descent_inverse	-0.44567	undefined	undefined	undefined	undefined	+3.00000
+gru	one_line	peak_complement	+0.44528	undefined	undefined	undefined	undefined	+16.00000
 gru	canonical_cycle	descent_inverse	+0.65438	+0.07274	-0.46132	+0.12033	-0.58165	+0.00000
 gru	canonical_cycle	peak_complement	-0.65472	+0.79017	+0.77911	-0.66579	+1.44490	+0.00000
 
 architecture	relation	Gamma0	Gammat	Gamma_correct	Gamma_wrong	GammaDelta
 transformer	descent_inverse	+0.82620	-0.71484	-0.91805	+0.62299	-1.54104
 transformer	peak_complement	-0.82635	-0.45305	-0.04722	-0.42053	+0.37331
-gru	descent_inverse	+1.10006	未定义	未定义	未定义	未定义
-gru	peak_complement	-1.10000	未定义	未定义	未定义	未定义
+gru	descent_inverse	+1.10006	undefined	undefined	undefined	undefined
+gru	peak_complement	-1.10000	undefined	undefined	undefined	undefined
 
 
 output_prob / raw_within_length / debiased_cka
@@ -403,7 +403,7 @@ gru	descent_inverse	+1.10886	+0.02147	-0.59382	+0.49358	-1.08739
 gru	peak_complement	-1.10729	+0.46619	+0.92250	-0.65099	+1.57348
 
 
-全部模型、初始/训练条件、三action的长度基线对照
+Length-baseline comparisons for all models, initial/trained conditions, and three actions
 architecture	encoding	task	condition	action	full_vocab_accuracy	numeric_accuracy	length_majority_accuracy	full_vocab_gain_over_length_majority_pp	numeric_gain_over_length_majority_pp
 transformer	one_line	descents	initial	identity	+0.00000	+0.10370	+0.30441	-30.44085	-20.07068
 transformer	one_line	descents	initial	complement	+0.00000	+0.10621	+0.30134	-30.13393	-19.51265
@@ -503,59 +503,59 @@ gru	canonical_cycle	valleys	trained	complement	+0.41248	+0.41248	+0.39816	+1.432
 gru	canonical_cycle	valleys	trained	inverse	+0.42764	+0.42764	+0.40848	+1.91592	+1.91592
 
 
-复核范围、完整产物与停止
+Verification scope, complete artifacts, and stopping
 
-旧汇总通过独立完整长度算术复核，旧52,080个单元逐字段保持一致。已有审计记录保护的F17文件未变。新开发检查包括真实初始化身份、独立进程恢复、保存激活与独立CKA路径、旧/新开发轨道排除。CKA、邻域和Procrustes都不能单独证明数学机制或功能价值。
+The historical summaries passed independent arithmetic verification using every length; all fields of the historical 52,080 cells remain consistent. The F17 files protected by the existing audit record are unchanged. New development checks include genuine initialization identity, restoration in an independent process, saved activations versus an independent CKA path, and exclusion of historical/new development orbits. CKA, neighborhood overlap, and Procrustes alone cannot establish mathematical mechanisms or functional value.
 
 name	status
-旧统计复核	PASS
-旧完整性/F17审计	passed
-开发工程汇总	passed
+Historical statistical verification	PASS
+Historical completeness/F17 audit	passed
+Development engineering summary	passed
 cpu_check.json	passed
 overfit_summary.json	passed
 resume_summary.json	passed
 independent_evaluation.json	passed
 
-已有检查点面向读者的解释：reader_report.html
+Reader-oriented interpretation of existing checkpoints: reader_report.html
 
-多层完整报告：report.html
+Complete multilayer report: report.html
 
-独立统计复核正文：statistical_review.txt
+Independent statistical verification text: statistical_review.txt
 
-独立完整算术审计：statistical_review.json
+Independent complete arithmetic audit: statistical_review.json
 
-全实验完成与F17保护审计：final_audit.json
+Overall experiment completion and F17 protection audit: final_audit.json
 
-旧完整性与F17保护审计：existing_final_audit.json
+Historical completeness and F17 protection audit: existing_final_audit.json
 
-旧全部逐关系/源/长度/层单元：layer_metric_results.csv
+All historical relation/source/length/layer cells: layer_metric_results.csv
 
-旧source汇总：source_metric_summary.csv
+Historical source summaries: source_metric_summary.csv
 
-旧关系汇总：relation_metric_summary.csv
+Historical relation summaries: relation_metric_summary.csv
 
-旧逐长度汇总：length_metric_summary.csv
+Historical per-length summaries: length_metric_summary.csv
 
-旧关系与家族敏感性：leave_one_relation_family.csv
+Historical relation and family sensitivity analyses: leave_one_relation_family.csv
 
-编码×架构完整报告：encoding_development/report.html
+Complete encoding × architecture report: encoding_development/report.html
 
-编码开发导出审计：encoding_development/export_audit.json
+Encoding-development export audit: encoding_development/export_audit.json
 
-开发全部几何分解：encoding_development/artifacts/geometry_summary.csv
+All development geometry decompositions: encoding_development/artifacts/geometry_summary.csv
 
-开发全部逐长度几何：encoding_development/artifacts/geometry_length.csv
+All development per-length geometry: encoding_development/artifacts/geometry_length.csv
 
-开发全部编码交互：encoding_development/artifacts/encoding_interactions.csv
+All development encoding interactions: encoding_development/artifacts/encoding_interactions.csv
 
-开发逐长度真实答案基线：encoding_development/artifacts/gold_baseline_length.csv
+Development per-length ground-truth-answer baselines: encoding_development/artifacts/gold_baseline_length.csv
 
-开发全部逐长度长度众数对照：encoding_development/model_minus_length_baseline_supplemental.csv
+All development per-length comparisons with the length-mode baseline: encoding_development/model_minus_length_baseline_supplemental.csv
 
-长度基线补充协议：encoding_development/length_baseline_protocol_supplemental.json
+Supplementary length-baseline protocol: encoding_development/length_baseline_protocol_supplemental.json
 
-开发源码与真实初始化身份绑定：encoding_development/artifacts/initializations/execution_binding_v4.json
+Development source-code and genuine-initialization identity binding: encoding_development/artifacts/initializations/execution_binding_v4.json
 
-开发全部工程门槛：encoding_development/artifacts/engineering_complete.json
+All development engineering gates: encoding_development/artifacts/engineering_complete.json
 
-本轮到此停止。正式训练清单和GroupWorld没有启动；F17论文、结果及发布产物未改。任何后续确认、更多种子、不同系统或扩容都不由本报告自动触发。
+This round stops here. The formal training manifest and GroupWorld were not started; the F17 paper, results, and release artifacts were not modified. This report does not automatically trigger subsequent confirmation, more seeds, different systems, or scaling.

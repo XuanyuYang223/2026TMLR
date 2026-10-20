@@ -14,10 +14,10 @@ from .longrun_engine import atomic_json
 ROOT=Path('results/specialist_cka_controls')
 ADJUST=Path('results/specialist_input_adjustment')
 ABLATION=Path('results/frozen_operator_constraint_ablation')
-NAMES={'descent_inverse':'下降数—逆下降数（取逆）','peak_complement':'峰—谷（补排列）',
-    'fixed_complement':'不动点—反不动点（补排列）','exceedance_inverse':'超越数—不足数（取逆）',
-    'subsequence_complement':'LIS—LDS（补排列）','run_complement':'递增段—递减段（补排列）',
-    'record_complement':'左向最大记录—最小记录（补排列）','decomposition_complement':'全局下降—分解块（补排列）'}
+NAMES={'descent_inverse':'Descents--inverse descents (inversion)','peak_complement':'Peaks--valleys (complement)',
+    'fixed_complement':'Fixed points--anti-fixed points (complement)','exceedance_inverse':'Exceedances--deficiencies (inversion)',
+    'subsequence_complement':'LIS—LDS (complement)','run_complement':'Increasing--decreasing run (complement)',
+    'record_complement':'Left-to-right maxima--minima (complement)','decomposition_complement':'Global descents--components (complement)'}
 
 
 def read_csv(path):
@@ -34,7 +34,7 @@ def table(rows,columns):
     return '<table><thead><tr>'+''.join('<th>'+html.escape(title)+'</th>' for key,title in columns)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+html.escape(str(row.get(key,'')))+'</td>' for key,title in columns)+'</tr>' for row in rows)+'</tbody></table>'
 
 
-def fmt(x):return '未定义' if x is None else f'{x:+.4f}'
+def fmt(x):return 'undefined' if x is None else f'{x:+.4f}'
 
 
 def run():
@@ -157,10 +157,10 @@ def run():
         'adjust':fmt(r['per_length_input_adjusted_prefix_mean']),
         'adjust_increment':fmt(r['per_length_input_adjusted_increment_vs_matched_init_mean'])} for r in per_relation]
     global_display=[]
-    for branch,name in [('prefix_final_norm','任务前 ONE_END'),('query_final_norm','查询位置'),('output_prob','31 类数值输出'),('answer_onehot','真实答案 onehot')]:
-        for control,cname in [('raw','原始'),('length','长度中心化'),('answer_strata','共同答案分层'),('confidence','FIT 置信度回归')]:
+    for branch,name in [('prefix_final_norm','Pre-task  ONE_END'),('query_final_norm','Query position '),('output_prob','31 -class numeric output'),('answer_onehot','Gold answers onehot')]:
+        for control,cname in [('raw','original '),('length','Length-centered'),('answer_strata','Joint-answer strata'),('confidence','FIT Confidence regression')]:
             val=summary['controls'][branch][control]['trained']
-            if val['count'] or control=='answer_strata':global_display.append({'branch':name,'control':cname,'mean':fmt(val['mean']),'positive':f"{val['positive']}/{val['count']}" if val['count'] else '常量，CKA 未定义'})
+            if val['count'] or control=='answer_strata':global_display.append({'branch':name,'control':cname,'mean':fmt(val['mean']),'positive':f"{val['positive']}/{val['count']}" if val['count'] else ' is constant; CKA undefined'})
     ab_display=[]
     for method in methods:
         row={'method':method}
@@ -174,9 +174,9 @@ def run():
         'init':fmt(r['prefix_matched_init'])} for r in per_seed]
     adj=summary['supplemental_input_adjustment']['controls']['prefix_final_norm']['answer_strata']['trained']
     length_comparison=[]
-    for branch,label in [('prefix_final_norm','任务前 ONE_END'),('query_final_norm','查询位置')]:
+    for branch,label in [('prefix_final_norm','Pre-task  ONE_END'),('query_final_norm','Query position ')]:
         values=summary['supplemental_input_adjustment']['controls'][branch]['answer_strata']
-        for kind,title in [('ordinary_per_length','逐长度普通 CKA'),('adjusted','逐长度输入调整 CKA')]:
+        for kind,title in [('ordinary_per_length','Per-length ordinary CKA'),('adjusted','Per-length input-adjusted CKA')]:
             co=values[kind] if kind=='ordinary_per_length' else values
             inc=values['ordinary_increment_vs_matched_init'] if kind=='ordinary_per_length' else values['increment_vs_matched_init']
             length_comparison.append({'branch':label,'method':title,'trained':fmt(co['trained']['mean']),
@@ -188,38 +188,38 @@ def run():
         'reason':'Per-length ordinary and invariant-input-adjusted CKA both exceed matched initialization in only 6/24 answer-matched cells, all six from the two inverse relations. Complement signals also occur strongly in random networks. Pooled length centering does not equal per-length CKA averaging.',
         'output_independent_algebraic_mechanism_confirmed':False,'stable_hidden_composition_confirmed':False}
     atomic_json(ROOT/'summary.json',summary)
-    report=f'''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>原始跨模型 CKA：新测试与答案控制</title>
+    report=f'''<!doctype html><html lang="en"><meta charset="utf-8"><title>Original cross-model  CKA: new tests and answer controls</title>
 <style>body{{max-width:1250px;margin:36px auto;padding:0 22px;font:16px/1.7 system-ui;color:#202733}}table{{border-collapse:collapse;width:100%;font-size:13px;margin:18px 0}}th,td{{border:1px solid #d7dde5;padding:7px;text-align:left}}th{{background:#edf2f7}}img{{max-width:100%}}.note{{padding:14px;background:#f1f5f9;border-left:4px solid #64748b}}a{{color:#2166ac}}</style>
-<h1>回到原始跨模型 CKA：新测试与答案控制</h1>
-<p><strong>原始 CKA 现象复现，但初始化与逐长度控制揭示了关键边界。</strong>八条关系、三个种子，48 个已有单性质检查点；没有重新训练源模型。混合长度的正确变换优势为 24/24 正值，答案匹配后仍然如此；然而逐长度分别计算后，训练模型仅有 6/24 个答案匹配单元超过初始化，全部来自两条取逆关系。六条补排列关系在随机网络中也有更强的对齐，不能统一解释为训练学会了关系。</p>
-<p>主要量为 ΔCKA = CKA(正确变换) − CKA(原协议错误变换)。错误对照保持原来的选择：取逆关系对照补排列，补排列关系对照取逆；未变换输入另行报告。条件与权重相同，只改变数学对齐。</p>
-<p>核心比较规则于 {protocol['registered_utc']} 保存，早于新数据、表征与 CKA。新的 2,688 个测试锚点，另有 672 FIT 和 336 验证锚点。已扫描原始 1,600 万条父数据输入；候选的全部八个轨道状态均排除原始数据及此前本地输入。输入读取器在初次注册后、任何数据选择和模型推断之前修正了紧凑 JSON 格式；失败注册保留，随后重新保存协议。</p>
-<h2>每条关系与所有种子</h2>
-<p>共同分层键为长度、左侧未变换答案、右侧 e/C/I 三个答案；保留至少三个锚点的分层，各分支在同一分层内减均值。所有条件使用完全相同的保留行。确定性真实答案编码在每个分层中变成常量，所以条件 CKA 未定义。最后一列是另行补充的逐长度输入调整均值，不能与 pooled CKA 当作同一统计量直接相减。</p>
-{table(relation_display,[('name','关系'),('anchors','匹配锚点'),('raw','原始 ONE_END Δ 均值'),('seeds','混合长度答案匹配 Δ：17 / 42 / 101'),('increment','混合长度相对初始化增量'),('output','匹配后输出 Δ 均值'),('adjust','逐长度输入调整 Δ'),('adjust_increment','逐长度调整相对初始化增量')])}
-<img src="answer_matched_cka.png"><p><a href="answer_matched_cka.pdf">下载 PDF 图</a> · <a href="per_relation_seed_summary.csv">逐关系 × 种子 CSV</a> · <a href="contrasts.csv">所有分支与控制对照</a> · <a href="scores.csv">三个变换的 CKA 原值</a></p>
-{table(seed_display,[('relation','关系'),('seed','种子'),('prefix_raw','ONE_END 原始 Δ'),('prefix_length','长度中心化 Δ'),('prefix_answer','答案匹配 Δ'),('query_answer','查询匹配 Δ'),('output_answer','输出匹配 Δ'),('init','同种子初始化匹配 Δ')])}
-<h2>信号体现在哪里</h2>
-{table(global_display,[('branch','分支'),('control','控制'),('mean','Δ 均值'),('positive','正值单元')])}
-<p>混合长度的任务前表征在答案匹配后平均 Δ 为 {summary['controls']['prefix_final_norm']['answer_strata']['trained']['mean']:.4f}，其中 23/24 高于同种子初始化；独立种子初始化对照也为 23/24。训练模型的 24/24 个条件对照都高于事先固定的 32 个组内打乱对照。打乱保留真实答案与分层，却破坏具体输入对应。这说明信号不只是确定性真实答案编码，但尚不能区分训练得到的关系结构与输入对应的自然几何。下方逐长度控制改变了初始化比较的结论。这些单元共享任务、输入与种子，不能当成 24 个独立试验。</p>
-<p>真实答案与模型输出分布本身能复现很大的原始正确变换优势。因此原始 CKA 不能直接证明内部代数机制。输出条件几何仍可能包含置信度与其他信息，隐藏 Δ 高于输出 Δ 也不是输出独立性的证明。固定 FIT-only 置信度回归是补充分析，不能作为因果中介分解。原始与匹配分析的样本集合及中心化方式不同，其下降幅度不能直接解释为答案解释了多少比例。</p>
-<h2>输入结构控制与补充去混淆分析</h2>
-<p>输入编码基线显示 CKA 对编码选择敏感，例如长度中心化的数值位置输入对补排列 CKA=1，而置换矩阵编码对取逆 CKA=1。这也是加入初始化与组内打乱控制的原因。完整输入基线见 <a href="input_baselines.csv">CSV</a>。</p>
-<p>另在每个长度上使用位置置换矩阵的线性输入核。该输入 Gram 在 e/C/I 下严格相同，包括共同答案中心化之后。按 <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/79cbf4f96c2bcc67267421154da689dd-Paper-Conference.pdf">Cui 等 2022</a> 的回归与 PSD 投影思路去除这一输入核，然后分别报告每个长度与三个种子。此补充方案在查看核心 CKA 与输入基线后、计算新调整结果前保存，采用已中心化的核；不声称复现论文全部预处理，也不声称排除了所有输入混淆。</p>
-<p>共同答案条件下，任务前输入调整 Δ 的逐长度均值为 {adj['mean']:.4f}，正值 {adj['positive']}/{adj['count']}；详见 <a href="../specialist_input_adjustment/per_source_contrasts.csv">逐关系种子</a>、<a href="../specialist_input_adjustment/per_length_scores.csv">逐长度原值</a>、<a href="../specialist_input_adjustment/protocol.json">补充协议</a>。</p>
-{table(length_comparison,[('branch','位置'),('method','答案匹配后的统计方式'),('trained','训练 Δ 均值'),('matched','同种子初始化 Δ'),('independent','独立初始化 Δ'),('increment','训练相对同种子初始化增量'),('positive','增量正值')])}
-<img src="per_length_input_adjustment.png"><p><a href="per_length_input_adjustment.pdf">逐长度对照 PDF 图</a></p>
-<p><strong>逐长度的普通 CKA 与输入调整 CKA 都只有 6/24 高于初始化。</strong>这六个单元恰好是下降数—逆下降数和超越数—不足数两条取逆关系的三个种子；六条补排列关系则都低于初始化。独立初始化对照给出同样的 6/24。变化主要来自按长度分别计算再平均，而不是核回归本身：先减去长度均值、再把所有长度汇总为一项 CKA，并不等于对每个长度的 CKA 求平均。因此不能只报告混合长度的 23/24，再概括成普遍训练收益。取逆关系值得继续追踪，但仍需同一变换下的无关任务对照和更完整的输出控制来证明任务关系特异性。</p>
-<h2>冻结源模型的组合约束消融</h2>
-<p>另用三个已指定的新源种子 8111/9127/10141，冻结同一模型与原数值读出。拟合仅使用 e↔C 与 e↔I 已知边；超参数仅按可见状态验证误差选择，400 次固定更新。新碰撞测试含 1,344 对；每对三个已知答案相同，CI/ICI 隐藏答案不同。算子施加范数约束、仿射往返约束或两者联合；同时报告原始算子和同预算无约束重拟合，避免把额外优化预算误判为约束收益。借鉴 <a href="https://proceedings.mlr.press/v119/azencot20a/azencot20a.pdf">Azencot 等 2020</a> 一致性思想，但这里直接约束 C/I 的自反关系，没有训练 Koopman 自编码器。</p>
-{table(ab_display,[('method','方法'),('ci','CI 准确率'),('ici','ICI 准确率'),('ci_both','CI 双正确'),('ici_both','ICI 双正确')])}
-<img src="constraint_ablation.png"><p>双正确指碰撞对的两个输入都正确；CI/ICI 是分别计分的两个计算路径，不是双正确的两个成员。50% 标线只适用于此碰撞选择下的确定性已知标量答案预测器，不是神经网络的信息上限。往返约束相对相同预算无约束重拟合仅有极小增量；范数与联合约束在这组固定选择规则下变差。结论限于提供已知结构约束后的组合泛化。</p>
-<p><a href="../frozen_operator_constraint_ablation/per_source_results.csv">所有种子 × 方法 × CI/ICI</a> · <a href="../frozen_operator_constraint_ablation/protocol.json">消融协议</a> · <a href="constraint_ablation.pdf">PDF 图</a></p>
-<h2>学习程度、证据边界与核验</h2>
-<p>原始源任务的学习程度不同，尤其 peaks 与 recoils 的长排列准确率偏低；本轮全部保留，没有按新结果筛选。各任务平均数是已提取变换条件与种子的描述汇总，并非平衡的同等学习程度对照。逐任务与条件准确率见 <a href="source_accuracy.csv">CSV</a>。</p>
-{table([{'task':r['task'],'mean':f"{100*r['mean']:.2f}%",'min':f"{100*r['min']:.2f}%",'max':f"{100*r['max']:.2f}%"} for r in task_accuracy],[('task','源任务'),('mean','平均数值准确率'),('min','最低条件'),('max','最高条件')])}
-<div class="note">本轮支持的具体结论是：正确数学变换能提高跨模型 CKA，但效应依赖关系类型、输入几何及长度汇总方式。两条取逆关系在逐长度、答案匹配与初始化控制下显示一致的训练增量；补排列的原始正信号不足以识别训练形成的结构。仍不能写成完整代数表示、输出独立机制，或稳定推断未见复合关系。所有结果均条件于这八条关系、三个种子、已有数据世界和指定分析方式。</div>
-<p>已按独立样本 Gram 公式核验 1,944 个核心 CKA 原值；原始前向抽查所有前缀层和数值输出；消融 30 个端点、全部 48 个候选可见验证分数及冻结读出单独复核。核验数量代表覆盖面，不是独立效应复现。<a href="verification.json">CKA 核验</a> · <a href="extraction_reference_check.json">原始前向对照</a> · <a href="../frozen_operator_constraint_ablation/verification.json">消融核验</a> · <a href="../specialist_input_adjustment/verification.json">输入调整核验</a> · <a href="summary.json">机器可读汇总</a> · <a href="protocol.json">核心协议</a> · <a href="completion.json">完成与哈希记录</a></p>
+<h1>Return to original cross-model  CKA: new tests and answer controls</h1>
+<p><strong>original  CKA The phenomenon replicates, but initialization/per-length controls expose important boundaries.</strong>Eight relationships, three seeds, 48  existing specialists; no source retraining. Pooled-length correct-transform advantages are  24/24  positive, including after answer matching; per-length computation leaves only  6/24  answer-matched trained cells exceeding initialization, all from the two inversion relationships. The six complement relationships align more strongly even in random networks, precluding a general training-learned-relationship interpretation.</p>
+<p>The main quantity is  ΔCKA = CKA(correct transformation) − CKA(original wrong transformation). Original wrong comparators remain: complement for inversion relationships, inversion for complement relationships; untransformed inputs are separate. Conditions and weights are identical except mathematical alignment.</p>
+<p>Core comparison rules were saved at  {protocol['registered_utc']} , before new data, representations, and  CKA. New  2,688  test anchors plus  672 FIT  and  336  validation anchors. The original  1,600  ten-thousand parent inputs were scanned; all eight orbit states of candidates exclude the original data and earlier local inputs. After initial registration but before any selection/inference, the reader was corrected for compact  JSON  format; the failed registration is retained and the protocol was saved again.</p>
+<h2>For every relationship and all seeds/</h2>
+<p>joint strata use length, untransformed left answer, and the three right-side  e/C/I  answers. Retain strata with at least three anchors and subtract means within each branch/stratum; all conditions share retained rows. Deterministic gold encodings become constant within strata, so conditional  CKA undefined. The last column separately adds mean per-length input adjustment and cannot be subtracted directly from  pooled CKA  as the same statistic.</p>
+{table(relation_display,[('name','Relationship'),('anchors','Matched anchors'),('raw','original  ONE_END Δ Mean'),('seeds','Pooled-length answer-matched Δ:17 / 42 / 101'),('increment','Pooled-length increment over initialization'),('output','Matched output Δ Mean'),('adjust','Per-length input-adjusted Δ'),('adjust_increment','Per-length adjusted increment over initialization')])}
+<img src="answer_matched_cka.png"><p><a href="answer_matched_cka.pdf">Download PDF Figure</a> · <a href="per_relation_seed_summary.csv">Per relationship × seed/ CSV</a> · <a href="contrasts.csv">All branches and control comparisons</a> · <a href="scores.csv">Three transformations'  CKA original value</a></p>
+{table(seed_display,[('relation','Relationship'),('seed','seed/'),('prefix_raw','ONE_END original  Δ'),('prefix_length','Length-centered Δ'),('prefix_answer','Answer-matched Δ'),('query_answer','Query-matched Δ'),('output_answer','Output-matched Δ'),('init','Same-seed initial matched Δ')])}
+<h2>Where is the signal?</h2>
+{table(global_display,[('branch','Branch'),('control','Control'),('mean','Δ Mean'),('positive','Positive cells')])}
+<p>After answer matching, pooled-length pre-task representations have mean  Δ  is  {summary['controls']['prefix_final_norm']['answer_strata']['trained']['mean']:.4f}, with  23/24  exceeding same-seed initialization; independent-seed initials also give  23/24. The trained model's  24/24  conditional comparisons all exceed the prescribed  32  within-group shuffles. Shuffling preserves gold labels/strata but disrupts input correspondence. The signal is not pure deterministic gold encoding, yet learned relation structure and natural input geometry remain indistinguishable. Per-length controls below change the initialization conclusion. These cells share tasks, inputs, and seeds, rather than  24  independent trials.</p>
+<p>Gold answers and model-output distributions alone reproduce large raw correct-transform advantages. Thus raw  CKA  cannot establish an internal algebraic mechanism. Conditional output geometry may retain confidence/other information; hidden  Δ  exceeding output  Δ  does not establish output independence. Fixed  FIT-only confidence regression is supplementary, not a causal mediation decomposition. Raw and matched analyses differ in sample support/centering, so their decrease does not quantify the fraction explained by answers.</p>
+<h2>Input-structure controls and supplementary deconfounding</h2>
+<p>Input-encoding baselines show  CKA  encoding sensitivity: length-centered numeric-position inputs for complement give  CKA=1, while permutation-matrix inputs for inversion give  CKA=1. This motivates initialization/within-group shuffling controls. Full input baselines:  <a href="input_baselines.csv">CSV</a>.</p>
+<p>A linear positional permutation-matrix input kernel is also used per length. Its input  Gram  in  e/C/I  is identical across conditions, including after joint-answer centering. Following  <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/79cbf4f96c2bcc67267421154da689dd-Paper-Conference.pdf">Cui  et al. 2022</a>  regression and  PSD projection, this kernel is removed and every length/seed reported. The supplement was saved after core  CKA /input baselines but before adjusted scores, using centered kernels. It neither reproduces every preprocessing step of that paper nor excludes all input confounds.</p>
+<p>Under joint-answer control, pre-task input-adjusted  Δ  has per-length mean  {adj['mean']:.4f}, positive  {adj['positive']}/{adj['count']}; see  <a href="../specialist_input_adjustment/per_source_contrasts.csv">Per-relationship/seed</a>, <a href="../specialist_input_adjustment/per_length_scores.csv">Per-length raw values</a>, <a href="../specialist_input_adjustment/protocol.json">Supplementary protocol</a>.</p>
+{table(length_comparison,[('branch','Position'),('method','Statistics after answer matching'),('trained','training Δ Mean'),('matched','Same-seed initialization Δ'),('independent','Independent initialization Δ'),('increment','Trained increment over same-seed initialization'),('positive','Positive increments')])}
+<img src="per_length_input_adjustment.png"><p><a href="per_length_input_adjustment.pdf">Per-length controls PDF Figure</a></p>
+<p><strong>Per-length ordinary  CKA  and input-adjusted  CKA  both have only  6/24  exceeding initialization.</strong>These six cells are exactly the three seeds of descents--inverse descents and exceedances--deficiencies; all six complement relationships are below initialization. Independent initials yield the same  6/24. Most change comes from computing per length then averaging, not kernel regression: pooled  CKA after subtracting length means differs from averaging each length's  CKA . Therefore pooled-length  23/24 alone does not imply general training gains. Inversion is worth pursuing, but fixed-transform other-task comparisons and fuller output controls are needed for relationship specificity.</p>
+<h2>Frozen-source composition-constraint ablation</h2>
+<p>Three additional prespecified source seeds  8111/9127/10141 freeze the same source model/original numeric readout. Fitting uses only  e↔C  and  e↔I  known edges; hyperparameters depend only on visible-state validation error, with 400  fixed updates. New collision tests contain  1,344  pairs with identical three known answers and different CI/ICI  hidden answers. Operators receive norm constraints, affine round-trip constraints, or both. Original operators and equal-budget unconstrained refits are retained to separate constraints from extra optimization. Inspired by  <a href="https://proceedings.mlr.press/v119/azencot20a/azencot20a.pdf">Azencot  et al. 2020</a>  consistency, directly constrain the  C/I  involution relationships without training a  Koopman  autoencoder.</p>
+{table(ab_display,[('method','Method'),('ci','CI Accuracy'),('ici','ICI Accuracy'),('ci_both','CI Both correct'),('ici_both','ICI Both correct')])}
+<img src="constraint_ablation.png"><p>Both-correct means both inputs in a collision pair are correct; CI/ICI  are separate computational paths, not the two pair members.50%  reference applies only to deterministic predictors of the known scalar answers under this collision selection, not a neural-information bound. Round-trip constraints give only a tiny increment over equal-budget unconstrained refits; norm/combined constraints perform worse under the fixed selection rule. Conclusions apply only to composition generalization with supplied known constraints.</p>
+<p><a href="../frozen_operator_constraint_ablation/per_source_results.csv">All seeds × Method × CI/ICI</a> · <a href="../frozen_operator_constraint_ablation/protocol.json">Ablation protocol</a> · <a href="constraint_ablation.pdf">PDF Figure</a></p>
+<h2>Proficiency, evidence limits, and verification</h2>
+<p>Source-task proficiency varies, especially low long-permutation accuracy for  peaks  and  recoils ; all are retained without result-based selection. Task means describe extracted transformation/seed conditions, not proficiency-matched balanced controls. Per-task/condition accuracies:  <a href="source_accuracy.csv">CSV</a>.</p>
+{table([{'task':r['task'],'mean':f"{100*r['mean']:.2f}%",'min':f"{100*r['min']:.2f}%",'max':f"{100*r['max']:.2f}%"} for r in task_accuracy],[('task','Source task'),('mean','Mean numeric accuracy'),('min','Minimum condition'),('max','Maximum condition')])}
+<div class="note">Supported conclusion: correct mathematical transforms can increase cross-model  CKA, depending on relation family, input geometry, and length aggregation. Both inversion relationships show consistent per-length, answer-matched, initialization-relative increments; complement raw positives do not identify training-formed structure. This establishes neither full algebraic representations, output-independent mechanisms, nor stable unseen-composition inference. All results are conditional on these eight relationships, three seeds, existing data world, and specified analyses.</div>
+<p>Independent sample  Gram  formulas verify  1,944  core  CKA  values; raw-forward spot checks cover all prefix layers/numeric outputs; separately checked ablation  30  endpoints, all  48  candidate visible-validation scores, and frozen readouts. Check counts describe coverage, not independent effect replication.<a href="verification.json">CKA Verification</a> · <a href="extraction_reference_check.json">Raw-forward comparison</a> · <a href="../frozen_operator_constraint_ablation/verification.json">Ablation verification</a> · <a href="../specialist_input_adjustment/verification.json">Input-adjustment verification</a> · <a href="summary.json">Machine-readable summary</a> · <a href="protocol.json">Core protocol</a> · <a href="completion.json">Completion and hash records</a></p>
 </html>'''
     (ROOT/'report.html').write_text(report)
     print(json.dumps({'report':str(ROOT/'report.html'),'primary_answer_matched':summary['controls']['prefix_final_norm']['answer_strata']['trained'],

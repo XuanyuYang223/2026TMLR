@@ -1,78 +1,78 @@
-PermWorld 多层诊断：最终只读方法与表述审查
-日期：2026-10-10（America/Los_Angeles）
+PermWorld multilayer diagnostics: final read-only methods and wording review
+Date: 2026-10-10 (America/Los_Angeles)
 
-范围
-本审查核对协议、冻结文件、历史冻结兼容清单、提取审计、缓存元数据、
-数组头信息与源代码。未阅读计算中的逐关系指标数值来选择实验条件，
-未修改冻结的指标、摘要或提取代码，未运行训练或 GPU 计算。
+Scope
+This review checks the protocol, frozen files, historical-freeze compatibility manifest, extraction audits, cache metadata,
+array headers, and source code. It did not inspect relation-level metrics being computed to select experimental conditions,
+modify frozen metrics, summary code, or extraction code, or run training or GPU computation.
 
-审查结论
-没有发现阻断当前既有检查点诊断的数学、配对索引或覆盖问题。
-当前协议哈希及全部 15 项冻结文件哈希匹配。来源为 82 个不同检查点、
-164 个初始化/训练条件、62 个关系模型对。82 个模型分别来自原单性质
-48 个、native 单任务 20 个、六小时单任务 14 个；62 对分别为 42/10/10。
-62 对覆盖 18 条可用关系；各关系的可用源数不同，不能将其视为等量重复。
+Review conclusion
+No mathematical, pairing-index, or coverage problem was found that blocks the current diagnostic of existing checkpoints.
+The current protocol hash and all 15 frozen-file hashes match. Sources comprise 82 distinct checkpoints,
+164 initialization/trained conditions, and 62 relation/model pairs. The 82 models comprise original single-property
+48, native single-task 20, and six-hour single-task 14; the 62 pairs comprise 42/10/10, respectively.
+The 62 pairs cover 18 available relations; available source counts differ across relations, so they are not equal numbers of replicates.
 
-预计原始表共有 187,488 行，其来源为：
-  新增：62 对 × 21 长度 ×（9 个新隐藏分支 + 2 个输入基线
-         + 2 个结构常量分支）× 2 个控制 × 4 个指标 = 135,408 行；
-  复用：62 对 × 21 长度 × 5 个旧分支 × 2 个控制 × 4 个指标 = 52,080 行。
-这些是分析单元，包含未定义值和静态基线；不是独立统计重复。
-最终表的实际行数、唯一完整单元覆盖及旧主指标逐项复用仍需终局核验。
+The expected raw table has 187,488 rows, derived as follows:
+  New: 62 pairs × 21 lengths × (9 new hidden branches + 2 input baselines
+         + 2 structural-constant branches) × 2 controls × 4 metrics = 135,408 rows;
+  Reused: 62 pairs × 21 lengths × 5 historical branches × 2 controls × 4 metrics = 52,080 rows.
+These are analysis cells, including undefined values and static baselines, not independent statistical replicates.
+The final table's actual row count, unique complete-cell coverage, and itemwise reuse of historical primary metrics still require final verification.
 
-初始化与世界身份
-全部 164 条提取记录仍标记 C：按历史构造程序重建，原始 step-0 权重
-身份未验证。original_initial_identity_verified 均为 false，source_updates
-均为 0。缓存中的参数摘要与继承激活档元数据相同，但这只能验证本次
-重建/加载的一致性，不能验证训练时真正的初始权重身份。
+Initialization and world identity
+All 164 extraction records remain grade C: reconstructed with the historical construction procedure; the original step-0 weight
+identity is unverified. original_initial_identity_verified is false throughout, and source_updates
+is 0 throughout. Parameter digests in the cache match inherited activation-archive metadata, but this only verifies
+consistency of this reconstruction/loading, not the identity of the actual initialization used for training.
 
-82 个历史检查点不是 82 个独立数据世界。本诊断共享同一固定评价输入
-世界，各训练 cohort 按自己的历史来源分开解释。不同性质/关系可以
-共享源模型和数学轨道；82 个重建初始化条件只有 10 种不同参数摘要。
-这 10 种摘要也不增加独立训练世界数量。
+The 82 historical checkpoints are not 82 independent data worlds. This diagnostic shares one fixed evaluation-input
+world, and each training cohort is interpreted according to its own historical provenance. Different properties/relations can
+share source models and mathematical orbits; the 82 reconstructed initialization conditions have only 10 distinct parameter digests.
+These 10 digests do not increase the number of independent training worlds either.
 
-必须修正的展示文字
-冻结摘要模板中的“源间标准差只反映共享世界中的初始化差异”过于精确。
-推荐正式表述为：
-  源间离散程度描述固定任务及共享评价世界内的训练种子变异，可能同时
-  包含初始化、dropout、batch/数据顺序以及其他优化随机性。该设计不能
-  将这些来源精确拆开，也不能据此获得独立新数据世界的置信区间。
-正文若使用“初始化差异”，应采用上述限定；不能声称只有初始化在变化。
-本修正仅涉及展示与解释，不修改已冻结的指标数值或分析口径。
+Display wording that must be corrected
+The frozen summary template's statement “the between-source standard deviation reflects only initialization differences within the shared world” is overly precise.
+Recommended formal wording:
+  Between-source dispersion describes training-seed variability within fixed tasks and the shared evaluation world, potentially
+  including initialization, dropout, batch/data order, and other optimization randomness. This design cannot
+  precisely separate those sources or produce confidence intervals for independent new data worlds.
+If the body uses “initialization differences,” it must include the qualification above; it cannot claim that only initialization changes.
+This correction concerns presentation and interpretation only; it does not change frozen numerical metrics or analysis definitions.
 
-提取与历史兼容性
-末 token 为 2*n+3，逻辑前缀长度为 2*n+4；数值 token 位置为
-4,6,...,2*n+2，共 n 个。每个 block 使用原始残差流；final_norm 独立。
-左侧恒等与右侧 identity/correct/wrong 顺序、每长度的固定 fit/test 划分
-和四标签联合答案分层保持原协议。初始化与训练使用共同筛选的样本。
+Extraction and historical compatibility
+The last token is at 2*n+3, and the logical prefix length is 2*n+4; numeric-token positions are
+4,6,...,2*n+2, totaling n. Each block uses the original residual stream; final_norm is separate.
+The left identity and right identity/correct/wrong order, fixed per-length fit/test split,
+and four-label joint answer stratification retain the original protocol. Initialization and training use jointly filtered samples.
 
-164 个缓存的元数据、数组头、embedding SHA256 和参数摘要覆盖已核对；
-数组均为 [10,5376,4,256] float32，合计 36,112,978,432 字节。
-其中 109 个缓存来自兼容的历史冻结，55 个来自当前冻结。
-历史冻结文件、对应的提取代码副本及兼容摘要相互匹配。
-历史与当前冻结清单共有源文件仅 run.py 改变；指标、关系及输入保持不变。
+Metadata, array headers, embedding SHA256, and parameter-digest coverage were checked for all 164 caches;
+all arrays are [10,5376,4,256] float32, totaling 36,112,978,432 bytes.
+Of these, 109 caches come from compatible historical freezes and 55 from the current freeze.
+Historical frozen files, their extraction-code copies, and compatibility digests match one another.
+Among source files shared by the historical and current freeze manifests, only run.py changed; metrics, relations, and inputs are unchanged.
 
-唯一 legacy suffix 回退是 six_hour_session_single fixed_points seed17
-的训练条件。prefix-only 对历史激活的最大误差为 3.7640333e-5；改为与
-原协议相同的因果 suffix 后误差为 0。仍使用原来的 2e-5 门槛，没有
-放宽门槛。全部最终缓存的最大历史比较误差为 1.8000603e-5。
-回退由激活一致性触发、在新几何指标计算前完成，没有按效应方向选择。
-所有报告状态仍位于任务提示之前；该 suffix 仅用于复现浮点执行形状。
+The only legacy suffix fallback is the trained condition for six_hour_session_single fixed_points seed17.
+The maximum prefix-only error versus historical activations was 3.7640333e-5; switching to
+the same causal suffix as the original protocol reduced the error to 0. The original 2e-5 threshold was retained,
+without relaxation. The maximum historical-comparison error across all final caches is 1.8000603e-5.
+Fallback was triggered by activation consistency and completed before the new geometry metrics were computed, not selected by effect direction.
+All reported states remain before the task prompt; this suffix is used only to reproduce floating-point execution shapes.
 
-输入基线与解释限制
-embedding 末 token 与无序数值 embedding 均值在同长度下为结构常量，
-必须标记未定义，不能将浮点求和噪声当作信号。
-位置 onehot 等同于排列矩阵展平：补值、反序、取逆分别是列置换、行
-置换和转置，都是正交坐标操作。静态 onehot 对这些变换的 Gram 不变是
-构造性质，不能区分正确/错误数学关系，也不能据其 Bt=0 断言编码无贡献。
-真实 embedding 输入基线与静态 onehot 必须分别解释。
+Input baselines and interpretive limitations
+The embedding at the final token and the unordered mean of numeric-token embeddings are structural constants within a length,
+and must be marked undefined; floating-point summation noise must not be treated as a signal.
+Positional one-hot features are equivalent to a flattened permutation matrix: complementation, reversal, and inversion are respectively column permutation, row
+permutation, and transposition, all orthogonal coordinate operations. Invariance of the static one-hot Gram matrix under these transforms is
+a construction property; it cannot distinguish correct/wrong mathematical relations, and its Bt=0 cannot establish that encoding contributes nothing.
+Genuine embedding input baselines and static one-hot baselines must be interpreted separately.
 
-within-length onehot KNN 使用整数 Gram 的精确欧氏距离及固定样本 ID
-平局规则，避免中心化浮点残差打破大量真平局。隐藏状态指标保持原实现；
-输入/隐藏 KNN 的数值差异不单独证明某种数学机制。
+Within-length one-hot KNN uses exact Euclidean distances from integer Gram matrices and fixed sample-ID
+tie-breaking, avoiding centered floating-point residuals that break numerous genuine ties. Hidden-state metrics retain the original implementation;
+input/hidden KNN numerical differences alone do not establish a mathematical mechanism.
 
-报告应继续拆分 B0、Bt、delta_correct、delta_wrong 和 Delta。正 Delta
-可能来自错误配对下降；负 Delta 不等于没有学习。答案分层不移除全部
-输出、置信度或预测误差信息；隐藏 Delta 减输出 Delta 不是机制分解。
-本轮为固定历史检查点的探索性诊断，不是新的确认实验。CKA、邻域重叠
-和留出 Procrustes 都不能单独识别代数机制或因果功能。
+Reports should continue to separate B0, Bt, delta_correct, delta_wrong, and Delta. Positive Delta
+can result from a decline in wrong-pair scores; negative Delta does not mean no learning. Answer stratification does not remove all
+output, confidence, or prediction-error information; hidden Delta minus output Delta is not a mechanism decomposition.
+This round is an exploratory diagnostic of fixed historical checkpoints, not a new confirmation experiment. CKA, neighborhood overlap,
+and held-out Procrustes alone cannot identify algebraic mechanisms or causal function.

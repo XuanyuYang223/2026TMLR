@@ -4,6 +4,8 @@ Do exact mathematical correspondences accompany geometric pairing preferences in
 
 This branch contains the **PermWorld / GraphWorld / MatrixGroupWorld representation study**. It retains exploratory, negative, weak-learning, and undefined results. Geometry alone does not establish a mathematics-specific mechanism or functional benefit.
 
+The current working tree uses English throughout. The [English-edition record](docs/english_localization/README.txt) explains translated reports and source text, preserved historical hashes, and the separate current-file checksum inventory. Original-language revisions and already published artifact archives are preserved rather than rewritten.
+
 ## Scope and current results
 
 | Study | Fixed scope | Saved primary ordinary-CKA readout |
@@ -46,10 +48,10 @@ GL inputs add finite-field linear mixing. Transpose is an anti-automorphism; lef
 - [PermWorld eight-relation report](diagnostics/permworld_eight_relations_20261010/report.html), [combined Perm/Graph reader](diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html), and [32 primary cells](diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv).
 - [GraphWorld report](diagnostics/graphworld_pilot_20261010/report.html), [frozen protocol](diagnostics/graphworld_pilot_20261010/protocol.json), and [full geometry](diagnostics/graphworld_pilot_20261010/geometry_summary.csv).
 - [Fixed-transform review](diagnostics/representation_pairing_review_20261011/reader_report.html), [protocol](diagnostics/representation_pairing_review_20261011/protocol.json), candidate tables and wrong-formula preservation diagnostics.
-- [MatrixGroupWorld report](diagnostics/matrixgroupworld_20261011/report.html), [short bilingual results](diagnostics/matrixgroupworld_20261011/report.txt), [protocol](diagnostics/matrixgroupworld_20261011/protocol.json), [full geometry](diagnostics/matrixgroupworld_20261011/geometry_summary.csv), [source learning](diagnostics/matrixgroupworld_20261011/source_learning.csv), [original numerical verification](diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json), and [failure diagnosis](diagnostics/matrixgroupworld_20261011/knn_failure_diagnostic.txt).
+- [MatrixGroupWorld report](diagnostics/matrixgroupworld_20261011/report.html), [short results](diagnostics/matrixgroupworld_20261011/report.txt), [protocol](diagnostics/matrixgroupworld_20261011/protocol.json), [full geometry](diagnostics/matrixgroupworld_20261011/geometry_summary.csv), [source learning](diagnostics/matrixgroupworld_20261011/source_learning.csv), [original numerical verification](diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json), and [failure diagnosis](diagnostics/matrixgroupworld_20261011/knn_failure_diagnostic.txt).
 - Directly supporting older initialization, layer, encoding and learnability diagnostics remain under `diagnostics/`; the curation inventory records why each retained source/record belongs here.
 
-Frozen scientific sources, tables, protocols, reports and failure records retain their original bytes. Publication metadata and portable wrappers are separate; original absolute paths remain provenance and are mapped explicitly rather than silently edited.
+Original frozen scientific sources, protocols, reports and failure records are preserved in the recorded Git revisions and published archives. The current English edition translates prose, display labels and their source templates, while preserving numerical results, formulas, model parameters and recorded scientific failure states. Historical hashes still identify the original bytes; they are not silently rebound to translated files. Original absolute paths remain provenance and are mapped explicitly.
 
 ## Minimal reproduction: no training or model forward
 

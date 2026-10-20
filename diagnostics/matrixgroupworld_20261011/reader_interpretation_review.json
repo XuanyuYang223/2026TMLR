@@ -641,8 +641,8 @@
       "check": "ordinary_CKA_qualification_present_in_both_language_direction_paragraphs",
       "passed": true,
       "details": [
-        "Bt方向：三指标一致 5/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。",
-        "Delta方向：三指标一致 6/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。",
+        "Bt directions agree across the three metrics in 5/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.",
+        "Delta directions agree across the three metrics in 6/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.",
         "Bt directions agree across the three metrics in 5/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.",
         "Delta directions agree across the three metrics in 6/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement."
       ]
@@ -1105,8 +1105,8 @@
     "report_display": "Exact expected formatted strings; no numerical tolerance relaxed."
   },
   "reviewed_direction_paragraphs": [
-    "Bt方向：三指标一致 5/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。",
-    "Delta方向：三指标一致 6/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。",
+    "Bt directions agree across the three metrics in 5/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.",
+    "Delta directions agree across the three metrics in 6/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.",
     "Bt directions agree across the three metrics in 5/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.",
     "Delta directions agree across the three metrics in 6/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement."
   ],

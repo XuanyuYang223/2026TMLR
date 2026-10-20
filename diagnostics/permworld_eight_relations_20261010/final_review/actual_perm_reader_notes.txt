@@ -1,26 +1,26 @@
-PermWorld真实全表独立审读笔记
-状态：仅PermWorld已完成；Graph尚未纳入本笔记。
-本轮只读取既有CSV/JSON/报告，不读取数组、不构造模型、不训练、不计算新相似性或统计显著性。
-32条件、16编码组、64源、8关系共享一个世界和指定初始化；所有计数是耦合描述单元，不是独立重复。
-S原值不等于raw控制；顺序为六S→Bt→B0/dc/dw/Delta；正Delta不要求正确S上升。
+Independent reading notes on the actual complete PermWorld tables
+Status: only PermWorld is complete; Graph is not included in these notes yet.
+This round reads existing CSV/JSON/reports only, without arrays, model construction, training, new similarities, or statistical significance calculations.
+32 conditions,16 encoding groups,64 sources,and8 relations share one world and specified initialization; all counts are dependent descriptive units, not independent repetitions.
+Original S is not the raw control; read six S values→Bt→B0/dc/dw/Delta. Positive Delta does not require increased correct S.
 
-1. 主答案分层final普通CKA：六个S原值完整保存后，Bt26正/6负；B0与编码、变换类型的方向强绑定；Delta18正/14负。数字是耦合描述格计数，非32个独立重复。
-2. 16编码组中Gamma0全部伴随B0方向翻转；Delta14组翻转、Bt6组翻转：5组两者翻转、9组只有Delta翻转、1组只有Bt翻转、1组均不翻转。只有Delta翻转不可写成训练后关系偏好翻转。
-3. 18正Delta中16格的错误配对下降量大于正确配对的正上升量（比较-dw与max(dc,0)）；这是一种分量描述，不是相似性来源或因果机制分解。
-4. 答案控制三指标Bt方向32/32一致；Delta30/32一致。两处Delta分歧是GRU一行的峰谷/连续段：k10小负、CKA和Procrustes正。raw三指标Bt31/32、Delta24/32一致；raw普通CKA Delta25正，而答案控制18正。
-5. ordinary与U-centered在final普通CKA对应Bt/Delta的32格方向完全一致；这不表示正确/错误各自变化或所有层都不敏感。
-6. 主普通CKA的18个正Delta格在所有21长度均正；14负Delta格中13格所有长度负，GRU一行LIS/LDS有3长度正、18长度负。Bt方向24/32格跨长度同向，8格混合；不能用整体均值掩盖长度例外。
-7. 层的训练后Bt正格从第一层18/32增至第四层/规范化26/32，但层Delta还受B0明显影响。TF一行下降/逆下降block1到2：B0 -0.064780→-0.595885，Bt 0.093002→0.104759，Delta0.157781→0.700644；Delta跃升主要不能描述为Bt大幅提高。
-8. GRU一行两条取逆关系在早层Bt负、末层Bt正，而各层Delta始终正：下降/逆下降layer1 Bt-0.299907、Delta+0.476784，final Bt+0.067502、Delta+0.684425；超越/亏缺layer1 Bt-0.396773、Delta+0.385510，final Bt+0.045478、Delta+0.668512。
-9. 规范轮换的旧四任务较弱，但不能概括全部16任务：GRU轮换超越数、亏缺数均100%分析准确率，固定点100%，组件99.991%；相关取逆Delta仍翻转而Bt正；编码影响不只发生于旧弱任务。尚不能据此识别编码因果机制或同等掌握的等价性。
-10. 64源均完整保留。16源/配置中TF轮换2个、GRU轮换1个不高于训练长度众数，其余组全部高于；高于众数不是充分学习。反不动点、LIS/LDS和轮换连续段仍有明显学习程度差异。
-11. 同任务跨配置32配对：raw普通CKA变化23正/9负，答案控制9正/23负；Ucenter答案控制10正/22负。不同答案key和共同输入影响使其不能解释为共享算法；下降数一行raw 0.256389→0.865657，而答案控制0.258252→0.200323。
-12. undefined分量1704条，其中embedding两CKA共1536条结构常量；输出Procrustes168条因预定rank/能量规则等留空。主隐藏final三指标全部完整定义。空白不是0，缺失不重加权。
-13. 输出概率保留相同方向强烈依赖编码的初始化/增量：答案控制输出Delta16正/16负、Bt29正/3负；不能用隐藏Delta减输出Delta计算额外数学机制。
-14. 所有真值答案分层静态基线未定义是去组均值后的结构常量，并不是基线没有数学关系。原onehot/scalar/输出定义与主隐藏state必须分别报告。
-15. Perm任务五阶段和读数已过，Graph仍由Root另行执行。本笔记不宣告Graph或全部科研scope完成，不训练、不算新度量、不作p值/显著/等价/因果普适判断。
+1. Primary answer-stratified final ordinary CKA: all six original S values are retained; Bt has 26 positive/6 negative cells. B0 direction is strongly associated with encoding and transformation type; Delta has 18 positive/14 negative cells. These are dependent descriptive cells, not 32 independent repetitions.
+2. All 16 encoding groups have B0 direction reversals accompanying Gamma0. Delta reverses in 14 groups and Bt in six: five reverse both, nine only Delta, one only Bt, and one neither. A Delta reversal alone is not a reversal of trained relation preference.
+3. In 16 of 18 positive-Delta cells, the fall in wrong-pair similarity exceeds the positive rise in correct-pair similarity (compare -dw with max(dc,0)). This is a component description, not decomposition of similarity sources or causal mechanisms.
+4. Under answer control, the three metrics agree on Bt direction in 32/32 cells and Delta in 30/32. The two Delta disagreements are one-line GRU peaks/valleys and runs: k10 is slightly negative while CKA and Procrustes are positive. Under raw controls, agreement is 31/32 for Bt and 24/32 for Delta. Raw ordinary CKA has 25 positive Delta cells, versus 18 after answer control.
+5. Ordinary and U-centered final CKA agree on Bt/Delta directions in all 32 cells; this does not mean correct/wrong component changes or all layers are insensitive.
+6. All 18 positive primary ordinary-CKA Delta cells are positive at all 21 lengths. Of 14 negative cells, 13 are negative at every length; one-line GRU LIS/LDS has three positive and 18 negative lengths. Bt is consistent across lengths in 24/32 cells and mixed in eight; aggregate means must not conceal length exceptions.
+7. Trained positive-Bt counts increase from 18/32 at layer 1 to 26/32 at layer 4/normalization, but layerwise Delta is also strongly affected by B0. One-line TF descents/inverse-descents block1 to 2: B0 -0.064780→-0.595885, Bt 0.093002→0.104759, Delta0.157781→0.700644. The Delta jump cannot primarily be described as a large Bt increase.
+8. For both inversion relations in one-line GRU, early-layer Bt is negative and final-layer Bt positive while Delta stays positive throughout: descents/inverse-descents layer1 Bt-0.299907, Delta+0.476784, final Bt+0.067502, Delta+0.684425; exceedances/deficiencies layer1 Bt-0.396773, Delta+0.385510, final Bt+0.045478, Delta+0.668512.
+9. The original four cycle-encoded tasks are weaker, but this does not characterize all 16 tasks. Cycle GRU exceedances/deficiencies both reach 100% analysis accuracy, fixed points 100%, and components 99.991%; the associated inversion Delta still reverses while Bt remains positive. Encoding effects are not confined to earlier weak tasks. This does not identify an encoding causal mechanism or equivalence at equal mastery.
+10. All 64 sources remain included. Among 16 sources per configuration, two cycle TF and one cycle GRU source do not exceed training-defined length modes; all sources in other groups do. Above-mode does not mean sufficient learning. Anti-fixed points, LIS/LDS, and cycle runs still show substantial mastery differences.
+11. Among 32 same-task cross-configuration pairs, raw ordinary CKA changes are 23 positive/9 negative, answer-controlled changes nine positive/23 negative, and U-centered answer-controlled changes ten positive/22 negative. Different answer keys and shared inputs preclude interpreting this as a shared algorithm. One-line descents raw CKA changes 0.256389→0.865657 while answer-controlled CKA changes 0.258252→0.200323.
+12. There are 1704 undefined components: 1536 structurally constant embedding components across two CKA versions and 168 output-Procrustes components blank under prespecified rank/energy rules. All three primary final-hidden metrics are fully defined. Blank is not zero, and missing components are not reweighted.
+13. Output probabilities retain strongly encoding-dependent initialization/increments: answer-controlled output Delta has 16 positive/16 negative cells and Bt29 positive/3 negative cells. Hidden Delta minus output Delta cannot calculate an additional mathematical mechanism.
+14. All answer-stratified static true-label baselines are undefined because of structural constancy after removing group means, not because the baselines have no mathematical relations. Original one-hot/scalar/output definitions and primary hidden states must be reported separately.
+15. The five Perm task phases and readouts have passed; Root is still executing Graph separately. These notes do not declare Graph or the whole scientific scope complete. No training, new metrics, p-values, significance, equivalence, or universal causal claims.
 
-完整主32格：答案分层final norm ordinary CKA（原字符串全精度）
+All32 primary cells: answer-stratified final-normalization ordinary CKA (full original string precision)
 relation	architecture	encoding	initial_correct	initial_wrong	initial_identity	trained_correct	trained_wrong	trained_identity	B0	Bt	dc	dw	di	Delta
 descent_inverse	transformer	one_line	0.06597382232124731	0.6708565095013566	1.0000000000000002	0.11911957159536814	0.02600177510874719	0.016583088811826425	-0.6048826871801093	0.09311779648662093	0.05314574927412082	-0.6448547343926093	-0.9834169111881738	0.6980004836667302
 descent_inverse	transformer	canonical_cycle	0.8115096058957701	0.026977145114173935	1.0000000000000004	0.046942685755582386	0.07898645319433023	0.11715418649772663	0.7845324607815962	-0.032043767438747844	-0.7645669201401878	0.0520093080801563	-0.8828458135022736	-0.816576228220344
@@ -71,7 +71,7 @@ decomposition_complement	gru	canonical_cycle	0.015363654769944073	0.808336003119
 
 {"branch": "output_prob", "control": "answer_strata", "metric": "debiased_cka", "coupled_conditions": 32, "B0_directions": {"-": 16, "+": 16}, "Bt_directions": {"-": 4, "+": 28}, "dc_directions": {"-": 21, "+": 11}, "dw_directions": {"-": 30, "+": 2}, "Delta_directions": {"+": 16, "-": 16}}
 
-完整16编码组及四固定控制/版本：Gamma=cycle-line，区分两种翻转
+All16 encoding groups and four fixed control/versions: Gamma=cycle-line, distinguishing both reversal types
 relation	architecture	control	metric	one_line_B0	cycle_B0	one_line_Bt	cycle_Bt	one_line_dc	cycle_dc	one_line_dw	cycle_dw	one_line_Delta	cycle_Delta	Gamma0	Gammat	Gammac	Gammaw	GammaDelta	Bt_flip	Delta_flip	Delta_flip_without_Bt_flip
 descent_inverse	transformer	raw_within_length	linear_cka	-0.6025743057209559	0.7844813182836671	0.6592747903492348	-0.03637101042663988	0.6464302121885029	-0.7564881360437778	-0.6154188838816879	0.06436419266652908	1.261849096070191	-0.8208523287103069	1.387055624004623	-0.6956458007758747	-1.402918348232281	0.6797830765482169	-2.082701424780498	yes	yes	False
 descent_inverse	gru	raw_within_length	linear_cka	-0.6185414936809623	0.800141320121863	0.26016077357917256	0.07392965984164228	0.22818476037810687	-0.707279773675801	-0.650517506882028	0.01893188660441977	0.8787022672601349	-0.7262116602802207	1.4186828138028253	-0.18623111373753026	-0.9354645340539078	0.6694493934864478	-1.6049139275403554	no	yes	True
@@ -138,13 +138,13 @@ record_complement	gru	answer_strata	debiased_cka	0.6379378293534993	-0.810120897
 decomposition_complement	transformer	answer_strata	debiased_cka	0.6310000921204817	-0.774969146130822	0.05185942628100635	-0.013068601700883984	-0.5967203467495473	0.011738878325843447	-0.017579680910071938	-0.7501616661040945	-0.5791406658394754	0.761900544429938	-1.4059692382513038	-0.06492802798189033	0.6084592250753907	-0.7325819851940226	1.3410412102694136	yes	yes	False
 decomposition_complement	gru	answer_strata	debiased_cka	0.6379450781158031	-0.80341873641591	0.4297975872047379	-0.1347367735620046	-0.20596310264705983	0.01852804961035537	0.0021843882640054293	-0.6501539132435501	-0.20814749091106524	0.6686819628539054	-1.4413638145317131	-0.5645343607667425	0.2244911522574152	-0.6523383015075556	0.8768294537649706	yes	yes	False
 
-编码翻转计数及完整组成员：
+Encoding-reversal counts and complete group members:
 {"control": "raw_within_length", "metric": "linear_cka", "coupled_groups": 16, "counts": {"both": 3, "Delta_only": 4, "neither": 7, "Bt_only": 2}, "members": {"both": [{"relation": "descent_inverse", "architecture": "transformer"}, {"relation": "fixed_complement", "architecture": "transformer"}, {"relation": "decomposition_complement", "architecture": "transformer"}], "Delta_only": [{"relation": "descent_inverse", "architecture": "gru"}, {"relation": "exceedance_inverse", "architecture": "transformer"}, {"relation": "subsequence_complement", "architecture": "transformer"}, {"relation": "decomposition_complement", "architecture": "gru"}], "neither": [{"relation": "peak_complement", "architecture": "transformer"}, {"relation": "peak_complement", "architecture": "gru"}, {"relation": "exceedance_inverse", "architecture": "gru"}, {"relation": "subsequence_complement", "architecture": "gru"}, {"relation": "run_complement", "architecture": "transformer"}, {"relation": "record_complement", "architecture": "transformer"}, {"relation": "record_complement", "architecture": "gru"}], "Bt_only": [{"relation": "fixed_complement", "architecture": "gru"}, {"relation": "run_complement", "architecture": "gru"}]}}
 {"control": "raw_within_length", "metric": "debiased_cka", "coupled_groups": 16, "counts": {"both": 3, "Delta_only": 4, "neither": 7, "Bt_only": 2}, "members": {"both": [{"relation": "descent_inverse", "architecture": "transformer"}, {"relation": "fixed_complement", "architecture": "transformer"}, {"relation": "decomposition_complement", "architecture": "transformer"}], "Delta_only": [{"relation": "descent_inverse", "architecture": "gru"}, {"relation": "exceedance_inverse", "architecture": "transformer"}, {"relation": "subsequence_complement", "architecture": "transformer"}, {"relation": "decomposition_complement", "architecture": "gru"}], "neither": [{"relation": "peak_complement", "architecture": "transformer"}, {"relation": "peak_complement", "architecture": "gru"}, {"relation": "exceedance_inverse", "architecture": "gru"}, {"relation": "subsequence_complement", "architecture": "gru"}, {"relation": "run_complement", "architecture": "transformer"}, {"relation": "record_complement", "architecture": "transformer"}, {"relation": "record_complement", "architecture": "gru"}], "Bt_only": [{"relation": "fixed_complement", "architecture": "gru"}, {"relation": "run_complement", "architecture": "gru"}]}}
 {"control": "answer_strata", "metric": "linear_cka", "coupled_groups": 16, "counts": {"both": 5, "Delta_only": 9, "neither": 1, "Bt_only": 1}, "members": {"both": [{"relation": "descent_inverse", "architecture": "transformer"}, {"relation": "fixed_complement", "architecture": "transformer"}, {"relation": "fixed_complement", "architecture": "gru"}, {"relation": "decomposition_complement", "architecture": "transformer"}, {"relation": "decomposition_complement", "architecture": "gru"}], "Delta_only": [{"relation": "descent_inverse", "architecture": "gru"}, {"relation": "peak_complement", "architecture": "transformer"}, {"relation": "exceedance_inverse", "architecture": "transformer"}, {"relation": "exceedance_inverse", "architecture": "gru"}, {"relation": "subsequence_complement", "architecture": "transformer"}, {"relation": "subsequence_complement", "architecture": "gru"}, {"relation": "run_complement", "architecture": "transformer"}, {"relation": "record_complement", "architecture": "transformer"}, {"relation": "record_complement", "architecture": "gru"}], "neither": [{"relation": "peak_complement", "architecture": "gru"}], "Bt_only": [{"relation": "run_complement", "architecture": "gru"}]}}
 {"control": "answer_strata", "metric": "debiased_cka", "coupled_groups": 16, "counts": {"both": 5, "Delta_only": 9, "neither": 1, "Bt_only": 1}, "members": {"both": [{"relation": "descent_inverse", "architecture": "transformer"}, {"relation": "fixed_complement", "architecture": "transformer"}, {"relation": "fixed_complement", "architecture": "gru"}, {"relation": "decomposition_complement", "architecture": "transformer"}, {"relation": "decomposition_complement", "architecture": "gru"}], "Delta_only": [{"relation": "descent_inverse", "architecture": "gru"}, {"relation": "peak_complement", "architecture": "transformer"}, {"relation": "exceedance_inverse", "architecture": "transformer"}, {"relation": "exceedance_inverse", "architecture": "gru"}, {"relation": "subsequence_complement", "architecture": "transformer"}, {"relation": "subsequence_complement", "architecture": "gru"}, {"relation": "run_complement", "architecture": "transformer"}, {"relation": "record_complement", "architecture": "transformer"}, {"relation": "record_complement", "architecture": "gru"}], "neither": [{"relation": "peak_complement", "architecture": "gru"}], "Bt_only": [{"relation": "run_complement", "architecture": "gru"}]}}
 
-三指标全方向计数：
+Complete three-metric direction counts:
 {"control": "raw_within_length", "component": "B0", "coupled_conditions": 32, "three_metric_agreement_count": 32, "linear_cka": {"-": 16, "+": 16}, "knn_overlap": {"-": 16, "+": 16}, "procrustes": {"-": 16, "+": 16}}
 {"control": "raw_within_length", "component": "Bt", "coupled_conditions": 32, "three_metric_agreement_count": 31, "linear_cka": {"+": 27, "-": 5}, "knn_overlap": {"+": 26, "-": 6}, "procrustes": {"+": 27, "-": 5}}
 {"control": "raw_within_length", "component": "dc", "coupled_conditions": 32, "three_metric_agreement_count": 17, "linear_cka": {"+": 22, "-": 10}, "knn_overlap": {"+": 12, "-": 20}, "procrustes": {"+": 26, "-": 6}}
@@ -156,7 +156,7 @@ decomposition_complement	gru	answer_strata	debiased_cka	0.6379450781158031	-0.80
 {"control": "answer_strata", "component": "dw", "coupled_conditions": 32, "three_metric_agreement_count": 26, "linear_cka": {"-": 29, "+": 3}, "knn_overlap": {"-": 26, "+": 6}, "procrustes": {"-": 24, "+": 8}}
 {"control": "answer_strata", "component": "Delta", "coupled_conditions": 32, "three_metric_agreement_count": 30, "linear_cka": {"+": 18, "-": 14}, "knn_overlap": {"+": 16, "-": 16}, "procrustes": {"+": 18, "-": 14}}
 
-三指标所有分歧，保留component/三个数值：
+All three-metric disagreements, retaining component/all three values:
 {"relation": "decomposition_complement", "architecture": "gru", "encoding": "canonical_cycle", "control": "raw_within_length", "component": "Bt", "values": {"linear_cka": "0.40193616430052376", "knn_overlap": "-0.040438988095238104", "procrustes": "0.17242125950045525"}}
 {"relation": "peak_complement", "architecture": "transformer", "encoding": "one_line", "control": "raw_within_length", "component": "dc", "values": {"linear_cka": "-0.037569761280796504", "knn_overlap": "-0.20659412202380953", "procrustes": "0.12713596352250844"}}
 {"relation": "peak_complement", "architecture": "transformer", "encoding": "canonical_cycle", "control": "raw_within_length", "component": "dc", "values": {"linear_cka": "0.07514109966661638", "knn_overlap": "-0.0034412202380952376", "procrustes": "0.09943521658432906"}}
@@ -205,7 +205,7 @@ decomposition_complement	gru	answer_strata	debiased_cka	0.6379450781158031	-0.80
 {"relation": "peak_complement", "architecture": "gru", "encoding": "one_line", "control": "answer_strata", "component": "Delta", "values": {"linear_cka": "0.25735390516041623", "knn_overlap": "-0.008532170157172246", "procrustes": "0.4115538469888255"}}
 {"relation": "run_complement", "architecture": "gru", "encoding": "one_line", "control": "answer_strata", "component": "Delta", "values": {"linear_cka": "0.15606503849356798", "knn_overlap": "-0.009456059115733953", "procrustes": "0.3699376948269556"}}
 
-全部层位置计数（含U/raw，第一层等位置合并为32耦合格）：
+All layer-position counts (including U/raw; each position such as layer1 combines32 dependent cells):
 {"control": "raw_within_length", "metric": "linear_cka", "position": 1, "coupled_conditions": 32, "B0": {"-": 16, "+": 16}, "Bt": {"+": 18, "-": 14}, "Delta": {"+": 21, "-": 11}, "Bt_flip_vs_fourth": 9, "Delta_flip_vs_fourth": 8}
 {"control": "raw_within_length", "metric": "linear_cka", "position": 2, "coupled_conditions": 32, "B0": {"-": 16, "+": 16}, "Bt": {"+": 22, "-": 10}, "Delta": {"+": 19, "-": 13}, "Bt_flip_vs_fourth": 5, "Delta_flip_vs_fourth": 6}
 {"control": "raw_within_length", "metric": "linear_cka", "position": 3, "coupled_conditions": 32, "B0": {"-": 16, "+": 16}, "Bt": {"+": 26, "-": 6}, "Delta": {"+": 20, "-": 12}, "Bt_flip_vs_fourth": 1, "Delta_flip_vs_fourth": 7}
@@ -231,7 +231,7 @@ decomposition_complement	gru	answer_strata	debiased_cka	0.6379450781158031	-0.80
 {"control": "answer_strata", "metric": "debiased_cka", "position": "final_norm", "coupled_conditions": 32, "B0": {"-": 16, "+": 16}, "Bt": {"+": 26, "-": 6}, "Delta": {"+": 18, "-": 14}, "Bt_flip_vs_fourth": 0, "Delta_flip_vs_fourth": 0}
 {"control": "answer_strata", "metric": "debiased_cka", "position": "embedding", "coupled_conditions": 32, "B0": {"?": 32}, "Bt": {"?": 32}, "Delta": {"?": 32}, "Bt_flip_vs_fourth": 0, "Delta_flip_vs_fourth": 0}
 
-每关系/配置完整层序列：答案控制ordinary CKA，embedding未定义不填0
+Complete layer sequence per relation/configuration: answer-controlled ordinary CKA; undefined embeddings are not filled with0
 relation	architecture	encoding	layer	initial_correct	initial_wrong	initial_identity	trained_correct	trained_wrong	trained_identity	B0	Bt	dc	dw	di	Delta
 descent_inverse	transformer	one_line	block1	0.24583224766461834	0.31061198396035195	1.0	0.13737770966372734	0.04437596366285941	0.040483417678305184	-0.06477973629573357	0.09300174600086793	-0.10845453800089103	-0.2662360202974925	-0.9595165823216948	0.1577814822966015
 descent_inverse	transformer	one_line	block2	0.0903354672414094	0.6862201928688777	1.0	0.17462396989294454	0.06986448123288201	0.04407967318315141	-0.5958847256274683	0.10475948866006253	0.08428850265153513	-0.6163557116359957	-0.9559203268168487	0.7006442142875309
@@ -426,7 +426,7 @@ decomposition_complement	gru	canonical_cycle	layer4	0.015451365071326337	0.80685
 decomposition_complement	gru	canonical_cycle	final_norm	0.015363654769944073	0.8083360031198139	1.0000000000000002	0.03190825540470803	0.1629973648650423	0.16431000417407984	-0.7929723483498698	-0.13108910946033428	0.016544600634763956	-0.6453386382547717	-0.8356899958259202	0.6618832388895355
 decomposition_complement	gru	canonical_cycle	embedding	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan
 
-最终层长度方向全局计数：
+Overall final-layer length-direction counts:
 {"control": "raw_within_length", "metric": "linear_cka", "coupled_conditions": 32, "Bt_length_patterns": {"all_positive": 25, "mixed_or_zero": 6, "all_negative": 1}, "Delta_length_patterns": {"all_positive": 20, "all_negative": 6, "mixed_or_zero": 6}}
 {"control": "raw_within_length", "metric": "knn_overlap", "coupled_conditions": 32, "Bt_length_patterns": {"all_positive": 22, "mixed_or_zero": 7, "all_negative": 3}, "Delta_length_patterns": {"all_positive": 17, "all_negative": 11, "mixed_or_zero": 4}}
 {"control": "raw_within_length", "metric": "procrustes", "coupled_conditions": 32, "Bt_length_patterns": {"all_positive": 23, "mixed_or_zero": 8, "all_negative": 1}, "Delta_length_patterns": {"all_positive": 21, "all_negative": 5, "mixed_or_zero": 6}}
@@ -436,7 +436,7 @@ decomposition_complement	gru	canonical_cycle	embedding	nan	nan	nan	nan	nan	nan	n
 {"control": "answer_strata", "metric": "procrustes", "coupled_conditions": 32, "Bt_length_patterns": {"mixed_or_zero": 11, "all_positive": 19, "all_negative": 2}, "Delta_length_patterns": {"all_positive": 17, "all_negative": 9, "mixed_or_zero": 6}}
 {"control": "answer_strata", "metric": "debiased_cka", "coupled_conditions": 32, "Bt_length_patterns": {"all_positive": 24, "mixed_or_zero": 6, "all_negative": 2}, "Delta_length_patterns": {"all_positive": 18, "all_negative": 13, "mixed_or_zero": 1}}
 
-全部32格×2控制×4指标的21长度方向（顺序n10…30）
+All32 cells ×2 controls ×4 metrics: directions over21 lengths (ordered n10…30)
 relation	architecture	encoding	control	metric	B0	Bt	dc	dw	Delta	B0_length_signs	Bt_length_signs	dc_length_signs	dw_length_signs	Delta_length_signs
 descent_inverse	transformer	one_line	raw_within_length	linear_cka	-0.6025743057209559	0.6592747903492348	0.6464302121885029	-0.6154188838816879	1.261849096070191	---------------------	+++++++++++++++++++++	+++++++++++++++++++++	---------------------	+++++++++++++++++++++
 descent_inverse	transformer	canonical_cycle	raw_within_length	linear_cka	0.7844813182836671	-0.03637101042663988	-0.7564881360437778	0.06436419266652908	-0.8208523287103069	+++++++++++++++++++++	--+++-------------+--	---------------------	+-+++++++++++++++++++	---------------------
@@ -695,7 +695,7 @@ run_complement	gru	canonical_cycle	answer_strata	debiased_cka	-0.811058883664318
 record_complement	gru	canonical_cycle	answer_strata	debiased_cka	-0.8101208973580929	0.15726459703914697	0.20145559811652278	-0.7659298962807171	0.9673854943972399	---------------------	+++++++++++++++++++++	+++++++++++++++++++++	---------------------	+++++++++++++++++++++
 decomposition_complement	gru	canonical_cycle	answer_strata	debiased_cka	-0.80341873641591	-0.1347367735620046	0.01852804961035537	-0.6501539132435501	0.6686819628539054	---------------------	---------------------	+++++++++++++++++++++	---------------------	+++++++++++++++++++++
 
-完整64源及真实train-defined长度众数；不新建充分学习门槛
+All64 sources and actual training-defined length modes; no new sufficient-learning threshold
 task	architecture	encoding	parameters	answer_accuracy	minimum_length_accuracy	answer_ce	length_majority_accuracy	accuracy_minus_length_mode	gain_over_train_defined_length_mode_pp	length_gain_directions
 descents	transformer	one_line	3240448	0.9920944940476191	0.908203125	0.02579591013311549	0.30440848214285715	0.6876860119047619	68.76860119047619	+++++++++++++++++++++
 recoils	transformer	one_line	3240448	0.7274925595238095	0.404296875	0.7317748010235456	0.29696800595238093	0.43052455357142855	43.052455357142854	+++++++++++++++++++++
@@ -762,13 +762,13 @@ lis_length	gru	canonical_cycle	1660416	0.49600074404761907	0.376953125	1.1168508
 longest_decreasing_run	gru	canonical_cycle	1660416	0.4929315476190476	0.404296875	1.1290352086597566	0.49135044642857145	0.0015811011904761905	0.15811011904761904	000000-0--+-+++-+-+0-
 longest_increasing_run	gru	canonical_cycle	1660416	0.48939732142857145	0.423828125	1.1383805300408443	0.49321056547619047	-0.0038132440476190475	-0.38132440476190477	0000000---+---------0
 
-源配置描述计数/范围：
+Source-configuration descriptive counts/ranges:
 {"architecture": "transformer", "encoding": "one_line", "coupled_sources": 16, "parameters": [3240448], "at_or_below_length_mode": 0, "accuracy_minimum": 0.7274925595238095, "accuracy_maximum": 0.9999069940476191, "gain_pp_minimum": 10.946800595238097, "gain_pp_maximum": 72.18191964285714}
 {"architecture": "transformer", "encoding": "canonical_cycle", "coupled_sources": 16, "parameters": [3240448], "at_or_below_length_mode": 2, "accuracy_minimum": 0.3064546130952381, "accuracy_maximum": 0.9997209821428571, "gain_pp_minimum": -0.5952380952380952, "gain_pp_maximum": 69.10342261904762}
 {"architecture": "gru", "encoding": "one_line", "coupled_sources": 16, "parameters": [1660416], "at_or_below_length_mode": 0, "accuracy_minimum": 0.3947172619047619, "accuracy_maximum": 1.0, "gain_pp_minimum": 9.774925595238097, "gain_pp_maximum": 72.23772321428571}
 {"architecture": "gru", "encoding": "canonical_cycle", "coupled_sources": 16, "parameters": [1660416], "at_or_below_length_mode": 1, "accuracy_minimum": 0.30068824404761907, "accuracy_maximum": 1.0, "gain_pp_minimum": -0.38132440476190477, "gain_pp_maximum": 69.98697916666666}
 
-每个32关系格对应的两源任务成绩（全部保留）
+Both source-task performances for each of32 relation cells (all retained)
 relation	architecture	encoding	left_task	left_answer_accuracy	left_answer_ce	left_minimum_length_accuracy	left_length_majority_accuracy	left_gain_over_train_defined_length_mode_pp	right_task	right_answer_accuracy	right_answer_ce	right_minimum_length_accuracy	right_length_majority_accuracy	right_gain_over_train_defined_length_mode_pp
 descent_inverse	transformer	one_line	descents	0.9920944940476191	0.02579591013311549	0.908203125	0.30440848214285715	68.76860119047619	recoils	0.7274925595238095	0.7317748010235456	0.404296875	0.29696800595238093	43.052455357142854
 descent_inverse	transformer	canonical_cycle	descents	0.31882440476190477	1.634785848464595	0.240234375	0.30440848214285715	1.441592261904762	recoils	0.3064546130952381	1.6680369964202069	0.22265625	0.29696800595238093	0.9486607142857142
@@ -803,7 +803,7 @@ decomposition_complement	transformer	canonical_cycle	global_descents	0.967168898
 decomposition_complement	gru	one_line	global_descents	0.9986049107142857	0.004362967758193749	0.9921875	0.8888578869047619	10.974702380952381	components	0.9992559523809523	0.0015957626803502635	0.99609375	0.8811383928571429	11.811755952380953
 decomposition_complement	gru	canonical_cycle	global_descents	0.994140625	0.023770229363246506	0.982421875	0.8888578869047619	10.52827380952381	components	0.9999069940476191	0.000489518352441746	0.998046875	0.8811383928571429	11.876860119047619
 
-完整同任务跨架构32配对：原始/答案控制ordinary CKA及变化
+All32 same-task cross-architecture pairings: raw/answer-controlled ordinary CKA and changes
 task	encoding	raw_within_length_linear_cka_initial	raw_within_length_linear_cka_trained	raw_within_length_linear_cka_change	answer_strata_linear_cka_initial	answer_strata_linear_cka_trained	answer_strata_linear_cka_change
 anti_fixed_points	one_line	0.2563894341998799	0.23675115139399763	-0.019638282805882246	0.257141555943828	0.06528678395874545	-0.19185477198508252
 anti_fixed_points	canonical_cycle	0.334476101921116	0.024248132754168383	-0.31022796916694756	0.19532034245478838	0.023723953699737177	-0.1715963887550512
@@ -838,13 +838,13 @@ recoils	canonical_cycle	0.334476101921116	0.062016142860140434	-0.27245995906097
 valleys	one_line	0.2563894341998799	0.7672226206904882	0.5108331864906083	0.25922937082063013	0.41735565960742216	0.15812628878679197
 valleys	canonical_cycle	0.334476101921116	0.19594496095092923	-0.13853114097018673	0.33480872270596357	0.12703026766967823	-0.20777845503628534
 
-同任务U与ordinary全计数：
+Complete same-task U/ordinary counts:
 {"control": "raw_within_length", "metric": "linear_cka", "coupled_pairs": 32, "change_directions": {"+": 23, "-": 9}, "trained_minimum": 0.024248132754168383, "trained_maximum": 0.93724025751799}
 {"control": "raw_within_length", "metric": "debiased_cka", "coupled_pairs": 32, "change_directions": {"+": 23, "-": 9}, "trained_minimum": 0.019293645495197843, "trained_maximum": 0.9371065079539653}
 {"control": "answer_strata", "metric": "linear_cka", "coupled_pairs": 32, "change_directions": {"-": 23, "+": 9}, "trained_minimum": 0.023723953699737177, "trained_maximum": 0.6841038600784446}
 {"control": "answer_strata", "metric": "debiased_cka", "coupled_pairs": 32, "change_directions": {"-": 22, "+": 10}, "trained_minimum": 0.018805688537009636, "trained_maximum": 0.6797117518695661}
 
-raw与答案控制Bt/Delta所有方向变化：
+All Bt/Delta direction changes between raw and answer controls:
 {"relation": "peak_complement", "architecture": "transformer", "encoding": "one_line", "component": "Delta", "raw_value": "0.023020212431892347", "answer_strata_value": "-0.2621197392396831"}
 {"relation": "fixed_complement", "architecture": "gru", "encoding": "one_line", "component": "Delta", "raw_value": "0.04356783694342341", "answer_strata_value": "-0.5415722698706863"}
 {"relation": "exceedance_inverse", "architecture": "gru", "encoding": "canonical_cycle", "component": "Delta", "raw_value": "0.13556108225220515", "answer_strata_value": "-0.36123777619447817"}
@@ -854,14 +854,14 @@ raw与答案控制Bt/Delta所有方向变化：
 {"relation": "record_complement", "architecture": "gru", "encoding": "one_line", "component": "Delta", "raw_value": "0.24124216499694895", "answer_strata_value": "-0.20528404995648902"}
 {"relation": "decomposition_complement", "architecture": "gru", "encoding": "canonical_cycle", "component": "Bt", "raw_value": "0.40193616430052376", "answer_strata_value": "-0.13108910946033428"}
 
-ordinary/Ucenter方向变化：[]
+ordinary/U-centered direction changes:[]
 
-未定义分量（全部记录在JSON）：
+Undefined components (all recorded in JSON):
 {"branch": "output_prob", "layer": "output", "metric": "procrustes", "components": 168}
 {"branch": "hidden", "layer": "embedding", "metric": "linear_cka", "components": 768}
 {"branch": "hidden", "layer": "embedding", "metric": "debiased_cka", "components": 768}
 
-静态答案参照defined/undefined计数：
+Static-answer reference defined/undefined counts:
 {"control": "raw_within_length", "metric": "linear_cka", "cells": 48, "defined": 48, "undefined": 0}
 {"control": "raw_within_length", "metric": "knn_overlap", "cells": 48, "defined": 48, "undefined": 0}
 {"control": "raw_within_length", "metric": "procrustes", "cells": 48, "defined": 24, "undefined": 24}
@@ -871,7 +871,7 @@ ordinary/Ucenter方向变化：[]
 {"control": "answer_strata", "metric": "procrustes", "cells": 48, "defined": 0, "undefined": 48}
 {"control": "answer_strata", "metric": "debiased_cka", "cells": 48, "defined": 0, "undefined": 48}
 
-输入SHA清单：
+Input SHA manifest:
 /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/readout_status.json	a395c6e6b0f2a1845183eeea9348c6a2a8ed4571dbe90acdefd3f6b974778bf3
 /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.json	5357be5d26709132e1e9d110e6571ccf6d04e132df43ff2d37c24aae2b92cd7e
 /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/report_audit.json	acd5062a6203f7cdd549f45728e855d323b4bf0260fd072e6be114fbe77b7854
@@ -891,20 +891,20 @@ ordinary/Ucenter方向变化：[]
 /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/source_learning_summary.csv	dd2b566aa30d35081661c5d73c303532c082eb37b1207ef37c67b16a98ccf641
 /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/source_learning.csv	6e900cb17f537dc7b499bc3cebc97bee8c32c87bad745225840da4c9f7352b22
 
-原科学报告：/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/report.html
-原表：/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/per_length_results.csv
-原始输出与分解：/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/contrast_summary.csv
-终止：本审读结束，不新增科研计算或训练。
+Original scientific report:/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/report.html
+Original table:/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/per_length_results.csv
+Original outputs and decompositions:/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/contrast_summary.csv
+Stop: this reading review ends without additional scientific computation or training.
 
 
-补充闭合：Root正文需保留的同任务范围、每对方向、静态gold和长度边界。
-四套32同任务配对范围（无新CKA计算）：
+Supplementary closure: same-task ranges, per-pair directions, static gold values, and length boundaries for Root to retain in the narrative.
+Four sets of32 same-task pairing ranges (no new CKA computation):
 {"control": "raw_within_length", "metric": "linear_cka", "coupled_pairs": 32, "change_directions": {"+": 23, "-": 9}, "trained_minimum": 0.024248132754168383, "trained_maximum": 0.93724025751799, "initial_minimum": 0.2563894341998799, "initial_maximum": 0.334476101921116, "change_minimum": -0.31022796916694756, "change_maximum": 0.6808508233181101}
 {"control": "raw_within_length", "metric": "debiased_cka", "coupled_pairs": 32, "change_directions": {"+": 23, "-": 9}, "trained_minimum": 0.019293645495197843, "trained_maximum": 0.9371065079539653, "initial_minimum": 0.2354176894107637, "initial_maximum": 0.3259265265181931, "change_minimum": -0.30663288102299524, "change_maximum": 0.7016888185432016}
 {"control": "answer_strata", "metric": "linear_cka", "coupled_pairs": 32, "change_directions": {"-": 23, "+": 9}, "trained_minimum": 0.023723953699737177, "trained_maximum": 0.6841038600784446, "initial_minimum": 0.19532034245478838, "initial_maximum": 0.3631897027758378, "change_minimum": -0.3046274620275314, "change_maximum": 0.3484464852873173}
 {"control": "answer_strata", "metric": "debiased_cka", "coupled_pairs": 32, "change_directions": {"-": 22, "+": 10}, "trained_minimum": 0.018805688537009636, "trained_maximum": 0.6797117518695661, "initial_minimum": 0.17833065305874524, "initial_maximum": 0.3512275911350388, "change_minimum": -0.30197735471961, "change_maximum": 0.35298544953967204}
 
-同任务每对ordinary方向成员（完整+/−）：
+Same-task ordinary-direction membership for every pair (complete+/−):
 {
   "raw_within_length": {
     "+": [
@@ -1372,10 +1372,10 @@ ordinary/Ucenter方向变化：[]
   }
 }
 
-同任务ordinary/Ucenter方向差异成员：
+Same-task ordinary/U-centered direction-disagreement members:
 [{"task": "components", "encoding": "one_line", "ordinary_change": "-0.005056471850695042", "U_centered_change": "0.009490869981700815"}]
 
-静态gold384汇总全部原值（无新的静态几何计算）：
+All original scores for384 static-gold aggregates (no new static-geometry computation):
 relation	control	baseline	role	metric	value	error	undefined_lengths
 descent_inverse	raw_within_length	true_answer_onehot	correct	linear_cka	1.0	nan	0
 descent_inverse	raw_within_length	true_answer_onehot	correct	debiased_cka	1.0000000000000024	nan	0
@@ -1762,7 +1762,7 @@ decomposition_complement	answer_strata	true_answer_scalar	identity	debiased_cka	
 decomposition_complement	answer_strata	true_answer_scalar	identity	knn_overlap	nan	nan	21
 decomposition_complement	answer_strata	true_answer_scalar	identity	procrustes	nan	nan	21
 
-逐长度主边界：
+Primary per-length boundaries:
 {
   "Bt_all_positive": 22,
   "Bt_all_negative": 2,
@@ -1803,19 +1803,19 @@ decomposition_complement	answer_strata	true_answer_scalar	identity	procrustes	na
   "fixed_order": "n=10..30, all1/21, not pooled; these counts are coupled condition descriptions."
 }
 
-共同答案分层的静态192汇总全未定义为结构常量；并非“没有数学关系”。固定rank/长度权重和negative结果完整保留。
-结束：本独立笔记仅闭合PermWorld现有读数，不读取Graph新结果，不宣告全部scope完成。
+All192 joint-answer-stratified static aggregates are undefined from structural constancy, not “no mathematical relations.” Fixed rank/length weights and all negative results remain.
+End: these independent notes close existing PermWorld readouts only; they neither read new Graph results nor declare the entire scope complete.
 
-闭合范围的精确原数值（覆盖任何手工舍入摘要）：
-补充闭合：同任务跨配置raw ordinary初始范围0.2563894341998799..0.334476101921116，训练范围0.024248132754168383..0.93724025751799，变化-0.31022796916694756..0.6808508233181101；答案控制初始0.19532034245478838..0.3631897027758378，训练0.023723953699737177..0.6841038600784446，变化-0.3046274620275314..0.3484464852873173。所有数字直接来自原128汇总，不计算新相似度。
+Exact original values within the closure scope (superseding any manually rounded summaries):
+Supplementary closure: same-task cross-configuration raw ordinary initial range 0.2563894341998799..0.334476101921116, trained range 0.024248132754168383..0.93724025751799, change -0.31022796916694756..0.6808508233181101; answer-controlled initial range 0.19532034245478838..0.3631897027758378, trained 0.023723953699737177..0.6841038600784446, change -0.3046274620275314..0.3484464852873173. All numbers come directly from the original 128 aggregates, with no new similarity computation.
 
 
-最后闭合边界：
-深层正Bt格的计数增加不等于各任务幅度单调增加：TF一行下降/逆下降block3 Bt0.200622，block4降为0.092456，final0.093118；全部层原数值均保留。
-ordinary/Ucenter保持final Bt/Delta方向并不保持dc/dw所有分量方向：主ordinary dc16正/16负，U17正/15负；dw ordinary29负/3正，U25负/7正。
-GRU轮换全局下降—组件：两源恒等准确率99.414%/99.991%，而final Bt-0.131091、Delta+0.661883，所有21长度Bt负且Delta正；不能仅由正Delta或高源准确率推断正确表征更相似。
+Final closure boundaries:
+Increasing positive-Bt counts in deeper layers do not imply monotonic magnitudes for every task: one-line TF descents/inverse-descents block3 Bt0.200622, block4 to 0.092456, final0.093118. All original layer values remain available.
+Ordinary/U-centered agreement on final Bt/Delta direction does not preserve all dc/dw directions: primary ordinary dc16 positive/16 negative, U17 positive/15 negative; ordinary dw29 negative/3 positive, U25 negative/7 positive.
+Cycle GRU global-descents/components: source identity accuracies99.414%/99.991%, but final Bt-0.131091, Delta+0.661883, with negative Bt and positive Delta at all 21 lengths. Positive Delta or high source accuracy alone does not establish greater correct-representation similarity.
 
-静态gold按真实baseline分开的完整定义计数：
+Complete static-gold definition counts separated by actual baseline:
 {"control": "answer_strata", "baseline": "true_answer_onehot", "metric": "debiased_cka", "status": "undefined", "cells": 24}
 {"control": "answer_strata", "baseline": "true_answer_onehot", "metric": "knn_overlap", "status": "undefined", "cells": 24}
 {"control": "answer_strata", "baseline": "true_answer_onehot", "metric": "linear_cka", "status": "undefined", "cells": 24}

@@ -1,41 +1,41 @@
-PermWorld learnability：冻结前独立只读代码审查
-日期：2026-10-10
-范围：新 common/setup/data/checks/driver/training 源码及继承的原编码/模型/数据生成接口；只读。未运行训练、GPU 推理或新学习评价，未读取新几何/学习成绩，未编辑任何训练源码、旧冻结文件或 F17。
+PermWorld learnability: independent read-only pre-freeze code review
+Date: 2026-10-10
+Scope: read-only review of new common/setup/data/checks/driver/training source and inherited encoding/model/data-generation interfaces. No training, GPU inference, or new learning evaluation was run; no new geometry/learning scores were read; no training source, historical frozen files, or F17 files were edited.
 
-结论：已提出的预算与工程/源模型混淆阻断问题在最终 training 版中得到修复。可以进入冻结后的 CPU/data 与真实 CUDA resume 工程门槛；本次代码审查本身不能代替这些门槛通过。最终 training.py 的独立核对 SHA256 为：
+Conclusion: the previously identified budget and engineering/source-model confounding blockers have been repaired in the final training version. The frozen CPU/data and genuine CUDA-resume engineering gates may proceed; this code review itself does not replace passing those gates. The independently checked final training.py SHA256 is:
 661a1c09eb382f20108e712813f72c378484d63fa297ee7c796b8acf5a0f7c2c
-AST 解析通过，未导入模型或启动 GPU。
+AST parsing passed; no model imports or GPU startup.
 
-已核实的实现
+Verified implementation
 
-1. 目录隔离：新 ROOT 固定为 /mnt/yangx-projects-f/20261010/permworld_learnability。新 setup 仅读旧协议、冻结清单和受保护产物，写新 ROOT 与新诊断目录。复用的 model()/generate_world()/atomic_checkpoint() 不调用旧 setup/initial/world 写入器。training 的输出 resolve 后必须位于新 ROOT；工程覆盖只允许 ROOT/engineering。源模型只从固定 manifest 查找。
+1. Directory isolation: new ROOT is fixed at /mnt/yangx-projects-f/20261010/permworld_learnability. New setup reads only historical protocols, freeze manifests, and protected artifacts, and writes new ROOT/new diagnostics. Reused model()/generate_world()/atomic_checkpoint() do not invoke historical setup/initial/world writers. Resolved training outputs must lie under new ROOT; engineering overrides are allowed only under ROOT/engineering. Source models are located solely through the fixed manifest.
 
-2. 历史排除：先校验旧历史索引与旧 archdev 数据 archive 的 SHA，再追加旧开发 train/validation/test 每个 anchor 的全部八成员轨道。候选新数据使用同一个冻结 orbit()；任何轨道成员出现在历史索引中都会拒绝，非八成员轨道也拒绝。新世界 train/validation/test 的轨道代表分开记录并检查无交集。这个结论依赖此前完整历史索引审计；本审查没有重新枚举所有旧训练语料。
+2. Historical exclusion: first verify SHA values of the historical index and archdev data archive, then add all eight-member orbits of each historical development train/validation/test anchor. Candidate data use the same frozen orbit(); reject any orbit member present in the historical index and reject non-eight-member orbits. Record new-world train/validation/test orbit representatives separately and check disjointness. This depends on the earlier complete historical-index audit; this review did not enumerate all historical training corpora again.
 
-3. 数据与预算相同：固定 n10、11、12，train 2048/长度、validation 1024/长度；两编码使用同一底层排列、答案、轨道拆分和已保存 8000×64 batch schedule。生成器每三更新随机排列三长度，所有模型复用同一 schedule。2048×3、batch64、8k 对应每模型约83.3次平均训练集遍历；这是一次组合开发改变，不是仅改编码。
+3. Identical data and budgets: fixed n10,11,12, train 2048/length, validation 1024/length; encodings share underlying permutations, answers, orbit splits, and saved 8000×64 batch schedule. The generator randomly permutes the three lengths every three updates; all models reuse this schedule. 2048×3, batch64, and 8k yield approximately 83.3 average training-set passes per model; this is a combined development change, not encoding alone.
 
-4. 真实初始化：每架构有新构造器真正输出的 step0.pt，参数与 RNG 保存；两编码和四性质从同一该架构参数值加载，训练入口与 CPU 检查均重新计算 parameter_hash。初始化 checkpoint、初始参数、协议、源版本、数据和起始 RNG 都绑定到恢复 checkpoint。两架构没有相同权重身份的主张。
+4. Genuine initialization: each architecture has a genuinely constructor-produced step0.pt with parameters and RNG saved; both encodings and four properties load the same architecture-specific parameter values, with parameter_hash recomputed at training entry and CPU checks. Initialization checkpoint, initial parameters, protocol, source version, data, and starting RNG are all bound into restoration checkpoints. No identical-weight claim is made across architectures.
 
-5. 答案监督：复用已冻结 batch/loss 的因果移位。CPU 检查独立比较 answer 与 EOS 两位置的 CE，检查其他位置无梯度，并比较全序列与仅 prompt 的答案 logits。训练/验证答案指标使用完整词表 argmax；数字限制内准确率另列，EOS 是真实答案 teacher-forced 指标，不能替代答案学习。
+5. Answer supervision: reuse the frozen causal shift in batch/loss. CPU checks independently compare CE at answer and EOS positions, check that other positions receive no gradients, and compare answer logits for full sequences versus prompt-only inputs. Training/validation answer metrics use full-vocabulary argmax; numeric-restricted accuracy is separate. EOS is teacher-forced on the true answer and cannot replace answer learning.
 
-6. 门槛：协议固定8k终点，每模型逐长度等权答案均值≥90%、最弱长度≥85%、相对训练长度众数≥20pp、EOS≥99%；同task×architecture两编码均值与每长度差均≤5pp。门槛只依据 identity validation 答案/NLL，固定一个候选，不使用 Γ/Δ/CKA，也不读测试成绩选择配置。报告实现仍须独立 fixture 验证等权、训练众数来源与不完整终点不能通过。
+6. Gates: protocol fixes the 8k endpoint, with each model's equal-length mean answer accuracy ≥90%, weakest length ≥85%, gain over the training length mode ≥20pp, and EOS ≥99%; same-task×architecture encoding gaps must be ≤5pp both in mean and at every length. Gates use only identity-validation answers/NLL, with one fixed candidate, no Γ/Δ/CKA or test-score-based configuration selection. Report implementation still requires independent fixtures for equal weighting, training-mode provenance, and rejection of incomplete endpoints.
 
-7. 恢复检查：每 architecture×encoding 有真实连续 0→32 与另进程 0→16→32；比较参数、optimizer 与 RNG。工程输出与源模型目录分离，不能预更新源模型。预算造成不足32更新时已改为显式 budget_exhausted，不冒充 RNG/参数不一致。连续参考若已经存在而没有完整 result，会拒绝偷偷续跑；意外工程进程中断后的重试需明确处理参考身份，不能伪造一个“连续”参考。
+7. Restoration checks: each architecture×encoding has genuine continuous 0→32 and separate-process 0→16→32 runs, comparing parameters, optimizer, and RNG. Engineering outputs are separate from source-model directories and cannot pre-update source models. Insufficient budget for 32 updates now produces explicit budget_exhausted, not a false RNG/parameter mismatch. An existing continuous reference without a complete result prevents silent continuation; retries after engineering interruption must explicitly handle reference identity, not fabricate a “continuous” reference.
 
-8. 两小时：driver 创建一次持久 start/deadline，恢复不重置；stop_updates_epoch 为 deadline−30s，cutoff 后不启新 job。training 每更新检查 cutoff；验证入口与每 batch、实际 forward 之前都要求至少5s余量。验证不足则 None 且 validation_missing_due_to_budget=True，不用不完整分数。截止后只安全保存状态；CPU tree 序列化避免以完整 GPU 验证作为“另外计时的清理”。最终 GPU batch 的实际耗时与保存开销仍需运行审计，不应把纸面防护当作严格零超时证明。
+8. Two hours: driver creates one persistent start/deadline, unchanged on restoration; stop_updates_epoch is deadline−30s, and no new job starts after cutoff. Training checks cutoff every update; validation entry, every batch, and each actual forward require at least 5s remaining. Insufficient validation yields None and validation_missing_due_to_budget=True rather than incomplete scores. After the deadline, only safe state saving occurs; CPU-tree serialization avoids full GPU validation disguised as “separately timed cleanup.” Actual final GPU-batch time and saving overhead still need runtime audits; paper safeguards do not prove strictly zero overshoot.
 
-9. 完成身份：completed.json 仅 source output=None、真实step8k且完整validation时写。工程覆盖即使请求8k也不能创建source完成文件。driver按固定 manifest 的 run_id、step8000、协议、source版本与data SHA核对完成，而非直接数任何工程文件。partial2k/4k/实际中断更新不能替代8k终点。完成数与是否通过学习门槛是两个字段，不应混用。
+9. Completion identity: completed.json is written only for source output=None, genuine step8k, and complete validation. Engineering overrides cannot create source completion files even if requesting 8k. Driver checks fixed-manifest run_id, step8000, protocol, source version, and data SHA rather than counting arbitrary engineering files. Partial2k/4k/interrupted updates cannot replace 8k endpoints. Completion counts and learning-gate success are separate fields.
 
-10. 耗时解释：新 driver 记录共享实际 wall clock，旧并发每模型 loop elapsed 的总和不是本机实际 GPU 小时。旧吞吐只能作为代理，不决定新的“已用GPU小时”；串行新运行的实测时间、恢复工程和验证都纳入共同预算。持久 epoch 截止还会包含进程暂停时的空闲，是保守约束，不是精确 GPU kernel 利用率统计。
+10. Timing interpretation: new driver records shared actual wall clock; summed historical concurrent per-model loop elapsed values are not actual machine GPU-hours. Historical throughput is only a proxy, not new “GPU-hours used”; measured serial runtime, restoration engineering, and validation all share the budget. Persistent epoch deadlines include idle time during pauses, a conservative constraint rather than precise GPU-kernel utilization.
 
-冻结前建议的实际处理
+Recommended practical handling before freezing
 
-A. 已独立重新读取修复后的 common.load_data：仅复制名字以 train_ 或 validation_ 开始的数组，不解码或复制 test 标签/输入。prepare 仍读取三 split 的排列用于轨道隔离审计，这是准备阶段检查，不是测试成绩评价或选择。
+A. Independently reread repaired common.load_data: copy only arrays beginning train_ or validation_, without decoding/copying test labels/inputs. Prepare still reads permutations from all three splits for orbit-isolation audits; this is a preparation check, not test-score evaluation or selection.
 
-B. 已独立重新读取修复后的 driver：cpu_check 同时核对 protocol SHA；已持久化 budget 同时核对 limit、deadline−start=limit、cutoff=deadline−reserve。新 checkpoint 恢复严格绑定身份与数据；工程缓存 result 也绑定协议并记录连续/分段 checkpoint SHA。额外重新核验缓存 checkpoint 文件 SHA 可作为完整性增强，但本次新开发尚无旧工程缓存，它不阻断这次新的实际连续/恢复门槛。
+B. Independently reread repaired driver: cpu_check also checks protocol SHA; persistent budget checks limit, deadline−start=limit, and cutoff=deadline−reserve. New checkpoint restoration strictly binds identity/data; engineering cached results also bind the protocol and record continuous/segmented checkpoint SHAs. Rechecking cached checkpoint-file SHA would strengthen integrity, but this new development has no old engineering caches and this does not block actual continuous/restoration gates.
 
-C. 已独立重新读取修复后的 data_ready 生成器：使用 training_performed_by_this_stage=False，不再以准备阶段声明整个开发从未开始训练。
+C. Independently reread repaired data_ready generator: it uses training_performed_by_this_stage=False, no longer claiming during preparation that the entire development has never begun training.
 
-保留的限制
+Retained limitations
 
-这是冻结前、尚未训练的开发代码审查。当前只有一个数据世界、每架构一个初始化；16模型不是16个独立重复。Transformer与GRU参数量不同，≥90%与≤5pp只是开发资格而非等价性检验。只有两个架构各自全部八源都完整并通过，才有完整16条件掌握对照；预算留下部分终点时必须报告未完成，不能选已完成最有利条件重述范围。无任何新几何结论、本轮不启动正式训练清单、GroupWorld或F17工作。
+This is pre-freeze, pre-training development-code review. There is one data world and one initialization per architecture; 16 models are not 16 independent replicates. Transformer and GRU parameter counts differ; ≥90% and ≤5pp are development qualifications, not equivalence tests. Complete mastery controls for all 16 conditions require all eight sources in both architectures to complete and pass; partial endpoints due to budget must be reported incomplete, without selecting favorable completed conditions to redefine scope. There are no new geometry conclusions, formal training manifest, GroupWorld, or F17 work in this round.

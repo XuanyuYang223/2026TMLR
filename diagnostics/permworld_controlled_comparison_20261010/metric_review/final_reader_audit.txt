@@ -1,12 +1,12 @@
-首轮20k16模型受控比较：独立只读结果审查通过。
-6048逐长度行完整覆盖两关系、四配置、两控制与全部预定层/指标；288组每组21长度，没有NaN重加权。
-2688原final/output行逐值binary64复用；静态答案基线原文件按字节复用。
-固定真实64行数值fixture48项通过；新中间层指标未重复计算，本审查只核对表格和冻结定义。
-初始化隐藏恒等配对4032项符合共享真实初始权重预期；672常量embedding行全保留未定义。
-所有B0/Bt/dc/dw/di/Delta、1/21汇总、编码/配置/层差与交互逐项核对通过。
-same-task跨架构672行/32汇总独立展示；它使用自己的共同答案key，不与关系任务对选择性混为一项效应。
-一个数据世界、每架构一个初始化；21长度和16模型不是独立复制。学习质量与容量差异仍限制机制解释。
-未训练、未读取新的test、未改变旧报告/F17；完成本审查后停止。
+First-round20k16-model controlled comparison: independent read-only result review passed.
+All6048 per-length rows cover two relations, four configurations, two controls, and every prespecified layer/metric. Each of288 groups contains21 lengths, without NaN reweighting.
+All2688 original final/output rows reuse binary64 values exactly; the original static-answer-baseline file is copied byte for byte.
+The fixed64-real-row numerical fixture passes48 checks. New intermediate-layer metrics were not recomputed; this review checks tables and frozen definitions only.
+All4032 initial-hidden identity checks match shared genuine-initialization expectations;672 constant-embedding rows remain undefined.
+All B0/Bt/dc/dw/di/Delta,1/21 aggregates, encoding/configuration/layer differences, and interactions pass itemwise checks.
+Cross-architecture same-task672 rows/32 aggregates are displayed separately with their own joint-answer key and are not combined with relation-pair selectivity.
+One data world, one initialization per architecture;21 lengths and16 models are not independent replications. Learning quality and capacity differences still limit mechanism interpretation.
+No training, new test reading, or changes to previous reports/F17 occurred. Stop after this review.
 
 {
   "status": "passed",

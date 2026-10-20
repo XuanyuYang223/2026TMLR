@@ -101,12 +101,12 @@ def main():
     csv_write(DIAG/'comparison_manifest.csv',manifest)
     scopes=[dict(item=r['comparison_id'],comparison_class=r['comparison_class'],status=r['match_status'],
                  changed=r['intended_changed_fields'],remaining_coupling=r['unmatched_fields'],
-                 reason='Structural constant embedding; explicitly undefined' if r['match_status']=='不可比较或缺失' else 'Fixed-source controlled diagnostic') for r in manifest]
-    scopes.extend([dict(item='GroupWorld',comparison_class='excluded',status='未启动',changed='',remaining_coupling='',reason='Current scope forbids automatic expansion'),
-        dict(item='F17',comparison_class='protected',status='保持不变',changed='',remaining_coupling='',reason='Existing protected hashes verified'),
-        dict(item='second8k16models',comparison_class='excluded',status='未并入',changed='',remaining_coupling='',reason='Different data world and update budget'),
-        dict(item='old82layers',comparison_class='historical',status='分开引用',changed='',remaining_coupling='Original initial identity unverified',reason='Reconstructed by original program; excluded from primary queue'),
-        dict(item='initial_answer_CE',comparison_class='learning_auxiliary',status='缺失或未做',changed='',remaining_coupling='',reason='Not originally saved; shared initial hidden cannot supply task-specific CE')])
+                 reason='Structural constant embedding; explicitly undefined' if r['match_status']=='incomparable_or_missing' else 'Fixed-source controlled diagnostic') for r in manifest]
+    scopes.extend([dict(item='GroupWorld',comparison_class='excluded',status='not_started',changed='',remaining_coupling='',reason='Current scope forbids automatic expansion'),
+        dict(item='F17',comparison_class='protected',status='unchanged',changed='',remaining_coupling='',reason='Existing protected hashes verified'),
+        dict(item='second8k16models',comparison_class='excluded',status='excluded',changed='',remaining_coupling='',reason='Different data world and update budget'),
+        dict(item='old82layers',comparison_class='historical',status='cited separately',changed='',remaining_coupling='Original initial identity unverified',reason='Reconstructed by original program; excluded from primary queue'),
+        dict(item='initial_answer_CE',comparison_class='learning_auxiliary',status='missing or not performed',changed='',remaining_coupling='',reason='Not originally saved; shared initial hidden cannot supply task-specific CE')])
     csv_write(DIAG/'scope_status.csv',scopes)
     historical=WORKSPACE/'diagnostics/permworld_layers_20261009/layer_metric_summary.csv'
     shutil.copyfile(historical,DIAG/'historical_old82_summary.csv')

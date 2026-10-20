@@ -102,18 +102,18 @@ def main():
                         base=endpoint(a,e,rel,'final_norm','linear_cka',control,role)
                         for metric in ['knn_overlap','procrustes','debiased_cka']:
                             other=endpoint(a,e,rel,'final_norm',metric,control,role)
-                            add('A',base,other,['metric','metric-specific preprocessing'],[], '严格匹配')
+                            add('A',base,other,['metric','metric-specific preprocessing'],[], 'strictly_matched')
                         last=('block4' if a=='transformer' else 'layer4')
                         for layer in [('block'+str(i) if a=='transformer' else 'layer'+str(i)) for i in range(1,4)]+['final_norm','embedding']:
                             norm=layer=='final_norm'
                             add('D',endpoint(a,e,rel,last,'linear_cka',control,role),endpoint(a,e,rel,layer,'linear_cka',control,role),
                                 ['final normalization'] if norm else ['layer'],[],
-                                '不可比较或缺失' if layer=='embedding' else '严格匹配')
+                                'incomparable_or_missing' if layer=='embedding' else 'strictly_matched')
                     add('C',endpoint(a,'one_line',rel,'final_norm','linear_cka',control,role),endpoint(a,'canonical_cycle',rel,'final_norm','linear_cka',control,role),
-                        ['encoding grammar','serialized permutation','end token'],['task mastery not matched'], '严格匹配')
+                        ['encoding grammar','serialized permutation','end token'],['task mastery not matched'], 'strictly_matched')
                 for e in source['encodings']:
                     add('B',endpoint('transformer',e,rel,'final_norm','linear_cka',control,role),endpoint('gru',e,rel,'final_norm','linear_cka',control,role),
-                        ['model configuration'],['parameter count','computational path','architecture initialization','task mastery'], '配置比较')
+                        ['model configuration'],['parameter count','computational path','architecture initialization','task mastery'], 'configuration comparison')
     # Isolated secondary comparison: same task/input across model configurations.
     cross_input_hashes={}
     for task in source['tasks']:
@@ -142,7 +142,7 @@ def main():
                                 'parameter_sha256','initial_parameter_sha256','vocabulary_sha256','init_evidence']}],
                             feature_files=[{k:c[k] for k in ['path','sha256','condition','split','task']} for c in cs],
                             input_pairing_sha256=ph,metric_preprocessing='joint[n,same-task identity/complement/inverse] min3 per split; isolated secondary control'))
-                    add('X_same_task',*sides,['model configuration'],['parameter count','computational path','initialization','task mastery'],'配置比较')
+                    add('X_same_task',*sides,['model configuration'],['parameter count','computational path','initialization','task mastery'],'configuration comparison')
     json_write(DIAG/'cross_arch_input_pairing_hashes.json',cross_input_hashes)
     csv_write(DIAG/'comparison_manifest_before_extraction.csv',manifest)
     csv_write(DIAG/'comparison_manifest.csv',manifest)

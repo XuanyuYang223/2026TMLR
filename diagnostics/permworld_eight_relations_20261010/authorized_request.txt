@@ -1,222 +1,222 @@
-给 Codex 的下一轮执行计划：补齐 PermWorld 八关系，试跑图论，整理当前研究入口
-日期：2026-10-10
-授权目标：完成剩余六条关系的统一受控实验，再完成一个小规模跨数学系统试验。用户关注数学关系与表征相似性；不得将本轮转成持续可学习性调参项目。
+Next-round execution plan for Codex: complete eight PermWorld relations, pilot graph theory, and organize the current research entrypoint
+Date: 2026-10-10
+Authorized objective: complete the unified controlled experiments for the remaining six relations, then complete a small cross-mathematical-system pilot. The user is interested in mathematical relations and representational similarity; this round must not become an ongoing learnability-tuning project.
 
-A. 执行边界和共同原则
+A. Execution boundaries and common principles
 
-1. 先读取 diagnostics/permworld_controlled_comparison_20261010/ 的真实清单、协议和报告，再定位首轮16模型的实际数据、真实step-0、代码与20k终点。路径以工作区审计为准。
-2. 这轮允许训练真正缺失的源模型：PermWorld上限48个，图论试跑上限4个。已有完全匹配的终点应复用；不重复训练、不换种子追求效果。
-3. 保留上一轮控制变量方式：同一激活比较指标；固定指标，分别比较模型配置、编码、层；每个关系实例单独分析。
-4. 结果入口按“原始相似度 → 训练后正确/错误偏好 → 相对初始化变化”组织。Delta是辅助分解，不能成为唯一结果。
-5. 所有负结果、学习不足和未定义指标保留。工程通过不要求CKA或Delta为正；不要求两种编码都达到90%才分析，也不为达到门槛增加训练。
-6. 本轮仍属探索性扩展。一个数据世界和每架构一个初始化不构成独立多世界重复。源模型数、关系条件数、长度数及指标数分别报告。
-7. 完成PermWorld八关系和图论小试的报告后停止；不自动开展更多群族、更多编码/架构、增大模型或确认性种子扩容。
-8. F17论文、数据、结果、冻结协议及公开发布产物保持原样。不改release、不重写Git历史、不自动发布。
+1. First read the actual manifests, protocol, and reports in diagnostics/permworld_controlled_comparison_20261010/, then locate the actual data, genuine step-0 weights, code, and 20k endpoints for the first 16 models. Paths must follow the workspace audit.
+2. Training genuinely missing source models is allowed this round: at most 48 PermWorld models and four graph-pilot models. Reuse completely matched existing endpoints; do not retrain them or change seeds to seek effects.
+3. Retain the previous controlled-comparison approach: compare metrics on identical activations; with the metric fixed, compare model configurations, encodings, and layers separately; analyze each relation instance individually.
+4. Organize results as “original similarity → trained correct/wrong preference → change relative to initialization.” Delta is an auxiliary decomposition, not the sole result.
+5. Retain all negative results, insufficient learning, and undefined metrics. Engineering acceptance does not require positive CKA or Delta. Do not require both encodings to reach 90% before analysis or extend training to meet a threshold.
+6. This remains an exploratory extension. One data world and one initialization per architecture are not independent multi-world repetitions. Report source-model counts, relation-condition counts, lengths, and metrics separately.
+7. Stop after reporting the eight PermWorld relations and graph pilot. Do not automatically add group families, encodings/architectures, larger models, or confirmatory seeds.
+8. Preserve the F17 paper, data, results, frozen protocols, and public release artifacts. Do not modify releases, rewrite Git history, or publish automatically.
 
-B. 第一阶段：补齐原PermWorld剩余六条关系
+B. Stage 1: complete the remaining six original PermWorld relations
 
-原始依据：
+Original reference:
 https://github.com/XuanyuYang223/neurips/blob/main/PROPERTY_TASK_GEOMETRY.md
-请同时核对实际性质实现和关系校验器，而非只依赖文档名称。
+Also check actual property implementations and relation validators rather than relying only on names in the documentation.
 
-原八条关系及状态：
-- 下降数—逆下降数：取逆；已完成四格。
-- 峰数—谷数：补排列；已完成四格。
-- 不动点—反不动点：补排列；本轮补齐。
-- 超越数—亏缺数：取逆；本轮补齐。
-- LIS长度—LDS长度：补排列；本轮补齐。
-- 最长上升连续段—最长下降连续段：补排列；本轮补齐。
-- 左至右极大记录—极小记录：补排列；本轮补齐。
-- 全局下降数—组件数：补排列；原方向为右侧答案等于左侧答案加1，本轮核对并补齐。
+The original eight relations and their status:
+- Descents—inverse descents: inversion; all four cells completed.
+- Peaks—valleys: complement; all four cells completed.
+- Fixed points—anti-fixed points: complement; complete this round.
+- Exceedances—deficiencies: inversion; complete this round.
+- LIS length—LDS length: complement; complete this round.
+- Longest increasing run—longest decreasing run: complement; complete this round.
+- Left-to-right maximum—minimum records: complement; complete this round.
+- Global descents—components: complement; in the original direction, the right answer equals the left answer plus 1; verify and complete this round.
 
-共有16个不同性质；剩余12性质×两架构×两编码，新增上限48模型。
-完整队列为64源模型、32关系条件（8关系×4架构/编码条件）。这不是64次独立重复。
-若发现其他完全匹配的20k模型，按实际缺口减少数量；旧历史specialist不能仅凭“同性质、同20k”认定匹配。
+There are 16 distinct properties; the remaining 12 properties × two architectures × two encodings require at most 48 additional models.
+The full queue contains 64 source models and 32 relation conditions (8 relations × 4 architecture/encoding conditions). These are not 64 independent repetitions.
+If other fully matched 20k models exist, reduce the count to the actual gap. Historical specialists cannot be considered matched solely because they have the same property and 20k updates.
 
-B1. 先核对固定项和成本
+B1. Check fixed items and costs first
 
-建立新目录 diagnostics/permworld_eight_relations_20261010/。
-生成：
-- model_gap_manifest.csv：16性质×4条件的已完成、可复用、真正缺失状态；
-- training_manifest.csv：仅缺失模型的执行清单；
-- protocol.json：本轮分析规则；
-- cost_estimate.csv：分别用首轮Transformer和GRU的真实20k日志外推，不借用n10..12短长度28分钟计时；
-- protected_files.json：旧产物保护与当前依赖。
+Create diagnostics/permworld_eight_relations_20261010/.
+Generate:
+- model_gap_manifest.csv: completed, reusable, and genuinely missing status for 16 properties × 4 conditions;
+- training_manifest.csv: executable list of missing models only;
+- protocol.json: analysis rules for this round;
+- cost_estimate.csv: extrapolate actual first-round Transformer and GRU 20k logs separately, without borrowing the 28-minute n10..12 short-length timing;
+- protected_files.json: protection of earlier artifacts and current dependencies.
 
-固定首轮实际已完成配置：n=10..30、同一数据世界、训练/验证/分析底层排列、split、批次表、样本曝光、20k终点、词表、监督位置、损失、优化器及调度。
-配置参数从真实文件复制，不能从此前768模型方案或后续8k可学习性方案猜测。
-原始step-0、参数哈希、任务开始时的Python/NumPy/CPU/CUDA随机状态继续复用；新任务改变标签与任务token，不能另抽初始化。
-GRU继续使用已验证的显式层间Dropout实现。
-架构容量仍不匹配，报告“现有配置比较”，不宣称纯架构效应。
+Fix the first round’s actual completed settings: n=10..30; the same data world, underlying training/validation/analysis permutations, splits, batch schedule, sample exposure, 20k endpoints, vocabulary, supervision positions, loss, optimizer, and schedule.
+Copy configuration parameters from actual files; do not infer them from the earlier 768-model plan or later 8k learnability plan.
+Continue reusing original step-0 weights, parameter hashes, and Python/NumPy/CPU/CUDA RNG states at task start. New tasks change labels and task tokens; do not draw new initializations.
+The GRU must retain the verified explicit inter-layer Dropout implementation.
+Architecture capacities remain unmatched; report a comparison of existing configurations, not a pure architecture effect.
 
-输出实际GPU/CPU成本、显存及磁盘外推，然后在工程检查通过后按缺失清单执行；不因观察到几何效果自动改预算。
-磁盘不足时先利用已配置的大容量缓存位置，不能删除唯一旧权重腾空间。
+Report actual GPU/CPU cost, GPU memory, and disk extrapolation, then execute the missing-model list after engineering checks pass. Do not change the budget automatically in response to observed geometry.
+If disk space is insufficient, first use the configured high-capacity cache location; do not delete unique earlier weights to free space.
 
-B2. 标签和工程检查
+B2. Label and engineering checks
 
-同一批排列重新计算剩余性质标签。
-复用精确校验器穷举小排列并对n10..30随机检查全部关系，特别核对：
-- inverse/补排列变换方向；
-- anti-fixed points等名称对应的真实定义；
-- LIS/LDS与连续段不是同一任务；
-- global descents/components的+1偏移。
+Recompute the remaining property labels on the same permutations.
+Reuse the exact validator to exhaustively check small permutations and randomly check all relations at n10..30, especially:
+- directions of inverse/complement transformations;
+- actual definitions corresponding to names such as anti-fixed points;
+- LIS/LDS and consecutive runs are different tasks;
+- the +1 offset between global descents and components.
 
-固定小批检查两编码标签一致、词表/位置/因果性、答案/EOS损失掩码。
-复用真实学习率工程检查和连续/断点恢复核对；工程试验权重不计入正式终点，正式模型重新加载原真实step-0与起始RNG。
-冻结源码后运行缺失清单；每个模型固定20k，不根据验证成绩选更早点、延长或更换配置。
-保留阶段曲线，所有最终模型均纳入。
+On a fixed small batch, check label agreement between encodings, vocabulary/positions/causality, and answer/EOS loss masks.
+Reuse engineering checks with the actual learning rate and continuous-versus-resumed execution verification. Engineering-test weights do not count as formal endpoints; reload the original genuine step-0 weights and starting RNG for formal models.
+Freeze source code before running the missing-model list. Every model uses exactly 20k updates; do not choose earlier endpoints, extend training, or change configuration based on validation performance.
+Retain intermediate learning curves and include every final model.
 
-B3. 同一框架完成全部八关系
+B3. Complete all eight relations in the same framework
 
-复用上一轮已核验的三主指标及其定义：
-- 普通线性CKA；
-- k=10邻域重叠；
-- 留出Procrustes，沿用固定PCA/归一化/fit-eval划分。
-debiased/U-centered CKA仍为敏感性，不新增指标搜索。
+Reuse the three verified primary metrics and their definitions:
+- ordinary linear CKA;
+- k=10 neighborhood overlap;
+- held-out Procrustes with the fixed PCA/normalization/fit-eval split.
+Debiased/U-centered CKA remains a sensitivity analysis; do not search additional metrics.
 
-每个实例均完成：
-1. 相同激活、只改变指标；
-2. 相同编码/输入/关系/提取规则/CKA，比较Transformer与GRU配置；
-3. 相同架构/任务/底层排列/初始化/预算/CKA，比较两编码；
-4. 同一检查点/编码/关系/输入/CKA，比较各层，pooling不变。
-主端点仍是任务token前输入结束位置；Transformer block1..4及final norm分别记录，GRU layer1..4按固定路径提取。
+For every instance, complete:
+1. identical activations, changing only the metric;
+2. identical encoding/input/relation/extraction/CKA, comparing Transformer and GRU configurations;
+3. identical architecture/task/underlying permutations/initialization/budget/CKA, comparing encodings;
+4. identical checkpoint/encoding/relation/input/CKA, comparing layers with pooling unchanged.
+The primary endpoint remains the input-end position before the task token. Record Transformer blocks 1..4 and final normalization separately; extract GRU layers 1..4 via the fixed path.
 
-保留上一轮次要分析：全部16个性质、分别在两编码内，报告同任务、同底层输入的Transformer–GRU最终端点直接CKA及真实初始化参照，共32个跨架构配对。它与各架构内部的关系选择性分别解释，不新增训练。
+Retain the earlier secondary analysis: for all 16 properties, within each encoding, report direct final-endpoint Transformer–GRU CKA for the same task and underlying inputs with genuine initialization references, totaling 32 cross-architecture pairings. Interpret this separately from within-architecture relation selectivity; no additional training.
 
-正确、原定错误、恒等配对与真实初始化全部保留。
-逐长度计算后固定1/21汇总；NaN不能填0或重新分配长度权重。
-主答案分层及原始读数沿用上一轮规则。+1关系的答案映射必须显式处理，不能假定原始数字相等。
-源任务答案成绩、逐长度表现、答案CE、长度众数、真实答案和输出概率基线并列报告。
-不同指标比较方向和模式，不直接比较分值大小，不把三个指标当独立重复。
+Retain correct, originally specified wrong, identity pairings, and genuine initialization.
+Compute separately by length, then aggregate with fixed weight 1/21. Do not fill NaNs with zero or redistribute length weights.
+Retain the earlier primary answer-stratification rules and original scores. Explicitly handle the answer mapping for the +1 relation; do not assume raw numeric answers are equal.
+Report source-task answer performance, per-length results, answer CE, length-specific modes, true-answer baselines, and output-probability baselines alongside one another.
+Compare directions and patterns across metrics, not score magnitudes, and do not treat the three metrics as independent repetitions.
 
-使用S表示越大越相似：
-B0 = S正确,初始化 - S错误,初始化
-Bt = S正确,训练后 - S错误,训练后
-dc = S正确,训练后 - S正确,初始化
-dw = S错误,训练后 - S错误,初始化
+Use S so that larger means more similar:
+B0 = S_correct,initial - S_wrong,initial
+Bt = S_correct,trained - S_wrong,trained
+dc = S_correct,trained - S_correct,initial
+dw = S_wrong,trained - S_wrong,initial
 Delta = Bt - B0 = dc - dw
 
-编码、配置与层的差异同时报告B0、Bt、dc、dw和Delta的变化。
-Delta翻转不保证Bt翻转；正Delta不保证正确相似度提高。
-不得隐藏Delta减输出Delta来估计独立数学机制。
+For encoding, configuration, and layer differences, report changes in B0, Bt, dc, dw, and Delta together.
+A Delta reversal does not guarantee a Bt reversal; positive Delta does not guarantee increased correct similarity.
+Do not estimate an independent mathematical mechanism by subtracting output Delta from hidden Delta.
 
-分析单位保留任务共享和变换类型依赖。原八个实例只涵盖取逆、补排列两种变换类型；补齐例子不等于全面覆盖数学关系。
+Retain shared-task and transformation-type dependencies in the analysis unit. The original eight instances cover only inversion and complement; completing the examples does not comprehensively cover mathematical relations.
 
-C. 第二阶段：一个小规模图论试验
+C. Stage 2: one small graph-theory pilot
 
-选择图论作为本轮唯一新数学系统，群族作为后续备用。PermWorld已经是S_n背景，给它改名GroupWorld不增加跨系统证据。
+Use graph theory as the only new mathematical system this round; keep group families as a later option. PermWorld already has an S_n setting, so renaming it GroupWorld does not add cross-system evidence.
 
-C1. 对象、任务和关系
+C1. Objects, tasks, and relations
 
-对象：简单无自环有向图，A_ij=1表示i→j；对角线始终0。
-顶点数固定为n=6、7、8，三个规模分别计算后等权1/3，不与PermWorld的1/21混用。
-任务只有四个：
-- 最大出度；
-- 最小出度；
-- 最大入度；
-- 最小入度。
+Objects: simple directed graphs without self-loops; A_ij=1 denotes i→j, and diagonal entries always remain 0.
+Fix vertex counts to n=6,7,8. Compute each size separately, then aggregate with equal weight 1/3; do not confuse this with PermWorld’s 1/21.
+Only four tasks:
+- maximum out-degree;
+- minimum out-degree;
+- maximum in-degree;
+- minimum in-degree.
 
-变换R：反向图，邻接矩阵转置。
-变换C：补图，仅对非对角元素取1-A_ij。
-四个关系实例：
-- 最大出度(G) = 最大入度(RG)；
-- 最小出度(G) = 最小入度(RG)；
-- 最大出度(G) = n-1-最小出度(CG)；
-- 最大入度(G) = n-1-最小入度(CG)。
+Transformation R: reverse graph, transposing the adjacency matrix.
+Transformation C: graph complement, applying 1-A_ij only off the diagonal.
+Four relation instances:
+- max_out_degree(G) = max_in_degree(RG);
+- min_out_degree(G) = min_in_degree(RG);
+- max_out_degree(G) = n-1-min_out_degree(CG);
+- max_in_degree(G) = n-1-min_in_degree(CG).
 
-公式由入/出度与反向、补边定义直接推导。它们共享四个任务和两个变换，不能算四次独立验证。
-标签为0..n-1，可直接使用原数字token，不引入多位答案这个额外因素。
+The formulas follow directly from degree, reversal, and complementation definitions. They share four tasks and two transformations and are not four independent validations.
+Labels are 0..n-1 and can directly use the original numeric tokens without introducing multi-token answers.
 
-C2. 错配对照和数据划分
+C2. Wrong-pair control and data splits
 
-训练前固定一个错误变换W：
-- 对无序顶点对的列表作固定、非顶点重标号诱导的对合交换；
-- 每次同时交换相应两个方向的edge slots，使W与R交换；
-- 具体构造：无序顶点对先按字典序排列，用Python random.Random(20261010+n)打乱，相邻两项成对交换；奇数项时最后一项不变。保存实际交换表及哈希，不根据效果改seed；
-- W也与C交换，保持n与边数；
-- R、C、W各为对合，生成的轨道至多8元素。
+Freeze a wrong transformation W before training:
+- fixed involutive swaps of unordered vertex pairs, not induced by vertex relabeling;
+- swap corresponding edge slots in both directions together so W commutes with R;
+- construction: list unordered vertex pairs lexicographically, shuffle using Python random.Random(20261010+n), and swap adjacent pairs; if the count is odd, keep the last item fixed. Save actual swap tables and hashes; do not change the seed based on effects;
+- W also commutes with C and preserves n and edge count;
+- R,C,W are involutions, generating orbits of at most 8 elements.
 
-先验证这些条件、给出W破坏各公式的精确反例，并报告随机样本中偶然仍满足关系的比例。
-不得按标签效应、CKA或Delta挑最差W。若构造不满足声明，作为工程错误修复并在任何几何分析前重新冻结。
-顶点重标号保持度数性质，不能单独用作“破坏关系”的负对照。
+First verify these conditions, provide exact counterexamples showing that W breaks each formula, and report accidental formula agreement on random samples.
+Do not select the worst W by label effects, CKA, or Delta. If construction violates its claims, treat this as an engineering error and refreeze before any geometry analysis.
+Vertex relabeling preserves degree properties and cannot alone be used as a negative control that breaks the relation.
 
-R关系：正确R、错误WR、恒等。
-C关系：正确C、错误WC、恒等。
-这样正确/错误配对的图大小和边数一致；同时保留错误配对偶然正确的情况。
+R relations: correct R, wrong WR, identity.
+C relations: correct C, wrong WC, identity.
+Correct/wrong graph pairings therefore match size and edge count, while accidental correctness under wrong pairings is retained.
 
-对完整<R,C,W>轨道划分train/validation/held-out analysis，交叉重复为零。
-每个n固定训练4096、验证256、分析512个anchor，四任务使用同一底层图及同一批次。
-图生成分布在p=0.25、0.5、0.75中固定等概率选择，再独立生成非对角边；固定种子、去重和拒绝规则，公开实际各档数量。
-这是新数据世界，不与历史F5矩阵或PermWorld训练混在一起。
-固定矩阵条目顺序；保存顶点数、边数、轨道和anchor ID。
-图同构并未全部排除，报告该限制，不把轨道互斥写成所有语义图对象互斥。
+Split complete <R,C,W> orbits into train/validation/held-out analysis with zero cross-split duplicates.
+For every n, fix 4096 training, 256 validation, and 512 analysis anchors. Four tasks use the same underlying graphs and batches.
+Choose p uniformly from 0.25,0.5,0.75, then independently sample off-diagonal edges. Fix seeds, deduplication, and rejection rules; disclose actual counts in each p group.
+This is a new data world, not mixed with historical F5 matrices or PermWorld training.
+Fix matrix-entry order; save vertex count, edge count, orbit, and anchor IDs.
+Graph isomorphisms are not all excluded. Report this limitation and do not equate orbit exclusion with exclusion of all semantically equivalent graph objects.
 
-C3. 编码、模型、预算
+C3. Encoding, models, and budget
 
-只有一个参考Transformer配置，一种行序邻接矩阵编码，四个单任务模型，上限4个新终点。
-优先复用首轮Transformer结构、188词表和真实step-0；四任务复制同一初始化及起始RNG。
-图序列明确包含n、行序非对角0/1条目与固定行边界；具体token ID映射、任务ID和结束位置冻结并记录。
-复用原词表的固定边界/分隔符，不修改PermWorld解析器来把图当排列；图使用单独可审计序列化器。
-若现有词表不足，先记录必要新增项和配置差异，不能声称跨域编码完全相同。
-核对n6..8完整监督序列在原128上下文内，禁止静默截断。
+Only one reference Transformer configuration, one row-order adjacency encoding, and four single-task models, with at most four new endpoints.
+Prefer the first round’s Transformer structure, 188-token vocabulary, and genuine step-0 weights; copy the same initialization and starting RNG across the four tasks.
+Graph sequences explicitly include n, row-order off-diagonal 0/1 entries, and fixed row boundaries. Freeze and record exact token ID mappings, task IDs, and endpoint positions.
+Reuse fixed vocabulary boundaries/separators. Do not alter the PermWorld parser to interpret graphs as permutations; use a separate auditable graph serializer.
+If the vocabulary is insufficient, first record necessary additions and configuration differences; do not claim identical cross-domain encoding.
+Check complete supervised sequences for n6..8 fit within the original 128-token context; no silent truncation.
 
-训练预算继承首轮实际Transformer的20k配方、batch/监督目标/调度，固定最终点；不依据几何调整。
-工程检查仅验证标签、往返、因果性、监督和恢复流程；不设充分学习的几何入口门槛。
-源任务成绩弱时仍交付固定预算结果，注明不能据此判断等学习水平的数学机制，不追加训练。
-真实step-0与权重/RNG哈希保存，沿用原工程复核方法。
+Inherit the first round’s actual Transformer 20k recipe, batches, supervision objective, and schedule, keeping the final endpoint fixed; do not tune for geometry.
+Engineering checks verify labels, round trips, causality, supervision, and recovery only; do not impose a geometry-entry threshold for sufficient learning.
+If source-task performance is weak, still deliver fixed-budget results, explain that they do not establish mathematical mechanisms at equal learning, and do not extend training.
+Save genuine step-0 weights and weight/RNG hashes, retaining the original engineering verification methods.
 
-C4. 图论测量和解释
+C4. Graph measurement and interpretation
 
-先固定最终端点与CKA，再在同一激活上计算邻域重叠和留出Procrustes；指标版本、k与拟合规则复用。
-本轮不启动图论编码×架构大网格；其结果只支持参考配置下的跨系统试探。
-保留原始正确/错误/恒等相似度、B0、Bt、dc、dw、Delta。
-训练后偏好与Delta分开解释，不能只给正负号总数。
+Fix the final endpoint and CKA first, then compute neighborhood overlap and held-out Procrustes on the same activations, reusing metric versions, k, and fit rules.
+Do not start a large graph encoding × architecture grid this round; results support only a cross-system pilot under the reference configuration.
+Retain original correct/wrong/identity similarities, B0, Bt, dc, dw, and Delta.
+Interpret trained preference and Delta separately, not merely through counts of signs.
 
-按n分层；同时报告边数/密度和训练标签众数基线。主答案控制和密度控制分别标明；密度控制若因分层样本不足未定义，保留NaN。
-主答案分层复用上一轮实现和最小组大小规则；密度敏感性在同一分组键中加入精确边数m，最小组阈值保持相同。实际W映射、分层字段及处理规则在读取新模型结果前冻结；NaN不触发放宽分层或重分配长度权重。
-真值、输出概率和预定输入核参照保留。位置展开的二值one-hot可能对这些变换保持距离，不能把这样的输入基线当作区分正确/错误的证据。
-Procrustes拟合与评估anchor/轨道严格分开。
-在图论内部做配对比较；不能直接减PermWorld与图论的原始CKA，声称只改变数学领域的因果效应。
-顶点数、输入结构、任务和样本分布都是跨域附带差异，比较的是现象能否在另一系统复现。
+Stratify by n; also report edge count/density and the training-label mode baseline. Distinguish primary answer controls and density controls; retain NaN when density stratification lacks sufficient samples.
+Reuse the earlier answer-stratification implementation and minimum-group rule. For density sensitivity, add exact edge count m to the same grouping key, leaving the minimum-group threshold unchanged. Freeze actual W mappings, stratum fields, and processing rules before reading new-model results. NaN must not trigger relaxed strata or redistribution of length weights.
+Retain ground-truth, output-probability, and prespecified input-kernel references. Position-flattened binary one-hot encodings may preserve distances under these transformations; such input baselines are not evidence distinguishing correct from wrong.
+Strictly separate Procrustes fit and evaluation anchors/orbits.
+Make paired comparisons within graph theory. Do not subtract raw PermWorld and graph CKA to claim a causal effect of changing only the mathematical domain.
+Vertex counts, input structures, tasks, and sample distributions also differ across domains; the comparison asks whether an observation reappears in another system.
 
-本轮不自动做更难的最大团/最大独立集、三角形/独立三元组或矩阵群任务。
+Do not automatically run harder tasks such as maximum cliques/maximum independent sets, triangles/independent triples, or matrix-group tasks this round.
 
-D. 仓库整理：清楚的当前入口，保留历史证据
+D. Repository organization: a clear current entrypoint while retaining historical evidence
 
-用户在询问是否需要删除无关实验；本轮默认整理和逻辑归档，不执行永久删除旧实验。
-先按实际脚本依赖列四类：
-1. 当前PermWorld/图论主线；
-2. 当前主线依赖的旧代码、数据、权重、初始化、词表、轨道和审计；
-3. 独立旧研究（F17、组合机制、LIS迁移、其他历史探索等）；
-4. 可再生临时文件。
+The user asked whether unrelated experiments should be deleted. Default to organization and logical archival, without permanent deletion of earlier experiments.
+First classify by actual script dependencies:
+1. current PermWorld/graph research;
+2. earlier code, data, weights, initialization, vocabulary, orbits, and audits required by current research;
+3. independent historical research (F17, composition mechanisms, LIS transfer, and other explorations);
+4. regenerable temporary files.
 
-新增 CURRENT_RESEARCH.txt 或当前研究README，入口只介绍当前问题、已完成实验、下一轮命令及结果。
-旧工作列在“历史或独立项目”索引中；保留其原路径。
-旧README若属于冻结或受保护清单保持原样，优先新增当前入口；只更新不受保护的活动文档。
-不能凭目录名认定无关，不能搬走或删除当前复现代码仍引用的文件。
-F17论文/结果/release及独立历史证据继续保护；负结果也保留。
-不得运行旧的一键大训练入口；本轮执行命令仅指向新清单。
-输出 archive_index.csv 和 cleanup_candidates.csv：用途、依赖、保留理由、是否可重建、建议动作。
-本轮不执行对旧权重、原始数据、唯一缓存、源码历史或结果目录的永久删除，也不重写Git历史。仅提出临时文件清理候选。
+Add CURRENT_RESEARCH.txt or a current-research README introducing only the current question, completed experiments, next-round commands, and results.
+List earlier work in a historical/independent-project index, retaining original paths.
+Leave frozen/protected earlier READMEs unchanged; prefer a new current entrypoint and update only active unprotected documents.
+Do not infer irrelevance from directory names or move/delete files referenced by current reproduction code.
+Continue protecting F17 papers/results/releases and independent historical evidence, including negative results.
+Do not run earlier one-command large-training entrypoints; execution commands this round must point only to the new list.
+Output archive_index.csv and cleanup_candidates.csv with purpose, dependencies, retention reasons, rebuildability, and proposed actions.
+Do not permanently delete earlier weights, raw data, unique caches, source history, or result directories, and do not rewrite Git history. Only propose temporary-file cleanup candidates.
 
-E. 最终交付
+E. Final deliverables
 
-1. PermWorld八关系完整主表、逐长度结果和四部分受控比较图；
-2. 八关系的指标/模型配置/编码/层稳健性汇总，个别关系单独展示；
-3. 图论四任务、四关系的小试报告，包括源任务学习、初始化参照、密度控制和完整负结果；
-4. coverage_status.csv：已完成、耦合、未定义、缺失与尚未推广；
-5. 源模型清单、参数/数据/特征哈希、真实初始化、源码/协议、复现入口；
-6. 固定小批独立指标复算、提取路径核对、分解算术、覆盖及旧产物保护审计；
-7. 当前研究入口与历史归档索引；
-8. completion.json：实际新增模型数、复用数、GPU/CPU/墙钟与存储、完成及停止状态。
+1. Complete eight-relation PermWorld main table, per-length results, and four-part controlled-comparison figures;
+2. Eight-relation robustness summaries across metrics/model configurations/encodings/layers, with individual relations shown separately;
+3. Four-task/four-relation graph pilot report including source learning, initialization references, density control, and complete negative results;
+4. coverage_status.csv: completed, dependent, undefined, missing, and not yet generalized;
+5. Source-model manifest, parameter/data/feature hashes, genuine initialization, source code/protocol, and reproduction entrypoints;
+6. Independent fixed-small-batch metric checks, extraction-path checks, decomposition arithmetic, coverage, and earlier-artifact protection audit;
+7. Current research entrypoint and historical archive index;
+8. completion.json: actual additional/reused models, GPU/CPU/wall time and storage, completion and stopped status.
 
-主报告以用户原问题组织：表征相似性是否随数学对应改变，这个观察受哪些测量和建模条件影响，在新数学系统是否复现。
-不得把本轮单世界扩展包装为普适规律或机制证明。
+Organize the main report around the user’s original question: does representational similarity change with mathematical correspondence, which measurement/modeling conditions affect this observation, and does it reappear in a new mathematical system?
+Do not present this single-world extension as a universal law or mechanism proof.
 
-参考定义（用固定本地库版本并记录版本，不因网站更新自动改环境）：
-- NetworkX reverse：https://networkx.org/documentation/stable/reference/classes/generated/networkx.DiGraph.reverse.html
-- NetworkX complement：https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.operators.unary.complement.html
-- NetworkX adjacency：https://networkx.org/documentation/stable/reference/generated/networkx.linalg.graphmatrix.adjacency_matrix.html
-- 后续矩阵群参考：https://doc.sagemath.org/html/en/reference/groups/sage/groups/matrix_gps/linear.html
+Reference definitions (use fixed local library versions and record them; do not change the environment automatically when websites update):
+- NetworkX reverse: https://networkx.org/documentation/stable/reference/classes/generated/networkx.DiGraph.reverse.html
+- NetworkX complement: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.operators.unary.complement.html
+- NetworkX adjacency: https://networkx.org/documentation/stable/reference/generated/networkx.linalg.graphmatrix.adjacency_matrix.html
+- Later matrix-group reference: https://doc.sagemath.org/html/en/reference/groups/sage/groups/matrix_gps/linear.html
 
-执行顺序：缺口/依赖/成本核对 → 工程核验与协议冻结 → 缺失PermWorld源训练及统一分析 → 固定图论小试 → 完整报告与入口整理 → 停止。
+Execution order: gap/dependency/cost review → engineering verification and protocol freeze → missing PermWorld source training and unified analysis → fixed graph pilot → complete reports and entrypoint → stop.

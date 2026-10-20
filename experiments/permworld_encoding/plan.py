@@ -44,7 +44,7 @@ def create(root,target=.10,sigma=.20):
     jobs=[dict(run_id=f'{u["unit"]}_{e}_{task}',unit=u['unit'],model_seed=u['model_seed'],data_seed=u['data_seed'],batch_seed=u['batch_seed'],
         encoding=e,task=task,updates=20000,effective_batch=64,shared_step0=f'{u["unit"]}/step0.pt') for u in units for e in ENCODINGS for task in TASKS]
     config=dict(protocol_version='permworld-encoding-selection/v1',status='frozen_before_formal_data_or_training',
-        registered_utc=datetime.now(timezone.utc).isoformat(),research_question='输入编码如何影响训练对变换配对选择性的重塑？',
+        registered_utc=datetime.now(timezone.utc).isoformat(),research_question='How does input encoding affect training-induced reshaping of transformation-pairing selectivity?',
         phase_authorized_now='implementation, verification, protocol and cost planning only; formal training not launched',
         output='results/permworld_encoding_confirmation_v1',freeze_manifest=str((root/'freeze_manifest.json').relative_to(WORKSPACE)),
         encodings=list(ENCODINGS),tasks=list(TASKS),relations=RELATIONS,actions=list(ACTIONS),lengths=list(range(10,31)),
@@ -144,49 +144,49 @@ def create(root,target=.10,sigma=.20):
 
 def report(root,config,costs,precision):
     N=len(config['units']);base,final=costs
-    text=f'''PermWorld 一行记号 vs 规范化轮换记号：第一、二步交付
+    text=f'''PermWorld One-line notation vs Canonical cycle notation: first- and second-stage deliverables
 
-状态：实现、验证、成本估算与正式协议冻结已完成；尚未生成正式数据或启动正式训练。
+Status: implementation, checks, cost estimate, and formal protocol freeze are complete; formal data have not been generated and formal training has not started.
 
-两种编码：一行记号表示 pi(1)..pi(n)；规范轮换沿 pi 的映射方向，每轮换从最小值开始、按轮换最小值排序、保留所有单元素轮换。轮换内逗号、轮换间分号，使用仓库已有CYCLE边界token。
-共用188-token词表、256维4层8头模型、MLP倍率4、dropout0.1、绑定embedding、max_seq_len128。两种编码都含n个数字和n−1个分隔符：前缀2n+4、含答案/EOS监督序列2n+8，n10..30长度完全相同。
+Two encodings: one-line notation represents  pi(1)..pi(n); canonical cycles follow  pi  mapping direction, start each cycle at its minimum, order cycles by their minima, and retain singletons. Use commas within cycles and semicolons between cycles, with the repository's existing CYCLE boundaries token.
+Shared 188-token vocabulary, 256-dimensional 4 layers, 8 heads, MLP ratio 4, dropout0.1, tied embedding, max_seq_len128. Both encodings contain n numbers and n−1 delimiters: prefix 2n+4, answer/EOS supervision sequence 2n+8,n10..30 have identical lengths.
 
-验证：S1..S7穷举加n10..30每长度256随机排列，共11,289个排列；90,312次关系公式检查。两种编码往返、全部16性质标签、正确/原错误变换一致；非法序列拒绝、端点因果性、SDPA等价、参数复制/RNG回放、轨道分割和批次一致性检查通过。
+Validation: S1..S7 exhaustive enumeration plus n10..30, per length, 256 random permutations, totaling 11,289 permutations; 90,312 relationship-identity checks. Round trips, all 16 property labels, and correct/original wrong transformations agree between encodings; malformed-sequence rejection, endpoint causality, SDPA equivalence, parameter-copy/RNG replay, orbit-split, and batch-consistency checks passed.
 
-固定方案：每单元一个新模型种子和一个独立新数据采样世界，两编码/16性质共32单任务模型，共享实际step0参数和每任务的起始随机状态。每长度训练4,096、验证256、测试512个anchor，21个长度固定均匀；单元内分割八元轨道严格互斥，全部成员排除固定历史输入索引。不同单元独立采样，不强制互斥；不做跨单元模型对比较。
-每模型20,000更新、micro16×累积4=有效batch64；共同保存批次表、同样1,280,000样本曝光/2,560,000答案+EOS监督token。AdamW lr3e-4、wd0.01、warmup1000、cosine到0.1×lr、clip1、BF16训练/FP32评估、TF32禁用。固定最终20k检查点，不按验证CKA/准确率选择或延长。
+Fixed design: a new model seed and independent new data world per unit; two encodings x /16 properties give 32 specialists sharing actual step0 parameters and per-task starting random states. Per-length training 4,096, validation 256, test 512 anchor,21; uniform fixed length sampling. Eight-element orbits are disjoint across splits within units and exclude all historical-index inputs. Units are independently sampled, not forced disjoint; no cross-unit model-pair comparisons.
+Per model: 20,000 updates, micro16 x accumulation 4= effective batch64; common saved batch schedules, identical 1,280,000 example exposures/2,560,000 Answer+EOS supervised token.AdamW lr3e-4, wd0.01, warmup1000, cosine to 0.1×lr, clip1, BF16 training/FP32 evaluation, TF32 disabled. Fixed final 20k checkpoint, not selected/extended by validation CKA/ accuracy.
 
-主要检验：下降—逆下降、超越—亏缺两条关系的Gamma_Delta=Delta(轮换)−Delta(一行)，答案共同分层后的普通CKA；每长度分别计算后等权1/21。两关系Bonferroni，单位配对t检验，同时95%区间。共同报告Gamma_initial、Gamma_trained、正确/错误变化、所有八关系、源准确率、真实答案和输出概率基线；三指标与两个固定输入核只作预定敏感性。
-实际step0权重、参数哈希、文件SHA、构造器、完整词表和Python/NumPy/CPU/CUDA随机状态会在正式训练前保存并链接每个检查点。初始化参数相同不意味着编码后的初始化几何相同。
+Primary tests: descents--inverse descents and exceedances--deficiencies Gamma_Delta=Delta(cycle)−Delta(one-line), ordinary CKA after joint-answer stratification; separately computed lengths with equal weight 1/21. Two relationships Bonferroni, unit-paired t tests, simultaneous 95% intervals. Jointly report Gamma_initial, Gamma_trained, correct/wrong changes, all eight relationships, source accuracies, gold-answer/output-probability references; three metrics and two fixed input kernels are prescribed sensitivities only.
+Actual step0 weights, parameter hashes, file SHA, constructor, full vocabulary, and Python/NumPy/CPU/CUDA random states will be saved before formal training and linked to every checkpoint. Identical initial parameters do not imply identical encoded-input initialization geometry.
 
-数量选择：八单元/256模型先作成本基线。精度目标为两主要Gamma_Delta同时95%区间计划半宽±{config['statistics']['precision_target_halfwidth']:.2f}；尚无跨编码方差数据，预先采用标准差{config['statistics']['planning_unit_effect_sd']:.2f}的规划情景，固定{N}单元/{N*32}模型，计划半宽{config['statistics']['planning_halfwidth']:.4f}。0.20不是已验证的方差上界，本方案不是精度保证，不借用旧单编码/F17方差，也不设结果驱动扩容。若真实标准差更大，就如实报告较宽区间。
+Sample-count choice: eight units/256 models first serve as a cost baseline. The precision target for the two primary Gamma_Delta simultaneous 95% intervals is a planned half-width ±{config['statistics']['precision_target_halfwidth']:.2f}; cross-encoding variance is unavailable, so planning assumes SD {config['statistics']['planning_unit_effect_sd']:.2f} and fixes {N} units//{N*32} models, planned half-width {config['statistics']['planning_halfwidth']:.4f}.0.20 is not a verified variance bound. This is not a precision guarantee, does not borrow old single-encoding /F17 variance, and has no result-driven expansion. Larger actual SDs will be reported as wider intervals.
 
-本机RTX5070微基准（仅零学习率前后向和AdamW核计时，模型参数哈希未变）：
-  八单元：核心训练{base['core_gpu_hours']:.1f} GPU小时；按25%/50%训练开销预留及实测推理外推，共约{base['expected_single_gpu_hours_with25pct_training_overhead']:.1f}–{base['cautious_single_gpu_hours_with50pct_training_overhead']:.1f} GPU小时。
-  正式{N}单元：核心训练{final['core_gpu_hours']:.1f} GPU小时；含上述预留及推理外推约{final['expected_single_gpu_hours_with25pct_training_overhead']:.1f}–{final['cautious_single_gpu_hours_with50pct_training_overhead']:.1f} GPU小时，另预留未实测历史索引/数据准备/其余分析1–8 CPU小时。
-  当前计划检查点+特征未压缩估计约{final['uncompressed_checkpoint_and_feature_GiB']:.1f} GiB；建议预留120GiB。计时不是长时热稳态或共享GPU负载保证，GPU/CPU时间不能全部简单并行抵消。
+Local RTX5070 microbenchmark (zero-learning-rate forward/backward and AdamW kernel timing only; model-parameter hashes unchanged):
+  Eight units: core training {base['core_gpu_hours']:.1f} GPU hours; allowing 25%/50% training overhead plus extrapolated measured inference, approximately {base['expected_single_gpu_hours_with25pct_training_overhead']:.1f}–{base['cautious_single_gpu_hours_with50pct_training_overhead']:.1f} GPU hours.
+  Formal {N} units: core training {final['core_gpu_hours']:.1f} GPU hours; with the same overhead/inference estimate, approximately {final['expected_single_gpu_hours_with25pct_training_overhead']:.1f}–{final['cautious_single_gpu_hours_with50pct_training_overhead']:.1f} GPU hours, plus unmeasured historical-index//data-preparation//other-analysis reserve 1–8 CPU hours.
+  Current planned checkpoint/+feature uncompressed estimate: approximately {final['uncompressed_checkpoint_and_feature_GiB']:.1f} GiB; reserve 120GiB. Timings do not guarantee long-run thermal steady state or shared GPU load, and GPU/CPU time cannot all be canceled through simple parallelism.
 
-完整精度和成本敏感性：precision_sensitivity.csv、cost_estimate.csv。训练清单：training_manifest.csv。完整协议：protocol.json；冻结哈希：freeze_manifest.json。
-代码：experiments/permworld_encoding/ 下的core/data/train/evaluate模块；README.txt提供复现和未来显式执行命令。本轮停止在准备阶段，不自动调用正式prepare/train/evaluate。
+Full precision/cost sensitivities: precision_sensitivity.csv, cost_estimate.csv. Training manifest: training_manifest.csv. Full protocol: protocol.json; freeze hash: freeze_manifest.json.
+Code: experiments/permworld_encoding/  modules under core/data/train/evaluate; README.txt supplies reproduction and future explicit execution commands. This round stops at preparation and does not automatically invoke formal prepare/train/evaluate.
 '''
     (root/'report.txt').write_text(text)
-    (root/'README.txt').write_text('''从 /home/yangx/ICML 执行；PYTHONDONTWRITEBYTECODE=1 防止修改旧模块的缓存。
+    (root/'README.txt').write_text(''' from  /home/yangx/ICML execution; PYTHONDONTWRITEBYTECODE=1 prevents modification of legacy-module caches.
 
-已完成的准备验证（不启动正式训练）：
+Completed preparation checks (no formal training):
   PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m experiments.permworld_encoding.validate --output results/permworld_encoding_plan_20261009/encoding_validation.json
   PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m experiments.permworld_encoding.checks --config results/permworld_encoding_plan_20261009/planning_candidate.json --output results/permworld_encoding_plan_20261009/integration_checks.json
 
-未来正式执行（本轮没有执行以下命令；不能把微基准当作正式训练）：
+Future formal execution (commands below were not executed in this round; microbenchmarks are not formal training):
   PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m experiments.permworld_encoding.data --config results/permworld_encoding_plan_20261009/protocol.json
   PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m experiments.permworld_encoding.train --config results/permworld_encoding_plan_20261009/protocol.json --run-id u001_one_line_descents
-  按training_manifest.csv中的run_id串行执行全部模型；实际字母顺序见清单，不按成绩重排/删减。
+  Following training_manifest.csv in run_id, execute every model serially in recorded alphabetical order, without performance-based reordering/deletion.
   PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m experiments.permworld_encoding.evaluate --config results/permworld_encoding_plan_20261009/protocol.json --unit u001
-  所有单元预定模型完成后，每单元显式评估一次，然后：
+  After all prespecified models complete, explicitly evaluate each unit once, then:
   PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m experiments.permworld_encoding.evaluate --config results/permworld_encoding_plan_20261009/protocol.json --summarize
 
-正式数据/step0/训练检查点仅写results/permworld_encoding_confirmation_v1，不写F17或旧诊断目录。模型若中断，用完全相同命令续跑；协议/数据/代码哈希不匹配会拒绝续跑。正式协议不可覆盖；修改须建立显式新版本并重新冻结。
-主要结果：unit_components.csv、encoding_interactions.csv、primary_statistics.csv；附带baseline_unit_components.csv、baseline_encoding_interactions.csv、task_accuracy_summary.csv，以及逐长度各表。
-缺失/未定义单元不悄悄剔除，不自动补模型或增加样本。表征指标分量不是因果贡献比例；不以隐藏Delta减概率Delta定义机制。
+Formal data/step0/training checkpoints are written only to results/permworld_encoding_confirmation_v1, not F17 or old diagnostic directories. Resume interruptions using the identical command; mismatched protocol/data/code hashes reject resumption. Never overwrite the formal protocol; changes require an explicit new version and refreeze.
+Primary results: unit_components.csv, encoding_interactions.csv, primary_statistics.csv; accompanied by baseline_unit_components.csv, baseline_encoding_interactions.csv, task_accuracy_summary.csv and all per-length tables.
+missing/undefined units are not silently dropped or automatically replaced/expanded. Representation-metric components are not causal contribution percentages; hidden Delta minus probability Delta does not define a mechanism.
 ''')
 
 

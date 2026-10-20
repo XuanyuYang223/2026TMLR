@@ -285,16 +285,16 @@ def run():
             maximum_seconds=max(r['recorded_process_wall_seconds'] for r in values),
             scope='historical prior16' if reused else 'actual new52; process-wall, not end-to-end/GPU-active'))
     proposals = [
-        ('P1','primary','gru','exceedance_inverse','检验近掌握取逆任务的编码Γ0/Γt/ΓΔ；不把Δ翻转称学习偏好翻转'),
-        ('P2','primary','gru','record_complement','检验另一变换类型的编码分解，并保留轮换编码学习不足的限制'),
-        ('P3','primary','transformer','fixed_complement','主动纳入轮换负Bt、正Δ和两源掌握不对称；近零负值不称显著反偏好')]
-    proposal_rows = []; text = ['独立复现候选：仅提案，不执行', '',
-        '这是看过既有结果后的探索性提案。三项主要比较P1/P2/P3全部预先纳入，含一个轮换负Bt条件；',
-        '不能因新结果不理想转移主比较，也不能增加成功任务/长度。尚未确定确认单元数，不虚构方差、功效或精度。',
-        '每个独立单元须同时更换数据世界和初始化；两个架构各保存真实step0，同架构内两编码克隆，',
-        '共用底层数据/轨道、batch及20k预算。两个架构不声称同一初始化，现有容量仍未匹配。',
-        '每比较为两任务×两编码=4模型。单元内任务/编码/关系/长度读数耦合，不视为4个独立重复。',
-        '保存真实step0和RNG；事先固定源任务学习标准、全部21长度及三个指标。学习不足仍完整保留，不延长训练求正值。', '']
+        ('P1','primary','gru','exceedance_inverse','Test encoding Γ0/Γt/ΓΔ for nearly mastered inverse tasks; a Δ reversal is not a reversal of learned preference'),
+        ('P2','primary','gru','record_complement','Test encoding decomposition for another transformation type, retaining the limitation of insufficient learning with canonical-cycle encoding'),
+        ('P3','primary','transformer','fixed_complement','Include canonical-cycle negative Bt, positive Δ, and asymmetric source mastery deliberately; a near-zero negative value is not a significant reverse preference')]
+    proposal_rows = []; text = ['Independent replication candidates: proposal only, not executed', '',
+        'This exploratory proposal follows inspection of existing results. All three primary comparisons P1/P2/P3 are included in advance, including a canonical-cycle condition with negative Bt;',
+        'Do not switch primary comparisons because new results disappoint or add successful tasks/lengths. The number of confirmation units is not yet determined; do not invent variance, power, or precision.',
+        'Each independent unit must change both data world and initialization. Save genuine step0 for each architecture and clone it across encodings within that architecture,',
+        'sharing underlying data/orbits, batches, and the 20k budget. The two architectures do not share an initialization, and their capacities remain unmatched.',
+        'Each comparison uses two tasks×two encodings=4 models. Task/encoding/relation/length readings within a unit are coupled, not 4 independent replications.',
+        'Save genuine step0 and RNG. Fix source-learning criteria, all 21 lengths, and three metrics in advance. Retain insufficiently learned conditions without extending training to obtain positive results.', '']
     for ident, role, arch, relation, reason in proposals:
         task = relations[relation]
         selected = [lookup[arch,enc,task[side]] for enc in ('one_line','canonical_cycle') for side in ('left','right')]
@@ -308,8 +308,8 @@ def run():
             source_run_ids=json.dumps([r['run_id'] for r in selected]),purpose=reason,
             scope='empirical matching20k receipt sum; excludes preparation/engineering/extraction/audit; not a precision estimate'))
         text += [f'{ident} ({role}) {arch} {relation}: {reason}',
-                 f'每独立单元4模型/80000更新；既有同4配置的进程墙钟和 {seconds:.3f}秒 ({seconds/3600:.3f}小时)。',
-                 '上述是相同配置历史进程时长参考；硬件争用、学习配置或世界改变会改变实际耗时。', '']
+                 f'Each independent unit has 4 models/80000 updates; summed historical process wall time for the same 4 configurations is {seconds:.3f} seconds ({seconds/3600:.3f} hours).',
+                 'These are historical process-time references for matched configurations; hardware contention, learning configuration, or world changes can alter actual duration.', '']
     selected_union = {r['run_id']:r for ident,role,arch,relation,reason in proposals
                       for enc in ('one_line','canonical_cycle') for side in ('left','right')
                       for r in [lookup[arch,enc,relations[relation][side]]]}
@@ -325,15 +325,15 @@ def run():
                      cache_bytes_reference=None,accuracy_or_power_guarantee=False,
                      scope='Budget scenario only; measured apparent checkpoint bytes exclude new world/cache/engineering/logs')
                  for units in (1,2)]
-    text += [f'三主比较合并后实际unique模型数={len(selected_union)}/独立单元，而非关系/编码格数；模型集合无重叠。',
-             f'1单元/2单元仅为预算场景：{len(selected_union)}或{2*len(selected_union)}个模型；匹配历史源进程墙钟参考',
-             f'{unit_seconds/3600:.3f}或{2*unit_seconds/3600:.3f}小时，不是GPU活跃时长或功效承诺。',
-             f'现有匹配终点实际checkpoint表观字节和={sum(unique_cp.values())}，两个架构真实initial参考字节和={sum(unique_init.values())}。',
-             '它们不包含新世界、工程模型、日志和重新提取cache；不是磁盘allocated blocks，也不是未来容量保证。',
-             '未来cache可按冻结层/分支与批量存储方案控制，当前不猜测完整重训cache字节，不扩大为全768网格。',
-             '旧16历史源累计成本与本轮48+4新增源成本分列；不能把receipt和queue/phase/driver墙钟相加。',
-             'GPU-active/kernel时长未知；现有UTC/monotonic时钟偏移不转换成人为暂停或GPU空闲。',
-             '本脚本不启动任何实验。用户若以后授权训练，需另外先冻结完整协议、范围、预算与停止边界。']
+    text += [f'Across all three primary comparisons, the actual unique-model count is {len(selected_union)} per independent unit, rather than the number of relation/encoding cells; model sets do not overlap.',
+             f'1-unit/2-unit counts are budget scenarios only: {len(selected_union)} or {2*len(selected_union)} models; matched historical source-process wall-time references',
+             f'{unit_seconds/3600:.3f} or {2*unit_seconds/3600:.3f} hours, are not active GPU durations or power commitments.',
+             f'Summed apparent checkpoint bytes for currently matched endpoints={sum(unique_cp.values())}; reference apparent bytes for genuine initial states across the two architectures={sum(unique_init.values())}.',
+             'These exclude new worlds, engineering models, logs, and newly extracted caches; they are not disk allocated blocks or guarantees of future capacity.',
+             'Future cache size can be controlled by frozen layer/branch scope and batched storage. Do not guess full-retraining cache bytes or expand to the complete 768 grid.',
+             'Report cumulative historical cost for the old 16 sources separately from the current 48+4 new sources; do not add receipt and queue/phase/driver wall times.',
+             'GPU-active/kernel time is Unknown; current UTC/monotonic clock offsets do not establish manual pauses or GPU idle time.',
+             'This script starts no experiments. If training is authorized later, freeze the complete protocol, scope, budget, and stopping boundary separately first.']
 
     outputs = [('recomputed_main32.csv',primary),('main32_by_length.csv',main_lengths),
         ('six_negative_bt.csv',negative),('six_negative_bt_by_length.csv',negative_lengths),

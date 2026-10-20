@@ -1,104 +1,92 @@
-实际PermWorld完整结果解释审查（2026-10-11）
+Review of actual complete PermWorld-result interpretation (2026-10-11)
+Scope: read-only actual completed_readout,32 primary endpoints,16 encoding Gamma groups,three-metric directions,all64 source-learning records,768 layer readouts,and13824 component-missing identities. No primary-metric recomputation,models/weights/arrays/raw data,training,forwards,scientific metrics,extra metrics,checkpoint selection,or protocol changes. Only this note is added.
+The review follows actual readout_status=completed_readout and fixture_only=false. Original scientific CSV/report/freeze files remain unchanged. Sign counts below are dependent table descriptions,not independent repetitions or statistical inference.
 
-范围：只读实际completed_readout、32主端点、16编码Gamma、三指标方向、全部64源学习、
-768层读数与13824分量缺失身份。主指标不重算；模型/权重/数组/原数据不打开；无训练、
-前向、科学度量、额外指标、检查点选择或协议修改。只新增本说明。
-本审查在真实readout_status=completed_readout、fixture_only=false之后执行。
-原科学CSV/report/冻结文件未改。以下符号计数是耦合读表描述，不是独立重复或统计推断。
+1. Supported claims and prohibited strengthening
+Supported: input encoding strongly changes actual initial transformation-pairing preference. Trained correct−wrong preference and initialization-relative change are distinct readouts whose directions depend on relation,encoding,configuration,and layer. Conditional pairing selectivity remains after answer stratification,but CKA alone does not identify mathematical-relation encoding,causal mechanisms,or functional benefits.
+All32 primary answer-controlled/final_norm ordinary-CKA cells are defined: Bt26 positive/6 negative;Delta18 positive/14 negative. Do not say correct beats wrong for every relation or claim32 independent repetitions. Eight instances cover only inverse/complement transformations,sharing one world,anchors,and one initialization per architecture.
+B0 is16 positive/16 negative,dc16 positive/16 negative,dw29 negative/3 positive. Positive Delta is not automatically convergence of correct representations;negative Delta does not mean mathematical properties were not learned,as original one-line initialization often already had strong positive preference.
+Large positive Delta for the two one-line TF inversion relations mainly reflects falling wrong similarity:
+descent:dc=+0.053146, dw=-0.644855, Delta=+0.698000;
+exceedance:dc=+0.062285, dw=-0.639144, Delta=+0.701428.
+This supports reshaped pairing selectivity, not an approximately 0.7 increase in correct CKA.
 
-一、可支持的主张与禁止的强化
+Explicit examples of positive Delta with negative Bt (all primary answer control):
+Cycle fixed TF: Delta+0.620361,Bt-0.001515; GRU: Delta+0.475427,Bt-0.012015.
+Cycle run GRU: Delta+0.696079,Bt-0.103746;
+Cycle decomposition TF: Delta+0.753189,Bt-0.012266; GRU: Delta+0.661883,Bt-0.131089.
+Training improves on the initially strong wrong-pair preference, but correct pairings still do not exceed wrong pairings at the endpoint.
+Near-zero Bt (such as cycle TF fixed) is not a stable wrong-pair preference: lengths include positive and negative values, and no significance test was performed.
 
-目前可支持：输入编码强烈改变实际初始化的变换配对偏好；训练后的正确−错误偏好
-与相对初始化变化是不同读数，其方向依赖关系、编码、配置与层。答案分层后仍存在
-条件特定的配对选择性，但CKA不独立鉴定数学关系编码、因果机制或功能收益。
+2. Encoding Gamma and initialization attribution
 
-主答案控制/final_norm普通CKA的32格全部定义：Bt26正6负；Delta18正14负。
-不能写八关系全部正确优于错配，也不能写32个独立重复。八实例只含inverse/complement
-两变换类型，共用同一世界、anchor和每架构一个初始化。
-B0为16正16负，dc为16正16负，dw为29负3正。正Delta不能自动称正确表征趋同；
-负Delta也不能写没学到数学性质：原一行初始化常已有强正偏好。
+Gamma is strictly cycle−line. All16 pairs reverse B0 across encodings;Delta reverses in14/16,
+Bt in only6/16,and nine pairs reverse Delta without Bt. Encoding does not universally reverse learned relation preference.
+GammaDelta=Gammat−Gamma0; its magnitude must be read alongside Gamma0 and Gammat.
+Example: GRU exceedance tasks have near100% accuracy in both encodings and positive Bt in both (0.045478/0.109796),
+but Delta changes from+0.668512 to -0.361238;Gamma0+1.094067,Gammat+0.064318,GammaDelta-1.029749.
+A Delta reversal therefore does not require a Bt reversal or conspicuous source-task failure, but this still does not establish an encoding causal mechanism.
+Other relations have larger mastery differences and must be reported alongside this example, which cannot replace the full grid.
 
-一行TF两取逆关系的大正Delta主要是wrong下降：
-descent：dc=+0.053146、dw=-0.644855、Delta=+0.698000；
-exceedance：dc=+0.062285、dw=-0.639144、Delta=+0.701428。
-这支持配对选择性重塑；不支持正确CKA提高约0.7。
+3. Output/answer and metric sensitivity
 
-正Delta但Bt仍负的明确例子（均主答案控制）：
-fixed轮换TF：Delta+0.620361、Bt-0.001515；GRU：Delta+0.475427、Bt-0.012015。
-run轮换GRU：Delta+0.696079、Bt-0.103746；
-decomposition轮换TF：Delta+0.753189、Bt-0.012266；GRU：Delta+0.661883、Bt-0.131089。
-这些是训练相对原强错误偏好改善，但终点正确仍不优于错配。
-近零Bt（如TF轮换fixed）不能称稳定错误偏好；逐长度有正有负，未做显著性检验。
+The three metrics CKA/k10/Procrustes agree on primary Bt direction in32/32 cells, but on Delta in only30/32:
+One-line GRU peak and run have positive CKA/Procrustes Delta but negative kNN Delta. Do not claim complete three-metric agreement.
+Raw-control three-metric agreement is31/32 for Bt (cycle GRU decomposition differs in neighborhood direction) and24/32 for Delta.
+Ordinary and U-centered final-hidden CKA agree on primary Bt/Delta direction in32 cells; this is not independent replication.
 
-二、编码Gamma与初始化归因
+Raw→answer control reverses CKA Delta in seven cells and also Bt for cycle GRU decomposition. Any overall claim of “robust relation
+directions” must specify the control. One-line TF peaks/valleys raw Delta+0.023 versus answer-controlled-0.262 is a clear example.
+Answer stratification removes within-group true-label means, not confidence, errors, or all label information.
+Output Bt/Delta are parallel readouts; hidden Delta minus output Delta cannot estimate an additional mechanism.
+One-line TF descent primary output Delta+0.373 accompanies Bt approximately+0.00055: output alone can also show large initialization-related
+increments, which must not be equated with strong endpoint relation preference.
+One-line GRU peak hidden Delta+0.257 versus output Delta-0.301 also does not identify independent encoding from opposite directions.
 
-Gamma方向严格cycle−line。全部16对的B0编码符号改变；Delta14/16对翻转，
-Bt仅6/16翻转，9对Delta翻而Bt不翻。不能称编码普遍翻转学习到的关系偏好。
-GammaDelta=Gammat−Gamma0；其幅度必须与Gamma0和Gammat共同读。
-实例：GRU exceedance两编码任务准确率接近100%，两编码Bt均正（0.045478/0.109796），
-但Delta由+0.668512到-0.361238；Gamma0+1.094067、Gammat+0.064318、GammaDelta-1.029749。
-这个例子表明Delta翻转并不需要Bt翻转或源任务明显失败，仍不能建立编码的因果机制。
-其他关系的学习程度差异更大，必须并列报告，不能选此例代替完整网格。
+output_prob is conditional on valid digits0..30, not full188-token probabilities; source accuracy and CE use the full188-token vocabulary.
+True one-hot/scalar answers are static baselines without fabricated training Delta; retain constants/undefined values after stratification.
 
-三、输出/答案及指标敏感性
+4. Layer and length boundaries
 
-主32格Bt的CKA/k10/Procrustes方向32/32一致。主Delta仅30/32三指标方向一致：
-GRU一行peak和run的CKA/Procrustes Delta正，kNN Delta负。不能写三指标全结果一致。
-raw控制三指标Bt31/32一致（GRU轮换decomposition的邻域方向不同），Delta24/32一致。
-普通与U-centered hidden final CKA在主控制32格的Bt/Delta方向一致；这不是独立重复。
+All four prespecified layers and final_norm remain. Primary answer-controlled ordinary CKA has19 lower-layer-vs-layer4 Bt reversal records,
+involving ten relation/configuration cells, not19 independent relations. final_norm versus layer4 has no primary Bt sign reversal.
+Do not claim identical relation-signal directions at every layer or select early/final layers to obtain positive scores.
+Primary-endpoint Bt/Delta sign summaries do not mean identical signs at every length: cycle TF descent has positive Bt at only4/21 lengths,fixed10/21,
+cycle TF LIS/LDS18/21,and one-line GRU exceedance19/21. Cycle GRU run/decomposition have positive Bt at0/21 lengths,
+but positive Delta at21/21, clearly separating increments from endpoint preference.
+Lengths are not independent-source repetitions; do not select successful lengths or change fixed1/21 weights.
 
-raw→答案控制有7格CKA Delta翻转，另GRU轮换decomposition的Bt翻转；因此总体“关系
-方向稳健”必须注明控制口径。峰谷TF一行的raw Delta+0.023与答案控制-0.262是明显例子。
-答案分层去组内真值均值，不等于移除置信度、误差或全部标签信息。
-输出的Bt/Delta也是平行读数，不能hidden Delta减output Delta估计额外机制。
-TF一行descent输出主Delta+0.373而其Bt约+0.00055：输出自身也能显示初始化引起的大
-增量，不能将该增量等同强终点关系偏好。
-GRU一行peak隐藏Delta+0.257而输出Delta-0.301，同样不能凭相反方向认定独立编码。
+5. Source learning and undefined values
 
-output_prob是合法数字0..30上的条件概率，不是188词表全概率；源准确率和CE用188词表。
-真值onehot/scalar为静态基线，不能虚构训练Delta；分层后常量/未定义须保留。
+All64 sources remain included.61 exceed training-defined length modes and three do not; “exceed” is descriptive, not a sufficient
+learning threshold. Many earlier cycle tasks exceed modes by only0.3–2pp, and cycle runs are close to length modes.
+For both inversion relations,fixed/anti-fixed,LIS/LDS,and other tasks,the two source sides have asymmetric mastery; geometry alone cannot establish
+encoding effects at equal learning. Even high accuracy requires baselines and per-length checks:global_descents/components
+modes are already about88%/89%, so99% accuracy alone cannot prove a complex mathematical-relation mechanism.
+Full values for every source follow; do not delete models, extend training, or reselect tasks from them.
 
-四、层与长度边界
+Primary hidden CKA and all four-layer/two-control versions retain finite readouts. Of13824 main FIELDS component records,1704 aggregates are
+undefined:1536 embedding components across two CKAs and168 output-Procrustes components (21 conditions ×8 training-dependent components).
+Missing reasons include fit_energy_or_relative_1e-6_rank_below_fixed_rank. Undefined results from output low rank/confidence
+concentration are not evidence of no information. Each missing length is retained without relaxed rank requirements or redistributed weights.
+The original audit’s7911 undefined count includes FIELDS+ERRORS and nonapplicable error fields; its scope differs from1704 readout-component
+records. Neither count means missing models or missing primary cells.
+Earlier16 initial CE is missing in32 logical caches; new48 initial CE is actually evaluated. Shared hidden states cannot fill missing CE.
+Earlier teacher-forced EOS differs from prompt-only geometry/source-answer CE and cannot be conflated with EOS-capability verification.
 
-预定全部四层与final_norm保留。主答案控制普通CKA有19个低层-vs-layer4的Bt翻转记录，
-涉及10个关系/配置格；这不是19个独立关系。final_norm vs layer4没有主Bt符号翻转。
-因此不能写关系信号所有层保持相同方向，也不能选择低层/最后层追求正值。
-主终点的Bt/Delta符号汇总不是每长度同号：TF轮换descent仅4/21长度Bt正，fixed10/21，
-TF轮换LIS/LDS18/21；GRU一行exceedance19/21。GRU轮换run、decomposition则Bt0/21正，
-而Delta21/21正，清楚区分增量与终点偏好。
-长度不是独立来源重复；不按成功长度筛选或改变1/21固定权重。
+6. Closure judgment
 
-五、源学习与未定义
+Formal Perm analysis/report/table reading has actually finished. The original two-relation6048 per-length rows and earlier scientific values are reused,
+with18144 new rows under the same fixed definitions. The report has22 prespecified figures, not the earlier development count of40.
+See actual_extraction_scope_review.txt for actual extraction alias/manual scope. Independent metric recomputation covers only the fixed
+48 actual-small-batch checks, not independent recomputation of every one of24192 cells.
+Graph is still running its separate fixed four-model list; do not predict its signs or assume success from Perm results.
+Subsequent root completion still requires complete Graph results, full provenance audit, combined report/current entrypoint, and archive.
+No missing scientific input was found to block primary Perm closure; final wording still requires review against these boundaries.
 
-全部64源完整纳入。61源高于训练定义长度众数、3源不高；“高于”仅描述，不是充分
-学习门槛。许多轮换旧任务仅高0.3–2pp，连续段轮换基本等同长度众数。
-两取逆关系、fixed/anti-fixed、LIS/LDS等任务两端源掌握不对称；不能以几何差异直接
-推断等学习程度的编码效应。高准确率也需看基线与各长度：global_descents/components
-众数已约88%/89%，其99%不能单独证明复杂数学关系机制。
-各源完整数值附后；不据此删模型、延长训练或重选任务。
+Appendices only copy the already generated complete32/16/64 table-reading records into this read-only note, without recomputing metrics.
 
-主hidden CKA及其四层两控制均保留有限读数；readout 13824主要FIELDS分量中1704汇总
-未定义：embedding两CKA共1536；output Procrustes共168（21条件×8受训练影响分量）。
-缺失原因包含fit_energy_or_relative_1e-6_rank_below_fixed_rank；不能把输出低秩/置信
-集中导致的未定义当作没有信息。每项缺失长度仍保留，未放宽rank或重分配权重。
-原audit的7911未定义计数同时包含FIELDS+ERRORS及非适用error字段，与1704读表分量
-计数范围不同，不能混称缺失模型或缺失主格。
-旧16 initial CE在32逻辑cache缺失；新48 initial CE真实评估。共享hidden不能填补缺失CE。
-原teacher-forced EOS与prompt-only几何/源答案CE口径不同，不能混称EOS能力验证。
-
-六、闭合判断
-
-本轮Perm正式分析/报告/读表已实际完成；原两关系6048逐长度行及旧科学数值复用，
-新增18144行同固定定义。报告22张预定图，不能沿用旧开发40张图计数。
-实际提取alias/manual范围见actual_extraction_scope_review.txt；独立指标复算仅固定
-48项真实小批，不能称24192格每一项均独立重算。
-Graph尚按独立固定4模型清单执行，不用Perm结果预测它的符号或假设会成功。
-后续root整体completion仍需Graph完整、全来源audit、综合报告/当前入口和归档齐备。
-没有发现科学输入缺失导致主Perm收口阻断；需按以上边界审阅最终措辞。
-
-以下附录仅将已经生成的完整32/16/64读表记录复制到本只读说明，不重新计算指标。
-
-附录A：32主端点（答案控制/final_norm/普通CKA）
+Appendix A:32 primary endpoints (answer control/final_norm/ordinary CKA)
 relation | architecture | encoding | initial_correct | initial_wrong | trained_correct | trained_wrong | B0 | Bt | dc | dw | Delta | output_answer_strata_linear_cka_Bt | output_answer_strata_linear_cka_Delta
 descent_inverse | transformer | one_line | 0.06597382232124731 | 0.6708565095013566 | 0.11911957159536814 | 0.02600177510874719 | -0.6048826871801093 | 0.09311779648662093 | 0.05314574927412082 | -0.6448547343926093 | 0.6980004836667302 | 0.0005500874572345872 | 0.3731536619447369
 descent_inverse | transformer | canonical_cycle | 0.8115096058957701 | 0.026977145114173935 | 0.046942685755582386 | 0.07898645319433023 | 0.7845324607815962 | -0.032043767438747844 | -0.7645669201401878 | 0.0520093080801563 | -0.816576228220344 | -0.038412743629165004 | -0.6844453994049334
@@ -133,7 +121,7 @@ decomposition_complement | transformer | canonical_cycle | 0.024994401791945443 
 decomposition_complement | gru | one_line | 0.6945670950190601 | 0.07471720451827062 | 0.488850563314397 | 0.05915533394418556 | 0.6198498905007895 | 0.4296952293702115 | -0.20571653170466314 | -0.015561870574085061 | -0.19015466113057805 | 0.384183919092517 | -0.041539551388837255
 decomposition_complement | gru | canonical_cycle | 0.015363654769944073 | 0.8083360031198139 | 0.03190825540470803 | 0.1629973648650423 | -0.7929723483498698 | -0.13108910946033428 | 0.016544600634763956 | -0.6453386382547717 | 0.6618832388895355 | 0.23445724108482635 | 0.8952527911776627
 
-附录B：完整16编码分解（cycle−line，主答案控制普通CKA）
+Appendix B:all16 encoding decompositions (cycle−line,primary answer-controlled ordinary CKA)
 relation | architecture | one_line_B0 | cycle_B0 | one_line_Bt | cycle_Bt | Gamma0 | Gammat | Gammac | Gammaw | GammaDelta | Bt_flip | Delta_flip | Delta_flip_without_Bt_flip
 descent_inverse | transformer | -0.6048826871801093 | 0.7845324607815962 | 0.09311779648662093 | -0.032043767438747844 | 1.3894151479617056 | -0.12516156392536876 | -0.8177126694143086 | 0.6968640424727657 | -1.514576711887074 | yes | yes | False
 descent_inverse | gru | -0.616922639037457 | 0.8009573267676358 | 0.06750236270433636 | 0.07927591192259535 | 1.417879965805093 | 0.011773549218258988 | -0.7321796564007761 | 0.6739267601860578 | -1.4061064165868342 | no | yes | True
@@ -152,7 +140,7 @@ record_complement | gru | 0.6194726930920589 | -0.7993337774053062 | 0.414188643
 decomposition_complement | transformer | 0.6141328981276648 | -0.7654546796151578 | 0.05401455043198845 | -0.012265812990137657 | -1.3795875777428226 | -0.0662803634221261 | 0.6034606106325111 | -0.7098466036881855 | 1.3133072143206965 | yes | yes | False
 decomposition_complement | gru | 0.6198498905007895 | -0.7929723483498698 | 0.4296952293702115 | -0.13108910946033428 | -1.4128222388506595 | -0.5607843388305458 | 0.2222611323394271 | -0.6297767676806866 | 0.8520379000201135 | yes | yes | False
 
-附录C：全部64源（固定20k，identity/test，21长度等权）
+Appendix C:all64 sources (fixed20k,identity/test,21 equally weighted lengths)
 task | architecture | encoding | parameters | answer_accuracy | answer_ce | minimum_length_accuracy | length_majority_accuracy | gain_over_train_defined_length_mode_pp | baseline_comparison
 descents | transformer | one_line | 3240448 | 0.9920944940476191 | 0.02579591013311549 | 0.908203125 | 0.30440848214285715 | 68.76860119047619 | above_train_defined_length_mode
 recoils | transformer | one_line | 3240448 | 0.7274925595238095 | 0.7317748010235456 | 0.404296875 | 0.29696800595238093 | 43.052455357142854 | above_train_defined_length_mode
@@ -219,9 +207,9 @@ lis_length | gru | canonical_cycle | 1660416 | 0.49600074404761907 | 1.116850824
 longest_decreasing_run | gru | canonical_cycle | 1660416 | 0.4929315476190476 | 1.1290352086597566 | 0.404296875 | 0.49135044642857145 | 0.15811011904761904 | above_train_defined_length_mode
 longest_increasing_run | gru | canonical_cycle | 1660416 | 0.48939732142857145 | 1.1383805300408443 | 0.423828125 | 0.49321056547619047 | -0.38132440476190477 | at_or_below_train_defined_length_mode
 
-其他split/actions/initial完整成绩及CE见source_learning.csv，不由本附录选择成绩。
+See source_learning.csv for complete other split/actions/initial performance and CE; this appendix does not select outcomes.
 
-实际只读来源SHA（均小CSV/JSON，未扫描模型/数组）
+Actual read-only source SHAs (small CSV/JSON only; no model/array scans)
 readout_status.json | a395c6e6b0f2a1845183eeea9348c6a2a8ed4571dbe90acdefd3f6b974778bf3
 main32_final_cka_readout.csv | 23afa052be98c5a6175fbd5504c145160b477147c521ea3aa25460dbe06b5bc4
 encoding16_decomposition.csv | defdd1f3d398c5a5e01f0ba723da3ad5e66f04861a150cf991eb2f10db7e84af

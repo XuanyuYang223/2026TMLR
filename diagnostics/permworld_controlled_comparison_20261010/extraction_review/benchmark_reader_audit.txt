@@ -1,25 +1,25 @@
-20k主队列benchmark：独立只读复核
+20k primary-queue benchmark: independent read-only review
 
-20个模型条件、180个唯一condition×n(10/20/30)×action完整覆盖；trained16条件
-144记录、共享initial4条件36记录。每个case实际128样本同完整prompt计时，
-首8核对5层：共1440个vector，7200个层状态检查。无8k/历史82混入。
+All20 model conditions and180 unique condition×n(10/20/30)×action cases are covered:16 trained conditions have
+144 records and4 shared initial conditions36 records. Each timed case uses128 actual full-prompt samples;
+the first8 check5 layers:1440 vectors and7200 layer-state checks. No8k/historical82 cases are mixed in.
 
-同shape手工层路径最大误差 0；prefix-only8 final_norm最大误差
-6.10947608948e-06；旧final_norm缓存最大误差 0。三条gate全部满足
-固定2e-5，旧缓存180/180项逐值误差0。prefix-only raw中层shape诊断最大
-6.86645507812e-05，63/180案例超过2e-5；它不进入主提取gate，也不能被抹去。
-这支持分开报告同shape提取一致性与执行shape数值敏感性，不独立区分
-batch-size和sequence-length各自贡献。
+Same-shape manual layer-path maximum error0; prefix-only8 final_norm maximum error
+6.10947608948e-06; original final_norm cache maximum error0. All three gates satisfy
+fixed2e-5, with180/180 old-cache comparisons exactly0. Prefix-only raw intermediate-layer shape-diagnostic maximum is
+6.86645507812e-05, with63/180 cases exceeding2e-5; this is outside the primary extraction gate and must remain recorded.
+This supports separate reporting of same-shape extraction consistency and numerical execution-shape sensitivity, without separately identifying
+batch-size and sequence-length contributions.
 
-32项initial exact共享全部bitwise为0；40物理split与64逻辑映射计划合法。
-实际冻结源文件25项SHA全匹配；protocol摘要在修复前后相同；原脚本
-字节、失败日志和修复记录摘要一致，门槛未扩大，主前向/数据/指标未改。
+All32 exact-initial sharing discrepancies are bitwise0; the40 physical split/64 logical mapping plan is valid.
+All25 frozen source SHA values match; protocol digests are unchanged across the repair; original script
+bytes, failure logs, and repair-record digests match. Gates were not widened and primary forward/data/metrics are unchanged.
 
-独立重算GPU forward插值估计 51.476894s（0.014299小时），与benchmark
-一致；benchmark记录墙钟 12.693733s。前者由三长度128批实测median插值
-21长度估计，仅forward+5端点转移，不含CP/哈希/memmap IO；后者timer起点
-也在protocol/data/cache-plan hash之后，不能当成整条命令墙钟，更不能当
-全提取实测总成本。实际提取完成成本必须以后续execution/index记录为准。
+Independent arithmetic gives interpolated GPU forward estimate51.476894s (0.014299 hours), matching the benchmark;
+recorded benchmark wall time is12.693733s. The former interpolates measured batch128 medians at three lengths over
+21 lengths and includes only forward+5 endpoint transfers, excluding CP/hash/memmap IO. The latter timer starts
+after protocol/data/cache-plan hashing, so it is neither the full-command wall time nor
+the measured total cost of full extraction. Subsequent execution/index records determine actual completed extraction cost.
 
-本复核没有跑任何额外GPU前向或训练，没有读取正在提取的部分层结果，
-不预判完整40split成功或任何CKA结论。
+This review ran no additional GPU forwards/training and read no partially extracted layer results;
+it does not prejudge complete40-split success or CKA conclusions.

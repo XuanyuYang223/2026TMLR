@@ -1,125 +1,125 @@
-最终中文综合报告写作映射（准备稿；尚无本轮新几何结果）
+Final combined-report writing map (preparation draft; no new geometry results yet)
 
-状态与约束
-本文件只规划读表与写作；不构成结果报告，不读取当前源模型成绩、尚未生成的新几何或未完成Graph结果。固定范围为PermWorld64源（16旧终点复用＋48缺失补齐）、八关系×四配置=32格，随后Graph4源/4关系参考配置试跑。未完成产物按pending写明，不将固定队列进度或CPU合成fixture当科学结果。所有冻结科学脚本、旧产物、F17和已冻结result_readout.py保持不变。
+Status and constraints
+This file plans table reading and writing only; it is not a result report and does not read current source performance, ungenerated new geometry, or incomplete Graph results. Fixed scope is 64 PermWorld sources (16 earlier endpoints reused +48 missing models completed), eight relations × four configurations=32 cells, followed by a reference-configuration Graph pilot with four sources/four relations. Mark incomplete artifacts pending; queue progress and CPU synthetic fixtures are not scientific results. All frozen scientific scripts, earlier artifacts, F17, and frozen result_readout.py remain unchanged.
 
-1. 真实读表与审核顺序
+1. Actual table-reading and review order
 
-第一步：先确认来源与完成身份，再写任何结果判断。
-- diagnostics/permworld_eight_relations_20261010/final_review/final_audit.json：status=passed、all_fixed_stages_complete、source_versions、actual_saved_initializations、saved_RNG_streams、permworld_cache、graphworld_cache、old_artifact_protection、tracked_git、timing、physical_storage。
-- 同目录physical_file_manifest.json：科学源与缓存的唯一物理路径/SHA角色；不能将同一个别名数成多份独立证据。
-- diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.json：24192逐长度单元、1152完整21长度组、6048旧科学行binary64复用、数值分解/完整网格/同源激活检查，actual_independent_metric_max_error。
-- diagnostics/permworld_eight_relations_20261010/extraction_validation.json 与metric_review/independent_metric_actual.json：保存层路径、真实初始化别名、固定独立小批复算及无法定义的原因。固定fixture只支持工程/数值验证，不是独立关系重复。
-- diagnostics/graphworld_pilot_20261010/independent_actual_small_batch.json、report_reader_audit.json、completion.json：实际图论小批/读者审查通过且固定范围结束；若未齐，图论正文只写pending与缺失路径。
-- diagnostics/permworld_eight_relations_20261010/phase_timing.json：固定14阶段已结束。最终GPU活跃时间若未测量须写未知，不能用CPU审计时间推断为0；历史16模型计时不计入本轮新增训练成本。
-- diagnostics/permworld_eight_relations_20261010/protocol.json、training_freeze.json、analysis_freeze.json、metadata_writer_freeze.json、protected_files.json；Graph protocol/freeze_manifest/verification_freeze/protected_files。根completion.json由Root最后写并反向绑定最终综合报告/归档清单，不预先伪完成。
+Step 1: establish provenance and completion identity before writing result judgments.
+- diagnostics/permworld_eight_relations_20261010/final_review/final_audit.json: status=passed, all_fixed_stages_complete, source_versions, actual_saved_initializations, saved_RNG_streams, permworld_cache, graphworld_cache, old_artifact_protection, tracked_git, timing, physical_storage.
+- physical_file_manifest.json in that directory: unique physical paths/SHA roles for scientific sources/caches; do not count aliases as independent evidence.
+- diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.json: 24192 per-length cells, 1152 complete 21-length groups, binary64 reuse of 6048 earlier scientific rows, numerical decomposition/full-grid/shared-activation checks, actual_independent_metric_max_error.
+- diagnostics/permworld_eight_relations_20261010/extraction_validation.json and metric_review/independent_metric_actual.json: saved-layer paths, genuine-initialization aliases, fixed independent small-batch recomputations, and reasons for undefined values. Fixed fixtures verify engineering/numerics, not independent relation repetitions.
+- diagnostics/graphworld_pilot_20261010/independent_actual_small_batch.json, report_reader_audit.json, completion.json: actual graph small-batch/reader review passes and fixed scope completion. If incomplete, graph narrative states pending and missing paths only.
+- diagnostics/permworld_eight_relations_20261010/phase_timing.json: all 14 fixed phases ended. Unmeasured GPU-active time must remain Unknown, not 0 inferred from CPU-audit time. Historical 16-model timing is excluded from new training costs.
+- diagnostics/permworld_eight_relations_20261010/protocol.json, training_freeze.json, analysis_freeze.json, metadata_writer_freeze.json, protected_files.json; Graph protocol/freeze_manifest/verification_freeze/protected_files. Root writes root completion.json last, reverse-binding final combined reports/archive manifests; do not falsely mark complete in advance.
 
-第二步：读主端点，先S原值，再Bt，再相对初始化分解。
-- diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv：32行。未加前缀的initial_correct/initial_wrong/initial_identity/trained_correct/trained_wrong/trained_identity/B0/Bt/dc/dw/di/Delta对应主答案分层final norm普通CKA。
-- 本表raw_within_length_linear_cka_*、answer_strata_linear_cka_*、raw_within_length_debiased_cka_*、answer_strata_debiased_cka_*是四套固定控制/指标的全分解；output_<control>_<metric>_*为平行输出概率参照。
-- diagnostics/permworld_eight_relations_20261010/per_length_results.csv：所有逐长度原值/样本数/nan_reason/raw_feature_array_hashes/inherited_original_values/right_label_offset；control与branch/layer/metric必须一并标注，不能把不同预处理的S混用。
-- contrast_summary.csv：严格21长度1/21的condition_summary及encoding_difference/configuration_difference/layer_difference/interaction/metric_direction；是所有综合读数的完整数据源，不按效果挑行。
+Step 2: read primary endpoints—original S first, then Bt, then initialization-relative decomposition.
+- diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv: 32 rows. Unprefixed initial_correct/initial_wrong/initial_identity/trained_correct/trained_wrong/trained_identity/B0/Bt/dc/dw/di/Delta are primary answer-stratified final-normalization ordinary CKA.
+- raw_within_length_linear_cka_*, answer_strata_linear_cka_*, raw_within_length_debiased_cka_*, answer_strata_debiased_cka_* are complete decompositions for four fixed control/metric versions. output_<control>_<metric>_* are parallel output-probability references.
+- diagnostics/permworld_eight_relations_20261010/per_length_results.csv: all per-length original scores/sample counts/nan_reason/raw_feature_array_hashes/inherited_original_values/right_label_offset. Label control and branch/layer/metric together; do not mix S from different preprocessing.
+- contrast_summary.csv: strict 21-length weight-1/21 condition_summary and encoding_difference/configuration_difference/layer_difference/interaction/metric_direction. It is the complete source of combined readouts; do not select rows by effects.
 
-重要术语约定：正文称“S原值”表示尚未作正确−错误/训练−初始化差分的指标值，不等于raw_within_length这一控制版本。答案分层后的S同样是原值。若使用S_raw，必须明确它指raw_within_length控制；避免把两种“raw”意义混在一起。
+Terminology: “original S” means a metric before correct−wrong/trained−initial differencing, not the raw_within_length control version. Answer-stratified S is also an original score. If using S_raw, explicitly define it as raw_within_length to avoid conflating the two meanings of raw.
 
-第三步：读指标、配置、编码与层的稳健性。
-- final_review/permworld/three_metric_directions32.csv：全部32格，两控制各保留三主指标B0/Bt/dc/dw/Delta及方向一致性；direction仅描述，不能作显著性或把三指标当重复。
-- final_review/permworld/encoding16_decomposition.csv：每关系×两架构=16行。<control>_<metric>_one_line_B0/Bt/dc/dw/Delta、cycle_*，以及Gamma0/Gammat/Gammac/Gammaw/GammaDelta、Bt_flip、Delta_flip、Delta_flip_without_Bt_flip。Γ始终轮换减一行，不能更换符号方向。
-- final_review/permworld/all_layer_directions.csv：768行=32格×两控制×两CKA×六层（四个block/layer、final norm、embedding）。固定第4层参照；保留Bt/Delta方向、flip_vs_layer4、minus_layer4分解和编码翻转。固定第4层不是通过结果选出的“最好层”。embedding为结构常量，全NaN；undefined不是negative或zero。
-- contrast_summary.csv配置差固定GRU减Transformer，同时看六个S及B0/Bt/dc/dw/Delta；cross_arch_same_task.csv和cross_arch_same_task_summary.csv单独呈现16任务×两编码=32直接跨架构配对（两控制/两CKA），不能与关系选择性当同一种效应。
+Step 3: read robustness across metrics, configurations, encodings, and layers.
+- final_review/permworld/three_metric_directions32.csv: all 32 cells, with three primary-metric B0/Bt/dc/dw/Delta values and direction agreement under both controls. Directions are descriptive, not significance or independent repetitions.
+- final_review/permworld/encoding16_decomposition.csv: 16 rows, one per relation × architecture. Fields include <control>_<metric>_one_line_B0/Bt/dc/dw/Delta, cycle_*, Gamma0/Gammat/Gammac/Gammaw/GammaDelta, Bt_flip, Delta_flip, Delta_flip_without_Bt_flip. Γ always means cycle minus one-line; do not change direction.
+- final_review/permworld/all_layer_directions.csv: 768 rows=32 cells × two controls × two CKAs × six layers (four blocks/layers, final normalization, embedding). Layer 4 is the fixed reference. Retain Bt/Delta directions, flip_vs_layer4, minus_layer4 decompositions, and encoding reversals. Layer 4 was not selected as “best” from results. Embedding is structurally constant, hence all NaN; undefined is neither negative nor zero.
+- contrast_summary.csv configuration differences are fixed as GRU minus Transformer; inspect six S values and B0/Bt/dc/dw/Delta. cross_arch_same_task.csv and cross_arch_same_task_summary.csv separately report 16 tasks × two encodings=32 direct cross-architecture pairings (both controls/two CKAs), not the same effect as relation selectivity.
 
-第四步：先读源学习与答案/输出参照，再限定机制解释。
-- final_review/permworld/source64_learning_and_baseline.csv：全部64源的task/architecture/encoding/parameters、answer_accuracy、minimum_length_accuracy、answer_ce、length_majority_accuracy、accuracy_minus_length_mode、gain_over_train_defined_length_mode_pp、length_gain_directions及curve_completion_path/SHA。
-- final_review/permworld/source_learning_curves.csv：所有阶段曲线，包含run_id/task/config、step/train_loss/answer_accuracy/numeric_accuracy/eos_accuracy/samples。仅描述固定训练过程；不重选更好阶段、不延长弱模型。
-- source_learning.csv、source_learning_summary.csv：保留initial/trained×validation/test×identity/complement/inverse×21长度。正文使用“held-out analysis（原split名test）”，避免与训练验证集混淆。
-- gold_baseline_length.csv、gold_baseline_summary.csv：onehot/scalar真值答案。静态基线没有真实初始/训练两个阶段，不编造Δ。答案分层下常量/低秩使指标未定义，应如实列出。
-- source_validation_eos_original.csv：原teacher-forced验证EOS单列，不拿EOS高分替代答案准确率。
-- relation_label_alignment.csv：全部关系/长度正确/错误/恒等的实际答案匹配比例；错误变换中偶然仍满足公式的样本不能剔除。near-constant任务若存在，只限制解释，不改负对照。
-- reused_key_coordinate_audit.csv：旧int16/newint64坐标的逐值、分区和中心化一致性；旧原值仍保存原哈希，不称其为新的科学测量。
+Step 4: read source learning and answer/output references before limiting mechanism interpretations.
+- final_review/permworld/source64_learning_and_baseline.csv: task/architecture/encoding/parameters, answer_accuracy, minimum_length_accuracy, answer_ce, length_majority_accuracy, accuracy_minus_length_mode, gain_over_train_defined_length_mode_pp, length_gain_directions, curve_completion_path/SHA for all 64 sources.
+- final_review/permworld/source_learning_curves.csv: all intermediate curves with run_id/task/config, step/train_loss/answer_accuracy/numeric_accuracy/eos_accuracy/samples. Describe the fixed training process only; do not reselect better stages or extend weak models.
+- source_learning.csv and source_learning_summary.csv retain initial/trained × validation/test × identity/complement/inverse ×21 lengths. Use “held-out analysis (original split name test)” to distinguish it from training validation.
+- gold_baseline_length.csv and gold_baseline_summary.csv: one-hot/scalar true answers. Static baselines have no genuine initial/trained phases or invented Δ. Report undefined metrics from constancy/low rank after answer stratification.
+- source_validation_eos_original.csv: list original teacher-forced validation EOS separately, not as a substitute for answer accuracy.
+- relation_label_alignment.csv: actual answer-matching rates for correct/wrong/identity pairings at every relation/length. Do not remove accidental formula agreement under wrong transformations. Near-constant tasks limit interpretation, not the negative-control definition.
+- reused_key_coordinate_audit.csv: value/partition/centering agreement for old int16/new int64 coordinates. Original scores retain original hashes; these are not new scientific measurements.
 
-第五步：组件缺失与覆盖。
-- final_review/permworld/supplementary_component_coverage.csv：1152条件组×12个FIELDS=13824行，各component的undefined_lengths、undefined_length_count、aggregate、defined_aggregate、fixed_length_count=21、missing_weights_reallocated=False。
-- 原coverage_status.csv的undefined_Delta_lengths/status只按Δ分类，不代表其他S/恒等分量全部定义。综合报告应以补充分量表明确逐分量状态，不能为图形完整把NaN填0。
-- coupled、missing original16 task-specific initial CE、not_extended多世界/多初始化/图论编码架构网格等状态都保留；64模型/32格/21长度/三指标必须分别计数，不合并成样本量。
+Step 5: missing components and coverage.
+- final_review/permworld/supplementary_component_coverage.csv: 1152 groups ×12 FIELDS=13824 rows, with component undefined_lengths, undefined_length_count, aggregate, defined_aggregate, fixed_length_count=21, missing_weights_reallocated=False.
+- Original coverage_status.csv undefined_Delta_lengths/status categorizes Δ only, not definition of all other S/identity components. Use the supplementary component table to state componentwise status; do not fill NaN with zero for visual completeness.
+- Retain coupled status, missing original16 task-specific initial CE, and not_extended multi-world/multi-initialization/graph encoding-architecture grids. Count 64 models/32 cells/21 lengths/three metrics separately, not as a pooled sample size.
 
-2. 八关系32格的完整呈现方式
+2. Complete presentation of eight relations and 32 cells
 
-固定关系顺序与任务定义（不按结果大小排序）：
-1 下降数—逆下降数 descents→recoils，I，offset0；
-2 峰—谷 peaks→valleys，C，offset0；
-3 不动点—反不动点 fixed_points→anti_fixed_points，C，offset0；
-4 超越数—亏缺数 exceedances→deficiencies，I，offset0；
-5 LIS—LDS lis_length→lds_length，C，offset0；
-6 最长上升连续段—最长下降连续段，C，offset0；
-7 左至右极大—极小记录，C，offset0；
-8 全局下降数—组件数 global_descents→components，C，offset+1。
-每实例使用四行：Transformer/一行、Transformer/规范轮换、GRU/一行、GRU/规范轮换。八实例各有一张相同字段的四行主表，共32格；可折叠展示补表，不能隐藏负值、弱任务或未定义。
-每行按如下区块组织，而非只突出Δ：
-A 六个S原值（initial与20k各correct/wrong/identity）；
-B Bt=trained_correct−trained_wrong；
-C B0、dc、dw、Delta；
-D 对应左/右源的准确率/CE/众数增量，NaN长度与主控制标识。
-raw控制和U-centered敏感性用邻接补表/一致字段展示；不要在一张共轴图直接比较CKA、邻域、负Procrustes误差的数值大小。
-全部图入口包括figures/four_controlled_comparisons.png与两控制的similarity_*、decomposition_*、encoding_difference_*、configuration_difference_*、layers_*、all_lengths_*、source_learning.png；最终中文综合正文引用这些固定图，不只给符号热图。
+Fixed relation order/definitions, not sorted by effect size:
+1 Descents—inverse descents, descents→recoils, I, offset0;
+2 Peaks—valleys, peaks→valleys, C, offset0;
+3 Fixed points—anti-fixed points, fixed_points→anti_fixed_points, C, offset0;
+4 Exceedances—deficiencies, exceedances→deficiencies, I, offset0;
+5 LIS—LDS, lis_length→lds_length, C, offset0;
+6 Longest increasing run—longest decreasing run, C, offset0;
+7 Left-to-right maximum—minimum records, C, offset0;
+8 Global descents—components, global_descents→components, C, offset+1.
+Each instance has four rows: Transformer/one-line, Transformer/canonical-cycle, GRU/one-line, GRU/canonical-cycle. Give each of eight instances the same four-row main table, totaling 32 cells. Supplementary tables may collapse, but negative scores, weak tasks, and undefined values must remain visible.
+Organize every row in blocks rather than highlighting only Δ:
+A Six original S values (initial and 20k × correct/wrong/identity);
+B Bt=trained_correct−trained_wrong;
+C B0,dc,dw,Delta;
+D Corresponding left/right source accuracy/CE/mode increments, NaN lengths, and primary-control labels.
+Show raw controls and U-centered sensitivity in adjacent supplementary tables with consistent fields. Do not place CKA, neighborhood, and negative Procrustes error magnitudes on a common-axis comparison.
+All figure entrypoints include figures/four_controlled_comparisons.png plus both controls’ similarity_*, decomposition_*, encoding_difference_*, configuration_difference_*, layers_*, all_lengths_*, and source_learning.png. The final combined narrative references these fixed figures, not only sign heatmaps.
 
-3. S/Bt/B0/dc/dw/Delta的条件化解释
+3. Conditional interpretation of S/Bt/B0/dc/dw/Delta
 
-- Bt>0：在该指标/预处理/固定长度汇总下，训练后正确配对比原错误配对更相似。它不自动表示发现数学算法。
-- Delta>0：正确−错误的相对偏好较真实初始化增加。需要先读dc和dw：correct提高、wrong下降或二者都有；wrong下降主导时用“配对选择性重塑”，不能写“正确表征大幅趋同”。
-- Delta<0且Bt>0：仍可能训练后更偏好正确配对，只是初始化偏好更大。不能写没学到关系。
-- 编码Delta翻转但Bt不翻转/相近：解释初始化起点变化与Γ0，不能写学习到的关系偏好翻转；Γt真实变号/变化才支持训练后几何偏好随编码改变的描述。
-- 隐藏与输出有共同趋势：并行报告，不做hiddenDelta−outputDelta所谓净机制。答案分层移除组内均值，不移除全部非线性答案/置信度/预测错误信息。
-- 正确配对与恒等配对的量级均完整保留；恒等不是预设上界或必须超过的基线。
-- S/Δ在某层/某指标/长度未定义：这是方差/样本/秩和数学定义边界，不是没有学习或没有对应关系。
-- 每关系完整描述两种架构/编码，才讨论模式；八实例仅两种变换类型，不将所有实例当独立统计重复。
+- Bt>0: under this metric/preprocessing/fixed-length aggregate, trained correct pairings are more similar than original wrong pairings. This does not automatically imply discovery of a mathematical algorithm.
+- Delta>0: correct−wrong relative preference increases from genuine initialization. Read dc,dw first: correct can rise, wrong can fall, or both. If falling wrong similarity dominates, say “reshaped pairing selectivity,” not “substantial convergence of correct representations.”
+- Delta<0 with Bt>0: trained preference may still favor correct pairings, but initialization had a larger preference. Do not say no relation was learned.
+- Encoding reverses Delta while Bt does not reverse/is similar: interpret initial starting points and Γ0; do not claim reversed learned relation preference. Actual Γt sign/size changes support descriptions of encoding-dependent trained geometric preference.
+- Hidden/output shared trends: report in parallel, without a supposed net mechanism from hiddenDelta−outputDelta. Answer stratification removes group means, not all nonlinear answer/confidence/prediction-error information.
+- Retain full correct and identity score magnitudes; identity is not a prespecified upper bound or baseline that must be exceeded.
+- Undefined S/Δ at a layer/metric/length marks variance/sample/rank/mathematical-definition boundaries, not no learning or no correspondence.
+- Describe every relation’s architecture/encoding conditions before discussing patterns; eight instances cover only two transformation types and are not independent statistical repetitions.
 
-4. Graph四关系与源学习/密度/NaN
+4. Four graph relations, source learning, density, and NaN
 
-真实主输出：diagnostics/graphworld_pilot_20261010/geometry_per_n.csv（720行）、geometry_summary.csv（240组）、source_learning.csv（240行）、report.html/report.txt、answer_control_decomposition.png、coverage_status.csv。
-独立补充：final_review/graphworld/graph_main4_readout.csv、graph_three_metric_directions4.csv、graph_source4_learning.csv、graph_component_coverage.csv（240组×12=2880行）、readout_status.json。
-全部四实例固定为reverse_max、reverse_min、complement_out、complement_in；分别写R/WR、R/WR、C/WC、C/WC。主branch=prefix_final（graph-end final norm），并行output_prob；Gold/input静态参照不能制造初始化Δ。
-每关系一行主答案CKA完整S/Bt/B0/dc/dw/Delta，raw_within_n与answer_density_strata以及U-centered全部保留。图论n6/7/8固定等权1/3，不使用PermWorld的1/21，也不以足够定义的n重新分配权重。
-- 源学习：Graph4任务在analysis/identity的full188词表准确率与CE、训练众数、各n表现和EOS条件，不能以数字restricted准确率或EOS代替主准确率。准确率不高时仍交付，不追加训练或升级模型。
-- 答案控制与密度控制：答案key为共同[n,left identity,mapped right identity/correct/wrong]；密度另加精确anchor边数m，最小组3固定。若密度组过稀、PCA rank8或方差不足导致NaN，保留所有实例/分量/规模，不能放松门槛再报告结果。
-- W固定破坏规则，但可能偶然答案相同；实际偶然比例/反例/固定交换表由mathematics/data审计读取，不能挑更坏W。
-- 位置二值onehot对固定slot/category变换等距时不能区分正确/错误；这是输入核边界，不是神经学习证据。
-- 完整<R,C,W>轨道跨split排除不等于全部图同构对象排除。图论四实例共享四源与两变换，只有一种参考TF/一种编码、一个world/一次init，不能称四次独立跨系统验证。
-- 跨域只问现象在此另一系统是否出现，不能直接相减Perm/Graph原始CKA断言只改变数学领域的因果效果。
+Actual primary outputs: diagnostics/graphworld_pilot_20261010/geometry_per_n.csv (720 rows), geometry_summary.csv (240 groups), source_learning.csv (240 rows), report.html/report.txt, answer_control_decomposition.png, coverage_status.csv.
+Independent supplements: final_review/graphworld/graph_main4_readout.csv, graph_three_metric_directions4.csv, graph_source4_learning.csv, graph_component_coverage.csv (240 groups ×12=2880 rows), readout_status.json.
+Fixed instances: reverse_max,reverse_min,complement_out,complement_in, with R/WR,R/WR,C/WC,C/WC. Primary branch=prefix_final (graph-end final normalization), with parallel output_prob. Static gold/input references must not acquire invented initialization Δ.
+Give every relation one main answer-CKA row with full S/Bt/B0/dc/dw/Delta; retain raw_within_n, answer_density_strata, and U-centered versions. Fixed equal weight 1/3 for graph n6/7/8, not PermWorld 1/21 and not reweighting over sufficiently defined n.
+- Source learning: report four Graph analysis/identity full-188-vocabulary accuracy/CE, training modes, per-n performance, and EOS conditions; restricted numeric accuracy or EOS cannot replace main accuracy. Deliver weak results without more training/larger models.
+- Answer/density controls: joint-answer key [n,left identity,mapped right identity/correct/wrong], adding exact anchor edge count m for density, with fixed minimum group size 3. Sparse groups, PCA rank8, or insufficient variance can yield NaN; retain all instances/components/sizes without relaxing thresholds.
+- W uses fixed breaking rules but may accidentally preserve answers. Read actual accidental rates/counterexamples/fixed swap tables from mathematics/data audits; do not select a worse W.
+- Positional binary one-hot isometry under fixed slot/category transformations cannot distinguish correct/wrong. This is an input-kernel limitation, not neural-learning evidence.
+- Complete <R,C,W> orbit exclusion across splits does not exclude all isomorphic graphs. Four graph instances share four sources/two transformations, one reference TF/encoding/world/initialization, and are not four independent cross-system validations.
+- Cross-domain analysis only asks whether the observation occurs in this other system; do not subtract original Perm/Graph CKA to assert the causal effect of changing only the mathematical domain.
 
-5. 最终正文逐项回答用户原问题（结论待Root实读）
+5. Final narrative answers each original user question (Root must read actual results first)
 
-Q1 表征相似性是否随具体数学对应改变？
-证据：每关系/配置correct、wrong、identity六个S，Bt及答案/输出参照；分别报告哪些格一致、相反或未定义，不能只说“全部上升”。
+Q1 Does representational similarity vary with specific mathematical correspondence?
+Evidence: six correct/wrong/identity S values per relation/configuration, Bt, answer/output references. Report agreeing, opposite, and undefined cells separately; do not merely say “all increase.”
 
-Q2 哪些变化超过输入与真实初始化参照？
-证据：B0、Bt、dc、dw、Delta，真实step0审计与预定输入/答案/输出基线。可以回答“超过该模型真实初始化的配对选择性改变”，不能从CKA认定独立数学机制。旧历史初始化C级审计只作为旧诊断背景；本轮新/原首批step0真实身份应明确单列，不混同。
+Q2 Which changes exceed input and genuine-initialization references?
+Evidence: B0,Bt,dc,dw,Delta, genuine step-0 audit, and prespecified input/answer/output baselines. One may describe “pairing-selectivity change beyond that model’s genuine initialization,” not identify an independent mathematical mechanism from CKA. Historical grade-C initialization audits are only background; clearly distinguish genuine step-0 identity of this round’s new/original first batch.
 
-Q3 编码改变了初始化偏好，还是训练后偏好？
-证据：16编码对照Γ0、Γt、Γc、Γw、ΓDelta；Bt_flip与Delta_flip分开。原配对差距受编码影响及任务学习难度不同可以同时存在；尚不能把编码当已证实的唯一原因。
+Q3 Does encoding change initial or trained preference?
+Evidence: 16 paired encoding contrasts Γ0,Γt,Γc,Γw,ΓDelta; separate Bt_flip and Delta_flip. Encoding effects on pairing gaps can coexist with differing learning difficulty; encoding is not an established sole cause.
 
-Q4 现象在指标、配置和层上是否稳健？
-证据：32格三主指标方向/实际数值、U-centered、全部层分解、两控制、21长度图、源掌握/参数量。若弱学习或容量不同，写现有配置比较，保留纯架构/编码机制未区分；不以挑层/挑长度让方向一致。
+Q4 Is the observation robust across metrics, configurations, and layers?
+Evidence: directions/actual values of all 32 three-metric cells, U-centered CKA, complete layer decompositions, both controls, 21-length plots, source mastery/parameter counts. With weak learning or capacity differences, describe current configurations and leave pure architecture/encoding mechanisms unresolved; do not choose layers/lengths to force agreement.
 
-Q5 同任务跨架构是否也相似？
-证据：32同任务配对初始/训练/变化；其共同答案key不同于关系jointkey，描述跨配置相似性，与数学关系选择性不合并统计。
+Q5 Are same-task representations similar across architectures?
+Evidence: initial/trained/change scores for 32 same-task pairings. Their joint-answer key differs from relational joint keys; describe cross-configuration similarity without pooling its statistics with mathematical-relation selectivity.
 
-Q6 Graph是否提供跨数学系统支持？
-证据：四Graph实例的完整主/控制/密度/指标及源学习，逐实例写出现/不同/未定义。只有pilot配置的探索性支持；任务/输入/尺寸/分布同步改变。Graph未完成就明确pending，不提前泛化。
+Q6 Does Graph provide cross-mathematical-system support?
+Evidence: complete primary/control/density/metric results and source learning for all four Graph instances, describing presence/difference/undefined values per instance. This is exploratory support for the pilot configuration only; tasks/inputs/sizes/distributions change together. Incomplete Graph work must remain pending without premature generalization.
 
-Q7 目前能认定什么，还不能认定什么？
-支持范围根据实读限定为几何相似性/相对配对偏好及其依赖条件。不能认定自然使用的数学机制、函数收益或普适规律。源学习/初始化/输出/预处理可解释的候选原因并列保留，不能用不显著认定零效应。
+Q7 What can and cannot be concluded now?
+Limit claims to geometry/relative pairing preference and its dependencies based on actual reading. Do not identify naturally used mathematical mechanisms, functional benefits, or universal laws. Retain source learning, initialization, outputs, and preprocessing as candidate explanations; nonsignificance does not establish zero effects.
 
-Q8 是否完成了本轮授权，下一步是否自动扩大？
-据最终manifest、14阶段、final_audit、archive_update_audit与根completion.json回答实际复用16/新增≤48+4、CPU/GPU墙钟/未知活跃时间、存储、保护和停止状态。仅逻辑归档、不删除/搬移、不自动发布、不新训练。旧任务数系列如需要链接原诊断，不在此轮重算或把它当新的实验。
+Q8 Is this authorization complete, and will scope automatically expand?
+Use final manifests, 14 phases, final_audit, archive_update_audit, and root completion.json to report 16 reused/≤48+4 additional models, CPU/GPU wall times/Unknown active time, storage, protection, and stopped status. Logical archival only: no deletion/moving, automatic publication, or new training. Link earlier task-count-series diagnostics if necessary; do not recompute them or call them new experiments.
 
-6. Root最终必须实读的字段清单
+6. Fields Root must actually read before finalizing
 
-A 各32主格的六个S、B0/Bt/dc/dw/di/Delta、raw/U版本、对应output版本与每分量缺失长度。尤其不要用Delta alone填总述。
-B 各16编码组的Gamma0/Gammat/Gammac/Gammaw/GammaDelta和两编码Bt/Delta，实际Bt/Delta翻转状态与幅度；不能仅抄符号热图。
-C 三指标五类分解的完整数值/方向与各指标NaN原因、每层B0/Bt/dc/dw/Delta及固定layer4/norm差、21长度边界。
-D 全64源准确率/CE/最差长度/众数增量及阶段曲线；左/右性质源均需读，不以某一个源高分替代整个关系条件的学习情况。
-E 全四Graph实例六S/B0/Bt/dc/dw/Delta、raw/答案/密度/U、各n样本数与NaN，4任务源学习、真实输入等距基线、W偶然答案匹配比例与orbit审计。
-F 独立实际小批最大数值误差、真实权重/初始化/数据/批表/源码/cache哈希、旧表逐值复用、protected SHA、Git断言与其局限。
-G 实际新增/复用数量、14阶段完成状态、工程与正式更新数、训练累计进程时长/阶段墙钟、未知GPU核时间、唯一物理存储，以及最终综合报告/归档/根completion的绑定。
+A Each of 32 primary cells: six S values, B0/Bt/dc/dw/di/Delta, raw/U versions, corresponding output versions, and missing lengths per component. Do not summarize from Delta alone.
+B Each of 16 encoding groups: Gamma0/Gammat/Gammac/Gammaw/GammaDelta, both encodings’ Bt/Delta, actual reversals and magnitudes; do not merely copy sign heatmaps.
+C Complete values/directions of five decomposition types across three metrics, metric-specific NaN reasons, layerwise B0/Bt/dc/dw/Delta, fixed layer4/norm differences, and boundaries across 21 lengths.
+D Accuracy/CE/worst length/mode increments/curves for all 64 sources. Read both left/right property sources; one high source score does not establish learning for a whole relation condition.
+E All four Graph instances’ six S/B0/Bt/dc/dw/Delta, raw/answer/density/U versions, per-n counts/NaNs, four source-learning results, actual input-isometry baseline, W accidental answer agreement, and orbit audit.
+F Independent actual-small-batch maximum numerical errors, genuine weights/initialization/data/batch/source/cache hashes, valuewise reuse of earlier tables, protected SHAs, Git assertions and limits.
+G Actual new/reused model counts, 14-phase completion, engineering/formal updates, cumulative training-process/phase-wall times, Unknown GPU-kernel time, unique physical storage, final combined-report/archive/root-completion bindings.
 
-拟定综合报告只在以上真实产物齐全并审核通过后生成。读表/阐释本身不调用任何模型、训练器、特征提取或指标计算，也不修改被冻结的报告生成器。
+Generate the planned combined report only after all these actual artifacts exist and pass review. Reading/interpreting tables invokes no model, trainer, feature extraction, or metric computation and does not modify frozen report generators.

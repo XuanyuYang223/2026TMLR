@@ -199,24 +199,24 @@ def summarize(output, metrics, groups, config):
     plt.close(fig)
     increment = pred['incremental']
     table = ''.join(f"<tr><td>{r['mode']}</td><td>{r['budget']}</td><td>{r['family']}</td><td>{100*r['accuracy_mean']:.2f}%</td><td>{100*r['gain_mean']:+.2f} pp</td></tr>" for r in summary_rows)
-    conclusions = ('结构特征的改善很小；当前证据不足以支持稳定的增量预测能力。' if increment['delta_r2'] > 0 and increment['mae_reduction'] > 0 and increment['delta_r2'] < .02 else ('结构特征提高了本轮留组合预测的平均表现；仍需要独立组合复验。' if increment['delta_r2'] > 0 and increment['mae_reduction'] > 0 else '本轮结构特征未同时改善 R² 和 MAE；当前结果不足以支持增量预测能力。'))
+    conclusions = ('Structural features give only a small improvement; current evidence does not support stable incremental prediction.' if increment['delta_r2'] > 0 and increment['mae_reduction'] > 0 and increment['delta_r2'] < .02 else ('Structural features improve mean leave-combination-out prediction in this round; independent combination replication is still needed.' if increment['delta_r2'] > 0 and increment['mae_reduction'] > 0 else 'Structural features do not jointly improve  R²  and  MAE in this round; results do not support incremental predictive ability.'))
     oracle_text = ''
     if (output / 'symbolic_oracle.json').exists():
         oracle = json.loads((output / 'symbolic_oracle.json').read_text())
-        oracle_text = f"<p>事后诊断：已训练的 u/v/w 输出经外部已知数学公式组合，目标测试准确率为 {100*oracle['mean_oracle_accuracy']:.2f}%。这证明目标信息在这些已见输入的表征中可恢复；普通读出差不等于信息缺失。该 oracle 使用外部公式，不是模型自发学会组合。<a href='symbolic_oracle.json'>诊断与每个端点</a>。</p>"
-    negative_text = ('两组在所有标签预算与普通读出设定下的平均迁移收益均为负。' if all(r['gain_mean'] < 0 for r in summary_rows) else '不同设定的迁移收益见下表。')
-    document = f'''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>代数关系与迁移：第一轮试验</title>
+        oracle_text = f"<p>Post hoc diagnosis: trained  u/v/w  outputs combined using an externally supplied mathematical formula give target test accuracy  {100*oracle['mean_oracle_accuracy']:.2f}%. This shows target information is recoverable from representations of these previously seen inputs; poor ordinary readout does not imply missing information missing. This  oracle  uses an external formula, not spontaneously learned composition.<a href='symbolic_oracle.json'>Diagnosis and per-endpoint </a>.</p>"
+    negative_text = ('Both groups have negative mean transfer gains across all label budgets and ordinary-readout settings.' if all(r['gain_mean'] < 0 for r in summary_rows) else 'Transfer gains in different settings are below.')
+    document = f'''<!doctype html><html lang="en"><meta charset="utf-8"><title>Algebraic relationships and transfer: first pilot</title>
 <style>body{{max-width:1000px;margin:40px auto;padding:0 20px;font:16px/1.7 system-ui;color:#20242b}}img{{max-width:100%}}table{{border-collapse:collapse;width:100%}}td,th{{padding:8px;border-bottom:1px solid #ddd;text-align:left}}code{{background:#eee;padding:2px 4px}}</style>
-<h1>代数关系与迁移：第一轮受控试验</h1>
-<p>完成 {len(run_rows)} 个源模型、{len(groups)} 种组合、{len(config['world_seeds'])} 套随机输入基与 {config['target_count']} 个共同未见目标。源任务最低训练准确率 {100*summary['source_accuracy_min']:.2f}%；{100*config['source_accuracy_gate']:.0f}% 拟合程度门槛：{'通过' if gate else '未通过'}。门槛不检验未见输入上的源任务泛化。</p>
-<p>A 的最小依赖涉及三个任务，B 涉及四个任务。两组均有四任务、秩三、均匀边际、两两独立标签和相同联合熵。每个源任务训练曝光为 {summary['source_examples_per_task']:,} 次。</p>
-<p><strong>范围：</strong>源训练覆盖所有输入，支持集与测试集只在目标标签上隔离。本轮检验同实体的新任务迁移，不是新实体或分布外泛化。</p>
-<p>主结果为 {config['primary_budget']} 个目标标签下的完整微调收益。按整个源任务组合留出所有种子与目标行；基线控制源学习曲线、单任务学习曲线、目标和输入基效应。加入结构后 ΔR²={increment['delta_r2']:+.4f}，MAE 减少={100*increment['mae_reduction']:+.3f} 个百分点，{increment['folds_with_lower_mae']}/{increment['fold_count']} 折 MAE 改善。</p>
+<h1>Algebraic relationships and transfer: first controlled pilot</h1>
+<p>Completed  {len(run_rows)}  source models, {len(groups)}  combinations, {len(config['world_seeds'])}  random input bases, and  {config['target_count']}  shared unseen targets. Minimum source-training accuracy  {100*summary['source_accuracy_min']:.2f}%;{100*config['source_accuracy_gate']:.0f}% Fit-quality threshold: {'passed' if gate else 'not passed'}. This threshold does not test source-task generalization to unseen inputs.</p>
+<p>A  has a minimum three-task dependency, while B  requires four tasks. Both groups have four tasks, rank three, uniform marginals, pairwise-independent labels, and identical joint entropy. Each source task receives  {summary['source_examples_per_task']:,}  exposures.</p>
+<p><strong>Scope: </strong>Source training covers every input; support/test separation applies only to target labels. This tests new-task transfer on the same entities, not new-entity or out-of-distribution generalization.</p>
+<p>The primary result is full-finetuning gain with  {config['primary_budget']}  target labels. Hold out all seed/target rows for each complete source-task combination; baselines control source-learning curves, single-task learning curves, target, and input-basis effects. Adding structure gives  ΔR²={increment['delta_r2']:+.4f},MAE  reduction ={100*increment['mae_reduction']:+.3f}  percentage points, {increment['folds_with_lower_mae']}/{increment['fold_count']}  folds  MAE  improved.</p>
 <p>{negative_text} {conclusions}</p>{oracle_text}<img src="figures/transfer.png"><img src="figures/prediction.png">
-<table><tr><th>评估</th><th>标签数</th><th>组</th><th>准确率</th><th>相对随机初始化收益</th></tr>{table}</table>
+<table><tr><th>Evaluation</th><th>Label count</th><th>Group</th><th>Accuracy</th><th>Gain over random initialization</th></tr>{table}</table>
 <img src="figures/source_learning.png"><img src="figures/cka.png">
-<p>误差条是随机输入基之间的样本标准差。{len(metrics)} 个目标端点不构成 {len(metrics)} 个独立重复。单一 MLP 与有限域不足以证明跨领域普适性；留出的是系数组合，训练仍包含两种依赖模板。</p>
-<p>原始数据：<a href="metrics.csv">metrics.csv</a>；<a href="prediction_scores.json">分组预测与各折结果</a>；<a href="algebra_audit.json">精确代数审计</a>；<a href="metadata.json">配置与环境</a>。</p>
+<p>Error bars are sample standard deviations across random input bases.{len(metrics)}  target endpoints do not constitute  {len(metrics)}  independent replications. A single  MLP  and finite field do not establish cross-domain universality; coefficient combinations are held out, while training retains both dependency templates.</p>
+<p>Raw data: <a href="metrics.csv">metrics.csv</a>;<a href="prediction_scores.json">Grouped predictions and folds</a>;<a href="algebra_audit.json">Exact algebraic audit</a>;<a href="metadata.json">Configuration and environment</a>.</p>
 </html>'''
     (output / 'report.html').write_text(document)
     print(json.dumps({k: v for k, v in summary.items() if k != 'transfer_summary'}, indent=2), flush=True)

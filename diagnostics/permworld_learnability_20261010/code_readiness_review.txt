@@ -1,101 +1,101 @@
-PermWorld 轮换编码可学习性：代码就绪审查
-日期：2026-10-10（America/Los_Angeles）
+PermWorld cycle-encoding learnability: code-readiness review
+Date: 2026-10-10 (America/Los_Angeles)
 
-范围
-只读审查已有 archdev 的 training/common、共用 encoding/core/data、上游
-passage/models/math_ops 及 SDPA 适配器。读取了训练曲线和既有工程检查状态，
-没有读取 CKA 产物、运行训练/GPU、修改旧冻结代码或重新执行已通过检查。
-17 项冻结依赖当前 SHA256 全部匹配。以下区分已核实的实现与待检验解释。
+Scope
+Read-only review of existing archdev training/common, shared encoding/core/data, upstream
+passage/models/math_ops, and the SDPA adapter. Training curves and existing engineering-check status were read,
+without CKA artifacts, training/GPU use, historical frozen-code edits, or rerunning passed checks.
+All 17 frozen-dependency current SHA256 values match. Verified implementation and untested explanations are distinguished below.
 
-已核实：没有找到新的训练阻断问题
-1. batch 中 END=2n+3，task=END+1，等号=END+2，answer=END+3，
-   EOS=END+4。target 只在 answer/EOS 两处非 -100，loss 右移后在等号
-   位置预测答案、答案位置预测 EOS。当前数值词表 00..99 的 ID 就是
-   整数，故 accuracy 的数值真值比较正确。既有 CPU 梯度位置检查和
-   独立手算两项 CE、future-answer 因果检查均已通过，不重复执行。
-2. 同一个排列先得到公共精确标签，再分别编码；轮换编码没有另算一套
-   标签。cycle 访问方向是 p[current-1]，与数学性质使用的一行排列一致。
-3. 单元素 cycle 保留，cycle 内逗号、cycle 间分号，两种边界标记明确。
-   n 个数值加 n-1 个分隔符，序列长度仍是 2n+4；分号没有增加长度或
-   丢掉闭环信息。闭环从最后元素回指本 cycle 首元素由序列规范表达，
-   不是额外输出 token。解码要求每 cycle 最小值在首、cycle 按首值排序，
-   并重新编码比对；不存在把轮换表示当作一行数值列表计算标签的问题。
-4. 训练最长宽度 2*30+8=68，小于 max_seq_len=128。位置 embedding 与
-   mask 长度足够。Transformer 的 bool allowed mask 与 SDPA 语义一致；
-   GRU 只沿过去传播，尾部 PAD 的状态不能改变之前的有效 token。
-5. 训练每个 update 只用一种长度，21 长度均衡置换循环；batch64、4次
-   micro16，答案/EOS 每样本各一次且损失按 accumulation 除以4。
-   两编码共用索引与初始化和同任务起始 RNG。warmup 与 cosine 按全局
-   step 计算，完整 optimizer/RNG/step 保存；已有 resume 检查通过。
-6. BF16 autocast 使用 FP32 参数，loss/总梯度范数有限性明确检查，step0
-   与最终参数摘要不同。既有16个48样本/4答案类别过拟合检查都通过。
-   这些证据排除简单的答案位置错位、只有 EOS 被监督或根本没有更新，
-   但不能证明新输入上的完整规则已学会。
+Verified: no new training blocker found
+1. In batch, END=2n+3, task=END+1, equals=END+2, answer=END+3,
+   and EOS=END+4. Targets are non--100 only at answer/EOS; after shifting loss, the equals
+   position predicts the answer and the answer position predicts EOS. Current numeric vocabulary 00..99 IDs equal
+   the integers, so accuracy correctly compares numeric truth. Existing CPU gradient-position checks,
+   independent hand-calculated two-term CE, and future-answer causal checks passed and are not repeated.
+2. The same permutation receives shared exact labels before separate encoding; cycle encoding does not recompute
+   labels differently. Cycle traversal direction is p[current-1], consistent with the one-line permutation used by the mathematical properties.
+3. Singleton cycles are retained, with commas within cycles and semicolons between cycles; both boundary markers are explicit.
+   n numeric tokens plus n-1 delimiters retain sequence length 2n+4; semicolons do not lengthen the sequence or
+   lose cycle closure. Closure points from the last element back to the first in the same cycle through the canonical sequence,
+   not an additional output token. Decoding requires each cycle's smallest value first and cycles sorted by first value,
+   then checks re-encoding; cycle sequences are not mistakenly treated as one-line numeric lists for labels.
+4. Maximum training width 2*30+8=68 is below max_seq_len=128. Position embeddings and
+   masks are long enough. The Transformer's boolean allowed mask agrees with SDPA semantics;
+   GRU propagates only from the past, so trailing PAD states cannot change earlier valid tokens.
+5. Each training update uses one length, with balanced permutation cycles over 21 lengths; batch64, 4
+   micro16 batches, answer/EOS once per sample, loss divided by4 for accumulation.
+   Both encodings share indices, initialization, and same-task starting RNG. Warmup and cosine use global
+   step; full optimizer/RNG/step states are saved, and existing resume checks passed.
+6. BF16 autocast uses FP32 parameters, with explicit finite-loss/total-gradient-norm checks; step0
+   and final parameter digests differ. All existing 16 overfitting checks with 48 samples/4 answer classes passed.
+   This excludes simple answer-position misalignment, EOS-only supervision, or no parameter updates,
+   but does not prove complete rules learned for new inputs.
 
-学习停滞的观察（只引用既有训练曲线）
-轮换 Transformer/GRU 下降数在1k验证约.279，20k约.310/.314；峰数在
-2k已约.407，20k约.408/.417。它们的 EOS 从1k起为1，numeric 与全词表
-答案准确率相等。困难位于数值答案，不是输出非数 token 或 EOS 失败。
-train_loss 只记录当前一次 update 的答案+EOS 联合 CE；当次长度在变，
-所以其波动不是完整训练集损失，也不能单凭曲线摆动认定优化发散。
+Observed learning stagnation (existing curves only)
+Cycle Transformer/GRU descents validation is approximately .279 at1k and .310/.314 at20k; peaks
+reach approximately .407 at2k and .408/.417 at20k. EOS is1 from1k, and numeric/full-vocabulary
+answer accuracies agree. Difficulty lies in numeric answers, not nonnumeric-token outputs or EOS failure.
+train_loss records only answer+EOS combined CE for the current update; its length changes,
+so fluctuation is neither whole-training loss nor enough alone to establish optimization divergence.
 
-更具体的候选原因：任务算法改变，而非序列变长
-一行下降数直接比较相邻 p(i),p(i+1)，峰/谷比较相邻三个值。轮换记号
-需要先识别每个数值的 cycle 后继，包括 cycle 尾部回指首部，再按数值
-索引重组 p(i)，最后比较相邻坐标。原序列相邻 token 通常不是相邻
-输入坐标。逆下降还需要逆排列的相邻值位置；一行记号下它也非局部。
-这些是数学上的计算要求变化，不是已验证的网络机制解释。
+More specific candidate: changed task algorithms, not longer sequences
+One-line descents directly compare adjacent p(i),p(i+1), and peaks/valleys adjacent triples. Cycle notation
+requires identifying each value's cycle successor, including cycle-end backreferences, then reassembling p(i) by numeric
+index before comparing adjacent coordinates. Adjacent original-sequence tokens generally are not adjacent
+input coordinates. Recoils additionally need adjacent-value positions in the inverse permutation; this is nonlocal even in one-line notation.
+These are mathematical changes in computational requirements, not verified neural-mechanism explanations.
 
-数值 token 是无数值先验的 embedding；固定 absolute position 表示的是
-cycle 序列位置，不能直接当成排列坐标。只有最后两 token 的监督，没有
-中间映射或 counting 的监督。GRU 还要在一个终端状态保留这些关系，
-Transformer 虽可直接访问所有前缀，仍要学习索引/后继/比较的组合。
-两架构都停滞，不能只归因为 GRU 记忆长度，也不能证明模型族不可表达。
+Numeric tokens use embeddings without numerical priors; fixed absolute positions describe cycle-sequence
+positions, not permutation coordinates directly. Only the final two tokens are supervised, with no
+intermediate mapping/counting supervision. GRU must also retain these relations in one terminal state;
+Transformer can access the prefix directly but still must learn composed indexing/successor/comparison operations.
+Stagnation in both architectures cannot be attributed only to GRU memory length or prove inexpressibility of either model family.
 
-20k更新=1,280,000样本曝光，但均分21长度，每长度只有952/953更新；
-每长度4096训练对象平均约14.88遍。全长度混训与全局LR衰减可能未提供
-足够优化机会；dropout、学习率和损失分配也是候选因素，尚未分别验证。
-答案+EOS等权联合CE的整体下降可能掩盖答案停滞，必须单列答案CE。
+20k updates=1,280,000 sample exposures, divided over 21 lengths with only952/953 updates per length;
+each of4096 training objects per length is seen approximately14.88 times. Mixed-length training and global LR decay may provide
+insufficient optimization opportunity; dropout, learning rate, and loss allocation are also untested candidate factors.
+Declining equal-weight answer+EOS combined CE may hide answer stagnation; answer CE must be separate.
 
-旧实现可复用的接口
-- core.encode/decode/labels、TOKEN_TO_ID/TASKS：纯数学与编码接口；
-  core.batch(prefixes, ns, task, answers, device) 与 core.loss(logits,target)
-  可保持旧答案监督，不改词表或标签。
-- core.make_model(config,seed)+longrun_attention.accelerate；common.CausalGRU
-  或 common.model(config,architecture,seed,device)：可构造新模型。model
-  会重置Python/NumPy/Torch RNG，构造后应再次固定训练/dropout起始RNG。
-- 原 accuracy 的逻辑可复用，但新开发应另存逐长度全词表/数字答案准确率、
-  answer CE、EOS CE与联合CE，避免把最后一个 minibatch 的loss当整体loss。
-- 不直接调用旧 setup/initial/run_job/child/source_version：它们有硬编码
-  ROOT/CONFIG、检查点输出路径和固定8e5历史计数，会写或验证旧实验目录。
-  新 driver 与初始/协议/数据/阶段产物必须位于新独立根目录。
-- generate_world 原宽度64/max n30可沿用，但短长度不能盲目沿用4096样本
-  和“轨道必须8成员”。很小的 S_n 容量不足，或全轨道都非8成员，会使
-  固定拒绝采样耗尽。若用短长度开发，应显式冻结可行数量及排除规则；
-  不能静默放宽历史/轨道排除或自动改长度。
+Reusable historical interfaces
+- core.encode/decode/labels, TOKEN_TO_ID/TASKS: pure mathematics and encoding interfaces;
+  core.batch(prefixes, ns, task, answers, device) and core.loss(logits,target)
+  retain answer supervision without changing vocabulary or labels.
+- core.make_model(config,seed)+longrun_attention.accelerate; common.CausalGRU
+  Or common.model(config,architecture,seed,device): constructs fresh models. model
+  resets Python/NumPy/Torch RNG, so fix training/dropout starting RNG again afterward.
+- Original accuracy logic is reusable, but new development should separately save per-length full-vocabulary/numeric answer accuracy,
+  answer CE, EOS CE, and combined CE rather than treating the final minibatch loss as overall loss.
+- Do not directly call historical setup/initial/run_job/child/source_version: they hard-code
+  ROOT/CONFIG, checkpoint-output paths, and fixed8e5 historical counts, and write/verify old experiment directories.
+  New driver, initialization, protocol, data, and stage artifacts must use a new independent root.
+- generate_world's original width64/maxn30 can be reused, but short lengths cannot blindly retain4096 samples
+  and “eight-member orbits only.” Small S_n can lack capacity or contain no eight-member full orbits, exhausting
+  fixed rejection sampling. Short-length development must explicitly freeze feasible counts/exclusion rules;
+  never silently relax historical/orbit exclusion or automatically change lengths.
 
-新开发需要的检查（不重复旧检查）
-1. 仅对新 driver/config 接口验证真实 step0 复制、参数更新、全局step/LR
-   恢复一致、data/schedule/protocol/source hashes，阶段恢复不能重置cosine。
-2. 若改变mask/损失族/编码或优化器，才针对改变部分重新做手算与小样本
-   检查。分开答案/EOS CE并按样本数汇总，验证只取identity训练/验证输入。
-3. 使用训练集确定并固定逐长度答案众数/概率基线；只用验证集的答案
-   准确率、答案CE及超过该基线的收益选择配置。初始化常输出非数字，
-   “准确率提高>.10”只能做工程门槛，不能替代学会内容的标准。
-4. 固定少量配置及2k/4k/8k阶段，记录实际训练曝光与成本；两编码共享
-   数据和更新预算。只看训练/验证，不调用test或CKA选择配置。开发选择
-   不计入正式确认；若全部配置停滞，按预定停止标准报告，不自动扩容。
+New development checks (without repeating old checks)
+1. Verify genuine step0 copies, parameter updates, global step/LR
+   restoration, and data/schedule/protocol/source hashes only for the new driver/config interface; stage restoration must not reset cosine.
+2. Only changes to masks/loss families/encoding/optimizers require new hand calculations and small-sample
+   checks for changed components. Separate answer/EOS CE and aggregate by sample count, validating identity train/validation inputs only.
+3. Determine and fix per-length answer-mode/probability baselines from training data; use only validation answer
+   accuracy, answer CE, and gains over that baseline for configuration choice. Initialization often outputs nonnumeric tokens,
+   so “accuracy improvement>.10” is only an engineering gate, not a standard for content learning.
+4. Fix a few configurations and2k/4k/8k stages, recording actual training exposure/cost; encodings share
+   data/update budgets. Use only training/validation, not test/CKA for selection. Development selection
+   is excluded from confirmation; if all configurations stagnate, report under prespecified stopping rules without automatic scaling.
 
-已发现的文档残留与潜在移植风险
-旧protocol的batch_schedule写“all32 models”，实际16模型。读取相同
-schedule的代码没有因此产生曝光差异。新driver应该写清16而非沿用文字。
-accuracy 当前比较 argmax token ID 与整数标签，仅因为数值ID=整数而正确；
-新词表若改变顺序须显式映射。当前没有该bug。旧load_data/prepare中的
-固定历史计数仅适合旧世界，直接移植会误验证；新世界必须独立审计。
-没有发现需解冻旧结果修复的工程问题。上述候选原因均需新验证学习数据
-检验，不应在发现前把轮换的低准确率解释为表征机制。
+Documentation leftovers and potential porting risks
+Historical protocol batch_schedule says “all32 models,” but there are16. Code reading the same
+schedule did not create exposure differences. New driver should state16 rather than inherit the wording.
+Current accuracy compares argmax token IDs to integer labels correctly only because numeric IDs equal integers;
+new vocabulary order requires explicit mapping. This is not a current bug. Historical load_data/prepare
+fixed counts apply only to the old world and would mis-validate a direct port; new worlds require independent audits.
+No engineering issue requiring unfreezing old results was found. Candidate causes above need new validation learning data,
+rather than interpreting low cycle accuracy as a representational mechanism before testing.
 
-审查时关键依赖SHA256（17项冻结文件全部匹配）
+Key dependency SHA256 at review time (all17 frozen files match)
 archdev/common.py 6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b
 archdev/training.py eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8
 encoding/core.py 4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f

@@ -293,14 +293,14 @@ def report():
     json_write(ROOT/'engineering_complete.json',dict(status=status,gates=gates,models=16,development_only=True,
         geometry_not_used_for_gate=True,formal_training_started=False,stop_after_report=True,
         no_confirmation_pvalues=True,parameter_counts_not_matched=True))
-    lines=['PermWorld 编码 × 架构开发实验',f'工程状态：{status}',
-        '新数据世界与新模型种子；四任务 × 两编码 × 两架构，共16模型。固定20k更新。',
-        '真实step-0在各架构内共享；架构参数量不匹配。开发结果不计正式确认，不据此扩容。',
-        '逐长度评估三个固定读数；Procrustes只在validation拟合、test评价。debiased CKA为敏感性。',
-        '答案控制为精确答案分层，不能移除全部置信度或输出相关信息。CKA不单独识别数学机制。',
-        '完整B0/Bt、正确/错误变化、Delta及编码交互见CSV；保留全部长度和未定义单元。',
-        '源学习门槛只检查任务学习和工程完整性，不检查几何效果方向或显著性。',
-        '本轮报告后停止：未启动正式清单、追加种子、GroupWorld、F17或更大模型。','',
+    lines=['PermWorld Encoding  × Architecture-development experiment',f'Engineering status: {status}',
+        'New data world/model seeds; four tasks × two encodings × two architectures, totaling 16 models; fixed 20k updates.',
+        'Genuine step-0 is shared within architectures; parameter counts are not matched. Development results do not enter formal confirmation or trigger expansion.',
+        'Three fixed readouts per length; Procrustes is fitted only on validation and evaluated on test.debiased CKA is a sensitivity.',
+        'Answer control uses exact answer strata, without removing all confidence/output information.CKA does not independently identify a mathematical mechanism.',
+        'The complete B0/Bt, correct/wrong changes, Delta, and encoding interactions: CSV; retain all lengths and undefined cells.',
+        'Source-learning gates assess task learning and engineering completeness, not geometric-effect direction or significance.',
+        'Stop after this round report; no not_started formal manifest, added seeds, GroupWorld, F17, or larger models.','',
         *[str(r) for r in learning], '', *[str(r) for r in interactions if r['branch']=='prefix_final' and r['control']=='answer_strata']]
     (ROOT/'report.txt').write_text('\n'.join(lines)+'\n')
     print({'development_complete':status,'formal_training_started':False},flush=True)

@@ -283,11 +283,11 @@ def audit():
             'source_learning.csv','source_learning_summary.csv']})
     (DIAG/'metric_review/final_reader_audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     (DIAG/'metric_review/final_reader_audit.txt').write_text(
-        '八关系独立只读表格审查通过。24192逐长度行、1152完整21长度组、旧6048科学结果逐值复用。\n'
-        '原始S、B0、Bt、正确/错误变化及Delta/Gamma/配置/层分解全部核对；未定义分量不重分配权重。\n'
-        '32个同任务跨配置配对、静态答案、完整64源模型学习与原值复用核对通过。\n'
-        '本审查不计算指标，不加载原始输入/测试数组，不运行模型或训练；一个world、八实例仅两变换类型。\n'
-        'Delta翻转与Bt翻转、正确提高与错误下降必须分开解释；源掌握/容量不匹配，不能作纯机制推断。\n')
+        'Independent read-only table review of eight relations passed.24192 per-length rows,1152 complete21-length groups,and6048 earlier scientific results reused value for value.\n'
+        'Original S,B0,Bt,correct/wrong changes,and Delta/Gamma/configuration/layer decompositions all verified;undefined components are not reweighted.\n'
+        'Checks passed for32 same-task cross-configuration pairings,static answers,all64 source-learning records,and original-value reuse.\n'
+        'This review computes no metrics,loads no raw input/test arrays,and runs no models/training;one world,eight instances,and only two transformation types.\n'
+        'Interpret Delta versus Bt reversals,and correct-score rises versus wrong-score falls,separately;unmatched source mastery/capacity precludes pure mechanism inference.\n')
     print(json.dumps({k:v for k,v in result.items() if k not in ('main_final_CKA_answer_control','input_sha256')}))
 
 

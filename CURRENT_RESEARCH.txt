@@ -1,46 +1,48 @@
-当前表征研究入口：PermWorld / GraphWorld / MatrixGroupWorld
-日期：2026-10-11（本轮为Git整理与发布，不生成新的科学结果）
+Current representation-research entry point: PermWorld / GraphWorld / MatrixGroupWorld
+Date: 2026-10-11 (Git curation and publication round; no new scientific results)
 
-研究问题：精确数学对应是否伴随表征配对选择性，以及现象如何依赖编码、模型配置、层、指标、初始化参照和答案控制。
-先读README.md。定义与证据边界：docs/representation_research.md。
-发布/恢复/无训练表重算：docs/representation_reproduction.md；artifacts_manifest.json。
-取舍与本地原件保护：docs/repository_curation/。
+Research question: Are exact mathematical correspondences associated with representation-pairing selectivity, and how does the observation depend on encoding, model configuration, layer, metric, initialization reference, and answer controls?
+Read README.md first. Definitions and evidential boundaries: docs/representation_research.md.
+Publication/restoration/saved-table recomputation without training: docs/representation_reproduction.md; artifacts_manifest.json.
+Inclusion decisions and protection of local originals: docs/repository_curation/.
 
-PermWorld主分析：八关系、16性质、两编码×Transformer/GRU，64个真实20k终点。
-答案分层、final norm、n10–30逐长度各1/21，Bt正26/32、Delta正18/32。
-完整报告 diagnostics/permworld_eight_relations_20261010/report.html；
-32格和跨域旧reader diagnostics/permworld_eight_relations_20261010/final_review/。
-原初始化/多层/编码和可学习性诊断保留，弱任务、失败、负值、NaN及历史重建身份限制不删除。
+PermWorld primary analysis: eight relationships, 16 properties, two encodings x Transformer/GRU, and 64 actual 20k endpoints.
+Joint-answer strata, final norm, n10–30 with weight 1/21 per length: positive Bt in 26/32, positive Delta in 18/32.
+Full report: diagnostics/permworld_eight_relations_20261010/report.html;
+32-condition tables and the earlier cross-system reader: diagnostics/permworld_eight_relations_20261010/final_review/.
+Earlier initialization, multilayer, encoding, and learnability diagnostics are retained, including weak tasks, failures, negative values, NaN, and limitations of historical reconstructed-initialization identities.
 
-GraphWorld：四源、四有向反向/补图关系，n6/7/8各1/3。
-原始四关系Bt/Delta均正；答案控制Bt正2/4、Delta正0/4。
-答案+精确边数敏感性另列，不替换答案控制主读数。
-报告 diagnostics/graphworld_pilot_20261010/report.html。
+GraphWorld: four source models, four directed reversal/complement relationships; n6/7/8, each weighted 1/3.
+Raw Bt/Delta are positive in all four relationships; answer-controlled Bt is positive in 2/4, Delta in 0/4.
+Answer-plus-exact-edge-count sensitivity is reported separately and does not replace the primary answer-controlled readout.
+Report: diagnostics/graphworld_pilot_20261010/report.html.
 
-固定T、改变右侧任务的独立比较：Perm480 / Graph12候选；
-目录 diagnostics/representation_pairing_review_20261011/。
-这不是原正确-错误输入Bt/Delta，不当作480/12独立重复。
-实际错误变换偶然保持答案公式的记录保留，不删满足公式的样本。
+A separate comparison fixes T and varies the right-hand task: Perm480 / Graph12 candidates;
+directory: diagnostics/representation_pairing_review_20261011/.
+This is distinct from the original correct-minus-wrong input Bt/Delta; the 480/12 pairs are not independent replications.
+Records of accidental answer-identity preservation by wrong transformations on actual analysis inputs are retained; matching samples are not removed.
 
-MatrixGroupWorld：GL(n,F2), n6/8/10；四单性质，两独立数据+真实初始化单元，8/8真实20k终点。
-R1/R3主要，R2/R4补充；raw Bt正8/8，答案控制Bt/Delta均正5/8。
-R1答案控制普通CKA Delta两单元负；R3为+.048498/+.121332，但F3 n10未充分学习。
-固定T另比较24候选，指定raw首位8/8，答案控制首位4/8、高于其他候选均值5/8。
-报告 diagnostics/matrixgroupworld_20261011/report.html；short report.txt和全部CSV同目录。
-状态 completed_with_verification_caveat、scientific_analysis_complete=false。
-原核验64 passed、2 failed、6 undefined_consistent；两失败在第一单元R1/n6固定64样本的训练后raw输出概率kNN。
-原失败值、1e-8容差、诊断及覆盖范围都保留；不能称全432格均独立核验。
+MatrixGroupWorld: GL(n,F2), n6/8/10; four single-property tasks, two independent data-plus-genuine-initialization units, and 8/8 actual 20k endpoints.
+R1/R3 are primary, R2/R4 supplementary; raw Bt is positive in 8/8, answer-controlled Bt/Delta are both positive in 5/8.
+R1 answer-controlled ordinary-CKA Delta is negative in both units; R3 is +.048498/+.121332, but F3 at n10 is not sufficiently learned.
+A separate fixed-T comparison uses 24 candidates: the designated task ranks first in 8/8 raw conditions, 4/8 answer-controlled conditions, and exceeds the other-candidate mean in 5/8 answer-controlled conditions.
+Report: diagnostics/matrixgroupworld_20261011/report.html; short report.txt and all CSVs are in the same directory.
+Status: completed_with_verification_caveat; scientific_analysis_complete=false.
+Original verification: 64 passed, 2 failed, 6 undefined_consistent. Both failures concern trained raw output-probability kNN on the first unit's R1/n6 fixed 64-input subset.
+Original failed values, the 1e-8 tolerance, diagnoses, and coverage are retained; all 432 cells must not be described as independently verified.
 
-B0=correct0-wrong0；Bt=correctt-wrongt；dc=correctt-correct0；du=wrongt-wrong0；Delta=Bt-B0=dc-du。
-正Delta不保证正Bt，也不保证正确CKA本身提高。
-几何与功能/数学机制不同；当前探索观察不单独识别数学结构机制。
-不同领域、任务、规模、控制和重复结构不合并成跨领域比例效应。
+B0=correct0-wrong0; Bt=correctt-wrongt; dc=correctt-correct0; du=wrongt-wrong0; Delta=Bt-B0=dc-du.
+Positive Delta guarantees neither positive Bt nor an increase of correct-pair CKA itself.
+Geometry is distinct from function/mathematical mechanism; the current exploratory observations do not separately identify a mathematical-structure mechanism.
+Different domains, tasks, sizes, controls, and replication structures are not pooled into a cross-domain proportion effect.
 
-真实大产物在独立表征selectivity release；通过artifacts_manifest的SHA/URL/路径映射下载恢复。
-旧绝对路径只作来源，不当作GitHub已经交付数据。新无训练重算工具只打开clone内固定输入。
-独立F17组合/GELU/零空间论文退出当前Git树，本地原件、旧提交/tag/release保留。
-先前CURRENT_RESEARCH原件保存在仓库外整理备份；冻结报告/协议/结果保持原字节。
-整理/上传/干净克隆SHA或表算术通过不改变科学核验状态。本任务完成后停止，不自动续训。
+Actual large artifacts are in the separate representation-selectivity release; use the SHA/URL/path mappings in artifacts_manifest to download and restore them.
+Legacy absolute paths are provenance, not evidence that GitHub has delivered the data. The new no-training recomputation tool opens only fixed inputs inside the clone.
+The independent F17 composition/GELU/null-space paper has left the current Git tree; local originals, old commits/tags/releases are retained.
+The previous CURRENT_RESEARCH original is in an external curation backup. Frozen reports/protocols/results retained their original bytes during the curation round.
+Curation/publication/clean-clone SHA or table-arithmetic checks do not change scientific verification status. This task stops after completion; no automatic training continuation.
 
-本次Git整理/发布实际结束记录：docs/repository_curation/FINAL_REPORT.txt；docs/representation_publication_audit.json。
-89包已公开，13包实际干净克隆回读和79,125项保存表核验通过；原科研caveat保留，停止。
+Actual Git curation/publication completion record: docs/repository_curation/FINAL_REPORT.txt; docs/representation_publication_audit.json.
+89 packages are public; 13 packages were actually re-downloaded in a clean clone and 79,125 saved-table checks passed. Original scientific caveats remain; stopped.
+
+English-language working-tree edition: see docs/english_localization/README.txt for the distinction between historical hashes and translated derivatives.

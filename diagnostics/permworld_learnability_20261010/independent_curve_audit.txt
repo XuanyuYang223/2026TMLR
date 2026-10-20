@@ -1,6 +1,6 @@
-全部已保存验证曲线独立算术审查：passed。
-16模型，每模型固定[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000]更新点；128条等权曲线行，384条逐长度行。
-所有答案/NLL/EOS/训练长度众数汇总与报告CSV一致；全局学习率也与固定8k调度一致。
-最终曲线点与8k终点相同。较早结果不能代替固定8k门槛，不选择最高准确率或最低loss。
-只读train/validation标签和保存的验证记录；未读取测试数组、检查点张量或CKA，未推理或训练。
-本补充核查在报告生成后实现，用于验证全部表格算术，不作为新的确认性检验。
+Independent arithmetic review of all saved validation curves: passed.
+16 models, each at fixed[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000] update points; 128 equal-weight curve rows and384 per-length rows.
+All answer/NLL/EOS/training-length-mode aggregates match report CSVs; global learning rates match the fixed 8k schedule.
+Final curve points match8k endpoints. Earlier results cannot replace fixed 8k gates; no maximum-accuracy/minimum-loss selection.
+Read only train/validation labels and saved validation records; no test arrays, checkpoint tensors, CKA, inference, or training.
+This post-report supplementary check verifies every table's arithmetic, not a new confirmatory test.

@@ -1,120 +1,120 @@
-给 Codex 的下一轮任务：MatrixGroupWorld 小规模跨领域检验
-日期：2026-10-11
+Next task for Codex: a small cross-domain MatrixGroupWorld study
+Date: 2026-10-11
 
-执行授权与范围
-本轮可以完成实现、数学及工程校验、协议冻结、固定清单训练和分析，不需要在每个步骤重复询问。
-目标是检验 PermWorld / GraphWorld 的表征配对现象是否在另一类数学对象及关系上出现。
-第三领域定为有限域矩阵群输入：GL(n,F2)，n=6、8、10。
-固定四个单任务性质、一种Transformer配置、一种编码、两个独立数据与初始化单元，共8个新模型，每模型20k更新。主检验两条关系，另两条预定关系作补充。
-不扩GraphWorld，不启动第四个world，不新增拼接、迁移、零空间或组合训练。本轮完成后停止。
+Execution authorization and scope
+This round authorizes implementation, mathematical and engineering checks, protocol freezing, training of the fixed manifest, and analysis, without requesting confirmation at every step.
+The goal is to test whether the representation-pairing observations from PermWorld / GraphWorld also occur for another class of mathematical objects and relations.
+The third domain uses finite-field matrix-group inputs: GL(n,F2), n=6, 8, 10.
+Fix four single-task properties, one Transformer configuration, one encoding, and two independent data-and-initialization units: 8 new models, each trained for 20k updates. Two relations are primary tests and two further prespecified relations are supplementary.
+Do not expand GraphWorld, start a fourth world, or add stitching, transfer, null-space, or compositional training. Stop when this round is complete.
 
-A. 来源与保护
-1. 先读当前研究索引、2026-10-11 pairing review、已有模型配置/训练协议和复现提案，核实实际代码与状态。聊天中的路径和数字是定位线索，实际文件为来源。
-2. 新建独立experiments/diagnostics目录和新的大文件根目录。F17、旧Perm/Graph结果、冻结报告/协议、检查点和缓存原样保留，不删除、不移动、不重写历史、不自动上传。
-3. 记录HEAD、工作区状态、依赖版本、被保护文件开始/结束SHA。已有代码可复用，但修改放在新模块，避免影响旧实验。
-4. 这轮两个独立单元只重复第三领域，不自动构成对旧Perm/Graph结果的独立复现。该限制在报告中保留。
+A. Sources and protection
+1. First read the current research index, the 2026-10-11 pairing review, existing model configurations/training protocols, and replication proposals. Verify the actual code and status. Paths and numbers from the chat are pointers; actual files are the sources.
+2. Create separate experiments/diagnostics directories and a new large-artifact root. Preserve F17, previous Perm/Graph results, frozen reports/protocols, checkpoints, and caches. Do not delete, move, rewrite history, or upload automatically.
+3. Record HEAD, worktree state, dependency versions, and start/end SHA values for protected files. Existing code may be reused, but changes belong in new modules to avoid affecting previous experiments.
+4. The two independent units repeat only the third domain and do not automatically provide independent replications of the earlier Perm/Graph results. Retain this limitation in the report.
 
-B. 精确数学对象和任务
-F2的元素为0/1，矩阵乘法及向量加法在模2下进行；wt表示二值向量中1的个数，用普通整数求和，不取模2。
-令e1、e2为标准基，s=e1+e2。四性质：
-  F1(A)=wt(A e1)：第一列的weight。
-  F2(A)=wt(A^T e1)：第一行的weight。
-  F3(A)=wt(A s)：第一、二列逐项XOR后的weight。
-  F4(A)=wt(A^T s)：第一、二行逐项XOR后的weight。
-每个模型只预测一个性质。它们的答案在1..n，均匀GL采样下理论标签分布相同：
-  Pr(Fj=k)=C(n,k)/(2^n-1), k=1..n。
-最终以实际训练标签固定众数基线，理论分布只作数学审计，不替代实际数据。
+B. Exact mathematical objects and tasks
+Elements of F2 are 0/1; matrix multiplication and vector addition are modulo 2. wt counts the ones in a binary vector using ordinary integer addition, not modulo 2.
+Let e1 and e2 be standard basis vectors and s=e1+e2. The four properties are:
+  F1(A)=wt(A e1): weight of the first column.
+  F2(A)=wt(A^T e1): weight of the first row.
+  F3(A)=wt(A s): weight after elementwise XOR of the first two columns.
+  F4(A)=wt(A^T s): weight after elementwise XOR of the first two rows.
+Each model predicts one property only. Answers lie in 1..n and have the same theoretical label distribution under uniform GL sampling:
+  Pr(Fj=k)=C(n,k)/(2^n-1), k=1..n.
+Fix the final mode baseline from actual training labels. The theoretical distribution is only a mathematical audit and does not replace actual data.
 
-令Q=I+E21，其中E21在第2行、第1列为1；Q^2=I，Q s=e1。
-P交换前两个坐标。所有变换都作用在实际矩阵上，之后调用统一编码器。
+Let Q=I+E21, where E21 has a one in row 2, column 1; Q^2=I and Q s=e1.
+P swaps the first two coordinates. Apply all transformations to actual matrices and then use the common encoder.
 
-四个冻结有向关系（左f、右g满足g(T(A))=f(A)）：
-  R1【主要】：左F1，右F2；正确T=A^T；错误U=P A^T。
-  R2【补充】：左F3，右F4；正确T=A^T；错误U=Q^T A^T。
-  R3【主要】：左F1，右F3；正确T=A Q；错误U=A Q^T。
-  R4【补充】：左F2，右F4；正确T=Q^T A；错误U=Q A。
-数学核验应同时验证：
-  R1错误答案=第二列weight；
-  R2错误答案=第一列weight；
-  R3错误答案=第二列weight；
-  R4错误答案=第二行weight。
-错误答案可能偶然等于左答案，记录实际比例，不删除这些输入。
+The four frozen directed relations (left f and right g satisfy g(T(A))=f(A)) are:
+  R1 [primary]: left F1, right F2; correct T=A^T; wrong U=P A^T.
+  R2 [supplementary]: left F3, right F4; correct T=A^T; wrong U=Q^T A^T.
+  R3 [primary]: left F1, right F3; correct T=A Q; wrong U=A Q^T.
+  R4 [supplementary]: left F2, right F4; correct T=Q^T A; wrong U=Q A.
+The mathematical audit must also verify:
+  R1 wrong answer = weight of the second column;
+  R2 wrong answer = weight of the first column;
+  R3 wrong answer = weight of the second column;
+  R4 wrong answer = weight of the second row.
+Wrong answers may accidentally equal the left answer. Record the actual rate and retain these inputs.
 
-转置是群反自同构，左右乘固定群元素是群作用，不能把左右乘误称群同态。
-关系实例不是独立关系类型：这里只覆盖转置与固定乘法作用两类。
-这些公式也成立于一般二值方阵，且weight任务与图的度数统计有联系。新增结构主要是有限域线性混合；不能仅凭使用GL输入宣称发现群特有效应、模型学会群乘法或覆盖整个群论。
+Transposition is a group antiautomorphism; left/right multiplication by fixed group elements is a group action and must not be called a group homomorphism.
+Relation instances are not independent relation types: this study covers only transposition and fixed multiplication actions.
+These formulas also hold for general binary square matrices, and the weight tasks are related to graph degree statistics. The added structure is mainly finite-field linear mixing; using GL inputs alone does not establish a group-specific effect, learned group multiplication, or coverage of group theory.
 
-C. 数学与数据校验：先完成，再冻结训练协议
-1. 用两个独立实现核对GF2运算、标签和关系。穷举n=2、3的全部可逆矩阵；n=6、8、10各用固定随机样本验证。包含非恒定标签、Q位置方向、错误公式反例、秩保持、编码往返、非法输入拒绝。
-2. 不用GL上的rank或nullity作源任务：这些在固定n下恒定。不能把矩阵rank算成浮点数值秩。
-3. 各单元以独立数据种子均匀生成二值矩阵，再通过精确满秩拒绝采样。记录采样算法、拒绝次数与轨道去重造成的额外选择，不误称所有canonical轨道等概率。
-4. 为防止变换泄漏，H是嵌入前两坐标的GL(2,F2)，共6元素。采用完整闭合轨道：
-     O(A)={L A R, L A^T R : L,R in H}。
-   至多72个不同成员，包含全部正确/错误变换。核对轨道闭合、canonical key不变、可能的轨道缩小和重复成员；不能只存一个不闭合的8元列表。
-5. 按固定packed-bit canonical key，训练/验证/最终分析严格分轨道；任何变换输入不得落入另一个split。旧相同对象类型/规模的数据索引若存在则排除并记录；无法验证的历史范围如实注明。
-6. 两单元分别独立采样，不强制跨单元排斥；报告跨单元实际重合。共享分布不等于共享同一采样世界。
-7. 每单元、每n的训练4096、验证256、最终分析512个anchor；三个n训练均衡、分析各1/3。四任务共享同一底层矩阵和分割。
-8. 训练仅用恒等输入的性质监督，不将正确/错误变换生成的分析输入加入训练。样本ID和批次表保存。
-9. 源模型训练和配置选择不得读取最终分析标签或几何读数；准备期标签分布/分层有效性检查使用单独的固定审计样本或训练/验证数据。正式冻结后才生成/封存最终分析标签。
-10. 若关系、输入长度或分层规则退化，训练前给出具体原因并停止；不能看了CKA之后换任务。
+C. Mathematical and data checks: complete before freezing the training protocol
+1. Check GF2 operations, labels, and relations with two independent implementations. Enumerate all invertible matrices for n=2, 3 and validate fixed random samples for each of n=6, 8, 10. Include nonconstant labels, Q orientation, counterexamples to wrong formulas, rank preservation, encoding round trips, and rejection of invalid inputs.
+2. Do not use rank or nullity on GL as source tasks: these are constant for fixed n. Do not compute matrix rank as a floating-point numerical rank.
+3. Use independent data seeds to generate uniform binary matrices and then apply exact full-rank rejection sampling. Record the algorithm, rejection counts, and additional selection from orbit deduplication; do not claim all canonical orbits are equiprobable.
+4. To prevent transformation leakage, let H be GL(2,F2) embedded in the first two coordinates, with 6 elements. Use the complete closed orbit:
+     O(A)={L A R, L A^T R : L,R in H}.
+   There are at most 72 distinct members, including all correct/wrong transformations. Check orbit closure, invariance of the canonical key, smaller orbits, and duplicate members; do not merely save a nonclosed list of 8 elements.
+5. Split training/validation/final analysis strictly by orbit using the fixed packed-bit canonical key. No transformed input may enter another split. Exclude and record previous data indices for the same object type/size when available; state any unverifiable historical scope explicitly.
+6. Sample the two units independently without forcing cross-unit exclusion, and report actual overlaps. Sharing a distribution does not mean sharing the same sampled world.
+7. For each unit and n, use 4096 training, 256 validation, and 512 final-analysis anchors. Balance training across the three n values and weight each by 1/3 in analysis. The four tasks share underlying matrices and splits.
+8. Train only on property supervision for identity inputs; do not add analysis inputs generated by correct/wrong transformations to training. Save sample IDs and batch schedules.
+9. Source-model training and configuration selection must not read final-analysis labels or geometry scores. During preparation, check label distributions/stratification validity using separate fixed audit samples or training/validation data. Generate/seal final-analysis labels only after the formal freeze.
+10. If relations, input lengths, or stratification rules degenerate, state the specific reason and stop before training. Do not change tasks after viewing CKA.
 
-D. 固定模型、编码、初始化与训练
-1. 沿用当前Perm/Graph主Transformer：dim256、4层、8头、MLP倍率4、dropout0.1、绑定embedding、max_seq_len128；先核实实际配置和参数量。
-2. 一种固定row-major二值编码：每个矩阵元素一个已有0/1整数token，采用已有分隔/边界token。保留n和固定输入结束位置。不把整行、整矩阵或群元素ID合并成一个token。
-3. 优先沿用同一188-token词表。四specialist可使用同一个已有查询token，性质身份记录在模型/数据清单中，不把任务身份放进主提取位置之前。逐字记录token到ID映射和完整序列语法。
-4. 实际核验n10含前缀、分隔、查询、答案、EOS总长度<=128；不截断。如果与当前实现无法兼容，不悄悄换词表/位置编码/模型，而是报告具体差异。
-5. 两单元各使用一个新模型种子。每单元在训练前保存真实step-0参数及完整RNG、词表、构造器和SHA，四任务逐值复制同一初始化及起始随机状态；单元之间使用独立初始化。
-6. 四任务使用同一批次ID及样本曝光预算。默认AdamW lr3e-4、wd0.01、warmup1000、cosine至0.1倍lr、clip1、micro16×累积4=有效batch64；BF16训练、FP32评估、禁用TF32。核实与已有主配置一致并记录任何必要差异。
-7. 固定每模型20,000更新，共160,000正式更新；最终20k终点，不按验证准确率、CKA或中途效果选择/延长。保存必要恢复状态，不重复启动同一个清单行。
-8. 允许一次固定小样本真实学习率过拟合工程检查：四任务各不超过500更新、固定32个n6样本，以全词表答案准确率>=95%及正确监督位置为通过条件；工程模型不进入正式结果。失败时核查实现，不能无限调参。
-9. 做一次连续运行对断点恢复的CUDA工程验证，核对参数、优化器、logits和RNG。测试损失必须区分答案与EOS，不能以EOS学会替代答案任务学会。
-10. 工程修复记录并在正式训练前重新冻结。科学参数改变意味着另一个开发方案，不能静默修改上述清单。若固定工程检查仍失败，交付失败报告后停止。
+D. Fixed model, encoding, initialization, and training
+1. Reuse the current main Perm/Graph Transformer: dim256, 4 layers, 8 heads, MLP ratio 4, dropout0.1, tied embeddings, max_seq_len128. First verify the actual configuration and parameter count.
+2. Use one fixed row-major binary encoding: one existing 0/1 integer token per matrix element, with existing separator/boundary tokens. Retain n and the fixed input-end position. Do not encode a whole row, matrix, or group-element ID as a single token.
+3. Prefer the same 188-token vocabulary. The four specialists may share one existing query token, with property identities in the model/data manifest, without inserting task identity before the main extraction point. Record the exact token-to-ID mapping and full sequence grammar.
+4. Verify that the full n10 sequence, including prefix, separators, query, answer, and EOS, has length <=128, without truncation. If incompatible with the current implementation, report the specific differences rather than silently changing vocabulary, position encoding, or model.
+5. Use a new model seed for each unit. Before training, save genuine step-0 parameters, full RNG state, vocabulary, constructor, and SHA. Copy the same initialization and starting random state exactly across the four tasks within each unit; use independent initializations across units.
+6. The four tasks use identical batch IDs and sample-exposure budgets. Defaults: AdamW lr3e-4, wd0.01, warmup1000, cosine decay to 0.1 times lr, clip1, micro16×accumulation4=effective batch64; BF16 training, FP32 evaluation, TF32 disabled. Verify consistency with the existing main configuration and record necessary differences.
+7. Fix 20,000 updates per model, 160,000 formal updates in total. Use final 20k endpoints; do not select/extend based on validation accuracy, CKA, or intermediate results. Save necessary resume state and do not relaunch the same manifest row.
+8. One fixed small-sample engineering overfit check at the real learning rate is permitted: at most 500 updates per task on 32 fixed n6 samples. Require full-vocabulary answer accuracy >=95% and correct supervision positions. Engineering models are excluded from formal results. Investigate implementation if it fails; do not tune indefinitely.
+9. Run one CUDA engineering comparison of continuous execution versus checkpoint resume, checking parameters, optimizer, logits, and RNG. Separate answer and EOS losses; learning EOS does not establish learning the answer task.
+10. Record engineering repairs and refreeze before formal training. Changing scientific parameters defines a different development plan and must not silently modify this manifest. If the fixed engineering check still fails, deliver a failure report and stop.
 
-E. 成本边界与默认继续执行
-1. 本轮上限8正式模型，不增加架构、编码、任务或种子。
-2. GPU阶段总墙钟上限4小时，包括工程训练、正式训练、验证/保存及提取；预算依据单调时钟累计，记录各部分和并行口径，不冒称GPU活跃时间。
-3. 准备与CPU分析另做成本预估；默认CPU阶段累计外部墙钟上限2小时、新产物表观大小上限20GiB。不得将这些时长简单相加当GPU时间。
-4. 使用当前记录与固定短工程运行估计成本，再将训练清单、协议、预算、停止策略和源码哈希冻结。预计超上限时，完成具体成本和可执行方案后停止，不自行缩规模或提高上限。
-5. 数学、数据、工程验证通过且成本在上限内，就直接执行冻结的8模型训练与评估，无需重复询问。
-6. 实际触达上限时安全保存并停止；标明哪些20k终点完成、哪些中断。不能将中断终点当作20k或将“不完整”包装成负科学结果。
-7. 不基于几何正负或源准确率进行扩容、替换或补训。
+E. Cost boundaries and default continuation
+1. This round is limited to 8 formal models. Do not add architectures, encodings, tasks, or seeds.
+2. Total GPU-stage wall-clock time is limited to 4 hours, including engineering training, formal training, validation/saving, and extraction. Accumulate using a monotonic clock and record components and parallel accounting; do not call this active GPU time.
+3. Estimate preparation and CPU analysis separately. Default limits are 2 hours of cumulative external CPU-stage wall time and 20GiB apparent size for new artifacts. Do not simply add these durations and call the sum GPU time.
+4. Estimate costs from current records and the fixed short engineering run, then freeze the training manifest, protocol, budget, stopping policy, and source hashes. If the estimate exceeds limits, complete a concrete cost estimate and feasible plan, then stop; do not independently reduce scope or increase limits.
+5. If mathematical, data, and engineering checks pass and costs fit the limits, execute the frozen 8-model training and evaluation directly, without requesting confirmation again.
+6. Save safely and stop when an actual limit is reached. Identify completed 20k endpoints and interrupted ones. Do not present interrupted endpoints as 20k or incompleteness as a negative scientific result.
+7. Do not expand, replace, or supplement training based on geometry signs or source accuracy.
 
-F. 分析：严格沿用受控比较
-1. 主提取点固定为输入结束、性质查询出现之前的final norm状态。不另选最佳层，不新增全层扫描。
-2. 固定同一模型、编码、层、关系和样本，在普通线性CKA、固定k=10的邻域重叠、既有held-out Procrustes之间比较读数。普通CKA为主，其余两项为固定敏感性；沿用现有已验证实现、平局规则和拟合/评估隔离，完整写入协议。
-3. 每个n单独计算，随后各1/3；保留逐n结果。真实初始化和20k终点使用完全匹配的A、T(A)、U(A)。相同参数不保证不同变换输入的初始化几何相同。
-4. 每关系、每单元报告原始值及：
+F. Analysis: retain the controlled comparison strictly
+1. Fix the main extraction point at final norm at input end, before the property query. Do not choose a best layer or add an all-layer scan.
+2. For the same model, encoding, layer, relation, and samples, compare ordinary linear CKA, neighborhood overlap at fixed k=10, and the existing held-out Procrustes. Ordinary CKA is primary; the other two are fixed sensitivities. Retain existing validated implementations, tie rules, and fit/evaluation separation and document them fully in the protocol.
+3. Compute separately for each n, then weight each by 1/3; retain per-n results. Genuine initializations and 20k endpoints use exactly matched A, T(A), U(A). Equal parameters do not guarantee equal initial geometry for differently transformed inputs.
+4. Report raw values for every relation and unit, together with:
      B0=S_T(initial)-S_U(initial)
      Bt=S_T(trained)-S_U(trained)
      dc=S_T(trained)-S_T(initial)
      du=S_U(trained)-S_U(initial)
      Delta=Bt-B0=dc-du
-   恒等配对也保存。正Delta不等于正Bt或正确CKA提高。
-5. 再固定每条关系的T、左模型和输入anchor，右模型遍历其余三个性质：每单元4关系×3候选=12配对，两个单元共24。
-   标明指定对应、另有已知精确对应、未指定对应；显示全部候选、候选均值、中位数、指定对应排名和差值。高于均值不等于高于每个候选。
-   新任务对比较与Bt/Delta分开命名和计数。
-6. raw与沿用当前protocol的joint-answer控制并列，明确分层键、最小组大小、有效样本、残差自由度和NaN。用独立实现核对分层；不同任务对分层不同，不能把控制后的差当数学关系纯因果效应。
-7. 保存真值答案与输出概率基线。常量指标未定义保留NaN，不填0、不改变规模权重；hidden Delta不能减output Delta来估计额外机制。
-8. 用正式实际输入报告各错误变换偶然保持公式的比例，附逐n分子/分母，不删除偶然一致样本、不按结果改错误变换。
-9. 全词表答案argmax准确率、答案CE、EOS指标、每n训练确定的众数基线、两个单元的源表现全部保留。最终分析成绩只能作为结果和解释标记，不用于选配置。
-10. 源任务未充分学习时，仍完成固定预算内的分析并明确限制；不宣称该领域不存在现象。若两单元均普遍接近基线，结论是该配置尚不能支撑有效跨域判断，不继续调参。
-11. 只有两个独立单元；4关系、3规模、3指标、24候选不当作独立重复。不自动做显著性结论、等价性结论或精度保证。
+   Save identity pairings too. Positive Delta does not imply positive Bt or an increase in correct-pair CKA.
+5. Also fix T, the left model, and input anchors for each relation, and vary the right model across the other three properties: 4 relations×3 candidates=12 pairs per unit, 24 across the two units.
+   Label designated correspondences, other known exact correspondences, and candidates not designated for the correspondence. Show all candidates, means, medians, designated ranks, and differences. Exceeding the mean does not imply exceeding every candidate.
+   Name and count the new task-pair comparison separately from Bt/Delta.
+6. Present raw and existing-protocol joint-answer controls side by side. State stratification keys, minimum group size, retained sample counts, residual degrees of freedom, and NaN. Check stratification independently; different task pairs use different strata, so controlled differences do not identify a pure causal effect of the mathematical relation.
+7. Save ground-truth-answer and output-probability baselines. Keep constant, undefined metrics as NaN, without replacing them by 0 or changing size weights. Do not subtract output Delta from hidden Delta to estimate an additional mechanism.
+8. Report accidental formula-preservation rates for each wrong transformation on actual formal inputs, with per-n numerators/denominators. Do not delete accidental matches or change wrong transformations based on results.
+9. Retain full-vocabulary answer argmax accuracy, answer CE, EOS metrics, train-defined per-n mode baselines, and source performance in both units. Final-analysis performance is an outcome and interpretive marker only, not a configuration-selection criterion.
+10. If source tasks are not sufficiently learned, still complete analysis within the fixed budget and state the limitation; do not claim the phenomenon is absent from the domain. If both units are generally near baseline, conclude that this configuration does not yet support an informative cross-domain comparison and do not continue tuning.
+11. There are only two independent units. The 4 relations, 3 sizes, 3 metrics, and 24 candidates are not independent replications. Do not automatically claim significance, equivalence, or precision guarantees.
 
-G. 交付与停止
-交付冻结protocol/source hashes、8模型训练清单、数学/词表/轨道审计、真实初始化和终点、源准确率曲线、逐规模几何与拆解、固定T候选分布/排名、错误公式比例、独立数值验证、保护文件核验、真实成本及停止记录。
-简短读者报告优先回答：
-  (i) 源任务是否学会？
-  (ii) 指定数学对应是否高于其他候选？
-  (iii) 正确配对优势与相对初始化的增量是否一致？
-  (iv) 三种指标和两个独立单元是否一致？
-  (v) 与Perm/Graph的观察有哪些相同、不同及未决解释？
-把主要R1/R3与补充R2/R4分别展示，正负都写，不把第三领域当作必须成功的复现。
-完成后停止。可追加当前研究覆盖索引和论文主线说明，冻结旧产物保持原样。不自动启动下一阶段、不新增world、不发布、不改F17。
+G. Delivery and stopping
+Deliver the frozen protocol/source hashes, 8-model training manifest, mathematical/vocabulary/orbit audits, genuine initializations and endpoints, source-accuracy curves, per-size geometry and decomposition, fixed-T candidate distributions/ranks, wrong-formula rates, independent numerical verification, protected-file checks, actual costs, and stopping records.
+The concise reader report should first answer:
+  (i) Were the source tasks learned?
+  (ii) Do designated mathematical correspondences score above other candidates?
+  (iii) Do correct-pairing preferences and increments over initialization agree?
+  (iv) Do the three metrics and two independent units agree?
+  (v) What similarities, differences, and unresolved explanations arise relative to Perm/Graph?
+Show primary R1/R3 and supplementary R2/R4 separately. Report positive and negative results; do not require the third domain to succeed as a replication.
+Stop after completion. A current coverage index and paper-framing note may be appended while retaining frozen previous artifacts. Do not automatically start a next phase, add a world, publish, or modify F17.
 
-数学来源（用于定义核查，不代替自己的公式校验）：
-SageMath GL(n,R)官方定义：
+Mathematical sources (for checking definitions, not a substitute for independent formula verification):
+Official SageMath GL(n,R) definition:
 https://doc.sagemath.org/html/en/reference/groups/sage/groups/matrix_gps/linear.html
-SageMath精确矩阵运算参考：
+SageMath exact matrix-operation reference:
 https://doc.sagemath.org/html/en/reference/matrices/sage/matrix/matrix2.html
 
-任务编制时已做初步公式核对：穷举GL(2,F2)的6个、GL(3,F2)的168个矩阵，n6/8/10各32随机可逆矩阵；四正确公式和四错误答案表达式通过。这里只核对数学设计，不代表仓库实现、数据、模型或实验已完成；Codex仍须按C节独立校验。
+Preliminary formula checks were performed when drafting this task: enumeration of all 6 GL(2,F2) and 168 GL(3,F2) matrices and 32 random invertible matrices for each of n6/8/10; all four correct formulas and four wrong-answer expressions passed. This verifies the mathematical design only, not completion of repository implementation, data, models, or experiments. Codex must still perform the independent checks in section C.

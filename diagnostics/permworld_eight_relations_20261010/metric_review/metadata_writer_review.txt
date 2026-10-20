@@ -1,5 +1,5 @@
-状态：通过，无阻断。
-冻结训练源码、科学协议与单独writer/queue哈希全部一致。真实保存失败精确对应train.py第91行的duplicate checkpoint_sha256 TypeError。
-真实首个检查点step=20000，finite_gradient_updates=20000，20个1000..20000验证记录、数据/批表/真实初始化/RNG来源哈希均符合固定协议；检查前后检查点SHA未变。未构造源模型、未前向、未训练。
-CPU模拟分流共11项通过：部分检查点回到原训练路径；精确20k走强核验finalizer；其他TypeError或错误来源不被误修复，其他异常直接传播；partial-step/partial-updates/数据/初始化/RNG来源不一致在写completed之前均失败。
-限制：finalizer中的CPU模型构造会重置当前进程临时RNG。因此“RNG不变”应明确为检查点内保存的RNG字节与训练轨迹不变，而非当前进程瞬时RNG不变。独立child进程隔离，未构成训练连续性阻断。
+Status:passed,no blockers.
+Frozen training source,scientific protocol,and separate writer/queue hashes all match.The actual save failure exactly matches the duplicate checkpoint_sha256 TypeError at train.py line91.
+The actual first checkpoint has step=20000,finite_gradient_updates=20000,and20 validation records at1000..20000.Data/batch-schedule/genuine-initialization/RNG provenance hashes match the fixed protocol,and checkpoint SHA is unchanged before/after checks.No source model construction,forwards,or training.
+All11 CPU simulated routing checks pass:partial checkpoints return to the original training path;exact20k uses the strongly verified finalizer;other TypeErrors or wrong sources are not incorrectly repaired,and other exceptions propagate.Partial-step/partial-updates/data/initialization/RNG provenance mismatches all fail before writing completed.
+Limitation:CPU model construction in the finalizer resets the current process’s temporary RNG.Thus “unchanged RNG” means unchanged saved checkpoint RNG bytes/training trajectory,not the current process’s transient RNG.Separate child-process isolation prevents a training-continuity blocker.

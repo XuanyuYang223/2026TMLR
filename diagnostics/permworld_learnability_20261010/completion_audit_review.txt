@@ -1,136 +1,136 @@
-当前字节复核说明（2026-10-10）
-本节优先于下方保留的初审意见。复核当前 completion_audit.py SHA256：
+Current-byte verification note (2026-10-10)
+This section takes precedence over the retained initial review below. Rechecked current completion_audit.py SHA256:
 36bba84b3df615c3c1b56ddc2bd39e6a07425efc3186a2fa92141e1735a4934c
 
-当前代码已明确处理初审的 A–D 主要缺口：
-- A：每个source阶段实测起止时间、elapsed与CPU收尾量自洽；对completed
-  执行要求所有source进程在同一deadline内结束，且从全局预算起点计算的
-  development_execution.training_wall_seconds<=7200。冻结driver记录从预算
-  起点开始的整体墙钟，包含恢复工程检查和各source启动间隙，不重置额度。
-- B：恢复门槛前预算耗尽时允许resume_check缺失并标记not_reached；不再
-  无条件读取缺失文件。实际正常运行已通过恢复门槛，尚未执行终局审计。
-- C：调用initial前断言真实step0.pt/json存在，避免审计补造缺失初始化。
-- D：completed.json必须为8k且与对应最新stage逐字段一致；标记学习资格
-  与8k运行完成不同，交由冻结report.py按validation-only门槛计算。
+Current code explicitly addresses the initial review's main A–D gaps:
+- A: measured start/end, elapsed, and CPU cleanup for each source stage are consistent; completed
+  execution requires all source processes to finish within one deadline, with the interval measured from the global budget start
+  development_execution.training_wall_seconds<=7200. Frozen driver records total wall clock from the budget
+  start, including restoration-engineering checks and source-start gaps, without resetting the allowance.
+- B: budget exhaustion before the restoration gate allows missing resume_check with not_reached, instead of
+  unconditionally reading a missing file. The actual normal run has passed restoration; final auditing has not yet occurred.
+- C: assert genuine step0.pt/json exist before calling initial, preventing creation of missing initializations during auditing.
+- D: completed.json must be 8k and match the latest corresponding stage field by field; learning qualification
+  is distinguished from completed 8k execution and computed by frozen report.py using validation-only gates.
 
-以上根据代码当前内容判断；没有运行completion_audit.main，没有读取正在
-运行模型的效果、CKA或test标签，没有修改冻结训练与完成审计脚本。下方
-初审正文为历史建议，A–D不能再被引用为当前尚未修复的四个缺口。复核时
-记录的当前SHA与原文本所录SHA相同，不能据此认定某个历史版本的确切
-改动时间；本说明只确认所读当前字节实际包含上述处理。
+These judgments use current code contents; completion_audit.main was not run, ongoing
+model effects, CKA, and test labels were not read, and frozen training/completion-audit scripts were not edited. The initial
+review below is historical advice; A–D must no longer be cited as four current unrepaired gaps. The current SHA recorded
+at verification equals the SHA in the original text, which cannot establish the precise historical version's
+change time; this note only confirms that the bytes read contain the handling above.
 
-剩余范围限制（不是当前固定训练的阻断问题）
-1. “预算通过”指同一预算窗口下的实测整体进程墙钟与同步边界，不是独立
-   测得GPU kernel占用。工程check时间由全局墙钟覆盖，逐source区间表
-   本身不包含工程check。预算耗尽分支允许CPU安全收尾超过deadline；
-   判断不得把CPU安全保存与deadline后CUDA工作混称。
-2. 保护证明限于407项登记文件，不包括所有旧检查点/NPZ/NPY字节；保护
-   清单自身注册摘要与更全面路径保护属于初审E/F中的证据边界。
-3. 冻结writer/verify保证常规记录来源，但该审计没有独立检查CPU/resume
-   行的唯一身份集合，也不加载最终CP内部元数据；仅SHA链不应被描述
-   为已独立读取所有最终CP内部step。stage参数字段、验证读数汇总等
-   内部自洽检查仍主要由冻结writer和report承担。
-4. 极端安全早停边界：root在启动子进程前检查cutoff，但source driver在
-   加载数据后才记录invocation_start。如果恰跨cutoff，新job可以CPU-only
-   保存step0/partial产物；当前audit无条件要求start<stop_updates，会拒绝
-   这种合法安全退出。未影响现有正常阶段记录；若真的发生，仅需将该
-   分支明确标为预算未完成，不能因此补跑训练或延长额度。
-5. 若resume不是passed，独立审计目前未显式断言source阶段数为零；冻结
-   orchestrator不会在恢复门槛失败后启动source。此处是一项可加强的
-   非正常元数据自洽检查，不是已观察到的运行异常。
+Remaining scope limitations (not blockers for current fixed training)
+1. “Budget passed” means measured total process wall clock and synchronization boundaries under the same budget window, not independently
+   measured GPU-kernel occupancy. Global wall clock covers engineering checks; per-source interval tables
+   do not themselves contain engineering checks. The budget-exhaustion branch permits CPU-safe cleanup beyond the deadline;
+   judgments must not conflate CPU-safe saving with post-deadline CUDA work.
+2. Protection evidence covers only 407 registered files, not all historical checkpoint/NPZ/NPY bytes; protection
+   manifest registration digests and broader path protection remain evidence boundaries in initial-review E/F.
+3. Frozen writer/verify establishes ordinary record provenance, but this audit does not independently check unique CPU/resume
+   row identity sets or load final-checkpoint internal metadata; SHA chains alone must not be described
+   as independently reading every final checkpoint's internal step. Stage-parameter fields, validation-summary consistency,
+   and similar internal checks still mainly rely on frozen writer/report.
+4. Extreme safe-early-stop boundary: root checks cutoff before subprocess startup, but the source driver records
+   invocation_start only after data loading. If cutoff is crossed then, a new job can CPU-only
+   save step0/partial artifacts; current audit unconditionally requires start<stop_updates and would reject
+   this legitimate safe exit. Existing normal stage records are unaffected; if this occurs, explicitly mark
+   budget incompleteness rather than retraining or extending the allowance.
+5. If resume is not passed, independent auditing does not yet explicitly assert zero source stages; frozen
+   orchestrator does not start sources after restoration-gate failure. This could strengthen
+   abnormal-metadata consistency checks, rather than describing an observed runtime anomaly.
 
-未发现当前16模型按固定2k/4k/8k计划完成时的阻断问题。实际来源、终止、
-实测墙钟及学习资格须在全部固定运行退出后由终局产物审计分别报告；
-本次只读代码审查不预先宣称它们通过。
+No blocker was found for the current 16 models completing the fixed 2k/4k/8k plan. Actual provenance, termination,
+measured wall clock, and learning qualifications must be separately reported by final artifact audits after all fixed runs exit;
+this read-only code review does not declare them passed in advance.
 
---------- 保留的初审正文；上述修复状态优先 ---------
+--------- Retained initial review; repaired status above takes precedence ---------
 
-PermWorld learnability 完成审计脚本：只读审查
-日期：2026-10-10（America/Los_Angeles）
-审查版本 completion_audit.py SHA256：
+PermWorld learnability completion-audit script: read-only review
+Date: 2026-10-10 (America/Los_Angeles)
+Reviewed completion_audit.py SHA256:
 36bba84b3df615c3c1b56ddc2bd39e6a07425efc3186a2fa92141e1735a4934c
 
-范围
-只读脚本、冻结协议、保护清单的文件名/数量和初始化文件存在性。未执行
-completion_audit.main、develop/train/模型前向或新的统计检验，没有读取
-CKA结果或解码test标签。没有修改脚本、冻结代码、检查点或结果。
-当前真实step0.pt/json两架构均存在，ROOT路径解析后不变；以下退化分支
-问题不意味着已运行模型出现错误。四条件恢复检查通过是父任务提供的
-状态，本次没有重新执行其数值检查。
+Scope
+Read only the script, frozen protocol, protection-manifest filenames/counts, and initialization-file existence. Did not execute
+completion_audit.main, develop/train/model forwards, or new statistical tests; did not read
+CKA results or decode test labels. No script, frozen code, checkpoint, or result changes.
+Genuine step0.pt/json exist for both architectures, with unchanged resolved ROOT paths; the degenerate-branch
+issues below do not imply errors in models already run. Passing four-condition restoration checks is status supplied by
+the parent task; this review did not rerun their numerical checks.
 
-已覆盖的内容
-1. verify绑定协议与26项冻结源码，额外核对F根协议副本与训练清单。
-2. 407项旧产物逐项比对原SHA，包括JSON/源代码/论文/图片/CSV/日志。
-3. step0的保存阶段、每stage的数据摘要、源版本、原初始化参数与检查点
-   摘要、有限梯度更新计数、曝光和监督token数量、测试/几何/正式训练
-   flag，均有显式检查。8k完成旗标不能指向非8k或无验证记录的阶段。
-4. stage引用的完整检查点文件SHA被重新计算，并限制到对应model目录。
-   配对模型的初始参数与starting RNG摘要一致；分层验证要求三长度、
-   每长度1024例、identity动作。进程检查禁止遗留本开发工作进程。
-5. 本脚本不解码数据NPZ中的test标签；整文件SHA校验只验证字节身份。
+Already covered
+1. verify binds the protocol and 26 frozen source files, additionally checking the F-root protocol copy and training manifest.
+2. 407 historical artifacts are individually compared with original SHAs, including JSON/source/papers/images/CSV/logs.
+3. Explicit checks cover step0 saving stage, each stage's data digest, source version, original initialization parameters/checkpoint
+   digests, finite-gradient update counts, exposure/supervised-token counts, and test/geometry/formal-training
+   flags. The 8k completion flag cannot point to non-8k stages or stages without validation.
+4. The complete checkpoint SHA referenced by each stage is recomputed and constrained to the corresponding model directory.
+   Paired models have identical initial-parameter and starting-RNG digests; stratified validation requires three lengths,
+   1024 examples per length, and identity action. Process checks forbid residual development workers.
+5. This script does not decode test labels in the data NPZ; whole-file SHA checks verify byte identity only.
 
-尚未覆盖的判断（建议修正或明确限定）
+Judgments not yet covered (recommended repairs or explicit qualifications)
 
-A. 预算配置一致不等于实测预算通过
-现有断言只验证deadline-start=7200和deadline-stop_updates=30秒，以及
-limit=7200；没有核对budget/执行记录的协议摘要，没有验证实际invocation
-起止时间、间隔/并集、累计墙钟或deadline后活动。result中的
-active_gpu_budget_seconds=7200是配置值，execution_wall_seconds只是复制
-字段。因此不能仅凭本脚本status=passed写成“实际2小时预算审计通过”。
+A. Consistent budget configuration does not establish measured budget compliance
+Current assertions check deadline-start=7200, deadline-stop_updates=30 seconds, and
+limit=7200; they do not check protocol digests in budget/execution records, actual invocation
+start/end, intervals/unions, cumulative wall clock, or post-deadline activity. result's
+active_gpu_budget_seconds=7200 is configuration, and execution_wall_seconds is simply copied.
+Thus script status=passed alone cannot establish “actual two-hour budget audit passed.”
 
-建议最终审计显式检查时间有限且有序、source和engineering进程的实际
-invocation区间与同一预算起点/截止对应、累计updates与invocation_updates
-相符；展示报告中的真实墙钟和CPU收尾。若end略超deadline，必须区分
-CPU安全保存与CUDA验证/训练，不能把超时CUDA活动排除在额度之外。
-仅stage时间戳仍不能独立证明所有GPU kernel何时结束；这一点依赖冻结
-driver的同步边界/逐step cutoff/逐验证batch裕量实现，不宜精确宣称测得
-GPU kernel占用时间。本审查没有读取正在运行的数值作为终局预算结论。
+Final auditing should explicitly check finite, ordered times, actual source/engineering-process
+invocation intervals relative to the same budget start/deadline, and matching cumulative updates/invocation_updates;
+show actual report wall clock and CPU cleanup. If end slightly exceeds deadline, distinguish
+CPU-safe saving from CUDA validation/training; post-deadline CUDA activity cannot be excluded from the allowance.
+Stage timestamps alone still cannot independently prove when every GPU kernel ended; this depends on frozen
+driver synchronization, per-step cutoff, and validation-batch margins, and must not be precisely called measured
+GPU-kernel occupancy. This review did not use ongoing numerical results as a final budget conclusion.
 
-B. 合理的“恢复门槛前预算耗尽”分支尚不完整
-execution接受budget_exhausted_before_resume_gate，但之后无条件读取
-resume_check.json。如果预算在调用恢复检查前已经耗尽，该文件可合理
-不存在，脚本会FileNotFoundError，而非报告预定早停。建议该分支允许
-resume产物缺失、明确gate未完成并拒绝任何source完成资格；其它分支
-再要求恢复产物存在/通过。当前运行已通过恢复门槛，不受此问题影响。
+B. Legitimate “budget exhausted before restoration gate” branch remains incomplete
+execution accepts budget_exhausted_before_resume_gate but then unconditionally reads
+resume_check.json. If the budget expires before restoration checking is invoked, this file can legitimately
+be absent; the script would raise FileNotFoundError instead of reporting planned early stopping. Allow
+missing resume artifacts in this branch, explicitly mark the gate incomplete, and reject all source completion qualifications; other branches
+should require restoration artifacts to exist/pass. The current run passed the restoration gate and is unaffected.
 
-C. initial()并非无条件只读
-common.initial在文件缺失时会构造模型并保存新的step0。作为完成审计
-调用它，可能把缺失原初始化误处理成重新创建。当前两个step0文件都
-存在，现有调用只加载；但严格只读审计应先assert文件均存在，或直接
-加载原metadata/checkpoint并核对SHA，缺失时报告缺失，禁止创建。
+C. initial() is not unconditionally read-only
+common.initial constructs a model and saves new step0 when files are missing. Calling it during completion auditing
+can mistakenly replace a missing original initialization with recreation. Both current step0 files
+exist and current calls only load, but a strictly read-only audit should first assert their existence or directly
+load original metadata/checkpoints and verify SHA; report missing artifacts without creating them.
 
-D. 8k运行完成与学习验收要区分
-complete按stage.fixed_endpoint_completed计数，没有读取completed.json
-并逐项与stage/checkpoint一致；也没有重算90%平均、85%每长度、+20pp
-长度众数增量、EOS>=99%、均值及逐长度编码gap<=5pp。后者可以由冻结
-report.py负责，不必重复造一套分析，但完成审计需明确仅检查来源/终止
-身份，不能把status=passed或fixed8k_complete_models当成学习门槛通过。
-建议同时核对completed.json的8k/validation/status/来源/SHA与该stage
-一致，并引用同协议/源版本的学习验收报告及其明确资格结果。
+D. Distinguish completed 8k execution from learning acceptance
+complete counts stage.fixed_endpoint_completed without reading completed.json
+and checking stage/checkpoint field agreement; it also does not recompute mean90%, per-length85%, +20pp
+length-mode gain, EOS>=99%, mean and per-length encoding gaps<=5pp. Frozen
+report.py may handle the latter without duplicate analysis, but completion auditing must explicitly check provenance/termination
+identity only and not equate status=passed or fixed 8k_complete_models with learning-gate success.
+Also verify completed.json's 8k/validation/status/provenance/SHA against that stage,
+and cite the learning-acceptance report with matching protocol/source version and explicit qualification results.
 
-E. 元数据覆盖与身份还有可以收紧的检查
-- CPU仅status+16行，resume仅status+4行/数值/RNG，未验证完整、唯一的
-  architecture×encoding×task或architecture×encoding身份集合，未逐项
-  对CPU/resume记录绑定协议。主stage仅run_id核对，没有将architecture、
-  encoding、task、seed等字段与固定job逐项比较。
-- 可增加stage文件名与实际step一致、状态与requested_stop/validation
-  缺失旗标一致、invocation起点/增量一致、有限且合法的验证读数、
-  overall与逐长度结果汇总一致。这是审计自洽检查，不是新增假设检验。
-- 检查点SHA证明引用字节身份；目前不torch-load最终CP来比对内部
-  step/run_id/protocol/data/source身份。可如实把它限定为SHA链审计，
-  若要称“独立核实checkpoint内部更新计数”，需另有相应读取检查。
+E. Metadata coverage and identity checks could be tightened
+- CPU checks only status+16 rows; resume checks status+4 rows/numerics/RNG, without verifying complete unique
+  architecture×encoding×task or architecture×encoding identity sets, or binding every
+  CPU/resume record to the protocol. Main stages check run_id only, without fieldwise comparison of architecture,
+  encoding, task, seed, etc. to fixed jobs.
+- Add stage-filename/actual-step agreement, status versus requested_stop/validation
+  missing flags, invocation starting/increment agreement, finite/legal validation values,
+  and overall/per-length aggregation agreement. This checks audit consistency, not a new hypothesis.
+- Checkpoint SHA establishes referenced byte identity; final checkpoints are not torch-loaded to verify internal
+  step/run_id/protocol/data/source identity. Accurately call this SHA-chain auditing;
+  “independent verification of internal checkpoint update counts” needs a corresponding reading check.
 
-F. 保护范围与清单锚定
-当前407项保护清单扩展名统计为：JSON288、py22、pdf8、png11、svg6、
-tex22、csv16、log12、bib2、txt13、html7。该清单不包含旧.pt/.npz/.npy
-二进制产物。源码仅写新ROOT也支持旧路径未被训练writer修改，但SHA审计
-本身只能证明清单覆盖的文件不变，不能称已逐项验证所有旧二进制。
-protected_legacy_before.json自身未被freeze.source_sha256锚定。建议记录
-其注册时摘要并在终局验证；若尚无注册时摘要，可以和旧F17原保护清单
-及setup生成规则核对覆盖，并注明无法追溯验证本清单原始身份。
+F. Protection scope and manifest anchoring
+The current 407-file protection manifest has extensions JSON288, py22, pdf8, png11, svg6,
+tex22, csv16, log12, bib2, txt13, html7. It excludes historical .pt/.npz/.npy
+binary artifacts. Source writes only new ROOT, supporting that training writers do not modify old paths, but SHA auditing
+itself proves only registered-file preservation, not itemwise verification of all historical binaries.
+protected_legacy_before.json is not itself anchored by freeze.source_sha256. Record
+its registration digest and verify at completion; without a registration-time digest, check coverage against the original F17 protection manifest
+and setup-generation rules, explicitly noting that original manifest identity cannot be verified retrospectively.
 
-结论
-未发现当前已通过恢复门槛的真实训练需要停止或改写冻结方案的问题。
-现有审计足以检查大部分来源/SHA链和清单内保护，但“实测预算通过”、
-“严格只读”、合理预算早停分支以及“学习资格已通过”仍有上述缺口。
-建议只修订这份完成审计或其解释，不修改冻结训练、源结果或指标。
+Conclusion
+No problem was found requiring currently running genuine training, already past restoration gates, to stop or rewrite the frozen plan.
+Current auditing checks most provenance/SHA chains and registered protection, but “measured budget passed,”
+“strictly read-only,” legitimate budget-early-stop handling, and “learning qualification passed” retain the gaps above.
+Revise only this completion audit or its interpretation, without changing frozen training, source results, or metrics.

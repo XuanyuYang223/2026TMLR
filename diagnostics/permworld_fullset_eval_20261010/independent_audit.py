@@ -4,7 +4,7 @@ This file never imports torch, loads checkpoint tensors, launches inference or
 training, or decodes a test/input array. --fixture is wholly synthetic;
 --run-real requires all sixteen predictions and complete primary CSVs first.
 Saved FP32 CE remains the primary measure. Float64 logsumexp is an independent
-numerical check under the protocol's predeclared per-example tolerance.
+numerical check under the protocol’s predeclared per-example tolerance.
 """
 from __future__ import annotations
 
@@ -319,7 +319,7 @@ def expected_reproduction(checkpoints, length_rows, summaries, protocol):
         for field in ('run_id', 'architecture', 'encoding', 'task'):
             require(stage[field] == job[field], 'Bound source stage metadata mismatch: '+field)
         require(stage['step'] == 8000 and stage['status'] == 'stage_complete' and stage['fixed_endpoint_completed'],
-                'Bound source stage is not complete fixed8k')
+                'Bound source stage is not complete fixed 8k')
         original = stage['validation']
         original_lengths = {int(row['length']): row for row in original['per_length']}
         require(len(original['per_length']) == 3 and set(original_lengths) == set(LENGTHS), 'Source validation lengths incomplete')
@@ -583,18 +583,18 @@ def fixture():
 
 
 def review_text(result):
-    lines = ['PermWorld 完整训练/验证评价：独立统计审查',
-        '状态：'+result['status'], '合成fixture：'+str(result.get('synthetic_fixture', False)),
-        '此审查只读取保存的数值产物和四个源train/validation长度/标签数组；不运行模型、不训练、不反序列化检查点张量、不访问测试或CKA。',
-        '先核对冻结协议与源/数据/预测哈希，再从每个完整188维logits独立复算argmax和float64 logsumexp CE。',
-        '主报告CE保留原FP32逐样本CE；float64路径是数值验证，不改主终点或原值。',
-        '逐长度先汇总；n10/n11/n12固定各1/3。EOS与答案单列；combined CE为两项CE平均。',
-        '验证重现保留旧值、新值、有符号差；准确率容差0、CE预算1e-5+1e-6×|旧值|。',
-        '独立logit CE预算2e-6+2e-6×|原FP32CE|，不根据观察扩大。',
-        '前向精度同时核对冻结evaluation设定；仅保存logits为float32不能证明内部前向没有autocast。',
-        '这是一个既有开发数据世界的数值审计；16模型不作为16独立世界，不提供等价性或机制结论。',
-        '若数值超界，保留原产物并报告失败。不会追加训练或自动开启表征研究。',
-        '', '机器审计结果：', json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False)]
+    lines = ['PermWorld full training/validation evaluation: independent statistical review',
+        'Status:'+result['status'], 'Synthetic fixture:'+str(result.get('synthetic_fixture', False)),
+        'This review reads saved numerical artifacts and four source train/validation length/label arrays only; no models, training, checkpoint-tensor deserialization, test access, or CKA.',
+        'First verify frozen protocol and source/data/prediction hashes, then independently recompute argmax and float64 logsumexp CE from every full188-dimensional logit vector.',
+        'Primary-report CE retains original FP32 per-sample CE; float64 is numerical validation, changing no primary endpoint or original value.',
+        'Aggregate per length first; n10/n11/n12 each have fixed1/3 weight. EOS and answers remain separate; combined CE averages the two CEs.',
+        'Validation reproduction retains old/new values and signed differences; accuracy tolerance0 and CE budget1e-5+1e-6×|old value|.',
+        'Independent logit-CE budget2e-6+2e-6×|original FP32CE|, not enlarged after observation.',
+        'Forward precision is also checked against frozen evaluation settings; saved float32 logits alone do not establish no internal autocast.',
+        'This is a numerical audit of one existing development data world;16 models are not16 independent worlds, with no equivalence/mechanism conclusions.',
+        'If numerical limits fail, retain original artifacts and report failures. No additional training or automatic representation work.',
+        '', 'Machine-audit results:', json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False)]
     return '\n'.join(lines)+'\n'
 
 

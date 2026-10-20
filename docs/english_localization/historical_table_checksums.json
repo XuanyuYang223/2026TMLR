@@ -1,0 +1,92 @@
+{
+  "scope": "Frozen published scientific inputs; table/math/state checks only",
+  "inputs": {
+    "pair_protocol": {
+      "repository_relative_path": "diagnostics/representation_pairing_review_20261011/protocol.json",
+      "sha256": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c",
+      "bytes": 10017
+    },
+    "pair_candidates": {
+      "repository_relative_path": "diagnostics/representation_pairing_review_20261011/candidate_pairs.csv",
+      "sha256": "c9e2ff23a034b9b6951d9fa56273c3520904597055f48b2fec9297e119a67c6d",
+      "bytes": 236305
+    },
+    "pair_lengths": {
+      "repository_relative_path": "diagnostics/representation_pairing_review_20261011/pair_per_length.csv",
+      "sha256": "4ef217924c6008a9ff0059f81e8965a1c21a541552cd8af42e3d8fd8e1d98134",
+      "bytes": 11380510
+    },
+    "pair_summary": {
+      "repository_relative_path": "diagnostics/representation_pairing_review_20261011/pair_summary.csv",
+      "sha256": "4b7c000fafe2b6b8ef4d123b66b8ce1e80a306f39ec2a168264178037f897e63",
+      "bytes": 470791
+    },
+    "pair_categories": {
+      "repository_relative_path": "diagnostics/representation_pairing_review_20261011/category_summary.csv",
+      "sha256": "81d8b08faf0ef6af41786d7d6611b31a6557fc841b610be3b9b2acbceb544b35",
+      "bytes": 267401
+    },
+    "pair_designated_length": {
+      "repository_relative_path": "diagnostics/representation_pairing_review_20261011/designated_endpoint_verification.csv",
+      "sha256": "3a02a10eea81f091a5adbb58f0fcfe272af638de01b9ec7998dee8789c811cb3",
+      "bytes": 1009351
+    },
+    "pair_designated_summary": {
+      "repository_relative_path": "diagnostics/representation_pairing_review_20261011/designated_aggregate_verification.csv",
+      "sha256": "1ef0dddaf245ddc3e93ced81824e561e88c33e18e58c15eac71255716374bbed",
+      "bytes": 67682
+    },
+    "perm_original": {
+      "repository_relative_path": "diagnostics/permworld_eight_relations_20261010/per_length_results.csv",
+      "sha256": "af0c1bee947232a5168cc902a9424b8330afe5266f45f2a9e0eeb127f01ad62e",
+      "bytes": 98933566
+    },
+    "graph_original": {
+      "repository_relative_path": "diagnostics/graphworld_pilot_20261010/geometry_per_n.csv",
+      "sha256": "7f34df10cc5ae58639e5038ec32a48da488e44ebd5382ebc70f7d967592c33eb",
+      "bytes": 163346
+    },
+    "matrix_protocol": {
+      "repository_relative_path": "diagnostics/matrixgroupworld_20261011/protocol.json",
+      "sha256": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+      "bytes": 21279
+    },
+    "matrix_lengths": {
+      "repository_relative_path": "diagnostics/matrixgroupworld_20261011/geometry_per_n.csv",
+      "sha256": "67e52eed74bbd1d0a90bd4833ab942ff68725856125ca6ecb22ed3fc99c2b8ab",
+      "bytes": 152762
+    },
+    "matrix_summary": {
+      "repository_relative_path": "diagnostics/matrixgroupworld_20261011/geometry_summary.csv",
+      "sha256": "0b5c9360f5a307d13fbee322cd0cd1ef891fbad9634a53bc9266a30bcba44d09",
+      "bytes": 43200
+    },
+    "matrix_numerical": {
+      "repository_relative_path": "diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json",
+      "sha256": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+      "bytes": 138974
+    },
+    "matrix_completion": {
+      "repository_relative_path": "diagnostics/matrixgroupworld_20261011/completion.json",
+      "sha256": "d5c3c4d42c7b1840646f46828e1b0db46c2e5d1a8ea58980a70dacabaa6402ef",
+      "bytes": 8370
+    },
+    "matrix_report_audit": {
+      "repository_relative_path": "diagnostics/matrixgroupworld_20261011/report_audit.json",
+      "sha256": "a84a8e0f78f2c3ecfd87a1e815e62f8cabb3d99fee9ab20c6af60ba423b1c96a",
+      "bytes": 28114
+    },
+    "matrix_math_audit": {
+      "repository_relative_path": "diagnostics/matrixgroupworld_20261011/math_audit.json",
+      "sha256": "cea05b3436edbe027d944e976cf3faa6ac51bfb88f1c387ab744528a59208df0",
+      "bytes": 5041
+    },
+    "matrix_arithmetic_audit": {
+      "repository_relative_path": "diagnostics/matrixgroupworld_20261011/table_arithmetic_audit.json",
+      "sha256": "9259e1aeb59c6b838d0da4a97e56033e9f3abe78c8e713e5486f62d8054b2fe4",
+      "bytes": 206492
+    }
+  },
+  "original_inputs_not_modified": true,
+  "source_sha256": "b37053658f993ddbb29220b08fe10a465b8ca17c1022ce32022a2f94467d30de"
+}

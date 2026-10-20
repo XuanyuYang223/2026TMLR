@@ -373,25 +373,25 @@ def run():
     closure, edges = import_closure(active_py+list(dependency))
     dependency.update(closure)
     archive = []
-    def archive_row(path, category, use, reason, rebuild, action='保留原路径；仅逻辑归档'):
+    def archive_row(path, category, use, reason, rebuild, action='Keep original path; logical archival only'):
         archive.append(dict(path=str(path),category=category,use=use,
             dependency_evidence=reason,retain_reason=reason,rebuildable=rebuild,
-            suggested_action=action,exists=path.exists(),protected_action='不删除、不移动、不改旧文档/发布物'))
+            suggested_action=action,exists=path.exists(),protected_action='Do not delete, move, or modify earlier documents/published artifacts'))
     for path in sorted(dependency):
         if any(path.is_relative_to(root) for root in active_roots):
-            archive_row(path,'1_当前PermWorld图论主线','新扩展/图论/统一分析实际源码',
+            archive_row(path,'1_current_PermWorld_graph_research','Actual source code for the new extension/graph pilot/unified analysis',
                         'Existing current source file, inventoried by local import closure; its owner freezes code before execution.',
-                        '由当前版本重建；保留源哈希和协议')
+                        'Rebuild from the current version; preserve source hashes and protocol')
         else:
-            archive_row(path,'2_当前主线旧依赖','实际冻结源码/权重/数据/词表/随机状态/审计或导入依赖',
+            archive_row(path,'2_legacy_dependencies_of_current_research','Actual frozen source/weights/data/vocabulary/RNG state/audit or import dependencies',
                         'Bound by first20k source inventory/hash manifest or current local static import closure. Dependencies can overlap independent projects; keep original path.',
-                        '源码/派生表可从版本重建；真实权重/RNG/唯一数据不得默认为可重建')
+                        'Source/derived tables can be rebuilt from version history; genuine weights/RNG/unique data must not be assumed reconstructible')
     for path in [DIRECTORY, WORKSPACE/'diagnostics/permworld_controlled_comparison_20261010',
                  WORKSPACE/'experiments/permworld_eight_relations_20261010',
                  graph_directory, graph_source]:
-        archive_row(path,'1_当前PermWorld图论主线','当前库存、扩展、统一比较和图论小试入口',
+        archive_row(path,'1_current_PermWorld_graph_research','Current inventory, extension, unified-comparison, and graph-pilot entrypoint',
                     'New user-authorized task plus controlled comparison protocol reference; graph paths independently read from its current common.py.',
-                    '报告可由保留输入和冻结脚本重建；源终点不可用重新训练代替')
+                    'Reports can be rebuilt from retained inputs and frozen scripts; source endpoints must not be replaced by retraining')
     # Discover named source/result units and classify outside the explicit current
     # dependency graph. This is an index, not authorization to remove anything.
     for base in ('experiments','results','diagnostics','paper','external'):
@@ -402,36 +402,36 @@ def run():
                 continue
             covered=any(x.is_relative_to(path) for x in dependency)
             if path in active_roots:
-                archive_row(path,'1_当前PermWorld图论主线','新扩展/图论实现及分析',
+                archive_row(path,'1_current_PermWorld_graph_research','New extension/graph implementation and analysis',
                             'Current source/root binding; keep source code and corresponding protocol before execution.',
-                            '源码可从版本重建，保留固定产物与审计')
+                            'Source can be rebuilt from version history; retain fixed artifacts and audits')
             elif covered:
-                archive_row(path,'2_当前主线旧依赖','含当前复现引用的旧文件；目录内可能兼有独立研究',
+                archive_row(path,'2_legacy_dependencies_of_current_research','Contains earlier files referenced by current reproduction; the directory may also contain independent research',
                             'At least one exact bound dependency lies below this path; do not move the directory as a whole.',
-                            '混合；逐文件核对，不能整体删除')
+                            'Mixed; inspect file by file, do not delete wholesale')
             else:
-                archive_row(path,'3_独立旧研究','未进入当前声明的冻结依赖闭包；保留历史/负结果与原路径',
+                archive_row(path,'3_independent_legacy_research','Outside the currently declared frozen dependency closure; retain historical/negative results and original paths',
                             'Not referenced by the currently enumerated fixed source bindings/static import closure. Dynamic references and final extension closure require owner review; this is provisional, never a deletion decision.',
-                            '未知/混合；保护真实权重、数据、代码历史、结果、F17及发布物')
+                            'Unknown/mixed; protect genuine weights, data, code history, results, F17, and published artifacts')
     for path in sorted(WORKSPACE.glob('*')):
         if path.name in ('experiments','results','diagnostics','paper','external','archive_index.csv','cleanup_candidates.csv','CURRENT_RESEARCH.txt','.git','.venv'):
             continue
         if path.is_dir():
-            archive_row(path,'3_独立旧研究','原有项目或工作区基础设施/挂载/发布历史，未授权更改',
+            archive_row(path,'3_independent_legacy_research','Existing projects or workspace infrastructure/mounts/release history, with no authorization to change them',
                         'Keep workspace infrastructure, package/release/unique evidence intact; do not infer independence from directory name alone.',
-                        '未知；本轮不处理')
+                        'Unknown; not handled this round')
     cleanup=[]
     for path in sorted({*WORKSPACE.glob('experiments/**/__pycache__'),*WORKSPACE.glob('diagnostics/**/__pycache__'),*WORKSPACE.glob('.pytest_cache')}):
         files=[x for x in path.rglob('*') if x.is_file()]
         if any(x in dependency for x in files):continue
-        archive_row(path,'4_可再生临时文件','Python字节码/pytest缓存',
+        archive_row(path,'4_regenerable_temporary_files','Python bytecode/pytest cache',
                     'Known interpreter/test-generated files; no exact current dependency binding points into this cache. Scientific artifacts and logs excluded.',
-                    '是；由对应源码/测试重建','仅清理候选；本轮未执行')
+                    'Yes; rebuild from the corresponding source/tests','Cleanup candidate only; not executed this round')
         cleanup.append(dict(path=str(path),kind='Python bytecode/test cache',
             bytes=sum(x.stat().st_size for x in files),rebuildable=True,
             dependency_status='not an exact bound scientific artifact',
             retain_reason='Do not execute deletion in this task; retain until owner checks active process use.',
-            suggested_action='提出清理候选，不删除',deleted=False,moved=False))
+            suggested_action='Propose cleanup candidates; do not delete',deleted=False,moved=False))
     csv_write(WORKSPACE/'archive_index.csv',archive)
     csv_write(WORKSPACE/'cleanup_candidates.csv',cleanup)
     json_write(OUTPUT/'archive_dependency_edges.json',dict(static_edges=edges,
@@ -440,21 +440,21 @@ def run():
         files_deleted=False,files_moved=False))
     training_seconds=sum(r['estimated_seconds_mean'] for r in estimate_rows if r['resource']=='new_source_training_process_wall')
     lines=[
-        '当前研究入口（2026-10-10；库存和协议准备阶段草案）',
-        '问题：数学对应是否改变跨任务表征相似性，这个观察受编码、模型配置、层和指标影响，能否在图论小试中观察到？',
+        'Current research entry (2026-10-10; draft at inventory/protocol preparation stage)',
+        'Question: do mathematical correspondences change cross-task representational similarity, how does this depend on encoding, model configuration, layer, and metric, and is it observed in a graph pilot?',
         '',
-        '已完成：diagnostics/permworld_controlled_comparison_20261010/reader_report.html。首轮16模型固定20k、两编码×两配置、两关系、真实保存step0。旧多层82模型只作历史参考；后续8k可学习性模型不并入主队列。',
-        '当前扩展：diagnostics/permworld_eight_relations_20261010/。64个源模型目标中复用16个，剩余48个；固定同一world、batch、词表、真实step0与20k配方。',
-        '缺口：model_gap_manifest.csv；只训练缺失项：training_manifest.csv；真实成本：cost_estimate.csv；来源机器索引：inventory/sources.json。',
-        '库存复核命令（CPU，不启动训练）：.venv/bin/python diagnostics/permworld_eight_relations_20261010/inventory/inventory.py --run',
-        '训练/工程/分析命令：由扩展负责人在新协议冻结后提供，只指向新缺失清单；不要执行旧一键大训练入口。本草案不编造尚未冻结的CLI。',
-        f'以首轮真实20k日志外推48模型约{training_seconds/3600:.2f}累计模型进程小时；历史并行争用影响计时，不能称实际GPU小时或本轮必需壁钟。原始20k未保存显存峰值，新工程测量应另列。',
-        '大产物位置：'+str(ROOT)+'；不复制世界、不删除唯一旧权重/原始数据腾空间。',
-        '图论：diagnostics/graphworld_pilot_20261010/；experiments/graphworld_pilot_20261010/；大产物/mnt/yangx-projects-f/20261010/graphworld_pilot。一个参考Transformer/行序邻接编码、四源任务、四耦合关系，4个新终点上限；按6/7/8顶点分别算后固定1/3。不自动扩展图任务、群族、编码架构网格或确认种子。',
-        '结果入口：原始正确/错误/恒等相似度 → 训练后Bt配对偏好 → B0、dc/dw及Delta辅助分解；负结果、弱源任务和NaN完整保留。',
-        '历史/独立项目：见archive_index.csv。分类2含当前复现必需的旧代码/数据/检查点，不能整体搬走；分类3仍保留原路径与证据，F17论文/结果/release保持原样。',
-        '临时文件：见cleanup_candidates.csv；本轮仅提出Python字节码/测试缓存候选，未删除、未移动、未改Git历史。',
-        '停止边界：完成八关系统一比较和图论小试报告后停止；不按几何或任务成绩增加预算，不自动发布。',
+        'Completed: diagnostics/permworld_controlled_comparison_20261010/reader_report.html. The first 16 models use fixed 20k endpoints, two encodings × two configurations, two relations, and genuinely saved step-0 weights. The earlier 82-model multilayer analysis is historical reference only; later 8k learnability models are excluded from the primary queue.',
+        'Current extension: diagnostics/permworld_eight_relations_20261010/. Of 64 intended source models, 16 are reused and 48 remain; the same world, batches, vocabulary, genuine step-0 weights, and 20k recipe are fixed.',
+        'Gaps: model_gap_manifest.csv; missing-only training list: training_manifest.csv; actual cost: cost_estimate.csv; machine-readable provenance index: inventory/sources.json.',
+        'Inventory review command (CPU, no training): .venv/bin/python diagnostics/permworld_eight_relations_20261010/inventory/inventory.py --run',
+        'Training/engineering/analysis commands: supplied by the extension owner after freezing the new protocol, pointing only to the new missing-model list. Do not execute an old one-command large-training entrypoint. This draft does not invent an unfrozen CLI.',
+        f'Extrapolating the first round’s actual 20k logs gives approximately {training_seconds/3600:.2f} cumulative model-process hours for 48 models. Historical concurrent contention affects timing; this is neither actual GPU hours nor required wall time this round. The original 20k runs did not save peak GPU memory; new engineering measurements must be listed separately.',
+        'Large-artifact location: '+str(ROOT)+'; do not duplicate the world or delete unique earlier weights/raw data to free space.',
+        'Graph pilot: diagnostics/graphworld_pilot_20261010/; experiments/graphworld_pilot_20261010/; large artifacts at /mnt/yangx-projects-f/20261010/graphworld_pilot. One reference Transformer/row-order adjacency encoding, four source tasks, four dependent relations, and at most four new endpoints; compute separately for 6/7/8 vertices, then use fixed weight 1/3. No automatic expansion of graph tasks, group families, encoding/architecture grids, or confirmatory seeds.',
+        'Result order: original correct/wrong/identity similarities → trained Bt pairing preference → auxiliary B0,dc/dw,Delta decomposition; retain all negative results, weak source tasks, and NaNs.',
+        'Historical/independent projects: see archive_index.csv. Category 2 contains earlier code/data/checkpoints required for current reproduction and must not be moved wholesale. Category 3 retains original paths and evidence; F17 paper/results/releases remain unchanged.',
+        'Temporary files: see cleanup_candidates.csv. This round only proposes Python-bytecode/test-cache cleanup candidates; nothing was deleted or moved, and Git history was unchanged.',
+        'Stopping boundary: stop after the unified eight-relation comparison and graph-pilot reports; do not expand budgets based on geometry or task performance, and do not publish automatically.',
     ]
     (WORKSPACE/'CURRENT_RESEARCH.txt').write_text('\n'.join(lines)+'\n')
     elapsed=time.monotonic()-started

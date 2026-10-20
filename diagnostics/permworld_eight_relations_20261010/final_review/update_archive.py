@@ -29,7 +29,7 @@ FREEZE = REVIEW / 'archive_update_freeze.json'
 BASE = REVIEW / 'archive_base_snapshot.csv'
 ARCHIVE = WORKSPACE / 'archive_index.csv'
 CLEANUP = WORKSPACE / 'cleanup_candidates.csv'
-CAT1, CAT2 = '1_当前PermWorld图论主线', '2_当前主线旧依赖'
+CAT1, CAT2 = '1_current_PermWorld_graph_research', '2_legacy_dependencies_of_current_research'
 OLD_GROUPS = {'reused_weights', 'initial_weights', 'saved_start_RNG',
               'original_cache', 'perm_cache_reused_physical'}
 STATE_NAMES = {'queue_state.json', 'orchestration_state.json', 'scope_bridge_state.json'}
@@ -212,11 +212,11 @@ def append_rows(original, records):
             continue
         known.add((r['path'],r['category']))
         added.append(dict(path=r['path'], category=r['category'],
-                 use='当前固定实验新产物' if r['category']==CAT1 else '当前复现必需的精确旧依赖/别名目标',
+                 use='New artifacts of the current fixed experiment' if r['category']==CAT1 else 'Exact legacy dependency/alias target required for current reproduction',
                  dependency_evidence=r['dependency_evidence'], retain_reason=r['dependency_evidence'],
-                 rebuildable='保留来源和协议；真实权重、RNG及唯一数据不能默认可重建',
-                 suggested_action='保留原路径；仅逻辑归档', exists='True',
-                 protected_action='不删除、不移动、不改旧文档/发布物'))
+                 rebuildable='Retain provenance and protocols; actual weights, RNG states, and unique data must not be assumed reconstructible',
+                 suggested_action='Keep original path; logical archival only', exists='True',
+                 protected_action='Do not delete, move, or modify earlier documents/published artifacts'))
     return original + csv_bytes(added, fields, header=False), added
 
 
@@ -326,7 +326,7 @@ def fixture():
         else:checks['postaudit_file_size_change_refuses_without_large_rehash']=False
         fields=['path','category','use','dependency_evidence','retain_reason','rebuildable','suggested_action','exists','protected_action']
         orig=[{f:'' for f in fields} for _ in range(3)]
-        orig[0].update(path=str(independent),category='3_独立旧研究',retain_reason='keep F17 byte by byte')
+        orig[0].update(path=str(independent),category='3_independent_legacy_research',retain_reason='keep F17 byte by byte')
         orig[1].update(path=str(new),category=CAT1,retain_reason='original duplicate')
         orig[2]=dict(orig[1])
         original=csv_bytes(orig,fields); updated,added=append_rows(original,records)

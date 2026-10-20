@@ -1,12 +1,12 @@
-旧16模型可学习性诊断：主分析仅用validation；旧test单独标为描述性。
-只读取固定20k completed.json曲线、标签/长度和缓存prediction IDs；不读CKA、Delta、隐表征、输出概率或模型权重。
-这是一个数据世界/源初始化开发单元，无多世界或新源确认。所有16条件和长度10..30均保留。
-训练长度众数由4096个/长度训练标签确定，并列选最小答案；验证256个/长度，旧test512个/长度。
-曲线仅每1000步保存聚合validation准确率；逐长度只保存最终预测。没有逐长度逐步validation轨迹或validation loss，不能补称已有。
-train_loss为某一次更新的微批损失，不是整训练集或验证损失；其尖峰不能单独证明退化。固定1k..5k与16k..20k中位数仅描述早/晚趋势，不选最优检查点。
-逐长度是否>基线仅描述样本比例，不能称显著或可复现。paired_sampling_se_pp只条件于当前模型/输入样本，不能代表源或任务世界不确定性。
+Historical16-model learnability diagnostic: primary analysis uses validation only; historical test results are separately descriptive.
+Read only fixed 20k completed.json curves, labels/lengths, and cached prediction IDs; no CKA, Delta, hidden states, output probabilities, or weights.
+This is one data-world/source-initialization development unit, without multiple-world/new-source confirmation. All 16 conditions and lengths10..30 are retained.
+Training length modes use4096 training labels/length with ties to the smallest answer; validation has256/length and historical test512/length.
+Curves save aggregated validation accuracy only every1000 steps; per-length predictions exist only at the endpoint. There are no per-length per-step validation trajectories or validation losses to claim as available.
+train_loss is microbatch loss from one update, not whole-training/validation loss; spikes alone cannot establish degradation. Fixed1k..5k and16k..20k medians describe early/late trends only, without best-checkpoint selection.
+Whether each length exceeds>the baseline describes sample proportions only, not significance or repeatability. paired_sampling_se_pp conditions on current models/input samples, not source/world uncertainty.
 
-最终identity验证（固定1/21平均）：
+Final identity validation (fixed1/21 mean):
 transformer / one_line / descents: acc=99.05%, baseline=29.54%, gain=+69.51pp; mode-agreement=29.71%; non-majority acc=98.88%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
 transformer / one_line / recoils: acc=72.28%, baseline=30.49%, gain=+41.80pp; mode-agreement=32.72%; non-majority acc=69.54%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
 transformer / one_line / peaks: acc=85.44%, baseline=40.64%, gain=+44.79pp; mode-agreement=41.44%; non-majority acc=83.66%; observed-above-baseline lengths=[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
@@ -24,7 +24,7 @@ gru / canonical_cycle / recoils: acc=30.06%, baseline=30.49%, gain=-0.43pp; mode
 gru / canonical_cycle / peaks: acc=41.69%, baseline=40.64%, gain=+1.04pp; mode-agreement=73.64%; non-majority acc=17.14%; observed-above-baseline lengths=[11,13,15,18,19,21,24,25,27,28,30]
 gru / canonical_cycle / valleys: acc=41.22%, baseline=40.29%, gain=+0.93pp; mode-agreement=76.23%; non-majority acc=15.25%; observed-above-baseline lengths=[10,12,13,15,16,17,18,21,22,23,28,30]
 
-固定窗口学习趋势：
+Fixed-window learning trends:
 transformer / one_line / descents: val1k=27.33%, val10k=91.26%, val20k=99.05%, late accuracy gain=+7.79pp; early/late minibatch-loss medians=0.8345/0.0044
 transformer / one_line / recoils: val1k=28.22%, val10k=34.93%, val20k=72.28%, late accuracy gain=+37.35pp; early/late minibatch-loss medians=0.8939/0.5377
 transformer / one_line / peaks: val1k=35.62%, val10k=61.94%, val20k=85.44%, late accuracy gain=+23.49pp; early/late minibatch-loss medians=0.7461/0.2816
@@ -42,10 +42,10 @@ gru / canonical_cycle / recoils: val1k=28.87%, val10k=29.71%, val20k=30.06%, lat
 gru / canonical_cycle / peaks: val1k=38.73%, val10k=40.42%, val20k=41.69%, late accuracy gain=+1.26pp; early/late minibatch-loss medians=0.8010/0.7264
 gru / canonical_cycle / valleys: val1k=36.33%, val10k=39.73%, val20k=41.22%, late accuracy gain=+1.49pp; early/late minibatch-loss medians=0.7655/0.6889
 
-轮换编码验证总结：平均增益范围-0.43..+1.90pp；10k→20k验证提升范围+0.20..+1.49pp。相对一行编码，学习趋势明显停滞于接近长度答案基线，尚不能称内容任务已学会。
-长度[]是八个轮换编码模型都观察到>0增益的长度；这是描述性符号交集，不是成功筛选或显著性检验，也未提供同等任务掌握的依据。
-解释边界：接近众数基线或较高mode-agreement不证明模型完全不使用排列内容；非众数样本的正确预测和换出的错误预测均完整报告。
-较低单一众数一致率也不等于学会排列内容：选择同长度下另一个常见答案就会产生部分非众数正确，整体收益仍可能很小。
-长度建议：原10..30全范围保留为目标，不能根据旧test或几何结果删长度。鉴于轮换编码八个模型在20k依然接近长度基线且后半程增长较小，旧validation不足以推荐某个已成功的长度子集。若仅工程调试，先固定原协议最小长度n=10，再按连续10..12窗口检查全部四任务和两架构；这是减小输入负担的固定规则，不是只挑旧结果成功长度，也没有保证该窗口会学会，仍须独立开发数据。
-不能把“某些长度均值略高于众数”当作支持缩短后的成功确认。应在新开发validation中预定超过训练众数的实际幅度及所有任务覆盖，未达则如实记失败，不把成功长度拿去作主结论。
-本脚本不训练，也不改变旧报告、冻结协议或F17。
+Cycle-encoding validation summary: mean gains range -0.43..+1.90pp;10k→20k validation improvement ranges +0.20..+1.49pp. Compared with one-line encoding, learning clearly stagnates near length-answer baselines; content tasks are not established as learned.
+Length[]is a length where all eight cycle-encoding models show>0 gain; this is a descriptive sign intersection, not successful screening/significance or evidence of matched mastery.
+Interpretive boundary: near-mode-baseline scores or high mode agreement do not prove no permutation-content use; correct nonmode predictions and displaced errors are fully reported.
+Low agreement with one mode also does not establish content learning: choosing another common same-length answer yields some correct nonmode predictions while overall gains remain small.
+Length recommendation: retain original10..30 as the target, without dropping lengths based on old tests or geometry. All eight cycle models remain near length baselines at20k with small late gains, so historical validation identifies no successful length subset to recommend. Engineering debugging can first fix original minimum n=10, then a continuous10..12 window across four tasks and both architectures; this reduces input burden by a fixed rule, not selected successful historical lengths, and still requires independent development data without guaranteed learning.
+“Slightly above-mode means at some lengths” cannot confirm success after shortening. Prespecify meaningful training-mode gains and full task coverage on new development validation; failures remain failures rather than promoting successful lengths to primary conclusions.
+This script trains nothing and does not change historical reports, frozen protocols, or F17.

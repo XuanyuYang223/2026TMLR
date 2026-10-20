@@ -29,7 +29,7 @@ LABEL_ARRAYS = ('train_lengths', 'train_labels', 'validation_lengths', 'validati
 TABLES = ('model_learning_summary.csv', 'pair_learning_gates.csv',
           'validation_length.csv', 'training_length_majority.csv')
 NUMERICAL_TOLERANCE = 5e-12
-GATE_TOLERANCE = 1e-10  # The reporter's fixed boundary convention, not a pp margin.
+GATE_TOLERANCE = 1e-10  # The reporter’s fixed boundary convention, not a pp margin.
 
 
 def require(condition, message):
@@ -163,7 +163,7 @@ def validate_endpoint(stage, completed, job, config, expected):
         for field, value in expected.items():
             require(record.get(field) == value, job['run_id']+': reference '+field)
         require(record.get('step') == record.get('fixed_endpoint_step') == 8000,
-                job['run_id']+': not fixed8k')
+                job['run_id']+': not fixed 8k')
         require(record.get('source_model_run') is True and record.get('fixed_endpoint_completed') is True,
                 job['run_id']+': partial or engineering record')
         require(record.get('validation_missing_due_to_budget') is False,
@@ -496,20 +496,20 @@ def fixture():
 def save_real(result):
     write_json(DIAG/'independent_learning_audit.json', result)
     text = [
-        'PermWorld 独立学习报告算术审查：'+result['status'],
-        '16个固定8k模型与8个编码pair，三长度等权；不选择较早或最佳检查点。',
-        f'模型学习门槛通过 {result["model_gate_pass_count"]}/16；编码pair通过 {result["pair_gate_pass_count"]}/8。',
-        '架构联合资格：'+json.dumps(result['architecture_accepted'], ensure_ascii=False),
-        '完整16条件资格：'+str(result['overall_16_accepted']),
-        'status=passed表示四张报告表与独立复算一致，不表示所有模型通过学习门槛。',
-        '训练长度众数只从train identity标签确定，平票取较小答案，随后在validation上评分。',
-        '答案准确率来自固定checkpoint保存的validation记录；未重新推理，也未独立重算逐样本预测。',
-        '仅解码train/validation lengths/labels；没有测试数组、checkpoint张量、CKA或GPU操作。',
-        '一个数据世界、每架构一个初始化；16模型不是16独立世界。5pp为开发门槛，不是TOST或等价性证明。',
-        '门槛规则在真实审查前固定，脚本实现于训练进行中；本审查是报告验证，不是新的确认实验。',
+        'Independent PermWorld learning-report arithmetic review:'+result['status'],
+        '16 fixed 8k models and8 encoding pairs, with equal-three-length weighting; no earlier/best-checkpoint selection.',
+        f'Models passing learning gates {result["model_gate_pass_count"]}/16; encoding pairs passing {result["pair_gate_pass_count"]}/8.',
+        'Joint architecture qualification:'+json.dumps(result['architecture_accepted'], ensure_ascii=False),
+        'Complete 16-condition qualification:'+str(result['overall_16_accepted']),
+        'status=passed means four report tables match independent recomputation, not that all models pass learning gates.',
+        'Training length modes use train identity labels only, with ties to smaller answers, then score validation.',
+        'Answer accuracy comes from validation records saved at fixed checkpoints; no inference rerun or independent per-sample prediction recomputation.',
+        'Only train/validation lengths/labels are decoded; no test arrays, checkpoint tensors, CKA, or GPU operations.',
+        'One data world and one initialization per architecture;16 models are not16 independent worlds.5pp is a development gate, not TOST/equivalence proof.',
+        'Gate rules were fixed before actual review; the script was implemented during training. This reviews report validity, not a new confirmation experiment.',
     ]
     for name, compared in result['CSV_comparisons'].items():
-        text.append(f'{name}: {compared["rows"]}行，{compared["fields_compared"]}字段比较一致。')
+        text.append(f'{name}: {compared["rows"]} rows,{compared["fields_compared"]} fields match.')
     (DIAG/'independent_learning_audit.txt').write_text('\n'.join(text)+'\n')
 
 

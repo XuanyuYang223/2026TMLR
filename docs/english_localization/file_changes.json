@@ -1,0 +1,1195 @@
+{
+  "edition_date": "2026-10-15",
+  "timezone": "America/Los_Angeles",
+  "baseline_git_HEAD": "d9a113d20d34db3c21cf69cf546cff4a0ab4904a",
+  "tracked_files_modified": 164,
+  "scope": "Language derivatives in the current tracked working tree and existing untracked manuscript; original filenames containing Chinese are represented by UTF-8 hex to keep this inventory in English. New generated audit files do not self-hash.",
+  "files": [
+    {
+      "path": "CURRENT_RESEARCH.txt",
+      "before_sha256": "c67f1ea6ba02dd6518c630806f49ef4ef156d4be2c7316c0716f6f9e481abf83",
+      "after_sha256": "eafcde827b9ae8ff56cb1020f5aa8a4266ed3e511eb1715f1378161a567c4317",
+      "before_bytes": 3580,
+      "after_bytes": 5079
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "3684a966f7ccd5e123e640ae21b1518da5cd76dd64604213bf4c8142e688b36b",
+      "after_sha256": "70dc17a50f5496a894e9e9d9bce56d98e70276bd2184b27d59bcdd6905ed1427",
+      "before_bytes": 11294,
+      "after_bytes": 11882
+    },
+    {
+      "path": "archive_index.csv",
+      "before_sha256": "d16632ac1dbae2cff6cfef6509a34baca41ea4c9d8ea50460023fd1275a4a8d2",
+      "after_sha256": "3ffe70e5dcf6a93c31fcc6da7b5976894b0108c97ac6fcee7775db0b60239685",
+      "before_bytes": 1600140,
+      "after_bytes": 1836428
+    },
+    {
+      "path": "artifacts_manifest.json",
+      "before_sha256": "f1ef48da6915a4ad6632e100ab09171f2f74690e2d4fcd49d9254436a7ce394f",
+      "after_sha256": "fc0c92fba9613fb487d20e4c5eb758f681f9b06ccdeaedca291a1bb16a5a9cc8",
+      "before_bytes": 8948715,
+      "after_bytes": 8952145
+    },
+    {
+      "path": "diagnostics/graphworld_pilot_20261010/readiness_review.txt",
+      "before_sha256": "75d386dc774007fa9e7413c84a4fab79533eb7d88f0ab0f3e0b034eb5db55b51",
+      "after_sha256": "a217c20c7789d9f281d8bc15f39ed8ece9b73d5e59647b33ac632bfbbf02c5ad",
+      "before_bytes": 5730,
+      "after_bytes": 5736
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/CURRENT_RESEARCH.txt",
+      "before_sha256": "0f6c613a4b7f1fb49b04b5782a5f6b80e350cb429db149c52a316a6eefdf2de0",
+      "after_sha256": "107e57cb0a89dd9575c0467cf38c6e742ce8c0150426fe11fe7817058a70131d",
+      "before_bytes": 1411,
+      "after_bytes": 1829
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/REPRODUCE.txt",
+      "before_sha256": "ce839a1d707e07d216ab02dc39306ac0e2e3537f8821004cfb7eea80990420f7",
+      "after_sha256": "f02f5df165395fa29596fcdbd79cdec6f36ca89da17c356b9af34c70a7446f2d",
+      "before_bytes": 4019,
+      "after_bytes": 4712
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/build_report.py",
+      "before_sha256": "3f2eb1d870035e3bd3ff0c315bf18a4a011863dca31935a287a06ea7317cc246",
+      "after_sha256": "3b009c33d9ea66384f59990bbd774b3881171e7e15580fda75e94b271bc1b6a3",
+      "before_bytes": 65386,
+      "after_bytes": 68036
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/execution_request.txt",
+      "before_sha256": "dcad7264f0406680add1aa0d22a0527117792d691a7c7ecdf34854eeb753564d",
+      "after_sha256": "509b2519073b915e61dcac4f640e6affca86e1d747b1bbe7b97d1ac2960d8602",
+      "before_bytes": 12841,
+      "after_bytes": 16167
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/mathematics_sources.txt",
+      "before_sha256": "3f0a97f880812866808ce52e556c389090455a0737631edb4adbfa07ba04e975",
+      "after_sha256": "d24069c400f9bc2986e5d5e0800d2debec8843be35b9108d423cedec4ecf3c10",
+      "before_bytes": 788,
+      "after_bytes": 1017
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/reader_interpretation_review.json",
+      "before_sha256": "e3804e78c6e012fd6bd701aabbf5ea8ff13c5becdf78eeceb6644e47680e9d78",
+      "after_sha256": "4e99abcfdfdc2a778581b3678bd1098dcfcea9930ec7beb9605bc2ae066af743",
+      "before_bytes": 33315,
+      "after_bytes": 33511
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/report.html",
+      "before_sha256": "ae273e47cc8f1d944132341652cfe58c581fbe2cdfb0d96773b3433d30d70426",
+      "after_sha256": "7480d5e6ff9fb141f6ca668469019cb1ba8bcf1f58986b41fba12907242647e0",
+      "before_bytes": 1794795,
+      "after_bytes": 1827695
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/report.txt",
+      "before_sha256": "3cc68837c2a9bb0db799863c2ea8391b8a87d6f0e855f721571798829cee2175",
+      "after_sha256": "9a81b4a6b3de393dea13ecf91bc641f2a3e0f39b3cb299af835288e616db13a2",
+      "before_bytes": 12443,
+      "after_bytes": 13403
+    },
+    {
+      "path": "diagnostics/matrixgroupworld_20261011/report_audit.json",
+      "before_sha256": "a84a8e0f78f2c3ecfd87a1e815e62f8cabb3d99fee9ab20c6af60ba423b1c96a",
+      "after_sha256": "f340c80a79d78d43c6d5d856d6d4833c8b7fa8e2eb20f70f580c41853bc76d14",
+      "before_bytes": 28114,
+      "after_bytes": 28754
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/README.txt",
+      "before_sha256": "68f45bb1df433d5302157aaef88a48e892c64d875912590a2a83d19e32c7eb4d",
+      "after_sha256": "65ea0ad5d54331499bd3055e87aab0dfc3e2fe2b5692a1183b6b80fb9d102949",
+      "before_bytes": 4966,
+      "after_bytes": 5939
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/initialization_audit.json",
+      "before_sha256": "ff2adf2999e716cba181387b6943465222de566473ddc9e90c38258afad6acf4",
+      "after_sha256": "f0667469c320f34669cb39d829eda25eebc7151565eb743a33a07847d4822ecb",
+      "before_bytes": 276984,
+      "after_bytes": 280414
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/inventory.py",
+      "before_sha256": "2fc717174dd1617986327763deac3e5ae351134df50e189d138c88e78709954b",
+      "after_sha256": "12caf2bb4a4e6515796eb4d6c569afcd0cf0a9dd75d9a8669b487d023a9d8016",
+      "before_bytes": 13268,
+      "after_bytes": 13303
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/k_model_self_initial_length.csv",
+      "before_sha256": "ec02bbb3d13ebf1f0d0b7188373746233e0fc527905f75d5f8c39f2ef4d45e77",
+      "after_sha256": "f7fa0e01b1667682886c641ecfddeff44876f2e41ce3879a587b2d13c4d897a0",
+      "before_bytes": 207241,
+      "after_bytes": 256540
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/k_shared_initialization_audit.csv",
+      "before_sha256": "f8c6d09420c817adcb39b6a55d701176bed2d9e29fdd66731621fc8ff7c97564",
+      "after_sha256": "9d6c26fb28cf87864707d0b1455d688b8f1a8514e41ec3a4562e28c543fca300",
+      "before_bytes": 8820,
+      "after_bytes": 9669
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/model_inventory.csv",
+      "before_sha256": "475351cb7fbcf91407a381b5603f07085a439cf59c7f0a2c6ca59a5a94f09e65",
+      "after_sha256": "c0f1217f18feb0acd543289084b66b3041f9c69b3d260b0732b986db949fbe3e",
+      "before_bytes": 62669,
+      "after_bytes": 66000
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/report.html",
+      "before_sha256": "a2136091b9aa6405713df48e19f5431bddd4146202253b2881bba45604a10f87",
+      "after_sha256": "bb90c756df51228c24ecd47a20a27be802498fcac84dd4e37cf96da340451aa5",
+      "before_bytes": 19905,
+      "after_bytes": 23000
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/report.py",
+      "before_sha256": "71c4268a5889afb4eed2a824020553a2bac755394d10f5845eb01227643d993e",
+      "after_sha256": "f7bc55b50cfeeda2397aa931e63339a26c2dc664578ab509186b0541953ee7c4",
+      "before_bytes": 27722,
+      "after_bytes": 31478
+    },
+    {
+      "path": "diagnostics/permworld_cka_20261009/summary.txt",
+      "before_sha256": "ef8ead3af8d6b447195e19ec487c75ff1c821819a314f61899da114a553d309c",
+      "after_sha256": "4dab43653a7a795783ba0640d5c97340683260995cab29eb3ba2e9dfa583d0e0",
+      "before_bytes": 2238,
+      "after_bytes": 3065
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/comparison_manifest.csv",
+      "before_sha256": "ddfb35fd26f25056c0198bcb15ff1b64952b30dcca9e5f83528bf1147e29732c",
+      "after_sha256": "d4975cda5882524d7eef7594f221696126d41a32b6a7f421536f63a3bc6b99ab",
+      "before_bytes": 4990045,
+      "after_bytes": 4991788
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/comparison_manifest_before_extraction.csv",
+      "before_sha256": "386d7348f37b451f31211ae38e2914ef0cd3da68f0f020e10d0b187cb95db368",
+      "after_sha256": "df4e6c4ff32ee16fd88756a2a5a40ad3b5c64de8802b8b00b8a03468fdd22cd0",
+      "before_bytes": 3094380,
+      "after_bytes": 3096123
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/completion.json",
+      "before_sha256": "a5000bfebd06841cbb2810c5e2eac17c6cca191e9090e5a14af72086b458da46",
+      "after_sha256": "5a92576f6420d5f9d1c2066536dc59800f2f5468dd0e184d3df5a7ac92dcd038",
+      "before_bytes": 3573,
+      "after_bytes": 3591
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/extraction_review/benchmark_reader_audit.txt",
+      "before_sha256": "0ed03c83ba532a643255fbb2684357e0f78be41d278228a55607e386f539f504",
+      "after_sha256": "f44151dc1eb06667ba38a3b0f02e190635ec151b0005561a804a7eab629c91b1",
+      "before_bytes": 1666,
+      "after_bytes": 2041
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/extraction_review/extraction_review.txt",
+      "before_sha256": "bbb1e8eed139a9c30318a298982d1f94bd251128b3a26cab1103496ced1469c5",
+      "after_sha256": "6789c926964fb1b72d2022ac19ba9e0dccc936c3d4d6a471638e089f4fabff6f",
+      "before_bytes": 7533,
+      "after_bytes": 9141
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/finish_delivery.py",
+      "before_sha256": "1047788539bcf392ee24a7b2806a0d891b3689cd6d88b1a740e63db4d8f0e686",
+      "after_sha256": "bbf036dc984ea4900e6c8b904b3b2712decbfc9b6c5d5cd7ca7358cf1536240b",
+      "before_bytes": 12258,
+      "after_bytes": 13131
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/inventory/inventory.py",
+      "before_sha256": "a8457761bdc7c3f684641791abf48caf44dea005da1c8a0af002ee8d7574e8b0",
+      "after_sha256": "ae67dd8f9cba4178f74d88483ba804e8004830375e5a5ade1a3af3d70ca7883f",
+      "before_bytes": 24472,
+      "after_bytes": 24961
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/inventory/match_audit.txt",
+      "before_sha256": "bfd9b14f7156dc870a9cbcb7c0bad76f9f988e0c4927fc2c1a5496a76fc229f0",
+      "after_sha256": "11e63cf6a45bd2c59b9d0229031248d590ba3cf4a97656e72f20b36eb742cb74",
+      "before_bytes": 6186,
+      "after_bytes": 6738
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/inventory/report.py",
+      "before_sha256": "e20bdc5fcab530bbf4c39a1d465d11ee7f7532061584d8b2df84249ab6302add",
+      "after_sha256": "c46314fd96b2c7e3ac926e64b4aca5be0768d4cd908859d0320f5e91f530cd8b",
+      "before_bytes": 31467,
+      "after_bytes": 33258
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/inventory/report_reader_review.txt",
+      "before_sha256": "10412302f7445c29a56f641195bbfa0e3c871ff211ab435258303825ce3156e6",
+      "after_sha256": "40bb8f2d4441ad63fe64895efd947f2f44201ce3161711a56ee7b4173486ab42",
+      "before_bytes": 6265,
+      "after_bytes": 7414
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/metric_review/final_reader_audit.py",
+      "before_sha256": "08be4fafeba8debc6603fc6a64d7b44e67778b7db3e55f44099c83d0db2f153b",
+      "after_sha256": "d0173b641757a1b574a35b8d89c17980dadc97c569af047fb183c4a1bee5d7fd",
+      "before_bytes": 18017,
+      "after_bytes": 18332
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/metric_review/final_reader_audit.txt",
+      "before_sha256": "b4a84160f290570cf21dd9e72cd929e694fda7ee024e5c81400734071866807c",
+      "after_sha256": "3be89594123a8013a5a656be2ae8e4eea0549c98605e7770d6e3c09b5c19df51",
+      "before_bytes": 8930,
+      "after_bytes": 9217
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/metric_review/rules_review.txt",
+      "before_sha256": "20614ed5a02ebe89cd3ae245b0dda4cc38649c6722b4d307c678270d32d136fc",
+      "after_sha256": "ad868340cd4ae72e48176f76b736889f5ab079f16eabb91aa5e96e5c334fd8f2",
+      "before_bytes": 2642,
+      "after_bytes": 3344
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/reader_report.html",
+      "before_sha256": "8c8f2595a50bf540d3b20db1d1bc920af682252c60170f8f7864477cb8403e98",
+      "after_sha256": "35b8e3ac2afd6099a3c471771a66ae44233d523714aad864360f6296b77927cb",
+      "before_bytes": 36062753,
+      "after_bytes": 36087989
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/reader_report.txt",
+      "before_sha256": "41e89b8e11f2785d7ab2a0629c49bfa3ad661f6dcfde4c9f97ec4d804f148144",
+      "after_sha256": "5ccc207ec4692be422aeda8f655c271db4c205d4efbe9c7203b0b89f342145f6",
+      "before_bytes": 46632,
+      "after_bytes": 48731
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/reader_report_frozen_writer.html",
+      "before_sha256": "0088950072ab8b54c9afff6a1649899cc88ea0ed8392bc0b31df3eeca32665b4",
+      "after_sha256": "a1a5f5840685a29994bc1babe0d80ef15ed5444fa7d471e4dce31a967e4c6cb2",
+      "before_bytes": 36059169,
+      "after_bytes": 36083553
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/scope_status.csv",
+      "before_sha256": "d628038f84d975791692ff30538a2cb77e539552e73d3b291c687747fa8033ab",
+      "after_sha256": "0028ba0d7055ac2eb4cc6ba671421649ea4dd2a3d926f325ca4f004e3e0d2784",
+      "before_bytes": 50391,
+      "after_bytes": 52140
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/setup.py",
+      "before_sha256": "201df9a3c4b9bacc0e7659db03e13ed159df15638c06daf64ffd7f0a5c6cb6a6",
+      "after_sha256": "d8e7f59d5a01b668f032e7b29f8c5655343c783c2b68507dd1d1594a04221327",
+      "before_bytes": 16100,
+      "after_bytes": 16138
+    },
+    {
+      "path": "diagnostics/permworld_controlled_comparison_20261010/validate.py",
+      "before_sha256": "d560f7c775280fbcddbc83632115cb29d3cdeb3e7950df3f71ebddb7b4c6e43e",
+      "after_sha256": "a2b57455d175f6aff8ba99f805fcfe1ba26f7afb6a750266a8d37e58b910fd41",
+      "before_bytes": 10364,
+      "after_bytes": 10377
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/authorized_request.txt",
+      "before_sha256": "76a19e2f889bc840bf64c68e1c2de58a22159a4f8bc4d178d967fe82751b530a",
+      "after_sha256": "c4619519073bb47d1a34f7cdff09e870e93a707fe0570f26a72bf3a4c9d11d24",
+      "before_bytes": 15777,
+      "after_bytes": 19716
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/completion.json",
+      "before_sha256": "860046c5f7f5234dc7ef29bcd8fc7a0490da0b85e5ad19414deb56c0b1601277",
+      "after_sha256": "6043bccc259590c8782cdee9c46b004e9a3716ec95146e24367e297b29282dca",
+      "before_bytes": 375625,
+      "after_bytes": 375666
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/ARCHIVE_UPDATE.txt",
+      "before_sha256": "4469a215e23d46a915b43a0064fec4b27f3b1a8dbaefa3458a9b25b88d3455f5",
+      "after_sha256": "867ff868ca6ff6c6a77015b54d8ae65feb4eae479ddb07d49a088ea227a75dd4",
+      "before_bytes": 2467,
+      "after_bytes": 2932
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/AUDIT_REPRODUCE.txt",
+      "before_sha256": "e647da09fb7aead6fe9baf17becdcc7b9739c123b433926b57d54c32072501c2",
+      "after_sha256": "7a25b768d8fce8cd57abaee50898d95b3298a2a7cec1698cba8104beef9300e1",
+      "before_bytes": 4113,
+      "after_bytes": 5077
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/actual_extraction_scope_review.txt",
+      "before_sha256": "3f7fb7e2159c03173d6c042474509f36d19bf8a1fab5c64ca32fa280d4ca29a3",
+      "after_sha256": "e4911cec3891de1783aa70a27ed3e938bc7e5b2f32555d102f4465ef2e291b30",
+      "before_bytes": 2918,
+      "after_bytes": 3562
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/actual_perm_interpretation_review.txt",
+      "before_sha256": "e688a7fcb98fcaf962343d2d7f21b9df183536d08b98febf332b9562041bb4c3",
+      "after_sha256": "fe6bffe9dd9a3f947ae78be1850d074029d2ffbfc583671976304538b3787364",
+      "before_bytes": 33087,
+      "after_bytes": 35077
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/actual_perm_reader_notes.json",
+      "before_sha256": "a690af6870d90478289956def786cab3e5f287ad57dae6202518f5dd27022728",
+      "after_sha256": "0d1130802cbe175e2d62f072ee246ad4e01fc8847cc271a6627a3818c2009dbf",
+      "before_bytes": 6141018,
+      "after_bytes": 6142804
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/actual_perm_reader_notes.txt",
+      "before_sha256": "17eecd8b20d2de7600d973be7da2be791e4696a1f129642c4373a1d09a19a240",
+      "after_sha256": "9e3ab4af202a6da251d301d76ecc9a9b90449810f06a99ff20a02589c97ee071",
+      "before_bytes": 270642,
+      "after_bytes": 272850
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/archive_base_snapshot.csv",
+      "before_sha256": "6b2e21131bceae192caa5ff5604f2e22f818658bc0f1c95fbc521487cf6979a7",
+      "after_sha256": "b68769ed510b175eaf1e23c926a728cbb8bc443ec592d69a78801f8229410faf",
+      "before_bytes": 507936,
+      "after_bytes": 568254
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/archive_update_audit.json",
+      "before_sha256": "cdd9e00330f11fb02dc0c21e5ee715500e99548063e4092d423af1a351881cf7",
+      "after_sha256": "809a39bc031aa44d53dfc5e9d18578dd48bace9fc1a6b5e46906cbbeedbb9cd0",
+      "before_bytes": 1400,
+      "after_bytes": 1441
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/audit.py",
+      "before_sha256": "75c0abbbb5a1a0a616ad324ec39ce8bbd81eb088f0395ea2e01fe1b5afb2c6fc",
+      "after_sha256": "8ac4890d2f2b71cca4ca46e91a5ee8eb34b0f4439d7eb70019cb471d7f628300",
+      "before_bytes": 63559,
+      "after_bytes": 63663
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/build_combined_reader.py",
+      "before_sha256": "c17f7e8c0e5cb283cd096f7d955a230f4464d46a42063a4989d89f238d07c488",
+      "after_sha256": "68106ab7787325b78b5804abd5ebb2680eca397a9da8cf9323c8d5d78aeae410",
+      "before_bytes": 57314,
+      "after_bytes": 61378
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html",
+      "before_sha256": "b5d2e75b062b2c5a4b40b2996a71f7453217eae9a3282ca4e07c89fb739f7185",
+      "after_sha256": "74c2c376968c54a124cbcfcca0a83a62f8cbafa9feba0e3316f3e3b604631258",
+      "before_bytes": 38132709,
+      "after_bytes": 38150248
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/combined_report.txt",
+      "before_sha256": "264a810b1d5882a17abf7a38cf8483823e22f843a28d27c0333a030f817f504d",
+      "after_sha256": "9fa2bdaf40065ce364d9023d652a9f20dc080ca2532c1b1bba491f08ab2323a5",
+      "before_bytes": 12094606,
+      "after_bytes": 12106384
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/combined_report_plan.txt",
+      "before_sha256": "33a63cf4607a7296e2b03ce5a7e798ab899a648a2998bce282b32d4627c79270",
+      "after_sha256": "195f42ddef26ddead62c496705f03b0cdb620a69906f76ba3f8c6b973801c586",
+      "before_bytes": 16313,
+      "after_bytes": 18917
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/completion_writer_review.txt",
+      "before_sha256": "cf7af26110d450346f8b27899ea01849a23094390e4ea71f181d1d57f45af4d7",
+      "after_sha256": "ebd44801dc719d5fe92c5ad320c3ab0b11caad1a081aadd914d75ec78a18376c",
+      "before_bytes": 6526,
+      "after_bytes": 6749
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/current_entry_manifest.csv",
+      "before_sha256": "bc8f46b1b665056b027914989c79f924bead5d1cf5ecc3bfa2aee5c8227c609f",
+      "after_sha256": "bbddbc0c3cef5eaab5aee946d0c022deb4507655e89bb42c3df1cb22ea8725ff",
+      "before_bytes": 677127,
+      "after_bytes": 692323
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/extraction_interface_review.txt",
+      "before_sha256": "10030d1091033e27343de91e7be36670bf12a739631a97138d363b1cf7eee4d1",
+      "after_sha256": "6d99330bd6190c9224d2ea85e3646b2ff15f0ad90710e73302453b70ca716faa",
+      "before_bytes": 1206,
+      "after_bytes": 1529
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/final_audit.txt",
+      "before_sha256": "49756ee32825196d90fe608f37869d67f7d5be612dc16647526cabd501d08e44",
+      "after_sha256": "e2d2018c66fad8ed32d407fac0eafdbf0130041bcba098cd694cf317085980d2",
+      "before_bytes": 645,
+      "after_bytes": 749
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/interpretation_outline.txt",
+      "before_sha256": "88b3e3e04dcc1707190ddc2ff16b25440c7438ebe7b2ab08e5a3934733f4cdcb",
+      "after_sha256": "f3a022b4d838eda326676a4ad0df7f1e94766677c51f984b4358c04032ab1330",
+      "before_bytes": 3072,
+      "after_bytes": 4076
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/review.txt",
+      "before_sha256": "14d068757078b052fc86319b8247b34f96ccbd97958365a95e1d24ca969b086c",
+      "after_sha256": "5ef74827d839eddd874b00171768e4f829dd0266bf4f450e68ce3ea4005052c3",
+      "before_bytes": 5196,
+      "after_bytes": 6580
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/root_completion_fields.txt",
+      "before_sha256": "2182680b989737b43fb0cb30a1aca36830e108c6b084f4d5a9399c5c49c99662",
+      "after_sha256": "bfc21bccabf376cb52b12bdf4c6142976e832e0b310488d1e4ad18ce0e9ce206",
+      "before_bytes": 15211,
+      "after_bytes": 16088
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/root_result_review.txt",
+      "before_sha256": "063d432851b66e1c6700e60e9d6f786fdec4fd3bb945e156cad74dca839e822d",
+      "after_sha256": "32b808a7cfdf911c6c05f3b8cef23504d53700ef5fd5f0ae93e6687734034782",
+      "before_bytes": 7171,
+      "after_bytes": 9354
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/scope_artifact_manifest.json",
+      "before_sha256": "e99a79db57258af6d26ab05f8d5ea6d778d87a5d417ce039199f489965819745",
+      "after_sha256": "531938576599e1a49c88bf1e7be5cab5121ae45806af2452473c53bde95d4e8b",
+      "before_bytes": 1895700,
+      "after_bytes": 1910896
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/scope_delivery_review.txt",
+      "before_sha256": "90993d5bdaae69d8da5b92d1604716dc42b733396a32911bf37163cc09cd3c5a",
+      "after_sha256": "ad541c7a7bf77be235d5f116cbb446464af170edf8a25f75787dce85aae44c04",
+      "before_bytes": 13063,
+      "after_bytes": 14982
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/final_review/update_archive.py",
+      "before_sha256": "cb4a249cf00df608dcfabc064f1e93ebb28d8b874d197d73f770bd448559ac79",
+      "after_sha256": "378c3b1b5c8e56d6ac28d52ba1660f1dcfacbd6a2a09895696475140d4e893f5",
+      "before_bytes": 23969,
+      "after_bytes": 24104
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/inventory/REPRODUCE.txt",
+      "before_sha256": "2201340099bfa2855797a93519cb10a97d900221e317286a283dc0abb1c7b707",
+      "after_sha256": "e9d2e3ab6570286bde4a93c700690c694aaece7ffd190f8eb8c4a1c381aaa43b",
+      "before_bytes": 6732,
+      "after_bytes": 8207
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/inventory/inventory.py",
+      "before_sha256": "888deb6264316ae9b3a777b016445de6f7a832cd3f4ded3c8ec4214de95e8927",
+      "after_sha256": "446fea387a3e5f06e13a9157cbe2ba8502fed3d72c7a0ee635d5cd3ee28f6e01",
+      "before_bytes": 33835,
+      "after_bytes": 35014
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.py",
+      "before_sha256": "f5be5d9dc90c7fb577efb3bd2c0ff2614733d561209d403d26da688db29bd6b3",
+      "after_sha256": "6281a916fe9e417ccc8c847fa8235d51fd2d7d05eda6dde4175bea800fdbaf86",
+      "before_bytes": 17851,
+      "after_bytes": 18006
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/metric_review/final_reader_audit.txt",
+      "before_sha256": "03de7358ed7f7be3729ead9f068d08528d2f5b01ccc350b12f8dcc575a025c18",
+      "after_sha256": "8c06e392495f2a5fd47f7eb12ca5564954aab65358f27c8aa2f0a72653a91ab3",
+      "before_bytes": 609,
+      "after_bytes": 764
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/metric_review/metadata_writer_review.txt",
+      "before_sha256": "a1c130ccca10f13b46d2af3f0ef359d5f1de02f3adaccd81b8229dad9d9baf0f",
+      "after_sha256": "440f6576d820095aa84d666630eb1bb371e55ae8224ca20fed453d21fc4ee9ff",
+      "before_bytes": 973,
+      "after_bytes": 1166
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/report.html",
+      "before_sha256": "a63920d80e8802e84a70ae8b71cfb4f4f4eccdb11b6f7e268a0e33d8af83f7b8",
+      "after_sha256": "0fb57e27224418db9fe8b1ceb797804028e6d6f15ea1b0c2d94e30b1851ea86e",
+      "before_bytes": 111080,
+      "after_bytes": 113165
+    },
+    {
+      "path": "diagnostics/permworld_eight_relations_20261010/report.txt",
+      "before_sha256": "a7c9fb96944326823844c312a7b236cd2bc87d13af3f8e000d00efb08e4988dc",
+      "after_sha256": "6c74e66da4ea85f3d4bb1637b83e48873d2f6fee5f316a3f98320071b3d05e02",
+      "before_bytes": 651,
+      "after_bytes": 888
+    },
+    {
+      "path": "diagnostics/permworld_encoding_plan_20261009/addendum.html",
+      "before_sha256": "8accd67cd0d0600f666212fcc0012035104c0d45c76bb598a0fe6eb4eb11726a",
+      "after_sha256": "97f43bc82c25610ce4332472df5bfcc51171e2a6adb4e244e07807f6539a0238",
+      "before_bytes": 5345,
+      "after_bytes": 6122
+    },
+    {
+      "path": "diagnostics/permworld_encoding_plan_20261009/decompose.py",
+      "before_sha256": "653fa12b1ff67d05fc54c98d1d1ceff658afa88639739308f2016036d4f775ad",
+      "after_sha256": "4f05a5f591e3f11bff3107ae4aacda0b60c0e18f51989370fc912947767d3bad",
+      "before_bytes": 13396,
+      "after_bytes": 14179
+    },
+    {
+      "path": "diagnostics/permworld_encoding_plan_20261009/protocol.json",
+      "before_sha256": "6ee733b0379555628bf198fbad369597c9a57da0a291ca15bf7b76db384842b8",
+      "after_sha256": "03a0970bc37dd20cf3cfa6f482ab0003ef01c1516d1b960330cf83afb1bbf432",
+      "before_bytes": 7822,
+      "after_bytes": 7852
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/REPRODUCE.txt",
+      "before_sha256": "b8f336d25c8854c93c780978812fb5072949e2b74284487ce4f2b5930cc2e57f",
+      "after_sha256": "8745181fc4abcfa10d8613ea96ebd98624b6dd07df9c3836b4726115c3b9beea",
+      "before_bytes": 2452,
+      "after_bytes": 2769
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/final_binding_review.txt",
+      "before_sha256": "98eeaa604e4fb2bdbd763fe62e20d33930a0e39f727bc045b40161a0076b596e",
+      "after_sha256": "ba0a2e747f45065ce2d540504e618d3490f61dd39c8bdb8f006a0b0ee201a2c6",
+      "before_bytes": 3639,
+      "after_bytes": 4034
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/final_code_review.txt",
+      "before_sha256": "44613103ea4ea6ae6e949a3559436f05592031ee32ec556911f6ab3883d9943f",
+      "after_sha256": "33e06efdb06dc007ddd0e40881dbcce170e763288167d831fc65172654f8e9c4",
+      "before_bytes": 4881,
+      "after_bytes": 5662
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/independent_audit.py",
+      "before_sha256": "d75756e796bef9f8f52b2ef1c643c8bb2a79e8d1daa643f9a56546b4d3c8f65a",
+      "after_sha256": "25261a6a1accaf00e7f5349403ef54b33740046005c64ab62a4735556f044d21",
+      "before_bytes": 39264,
+      "after_bytes": 39529
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/independent_audit_review.txt",
+      "before_sha256": "9cfe408e300cae11a22e2bd761c2008502f7da8d05dc96ba59dea7d621310768",
+      "after_sha256": "b1e35c4bef2d1732a1877abe74e774c67421a1280f95996e39485422dad20fba",
+      "before_bytes": 80033,
+      "after_bytes": 80297
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/inference_review.txt",
+      "before_sha256": "08ac218b5f0e4c12b27e0414d10b86e3a8c0abb7e95c00902bc0120a06e5d547",
+      "after_sha256": "21a896371c8a2e5a3a85cddfa4f5b9ebf5ee9f3ffccceb34fcd073bde6621a67",
+      "before_bytes": 8587,
+      "after_bytes": 9709
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/report.html",
+      "before_sha256": "07edea53c6dc56fca8010fa7893e6520537fba71d4fbf08adf9fa85d8664cae8",
+      "after_sha256": "b89f5ee4dc40e3b879b09bf65456bde1abefdbea65ee4316b41059c7e00f3f74",
+      "before_bytes": 151189,
+      "after_bytes": 152102
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/report.py",
+      "before_sha256": "94ec1cbcea3ed5736821c51660a8fc28e0988000a4030b2f9957fa22f14ee3d6",
+      "after_sha256": "777d95ef3857decd02e38f9408223a01ae4e56227eef6ba88a4ac6feea6fe9d3",
+      "before_bytes": 24541,
+      "after_bytes": 25460
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/report.txt",
+      "before_sha256": "1dce0734a96ad788d5fd4ad2b5337d142948e2abf8a3d3061302e7ccc8513cba",
+      "after_sha256": "1976c7d1cf9a58ae44189e03658cf975df71efe728040e1614bb43a45aae7845",
+      "before_bytes": 24129,
+      "after_bytes": 24984
+    },
+    {
+      "path": "diagnostics/permworld_fullset_eval_20261010/report_audit.json",
+      "before_sha256": "940cf76288035eb09ebd13b4fe6d2a21840f7e2b8b0b63f23668bfaeff4d4ac7",
+      "after_sha256": "10d81ed94da4385d9688231e26e5e356546ee3e74c3eacdd7035d406924a7d62",
+      "before_bytes": 2522,
+      "after_bytes": 2581
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/README.txt",
+      "before_sha256": "d13399a1afa0bcceb939b7f707eaf39cc9cb88063baf181488db4c6d11fc0a86",
+      "after_sha256": "4e5a4f041dce104ddebd9f2bb86a9f6e5c477860a76a692aa2ecdefa41ea3fd1",
+      "before_bytes": 8761,
+      "after_bytes": 10904
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/annotate_completion_report.py",
+      "before_sha256": "4963351533290090343190a91aee2594e8dfc8a3b3bbc621e3666799074bca41",
+      "after_sha256": "c2a80093b2ff3992631a4d7aca10d2fe93ecaf6492c023762a8b71b28d7f3222",
+      "before_bytes": 5324,
+      "after_bytes": 6133
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/annotate_layer_report.py",
+      "before_sha256": "e486868555bae943d77b69806b35e454f5112ccc029b5f89f153bd1343bd41ac",
+      "after_sha256": "481d977a8e2488b6db13c4089036e35524a8f3e5b05a3abaf730d34bd80541b4",
+      "before_bytes": 1929,
+      "after_bytes": 2134
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/before_freeze_restore/completion_report.html",
+      "before_sha256": "e680fa31ba2ff0c8a502dfe470bb87af3e2f86ff64bb89627c046f61f0eaface",
+      "after_sha256": "7fbe1b1eb639beb1b0ae16be8212e859f35a1dda4dec8b636d12d59d92c8c869",
+      "before_bytes": 72693,
+      "after_bytes": 75161
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/before_freeze_restore/completion_report.txt",
+      "before_sha256": "f806046332b2e18d12621d3c055c5382abb85b1dbe9c3741b9b1eb287431212d",
+      "after_sha256": "60ad8d4409db812c99767287d18ff5226e2465511d9e1bd7e6ffeafc10e49e49",
+      "before_bytes": 38620,
+      "after_bytes": 41052
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/before_freeze_restore/overview.py",
+      "before_sha256": "2b1a974fe489ed5997e15ff43ac22118513174357fbed7c55deb18a129f42369",
+      "after_sha256": "bcb3058b5f00f73bfa5d66a9941d77e2052c74f784a6ee3360591b3135aa8004",
+      "before_bytes": 41115,
+      "after_bytes": 43642
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/brief_report.txt",
+      "before_sha256": "562fcdc36bb491c895118a1cff0f172ad2803f715050240693e22cbcba1fbacb",
+      "after_sha256": "0bb3ba70ae78387e1f212133b1e7c6b320e662470fb508545d8c63552a86d750",
+      "before_bytes": 1165,
+      "after_bytes": 1509
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/completion_reader_report.html",
+      "before_sha256": "3c1bfcebcd53138885aff8e95fe1ff1dc0aa4b2202b486778b2b09adf6a33a26",
+      "after_sha256": "4193904b427d55b2374a20160f8ab94b9bc25bd984b38630897b08d1338ac18a",
+      "before_bytes": 76247,
+      "after_bytes": 79537
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/completion_reader_report.txt",
+      "before_sha256": "cb7bff561fae002f2e7a7ae571c2122956fb9e23ce5a15f2443fe7628e6bccc8",
+      "after_sha256": "7281dcc1452e33fd668e5cdfb3d24042bdf91bebc8bf6277d362f1b13b20d42f",
+      "before_bytes": 41816,
+      "after_bytes": 45022
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/completion_report.html",
+      "before_sha256": "f3b6b3f9aaa4bd0b314dc730d87a99706f72f97955b6355d2970f0ac372c793d",
+      "after_sha256": "143a19dd43e7dd65fb78ba4b275c2c17c88f1ad69794838ff66a0fc698e0d444",
+      "before_bytes": 73715,
+      "after_bytes": 76183
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/completion_report.txt",
+      "before_sha256": "eb820195d86144fe3eb06de6ef9c4153606b0fa47ba91fca32f204ca61b44564",
+      "after_sha256": "b7e3f9c841df19117929178ddd854ccdca46ae17d2caf9dce07e5f021f2f93f4",
+      "before_bytes": 39642,
+      "after_bytes": 42074
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/development_code_review.txt",
+      "before_sha256": "bb31203307991d3a4243a0ed0e4b68532a15a219ffc84a0e9c3f59ad8fd2903f",
+      "after_sha256": "8c7ef705883622a8136839e2f9d3c9830155dd1ee4998b62cfd8a3b4ea3e97e9",
+      "before_bytes": 5362,
+      "after_bytes": 6475
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/development_results_review.txt",
+      "before_sha256": "eb624f36f954617a2fa5aaf597906e1fffffc57cf15275ce9951d3d97b6b6cc4",
+      "after_sha256": "e1eec8a42c1229d8d76f705bed34903e788f3a3303da8e9c72a01f3508f23760",
+      "before_bytes": 15505,
+      "after_bytes": 17422
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/encoding_development/artifacts/report.txt",
+      "before_sha256": "5f8dbb11a88a4caf59b0cce93c6e9ca76f9ff2d1390719daa2fdd1cfda391b9d",
+      "after_sha256": "91a902a6ff4517485ac4514fa199d8afe1286b33048c0466f4c34a250ec8524f",
+      "before_bytes": 10912,
+      "after_bytes": 11142
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/encoding_development/report.html",
+      "before_sha256": "3c3a0216baf0ace4dcd8d1930432a358ff6adb6e0be5b8a3fdd18b31f9ed3aa8",
+      "after_sha256": "2ea913c25a8f83537651425ba05d957adf1dff70250c440dc12a332d81011883",
+      "before_bytes": 87623,
+      "after_bytes": 88664
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/encoding_summary.py",
+      "before_sha256": "d74b74e7c81fed7b0f6c814d490b8170f389545b50fe5b49f86b09417992aa3f",
+      "after_sha256": "f843997a41bfe9f9d17756321f953b2fa04889a51e7aec0e8a4cc2fd0614b705",
+      "before_bytes": 39741,
+      "after_bytes": 40860
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/overview.py",
+      "before_sha256": "9da65a8a44aa5cb145b62270841cb617d98f64d90880dba4abc087a350a15070",
+      "after_sha256": "e8ccb9f3714a563b287d9b8cdcbaea7d24f6ee4eb9d0c32426189b04af7e6530",
+      "before_bytes": 41059,
+      "after_bytes": 43586
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/reader_report.html",
+      "before_sha256": "7ed87d300a3fcf6887623b318a19fdb12a9c6940d02b840942be5d82ef8915f9",
+      "after_sha256": "de1ee39edd024a040ee5fb9a5f78e2e08a8fc37b8302cc789c7e63c8285a8861",
+      "before_bytes": 352764,
+      "after_bytes": 351530
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/real_results_review.txt",
+      "before_sha256": "fdc15973f8b9d1b7fb82e62b8cd18b33dcbdad406dee6f77d46db305ef7361b0",
+      "after_sha256": "ae101b28b2899880d3a1db7afbf1583a5fd4dfe65f7b0b45fcfdcf70fce91e50",
+      "before_bytes": 10693,
+      "after_bytes": 12839
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/report.html",
+      "before_sha256": "09d18120ce67d864660975498148a3dc33ff637287cbb56960bd8b0b82da023e",
+      "after_sha256": "f46498c568682d90e7789b5d734b10e8526fa625804c582b290858360d289695",
+      "before_bytes": 352300,
+      "after_bytes": 350938
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/report_annotation_audit.json",
+      "before_sha256": "ba1f05644c349c4abb6aa4be6f72a1e0e18fd205bab012763da934937298daa6",
+      "after_sha256": "704d1130d142c3655be6c4179f164bce557bc78fd6bb5d78e3d11f77d40881c3",
+      "before_bytes": 595,
+      "after_bytes": 702
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/review_notes.txt",
+      "before_sha256": "5aa407b05a64080273e8f66d159210ddeea614471f154702678d409ac8b914d8",
+      "after_sha256": "74be84bbc88e00fb4f9d11c7890de47f39561edb5131db452a495862a2c4b65f",
+      "before_bytes": 5281,
+      "after_bytes": 6819
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/scope_user_reply_20261010.json",
+      "before_sha256": "b2d881301f49d34281b9066e7ef54d985de8d27fae6916fcafe2ac2b29011fb3",
+      "after_sha256": "5a8d44df9f4087cdfec1c75e47f6fafa160d06950eb1aeb4db6ee901b813a98c",
+      "before_bytes": 384,
+      "after_bytes": 395
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/statistical_review.txt",
+      "before_sha256": "ce4bc12bc78a9c4261ef3d99b1270915a8989c19b10aea85f4db8971ceda256d",
+      "after_sha256": "7d082202e992733109939143a023fac12a32b15fda73564aa37de5d0414f5494",
+      "before_bytes": 8968,
+      "after_bytes": 11088
+    },
+    {
+      "path": "diagnostics/permworld_layers_20261009/summarize.py",
+      "before_sha256": "6f47218a65cd97a0b4f9b31e5a4fb986dae27fbd38149f3b347b8abfe365c9be",
+      "after_sha256": "45229f536302cde0800468457cae0f4929d9ee43bc638b95e5f09f6d98102f9a",
+      "before_bytes": 32641,
+      "after_bytes": 34949
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/README.txt",
+      "before_sha256": "dfb02c35b4fd49e415363b1652eae94a62576a94165b350aa0050644cfe55546",
+      "after_sha256": "825271f38a1a3c342433d9f67a42a4b19dfc8dc0e743891111aef6eb2c4044b7",
+      "before_bytes": 4526,
+      "after_bytes": 5181
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/code_readiness_review.txt",
+      "before_sha256": "fec40fd6f62173458f54ddc22e49a2a2cbb809507008ac09b89182eae16f9adf",
+      "after_sha256": "0823f89d1ec21c847ea3197fcb7ac506f32cb09287cf642c89072627b649ab13",
+      "before_bytes": 8058,
+      "after_bytes": 9324
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/completion_audit_review.txt",
+      "before_sha256": "65de6740d3f17ff2d779b6b88efd8d0d64f59919a8e4a1cb9ad2c50b3206d00a",
+      "after_sha256": "e07327a2fb915dbf931326979ce14cb8b3a9f59f004359af7879ba83842e55d7",
+      "before_bytes": 9734,
+      "after_bytes": 11595
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/completion_reader.py",
+      "before_sha256": "4697b505a7d3a433149b6e242d0292f86035705dd74900ddd0577ee926583e69",
+      "after_sha256": "5efd9ab91efd9841ac9a4cf2521d0884de8bafdef9aedb12b85995f8b158b4de",
+      "before_bytes": 8148,
+      "after_bytes": 8770
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/completion_reader_report.html",
+      "before_sha256": "2f35ebf635ce12d41fd6d1a49d7e8fdfaa3dd63e0016dbc7d5124dd76630eae8",
+      "after_sha256": "9bcbdf99439dc709c2bb98df79b978d91d4e76ddac3269ae9c776398b58f52d8",
+      "before_bytes": 5689,
+      "after_bytes": 6448
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/completion_reader_report.txt",
+      "before_sha256": "461601782a11e8c96255bb13a0248a7ea9411e844d125d4dbc63f0beb620e4ec",
+      "after_sha256": "81f1d0d0e65fd27cc00097a3f30e45785fd121750a4cc255afe8fbb4cc21b66d",
+      "before_bytes": 4543,
+      "after_bytes": 5270
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/engineering_repairs/loss_precision_review.txt",
+      "before_sha256": "ec9a8f2ecda006fe7c2a011b140a992b6c166fc1e430962b460f6de6fad875fe",
+      "after_sha256": "c31bf5f67dd14f7d105200594739bde346fe3466f9375e770432544bde4885e4",
+      "before_bytes": 4638,
+      "after_bytes": 5149
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/independent_code_review.txt",
+      "before_sha256": "a54a7d74c6409a625a27ffb75e30d1267a342d90d355f1cbfbdefd126b893539",
+      "after_sha256": "0e3a8b95b538661a8efdac293e68ec5ef4caeb1a37ce9f815935fafcdbfe97b6",
+      "before_bytes": 6592,
+      "after_bytes": 7725
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/independent_curve_audit.py",
+      "before_sha256": "f120b9786626caa7098090d1fb99d9827c2147b53557c1e2141a10f46a2e4dd3",
+      "after_sha256": "5c99d180441bfbb5d835b5e2488191bab90ba7b28d82defda206daa954dc5dc8",
+      "before_bytes": 5657,
+      "after_bytes": 5752
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/independent_curve_audit.txt",
+      "before_sha256": "b2245d076e25770f527b1fb496d5c74b90831b35c16376393a0d99e7d5ebbd2f",
+      "after_sha256": "69c2d37b609ccfd6d5cb2470ca24aef9be5b43d6e23e847fee78ee8c83c1731b",
+      "before_bytes": 652,
+      "after_bytes": 690
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/independent_learning_audit.py",
+      "before_sha256": "78504cf10ad1e3c6bcf42cb24e04e40df6f7fc4fd4914f32e1da0abfcca6e372",
+      "after_sha256": "734fcb4a6019c745df6f02dfe7d66d95d73ff5e04ea7f3c0d97b8260150a70c3",
+      "before_bytes": 33465,
+      "after_bytes": 33612
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/independent_learning_audit.txt",
+      "before_sha256": "36d25fce17047f46decc1a7714a724ecd2d0d05a634ef9d31341ea4fec7d8e80",
+      "after_sha256": "9dacdc5289238d30a8c04e72a18859802420eb33ea3e7473d12f6441d0bfc331",
+      "before_bytes": 1214,
+      "after_bytes": 1345
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/old_learning_diagnosis.py",
+      "before_sha256": "9d07e3fdd60ffc38cbb2e5b710d218134205ad420ac836f9e9e1bd91563d11c3",
+      "after_sha256": "2d73a67e1328d3af6bd9be89a52127864044594b00e97b584986419649b5e7f9",
+      "before_bytes": 20753,
+      "after_bytes": 21139
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/old_learning_diagnosis.txt",
+      "before_sha256": "02dbbebd0610351672a62fcb2aa1fbc32538a0ba85a1332e6a56b72f6d06b73e",
+      "after_sha256": "875deb515c782293faabcac642649af41b1ba714eb8bd64fa8ff36203f9cf4dd",
+      "before_bytes": 8455,
+      "after_bytes": 8855
+    },
+    {
+      "path": "diagnostics/permworld_learnability_20261010/protocol_review.txt",
+      "before_sha256": "785b4e6472ffdeaa6840ae31f3925d15509125ce20dcdf7f67acb88cbb077ca9",
+      "after_sha256": "31469ace2ce0efd95546533405d6ffe81da2a32151b8c83be4dfab42bde3ed24",
+      "before_bytes": 12125,
+      "after_bytes": 13541
+    },
+    {
+      "path": "diagnostics/permworld_scope_inventory_20261009/report.html",
+      "before_sha256": "5c64b3bea8395b650298e954d24cd098aa649545decc782a7870be3e3e06a2ff",
+      "after_sha256": "70707cccaf5c474e0e277356745bec6520603d39cba72d03c4b303e0f80343af",
+      "before_bytes": 99320,
+      "after_bytes": 100993
+    },
+    {
+      "path": "diagnostics/permworld_scope_inventory_20261009/reuse_and_missing_report.txt",
+      "before_sha256": "f07c6d7fdc41d474109ccae80142650d638c5deb4748ffb534145b0250e6bb3f",
+      "after_sha256": "b690c4950117ba5d1304c4857d390369b20d0cd0790cbb453f4825a7899994e8",
+      "before_bytes": 3878,
+      "after_bytes": 5047
+    },
+    {
+      "path": "diagnostics/permworld_scope_inventory_20261009/summarize.py",
+      "before_sha256": "8f192c052de3e56c6da7a4eebebbedf96735df261f0d75e82c1127240222d7df",
+      "after_sha256": "b4a3c5510f60d9db9717dcd1e9a3e5a627d7b23171c30dbccdaa3d7734cab0ca",
+      "before_bytes": 29891,
+      "after_bytes": 33493
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/REPRODUCE.txt",
+      "before_sha256": "9bbb770d41568f1c35feec7899297844efbc7d7d9afb59bd69f1d8a863d0f6da",
+      "after_sha256": "affb097ead5a20fc2e3e4062c12c664ca5103519bf611a3344d9e31386989349",
+      "before_bytes": 3838,
+      "after_bytes": 4343
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/build_report.py",
+      "before_sha256": "1a01e685d0409be892c62f351a68badc4c044f86e69aa46c9dd8eeb03acf6d6d",
+      "after_sha256": "895609aedd7b87c6d1840535efa80e08eed88c69c38babd9a11914678e8e7175",
+      "before_bytes": 20806,
+      "after_bytes": 23484
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/existing_results_review.py",
+      "before_sha256": "611977f8619112df3f05e588f8a9a95bb4dbce89b38ed23f832258eb619d690f",
+      "after_sha256": "551482226659022218b3bae2d199bde12b4e941536b82aeefc8049f3579c3813",
+      "before_bytes": 25106,
+      "after_bytes": 25930
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/next_phase_candidates.txt",
+      "before_sha256": "da53f28b2d75002b945a8966ed4fa5bf587e5b229dd5080e44c550603b981acf",
+      "after_sha256": "99ef28736c53eae023ceea4a49b1b26ce04c9182f5d781116383c48b33a43073",
+      "before_bytes": 2079,
+      "after_bytes": 2671
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/reader_report.html",
+      "before_sha256": "d76e9917d51bc4b003527fa1cc34aa3fe4e6cdb9314aaf951e65983381532051",
+      "after_sha256": "f32ed263dbf8538a6bf5333af468605b1aa66d3beca96151146a8a5a1761052f",
+      "before_bytes": 383432,
+      "after_bytes": 385871
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/reader_report.txt",
+      "before_sha256": "3fefd8e785e03c5a5c56f039dc3928dce100836e2d4425c7ec83b8acfd1cd1f4",
+      "after_sha256": "5f8f97f52ef47b6ff52e64ee62682a81355192abe70c61c617557c40dd14a6d7",
+      "before_bytes": 8061,
+      "after_bytes": 10382
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/replication_candidate_costs.csv",
+      "before_sha256": "c826e63b9a3440268675d18f0a07565ab9665424792ecd859f5e74056289436d",
+      "after_sha256": "569c61399ad2226fb7bbdb1cbb9401bb33cc6160d9db5346b87a64ae1fd60703",
+      "before_bytes": 1883,
+      "after_bytes": 2037
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/replication_candidates.txt",
+      "before_sha256": "9d27999d931cf773ac53a287db515a52b5cfe4abc19cc54c2ae9094c5af5242b",
+      "after_sha256": "eea7fac3a22d7fc72321a53c94347eae7ac7b69b5a3c1bed121620b1eddd60ff",
+      "before_bytes": 2860,
+      "after_bytes": 3878
+    },
+    {
+      "path": "diagnostics/representation_pairing_review_20261011/results_paragraph_zh_en.txt",
+      "before_sha256": "178c8e3915c24616624bc523b46374fed105b57df923760c3d568aebb20f3086",
+      "after_sha256": "aa297b84e130ae3c90d300767dd2f8d72537656d8e9058e4f046a19644d21c51",
+      "before_bytes": 1595,
+      "after_bytes": 1895
+    },
+    {
+      "path": "docs/repository_curation/FINAL_REPORT.txt",
+      "before_sha256": "7a51506b98decae09a0c81819fe3138efe7d9506e7a64cbefe7cedce828f4456",
+      "after_sha256": "7f1b9f3d723bb4a7eeb589923e938614122681517ffa797e973db00ba798fb82",
+      "before_bytes": 5385,
+      "after_bytes": 6848
+    },
+    {
+      "path": "docs/repository_curation/artifact_review.txt",
+      "before_sha256": "3a3bcbc4719a6ae704d70678c94ff5840cd4e7ff985aa76b6a595c780bca5427",
+      "after_sha256": "7374c0cf42cc585bdc339bfaef6678f2b7ad33d339265d5a79c836d3ecabaee3",
+      "before_bytes": 2187,
+      "after_bytes": 2884
+    },
+    {
+      "path": "docs/repository_curation/initialization_identity_scope.json",
+      "before_sha256": "648afeeecddcbb4b3e6288cbc82d495512e9f919ab383475bdc9d4ec7db67cac",
+      "after_sha256": "acf8c22b83253e3eef6a0053f3f5f93eaf256cae0d556e0900067bea2297f813",
+      "before_bytes": 255606,
+      "after_bytes": 259036
+    },
+    {
+      "path": "docs/repository_curation/original_CURRENT_RESEARCH.txt",
+      "before_sha256": "7f88b290cf9cd78a402c3ce39c590747cefd4e8297d3180ef86a1345e3929542",
+      "after_sha256": "b9d91c9e38bd35e1b58d0802182c9fa04e3196ab2d4710bb06323027e244fa90",
+      "before_bytes": 4329,
+      "after_bytes": 5397
+    },
+    {
+      "path": "docs/representation_reproduction.md",
+      "before_sha256": "62eb569511e094956a2aac707f383022bd78cd0a50e8dc73dc0f9347d94a25ad",
+      "after_sha256": "03c121f07b6e8537f0b034bdda280d7397f2dedc840543d895ea45cc8a0150da",
+      "before_bytes": 7537,
+      "after_bytes": 7777
+    },
+    {
+      "path": "experiments/analysis.py",
+      "before_sha256": "19e8a60044b0901c4836c6a44b1193420fe7052c276fd51396dfba9e1d77abb1",
+      "after_sha256": "d9d3f23a21fd38aa1b7a92a2dc8ccb72bb4474ce722f4776f555d612c53b5515",
+      "before_bytes": 18445,
+      "after_bytes": 18975
+    },
+    {
+      "path": "experiments/permutation_audit.py",
+      "before_sha256": "d02b667d8d1951c547ad4a4a6a84875535f6ee59255db96bb6abef241b5b267e",
+      "after_sha256": "96ef39ea6bc4f1cfeabef30875c5bdff9dd430630d2a66bdd659e72bce57fe07",
+      "before_bytes": 20281,
+      "after_bytes": 20591
+    },
+    {
+      "path": "experiments/permworld_combinations_report.py",
+      "before_sha256": "16375f0432f4b00a6e83242b4089747636cb81d500732bbd99ab7383cd9c0d85",
+      "after_sha256": "9f5b080c6f20ab641d413a9eb02b6cf2f28c60f28e28861b05a758082554ef75",
+      "before_bytes": 21802,
+      "after_bytes": 22425
+    },
+    {
+      "path": "experiments/permworld_eight_relations_20261010/report.py",
+      "before_sha256": "95fa3ad68d9a5480bb3dbfaf4e295fa5ea31c1c15c9dfab16ffafd8a0b97f2bc",
+      "after_sha256": "e94ab2a19a38f5861f9e9399508a95e6ae9c019bb4c2b0159befee8da1c836ab",
+      "before_bytes": 27903,
+      "after_bytes": 30124
+    },
+    {
+      "path": "experiments/permworld_encoding/plan.py",
+      "before_sha256": "02912c6880aec37282b7ad40930ab433a83d10b6e1ded4f1a2d32ef44546dcad",
+      "after_sha256": "bd9513755e0d1a4867b1f6a5aedcaf0550c0dc707383413eeb6c48f134e3aabe",
+      "before_bytes": 21702,
+      "after_bytes": 22687
+    },
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "before_sha256": "62e7e9153eaa714f7ad4e8f843b36eecee9a9690219109ac0e19488340525398",
+      "after_sha256": "43ab4e2cca1e4e434258adacdd5a0f9c1dcfdec67021299412b4e0bc607cfaa3",
+      "before_bytes": 21376,
+      "after_bytes": 21549
+    },
+    {
+      "path": "experiments/permworld_encoding_preflight.py",
+      "before_sha256": "87938fed1b1c978632b165a016fb9e73b335e6a119eaafdaf709e49fee758499",
+      "after_sha256": "d44dcf704250311ad4ad0d2d52ee43ca058fa4fb100b078c67769f4d828d812a",
+      "before_bytes": 29489,
+      "after_bytes": 29671
+    },
+    {
+      "path": "experiments/specialist_cka_report.py",
+      "before_sha256": "48f3634002861dcf774bb51bcf15f27a0da72804b87f63fe95483d17f7618004",
+      "after_sha256": "c42c322b78fe57fa5a2f2cfdbcc52f6b060724bab651bef944c3083c064736ed",
+      "before_bytes": 26820,
+      "after_bytes": 27965
+    },
+    {
+      "path": "manuscripts/representation_selectivity_20261012/provenance/bundle_validation.json",
+      "before_sha256": "ee3b7bc9019edd6061849379d646cf128cbd2c7348c01c76e430635ea65b7386",
+      "after_sha256": "ae715180714ab5dfb182f0d57a60a3e7a90cbe9516c0c921e9cf4de5927a3b74",
+      "before_bytes": 1953,
+      "after_bytes": 2151
+    },
+    {
+      "path": "manuscripts/representation_selectivity_20261012/provenance/completion.json",
+      "before_sha256": "daae9c096edddf3baa1dc81a2b2070108688b8e13afe64bd753dbb07d3f72345",
+      "after_sha256": "bb745f5d5ba1c0c7aabdcad04a27a71901c612658f348eada0a4f56cfd2289cb",
+      "before_bytes": 18440,
+      "after_bytes": 18434
+    },
+    {
+      "path": "manuscripts/representation_selectivity_20261012/provenance/paper_verified_references_20261012.json",
+      "before_sha256": "addfef6391c8a0376e07afeac2779cb456165f78d06a66c649d0b43a0aff337a",
+      "after_sha256": "48bab161e2d78951b005f924d3614606aab144e9995cfeef736aea43562c6d1b",
+      "before_bytes": 15357,
+      "after_bytes": 15444
+    },
+    {
+      "path": "publication_provenance/initialization_identity_scope.json",
+      "before_sha256": "648afeeecddcbb4b3e6288cbc82d495512e9f919ab383475bdc9d4ec7db67cac",
+      "after_sha256": "acf8c22b83253e3eef6a0053f3f5f93eaf256cae0d556e0900067bea2297f813",
+      "before_bytes": 255606,
+      "after_bytes": 259036
+    },
+    {
+      "path": "results/permworld_encoding_plan_20261009/README.txt",
+      "before_sha256": "db20ebe8e4d3f9d01eb02aafe09d55c221b19d83c418ee9627423da9a284f44f",
+      "after_sha256": "95af9a7bae8e085f8ba12d266c4369986ca77407a236c663e0f48479217f29cd",
+      "before_bytes": 2424,
+      "after_bytes": 2601
+    },
+    {
+      "path": "results/permworld_encoding_plan_20261009/protocol.json",
+      "before_sha256": "f8abbc9e7b125f667fa264f2ef7047d8836532f02328ac0e526477b8dcc81800",
+      "after_sha256": "45ebe28619a6cdcdf0f5f7e244d7df3882c495350d11c2e1ddfe3a4b221fe63e",
+      "before_bytes": 285005,
+      "after_bytes": 285035
+    },
+    {
+      "path": "results/permworld_encoding_plan_20261009/report.txt",
+      "before_sha256": "5fdea577acd85d4b2f241111ccfc315988fb1228a329bc21adeddde62e4126fb",
+      "after_sha256": "2a8b15ee157d0eeac1f7c80e373f8045f47620c329da10587184ab3bbb04960c",
+      "before_bytes": 3828,
+      "after_bytes": 4603
+    },
+    {
+      "path": "results/permworld_encoding_preflight_20261009/before/protocol.json",
+      "before_sha256": "f8abbc9e7b125f667fa264f2ef7047d8836532f02328ac0e526477b8dcc81800",
+      "after_sha256": "45ebe28619a6cdcdf0f5f7e244d7df3882c495350d11c2e1ddfe3a4b221fe63e",
+      "before_bytes": 285005,
+      "after_bytes": 285035
+    },
+    {
+      "path": "results/permworld_encoding_preflight_20261009/protocol.json",
+      "before_sha256": "e0e7e5de0ddbdff034f8b6ac3e118aeea31f13d68bd3db4b37632490615b0a61",
+      "after_sha256": "4207995eab06007ad66c69a5b71af6b51eaaf01caf92dd52a22d7abd1a5304a3",
+      "before_bytes": 30707,
+      "after_bytes": 30737
+    },
+    {
+      "path": "results/specialist_cka_controls/per_relation_summary.csv",
+      "before_sha256": "d6f2807e8a1442a3bee5a0cd91cdca75c1b88c0251151040e57e12f5f829555d",
+      "after_sha256": "04ebedb925e0aaf455527206e1a6b7c38b0c2799f17fca110d99521ccc2e03a1",
+      "before_bytes": 2258,
+      "after_bytes": 2258
+    },
+    {
+      "path": "results/specialist_cka_controls/report.html",
+      "before_sha256": "afb323e32d013ace58d85fa057f9edf39ae3f1a87352106b062adfb28a1f8e13",
+      "after_sha256": "08ae192dfa361ed10f80a9687c6cf6587d1ada9353906bdfd549688b72a23b12",
+      "before_bytes": 18804,
+      "after_bytes": 20027
+    },
+    {
+      "path": "results/specialist_cka_controls/summary.json",
+      "before_sha256": "428fb29a04a364905167d1b410f474e91b10fb8e0470f76e2d1379b33122ec46",
+      "after_sha256": "b2f9c944705c63ae522d674c0e3a8fc62fdff3f2b324cfa9477f52cb78c0345a",
+      "before_bytes": 46195,
+      "after_bytes": 45931
+    },
+    {
+      "path": "tools/recompute_tables.py",
+      "before_sha256": "b37053658f993ddbb29220b08fe10a465b8ca17c1022ce32022a2f94467d30de",
+      "after_sha256": "dd5b694114a8f1930fd3993fd48193c55670e58eaad387feab15edd1e50de27d",
+      "before_bytes": 25147,
+      "after_bytes": 25260
+    },
+    {
+      "path": "tools/table_checksums.json",
+      "before_sha256": "3871b334d0ea47d25c48a31d2c11a7250df293effa8575f0d19101dcd900b3b6",
+      "after_sha256": "483805a9cecf0de334d8def24abda64fe189f2b88cc00e538063f4350a304fa5",
+      "before_bytes": 4339,
+      "after_bytes": 5043
+    },
+    {
+      "path": "manuscripts/representation_selectivity_20261012/reader_guide.txt",
+      "before_original_path_utf8_hex": "6d616e75736372697074732f726570726573656e746174696f6e5f73656c65637469766974795f32303236313031322fe4b8ade69687e99885e8afbbe8afb4e6988e2e747874",
+      "change": "Translated and renamed the manuscript reader guide",
+      "before_sha256": "768413bf54bcdf174915a37cbfac913df080708e54c9aa0023ceeaa2c44c4805",
+      "after_sha256": "b37cef1c0e5008d6b632d662f554a6529b84d3ba802f1d0bbebd2669970b2440",
+      "before_bytes": 2979,
+      "after_bytes": 3868
+    },
+    {
+      "path": "manuscripts/representation_selectivity_20261012/manuscript_source.zip",
+      "change": "Repacked the existing local source draft with English guide and metadata",
+      "before_sha256": "eba970e8b9644c23c6e3b784faef90ea16425314f47ac9e20b91627e53f98885",
+      "after_sha256": "a0983b5198a9e81cfcdd73d42ffb9cc750dc79f899bb32ee5345f20a6a575406",
+      "before_bytes": 732351,
+      "after_bytes": 732152
+    }
+  ]
+}

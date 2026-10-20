@@ -1,26 +1,26 @@
-当前研究入口（2026-10-11；本轮固定范围完成，停止标记与反向哈希见completion.json）
+Historical current-research entry (2026-10-11; fixed scope completed; stop marker and reverse hashes in completion.json)
 
-研究问题：数学任务之间的正确对应怎样改变表征配对偏好？编码、初始化、模型配置、层和指标改变哪些读数？另一数学系统中是否出现相同模式？
+Research question: How do correct correspondences between mathematical tasks alter representation-pairing preferences? Which readouts change with encoding, initialization, model configuration, layer, and metric? Does another mathematical system show the same pattern?
 
-先读短报告：diagnostics/permworld_eight_relations_20261010/final_review/root_result_review.txt
-完整综合报告：diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html
-四部分比较图：diagnostics/permworld_eight_relations_20261010/figures/four_controlled_comparisons.png
-PermWorld完整报告/逐长度表：diagnostics/permworld_eight_relations_20261010/report.html 与 per_length_results.csv
-GraphWorld完整报告：diagnostics/graphworld_pilot_20261010/report.html；答案/密度分解图answer_control_decomposition.png
+Read the short report first: diagnostics/permworld_eight_relations_20261010/final_review/root_result_review.txt
+Full combined report: diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html
+Four-part comparison figure: diagnostics/permworld_eight_relations_20261010/figures/four_controlled_comparisons.png
+Full PermWorld report/per-length tables: diagnostics/permworld_eight_relations_20261010/report.html and per_length_results.csv
+Full GraphWorld report: diagnostics/graphworld_pilot_20261010/report.html; answer/density decomposition: answer_control_decomposition.png
 
-完成范围：PermWorld八关系、16性质、两编码×Transformer/GRU现有配置，64个固定20k单任务终点，16个旧终点精确复用、48个缺失补齐。图论新增四个固定20k单任务终点，n6/7/8等权。正式新增52模型、1,040,000更新。未将8k可学习性开发模型并入主分析。
-主要结果：答案分层final普通CKA，PermWorld 26/32训练后正确−错误偏好Bt为正，18/32相对真实初始化Δ为正；两者不可互换。16编码对中初始化方向16次翻转、Δ14次、训练后Bt仅6次。三主指标Bt方向一致，Δ有2例不同。图论原始四条关系均有正Bt/Δ，答案控制后2/4正Bt、0/4正Δ；密度与逐n读数完整保留。弱任务、负值、NaN和旧16源初始化CE缺失不填补。只作单世界探索性观察，不鉴定额外数学机制、不称纯架构效应。
+Completed scope: PermWorld eight relationships, 16 properties, two encodings x existing Transformer/GRU configurations, 64 fixed 20k single-task endpoints, reusing 16 exact old endpoints and completing 48 missing ones. Four new fixed20k graph specialists, with equal n6/7/8 weighting. Formal additions: 52 models and 1,040,000 updates. The 8k learnability-development models are excluded from the primary analysis.
+Main results: answer-stratified final ordinary CKA gives positive trained correct-minus-wrong preference Bt in PermWorld26/32 and positive genuine-initialization-relative Delta in 18/32; these are not interchangeable. Across 16 encoding pairs, initialization direction reverses16 times, Delta14 times, and trained Bt only6 times. All three primary metrics agree on Bt direction, with2 Delta disagreements. All four raw graph relationships have positive Bt/Delta, but answer control leaves2/4 positive Bt and0/4 positive Delta; density and per-n readouts are retained. Weak tasks, negative values, NaN, and missing initial CE for the old16 sources are not filled in. These are exploratory observations from one world, not identification of an additional mathematical mechanism or a pure architecture effect.
 
-完成清单：diagnostics/permworld_eight_relations_20261010/completed_checkpoint_manifest.csv（保留历史缺口清单不覆写）；最终来源审计final_review/final_audit.json；两个目录coverage_status.csv。真实step0、参数/RNG、数据、批次、缓存、源码和协议哈希全部记录。独立指标复算与提取核验通过；图论3项固定规则下未定义一致，不计作有限数值通过。1223旧保护文件保持哈希，F17、独立论文/结果及发布产物不改。
-大产物：/mnt/yangx-projects-f/20261010/permworld_eight_relations 和 /mnt/yangx-projects-f/20261010/graphworld_pilot。数据与初始化仍依赖旧路径，不能整目录删除或搬走。
-实际成本：48新Perm源单调进程时间合计10.14985小时，4图论源0.71226小时，包含验证/IO，不是GPU活跃时间。队列壁钟另记11.97263小时，时钟偏移限制见final_review/timing_discrepancy_review.txt。CPU阶段/RSS/PyTorch分配显存另列，不相加；GPU核/活跃时间未知。两新F根审计stat表观大小合计18,764,069,698字节，包含缓存、工程和日志，非物理块占用；后续文档大小不在该快照。
-工程留痕：Perm侧车完成记录修复不改权重/轨迹；图论首次评估缺threadpoolctl，保存17.262815秒失败成本，仅补固定3.6.0后恢复五个未完成阶段，检查点/16缓存字节不变，零新增训练/提取。完整失败证据见graph_evaluation_environment_repair_01/。
+Completion manifest: diagnostics/permworld_eight_relations_20261010/completed_checkpoint_manifest.csv (the historical gap manifest is retained, not overwritten); final provenance audit: final_review/final_audit.json; coverage_status.csv in both directories. Genuine step0, parameters/RNG, data, batches, caches, source, and protocol hashes are recorded. Independent metric recomputation and extraction checks passed;3 graph items were consistently undefined under fixed rules and are not counted as finite numerical passes. The1223 old protected-file hashes were unchanged, including F17, independent papers/results, and release artifacts.
+Large artifacts: /mnt/yangx-projects-f/20261010/permworld_eight_relations and /mnt/yangx-projects-f/20261010/graphworld_pilot. Data and initials still depend on older paths; whole directories must not be deleted or relocated indiscriminately.
+Actual cost: summed monotonic process time was10.14985 hours for48 new Perm sources and0.71226 hours for4 graph sources, including validation/IO rather than GPU-active time. Queue wall time is recorded separately as11.97263 hours; clock-offset limitations are in final_review/timing_discrepancy_review.txt. CPU-stage/RSS/PyTorch allocated-VRAM records are separate and not summed; GPU-kernel/active time is unknown. Audited apparent stat size of the two new F roots totals18,764,069,698 bytes, including caches, engineering, and logs rather than physical block use; later documentation is outside that snapshot.
+Engineering record: the Perm completion-sidecar repair did not change weights/trajectories. Initial graph evaluation lacked threadpoolctl; the17.262815-second failed cost is retained. Installing only fixed3.6.0 restored five unfinished stages with unchanged checkpoint/16-cache bytes and zero added training/extraction. Full failure evidence: graph_evaluation_environment_repair_01/.
 
-复现入口（命令仅为复现文档；当前不执行新实验）：
-PermWorld inventory/REPRODUCE.txt、protocol.json、training_freeze.json、analysis_freeze.json、metadata_writer_freeze.json。
-图论实验入口experiments/graphworld_pilot_20261010/__main__.py；protocol.json、freeze_manifest.json、verification_freeze.json。
-CPU来源审计：.venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/audit.py --run
-CSV综合写作：final_review/build_combined_reader.py（不训练、无指标重算）。旧一键训练入口不用于本轮。
+Reproduction entry points (commands are documentation only; no new experiments run here):
+PermWorld inventory/REPRODUCE.txt, protocol.json, training_freeze.json, analysis_freeze.json, metadata_writer_freeze.json.
+Graph experiment entry: experiments/graphworld_pilot_20261010/__main__.py; protocol.json, freeze_manifest.json, verification_freeze.json.
+CPU provenance audit: .venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/audit.py --run
+CSV combined-report writer: final_review/build_combined_reader.py (no training or metric recomputation). The old one-command training entry is not used in this round.
 
-历史与独立项目：archive_index.csv四类逻辑索引，旧行/路径/理由保留，当前依赖单列。cleanup_candidates.csv仅列13个可再生临时清理候选，本轮未执行删除、移动、Git提交/推送、release或历史重写。
-停止边界：八关系与四模型图论小试已完成；不自动扩展任务、种子、GroupWorld、模型大小、编码网格、零空间、有限域或GELU实验。学习程度与独立世界复现等未决问题写入报告，等待新的明确指令。
+History and independent projects: archive_index.csv gives four logical categories, retaining old rows/paths/reasons and listing current dependencies separately. cleanup_candidates.csv lists only13 regenerable temporary cleanup candidates; no deletion, relocation, Git commit/push, release, or history rewrite occurred in this round.
+Stop boundary: eight relationships and the four-model graph pilot are complete. Do not automatically expand tasks, seeds, GroupWorld, model size, encoding grids, null-space, finite-field, or GELU experiments. Proficiency and independent-world replication remain open questions recorded in the report, awaiting new explicit instructions.

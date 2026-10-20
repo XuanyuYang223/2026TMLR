@@ -10,17 +10,17 @@ ROOT = Path(__file__).resolve().parent
 def main():
     raw = ROOT / 'report.html'
     text = raw.read_text()
-    original = '源间标准差只反映共享世界中的初始化差异'
-    corrected = '源间标准差描述固定任务／数据世界内的训练种子变异，包含初始化、dropout、batch／优化随机性'
+    original = 'The between-source standard deviation reflects only initialization differences within the shared world'
+    corrected = 'The between-source standard deviation describes training-seed variability within fixed tasks and the shared data world, including initialization, dropout, and batch/optimization randomness'
     assert text.count(original) == 1
     annotated = text.replace(original, corrected)
-    anchor = '<h2>范围与证据身份</h2>'
+    anchor = '<h2>Scope and evidential status</h2>'
     assert annotated.count(anchor) == 1
-    banner = ('<p class="lead">报告文字审查：源种子不只改变初始化。此阅读版本修正该归因，'
-              '完整保留冻结计算、图、表和结论。<a href="review_notes.txt">审查说明</a> · '
-              '<a href="real_results_review.txt">真实结果独立复核</a> · '
-              '<a href="statistical_review.json">汇总独立复算</a> · '
-              '<a href="existing_final_audit.json">覆盖与F17保护审计</a>。</p>')
+    banner = ('<p class="lead">Wording review: source seeds change more than initialization. This reader version corrects that attribution,'
+              'while preserving all frozen calculations, figures, tables, and conclusions.<a href="review_notes.txt">Review note</a> · '
+              '<a href="real_results_review.txt">Independent verification of actual results</a> · '
+              '<a href="statistical_review.json">Independent recomputation of summaries</a> · '
+              '<a href="existing_final_audit.json">Coverage and F17 protection audit</a>.</p>')
     annotated = annotated.replace(anchor, banner + anchor)
     target = ROOT / 'reader_report.html'
     target.write_text(annotated)

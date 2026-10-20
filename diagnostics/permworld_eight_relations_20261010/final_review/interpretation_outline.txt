@@ -1,31 +1,31 @@
-实际结果解释提纲（结果待生成；不预设方向）
+Actual-result interpretation outline (results pending; no assumed direction)
 
-每条关系独立按同一顺序展开，完整保留四个架构/编码条件：
-1. 原始S：初始化与20k的正确、错误、恒等配对；先说明量级/缺失与指标含义。
-2. Bt：训练后正确减错误。比较Bt本身正负与幅度，不先用Delta替代。
-3. B0：原真实初始化是否已有正确偏好或错误偏好；区分编码起点。
-4. dc与dw：正Delta来自正确相似度上升、错误相似度下降，或两者共同变化？若dc不升而dw大降，写成配对选择性重塑，不能写正确表征大幅趋同。
-5. Delta=Bt-B0=dc-dw：说明训练相对该初始化的改变；负Delta不代表没学，正Delta不证明正确关系机制。
+Develop each relation independently in the same order, retaining all four architecture/encoding conditions:
+1. Original S: correct, wrong, and identity pairings at initialization and 20k; first describe magnitude/missingness and metric meaning.
+2. Bt: trained correct minus wrong. Compare its own sign and magnitude before using Delta.
+3. B0: whether genuine original initialization already prefers correct or wrong pairings; distinguish encoding starting points.
+4. dc and dw: does positive Delta arise from increased correct similarity, decreased wrong similarity, or both? If dc does not increase while dw falls substantially, describe reshaped pairing selectivity, not substantial convergence of correct representations.
+5. Delta=Bt-B0=dc-dw: describe training change relative to that initialization. Negative Delta does not mean no learning; positive Delta does not prove a correct-relation mechanism.
 
-固定编码比较（每关系、每架构，不只成功例子）：
-- Gamma0、Gammat、Gammac、Gammaw、GammaDelta全部展示。
-- 检查Delta翻转和Bt翻转分别发生没有。Delta翻转但Bt同向/相近，优先描述编码改变初始化参照，不能称学习偏好翻转。
-- Γt与Γ0同时变化时分别报告，不用hidden Delta减output Delta做净机制估算。
+Fixed encoding comparisons (every relation and architecture, not only successes):
+- Show Gamma0, Gammat, Gammac, Gammaw, and GammaDelta in full.
+- Check Delta and Bt reversals separately. If Delta reverses but Bt has the same direction/similar size, prioritize the change in initialization reference, not a reversal of learned preference.
+- When Γt and Γ0 both change, report them separately; do not subtract output Delta from hidden Delta to estimate a net mechanism.
 
-四种受控比较：
-- 相同final激活的三主指标：分别检查Bt、Delta方向与幅度，U-centered只作预定敏感性。指标分值不可直接横比；方向计数不是独立重复或显著性。
-- 现有Transformer/GRU配置：同时读参数量、验证/analysis准确率、CE、逐长度相对训练众数。学习弱或容量不同，则将机制解释保持为未区分。
-- 全部层：输入结束位置固定，block/layer1..4及final norm全部读B0/Bt/dc/dw/Delta；与固定第4层对比不挑最佳。last4与norm差仅归一化，浅到深Delta跃升若由B0下降而Bt未提高，不能称训练后几何增强。
-- 每长度10..30完整呈现；任一分量缺失该汇总保持NaN。只描述边界，不凭看图排除长度或改指标。
+Four controlled comparisons:
+- Three primary metrics on identical final activations: inspect Bt and Delta directions/magnitudes separately, with U-centered CKA only as prespecified sensitivity. Scores cannot be compared directly across metrics; direction counts are not independent repetitions or significance.
+- Existing Transformer/GRU configurations: read parameter counts, validation/analysis accuracy, CE, and per-length gains over training modes together. If learning is weak or capacities differ, keep mechanism explanations unresolved.
+- All layers: fix input-end position, and read B0/Bt/dc/dw/Delta for all blocks/layers 1..4 and final normalization. Compare against fixed layer 4 without selecting the best. The last4-to-norm difference is normalization only; if a shallow-to-deep Delta jump comes from lower B0 without increased Bt, do not call it stronger trained geometry.
+- Show every length 10..30; if any component is missing, its aggregate remains NaN. Describe boundaries without excluding lengths or changing metrics after inspecting plots.
 
-源任务学习及对照：
-- 64源全部保留；长短长度准确率/CE/训练众数增量和20个阶段曲线并列。above-mode不是充分掌握门槛，at-or-below-mode也不证明完全忽略输入。
-- 真值答案与输出概率保持平行基线。答案分层只是去除组内均值，不能去除所有答案信息或置信度。
-- 错误变换的偶然答案正确率按各关系/长度保留；近常量性质尤其不能自动改错配。
-- +1仅分层坐标减1；真实任务数字、onehot及源准确率不能错移。
+Source-task learning and controls:
+- Retain all 64 sources; show accuracy/CE/training-mode increments across lengths and all 20 intermediate curve records together. Above-mode is not a mastery threshold, and at-or-below-mode does not prove complete input neglect.
+- Retain true answers and output probabilities as parallel baselines. Answer stratification removes within-group means only, not all answer information or confidence.
+- Retain accidental answer correctness under wrong transformations for each relation/length; near-constant properties especially do not justify automatically changing wrong pairings.
+- The +1 relation subtracts 1 only in stratum coordinates; do not shift true task numbers, one-hot values, or source-accuracy labels incorrectly.
 
-图论4关系读数：
-- 同样S→Bt→B0/dc/dw/Delta；n6/7/8固定1/3。raw、主答案、精确边数密度敏感性均保留。
-- 输出概率、true labels、位置onehot静态输入参照并列；位置核不区分正确/错误是预定等距结构，不解释为学习。
-- 一种TF配置/一种编码的试探，4任务/4关系共享，仅两变换类型。跨域大小、编码、任务、生成分布都变化；不直接相减Perm/Graph CKA声称领域因果效应。
-- graph缺产物应pending。全部既定实验/报告/审计完成后停止，不启动种子扩容、模型增大或确认训练。
+Four graph-relation readouts:
+- Use the same S→Bt→B0/dc/dw/Delta order; fixed weight 1/3 for n6/7/8. Retain raw, primary answer, and exact-edge-count density sensitivity.
+- Show output probabilities, true labels, and positional one-hot static-input references together. A positional kernel that does not distinguish correct/wrong reflects its prespecified isometry, not learning.
+- This is a pilot with one TF configuration/encoding, four shared tasks/relations, and only two transformation types. Cross-domain sizes, encodings, tasks, and distributions all differ; do not subtract Perm/Graph CKA to claim a causal domain effect.
+- Missing graph artifacts must remain pending. Stop after all specified experiments/reports/audits, without more seeds, larger models, or confirmatory training.

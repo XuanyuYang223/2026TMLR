@@ -77,12 +77,12 @@ def run():
             supplementary_rule_is_table_arithmetic_not_new_hypothesis=True))
     audit.write_json(audit.DIAG/'independent_curve_audit.json', result)
     (audit.DIAG/'independent_curve_audit.txt').write_text(
-        '全部已保存验证曲线独立算术审查：passed。\n'
-        f'16模型，每模型固定{saved_steps}更新点；{len(curves)}条等权曲线行，{len(lengths)}条逐长度行。\n'
-        '所有答案/NLL/EOS/训练长度众数汇总与报告CSV一致；全局学习率也与固定8k调度一致。\n'
-        '最终曲线点与8k终点相同。较早结果不能代替固定8k门槛，不选择最高准确率或最低loss。\n'
-        '只读train/validation标签和保存的验证记录；未读取测试数组、检查点张量或CKA，未推理或训练。\n'
-        '本补充核查在报告生成后实现，用于验证全部表格算术，不作为新的确认性检验。\n')
+        'Independent arithmetic review of all saved validation curves: passed.\n'
+        f'16 models, each at fixed{saved_steps} update points;{len(curves)} equal-weight curve rows and{len(lengths)} per-length rows.\n'
+        'All answer/NLL/EOS/training-length-mode aggregates match report CSVs; global learning rates also match the fixed 8k schedule.\n'
+        'Final curve points match 8k endpoints. Earlier results cannot replace fixed 8k gates; no maximum-accuracy or minimum-loss selection.\n'
+        'Read only train/validation labels and saved validation records; no test arrays, checkpoint tensors, or CKA were read; no inference or training.\n'
+        'This supplementary check was implemented after report generation to verify every table’s arithmetic, not as a new confirmatory test.\n')
     return result
 
 

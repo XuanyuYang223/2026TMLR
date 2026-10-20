@@ -121,36 +121,36 @@ def annotate():
     assert sum(r['Delta_direction_consistent'] == 'True' for r in direction_rows) == 7
     assert number(knn_gru_comp['Delta']) < 0 < number(cell('gru','one_line','peak_complement')['Delta'])
     assert all(number(r['dw']) < 0 < number(r['dc']) for r in [tf_inv,gru_inv])
-    findings = f'''<aside style="padding:14px;border:1px solid #b7cbd9;background:#f6faff"><b>这轮结果的具体读法</b>
-    <p>三主指标对八个终点条件的 Bt 方向全部一致，对 Δ 方向七个条件一致。
-    唯一 Δ 分歧是 GRU／一行／峰—谷：邻域重叠 Δ={f(knn_gru_comp,'Delta')}，CKA 和留出 Procrustes 为正。
-    这描述方向一致性，不是显著性，也不保证21长度逐一同向。</p>
-    <p>编码使两配置的初始化偏好反向：一行在初始化时偏好补排列、较不偏好取逆；轮换则相反。
-    四个 CKA 编码对比中，两项 Δ 翻转但 Bt 不翻转（Transformer／峰—谷、GRU／下降—逆下降）。
-    Transformer／下降—逆下降的 Bt 确实随编码由正转负。完整 Γ 分解见下表，不能只用 Δ 叙述学习偏好。</p>
-    <p>一行／取逆的正 Δ 主要来自错误配对下降：Transformer 的 dc={f(tf_inv,'dc')}、dw={f(tf_inv,'dw')}，
-    GRU 的 dc={f(gru_inv,'dc')}、dw={f(gru_inv,'dw')}。它们支持配对选择性被重塑，不能描述为正确几何大幅趋同。</p>
-    <p>层也影响结论：GRU／一行／取逆、GRU／轮换／补排列在低层的 Bt 为负、后层为正；其余六条件的逐长度汇总 Bt 跨层同号。
-    答案控制影响增量解释：Transformer／一行／峰—谷的 raw CKA Δ={f(raw_tf_comp,'Delta')}，
-    答案分层后 Δ={f(tf_comp,'Delta')}。U-centered CKA 在八个最终主条件中保留普通 CKA 的 Bt、Δ 方向；这不排除输出关联。</p>
-    <p>轮换源任务仍接近训练标签固定的长度基线，一行任务掌握程度也随配置和任务不同。
-    因此这里支持固定预算下编码、配置和层的条件依赖；一个世界、每配置一个初始化、两个关系实例，仍不能认定普适数学机制。</p></aside>'''
-    annotation = '''<aside style="padding:14px;border:1px solid #b7cbd9;background:#f6faff"><b>交付口径与审计附注</b>
-    <p>本轮已完成并停止。没有新增训练、更新数或样本；F17 和原结果保持不变。</p>
-    <p>初始答案 CE 的 2,016 项为明确缺失，原因是原缓存未保存该指标；共享隐藏初始化不代表共享任务 logits。最终模型答案 CE 已按全词表计算。
-    原 <a href="source_validation_eos_original.csv">16 模型验证集答案／EOS teacher-forced 成绩</a>单独保留；新 prompt-only 答案准确率与原答案成绩逐项一致，EOS 不作为任务学会的证据。</p>
-    <p>输出概率几何复用原 0..30 数字条件分布，不等同全词表概率；答案 CE 使用完整词表，两者口径分开。
-    嵌入层在固定长度的逻辑结束 token 上为常量，因此相似度未定义，不能解读为零效应。</p>
-    <p>独立核查：<a href="metric_review/final_reader_audit.txt">完整表读者核查</a>、
-    <a href="extraction_review/index_reader_audit.txt">新层缓存逐值／哈希核查</a>、
-    <a href="inventory/report_reader_review.txt">报告核查</a>。
-    <a href="inventory/model_inventory.csv">实际16模型与初始化清单</a>、
-    <a href="inventory/match_audit.txt">固定项审计</a>及
-    <a href="cross_arch_same_task_summary.csv">四任务跨配置相似度汇总</a>均单独保留。
-    小批修复仅将独立中层验证改为相同 full-prompt/batch 形状；原 2e−5 容差、提取公式和主结果未改变。
-    <a href="extraction_review/engineering_repair.json">修复记录</a>保留先前失败；prefix-only 中层数值差异也完整保留。
-    <a href="REPRODUCE.txt">复现说明</a>列出真实数据、初始化、冻结版本、大缓存及命令。</p></aside>'''
-    needle = '<h1>PermWorld 受控表征比较</h1>'
+    findings = f'''<aside style="padding:14px;border:1px solid #b7cbd9;background:#f6faff"><b>How to interpret this round of results</b>
+    <p>All three primary metrics agree on Bt direction for all eight endpoint conditions and on Δ direction for seven.
+    The only Δ disagreement is GRU / one-line / peaks–valleys: neighborhood-overlap Δ={f(knn_gru_comp,'Delta')}, whereas CKA and held-out Procrustes are positive.
+    This describes sign agreement, not significance, and does not guarantee agreement at every one of the 21 lengths.</p>
+    <p>Initialization preferences reverse across encodings in both configurations: one-line initially favors complement more than inverse, whereas canonical cycle shows the opposite preference.
+    Among four CKA encoding contrasts, two reverse Δ without reversing Bt (Transformer / peaks–valleys and GRU / descents–inverse descents).
+    For Transformer / descents–inverse descents, Bt does change from positive to negative across encodings. See the full Γ decomposition below; Δ alone cannot describe learned preferences.</p>
+    <p>Positive Δ for one-line / inverse comes mainly from falling wrong-pair scores: Transformer dc={f(tf_inv,'dc')}, dw={f(tf_inv,'dw')},
+    GRU dc={f(gru_inv,'dc')}, dw={f(gru_inv,'dw')}. These support reshaping of pairing selectivity, not substantial convergence of correct-pair geometry.</p>
+    <p>Layer choice also matters: GRU / one-line / inverse and GRU / canonical cycle / complement have negative Bt in early layers and positive Bt later; length-aggregated Bt retains its sign across layers for the other six conditions.
+    Answer control changes the increment interpretation: Transformer / one-line / peaks–valleys raw CKA Δ={f(raw_tf_comp,'Delta')},
+    after answer stratification Δ={f(tf_comp,'Delta')}. U-centered CKA preserves ordinary-CKA Bt and Δ directions in all eight final primary conditions; this does not rule out output association.</p>
+    <p>Canonical-cycle source tasks remain near the length baseline fixed from training labels, and one-line mastery also varies by configuration and task.
+    The findings support conditional dependence on encoding, configuration, and layer under a fixed budget. One world, one initialization per configuration, and two relation instances cannot establish a universal mathematical mechanism.</p></aside>'''
+    annotation = '''<aside style="padding:14px;border:1px solid #b7cbd9;background:#f6faff"><b>Delivery scope and audit notes</b>
+    <p>This round is complete and stopped. No training, updates, or samples were added; F17 and original results remain unchanged.</p>
+    <p>The 2,016 initial answer-CE entries are explicitly missing because the original cache did not save this metric. Shared hidden initialization does not imply shared task logits. Final-model answer CE uses the full vocabulary.
+    Original <a href="source_validation_eos_original.csv">teacher-forced validation answer/EOS scores for 16 models</a>are retained separately; new prompt-only answer accuracies match original answer scores item by item. EOS does not establish task learning.</p>
+    <p>Output-probability geometry reuses the original conditional distribution over numbers 0..30, not full-vocabulary probabilities. Answer CE uses the full vocabulary; distinguish these quantities.
+    The embedding at the logical end token is constant for a fixed length, making similarity undefined rather than a zero effect.</p>
+    <p>Independent checks: <a href="metric_review/final_reader_audit.txt">Complete-table reader check</a>,
+    <a href="extraction_review/index_reader_audit.txt">New-layer cache elementwise/hash check</a>,
+    <a href="inventory/report_reader_review.txt">Report check</a>.
+    <a href="inventory/model_inventory.csv">Actual 16-model and initialization manifest</a>,
+    <a href="inventory/match_audit.txt">Fixed-item audit</a> and
+    <a href="cross_arch_same_task_summary.csv">Four-task cross-configuration similarity summaries</a>are retained separately.
+    The small-batch repair only changed independent intermediate-layer validation to matching full-prompt/batch shapes. The original 2e−5 tolerance, extraction formulas, and primary results were unchanged.
+    <a href="extraction_review/engineering_repair.json">Repair record</a>retains the previous failure; numerical intermediate-layer differences for prefix-only execution also remain fully recorded.
+    <a href="REPRODUCE.txt">Reproduction instructions</a>list actual data, initializations, frozen versions, large caches, and commands.</p></aside>'''
+    needle = '<h1>PermWorld controlled representation comparison</h1>'
     assert raw.count(needle) == 1
     shutil.copyfile(report, DIAG / 'reader_report_frozen_writer.html')
     report.write_text(raw.replace(needle, needle + findings + annotation))

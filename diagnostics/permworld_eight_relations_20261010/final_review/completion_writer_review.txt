@@ -1,87 +1,42 @@
-最终 completion 写入器只读接口审查（2026-10-11）
+Read-only interface review of the final completion writer (2026-10-11)
 
-审查对象：final_review/complete_delivery.py。
-本次观察源码 SHA256：84a2c27ab0c5ec0d50207fd4a394ef0cca61cb726e6e11d6e9b8ef0996d12b1d。
-此说明只审查实际源码与小型 JSON 元信息；没有执行该 writer、模型、训练、前向、指标、
-最终大审计或归档更新。未修改冻结文件、科学表、旧产物或此前解释附注。
-Graph 固定清单尚在执行，最终 audit/archive/root review 未生成齐备；本文不是完成凭证。
+Reviewed: final_review/complete_delivery.py.
+Observed source SHA256: 84a2c27ab0c5ec0d50207fd4a394ef0cca61cb726e6e11d6e9b8ef0996d12b1d.
+This note reviews actual source and small JSON metadata only; it does not execute the writer, models, training, forwards, metrics, the final large audit, or archive update. Frozen files, scientific tables, earlier artifacts, and earlier interpretation notes were unchanged.
+The fixed Graph manifest is still running, and final audit/archive/root review are not all present. This document is not completion evidence.
 
-一、实际接口与路径
+1. Actual interfaces and paths
 
-1. HERE=诊断目录/final_review，PERM=诊断目录，WORKSPACE=/home/yangx/ICML，
-   GRAPH=diagnostics/graphworld_pilot_20261010；四个根路径推导正确。
-   根 completion 写在 Perm 诊断目录，不会覆盖 Graph 自己的 completion.json。
+1. HERE=diagnostic directory/final_review, PERM=diagnostic directory, WORKSPACE=/home/yangx/ICML, GRAPH=diagnostics/graphworld_pilot_20261010. All four root paths resolve correctly. Root completion is written in the Perm diagnostic directory, without overwriting Graph’s completion.json.
 
-2. final_audit.json 的真实 producer audit.py 提供所有被索引字段：formal_sources、
-   actual_saved_initializations、saved_RNG_streams、source_versions、permworld_cache、
-   graphworld_cache、old_artifact_protection、tracked_git、timing、physical_storage、
-   CPU_audit_pipeline_wall_seconds、all_fixed_stages_complete、old_artifacts_modified。
-   physical_file_manifest.json、completed_checkpoint_manifest.csv/json、
-   graph_completed_checkpoint_manifest.json、graph_cache_content_manifest.json 名称一致。
-   派生 checkpoint records 确有 domain/run_id/reused_existing/completed_path。
-   不从旧 inventory 的 missing 标签判定源模型是否完成；64=16复用+48新增，Graph4新增。
+2. The actual final_audit.json producer audit.py provides all indexed fields: formal_sources, actual_saved_initializations, saved_RNG_streams, source_versions, permworld_cache, graphworld_cache, old_artifact_protection, tracked_git, timing, physical_storage, CPU_audit_pipeline_wall_seconds, all_fixed_stages_complete, old_artifacts_modified. Names match physical_file_manifest.json, completed_checkpoint_manifest.csv/json, graph_completed_checkpoint_manifest.json, graph_cache_content_manifest.json. Derived checkpoint records contain domain/run_id/reused_existing/completed_path. Completion is not inferred from earlier inventory missing labels: 64=16 reused+48 new, plus four new Graph models.
 
-3. update_archive.py 的真实输出确为 archive_update_audit.json、scope_artifact_manifest.json、
-   current_entry_manifest.csv、根 archive_index.csv。CURRENT_RESEARCH.txt 由 Root 先写定。
-   updater 显式排除 scope manifest 自身和随后生成的根 completion；最后 completion
-   反向绑定这些文件，无自引用循环。cleanup_candidates.csv 保持13项、无删除或迁移。
+3. Actual update_archive.py outputs are archive_update_audit.json, scope_artifact_manifest.json, current_entry_manifest.csv, and root archive_index.csv. Root writes CURRENT_RESEARCH.txt first. The updater excludes its own scope manifest and subsequent root completion, which reverse-binds these files without a self-reference cycle. cleanup_candidates.csv retains 13 entries, with no deletion or migration.
 
-4. readout_status.json 的 completed_readout/fixture_only 接口正确。Perm final reader 与
-   Graph report_reader_audit.json 的 status/source_count 接口一致，必须等 Graph 实际4源，
-   不能使用目前准备阶段 source_count=0 的 passed 记录。
-   bridge/orchestration 的历史交接状态字符串与 audit/updater/combined reader 一致；
-   不应提前覆盖这两个状态。最终根状态 completed_and_stopped，automatic_followup=false，
-   publication_performed=false，stop_boundary 明确禁止额外训练、任务、度量与自动发布。
+4. readout_status.json completed_readout/fixture_only interfaces are correct. Perm final-reader and Graph report_reader_audit.json status/source_count interfaces agree; wait for four actual Graph sources and do not use preparation-stage passed records with source_count=0. Historical bridge/orchestration handoff status strings match audit/updater/combined reader; do not overwrite these statuses early. Final root status is completed_and_stopped, automatic_followup=false, publication_performed=false. stop_boundary explicitly prohibits extra training, tasks, metrics, and automatic publication.
 
-5. 当前 Perm report_audit.figures_sha256 有22个相对路径，writer 以 PERM/rel 绑定正确，
-   包括 figures/four_controlled_comparisons.png。Graph 实际 producer 输出
-   answer_control_decomposition.png、report.html/txt、completion.json、
-   independent_actual_small_batch.json；列出的路径正确。没有沿用旧开发40图计数。
-   combined_report.html/txt、combined_input_hashes.json 名称与冻结 combined reader 一致。
+5. Current Perm report_audit.figures_sha256 has 22 relative paths, correctly bound as PERM/rel by the writer, including figures/four_controlled_comparisons.png. Actual Graph producer outputs answer_control_decomposition.png, report.html/txt, completion.json, and independent_actual_small_batch.json; paths are correct. The earlier development count of 40 figures is not reused. combined_report.html/txt and combined_input_hashes.json names match the frozen combined reader.
 
-二、需要 Root 修正或闭合的小型元信息问题
+2. Small-metadata issues for Root to correct or close
 
-1. 显存字段选择正确：Perm peak_cuda_allocated_bytes；Graph peak_cuda_memory_bytes。
-   但统一 interpretation 的“for recorded invocation”不完全准确：Perm 实现保留跨恢复
-   invocation 的累计最大 allocated-memory peak，Graph 每 invocation 重置。请按 domain
-   说明。二者都来自 PyTorch max_memory_allocated，不是整卡占用或 reserved-memory。
-   未保存的历史峰值保持 None/unknown，不能将未知改为0。
+1. GPU-memory fields are selected correctly: Perm peak_cuda_allocated_bytes and Graph peak_cuda_memory_bytes. However, “for recorded invocation” is not fully accurate in the unified interpretation: Perm retains a cumulative maximum allocated-memory peak across resumed invocations, while Graph resets it per invocation. Explain separately by domain. Both use PyTorch max_memory_allocated, not whole-device use or reserved memory. Unsaved historical peaks remain None/unknown; Unknown must not become 0.
 
-2. 当前 writer 验证 passed 状态，然后计算并绑定当前文件新 SHA；尚未直接核对旧 passed
-   元信息所声称的 SHA 与这些最终字节一致。建议在写 completion 前增加以下低成本闭合：
-   archive_update_audit.final_audit_sha256 == SHA(final_audit.json)；
-   archive_update_audit.updated_archive_sha256 == SHA(archive_index.csv)；
-   archive_update_audit.scope_manifest_sha256 == SHA(scope_artifact_manifest.json)；
-   combined_input_hashes.source_sha256 == combined_reader_freeze.source_sha256；
-   combined_input_hashes.outputs[combined_report.html/txt].sha256 == 对应最终报告 SHA。
-   可一并核对 archive updater source/freeze 绑定及实际 Graph scope review 的 passed 状态。
-   这不是追加科学审计或扫描缓存，而是防止最后阶段仅绑定已改变字节却继承旧 passed
-   声明。未观察到实际晚改；这是此 writer 的身份闭合不足。
+2. The writer currently verifies passed statuses, then computes/binds current file SHAs without directly checking that earlier passed metadata’s claimed SHAs equal final bytes. Before completion, add these inexpensive closure checks:
+archive_update_audit.final_audit_sha256 == SHA(final_audit.json);
+archive_update_audit.updated_archive_sha256 == SHA(archive_index.csv);
+archive_update_audit.scope_manifest_sha256 == SHA(scope_artifact_manifest.json);
+combined_input_hashes.source_sha256 == combined_reader_freeze.source_sha256;
+combined_input_hashes.outputs[combined_report.html/txt].sha256 == corresponding final report SHA.
+Also check archive-updater source/freeze binding and actual Graph scope-review passed status. This does not add scientific audits or cache scans; it prevents binding changed bytes while inheriting an old passed claim. No actual late change was observed; this is insufficient identity closure in the writer.
 
-3. root_result_review.json 是未来 Root 产物，所需键为 status=read_review_passed、
-   actual_results_read=true、inference_scope、findings。两个后者直接嵌入根 completion。
-   final_audit_resource.json/txt、final_audit_process.log、actual_perm_reader_notes.txt/json、
-   actual_graph_scope_review.txt/json 以及 root_result_review.txt/json 必须按列出的名字
-   在归档更新前写定。文件存在不能代替实际结果审阅。
+3. root_result_review.json is a future Root artifact requiring status=read_review_passed, actual_results_read=true, inference_scope, and findings; the last two are embedded directly in root completion. final_audit_resource.json/txt, final_audit_process.log, actual_perm_reader_notes.txt/json, actual_graph_scope_review.txt/json, and root_result_review.txt/json must be finalized with the listed names before archive update. Existence is not a substitute for actual result review.
 
-三、NaN 与成本口径
+3. NaN and cost definitions
 
-allow_nan=False 正确，能在非有限浮点进入根 payload 时拒绝序列化，不会把科学未定义
-读数偷填0。已只读检查将嵌入的现有 Perm readout、final reader、report audit、
-timing_discrepancy_review 和 resource_summary JSON，没有非有限浮点值。
-未来 root.findings/inference_scope 以及尚未生成的 Graph/最终 audit 元信息仍需同样保持
-有限标量或 null+明确原因；不要把 CSV 的 NaN 字段作为 float('nan') 直接写入 findings。
-无需移除科学 CSV 的未定义格，也不应以字符串/0混淆未定义数值。
+allow_nan=False correctly rejects nonfinite floats in the root payload rather than silently replacing scientific undefined values with 0. Read-only inspection found no nonfinite floats in existing Perm readout, final-reader, report-audit, timing_discrepancy_review, or resource_summary JSON to be embedded. Future root.findings/inference_scope and pending Graph/final audit metadata must also retain finite scalars or null with an explicit reason. Do not write CSV NaN as float('nan') directly into findings. Scientific CSV undefined cells need not be removed or conflated with strings/0.
 
-timing 与 physical_storage 整体沿用 final_audit 的范围是正确的：源进程墙钟、queue墙钟、
-phase壁钟、driver壁钟、GNU time CPU时间不能相加成实际GPU小时；GPU-active/kernel未知。
-UTC/monotonic 异常已有单独 timing_discrepancy_review，writer 直接保留而不猜测人为暂停。
-存储按唯一 resolved path 采样；重叠角色组不加总。最后补写的报告/归档元信息不在早先
-final CPU audit 的字节快照里，storage_snapshot_scope 已如实说明。
+Retaining final_audit timing and physical_storage scope is correct: source-process, queue, phase, driver wall times, and GNU time CPU time cannot be summed as actual GPU hours; GPU-active/kernel time is Unknown. UTC/monotonic anomalies have a separate timing_discrepancy_review; the writer preserves them without guessing human pauses. Storage samples unique resolved paths without summing overlapping role groups. Later report/archive metadata are outside the earlier final CPU-audit byte snapshot, as storage_snapshot_scope accurately states.
 
-四、审查结论
+4. Review conclusion
 
-未发现与已冻结 producer 不一致的必然 KeyError、输出路径或图键阻断。实际完整运行
-必须等待固定14阶段、4个Graph终点与全部审计/审阅/归档真实完成；本次未执行 writer。
-建议先修正显存 invocation 口径并加小文件 SHA 交叉闭合，最后一次性生成根 completion
-并停止，不再刷新已绑定报告、归档或科学产物。
+No unavoidable KeyError, output-path, or figure-key blocker inconsistent with frozen producers was found. Actual complete execution must await all 14 phases, four Graph endpoints, and actual audits/reviews/archive completion; this review did not run the writer. First correct GPU-memory invocation wording and add small-file SHA cross-checks, then generate root completion once and stop without refreshing bound reports, archive, or scientific artifacts.

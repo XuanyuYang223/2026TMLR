@@ -1,54 +1,54 @@
-PermWorld fullset evaluation：冻结后来源绑定复核
-日期：2026-10-10；只读，未运行前向或训练
+PermWorld fullset evaluation: post-freeze provenance-binding verification
+Date: 2026-10-10; read-only, no forwarding or training
 
-当前full_eval.py SHA256：
+Current full_eval.py SHA256:
 33b22c6f593d07da82ae6a88229c6d27c4c7b192242b345f2ebd78e896641e4a
-新evaluation protocol SHA256：
+New evaluation-protocol SHA256:
 6221a77fe29ef46dca14dc6e3c14805c43a142da3ed1e12bab3595b2ebf49350
-protected_before.json已冻结摘要：
+Frozen protected_before.json digest:
 ccc21bfddd4c6f53b9cbc566296e956106798842ffe8b49b2f6dfdc4602a810b
-原learnability protocol SHA256：
+Original learnability-protocol SHA256:
 1a102cd3d466984ac7aa60cd6133b4006105f51c1cd38c3cb422733892364f69
 
-已独立读取当前代码、freeze/protocol、16个stage与初始化元数据：
-1. 新冻结29项源码全部实际SHA一致（3新诊断源码+26原冻结依赖）。
-   protocol字节摘要与freeze一致；保护清单字节摘要也与freeze一致。
-   原protocol与原freeze和新protocol引用完全一致；原source_version用
-   原冻结source字典canonical JSON独立重算，匹配新protocol。
-2. checkpoint_manifest包含16个唯一run_id，各job与原training_manifest
-   的所有字段完全一致，不额外加入新模型或挑选旧stage。
-3. setup新增stage.data_sha256==source_data_digest：digest由原NPZ实际字节
-   求得，并随后与data_audit及protocol.source_data_sha256交叉校验。
-   当前16stage的data摘要全匹配；本复核重新hash NPZ字节，亦一致。
-   未解码NPZ中的任何数组，更没有读取test标签或当前预测。
-4. setup新增stage.fixed_endpoint_step==8000，以及output_directory等于
-   原run目录。16stage的实际元数据均符合。各stage当前文件SHA也与新
-   冻结checkpoint_manifest中的stage_sha256一致。
-5. evaluate中CP既绑定stage.data_sha，又直接断言与protocol源数据摘要
-   相同；另外断言CP.fixed_endpoint_step==8000、output_directory等于
-   该固定8000CP父目录。先前提出的身份链硬化已实际进入冻结源码。
-   原有CP文件SHA、run_id/architecture/step/protocol/source/init/RNG、
-   finite8000梯度/source_model_run断言仍保留。
-6. 初始文件先要求已存在、读取元数据/文件SHA，未调用initial()；16job
-   引用的两架构step0元数据实际actual_initial_identity_verified=True且
-   protocol摘要匹配。不会在缺失初始化时补造新权重。
-7. verify在评价和终局audit入口都断言protected_before.json摘要与freeze
-   相同；终局audit再复算清单548个登记文件的内容摘要。保护清单身份
-   未被锚定的问题已解决，原全权重/SHA保护与无训练进程审计仍保留。
+Independently read current code, freeze/protocol,16 stages, and initialization metadata:
+1. All29 newly frozen source SHAs agree (3 new diagnostic sources+26 original frozen dependencies).
+   Protocol-byte digest matches freeze; protection-manifest-byte digest also matches freeze.
+   Original protocol/freeze match references in new protocol; original source_version was
+   independently recomputed from canonical JSON of original frozen-source mappings, matching new protocol.
+2. checkpoint_manifest contains16 unique run_ids; every field of each job matches original training_manifest,
+   without adding new models or selecting historical stages.
+3. setup adds stage.data_sha256==source_data_digest: digest comes from actual original NPZ bytes,
+   then cross-checks data_audit and protocol.source_data_sha256.
+   All 16 current stage data digests agree; this review rehashed NPZ bytes, also matching.
+   No NPZ arrays were decoded, nor test labels/current predictions read.
+4. setup adds stage.fixed_endpoint_step==8000 and output_directory equal to
+   the original run directory. All 16 stage metadata comply; current stage SHAs also match new
+   frozen checkpoint_manifest stage_sha256 values.
+5. evaluate binds checkpoint to stage.data_sha and directly asserts equality with the protocol source-data digest;
+   it also asserts CP.fixed_endpoint_step==8000 and output_directory equal to
+   the fixed8000 checkpoint parent. Previously suggested identity-chain hardening is in the frozen source.
+   Original checkpoint-file SHA, run_id/architecture/step/protocol/source/init/RNG,
+   finite8000 gradients, and source_model_run assertions remain.
+6. Initialization files must exist before metadata/SHA loading; initial() is not called. The16 jobs reference
+   two architectures' step0 metadata with actual_initial_identity_verified=True and
+   matching protocol digests. Missing initializations are not replaced with newly constructed weights.
+7. verify asserts protected_before.json digest equals freeze at both evaluation/final-audit entry;
+   final audit recomputes content digests for548 registered files. Protection-manifest identity
+   anchoring is resolved; original full-weight/SHA protection and no-training-process audits remain.
 
-前向本身未因硬化改变
-仍是eval/inference_mode、FP32参数与forward、明确禁用autocast/TF32，
-固定batch128且每长度按原索引顺序；答案位置2n+5，EOS位置2n+6且给定
-真值答案。协议仍仅允许8个train/validation字段、identity action，188类
-CE/full-vocab准确率、combined=(answerCE+EOSCE)/2。不引入test/CKA。
+Forward computation is unchanged by hardening
+Still eval/inference_mode, FP32 parameters/forwards, explicitly disabled autocast/TF32,
+fixed batch128 in original index order within length; answer at2n+5, EOS at2n+6 given
+true answers. Protocol permits only8 train/validation fields, identity action,188-class
+CE/full-vocabulary accuracy, and combined=(answerCE+EOSCE)/2. No test/CKA introduced.
 
-边界与结论
-本复核没有torch-load最终CP，没有重复计算全部548项旧文件SHA，也未
-阅读推理数值结果；这些内容由冻结evaluate/终局audit和独立聚合负责。
-我独立核对的是当前冻结源码/协议及登记元数据的身份链，不能据此预先
-宣布147456前向读数、320项validation复现或旧权重终局审计均已通过。
-548项保护证明仍限于登记集合，不声称覆盖所有未登记旧二进制。
+Boundaries and conclusions
+This review did not torch-load final checkpoints, rehash all548 historical files, or
+read numerical inference results; frozen evaluate/final audit and independent aggregation handle these.
+I independently checked identity chains in current frozen source/protocol/registered metadata, which cannot establish in advance
+that147456 forward readouts,320 validation reproductions, or final historical-weight audits passed.
+548-file protection still covers only registered files, not every unregistered historical binary.
 
-冻结前提出的stage/cp数据绑定、固定endpoint/output_directory和保护清单
-摘要三项建议均已处理，未发现当前冻结评价的阻断问题。完成本次只读
-来源复核后停止，没有修改冻结代码、旧结果、检查点或F17。
+The three pre-freeze recommendations—stage/checkpoint data binding, fixed endpoint/output_directory, and protection-manifest
+digest—are addressed; no blocker for current frozen evaluation was found. Stop after this read-only
+provenance verification; no frozen code, historical results, checkpoints, or F17 were modified.

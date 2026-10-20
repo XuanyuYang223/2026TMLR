@@ -453,16 +453,16 @@ def report():
         'gamma_not_used_for_gate':True,'development_excluded_from_confirmation':True,
         'formal_training_started':False,'user_selected_stop_after_preflight':True}
     json_write(ROOT/'engineering_complete.json',rec)
-    lines=['PermWorld 编码工程预跑（开发实验，不计入正式确认）','',f'工程通过状态：{rec["status"]}',
-        '四性质×两编码，各20,000更新；正式模型、数据世界和种子均未使用。',
-        '小样本真实学习率拟合、单独答案/EOS、有限梯度、掩码和因果端点检查见overfit_summary.json。',
-        '独立进程从1000恢复并与连续2000步比较，见resume_validation.json。',
-        '全部逐长度普通CKA由激活矩阵另一条路径重算，另用原始注意力/无任务前缀复核激活，见independent_evaluation.json。','',
-        '编码 / 性质 / 初始测试准确率 / 最终测试准确率 / 最终验证准确率']
+    lines=['PermWorld Encoding engineering preflight (development only; excluded from formal confirmation)','',f'Engineering-pass status: {rec["status"]}',
+        'Four properties x two encodings, each 20,000 updates; formal models, data worlds, and seeds are unused.',
+        'Small-sample real-learning-rate fit, separate answer /EOS, finite gradients, masks, and causal-endpoint checks: overfit_summary.json.',
+        'An independent process restores from 1000 and compares against continuous 2000 steps; see resume_validation.json.',
+        'All per-length ordinary CKA values are recomputed via an independent activation-matrix path; raw attention / task-free prefixes also verify activations; see independent_evaluation.json.','',
+        'Encoding  / Property / Initial test accuracy / Final test accuracy / Final validation accuracy']
     for m in models:lines.append(f'{m["encoding"]} / {m["task"]}: {100*m["initial_test_accuracy"]:.2f}% / {100*m["final_test_accuracy"]:.2f}% / {100*m["final_validation_accuracy"]:.2f}%')
-    lines+=['','Gamma0 / Gamma_t / Gamma_Delta：仅开发描述，不作正式推断，不作为通过标准。']
+    lines+=['','Gamma0 / Gamma_t / Gamma_Delta: development description only, not formal inference or a pass criterion.']
     for row in interactions:lines.append(str(row))
-    lines+=['','本轮完成后停止，不启动固定正式清单。F17、旧诊断和发布产物另行核验保持不变。']
+    lines+=['','Stop after completion; do not launch the fixed formal manifest.F17, legacy diagnostics, and release artifacts were separately checked unchanged in this round.']
     (ROOT/'report.txt').write_text('\n'.join(lines)+'\n')
     print(rec,flush=True)
 

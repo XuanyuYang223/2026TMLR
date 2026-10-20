@@ -1,27 +1,27 @@
-当前表征研究：只读大产物盘点；未打包、未上传、未训练、未修改原件。
+Current representation research: read-only inventory of large artifacts; no packaging, uploading, training, or modification of originals in this inventory round.
 
-现存逻辑文件 5366；唯一内容对象 4959；唯一总bytes 71338282465。
+Existing logical files: 5366; unique content objects: 4959; total unique bytes: 71338282465.
 
-建议release去重对象payload 70823685969 bytes；原容积分包建议 75包、单包不超过1.5GiB。Root可进一步采用约1.3GiB raw bins并Zstd压缩。
+Suggested deduplicated release-object payload: 70823685969 bytes; initial volume-based recommendation: 75 packages, each at most 1.5GiB. Root may instead use approximately 1.3GiB raw bins and Zstd compression.
 
-最大实际单文件 305238128 bytes：/mnt/yangx-projects-f/20261010/permworld_learnability/worlds/historical_input_hashes.npy；无单源超1.5GiB。
+Largest actual source file: 305238128 bytes, /mnt/yangx-projects-f/20261010/permworld_learnability/worlds/historical_input_hashes.npy; no individual source exceeds 1.5GiB.
 
-实际引用文件缺失 0；记录SHA不一致 0（详见inventory_summary.json，不能静默改科学文件）。
+Missing actually referenced files: 0; recorded-SHA mismatches: 0 (see inventory_summary.json; scientific files must not be silently changed).
 
-历史初始化原身份未验证 180 个逻辑位置 / 128 个独立checkpoint内容；此科学缺口不会用同seed训练或重建补成verified。
+Unverified historical original-initialization identities: 180 logical positions / 128 distinct checkpoint contents. This scientific gap is not upgraded to verified through same-seed training or reconstruction.
 
-当前64 Perm+4 Graph+8 Matrix共76源终点使用真实保存initial引用；旧C级构造重建来源单列，不升级为真实step0。
+The current 64 Perm + 4 Graph + 8 Matrix = 76 source endpoints reference genuinely saved initials; earlier class-C constructor-reconstructed references are listed separately and not upgraded to genuine step0.
 
-旧2026-10-09 release本地记录 5包，共8423198720 bytes；与本次逐文件SHA相同的既有成员228。仅元数据盘点，未重新下载远程、未改已有release、不默认替代本次新release。
+Local records of the old 2026-10-09 release contain 5 packages totaling 8423198720 bytes; 228 existing members match the present per-file SHA. This is metadata inventory only: remote packages were not downloaded again, the existing release was not modified, and it is not assumed to replace this new release.
 
-完整历史16m原训练corpus的200manifest列出shards已纳入：当前固定表/激活复算不依赖重抽全corpus，历史输入排除/生成重跑则需它们。
+Shards listed by the 200 manifests of the complete historical 16m training corpus are included. Recomputing current fixed tables/activations does not require drawing the full corpus again; replaying historical-input exclusions/data generation does require it.
 
-scope_inventory的624混合源库存未全部纳入，仅evaluation_pairs实际(cohort,id) join的82层诊断源与oldCKA98源选择。Pair内陈旧checkpoint字符串不用于文件选择。
+The mixed 624-source scope_inventory is not included in full. Selection uses only the 82 layer-diagnostic sources and oldCKA98 sources actually joined by evaluation_pairs (cohort,id). Stale checkpoint strings inside pairs are not used for file selection.
 
-不扫描整盘/venv、不上传已有tar临时重复件、不纳入pure protected_old F17、独立LIS迁移/零空间/GELU/旧矩阵组合研究。
+No whole-disk/venv scan, no upload of redundant existing tar temporaries, and no inclusion of pure protected_old F17, independent LIS transfer/null-space/GELU/old matrix-composition research.
 
-输出接口：publish_mapping.jsonl 每行含logical_path/source_path/bytes/sha256/experiment/role；content_objects.json提供每SHA唯一regular-file源，所有logical_paths仍保留。
+Output interface: each publish_mapping.jsonl line contains logical_path/source_path/bytes/sha256/experiment/role; content_objects.json supplies one regular-file source per SHA, retaining all logical_paths.
 
-原科学冻结绝对路径不改字节；发布恢复工具必须依据logical mapping迁移路径，不通过重训练替代缺失原权重。
+Frozen original scientific absolute-path records retain their bytes in this inventory round. Publication/restoration tools must relocate through logical mappings, not replace missing original weights with retraining.
 
-Matrix caveat原样：completed_with_verification_caveat；8/8 true20k；64 passed、2 failed、6 undefined_consistent；scientific_analysis_complete=false。盘点/发布成功不等于科学核验通过。
+Original Matrix caveat: completed_with_verification_caveat; 8/8 true20k; 64 passed, 2 failed, 6 undefined_consistent; scientific_analysis_complete=false. Successful inventory/publication does not imply scientific verification passed.

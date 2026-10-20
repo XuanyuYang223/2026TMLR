@@ -24,9 +24,9 @@
     0.3333333333333333
   ],
   "category_counts": {
-    "两者不足：拟合/优化不足候选": 5,
-    "两者充分：本条件掌握": 6,
-    "训练充分、验证不足：泛化不足候选": 5
+    "Both insufficient: candidate fitting/optimization deficit": 5,
+    "Both sufficient: mastery in this condition": 6,
+    "Training sufficient, validation insufficient: candidate generalization deficit": 5
   },
   "descriptive_thresholds": {
     "mean_answer_accuracy_min": 0.9,

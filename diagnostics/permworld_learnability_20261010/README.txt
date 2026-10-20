@@ -1,66 +1,66 @@
-PermWorld：验证集驱动的可学习性开发，2026-10-10
+PermWorld: validation-driven learnability development, 2026-10-10
 
-本轮已完成并停止。16/16模型均完成固定8k更新及最终验证；GPU阶段
-实际墙钟1703.47秒（28.39分钟，含工程/验证/保存），低于2h上限。
-6/16个模型通过预定学习门槛，0/8编码任务对通过联合门槛；因此没有
-找到共同充分学习设置，没有新几何确认、独立确认训练或GroupWorld。
-简短中文入口：completion_reader_report.html / .txt。
-完整报告：learnability_report.html / .txt；逐长度、曲线、门槛CSV和
-8张固定图均已保存。407个受保护旧产物哈希保持一致，F17未修改。
-completion_audit.json含源码/真实初始化/检查点/预算/停止审计；
-independent_learning_audit.json独立复算报告，不是重做模型前向。
+This round is completed and stopped.16/16 models completed fixed 8k updates and final validation; GPU-stage
+actual wall clock1703.47 seconds (28.39 minutes including engineering/validation/saving), below the2h limit.
+6/16 models passed prespecified learning gates and0/8 encoding/task pairs passed joint gates; thus no
+joint sufficiently learned setting was found, and no new geometry confirmation, independent confirmation training, or GroupWorld occurred.
+Brief English entry: completion_reader_report.html / .txt.
+Complete report: learnability_report.html / .txt; per-length, curve, and gate CSVs and
+8 fixed figures are saved.407 protected historical hashes agree; F17 was not modified.
+completion_audit.json records source/genuine-initialization/checkpoint/budget/stopping audits;
+independent_learning_audit.json independently recomputes reports, without new model forwards.
 
-本轮数据生成、CPU检查、CUDA恢复、开发训练和报告命令已全部执行，
-不要为了读结果重启develop。只读重建报告可以显式使用--stage report。
+Data generation, CPU checks, CUDA restoration, development training, and report commands have all run;
+do not restart develop to read results. Read-only report rebuilding may explicitly use --stage report.
 
-本轮承接已完成的多层分析与16模型开发预跑。新增工作先核查已有
-训练曲线、逐长度答案准确率和训练长度众数，再运行一个预先固定的
-较短长度窗口开发方案。旧CKA/Delta不参与配置、长度或检查点选择。
+This round follows completed multilayer analysis and the16-model development pilot. New work first inspects existing
+training curves, per-length answer accuracy, and training length modes, then runs one prespecified
+shorter-window development scheme. Historical CKA/Delta does not select configuration, length, or checkpoint.
 
-旧诊断入口：old_learning_diagnosis.txt，以及同名CSV/plots/audit产物。
-代码审查：code_readiness_review.txt、independent_code_review.txt。
-独立成本建议：protocol_review.txt；其建议不是最终协议，protocol.json
-才是冻结方案（例如本轮验证集为每长度1024，均值编码差界为5pp）。
+Historical diagnostic entry: old_learning_diagnosis.txt and corresponding CSV/plots/audit artifacts.
+Code reviews: code_readiness_review.txt, independent_code_review.txt.
+Independent cost recommendations: protocol_review.txt; recommendations are not the final protocol; protocol.json
+is the frozen scheme (e.g.,1024 validation inputs/length and5pp mean encoding-gap bound).
 
-唯一开发方案：n10..12、下降/逆下降/峰/谷、两编码、Transformer/GRU。
-小模型仍256维4层（Transformer8头）。新数据、真实保存step0；同架构
-任务及编码共享初始参数。更新8k，batch64、microbatch64、LR1e-3、
-warmup400、dropout0，其余旧AdamW参数不变。多个训练因素同时改变，
-不能把任何提升归因于某一个单独因素。
+Single development scheme: n10..12, descents/recoils/peaks/valleys, both encodings, Transformer/GRU.
+Small models remain width256/four layers (Transformer8 heads). Fresh data, genuinely saved step0; tasks
+and encodings share initial parameters within architecture.8k updates, batch64, microbatch64, LR1e-3,
+warmup400, dropout0, with remaining AdamW settings unchanged. Multiple training factors change together,
+so no improvement can be attributed to one factor alone.
 
-学习资格在训练前冻结：均值答案准确率≥90%、各长度≥85%、超过由
-训练标签定义的长度众数≥20pp、EOS≥99%，两编码同架构同任务的
-均值与最大逐长度精度差均≤5pp。部分2k/4k不代替固定8k最终资格。
-这些是开发资格门槛，不是统计等价检验或独立数学机制的判据。
+Learning qualification frozen before training: mean answer accuracy ≥90%, each length≥85%, gain over
+the training-label-defined length mode≥20pp, EOS≥99%, and within-task/architecture encoding
+gaps≤5pp for both mean and maximum per-length accuracy. Partial2k/4k does not replace fixed 8k final qualification.
+These are development gates, not statistical-equivalence tests or evidence of independent mathematical mechanisms.
 
-训练先2k覆盖全部16条件，然后固定4k、8k；不按效果删任务或挑指标。
-GPU阶段总壁钟上限7200秒，其中最后30秒预留收尾。所有来源、初始化、
-协议、源版本、实际step、样本曝光与耗时均保留。工程检查含CPU已知
-logits/损失/causal独立验证，以及真实CUDA32连续对比16+32独立进程恢复。
-成本截止时不再更新，不把缺失最终验证的状态冒充完整模型。
+First cover all16 conditions at2k, then fixed4k/8k; never drop tasks or select metrics based on effects.
+GPU-stage total wall-clock limit7200 seconds, with final30 seconds reserved for cleanup. All provenance, initialization,
+protocol, source version, actual steps, sample exposure, and time are retained. Engineering checks include CPU known
+logit/loss/causal independent validation and genuine CUDA continuous32 versus16+32 restoration in independent processes.
+No updates after cutoff; states missing final validation are not described as complete models.
 
-训练/验证仅使用identity任务样本；学习驱动不加载预留test数组、不
-评价测试集或CKA。数据生成和划分审计检查所有split的轨道，这是
-数据身份/隔离检查，不是测试集选方案。候选与上一轮所有训练、验证、
-测试输入所在八元轨道均排除；两编码共用底层对象、标签与批次。
+Training/validation use identity-task samples only; the learning driver does not load reserved test arrays,
+evaluate tests, or compute CKA. Generation/split audits inspect all-split orbits for
+data identity/isolation, not test-based selection. Exclude eight-element orbits containing any candidate or previous-round train/validation/
+test inputs; both encodings share underlying objects, labels, and batches.
 
-大产物：/mnt/yangx-projects-f/20261010/permworld_learnability/
-代码：experiments/permworld_learnability_20261010/
-本目录保存冻结协议、源码哈希、报告、CSV及图。F17与上一轮PermWorld
-报告/数据/代码只读保护，见protected_legacy_before.json。
+Large artifacts: /mnt/yangx-projects-f/20261010/permworld_learnability/
+Code: experiments/permworld_learnability_20261010/
+This directory stores frozen protocol, source hashes, reports, CSVs, and figures. F17 and previous-round PermWorld
+reports/data/code are protected read-only; see protected_legacy_before.json.
 
-各阶段均是显式命令；不要为了读报告运行develop：
+Stages are explicit commands; do not run develop just to read reports:
   .venv/bin/python -m experiments.permworld_learnability_20261010 --stage setup
   .venv/bin/python -m experiments.permworld_learnability_20261010 --stage prepare
   .venv/bin/python -m experiments.permworld_learnability_20261010 --stage cpu-check
   .venv/bin/python -m experiments.permworld_learnability_20261010 --stage develop
   .venv/bin/python -m experiments.permworld_learnability_20261010 --stage report
 
-独立只读验证：
+Independent read-only validation:
   .venv/bin/python diagnostics/permworld_learnability_20261010/completion_audit.py
   .venv/bin/python diagnostics/permworld_learnability_20261010/independent_learning_audit.py --run-real
   .venv/bin/python diagnostics/permworld_learnability_20261010/completion_reader.py
 
-若共同学习门槛未达到，保留全部负结果并停止，不用新几何结果替代。
-若达到，先冻结独立新世界/新初始化验证清单；开发不能当作确认。
-本轮没有GroupWorld、F17修改、额外候选、正式几何训练或自动扩容。
+If joint learning gates fail, preserve every negative result and stop; do not replace with new geometry results.
+If gates pass, first freeze an independent fresh-world/fresh-initialization validation manifest; development is not confirmation.
+No GroupWorld, F17 edits, extra candidates, formal geometry training, or automatic scaling this round.

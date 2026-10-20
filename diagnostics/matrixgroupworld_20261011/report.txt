@@ -1,52 +1,52 @@
-当前状态：completed_with_verification_caveat；实际完整20k终点 8/8。
+Run state: completed_with_verification_caveat; 8/8 fixed 20,000-update endpoints are complete.
 
-全部正式模型、缓存和固定表已生成，但独立数值核验未全部通过；本报告完整展示保存结果，不能称fully verified或scientific_analysis_complete。核验只覆盖预定第一单元R1/n6的固定64样本子集，不是全部432生产格。
+All fixed endpoints, caches and result tables are available, but numerical verification is not fully passed. The saved results are reported with a verification caveat; scientific_analysis_complete remains false. Verification covers the prescribed first-unit R1/n6 subset of 64 inputs, not every production cell.
 
-保存的核验状态：{'passed': 64, 'failed': 2, 'undefined_consistent': 6}；288个分层选择核验保留原记录。预定普通CKA、Procrustes及隐藏空间kNN未记录失败；一致的未定义值仍未定义。
+Saved verification counts: {'passed': 64, 'failed': 2, 'undefined_consistent': 6}; the 288 selector checks retain their original records. No failures were recorded for the planned ordinary CKA, Procrustes or hidden-state kNN checks; consistently undefined checks remain undefined.
 
-核验失败：unit001/R1/6/raw_within_n/output_prob/trained/correct/knn_overlap；生产值=0.6，独立值=0.6015625，差=0.0015625，冻结容差=1e-08。不修改方法、数据、容差或原核验结果。
+Failed verification: unit001/R1/6/raw_within_n/output_prob/trained/correct/knn_overlap; production=0.6, independent=0.6015625, absolute difference=0.0015625, frozen tolerance=1e-08. Methods, data, tolerance and the original verification result are unchanged.
 
-核验失败：unit001/R1/6/raw_within_n/output_prob/trained/wrong/knn_overlap；生产值=0.165625，独立值=0.1671875，差=0.0015625，冻结容差=1e-08。不修改方法、数据、容差或原核验结果。
+Failed verification: unit001/R1/6/raw_within_n/output_prob/trained/wrong/knn_overlap; production=0.165625, independent=0.1671875, absolute difference=0.0015625, frozen tolerance=1e-08. Methods, data, tolerance and the original verification result are unchanged.
 
-只读诊断已重现原两条计算路径：近onehot而非完全饱和的概率向量，在约10⁻¹³量级的平方距离上，Gram相减的约2.9×10⁻¹⁵舍入误差改变邻居边界；错误分支的极小中心化舍入也影响Gram并列边界。两项分数差各对应64×10计数中的1个邻居。诊断定位了这批保存数组的数值差异，不替代冻结方法，也不把原failed改为通过。输出kNN保留限制，主CKA按预定已核验范围解读。
+The read-only diagnosis reproduced both original arithmetic paths. For near-onehot, not exactly saturated vectors, Gram-subtraction roundoff of about 2.9e-15 at squared distances near 1e-13 reverses neighborhood boundaries; tiny preceding centering roundoff also affects a Gram boundary tie in the wrong branch. Each score discrepancy is one neighbor count out of 64×10. This localization does not replace the frozen method or turn the original failed verification into a pass.
 
-源任务：8个最终模型的恒等分析输入、全188词表答案准确率范围为 68.10%–100.00%；相对训练集固定长度众数的差为 +39.26–+71.94 个百分点。逐n成绩与CE、EOS全部保留；没有额外设定学习成功阈值。
+On identity analysis inputs, full-vocabulary answer accuracy spans 68.10%–100.00%, with gains of +39.26–+71.94 percentage points over the train-defined per-size mode. Per-size accuracy, CE and teacher-conditioned EOS are retained without adding a mastery threshold.
 
-普通prefix CKA总览（raw，全部两单元×四关系）：Bt正 8/8、Delta正 6/8；负/零/未定义分别见全表。正确配对相对错误的优势与相对初始化的增量分开。
+Across all two-unit/four-relation prefix-state ordinary-CKA cells (raw_within_n), Bt is positive in 8/8 and Delta in 6/8. Pairing preference and increment over initialization are separate quantities.
 
-普通prefix CKA总览（答案控制，全部两单元×四关系）：Bt正 5/8、Delta正 5/8；负/零/未定义分别见全表。正确配对相对错误的优势与相对初始化的增量分开。
+Across all two-unit/four-relation prefix-state ordinary-CKA cells (answer_strata), Bt is positive in 5/8 and Delta in 5/8. Pairing preference and increment over initialization are separate quantities.
 
-主要R1/R3，答案控制后普通CKA的4格：Bt 正/负/零/未定义=2/2/0/0；Delta=2/2/0/0。这些是共享任务与关系的描述格数，不是独立重复。
+Primary R1/R3: controlled ordinary-CKA Bt positive/negative/zero/undefined counts are 2/2/0/0; Delta counts are 2/2/0/0. These coupled cells are descriptive counts, not independent replications.
 
-补充R2/R4，答案控制后普通CKA的4格：Bt 正/负/零/未定义=3/1/0/0；Delta=3/1/0/0。这些是共享任务与关系的描述格数，不是独立重复。
+Supplementary R2/R4: controlled ordinary-CKA Bt positive/negative/zero/undefined counts are 3/1/0/0; Delta counts are 3/1/0/0. These coupled cells are descriptive counts, not independent replications.
 
-主要R1的答案控制分解：unit001: Bt=-0.019384, Delta=-0.020747, dc=-0.702156, du=-0.681409; unit002: Bt=-0.014022, Delta=-0.014551, dc=-0.820930, du=-0.806379。
+Controlled decomposition for primary R1: unit001: Bt=-0.019384, Delta=-0.020747, dc=-0.702156, du=-0.681409; unit002: Bt=-0.014022, Delta=-0.014551, dc=-0.820930, du=-0.806379.
 
-主要R3的答案控制分解：unit001: Bt=+0.024464, Delta=+0.048498, dc=-0.800773, du=-0.849270; unit002: Bt=+0.107608, Delta=+0.121332, dc=-0.755736, du=-0.877068。
+Controlled decomposition for primary R3: unit001: Bt=+0.024464, Delta=+0.048498, dc=-0.800773, du=-0.849270; unit002: Bt=+0.107608, Delta=+0.121332, dc=-0.755736, du=-0.877068.
 
-R3的F3源在n10未充分学会，限制跨规模机制解释；其恒等分析成绩为 unit001: accuracy=35.55%, train-mode baseline=28.32%, CE=1.339555; unit002: accuracy=31.64%, train-mode baseline=24.22%, CE=1.582684。R3正Delta仍必须与这些源学习差异一起报告，不能称正确几何普遍趋同。
+F3 remains weak at n10, limiting the interpretation of R3 across scales: unit001: accuracy=35.55%, train-mode baseline=28.32%, CE=1.339555; unit002: accuracy=31.64%, train-mode baseline=24.22%, CE=1.582684. Positive R3 Delta must be read alongside these source-learning differences, rather than as universal convergence of the correct geometry.
 
-n10完整源评价 unit001/F3：train=45.61% (CE=1.213319), validation=40.23% (CE=1.345720), analysis=35.55% (CE=1.339555)。
+Complete n10 source evaluation unit001/F3: train=45.61% (CE=1.213319), validation=40.23% (CE=1.345720), analysis=35.55% (CE=1.339555).
 
-n10完整源评价 unit001/F4：train=99.73% (CE=0.009258), validation=99.22% (CE=0.033273), analysis=99.80% (CE=0.012523)。
+Complete n10 source evaluation unit001/F4: train=99.73% (CE=0.009258), validation=99.22% (CE=0.033273), analysis=99.80% (CE=0.012523).
 
-n10完整源评价 unit002/F3：train=39.21% (CE=1.437446), validation=31.25% (CE=1.689814), analysis=31.64% (CE=1.582684)。
+Complete n10 source evaluation unit002/F3: train=39.21% (CE=1.437446), validation=31.25% (CE=1.689814), analysis=31.64% (CE=1.582684).
 
-n10完整源评价 unit002/F4：train=48.49% (CE=1.175277), validation=35.55% (CE=1.493230), analysis=31.25% (CE=1.679454)。
+Complete n10 source evaluation unit002/F4: train=48.49% (CE=1.175277), validation=35.55% (CE=1.493230), analysis=31.25% (CE=1.679454).
 
-F3的两单元和F4的第二单元在n10的完整训练集成绩也低，不能仅用验证/分析集过拟合解释；具体原因尚未识别，固定预算不追加训练。
+At n10, both F3 units and the second F4 unit also have low full-training-set accuracy. The weakness cannot be attributed solely to validation/analysis generalization; its cause is not identified and the fixed budget is not extended.
 
-固定正确T、遍历其余任务的单独比较：训练后答案控制下，指定对应排名第一 4/8 格，其中三候选完整且无并列的第一为4格；高于另两候选均值为5格。平均优势与超过每个候选分开，排名不称作Bt或Delta。
+For the separate fixed-T task comparison, the designated task ranks first in 4/8 finite controlled trained cells (4 complete, uniquely first), and exceeds the mean of the other candidates in 5. Candidate rankings are distinct from Bt and Delta.
 
-同一固定T任务对统计的raw版本：指定对应排名第一 8/8；答案控制下第一 4/8、高于候选均值 5/8。这与前面的正确-错误Bt/Delta是两类问题，不合并计数。
+The raw fixed-T comparison ranks the designated task first in 8/8, versus 4/8 after answer control and 5/8 above the alternative mean. These are not counts of correct-versus-wrong Bt or Delta.
 
-Bt方向：三指标一致 5/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。
+Bt directions agree across the three metrics in 5/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.
 
-Delta方向：三指标一致 6/8 个完整格；普通CKA两独立单元同向 3/4 条有限关系。近零符号没有不确定性或显著性解释，缺值不计作一致。
+Delta directions agree across the three metrics in 6/8 complete cells; ordinary CKA agrees across the two units for 3/4 finite relations. Near-zero signs have no significance interpretation; undefined values are not agreement.
 
-两单元仅独立重复第三领域。GL输入、转置与固定左右乘法不证明学习了群乘法；这些weight公式也成立于一般二值方阵。本轮不做编码交互或层搜索，不能据此取代PermWorld的编码解释或独立复现旧领域。
+The two units independently repeat only this third domain. GL inputs and transpose/fixed multiplication actions do not establish learned group multiplication; the weight identities also hold for general binary square matrices. This study does not test encoding interactions, search layers or independently reproduce the previous domains.
 
-保存的各领域答案控制指定主表计数：PermWorld32: Bt+ 26/32, Delta+ 18/32; GraphWorld4: Bt+ 2/4, Delta+ 0/4; MatrixGroupWorld8: Bt+ 5/8, Delta+ 5/8。Graph这里仅原四格答案控制，未混入答案+精确边数敏感性。共同点是Bt、Delta与控制必须分开；不同是正负分布及本轮R1的指标方向冲突。条件、关系、控制和学习程度均不同，不能把这些比例比较成跨领域效应，也不能合并为独立样本。
+Saved designated answer-controlled endpoint counts: PermWorld32: Bt+ 26/32, Delta+ 18/32; GraphWorld4: Bt+ 2/4, Delta+ 0/4; MatrixGroupWorld8: Bt+ 5/8, Delta+ 5/8. Graph counts use only its original four answer-controlled cells, excluding the answer-plus-exact-edge-count sensitivity. Bt, Delta and control effects require separate interpretation in every domain; sign distributions and the present R1 metric disagreement differ. Conditions, relations, controls and source learning differ, so these proportions are neither cross-domain effect estimates nor pooled independent samples.
 
 English results
 
@@ -100,12 +100,12 @@ The two units independently repeat only this third domain. GL inputs and transpo
 
 Saved designated answer-controlled endpoint counts: PermWorld32: Bt+ 26/32, Delta+ 18/32; GraphWorld4: Bt+ 2/4, Delta+ 0/4; MatrixGroupWorld8: Bt+ 5/8, Delta+ 5/8. Graph counts use only its original four answer-controlled cells, excluding the answer-plus-exact-edge-count sensitivity. Bt, Delta and control effects require separate interpretation in every domain; sign distributions and the present R1 metric disagreement differ. Conditions, relations, controls and source learning differ, so these proportions are neither cross-domain effect estimates nor pooled independent samples.
 
-范围：两世界+真实初始化，8×20k；R1/R3主要，R2/R4补充。
-B0、Bt、dc、du、Delta及raw/答案控制分别报告；NaN不填0、不换权重。
-固定T任务对排名与正确-错误Bt/Delta分开。
-同unit克隆初始状态下，固定f/T的raw初始化候选应相等；答案分层初始差异可来自right-specific样本支持/中心化，不能当初始模型任务几何不同。实际min/max与缓存逐值核对元信息见HTML。
-输出概率完整188类；EOS给定真答案。hiddenDelta-outputDelta不是机制估计。
-只有两独立第三领域单元，不把4关系/3n/3指标/24候选算独立重复。
-工程/预算未完成不包装成负科学结果。GPU阶段墙钟、CPU外部墙钟与源进程墙钟分别计账；kernel活跃时间未知。
-只读全部保存结果，停止后不扩训练、不发GitHub、不改旧结果或F17。
-完整表、工程、审计和历史范围见report.html。
+Scope: two data worlds plus genuine initializations, 8×20k; R1/R3 primary, R2/R4 supplementary.
+Report B0, Bt, dc, du, Delta and raw/answer controls separately; do not replace NaN by 0 or change weights.
+Fixed-T task-pair ranks are separate from correct-minus-wrong Bt/Delta.
+With cloned initial states within a unit, raw initial candidates at fixed f/T should coincide. Answer-stratified initial differences may reflect right-specific sample support/centering, not task-specific geometry of different initial models. See HTML for actual min/max and bitwise cache-check metadata.
+Output probabilities cover all 188 classes; EOS is conditioned on the true answer. hiddenDelta-outputDelta is not a mechanism estimate.
+Only two independent third-domain units are available; 4 relations/3 n values/3 metrics/24 candidates are not independent replications.
+Incomplete engineering/budget execution is not a negative scientific result. Account separately for GPU-stage wall time, external CPU wall time, and source-process wall time; active kernel time is unknown.
+Read saved results only; after stopping, do not extend training, publish to GitHub, or modify previous results or F17.
+See report.html for complete tables, engineering, audits, and historical scope.

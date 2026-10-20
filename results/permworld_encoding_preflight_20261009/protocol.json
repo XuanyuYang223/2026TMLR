@@ -2,7 +2,7 @@
   "protocol_version": "permworld-encoding-engineering-preflight/v1",
   "status": "frozen_before_real_development_training",
   "registered_utc": "2026-10-09T21:45:52.920706+00:00",
-  "research_question": "输入编码如何影响训练对变换配对选择性的重塑？",
+  "research_question": "How does input encoding affect training-induced reshaping of transformation-pairing selectivity?",
   "phase_authorized_now": "implementation, verification, protocol and cost planning only; formal training not launched",
   "output": "results/permworld_encoding_preflight_20261009/development",
   "freeze_manifest": "results/permworld_encoding_preflight_20261009/freeze_manifest.json",

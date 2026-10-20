@@ -19,10 +19,10 @@ if __package__ in (None, ''):
 from experiments.permworld_eight_relations_20261010.analysis_helpers import *
 
 DISPLAY = {
-    'descent_inverse': '下降数—逆下降数', 'peak_complement': '峰—谷',
-    'fixed_complement': '不动点—反不动点', 'exceedance_inverse': '超越数—亏缺数',
-    'subsequence_complement': 'LIS—LDS', 'run_complement': '上升连续段—下降连续段',
-    'record_complement': '左至右极大—极小记录', 'decomposition_complement': '全局下降数—组件数(+1)',
+    'descent_inverse': 'Descents—inverse descents', 'peak_complement': 'Peaks—valleys',
+    'fixed_complement': 'Fixed points—anti-fixed points', 'exceedance_inverse': 'Exceedances—deficiencies',
+    'subsequence_complement': 'LIS—LDS', 'run_complement': 'Increasing runs—decreasing runs',
+    'record_complement': 'Left-to-right maximum—minimum records', 'decomposition_complement': 'Global descents—components (+1)',
 }
 FIELDS_DISPLAY = ['initial_correct', 'initial_wrong', 'initial_identity', 'trained_correct', 'trained_wrong',
                   'trained_identity', 'B0', 'Bt', 'dc', 'dw', 'Delta']
@@ -30,10 +30,10 @@ FIELDS_DISPLAY = ['initial_correct', 'initial_wrong', 'initial_identity', 'train
 
 def formatted(value):
     if isinstance(value, bool):
-        return '是' if value else '否'
+        return 'yes' if value else 'no'
     try:
         x = number(value)
-        return '未定义' if not math.isfinite(x) else f'{x:.4f}'
+        return 'undefined' if not math.isfinite(x) else f'{x:.4f}'
     except (ValueError, TypeError):
         return str(value)
 
@@ -299,37 +299,37 @@ def main():
         dependency='Representation similarity measurements alone do not identify these claims')]
     csv_write(DIAG / 'coverage_status.csv', coverage)
     parts = [
-        '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>PermWorld 八关系完整受控比较</title>',
+        '<!doctype html><html lang="en"><meta charset="utf-8"><title>Complete controlled comparison of eight PermWorld relations</title>',
         '<style>body{max-width:1500px;margin:32px auto;padding:0 20px;font:15px/1.6 sans-serif}table{border-collapse:collapse;white-space:nowrap}th,td{border:1px solid #ddd;padding:5px 9px}th{background:#eef2f7}.scroll{overflow:auto;margin:16px 0}img{max-width:100%}details{margin:12px 0}.notice{background:#fff5d9;padding:12px}</style>',
-        '<h1>数学对应如何改变表征相似性：PermWorld 八关系受控扩展</h1>',
-        '<p>本报告完整纳入一个既有数据世界、每架构一个真实初始化、64个单任务20k终点。16个旧终点及两条关系的已核验结果复用，最多补48个缺失模型；没有因为几何正负、源任务准确率或未定义指标选择子集。八个关系实例只覆盖取逆与补排列两种变换类型，32个条件不是独立重复。</p>',
-        '<p class="notice">顺序是原始相似度 S → 训练后正确/错误偏好 Bt → 相对真实初始化变化 Δ。Δ翻转不保证Bt翻转，正Δ不保证正确相似度上升；本轮属于探索性扩展，不作确认性p值、等价性或数学机制的推断。源模型容量和任务掌握程度不匹配，配置比较不等于纯架构效应。</p>',
-        '<h2>全部关系的原始相似度与分解</h2>',
-        '<p>下面是答案共同分层、任务token前输入结束位置、final norm的普通线性CKA。每一长度独立计算，再按10…30固定1/21汇总。任一长度未定义，该分量汇总仍未定义；没有长度合并、NaN填0或缺失重加权。</p>',
+        '<h1>How mathematical correspondences change representational similarity: a controlled eight-relation PermWorld extension</h1>',
+        '<p>This report includes all 64 single-task 20k endpoints from one existing data world, with one genuine initialization per architecture. Sixteen earlier endpoints and the verified results for two relations are reused, with at most 48 missing models added. No subset was selected by geometric direction, source-task accuracy, or undefined metrics. The eight relation instances cover only inversion and complement; the 32 conditions are not independent repetitions.</p>',
+        '<p class="notice">The order is original similarity S → trained correct/wrong pairing preference Bt → change relative to genuine initialization Δ. A reversal of Δ does not guarantee a reversal of Bt, and positive Δ does not guarantee increased correct-pair similarity. This is an exploratory extension without confirmatory p-values, equivalence claims, or mathematical-mechanism inference. Source-model capacities and task mastery are unmatched, so configuration comparisons do not identify a pure architecture effect.</p>',
+        '<h2>Original similarities and decompositions for all relations</h2>',
+        '<p>The following is ordinary linear CKA with joint-answer stratification at the input-end position before the task token, after final normalization. Each length is computed separately and lengths 10…30 are aggregated with fixed weight 1/21. If any length is undefined, the aggregate for that component remains undefined. Lengths are not pooled, NaNs are not filled with zero, and missing components are not reweighted.</p>',
         table(main, ['relation', 'architecture', 'encoding'] + FIELDS_DISPLAY),
-        '<p>B0=S正确,初始−S错误,初始；Bt=S正确,训练−S错误,训练；dc=正确训练−正确初始，dw=错误训练−错误初始；Δ=Bt−B0=dc−dw。恒等配对原值独立保留，不当作要超过的上限。</p>',
-        '<p>原定错误变换不保证每个样本的答案都错误；偶然仍满足公式的样本完整保留，逐长度匹配比例见relation_label_alignment.csv。尤其近乎常量的任务，错误配对也可能有很高答案匹配率，不据此修改负对照。</p>',
-        '<h2>编码、模型配置与层</h2>',
-        '<p><img src="figures/four_controlled_comparisons.png" alt="四部分统一受控比较总览：指标、模型配置、编码、层"></p>',
-        '<p>Γ固定为轮换减一行，包含Γ0、Γt、Γc、Γw、ΓΔ。需要分别判断编码改变初始化偏好还是训练后偏好。配置差为GRU减Transformer；模型参数量、计算和源学习程度都没有匹配。四个block/GRU层和final norm完整显示，norm只用于明确最后层归一化的影响，未选择最有利层。end-token embedding在逐长度内为结构常量，因此未定义不是没有学习的负证据。</p>',
+        '<p>B0=S_correct,initial−S_wrong,initial; Bt=S_correct,trained−S_wrong,trained; dc=correct_trained−correct_initial; dw=wrong_trained−wrong_initial; Δ=Bt−B0=dc−dw. Original identity-pair scores are retained separately, not treated as an upper bound that must be exceeded.</p>',
+        '<p>The originally specified wrong transformation does not guarantee a wrong answer for every sample. Samples that happen to satisfy the formula are all retained; per-length matching rates are in relation_label_alignment.csv. Especially for near-constant tasks, wrong pairings can have high answer agreement; the negative control is not changed in response.</p>',
+        '<h2>Encodings, model configurations, and layers</h2>',
+        '<p><img src="figures/four_controlled_comparisons.png" alt="Overview of four controlled comparisons: metrics, model configurations, encodings, and layers"></p>',
+        '<p>Γ is fixed as cycle notation minus one-line notation, including Γ0, Γt, Γc, Γw, and ΓΔ. Encoding effects on initial and trained preference must be distinguished. The configuration difference is GRU minus Transformer; parameter counts, compute, and source-task learning are unmatched. All four blocks/GRU layers and final normalization are shown. Normalization is listed separately to expose its effect; no favorable layer was selected. The end-token embedding is structurally constant within each length, so an undefined value is not negative evidence of learning.</p>',
         table(contrasts, ['contrast_type', 'relation', 'architecture', 'encoding', 'B0', 'Bt', 'dc', 'dw', 'Delta', 'Gamma0', 'Gammat', 'GammaDelta']),
-        '<h2>固定指标的方向与长度边界</h2>',
-        '<p>普通CKA、k=10邻域重叠、留出Procrustes分别描述不同几何。邻域使用平方欧氏距离、稳定全局anchor ID打破精确距离相等、排除自身及重复anchor；Procrustes仅在验证fit上拟合PCA rank8、RMS及正交映射，analysis输入留出，S为负NRMSE，原始误差全部保存。U-centered CKA是预定敏感性，层分析仅用这两种CKA。不同指标比较方向和模式，不比较数值幅度，也不当独立重复。</p>',
-        '<details><summary>全部64个final条件/控制的三指标方向</summary>' + table(directions,
+        '<h2>Directions under fixed metrics and length-specific limits</h2>',
+        '<p>Ordinary CKA, k=10 neighborhood overlap, and held-out Procrustes describe different geometries. Neighborhoods use squared Euclidean distance, stable global anchor IDs to break exact ties, and exclusion of self and duplicate anchors. Procrustes fits rank-8 PCA, RMS normalization, and the orthogonal map only on the validation fit split, with analysis inputs held out. S is negative NRMSE; all original errors are saved. U-centered CKA is the prespecified sensitivity analysis, and layer analyses use only these two CKA versions. Compare directions and patterns across metrics, not score magnitudes; metrics are not independent repetitions.</p>',
+        '<details><summary>Three-metric directions for all 64 final-layer condition/control combinations</summary>' + table(directions,
             ['relation', 'architecture', 'encoding', 'control', 'B0_directions', 'Bt_directions', 'dc_directions', 'dw_directions', 'Delta_directions']) + '</details>',
-        '<h2>答案、输出与源任务学习</h2>',
-        '<p>共同答案key为[n,left恒等,right恒等−offset,right补排列−offset,right取逆−offset]，每split最小组3。全局下降—组件关系明确满足components(Cπ)=global_descents(π)+1；对所有右侧key减1是双射坐标改变，分组与未平移key完全相同。任务标签、准确率和真实答案onehot/scalar仍使用实际数字，没有把不同答案误当相等。</p>',
-        '<p>旧两关系的key原dtype为int16，新协议为安全处理+1使用int64。旧CSV key哈希保持原值，current key哈希与逐值/分区/中心化一致性另存reused_key_coordinate_audit.csv；这是坐标表示差异，不是更换激活或重算旧科学指标。</p>',
-        '<p>真值分层消去组内答案均值，但不消去输出概率中的置信度、预测误差和所有非线性标签信息。静态答案基线不设初始化/训练或虚构Δ；答案分层下它们结构常量时保留未定义。输出概率是数字0…30的条件概率，不是188词表完整概率；源准确率和答案CE则使用188词表。不能用隐藏Δ减输出Δ估计额外数学机制。</p>',
-        '<details><summary>全部输出概率普通CKA对照</summary>' + table(output,
+        '<h2>Answers, outputs, and source-task learning</h2>',
+        '<p>The joint-answer key is [n,left_identity,right_identity−offset,right_complement−offset,right_inverse−offset], with minimum group size 3 in each split. The global-descents/components relation explicitly satisfies components(Cπ)=global_descents(π)+1. Subtracting 1 from every right-side key is a bijective coordinate change; groups are identical to those from unshifted keys. Task labels, accuracies, and true-answer one-hot/scalar encodings retain their actual numeric values; distinct answers are not treated as equal.</p>',
+        '<p>The original key dtype for the two earlier relations was int16; the new protocol uses int64 to handle +1 safely. Earlier CSV key hashes are preserved; current key hashes and value/partition/centering agreement are saved separately in reused_key_coordinate_audit.csv. This is a coordinate-representation difference, not a change of activations or recomputation of earlier scientific metrics.</p>',
+        '<p>Ground-truth stratification removes within-group answer means, but does not remove confidence, prediction errors, or all nonlinear label information in output probabilities. Static answer baselines are not assigned initialization/training phases or fictitious Δ; they remain undefined when structurally constant after answer stratification. Output probabilities are conditional on numeric tokens 0…30, not the full 188-token vocabulary; source accuracy and answer CE use the full vocabulary. Hidden Δ minus output Δ cannot estimate an additional mathematical mechanism.</p>',
+        '<details><summary>All ordinary-CKA output-probability controls</summary>' + table(output,
             ['relation', 'architecture', 'encoding'] + FIELDS_DISPLAY) + '</details>',
         table(source_jobs, ['task', 'architecture', 'encoding', 'answer_accuracy', 'minimum_length_accuracy',
                            'answer_ce', 'length_majority_accuracy', 'accuracy_minus_length_mode']),
-        '<p>长度众数只用原train恒等标签定义，平局取最小数字。初始CE缺失不从别的任务读出填入，旧EOS只作为原teacher-forced验证统计另列。弱学习任务仍纳入几何表，但不能据其差异推断同等掌握程度下的编码机制。</p>',
-        '<h2>32个同任务跨配置配对</h2>',
-        '<p>这里比较Transformer与GRU在同任务、同底层输入的直接CKA。它的答案key为[n,该任务恒等/补排列/取逆]，与关系任务对的共同key不同，不能混成一种效应。它描述现有配置间相似性，不能独立识别共享算法。</p>',
+        '<p>Length-specific modes use only original training identity-input labels, with ties resolved to the smallest number. Missing initial CE is not filled from another task readout; earlier EOS statistics are listed separately as the original teacher-forced validation results. Weakly learned tasks remain in the geometry tables, but their differences cannot establish encoding mechanisms at equal mastery.</p>',
+        '<h2>32 same-task cross-configuration pairings</h2>',
+        '<p>Here direct CKA compares Transformer and GRU on the same task and underlying inputs. Its answer key is [n,this_task_identity/complement/inverse], which differs from the joint key for relational task pairs and must not be conflated with that effect. It describes similarity between the existing configurations and cannot independently identify a shared algorithm.</p>',
         table(cross, ['task', 'encoding', 'control', 'metric', 'initial', 'trained', 'change']),
-        '<h2>全部预定图</h2>',
+        '<h2>All prespecified figures</h2>',
     ]
     parts.extend('<details><summary>' + html.escape(path.name) + '</summary><img src="figures/' + html.escape(path.name) + '"></details>' for path in plots)
     files = ['per_length_results.csv', 'contrast_summary.csv', 'cross_arch_same_task.csv', 'cross_arch_same_task_summary.csv',
@@ -338,18 +338,18 @@ def main():
              'relation_label_alignment.csv', 'reused_key_coordinate_audit.csv',
              'model_gap_manifest.csv', 'training_manifest.csv', 'cost_estimate.csv', 'math_label_audit.json',
              'metric_review/analysis_audit.json', 'metric_review/independent_metric_actual.json']
-    parts += ['<h2>可复现产物与本轮解释范围</h2>',
+    parts += ['<h2>Reproducible artifacts and interpretive scope</h2>',
         '<p>' + ' · '.join('<a href="' + html.escape(name) + '">' + html.escape(name) + '</a>' for name in files) + '</p>',
-        '<p>逐关系、逐条件、逐长度和指标的负值、稀疏分层及未定义结果均保留。初始化真实身份、原数据轨道划分、源代码和激活数组哈希在协议及审计中记录。当前证据只能描述数学对应下的相似性与配对偏好如何依赖这些测量和建模条件；CKA不能单独证明编码机制、数学关系的因果表示或功能收益。</p>',
-        '<p>图论四任务小试由独立协议和报告管理；它与PermWorld大小、输入结构、任务和样本分布不同，不直接相减跨域原始CKA。本报告不改F17、不改旧报告、不自动发布；完成固定图论试跑和总报告后按授权停止，不扩充种子或继续调参。</p></html>']
+        '<p>Negative values, sparse strata, and undefined results are retained for every relation, condition, length, and metric. Genuine initialization identity, original data-orbit splits, source code, and activation-array hashes are recorded in the protocol and audits. The evidence only describes how similarity and pairing preference under mathematical correspondences depend on these measurement and modeling conditions; CKA alone cannot prove encoding mechanisms, causal representations of mathematical relations, or functional benefits.</p>',
+        '<p>The four-task graph pilot has its own protocol and report. Its sizes, input structure, tasks, and sample distribution differ from PermWorld, so original CKA scores are not directly subtracted across domains. This report does not alter F17 or earlier reports and does not publish automatically. Work stops as authorized after the fixed graph pilot and combined report, without additional seeds or tuning.</p></html>']
     (DIAG / 'report.html').write_text('\n'.join(parts))
-    text = ('PermWorld八关系完整受控扩展（探索性）\n'
-            '固定原始相似度S、训练后正确−错误偏好Bt、相对真实初始化Δ的完整分解。\n'
-            '64单任务模型，32关系条件，8实例，2变换类型，21固定等权长度；它们不是独立重复。\n'
-            '旧两关系6048逐长度行及同任务672行逐值复用；新六关系同定义补齐。\n'
-            '原始相似度、答案/输出控制、弱学习、各层、三主指标及Ucenter敏感性完整保留。\n'
-            '报告路径：report.html；全数据：per_length_results.csv/contrast_summary.csv/source_learning.csv。\n'
-            '不单凭Delta翻转认定训练偏好翻转，不单凭CKA认定机制。\n')
+    text = ('Complete controlled eight-relation PermWorld extension (exploratory)\n'
+            'Fixed original similarities S, trained correct−wrong preference Bt, and complete Δ decomposition relative to genuine initialization.\n'
+            '64 single-task models, 32 relation conditions, 8 instances, 2 transformation types, and 21 fixed equally weighted lengths; these are not independent repetitions.\n'
+            'The earlier two relations reuse 6048 per-length rows and 672 same-task rows value for value; six new relations complete the scope under the same definitions.\n'
+            'Original similarities, answer/output controls, weak learning, all layers, three primary metrics, and U-centered sensitivity are all retained.\n'
+            'Report: report.html; complete data: per_length_results.csv/contrast_summary.csv/source_learning.csv.\n'
+            'A Delta reversal alone does not establish reversal of trained preference, and CKA alone does not establish a mechanism.\n')
     (DIAG / 'report.txt').write_text(text)
     write_json(DIAG / 'report_audit.json', dict(status='passed', per_length_rows=len(source), condition_summaries=len(conditions),
         displayed_primary_conditions=len(main), source_models_displayed=len(source_jobs), plots=len(plots),

@@ -350,49 +350,49 @@ def copy_small_artifacts(source,output):
 
 
 def render_report(bundle,plots,copied,output,source,fixture=False):
-    complete=bundle['complete'];parts=['<!doctype html><html lang="zh"><meta charset="utf-8">',
+    complete=bundle['complete'];parts=['<!doctype html><html lang="en"><meta charset="utf-8">',
         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-        '<title>PermWorld 编码与架构开发结果</title><style>',
+        '<title>PermWorld encoding and architecture development results</title><style>',
         'body{font:16px system-ui,sans-serif;color:#243040;margin:32px auto;max-width:1220px;padding:0 20px;line-height:1.6}',
         'h1,h2,h3{line-height:1.3}.note{padding:18px;background:#edf3fa;border-left:4px solid #355f9c}',
         '.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:12px;white-space:nowrap;width:100%}',
         'th,td{border-bottom:1px solid #ddd;text-align:right;padding:7px}th{background:#f3f5f7}td:first-child,th:first-child{text-align:left}',
         'figure{margin:24px 0}img{max-width:100%;height:auto}summary{cursor:pointer;font-weight:600}',
         'code{word-break:break-all}a{color:#355f9c}.failed{color:#a13f32}</style>',
-        '<h1>PermWorld：编码 × 架构开发结果</h1>']
-    if fixture:parts.append('<p class="note">Synthetic fixture only：以下图表是代码验证数据，不是实验结果。</p>')
-    parts.append('<p class="note">单个开发数据世界／源初始化单元，属于工程与探索实验，不作确认性显著性或等价性判断。'
-        '四任务 × 两编码 × 两架构，共16模型；全部保留。Transformer为256维、4层、8头、3,240,448参数；'
-        'GRU为256维、4层、1,660,416参数，容量不匹配。两编码在每个架构内复制确切初始化；跨架构权重不同。</p>')
-    parts.append(f'<p>工程完成状态：<strong>{html.escape(complete["status"])}</strong>。'
-        '固定20,000更新、相同底层排列与批次、相同答案＋EOS监督；不选择最佳检查点，不因弱任务扩容或延长。'
-        '源任务学习程度不同会影响几何读数，不能直接把差异归于架构本身。</p>')
-    parts.append('<h2>如何解释编码交互</h2><p>每个指标都分别展示初始化偏好 B₀、训练后偏好 Bₜ、正确配对变化 δc、'
-        '错误配对变化 δw 和 Δ。Δ = Bₜ − B₀ = δc − δw。编码交互均为轮换减一行，ΓΔ = Γₜ − Γ₀。</p>'
-        '<p><strong>Δ 随编码变号不能单独表述为学习到的关系偏好翻转。</strong>若 Bₜ 相近而 B₀ 不同，'
-        '改变的是训练相对初始化的增量。正确配对改善和错误配对下降也分别报告。隐藏指标减输出指标不识别额外机制。</p>'
-        '<p>长度10–30分别计算、固定1/21汇总；未定义长度保留，整体不重加权。邻域k=10；Procrustes在轨道互斥的'
-        'validation输入拟合，在test输入评估，显示分数为负预测误差。De-biased CKA属于敏感性。答案分层控制不移除全部置信度／输出信息。</p>')
-    parts.append('<h2>完整模型学习成绩与工程门槛</h2>')
+        '<h1>PermWorld: encoding × architecture development results</h1>']
+    if fixture:parts.append('<p class="note">Synthetic fixture only: the following figures/tables are code-validation data, not experimental results.</p>')
+    parts.append('<p class="note">One development data world/source initialization unit: an engineering and exploratory experiment, without confirmatory significance or equivalence claims.'
+        'Four tasks × two encodings × two architectures = 16 models; all retained. Transformer: width 256, 4 layers, 8 heads, 3,240,448 parameters;'
+        'GRU: width 256, 4 layers, 1,660,416 parameters; capacity is unmatched. Both encodings copy the exact initialization within each architecture; weights differ across architectures.</p>')
+    parts.append(f'<p>Engineering completion status:<strong>{html.escape(complete["status"])}</strong>.'
+        'Fixed 20,000 updates, identical underlying permutations and batches, and identical answer+EOS supervision; no best-checkpoint selection or scaling/extensions for weak tasks.'
+        'Differences in source-task mastery affect geometric readouts and cannot be directly attributed to architecture alone.</p>')
+    parts.append('<h2>Interpreting encoding interactions</h2><p>Each metric separately displays initialization preference B₀, trained preference Bₜ, correct-pair change δc,'
+        'wrong-pair change δw, and Δ. Δ = Bₜ − B₀ = δc − δw. Encoding interactions are cycle minus one-line: ΓΔ = Γₜ − Γ₀.</p>'
+        '<p><strong>A sign change in Δ across encodings alone is not a reversal of learned relation preference.</strong>If Bₜ is similar but B₀ differs,'
+        'the change concerns training increments relative to initialization. Correct-pair improvements and wrong-pair declines are also reported separately. Hidden minus output metrics do not identify an additional mechanism.</p>'
+        '<p>Lengths 10–30 are computed separately with fixed 1/21 aggregation; undefined lengths are retained and aggregate weights are not renormalized. Neighborhood k=10; Procrustes is fitted on orbit-disjoint'
+        'validation inputs and evaluated on test inputs, with negative prediction error as its score. Debiased CKA is a sensitivity analysis. Answer stratification cannot remove all confidence/output information.</p>')
+    parts.append('<h2>Complete model learning performance and engineering gates</h2>')
     parts.append(table(bundle['learning'],['run_id','parameters','initial_validation_accuracy','final_validation_accuracy','gain','learning_gate_passed']))
-    parts.append('<p><strong>相对真实初始化提升至少10个百分点只是一项工程学习门槛。</strong>它不保证模型学会排列内容，'
-        '也不构成强架构结论。新增的长度众数诊断属于冻结协议之后的描述性补充：各任务／长度仅由训练标签定众数，'
-        '并列取最小标签，随后在全部测试action和全部模型上评分；不改变主指标、门槛、样本或预算。</p>')
-    parts.append('<details><summary>全部模型相对训练集定义的长度基线（事后补充）</summary>')
+    parts.append('<p><strong>Improving at least 10 percentage points over genuine initialization is only an engineering learning gate.</strong>It does not guarantee learning of permutation content,'
+        'or support a strong architectural conclusion. The added length-mode diagnostic is a descriptive supplement after protocol freezing: each task/length mode uses training labels only,'
+        'resolving ties to the smallest label and then scoring every test action and model; primary metrics, gates, samples, and budgets remain unchanged.</p>')
+    parts.append('<details><summary>All models relative to the training-defined length baseline (post-hoc supplement)</summary>')
     parts.append(table(bundle.get('length_baseline_summary',[]),['architecture','encoding','task','condition','action',
         'full_vocab_accuracy','numeric_accuracy','length_majority_accuracy','full_vocab_gain_over_length_majority_pp','numeric_gain_over_length_majority_pp']))
-    parts.append('</details><p>超过此基线说明这个具体的长度预测器不足以复现成绩；低于此基线不等于模型完全没有使用排列内容。'
-        '完整逐长度差值与训练／测试标签计数可独立复算，见<a href="model_minus_length_baseline_supplemental.csv">逐模型逐长度表</a>、'
-        '<a href="label_counts_length_baseline_supplemental.csv">标签计数</a>与'
-        '<a href="length_baseline_protocol_supplemental.json">补充分析说明</a>。</p>')
-    parts.append('<h3>工程修复与边界</h3><p>旧开发NPZ包含三个带前缀的排列数组，通用读取器曾跳过它们。修复后明确排除'
-        '102,144个旧开发轨道、817,152个轨道成员；旧／新开发轨道交集为0，重新生成保持固定数据种子。'
-        '先前数据和审计均保留快照，没有源训练沿用错误数据。</p>'
-        '<p>原多层cuDNN GRU内部dropout状态不能通过普通RNG检查点恢复；独立CUDA toy检查发现问题。'
-        '四个单层GRU与三个显式Dropout(0.1)通过CUDA恢复检查。原初始化逐tensor迁移、规范坐标哈希一致，'
-        '隐藏状态／logits检查通过；迁移被标注为原真实初始化的无训练重命名，不伪称新构造器初始化。Transformer和数据保持原样。</p>'
-        '<p>最终真实数据审计包括单进程0→2000参照对比独立进程1000→2000恢复，全部源模型有限梯度及学习门槛，'
-        '初始／训练后保存激活的prefix-only手写前向、suffix因果性、以及独立协方差CKA复核。具体状态与数值如下；失败不会被叙述为通过。</p>')
+    parts.append('</details><p>Exceeding this baseline means this specific length-only predictor cannot reproduce the performance; falling below it does not mean the model uses no permutation content.'
+        'Complete per-length differences and training/test label counts can be independently recomputed; see<a href="model_minus_length_baseline_supplemental.csv">Model-by-length table</a>, '
+        '<a href="label_counts_length_baseline_supplemental.csv">Label counts</a>and'
+        '<a href="length_baseline_protocol_supplemental.json">Supplementary-analysis note</a>.</p>')
+    parts.append('<h3>Engineering repairs and boundaries</h3><p>The historical development NPZ contains three prefixed permutation arrays that the generic reader previously skipped. The repair explicitly excludes'
+        '102,144 historical development orbits and 817,152 orbit members; historical/new development orbit overlap is 0, with regeneration retaining the fixed data seed.'
+        'Earlier data and audits are retained as snapshots; no source training used the incorrect data.</p>'
+        '<p>Internal dropout state in the original multilayer cuDNN GRU cannot be restored through ordinary RNG checkpoints; an independent CUDA toy check found this problem.'
+        'Four single-layer GRUs and three explicit Dropout(0.1) modules passed CUDA restoration checks. Original initialization is migrated tensor by tensor with identical canonical-coordinate hashes,'
+        'and hidden-state/logit checks pass; migration is labeled a no-training rename of genuine original initialization, not falsely described as a new constructor initialization. Transformer and data remain unchanged.</p>'
+        '<p>Final real-data audits include a continuous single-process 0→2000 reference versus independent-process 1000→2000 restoration, finite gradients and learning gates for all source models,'
+        'prefix-only handwritten forward checks against initial/trained saved activations, suffix causality, and independent covariance-CKA verification. Specific statuses and values follow; failures are not described as passes.</p>')
     audit_names=['cpu_check.json','overfit_summary.json','resume_summary.json','independent_evaluation.json',
                  'development_exclusion_final_audit.json','data_ready.json','engineering_complete.json',
                  'explicit_dropout_repair_log.json','initializations/execution_binding_v4.json']
@@ -405,8 +405,8 @@ def render_report(bundle,plots,copied,output,source,fixture=False):
                 'all_corresponding_tensors_bitwise_equal','canonical_coordinate_sha256','formal_training_started','gates']
             selected={k:data[k] for k in keys if k in data}
             parts.append(f'<details><summary>{html.escape(name)}</summary><pre>{html.escape(json.dumps(selected,indent=2,ensure_ascii=False))}</pre>'
-                f'<a href="artifacts/{html.escape(name,quote=True)}">完整原始JSON</a></details>')
-    parts.append('<h2>全局几何与输出基线：全部预定条件</h2>')
+                f'<a href="artifacts/{html.escape(name,quote=True)}">Complete original JSON</a></details>')
+    parts.append('<h2>Global geometry and output baselines: all prespecified conditions</h2>')
     for branch in BRANCHES:
         parts.append(f'<h3>{html.escape(branch)}</h3>')
         for control in CONTROLS:
@@ -420,15 +420,15 @@ def render_report(bundle,plots,copied,output,source,fixture=False):
                 selected=[r for r in bundle['interactions'] if r['branch']==branch and r['control']==control and r['metric']==metric]
                 parts.append(table(selected,['architecture','relation','Gamma0','Gammat','Gamma_correct','Gamma_wrong','GammaDelta']))
                 parts.append('</details>')
-    parts.append('<h2>全部模型的训练曲线与逐长度准确率</h2>')
+    parts.append('<h2>Training curves and per-length accuracy for every model</h2>')
     for plot in plots:
         if plot['kind'] in ('accuracy','learning'):
             parts.append(f'<details><summary>{html.escape(plot["title"])}</summary><figure><img loading="lazy" src="plots/{plot["path"]}" alt="{html.escape(plot["title"],quote=True)}"></figure></details>')
-    parts.append('<h2>可复算的小产物</h2><p>全部逐长度数据、静态答案基线、协议、冻结哈希、修复记录和学习曲线均导出。'
-        '大型数据、激活和权重仍保留F盘，本脚本不读取模型权重、不训练，也不重算冻结的科学指标。</p><ul>')
+    parts.append('<h2>Small artifacts for recomputation</h2><p>All per-length data, static-answer baselines, protocols, frozen hashes, repair records, and learning curves are exported.'
+        'Large data, activations, and weights remain on drive F; this script does not read model weights, train, or recompute frozen scientific metrics.</p><ul>')
     for item in copied:
         parts.append(f'<li><a href="{html.escape(item["export_relative"],quote=True)}">{html.escape(item["source_relative"])}</a> ({item["bytes"]:,} bytes)</li>')
-    parts.extend(['</ul><p>开发结果不能替代正式多单元复核，也不能由几何相似度单独认定数学编码机制。工程报告后停止，不自动增加种子、系统或训练规模。</p></html>'])
+    parts.extend(['</ul><p>Development results cannot replace formal multi-unit verification or identify mathematical-encoding mechanisms from geometric similarity alone. Stop after the engineering report; no automatic seeds, systems, or training scale increases.</p></html>'])
     (output/'report.html').write_text('\n'.join(parts))
 
 

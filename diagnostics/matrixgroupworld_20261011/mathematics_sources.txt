@@ -1,11 +1,11 @@
-定义来源（2026-10-11读取）
-SageMath GL(n,R)官方定义：
+Definition sources (read on 2026-10-11)
+Official SageMath GL(n,R) definition:
 https://doc.sagemath.org/html/en/reference/groups/sage/groups/matrix_gps/linear.html
-其定义为在基环R上可逆的n×n矩阵；本任务基域F2，满秩按GF2精确消元。
-SageMath精确矩阵参考：
+Defined as invertible n×n matrices over the base ring R; this task uses F2 and exact GF2 elimination for full rank.
+SageMath exact matrix reference:
 https://doc.sagemath.org/html/en/reference/matrices/sage/matrix/matrix2.html
-外部定义不替代本轮独立公式、运算、编码及闭合轨道校验，也不意味着使用Sage生成数据。
+External definitions do not replace independent formula, operation, encoding, and closed-orbit checks, and do not imply that Sage generated the data.
 
-报告必须保留：转置是群反自同构；左右乘固定群元素是作用而不是群同态。
-四关系实例只有转置和固定乘法两类，公式也成立于一般二值方阵。
-weight是普通整数计数，数据含GF2线性混合；不主张GL特有学习、学会群乘法或覆盖群论。
+The report must retain: transposition is a group antiautomorphism; left/right multiplication by fixed group elements is an action, not a group homomorphism.
+The four relation instances cover only transposition and fixed multiplication; the formulas also hold for general binary square matrices.
+weight is an ordinary integer count, and the data include GF2 linear mixing; no claim is made about GL-specific learning, learned group multiplication, or coverage of group theory.

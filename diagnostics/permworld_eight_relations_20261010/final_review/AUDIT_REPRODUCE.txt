@@ -1,38 +1,38 @@
-最终来源与停止审计（独立CPU脚本）
+Final provenance and stopping audit (independent CPU script)
 
-文件：diagnostics/permworld_eight_relations_20261010/final_review/audit.py
-运行目录：/home/yangx/ICML；解释器：.venv/bin/python。
+File: diagnostics/permworld_eight_relations_20261010/final_review/audit.py
+Working directory: /home/yangx/ICML; interpreter: .venv/bin/python.
 
-执行顺序
-1. --fixture：CPU合成schema/哈希/拒绝逻辑验证，不读取真实模型、数据或激活，不替代最终实际审计。
-2. --freeze：单独冻结audit.py、固定范围、两个协议和来源/保护manifest哈希；不改变training/analysis/Graph冻结文件。
-3. --pending：只读小JSON侧车与文件存在性，列出未完成阶段，不加载检查点或大型缓存。
-4. --run：仅在固定全部终点、报告、独立复核和14个既定阶段齐备后执行。缺失时退出2并保留pending.json；错误退出1并写failed_audit.json；只有全部通过才写final_audit.json。
+Execution order
+1. --fixture: CPU synthetic validation of schemas/hashes/refusal logic; does not read actual models, data, or activations and does not replace the final actual audit.
+2. --freeze: separately freeze audit.py, fixed scope, the two protocols, and provenance/protection manifest hashes; do not change training/analysis/Graph freeze files.
+3. --pending: read only small JSON sidecars and file existence, listing incomplete phases without loading checkpoints or large caches.
+4. --run: execute only after all fixed endpoints, reports, independent checks, and 14 phases are complete. Missing items cause exit 2 with pending.json retained; errors cause exit 1 and failed_audit.json; final_audit.json is written only when every check passes.
 
-准确命令
+Exact commands
 .venv/bin/python diagnostics/permworld_eight_relations_20261010/final_review/audit.py --fixture
 .venv/bin/python diagnostics/permworld_eight_relations_20261010/final_review/audit.py --freeze
 .venv/bin/python diagnostics/permworld_eight_relations_20261010/final_review/audit.py --pending
 .venv/bin/python diagnostics/permworld_eight_relations_20261010/final_review/audit.py --run
 
-实际范围
-PermWorld 64模型：原16真实20k复用、新48固定20k；GraphWorld仅4固定20k。新增正式训练52模型、1,040,000更新。工程与正式训练分列：Perm成功240更新及首次目录失败40更新，Graph192更新。原开发、外部CUDA toy及其时间不混入本轮正式成本。
-模型、共享真实step-0、保存RNG、配置、词表、世界、batch、曝光、source/protocol及检查点/参数SHA均核验。原16 receipt未保存的identity/RNG字段由实际CP与冻结库存绑定；原/Graph CP没有单列batch SHA的限制明确保留，以冻结数据加载器和实际world schedule SHA绑定，不能虚构字段。
-旧48新增receipt可能保留missing_authorized库存标签，不能作未完成或已完成证据。最终completed_checkpoint_manifest.csv/json的status由实际20k、finite20000及哈希校验派生为completed_fixed20k_verified，原状态另存追溯。
-Perm256逻辑提取记录、Graph16实际NPZ缓存全部核验。多逻辑别名按唯一resolved物理路径只扫描一次SHA，磁盘既列SHA核验引用，也列两个新F根目录实际stat占用，后者包含工程、日志和元信息；不同文件即使内容一样仍占两个路径，不假定内容去重。
-Perm旧1223保护文件和Graph保护manifest逐文件SHA核验，并在审计结束重查文件stat稳定性。代码冻结、源版本、独立复核与固定表格覆盖均保留，不重算科学指标或执行模型前向。
+Actual scope
+PermWorld: 64 models, reusing 16 genuine earlier 20k endpoints and adding 48 fixed 20k models; GraphWorld: only four fixed 20k models. New formal training totals 52 models and 1,040,000 updates. Engineering and formal training are separate: Perm had 240 successful engineering updates and 40 updates in the initial directory failure; Graph had 192. Earlier development, external CUDA toys, and their timings are excluded from this round’s formal costs.
+Models, shared genuine step-0, saved RNG, configurations, vocabulary, world, batches, exposure, source/protocol, and checkpoint/parameter SHAs are verified. Identity/RNG fields absent from the original 16 receipts are bound through actual checkpoints and frozen inventory. The lack of separately recorded batch SHA in original/Graph checkpoints is explicit; binding uses frozen loaders and actual world-schedule SHA, without fabricated fields.
+The 48 added-model receipts may retain the earlier missing_authorized inventory label; it is not evidence of either incompletion or completion. Final completed_checkpoint_manifest.csv/json status is derived as completed_fixed20k_verified from actual 20k, finite20000, and hash checks, retaining earlier status separately for traceability.
+All 256 logical Perm extraction records and 16 actual Graph NPZ caches are verified. Multiple logical aliases are hashed only once per unique resolved physical path. Storage reports include both SHA-verified references and actual stat usage under the two new F-drive roots, the latter including engineering, logs, and metadata. Distinct files occupy distinct paths even with identical contents; content deduplication is not assumed.
+All 1223 earlier protected Perm files and the Graph protection manifest receive filewise SHA checks, with file-stat stability rechecked at audit end. Code freezes, source versions, independent checks, and fixed-table coverage are retained without recomputing scientific metrics or running model forwards.
 
-计时口径
-phase_timing.json必须含原Perm5+Graph7阶段和perm_result_readout、graph_result_readout两个固定CPU读表阶段，均exit0。GNU time的wall/user/system/maxRSS描述进程资源，不是GPU核计时。原16训练耗时仅作历史成本；新48/Graph4 receipt累计进程时间和队列壁钟分列，等待与queue重叠不相加。首次40更新失败的独立duration缺失时写unknown，不能借用成功预跑时长。
-最终审计自身的resource计时应由调用者另外保存，不追加到其输入phase_timing.json，以免在审计完成后改变已核验输入。GPU-active/kernel duration未独立采样则明确unknown/null；CPU-only审计不能据此写原实验GPU时间0。
+Timing definitions
+phase_timing.json must contain the original five Perm and seven Graph phases plus fixed CPU table-reading phases perm_result_readout and graph_result_readout, all with exit 0. GNU time wall/user/system/maxRSS describe process resources, not GPU-kernel timing. Training time for the original 16 models is historical only; cumulative process and queue wall times for the new 48/Graph4 receipts are separate, with overlapping waits not added. If the first 40-update failure lacks independent duration, record unknown rather than borrowing the successful pre-run duration.
+The caller must save the final audit’s own resource timing separately, not append it to the input phase_timing.json and thereby change verified inputs after audit completion. GPU-active/kernel duration is explicitly unknown/null without independent sampling; a CPU-only audit does not imply zero GPU time for the original experiment.
 
-Git限制
-保留开始HEAD为e4e9ded9648aa2dc92a1cceef929cc9521546418。最终核对tracked工作区和index均等于该HEAD；原diff字节snapshot没有找到，因此不能声称执行期间tracked diff始终不变。新untracked实验文件不属于该Git等同性判断。
+Git limitations
+The saved starting HEAD is e4e9ded9648aa2dc92a1cceef929cc9521546418. Final checks show the tracked working tree and index equal that HEAD. The original diff-byte snapshot was not found, so unchanged tracked diffs throughout execution cannot be claimed. New untracked experiment files are outside this Git-equivalence check.
 
-产物
-最终64模型清单：上级diagnostic目录completed_checkpoint_manifest.csv及.json。
-Graph4清单：graph_completed_checkpoint_manifest.json。
-缓存内容：graph_cache_content_manifest.json。
-物理账本：physical_file_manifest.json。
-最终来源/成本/停止摘要：final_audit.json及final_audit.txt。
-这些是新增审计产物，不改旧科学结果、F17、任何发布文件或Git历史。
+Artifacts
+Final 64-model manifest: completed_checkpoint_manifest.csv and .json in the parent diagnostic directory.
+Graph4 manifest: graph_completed_checkpoint_manifest.json.
+Cache contents: graph_cache_content_manifest.json.
+Physical ledger: physical_file_manifest.json.
+Final provenance/cost/stopping summary: final_audit.json and final_audit.txt.
+These are additional audit artifacts; earlier scientific results, F17, published files, and Git history are not changed.

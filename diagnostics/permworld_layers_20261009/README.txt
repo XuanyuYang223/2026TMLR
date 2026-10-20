@@ -1,70 +1,70 @@
-PermWorld：既有模型多层诊断与编码×架构工程开发单元
-开始日期：2026-10-09；执行跨到2026-10-10（America/Los_Angeles）。
+PermWorld: existing-model multilayer diagnostics and an encoding × architecture engineering development unit
+Start date: 2026-10-09; execution continued into 2026-10-10 (America/Los_Angeles).
 
-完成状态：已有模型多层分析及16模型开发预跑均已完成，所有开发模型
-固定20k更新。工程、独立激活/CKA复核、完整性和停止审计通过；本轮
-执行进程均已结束，未启动正式确认清单。
+Completion status: existing-model multilayer analysis and the 16-model development pilot are complete; all development models
+use fixed 20k updates. Engineering, independent activation/CKA verification, completeness, and stopping audits passed; this round's
+execution processes have ended, and the formal confirmation manifest was not started.
 
-阅读入口
-- completion_reader_report.html / completion_reader_report.txt：本轮总报告，
-  含完整分解、任务学习程度及测量口径说明。
-- reader_report.html：既有模型多层结果与30张图。
-- encoding_development/report.html：16模型开发结果与40张图。
-- final_audit.json、final_stop_audit.json：完整性、F17保护及停止证据。
-- development_results_review.txt、encoding_development/reader_review.json：
-  独立算术/基线复算、缺失值和科学解释复核。
+Reading entry points
+- completion_reader_report.html / completion_reader_report.txt: overall report for this round,
+  including complete decompositions, task mastery, and measurement definitions.
+- reader_report.html: existing-model multilayer results and 30 figures.
+- encoding_development/report.html: 16-model development results and 40 figures.
+- final_audit.json, final_stop_audit.json: completeness, F17 protection, and stopping evidence.
+- development_results_review.txt, encoding_development/reader_review.json:
+  Independent arithmetic/baseline recomputation, missing-value checks, and scientific-interpretation review.
 
-本轮最直接的新发现：编码改变初始化配对偏好，从而大幅改变Delta。
-以答案控制的GRU取逆CKA为例，一行/轮换的B0为-0.6169/+0.8010，
-Bt为+0.0675/+0.0793，Delta为+0.6844/-0.7217；Delta翻转没有对应
-训练后偏好翻转。轮换编码八个模型仅比训练集定义的长度众数高
-0.27--1.78个百分点，编码间任务掌握程度不匹配，不能将结果解释为
-同等学习程度下的编码机制。单开发世界及两架构参数量不同的限制保留。
+The most direct new finding in this round: encoding changes initialization pairing preferences, thereby substantially changing Delta.
+For answer-controlled GRU inverse CKA, for example, one-line/cycle B0 is -0.6169/+0.8010,
+Bt is +0.0675/+0.0793, and Delta is +0.6844/-0.7217; the Delta sign change does not correspond to
+a reversal of trained preference. The eight cycle-encoded models exceed the training-defined length mode by only
+0.27--1.78 percentage points. Task mastery is unmatched across encodings, so the results cannot be interpreted as
+encoding mechanisms at equal learning levels. Limitations from one development world and different architectural parameter counts remain.
 
-本目录独立于既有F17论文、实验和发布文件。体积大的新缓存、开发数据
-和权重放在F盘，路径见storage.json和下面的开发根目录。
+This directory is independent of the existing F17 paper, experiments, and release files. Large new caches, development data,
+and weights are stored on drive F; paths are listed in storage.json and the development root below.
 
-范围与停止边界
-1. 复用既有82检查点与固定输入，补充各层和一种固定pooling。
-2. 完成四性质×两编码×两架构=16模型的工程开发单元，固定20k更新。
-3. 报告后停止。开发结果不计正式确认；不自动运行旧正式清单、追加
-   种子、GroupWorld、有限域/矩阵、零空间、GELU组合或更大模型。
+Scope and stopping boundary
+1. Reuse 82 existing checkpoints and fixed inputs, adding all layers and one fixed pooling choice.
+2. Complete the engineering development unit: four properties × two encodings × two architectures = 16 models, with fixed 20k updates.
+3. Stop after reporting. Development results are excluded from formal confirmation; do not automatically run the old formal manifest, add
+   seeds, or launch GroupWorld, finite-field/matrix, null-space, GELU-composition, or larger-model experiments.
 
-已有模型分析
-- run.py、input_geometry.py、summarize.py及所有输入/源依赖受freeze.json
-  约束。兼容旧提取版本和必要数值修复分别保留在compatible_extraction_
-  freezes.json、engineering_repairs.json及*_before_*快照。
-- 输入、轨道、长度10..30、每长度1/21权重、错误变换、三种主指标
-  （线性CKA、k10邻域重叠、留出Procrustes）均沿用旧协议。debiased
-  CKA为固定敏感性。最终层、查询、输出概率、真实答案原值直接复用。
-- 所有旧初始权重均为grade C：按原构造程序重建，原始step-0身份
-  未验证。新检查不将它们升级为精确匹配。
-- 原始block residual与final_norm分开；task前输入末端为主位置。
-  数值token的contextual mean是唯一pooling敏感性。固定长度下
-  embedding_end和embedding_value_mean是常量，结果明确undefined。
-- position_numeric_onehot为静态等距输入参照，不构造初始化或Delta。
-  position_numeric_embedding使用各检查点真实token embedding。
-- 62同种子模型对，共187488逐长度单元，含静态/未定义基线，不能
-  视为独立重复。训练种子变异含初始化及优化随机性；不构成新世界CI。
-  review_notes.txt纠正冻结摘要模板中较窄的“初始化差异”表述。
+Existing-model analysis
+- run.py, input_geometry.py, summarize.py, and all input/source dependencies are constrained by freeze.json.
+  Compatible historical extraction versions and necessary numerical repairs are retained separately in compatible_extraction_
+  freezes.json, engineering_repairs.json, and *_before_* snapshots.
+- Inputs, orbits, lengths 10..30, per-length 1/21 weights, wrong transforms, and three primary metrics
+  (linear CKA, k10 neighborhood overlap, held-out Procrustes) retain the historical protocol. Debiased
+  CKA is a fixed sensitivity analysis. Original final-layer, query, output-probability, and ground-truth-answer values are directly reused.
+- All historical initial weights are grade C: reconstructed with the original construction procedure; original step-0 identity
+  is unverified. New checks do not upgrade them to exact matches.
+- Original block residuals and final_norm are separate; the input end before the task is the primary position.
+  The contextual mean of numeric tokens is the only pooling sensitivity. At fixed length,
+  embedding_end and embedding_value_mean are constant, and results are explicitly undefined.
+- position_numeric_onehot is a static isometric input reference; no initialization or Delta is constructed.
+  position_numeric_embedding uses each checkpoint's genuine token embeddings.
+- 62 same-seed model pairs yield 187488 per-length cells, including static/undefined baselines; these cannot
+  be treated as independent replicates. Training-seed variability includes initialization and optimization randomness; it is not a new-world CI.
+  review_notes.txt corrects the narrower “initialization differences” wording in the frozen summary template.
 
-只读复算已有层指标（不训练）：
+Read-only recomputation of existing layer metrics (no training):
   OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venv/bin/python diagnostics/permworld_layers_20261009/run.py validate
   OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venv/bin/python diagnostics/permworld_layers_20261009/run.py evaluate
   OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venv/bin/python diagnostics/permworld_layers_20261009/summarize.py
-已有缓存验证后跳过提取/已完成配对。完整交付包括layer_metric_results.csv、
-各层/长度/关系摘要、leave-one敏感性表、图、report.html和brief_report.txt。
+Extraction/completed pairs are skipped after checking existing caches. Complete deliverables include layer_metric_results.csv,
+layer/length/relation summaries, leave-one sensitivity tables, figures, report.html, and brief_report.txt.
 
-编码×架构开发（单世界、单源单元）
-代码：experiments/permworld_encoding_archdev_20261009/
-大产物：/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/
-小产物与报告：本目录encoding_development/（已由冻结encoding_summary.py导出）。
-性质：descents、recoils、peaks、valleys。编码：one_line、canonical_cycle。
-Transformer=256维4层8头；GRU=256维4层，参数量不同，不是容量匹配实验。
-真实step-0在各架构内共享，跨架构不声称参数相同。GRU参数保留逐值
-相等的键迁移，显式dropout修复后台RNG恢复问题，审计和原始权重均保留。
+Encoding × architecture development (one world, one source unit)
+Code: experiments/permworld_encoding_archdev_20261009/
+Large artifacts: /mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/
+Small artifacts and report: encoding_development/ in this directory (exported by frozen encoding_summary.py).
+Properties: descents, recoils, peaks, valleys. Encodings: one_line, canonical_cycle.
+Transformer=width 256, 4 layers, 8 heads; GRU=width 256, 4 layers. Parameter counts differ; this is not a capacity-matched experiment.
+Genuine step-0 is shared within each architecture; identical parameters are not claimed across architectures. GRU parameters retain a value-by-value
+equal key migration; explicit dropout repairs backend RNG restoration. Audits and original weights are retained.
 
-每一步为显式命令；以下不是自动执行的正式训练计划：
+Each step is an explicit command; the following is not an automatically executed formal training plan:
   .venv/bin/python -m experiments.permworld_encoding_archdev_20261009 --stage cpu-check
   .venv/bin/python -m experiments.permworld_encoding_archdev_20261009 --stage overfit
   .venv/bin/python -m experiments.permworld_encoding_archdev_20261009 --stage resume
@@ -72,48 +72,48 @@ Transformer=256维4层8头；GRU=256维4层，参数量不同，不是容量匹�
   .venv/bin/python -m experiments.permworld_encoding_archdev_20261009 --stage evaluate
   .venv/bin/python -m experiments.permworld_encoding_archdev_20261009 --stage report
   .venv/bin/python diagnostics/permworld_layers_20261009/encoding_summary.py
-train命令只访问独立开发manifest，且要求前置工程门槛通过；不调用正式清单。
-开发只按固定20k终点取值，不以几何效果方向通过，不延长弱模型预算。
-本次执行另用parallel_tail_driver.py运行固定清单末尾最多8个独立模型，
-缩短等待；串行主驱动验证并跳过已完成模型，各模型仍只接受一次20k预算。
-调度只看清单位置及完成状态，不读取效果决定条件。tail和middle分配
-互不重叠的任务，各自JSON/log记录运行时序；同一worker不能启动两次。
-parallel_orchestration_manifest.json及v1脚本快照记录增加第二worker时序；
-没有修改冻结训练函数、超参数、预算或16模型清单。
-另由parallel_reserved_driver.py提前执行固定清单索引8（GRU一行下降数），
-主驱动当时仍在索引3（索引从0起）。middle后续跳过完成的同一模型，避免串行收尾等待；
-新增的是执行进程，不是模型或科学条件。reserved审计、旧调度快照和清单
-修订时序均保留，所有完成模型仍只有一次固定20k更新。
-middle因固定位置门槛结束后，parallel_recoils_driver.py接续原清单索引9
-（GRU一行逆下降数）；开始前核实middle结束及该模型从未启动，使用其
-空出的执行位置。仍只调整原清单执行顺序，审计和调度快照完整保留。
+The train command accesses only the independent development manifest and requires prerequisite engineering gates to pass; it does not invoke the formal manifest.
+Development uses only the fixed 20k endpoint, does not pass models based on geometric-effect direction, and does not extend weak models' budgets.
+This execution also used parallel_tail_driver.py for up to 8 independent models at the end of the fixed manifest,
+reducing waiting; the serial main driver verifies and skips completed models. Each model still receives one 20k budget only.
+Scheduling uses only manifest position and completion status, never effects to decide conditions. Tail and middle receive
+disjoint tasks, with JSON/log records of execution timing; the same worker cannot be started twice.
+parallel_orchestration_manifest.json and v1 script snapshots record when a second worker was added;
+the frozen training function, hyperparameters, budget, and 16-model manifest were not changed.
+parallel_reserved_driver.py also ran fixed manifest index 8 (GRU one-line descents) early,
+while the main driver was still at index 3 (zero-based indices). Middle later skipped the same completed model, avoiding a serial tail wait;
+this added an execution process, not a model or scientific condition. Reserved audits, historical orchestration snapshots, and manifest
+revision timing are retained; every completed model still has only one fixed 20k update budget.
+After middle stopped at its fixed-position gate, parallel_recoils_driver.py continued original manifest index 9
+(GRU one-line recoils); before starting, it verified that middle had ended and this model had never started, using
+the vacated execution slot. Only execution order in the original manifest changed; complete audits and orchestration snapshots are retained.
 
-共同读数
-B0=初始(正确-错误)，Bt=训练后(正确-错误)，dc=正确CKA变化，
-dw=错误CKA变化，Delta=Bt-B0=dc-dw。编码交互定义为canonical_cycle
-减one_line，分别报告Gamma0/Gammat/Gamma_correct/Gamma_wrong/GammaDelta。
-正Delta不能单独解释为正确表征趋同；隐藏Delta减输出Delta不能分解机制。
-源任务准确率单独报告，工程门槛不能代替任务内容学习证据。
+Shared readouts
+B0=initial(correct-wrong), Bt=trained(correct-wrong), dc=correct CKA change,
+dw=wrong CKA change, Delta=Bt-B0=dc-dw. Encoding interactions are canonical_cycle
+minus one_line, with Gamma0/Gammat/Gamma_correct/Gamma_wrong/GammaDelta reported separately.
+Positive Delta alone cannot be interpreted as correct-representation convergence; hidden Delta minus output Delta cannot decompose mechanisms.
+Source-task accuracy is reported separately; engineering gates do not replace evidence of task-content learning.
 
-审计
-final_audit.py只核对已完成产物，不训练。final_audit.json包含唯一cell
-覆盖、分解算术、继承结果逐项一致、冻结版本和F17保护文件哈希。
-review_notes.txt和工程修复日志保留发现问题与修复次序，开发不包装为确认。
+Audits
+final_audit.py checks completed artifacts only, without training. final_audit.json contains unique-cell
+coverage, decomposition arithmetic, itemwise consistency of inherited results, frozen versions, and F17 protected-file hashes.
+review_notes.txt and engineering-repair logs retain problems and repair order; development is not presented as confirmation.
 
-开发代码的只读审查见development_code_review.txt：协议中“all32”是沿用
-文字，实际固定清单为16模型。output_prob仅在合法数字答案0..30内重新
-归一化，不是完整词表分布。测量状态在task token之前并受因果约束；
-实际完整前向仍带task/等号suffix，另有prefix-only独立数值检查。
-答案分层分别使用fit/test真值组均值，是测量控制而非可部署的预测步骤。
+See development_code_review.txt for the read-only development-code review: “all32” in the protocol is inherited
+wording; the actual fixed manifest contains 16 models. output_prob is renormalized only over legal numeric answers 0..30,
+not the full-vocabulary distribution. The measured state precedes the task token and is causally constrained;
+the actual full forward pass still includes the task/equals suffix, with an independent prefix-only numerical check.
+Answer stratification uses separate fit/test ground-truth group means; it is a measurement control, not a deployable prediction step.
 
-完成产物的只读汇总（不训练、不改变原评价数据）：
+Read-only summary of completed artifacts (no training or changes to original evaluation data):
   .venv/bin/python diagnostics/permworld_layers_20261009/overview.py
   .venv/bin/python diagnostics/permworld_layers_20261009/annotate_completion_report.py
-overview.py、encoding_summary.py在完整结果出现前冻结，分别受
-overview_freeze.json和encoding_exporter_freeze.json约束。读者报告仅增加
-口径说明，原始报告及表格保持逐字节一致，见completion_annotation_audit.json。
-汇总前发现overview.py的两处显示格式整理不匹配冻结哈希；已仅撤销
-这些修改、恢复精确冻结字节并重新生成。原始冻结记录没有重定，错误
-生成的报告与代码保存于before_freeze_restore/，issue.json记录完整次序。
-训练数据、真实step-0、完整检查点和大激活缓存保留F盘；本地诊断目录
-保留代码、协议、小产物、表格和图，不复制这些大文件占用固态空间。
+overview.py and encoding_summary.py were frozen before complete results appeared, constrained respectively by
+overview_freeze.json and encoding_exporter_freeze.json. Reader reports add measurement notes only;
+the original report and tables remain byte-for-byte identical, as recorded in completion_annotation_audit.json.
+Before summarization, two display-format edits in overview.py were found not to match the frozen hash; only
+those edits were reverted, exact frozen bytes restored, and reports regenerated. The original freeze record was not redirected; erroneously
+generated reports and code are saved in before_freeze_restore/, with the complete sequence in issue.json.
+Training data, genuine step-0, complete checkpoints, and large activation caches are retained on drive F; the local diagnostic directory
+retains code, protocols, small artifacts, tables, and figures without copying large files onto the SSD.

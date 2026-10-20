@@ -7,9 +7,9 @@
   "relation_instances": 2,
   "comparisons": 464,
   "comparison_status_counts": {
-    "严格匹配": 360,
-    "不可比较或缺失": 48,
-    "配置比较": 56
+    "strictly_matched": 360,
+    "incomparable_or_missing": 48,
+    "configuration comparison": 56
   },
   "available_comparisons_computed": 416,
   "structurally_undefined_embedding_comparisons": 48,

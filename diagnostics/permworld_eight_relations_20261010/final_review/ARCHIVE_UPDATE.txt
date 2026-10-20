@@ -1,32 +1,32 @@
-逻辑归档更新入口
+Logical-archive update entrypoint
 
-本脚本只在固定14阶段全部结束、最终CPU来源审计passed后执行。
-准备期间不会扫描未来models或生成完成归档。
+Run this script only after all 14 fixed phases finish and the final CPU provenance audit passes.
+Preparation does not scan future models or generate a completed archive.
 
-准备与冻结（已执行CPU合成fixture；不训练、不前向）：
+Preparation and freezing (CPU synthetic fixture executed; no training or forward passes):
 .venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/update_archive.py --fixture
 .venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/update_archive.py --freeze
 
-小元信息就绪检查（未就绪只保存pending，不扫大目录）：
+Small-metadata readiness check (if not ready, save pending only, without scanning large directories):
 .venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/update_archive.py --pending
 
-最终来源审计通过后执行：
+Execute after final provenance audit passes:
 .venv/bin/python -B diagnostics/permworld_eight_relations_20261010/final_review/update_archive.py --run
 
-修改范围仅工作区archive_index.csv的追加。原699条记录、重复行、原路径、保护理由和原始字节前缀完整保留。
-cleanup_candidates.csv的13项及CURRENT_RESEARCH.txt正文均不写；后者由根代理最终更新。
-新辅助产物：current_entry_manifest.csv、scope_artifact_manifest.json、archive_update_audit.json。
+The only workspace modification is appending archive_index.csv. Preserve all original 699 records, duplicate rows, original paths, protection reasons, and original byte prefix.
+Do not write the 13 cleanup_candidates.csv items or CURRENT_RESEARCH.txt; the root agent updates the latter finally.
+New supporting artifacts: current_entry_manifest.csv, scope_artifact_manifest.json, archive_update_audit.json.
 
-分类依据是最终provenance physical_file_manifest及256条提取索引的真实引用。
-旧模型/初始权重/RNG/旧源数据/旧导入代码和旧缓存别名归2；复制到新F根不改变旧依赖身份。
-新实验代码、诊断和新产物归1。仅protected_old标签不足以证明当前依赖：独立F17和其它旧项目不因此转成当前主线。
-原category3和category4条目不改写，也不新增危险清理建议。
+Classification follows actual references in the final provenance physical_file_manifest and 256-record extraction index.
+Earlier models/initial weights/RNG/source data/imported code/cache aliases are category 2; copying to a new F-drive root does not change their historical-dependency identity.
+New experimental code, diagnostics, and artifacts are category 1. The protected_old label alone does not prove a current dependency: independent F17 and other earlier projects do not thereby become current research.
+Do not rewrite original category3/category4 entries or add dangerous cleanup suggestions.
 
-SHA验证来自已经passed的最终来源审计；本脚本只读元信息及stat，不重新哈希大缓存或权重。
-新scope中未被SHA审计绑定的.log及明确queue/orchestration/bridge状态仅标为观测元信息，不提供可变豁免。
-已完成的training/pipeline日志若小于等于8MiB，可附加补充SHA；该观测SHA不充当模型科学身份。
-任何真实科学依赖、保护引用、权重、缓存或已审计SHA均不豁免；不授权修改日志或科学文件。
-manifest自身、归档更新自写元信息与随后生成的diagnostics/permworld_eight_relations_20261010/completion.json显式排除。
-根代理在最终completion中反向绑定归档和scope_artifact_manifest，避免自引用哈希。
+SHA verification comes from the already passed final provenance audit; this script reads metadata/stat only, without rehashing large weights/caches.
+New-scope .log files not bound by SHA audit, and explicit queue/orchestration/bridge states, are marked observed metadata only, not granted an exemption for modification.
+Completed training/pipeline logs no larger than 8MiB may receive supplementary SHA; this observed SHA is not model scientific identity.
+No genuine scientific dependency, protection reference, weight, cache, or audited SHA is exempt; changing logs or scientific files is not authorized.
+The manifest itself, metadata written by the archive updater, and subsequently generated diagnostics/permworld_eight_relations_20261010/completion.json are explicitly excluded.
+The root agent reverse-binds the archive and scope_artifact_manifest in final completion to avoid self-referential hashes.
 
-不会移动、删除、发布、训练、增加任务/种子/指标，也不改变任何旧README、F17结果或发布物。
+No moving, deleting, publishing, training, additional tasks/seeds/metrics, or changes to earlier READMEs, F17 results, or published artifacts.

@@ -1,15 +1,15 @@
-PermWorld 独立学习报告算术审查：passed
-16个固定8k模型与8个编码pair，三长度等权；不选择较早或最佳检查点。
-模型学习门槛通过 6/16；编码pair通过 0/8。
-架构联合资格：{"transformer": false, "gru": false}
-完整16条件资格：False
-status=passed表示四张报告表与独立复算一致，不表示所有模型通过学习门槛。
-训练长度众数只从train identity标签确定，平票取较小答案，随后在validation上评分。
-答案准确率来自固定checkpoint保存的validation记录；未重新推理，也未独立重算逐样本预测。
-仅解码train/validation lengths/labels；没有测试数组、checkpoint张量、CKA或GPU操作。
-一个数据世界、每架构一个初始化；16模型不是16独立世界。5pp为开发门槛，不是TOST或等价性证明。
-门槛规则在真实审查前固定，脚本实现于训练进行中；本审查是报告验证，不是新的确认实验。
-training_length_majority.csv: 12行，96字段比较一致。
-model_learning_summary.csv: 16行，464字段比较一致。
-validation_length.csv: 48行，864字段比较一致。
-pair_learning_gates.csv: 8行，104字段比较一致。
+Independent PermWorld learning-report arithmetic review: passed
+16 fixed 8k models and8 encoding pairs, with equal-three-length weighting; no earlier/best-checkpoint selection.
+Models passing learning gates: 6/16; encoding pairs passing: 0/8.
+Joint architecture qualification:{"transformer": false, "gru": false}
+Complete 16-condition qualification: False
+status=passed means four report tables match independent recomputation, not that all models pass learning gates.
+Training length modes use train identity labels only, with ties to smaller answers, then score validation.
+Answer accuracy comes from validation records saved at fixed checkpoints; no inference rerun or independent per-sample prediction recomputation.
+Only train/validation lengths/labels are decoded; no test arrays, checkpoint tensors, CKA, or GPU operations.
+One data world and one initialization per architecture;16 models are not16 independent worlds.5pp is a development gate, not TOST/equivalence proof.
+Gate rules were fixed before actual review; the script was implemented during training. This reviews report validity, not a new confirmation experiment.
+training_length_majority.csv: 12 rows, 96 fields match.
+model_learning_summary.csv: 16 rows, 464 fields match.
+validation_length.csv: 48 rows, 864 fields match.
+pair_learning_gates.csv: 8 rows, 104 fields match.

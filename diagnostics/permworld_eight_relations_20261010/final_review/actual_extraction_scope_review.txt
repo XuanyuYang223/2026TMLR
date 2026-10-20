@@ -1,38 +1,38 @@
-实际提取范围只读审查（2026-10-11）
+Read-only review of actual extraction scope (2026-10-11)
 
-审查对象：extraction_validation.json、F盘evaluation/index.json以及冻结extract.py的字段含义。
-本说明只读取实际JSON/源码；未打开大数组/权重，未重复校验、前向、训练或科学指标。
-因此以下数值是已完成生产提取/验证所记录的证据，并非本审查新增的独立模型验证。
+Reviewed: extraction_validation.json, F-drive evaluation/index.json, and field definitions in frozen extract.py.
+This note reads actual JSON/source only; it does not open large arrays/weights or repeat verification, forwards, training, or scientific metrics.
+The values below are recorded evidence from completed production extraction/validation, not new independent model verification by this review.
 
-实际index状态completed，256逻辑记录，64源模型：16旧终点复用，48新20k终点。
-index SHA256：16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6。
-该SHA与实际extraction_validation.json绑定一致，validation状态passed。
-index记录source_updates=0、新输入0、无optimizer/backward、旧产物未改。
+Actual index status is completed, with 256 logical records and 64 sources: 16 earlier endpoints reused and 48 new 20k endpoints.
+index SHA256: 16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6.
+This SHA matches the actual extraction_validation.json binding; validation status is passed.
+The index records source_updates=0, zero new inputs, no optimizer/backward, and no changes to earlier artifacts.
 
-新源192记录中96为initial。全部initial记录的all-anchors alias verified/bitwise均true、
-最大差0，覆盖validation/test两split、全部固定anchor和三个action、五层及独立prefix_final。
-初始隐层物理路径只有8个（架构×编码×split）；初始输出概率有96个独立任务/条件/split路径。
-这支持hidden别名已执行通过，但不允许把某任务的初始输出、CE或答案读出别名给另一任务。
-primary_norm独立保存，未用packed最后一层替换原prefix_final。
+Of the 192 new-source records, 96 are initial. All initial records have all-anchors alias verified/bitwise=true,
+with maximum difference 0, covering validation/test, all fixed anchors and three actions, five layers, and independent prefix_final.
+Initial hidden states have only eight physical paths (architecture × encoding × split); initial output probabilities have 96 separate task/conditions//split paths.
+This supports successful executed hidden-state aliasing, but does not permit aliasing one task’s initial outputs, CE, or answer readout to another task.
+primary_norm is saved independently; the packed final layer does not replace the original prefix_final.
 
-actual independent_manual_checks共864单元：
-48新源×initial/trained两状态×n10/20/30三个长度×identity/complement/inverse三个action。
-所有单元split=test；每单元使用完整prompt、实际batch128，再核固定first8。
-合计6912状态向量、每向量五层；这不是6912独立输入/重复或全长度随机复核。
-initial432/trained432；每长度288单元。所有direct_manual_to_saved_arrays字段为true。
-记录的manual_layer、packed-vs-primary norm、saved_layer、saved_primary_norm最大差全部0。
-initial的saved alias字段验证亦全部true。
-validation记录只引用其test manual记录，没有独立manual抽样；不能写两split都独立复核。
-all-anchors初始alias范围与上述n10/20/30 first8 manual范围是不同检查，不应混为一项。
+actual independent_manual_checks contains 864 cells:
+48 new sources × initial/trained states × n10/20/30 × identity/complement/inverse actions.
+Every cell uses split=test, full prompts, and actual batch128, checking the fixed first8.
+This totals 6912 state vectors with five layers each, not 6912 independent inputs/repetitions or random checks over all lengths.
+initial432/trained432, with 288 cells per length. All direct_manual_to_saved_arrays fields are true.
+Recorded maximum differences for manual_layer, packed-vs-primary norm, saved_layer, and saved_primary_norm are all 0.
+All initial saved-alias validation fields are also true.
+Validation records only reference their test manual records, with no independent manual sampling; do not claim independent checks on both splits.
+All-anchor initial aliasing and the n10/20/30 first8 manual checks above have distinct scopes and must not be conflated.
 
-旧16模型initial×两split共32逻辑记录都没有answer_ce，且保留明确缺失原因。
-新96initial记录全部有自身任务answer_ce和输出前向证据。
-原64逻辑NPZ的prefix_final/output_prob/prediction共192转换项记录原/转换array SHA相同、
-conversion_bitwise_equal=true；旧CE未从共享hidden或另一任务补值。
+All 32 logical initial × two-split records for the earlier 16 models lack answer_ce and retain explicit missing reasons.
+All 96 new initial records contain their own task’s answer_ce and output-forward evidence.
+The original 64 logical NPZ prefix_final/output_prob/prediction fields yield 192 conversion items with identical original/converted array SHA,
+conversion_bitwise_equal=true; earlier missing CE is not filled from shared hidden states or another task.
 
-源准确率与答案CE按完整188词表；output_prob按softmax(logits[:,0:31])为数字0..30条件概率。
-该概率并非188词表完整概率。EOS未在prompt-only几何抽取中评估。
+Source accuracy and answer CE use the full 188-token vocabulary; output_prob=softmax(logits[:,0:31]) is conditional on numeric tokens 0..30.
+These are not full-vocabulary probabilities. EOS was not evaluated in prompt-only geometry extraction.
 
-主结果解释审查须等待final_review/permworld/readout_status.json=completed_readout，
-且fixture_only=false。此说明不解释尚未完成的32主端点、16Gamma和64源学习。
-没有据提取工程通过推断数学关系、组合能力、显著性或机制。
+Review of main-result interpretation must await final_review/permworld/readout_status.json=completed_readout,
+and fixture_only=false. This note does not interpret the still-pending 32 primary endpoints, 16 Gamma comparisons, and 64 source-learning results.
+Passing extraction engineering checks is not used to infer mathematical relations, compositional ability, significance, or mechanisms.

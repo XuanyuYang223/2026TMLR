@@ -1,26 +1,26 @@
-PermWorld 已有检查点多层诊断：真实结果独立审查
-日期：2026-10-10（America/Los_Angeles）
+PermWorld existing-checkpoint multilayer diagnostics: independent review of actual results
+Date: 2026-10-10 (America/Los_Angeles)
 
-本文件只审查已有模型分析，不包含编码×架构工程预跑。
-未修改冻结代码、指标、输入或旧报告。所有统计为探索性描述。
+This file reviews existing-model analysis only, excluding the encoding × architecture engineering pilot.
+Frozen code, metrics, inputs, and historical reports were not modified. All statistics are exploratory descriptions.
 
-完整性与初始化身份
-完整输入表187,488行，8,928个源级汇总均有全部21个长度；关系汇总3,312行，
-逐长度关系汇总69,552行。报告引用的30张图全部存在。
-本次独立核对原始表与汇总SHA256及摘要代码SHA256，均与summary_audit一致。
-并独立重算original8最终层及两取逆关系所有分支的1,008个固定长度源汇总：
-7,158个可定义字段与CSV精确一致，最大绝对差为0。
+Completeness and initialization identity
+The complete input table has 187,488 rows; all 8,928 source summaries contain every one of the 21 lengths; relation summaries have 3,312 rows,
+and per-length relation summaries have 69,552 rows. All 30 figures referenced by the report exist.
+This independent check verified raw-table, summary, and summary-code SHA256 values against summary_audit.
+It also independently recomputed 1,008 fixed-length source summaries for the original8 final layer and all branches of the two inverse relations:
+7,158 defined fields agree exactly with the CSV, with maximum absolute difference 0.
 
-旧初始化全部仍为C级构造器重建，原始step-0身份未验证。以下“训练增量”
-均是相对这个重建参照的描述，不是经原始初始化身份验证的因果训练效应。
-82个源并非82个独立数据世界；共用同一评价世界且关系/源模型相互依赖。
-源间变异包括初始化、dropout、batch/顺序及优化随机性，不可只归因初始化。
-相关展示措辞修正见review_notes.txt。
+All historical initializations remain grade-C constructor reconstructions, with original step-0 identity unverified. Below, “training increments”
+are descriptions relative to that reconstructed reference, not causal training effects verified against original initialization identities.
+82 sources are not 82 independent data worlds; they share one evaluation world, with dependent relations/source models.
+Between-source variation includes initialization, dropout, batches/order, and optimization randomness; it cannot be attributed only to initialization.
+See review_notes.txt for the associated wording corrections.
 
-original8主位置：final_norm_end，answer_strata，长度10–30固定等权
-各关系有3个原源。下表全部列出，不根据正负挑选关系。
-CKA列依次为B0、Bt、dc、dw、Delta；末两列为另外两主指标Delta。
-关系 | B0_CKA | Bt_CKA | dc_CKA | dw_CKA | Delta_CKA | Delta_KNN | Delta_Proc
+original8 primary position: final_norm_end, answer_strata, fixed equal weights for lengths 10–30
+Each relation has 3 original sources. All are listed below without choosing relations by sign.
+CKA columns are B0, Bt, dc, dw, and Delta; the final two columns are Delta for the other two primary metrics.
+Relation | B0_CKA | Bt_CKA | dc_CKA | dw_CKA | Delta_CKA | Delta_KNN | Delta_Proc
 descent_inverse | -0.505974 | +0.082991 | -0.033851 | -0.622816 | +0.588965 | +0.388904 | +0.585153
 exceedance_inverse | -0.462154 | +0.179308 | +0.020471 | -0.620990 | +0.641461 | +0.436462 | +0.756293
 peak_complement | +0.498279 | +0.250026 | -0.399498 | -0.151245 | -0.248253 | -0.242721 | -0.180994
@@ -30,29 +30,29 @@ run_complement | +0.511855 | +0.179950 | -0.436621 | -0.104716 | -0.331905 | -0.
 record_complement | +0.532397 | +0.308246 | -0.315997 | -0.091846 | -0.224151 | -0.132586 | -0.177785
 decomposition_complement | +0.537579 | +0.125810 | -0.511042 | -0.099272 | -0.411770 | -0.317557 | -0.303038
 
-两个取逆关系：3源×21长度×3主指标的Delta全部为正。
-下降/逆下降的CKA源均值范围为[0.567198,0.622435]；
-超越/亏缺的范围为[0.606906,0.692312]。这说明相对配对偏好被重塑，
-但最终CKA的主要变化来自错误配对下降约0.62，而非正确配对普遍趋同。
-正确CKA的平均变化分别为-0.033851、+0.020471。
+Two inverse relations: Delta is positive for all 3 sources × 21 lengths × 3 primary metrics.
+The range of source-mean CKA for descents/recoils is[0.567198,0.622435];
+and the range for exceedances/deficiencies is[0.606906,0.692312]. This indicates reshaped relative pairing preferences,
+but the main final-CKA change is a decline of approximately 0.62 for wrong pairs, not universal convergence of correct pairs.
+Mean changes in correct CKA are -0.033851 and +0.020471, respectively.
 
-这不意味着每个长度训练后的正确配对都胜过错误配对：两关系Bt在一些
-单长度/种子/指标下仍为负。下降关系CKA最低Bt=-0.027539；
-超越关系最低=-0.000122。正Delta与正Bt是两个不同结论。
+This does not mean trained correct pairs outperform wrong pairs at every length: both relations still have negative Bt
+for some individual lengths/seeds/metrics. The minimum descents CKA Bt is -0.027539;
+the minimum for exceedances is -0.000122. Positive Delta and positive Bt are different conclusions.
 
-六条补值关系：三个源的固定长度平均Delta在三主指标中全部为负，
-但其三个源的平均Bt均为正。初始化已有较强正确配对偏好，训练后正确
-偏好保留但通常缩小。因此负Delta不能解释为“没有学到任何东西”。
-少数具体长度有正Delta，例如peak_complement seed101的CKA有2/21个
-长度为正，Procrustes有10/21个长度为正。不能把平均符号推广到每个长度。
+Six complement relations: fixed-length mean Delta is negative across all three primary metrics for all three sources,
+but mean Bt is positive across the three sources. Initialization already has strong correct-pair preference; after training,
+that preference remains but typically shrinks. Thus negative Delta cannot mean “nothing was learned.”
+Some individual lengths have positive Delta: for example, peak_complement seed101 has positive CKA at 2/21
+lengths and positive Procrustes at 10/21 lengths. Mean signs cannot be generalized to every length.
 
-两取逆关系：完整固定层与pooling、输入/输出基线
-所有行同为specialist16与answer_strata。block为原始残差流；final_norm
-单列。每层末token和数值token contextual mean分别完整保留。
-Proc为score=-NRMSE，越高越好；其Delta与CKA/KNN单位不可直接比较。
+Two inverse relations: all fixed layers and pooling, input/output baselines
+All rows use specialist16 and answer_strata. Blocks are original residual streams; final_norm
+is separate. Both the final-token position and numeric-token contextual mean are fully retained at every layer.
+Proc is score=-NRMSE, with higher better; its Delta cannot be directly compared in magnitude with CKA/KNN.
 
 descent_inverse
-分支 | B0_CKA | Bt_CKA | dc_CKA | dw_CKA | Delta_CKA | Delta_KNN | Delta_Proc
+Branch | B0_CKA | Bt_CKA | dc_CKA | dw_CKA | Delta_CKA | Delta_KNN | Delta_Proc
 block_01_end | -0.062462 | +0.037328 | -0.347036 | -0.446826 | +0.099790 | +0.047165 | +0.113713
 block_01_value_mean | -0.602963 | +0.013295 | -0.129417 | -0.745675 | +0.616258 | +0.450147 | +0.568510
 block_02_end | -0.520533 | +0.026571 | -0.088248 | -0.635352 | +0.547104 | +0.363006 | +0.533615
@@ -64,12 +64,12 @@ block_04_value_mean | -0.516627 | +0.073347 | -0.048152 | -0.638126 | +0.589974 
 final_norm_end | -0.505974 | +0.082991 | -0.033851 | -0.622816 | +0.588965 | +0.388904 | +0.585153
 final_norm_value_mean | -0.514190 | +0.083141 | -0.035711 | -0.633042 | +0.597331 | +0.401283 | +0.574260
 position_numeric_embedding | -0.000910 | -0.121687 | -0.167224 | -0.046447 | -0.120777 | -0.200977 | -0.430251
-position_numeric_onehot | 未定义 | +0.000000 | 未定义 | 未定义 | 未定义 | 未定义 | 未定义
+position_numeric_onehot | undefined | +0.000000 | undefined | undefined | undefined | undefined | undefined
 output_prob | -0.325744 | +0.010379 | -0.090517 | -0.426639 | +0.336123 | +0.237039 | +0.377909
 query_final_norm | -0.503482 | +0.075275 | -0.028355 | -0.607112 | +0.578757 | +0.387165 | +0.587956
 
 exceedance_inverse
-分支 | B0_CKA | Bt_CKA | dc_CKA | dw_CKA | Delta_CKA | Delta_KNN | Delta_Proc
+Branch | B0_CKA | Bt_CKA | dc_CKA | dw_CKA | Delta_CKA | Delta_KNN | Delta_Proc
 block_01_end | -0.049453 | +0.131176 | -0.303180 | -0.483809 | +0.180629 | +0.078432 | +0.158351
 block_01_value_mean | -0.537415 | +0.345825 | +0.236276 | -0.646964 | +0.883240 | +0.579424 | +0.916543
 block_02_end | -0.472080 | +0.514824 | +0.371656 | -0.615247 | +0.986903 | +0.507380 | +0.891857
@@ -81,63 +81,63 @@ block_04_value_mean | -0.472158 | +0.437919 | +0.334004 | -0.576073 | +0.910077 
 final_norm_end | -0.462154 | +0.179308 | +0.020471 | -0.620990 | +0.641461 | +0.436462 | +0.756293
 final_norm_value_mean | -0.469818 | +0.351892 | +0.256799 | -0.564912 | +0.821711 | +0.476035 | +0.805497
 position_numeric_embedding | -0.000649 | -0.083132 | -0.090649 | -0.008167 | -0.082482 | -0.246815 | -0.516078
-position_numeric_onehot | 未定义 | +0.000000 | 未定义 | 未定义 | 未定义 | 未定义 | 未定义
+position_numeric_onehot | undefined | +0.000000 | undefined | undefined | undefined | undefined | undefined
 output_prob | -0.304427 | +0.026724 | -0.123603 | -0.454754 | +0.331151 | +0.239738 | -0.200369
 query_final_norm | -0.459636 | +0.246938 | +0.168175 | -0.538399 | +0.706574 | +0.441803 | +0.705088
 
-层依赖
-两取逆关系的10个神经分支，在全部3源的长度平均上，三主指标Delta均正。
-但第一block的末token分支不是每个长度均正：两关系均存在负Delta长度。
-从第二block开始的所有末token分支，以及所有contextual mean分支，
-三个源、全部21个长度、三主指标Delta均为正。
-这支持信号不只来自最后一层读数，但不支持它在每个位置/长度同样强。
-block01末token、各层pooling的Bt也有源/长度差异，不能用Delta替代Bt。
-超越关系的中间层末token与pooling含更大dc；最后层主位置dc较小。
-下降关系各层大Delta主要伴随dw下降。两关系不能使用同一绝对趋同叙事。
-没有将效应最大的层改为主分析；最后层仍为原定主位置。
+Layer dependence
+Across the 10 neural branches for the two inverse relations, all three primary metrics have positive Delta in the length means of all 3 sources.
+However, the first block's final-token branch is not positive at every length: both relations have negative-Delta lengths.
+For every final-token branch from the second block onward and every contextual-mean branch,
+Delta is positive across all three sources, all 21 lengths, and all three primary metrics.
+This supports that the signal is not limited to the final-layer readout, but not that it is equally strong at every position/length.
+Bt for the block01 final token and each layer's pooling also varies by source/length; Delta cannot replace Bt.
+Exceedance intermediate-layer final-token and pooling branches have larger dc; final-layer primary-position dc is smaller.
+Large Delta for the descents relation mainly accompanies declining dw across layers. The two relations cannot share one absolute-convergence narrative.
+The largest-effect layer was not made the primary analysis; the final layer remains the original primary position.
 
-输入编码基线
-位置保留的真实numeric embedding基线中，两取逆关系三主指标的
-源平均Delta均为负。CKA Delta分别为-0.120777与-0.082482。
-因此，仅用训练后的逐值embedding展平几何，不能复现隐藏层正增量的方向。
-这排除了一个简单的“同方向效果已经全在逐值embedding里”描述，却
-没有隔离位置/序列编码、非线性上下文计算或输出信息对隐藏几何的贡献。
-它不构成隐藏层发现独立代数机制的证明。
+Input-encoding baselines
+For the position-preserving genuine numeric-embedding baseline, both inverse relations have negative
+source-mean Delta on all three primary metrics. CKA Delta is -0.120777 and -0.082482, respectively.
+Thus flattening trained per-value embedding geometry alone does not reproduce the direction of positive hidden-layer increments.
+This rules out the simple description “the same-direction effect is already entirely in per-value embeddings,” but
+does not isolate the contributions of positional/sequential encoding, nonlinear contextual computation, or output information to hidden geometry.
+It does not prove that hidden layers discover an independent algebraic mechanism.
 
-静态onehot没有初始化/B0/Delta。对补值、反序、取逆，位置onehot Gram
-理论上不变，所以各配对的差值为0；这是等距输入编码的构造性质。
-embedding末token与无序embedding均值均为结构常量，指标未定义。
-不会把这些常量的浮点舍入或大量精确邻域平局解释为关系信号。
+Static one-hot features have no initialization/B0/Delta. Positional one-hot Gram matrices are theoretically invariant
+under complementation, reversal, and inversion, giving pairing differences of 0; this follows from the isometric input construction.
+The final-token embedding and unordered embedding mean are structural constants, with undefined metrics.
+Floating-point rounding or numerous exact neighborhood ties for these constants are not interpreted as relation signals.
 
-答案与输出关联仍未排除
-答案分层后，output_prob CKA Delta仍为+0.336123/+0.331151；KNN也均正。
-因此正确/错误配对偏好的改变并不限于隐藏空间，输出几何具有同向信号。
-下降关系输出Procrustes平均Delta为正，但存在单长度负值；
-超越关系输出Procrustes平均Delta为-0.200369，三个源跨越
-[-0.868721,+0.974798]，不能宣称输出控制三指标全部稳健。
-Procrustes在目标投影能量很小时可能出现极大NRMSE，完整保留该结果，
-不按结果调整指标、rank或长度，不直接与CKA数值相减。
+Answer and output associations remain possible
+After answer stratification, output_prob CKA Delta remains +0.336123/+0.331151; KNN is also positive for both.
+Thus changes in correct/wrong pairing preferences are not limited to hidden space; output geometry has same-direction signals.
+Mean output-Procrustes Delta is positive for descents, but individual lengths can be negative;
+mean output-Procrustes Delta is -0.200369 for exceedances, with the three sources spanning
+[-0.868721,+0.974798], so robust agreement across all three output-control metrics cannot be claimed.
+Procrustes can yield extremely large NRMSE when target projected energy is small; these results are fully retained,
+without changing metrics, rank, or lengths based on results or directly subtracting their values from CKA.
 
-普通逐长度控制与答案分层的幅度不同。例如最后层CKA Delta：
-下降关系within_length为0.993578，answer_strata为0.588965；
-超越关系within_length为1.379408，answer_strata为0.641461。
-答案相关结构解释了明显的量级变化，但分层不移除全部置信度、预测错误
-或非线性答案信息。隐藏Delta减输出Delta不能估计独立机制的贡献。
+Ordinary per-length controls and answer stratification differ in magnitude. For example, final-layer CKA Delta is:
+descents within_length 0.993578 versus answer_strata 0.588965;
+exceedances within_length 1.379408 versus answer_strata 0.641461.
+Answer-associated structure accounts for substantial magnitude changes, but stratification does not remove all confidence, prediction errors,
+or nonlinear answer information. Hidden Delta minus output Delta cannot estimate an independent mechanism's contribution.
 
-其他关系、指标与来源边界
-主位置完整62源/关系单元中，Bt或Delta的三指标方向分歧共3个：
-native max_record_reverse seed1009、seed3037，以及specialist
-lis_length_inverse_self seed42。其分歧发生在Bt，不应说Delta也翻转。
-普通/debiased CKA的Bt方向差异有2个，为上述两个native记录关系单元。
-这些弱边界均完整报告，不删除关系、长度或种子以增加一致性。
-新层没有新输入抽样bootstrap，旧初始化种子变异不能当作独立世界CI。
-单源扩展关系是该源观察，不与原3源关系等量包装。
+Other relations, metrics, and provenance boundaries
+Among all 62 source/relation cells at the primary position, 3 show disagreement across metrics in Bt or Delta direction:
+native max_record_reverse seed1009, seed3037, and specialist
+lis_length_inverse_self seed42. Their disagreement concerns Bt and should not be described as a Delta reversal as well.
+There are 2 ordinary/debiased CKA Bt sign differences, the two native record-relation cells above.
+All weak boundaries are fully reported; no relations, lengths, or seeds are deleted to increase agreement.
+The new layers have no new input-sampling bootstrap; historical initialization-seed variation is not an independent-world CI.
+Single-source extension relations are observations for those sources, not equivalent replications of the original 3-source relations.
 
-目前支持的主张
-在这些既有检查点和固定评价输入上，训练相对重建初始化参照改变了
-变换配对的相对偏好；方向、幅度和绝对正确配对变化依赖关系、层和pooling。
-两条取逆关系的正增量在三指标及大多数预定神经分支上具有较广覆盖。
-简单位置embedding基线不复现同方向增量，但输出概率有同向信号，
-初始化编码几何与输出相关解释仍未被完整区分。
-下一步真实共享step-0的编码对照应拆开B0/Bt/dc/dw/Delta，并保留任务
-准确率与输出控制；本结果不预先保证编码会改变最终关系偏好。
+Currently supported claim
+For these existing checkpoints and fixed evaluation inputs, training changed relative transform-pairing
+preferences compared with reconstructed initialization; direction, magnitude, and absolute correct-pair changes depend on relation, layer, and pooling.
+Positive increments for two inverse relations have broad coverage across three metrics and most prespecified neural branches.
+Simple positional embedding baselines do not reproduce same-direction increments, but output probabilities do,
+so initialization-encoding geometry and output-related explanations remain incompletely distinguished.
+The next encoding control with genuine shared step-0 should separate B0/Bt/dc/dw/Delta and retain task
+accuracy and output controls; these results do not guarantee that encoding changes final relation preferences.

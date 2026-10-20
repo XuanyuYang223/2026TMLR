@@ -1,27 +1,27 @@
-PermWorld / GraphWorld 已有结果审查补充：复现入口
-工作区：/home/yangx/ICML
-本轮来源HEAD：见git_start.json；真实64+4个20k检查点及真实step0见source_scope.json。
-所有当前产物只在本目录，未改旧CURRENT_RESEARCH、旧协议/缓存或F17。
+PermWorld / GraphWorld supplementary review of existing results: reproduction entry points
+Workspace: /home/yangx/ICML
+Source HEAD: see git_start.json; source_scope.json lists the genuine64+4 20k checkpoints and genuine step0.
+All current artifacts are confined to this directory; previous CURRENT_RESEARCH, protocols/caches, and F17 were not modified.
 
-结果入口：reader_report.html / reader_report.txt
-冻结协议：protocol.json / freeze.json（在新增跨任务CKA之前）
-配对与数学分类：candidate_pairs.csv（480+12）、classification_manifest.csv、classification_audit.json
-旧32主格：recomputed_main32.csv、main32_by_length.csv
-六负格：six_negative_bt.csv、six_negative_bt_by_length.csv
-新分数：pair_per_length.csv、pair_summary.csv、pair_masks.csv
-类别与新差值：category_summary.csv、designated_category_comparisons.csv、common_support_training_comparisons.csv
-原W实际输入审计：W_actual_per_anchor.csv、W_actual_per_length.csv、W_actual_summary.csv
-原随机数学输入参考另列：W_original_random_math_reference.csv
-数值与算术验证：analysis_audit.json、result_reader_audit.json、existing_results_review.json
-具体文件保护：protection_start.json / protection_end.json，Git快照单列。
+Reader entry points: reader_report.html / reader_report.txt
+Frozen protocol: protocol.json / freeze.json (before new cross-task CKA)
+Pairs and mathematical classification: candidate_pairs.csv (480+12), classification_manifest.csv, classification_audit.json
+Previous32 primary cells: recomputed_main32.csv, main32_by_length.csv
+Six negative cells: six_negative_bt.csv, six_negative_bt_by_length.csv
+New scores: pair_per_length.csv, pair_summary.csv, pair_masks.csv
+Categories and new contrasts: category_summary.csv, designated_category_comparisons.csv, common_support_training_comparisons.csv
+Original-W audit on actual inputs: W_actual_per_anchor.csv, W_actual_per_length.csv, W_actual_summary.csv
+Original random-mathematical-input reference reported separately: W_original_random_math_reference.csv
+Numerical and arithmetic checks: analysis_audit.json, result_reader_audit.json, existing_results_review.json
+Named-file protection: protection_start.json / protection_end.json; Git snapshots are separate.
 
-环境：现有.venv/bin/python，使用-B避免修改源树字节码；numpy/matplotlib/threadpoolctl。
-纯CPU，分析限定BLAS线程2；没有Torch、模型加载、前向、优化器或训练。
-已保存prefix_final最终norm输入结束状态，具体dtype/路径/哈希见loaded_endpoint_manifest.json。
-大激活和数据位于/mnt/yangx-projects-f；文件SHA及旧索引在协议与保护快照中，
-必须具备这些原依赖才能从激活复现；不能重建初始化或补训替代缺失输入。
+Environment: existing .venv/bin/python with -B to avoid source-tree bytecode changes; numpy/matplotlib/threadpoolctl.
+CPU-only analysis, BLAS limited to2 threads; no Torch, model loading, forward passes, optimizer, or training.
+Saved prefix_final final-norm input-end states are used; loaded_endpoint_manifest.json records dtype/paths/hashes.
+Large activations and data reside under /mnt/yangx-projects-f; file SHA values and previous indices appear in protocol/protection snapshots.
+Original dependencies are required to reproduce from activations; do not rebuild initializations or retrain to replace missing inputs.
 
-实际执行链（记录，不建议在已完成目录直接覆盖结果）：
+Actual execution chain (historical record; do not overwrite results directly in the completed directory):
  .venv/bin/python -B diagnostics/representation_pairing_review_20261011/protection_audit.py --stage start
  .venv/bin/python -B diagnostics/representation_pairing_review_20261011/classification_and_W.py --stage classify
  .venv/bin/python -B diagnostics/representation_pairing_review_20261011/existing_results_review.py --run
@@ -33,14 +33,14 @@ PermWorld / GraphWorld 已有结果审查补充：复现入口
  .venv/bin/python -B diagnostics/representation_pairing_review_20261011/protection_audit.py --stage end
  .venv/bin/python -B diagnostics/representation_pairing_review_20261011/build_report.py
 
-start/end脚本拒绝覆盖已完成的开始/结束快照；freeze不能被当作计算后的重新注册。
-重算应使用整个工作区的独立副本，保留既有冻结SHA，先复核原依赖；
-代码使用固定绝对来源路径，迁移环境必须显式记录路径映射，不宣称原字节冻结自动适用于修改代码。
-无需重算的读者可以用result_reader_audit.py从保存CSV核对分类、聚合及差值，
-该验证不重做CKA或前向。40项独立数值验证来自同一保存激活，不是新模型复现。
+start/end scripts reject overwriting completed snapshots; freeze is not post-computation registration.
+Use an independent copy of the full workspace for recomputation, retain existing frozen SHA values, and check original dependencies first.
+Code uses fixed absolute source paths; environment migration requires explicit path mappings and does not transfer original byte-level freeze guarantees to modified code.
+Readers who need no recomputation can run result_reader_audit.py on saved CSV files to check categories, aggregates, and differences;
+that check repeats neither CKA nor forward passes. The40 independent numerical checks use the same saved activations, not new-model replications.
 
-工程修复/失败记录：W_engineering_repair.json、engineering_repairs/freeze_restore.json。
-冻结前的样本数定位修复及收到冻结通知后的精确源码恢复均保留；
-真实新增CKA仅执行freeze中的e174源码，容差没有放宽，全部候选保留。
-completion.json为本轮最终完成清单；不用于覆盖旧完成状态。
-本轮完成后停止，后续候选只见replication_candidates.txt / next_phase_candidates.txt，不执行。
+Engineering repair/failure records: W_engineering_repair.json, engineering_repairs/freeze_restore.json.
+Retain both pre-freeze sample-count localization repairs and exact source restoration after receiving the freeze notice;
+new CKA used only e174 source from freeze, without relaxing tolerance or removing candidates.
+completion.json is this round’s final completion manifest, not a replacement for previous completion states.
+Stop after this round; replication_candidates.txt / next_phase_candidates.txt list unexecuted follow-up proposals.

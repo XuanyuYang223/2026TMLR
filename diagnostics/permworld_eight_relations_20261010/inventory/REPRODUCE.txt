@@ -1,52 +1,52 @@
-PermWorld 八条关系：读者复现入口（2026-10-10）
+Eight PermWorld relations: reader reproduction entrypoint (2026-10-10)
 
-范围与停止边界
-本轮使用首轮四任务×两编码×两架构的16个真实20k检查点，补齐12性质×四配置的48个固定20k终点，共64模型。第二轮n10..12的8k可学习性模型不属于本轮。旧产物、F17及发布文件保留原路径与哈希。本研究为一世界/每架构一份真实初始化的探索性扩展，不把八关系、多个长度或共享轨道当作独立重复。完整固定清单和分析完成后停止；命令本身不追加任务、种子或预算。
+Scope and stopping boundary
+This round uses the first 16 genuine 20k checkpoints from four tasks × two encodings × two architectures and completes 48 fixed 20k endpoints for 12 properties × four configurations, totaling 64 models. Second-round n10..12 8k learnability models are outside scope. Earlier artifacts, F17, and published files retain original paths and hashes. This is an exploratory extension with one world and one genuine initialization per architecture; the eight relations, multiple lengths, and shared orbits are not independent repetitions. Stop after the complete fixed manifest and analysis; the commands do not add tasks, seeds, or budgets.
 
-路径
-代码：/home/yangx/ICML/experiments/permworld_eight_relations_20261010/
-协议/审计/小表：/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/
-新权重和激活：/mnt/yangx-projects-f/20261010/permworld_eight_relations/
-原16模型：/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/
-原16模型多层缓存：/mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json
-执行目录：/home/yangx/ICML；解释器：.venv/bin/python。
+Paths
+Code: /home/yangx/ICML/experiments/permworld_eight_relations_20261010/
+Protocol/audit/small tables: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/
+New weights and activations: /mnt/yangx-projects-f/20261010/permworld_eight_relations/
+Original 16 models: /mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/
+Original 16-model multilayer cache: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json
+Working directory: /home/yangx/ICML; interpreter: .venv/bin/python.
 
-先核验来源
-inventory/sources.json、model_gap_manifest.csv及training_manifest.csv记录已完成16模型与仅缺失的48模型，不能用历史单性质模型的同20k字样替代匹配来源。
-两编码逐值复用同架构已保存step-0参数；跨架构参数不相同且参数量不匹配。原4性质保留原任务起始RNG。新12性质没有历史同任务起始RNG，明确绑定同架构已经保存的descents起始RNG；两编码相同、不同新任务共享该流，因此重复之间有耦合。GRU初始化来自已记录的逐张量迁移，不能表述为后来按同种子重新生成。
-training_freeze.json冻结训练源；analysis_freeze.json另冻分析源；metadata_writer_freeze.json另冻完成侧车写入器。分析冻结包含inventory/extractor_dependency_audit.json列出的导入闭包。不要改原训练freeze来掩盖分析或侧车工程修复。
+Verify provenance first
+inventory/sources.json, model_gap_manifest.csv, and training_manifest.csv record the completed 16 models and only the 48 missing models. Historical single-property models labeled 20k are not substitutes for matched provenance.
+Both encodings reuse saved step-0 parameters value for value within architecture; parameters differ across architectures and parameter counts are unmatched. The original four properties retain their task-specific starting RNG. The 12 new properties lack historical task-specific starting RNG states and explicitly bind the saved descents starting RNG within architecture. The encodings match and distinct new tasks share that stream, creating dependence. GRU initialization comes from the documented tensorwise migration, not later regeneration with the same seed.
+training_freeze.json freezes training source; analysis_freeze.json separately freezes analysis source; metadata_writer_freeze.json separately freezes the completion-sidecar writer. The analysis freeze includes the import closure in inventory/extractor_dependency_audit.json. Do not change the original training freeze to conceal analysis or sidecar engineering repairs.
 
-训练复现入口（仅在另行执行固定训练清单时使用；本说明未执行）
+Training reproduction entrypoint (only for separately executing the fixed training manifest; not executed by this document)
 .venv/bin/python -m experiments.permworld_eight_relations_20261010.queue
-或单个固定run_id：
+Or one fixed run_id:
 .venv/bin/python -m experiments.permworld_eight_relations_20261010.runner --run-id eightrel001_transformer_one_line_anti_fixed_points
-使用queue/runner，不直接调用旧train.py的job入口。冻结train.py终点侧车写入存在dict重复关键字错误，metadata_repair_02/repair.json保存原因与首次失败记录；runner只捕获该明确错误或接续已保存的20k检查点，核验有限更新、数据、来源、初始化、曝光和权重哈希后补写completed.json，不重复更新、不修改检查点字节。metadata_writer_freeze.json绑定修复器版本。
-20k=1,280,000输入曝光、2,560,000答案/EOS监督token；始终读取最终固定终点，不选择最佳验证检查点。首次历史实际成本估计25.04累计进程小时来自当时并行、受竞争影响的日志，不是实际GPU核小时或保证本轮壁钟时间。实际本轮成本读取queue状态及actual_training_cost.csv，并区分累计进程时间与队列壁钟。
+Use queue/runner rather than directly invoking the old train.py job entrypoint. The frozen train.py endpoint-sidecar writer has a duplicate dict-keyword error; metadata_repair_02/repair.json retains its cause and first failure. The runner catches only that specific error or resumes handling an already saved 20k checkpoint, verifies finite updates, data, provenance, initialization, exposure, and weight hashes, then writes completed.json without repeat updates or checkpoint-byte changes. metadata_writer_freeze.json binds the repair version.
+20k=1,280,000 input exposures and 2,560,000 supervised answer/EOS tokens. Always read the fixed final endpoint, not the best validation checkpoint. The initial historical estimate of 25.04 cumulative process hours comes from logs affected by concurrent contention; it is neither GPU-kernel hours nor a guarantee of this round’s wall time. Read actual costs from queue status and actual_training_cost.csv, distinguishing cumulative process time from queue wall time.
 
-缓存和分析复现（需48个固定20k completed.json全部齐备且分析已冻结）
-1. CPU解包旧64逻辑缓存，不重复原前向：
+Cache and analysis reproduction (requires all 48 fixed-20k completed.json files and frozen analysis)
+1. Unpack the earlier 64 logical cache records on CPU without repeating the original forward passes:
 .venv/bin/python -m experiments.permworld_eight_relations_20261010.extract --stage reuse
-2. 提取新48模型的初始化/训练后、validation/test两划分：
+2. Extract initialization/trained states for the 48 new models on validation/test splits:
 .venv/bin/python -m experiments.permworld_eight_relations_20261010.extract --stage extract
-3. 再次只读核验完整256逻辑记录：
+3. Read-only verification of all 256 logical records:
 .venv/bin/python -m experiments.permworld_eight_relations_20261010.extract --stage validate
-4. 固定协议计算与报告：
+4. Fixed-protocol computation and report:
 .venv/bin/python -m experiments.permworld_eight_relations_20261010.analysis --run
 .venv/bin/python -m experiments.permworld_eight_relations_20261010.report
-执行分析前须核对其analysis_freeze.json版本；这些命令不包含新训练。若固定终点缺失，提取器在启动CUDA前拒绝，不能把部分模型打包为完整结果。
+Check the analysis_freeze.json version before analysis; these commands contain no new training. If fixed endpoints are missing, the extractor refuses before starting CUDA; partial models must not be packaged as complete results.
 
-缓存证据与精确范围
-evaluation/index.json的256逻辑记录=64模型×initial/trained×validation/test。数组均.npy、只读mmap，绑定文件SHA与dtype/shape/bytes的内容SHA。任务前final_norm的独立prefix_final是主读数，不能用层包内final_norm替换旧主数组。四块/四GRU层加final_norm为五层包；embedding不伪造为该包的一层。
-旧NPZ每norm/prob/pred字段只解码一次，original_array_conversion_checks保存原内容SHA→新npy内容SHA并逐值np.array_equal验证。原16模型初始化CE没有缓存，继续明确缺失；不把训练CE、末批loss或另一次8k模型CE补成它。
-新48模型初始化头部概率、预测及CE均按真实step-0逐任务前向，不由共享隐藏状态复用任务答案。共享初始层包和prefix仅在全部原锚点/三动作逐值相等后别名，保留源run_id和数组描述。
-独立复核固定覆盖每个新源的initial/trained，test长度10/20/30，各动作identity/complement/inverse的首8样本，使用该长度首128样本完整prompt与正常提取完全相同的形状；手写前向结果直接比较已写盘层包和独立prefix，容差2e-5。prompt包含任务与等号，序列宽度为2*max(n)+6，128是样本数，绝非填充到128token。validation缓存没有独立抽样复核，只引用这一test复核范围。
-output_prob=softmax(logits[:,0:31])，是合法数字0..30内条件概率；预测argmax与答案CE使用全188词表。components关系右答案相差+1只用于关系比较/分组，不能改源任务真实监督或CE标签。
+Cache evidence and exact scope
+evaluation/index.json contains 256 logical records=64 models × initial/trained × validation/test. All arrays are .npy read-only mmaps, with file SHA and dtype/shape/bytes content SHA. The separately saved pre-task final_norm prefix_final is primary; packed-layer final_norm must not replace earlier primary arrays. Four blocks/four GRU layers plus final_norm form a five-layer package; embedding is not fabricated as a package layer.
+Each earlier NPZ norm/prob/pred field is decoded once. original_array_conversion_checks saves original-content SHA→new NPY-content SHA and verifies elementwise np.array_equal. Initial CE was not cached for the original 16 models and remains explicitly missing; trained CE, final-batch loss, or CE from another 8k model cannot fill it.
+Initial head probabilities, predictions, and CE for the 48 new models use task-specific forward passes from genuine step-0, not task-answer reuse from shared hidden states. Initial layer packages and prefixes are aliased only after elementwise equality over all original anchors/three actions, retaining source run_id and array descriptions.
+Independent checks cover each new source at initial/trained states, test lengths 10/20/30, and the first 8 samples for each identity/complement/inverse action. They use full prompts for the first 128 samples at that length, with exactly the production extraction shape. Manual forward results are compared directly against saved layer packages and independent prefixes at tolerance 2e-5. Prompts include task and equals tokens; sequence width is 2*max(n)+6. The number 128 counts samples, not padding to 128 tokens. Validation caches have no independent sampled check and only reference this test-check scope.
+output_prob=softmax(logits[:,0:31]) is conditional on valid numeric tokens 0..30; prediction argmax and answer CE use the full 188-token vocabulary. The +1 right-answer offset for components applies only to relation comparison/grouping, not actual source-task supervision or CE labels.
 
-固定读数
-八关系×四配置完整保留，长度10..30分别计算、21长度等权。三主指标linear CKA、kNN邻域重叠、留出8维PCA/Procrustes与debiased CKA敏感性，raw/answer_strata控制、输出概率和静态答案基线同时呈现。B0、Bt、dc、dw、Delta完整报告；若一个长度未定义则保留NaN，不重选长度、任务或指标、不重新分配长度权重。Delta翻转而Bt相近不能称为训练关系偏好翻转。CKA本身不能识别数学机制。
+Fixed readouts
+Retain all eight relations × four configurations, compute lengths 10..30 separately, and weight the 21 lengths equally. Present the three primary metrics—linear CKA, kNN neighborhood overlap, held-out 8-dimensional PCA/Procrustes—alongside debiased CKA sensitivity, raw/answer_strata controls, output probabilities, and static answer baselines. Report B0,Bt,dc,dw,Delta in full. If one length is undefined, retain NaN without reselecting lengths, tasks, or metrics or redistributing weights. A Delta reversal with similar Bt is not a reversal of trained relation preference. CKA alone cannot identify a mathematical mechanism.
 
-工程记录
-extract_synthetic_fixture.json：13项CPU合成检查，仅检验实现，不等于真实模型证据。
-engineering_repairs/extract_before_saved_evidence.py和extract_saved_evidence_repair.json：保留增加原→保存逐值证据与manual→保存证据之前的版本，训练/数据/初始权重不变。
-extraction_reuse_audit.json与extraction_validation.json：真实执行后生成，不能在仅合成fixture阶段声称它们已通过。
-inventory/extractor_dependency_audit.json：只读AST导入/哈希清单，不启动任何模型或指标。
+Engineering records
+extract_synthetic_fixture.json: 13 CPU synthetic checks that test implementation only, not actual-model evidence.
+engineering_repairs/extract_before_saved_evidence.py and extract_saved_evidence_repair.json retain the version before adding original→saved elementwise evidence and manual→saved evidence; training/data/initial weights are unchanged.
+extraction_reuse_audit.json and extraction_validation.json are generated after real execution; do not claim they passed at the synthetic-fixture-only stage.
+inventory/extractor_dependency_audit.json: read-only AST import/hash manifest without starting models or metrics.

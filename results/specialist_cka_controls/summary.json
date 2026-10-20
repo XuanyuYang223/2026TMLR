@@ -1321,7 +1321,7 @@
   "per_relation": [
     {
       "relation": "descent_inverse",
-      "name": "\u4e0b\u964d\u6570\u2014\u9006\u4e0b\u964d\u6570\uff08\u53d6\u9006\uff09",
+      "name": "Descents--inverse descents (inversion)",
       "matched_anchors": 2249,
       "raw_prefix_mean": 0.30029594107811564,
       "answer_matched_prefix_mean": 0.03185517387312515,
@@ -1335,7 +1335,7 @@
     },
     {
       "relation": "peak_complement",
-      "name": "\u5cf0\u2014\u8c37\uff08\u8865\u6392\u5217\uff09",
+      "name": "Peaks--valleys (complement)",
       "matched_anchors": 1999,
       "raw_prefix_mean": 0.32763904730382326,
       "answer_matched_prefix_mean": 0.16569697292022045,
@@ -1349,7 +1349,7 @@
     },
     {
       "relation": "fixed_complement",
-      "name": "\u4e0d\u52a8\u70b9\u2014\u53cd\u4e0d\u52a8\u70b9\uff08\u8865\u6392\u5217\uff09",
+      "name": "Fixed points--anti-fixed points (complement)",
       "matched_anchors": 2507,
       "raw_prefix_mean": 0.2588732752512662,
       "answer_matched_prefix_mean": 0.016491434084154603,
@@ -1363,7 +1363,7 @@
     },
     {
       "relation": "exceedance_inverse",
-      "name": "\u8d85\u8d8a\u6570\u2014\u4e0d\u8db3\u6570\uff08\u53d6\u9006\uff09",
+      "name": "Exceedances--deficiencies (inversion)",
       "matched_anchors": 1347,
       "raw_prefix_mean": 0.7251862019655863,
       "answer_matched_prefix_mean": 0.09837331401002768,
@@ -1377,7 +1377,7 @@
     },
     {
       "relation": "subsequence_complement",
-      "name": "LIS\u2014LDS\uff08\u8865\u6392\u5217\uff09",
+      "name": "LIS—LDS (complement)",
       "matched_anchors": 2408,
       "raw_prefix_mean": 0.3837456201849478,
       "answer_matched_prefix_mean": 0.05738971061649717,
@@ -1391,7 +1391,7 @@
     },
     {
       "relation": "run_complement",
-      "name": "\u9012\u589e\u6bb5\u2014\u9012\u51cf\u6bb5\uff08\u8865\u6392\u5217\uff09",
+      "name": "Increasing--decreasing run (complement)",
       "matched_anchors": 2122,
       "raw_prefix_mean": 0.9176494583357103,
       "answer_matched_prefix_mean": 0.1626649197839973,
@@ -1405,7 +1405,7 @@
     },
     {
       "relation": "record_complement",
-      "name": "\u5de6\u5411\u6700\u5927\u8bb0\u5f55\u2014\u6700\u5c0f\u8bb0\u5f55\uff08\u8865\u6392\u5217\uff09",
+      "name": "Left-to-right maxima--minima (complement)",
       "matched_anchors": 2245,
       "raw_prefix_mean": 0.3449383720152061,
       "answer_matched_prefix_mean": 0.30707625554422496,
@@ -1419,7 +1419,7 @@
     },
     {
       "relation": "decomposition_complement",
-      "name": "\u5168\u5c40\u4e0b\u964d\u2014\u5206\u89e3\u5757\uff08\u8865\u6392\u5217\uff09",
+      "name": "Global descents--components (complement)",
       "matched_anchors": 2656,
       "raw_prefix_mean": 0.25902962289362047,
       "answer_matched_prefix_mean": 0.10323972401093395,

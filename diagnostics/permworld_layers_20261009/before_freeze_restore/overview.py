@@ -215,7 +215,7 @@ def validate(root, development, fixture=False):
 
 
 def fmt(v):
-    if v in (None,''): return '未定义'
+    if v in (None,''): return 'undefined'
     if isinstance(v,(bool,int)): return str(v)
     if isinstance(v,str) and v.lstrip('+-').isdigit(): return v
     try: return f'{float(v):+.5f}'
@@ -237,16 +237,16 @@ def render(bundle,root,development,fixture=False):
     def prose(text): paragraphs.append(text); sections.append('<p>'+html.escape(text)+'</p>')
     def tab(rows, cols): paragraphs.append(plain_table(rows,cols)); sections.append(table(rows,cols))
     def title(text): paragraphs.append('\n'+text); sections.append('<h2>'+html.escape(text)+'</h2>')
-    prose('用户授权边界为“多层分析＋16模型开发预跑，完成后停止”。本轮已完成已有 PermWorld 检查点的多层探索诊断，以及固定16模型的编码×架构工程开发实验。正式训练清单未启动，GroupWorld 未启动；F17论文、实验结果与发布产物保持原样。开发报告后停止，不自动追加训练。')
-    if fixture: prose('合成 CPU fixture：本页仅验证报告生成流程，全部分数是人工数据，不是研究结果。')
-    title('已有检查点：正增量与正确对齐增长须区分')
-    prose('旧多层诊断没有新增源模型训练。历史初始化参照全部为 C 级：按原程序重建，但原真实 step-0 权重身份无法验证。结论只对应这些重建参照；不能将相同种子解释为精确匹配初始化。')
+    prose('The authorized boundary was “multilayer analysis plus a 16-model development pilot, then stop.” This round completed exploratory multilayer diagnostics of existing PermWorld checkpoints and the fixed 16-model encoding × architecture engineering experiment. The formal training manifest and GroupWorld were not started; the F17 paper, experimental results, and release artifacts remain unchanged. Stop after the development report; no automatic additional training.')
+    if fixture: prose('Synthetic CPU fixture: this page verifies report generation only; all scores are artificial data, not research results.')
+    title('Existing checkpoints: positive increments must be distinguished from increases in correct alignment')
+    prose('The historical multilayer diagnostic added no source-model training. All historical initialization references are grade C: reconstructed with the original procedure, but the identity of the original genuine step-0 weights cannot be verified. Conclusions apply only to those reconstructed references; the same seed must not be interpreted as an exactly matched initialization.')
     oi=bundle['oldidx']; compact=[]
     for rel in ('descent_inverse','exceedance_inverse'):
         r=oi['specialist16',rel,'final_norm_end','answer_strata','linear_cka']
         compact.append(dict(relation=rel,sources=r['planned_sources'],B0=r['B0_mean'],Bt=r['Bt_mean'],dc=r['delta_correct_mean'],dw=r['delta_wrong_mean'],Delta=r['delta_mean']))
     tab(compact,('relation','sources','B0','Bt','dc','dw','Delta'))
-    prose('两条取逆关系在旧主位置有稳定的正 Δ 候选，但 final end 普通 CKA 的大增量主要来自错误配对下降，而非正确配对大幅趋同。全部关系、源、长度、层和固定指标均保留；多层新增结果仍是探索性诊断。')
+    prose('The two inverse relations have stable positive Δ candidates at the historical primary position, but the large final-end ordinary-CKA increments mainly reflect declining wrong-pair similarity, rather than substantial convergence of correct pairs. All relations, sources, lengths, layers, and fixed metrics are retained; the added multilayer results remain exploratory diagnostics.')
     profile=[]
     for rel in ('descent_inverse','exceedance_inverse'):
         for branch in ('block_01_end','block_02_end','block_03_end','block_04_end','final_norm_end','final_norm_value_mean'):
@@ -254,26 +254,26 @@ def render(bundle,root,development,fixture=False):
             profile.append(dict(relation=rel,branch=branch,B0=r['B0_mean'],Bt=r['Bt_mean'],dc=r['delta_correct_mean'],dw=r['delta_wrong_mean'],Delta=r['delta_mean']))
     tab(profile,('relation','branch','B0','Bt','dc','dw','Delta'))
     a=oi['specialist16','descent_inverse','block_01_end','answer_strata','linear_cka']; b=oi['specialist16','descent_inverse','block_02_end','answer_strata','linear_cka']
-    prose('下降—逆下降从 block1 到 block2：Δ 的层际变化为 '+fmt(num(b['delta_mean'])-num(a['delta_mean']))+'，Bt 的变化为 '+fmt(num(b['Bt_mean'])-num(a['Bt_mean']))+'，B0 的变化为 '+fmt(num(b['B0_mean'])-num(a['B0_mean']))+'。这次 Δ 跃升主要对应初始化偏好的层际变化，不能写成第二层训练后偏好更强。')
-    prose('超越—亏缺在中层以及数值 token mean pooling 中，正确 CKA 的增长明显大于 final end。下降关系的正确变化 dc 也有指标方向差异。因此 final end 的拆解不能代替所有层或所有指标的结论。三主指标为 CKA、邻域重叠、留出 Procrustes；debiased CKA 为固定敏感性，不按结果挑层、长度或指标。')
-    prose('均按10–30逐长度计算、固定1/21汇总；缺定义长度不重新加权。embedding结束位置及无序数值均值是同长度结构常量，指标未定义。源间离散程度可包含初始化、dropout、数据顺序和优化随机性，不能精确拆分，也不形成独立数据世界置信区间。共享任务/轨道的关系保留依赖结构，留一关系和留一家族是敏感性分析。')
-    title('新开发：一条取逆＋一条补排列，四条件共16模型')
-    prose('开发任务为下降数、逆下降数、峰、谷；关系仅 descent_inverse 与 peak_complement。四任务×一行/规范轮换两编码×Transformer/GRU两架构=16模型，新数据世界、每架构一个真实初始化单元。它不是原来两条取逆关系的新确认实验。')
-    prose('每个架构内的两编码和四任务复制相同真实保存 step-0，跨架构不声称权重相同。GRU的原始真实初始化经过逐tensor保持数值的键迁移，使用四个单层GRU与显式层间Dropout；迁移和恢复检查的完整证据保留。两编码共底层排列、轨道划分、批次及20,000更新，保存固定最终检查点，不选择最佳阶段。')
-    prose('Transformer 256维、4层、8头，共3,240,448参数；GRU 256维、4层，共1,660,416参数。容量和计算量未匹配。源任务学习程度不同、单世界与单初始化共同限制架构解释；不作确认性p值或等价性判断。')
-    prose('工程完成状态：'+bundle['engineering']['status']+'。失败的门槛和弱任务同样完整保留，报告生成不把失败改为通过，也不延长固定预算。')
+    prose('For descents–recoils from block1 to block2, the between-layer change in Δ is '+fmt(num(b['delta_mean'])-num(a['delta_mean']))+', the change in Bt is '+fmt(num(b['Bt_mean'])-num(a['Bt_mean']))+', and the change in B0 is '+fmt(num(b['B0_mean'])-num(a['B0_mean']))+'. This Δ jump mainly corresponds to between-layer initialization-preference changes, not stronger trained preference in layer two.')
+    prose('For exceedances–deficiencies, correct CKA increases substantially more in intermediate layers and numeric-token mean pooling than at the final end. The descents relation also has metric-dependent signs for the correct-pair change dc. Therefore, the final-end decomposition cannot replace conclusions about every layer or metric. The three primary metrics are CKA, neighborhood overlap, and held-out Procrustes; debiased CKA is a fixed sensitivity analysis, with no selection of layers, lengths, or metrics based on results.')
+    prose('Each length 10–30 is evaluated separately and aggregated with fixed weights of 1/21; undefined lengths are not reweighted. The embedding at the end position and the unordered numeric mean are structural constants within a length, so their metrics are undefined. Between-source dispersion can include initialization, dropout, data order, and optimization randomness; these cannot be precisely separated and do not yield confidence intervals for independent data worlds. Relations sharing tasks/orbits retain their dependence; leave-one-relation and leave-one-family analyses are sensitivity analyses.')
+    title('New development: one inverse relation plus one complement relation; 16 models across four conditions')
+    prose('The development tasks are descents, recoils, peaks, and valleys; the only relations are descent_inverse and peak_complement. Four tasks × two encodings (one-line/canonical-cycle) × two architectures (Transformer/GRU) = 16 models, with a new data world and one genuine initialization unit per architecture. This is not a new confirmation experiment for the two original inverse relations.')
+    prose('Within each architecture, both encodings and all four tasks copy the same genuinely saved step-0 parameters; identical weights are not claimed across architectures. The GRU’s original genuine initialization underwent a tensor-value-preserving key migration, using four single-layer GRUs and explicit inter-layer Dropout; all evidence for migration and restoration checks is retained. Both encodings share underlying permutations, orbit splits, batches, and 20,000 updates. Fixed final checkpoints are saved without selecting the best stage.')
+    prose('The Transformer has width 256, 4 layers, 8 heads, and 3,240,448 parameters; the GRU has width 256, 4 layers, and 1,660,416 parameters. Capacity and computation are not matched. Differences in source-task mastery, one world, and one initialization jointly limit architectural interpretation; no confirmatory p-values or equivalence claims are made.')
+    prose('Engineering completion status:'+bundle['engineering']['status']+'. Failed gates and weak tasks are fully retained; report generation neither changes failures to passes nor extends the fixed budget.')
     primary=[r for r in bundle['interactions'] if r['branch']=='prefix_final' and r['control']=='answer_strata' and r['metric']=='linear_cka']
     primary.sort(key=lambda r:(ARCHS.index(r['architecture']),RELATIONS.index(r['relation'])))
     tab(primary,('architecture','relation','Gamma0','Gammat','Gamma_correct','Gamma_wrong','GammaDelta'))
-    prose('上表只是事先固定的主读数：任务前最终层、答案分层、普通CKA。编码交互为规范轮换减一行：ΓΔ=Γt−Γ0，同时等于Γcorrect−Γwrong。必须区分初始化偏好改变、训练后偏好改变、正确增长和错误下降；Δ随编码变号不等于训练后关系偏好翻转。')
-    title('全部源模型精度与长度参照')
+    prose('The table above contains only the prespecified primary readouts: the pre-task final layer, answer stratification, and ordinary CKA. The encoding interaction is canonical-cycle minus one-line: ΓΔ=Γt−Γ0, also equal to Γcorrect−Γwrong. Changes in initialization preference, trained pairing preference, correct-pair increases, and wrong-pair decreases must be distinguished; a sign change in Δ across encodings is not a reversal of trained relation preference.')
+    title('All source-model accuracies and length reference baselines')
     tab(bundle['learning'],('run_id','architecture','encoding','task','parameters','initial_validation_accuracy','final_validation_accuracy','gain','learning_gate_passed'))
     base=[r for r in bundle['baseline'] if r['condition']=='trained' and r['action']=='identity']
     base.sort(key=lambda r:(ARCHS.index(r['architecture']),ENCODINGS.index(r['encoding']),TASKS.index(r['task'])))
     tab(base,('architecture','encoding','task','full_vocab_accuracy','numeric_accuracy','length_majority_accuracy','full_vocab_gain_over_length_majority_pp'))
-    prose('验证精度是完整词表的答案位置准确率；numeric_accuracy限制于数字词表，单独报告。相对初始化提升10个百分点只是工程学习门槛。长度众数基线在冻结协议后作为描述性补充：仅由各任务/长度的训练标签定众数，并列取最小标签，再固定用于全部测试action。它不改变主指标、门槛或训练预算。超过该基线排除了这一个长度预测器，低于它不证明完全没有使用排列内容。')
-    title('全部预定分解和编码交互')
-    prose('下表保留两分支（任务前隐藏、输出概率）、两控制、三主指标和debiased敏感性；不减去输出Δ来估算额外机制。答案分层不能去除全部置信度或预测误差结构。Procrustes分数为负归一化预测误差，分数增加表示留出误差降低。')
+    prose('Validation accuracy is answer-position accuracy over the full vocabulary; numeric_accuracy is restricted to the numeric vocabulary and reported separately. A 10-percentage-point improvement over initialization is only an engineering learning gate. The length-mode baseline is a descriptive supplement added after protocol freezing: the mode is determined only from training labels for each task/length, with ties resolved to the smallest label, then fixed for all test actions. It changes neither primary metrics, gates, nor training budgets. Exceeding this baseline excludes this particular length-only predictor; falling below it does not prove that permutation content is completely unused.')
+    title('All prespecified decompositions and encoding interactions')
+    prose('The table below retains both branches (pre-task hidden states and output probabilities), both controls, the three primary metrics, and the debiased sensitivity analysis; hidden Δ minus output Δ is not used to estimate an additional mechanism. Answer stratification cannot remove all confidence or prediction-error structure. The Procrustes score is negative normalized prediction error, so a score increase indicates lower held-out error.')
     for branch in BRANCHES:
         for control in CONTROLS:
             for metric in METRICS:
@@ -284,25 +284,25 @@ def render(bundle,root,development,fixture=False):
                 label=branch+' / '+control+' / '+metric
                 paragraphs.extend(['\n'+label,plain_table(selected,('architecture','encoding','relation','B0','Bt','change_correct','change_wrong','Delta','undefined_lengths')),plain_table(gamma,('architecture','relation','Gamma0','Gammat','Gamma_correct','Gamma_wrong','GammaDelta'))])
                 sections.append('<details><summary>'+html.escape(label)+'</summary>'+table(selected,('architecture','encoding','relation','B0','Bt','change_correct','change_wrong','Delta','undefined_lengths'))+table(gamma,('architecture','relation','Gamma0','Gammat','Gamma_correct','Gamma_wrong','GammaDelta'))+'</details>')
-    paragraphs.append('\n全部模型、初始/训练条件、三action的长度基线对照\n'+plain_table(bundle['baseline'],('architecture','encoding','task','condition','action','full_vocab_accuracy','numeric_accuracy','length_majority_accuracy','full_vocab_gain_over_length_majority_pp','numeric_gain_over_length_majority_pp')))
-    sections.append('<details><summary>全部96个模型条件/action的长度基线对照</summary>'+table(bundle['baseline'],('architecture','encoding','task','condition','action','full_vocab_accuracy','numeric_accuracy','length_majority_accuracy','full_vocab_gain_over_length_majority_pp','numeric_gain_over_length_majority_pp'))+'</details>')
-    title('复核范围、完整产物与停止')
-    prose('旧汇总通过独立完整长度算术复核，旧52,080个单元逐字段保持一致。已有审计记录保护的F17文件未变。新开发检查包括真实初始化身份、独立进程恢复、保存激活与独立CKA路径、旧/新开发轨道排除。CKA、邻域和Procrustes都不能单独证明数学机制或功能价值。')
-    audits=[dict(name='旧统计复核',status=bundle['independent']['status']),dict(name='旧完整性/F17审计',status=bundle['final']['status']),dict(name='开发工程汇总',status=bundle['engineering']['status'])]
+    paragraphs.append('\nLength-baseline comparisons for all models, initial/trained conditions, and three actions\n'+plain_table(bundle['baseline'],('architecture','encoding','task','condition','action','full_vocab_accuracy','numeric_accuracy','length_majority_accuracy','full_vocab_gain_over_length_majority_pp','numeric_gain_over_length_majority_pp')))
+    sections.append('<details><summary>Length-baseline comparisons for all 96 model-condition/action combinations</summary>'+table(bundle['baseline'],('architecture','encoding','task','condition','action','full_vocab_accuracy','numeric_accuracy','length_majority_accuracy','full_vocab_gain_over_length_majority_pp','numeric_gain_over_length_majority_pp'))+'</details>')
+    title('Verification scope, complete artifacts, and stopping')
+    prose('The historical summaries passed independent arithmetic verification using every length; all fields of the historical 52,080 cells remain consistent. The F17 files protected by the existing audit record are unchanged. New development checks include genuine initialization identity, restoration in an independent process, saved activations versus an independent CKA path, and exclusion of historical/new development orbits. CKA, neighborhood overlap, and Procrustes alone cannot establish mathematical mechanisms or functional value.')
+    audits=[dict(name='Historical statistical verification',status=bundle['independent']['status']),dict(name='Historical completeness/F17 audit',status=bundle['final']['status']),dict(name='Development engineering summary',status=bundle['engineering']['status'])]
     for name,status in bundle['engineering'].get('gates',{}).items(): audits.append(dict(name=name,status=status))
     tab(audits,('name','status'))
-    links=[('reader_report.html','已有检查点面向读者的解释'),('report.html','多层完整报告'),('statistical_review.txt','独立统计复核正文'),('statistical_review.json','独立完整算术审计'),('final_audit.json','全实验完成与F17保护审计'),('existing_final_audit.json','旧完整性与F17保护审计'),('layer_metric_results.csv','旧全部逐关系/源/长度/层单元'),('source_metric_summary.csv','旧source汇总'),('relation_metric_summary.csv','旧关系汇总'),('length_metric_summary.csv','旧逐长度汇总'),('leave_one_relation_family.csv','旧关系与家族敏感性'),('encoding_development/report.html','编码×架构完整报告'),('encoding_development/export_audit.json','编码开发导出审计'),('encoding_development/artifacts/geometry_summary.csv','开发全部几何分解'),('encoding_development/artifacts/geometry_length.csv','开发全部逐长度几何'),('encoding_development/artifacts/encoding_interactions.csv','开发全部编码交互'),('encoding_development/artifacts/gold_baseline_length.csv','开发逐长度真实答案基线'),('encoding_development/model_minus_length_baseline_supplemental.csv','开发全部逐长度长度众数对照'),('encoding_development/length_baseline_protocol_supplemental.json','长度基线补充协议'),('encoding_development/artifacts/initializations/execution_binding_v4.json','开发源码与真实初始化身份绑定'),('encoding_development/artifacts/engineering_complete.json','开发全部工程门槛')]
+    links=[('reader_report.html','Reader-oriented interpretation of existing checkpoints'),('report.html','Complete multilayer report'),('statistical_review.txt','Independent statistical verification text'),('statistical_review.json','Independent complete arithmetic audit'),('final_audit.json','Overall experiment completion and F17 protection audit'),('existing_final_audit.json','Historical completeness and F17 protection audit'),('layer_metric_results.csv','All historical relation/source/length/layer cells'),('source_metric_summary.csv','Historical source summaries'),('relation_metric_summary.csv','Historical relation summaries'),('length_metric_summary.csv','Historical per-length summaries'),('leave_one_relation_family.csv','Historical relation and family sensitivity analyses'),('encoding_development/report.html','Complete encoding × architecture report'),('encoding_development/export_audit.json','Encoding-development export audit'),('encoding_development/artifacts/geometry_summary.csv','All development geometry decompositions'),('encoding_development/artifacts/geometry_length.csv','All development per-length geometry'),('encoding_development/artifacts/encoding_interactions.csv','All development encoding interactions'),('encoding_development/artifacts/gold_baseline_length.csv','Development per-length ground-truth-answer baselines'),('encoding_development/model_minus_length_baseline_supplemental.csv','All development per-length comparisons with the length-mode baseline'),('encoding_development/length_baseline_protocol_supplemental.json','Supplementary length-baseline protocol'),('encoding_development/artifacts/initializations/execution_binding_v4.json','Development source-code and genuine-initialization identity binding'),('encoding_development/artifacts/engineering_complete.json','All development engineering gates')]
     # Paths remain correct when the caller uses a different completed export.
     sections.append('<ul>')
     for path,label in links:
         target=(root/path) if not path.startswith('encoding_development/') else development/path.removeprefix('encoding_development/')
         relative=os.path.relpath(target,root)
         sections.append('<li><a href="'+html.escape(relative,quote=True)+'">'+html.escape(label)+'</a></li>')
-        paragraphs.append(label+'：'+relative)
+        paragraphs.append(label+': '+relative)
     sections.append('</ul>')
-    prose('本轮到此停止。正式训练清单和GroupWorld没有启动；F17论文、结果及发布产物未改。任何后续确认、更多种子、不同系统或扩容都不由本报告自动触发。')
-    page='<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PermWorld 本轮完成报告</title><style>body{font:16px system-ui,sans-serif;line-height:1.6;color:#263341;max-width:1200px;margin:30px auto;padding:0 18px}h1,h2{line-height:1.3}.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:12px;white-space:nowrap;width:100%}td,th{padding:7px;border-bottom:1px solid #ddd;text-align:right}td:first-child,th:first-child{text-align:left}th{background:#eef2f5}details{margin:16px 0}summary{cursor:pointer;font-weight:600}a{color:#345e95}</style><h1>PermWorld 本轮完成报告</h1>\n'+'\n'.join(sections)+'</html>\n'
-    return page,'PermWorld 本轮完成报告\n\n'+'\n\n'.join(paragraphs)+'\n'
+    prose('This round stops here. The formal training manifest and GroupWorld were not started; the F17 paper, results, and release artifacts were not modified. This report does not automatically trigger subsequent confirmation, more seeds, different systems, or scaling.')
+    page='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PermWorld completion report for this round</title><style>body{font:16px system-ui,sans-serif;line-height:1.6;color:#263341;max-width:1200px;margin:30px auto;padding:0 18px}h1,h2{line-height:1.3}.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:12px;white-space:nowrap;width:100%}td,th{padding:7px;border-bottom:1px solid #ddd;text-align:right}td:first-child,th:first-child{text-align:left}th{background:#eef2f5}details{margin:16px 0}summary{cursor:pointer;font-weight:600}a{color:#345e95}</style><h1>PermWorld completion report for this round</h1>\n'+'\n'.join(sections)+'</html>\n'
+    return page,'PermWorld completion report for this round\n\n'+'\n\n'.join(paragraphs)+'\n'
 
 
 def generate(root,development,fixture=False):
@@ -419,18 +419,18 @@ def fixture():
         refresh_export()
         evidence=generate(root,dev,fixture=True)
         page=(root/'completion_report.html').read_text();text=(root/'completion_report.txt').read_text()
-        assert '合成 CPU fixture' in page and '用户授权边界' in page and '未定义' in page
+        assert 'Synthetic CPU fixture' in page and 'User-authorized boundary' in page and 'undefined' in page
         assert 'Gamma_correct' in page and 'Gamma_wrong' in page and '+0.80000' in page and '-0.80000' in page
         assert text.count('prefix_final /')==8 and text.count('output_prob /')==8
-        assert '它不是原来两条取逆关系的新确认实验' in text
-        assert 'dropout、数据顺序和优化随机性' in text
+        assert 'This is not a new confirmation experiment for the two original inverse relations' in text
+        assert 'dropout, data order, and optimization randomness' in text
         assert evidence['geometry_summary_rows']==128 and evidence['interaction_rows']==64
         # Failed source-learning/engineering gates stay visible, not upgraded.
         engineering['status']='failed';js(art/'engineering_complete.json',engineering)
         final['development']['engineering_status']='failed';js(root/'final_audit.json',final)
         learning[0]['learning_gate_passed']=False;write_csv(art/'source_learning.csv',learning);refresh_export()
         failed=generate(root,dev,fixture=True)
-        assert failed['engineering_status']=='failed' and '工程完成状态：failed' in (root/'completion_report.txt').read_text()
+        assert failed['engineering_status']=='failed' and 'Engineering completion status: failed' in (root/'completion_report.txt').read_text()
         # Invalid or incomplete evidence must never silently become a report.
         rejected=[]
         def must_fail(label):

@@ -257,17 +257,17 @@ def run(repo, output, max_n=7, sample_per_length=200):
     np.savez(output / 'linear_rank_certificate.npz', witness_rows=np.array(rank_witness_rows), proved_identities=identity_matrix, prime=prime)
     table = ''.join(f"<tr><td>{identity['id']}</td><td>{identity['terms']}</td><td>{identity['n']} × n + ({identity['constant']})</td><td>{identity['proof']}</td></tr>" for identity in IDENTITIES)
     candidates_table = ''.join(f"<tr><td>{match['three_task_constraint_bundle']}</td><td>{match['four_task_constraint_bundle']}</td><td>{match['expanded_affine_pair_count']}</td><td>{match['score']:.4f}</td></tr>" for match in selected_candidates)
-    document = f'''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>PermWorld 四性质关系审计</title>
+    document = f'''<!doctype html><html lang="en"><meta charset="utf-8"><title>PermWorld Four-property relationship audit</title>
 <style>body{{max-width:1100px;margin:40px auto;padding:0 20px;font:16px/1.7 system-ui;color:#20242b}}table{{border-collapse:collapse;width:100%;font-size:14px}}td,th{{padding:8px;border-bottom:1px solid #ddd;text-align:left;overflow-wrap:anywhere}}</style>
-<h1>PermWorld 四性质关系审计</h1><p>源码版本：<code>{summary['source_commit']}</code>。</p>
-<p>原 r=0/1/2/4 统计两个不重叠四任务集合之间的对应关系。预注册八条边有十六个不同端点，构成配对图；无法直接从该图设计链、星形或环。</p>
-<p>检查了长度 2–{max_n} 的全部 {count:,} 个排列。对 n≥2、同输入、性质值与排列长度的有理线性恒等式，四条基本约束与模素数秩证书{'已证明' if witness_rank == 30 else '尚未证明'}该指定关系空间的完备性。这不包括非线性或输入变换后的联合关系。</p>
-<p>其中涉及至多四性质的最小支持共有六个。原有二十个训练集合均没有完整包含这些支持。</p>
-<table><tr><th>约束</th><th>左侧系数</th><th>右侧</th><th>计数证明</th></tr>{table}</table>
-<p>枚举了全部 35,960 个四性质集合：87 个包含三任务最小线性依赖，3 个具有四任务最小线性依赖。根据独立生成的长度 10–30 标签样本，为三种四任务约束分别选择以下候选对照。</p>
-<table><tr><th>三任务依赖集合</th><th>四任务依赖集合</th><th>变换关系对数</th><th>匹配分数</th></tr>{candidates_table}</table>
-<p>这些是待训练的候选，尚未控制单任务学习难度，也未完全配平输出分布。有限域试验承担严格统计配平的对照功能。</p>
-<p>下载：<a href="candidate_bundles.csv">所有四性质组合</a>；<a href="permworld_candidate_design.json">具体后续候选设计</a>；<a href="linear_rank_certificate.npz">精确秩证书</a>；<a href="summary.json">审计与限制</a>；<a href="affine_candidates.csv">148 条有限验证的变换候选，含自对称和重复方向</a>。</p></html>'''
+<h1>PermWorld Four-property relationship audit</h1><p>Source revision: <code>{summary['source_commit']}</code>.</p>
+<p>Original  r=0/1/2/4 Counts correspondences between two disjoint four-task sets. Eight preregistered edges have sixteen distinct endpoints and form a matching, from which chains, stars, or cycles cannot directly be designed.</p>
+<p>Exhaustively checked lengths  2–{max_n} , totaling  {count:,}  permutations. For rational linear identities involving  n≥2, same-input property values, and permutation length, the four basic constraints and prime-field rank certificate {'prove' if witness_rank == 30 else 'do not yet prove'} completeness of this specified relationship space, excluding nonlinear or transformed-input joint relationships.</p>
+<p>Six minimal supports involve at most four properties. None of the original twenty training sets contains any such support in full.</p>
+<table><tr><th>Constraint</th><th>Left coefficients</th><th>Right side</th><th>Counting proof</th></tr>{table}</table>
+<p>Enumerated all  35,960  four-property sets: 87  contain a minimal three-task linear dependency, 3  a minimal four-task dependency. Independently generated length- 10–30  label samples select candidate controls for the three four-task constraints below.</p>
+<table><tr><th>Three-task dependency set</th><th>Four-task dependency set</th><th>Transformation-relationship pair count</th><th>Matching score</th></tr>{candidates_table}</table>
+<p>These are training candidates, without controls for single-task difficulty or complete output-distribution matching. The finite-field pilot supplies strictly statistically matched controls.</p>
+<p>Downloads: <a href="candidate_bundles.csv">All four-property combinations</a>;<a href="permworld_candidate_design.json">Specific follow-up candidate designs</a>;<a href="linear_rank_certificate.npz">Exact rank certificate</a>;<a href="summary.json">Audit and limitations</a>;<a href="affine_candidates.csv">148  finitely checked transformation candidates, including self-symmetries and duplicate directions</a>.</p></html>'''
     (output / 'report.html').write_text(document)
     print(json.dumps({k: v for k, v in summary.items() if k not in ('identities', 'transformation_composition_table', 'limitations')}, indent=2), flush=True)
     return summary
