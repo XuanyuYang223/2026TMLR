@@ -1,0 +1,283 @@
+{
+  "schema": "literature-and-narrative-review/20261012-v1",
+  "status": "internal_working_draft_supported_with_minor_precision_suggestions_and_pending_workshop_identity",
+  "recorded_utc": "2026-10-12T16:13:48.514200+00:00",
+  "scope": "Read-only currentmanuscript/relatedwork/BibTeX, previouslyverifiedprimaryreferenceledger, savedpaperfactsidecars and pinnedTMLRstyle. Only this newprovenanceJSON iswritten. No editingmanuscript, scientificsources/tables, Git/publication, training, model/array loading, newgeometricmetrics or pvalues.",
+  "reviewed_inputs": [
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/manuscript.tex",
+      "sha256": "75e65d0796b0acf20cce85b066ba131f8f03f076829b9739ae7ebe5d8fc4b30e",
+      "bytes": 43783
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/sections/related_work.tex",
+      "sha256": "52c93dcd904c1bd86e187da9e7765a7492abcbceb1201a206bbe31ebb9d150fe",
+      "bytes": 4165
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/sections/matrix_case.tex",
+      "sha256": "895d9af6b60335cf856fc585ac4351701abb562bc28e15aa044fda6edff5a5ff",
+      "bytes": 4108
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/references.bib",
+      "sha256": "16dd6459e8f2c527618cd0b27d2e7ec0432b86ff7408f830930db9c849f7aa5c",
+      "bytes": 4286
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/provenance/paper_verified_references_20261012.json",
+      "sha256": "addfef6391c8a0376e07afeac2779cb456165f78d06a66c649d0b43a0aff337a",
+      "bytes": 15357
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/provenance/paper_facts_perm_graph_20261012.json",
+      "sha256": "78f7d74de89193112121e0a788b54f686a72983a974fce90b8e31f2915d43316",
+      "bytes": 130334
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/provenance/paper_facts_matrix_20261012.json",
+      "sha256": "38a63119b5f3e2b93b2acbef45b96fbbdd0811a215fed364224e37c8b654f3a2",
+      "bytes": 228259
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tmlr.sty",
+      "sha256": "816214ff5919aa457b6b443bee52b15d9561421417b7f8a50cc84651519f0002",
+      "bytes": 6560
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/provenance/style_source.json",
+      "sha256": "673879c43fae649ebf8f8df43bb9e2ead122a6c01e7a354f24cfa23dab990e38",
+      "bytes": 1148
+    }
+  ],
+  "literature_groups": [
+    {
+      "group": "task_similarity_and_taxonomy",
+      "lines": "related_work.tex:4--19",
+      "keys": [
+        "li2025causes",
+        "dwivedi2019rsa"
+      ],
+      "verdict": "supported_with_minor_precision_suggestion",
+      "findings": [
+        "Li paragraph accurately describes task/dataset overlap and the same-image relabeling control; BibTeX uses actual2025arXivv2title and does not claimICLR2026acceptance.",
+        "Dwivedi/Roig is correctly described as RSA visual-task taxonomy plus transfer association, not exact algebraic relation or functional alignment intervention.",
+        "The study two-comparison description matches its declared fixed factors."
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2505.13899v2",
+        "https://openaccess.thecvf.com/content_CVPR_2019/html/Dwivedi_Representation_Similarity_Analysis_for_Efficient_Task_Taxonomy__Transfer_Learning_CVPR_2019_paper.html"
+      ]
+    },
+    {
+      "group": "representational_convergence",
+      "lines": "related_work.tex:21--32",
+      "keys": [
+        "huh2024platonic",
+        "park2026convergent"
+      ],
+      "verdict": "supported",
+      "findings": [
+        "Huh is explicitly described as a proposed hypothesis and scale-associated cross-modal convergence; no universal theorem is attributed.",
+        "Park city-world geometric-task study and non-overlapping multitask alignment/new-entityfine-tuning distinction are accurate.",
+        "Current exploratoryselectivity is separated from functional benefit."
+      ],
+      "primary_urls": [
+        "https://proceedings.mlr.press/v235/huh24a.html",
+        "https://proceedings.mlr.press/v306/park26d.html"
+      ]
+    },
+    {
+      "group": "groundings_deconfounding_and_calibration",
+      "lines": "related_work.tex:34--50",
+      "keys": [
+        "kornblith2019",
+        "klabunde2025resi",
+        "cui2022deconfounded",
+        "groger2026aristotelian"
+      ],
+      "verdict": "supported",
+      "findings": [
+        "ReSi prediction/designgroundings are accurately distinguished without presenting them as universal latentgroundtruth.",
+        "Cui input-populationconfounding/regressionadjustment description is accurate.",
+        "Groger width/depthconfounding and permutation-nullcalibration description is accurate; presentDelta is explicitly distinct from calibration.",
+        "Answer/residualsupport and confidence/output limits are retained.",
+        "Kornblith2019metadata and invariance/CKAcomparisonmotivation were independently checked on officialPMLRpage; it supplies a usefulcomparisonmeasure, not a mathematics-specificmechanism."
+      ],
+      "primary_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2025/hash/2eef1f75516b0cfd3e944345e5f88c08-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2022/hash/79cbf4f96c2bcc67267421154da689dd-Abstract-Conference.html",
+        "https://proceedings.mlr.press/v306/groger26a.html",
+        "https://proceedings.mlr.press/v97/kornblith19a.html"
+      ]
+    },
+    {
+      "group": "permutation_encodings_and_predecessor",
+      "lines": "related_work.tex:52--65",
+      "keys": [
+        "scullen2025permutations"
+      ],
+      "verdict": "supported_with_exact_encoding_qualifier_suggestion_and_predecessor_pending",
+      "findings": [
+        "Scullenfull5authorBibTeX and MOSSICML2025workshopstatus are preserved.",
+        "Fiveformats are not conflated with one-line/canonical-cycle; MLP/Transformer/tasklearning and proposedfutureinternalgeometrycomparison match originalPDFindexedtext.",
+        "Reducedwordformat should preferably be named lexicographicallyminimalreducedwords.",
+        "Standaloneworkshopplaceholder is honest and makes no fabricated title, author, venue or acceptance claim."
+      ],
+      "primary_urls": [
+        "https://openreview.net/pdf?id=VbqocgftJF"
+      ],
+      "access_limit": "The original primaryPDF is indexed and its text returned by primary-domain search; direct forum/PDFdownload/API retrieval currently returns challenge/HTTP403. Full live forummetadata and downloaded PDF bytes not independently verified."
+    }
+  ],
+  "citation_coverage": {
+    "all_cited_keys_resolve_in_current_bib": true,
+    "missing_keys": [],
+    "unique_cited_keys": [
+      "cui2022deconfounded",
+      "dwivedi2019rsa",
+      "groger2026aristotelian",
+      "huh2024platonic",
+      "klabunde2025resi",
+      "kornblith2019",
+      "li2025causes",
+      "park2026convergent",
+      "scullen2025permutations"
+    ],
+    "verified_external_primary_papers": 9,
+    "originating_workshop_identity_known": false
+  },
+  "workshop_status": {
+    "macro_definition_location": "manuscript.tex:11",
+    "use_location": "related_work.tex:65",
+    "bibliography_omitted_until_identified": true,
+    "third_person_instruction_explicit": true,
+    "accurate_pending_note_at_manuscript806_810": true,
+    "no_fabricated_title_author_venue": true,
+    "limit": "Suitableasvisibleworkingdraftnote; identity/citationmustbeclosedbeforeformalmanuscriptreleaseorsubmission."
+  },
+  "abstract_review": {
+    "location": "manuscript.tex:19--43",
+    "verdict": "bounded_and_consistent_with_saved_fact_sidecars",
+    "correctly_separates": [
+      "ComparisonA versusComparisonB",
+      "trainedBt26/32 versusoriginalDelta18/32",
+      "above14candidate-mean29/32 versusuniquefirstof15in19/32",
+      "rawsharedinitzero versuscandidate-specificanswerinitialnotzero",
+      "incrementreversal versuspositiveBtacrossencodings",
+      "cross-system/control/metricdependence versusuniversalmathematicalmechanism"
+    ],
+    "selected_saved_facts": {
+      "Perm_answerBt_positive": 26,
+      "Perm_answerDelta_positive": 18,
+      "fixedT_above14mean": 29,
+      "fixedT_unique_first15": 19,
+      "R1_F2_transformed_analysis_records": 12,
+      "R1_F2_transformed_full_vocab_accuracy_min": 1.0
+    },
+    "does_not_claim_firstness": true,
+    "does_not_claim_functional_benefit_or_identified_mathmechanism": true,
+    "minor_finite_learning_wording_issue": "N02"
+  },
+  "three_contributions_review": [
+    {
+      "item": 1,
+      "lines": [
+        86,
+        88
+      ],
+      "verdict": "supported_as_measurement_design",
+      "limit": "NofirstnessclaimornewCKAmetricclaim; sharedinitialreference/applieddecompositionhaveexplicitbounds."
+    },
+    {
+      "item": 2,
+      "lines": [
+        89,
+        92
+      ],
+      "verdict": "supported_as_complete_exploratorygrid",
+      "limit": "Condition/modelcountsarenotindependentsamplecounts; primarystate/controlandallnegativecellsremainexplicit."
+    },
+    {
+      "item": 3,
+      "lines": [
+        93,
+        95
+      ],
+      "verdict": "supported_as_illustrative_cross-system_examples_and_reportingguidance",
+      "limit": "R1finiteperfectlearningandGRUnear-perfectpair supportcounterexamples to universalweak-learningexplanation, notsamepositivepatternacrossdomainsorfunctionaltransfer."
+    }
+  ],
+  "narrative_safeguards_present": {
+    "question_title": true,
+    "no_first_or_unique_novelty_assertion_detected": true,
+    "no_universal_or_causal_mathmechanism_assertion_detected": true,
+    "candidate_freeze_after_exploration_explicit": true,
+    "conditions_not_binomialreplications_explicit": true,
+    "descriptive1_over15_notvalidatednull_explicit": true,
+    "configuration_capacity_proficiencylimits_explicit": true,
+    "raw_andanswer_supportdistinction_explicit": true,
+    "wrong_pair_accidentalformulamatchesretained": true,
+    "negative_andundefinedreadoutsretained": true,
+    "Matrix64pass2fail6undefined_and_scientificanalysiscompletefalse_retained": true,
+    "historicalunverifiedinitials_and7sourcegapsseparate": true
+  },
+  "working_draft_style_review": {
+    "manuscript_style": "preprint",
+    "anonymous_author_label": true,
+    "working_draft_date_label": true,
+    "not_submitted_or_publiclyuploaded_note": true,
+    "official_preprint_header_branch_is_empty": true,
+    "does_not_display_TMLRaccepted_or_underreview_header_under_preprint": true,
+    "style_source_reference": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/provenance/style_source.json"
+  },
+  "issues": [
+    {
+      "id": "RW01",
+      "priority": "P2_precision",
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/sections/related_work.tex",
+      "line": 18,
+      "text": "a geometric preference beyond general task or input similarity",
+      "concern": "As a motivating question this is defensible, but beyond can sound as if the comparisons isolate all general task/inputsimilarity effects. The body correctly retains unequal proficiency and candidate-specificgoldsupport, so this phrase can be sharper.",
+      "suggested_replacement": "compare prescribed mathematical pairings against explicit input and task comparators",
+      "changes_scientific_conclusion": false
+    },
+    {
+      "id": "RW02",
+      "priority": "P2_bibliographic_method_precision",
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/sections/related_work.tex",
+      "line": 56,
+      "text": "major codes, and reduced words",
+      "concern": "Scullen experimentalformat is lexicographicallyminimalreducedwords, not arbitrary reducedwordencodings. Current wording is a broadfamilydescription rather than a falseencodinglist.",
+      "suggested_replacement": "major codes, and lexicographically minimal reduced words",
+      "changes_scientific_conclusion": false
+    },
+    {
+      "id": "N01",
+      "priority": "P2_narrative_precision",
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/manuscript.tex",
+      "line": 343,
+      "text": "Comparison B asks a stronger task-identification question",
+      "concern": "ComparisonB is a different task-candidate question and is not logically stronger/nestedinComparisonA; manuscript76--82explicitly says neitherimplies theother.",
+      "suggested_replacement": "Comparison B asks a task-identification question while holding the transformed input fixed",
+      "changes_scientific_conclusion": false
+    },
+    {
+      "id": "N02",
+      "priority": "P2_scope_wording_optional",
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/manuscript.tex",
+      "lines": [
+        36,
+        628
+      ],
+      "text": "fully learned matrix transpose pair / fully learned matrix example",
+      "concern": "The actual sourceevidence is perfectaccuracy on evaluated finiteidentitysplits and F2correct/wronganalysisviews; this does not establish exactalgorithmlearning or arbitrarynewinputs/sizes. Detailedmatrixsection7andcaption511--516 alreadygive the finiteevaluationqualification.",
+      "suggested_replacement": "a matrix transpose pair with perfect accuracy on the evaluated inputs / the perfectly accurate evaluated matrix example",
+      "changes_scientific_conclusion": false
+    }
+  ],
+  "blocking_false_reference_or_causal_universal_claims_found": 0,
+  "minor_precision_suggestions": 4,
+  "formal_submission_readiness_not_claimed": true,
+  "inputs_unchanged_during_readonly_review": true
+}

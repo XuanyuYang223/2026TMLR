@@ -1,0 +1,65 @@
+\section{Related work}
+\label{sec:related_work}
+
+\paragraph{Task similarity and task taxonomies.}
+Relationships between training objectives provide an established explanation for
+representational similarity. \citet{li2025causes} manipulate dataset and task
+overlap, finding greater similarity with greater overlap across several model
+settings. Their constant-data experiment changes the labeling of identical
+images to separate task overlap from shared examples.
+\citet{dwivedi2019rsa} use representational similarity analysis between visual
+task models to construct a task taxonomy and examine associations with transfer
+performance. These studies motivate examining how task definitions shape
+geometry. The present study examines single-task specialists with exactly
+specified mathematical correspondences. One comparison fixes both specialists
+and changes the input pairing among correct, originally specified wrong, and
+identity transformations. A second fixes the left specialist, transformation,
+and anchors while varying the right task. Together, these comparisons ask where
+a designated correspondence has a geometric preference relative to explicit
+input-pairing and task-candidate comparators.
+
+\paragraph{Representational convergence.}
+\citet{huh2024platonic} propose the Platonic Representation Hypothesis and report
+increasing agreement between vision and language representations with model
+scale. \citet{park2026convergent} study geometric tasks over a shared world of
+city coordinates. Multi-task training aligns representations even for
+non-overlapping task sets, while some tasks impair the integration of new
+entities through fine-tuning. This distinction between aligned geometry and
+adaptability is relevant here. The current experiments preserve individual
+correct and wrong scores, trained pairing preferences, and initialization
+preferences, so that an increment can be distinguished from an increase in
+correct-pair similarity. Their scope is exploratory correspondence-associated
+geometry; functional benefit requires separate evidence.
+
+\paragraph{Grounding and calibrating similarity measurements.}
+CKA supplies invariances useful for comparing representations
+\citep{kornblith2019}, but a similarity value requires an appropriate reference.
+The ReSi benchmark evaluates measures using prediction-grounded and
+design-grounded tests, reflecting multiple meanings of model similarity
+\citep{klabunde2025resi}. \citet{cui2022deconfounded} show that input population
+structure can inflate RSA and CKA, including comparisons of random networks,
+and propose covariate-adjustment regression.
+\citet{groger2026aristotelian} identify model-scale confounding and introduce
+permutation-null calibration, separating global spectral convergence from
+local neighborhood agreement. These results motivate retaining input,
+initialization, answer, and output references and checking prescribed
+alternative metrics. The present trained-minus-initial preference contrast has
+its own definition and is distinct from permutation calibration. Answer
+stratification also retains pair-specific supports and cannot remove every
+confidence or nonlinear answer contribution. No subtraction of hidden and
+output scores is interpreted as an isolated internal mechanism.
+
+\paragraph{Permutation encodings and preceding work.}
+\citet{scullen2025permutations} use permutation statistics to study how encoding,
+data availability, and MLP or Transformer models affect learning. Their five
+encodings comprise permutation matrices, inversion vectors, Lehmer cocodes,
+major codes, and lexicographically minimal reduced words. They identify internal-representation comparison
+as a direction for further study. The present one-line and canonical-cycle
+encodings support an additional comparison of initialization and trained
+pairing preferences, with all declared layers and relations retained. Model
+capacity and task proficiency differ across configurations, limiting a pure
+architecture interpretation. The GraphWorld and MatrixGroupWorld analyses
+examine the scope of the same comparisons in additional mathematical settings,
+with their negative, undefined, and failed verification results preserved.
+
+\workshopplaceholder

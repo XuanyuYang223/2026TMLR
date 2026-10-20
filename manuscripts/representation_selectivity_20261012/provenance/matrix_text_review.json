@@ -1,0 +1,170 @@
+{
+  "status": "passed_matrix_text_table_facts_minor_clarifications_resolved_optional_precision_retained",
+  "review_utc": "2026-10-12T16:13:40.965829+00:00",
+  "reviewed_inputs_sha256": {
+    "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/manuscript.tex": "46ce3e9e093d808e1e84c57710f1bd0e9db64671f0636a757e8a8058ca8f744d",
+    "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/sections/matrix_case.tex": "895d9af6b60335cf856fc585ac4351701abb562bc28e15aa044fda6edff5a5ff",
+    "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tables/matrix_r1.csv": "9474b74d4029014dc52c1764807e698c616fac0a853bcc66439ae314d7e41e5e",
+    "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tables/matrix_r1_main.tex": "e534ea51f8f75b81c337434a0f654668f2130e38c374b4d774afa50085d1e709",
+    "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tables/matrix_all_hidden.csv": "de578c93d8ce080773a42031ec906d380e7f5f6a776d88d5305ef6a490bba578",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/geometry_summary.csv": "0b5c9360f5a307d13fbee322cd0cd1ef891fbad9634a53bc9266a30bcba44d09",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/geometry_per_n.csv": "67e52eed74bbd1d0a90bd4833ab942ff68725856125ca6ecb22ed3fc99c2b8ab",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/source_learning.csv": "1a6832d30e3a9bfff9a0e99796817df21eb1a7cc2bfcd60175bb0ec3d4eb58fc",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+    "/home/yangx/ICML/diagnostics/matrixgroupworld_20261011/completion.json": "d5c3c4d42c7b1840646f46828e1b0db46c2e5d1a8ea58980a70dacabaa6402ef",
+    "/home/yangx/ICML/experiments/matrixgroupworld_20261011/core.py": "a3fd4e1cdeecf76c954f0f8ee47e59b760d14c619bfb49028bcc2858fdae2ee3",
+    "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tables/matrix_r1_main_tabular.tex": "cf431ec2a383f62cad85ae73de9b96fc21c1af0f1c9d9de0724b4c9083b8f3ba"
+  },
+  "scriptless_readonly_review": true,
+  "current_hash_bound_not_future_revision": true,
+  "checks": [
+    {
+      "location": "sections/matrix_case.tex:3; manuscript.tex:197-199,239-249,575-578",
+      "status": "passed",
+      "finding": "Two independently resampled matrix data/initialization worlds, with four genuine shared-step0 specialists per world and fixed20k endpoints. No claim of PermWorld initialization replication or a pure initialization intervention."
+    },
+    {
+      "location": "sections/matrix_case.tex:7; manuscript.tex:505-510",
+      "status": "passed",
+      "finding": "F1/F2 trained identity train/validation/analysis full188 answer accuracies are1.0 at n6/8/10 in both worlds; F2 analysis at transpose/P_transpose is also1.0. Fully learned is an empirical claim on these recorded sets, not every GL input or all four tasks."
+    },
+    {
+      "location": "sections/matrix_case.tex:9,11; tables/matrix_r1.csv; tables/matrix_r1_main_tabular.tex:7-9",
+      "status": "passed",
+      "finding": "All R1 raw/answer CKA values and controlled kNN/negative-error Procrustes Bt/Delta match original saved rows; three-decimal main-table entries are correct. Numerical metric magnitudes are not directly compared."
+    },
+    {
+      "location": "sections/matrix_case.tex:11; manuscript.tex:507-510,516-523",
+      "status": "passed",
+      "finding": "Aggregate controlled CKA Bt/Delta negative in both worlds; controlled kNN and Procrustes positive. Per-n exceptions retained: CKA Bt/Delta positive both worlds at n10; Procrustes negative both at n6; world1 kNN negative at n8. No all-n or all-metric reversal is asserted in the detailed section."
+    },
+    {
+      "location": "sections/matrix_case.tex:13",
+      "status": "passed",
+      "finding": "R3 controlled CKA Delta0.048498/0.121332, dc-0.800773/-0.755736, du-0.849270/-0.877068 all correctly rounded. Both scores fall and larger wrong-score decline drives positive Delta."
+    },
+    {
+      "location": "sections/matrix_case.tex:13",
+      "status": "passed",
+      "finding": "F3 n10 fulltrain45.61/39.21%, validation40.23/31.25%, identityanalysis35.55/31.64%, correctrightQanalysis35.74/32.23% correctly rounded from saved full-vocabulary scores. Low training accuracy is retained; no solely-generalization explanation."
+    },
+    {
+      "location": "manuscript.tex:682-705; core.py:25-33,81-115",
+      "status": "passed",
+      "finding": "F1 column1 weight, F2 row1 weight, F3 column1 XOR column2 weight, F4 row1 XOR row2 weight; all arithmetic GF2 and integer Hamming weights. Q=I+E21 and P swaps1/2. T/U registry matches all four rows: transpose/Ptranspose; transpose/Qttranspose; rightQ/rightQt; leftQt/leftQ. Exact correct formulas and at-most72 orbit bound match saved implementation; no new enumeration or model call."
+    },
+    {
+      "location": "sections/matrix_case.tex:15; manuscript.tex:771-785",
+      "status": "passed",
+      "finding": "Unchanged c2e799 audit64passed/2failed/6undefined_consistent; both failures output_prob/trained/raw R1/world1/n6 kNN. Correct0.600000 vs0.6015625; wrong0.1656250 vs0.1671875; frozen1e-8. Fixed64 subset does not independently validate every432 production cell."
+    },
+    {
+      "location": "manuscript.tex:608-613",
+      "status": "passed",
+      "finding": "General binary-matrix applicability, transpose anti-automorphism, fixed multiplication action, and unresolved group-mechanism interpretation are correctly bounded."
+    }
+  ],
+  "paper_csv_exact_match": {
+    "R1_rows": 12,
+    "all_hidden_rows": 48,
+    "mismatches": []
+  },
+  "blocking_issues": [],
+  "minor_suggestions": [
+    {
+      "severity": "minor_clarification",
+      "location": "manuscript.tex:35-38",
+      "finding": "Abstract negative CKA/positive neighbor/Procrustes wording omits the explicit equal-n aggregate qualifier. The body supplies it, but n10 CKA preferences are positive in both worlds.",
+      "suggestion": "Add size-averaged or equally weighted to the matrix-pair statement.",
+      "status": "resolved_in_bound_snapshot",
+      "resolution": "Abstract now explicitly states size-averaged, answer-controlled CKA and perfect measured task accuracy."
+    },
+    {
+      "severity": "minor_terminology",
+      "location": "manuscript.tex:187; manuscript.tex:519-520",
+      "finding": "All three scores are dimensionless; different units/no common unit is less precise than different scales or normalizations.",
+      "suggestion": "Use different numerical scales/normalizations and retain non-comparability across metrics.",
+      "status": "resolved_in_bound_snapshot",
+      "resolution": "Current text states different scales and normalizations, and no common normalization across metrics."
+    },
+    {
+      "severity": "minor_scope_clarification",
+      "location": "manuscript.tex:615-625",
+      "finding": "Fully learned matrix example can be read as all four specialists, although F3 and second-world F4 remain weak at n10. Earlier captions and section make the F1/F2 pair explicit.",
+      "suggestion": "Use fully learned F1/F2 transpose-pair example.",
+      "status": "resolved_in_bound_snapshot",
+      "resolution": "The earlier unqualified fully learned matrix example wording has been replaced; the R1 transpose-pair discussion and captions explicitly bound measured proficiency."
+    },
+    {
+      "severity": "optional_precision",
+      "location": "manuscript.tex:784-785",
+      "finding": "The output-kNN failures do not concern the checked hidden CKA measurements. Only the prescribed subset was independently recomputed, so avoid an unqualified impression of all hidden cells being verified.",
+      "suggestion": "State that no failures were recorded for hidden CKA in the prescribed subset; retain the explicit not-all432 coverage sentence.",
+      "status": "optional_nonblocking_in_bound_snapshot",
+      "resolution": "Current sentence already explicitly excludes independent validation of all432; the suggested subset-specific wording remains optional precision, not a numerical error."
+    }
+  ],
+  "original_numerical_audit": {
+    "sha256": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+    "status_counts": {
+      "passed": 64,
+      "failed": 2,
+      "undefined_consistent": 6
+    },
+    "failed_records": [
+      {
+        "unit": "unit001",
+        "relation": "R1",
+        "n": 6,
+        "control": "raw_within_n",
+        "branch": "output_prob",
+        "phase": "trained",
+        "role": "correct",
+        "metric": "knn_overlap",
+        "status": "failed",
+        "production": 0.6,
+        "independent": 0.6015625,
+        "absolute_error": 0.0015625000000000222,
+        "tolerance": 1e-08,
+        "fit_count": 64,
+        "analysis_count": 64,
+        "fit_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+        "analysis_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+        "fixed_rank": 8
+      },
+      {
+        "unit": "unit001",
+        "relation": "R1",
+        "n": 6,
+        "control": "raw_within_n",
+        "branch": "output_prob",
+        "phase": "trained",
+        "role": "wrong",
+        "metric": "knn_overlap",
+        "status": "failed",
+        "production": 0.16562500000000002,
+        "independent": 0.16718750000000002,
+        "absolute_error": 0.0015624999999999944,
+        "tolerance": 1e-08,
+        "fit_count": 64,
+        "analysis_count": 64,
+        "fit_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+        "analysis_ids_sha256": "50dde1017cdda401b86c8778e271f2c8c1804a11072bd988241dcb1dcb869781",
+        "fixed_rank": 8
+      }
+    ],
+    "scope": "Fixed64 engineering recomputation of saved arrays, not all432 production cells. Null metrics stay undefined and unavailable support is not called a passed metric."
+  },
+  "scope": "Only current Matrix manuscript/CSV and frozen saved source/formula/audit records. No changes to manuscript/section/table/science, no new model/metric/aggregation/test/forward/training or Git/publication operation. All comments bind the recorded current file SHAs and line numbers. This new provenance JSON is the only write.",
+  "earlier_manuscript_versions_observed": [
+    "39efea724e2bf9548a24cfac7b2748621354fc41e427e3727be15bfc550d9343",
+    "75e65d0796b0acf20cce85b066ba131f8f03f076829b9739ae7ebe5d8fc4b30e"
+  ],
+  "version_note": "The author edited the draft during review. The latest bound snapshot is reread for Matrix paragraphs, formulas, caption, abstract qualifiers and Appendix failures. The saved scientific section and CSV values remained unchanged. No future-version review is implied.",
+  "refresh_review_utc": "2026-10-12T16:16:46.035744+00:00",
+  "reviewed_matrix_formula_text_snapshot": "682: In MatrixGroupWorld, all matrix arithmetic is over $\\Ftwo$, while $\\wt$\n683: counts nonzero bits as an ordinary integer. Define\n684: \\[\n685:  F_1(A)=\\wt(Ae_1),\\quad F_2(A)=\\wt(A^\\top e_1),\\quad\n686:  F_3(A)=\\wt(A(e_1+e_2)),\\quad F_4(A)=\\wt(A^\\top(e_1+e_2)).\n687: \\]\n688: With $Q=I+E_{21}$ and $P$ swapping coordinates 1 and 2, the original\n689: catalogue is\n690: \\begin{center}\\small\n691: \\begin{tabular}{llll}\n692: \\toprule\n693: Relation & Directed tasks & Correct $T(A)$ & Wrong $U(A)$\\\\\n694: \\midrule\n695: R1 (primary) & $F_1\\to F_2$ & $A^\\top$ & $PA^\\top$\\\\\n696: R2 (supplementary) & $F_3\\to F_4$ & $A^\\top$ & $Q^\\top A^\\top$\\\\\n697: R3 (primary) & $F_1\\to F_3$ & $AQ$ & $AQ^\\top$\\\\\n698: R4 (supplementary) & $F_2\\to F_4$ & $Q^\\top A$ & $QA$\\\\\n699: \\bottomrule\n700: \\end{tabular}\n701: \\end{center}\n702: Each correct action satisfies $g_*(T(A))=f(A)$. These identities require\n703: neither uniform sampling over $\\mathrm{GL}(n,\\Ftwo)$ nor a learned group\n704: representation. The embedded left/right $\\mathrm{GL}(2,\\Ftwo)$ actions,\n705: with transpose, yield at most 72 orbit members for split exclusion.\n706: ",
+  "reviewed_matrix_abstract_and_verification_text_snapshot": {
+    "abstract": "35: matrix worlds reveal further control and metric dependence; a matrix\n36: transpose pair with perfect measured task accuracy has negative\n37: size-averaged, answer-controlled CKA preference but\n38: positive neighborhood and Procrustes contrasts. These exploratory findings\n39: support correspondence-associated geometric selectivity under specified",
+    "verification": "771: \\section{Numerical verification and source availability}\n772: \\label{app:verification}\n773: MatrixGroupWorld retains its original\n774: \\texttt{completed\\_with\\_verification\\_caveat} status:\n775: eight actual 20k endpoints, numerical status counts 64 passed, 2 failed,\n776: and 6 \\texttt{undefined\\_consistent}, with\n777: \\texttt{scientific\\_analysis\\_complete=false}. Both failures concern the\n778: trained raw \\emph{output-probability} kNN score in unit 1, R1, $n=6$, on\n779: the fixed 64-input subset. The production and independent values differ\n780: by $1/640$: $0.600000$ versus $0.6015625$ for the correct view and\n781: $0.1656250$ versus $0.1671875$ for the wrong view. Both exceed the original\n782: $10^{-8}$ tolerance. A read-only diagnosis localizes near-onehot distance\n783: roundoff without changing the metric, values, tolerance, or failed status.\n784: This is neither a failure of the reported hidden ordinary-CKA cells nor\n785: independent validation of all 432 production cells.\n786: "
+  }
+}

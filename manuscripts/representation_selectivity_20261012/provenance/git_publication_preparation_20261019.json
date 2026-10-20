@@ -1,0 +1,54 @@
+{
+  "record_type": "preparation_for_user_authorized_Git_publication",
+  "request_date": "2026-10-19",
+  "timezone": "America/Los_Angeles",
+  "repository": "https://github.com/XuanyuYang223/2026TMLR",
+  "branch": "main",
+  "baseline_HEAD": "d9a113d20d34db3c21cf69cf546cff4a0ab4904a",
+  "status": "validated_ready_to_commit_and_push",
+  "scope": "Existing English conversion, English-edition validation records, and the previously prepared working-paper draft. No scientific training, forwards, new representation metrics, release upload or history rewrite.",
+  "historical_receipts_retained": true,
+  "prior_English_archive_SHA256": "a0983b5198a9e81cfcdd73d42ffb9cc750dc79f899bb32ee5345f20a6a575406",
+  "publication_status_copy_edit": "Working draft publicly shared through the repository; not formally submitted for publication.",
+  "source_archive": {
+    "path": "manuscripts/representation_selectivity_20261012/manuscript_source.zip",
+    "sha256": "5466f4826c1d4e4b8d421e35aa4103ec695d99ee2aea9b0d52cd669a4f9c61e8",
+    "bytes": 732380,
+    "members": 42,
+    "source_build_exit_code": 0,
+    "PDF_pages": 17,
+    "remaining_Han": 0
+  },
+  "current_draft_files": {
+    "manuscript.tex": "ef96af233deb1abc4965d2b4da80069e2371131c079507ad11267df540f7bfea",
+    "manuscript.pdf": "2b68fbdc7823a65fb742394e84150b20419d0219984d89b8d23d0d7148adcc0a",
+    "reader_guide.txt": "87b4d69d98d783c2dfe717efbb4ceb6e29c377dbbf00ca84d9952ce717785fd0",
+    ".gitignore": "540a0ead72979db472a243c0f3a7cf3e52c563837d8e3d22844bfe261a9770fc",
+    "manuscript_source.zip": "5466f4826c1d4e4b8d421e35aa4103ec695d99ee2aea9b0d52cd669a4f9c61e8"
+  },
+  "excluded_generated_files": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.log",
+    "*.out",
+    "*.synctex.gz",
+    "provenance/pdf_previews/"
+  ],
+  "publication_result": "The containing Git commit and remote branch identify the actual publication result; this pre-push receipt does not claim a completed network push.",
+  "English_edition_commit": "e593e2582f25f40719afbc477d2e276920db5696",
+  "publication_index_files": {
+    "README.md": "a2402d927aee17f29faca519a7308ae1bc301964c6bb8ffecb064cd1b7f7e91e",
+    "docs/english_localization/README.txt": "e04e7e1b11adf23abbe488ced827764c1ae9dd9aedf8be1e2262e8f628b478b4"
+  },
+  "staged_whitespace_check": {
+    "status": "passed",
+    "CSV_CRLF_preserved": true,
+    "byte_preserved_upstream_style_files_excluded": [
+      "manuscripts/representation_selectivity_20261012/fancyhdr.sty",
+      "manuscripts/representation_selectivity_20261012/tmlr.sty",
+      "manuscripts/representation_selectivity_20261012/tmlr.bst"
+    ],
+    "upstream_style_SHA_verified": true
+  }
+}

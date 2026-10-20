@@ -1,0 +1,16 @@
+Working-paper build (run in this directory)
+
+Local existing engine:
+  /home/yangx/ICML/.venv/bin/python -B make_figures.py
+  /home/yangx/ICML/.venv/tectonic_bin/tectonic --keep-logs --keep-intermediates manuscript.tex
+
+Portable alternative, with Python + numpy/matplotlib and a TeX installation:
+  python -B make_figures.py
+  pdflatex manuscript.tex
+  bibtex manuscript
+  pdflatex manuscript.tex
+  pdflatex manuscript.tex
+
+Figure regeneration expects the sibling repository diagnostics at the recorded source commit. The source bundle contains pre-rendered vector figures and generated tables, so compilation alone does not need diagnostic data, model checkpoints, training code or CUDA.
+
+Official TMLR style files are copied unmodified; exact source commit and hashes are in provenance/style_source.json, with original TMLR_STYLE_LICENSE. Preprint mode avoids claiming an active review or accepted publication. Authors are placeholders for this working draft.

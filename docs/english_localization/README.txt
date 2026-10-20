@@ -16,3 +16,6 @@ The ordinary no-model replay remains tools/recompute_tables.py. Its checksum inv
 
 Publication boundary
 This conversion does not upload a new release, repack old scientific payloads, rewrite Git history, or submit a manuscript. Already published archives may contain original-language historical logs; they remain byte-identical artifacts. The English manuscript source archive is a separate local working-draft package, with its own receipt.
+
+Subsequent Git publication
+The user authorized committing and pushing the English edition and working draft on 2026-10-19. The original 2026-10-15 validation receipts above record the earlier local conversion, before that authorization. The later manuscript preparation receipt records its publication-status wording, refreshed source archive and successful compilation. Git commit history and the remote branch identify the actual publication outcome. This Git publication does not create a release or constitute journal submission.

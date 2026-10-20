@@ -1,0 +1,31 @@
+Working paper: When Do Mathematical Correspondences Show Up in Representational Similarity? A Controlled Study
+
+Read manuscript.pdf first. The English manuscript uses the official TMLR preprint template. This is a working draft, not a submitted or published article.
+
+Structure
+1 Introduction: research question and three contributions.
+2 Related work: task overlap/RSA task taxonomy, representation convergence, metric ground truth/deconfounding/permutation calibration, and permutation encodings.
+3 Design: explain what the two comparisons answer before defining B0/Bt/dc/du/Delta, fixed-T task candidates, and shared initialization; Figure 1 is the schematic and Table 1 gives coverage.
+4 Results: whether correspondences show selectivity; which parts change with training/encoding; scope across layers, metrics, and mathematical systems.
+5 Discussion: four reporting recommendations for researchers using similarity to argue for shared structure.
+6 Limitations: first, the lack of independent-initialization replication in PermWorld; then capacity/proficiency, answer-stratum support, dependence/sampling, and measurement/mechanism.
+7 Conclusion and full appendices.
+
+Important qualifications
+- 29/32 above the other-task mean and 19/32 uniquely first refer to answer-stratified, final-norm ordinary CKA. Raw counts are 30/32 and 25/32.
+- The 15 candidates include 1 designated task; the non-designated mean has denominator 14. The 1/15 chance reference assumes exchangeability and no ties. No binomial test treats the 32 dependent conditions as independent samples.
+- Shared initial weights make the raw fixed-T initial task contrast 0. Candidate-specific groups/sample support mean that answer-stratified contrasts need not be 0; the formulas and text include this qualification.
+- GRU exceedances/deficiencies attain 99–100% in both encodings and trained Bt remains positive. Changing B0 reverses Delta; this is not a reversal of trained relationship preference.
+- Graph reuses Perm's actual Transformer initialization and is not an independent-initialization replication. Both data and initialization change across the two Matrix units, precluding attribution purely to initialization.
+- R1 is one relationship in two units, used illustratively. Size-equal controlled CKA is negative while kNN/Procrustes are positive; no claim says every n agrees. R1 F1/F2 measured accuracy is 100%, which is not generalized to all matrix tasks.
+- R1's designated fixed-T answer-controlled candidate also ranks first at initialization; its candidate advantage decreases with training. This is a different question from the correct/wrong input comparison.
+- Matrix's original 64 passed / 2 failed / 6 undefined_consistent and scientific_analysis_complete=false remain; the two failed output-probability kNN values are not modified.
+
+References and pending items
+9 verified references are in references.bib. Scullen et al. is a 5-author MOSS 2025 paper with encodings different from the one-line/cycle pair used here.
+The additional workshop paper has no uniquely identified title, authors, or public link yet. The draft marks it as pending rather than inventing a citation. Replace that note with a third-person citation after verification.
+Before formal submission, confirm author information, anonymous data links, and the final paper claims. This is a publicly shared working draft, not a formal submission. The repository push was authorized on 2026-10-19.
+
+Reproduction and protection
+make_figures.py replots saved CSVs only; it does not read weights/activations or train. tables retains draft data, and provenance records file SHAs and review scope.
+Only the new manuscripts directory was added during the drafting round; original experiments, the old F17 paper, and release artifacts were unchanged in that round. The subsequent repository-wide English conversion is separately documented in docs/english_localization/README.txt.

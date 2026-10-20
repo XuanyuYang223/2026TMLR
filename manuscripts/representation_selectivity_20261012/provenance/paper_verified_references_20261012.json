@@ -1,0 +1,236 @@
+{
+  "schema": "verified-paper-references/20261012-v1",
+  "status": "eight_requested_references_identified_one_workshop_identity_unresolved",
+  "checked_utc": "2026-10-12T15:47:29.110432+00:00",
+  "scope": "Read-only original repository/upstreampaperdocument indices and original paper/arXiv/officialproceedings metadata. No scientific/Git/publication changes; outputoutside repository.",
+  "primary_sources_only_used_for_claims": true,
+  "verified_references": [
+    {
+      "cite_key": "li2025causes",
+      "user_label": "Li et al.2025 Task overlap and representational similarity",
+      "status": "identity_verified_from_primary_source",
+      "title": "Causes and Consequences of Representational Similarity in Machine Learning Models",
+      "authors": [
+        "Zeyu Michael Li",
+        "Hung Anh Vu",
+        "Damilola Awofisayo",
+        "Emily Wenger"
+      ],
+      "year": 2025,
+      "venue": "arXiv preprint, version2 (26 September2025)",
+      "primary_url": "https://arxiv.org/abs/2505.13899v2",
+      "supported_nearby_claim": "The paper manipulates dataset and task overlap and reports greater representation similarity with greater overlap. Its constant-data task experiment varies labels of identical ColorShapeDigit800K images; section5.2 reports increasing CKA with task overlap.",
+      "does_not_support": "It does not test exact algebraic correspondences between distinct specialists under transformed-input pairing, nor establish a universal mathematics-specific mechanism.",
+      "checked_utc": "2026-10-12T15:47:29.032076+00:00",
+      "primary_fulltext_url": "https://arxiv.org/html/2505.13899v2",
+      "arxiv_id": "2505.13899",
+      "version": "v2",
+      "alternative_version": {
+        "version": "v1",
+        "date": "2025-05-20",
+        "title": "Exploring Causes of Representational Similarity in Machine Learning Models",
+        "url": "https://arxiv.org/abs/2505.13899v1"
+      },
+      "publication_status_limit": "OpenReview pV7hqI1fN4 forum/pdf and publicAPI returned browser challenge/HTTP403. Primary arXiv identity and findings verified; ICLR2026 acceptance is not verified, so cite2025preprint rather than accepted conference.",
+      "evidence_location": "arXivv2 abstract; sections3.2,4.1,5.2; v1/v2 abstract pages confirm title change"
+    },
+    {
+      "cite_key": "dwivedi2019rsa",
+      "user_label": "Dwivedi&Roig2019 RSA Task taxonomy",
+      "status": "identity_verified_from_primary_source",
+      "title": "Representation Similarity Analysis for Efficient Task Taxonomy & Transfer Learning",
+      "authors": [
+        "Kshitij Dwivedi",
+        "Gemma Roig"
+      ],
+      "year": 2019,
+      "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "primary_url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Dwivedi_Representation_Similarity_Analysis_for_Efficient_Task_Taxonomy__Transfer_Learning_CVPR_2019_paper.html",
+      "supported_nearby_claim": "Uses RSA between task-trained visual models to construct a task taxonomy; evaluates its relation to transfer performance on Taskonomy and PascalVOC semantic segmentation.",
+      "does_not_support": "This is task taxonomy/transfer evidence, not exact known mathematical-relation selectivity or proof that CKA alignment interventions improve function.",
+      "checked_utc": "2026-10-12T15:47:29.032091+00:00",
+      "pages": "12387--12396",
+      "primary_pdf_url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Dwivedi_Representation_Similarity_Analysis_for_Efficient_Task_Taxonomy__Transfer_Learning_CVPR_2019_paper.pdf",
+      "evidence_location": "Official CVF title/author/venue/page/BibTeX and abstract"
+    },
+    {
+      "cite_key": "klabunde2025resi",
+      "user_label": "ReSi Ground-truth evaluation",
+      "status": "identity_verified_from_primary_source",
+      "title": "ReSi: A Comprehensive Benchmark for Representational Similarity Measures",
+      "authors": [
+        "Max Klabunde",
+        "Tassilo Wald",
+        "Tobias Schumacher",
+        "Klaus Maier-Hein",
+        "Markus Strohmaier",
+        "Florian Lemmerich"
+      ],
+      "year": 2025,
+      "venue": "International Conference on Learning Representations (ICLR2025)",
+      "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/2eef1f75516b0cfd3e944345e5f88c08-Abstract-Conference.html",
+      "supported_nearby_claim": "Benchmarks24representation similarity measures across14architectures and7datasets using6tests. It distinguishes prediction-grounded tests (accuracy/output differences) from design-grounded tests (label randomization, shortcut affinity, augmentation, layer monotonicity).",
+      "does_not_support": "Its groundings are declared predictive/design assumptions, not a universally known latent geometric ground truth. It does not by itself validate the present exact-relation assay.",
+      "checked_utc": "2026-10-12T15:47:29.032094+00:00",
+      "pages": "18701--18740",
+      "primary_pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/2eef1f75516b0cfd3e944345e5f88c08-Paper-Conference.pdf",
+      "official_bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/486-/bibtex",
+      "arxiv_id": "2408.00531",
+      "version_note": "Use ICLR2025published scope24/14/7; the original2024arXivabstract had earlier counts23/11/6.",
+      "evidence_location": "Official proceedings abstract/BibTeX; final paper section3.1/Table1"
+    },
+    {
+      "cite_key": "cui2022deconfounded",
+      "user_label": "Cui Deconfounding",
+      "status": "identity_verified_from_primary_source",
+      "title": "Deconfounded Representation Similarity for Comparison of Neural Networks",
+      "authors": [
+        "Tianyu Cui",
+        "Yogesh Kumar",
+        "Pekka Marttinen",
+        "Samuel Kaski"
+      ],
+      "year": 2022,
+      "venue": "Advances in Neural Information Processing Systems35 (NeurIPS2022)",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/79cbf4f96c2bcc67267421154da689dd-Abstract-Conference.html",
+      "supported_nearby_claim": "Shows input-population structure can produce high RSA/CKA for random networks and misleading functional comparisons; proposes covariate-adjustment regression to remove the chosen confounder while preserving original invariances.",
+      "does_not_support": "The adjustment removes the specified input-structure covariate under that method; it does not remove every output/confidence/nonlinear answer explanation or identify mathematical mechanisms.",
+      "checked_utc": "2026-10-12T15:47:29.032097+00:00",
+      "pages": "19138--19151",
+      "volume": "35",
+      "doi": "10.52202/068431-1391",
+      "official_bibtex_url": "https://proceedings.neurips.cc/paper_files/paper/18416-/bibtex",
+      "primary_pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/79cbf4f96c2bcc67267421154da689dd-Paper-Conference.pdf",
+      "arxiv_id": "2202.00095",
+      "evidence_location": "Official NeurIPS2022abstract and BibTeX; original paper abstract"
+    },
+    {
+      "cite_key": "groger2026aristotelian",
+      "user_label": "Gröger Permutation calibration",
+      "status": "identity_verified_from_primary_source",
+      "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+      "authors": [
+        "Fabian Gröger",
+        "Shuo Wen",
+        "Maria Brbic"
+      ],
+      "year": 2026,
+      "venue": "Proceedings of the43rd International Conference on Machine Learning (ICML2026), PMLR306",
+      "primary_url": "https://proceedings.mlr.press/v306/groger26a.html",
+      "supported_nearby_claim": "Reports width/depth confounding of representation-similarity scores and introduces permutation-null calibration. Its reanalysis distinguishes attenuation of global spectral convergence from retained local neighborhood agreement.",
+      "does_not_support": "Calibration is an alternative measurement/reference framework; it is not equivalent to subtracting a matched trained-initial preference and cannot retroactively make this study confirmatory.",
+      "checked_utc": "2026-10-12T15:47:29.032099+00:00",
+      "pages": "36724--36766",
+      "volume": "306",
+      "primary_pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/groger26a/groger26a.pdf",
+      "arxiv_id": "2602.14486",
+      "author_spelling_note": "Official PMLR metadata and BibTeX spell Brbic without diacritic; arXiv lists Maria Brbić. Preserve official entry for conference citation.",
+      "evidence_location": "Official PMLR2026title/author/venue/pages/BibTeX/abstract"
+    },
+    {
+      "cite_key": "huh2024platonic",
+      "user_label": "Huh PRH",
+      "status": "identity_verified_from_primary_source",
+      "title": "Position: The Platonic Representation Hypothesis",
+      "authors": [
+        "Minyoung Huh",
+        "Brian Cheung",
+        "Tongzhou Wang",
+        "Phillip Isola"
+      ],
+      "year": 2024,
+      "venue": "Proceedings of the41st International Conference on Machine Learning (ICML2024), PMLR235",
+      "primary_url": "https://proceedings.mlr.press/v235/huh24a.html",
+      "supported_nearby_claim": "A position paper proposes convergence toward a shared statistical model and reports cross-modality similarity trends as vision/language model scale grows; discusses pressures, limitations and counterexamples.",
+      "does_not_support": "It proposes a hypothesis, not a theorem that every relation, encoding, layer, metric or task-set must converge, and does not establish the present causal mechanism.",
+      "checked_utc": "2026-10-12T15:47:29.032103+00:00",
+      "pages": "20617--20642",
+      "volume": "235",
+      "primary_pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/huh24a/huh24a.pdf",
+      "arxiv_id": "2405.07987",
+      "title_note": "The official conference title includes Position:, unlike arXiv.",
+      "evidence_location": "Official PMLRtitle/author/venue/pages/BibTeX/abstract"
+    },
+    {
+      "cite_key": "park2026convergent",
+      "user_label": "Park2026 Tasks/Representation convergence",
+      "status": "identity_verified_from_primary_source",
+      "title": "Convergent World Representations and Divergent Tasks",
+      "authors": [
+        "Core Francisco Park"
+      ],
+      "year": 2026,
+      "venue": "Proceedings of the43rd International Conference on Machine Learning (ICML2026), PMLR306",
+      "primary_url": "https://proceedings.mlr.press/v306/park26d.html",
+      "supported_nearby_claim": "Uses5075city coordinates and7geometric tasks with autoregressive Transformers. Multi-task models trained on non-overlapping tasksets develop aligned world geometry, while some tasks impair integrating new cities through fine-tuning.",
+      "does_not_support": "It concerns city-task world geometry and entity adaptation, not the present exact permutation/matrix task identities or causal functional benefit of imposing CKA.",
+      "checked_utc": "2026-10-12T15:47:29.032105+00:00",
+      "pages": "96673--96697",
+      "volume": "306",
+      "primary_pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/park26d/park26d.pdf",
+      "evidence_location": "Official PMLRtitle/sole-author/venue/pages/BibTeX/abstract"
+    },
+    {
+      "cite_key": "scullen2025permutations",
+      "user_label": "Scullen/Kvinge/Jenne Permutation encodings",
+      "status": "identity_verified_from_primary_source",
+      "title": "Permutations as a testbed for studying the effect of input representations on learning",
+      "authors": [
+        "Sarah Scullen",
+        "Davis Brown",
+        "Robert Jasper",
+        "Henry Kvinge",
+        "Helen Jenne"
+      ],
+      "year": 2025,
+      "venue": "Methods and Opportunities at Small Scale (MOSS), ICML2025Workshop",
+      "primary_url": "https://openreview.net/pdf?id=VbqocgftJF",
+      "supported_nearby_claim": "Uses permutations and statistics to study how input encoding, dataset size and model family (MLP/Transformer) affect learning. Five input formats are permutation matrices, inversion vectors, Lehmer cocodes, major codes and lexicographically minimal reduced words.",
+      "does_not_support": "It does not use our one-line versus canonical-cycle comparison. Its discussion proposes internal-representation comparisons as future work; do not say it already performed our transformed-input/step0/answer-controlled geometry analysis.",
+      "checked_utc": "2026-10-12T15:47:29.032107+00:00",
+      "primary_forum_url": "https://openreview.net/forum?id=VbqocgftJF",
+      "alternative_primary_pdf_url": "https://openreview.net/pdf/decaaae646b8568099a8a55979f5b2650b6f062f.pdf",
+      "evidence_location": "Search-indexed original OpenReviewPDFfirstpage:title/full5authors and accepted MOSS ICML2025footer; section3.3 fiveencodings and section5discussion.",
+      "access_limit": "The original primaryPDF is indexed and its text returned by primary-domain search; direct forum/PDFdownload/API retrieval currently returns challenge/HTTP403. Full live forummetadata and downloaded PDF bytes not independently verified.",
+      "author_name_note": "OriginalPDFfirstpage says Sarah Scullen; secondary index says Sarah McGuire Scullen. This draft uses the primaryPDFbyline and does not rely on secondary index attribution."
+    }
+  ],
+  "unresolved_items": [
+    {
+      "requested_item": "User workshop paper, third-person citation",
+      "status": "identity_unresolved_do_not_guess",
+      "title": null,
+      "authors": null,
+      "year": null,
+      "venue": null,
+      "primary_url": null,
+      "bibtex_entry_omitted": true,
+      "reason": "The local indexed repository evidence does not uniquely identify a published workshop paper. No authoridentity or acceptance is inferred from GitHubusername or workshopproject wording.",
+      "needed_identification": "Exact paper title or localPDF/TeX source or officialOpenReview/proceedings URL; then cite its authors in third person.",
+      "local_inventory": {
+        "current_repository_commit": "d9a113d20d34db3c21cf69cf546cff4a0ab4904a",
+        "current_tracked_paper_bibliography_source_paths": [],
+        "upstream_repository_commit": "74f0de2017115f06f11b7285366b66e7e8431d30",
+        "upstream_tracked_textual_paper_paths": [
+          "paper/FIGURES.md",
+          "paper/PERMUTATION_SECTION_FIGURES.md",
+          "paper/TABLES.md"
+        ],
+        "upstream_workshop_mention_path": "/home/yangx/neurips/README.md",
+        "upstream_workshop_mention_lines": [
+          3,
+          4
+        ],
+        "finding": "The upstream README identifies a NeurIPS workshop project but the inspected tracked paper documents have no unique paper title, authors, venueyear or original public article URL. Current2026TMLRtree has no trackedpaper/BibTeX/LaTeXpaper source index at reviewtime."
+      }
+    }
+  ],
+  "important_version_and_scope_notes": [
+    "Li2025v1 andv2 have different titles; defaultdraftcitesv2, not an unverified ICLR2026acceptance.",
+    "ICLR2025ReSipublished counts24methods14architectures7datasets, not originalarXivv1counts.",
+    "HuhofficialICMLtitle has Position: prefix.",
+    "Scullen has5authors and MOSSworkshopstatus, not ICMLmainconference.",
+    "Gröger/Cui are now uniquely resolved to exactoriginal papers; workshopidentity alone remains unknown.",
+    "No claim of novelty orfirstness is established by this focused reference set."
+  ]
+}

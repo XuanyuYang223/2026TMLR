@@ -1,0 +1,24 @@
+{
+  "status": "replotted_existing_scores_only",
+  "git_source_commit": "d9a113d20d34db3c21cf69cf546cff4a0ab4904a",
+  "input_SHA256": {
+    "diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv": "23afa052be98c5a6175fbd5504c145160b477147c521ea3aa25460dbe06b5bc4",
+    "diagnostics/representation_pairing_review_20261011/pair_summary.csv": "4b7c000fafe2b6b8ef4d123b66b8ce1e80a306f39ec2a168264178037f897e63",
+    "diagnostics/permworld_eight_relations_20261010/final_review/permworld/all_layer_directions.csv": "27ce27d6ceec09da57516050b76752069d61f7cac0ed0562496bcc6fc4cc7964",
+    "diagnostics/matrixgroupworld_20261011/geometry_summary.csv": "0b5c9360f5a307d13fbee322cd0cd1ef891fbad9634a53bc9266a30bcba44d09",
+    "diagnostics/graphworld_pilot_20261010/geometry_summary.csv": "473be0c62a53d6d80bfcc8d4105fa6bf00123b7b0bc98180271146cb320168e8",
+    "diagnostics/matrixgroupworld_20261011/designated_rank.csv": "0f23013e41cb0c7970531c498fba9a4553d7c1c88570dad70d99da4609dbd291",
+    "diagnostics/representation_pairing_review_20261011/W_actual_summary.csv": "668b10fa1bc9f549e860156558ee72413247b2542db58a54b156150456c1c63d",
+    "diagnostics/representation_pairing_review_20261011/gru_exceedance_encoding_case.csv": "3bf285749eba273a31f3a186bb09d9f4c675f95261454c5f9158ea7ee277e248",
+    "diagnostics/permworld_eight_relations_20261010/protocol.json": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+    "diagnostics/graphworld_pilot_20261010/protocol.json": "8a0370211a59f79e5f9bb602c610673aac240526df5100f43c376ebdcb2bcdc1",
+    "diagnostics/matrixgroupworld_20261011/protocol.json": "532ec7fda02ef638e7448f72fbdffa39f1fde0191326758e945420a9b5455e67",
+    "diagnostics/representation_pairing_review_20261011/protocol.json": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c",
+    "diagnostics/matrixgroupworld_20261011/actual_numerical_verification.json": "c2e79900b87018a0fc23ab13565446ab67273229c4f44894ed0e322144450d9f",
+    "diagnostics/matrixgroupworld_20261011/completion.json": "d5c3c4d42c7b1840646f46828e1b0db46c2e5d1a8ea58980a70dacabaa6402ef"
+  },
+  "feature_arrays_opened": 0,
+  "model_forwards": 0,
+  "training_updates": 0,
+  "scope": "Saved CSV formatting/plotting and descriptive counts only. No new similarity measure or sample selection."
+}

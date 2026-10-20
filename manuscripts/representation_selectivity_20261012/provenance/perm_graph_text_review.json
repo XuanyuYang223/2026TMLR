@@ -1,0 +1,480 @@
+{
+  "schema_version": 1,
+  "status": "read_only_text_fact_and_mathematical_scope_review_passed_with_optional_wording_notes",
+  "created_utc": "2026-10-12T16:30:43.156983+00:00",
+  "manuscript_snapshot_sha256": "d6b52d1e4f787cd437ac53ba20baeff052987d9cd420c12a8f63bc71a3851be5",
+  "line_numbers_apply_to_snapshot": true,
+  "review_scope": [
+    "PermWorld and GraphWorld saved scalar tables",
+    "raw shared-step0 theorem versus answer residualization",
+    "two distinct pairing comparisons",
+    "candidate counts/ranking/exchangeability qualifier",
+    "original main Bt and Delta counts",
+    "source proficiency and encoding example",
+    "joint gold strata/size aggregation/dependence",
+    "read-only plot-source/table interfaces"
+  ],
+  "mandatory_corrections": [],
+  "verified_checks": [
+    {
+      "topic": "Two distinct comparisons",
+      "lines": [
+        77,
+        83,
+        119,
+        136,
+        153,
+        181
+      ],
+      "status": "passed",
+      "detail": "A fixes the two specialists and varies correct/wrong input transforms. B fixes the transformed input and varies the right specialist. D_t-D_0 is distinct from the original Delta; neither comparison logically implies the other."
+    },
+    {
+      "topic": "Definitions and finite support",
+      "lines": [
+        156,
+        181
+      ],
+      "status": "passed",
+      "detail": "B0, Bt, dc, du and Delta are algebraically consistent. Current draft explicitly restricts D_s means to complete-length finite candidates, retains undefined designated/empty categories, and uses the common finite intersection for optional phase changes."
+    },
+    {
+      "topic": "Raw shared-initialization null",
+      "lines": [
+        195,
+        226,
+        400,
+        410
+      ],
+      "status": "passed_with_scope",
+      "detail": "Same actual saved parameters are verified within each architecture across all sixteen tasks and both encodings; Transformer and GRU are distinct. Evaluation/dropout-off, pre-query features, common anchors and task-independent preprocessing give identical raw initial candidates and mathematical D0=0 when defined. Stored Perm contrasts have only <=1.3877787807814457e-17 mean-summation residues. Answer-controlled initial scores may differ because candidate-specific gold groups/support differ."
+    },
+    {
+      "topic": "Initial identity and Graph dependence",
+      "lines": [
+        197,
+        204,
+        246,
+        248,
+        518,
+        519,
+        589,
+        599
+      ],
+      "status": "passed",
+      "detail": "Graph uses the same actual saved Transformer initial checkpoint and parameter SHA as PermWorld TF. It is a new graph data world, not an independent initial replicate. GRU explicit-dropout/key migration is value-preserving and documented, not a seed-only reconstruction."
+    },
+    {
+      "topic": "Fixed-transform counts and ranking scope",
+      "lines": [
+        350,
+        384,
+        388,
+        396
+      ],
+      "status": "passed",
+      "detail": "Final-normalized ordinary CKA, original fixed 1/21 length weights, answer_strata: designated > mean of 14 others in 29/32, uniquely first among 15 in 19/32. Raw: 30/32 and 25/32. Candidates exclude the left task but include the designated task; all fifteen are finite. Ranking is 1+number strictly greater; unique first also requires no exact tie. No trained designated ties occur in these saved main cells."
+    },
+    {
+      "topic": "Chance reference",
+      "lines": [
+        379,
+        384
+      ],
+      "status": "passed",
+      "detail": "1/15 is correctly conditioned on exchangeability and no ties, stated as a descriptive reference, and explicitly not a validated null or binomial p-value. 32 rows/candidate pairings are dependent."
+    },
+    {
+      "topic": "Original A main counts and negative cases",
+      "lines": [
+        338,
+        375
+      ],
+      "status": "passed",
+      "detail": "Answer-controlled final ordinary CKA: Bt positive 26/32 and Delta positive 18/32; raw: 27/32 and 25/32. All six negative primary Bt cells are canonical-cycle conditions and five of those six have positive Delta. Full 32-condition table preserves them."
+    },
+    {
+      "topic": "GRU high-proficiency encoding example",
+      "lines": [
+        424,
+        447,
+        451,
+        457
+      ],
+      "status": "passed_with_scope",
+      "detail": "Exceedances/deficiencies identity-input full-vocabulary equal-length held-out accuracies are 99.8790922619/99.3024553571 percent for one-line and 100/100 for cycle, matching rounded 99.88/99.30. B0 -0.6230331963 -> +0.4710336747; Bt +0.0454783328 -> +0.1097958985; Delta +0.6685115291 -> -0.3612377762. This is increment-sign reversal with trained-preference sign unchanged, not an exactly accuracy/CE/confidence-matched causal comparison."
+    },
+    {
+      "topic": "Delta decomposition example",
+      "lines": [
+        417,
+        422
+      ],
+      "status": "passed",
+      "detail": "The current one-line TF descents/recoils answer-control values match the actual saved primary table, including Delta approximately .6980 arising chiefly from wrong-score decline .6449 with correct-score increase .0531."
+    },
+    {
+      "topic": "Readout/layer boundaries",
+      "lines": [
+        461,
+        487,
+        491,
+        499
+      ],
+      "status": "passed_with_scope",
+      "detail": "All final main Bt directions agree across three readouts in 32/32, Delta in 30/32. The actual disagreements are one-line GRU peaks/valleys and increasing/decreasing-run pairs. Prescribed layer counts, undefined embedding cases and separate output baselines match saved tables; raw output positive Bt/Delta counts 29/30 and answer-control counts 29/16 are retained as alternative geometry, not subtracted as a mechanism."
+    },
+    {
+      "topic": "Graph results and wrong-transform qualification",
+      "lines": [
+        501,
+        519
+      ],
+      "status": "passed",
+      "detail": "Raw A Bt/Delta both positive in 4/4; answer A Bt positive in 2/4 and Delta positive in 0/4. B raw unique first 4/4; answer above other mean 3/4 and unique first 2/4. Density control remains separate. Actual wrong-transform formula matches range 54.8177 to 59.7005 percent; they are not perfect relation-breaking interventions."
+    },
+    {
+      "topic": "Original joint keys and size aggregation",
+      "lines": [
+        273,
+        310,
+        776,
+        783
+      ],
+      "status": "passed",
+      "detail": "Within-size CKA precedes original equal weights (Perm 1/21, Graph 1/3). Undefined components do not receive weight redistribution. Joint labels use n,left identity, and mapped right identity/correct/wrong views; min3 grouping is performed separately in fitting/held-out splits, preserving common masks across phases/roles within each pair. Candidate-specific groups/support limit the raw-init theorem after answer residualization. Procrustes uses the original fixed rank/RMS/fit protocol."
+    },
+    {
+      "topic": "Sampling units and dependence",
+      "lines": [
+        239,
+        270,
+        589,
+        624
+      ],
+      "status": "passed",
+      "detail": "64 Perm sources consist of 16 reused plus 48 newly completed actual 20k endpoints on one data world, one true initialization per architecture, copied within architecture. Graph has 4 sources and shares TF initialization; Matrix has 8 sources across two independently sampled joint data/initial units. No 32-condition or 480-candidate independent replication claim appears."
+    }
+  ],
+  "optional_precision_notes": [
+    {
+      "priority": "nonblocking_wording",
+      "lines": [
+        475,
+        477
+      ],
+      "quote": "normalization sensitivities, not a further learned processing layer",
+      "suggestion": "Replace the final phrase with \"not a fifth Transformer or recurrent block\" (or state that the final LayerNorm has learned affine parameters).",
+      "reason": "Both implementations use nn.LayerNorm(d) with default affine parameters, so normalization itself includes learned gamma/beta. The current distinction between the fourth block and final normalization is scientifically appropriate; this is a terminology precision issue, not a numeric result error."
+    },
+    {
+      "priority": "nonblocking_provenance_naming",
+      "lines": [
+        811,
+        816
+      ],
+      "quote": "at source commit d9a113d",
+      "suggestion": "Call d9a113d the public saved-table/publication snapshot, and refer to the separately recorded execution source hashes and scientific_source_commit 83325c2b6a2e41c69fc8b2e8f25e0cb58b80aca2 when describing training/analysis provenance.",
+      "reason": "A publication/table checkout commit and a historical execution source version are different identity references. The current draft already explicitly states mixed recorded execution revisions; this suggestion prevents readers treating d9a113d as the single training source."
+    }
+  ],
+  "resolved_earlier_precision_notes_in_current_snapshot": [
+    "D_s formula now explicitly uses phase-specific finite complete-length candidates and preserves empty/undefined cases.",
+    "Shared-initialization argument now names evaluation mode, dropout off, a defined score, and nonempty comparator category.",
+    "Comparison B is now called a different question, avoiding an unsupported logical ordering.",
+    "Independent fitting/held-out answer-mean construction is made explicit in the appendix."
+  ],
+  "facts_audit_reference": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/provenance/paper_facts_perm_graph_20261012.json",
+  "facts_audit_sha256": "78f7d74de89193112121e0a788b54f686a72983a974fce90b8e31f2915d43316",
+  "inherited_real_initial_identity_evidence": {
+    "current_scope": [
+      {
+        "domain": "permworld",
+        "architecture": "transformer",
+        "encoding": "one_line",
+        "models": 16,
+        "actual_initial_identity_verified_models": 16,
+        "initial_parameter_SHAs": [
+          "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+        ],
+        "initial_checkpoint_SHAs": [
+          "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+        ],
+        "model_seeds": [
+          95100001
+        ],
+        "parameters": [
+          3240448
+        ]
+      },
+      {
+        "domain": "permworld",
+        "architecture": "transformer",
+        "encoding": "canonical_cycle",
+        "models": 16,
+        "actual_initial_identity_verified_models": 16,
+        "initial_parameter_SHAs": [
+          "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+        ],
+        "initial_checkpoint_SHAs": [
+          "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+        ],
+        "model_seeds": [
+          95100001
+        ],
+        "parameters": [
+          3240448
+        ]
+      },
+      {
+        "domain": "permworld",
+        "architecture": "gru",
+        "encoding": "one_line",
+        "models": 16,
+        "actual_initial_identity_verified_models": 16,
+        "initial_parameter_SHAs": [
+          "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0"
+        ],
+        "initial_checkpoint_SHAs": [
+          "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+        ],
+        "model_seeds": [
+          95100002
+        ],
+        "parameters": [
+          1660416
+        ]
+      },
+      {
+        "domain": "permworld",
+        "architecture": "gru",
+        "encoding": "canonical_cycle",
+        "models": 16,
+        "actual_initial_identity_verified_models": 16,
+        "initial_parameter_SHAs": [
+          "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0"
+        ],
+        "initial_checkpoint_SHAs": [
+          "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa"
+        ],
+        "model_seeds": [
+          95100002
+        ],
+        "parameters": [
+          1660416
+        ]
+      },
+      {
+        "domain": "graphworld",
+        "architecture": "transformer",
+        "encoding": "row_major_offdiagonal_binary",
+        "models": 4,
+        "actual_initial_identity_verified_models": 4,
+        "initial_parameter_SHAs": [
+          "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+        ],
+        "initial_checkpoint_SHAs": [
+          "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda"
+        ],
+        "model_seeds": [
+          95100001
+        ],
+        "parameters": [
+          3240448
+        ]
+      }
+    ],
+    "actual_saved_evidence": [
+      {
+        "architecture": "transformer",
+        "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+        "parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+        "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+        "actual_container_stage": "actual_constructor_output_before_optimizer_or_training_forward",
+        "actual_container_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "evidence": "CPU-loaded saved tensor state; no constructor or seed reconstruction"
+      },
+      {
+        "architecture": "gru",
+        "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+        "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+        "parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+        "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+        "actual_container_stage": "value_preserving_key_migration_of_saved_actual_initialization_before_source_training_for_explicit_interlayer_dropout",
+        "actual_container_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "evidence": "CPU-loaded saved tensor state; no constructor or seed reconstruction"
+      },
+      {
+        "architecture": "graph_transformer",
+        "path": "/mnt/yangx-projects-f/20261010/graphworld_pilot/initializations/step0.pt",
+        "checkpoint_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+        "parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+        "vocabulary_sha256": "4f852873beda0fc095e73a4045f77bc3f3f426668b5fb61340defdb749c336e4",
+        "actual_container_stage": "actual_constructor_output_before_optimizer_or_training_forward",
+        "actual_container_protocol_sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+        "evidence": "CPU-loaded saved tensor state; no constructor or seed reconstruction"
+      }
+    ],
+    "same_within_each_architecture_all16tasks_and_both_encodings": true,
+    "Transformer_and_GRU_initials_not_same": true,
+    "Graph_same_Transformer_initial_checkpoint_and_parameter_SHA_as_PermTF": true,
+    "Graph_not_an_independent_initialization_replication": true,
+    "new_initial_hidden_alias_records": 96,
+    "new_initial_hidden_alias_all_anchors_bitwise": true,
+    "saved_packed_layer_order": {
+      "transformer": [
+        "block_01",
+        "block_02",
+        "block_03",
+        "block_04",
+        "final_norm"
+      ],
+      "gru": [
+        "layer_01",
+        "layer_02",
+        "layer_03",
+        "layer_04",
+        "final_norm"
+      ]
+    },
+    "primary_final_norm_stored_separately": true,
+    "Graph_hidden_initial_task_independent_content_SHA_equal": true,
+    "GRU_stage": "Value-preserving key migration of saved genuine initial tensor values before source training, for explicit interlayer dropout; not a seed-only reconstruction.",
+    "branch_limit": "Equality is for the causal pre-query hidden endpoint. Both Perm and Graph use task-specific query tokens later, so it does not automatically extend to task-conditioned output probability. Fixed-T tables do not evaluate output probability.",
+    "historical_limit": "Current64+4 actual initials do not repair historical specialist/property32 missing or reconstructed initialization identities.",
+    "checkpoint_identity_not_reloaded_in_this_review": true
+  },
+  "source_files": [
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/manuscript.tex",
+      "sha256": "d6b52d1e4f787cd437ac53ba20baeff052987d9cd420c12a8f63bc71a3851be5",
+      "bytes": 46225
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/make_figures.py",
+      "sha256": "4a26ab72961dc6e5ffdf3332fd9313494146506d1a0e1cb1229e0f36a4570064",
+      "bytes": 14670
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/provenance/paper_facts_perm_graph_20261012.json",
+      "sha256": "78f7d74de89193112121e0a788b54f686a72983a974fce90b8e31f2915d43316",
+      "bytes": 130334
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tables/fixed_transform32.csv",
+      "sha256": "6da53d4715e2bbbc101e62f3b4b471ee6be98c9e8cb290ed48b30b67f667a504",
+      "bytes": 6901
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tables/perm_main32.csv",
+      "sha256": "01d67079aa9cd7f3cd54f2cdf037f0cd9efab4d7470eaf71ce1c52f7f96dcacf",
+      "bytes": 7120
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tables/layer_counts.csv",
+      "sha256": "7bfeaaf5083a87389745266d54f8f343c5382b2b467898185680a8cce3fad1cd",
+      "bytes": 849
+    },
+    {
+      "path": "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/tables/output_baseline_counts.csv",
+      "sha256": "c6abced80bf7b2ad452fab84ec8756e90e6b7039098397cd0f2391d1cfb83c55",
+      "bytes": 252
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/protocol.json",
+      "sha256": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c",
+      "bytes": 10017
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/pair_summary.csv",
+      "sha256": "4b7c000fafe2b6b8ef4d123b66b8ce1e80a306f39ec2a168264178037f897e63",
+      "bytes": 470791
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/category_summary.csv",
+      "sha256": "81d8b08faf0ef6af41786d7d6611b31a6557fc841b610be3b9b2acbceb544b35",
+      "bytes": 267401
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/designated_category_comparisons.csv",
+      "sha256": "5e525c1076b26efe9d13c73a90ea88b23631b10cf96bc82b50ca1d63dbdc449a",
+      "bytes": 247031
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/common_support_training_comparisons.csv",
+      "sha256": "ddf25841cafd027019f45999844cc98b864fac39804a9e6a2bda1e684b518d34",
+      "bytes": 182026
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/fixed_transform_analysis.py",
+      "sha256": "e174d55ba88c5f58006d2b929550fc7ffaff1c8541f673fffb0146f787925fca",
+      "bytes": 32356
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/gru_exceedance_encoding_case.csv",
+      "sha256": "3bf285749eba273a31f3a186bb09d9f4c675f95261454c5f9158ea7ee277e248",
+      "bytes": 5024
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/three_metric_directions.csv",
+      "sha256": "5a915167c516120c7ac8d10907213d8545bde0322653f01a8c4118dd00bd8fdf",
+      "bytes": 17605
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/contrast_summary.csv",
+      "sha256": "99a307f42fdf441106b92b9ad825b8dcfb14399a104877838099ce1b862fe4ce",
+      "bytes": 2262344
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv",
+      "sha256": "23afa052be98c5a6175fbd5504c145160b477147c521ea3aa25460dbe06b5bc4",
+      "bytes": 79297
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/completed_checkpoint_manifest.json",
+      "sha256": "9a04a6ac7902059d12734fd10e08f51479bf143afcc297f605e0eaa1729f8a1f",
+      "bytes": 166790
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/final_review/graph_completed_checkpoint_manifest.json",
+      "sha256": "2ee6f60f8aa16b8f3d9424c8dbc79bb05dd0f9da96cf7dd1e7801cdb19366d2f",
+      "bytes": 10103
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/extraction_validation.json",
+      "sha256": "9848ced37a153ff40e2cb4c55258a3fa3691e81d60ad5c1748959bba6dd3f2d4",
+      "bytes": 1340
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/common.py",
+      "sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "bytes": 11183
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_scope_inventory_20261009/metrics.py",
+      "sha256": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+      "bytes": 4359
+    }
+  ],
+  "operations": {
+    "source_code_text_read": true,
+    "saved_scalar_tables_read_and_counts_recounted": true,
+    "new_scientific_metrics_or_representations_computed": false,
+    "torch_imported": false,
+    "model_forward_or_checkpoint_load": false,
+    "training_or_optimization": false,
+    "plot_script_or_compilation_run_by_reviewer": false,
+    "Git_or_release_mutations": false,
+    "original_frozen_files_modified": false,
+    "reviewer_written_files": [
+      "/home/yangx/ICML/manuscripts/representation_selectivity_20261012/provenance/perm_graph_text_review.json"
+    ]
+  },
+  "limits": [
+    "This review verifies text against stored scalar outputs and bound identity audits; it is not a fresh activation or model-forward replication.",
+    "No independence or causal mechanism is inferred from table counts.",
+    "Exact current runtime weight identity was not reloaded; genuine step0 identities are inherited from already completed and SHA-bound audits.",
+    "Matrix substantive fact review is owned by the separate reviewer."
+  ]
+}

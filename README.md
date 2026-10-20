@@ -44,6 +44,7 @@ GL inputs add finite-field linear mixing. Transpose is an anti-automorphism; lef
 
 ## Reports, tables and provenance
 
+- [English working-paper draft (PDF)](manuscripts/representation_selectivity_20261012/manuscript.pdf), [LaTeX source](manuscripts/representation_selectivity_20261012/manuscript.tex), [source bundle](manuscripts/representation_selectivity_20261012/manuscript_source.zip), and [build instructions](manuscripts/representation_selectivity_20261012/BUILD.txt). This is an exploratory working draft, not a formal submission; its limitations and the original Matrix verification caveat remain explicit.
 - [Current research index](CURRENT_RESEARCH.txt) and [scope/formula notes](docs/representation_research.md).
 - [PermWorld eight-relation report](diagnostics/permworld_eight_relations_20261010/report.html), [combined Perm/Graph reader](diagnostics/permworld_eight_relations_20261010/final_review/combined_report.html), and [32 primary cells](diagnostics/permworld_eight_relations_20261010/final_review/permworld/main32_final_cka_readout.csv).
 - [GraphWorld report](diagnostics/graphworld_pilot_20261010/report.html), [frozen protocol](diagnostics/graphworld_pilot_20261010/protocol.json), and [full geometry](diagnostics/graphworld_pilot_20261010/geometry_summary.csv).

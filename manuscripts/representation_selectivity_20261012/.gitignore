@@ -1,0 +1,8 @@
+# Reproducible TeX intermediates and local page previews.
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+provenance/pdf_previews/

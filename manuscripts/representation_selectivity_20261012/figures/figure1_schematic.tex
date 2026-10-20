@@ -1,0 +1,24 @@
+\begin{tikzpicture}[x=1cm,y=1cm,font=\footnotesize,
+  state/.style={draw=black!60,rounded corners=2pt,minimum height=.65cm,align=center},
+  designated/.style={state,draw=teal!80!black,fill=teal!7},
+  compare/.style={<->,dashed,>=Stealth,thick}]
+\node[align=center,font=\small\bfseries] at (3.45,3.5)
+  {A. Fix the task pair\\Change the input pairing};
+\node[state,minimum width=2cm] (lefta) at (1.15,1.5) {$h_f(x)$\\fixed left specialist};
+\node[designated,minimum width=2.9cm] (correcta) at (5.15,2.18) {$h_{g_*}(T(x))$\\correct transformation};
+\node[state,draw=purple!65!black,fill=purple!5,minimum width=2.9cm] (wronga) at (5.15,.78) {$h_{g_*}(U(x))$\\specified wrong transformation};
+\draw[compare,teal!80!black] (lefta.east) -- node[above,sloped] {$S_c$} (correcta.west);
+\draw[compare,purple!65!black] (lefta.east) -- node[below,sloped] {$S_u$} (wronga.west);
+\node[align=center] at (3.45,-.06) {$B_t=S_c^t-S_u^t$\\$\Delta=B_t-B_0$};
+\draw[black!20] (7.4,-.55)--(7.4,3.95);
+\node[align=center,font=\small\bfseries] at (11.7,3.5)
+  {B. Fix the transformation\\Change the right task};
+\node[state,minimum width=1.8cm] (leftb) at (9.1,1.5) {$h_f(x)$\\same left specialist};
+\node[designated,minimum width=2.6cm] (correctb) at (13.4,2.42) {$h_{g_*}(T(x))$\\designated task};
+\node[state,minimum width=2.6cm,fill=black!3] (otherb) at (13.4,1.36) {$h_{g_1}(T(x))$\\candidate task};
+\node[state,minimum width=2.6cm,fill=black!3] (lastb) at (13.4,.30) {$\ldots\;h_{g_M}(T(x))$\\remaining candidates};
+\draw[compare,teal!80!black] (leftb.east)--(correctb.west);
+\draw[compare,black!50] (leftb.east)--(otherb.west);
+\draw[compare,black!50] (leftb.east)--(lastb.west);
+\node[align=center] at (11.7,-.60) {$D_s=F_s(g_*)-\operatorname{mean}_{g\in\mathcal C}F_s(g)$};
+\end{tikzpicture}

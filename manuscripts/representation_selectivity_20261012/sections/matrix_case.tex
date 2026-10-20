@@ -1,0 +1,23 @@
+\subsubsection{Independent paired worlds}
+
+MatrixGroupWorld provides two independently resampled worlds, each with new data and a new initialization. Within each world, four task specialists share a saved, genuine initialization and each completes the fixed 20,000-update budget. We report both worlds separately, with equal weights over $n\in\{6,8,10\}$ and the same prespecified transformations, controls, and metrics. These worlds repeat the matrix setting; they do not independently confirm PermWorld across initializations. Because data and initialization vary together, differences between worlds do not isolate a causal effect of initialization. The four relations, three sizes, and three metrics are coupled measurements rather than additional independent replications.
+
+\subsubsection{R1: an illustrative case}
+
+R1 relates $F_1$ and $F_2$ through transposition. Both tasks achieve 100\% full-vocabulary answer accuracy in both worlds at every size on the complete identity training, validation, and analysis sets. The $F_2$ models also achieve 100\% analysis accuracy under the correct and wrong R1 transformations. Nevertheless, their geometric pairing preference depends on the control and metric (Figure~\ref{fig:matrixcase}; Table~\ref{tab:matrix_r1}). This makes R1 an illustrative case, rather than evidence for a general reversal of relation preference.
+
+For raw, size-stratified hidden-state CKA, worlds one and two respectively give $(B_t,\Delta)=(0.520209,0.519581)$ and $(0.558791,0.553006)$. After joint-answer-stratum control, these become $(-0.019384,-0.020747)$ and $(-0.014022,-0.014551)$. Thus, these controlled, equally weighted CKA estimates favor the wrong pairing. Answer control changes both centering and retained sample support; this contrast cannot be interpreted as a causal subtraction of all answer information.
+
+The fixed-transform comparison supplies an additional distinction. For R1,
+the designated task ranks uniquely first among three candidates under answer
+control in both worlds, both initially and after training. Its advantage over
+the two non-designated tasks changes from $0.1894$ to $0.1182$ and from
+$0.1179$ to $0.0663$. Thus first rank in Comparison B can coexist with a
+negative input-pairing preference in Comparison A, and its controlled task
+advantage need not originate at training.
+
+The controlled sensitivity metrics give different aggregate directions. For $k$NN overlap, $(B_t,\Delta)$ is $(0.047718,0.039648)$ and $(0.081837,0.069883)$; for held-out Procrustes it is $(0.052454,0.038940)$ and $(0.045210,0.036150)$. Procrustes is scored as negative alignment error, so larger values indicate better alignment. These metrics use different scales; their numerical magnitudes are not directly comparable. Raw $B_t$ and $\Delta$ are positive for all three metrics in both worlds, whereas controlled CKA disagrees with the two sensitivity metrics. This aggregate disagreement also has size-specific qualifications: controlled CKA has positive $B_t$ and $\Delta$ at $n=10$ in both worlds, while controlled Procrustes has negative $B_t$ and $\Delta$ at $n=6$ in both. World one's controlled $k$NN $B_t$ and $\Delta$ are negative at $n=8$. We retain all sizes rather than select a uniformly positive or negative subset.
+
+R3 illustrates why $\Delta$ must also be decomposed. Its controlled CKA increments are $0.048498$ and $0.121332$, with correct-pair changes $\delta_c=-0.800773$ and $-0.755736$, and wrong-pair changes $\delta_u=-0.849270$ and $-0.877068$. Both scores decrease; the larger wrong-pair decrease produces the positive increment. These results describe a change in relative selectivity, not increased correct-pair convergence. Interpretation is further limited by weak $F_3$ learning at $n=10$: training accuracies are 45.61\% and 39.21\%, validation accuracies 40.23\% and 31.25\%, and identity-analysis accuracies 35.55\% and 31.64\%. Accuracy on the correct R3-transformed analysis inputs remains 35.74\% and 32.23\%. The low training accuracy prevents attributing this weakness solely to generalization.
+
+We interpret these observations as measured pairing selectivity, with algebraic and causal mechanisms unresolved. Numerical checking retains its original verification caveat.\footnote{The unchanged audit \texttt{c2e799\ldots} records 64 passed, two failed, and six consistently undefined checks at tolerance $10^{-8}$. Both failures concern trained raw output-probability $k$NN, for correct and wrong pairings, on the fixed 64-input first-world R1/$n=6$ subset. They remain failed; see Appendix~\ref{app:verification}.}
