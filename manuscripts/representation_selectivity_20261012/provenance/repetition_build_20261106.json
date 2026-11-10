@@ -1,0 +1,121 @@
+{
+  "build_utc": "2026-11-10T03:35:16.232386+00:00",
+  "build_mode": "current_status",
+  "completed_units": 5,
+  "listed_units": 5,
+  "final_five_unit_result_available": true,
+  "protocol_sha256": "6f8b26a5658e641164b54e93d57afc3fe045e354abcbdf731ca6d8c9555f0231",
+  "manuscript_sha256": "78958de7691682684d25ea9d7ada93b9b7ead577f1be423297a3018fc69c72a6",
+  "PDF_sha256": "7529326e7a5f6767b3e1530d354b95bd16f8fbc5262cc33762de34f977f8f128",
+  "source_sha256": {
+    ".gitignore": "540a0ead72979db472a243c0f3a7cf3e52c563837d8e3d22844bfe261a9770fc",
+    "BUILD.txt": "e09d17956c7db31fce4798c7b48717e771f78fb4722670926b99681b7691c4e4",
+    "TMLR_STYLE_LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "fancyhdr.sty": "3d2922548e0e5f1a6c5676eda6ebb6dc20d7d305b4d8c2be5f1c833fb1084e6d",
+    "figures/figure1_schematic.tex": "f53c7bfb26305b85a33da6828a8d7d42c49e98fb0c44d5821640be668b72c166",
+    "figures/figure2_perm_preferences.pdf": "25f37e570132c2eb17cfbe889c4ba196f818b55ef7b42bfa447b7691b535b0de",
+    "figures/figure2_perm_preferences.png": "d2f944e9b6332a2ca0bab5951f3fc93f63775497ec6be329754dc9fa86284495",
+    "figures/figure3_fixed_transform.pdf": "075ddc53d7fcba9c6c25136df33a93bf6d0abb6b3fe9e21e44bf26b119fa6f14",
+    "figures/figure3_fixed_transform.png": "e799c3519d62dd35e0646b7249ab7002246ec7e8fc21afc3a36fd1cc0ae21fa1",
+    "figures/figure4_layers.pdf": "b08f916c313020da21a63df63b307bcd2b5cf368cf3aa6071a692c9c1be177cb",
+    "figures/figure4_layers.png": "58a7e95c92206443eca8f042a1c0ef7481172d7206a30399f751bb9a89ebf3fb",
+    "figures/figure5_matrix_r1.pdf": "d50adc8eb2598ddf9f55a79166dad74b6a1d50a13f47fc76a7d2b95e0a65fdea",
+    "figures/figure5_matrix_r1.png": "2aa96f495b448f1c35a3160bd4eb25a6dd2301888e639ff2dc1c53a4f9dc6a33",
+    "make_figures.py": "4a26ab72961dc6e5ffdf3332fd9313494146506d1a0e1cb1229e0f36a4570064",
+    "manuscript.tex": "78958de7691682684d25ea9d7ada93b9b7ead577f1be423297a3018fc69c72a6",
+    "provenance/completion.json": "bb745f5d5ba1c0c7aabdcad04a27a71901c612658f348eada0a4f56cfd2289cb",
+    "provenance/figure_sources.json": "8768e60201b35378fa924a6f8f5e6cb93aedb8830bc382ad5ad38847b9e7503a",
+    "provenance/literature_text_review.json": "58eb0c187a861c3fadb3bcaa113443455a20d6a8c40f852aa6cda77795a8e8a5",
+    "provenance/matrix_text_review.json": "cd4adba916219db67dd212d9b621b3185ab0c030d151224410b07fa893155894",
+    "provenance/old_paper_protection_start.json": "fbea1e9782f7fdf1992673558846b5eb0eaf4c4d93e68f9fb5ae91d5a4209a51",
+    "provenance/paper_facts_matrix_20261012.json": "38a63119b5f3e2b93b2acbef45b96fbbdd0811a215fed364224e37c8b654f3a2",
+    "provenance/paper_facts_perm_graph_20261012.json": "78f7d74de89193112121e0a788b54f686a72983a974fce90b8e31f2915d43316",
+    "provenance/paper_verified_references_20261012.json": "48bab161e2d78951b005f924d3614606aab144e9995cfeef736aea43562c6d1b",
+    "provenance/perm_graph_text_review.json": "ca1bfd82ba76cfb00e2d1aff102e91ae37b48e9e3574329d201c810b128a3dd3",
+    "provenance/style_source.json": "673879c43fae649ebf8f8df43bb9e2ead122a6c01e7a354f24cfa23dab990e38",
+    "reader_guide.txt": "87b4d69d98d783c2dfe717efbb4ceb6e29c377dbbf00ca84d9952ce717785fd0",
+    "references.bib": "16dd6459e8f2c527618cd0b27d2e7ec0432b86ff7408f830930db9c849f7aa5c",
+    "sections/matrix_case.tex": "70934cf75266f8cffa4ab3f74378854e0f6f718eed7d9ad616cedc4189b3ca09",
+    "sections/related_work.tex": "49eb25d3e1960b88fe9e97ecd67b4f1bc4fba8d63cf6cd03a23632e21bf97fea",
+    "tables/fixed_transform32.csv": "6da53d4715e2bbbc101e62f3b4b471ee6be98c9e8cb290ed48b30b67f667a504",
+    "tables/layer_counts.csv": "7bfeaaf5083a87389745266d54f8f343c5382b2b467898185680a8cce3fad1cd",
+    "tables/matrix_all_hidden.csv": "de578c93d8ce080773a42031ec906d380e7f5f6a776d88d5305ef6a490bba578",
+    "tables/matrix_fixed_transform_ranks.csv": "0f23013e41cb0c7970531c498fba9a4553d7c1c88570dad70d99da4609dbd291",
+    "tables/matrix_r1.csv": "9474b74d4029014dc52c1764807e698c616fac0a853bcc66439ae314d7e41e5e",
+    "tables/matrix_r1_main.tex": "92b9a38a7802a635c21a8af8685cedbb405c8df470ff407e115cabe72d3e1409",
+    "tables/matrix_r1_main_tabular.tex": "7a1f600ff41c93f8eb909c707a55718d24884c06f7a40f1a9f2f8159a4b9c0a3",
+    "tables/output_baseline_counts.csv": "c6abced80bf7b2ad452fab84ec8756e90e6b7039098397cd0f2391d1cfb83c55",
+    "tables/perm_main32.csv": "01d67079aa9cd7f3cd54f2cdf037f0cd9efab4d7470eaf71ce1c52f7f96dcacf",
+    "tables/perm_main32.tex": "fa99fd2da2ba1d90ec3f02efbbf2654ad0883d6743c4fcd1babee9033653d90c",
+    "tables/perm_main32_tabular.tex": "6d1235744532ca8ff812e14a7728fb8d96e7845311cc5955b5050394d1a73326",
+    "tmlr.bst": "306fd454cf40771bee01293eeb98d2c1cd5f4e11ed0cd7296b335f354fc45206",
+    "tmlr.sty": "816214ff5919aa457b6b443bee52b15d9561421417b7f8a50cc84651519f0002",
+    "sections/independent_repetition_methods.tex": "fe7be45ee2e17006b60eb6cc46ef7cdc09521a363f749b45b364d08488e87d9b",
+    "sections/independent_repetition_status.tex": "ab584cec8e622d80b0fb043c2c965f63d69f735297590a57f9612de907c2fc73",
+    "sections/independent_repetition_results.tex": "8c1ee36768fcae8fc4359b5842d5201d07e35bcd9b268f964d11f0d2329aaf83",
+    "figures/figure6_independent_repetition.png": "e45c916ae51ba7df0ea3fe5e0ad7ba17c76f6948ab84f5624145db33e3bd075c"
+  },
+  "completion_state": {
+    "completed_units": 5,
+    "listed_units": 5,
+    "additional_units": [
+      {
+        "unit": "unit02",
+        "completed": true,
+        "completion_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/analysis/completion.json",
+        "completion_sha256": "a79c3126c509c3ee57e6fe09dc2ee5838ba3c98841d9998ad2c8bbb8889543c2",
+        "recorded_status": "completed",
+        "recorded_expected_conditions": 32
+      },
+      {
+        "unit": "unit03",
+        "completed": true,
+        "completion_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/analysis/completion.json",
+        "completion_sha256": "51f00639d8cb37f0359a9ab386c9874eba2f1a230f9456e78bbff46a0e66d055",
+        "recorded_status": "completed",
+        "recorded_expected_conditions": 32
+      },
+      {
+        "unit": "unit04",
+        "completed": true,
+        "completion_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/analysis/completion.json",
+        "completion_sha256": "f4b024270a3445f955481e672aeb4628bba75c9d815e68031de6ee58e063cb9f",
+        "recorded_status": "completed",
+        "recorded_expected_conditions": 32
+      },
+      {
+        "unit": "unit05",
+        "completed": true,
+        "completion_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/analysis/completion.json",
+        "completion_sha256": "8d70bb0db9fcc7af276bf491ad929c93b1ac2d5127213622887295591c4f1182",
+        "recorded_status": "completed",
+        "recorded_expected_conditions": 32
+      }
+    ],
+    "summary_completion_sha256": "b9e285d84706d3acb697321c3f3d2468bc33f2480b316fbee2bc1133aebe4c23",
+    "historical_completion_sha256": "7bc59c498a874633112810c8cdf105897a1dbfca9a4ac8e216d13b7c16462fba",
+    "summary": {
+      "listed_units": 5,
+      "completed_units": 5,
+      "pending_units": 0,
+      "statistical_unit": "complete repetition unit",
+      "no_condition_level_independence": true
+    },
+    "final_complete": true
+  },
+  "final_results_rendering": {
+    "primary_count_summary_sha256": "5fbf283a08b96c40b4e01cbe800ff1d7a9c26d55e9d6169716c7d622d6605ee2",
+    "condition_effect_summary_sha256": "2c349cee74522a77c94aafa3d52d465db8293b83377d011e7d3e27f915301c84",
+    "source_figure_sha256": "e45c916ae51ba7df0ea3fe5e0ad7ba17c76f6948ab84f5624145db33e3bd075c",
+    "new_four_count_summary_sha256": "5f1f34775c54515632ace64badf4066d3394cbd2f436f3fc5d338ca592a293e3",
+    "new_four_condition_effect_summary_sha256": "da71299af2f1122c336dfa18b9a0e6279659d408817c3b4bcfd9d5f9866dbcf4",
+    "generated_members": [
+      "sections/independent_repetition_results.tex",
+      "figures/figure6_independent_repetition.png"
+    ],
+    "complete_condition_effect_rows": 96
+  },
+  "original_artifact_backup": "/mnt/yangx-projects-f/20261106/paper_backups/representation_selectivity_20261012/baseline.json",
+  "source_archive_note": "ZIP SHA is recorded outside this ZIP in diagnostics/permworld_repetition_20261106/paper_finalization.json to avoid circular hashing.",
+  "actions": "Document compilation and source packaging only; no training, geometry recomputation, or upload"
+}

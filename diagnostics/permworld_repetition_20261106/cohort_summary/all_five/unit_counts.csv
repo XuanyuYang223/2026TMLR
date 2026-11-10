@@ -1,0 +1,51 @@
+unit,comparison,control,metric,expected_conditions,observed_conditions,Bt_finite,Bt_positive,Bt_negative,Bt_zero,Delta_finite,Delta_positive,Delta_negative,Delta_zero,finite_conditions,above_other_mean,unique_first,ranking_rule
+archdev001,A,raw_within_length,linear_cka,32,32,32,27,5,0,32,25,7,0,,,,
+archdev001,A,raw_within_length,debiased_cka,32,32,32,27,5,0,32,25,7,0,,,,
+archdev001,A,raw_within_length,knn_overlap,32,32,32,26,6,0,32,19,13,0,,,,
+archdev001,A,raw_within_length,procrustes,32,32,32,27,5,0,32,26,6,0,,,,
+archdev001,B,raw_within_length,linear_cka,32,32,,,,,,,,,32,30,25,strict greater; exact equality is a tie; all original candidates required
+archdev001,A,answer_strata,linear_cka,32,32,32,26,6,0,32,18,14,0,,,,
+archdev001,A,answer_strata,debiased_cka,32,32,32,26,6,0,32,18,14,0,,,,
+archdev001,A,answer_strata,knn_overlap,32,32,32,26,6,0,32,16,16,0,,,,
+archdev001,A,answer_strata,procrustes,32,32,32,26,6,0,32,18,14,0,,,,
+archdev001,B,answer_strata,linear_cka,32,32,,,,,,,,,32,29,19,strict greater; exact equality is a tie; all original candidates required
+unit02,A,raw_within_length,linear_cka,32,32,32,29,3,0,32,23,9,0,,,,
+unit02,A,raw_within_length,debiased_cka,32,32,32,29,3,0,32,23,9,0,,,,
+unit02,A,raw_within_length,knn_overlap,32,32,32,24,8,0,32,19,13,0,,,,
+unit02,A,raw_within_length,procrustes,32,32,32,29,3,0,32,25,7,0,,,,
+unit02,B,raw_within_length,linear_cka,32,32,,,,,,,,,32,30,23,strict greater; exact equality is a tie; all original candidates required
+unit02,A,answer_strata,linear_cka,32,32,32,28,4,0,32,18,14,0,,,,
+unit02,A,answer_strata,debiased_cka,32,32,32,28,4,0,32,18,14,0,,,,
+unit02,A,answer_strata,knn_overlap,32,32,32,24,8,0,32,17,15,0,,,,
+unit02,A,answer_strata,procrustes,32,32,32,25,7,0,32,18,14,0,,,,
+unit02,B,answer_strata,linear_cka,32,32,,,,,,,,,32,30,18,strict greater; exact equality is a tie; all original candidates required
+unit03,A,raw_within_length,linear_cka,32,32,32,29,3,0,32,22,10,0,,,,
+unit03,A,raw_within_length,debiased_cka,32,32,32,29,3,0,32,22,10,0,,,,
+unit03,A,raw_within_length,knn_overlap,32,32,32,26,6,0,32,18,14,0,,,,
+unit03,A,raw_within_length,procrustes,32,32,32,29,3,0,32,22,10,0,,,,
+unit03,B,raw_within_length,linear_cka,32,32,,,,,,,,,32,31,24,strict greater; exact equality is a tie; all original candidates required
+unit03,A,answer_strata,linear_cka,32,32,32,29,3,0,32,18,14,0,,,,
+unit03,A,answer_strata,debiased_cka,32,32,32,29,3,0,32,18,14,0,,,,
+unit03,A,answer_strata,knn_overlap,32,32,32,26,6,0,32,16,16,0,,,,
+unit03,A,answer_strata,procrustes,32,32,32,26,6,0,32,18,14,0,,,,
+unit03,B,answer_strata,linear_cka,32,32,,,,,,,,,32,30,17,strict greater; exact equality is a tie; all original candidates required
+unit04,A,raw_within_length,linear_cka,32,32,32,29,3,0,32,25,7,0,,,,
+unit04,A,raw_within_length,debiased_cka,32,32,32,29,3,0,32,25,7,0,,,,
+unit04,A,raw_within_length,knn_overlap,32,32,32,26,6,0,32,19,13,0,,,,
+unit04,A,raw_within_length,procrustes,32,32,32,29,3,0,32,25,7,0,,,,
+unit04,B,raw_within_length,linear_cka,32,32,,,,,,,,,32,30,26,strict greater; exact equality is a tie; all original candidates required
+unit04,A,answer_strata,linear_cka,32,32,32,28,4,0,32,18,14,0,,,,
+unit04,A,answer_strata,debiased_cka,32,32,32,28,4,0,32,18,14,0,,,,
+unit04,A,answer_strata,knn_overlap,32,32,32,27,5,0,32,17,15,0,,,,
+unit04,A,answer_strata,procrustes,32,32,32,28,4,0,32,18,14,0,,,,
+unit04,B,answer_strata,linear_cka,32,32,,,,,,,,,32,30,20,strict greater; exact equality is a tie; all original candidates required
+unit05,A,raw_within_length,linear_cka,32,32,32,28,4,0,32,24,8,0,,,,
+unit05,A,raw_within_length,debiased_cka,32,32,32,28,4,0,32,24,8,0,,,,
+unit05,A,raw_within_length,knn_overlap,32,32,32,25,7,0,32,18,14,0,,,,
+unit05,A,raw_within_length,procrustes,32,32,32,27,5,0,32,27,5,0,,,,
+unit05,B,raw_within_length,linear_cka,32,32,,,,,,,,,32,28,25,strict greater; exact equality is a tie; all original candidates required
+unit05,A,answer_strata,linear_cka,32,32,32,26,6,0,32,18,14,0,,,,
+unit05,A,answer_strata,debiased_cka,32,32,32,26,6,0,32,18,14,0,,,,
+unit05,A,answer_strata,knn_overlap,32,32,32,25,7,0,32,17,15,0,,,,
+unit05,A,answer_strata,procrustes,32,32,32,26,6,0,32,18,14,0,,,,
+unit05,B,answer_strata,linear_cka,32,32,,,,,,,,,32,29,18,strict greater; exact equality is a tie; all original candidates required

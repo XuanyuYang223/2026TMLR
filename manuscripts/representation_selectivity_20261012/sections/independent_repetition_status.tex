@@ -1,0 +1,16 @@
+\subsection{Independent-unit repetition: current completion}
+\label{sec:independent-repetition-status}
+The repetition manifest targets five complete units. At this reporting checkpoint, 5 of five units have complete main analyses.
+The following are unit-level observations. The 32 conditions and their candidate pairs within each unit are dependent measurements, and are not pooled as binomial trials.
+\begin{center}\small
+\begin{tabular}{lrrrr}
+Unit & A: $B_t>0$ & A: $\Delta>0$ & B: above mean & B: unique first\\\hline
+archdev001 & 26/32 & 18/32 & 29/32 & 19/32\\
+unit02 & 28/32 & 18/32 & 30/32 & 18/32\\
+unit03 & 29/32 & 18/32 & 30/32 & 17/32\\
+unit04 & 28/32 & 18/32 & 30/32 & 20/32\\
+unit05 & 26/32 & 18/32 & 29/32 & 18/32\\
+\end{tabular}\end{center}
+The companion results retain unrounded condition effects, unit-level sample standard deviations and ranges, all unit-specific values, undefined cells, and direction consistency. A sign change near zero is interpreted with its magnitude rather than as evidence of a substantive reversal.
+These repetitions jointly change sampling, shared architecture-level initialization, batch order, and the registered training random streams. They do not isolate the contribution of each random factor, and they do not test specialists initialized independently within a unit.
+\input{sections/independent_repetition_results}

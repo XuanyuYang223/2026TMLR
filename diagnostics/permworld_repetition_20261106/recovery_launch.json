@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-07T07:56:47.132295+00:00",
+  "training_pid": 1524,
+  "paper_pid": 1525,
+  "prior_training_pid": 5122,
+  "prior_paper_pid": 28509,
+  "boot_id": "689fe35b-ad54-431e-a6c5-bc68f0941178",
+  "host_uptime_seconds": "387.35",
+  "checkpoint_run_id": "unit02_transformer_canonical_cycle_fixed_points",
+  "checkpoint_step": 18000,
+  "completed_formal_endpoints_preserved": 17,
+  "same_configuration_and_seeds": true,
+  "cause": "Previous processes absent after current short-uptime boot; reason for environment restart not independently determined.",
+  "preserved_launch_records": "/mnt/yangx-projects-f/20261106/permworld_repetition/recoveries/689fe35b-ad54-431e-a6c5-bc68f0941178"
+}

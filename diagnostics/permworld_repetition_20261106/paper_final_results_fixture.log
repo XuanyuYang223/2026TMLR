@@ -1,0 +1,23 @@
+note: Running TeX ...
+note: downloading lmroman9-regular.otf
+note: downloading cmr9.tfm
+note: downloading cmmi9.tfm
+note: downloading cmsy9.tfm
+warning: sections/independent_repetition_results:16: Overfull \hbox (48.8642pt too wide) in paragraph at lines 11--16
+note: downloading lmroman7-regular.otf
+warning: sections/independent_repetition_results:58: Overfull \hbox (76.79214pt too wide) in paragraph at lines 23--58
+warning: sections/independent_repetition_results:96: Overfull \hbox (76.79214pt too wide) in paragraph at lines 61--96
+warning: sections/independent_repetition_results:134: Overfull \hbox (76.79214pt too wide) in paragraph at lines 99--134
+note: Rerunning TeX because "fixture.aux" changed ...
+warning: sections/independent_repetition_results:16: Overfull \hbox (48.8642pt too wide) in paragraph at lines 11--16
+warning: sections/independent_repetition_results:58: Overfull \hbox (76.79214pt too wide) in paragraph at lines 23--58
+warning: sections/independent_repetition_results:96: Overfull \hbox (76.79214pt too wide) in paragraph at lines 61--96
+warning: sections/independent_repetition_results:134: Overfull \hbox (76.79214pt too wide) in paragraph at lines 99--134
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: downloading cmmi9.pfb
+note: downloading cmmi6.pfb
+note: downloading cmr9.pfb
+note: downloading cmmi7.pfb
+note: Writing `fixture.pdf` (195.470703125 KiB)
+note: Skipped writing 1 intermediate files (use --keep-intermediates to keep them)

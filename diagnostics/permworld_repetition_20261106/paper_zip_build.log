@@ -1,0 +1,24 @@
+note: Running TeX ...
+warning: sections/matrix_case:10: Underfull \hbox (badness 4608) in paragraph at lines 9--10
+warning: sections/matrix_case:10: Underfull \hbox (badness 3240) in paragraph at lines 9--10
+warning: manuscript.tex:819: Underfull \hbox (badness 1400) in paragraph at lines 805--819
+warning: manuscript.tex:819: Underfull \hbox (badness 1348) in paragraph at lines 805--819
+note: Running BibTeX on manuscript.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: sections/matrix_case:10: Underfull \hbox (badness 4608) in paragraph at lines 9--10
+warning: sections/matrix_case:10: Underfull \hbox (badness 3240) in paragraph at lines 9--10
+warning: manuscript.bbl:26: Underfull \hbox (badness 10000) in paragraph at lines 19--26
+warning: manuscript.tex:819: Underfull \hbox (badness 1400) in paragraph at lines 805--819
+warning: manuscript.tex:819: Underfull \hbox (badness 1348) in paragraph at lines 805--819
+note: Rerunning TeX because "manuscript.aux" changed ...
+warning: sections/matrix_case:10: Underfull \hbox (badness 4608) in paragraph at lines 9--10
+warning: sections/matrix_case:10: Underfull \hbox (badness 3240) in paragraph at lines 9--10
+warning: manuscript.bbl:26: Underfull \hbox (badness 10000) in paragraph at lines 19--26
+warning: manuscript.tex:819: Underfull \hbox (badness 1400) in paragraph at lines 805--819
+warning: manuscript.tex:819: Underfull \hbox (badness 1348) in paragraph at lines 805--819
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `manuscript.log` (24.7412109375 KiB)
+note: Writing `manuscript.blg` (196 B)
+note: Writing `manuscript.pdf` (274.2060546875 KiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)

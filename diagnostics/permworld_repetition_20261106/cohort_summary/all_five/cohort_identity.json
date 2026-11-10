@@ -1,0 +1,55 @@
+{
+  "listed_units": 5,
+  "completed_units": 5,
+  "pending_units": 0,
+  "statistical_unit": "complete repetition unit",
+  "no_condition_level_independence": true,
+  "cohort": "all_five",
+  "definition": "Historical exploratory unit plus the same four new repetitions",
+  "generated_utc": "2026-11-10T03:35:13.302530+00:00",
+  "requested_unit_ids": [
+    "archdev001",
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "source_records": [
+    {
+      "unit": "archdev001",
+      "analysis_dir": "/home/yangx/ICML/diagnostics/permworld_repetition_20261106/historical_analysis",
+      "status": "completed",
+      "completion_sha256": "7bc59c498a874633112810c8cdf105897a1dbfca9a4ac8e216d13b7c16462fba",
+      "recorded_status": "completed"
+    },
+    {
+      "unit": "unit02",
+      "analysis_dir": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/analysis",
+      "status": "completed",
+      "completion_sha256": "a79c3126c509c3ee57e6fe09dc2ee5838ba3c98841d9998ad2c8bbb8889543c2",
+      "recorded_status": "completed"
+    },
+    {
+      "unit": "unit03",
+      "analysis_dir": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/analysis",
+      "status": "completed",
+      "completion_sha256": "51f00639d8cb37f0359a9ab386c9874eba2f1a230f9456e78bbff46a0e66d055",
+      "recorded_status": "completed"
+    },
+    {
+      "unit": "unit04",
+      "analysis_dir": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/analysis",
+      "status": "completed",
+      "completion_sha256": "f4b024270a3445f955481e672aeb4628bba75c9d815e68031de6ee58e063cb9f",
+      "recorded_status": "completed"
+    },
+    {
+      "unit": "unit05",
+      "analysis_dir": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/analysis",
+      "status": "completed",
+      "completion_sha256": "8d70bb0db9fcc7af276bf491ad929c93b1ac2d5127213622887295591c4f1182",
+      "recorded_status": "completed"
+    }
+  ],
+  "historical_exploratory_unit_included": true
+}

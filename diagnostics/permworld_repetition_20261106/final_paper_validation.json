@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "actual_completed_units": 5,
+  "source_archive_members": 47,
+  "source_archive_SHA256": "ad1f0995bbdd7c1b8a4636a45911c4dc3533ebf52633f48a80de3601797de8be",
+  "working_PDF_SHA256": "7529326e7a5f6767b3e1530d354b95bd16f8fbc5262cc33762de34f977f8f128",
+  "standalone_archive_compilation_passed": true,
+  "PDF_pages": 22,
+  "PDF_text_confirms_five_units": true,
+  "checks_scoped_to_document_build_not_model_retraining": true
+}

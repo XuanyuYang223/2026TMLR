@@ -1,0 +1,19 @@
+{
+  "script": "diagnostics/permworld_answer_controls_20261109/verify_saved_results.py",
+  "sha256": "e31f86f77624760cfe36655ee8e10c8f02d07423c5533ffa9992e44c2bb4f377",
+  "registered_before_new_diagnostic_scores": true,
+  "fixed_cases": 3,
+  "fixed_lengths": [
+    10,
+    20,
+    30
+  ],
+  "phases": [
+    "initial",
+    "trained"
+  ],
+  "independent_paths": [
+    "direct numpy least squares",
+    "dense Gram U-centering"
+  ]
+}

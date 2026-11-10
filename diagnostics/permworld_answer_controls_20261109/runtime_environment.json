@@ -1,0 +1,17 @@
+{
+  "python": "3.13.13",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.4.4",
+  "scipy": "1.18.1",
+  "torch_compiled_cuda": "12.8",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "GPU": "NVIDIA GeForce RTX 5070, 610.88, 12227 MiB",
+  "score_dtype": "FP64",
+  "activation_storage_dtype": "FP32",
+  "forward_logits_dtype": "FP32",
+  "auxiliary_support_mass_dtype": "FP64",
+  "TF32_for_score_matmul": false,
+  "neural_forward_mode": "eval + torch.inference_mode",
+  "thread_limit": 2,
+  "source_code_provenance": "git HEAD plus freeze.json for uncommitted current diagnostic sources"
+}

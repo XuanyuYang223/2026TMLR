@@ -1,0 +1,15 @@
+{
+  "pid": 7784,
+  "wait_for_training_pid": 5122,
+  "command": [
+    "/home/yangx/ICML/.venv/bin/python",
+    "-u",
+    "/home/yangx/ICML/tools/finalize_permworld_repetition.py",
+    "--wait-pid",
+    "5122"
+  ],
+  "log": "/mnt/yangx-projects-f/20261106/permworld_repetition/paper_finalizer.log",
+  "requires_complete_units": 5,
+  "starts_training": false,
+  "uploads": false
+}

@@ -1,0 +1,2375 @@
+{
+  "status": "passed",
+  "captured_utc": "2026-11-09T14:59:40.706018+00:00",
+  "captured_los_angeles": "2026-11-09T06:59:40.706018-08:00",
+  "primary_readout": "Answer-stratified final_norm ordinary linear CKA, original 21 lengths weighted equally by 1/21.",
+  "units": {
+    "unit02": {
+      "primary_counts": {
+        "Bt_positive": 28,
+        "Delta_positive": 18,
+        "B_above_other_mean": 30,
+        "B_unique_first": 18,
+        "denominator": 32
+      },
+      "source_dir": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/analysis",
+      "primary_A_conditions": 32,
+      "primary_B_conditions": 32,
+      "primary_B_candidate_rows": 480,
+      "all_21_length_summaries_verified": true,
+      "raw_initial_reference_all32_candidate_vectors_exactly_tied": true,
+      "A_maximum_additive_error": 2.220446049250313e-16,
+      "B_maximum_saved_contrast_error": 0.0,
+      "dependent_condition_means": {
+        "Bt": 0.1535918020662683,
+        "Delta": 0.2065813081859081,
+        "B_designated_minus_other_mean": 0.15538381225047515
+      }
+    },
+    "unit03": {
+      "primary_counts": {
+        "Bt_positive": 29,
+        "Delta_positive": 18,
+        "B_above_other_mean": 30,
+        "B_unique_first": 17,
+        "denominator": 32
+      },
+      "source_dir": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/analysis",
+      "primary_A_conditions": 32,
+      "primary_B_conditions": 32,
+      "primary_B_candidate_rows": 480,
+      "all_21_length_summaries_verified": true,
+      "raw_initial_reference_all32_candidate_vectors_exactly_tied": true,
+      "A_maximum_additive_error": 2.220446049250313e-16,
+      "B_maximum_saved_contrast_error": 0.0,
+      "dependent_condition_means": {
+        "Bt": 0.15177282003730969,
+        "Delta": 0.20595411605254174,
+        "B_designated_minus_other_mean": 0.15626173834176083
+      }
+    },
+    "unit04": {
+      "primary_counts": {
+        "Bt_positive": 28,
+        "Delta_positive": 18,
+        "B_above_other_mean": 30,
+        "B_unique_first": 20,
+        "denominator": 32
+      },
+      "source_dir": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/analysis",
+      "primary_A_conditions": 32,
+      "primary_B_conditions": 32,
+      "primary_B_candidate_rows": 480,
+      "all_21_length_summaries_verified": true,
+      "raw_initial_reference_all32_candidate_vectors_exactly_tied": true,
+      "A_maximum_additive_error": 2.220446049250313e-16,
+      "B_maximum_saved_contrast_error": 0.0,
+      "dependent_condition_means": {
+        "Bt": 0.17345158981833453,
+        "Delta": 0.22438944275275013,
+        "B_designated_minus_other_mean": 0.179197775394676
+      }
+    }
+  },
+  "three_new_unit_effects": {
+    "Bt": {
+      "conditions": 32,
+      "all_three_direction_agreement": 28,
+      "all_three_positive": 26,
+      "all_three_negative": 2,
+      "all_direction_disagreements": [
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": -0.03976771085546295,
+            "unit03": -0.13231985497482063,
+            "unit04": 0.13054923656741776
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": 1
+          },
+          "direction_agreement": false,
+          "mean": -0.013846109754288604,
+          "sample_standard_deviation": 0.1333378673700638,
+          "minimum": -0.13231985497482063,
+          "maximum": 0.13054923656741776,
+          "range": 0.26286909154223836
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.002799894976498867,
+            "unit03": 0.025037927774685196,
+            "unit04": -0.007224138500137938
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": -1
+          },
+          "direction_agreement": false,
+          "mean": 0.006871228083682041,
+          "sample_standard_deviation": 0.016511875878666978,
+          "minimum": -0.007224138500137938,
+          "maximum": 0.025037927774685196,
+          "range": 0.032262066274823135
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": -0.0034573766151578355,
+            "unit03": 0.0030251343673623338,
+            "unit04": 0.019520217752232095
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": false,
+          "mean": 0.006362658501478865,
+          "sample_standard_deviation": 0.011846803840590723,
+          "minimum": -0.0034573766151578355,
+          "maximum": 0.019520217752232095,
+          "range": 0.02297759436738993
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.053681163982046455,
+            "unit03": 0.009406488396300025,
+            "unit04": -0.03036299781085074
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": -1
+          },
+          "direction_agreement": false,
+          "mean": 0.010908218189165247,
+          "sample_standard_deviation": 0.042042201145346264,
+          "minimum": -0.03036299781085074,
+          "maximum": 0.053681163982046455,
+          "range": 0.0840441617928972
+        }
+      ],
+      "unit_level_dependent_condition_means": {
+        "unit02": 0.1535918020662683,
+        "unit03": 0.15177282003730969,
+        "unit04": 0.17345158981833453
+      },
+      "unit_level_dependent_condition_mean_summary": {
+        "n": 3,
+        "mean": 0.15960540397397083,
+        "sample_standard_deviation": 0.012025590244678707,
+        "minimum": 0.15177282003730969,
+        "maximum": 0.17345158981833453
+      },
+      "condition_three_unit_mean_summary": {
+        "n": 32,
+        "mean": 0.15960540397397083,
+        "sample_standard_deviation": 0.20570901535655256,
+        "minimum": -0.11665574239908395,
+        "maximum": 0.8587948781343344
+      },
+      "all_condition_values": [
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": -0.03976771085546295,
+            "unit03": -0.13231985497482063,
+            "unit04": 0.13054923656741776
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": 1
+          },
+          "direction_agreement": false,
+          "mean": -0.013846109754288604,
+          "sample_standard_deviation": 0.1333378673700638,
+          "minimum": -0.13231985497482063,
+          "maximum": 0.13054923656741776,
+          "range": 0.26286909154223836
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.23086338706956025,
+            "unit03": 0.2561324367512357,
+            "unit04": 0.14315174724994315
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.21004919035691302,
+          "sample_standard_deviation": 0.0592965609343531,
+          "minimum": 0.14315174724994315,
+          "maximum": 0.2561324367512357,
+          "range": 0.11298068950129256
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.11075313583914588,
+            "unit03": 0.11947246287997199,
+            "unit04": 0.12874066316461155
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.1196554206279098,
+          "sample_standard_deviation": 0.008995159252300173,
+          "minimum": 0.11075313583914588,
+          "maximum": 0.12874066316461155,
+          "range": 0.01798752732546567
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": 0.016842826418188715,
+            "unit03": 0.016971266863870894,
+            "unit04": 0.010162978010832515
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.014659023764297374,
+          "sample_standard_deviation": 0.003894219408297227,
+          "minimum": 0.010162978010832515,
+          "maximum": 0.016971266863870894,
+          "range": 0.006808288853038379
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.05936562262528044,
+            "unit03": 0.027056361939894476,
+            "unit04": 0.45156346188983143
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.17932848215166877,
+          "sample_standard_deviation": 0.23631522427953605,
+          "minimum": 0.027056361939894476,
+          "maximum": 0.45156346188983143,
+          "range": 0.42450709994993696
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.15082160848265755,
+            "unit03": 0.1336660223510183,
+            "unit04": 0.12529925284240667
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.1365956278920275,
+          "sample_standard_deviation": 0.013010941581080723,
+          "minimum": 0.12529925284240667,
+          "maximum": 0.15082160848265755,
+          "range": 0.025522355640250877
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "run_complement",
+          "values": {
+            "unit02": -0.07077734741261091,
+            "unit03": -0.11732443709163692,
+            "unit04": -0.16186544269300404
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.11665574239908395,
+          "sample_standard_deviation": 0.04554772925071436,
+          "minimum": -0.16186544269300404,
+          "maximum": -0.07077734741261091,
+          "range": 0.09108809528039313
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.18462740019372545,
+            "unit03": 0.24905648087449947,
+            "unit04": 0.27574425223686594
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.23647604443503029,
+          "sample_standard_deviation": 0.04684304342502237,
+          "minimum": 0.18462740019372545,
+          "maximum": 0.27574425223686594,
+          "range": 0.09111685204314049
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": 0.2585534872981322,
+            "unit03": 0.343443482026361,
+            "unit04": 0.30141799208589426
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.3011383204701292,
+          "sample_standard_deviation": 0.04244568839586862,
+          "minimum": 0.2585534872981322,
+          "maximum": 0.343443482026361,
+          "range": 0.08488999472822878
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.047515988495332416,
+            "unit03": 0.0494470377348315,
+            "unit04": 0.05905971006530416
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.05200757876515603,
+          "sample_standard_deviation": 0.006183175130726871,
+          "minimum": 0.047515988495332416,
+          "maximum": 0.05905971006530416,
+          "range": 0.011543721569971743
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.03807331879097318,
+            "unit03": 0.07699541146984054,
+            "unit04": 0.07340419855032435
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.06282430960371269,
+          "sample_standard_deviation": 0.021510064207657813,
+          "minimum": 0.03807331879097318,
+          "maximum": 0.07699541146984054,
+          "range": 0.038922092678867364
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": 0.19357937006677273,
+            "unit03": 0.19436239148442905,
+            "unit04": 0.18422586408765818
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.19072254187961998,
+          "sample_standard_deviation": 0.005639893384147828,
+          "minimum": 0.18422586408765818,
+          "maximum": 0.19436239148442905,
+          "range": 0.010136527396770872
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.9099162168221404,
+            "unit03": 0.7834311426075599,
+            "unit04": 0.8830372749733029
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.8587948781343344,
+          "sample_standard_deviation": 0.06663624278979502,
+          "minimum": 0.7834311426075599,
+          "maximum": 0.9099162168221404,
+          "range": 0.12648507421458055
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.31478363771013235,
+            "unit03": 0.3323404614410745,
+            "unit04": 0.4058403927563311
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.3509881639691793,
+          "sample_standard_deviation": 0.04830771953910033,
+          "minimum": 0.31478363771013235,
+          "maximum": 0.4058403927563311,
+          "range": 0.09105675504619876
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.6992576565296309,
+            "unit03": 0.7820846130970678,
+            "unit04": 0.7298345599806305
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.737058943202443,
+          "sample_standard_deviation": 0.04188340922439008,
+          "minimum": 0.6992576565296309,
+          "maximum": 0.7820846130970678,
+          "range": 0.08282695656743688
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.47002477549018745,
+            "unit03": 0.4809590124158906,
+            "unit04": 0.5209125737278372
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.4906321205446384,
+          "sample_standard_deviation": 0.026787474088121325,
+          "minimum": 0.47002477549018745,
+          "maximum": 0.5209125737278372,
+          "range": 0.05088779823764972
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": -0.06431730456708722,
+            "unit03": -0.01260222891706642,
+            "unit04": -0.013509019622049988
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.030142851035401208,
+          "sample_standard_deviation": 0.02959941761230592,
+          "minimum": -0.06431730456708722,
+          "maximum": -0.01260222891706642,
+          "range": 0.0517150756500208
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.002799894976498867,
+            "unit03": 0.025037927774685196,
+            "unit04": -0.007224138500137938
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": -1
+          },
+          "direction_agreement": false,
+          "mean": 0.006871228083682041,
+          "sample_standard_deviation": 0.016511875878666978,
+          "minimum": -0.007224138500137938,
+          "maximum": 0.025037927774685196,
+          "range": 0.032262066274823135
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.12642484280110938,
+            "unit03": 0.12942254978007595,
+            "unit04": 0.08172692929741003
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.11252477395953178,
+          "sample_standard_deviation": 0.026713797720598852,
+          "minimum": 0.08172692929741003,
+          "maximum": 0.12942254978007595,
+          "range": 0.047695620482665915
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": -0.0034573766151578355,
+            "unit03": 0.0030251343673623338,
+            "unit04": 0.019520217752232095
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": false,
+          "mean": 0.006362658501478865,
+          "sample_standard_deviation": 0.011846803840590723,
+          "minimum": -0.0034573766151578355,
+          "maximum": 0.019520217752232095,
+          "range": 0.02297759436738993
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.16015718408175625,
+            "unit03": 0.06202272227333567,
+            "unit04": 0.1527198065803478
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.12496657097847991,
+          "sample_standard_deviation": 0.05463766753245128,
+          "minimum": 0.06202272227333567,
+          "maximum": 0.16015718408175625,
+          "range": 0.09813446180842059
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.053681163982046455,
+            "unit03": 0.009406488396300025,
+            "unit04": -0.03036299781085074
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": -1
+          },
+          "direction_agreement": false,
+          "mean": 0.010908218189165247,
+          "sample_standard_deviation": 0.042042201145346264,
+          "minimum": -0.03036299781085074,
+          "maximum": 0.053681163982046455,
+          "range": 0.0840441617928972
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.054025185125652214,
+            "unit03": 0.08864481943550043,
+            "unit04": 0.004492187319147576
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.04905406396010007,
+          "sample_standard_deviation": 0.042295985710933674,
+          "minimum": 0.004492187319147576,
+          "maximum": 0.08864481943550043,
+          "range": 0.08415263211635285
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.00989653236889298,
+            "unit03": 0.016828370009249055,
+            "unit04": 0.1264542249726394
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.05105970911692714,
+          "sample_standard_deviation": 0.06538549043255697,
+          "minimum": 0.00989653236889298,
+          "maximum": 0.1264542249726394,
+          "range": 0.1165576926037464
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": 0.11976309961354226,
+            "unit03": 0.03547801995939268,
+            "unit04": 0.012896725220903986
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.056045948264612976,
+          "sample_standard_deviation": 0.05632393141492695,
+          "minimum": 0.012896725220903986,
+          "maximum": 0.11976309961354226,
+          "range": 0.10686637439263827
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.18349859507617244,
+            "unit03": 0.1688302117748331,
+            "unit04": 0.14993508316172321
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.16742129667090958,
+          "sample_standard_deviation": 0.016826054627731114,
+          "minimum": 0.14993508316172321,
+          "maximum": 0.18349859507617244,
+          "range": 0.03356351191444923
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.09774085615412859,
+            "unit03": 0.1552956605318229,
+            "unit04": 0.11343870758532948
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.12215840809042698,
+          "sample_standard_deviation": 0.02975170179019367,
+          "minimum": 0.09774085615412859,
+          "maximum": 0.1552956605318229,
+          "range": 0.05755480437769431
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": 0.028541250771405822,
+            "unit03": 0.08268204012500271,
+            "unit04": 0.06622331174502587
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.0591488675471448,
+          "sample_standard_deviation": 0.02775503717326528,
+          "minimum": 0.028541250771405822,
+          "maximum": 0.08268204012500271,
+          "range": 0.054140789353596896
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.08366789675646003,
+            "unit03": 0.1632808772577138,
+            "unit04": 0.14021663130378673
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.12905513510598685,
+          "sample_standard_deviation": 0.040963287393755154,
+          "minimum": 0.08366789675646003,
+          "maximum": 0.1632808772577138,
+          "range": 0.07961298050125379
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.08948901677478285,
+            "unit03": 0.080943188073495,
+            "unit04": 0.11718913505493428
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.09587377996773738,
+          "sample_standard_deviation": 0.018947719359276645,
+          "minimum": 0.080943188073495,
+          "maximum": 0.11718913505493428,
+          "range": 0.03624594698143928
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.27523929598456265,
+            "unit03": 0.07772984809533617,
+            "unit04": 0.27038724264045594
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.20778546224011826,
+          "sample_standard_deviation": 0.11265759043822056,
+          "minimum": 0.07772984809533617,
+          "maximum": 0.27523929598456265,
+          "range": 0.19750944788922647
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.12335415927203404,
+            "unit03": 0.1749303203857829,
+            "unit04": 0.0852681119896196
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.12785086388247885,
+          "sample_standard_deviation": 0.04499992408754098,
+          "minimum": 0.0852681119896196,
+          "maximum": 0.1749303203857829,
+          "range": 0.0896622083961633
+        }
+      ]
+    },
+    "Delta": {
+      "conditions": 32,
+      "all_three_direction_agreement": 32,
+      "all_three_positive": 18,
+      "all_three_negative": 14,
+      "all_direction_disagreements": [],
+      "unit_level_dependent_condition_means": {
+        "unit02": 0.2065813081859081,
+        "unit03": 0.20595411605254174,
+        "unit04": 0.22438944275275013
+      },
+      "unit_level_dependent_condition_mean_summary": {
+        "n": 3,
+        "mean": 0.21230828899706666,
+        "sample_standard_deviation": 0.010467284726441132,
+        "minimum": 0.20595411605254174,
+        "maximum": 0.22438944275275013
+      },
+      "condition_three_unit_mean_summary": {
+        "n": 32,
+        "mean": 0.21230828899706666,
+        "sample_standard_deviation": 0.6608111372608999,
+        "minimum": -0.8295656417678714,
+        "maximum": 1.0860355497887413
+      },
+      "all_condition_values": [
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": 0.8014704485395482,
+            "unit03": 0.7095914406379015,
+            "unit04": 0.9890083577914578
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.8333567489896359,
+          "sample_standard_deviation": 0.1424113953136977,
+          "minimum": 0.7095914406379015,
+          "maximum": 0.9890083577914578,
+          "range": 0.2794169171535563
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": -0.6129600208706114,
+            "unit03": -0.590702291764993,
+            "unit04": -0.7209213920415835
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.6415279015590626,
+          "sample_standard_deviation": 0.06965160712060682,
+          "minimum": -0.7209213920415835,
+          "maximum": -0.590702291764993,
+          "range": 0.13021910027659045
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": -0.43114792961909965,
+            "unit03": -0.44404388149864876,
+            "unit04": -0.4229056784742885
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.43269916319734564,
+          "sample_standard_deviation": 0.010654137740121285,
+          "minimum": -0.44404388149864876,
+          "maximum": -0.4229056784742885,
+          "range": 0.021138203024360258
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": 0.5791030966587732,
+            "unit03": 0.5878252853916257,
+            "unit04": 0.576548082215736
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.581158821422045,
+          "sample_standard_deviation": 0.005912979882793528,
+          "minimum": 0.576548082215736,
+          "maximum": 0.5878252853916257,
+          "range": 0.01127720317588976
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.9033375941754533,
+            "unit03": 0.8753009884725651,
+            "unit04": 1.3137322672603784
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 1.0307902833027989,
+          "sample_standard_deviation": 0.24543560770438988,
+          "minimum": 0.8753009884725651,
+          "maximum": 1.3137322672603784,
+          "range": 0.4384312787878133
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.9984236520785797,
+            "unit03": 0.9812714718132016,
+            "unit04": 0.9919638513400696
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.9905529917439503,
+          "sample_standard_deviation": 0.008662691011687885,
+          "minimum": 0.9812714718132016,
+          "maximum": 0.9984236520785797,
+          "range": 0.017152180265378125
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.7725920247181279,
+            "unit03": 0.728829595042285,
+            "unit04": 0.702252310983034
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.7345579769144823,
+          "sample_standard_deviation": 0.03551801798016087,
+          "minimum": 0.702252310983034,
+          "maximum": 0.7725920247181279,
+          "range": 0.07033971373509396
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 1.0286586825917,
+            "unit03": 1.0931253834621752,
+            "unit04": 1.136322583312349
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 1.0860355497887413,
+          "sample_standard_deviation": 0.0541809762345988,
+          "minimum": 1.0286586825917,
+          "maximum": 1.136322583312349,
+          "range": 0.10766390072064902
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": -0.3683788246549239,
+            "unit03": -0.31428275225268604,
+            "unit04": -0.33773193027168497
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.340131169059765,
+          "sample_standard_deviation": 0.02712772608252875,
+          "minimum": -0.3683788246549239,
+          "maximum": -0.31428275225268604,
+          "range": 0.05409607240223785
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.672120845307042,
+            "unit03": 0.7030842726999722,
+            "unit04": 0.6941952752760565
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.6898001310943569,
+          "sample_standard_deviation": 0.015942754726293744,
+          "minimum": 0.672120845307042,
+          "maximum": 0.7030842726999722,
+          "range": 0.03096342739293023
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.6586137659318191,
+            "unit03": 0.7360138294384819,
+            "unit04": 0.7095261888762943
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.701384594748865,
+          "sample_standard_deviation": 0.03933708967260672,
+          "minimum": 0.6586137659318191,
+          "maximum": 0.7360138294384819,
+          "range": 0.07740006350666284
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": -0.4381452013617012,
+            "unit03": -0.46698314290132376,
+            "unit04": -0.4551487657583866
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.4534257033404705,
+          "sample_standard_deviation": 0.014495979654121275,
+          "minimum": -0.46698314290132376,
+          "maximum": -0.4381452013617012,
+          "range": 0.028837941539622547
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.2890204376948041,
+            "unit03": 0.13439542729464873,
+            "unit04": 0.25173809225177196
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.22505131908040826,
+          "sample_standard_deviation": 0.08069300686575574,
+          "minimum": 0.13439542729464873,
+          "maximum": 0.2890204376948041,
+          "range": 0.1546250104001554
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "record_complement",
+          "values": {
+            "unit02": -0.3059142440735119,
+            "unit03": -0.31982944498647425,
+            "unit04": -0.22874607024032795
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.28482991976677136,
+          "sample_standard_deviation": 0.049065841859593,
+          "minimum": -0.31982944498647425,
+          "maximum": -0.22874607024032795,
+          "range": 0.0910833747461463
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.07281543890594214,
+            "unit03": 0.1269329468272002,
+            "unit04": 0.09561572369784417
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.09845470314366217,
+          "sample_standard_deviation": 0.027170223023048407,
+          "minimum": 0.07281543890594214,
+          "maximum": 0.1269329468272002,
+          "range": 0.05411750792125805
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": -0.1685100355674345,
+            "unit03": -0.19087677992080482,
+            "unit04": -0.12488381694901945
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.1614235441457529,
+          "sample_standard_deviation": 0.03356235332855897,
+          "minimum": -0.19087677992080482,
+          "maximum": -0.12488381694901945,
+          "range": 0.06599296297178536
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": 0.7166941477540811,
+            "unit03": 0.8828826707782115,
+            "unit04": 0.7767743163972197
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.7921170449765041,
+          "sample_standard_deviation": 0.08414990069173384,
+          "minimum": 0.7166941477540811,
+          "maximum": 0.8828826707782115,
+          "range": 0.16618852302413034
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": -0.7982659489435826,
+            "unit03": -0.8815196394220843,
+            "unit04": -0.8089113369379474
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.8295656417678714,
+          "sample_standard_deviation": 0.045307223216371484,
+          "minimum": -0.8815196394220843,
+          "maximum": -0.7982659489435826,
+          "range": 0.08325369047850173
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": -0.5432714938854227,
+            "unit03": -0.7044162110652942,
+            "unit04": -0.5876313595820245
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.6117730215109138,
+          "sample_standard_deviation": 0.08324073431476789,
+          "minimum": -0.7044162110652942,
+          "maximum": -0.5432714938854227,
+          "range": 0.16114471717987144
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": 0.6724057909767109,
+            "unit03": 0.8440735734201652,
+            "unit04": 0.7013742439107533
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.7392845361025432,
+          "sample_standard_deviation": 0.09189858308381826,
+          "minimum": 0.6724057909767109,
+          "maximum": 0.8440735734201652,
+          "range": 0.17166778244345426
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.9650087390154909,
+            "unit03": 0.9671023354028624,
+            "unit04": 0.9516681806716156
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.9612597516966563,
+          "sample_standard_deviation": 0.008372243576521388,
+          "minimum": 0.9516681806716156,
+          "maximum": 0.9671023354028624,
+          "range": 0.015434154731246763
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.8425177380826813,
+            "unit03": 0.9037633825751316,
+            "unit04": 0.7678670175907124
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.8380493794161751,
+          "sample_standard_deviation": 0.06805828513762319,
+          "minimum": 0.7678670175907124,
+          "maximum": 0.9037633825751316,
+          "range": 0.13589636498441915
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.8583497819723869,
+            "unit03": 0.9952715453850448,
+            "unit04": 0.8057860944098708
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.8864691405891009,
+          "sample_standard_deviation": 0.09782232761275818,
+          "minimum": 0.8057860944098708,
+          "maximum": 0.9952715453850448,
+          "range": 0.189485450975174
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.8083444869733837,
+            "unit03": 0.9177389984198344,
+            "unit04": 0.9247575666789829
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.883613684024067,
+          "sample_standard_deviation": 0.06527943086143619,
+          "minimum": 0.8083444869733837,
+          "maximum": 0.9247575666789829,
+          "range": 0.11641307970559922
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": -0.46813804060859737,
+            "unit03": -0.6160417294957876,
+            "unit04": -0.605177627715019
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.563119132606468,
+          "sample_standard_deviation": 0.08243520518993508,
+          "minimum": -0.6160417294957876,
+          "maximum": -0.46813804060859737,
+          "range": 0.14790368888719024
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.7611756741608634,
+            "unit03": 0.815100853231951,
+            "unit04": 0.7561254541093524
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.777467327167389,
+          "sample_standard_deviation": 0.03268926266652747,
+          "minimum": 0.7561254541093524,
+          "maximum": 0.815100853231951,
+          "range": 0.05897539912259864
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.6776306054093127,
+            "unit03": 0.8048683525879716,
+            "unit04": 0.7231203088669577
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.7352064222880806,
+          "sample_standard_deviation": 0.0644741551320858,
+          "minimum": 0.6776306054093127,
+          "maximum": 0.8048683525879716,
+          "range": 0.12723774717865888
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": -0.553596404106656,
+            "unit03": -0.568796153154886,
+            "unit04": -0.5466823995457405
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.5563583189357608,
+          "sample_standard_deviation": 0.011312632532435604,
+          "minimum": -0.568796153154886,
+          "maximum": -0.5466823995457405,
+          "range": 0.02211375360914547
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": -0.4869650090717578,
+            "unit03": -0.47778699549146597,
+            "unit04": -0.45823255380223443
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.47432818612181943,
+          "sample_standard_deviation": 0.014675183751676051,
+          "minimum": -0.4869650090717578,
+          "maximum": -0.45823255380223443,
+          "range": 0.028732455269523394
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "record_complement",
+          "values": {
+            "unit02": -0.5184157683759726,
+            "unit03": -0.5840509331127607,
+            "unit04": -0.5103723981867935
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.5376130332251756,
+          "sample_standard_deviation": 0.040416987276108006,
+          "minimum": -0.5840509331127607,
+          "maximum": -0.5103723981867935,
+          "range": 0.07367853492596721
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "run_complement",
+          "values": {
+            "unit02": -0.30002382148932677,
+            "unit03": -0.5671826196680575,
+            "unit04": -0.3348955398928825
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.40070066035008894,
+          "sample_standard_deviation": 0.1452280663985668,
+          "minimum": -0.5671826196680575,
+          "maximum": -0.30002382148932677,
+          "range": 0.2671587981787307
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": -0.47394834636904287,
+            "unit03": -0.490128064464627,
+            "unit04": -0.5456728781545193
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.503249762996063,
+          "sample_standard_deviation": 0.03761962711436507,
+          "minimum": -0.5456728781545193,
+          "maximum": -0.47394834636904287,
+          "range": 0.07172453178547639
+        }
+      ]
+    },
+    "B_designated_minus_other_mean": {
+      "conditions": 32,
+      "all_three_direction_agreement": 29,
+      "all_three_positive": 28,
+      "all_three_negative": 1,
+      "all_direction_disagreements": [
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": -0.007219954199876779,
+            "unit03": 0.002719112902176503,
+            "unit04": 0.014496926910640067
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": false,
+          "mean": 0.003332028537646597,
+          "sample_standard_deviation": 0.010871406554546364,
+          "minimum": -0.007219954199876779,
+          "maximum": 0.014496926910640067,
+          "range": 0.021716881110516846
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.05644041782139048,
+            "unit03": -0.005070180741408539,
+            "unit04": 0.019527656965796794
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": -1,
+            "unit04": 1
+          },
+          "direction_agreement": false,
+          "mean": 0.023632631348592913,
+          "sample_standard_deviation": 0.03096007985940948,
+          "minimum": -0.005070180741408539,
+          "maximum": 0.05644041782139048,
+          "range": 0.06151059856279902
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.0365788752806939,
+            "unit03": 0.0503008655300448,
+            "unit04": -0.014620156291003453
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": -1
+          },
+          "direction_agreement": false,
+          "mean": 0.024086528173245084,
+          "sample_standard_deviation": 0.03421591472928927,
+          "minimum": -0.014620156291003453,
+          "maximum": 0.0503008655300448,
+          "range": 0.06492102182104825
+        }
+      ],
+      "unit_level_dependent_condition_means": {
+        "unit02": 0.15538381225047515,
+        "unit03": 0.15626173834176083,
+        "unit04": 0.179197775394676
+      },
+      "unit_level_dependent_condition_mean_summary": {
+        "n": 3,
+        "mean": 0.16361444199563732,
+        "sample_standard_deviation": 0.013502699671718821,
+        "minimum": 0.15538381225047515,
+        "maximum": 0.179197775394676
+      },
+      "condition_three_unit_mean_summary": {
+        "n": 32,
+        "mean": 0.16361444199563732,
+        "sample_standard_deviation": 0.1877132605088318,
+        "minimum": -0.04103359004424782,
+        "maximum": 0.8158948314920274
+      },
+      "all_condition_values": [
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": 0.008700135737205697,
+            "unit03": 0.0226930112377803,
+            "unit04": 0.16132004378329934
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.06423773025276178,
+          "sample_standard_deviation": 0.08436635491429532,
+          "minimum": 0.008700135737205697,
+          "maximum": 0.16132004378329934,
+          "range": 0.15261990804609366
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.21810497866137493,
+            "unit03": 0.22018402152858507,
+            "unit04": 0.15588896016184378
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.19805932011726793,
+          "sample_standard_deviation": 0.03653539446739907,
+          "minimum": 0.15588896016184378,
+          "maximum": 0.22018402152858507,
+          "range": 0.06429506136674129
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.08322429091322281,
+            "unit03": 0.08580564729199364,
+            "unit04": 0.09580053217095283
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.08827682345872309,
+          "sample_standard_deviation": 0.006642326006634758,
+          "minimum": 0.08322429091322281,
+          "maximum": 0.09580053217095283,
+          "range": 0.01257624125773002
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": 0.017515684220783943,
+            "unit03": 0.014618977718319534,
+            "unit04": 0.024352453912386343
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.018829038617163275,
+          "sample_standard_deviation": 0.004997881004284017,
+          "minimum": 0.014618977718319534,
+          "maximum": 0.024352453912386343,
+          "range": 0.009733476194066809
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.061151478931069335,
+            "unit03": 0.014028626809010215,
+            "unit04": 0.3810638501884095
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.15208131864282967,
+          "sample_standard_deviation": 0.19969950078254128,
+          "minimum": 0.014028626809010215,
+          "maximum": 0.3810638501884095,
+          "range": 0.36703522337939926
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.1602891923733647,
+            "unit03": 0.15541721911963072,
+            "unit04": 0.16653718823951186
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.16074786657750242,
+          "sample_standard_deviation": 0.005574155974309794,
+          "minimum": 0.15541721911963072,
+          "maximum": 0.16653718823951186,
+          "range": 0.01111996911988114
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.012519203706652722,
+            "unit03": 0.03122159962453913,
+            "unit04": 0.013867781509979228
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.019202861613723695,
+          "sample_standard_deviation": 0.010430350571882572,
+          "minimum": 0.012519203706652722,
+          "maximum": 0.03122159962453913,
+          "range": 0.01870239591788641
+        },
+        {
+          "architecture": "gru",
+          "encoding": "canonical_cycle",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.2753884380774746,
+            "unit03": 0.332222194221881,
+            "unit04": 0.327612989036443
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.31174120711193287,
+          "sample_standard_deviation": 0.031566660505426725,
+          "minimum": 0.2753884380774746,
+          "maximum": 0.332222194221881,
+          "range": 0.05683375614440639
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": 0.31526759285578276,
+            "unit03": 0.3672858156604759,
+            "unit04": 0.3404117895855875
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.34098839936728204,
+          "sample_standard_deviation": 0.026013904648666913,
+          "minimum": 0.31526759285578276,
+          "maximum": 0.3672858156604759,
+          "range": 0.05201822280469315
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.04278077606930391,
+            "unit03": 0.05129896307433232,
+            "unit04": 0.05950072468772457
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.05119348794378693,
+          "sample_standard_deviation": 0.008360473324102495,
+          "minimum": 0.04278077606930391,
+          "maximum": 0.05950072468772457,
+          "range": 0.01671994861842066
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.10523833369052084,
+            "unit03": 0.1201221382844661,
+            "unit04": 0.126302077542011
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.11722084983899932,
+          "sample_standard_deviation": 0.010827438858896723,
+          "minimum": 0.10523833369052084,
+          "maximum": 0.126302077542011,
+          "range": 0.021063743851490166
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": 0.15576875969445955,
+            "unit03": 0.13707822546473314,
+            "unit04": 0.13698837935368469
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.1432784548376258,
+          "sample_standard_deviation": 0.010817014590144612,
+          "minimum": 0.13698837935368469,
+          "maximum": 0.15576875969445955,
+          "range": 0.018780380340774866
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.8656076704517335,
+            "unit03": 0.7417084157459861,
+            "unit04": 0.8403684082783623
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.8158948314920274,
+          "sample_standard_deviation": 0.06547498224281846,
+          "minimum": 0.7417084157459861,
+          "maximum": 0.8656076704517335,
+          "range": 0.12389925470574736
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.277789989065784,
+            "unit03": 0.3287942685161501,
+            "unit04": 0.3979830328650119
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.3348557634823153,
+          "sample_standard_deviation": 0.06032535317218967,
+          "minimum": 0.277789989065784,
+          "maximum": 0.3979830328650119,
+          "range": 0.1201930437992279
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.6292918494580718,
+            "unit03": 0.7214069879636195,
+            "unit04": 0.6709192500840074
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.6738726958352329,
+          "sample_standard_deviation": 0.046128535819253254,
+          "minimum": 0.6292918494580718,
+          "maximum": 0.7214069879636195,
+          "range": 0.09211513850554764
+        },
+        {
+          "architecture": "gru",
+          "encoding": "one_line",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.4385241920541457,
+            "unit03": 0.4411613641348413,
+            "unit04": 0.47972852605848854
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.4531380274158252,
+          "sample_standard_deviation": 0.023065767550526278,
+          "minimum": 0.4385241920541457,
+          "maximum": 0.47972852605848854,
+          "range": 0.04120433400434281
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": -0.03260816360201992,
+            "unit03": -0.05472077220616482,
+            "unit04": -0.03577183432455872
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": -1,
+            "unit04": -1
+          },
+          "direction_agreement": true,
+          "mean": -0.04103359004424782,
+          "sample_standard_deviation": 0.011958529163751137,
+          "minimum": -0.05472077220616482,
+          "maximum": -0.03260816360201992,
+          "range": 0.0221126086041449
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.06392101457398064,
+            "unit03": 0.06151985055329802,
+            "unit04": 0.024006363992056
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.04981574303977822,
+          "sample_standard_deviation": 0.022383798432913642,
+          "minimum": 0.024006363992056,
+          "maximum": 0.06392101457398064,
+          "range": 0.03991465058192464
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.0958979895677769,
+            "unit03": 0.10492863618524116,
+            "unit04": 0.06400500263809844
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.0882772094637055,
+          "sample_standard_deviation": 0.02149984099292746,
+          "minimum": 0.06400500263809844,
+          "maximum": 0.10492863618524116,
+          "range": 0.04092363354714272
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": -0.007219954199876779,
+            "unit03": 0.002719112902176503,
+            "unit04": 0.014496926910640067
+          },
+          "signs": {
+            "unit02": -1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": false,
+          "mean": 0.003332028537646597,
+          "sample_standard_deviation": 0.010871406554546364,
+          "minimum": -0.007219954199876779,
+          "maximum": 0.014496926910640067,
+          "range": 0.021716881110516846
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.11506246997782163,
+            "unit03": 0.01405491414738496,
+            "unit04": 0.10818008664788792
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.07909915692436484,
+          "sample_standard_deviation": 0.05643497974570436,
+          "minimum": 0.01405491414738496,
+          "maximum": 0.11506246997782163,
+          "range": 0.10100755583043666
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.05644041782139048,
+            "unit03": -0.005070180741408539,
+            "unit04": 0.019527656965796794
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": -1,
+            "unit04": 1
+          },
+          "direction_agreement": false,
+          "mean": 0.023632631348592913,
+          "sample_standard_deviation": 0.03096007985940948,
+          "minimum": -0.005070180741408539,
+          "maximum": 0.05644041782139048,
+          "range": 0.06151059856279902
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.0365788752806939,
+            "unit03": 0.0503008655300448,
+            "unit04": -0.014620156291003453
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": -1
+          },
+          "direction_agreement": false,
+          "mean": 0.024086528173245084,
+          "sample_standard_deviation": 0.03421591472928927,
+          "minimum": -0.014620156291003453,
+          "maximum": 0.0503008655300448,
+          "range": 0.06492102182104825
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "canonical_cycle",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.031124556859023975,
+            "unit03": 0.09520474703235338,
+            "unit04": 0.25688714404007074
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.12773881597714937,
+          "sample_standard_deviation": 0.11634446989113187,
+          "minimum": 0.031124556859023975,
+          "maximum": 0.25688714404007074,
+          "range": 0.22576258718104675
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "decomposition_complement",
+          "values": {
+            "unit02": 0.11344503406062181,
+            "unit03": 0.030790161826889484,
+            "unit04": 0.008357277956560435
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.05086415794802391,
+          "sample_standard_deviation": 0.05534512725570484,
+          "minimum": 0.008357277956560435,
+          "maximum": 0.11344503406062181,
+          "range": 0.10508775610406138
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "descent_inverse",
+          "values": {
+            "unit02": 0.15271558099526272,
+            "unit03": 0.1476334635942962,
+            "unit04": 0.13319707407305065
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.14451537288753652,
+          "sample_standard_deviation": 0.01012595157798989,
+          "minimum": 0.13319707407305065,
+          "maximum": 0.15271558099526272,
+          "range": 0.019518506922212076
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "exceedance_inverse",
+          "values": {
+            "unit02": 0.10653409288248282,
+            "unit03": 0.15251687434040853,
+            "unit04": 0.14350280974487167
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.13418459232258767,
+          "sample_standard_deviation": 0.024366491942800404,
+          "minimum": 0.10653409288248282,
+          "maximum": 0.15251687434040853,
+          "range": 0.04598278145792571
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "fixed_complement",
+          "values": {
+            "unit02": 0.018126283581067226,
+            "unit03": 0.0701192958118621,
+            "unit04": 0.056565608912922324
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.04827039610195055,
+          "sample_standard_deviation": 0.026970840678265464,
+          "minimum": 0.018126283581067226,
+          "maximum": 0.0701192958118621,
+          "range": 0.051993012230794874
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "peak_complement",
+          "values": {
+            "unit02": 0.059873405043002835,
+            "unit03": 0.14037493261839898,
+            "unit04": 0.11736209730389022
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.10587014498843067,
+          "sample_standard_deviation": 0.041462907658637055,
+          "minimum": 0.059873405043002835,
+          "maximum": 0.14037493261839898,
+          "range": 0.08050152757539614
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "record_complement",
+          "values": {
+            "unit02": 0.1096955996275636,
+            "unit03": 0.14963097120231172,
+            "unit04": 0.1336659943857168
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.13099752173853071,
+          "sample_standard_deviation": 0.0201009710065182,
+          "minimum": 0.1096955996275636,
+          "maximum": 0.14963097120231172,
+          "range": 0.03993537157474812
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "run_complement",
+          "values": {
+            "unit02": 0.24636219983242771,
+            "unit03": 0.05759712496535358,
+            "unit04": 0.23542547981455247
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.1797949348707779,
+          "sample_standard_deviation": 0.10596759655880196,
+          "minimum": 0.05759712496535358,
+          "maximum": 0.24636219983242771,
+          "range": 0.18876507486707414
+        },
+        {
+          "architecture": "transformer",
+          "encoding": "one_line",
+          "relation": "subsequence_complement",
+          "values": {
+            "unit02": 0.13917002375303408,
+            "unit03": 0.197728152777556,
+            "unit04": 0.09089529240137528
+          },
+          "signs": {
+            "unit02": 1,
+            "unit03": 1,
+            "unit04": 1
+          },
+          "direction_agreement": true,
+          "mean": 0.1425978229773218,
+          "sample_standard_deviation": 0.05349885390997317,
+          "minimum": 0.09089529240137528,
+          "maximum": 0.197728152777556,
+          "range": 0.10683286037618073
+        }
+      ]
+    }
+  },
+  "unit_level_primary_count_summaries": {
+    "Bt_positive": {
+      "n": 3,
+      "mean": 28.333333333333332,
+      "sample_standard_deviation": 0.5773502691896257,
+      "minimum": 28,
+      "maximum": 29
+    },
+    "Delta_positive": {
+      "n": 3,
+      "mean": 18,
+      "sample_standard_deviation": 0.0,
+      "minimum": 18,
+      "maximum": 18
+    },
+    "B_above_other_mean": {
+      "n": 3,
+      "mean": 30,
+      "sample_standard_deviation": 0.0,
+      "minimum": 30,
+      "maximum": 30
+    },
+    "B_unique_first": {
+      "n": 3,
+      "mean": 18.333333333333332,
+      "sample_standard_deviation": 1.5275252316519468,
+      "minimum": 17,
+      "maximum": 20
+    }
+  },
+  "source_file_sha256": {
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/analysis/comparison_a_summary.csv": "675b62c9898f240b49ea652525cd5e59ce9b89be25e3a89864398227d5f7a734",
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/analysis/comparison_b_summary.csv": "6456037edd4d68d0ee446f177e39f337bcdc2cbd8e8bb7e7e9fd31863662e0c8",
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/analysis/comparison_b_contrasts.csv": "405771fff95e2e77d4d54cd06741e61dc7ac2dc93fe87f3c4b9dcb5306614f76",
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/analysis/comparison_a_summary.csv": "88583c396440ef666d03ca53a9854f69ff59fef5b6d8ebc080406b73877c1054",
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/analysis/comparison_b_summary.csv": "9b92faf1f61db0a6df7bf65d34f41d5187870db7e3647dfe135e01f72208e3e1",
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/analysis/comparison_b_contrasts.csv": "40410d35403e3314991a0dd88efbe93a0ce7cd0973e81a6b35637f5b2ae87f31",
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/analysis/comparison_a_summary.csv": "e0da28cbdc7454b0b5ab1d7d1431e22998d0225c2e4404c1fdd2650874b9d826",
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/analysis/comparison_b_summary.csv": "c6332b94fadbab6a44bcafea59b7825a2cba062546c639cee5ce6ffe222eb70e",
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/analysis/comparison_b_contrasts.csv": "494b5116735220fa22d9e228aaf73eb2ee64d065dbc7176b3cbc636bf5a756fd"
+  },
+  "source_files_unchanged": true,
+  "tolerance": 1e-08,
+  "scope": "Saved-table arithmetic and ranking audit across the three completed new units. This JSON is the only written artifact. No training, forward, activation extraction, geometry recomputation, process signal, or source edit. The unfinished fourth new unit is not imputed.",
+  "interpretation": [
+    "Signs use exact zero and all continuous values are preserved. No new practical-effect threshold or hypothesis test was added.",
+    "The 32 conditions are dependent cells sharing tasks, models, inputs, and initialization. Independent repetition units, rather than conditions, determine uncertainty about training randomness.",
+    "These three new units do not complete the fixed four-new-unit robustness assessment. Original observed-unit counts are not pooled into a binomial test.",
+    "Raw Comparison B initialization equality was checked directly from all candidate scores; candidate-specific answer stratification does not inherit that zero reference."
+  ]
+}

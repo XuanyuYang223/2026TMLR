@@ -1,0 +1,22 @@
+{
+  "pid": 934732,
+  "command": [
+    "/home/yangx/ICML/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.permworld_answer_controls_20261109.run",
+    "all"
+  ],
+  "log": "/mnt/yangx-projects-f/20261109/permworld_answer_controls/pipeline.log",
+  "execution_revision": 3,
+  "no_training": true,
+  "no_probe": true,
+  "protocol_SHA256": "ba21dfe15775558dfb68a4d671c2c0279fd5eb5dc4e386c1358668e45a651e25",
+  "tests_passed": 18,
+  "scientific_protocol_changed": false,
+  "preserved_failed_log": "/mnt/yangx-projects-f/20261109/permworld_answer_controls/attempt_002_fp32_mass.log",
+  "preserved_FP32_arrays_and_receipts": "/mnt/yangx-projects-f/20261109/permworld_answer_controls/attempt_002_fp32_mass",
+  "observed_FP32_mass_max": 1.0000019073486328,
+  "observed_FP32_rows_above_one": 315,
+  "change": "Auxiliary numeric support mass uses FP64 full-softmax sum instead of cancellation-prone FP32 logsumexp difference; existing full CE must reproduce bit-identically. No new scientific CKA computed yet."
+}

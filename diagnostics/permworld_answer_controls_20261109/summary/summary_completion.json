@@ -1,0 +1,20 @@
+{
+  "status": "completed_saved_score_summary",
+  "score_rows": 86400,
+  "rank_rows": 86400,
+  "primary_task_pairs": 8,
+  "stochastic_units": [
+    "archdev001",
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "bootstrap_seed": 20261109,
+  "bootstrap_replicates": 10000,
+  "no_checkpoint_forward": true,
+  "no_training": true,
+  "original_results_modified": false,
+  "new_advantage_distinct_from_original_Bt": true,
+  "practical_equivalence_not_tested": true
+}

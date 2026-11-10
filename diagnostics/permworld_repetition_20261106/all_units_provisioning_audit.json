@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "scope": "All four new data worlds, saved schedules and actual CPU-constructed step0 files; not a claim that every queued model has already loaded its start or completed training.",
+  "units": [
+    {
+      "unit": "unit02",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "batch_indices_sha256": "8c73a12dba10d87f49c47459bea4936383031a48f076f2d4146d6f2bcfc50b29",
+      "data_seed": 96200002,
+      "batch_seed": 96300002,
+      "initializations": {
+        "transformer": {
+          "actual_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+          "checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+          "initialization_seed": 96100004
+        },
+        "gru": {
+          "actual_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+          "checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+          "initialization_seed": 96100005
+        }
+      },
+      "train_anchors": 86016,
+      "validation_anchors": 5376,
+      "test_anchors": 10752
+    },
+    {
+      "unit": "unit03",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "batch_indices_sha256": "38b4695e08c2459532a07e22bfc5f304d43238873abb76ed0ec46f1c43ce22a1",
+      "data_seed": 96200003,
+      "batch_seed": 96300003,
+      "initializations": {
+        "transformer": {
+          "actual_parameter_sha256": "f95bf599842ee48f4b0eba62cb83f929b7824713ce2dad7611e21b3f981dac50",
+          "checkpoint_sha256": "89f8881e3f82c1ef9a1ebb7f9e6b2e415708e2a92d7fc548f1c9b6f1d2c7a42a",
+          "initialization_seed": 96100006
+        },
+        "gru": {
+          "actual_parameter_sha256": "3707ccfe32896b750305755b0228957ae72d7236e30b5e071f98180dc5c8db90",
+          "checkpoint_sha256": "15cba1041d3b10d003a6390081695e871a632329d759ed7d858c25a979012a63",
+          "initialization_seed": 96100007
+        }
+      },
+      "train_anchors": 86016,
+      "validation_anchors": 5376,
+      "test_anchors": 10752
+    },
+    {
+      "unit": "unit04",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "batch_indices_sha256": "0d805968990de5e235c2af83cadf281e1ba5dd5d1b496b9f068e3ab210073787",
+      "data_seed": 96200004,
+      "batch_seed": 96300004,
+      "initializations": {
+        "transformer": {
+          "actual_parameter_sha256": "3b064cc4f88d7402943a908f6b2b38775eed170921289715fb71b453361da17c",
+          "checkpoint_sha256": "de3de5da6ca9950c2a1ad84b328d5f7b6bec022cd05526c1a5c0ef4b160692aa",
+          "initialization_seed": 96100008
+        },
+        "gru": {
+          "actual_parameter_sha256": "0136e9c4692e6f73182636c501a251f56574202e14382a6fddc55cde826b25be",
+          "checkpoint_sha256": "543fa0af84726d918709b21ea467fe2f83b9c9b64733b7e9756bc81003fc5a2f",
+          "initialization_seed": 96100009
+        }
+      },
+      "train_anchors": 86016,
+      "validation_anchors": 5376,
+      "test_anchors": 10752
+    },
+    {
+      "unit": "unit05",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "batch_indices_sha256": "7cb11824167d75032d71ad9a3f233f061e38ae32e1432f70f45c28b4aab3bddc",
+      "data_seed": 96200005,
+      "batch_seed": 96300005,
+      "initializations": {
+        "transformer": {
+          "actual_parameter_sha256": "aaba6c04eeed5c02264dbcf953e1e2f74c79d723b3225331efdf78a800ff3233",
+          "checkpoint_sha256": "f3e187016336003eb0ab6ba15a8c7645462d011a4f70d2bfb1014ca7bf491056",
+          "initialization_seed": 96100010
+        },
+        "gru": {
+          "actual_parameter_sha256": "23813a13e671e5ad71272de7a86a0184cd9b78de84b03000279b901746d727ef",
+          "checkpoint_sha256": "ab7e036a0966f140f2d8806cae14c9be4d0ff458ec60b1f98824a50da090ca54",
+          "initialization_seed": 96100011
+        }
+      },
+      "train_anchors": 86016,
+      "validation_anchors": 5376,
+      "test_anchors": 10752
+    }
+  ],
+  "conditional_independence_design": "Fixed separately seeded samplers; distinct hashes verify identities, not a statistical proof of independence.",
+  "no_forward": true,
+  "no_optimizer": true
+}

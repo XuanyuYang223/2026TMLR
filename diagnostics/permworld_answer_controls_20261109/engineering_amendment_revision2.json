@@ -1,0 +1,19 @@
+{
+  "pid": 929474,
+  "command": [
+    "/home/yangx/ICML/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.permworld_answer_controls_20261109.run",
+    "all"
+  ],
+  "log": "/mnt/yangx-projects-f/20261109/permworld_answer_controls/pipeline.log",
+  "execution_revision": 2,
+  "no_training": true,
+  "no_probe": true,
+  "technical_attempt_001_log": "/mnt/yangx-projects-f/20261109/permworld_answer_controls/attempt_001_axis_adapter.log",
+  "protocol_SHA256": "ba21dfe15775558dfb68a4d671c2c0279fd5eb5dc4e386c1358668e45a651e25",
+  "tests_passed": 17,
+  "scientific_protocol_changed": false,
+  "change": "Cached feature axis adapter corrected from task,anchor,action,feature to task,action,anchor,feature. No new real CKA was computed in failed revision1. Scientific protocol unchanged."
+}

@@ -1,0 +1,18 @@
+{
+  "pid": 1525,
+  "wait_for_training_pid": 1524,
+  "command": [
+    "/home/yangx/ICML/.venv/bin/python",
+    "-u",
+    "/home/yangx/ICML/tools/finalize_permworld_repetition.py",
+    "--wait-pid",
+    "1524"
+  ],
+  "log": "/mnt/yangx-projects-f/20261106/permworld_repetition/paper_finalizer.log",
+  "requires_complete_units": 5,
+  "starts_training": false,
+  "uploads": false,
+  "cohort_reporting": "New four separately, then all five including historical exploratory unit",
+  "previous_pid": 28509,
+  "boot_id": "689fe35b-ad54-431e-a6c5-bc68f0941178"
+}

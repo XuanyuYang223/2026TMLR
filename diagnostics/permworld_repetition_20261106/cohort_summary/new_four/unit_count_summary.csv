@@ -1,0 +1,21 @@
+comparison,control,metric,statistic,denominator,finite_units,mean,sample_sd,minimum,maximum,positive_units,negative_units,zero_units
+A,raw_within_length,linear_cka,Bt_positive,32 dependent conditions per complete original-size unit,4,28.75,0.5,28.0,29.0,4,0,0
+A,raw_within_length,linear_cka,Delta_positive,32 dependent conditions per complete original-size unit,4,23.5,1.2909944487358056,22.0,25.0,4,0,0
+A,raw_within_length,debiased_cka,Bt_positive,32 dependent conditions per complete original-size unit,4,28.75,0.5,28.0,29.0,4,0,0
+A,raw_within_length,debiased_cka,Delta_positive,32 dependent conditions per complete original-size unit,4,23.5,1.2909944487358056,22.0,25.0,4,0,0
+A,raw_within_length,knn_overlap,Bt_positive,32 dependent conditions per complete original-size unit,4,25.25,0.9574271077563381,24.0,26.0,4,0,0
+A,raw_within_length,knn_overlap,Delta_positive,32 dependent conditions per complete original-size unit,4,18.5,0.5773502691896257,18.0,19.0,4,0,0
+A,raw_within_length,procrustes,Bt_positive,32 dependent conditions per complete original-size unit,4,28.5,1.0,27.0,29.0,4,0,0
+A,raw_within_length,procrustes,Delta_positive,32 dependent conditions per complete original-size unit,4,24.75,2.0615528128088303,22.0,27.0,4,0,0
+B,raw_within_length,linear_cka,above_other_mean,32 dependent conditions per complete original-size unit,4,29.75,1.2583057392117916,28.0,31.0,4,0,0
+B,raw_within_length,linear_cka,unique_first,32 dependent conditions per complete original-size unit,4,24.5,1.2909944487358056,23.0,26.0,4,0,0
+A,answer_strata,linear_cka,Bt_positive,32 dependent conditions per complete original-size unit,4,27.75,1.2583057392117916,26.0,29.0,4,0,0
+A,answer_strata,linear_cka,Delta_positive,32 dependent conditions per complete original-size unit,4,18.0,0.0,18.0,18.0,4,0,0
+A,answer_strata,debiased_cka,Bt_positive,32 dependent conditions per complete original-size unit,4,27.75,1.2583057392117916,26.0,29.0,4,0,0
+A,answer_strata,debiased_cka,Delta_positive,32 dependent conditions per complete original-size unit,4,18.0,0.0,18.0,18.0,4,0,0
+A,answer_strata,knn_overlap,Bt_positive,32 dependent conditions per complete original-size unit,4,25.5,1.2909944487358056,24.0,27.0,4,0,0
+A,answer_strata,knn_overlap,Delta_positive,32 dependent conditions per complete original-size unit,4,16.75,0.5,16.0,17.0,4,0,0
+A,answer_strata,procrustes,Bt_positive,32 dependent conditions per complete original-size unit,4,26.25,1.2583057392117916,25.0,28.0,4,0,0
+A,answer_strata,procrustes,Delta_positive,32 dependent conditions per complete original-size unit,4,18.0,0.0,18.0,18.0,4,0,0
+B,answer_strata,linear_cka,above_other_mean,32 dependent conditions per complete original-size unit,4,29.75,0.5,29.0,30.0,4,0,0
+B,answer_strata,linear_cka,unique_first,32 dependent conditions per complete original-size unit,4,18.25,1.2583057392117916,17.0,20.0,4,0,0

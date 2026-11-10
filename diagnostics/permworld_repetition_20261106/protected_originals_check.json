@@ -1,0 +1,1352 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-07T00:11:55.511211+00:00",
+  "scope": "Current-time end-of-round SHA256 comparison for explicitly selected original tables, protocols, code, inventory, 64 checkpoints and their completion records, two saved initial states, eight start-RNG states, and four world/batch/history files; CPU-only inspection of new step-0 and engineering bindings. This does not prove whole-repository or continuous-time immutability.",
+  "reference_audit_path": "/home/yangx/ICML/diagnostics/permworld_repetition_20261106/original_audit.json",
+  "reference_audit_sha256": "4e55acf1ca5cefc0e9ef51c52e1e6be83b0c25ca21a9ef2540f6cddce0be8106",
+  "reference_git_head": "4e3558ac13a635d780d1801978986fd195555177",
+  "current_git_head": "4e3558ac13a635d780d1801978986fd195555177",
+  "intentionally_excluded_user_authorized_updates": [
+    "CURRENT_RESEARCH.txt",
+    "manuscripts/representation_selectivity_20261012/manuscript.tex"
+  ],
+  "original_selected_files": 151,
+  "original_matching_files": 151,
+  "original_mismatched_files": [],
+  "original_checks": [
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/completed_checkpoint_manifest.csv",
+      "expected_sha256": "80d89e607d35833be5dc1444f48a36b3059db62d38294f4b31a08cf71e5daff3",
+      "current_sha256": "80d89e607d35833be5dc1444f48a36b3059db62d38294f4b31a08cf71e5daff3",
+      "matches": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/per_length_results.csv",
+      "expected_sha256": "af0c1bee947232a5168cc902a9424b8330afe5266f45f2a9e0eeb127f01ad62e",
+      "current_sha256": "af0c1bee947232a5168cc902a9424b8330afe5266f45f2a9e0eeb127f01ad62e",
+      "matches": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json",
+      "expected_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+      "current_sha256": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+      "matches": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/pair_summary.csv",
+      "expected_sha256": "4b7c000fafe2b6b8ef4d123b66b8ce1e80a306f39ec2a168264178037f897e63",
+      "current_sha256": "4b7c000fafe2b6b8ef4d123b66b8ce1e80a306f39ec2a168264178037f897e63",
+      "matches": true
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/protocol.json",
+      "expected_sha256": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c",
+      "current_sha256": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c",
+      "matches": true
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_eight_relations_20261010/train.py",
+      "expected_sha256": "4fc1ad4a3b1b950c9caf9eb5dffe2b00b132be50745d50e75b10aaf3e5383d0f",
+      "current_sha256": "4fc1ad4a3b1b950c9caf9eb5dffe2b00b132be50745d50e75b10aaf3e5383d0f",
+      "matches": true
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding/core.py",
+      "expected_sha256": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+      "current_sha256": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+      "matches": true
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding/data.py",
+      "expected_sha256": "8a89976c6c0b390f9233eba4ff23593d7c1545eb21f6af4e87a92122fdb7c75d",
+      "current_sha256": "8a89976c6c0b390f9233eba4ff23593d7c1545eb21f6af4e87a92122fdb7c75d",
+      "matches": true
+    },
+    {
+      "path": "/home/yangx/ICML/experiments/permworld_encoding_archdev_20261009/training.py",
+      "expected_sha256": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8",
+      "current_sha256": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_descents.pt",
+      "expected_sha256": "0a79de4b0d345a01d5c5317788e0ac171a283b8150e12cd4febefcc3fdf0dec8",
+      "current_sha256": "0a79de4b0d345a01d5c5317788e0ac171a283b8150e12cd4febefcc3fdf0dec8",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_peaks.pt",
+      "expected_sha256": "fc1bc5a142fd490494e5e778440a57c35c76fc09ccf51cc401aa2847510b1d45",
+      "current_sha256": "fc1bc5a142fd490494e5e778440a57c35c76fc09ccf51cc401aa2847510b1d45",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_recoils.pt",
+      "expected_sha256": "63e34a2e3eadf933e46e04cac06b9e3a477f5fb9a1fef116d6e0270798f2e97f",
+      "current_sha256": "63e34a2e3eadf933e46e04cac06b9e3a477f5fb9a1fef116d6e0270798f2e97f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/start_rng_valleys.pt",
+      "expected_sha256": "11e0d8400172440af635b10033f097fff8967adca1a042361fcfe4e8263c9695",
+      "current_sha256": "11e0d8400172440af635b10033f097fff8967adca1a042361fcfe4e8263c9695",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "expected_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "current_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_descents.pt",
+      "expected_sha256": "37d238e3c7388e2e4003d933187e89339374cf5ef627b18f916a52275fea1827",
+      "current_sha256": "37d238e3c7388e2e4003d933187e89339374cf5ef627b18f916a52275fea1827",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_peaks.pt",
+      "expected_sha256": "763bd564337635d156fe5154be090e1627a5fc353d640148734156862cd3a363",
+      "current_sha256": "763bd564337635d156fe5154be090e1627a5fc353d640148734156862cd3a363",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_recoils.pt",
+      "expected_sha256": "5948c174ab2a3861d2db6ab631dba0cd47d832d5b0e2f6ae2a75a64221ecd936",
+      "current_sha256": "5948c174ab2a3861d2db6ab631dba0cd47d832d5b0e2f6ae2a75a64221ecd936",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/start_rng_valleys.pt",
+      "expected_sha256": "bfd4d977cbbd696e20ec8b137805146e1b9bd13be4e284146b711f99202548e0",
+      "current_sha256": "bfd4d977cbbd696e20ec8b137805146e1b9bd13be4e284146b711f99202548e0",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "expected_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "current_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/checkpoint.pt",
+      "expected_sha256": "49ea820e97d4687532aeb9cf83822bf96f6a7f74f73f98e0c9cc871b1cc568c1",
+      "current_sha256": "49ea820e97d4687532aeb9cf83822bf96f6a7f74f73f98e0c9cc871b1cc568c1",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/completed.json",
+      "expected_sha256": "c1e55fe5a7d2162c00b1bcc19ec5bc140ca1ac7d7ce04b6bbe5421863ca6375b",
+      "current_sha256": "c1e55fe5a7d2162c00b1bcc19ec5bc140ca1ac7d7ce04b6bbe5421863ca6375b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/checkpoint.pt",
+      "expected_sha256": "b38089da362e705d1b5d1b0d19edeafb07bd0456057b16efb32ae2902c70bc1b",
+      "current_sha256": "b38089da362e705d1b5d1b0d19edeafb07bd0456057b16efb32ae2902c70bc1b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/completed.json",
+      "expected_sha256": "5025223955f2cb8e7d82f12d1602edf237a413b780667afb33f834419163794b",
+      "current_sha256": "5025223955f2cb8e7d82f12d1602edf237a413b780667afb33f834419163794b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/checkpoint.pt",
+      "expected_sha256": "d022dcea8aa17717c0968863ef0dd485caa5a0e12948062bfa137b00cdfedb34",
+      "current_sha256": "d022dcea8aa17717c0968863ef0dd485caa5a0e12948062bfa137b00cdfedb34",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/completed.json",
+      "expected_sha256": "d10b0206589d2291ad78a2b7cd9669d49648b36e9432f678da38661b8d7be991",
+      "current_sha256": "d10b0206589d2291ad78a2b7cd9669d49648b36e9432f678da38661b8d7be991",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/checkpoint.pt",
+      "expected_sha256": "e9d15f72b6b3f596a28848244b031b56affcc0e7579f9328c5e9e6cde4db424b",
+      "current_sha256": "e9d15f72b6b3f596a28848244b031b56affcc0e7579f9328c5e9e6cde4db424b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/completed.json",
+      "expected_sha256": "be0cb8b0a1f941c6a7e7885e16e22d737ad0073f242f4f6a74def3e4cb4d9647",
+      "current_sha256": "be0cb8b0a1f941c6a7e7885e16e22d737ad0073f242f4f6a74def3e4cb4d9647",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/checkpoint.pt",
+      "expected_sha256": "6056d63f790cc1b63961c2147f6fe231587b99e18e710407448e97fad9b1c2ef",
+      "current_sha256": "6056d63f790cc1b63961c2147f6fe231587b99e18e710407448e97fad9b1c2ef",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/completed.json",
+      "expected_sha256": "6ea2f2aa12cc48910fb3b8c1931b1482aaf01b5eae0f932d912d80ec2ba703b6",
+      "current_sha256": "6ea2f2aa12cc48910fb3b8c1931b1482aaf01b5eae0f932d912d80ec2ba703b6",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+      "expected_sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+      "current_sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/completed.json",
+      "expected_sha256": "64ef25ca28787042a708e6df9447e36b26cd3d686a2c75d698d1185ffab17c6c",
+      "current_sha256": "64ef25ca28787042a708e6df9447e36b26cd3d686a2c75d698d1185ffab17c6c",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/checkpoint.pt",
+      "expected_sha256": "5737d8ee863a01d681f0800b88704a6b66df21009636659346816f47822904f3",
+      "current_sha256": "5737d8ee863a01d681f0800b88704a6b66df21009636659346816f47822904f3",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/completed.json",
+      "expected_sha256": "fed62f787e08268198fdac6c36fa0f36ef1f7463c11dfd503bb6a088ad816675",
+      "current_sha256": "fed62f787e08268198fdac6c36fa0f36ef1f7463c11dfd503bb6a088ad816675",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+      "expected_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+      "current_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/completed.json",
+      "expected_sha256": "73c2a5d70bd98e6eb2e22d24b104117cc6cb7c5465b9625241e072e0cfa3ca46",
+      "current_sha256": "73c2a5d70bd98e6eb2e22d24b104117cc6cb7c5465b9625241e072e0cfa3ca46",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/checkpoint.pt",
+      "expected_sha256": "25880add881eddd0dd6c9c9fc0e73ee0bcf92624fde798a350584e7dea16b636",
+      "current_sha256": "25880add881eddd0dd6c9c9fc0e73ee0bcf92624fde798a350584e7dea16b636",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_descents/completed.json",
+      "expected_sha256": "b65753be96eee40e64b1b3ba1d332006b04336892d5bb473d9c785149272bf45",
+      "current_sha256": "b65753be96eee40e64b1b3ba1d332006b04336892d5bb473d9c785149272bf45",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/checkpoint.pt",
+      "expected_sha256": "d3c5c532e40eb8417bd3364b1d4a56be1f00f86dacd9f7b251d19e3101dd577f",
+      "current_sha256": "d3c5c532e40eb8417bd3364b1d4a56be1f00f86dacd9f7b251d19e3101dd577f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_peaks/completed.json",
+      "expected_sha256": "d8cbb2119f330add099aa7e478a3d4b2b4d1b15a7ec8c1a805a7b97d6673bba4",
+      "current_sha256": "d8cbb2119f330add099aa7e478a3d4b2b4d1b15a7ec8c1a805a7b97d6673bba4",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/checkpoint.pt",
+      "expected_sha256": "893c87301ee8fbaa2cf9f80971ee68f53f489fe4ffc543aace3d1e0ba94463e9",
+      "current_sha256": "893c87301ee8fbaa2cf9f80971ee68f53f489fe4ffc543aace3d1e0ba94463e9",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_recoils/completed.json",
+      "expected_sha256": "4f8cc344e56caf9f920156a9aa99671746cfc2df5576da8ee64fafca22e63c1b",
+      "current_sha256": "4f8cc344e56caf9f920156a9aa99671746cfc2df5576da8ee64fafca22e63c1b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/checkpoint.pt",
+      "expected_sha256": "d82e07bdab9fcf0b8da090b895d179964685ad7d32e6f4570402564616c90ac9",
+      "current_sha256": "d82e07bdab9fcf0b8da090b895d179964685ad7d32e6f4570402564616c90ac9",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_canonical_cycle_valleys/completed.json",
+      "expected_sha256": "ee5efffc483160412a1508598b35cbbc860e42d611248bef6670a8c7b845c824",
+      "current_sha256": "ee5efffc483160412a1508598b35cbbc860e42d611248bef6670a8c7b845c824",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/checkpoint.pt",
+      "expected_sha256": "653660f52c68c32a8fdea425adb6de49a80afb81029993792e9f14f75404e69f",
+      "current_sha256": "653660f52c68c32a8fdea425adb6de49a80afb81029993792e9f14f75404e69f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_descents/completed.json",
+      "expected_sha256": "7514fe76f6698405166f728f8129c0c5b3e71ebb92f27866fbd741fe5b440003",
+      "current_sha256": "7514fe76f6698405166f728f8129c0c5b3e71ebb92f27866fbd741fe5b440003",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/checkpoint.pt",
+      "expected_sha256": "0de9e43eb3fe0466b245e7a876309c49ccbc3a9d62ed804edc2fb6850103696f",
+      "current_sha256": "0de9e43eb3fe0466b245e7a876309c49ccbc3a9d62ed804edc2fb6850103696f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_peaks/completed.json",
+      "expected_sha256": "7e6d7a45a6c76f996e988ef2afb0e8973064ac9ef5a5a3884c065993fc56fe31",
+      "current_sha256": "7e6d7a45a6c76f996e988ef2afb0e8973064ac9ef5a5a3884c065993fc56fe31",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/checkpoint.pt",
+      "expected_sha256": "24875ab316604f1440d89c3149edcf7dc4d1c6fd73c3e3cb2faff133f4a1bdec",
+      "current_sha256": "24875ab316604f1440d89c3149edcf7dc4d1c6fd73c3e3cb2faff133f4a1bdec",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_recoils/completed.json",
+      "expected_sha256": "97118cf492031d9f45a3335ab34e7d314b94764d7e4ad048fd93408d1192a5f1",
+      "current_sha256": "97118cf492031d9f45a3335ab34e7d314b94764d7e4ad048fd93408d1192a5f1",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/checkpoint.pt",
+      "expected_sha256": "4c4b0065c34602f88c44b6d2e47ec087d478250f66d26e9c1f3d460b15298899",
+      "current_sha256": "4c4b0065c34602f88c44b6d2e47ec087d478250f66d26e9c1f3d460b15298899",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_transformer_one_line_valleys/completed.json",
+      "expected_sha256": "cc831c15cd886878a3ffd6769102609a320c5eda6141278bbf39e73a836007a4",
+      "current_sha256": "cc831c15cd886878a3ffd6769102609a320c5eda6141278bbf39e73a836007a4",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/batch_indices.npy",
+      "expected_sha256": "e6d053511b0847e9687df72c6e37f7f39e6106d2a2b018874432ccf47a48e182",
+      "current_sha256": "e6d053511b0847e9687df72c6e37f7f39e6106d2a2b018874432ccf47a48e182",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/batch_lengths.npy",
+      "expected_sha256": "b6ed71210e5474a022c207c75c5c683d01aee8d4821c700856a73680d8d87024",
+      "current_sha256": "b6ed71210e5474a022c207c75c5c683d01aee8d4821c700856a73680d8d87024",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "expected_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "current_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/historical_input_hashes.npy",
+      "expected_sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+      "current_sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/checkpoint.pt",
+      "expected_sha256": "8d4dfc896701c1e46938886d133bc37d2fcf4e5c39d7314850613acdf6d86aaf",
+      "current_sha256": "8d4dfc896701c1e46938886d133bc37d2fcf4e5c39d7314850613acdf6d86aaf",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_anti_fixed_points/completed.json",
+      "expected_sha256": "5f90e2ddb23675f7d1234ddd4bf8691d0ffc40ca44fb7ec5bc95c9daf1002dac",
+      "current_sha256": "5f90e2ddb23675f7d1234ddd4bf8691d0ffc40ca44fb7ec5bc95c9daf1002dac",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_components/checkpoint.pt",
+      "expected_sha256": "52f45e431960285593cb3977a7f6de22793eda98441698f69a94a005279886a2",
+      "current_sha256": "52f45e431960285593cb3977a7f6de22793eda98441698f69a94a005279886a2",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_components/completed.json",
+      "expected_sha256": "f61632427f8a54358b3a20f75a56d2be46762b909f40d99666276d1bba558e8b",
+      "current_sha256": "f61632427f8a54358b3a20f75a56d2be46762b909f40d99666276d1bba558e8b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "f521cb7d560110f5c9e357b75201da7649182253b0255776778ecbe1d0589367",
+      "current_sha256": "f521cb7d560110f5c9e357b75201da7649182253b0255776778ecbe1d0589367",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_deficiencies/completed.json",
+      "expected_sha256": "e3b2d8aa73113a91b15dfefc4f0b81bce255ece823adb7d9198d7266e2d8ba7e",
+      "current_sha256": "e3b2d8aa73113a91b15dfefc4f0b81bce255ece823adb7d9198d7266e2d8ba7e",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "7ffd5659834c40c1c9deb0ec0d93d84106c0b8daf42199464c6384c527a28b63",
+      "current_sha256": "7ffd5659834c40c1c9deb0ec0d93d84106c0b8daf42199464c6384c527a28b63",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_exceedances/completed.json",
+      "expected_sha256": "83d025632c67f0c41a92b713fc9c87b491f46933b7da20c14ac1c2786080f14b",
+      "current_sha256": "83d025632c67f0c41a92b713fc9c87b491f46933b7da20c14ac1c2786080f14b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_fixed_points/checkpoint.pt",
+      "expected_sha256": "b333354bfa16da89bcb84fe97b962da0ddb5d2a7e6afd6b2228cc9e04fefdd2a",
+      "current_sha256": "b333354bfa16da89bcb84fe97b962da0ddb5d2a7e6afd6b2228cc9e04fefdd2a",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_fixed_points/completed.json",
+      "expected_sha256": "7796cfb0b088494d039b81746545e5e681ddcd7e94ceebdc3fbf9b18027fe24e",
+      "current_sha256": "7796cfb0b088494d039b81746545e5e681ddcd7e94ceebdc3fbf9b18027fe24e",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_global_descents/checkpoint.pt",
+      "expected_sha256": "d63c2c13122b15ae1d1211ee787b9a6713ae002a52c51cb1acdbdfc2d04980bb",
+      "current_sha256": "d63c2c13122b15ae1d1211ee787b9a6713ae002a52c51cb1acdbdfc2d04980bb",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_global_descents/completed.json",
+      "expected_sha256": "bf73dcab8119b61a8543daa9fc49a02265cc99bd72a09af1c74af1148e9a4f47",
+      "current_sha256": "bf73dcab8119b61a8543daa9fc49a02265cc99bd72a09af1c74af1148e9a4f47",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_lds_length/checkpoint.pt",
+      "expected_sha256": "932310b731d3a7240d05c66143f611848bac2158d03fb703443985ebe4151419",
+      "current_sha256": "932310b731d3a7240d05c66143f611848bac2158d03fb703443985ebe4151419",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_lds_length/completed.json",
+      "expected_sha256": "8eccc5e0017170cd9713cb290513f7782a7cb2d802c554ac1402e85216a2ff2d",
+      "current_sha256": "8eccc5e0017170cd9713cb290513f7782a7cb2d802c554ac1402e85216a2ff2d",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_left_to_right_maxima/checkpoint.pt",
+      "expected_sha256": "b2bcace3fd6190e987e533cf4e78a736c616f7a5209ac05d280963bc63e689a6",
+      "current_sha256": "b2bcace3fd6190e987e533cf4e78a736c616f7a5209ac05d280963bc63e689a6",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_left_to_right_maxima/completed.json",
+      "expected_sha256": "7de041be1e77c1a6db1571eb9e4a729a8b32884a55b0882136e0be85844bd339",
+      "current_sha256": "7de041be1e77c1a6db1571eb9e4a729a8b32884a55b0882136e0be85844bd339",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_left_to_right_minima/checkpoint.pt",
+      "expected_sha256": "71ace3a228642f9c1955807b1a269a00fbac29a795f15e7bfcb867c15a82b37e",
+      "current_sha256": "71ace3a228642f9c1955807b1a269a00fbac29a795f15e7bfcb867c15a82b37e",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_left_to_right_minima/completed.json",
+      "expected_sha256": "a60e964de087a3e84626b6c46c461040c74701e404a958b344fa77e3519b5b2d",
+      "current_sha256": "a60e964de087a3e84626b6c46c461040c74701e404a958b344fa77e3519b5b2d",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_lis_length/checkpoint.pt",
+      "expected_sha256": "dd2749b4d06d1c5c9e0a575d8f8a8551eb64b39c4a46bb6f7a29757e0c576f0c",
+      "current_sha256": "dd2749b4d06d1c5c9e0a575d8f8a8551eb64b39c4a46bb6f7a29757e0c576f0c",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_lis_length/completed.json",
+      "expected_sha256": "1f9bb6b8412eca3a23b1b0d98999db7dadf9f92e3982adcfc96ec49b17d87132",
+      "current_sha256": "1f9bb6b8412eca3a23b1b0d98999db7dadf9f92e3982adcfc96ec49b17d87132",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_longest_decreasing_run/checkpoint.pt",
+      "expected_sha256": "f8a3bb7b5365fec337a88d18029ef7b2230956caec631008b2ba09f6032cea6f",
+      "current_sha256": "f8a3bb7b5365fec337a88d18029ef7b2230956caec631008b2ba09f6032cea6f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_longest_decreasing_run/completed.json",
+      "expected_sha256": "0893d213b7b24153d137034a153e690b16ba29d1db45961141b1deebce4c3b45",
+      "current_sha256": "0893d213b7b24153d137034a153e690b16ba29d1db45961141b1deebce4c3b45",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_longest_increasing_run/checkpoint.pt",
+      "expected_sha256": "05131f08a69c667a2a34a672442da03d5ff97ea4aa1fa2406cd58e9ea1fdefdf",
+      "current_sha256": "05131f08a69c667a2a34a672442da03d5ff97ea4aa1fa2406cd58e9ea1fdefdf",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_longest_increasing_run/completed.json",
+      "expected_sha256": "53fd4eea7570364a056da04400dc68a5b4000ce952f9d9bb735a1876ca09f93b",
+      "current_sha256": "53fd4eea7570364a056da04400dc68a5b4000ce952f9d9bb735a1876ca09f93b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_anti_fixed_points/checkpoint.pt",
+      "expected_sha256": "3b2846ff46c350f3f4f744913a5e8c34ee8dde94fde19bd5e1ddf0b7aaaa16bc",
+      "current_sha256": "3b2846ff46c350f3f4f744913a5e8c34ee8dde94fde19bd5e1ddf0b7aaaa16bc",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_anti_fixed_points/completed.json",
+      "expected_sha256": "02610756216fd1d87759f18e3693523d69caa352a01177b76fb2e6f76b804dc4",
+      "current_sha256": "02610756216fd1d87759f18e3693523d69caa352a01177b76fb2e6f76b804dc4",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_components/checkpoint.pt",
+      "expected_sha256": "0970dae8493758b7552a4e90797961ae05998357d14614dcda6a7500817f1ec7",
+      "current_sha256": "0970dae8493758b7552a4e90797961ae05998357d14614dcda6a7500817f1ec7",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_components/completed.json",
+      "expected_sha256": "f7e7b6f1c33867f6e5d53d9687989c9e94021f9ae101fbd2c1bbc4e0ab384007",
+      "current_sha256": "f7e7b6f1c33867f6e5d53d9687989c9e94021f9ae101fbd2c1bbc4e0ab384007",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "a8d7f88e22f412ce89d9d8b4be87def25bef7db3e3ff46ab198b89fe77967784",
+      "current_sha256": "a8d7f88e22f412ce89d9d8b4be87def25bef7db3e3ff46ab198b89fe77967784",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_deficiencies/completed.json",
+      "expected_sha256": "bf3769027226217b676fc596d8d720a1f8bf3cc200d5250b0035b97e62fb7aec",
+      "current_sha256": "bf3769027226217b676fc596d8d720a1f8bf3cc200d5250b0035b97e62fb7aec",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "0ff18fd27b520bc8c284111013f3c08f11d5d18e9167999e6cfd4146f66cb994",
+      "current_sha256": "0ff18fd27b520bc8c284111013f3c08f11d5d18e9167999e6cfd4146f66cb994",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_exceedances/completed.json",
+      "expected_sha256": "cc71c66dfe7f1d130a90102c0a1ed055ff8c0ccb222a09294c4d1fd3aeb74b82",
+      "current_sha256": "cc71c66dfe7f1d130a90102c0a1ed055ff8c0ccb222a09294c4d1fd3aeb74b82",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/checkpoint.pt",
+      "expected_sha256": "4b5ee414897fd25a23e57278eeda1951cbb2de755bbcd868fd233fe5a50ba229",
+      "current_sha256": "4b5ee414897fd25a23e57278eeda1951cbb2de755bbcd868fd233fe5a50ba229",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/completed.json",
+      "expected_sha256": "71f625d0087085e1a9ddbc91cf72fcc757e6d48d1cafea81d4db8099a4bdef47",
+      "current_sha256": "71f625d0087085e1a9ddbc91cf72fcc757e6d48d1cafea81d4db8099a4bdef47",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_global_descents/checkpoint.pt",
+      "expected_sha256": "6891abefd19e90dd47449087efe55cc79b3c55b21e316ebcac573481cc929106",
+      "current_sha256": "6891abefd19e90dd47449087efe55cc79b3c55b21e316ebcac573481cc929106",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_global_descents/completed.json",
+      "expected_sha256": "1052645112c8b328060d58a6615a71f2609f348af9c967492779f4eba67fd978",
+      "current_sha256": "1052645112c8b328060d58a6615a71f2609f348af9c967492779f4eba67fd978",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_lds_length/checkpoint.pt",
+      "expected_sha256": "bd7f5d2abbac0eacf0c95bd8617e09c9560fe1421cd7c5d3f0ce0e13fc4d92d9",
+      "current_sha256": "bd7f5d2abbac0eacf0c95bd8617e09c9560fe1421cd7c5d3f0ce0e13fc4d92d9",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_lds_length/completed.json",
+      "expected_sha256": "612b1ee2ae59e3fb7d31c3bcdf6a1097fd5ca9f0615600553ca01239d10f10be",
+      "current_sha256": "612b1ee2ae59e3fb7d31c3bcdf6a1097fd5ca9f0615600553ca01239d10f10be",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_left_to_right_maxima/checkpoint.pt",
+      "expected_sha256": "e7b9223cf4db8bd5adba1ad131c4369920970866e3c38ce0e9a7244d51fb922d",
+      "current_sha256": "e7b9223cf4db8bd5adba1ad131c4369920970866e3c38ce0e9a7244d51fb922d",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_left_to_right_maxima/completed.json",
+      "expected_sha256": "02e16516dd7cb747e5fa6a7ea4b3696ec0367c0d094faca6fc1485b9ea3e6a35",
+      "current_sha256": "02e16516dd7cb747e5fa6a7ea4b3696ec0367c0d094faca6fc1485b9ea3e6a35",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_left_to_right_minima/checkpoint.pt",
+      "expected_sha256": "cd140150d4a823b845a6b7d70d6c576f9e1c1c96a443872b357c06a94981f322",
+      "current_sha256": "cd140150d4a823b845a6b7d70d6c576f9e1c1c96a443872b357c06a94981f322",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_left_to_right_minima/completed.json",
+      "expected_sha256": "38f372e10eb5bece8976a68c22a71e2e8885814b0e59f4726d1637cc4dbc9f33",
+      "current_sha256": "38f372e10eb5bece8976a68c22a71e2e8885814b0e59f4726d1637cc4dbc9f33",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_lis_length/checkpoint.pt",
+      "expected_sha256": "e7da28e0ab0310d610212196b7c0639f0bd1ebc28b07478f7008e85922475fcc",
+      "current_sha256": "e7da28e0ab0310d610212196b7c0639f0bd1ebc28b07478f7008e85922475fcc",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_lis_length/completed.json",
+      "expected_sha256": "b86084997feaf0c6aee4d7e9bae5b0d4a24d09243f7d77d9329ae8a9758ab10d",
+      "current_sha256": "b86084997feaf0c6aee4d7e9bae5b0d4a24d09243f7d77d9329ae8a9758ab10d",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_longest_decreasing_run/checkpoint.pt",
+      "expected_sha256": "e5a67efe6c3c572201f0801ab258fc301e3ff3c445cf2abf5fc1d66b544a8d9b",
+      "current_sha256": "e5a67efe6c3c572201f0801ab258fc301e3ff3c445cf2abf5fc1d66b544a8d9b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_longest_decreasing_run/completed.json",
+      "expected_sha256": "01d880c7aca4f6cf41ab800c5b4b7abf78964373f9ef78ca66f4dde4d42a622a",
+      "current_sha256": "01d880c7aca4f6cf41ab800c5b4b7abf78964373f9ef78ca66f4dde4d42a622a",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_longest_increasing_run/checkpoint.pt",
+      "expected_sha256": "089719eed096e38164f2c778133658150985a93a90715a528ef651f5b6dbed39",
+      "current_sha256": "089719eed096e38164f2c778133658150985a93a90715a528ef651f5b6dbed39",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_longest_increasing_run/completed.json",
+      "expected_sha256": "c666ffd6f9d914ce76f4999f85a4fe0807cf4a3d3bda3a33e0676887eb743a58",
+      "current_sha256": "c666ffd6f9d914ce76f4999f85a4fe0807cf4a3d3bda3a33e0676887eb743a58",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_anti_fixed_points/checkpoint.pt",
+      "expected_sha256": "b03af17407f511317e136bf5b2381099fa2513e6d6aa6d99a273044dcb098df3",
+      "current_sha256": "b03af17407f511317e136bf5b2381099fa2513e6d6aa6d99a273044dcb098df3",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_anti_fixed_points/completed.json",
+      "expected_sha256": "4e43b8005211c2aebb1ca375d5a11c0daad78abed6fd486704f8c55d592ca8d5",
+      "current_sha256": "4e43b8005211c2aebb1ca375d5a11c0daad78abed6fd486704f8c55d592ca8d5",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_components/checkpoint.pt",
+      "expected_sha256": "2f1a8c641baebafc9483dae927e45e03554fcb73ffabb272644dc742d4973092",
+      "current_sha256": "2f1a8c641baebafc9483dae927e45e03554fcb73ffabb272644dc742d4973092",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_components/completed.json",
+      "expected_sha256": "0b6ec8a7b146a36233e9522c8db1f9c17e334e4c22c63658b4231c85bca8d3cb",
+      "current_sha256": "0b6ec8a7b146a36233e9522c8db1f9c17e334e4c22c63658b4231c85bca8d3cb",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "58cf66b021e96fc6b6732cb9e23d5512873dd14fdf2a584f63c8e77d1bebeb63",
+      "current_sha256": "58cf66b021e96fc6b6732cb9e23d5512873dd14fdf2a584f63c8e77d1bebeb63",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_deficiencies/completed.json",
+      "expected_sha256": "779e5b4021900313eb45f2f41dd4fbe03235db05fd17a736e3a7b8bb21b54aee",
+      "current_sha256": "779e5b4021900313eb45f2f41dd4fbe03235db05fd17a736e3a7b8bb21b54aee",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "a88f54aa2242e0a7d82149a08ab576f499c8ff927940a750533e67cfd9cd7b07",
+      "current_sha256": "a88f54aa2242e0a7d82149a08ab576f499c8ff927940a750533e67cfd9cd7b07",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_exceedances/completed.json",
+      "expected_sha256": "586316f4e660b2dc26c78d33483f915ff44bbac82869147cba392e1d8f2ea0e9",
+      "current_sha256": "586316f4e660b2dc26c78d33483f915ff44bbac82869147cba392e1d8f2ea0e9",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_fixed_points/checkpoint.pt",
+      "expected_sha256": "f0635fd5cd51cfbcba89f1c8930fcbe4aaa588b71aaa4abac30f169188eeb879",
+      "current_sha256": "f0635fd5cd51cfbcba89f1c8930fcbe4aaa588b71aaa4abac30f169188eeb879",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_fixed_points/completed.json",
+      "expected_sha256": "296612fcb64f8f3e3ae2cb871d7129404170e789e40f3827d2af87315c9d4b72",
+      "current_sha256": "296612fcb64f8f3e3ae2cb871d7129404170e789e40f3827d2af87315c9d4b72",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_global_descents/checkpoint.pt",
+      "expected_sha256": "4098916cbc85564bda6b0e2af08ce4a0da1ec54d4ab8217c52e4f7dbf19d4b66",
+      "current_sha256": "4098916cbc85564bda6b0e2af08ce4a0da1ec54d4ab8217c52e4f7dbf19d4b66",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_global_descents/completed.json",
+      "expected_sha256": "ce6f05aeb953a4ce619ed1e6614a7aee2c9291e4ab54a761e3fb192c3a01716f",
+      "current_sha256": "ce6f05aeb953a4ce619ed1e6614a7aee2c9291e4ab54a761e3fb192c3a01716f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_lds_length/checkpoint.pt",
+      "expected_sha256": "8704f0038dcc07b706324263cfaa6badb01ce64cf8ce7b415b53e2de6d5dfaa0",
+      "current_sha256": "8704f0038dcc07b706324263cfaa6badb01ce64cf8ce7b415b53e2de6d5dfaa0",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_lds_length/completed.json",
+      "expected_sha256": "4eb4ccf09a18964ce03c52866f5c855a9050020ce7f9e50aece2d4561efd24c8",
+      "current_sha256": "4eb4ccf09a18964ce03c52866f5c855a9050020ce7f9e50aece2d4561efd24c8",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_left_to_right_maxima/checkpoint.pt",
+      "expected_sha256": "af1b59a66a3cc81cdf4c305700275a879d97058078bb9e2ffa534e6254a9ac6a",
+      "current_sha256": "af1b59a66a3cc81cdf4c305700275a879d97058078bb9e2ffa534e6254a9ac6a",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_left_to_right_maxima/completed.json",
+      "expected_sha256": "8764dce7acc8c6ebf53143ef1edd68007e819412fc7c0a67d52b2276434858b8",
+      "current_sha256": "8764dce7acc8c6ebf53143ef1edd68007e819412fc7c0a67d52b2276434858b8",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_left_to_right_minima/checkpoint.pt",
+      "expected_sha256": "33e8da44e07cbccac8b2df56c1196b82094b852cd1c341bb2f0d0d7e6363c9f9",
+      "current_sha256": "33e8da44e07cbccac8b2df56c1196b82094b852cd1c341bb2f0d0d7e6363c9f9",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_left_to_right_minima/completed.json",
+      "expected_sha256": "0cc7c0147de284687265fd547f4c4861d1e701cf6b1f106eedb24f0eb1e6c82e",
+      "current_sha256": "0cc7c0147de284687265fd547f4c4861d1e701cf6b1f106eedb24f0eb1e6c82e",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_lis_length/checkpoint.pt",
+      "expected_sha256": "8dcaf4feaa2ee66bfc4e79bb47e06c5e78fd31e812062d7ef44590a1f22da10f",
+      "current_sha256": "8dcaf4feaa2ee66bfc4e79bb47e06c5e78fd31e812062d7ef44590a1f22da10f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_lis_length/completed.json",
+      "expected_sha256": "78f8e704d6a79c1a22e065a454289b88558d6d480684a9d8210e6b9e5183815e",
+      "current_sha256": "78f8e704d6a79c1a22e065a454289b88558d6d480684a9d8210e6b9e5183815e",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_longest_decreasing_run/checkpoint.pt",
+      "expected_sha256": "336dd2b650dc73171d28cf27b333ce89f71173836c670d09499901427613ba9e",
+      "current_sha256": "336dd2b650dc73171d28cf27b333ce89f71173836c670d09499901427613ba9e",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_longest_decreasing_run/completed.json",
+      "expected_sha256": "ec0b40cf247d52fa2cdf2eee8d483ae919a8d66ff7752760f72441c48f04bd0d",
+      "current_sha256": "ec0b40cf247d52fa2cdf2eee8d483ae919a8d66ff7752760f72441c48f04bd0d",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_longest_increasing_run/checkpoint.pt",
+      "expected_sha256": "33f11df3417c5365fbdef2012de12c7b4cfa7b009246e88434eb1e693dca3b16",
+      "current_sha256": "33f11df3417c5365fbdef2012de12c7b4cfa7b009246e88434eb1e693dca3b16",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_longest_increasing_run/completed.json",
+      "expected_sha256": "b29bd8e3fdfa46bc8dd24a098926b61c30dd6de19e63a31f9de800e4427bc854",
+      "current_sha256": "b29bd8e3fdfa46bc8dd24a098926b61c30dd6de19e63a31f9de800e4427bc854",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_anti_fixed_points/checkpoint.pt",
+      "expected_sha256": "4c6bd2ea4e953ea5c3cf37f6ab8160cb16bbc333e46d779284793de1b567eb6c",
+      "current_sha256": "4c6bd2ea4e953ea5c3cf37f6ab8160cb16bbc333e46d779284793de1b567eb6c",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_anti_fixed_points/completed.json",
+      "expected_sha256": "e55cf9662541eb73b8b58e1ae2e1d002f8e6b4dc43e96f4a77d9891497c51187",
+      "current_sha256": "e55cf9662541eb73b8b58e1ae2e1d002f8e6b4dc43e96f4a77d9891497c51187",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_components/checkpoint.pt",
+      "expected_sha256": "45bfdca1538f1d72a860d7d20c7ed013badbb7e3116ec763ce4e6e37ee2fbe14",
+      "current_sha256": "45bfdca1538f1d72a860d7d20c7ed013badbb7e3116ec763ce4e6e37ee2fbe14",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_components/completed.json",
+      "expected_sha256": "e50aa3287799fe347f0d360289aca7ca65b48044157919dc82da5ec724161f12",
+      "current_sha256": "e50aa3287799fe347f0d360289aca7ca65b48044157919dc82da5ec724161f12",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "73a27def35e02b7d24e8f297ab605ff85ea898f859b68007c5da63eef363fcaf",
+      "current_sha256": "73a27def35e02b7d24e8f297ab605ff85ea898f859b68007c5da63eef363fcaf",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_deficiencies/completed.json",
+      "expected_sha256": "611e85e92abbe9bf80b855e75e9c57c474a55c30adc0784baed41257a29019ef",
+      "current_sha256": "611e85e92abbe9bf80b855e75e9c57c474a55c30adc0784baed41257a29019ef",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "3f60a6c182af2b64218950cae9e366d225654b220e60e9b4cf9c3e541098a333",
+      "current_sha256": "3f60a6c182af2b64218950cae9e366d225654b220e60e9b4cf9c3e541098a333",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_exceedances/completed.json",
+      "expected_sha256": "f5207a9fa1bdf81fbf73d4512e43f34fbe928f0189e55b4acef96d912dca7f54",
+      "current_sha256": "f5207a9fa1bdf81fbf73d4512e43f34fbe928f0189e55b4acef96d912dca7f54",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_fixed_points/checkpoint.pt",
+      "expected_sha256": "237d9c59ea931c7a0347d8a98a8f5fb8f4fd8757f31fd9b38d590b2e680ad0ea",
+      "current_sha256": "237d9c59ea931c7a0347d8a98a8f5fb8f4fd8757f31fd9b38d590b2e680ad0ea",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_fixed_points/completed.json",
+      "expected_sha256": "ffd6cbcee515d513b157940be08dceb94e33ea791c362291124d362448320854",
+      "current_sha256": "ffd6cbcee515d513b157940be08dceb94e33ea791c362291124d362448320854",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_global_descents/checkpoint.pt",
+      "expected_sha256": "7abec04938564e47c37f925c8f33e120c3153105a9272f569578eb33ba3e267f",
+      "current_sha256": "7abec04938564e47c37f925c8f33e120c3153105a9272f569578eb33ba3e267f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_global_descents/completed.json",
+      "expected_sha256": "2b21cc048440a92822f69120d3e533208ee576b55b47c1f8fdf759fc0f09015f",
+      "current_sha256": "2b21cc048440a92822f69120d3e533208ee576b55b47c1f8fdf759fc0f09015f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_lds_length/checkpoint.pt",
+      "expected_sha256": "82c78fda85151b25e9be4aa1da243eb1753bf924d1c25a41ba57fc2a84cf63e7",
+      "current_sha256": "82c78fda85151b25e9be4aa1da243eb1753bf924d1c25a41ba57fc2a84cf63e7",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_lds_length/completed.json",
+      "expected_sha256": "faf55d5ba29c008ff4ce24d4664ba08f1058cf9342f3c01a458503aa9a47e32b",
+      "current_sha256": "faf55d5ba29c008ff4ce24d4664ba08f1058cf9342f3c01a458503aa9a47e32b",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_left_to_right_maxima/checkpoint.pt",
+      "expected_sha256": "2a643d4816571481dc9f8af6f9ade93cfcc09ad8580bc922ac24686c0894b493",
+      "current_sha256": "2a643d4816571481dc9f8af6f9ade93cfcc09ad8580bc922ac24686c0894b493",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_left_to_right_maxima/completed.json",
+      "expected_sha256": "3411b38ac4f6f31ab4ef50defe0833e1657acbb9d237044a4b17b2d6da05097a",
+      "current_sha256": "3411b38ac4f6f31ab4ef50defe0833e1657acbb9d237044a4b17b2d6da05097a",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_left_to_right_minima/checkpoint.pt",
+      "expected_sha256": "3cfa62352cf0c0c0c853fd07fb88abcf4d24cbe13106f43c0275ab04590e61ed",
+      "current_sha256": "3cfa62352cf0c0c0c853fd07fb88abcf4d24cbe13106f43c0275ab04590e61ed",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_left_to_right_minima/completed.json",
+      "expected_sha256": "f12139962e641ce2bb0d875a71e86f9753356455aded00d43917346981d34016",
+      "current_sha256": "f12139962e641ce2bb0d875a71e86f9753356455aded00d43917346981d34016",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_lis_length/checkpoint.pt",
+      "expected_sha256": "5b3a966360c7fd6dfce0dbf58edca4a258ad7f58f38e60637836563ae530c6c3",
+      "current_sha256": "5b3a966360c7fd6dfce0dbf58edca4a258ad7f58f38e60637836563ae530c6c3",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_lis_length/completed.json",
+      "expected_sha256": "f60f7f0b1e97298102fbf6cd47d0260378072ba8ba090bc8d8cd50b4fd2339a9",
+      "current_sha256": "f60f7f0b1e97298102fbf6cd47d0260378072ba8ba090bc8d8cd50b4fd2339a9",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_longest_decreasing_run/checkpoint.pt",
+      "expected_sha256": "06940b8743fba5a3fedbc95dd5d7d8992a4d2f5edbc4c920dd7fdf10a885c224",
+      "current_sha256": "06940b8743fba5a3fedbc95dd5d7d8992a4d2f5edbc4c920dd7fdf10a885c224",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_longest_decreasing_run/completed.json",
+      "expected_sha256": "337a8020e15f5bf5d5627e20cb7fa21d6175502b74cb28b48fecad784016754f",
+      "current_sha256": "337a8020e15f5bf5d5627e20cb7fa21d6175502b74cb28b48fecad784016754f",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_longest_increasing_run/checkpoint.pt",
+      "expected_sha256": "ca747bf43d56c16d217c9edcd2254fbf062c005c0864b4ce782d5bdd2fb869f2",
+      "current_sha256": "ca747bf43d56c16d217c9edcd2254fbf062c005c0864b4ce782d5bdd2fb869f2",
+      "matches": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_longest_increasing_run/completed.json",
+      "expected_sha256": "9e6f438242d2809b8f83e45813a466dde750d9d944e6e62b7bd26236f946c095",
+      "current_sha256": "9e6f438242d2809b8f83e45813a466dde750d9d944e6e62b7bd26236f946c095",
+      "matches": true
+    }
+  ],
+  "new_unit": "unit02",
+  "new_actual_step0_parameter_checks": [
+    {
+      "architecture": "transformer",
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/initializations/transformer/step0.pt",
+      "checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "metadata_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "actual_state_dict_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "metadata_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "saved_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "historical_parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab",
+      "matches_metadata": true,
+      "differs_from_historical": true,
+      "unit": "unit02",
+      "model_seed": 96100004
+    },
+    {
+      "architecture": "gru",
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/initializations/gru/step0.pt",
+      "checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "metadata_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "actual_state_dict_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "metadata_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "saved_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "historical_parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0",
+      "matches_metadata": true,
+      "differs_from_historical": true,
+      "unit": "unit02",
+      "model_seed": 96100005
+    }
+  ],
+  "engineering_logical_conditions": 16,
+  "engineering_checkpoint_files": 32,
+  "engineering_binding_checks": [
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_canonical_cycle_descents_continuous/checkpoint.pt",
+      "run_id": "unit02_gru_canonical_cycle_descents",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_canonical_cycle_descents_resumed/checkpoint.pt",
+      "run_id": "unit02_gru_canonical_cycle_descents",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_canonical_cycle_peaks_continuous/checkpoint.pt",
+      "run_id": "unit02_gru_canonical_cycle_peaks",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_canonical_cycle_peaks_resumed/checkpoint.pt",
+      "run_id": "unit02_gru_canonical_cycle_peaks",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_canonical_cycle_recoils_continuous/checkpoint.pt",
+      "run_id": "unit02_gru_canonical_cycle_recoils",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_canonical_cycle_recoils_resumed/checkpoint.pt",
+      "run_id": "unit02_gru_canonical_cycle_recoils",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_canonical_cycle_valleys_continuous/checkpoint.pt",
+      "run_id": "unit02_gru_canonical_cycle_valleys",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_canonical_cycle_valleys_resumed/checkpoint.pt",
+      "run_id": "unit02_gru_canonical_cycle_valleys",
+      "architecture": "gru",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_one_line_descents_continuous/checkpoint.pt",
+      "run_id": "unit02_gru_one_line_descents",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_one_line_descents_resumed/checkpoint.pt",
+      "run_id": "unit02_gru_one_line_descents",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "descents",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_one_line_peaks_continuous/checkpoint.pt",
+      "run_id": "unit02_gru_one_line_peaks",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_one_line_peaks_resumed/checkpoint.pt",
+      "run_id": "unit02_gru_one_line_peaks",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "peaks",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_one_line_recoils_continuous/checkpoint.pt",
+      "run_id": "unit02_gru_one_line_recoils",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_one_line_recoils_resumed/checkpoint.pt",
+      "run_id": "unit02_gru_one_line_recoils",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "recoils",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_one_line_valleys_continuous/checkpoint.pt",
+      "run_id": "unit02_gru_one_line_valleys",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/gru_one_line_valleys_resumed/checkpoint.pt",
+      "run_id": "unit02_gru_one_line_valleys",
+      "architecture": "gru",
+      "encoding": "one_line",
+      "task": "valleys",
+      "step": 40,
+      "initial_parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "actual_loaded_initial_state_dict_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "initial_checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_canonical_cycle_descents_continuous/checkpoint.pt",
+      "run_id": "unit02_transformer_canonical_cycle_descents",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_canonical_cycle_descents_resumed/checkpoint.pt",
+      "run_id": "unit02_transformer_canonical_cycle_descents",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "descents",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_canonical_cycle_peaks_continuous/checkpoint.pt",
+      "run_id": "unit02_transformer_canonical_cycle_peaks",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_canonical_cycle_peaks_resumed/checkpoint.pt",
+      "run_id": "unit02_transformer_canonical_cycle_peaks",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "peaks",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_canonical_cycle_recoils_continuous/checkpoint.pt",
+      "run_id": "unit02_transformer_canonical_cycle_recoils",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_canonical_cycle_recoils_resumed/checkpoint.pt",
+      "run_id": "unit02_transformer_canonical_cycle_recoils",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "recoils",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_canonical_cycle_valleys_continuous/checkpoint.pt",
+      "run_id": "unit02_transformer_canonical_cycle_valleys",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_canonical_cycle_valleys_resumed/checkpoint.pt",
+      "run_id": "unit02_transformer_canonical_cycle_valleys",
+      "architecture": "transformer",
+      "encoding": "canonical_cycle",
+      "task": "valleys",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_one_line_descents_continuous/checkpoint.pt",
+      "run_id": "unit02_transformer_one_line_descents",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_one_line_descents_resumed/checkpoint.pt",
+      "run_id": "unit02_transformer_one_line_descents",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "descents",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_one_line_peaks_continuous/checkpoint.pt",
+      "run_id": "unit02_transformer_one_line_peaks",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_one_line_peaks_resumed/checkpoint.pt",
+      "run_id": "unit02_transformer_one_line_peaks",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "peaks",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_one_line_recoils_continuous/checkpoint.pt",
+      "run_id": "unit02_transformer_one_line_recoils",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_one_line_recoils_resumed/checkpoint.pt",
+      "run_id": "unit02_transformer_one_line_recoils",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "recoils",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_one_line_valleys_continuous/checkpoint.pt",
+      "run_id": "unit02_transformer_one_line_valleys",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/engineering/transformer_one_line_valleys_resumed/checkpoint.pt",
+      "run_id": "unit02_transformer_one_line_valleys",
+      "architecture": "transformer",
+      "encoding": "one_line",
+      "task": "valleys",
+      "step": 40,
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "shared_with_architecture_step0": true
+    }
+  ],
+  "limits": [
+    "Engineering checkpoints are 40-update development artifacts, not formal 20k endpoints.",
+    "The persisted actual_loaded_initial_state_dict_sha256 binds the initial state loaded before fitting. This audit compares that recorded hash with the real saved state_dict; it does not observe historical execution in real time.",
+    "Original output caches outside the explicitly selected audit inputs are not newly checked.",
+    "CURRENT_RESEARCH.txt and manuscript.tex are deliberately excluded because the user authorized their updates.",
+    "The active training worker was not modified or signaled. No optimizer call, model forward pass, CUDA context, or training call was made during this audit."
+  ],
+  "worker_observation": "5122       04:34 /home/yangx/ICML/.venv/bin/python -u -m experiments.permworld_repetition_20261106.runner run",
+  "elapsed_seconds": 13.29386863700006
+}

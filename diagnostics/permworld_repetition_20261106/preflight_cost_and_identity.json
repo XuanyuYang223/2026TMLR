@@ -1,0 +1,40 @@
+{
+  "historical_total_unit_process_hours": 18.495823733745272,
+  "historical_four_unit_process_hours": 73.98329493498109,
+  "historical_is_not_active_gpu_time": true,
+  "engineering_cases": 16,
+  "engineering_elapsed_seconds": 135.33531136700003,
+  "engineering_data_generation_seconds": 19.8913200720001,
+  "engineering_updates_per_continuous_run": 40,
+  "engineering_median_continuous_process_seconds": {
+    "transformer": 2.39111498200009,
+    "gru": 2.753447287999961
+  },
+  "extrapolation_caveat": "Short runs include startup and full validation; these are not steady-state or validated full20k costs. Refine using completed formal endpoints without changing the manifest.",
+  "actual_initial_identity": {
+    "transformer": {
+      "checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "protocol_sha256": "6f8b26a5658e641164b54e93d57afc3fe045e354abcbdf731ca6d8c9555f0231",
+      "actual_initial_identity_verified": true,
+      "parameters": 3240448
+    },
+    "gru": {
+      "checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9",
+      "protocol_sha256": "6f8b26a5658e641164b54e93d57afc3fe045e354abcbdf731ca6d8c9555f0231",
+      "actual_initial_identity_verified": true,
+      "parameters": 1660416
+    }
+  },
+  "first_new_initials_differ_from_historical": true,
+  "storage_policy": "External F drive; final checkpoints/optimizer/RNG and final-state caches only. Historical storage includes duplicated layer-cache generations and cannot be directly scaled to this final-state-only extractor.",
+  "first_completed_formal_endpoint": {
+    "run_id": "unit02_transformer_one_line_descents",
+    "updates": 20000,
+    "finite_gradient_updates": 20000,
+    "elapsed_process_seconds": 720.317499173,
+    "validation_answer_accuracy": 0.8748139880952381,
+    "not_a_complete_unit": true
+  }
+}

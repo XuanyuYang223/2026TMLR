@@ -1,0 +1,19 @@
+{
+  "pid": 1524,
+  "command": [
+    "/home/yangx/ICML/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.permworld_repetition_20261106.runner",
+    "run"
+  ],
+  "cwd": "/home/yangx/ICML",
+  "log": "/mnt/yangx-projects-f/20261106/permworld_repetition/pipeline.log",
+  "detached": true,
+  "planned_additional_units": 4,
+  "planned_additional_models": 256,
+  "automatic_followup_experiments": false,
+  "resumed": true,
+  "previous_pid": 5122,
+  "boot_id": "689fe35b-ad54-431e-a6c5-bc68f0941178"
+}

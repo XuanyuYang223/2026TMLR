@@ -1,0 +1,37 @@
+note: Running TeX ...
+warning: manuscript.tex:168: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: sections/independent_repetition_methods:67: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: manuscript.tex:337: Underfull \vbox (badness 7558) has occurred while \output is active
+warning: manuscript.tex:410: Underfull \vbox (badness 2165) has occurred while \output is active
+warning: sections/matrix_case:4: Underfull \vbox (badness 3281) has occurred while \output is active
+warning: sections/matrix_case:10: Underfull \hbox (badness 4608) in paragraph at lines 9--10
+warning: sections/matrix_case:10: Underfull \hbox (badness 3240) in paragraph at lines 9--10
+warning: sections/independent_repetition_status:5: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: sections/independent_repetition_status:13: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: manuscript.tex:854: Underfull \hbox (badness 1400) in paragraph at lines 840--854
+warning: manuscript.tex:854: Underfull \hbox (badness 1348) in paragraph at lines 840--854
+note: Running BibTeX on manuscript.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: manuscript.tex:168: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: sections/independent_repetition_methods:67: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: manuscript.tex:337: Underfull \vbox (badness 7558) has occurred while \output is active
+warning: sections/matrix_case:10: Underfull \hbox (badness 4608) in paragraph at lines 9--10
+warning: sections/matrix_case:10: Underfull \hbox (badness 3240) in paragraph at lines 9--10
+warning: manuscript.bbl:26: Underfull \hbox (badness 10000) in paragraph at lines 19--26
+warning: manuscript.tex:854: Underfull \hbox (badness 1400) in paragraph at lines 840--854
+warning: manuscript.tex:854: Underfull \hbox (badness 1348) in paragraph at lines 840--854
+note: Rerunning TeX because "manuscript.aux" changed ...
+warning: manuscript.tex:168: Underfull \vbox (badness 5161) has occurred while \output is active
+warning: sections/independent_repetition_methods:67: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: manuscript.tex:337: Underfull \vbox (badness 7558) has occurred while \output is active
+warning: sections/matrix_case:10: Underfull \hbox (badness 4608) in paragraph at lines 9--10
+warning: sections/matrix_case:10: Underfull \hbox (badness 3240) in paragraph at lines 9--10
+warning: manuscript.bbl:26: Underfull \hbox (badness 10000) in paragraph at lines 19--26
+warning: manuscript.tex:854: Underfull \hbox (badness 1400) in paragraph at lines 840--854
+warning: manuscript.tex:854: Underfull \hbox (badness 1348) in paragraph at lines 840--854
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `manuscript.pdf` (506.7744140625 KiB)
+note: Writing `manuscript.blg` (196 B)
+note: Writing `manuscript.log` (25.078125 KiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)

@@ -1,0 +1,559 @@
+{
+  "status": "resume_ready",
+  "captured_utc": "2026-11-07T07:57:06.106062+00:00",
+  "captured_los_angeles": "2026-11-06T23:57:06.106062-08:00",
+  "protocol_sha256": "6f8b26a5658e641164b54e93d57afc3fe045e354abcbdf731ca6d8c9555f0231",
+  "frozen_dependency_count": 60,
+  "frozen_dependencies_unchanged": 60,
+  "frozen_dependencies": [
+    {
+      "path": "diagnostics/permworld_scope_inventory_20261009/metrics.py",
+      "expected": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c",
+      "actual": "c2a384a8212e661d1917c084a74699297bbef354f06dac42ac75ea90ce3d0b5c"
+    },
+    {
+      "path": "experiments/__init__.py",
+      "expected": "eb5ff1d8c35c49b27364ffcbc40cbd0eacc71cde97aaff0ebfe018a3d947f745",
+      "actual": "eb5ff1d8c35c49b27364ffcbc40cbd0eacc71cde97aaff0ebfe018a3d947f745"
+    },
+    {
+      "path": "experiments/algebra.py",
+      "expected": "758fa9839a31dc27b1d09d25d140821395b86f6eddbe4663a9a002d4f7fee6e3",
+      "actual": "758fa9839a31dc27b1d09d25d140821395b86f6eddbe4663a9a002d4f7fee6e3"
+    },
+    {
+      "path": "experiments/longrun_attention.py",
+      "expected": "5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918",
+      "actual": "5035f58453ddee5c5d5b05878491dfcc81764e172f2ebada437dc9e325048918"
+    },
+    {
+      "path": "experiments/permutation_audit.py",
+      "expected": "96ef39ea6bc4f1cfeabef30875c5bdff9dd430630d2a66bdd659e72bce57fe07",
+      "actual": "96ef39ea6bc4f1cfeabef30875c5bdff9dd430630d2a66bdd659e72bce57fe07"
+    },
+    {
+      "path": "experiments/permworld_eight_relations_20261010/__init__.py",
+      "expected": "000d98e3781bc5bf1377fea89d5e035da57d19580fb78b509929a01c49b0ff6b",
+      "actual": "000d98e3781bc5bf1377fea89d5e035da57d19580fb78b509929a01c49b0ff6b"
+    },
+    {
+      "path": "experiments/permworld_eight_relations_20261010/analysis_helpers.py",
+      "expected": "e3171a8035ba5dbf0f04959f3cd2dea5546fbed46737a2c4ff29810c5ad4ca9a",
+      "actual": "e3171a8035ba5dbf0f04959f3cd2dea5546fbed46737a2c4ff29810c5ad4ca9a"
+    },
+    {
+      "path": "experiments/permworld_eight_relations_20261010/common.py",
+      "expected": "d0038289de9d100f96f6107a9732937efbdccfb5c03ccd8daba351b2a468283c",
+      "actual": "d0038289de9d100f96f6107a9732937efbdccfb5c03ccd8daba351b2a468283c"
+    },
+    {
+      "path": "experiments/permworld_eight_relations_20261010/train.py",
+      "expected": "4fc1ad4a3b1b950c9caf9eb5dffe2b00b132be50745d50e75b10aaf3e5383d0f",
+      "actual": "4fc1ad4a3b1b950c9caf9eb5dffe2b00b132be50745d50e75b10aaf3e5383d0f"
+    },
+    {
+      "path": "experiments/permworld_encoding/__init__.py",
+      "expected": "d8344f473b24a5845bedeca52a3a94e1c02eb1f8c21f89ccec3a4eed313f3f7f",
+      "actual": "d8344f473b24a5845bedeca52a3a94e1c02eb1f8c21f89ccec3a4eed313f3f7f"
+    },
+    {
+      "path": "experiments/permworld_encoding/core.py",
+      "expected": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+      "actual": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f"
+    },
+    {
+      "path": "experiments/permworld_encoding/data.py",
+      "expected": "8a89976c6c0b390f9233eba4ff23593d7c1545eb21f6af4e87a92122fdb7c75d",
+      "actual": "8a89976c6c0b390f9233eba4ff23593d7c1545eb21f6af4e87a92122fdb7c75d"
+    },
+    {
+      "path": "experiments/permworld_encoding/evaluate.py",
+      "expected": "227fa70c583d396972b313f64df0c4fc94a5f0a78df92843c0b38230ac2845e8",
+      "actual": "227fa70c583d396972b313f64df0c4fc94a5f0a78df92843c0b38230ac2845e8"
+    },
+    {
+      "path": "experiments/permworld_encoding/train.py",
+      "expected": "9fb5272c99397a1cd071d84b466d76cf012b8b042727e776ef1ea3497829540a",
+      "actual": "9fb5272c99397a1cd071d84b466d76cf012b8b042727e776ef1ea3497829540a"
+    },
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/__init__.py",
+      "expected": "42f6526cc435b26ef230cf5c97d69a4b3c1a4dfb97772b5454ee2aff44306b35",
+      "actual": "42f6526cc435b26ef230cf5c97d69a4b3c1a4dfb97772b5454ee2aff44306b35"
+    },
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/common.py",
+      "expected": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "actual": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b"
+    },
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/evaluation.py",
+      "expected": "43ab4e2cca1e4e434258adacdd5a0f9c1dcfdec67021299412b4e0bc607cfaa3",
+      "actual": "43ab4e2cca1e4e434258adacdd5a0f9c1dcfdec67021299412b4e0bc607cfaa3"
+    },
+    {
+      "path": "experiments/permworld_encoding_archdev_20261009/training.py",
+      "expected": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8",
+      "actual": "eab1cdbbd5be004508b754e27a482085504e77a2c02d3d134a3d3963e4c5bed8"
+    },
+    {
+      "path": "experiments/permworld_repetition_20261106/__init__.py",
+      "expected": "1b4deb05fc883094299eaaa21ab9bde1cb2534f0f01438d03f8b7bb2b8790747",
+      "actual": "1b4deb05fc883094299eaaa21ab9bde1cb2534f0f01438d03f8b7bb2b8790747"
+    },
+    {
+      "path": "experiments/permworld_repetition_20261106/analysis.py",
+      "expected": "e291d101a1b054a40f6f8e3bf76c6b5f556c292ed75e3e7c9636198371592c64",
+      "actual": "e291d101a1b054a40f6f8e3bf76c6b5f556c292ed75e3e7c9636198371592c64"
+    },
+    {
+      "path": "experiments/permworld_repetition_20261106/reporting.py",
+      "expected": "92dd3e39c35cad3eab9db39be18e4eb569ca429d94e6b857c233762e6f2261d0",
+      "actual": "92dd3e39c35cad3eab9db39be18e4eb569ca429d94e6b857c233762e6f2261d0"
+    },
+    {
+      "path": "experiments/permworld_repetition_20261106/runner.py",
+      "expected": "3aecad2c6e6c965959f688bf5b6fd01bae0a6c6877ca6a72b269e97f3b46867f",
+      "actual": "3aecad2c6e6c965959f688bf5b6fd01bae0a6c6877ca6a72b269e97f3b46867f"
+    },
+    {
+      "path": "external/neurips/configs/property_task_geometry.toml",
+      "expected": "8a3b21366ca344c0cb50f5a26108375b96eceb3ca49720ff001749ef09155e88",
+      "actual": "8a3b21366ca344c0cb50f5a26108375b96eceb3ca49720ff001749ef09155e88"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/__init__.py",
+      "expected": "ab87fbaa3acb307adaba99368b62ab1fb3fae955ddc9c6fe4cc072dba1c4c950",
+      "actual": "ab87fbaa3acb307adaba99368b62ab1fb3fae955ddc9c6fe4cc072dba1c4c950"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/_compat.py",
+      "expected": "d0b3ad9d8c8fd514c7e447d1618cea1b01f37d0eebc2d7fd6f6ed0bffdb19cd1",
+      "actual": "d0b3ad9d8c8fd514c7e447d1618cea1b01f37d0eebc2d7fd6f6ed0bffdb19cd1"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/audit.py",
+      "expected": "e73889c1f3b69ad47703632a2c423ec9365d277fe79c672b422350640c95849b",
+      "actual": "e73889c1f3b69ad47703632a2c423ec9365d277fe79c672b422350640c95849b"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/category_linear_probe.py",
+      "expected": "680ed5d8ec4e747c004fbf2c351985beb6825bc1401d905e077477b04fd75b8f",
+      "actual": "680ed5d8ec4e747c004fbf2c351985beb6825bc1401d905e077477b04fd75b8f"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/cka.py",
+      "expected": "baaf8805426260d95412137235fab618a4be6cee8befe8a0c340e3064970cf7f",
+      "actual": "baaf8805426260d95412137235fab618a4be6cee8befe8a0c340e3064970cf7f"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/evaluate.py",
+      "expected": "75cf19cbf1424dc31d49a8da8b77ef59d6fb1e52e675426609375516675c00a2",
+      "actual": "75cf19cbf1424dc31d49a8da8b77ef59d6fb1e52e675426609375516675c00a2"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/experiments.py",
+      "expected": "e349bf93fef9376b9ecc981898d94f6e6d5c28f74f3bd631c2de474bf45c922f",
+      "actual": "e349bf93fef9376b9ecc981898d94f6e6d5c28f74f3bd631c2de474bf45c922f"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/fewshot.py",
+      "expected": "b5472d453cd0feac47ba7b8df91462c16920c138cbd40bc81c66c3df321d12ed",
+      "actual": "b5472d453cd0feac47ba7b8df91462c16920c138cbd40bc81c66c3df321d12ed"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/fewshot_curve.py",
+      "expected": "38379aca0e4c5e378633ae74fce10f7268d11b643e9d604ab0929fab5fe16e52",
+      "actual": "38379aca0e4c5e378633ae74fce10f7268d11b643e9d604ab0929fab5fe16e52"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/fewshot_results.py",
+      "expected": "67a066cdcb30c15d9c95cd0ab98ad5e8d021a3bb2fc84f1c1da5640d49443b7b",
+      "actual": "67a066cdcb30c15d9c95cd0ab98ad5e8d021a3bb2fc84f1c1da5640d49443b7b"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/generate.py",
+      "expected": "393decd100ed2677a63f9603abedcc928b09b9599faddc0e3e6d3a3e4e5272d6",
+      "actual": "393decd100ed2677a63f9603abedcc928b09b9599faddc0e3e6d3a3e4e5272d6"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/manuscript_figures.py",
+      "expected": "121806193773bccaf88a2f65f441a0059fca30f4ee33b913ff5704123cc9c8a2",
+      "actual": "121806193773bccaf88a2f65f441a0059fca30f4ee33b913ff5704123cc9c8a2"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/math_ops.py",
+      "expected": "968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c",
+      "actual": "968e7580c01289e5ffeab9f07c52beb334be40d95c0e61d7a7f9e2cab694c62c"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/models.py",
+      "expected": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6",
+      "actual": "286a01f794f627c1f0db5dd6dd31adbdb7f58f235e47203163eda6fc8a8baab6"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/paper_figures.py",
+      "expected": "61054ed663d9f55ec82701d79edf46873c1c1a844c2b606341ffbc4230c432fd",
+      "actual": "61054ed663d9f55ec82701d79edf46873c1c1a844c2b606341ffbc4230c432fd"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/passage.py",
+      "expected": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+      "actual": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_cka.py",
+      "expected": "5e26e6fed55eb96c119914e7fa24f692158c35eca8824fca23d9ccb550d03909",
+      "actual": "5e26e6fed55eb96c119914e7fa24f692158c35eca8824fca23d9ccb550d03909"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_experiments.py",
+      "expected": "8b4e523fbfe50715c9e22d436a510a190ce5a0f3549284d921c4dbbf096a1a20",
+      "actual": "8b4e523fbfe50715c9e22d436a510a190ce5a0f3549284d921c4dbbf096a1a20"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_fewshot.py",
+      "expected": "b935f3cdb42d5e708549b05229ed2382faca63cd3b8533544479d06a093a3216",
+      "actual": "b935f3cdb42d5e708549b05229ed2382faca63cd3b8533544479d06a093a3216"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_fewshot_lr_sensitivity.py",
+      "expected": "52e2657ab8ceba706a3d10315373ddbe05214426b6bfd631967aa03c1c9da517",
+      "actual": "52e2657ab8ceba706a3d10315373ddbe05214426b6bfd631967aa03c1c9da517"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_fewshot_results.py",
+      "expected": "678053f6242673e69ce1d0ba88aa39ba3bfa5b1ae57826433f4bd023e49a5531",
+      "actual": "678053f6242673e69ce1d0ba88aa39ba3bfa5b1ae57826433f4bd023e49a5531"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_linear_probe.py",
+      "expected": "f3170cf04717b534a76fa65caded7928eee6ef6210f29db86fe2ae96c2bd2b9c",
+      "actual": "f3170cf04717b534a76fa65caded7928eee6ef6210f29db86fe2ae96c2bd2b9c"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_relation_cka.py",
+      "expected": "2b32cc94a2fa62c8c6ddb9b2113484b54fd764c92ac9b05b3e75c302ac38eaf8",
+      "actual": "2b32cc94a2fa62c8c6ddb9b2113484b54fd764c92ac9b05b3e75c302ac38eaf8"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_relation_experiments.py",
+      "expected": "154d249248780cfe800d96d3f58fa069bb09b217948f4f0ed049160847a8eee1",
+      "actual": "154d249248780cfe800d96d3f58fa069bb09b217948f4f0ed049160847a8eee1"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_replicate_results.py",
+      "expected": "676849fae098122a538e8c27f3da1a3dccd3913ad20298245c3d66cf7e6ee6c4",
+      "actual": "676849fae098122a538e8c27f3da1a3dccd3913ad20298245c3d66cf7e6ee6c4"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_replicates.py",
+      "expected": "9de92f058b739a603dedad793987dc2e4565ca5757794fe14f097bf8fea522f1",
+      "actual": "9de92f058b739a603dedad793987dc2e4565ca5757794fe14f097bf8fea522f1"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_report.py",
+      "expected": "f07abcf485a57e4596009a1cb8239f42b9b073639c624aabf4e33650b47f2145",
+      "actual": "f07abcf485a57e4596009a1cb8239f42b9b073639c624aabf4e33650b47f2145"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_subset_replicate_results.py",
+      "expected": "6ec0bc1cad7b726c2028ac6519cbf32ab0e34751f1e1772f9f1f8659a0e9937b",
+      "actual": "6ec0bc1cad7b726c2028ac6519cbf32ab0e34751f1e1772f9f1f8659a0e9937b"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_task_geometry_cka.py",
+      "expected": "d7e48ac69805619354de02d90025ab058bc58b6164fce0a5bce83f052d43583b",
+      "actual": "d7e48ac69805619354de02d90025ab058bc58b6164fce0a5bce83f052d43583b"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/property_task_geometry_experiments.py",
+      "expected": "813df8d20368dcd95d1c8f5d4681a597641112076b87a904742e827d77c556fe",
+      "actual": "813df8d20368dcd95d1c8f5d4681a597641112076b87a904742e827d77c556fe"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/representation_transfer.py",
+      "expected": "db7eec50e301226c6cf5300d182d54f8873cb601af88e353c5cb9a30f31bcbb3",
+      "actual": "db7eec50e301226c6cf5300d182d54f8873cb601af88e353c5cb9a30f31bcbb3"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/results.py",
+      "expected": "f67187f0b4249c845b4b775c5698488c048523a5c304ead3d5bb28abb71a6374",
+      "actual": "f67187f0b4249c845b4b775c5698488c048523a5c304ead3d5bb28abb71a6374"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/scaling_k16.py",
+      "expected": "b57fd9f94dda75a6bd47b63afe69bb23871425ad196af3d66d7e2aa3caab14f5",
+      "actual": "b57fd9f94dda75a6bd47b63afe69bb23871425ad196af3d66d7e2aa3caab14f5"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/size_extrapolation.py",
+      "expected": "db6d40d37b163ff1ba9cb6217e8b0cc85b086282612d248a3fcc877ff3b6feb8",
+      "actual": "db6d40d37b163ff1ba9cb6217e8b0cc85b086282612d248a3fcc877ff3b6feb8"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/splits.py",
+      "expected": "0ad28ade36bfca708e3e3208a2e1dc2369123cc679e1ab0a02d3ba97661e542e",
+      "actual": "0ad28ade36bfca708e3e3208a2e1dc2369123cc679e1ab0a02d3ba97661e542e"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/training.py",
+      "expected": "b09bdd90a349e18cbf71d1345a05a1e075de945956d30d4940806fd3d8712183",
+      "actual": "b09bdd90a349e18cbf71d1345a05a1e075de945956d30d4940806fd3d8712183"
+    },
+    {
+      "path": "external/neurips/src/neurips_permutations/verify.py",
+      "expected": "558031c2527ee27ac5bf943c5d6c4bfe4c184b42a2640db6db9c0d2783d6d30c",
+      "actual": "558031c2527ee27ac5bf943c5d6c4bfe4c184b42a2640db6db9c0d2783d6d30c"
+    }
+  ],
+  "completed_formal_models": 17,
+  "completed_sidecars": [
+    {
+      "run_id": "unit02_transformer_canonical_cycle_anti_fixed_points",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 822.4990751510004,
+      "checkpoint_sha256_recorded": "c844a61d403d0f54bd43fbd6cde34ab378bd8a82e1fb4d3dce3e4146656bb9dc",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_canonical_cycle_components",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 3028.4306534469997,
+      "checkpoint_sha256_recorded": "494411b3a3d0abee9c1f3657c61f4caa8a2de03d3d7b80fa3f65330194bd587b",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_canonical_cycle_deficiencies",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 3101.6948169839998,
+      "checkpoint_sha256_recorded": "90934504a48468d9688d59cb19751678130090bc69875d17fa7146bc6ce788e8",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_canonical_cycle_descents",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 702.7834446889999,
+      "checkpoint_sha256_recorded": "4b52d3dfee81efbc52dc0b079b192d4d46851dcc41a20044eb886ad56419f8e6",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_canonical_cycle_exceedances",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 2987.3645104239986,
+      "checkpoint_sha256_recorded": "735760540fdb7b7f5e664b3f44f8444647816c0b48efa449a375694cfee66c04",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_canonical_cycle_peaks",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 701.4765582090004,
+      "checkpoint_sha256_recorded": "74cfe1bd20545c776d268ce56b14d69a0587afba743d70484829451152b8469d",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_canonical_cycle_recoils",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 702.3819465259999,
+      "checkpoint_sha256_recorded": "baa263c7f68fe56ee9108ef74caede19be70cc900bcd4cc876594902a4524732",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_canonical_cycle_valleys",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 719.7574780690002,
+      "checkpoint_sha256_recorded": "12b947a1096ba45e906ce2ed0e1bb6598e3de6e2967e0cb19c5279b7b8e7a110",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_anti_fixed_points",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 912.8094165089997,
+      "checkpoint_sha256_recorded": "8e378bd8b8b583e140df852da79a206e9c99fe53a99915fee857fd65570b9dc9",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_components",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 1878.790027422001,
+      "checkpoint_sha256_recorded": "b5efa3ad9c9f7aa25f307e9ecaf035666201bd533ee91d78e87f9ca6fffa58ec",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_deficiencies",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 3059.4719184449987,
+      "checkpoint_sha256_recorded": "a53ff19f7eefd4c755b390d078ea0a66c168833246519b61f0886ac1c0a5e9fe",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_descents",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 720.317499173,
+      "checkpoint_sha256_recorded": "df5dd166784020bb29598ae4536d98e67877eb10d5d7053a466afd3f63841026",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_exceedances",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 2699.0090411069978,
+      "checkpoint_sha256_recorded": "bfa066f0ad6c57f22abeefaf6802ec08e277759ce9c2d295817e0232be3821d9",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_fixed_points",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 2500.628523331001,
+      "checkpoint_sha256_recorded": "733643ffb4e982e328022be74284d3dd2f20de0edaa75d8d10e02e06ec86158c",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_peaks",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 700.7683035880004,
+      "checkpoint_sha256_recorded": "8c709f0be35a39da30ba206f564c403b914c880858f2a0dc23d44833df8a0f61",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_recoils",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 698.8952276520004,
+      "checkpoint_sha256_recorded": "f0bf59ad73dee8c28569f57f17b6c6888dc28f34b8f453e79318a55ec2ee9242",
+      "checkpoint_exists": true
+    },
+    {
+      "run_id": "unit02_transformer_one_line_valleys",
+      "step": 20000,
+      "finite_gradient_updates": 20000,
+      "elapsed_seconds": 707.0433046589997,
+      "checkpoint_sha256_recorded": "6ade8d0a5f7469fa3ca798b54e78a2993307f844a43de25bdbc84decc3be7e49",
+      "checkpoint_exists": true
+    }
+  ],
+  "partial_checkpoint": {
+    "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_transformer_canonical_cycle_fixed_points/checkpoint.pt",
+    "size_bytes": 38976171,
+    "mtime_utc": "2026-11-07T07:48:21.309868+00:00",
+    "sha256": "52e89e4709a39431b5c496570c75d60ae319fa314bb60ff6c6fce4c2ed37482d",
+    "step": 18000,
+    "finite_gradient_updates": 18000,
+    "remaining_updates": 2000,
+    "binding_checks": {
+      "run_id": "unit02_transformer_canonical_cycle_fixed_points",
+      "unit": "unit02",
+      "architecture": "transformer",
+      "task": "fixed_points",
+      "encoding": "canonical_cycle",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "batch_schedule_sha256": "8c73a12dba10d87f49c47459bea4936383031a48f076f2d4146d6f2bcfc50b29",
+      "initial_parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "initial_checkpoint_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "actual_loaded_initial_state_dict_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed",
+      "training_seed": 96420000,
+      "starting_rng_hash": "2b9157c0f5aa5f2fcaf7a20436c07a8b37a636fe7ad9e68635e7cfa57e4d2830"
+    },
+    "signature_verified": true,
+    "model_state_tensors": 53,
+    "model_tensors_all_finite": true,
+    "optimizer_state_entries": 52,
+    "optimizer_groups": 1,
+    "optimizer_steps_unique": [
+      18000
+    ],
+    "optimizer_tensors_all_finite": true,
+    "rng_keys": [
+      "cuda",
+      "numpy",
+      "python",
+      "torch"
+    ],
+    "cpu_rng_bytes": 5056,
+    "cuda_rng_state_count": 1,
+    "cuda_rng_bytes": [
+      16
+    ],
+    "saved_rng_hash": "dc10c8072225123e1af7ee507ecfa6167cf527746dea418df3f88ef3649f67a5",
+    "starting_rng_hash": "2b9157c0f5aa5f2fcaf7a20436c07a8b37a636fe7ad9e68635e7cfa57e4d2830",
+    "elapsed_seconds": 705.5434751930006,
+    "last_validation": {
+      "step": 18000,
+      "train_loss": 0.00019239075481891632,
+      "answer_accuracy": 0.9990699404761905,
+      "numeric_accuracy": 0.9990699404761905,
+      "eos_accuracy": 1.0,
+      "samples": 5376
+    },
+    "no_completed_sidecar": true
+  },
+  "failures": [],
+  "pipeline_traceback_found": false,
+  "former_processes": [
+    {
+      "pid": 5122,
+      "currently_present": false,
+      "command": null
+    },
+    {
+      "pid": 28509,
+      "currently_present": false,
+      "command": null
+    }
+  ],
+  "host": {
+    "boot_id": "689fe35b-ad54-431e-a6c5-bc68f0941178",
+    "uptime_seconds": 406.33,
+    "approx_current_boot_utc": "2026-11-07T07:50:19.776062+00:00",
+    "kernel_diagnostics": {
+      "returncode": 0,
+      "stdout_tail": "[Fri Nov  6 23:54:49 2026]  ? _raw_spin_unlock_irq+0x12/0x40\n[Fri Nov  6 23:54:49 2026]  ? dxgglobal_remove_host_event+0x66/0x70\n[Fri Nov  6 23:54:49 2026]  ? dxgkio_wait_sync_object_cpu+0x2ae/0x3f0\n[Fri Nov  6 23:54:49 2026]  ? __rseq_handle_notify_resume+0xaf/0x490\n[Fri Nov  6 23:54:49 2026]  ? dxgk_ioctl+0x66/0x110\n[Fri Nov  6 23:54:49 2026]  ? exit_to_user_mode_loop+0xc4/0x100\n[Fri Nov  6 23:54:49 2026]  ? do_syscall_64+0x28a/0x990\n[Fri Nov  6 23:54:49 2026]  ? do_syscall_64+0x73/0x990\n[Fri Nov  6 23:54:49 2026]  entry_SYSCALL_64_after_hwframe+0x76/0x7e\n[Fri Nov  6 23:54:49 2026] RIP: 0033:0x7a1579a367aa\n[Fri Nov  6 23:54:49 2026] Code: f3 0f 1e fa 55 48 89 e5 48 8d 45 10 48 89 55 e0 48 89 45 c0 48 8d 45 d0 48 89 45 c8 b8 10 00 00 00 c7 45 b8 10 00 00 00 0f 05 <89> c2 3d 00 f0 ff ff 77 0d 89 d0 5d c3 66 0f 1f 84 00 00 00 00 00\n[Fri Nov  6 23:54:49 2026] RSP: 002b:00007fff1d3683f0 EFLAGS: 00000246 ORIG_RAX: 0000000000000010\n[Fri Nov  6 23:54:49 2026] RAX: ffffffffffffffda RBX: 00005f5d0ce8f7b0 RCX: 00007a1579a367aa\n[Fri Nov  6 23:54:49 2026] RDX: 00007fff1d368418 RSI: 00000000c0184736 RDI: 0000000000000006\n[Fri Nov  6 23:54:49 2026] RBP: 00007fff1d3683f0 R08: 00005f5d0cba0f88 R09: 00005f5d0d052580\n[Fri Nov  6 23:54:49 2026] R10: 0000000000000200 R11: 0000000000000246 R12: 0000000000000001\n[Fri Nov  6 23:54:49 2026] R13: 00005f5d0ce8f7b0 R14: 00007a1573df4080 R15: 00007fff1d36862c\n[Fri Nov  6 23:54:49 2026]  </TASK>\n[Fri Nov  6 23:54:49 2026] ---[ end trace 0000000000000000 ]---\n[Fri Nov  6 23:54:49 2026] systemd-journald[51]: File /var/log/journal/1c459fa48b564b3d88f144dca010cc3e/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.",
+      "stderr": "",
+      "warning_header_excerpt": [
+        "[Fri Nov  6 23:54:48 2026] systemd-journald[51]: File /var/log/journal/1c459fa48b564b3d88f144dca010cc3e/system.journal corrupted or uncleanly shut down, renaming and replacing.",
+        "[Fri Nov  6 23:54:49 2026] memcpy: detected field-spanning write (size 4) of single field \"current_pos\" at drivers/hv/dxgkrnl/dxgvmbus.c:3095 (size 0)",
+        "[Fri Nov  6 23:54:49 2026] WARNING: CPU: 12 PID: 309 at drivers/hv/dxgkrnl/dxgvmbus.c:3095 dxgvmb_send_wait_sync_object_gpu+0x271/0x290",
+        "[Fri Nov  6 23:54:49 2026] CPU: 12 UID: 1000 PID: 309 Comm: Xwayland Not tainted 6.18.33.2-microsoft-standard-WSL2 #1 PREEMPT(none) ",
+        "[Fri Nov  6 23:54:49 2026] systemd-journald[51]: File /var/log/journal/1c459fa48b564b3d88f144dca010cc3e/user-1000.journal corrupted or uncleanly shut down, renaming and replacing."
+      ],
+      "interpretation": "The displayed dxgkrnl warning names Xwayland PID 309 on this current boot. It is not a traceback from the training process and does not establish why the previous training worker disappeared."
+    },
+    "interruption_interpretation": "Former workers are absent and current kernel uptime is short. This is consistent with session/kernel restart but does not identify the interruption cause; no prior boot ID or recorded crash evidence is available."
+  },
+  "finalizer": {
+    "source_path": "tools/finalize_permworld_repetition.py",
+    "sha256": "41aaf06a2b36674601c84ec0be107cf977597b11cc03ff406ef73404736ee527",
+    "fresh_launch_requirements": [
+      "Update diagnostics/permworld_repetition_20261106/launch_record.json PID to the fresh formal trainer; mirror external launch record for provenance.",
+      "Fresh runner writes active_process.json PID/started_utc/protocol SHA when run_all starts.",
+      "Start exactly one finalizer with --wait-pid matching the fresh recorded trainer PID. It checks /proc start ticks and expected runner command.",
+      "Final build requires all four new analysis completions at 32 conditions/config binding, five-unit summary, and pipeline_exit.json status finished_requested_manifest with UTC at least active_process.started_utc and matching protocol.",
+      "No stale exit record can substitute for fresh requested-manifest completion; no final completion is currently available."
+    ],
+    "audit_only": true,
+    "observed_fresh_rebind": {
+      "diagnostic_pid": 1524,
+      "external_launch_pid": 1524,
+      "active_pid": 1524,
+      "all_match": true,
+      "active_started_utc": "2026-11-07T07:56:49.540375+00:00",
+      "active_protocol_matches": true
+    }
+  },
+  "errors": [],
+  "scope": "Only this audit JSON written. Partial checkpoint was loaded on CPU and hashed once; completed checkpoints were checked through sidecars and existence, not loaded/rehashed. No CUDA execution, model construction, forward, training, code edits or process signals."
+}

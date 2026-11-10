@@ -15,7 +15,7 @@
 
 \begin{document}
 \maketitle
-\begin{center}\small Working draft, 12 October 2026. Based on existing exploratory experiments.\end{center}
+\begin{center}\small Working draft, updated 9 November 2026. Exploratory cohorts and fixed-protocol independent repetitions.\end{center}
 
 \begin{abstract}
 Exact relationships between mathematical tasks offer a way to ask what a
@@ -23,13 +23,19 @@ representational-similarity comparison identifies. We study single-task
 specialists on permutation statistics, directed-graph degrees, and binary
 matrix statistics. Two comparisons answer different questions: fixing the
 task pair while changing the input transformation, and fixing the
-transformation while changing the candidate task. In the primary PermWorld
-analysis, joint-answer-controlled final-layer CKA favors the correct over the
+transformation while changing the candidate task. In the original single-unit
+primary PermWorld analysis, joint-answer-controlled final-layer CKA favors the correct over the
 specified wrong pairing in 26 of 32 conditions. The designated task exceeds
 the mean of 14 non-designated candidates in 29 of 32 conditions, but ranks
 uniquely first among 15 candidates in 19. Trained preference and change from
 initialization are distinct: only 18 conditions have a positive
-trained-minus-initial preference increment. Shared initial weights give the
+trained-minus-initial preference increment. Four additional paired PermWorld
+units jointly resample data, architecture-level initialization, batch order,
+and training streams. Under the same primary analysis, positive trained
+preferences occur in 26--29 of 32 conditions, positive increments in 18,
+and unique-first task rankings in 17--20. Increment directions agree in all
+32 conditions across the repetitions, while trained preferences change sign
+in six conditions. Shared initial weights give the
 raw fixed-transformation task contrast a zero initialization reference, while
 candidate-specific answer stratification does not. A GRU task pair with near-perfect held-out accuracy illustrates how changing the encoding can reverse the increment
 without reversing trained preference. Graph and two independently sampled
@@ -248,12 +254,14 @@ Graph & 4 / 4 & Transformer; off-diagonal adjacency tokens; $n=6,7,8$ & One worl
 Matrix & 4 / 8 & Transformer; row-major binary tokens; $n=6,8,10$ & Two independent data/initial units; four tasks share weights within each unit & A: $4\times2=8$; B: $8\times3=24$ candidates\\
 \bottomrule
 \end{tabular}
-\caption{Coverage, rather than independent replication counts. All 76 source
+\caption{Historical domain-cohort coverage, rather than independent replication counts. The 76 source
 models have actual fixed 20k endpoints. Comparison B uses ordinary final-layer
 CKA only. In PermWorld, layer analyses use CKA and its prescribed debiased
 sensitivity; the three principal geometric readouts are jointly available
 at the final state. Shared tasks, transformations, models, inputs, and
-initials create dependence within these grids.}
+initials create dependence within these grids. The additional 256 PermWorld
+specialists in Section~\ref{sec:independentrepetition} bring its total to 320;
+they do not add GraphWorld or MatrixGroupWorld repetitions.}
 \label{tab:coverage}
 \end{table}
 
@@ -276,6 +284,8 @@ In PermWorld only accepted eight-element orbits are used; matrices require
 exact full rank over $\Ftwo$ and exclusion of overlapping embedded
 $\mathrm{GL}(2,\Ftwo)$ action/transpose orbits. These conditional sampling
 rules do not imply uniform sampling over all mathematical objects.
+
+\input{sections/independent_repetition_methods}
 
 \subsection{Controls and aggregation}
 \label{sec:controls}
@@ -317,11 +327,13 @@ catalogue, not a proof of absence of other relations.
 
 \section{Results: three questions}
 \label{sec:results}
-All results below are exploratory. The candidate analysis was frozen before
+The historical analyses below are exploratory. The candidate analysis was frozen before
 its scores were computed, after earlier training and geometric results had
 been seen. We therefore do not describe it as an independently
-preregistered confirmation. Counts summarize coupled conditions; they are
-not sample sizes for a binomial test.
+preregistered confirmation. The subsequent independent repetitions used a
+local protocol and source freeze fixed after those observations and before
+new data generation and fitting; their results are reported separately.
+Counts summarize coupled conditions, not sample sizes for a binomial test.
 
 \subsection{Question 1: do designated correspondences have geometric selectivity?}
 In Comparison A, joint-answer-controlled final-layer ordinary CKA yields
@@ -545,6 +557,29 @@ reported in Appendix~\ref{app:verification}.}
 \label{fig:matrixcase}
 \end{figure}
 
+\input{sections/independent_repetition_status}
+
+\paragraph{Interpretation of the completed repetitions.}
+The four new units retain the broad prevalence of positive trained
+selectivity under the declared primary measurement, rather than reproducing
+every cell. Their positive-$B_t$ counts are 28, 29, 28, and 26; their
+initialization-relative positive-$\Delta$ counts are all 18, with exactly the
+same 18 positive conditions. The designated task exceeds the other-candidate
+mean in 30, 30, 30, and 29 conditions, and is uniquely first in 18, 17, 20,
+and 18. Across the four new units, $B_t$ directions agree in 26/32 conditions,
+$\Delta$ directions in 32/32, and fixed-transformation contrast directions
+in 28/32. The same agreement counts hold when the original exploratory unit
+is included. These are descriptive condition inventories, not independent
+binomial trials.
+
+Instability is not confined to negligible sign changes. For the GRU with
+canonical-cycle encoding on global descents/components, the four new $B_t$
+values are $-0.039768$, $-0.132320$, $+0.130549$, and $-0.005135$.
+Thus stable increment directions and similar positive-count totals do not
+establish stable trained preference for every task/encoding/configuration.
+The numerical tables retain all conditions and unrounded values; no new
+practical-equivalence threshold or mechanism claim is inferred from them.
+
 \section{Discussion and implications for similarity-based arguments}
 The observations support a conditional relationship between exact task
 correspondences and geometric pairing preferences. In PermWorld the
@@ -587,12 +622,18 @@ application will show the same positive preferences.
 \section{Limitations}
 \label{sec:limitations}
 \paragraph{Shared initials and limited independent replication.}
-The principal PermWorld result uses one data world and one actual
+The historical PermWorld count uses one data world and one actual
 initialization per architecture, copied across specialists and encodings.
 GraphWorld reuses the Transformer initial. Shared weights make
 Eq.~\ref{eq:initialnull} interpretable, but do not show that the same
-preferences hold when specialist initializations are independent, or across
-new PermWorld data/initial units. This is the foremost replication gap.
+preferences hold when specialist initializations are independent.
+The registered repetitions address joint variability across new PermWorld
+data, architecture-level initializations, and training streams; their actual
+completion and results are reported separately in
+Section~\ref{sec:independent-repetition-status}. Five units provide only a
+small set of stochastic repetitions, and the random factors change jointly.
+Completed shared-initialization repetitions still do not address
+independently initialized specialists within a unit.
 The two matrix worlds independently vary data and initialization together;
 they do not isolate the effect of initialization and do not confirm the
 PermWorld 32-condition count. Independent paired worlds and independently
@@ -636,8 +677,11 @@ multiplication. Original output-neighbor numerical failures remain a
 reported reproducibility limitation, not repaired by the paper's wording.
 
 \section{Conclusion}
-Exact mathematical task correspondences are often associated with
-representation pairing selectivity in the measured settings. What is
+In the original cohorts, exact mathematical task correspondences are often
+associated with representation pairing selectivity. The independent-unit
+record in Section~\ref{sec:independent-repetition-status} separately assesses
+which observations survive the registered joint changes in random factors;
+the historical counts alone do not establish that robustness. What is
 selected, and what changed through training, depend on the comparison,
 initial reference, encoding, layer, and control. A raw fixed-transform
 candidate comparison provides a particularly clear training-origin

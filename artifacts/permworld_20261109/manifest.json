@@ -1,0 +1,16 @@
+{
+  "answer_control_tables.zip": {
+    "sha256": "762d0d9265fa6a58a96d0dab7a35a41b592c3b46bb45060a1df4525150cf2901",
+    "size_bytes": 32505947,
+    "member_count": 901,
+    "data_file_count": 900,
+    "contains": "Saved result tables and their per-member manifest only; no weights, activations or new computation."
+  },
+  "independent_repetition_tables.zip": {
+    "sha256": "cce126d52441d346ce7b6416ee16c77c3e4520e154b9a896a8ed636705942344",
+    "size_bytes": 7243639,
+    "member_count": 45,
+    "data_file_count": 44,
+    "contains": "Saved result tables and their per-member manifest only; no weights, activations or new computation."
+  }
+}

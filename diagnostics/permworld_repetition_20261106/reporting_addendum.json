@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-07T02:07:27.498483+00:00",
+  "reason": "User requested separate new-four and all-five descriptions; reporting-only addition",
+  "training_pid": 5122,
+  "training_process_unchanged": true,
+  "previous_document_pid": 7784,
+  "new_document_pid": 28509,
+  "frozen_source_files_unchanged": 60,
+  "protocol_SHA256": "6f8b26a5658e641164b54e93d57afc3fe045e354abcbdf731ca6d8c9555f0231",
+  "reporting_source_sha256": {
+    "tools/finalize_permworld_repetition.py": "41aaf06a2b36674601c84ec0be107cf977597b11cc03ff406ef73404736ee527",
+    "tools/summarize_permworld_repetition_cohorts.py": "0c0c7f4f93b2ff4046dc1bc3823010827d7607bb878f08341cee426b6e4110c3"
+  },
+  "scientific_endpoints_metrics_seeds_budgets_unchanged": true
+}

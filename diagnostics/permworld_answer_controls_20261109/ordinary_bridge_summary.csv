@@ -1,0 +1,17 @@
+cohort,version,effect,expected_values,finite_values,mean,interpretation
+new_units,pooled_raw,trained_transform_advantage,128,128,0.31730915015512384,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+new_units,pooled_raw,advantage_training_increment,128,128,0.45496061970963897,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+new_units,within_length_ordinary_bridge,trained_transform_advantage,128,128,0.34158218782558847,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+new_units,within_length_ordinary_bridge,advantage_training_increment,128,128,0.9583798761440818,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+new_units,within_length_debiased,trained_transform_advantage,128,128,0.34367776522200333,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+new_units,within_length_debiased,advantage_training_increment,128,128,0.9714689822424202,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+new_units,within_length_dual_answer_debiased,trained_transform_advantage,128,128,0.12578287961372012,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+new_units,within_length_dual_answer_debiased,advantage_training_increment,128,128,0.7541249165120637,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+all_units,pooled_raw,trained_transform_advantage,160,160,0.32130622091851524,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+all_units,pooled_raw,advantage_training_increment,160,160,0.4531598818964647,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+all_units,within_length_ordinary_bridge,trained_transform_advantage,160,160,0.34170193171993357,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+all_units,within_length_ordinary_bridge,advantage_training_increment,160,160,0.9603830072388213,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+all_units,within_length_debiased,trained_transform_advantage,160,160,0.3437748307105023,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+all_units,within_length_debiased,advantage_training_increment,160,160,0.9735698800082494,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+all_units,within_length_dual_answer_debiased,trained_transform_advantage,160,160,0.1263927376478992,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.
+all_units,within_length_dual_answer_debiased,advantage_training_increment,160,160,0.7568160235929973,Descriptive fixed-grid mean; ordinary bridge separates length pooling from estimator change.

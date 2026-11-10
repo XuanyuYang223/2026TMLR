@@ -1,0 +1,1330 @@
+{
+  "updated_utc": "2026-11-10T03:26:58.872899+00:00",
+  "historical_completed_units": 1,
+  "additional_units": [
+    {
+      "unit": "unit02",
+      "planned_models": 64,
+      "completed_models": 64,
+      "completed": [
+        {
+          "run_id": "unit02_transformer_one_line_descents",
+          "step": 20000,
+          "elapsed_seconds": 720.317499173
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_descents",
+          "step": 20000,
+          "elapsed_seconds": 702.7834446889999
+        },
+        {
+          "run_id": "unit02_transformer_one_line_recoils",
+          "step": 20000,
+          "elapsed_seconds": 698.8952276520004
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_recoils",
+          "step": 20000,
+          "elapsed_seconds": 702.3819465259999
+        },
+        {
+          "run_id": "unit02_transformer_one_line_peaks",
+          "step": 20000,
+          "elapsed_seconds": 700.7683035880004
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_peaks",
+          "step": 20000,
+          "elapsed_seconds": 701.4765582090004
+        },
+        {
+          "run_id": "unit02_transformer_one_line_valleys",
+          "step": 20000,
+          "elapsed_seconds": 707.0433046589997
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_valleys",
+          "step": 20000,
+          "elapsed_seconds": 719.7574780690002
+        },
+        {
+          "run_id": "unit02_transformer_one_line_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 912.8094165089997
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 822.4990751510004
+        },
+        {
+          "run_id": "unit02_transformer_one_line_components",
+          "step": 20000,
+          "elapsed_seconds": 1878.790027422001
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_components",
+          "step": 20000,
+          "elapsed_seconds": 3028.4306534469997
+        },
+        {
+          "run_id": "unit02_transformer_one_line_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 3059.4719184449987
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 3101.6948169839998
+        },
+        {
+          "run_id": "unit02_transformer_one_line_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 2699.0090411069978
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 2987.3645104239986
+        },
+        {
+          "run_id": "unit02_transformer_one_line_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 2500.628523331001
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 959.1559094330006
+        },
+        {
+          "run_id": "unit02_transformer_one_line_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 1825.02197805
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 709.2462037650002
+        },
+        {
+          "run_id": "unit02_transformer_one_line_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 715.5137105610002
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 713.3272638449998
+        },
+        {
+          "run_id": "unit02_transformer_one_line_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 720.5422573639999
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 718.6430978030003
+        },
+        {
+          "run_id": "unit02_transformer_one_line_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 719.1059611409992
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 716.6860801359999
+        },
+        {
+          "run_id": "unit02_transformer_one_line_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 713.7469703310007
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 720.8963078819997
+        },
+        {
+          "run_id": "unit02_transformer_one_line_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 715.9246744470001
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 718.3839514200008
+        },
+        {
+          "run_id": "unit02_transformer_one_line_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 716.0369422549993
+        },
+        {
+          "run_id": "unit02_transformer_canonical_cycle_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 737.7700977889999
+        },
+        {
+          "run_id": "unit02_gru_one_line_descents",
+          "step": 20000,
+          "elapsed_seconds": 1005.0451278
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_descents",
+          "step": 20000,
+          "elapsed_seconds": 966.4079122080002
+        },
+        {
+          "run_id": "unit02_gru_one_line_recoils",
+          "step": 20000,
+          "elapsed_seconds": 950.6868621079993
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_recoils",
+          "step": 20000,
+          "elapsed_seconds": 952.1133690339993
+        },
+        {
+          "run_id": "unit02_gru_one_line_peaks",
+          "step": 20000,
+          "elapsed_seconds": 952.8793469510001
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_peaks",
+          "step": 20000,
+          "elapsed_seconds": 940.9885090690004
+        },
+        {
+          "run_id": "unit02_gru_one_line_valleys",
+          "step": 20000,
+          "elapsed_seconds": 960.0524334770016
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_valleys",
+          "step": 20000,
+          "elapsed_seconds": 943.0542176710005
+        },
+        {
+          "run_id": "unit02_gru_one_line_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 930.1884504200025
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 918.2062651729975
+        },
+        {
+          "run_id": "unit02_gru_one_line_components",
+          "step": 20000,
+          "elapsed_seconds": 940.5383647439994
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_components",
+          "step": 20000,
+          "elapsed_seconds": 957.4560960929994
+        },
+        {
+          "run_id": "unit02_gru_one_line_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 946.0827596910021
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 940.9848066310005
+        },
+        {
+          "run_id": "unit02_gru_one_line_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 935.508073768
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 923.4915998149991
+        },
+        {
+          "run_id": "unit02_gru_one_line_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 921.2739451279995
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 920.1064560859995
+        },
+        {
+          "run_id": "unit02_gru_one_line_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 923.532291208001
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 924.098694616001
+        },
+        {
+          "run_id": "unit02_gru_one_line_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 919.8670830479969
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 928.5923990890042
+        },
+        {
+          "run_id": "unit02_gru_one_line_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 925.9205029410004
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 931.1467230960043
+        },
+        {
+          "run_id": "unit02_gru_one_line_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 919.7486836239987
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 923.4140555569975
+        },
+        {
+          "run_id": "unit02_gru_one_line_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 923.1881309210003
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 915.8198914349996
+        },
+        {
+          "run_id": "unit02_gru_one_line_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 917.1078558549998
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 926.2469989910023
+        },
+        {
+          "run_id": "unit02_gru_one_line_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 920.3119187039993
+        },
+        {
+          "run_id": "unit02_gru_canonical_cycle_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 916.1641576160036
+        }
+      ],
+      "partial": [],
+      "data_prepared": true,
+      "main_analysis_complete": true
+    },
+    {
+      "unit": "unit03",
+      "planned_models": 64,
+      "completed_models": 64,
+      "completed": [
+        {
+          "run_id": "unit03_transformer_one_line_descents",
+          "step": 20000,
+          "elapsed_seconds": 717.7055702759972
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_descents",
+          "step": 20000,
+          "elapsed_seconds": 716.4662683100032
+        },
+        {
+          "run_id": "unit03_transformer_one_line_recoils",
+          "step": 20000,
+          "elapsed_seconds": 722.6259854360032
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_recoils",
+          "step": 20000,
+          "elapsed_seconds": 720.6656909820013
+        },
+        {
+          "run_id": "unit03_transformer_one_line_peaks",
+          "step": 20000,
+          "elapsed_seconds": 721.208024102998
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_peaks",
+          "step": 20000,
+          "elapsed_seconds": 719.7230088180004
+        },
+        {
+          "run_id": "unit03_transformer_one_line_valleys",
+          "step": 20000,
+          "elapsed_seconds": 717.223640188
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_valleys",
+          "step": 20000,
+          "elapsed_seconds": 719.1064117770002
+        },
+        {
+          "run_id": "unit03_transformer_one_line_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 722.1426914679978
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 723.0557064469976
+        },
+        {
+          "run_id": "unit03_transformer_one_line_components",
+          "step": 20000,
+          "elapsed_seconds": 721.1895829630012
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_components",
+          "step": 20000,
+          "elapsed_seconds": 722.9789817670026
+        },
+        {
+          "run_id": "unit03_transformer_one_line_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 719.5689765569987
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 720.304000733995
+        },
+        {
+          "run_id": "unit03_transformer_one_line_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 723.1349765649938
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 759.0289331949971
+        },
+        {
+          "run_id": "unit03_transformer_one_line_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 742.2618595289969
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 746.3425131049953
+        },
+        {
+          "run_id": "unit03_transformer_one_line_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 750.4587368459979
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 748.4203393440039
+        },
+        {
+          "run_id": "unit03_transformer_one_line_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 745.2946673289989
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 761.5852487950033
+        },
+        {
+          "run_id": "unit03_transformer_one_line_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 747.5246932829978
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 748.7000415049988
+        },
+        {
+          "run_id": "unit03_transformer_one_line_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 762.1956723219992
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 747.749822976999
+        },
+        {
+          "run_id": "unit03_transformer_one_line_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 724.5830295250053
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 735.025069080999
+        },
+        {
+          "run_id": "unit03_transformer_one_line_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 727.9681925670011
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 744.1019419670047
+        },
+        {
+          "run_id": "unit03_transformer_one_line_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 732.6828891559999
+        },
+        {
+          "run_id": "unit03_transformer_canonical_cycle_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 733.2919244259974
+        },
+        {
+          "run_id": "unit03_gru_one_line_descents",
+          "step": 20000,
+          "elapsed_seconds": 945.2859532059956
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_descents",
+          "step": 20000,
+          "elapsed_seconds": 938.6209599650028
+        },
+        {
+          "run_id": "unit03_gru_one_line_recoils",
+          "step": 20000,
+          "elapsed_seconds": 948.8687563470012
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_recoils",
+          "step": 20000,
+          "elapsed_seconds": 945.3730491850001
+        },
+        {
+          "run_id": "unit03_gru_one_line_peaks",
+          "step": 20000,
+          "elapsed_seconds": 938.991035330997
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_peaks",
+          "step": 20000,
+          "elapsed_seconds": 958.2700672200008
+        },
+        {
+          "run_id": "unit03_gru_one_line_valleys",
+          "step": 20000,
+          "elapsed_seconds": 957.9651620520017
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_valleys",
+          "step": 20000,
+          "elapsed_seconds": 977.1550531829998
+        },
+        {
+          "run_id": "unit03_gru_one_line_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 977.1833285230095
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 969.2245942070003
+        },
+        {
+          "run_id": "unit03_gru_one_line_components",
+          "step": 20000,
+          "elapsed_seconds": 1493.741717426994
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_components",
+          "step": 20000,
+          "elapsed_seconds": 3396.848261633
+        },
+        {
+          "run_id": "unit03_gru_one_line_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 1166.9299877010053
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 952.828746861007
+        },
+        {
+          "run_id": "unit03_gru_one_line_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 968.3739605570008
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 974.1326641170017
+        },
+        {
+          "run_id": "unit03_gru_one_line_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 992.0449606789916
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1657.231686130006
+        },
+        {
+          "run_id": "unit03_gru_one_line_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 2122.8920462359965
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 4373.442912880011
+        },
+        {
+          "run_id": "unit03_gru_one_line_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 4430.621665654995
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 3827.7674867530004
+        },
+        {
+          "run_id": "unit03_gru_one_line_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 4163.560059761003
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 1364.096953166998
+        },
+        {
+          "run_id": "unit03_gru_one_line_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 966.8847080730047
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 975.8162058919988
+        },
+        {
+          "run_id": "unit03_gru_one_line_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 997.3791881650104
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 964.3318599320046
+        },
+        {
+          "run_id": "unit03_gru_one_line_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 993.8716053310054
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 936.4524016959913
+        },
+        {
+          "run_id": "unit03_gru_one_line_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 931.352786642994
+        },
+        {
+          "run_id": "unit03_gru_canonical_cycle_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 947.1466678450088
+        }
+      ],
+      "partial": [],
+      "data_prepared": true,
+      "main_analysis_complete": true
+    },
+    {
+      "unit": "unit04",
+      "planned_models": 64,
+      "completed_models": 64,
+      "completed": [
+        {
+          "run_id": "unit04_transformer_one_line_descents",
+          "step": 20000,
+          "elapsed_seconds": 730.0198976140091
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_descents",
+          "step": 20000,
+          "elapsed_seconds": 728.6578125389933
+        },
+        {
+          "run_id": "unit04_transformer_one_line_recoils",
+          "step": 20000,
+          "elapsed_seconds": 730.3710395890084
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_recoils",
+          "step": 20000,
+          "elapsed_seconds": 728.4711351779988
+        },
+        {
+          "run_id": "unit04_transformer_one_line_peaks",
+          "step": 20000,
+          "elapsed_seconds": 733.751706443989
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_peaks",
+          "step": 20000,
+          "elapsed_seconds": 729.1432435210008
+        },
+        {
+          "run_id": "unit04_transformer_one_line_valleys",
+          "step": 20000,
+          "elapsed_seconds": 724.3449227419915
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_valleys",
+          "step": 20000,
+          "elapsed_seconds": 726.4717449529999
+        },
+        {
+          "run_id": "unit04_transformer_one_line_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 732.7780056430056
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 733.8493202420068
+        },
+        {
+          "run_id": "unit04_transformer_one_line_components",
+          "step": 20000,
+          "elapsed_seconds": 737.0924113869987
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_components",
+          "step": 20000,
+          "elapsed_seconds": 731.493269144994
+        },
+        {
+          "run_id": "unit04_transformer_one_line_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 731.5370837319933
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 730.8215195369994
+        },
+        {
+          "run_id": "unit04_transformer_one_line_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 735.9041475470003
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 728.3513971979992
+        },
+        {
+          "run_id": "unit04_transformer_one_line_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 734.1872539530013
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 731.574621562002
+        },
+        {
+          "run_id": "unit04_transformer_one_line_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 734.6127052909869
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 732.0272440849803
+        },
+        {
+          "run_id": "unit04_transformer_one_line_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 726.5475859150174
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 724.2752959319914
+        },
+        {
+          "run_id": "unit04_transformer_one_line_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 729.4477873330179
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 722.7219139939989
+        },
+        {
+          "run_id": "unit04_transformer_one_line_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 720.5861967160017
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 754.8570862100169
+        },
+        {
+          "run_id": "unit04_transformer_one_line_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 796.4582458299992
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 795.3152090919903
+        },
+        {
+          "run_id": "unit04_transformer_one_line_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 793.4281254359812
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 794.5724994449993
+        },
+        {
+          "run_id": "unit04_transformer_one_line_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 791.6183608749998
+        },
+        {
+          "run_id": "unit04_transformer_canonical_cycle_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1665.0291904410115
+        },
+        {
+          "run_id": "unit04_gru_one_line_descents",
+          "step": 20000,
+          "elapsed_seconds": 1311.779274976987
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_descents",
+          "step": 20000,
+          "elapsed_seconds": 1144.8412484260043
+        },
+        {
+          "run_id": "unit04_gru_one_line_recoils",
+          "step": 20000,
+          "elapsed_seconds": 1947.644814817002
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_recoils",
+          "step": 20000,
+          "elapsed_seconds": 1154.3073649719881
+        },
+        {
+          "run_id": "unit04_gru_one_line_peaks",
+          "step": 20000,
+          "elapsed_seconds": 1048.225426577992
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_peaks",
+          "step": 20000,
+          "elapsed_seconds": 1048.713301449985
+        },
+        {
+          "run_id": "unit04_gru_one_line_valleys",
+          "step": 20000,
+          "elapsed_seconds": 1053.4908216760086
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_valleys",
+          "step": 20000,
+          "elapsed_seconds": 1055.2915283699986
+        },
+        {
+          "run_id": "unit04_gru_one_line_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1054.3881322849775
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1037.2296137899975
+        },
+        {
+          "run_id": "unit04_gru_one_line_components",
+          "step": 20000,
+          "elapsed_seconds": 1056.7775816900248
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_components",
+          "step": 20000,
+          "elapsed_seconds": 1040.2374867910112
+        },
+        {
+          "run_id": "unit04_gru_one_line_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 1052.6475870319991
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 1049.3781711290067
+        },
+        {
+          "run_id": "unit04_gru_one_line_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 1033.999528919987
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 1062.9392191289808
+        },
+        {
+          "run_id": "unit04_gru_one_line_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1044.9980084330018
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1043.7205586799828
+        },
+        {
+          "run_id": "unit04_gru_one_line_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 1184.049617739016
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 973.8164886739978
+        },
+        {
+          "run_id": "unit04_gru_one_line_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 973.9871801380068
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 974.0440561199794
+        },
+        {
+          "run_id": "unit04_gru_one_line_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 995.977144688979
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 970.8480266589904
+        },
+        {
+          "run_id": "unit04_gru_one_line_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 977.2670839850034
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 992.1860409900255
+        },
+        {
+          "run_id": "unit04_gru_one_line_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 985.9864300710033
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 1017.0656524600054
+        },
+        {
+          "run_id": "unit04_gru_one_line_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1010.0177756890189
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1018.9614455729898
+        },
+        {
+          "run_id": "unit04_gru_one_line_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1045.9013890890055
+        },
+        {
+          "run_id": "unit04_gru_canonical_cycle_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1024.3389765379834
+        }
+      ],
+      "partial": [],
+      "data_prepared": true,
+      "main_analysis_complete": true
+    },
+    {
+      "unit": "unit05",
+      "planned_models": 64,
+      "completed_models": 64,
+      "completed": [
+        {
+          "run_id": "unit05_transformer_one_line_descents",
+          "step": 20000,
+          "elapsed_seconds": 769.9150927540031
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_descents",
+          "step": 20000,
+          "elapsed_seconds": 755.4761953080015
+        },
+        {
+          "run_id": "unit05_transformer_one_line_recoils",
+          "step": 20000,
+          "elapsed_seconds": 762.696766929992
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_recoils",
+          "step": 20000,
+          "elapsed_seconds": 771.3176190399972
+        },
+        {
+          "run_id": "unit05_transformer_one_line_peaks",
+          "step": 20000,
+          "elapsed_seconds": 777.5844498560182
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_peaks",
+          "step": 20000,
+          "elapsed_seconds": 769.0378996350046
+        },
+        {
+          "run_id": "unit05_transformer_one_line_valleys",
+          "step": 20000,
+          "elapsed_seconds": 767.5975815669808
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_valleys",
+          "step": 20000,
+          "elapsed_seconds": 770.6416723290167
+        },
+        {
+          "run_id": "unit05_transformer_one_line_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 757.1862565559859
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 767.8414045799873
+        },
+        {
+          "run_id": "unit05_transformer_one_line_components",
+          "step": 20000,
+          "elapsed_seconds": 1469.1648020930006
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_components",
+          "step": 20000,
+          "elapsed_seconds": 1288.3678196060064
+        },
+        {
+          "run_id": "unit05_transformer_one_line_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 812.7448052089894
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 797.3249392469879
+        },
+        {
+          "run_id": "unit05_transformer_one_line_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 789.4367922910023
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 802.0876157410094
+        },
+        {
+          "run_id": "unit05_transformer_one_line_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 797.344472391007
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 804.5611677270208
+        },
+        {
+          "run_id": "unit05_transformer_one_line_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 814.3932856580068
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 825.2050503490027
+        },
+        {
+          "run_id": "unit05_transformer_one_line_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 815.5150777829986
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 849.3789342600212
+        },
+        {
+          "run_id": "unit05_transformer_one_line_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 808.5609144930204
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 824.517634466989
+        },
+        {
+          "run_id": "unit05_transformer_one_line_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 810.7396329180046
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 799.4341160329932
+        },
+        {
+          "run_id": "unit05_transformer_one_line_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 802.9537101210153
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 790.018109319004
+        },
+        {
+          "run_id": "unit05_transformer_one_line_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 790.2033003770048
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 792.045551068004
+        },
+        {
+          "run_id": "unit05_transformer_one_line_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 792.1680981800018
+        },
+        {
+          "run_id": "unit05_transformer_canonical_cycle_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 798.5777610109944
+        },
+        {
+          "run_id": "unit05_gru_one_line_descents",
+          "step": 20000,
+          "elapsed_seconds": 1086.6743951769895
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_descents",
+          "step": 20000,
+          "elapsed_seconds": 1066.1367143319803
+        },
+        {
+          "run_id": "unit05_gru_one_line_recoils",
+          "step": 20000,
+          "elapsed_seconds": 1091.8930920129933
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_recoils",
+          "step": 20000,
+          "elapsed_seconds": 1080.8411896829784
+        },
+        {
+          "run_id": "unit05_gru_one_line_peaks",
+          "step": 20000,
+          "elapsed_seconds": 1084.4032509429962
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_peaks",
+          "step": 20000,
+          "elapsed_seconds": 1066.774069120991
+        },
+        {
+          "run_id": "unit05_gru_one_line_valleys",
+          "step": 20000,
+          "elapsed_seconds": 1092.2893036880123
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_valleys",
+          "step": 20000,
+          "elapsed_seconds": 1083.550017636997
+        },
+        {
+          "run_id": "unit05_gru_one_line_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1073.9205333290156
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_anti_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1050.7218954740092
+        },
+        {
+          "run_id": "unit05_gru_one_line_components",
+          "step": 20000,
+          "elapsed_seconds": 1050.6844357959926
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_components",
+          "step": 20000,
+          "elapsed_seconds": 1067.8899840090016
+        },
+        {
+          "run_id": "unit05_gru_one_line_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 1055.2694831260014
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_deficiencies",
+          "step": 20000,
+          "elapsed_seconds": 1062.9149828469963
+        },
+        {
+          "run_id": "unit05_gru_one_line_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 1054.5592536859913
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_exceedances",
+          "step": 20000,
+          "elapsed_seconds": 1050.3659600490064
+        },
+        {
+          "run_id": "unit05_gru_one_line_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1066.3135264650045
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_fixed_points",
+          "step": 20000,
+          "elapsed_seconds": 1061.1037765950023
+        },
+        {
+          "run_id": "unit05_gru_one_line_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 1052.804890940024
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_global_descents",
+          "step": 20000,
+          "elapsed_seconds": 1047.8943540310138
+        },
+        {
+          "run_id": "unit05_gru_one_line_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 1063.22951693699
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_lds_length",
+          "step": 20000,
+          "elapsed_seconds": 1058.0952613090049
+        },
+        {
+          "run_id": "unit05_gru_one_line_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 1057.399338340998
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_left_to_right_maxima",
+          "step": 20000,
+          "elapsed_seconds": 1050.3718101980048
+        },
+        {
+          "run_id": "unit05_gru_one_line_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 1084.126512390998
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_left_to_right_minima",
+          "step": 20000,
+          "elapsed_seconds": 1109.7902417780133
+        },
+        {
+          "run_id": "unit05_gru_one_line_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 1095.1034219439898
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_lis_length",
+          "step": 20000,
+          "elapsed_seconds": 1065.0537623430137
+        },
+        {
+          "run_id": "unit05_gru_one_line_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1077.2390646429849
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_longest_decreasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1090.3217502480256
+        },
+        {
+          "run_id": "unit05_gru_one_line_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1101.8738473750127
+        },
+        {
+          "run_id": "unit05_gru_canonical_cycle_longest_increasing_run",
+          "step": 20000,
+          "elapsed_seconds": 1091.953127959976
+        }
+      ],
+      "partial": [],
+      "data_prepared": true,
+      "main_analysis_complete": true
+    }
+  ],
+  "planned_total_units": 5,
+  "planned_additional_models": 256,
+  "completed_additional_models": 256,
+  "complete": true
+}

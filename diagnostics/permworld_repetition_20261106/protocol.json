@@ -1,0 +1,365 @@
+{
+  "version": "permworld-independent-repetition/v1",
+  "registered_utc": "2026-11-07T00:03:45.077921+00:00",
+  "purpose": "Four fixed additional units; original observed unit is the fifth. Joint random-factor robustness, not factor-isolated causal effects.",
+  "output": "/mnt/yangx-projects-f/20261106/permworld_repetition",
+  "historical_unit": "archdev001",
+  "units": [
+    {
+      "unit": "unit02",
+      "data_seed": 96200002,
+      "batch_seed": 96300002,
+      "dropout_seed_base": 96420000,
+      "architecture_model_seeds": {
+        "transformer": 96100004,
+        "gru": 96100005
+      },
+      "evaluation_rng_seed": null,
+      "evaluation_anchor_source": "same sequential data_seed RNG as train/validation; no separate evaluation sampler"
+    },
+    {
+      "unit": "unit03",
+      "data_seed": 96200003,
+      "batch_seed": 96300003,
+      "dropout_seed_base": 96430000,
+      "architecture_model_seeds": {
+        "transformer": 96100006,
+        "gru": 96100007
+      },
+      "evaluation_rng_seed": null,
+      "evaluation_anchor_source": "same sequential data_seed RNG as train/validation; no separate evaluation sampler"
+    },
+    {
+      "unit": "unit04",
+      "data_seed": 96200004,
+      "batch_seed": 96300004,
+      "dropout_seed_base": 96440000,
+      "architecture_model_seeds": {
+        "transformer": 96100008,
+        "gru": 96100009
+      },
+      "evaluation_rng_seed": null,
+      "evaluation_anchor_source": "same sequential data_seed RNG as train/validation; no separate evaluation sampler"
+    },
+    {
+      "unit": "unit05",
+      "data_seed": 96200005,
+      "batch_seed": 96300005,
+      "dropout_seed_base": 96450000,
+      "architecture_model_seeds": {
+        "transformer": 96100010,
+        "gru": 96100011
+      },
+      "evaluation_rng_seed": null,
+      "evaluation_anchor_source": "same sequential data_seed RNG as train/validation; no separate evaluation sampler"
+    }
+  ],
+  "tasks": [
+    "anti_fixed_points",
+    "components",
+    "deficiencies",
+    "descents",
+    "exceedances",
+    "fixed_points",
+    "global_descents",
+    "lds_length",
+    "left_to_right_maxima",
+    "left_to_right_minima",
+    "lis_length",
+    "longest_decreasing_run",
+    "longest_increasing_run",
+    "peaks",
+    "recoils",
+    "valleys"
+  ],
+  "label_task_names": [
+    "anti_fixed_points",
+    "components",
+    "deficiencies",
+    "descents",
+    "exceedances",
+    "fixed_points",
+    "global_descents",
+    "lds_length",
+    "left_to_right_maxima",
+    "left_to_right_minima",
+    "lis_length",
+    "longest_decreasing_run",
+    "longest_increasing_run",
+    "peaks",
+    "recoils",
+    "valleys"
+  ],
+  "relations": [
+    {
+      "pair_id": "descent_inverse",
+      "left": "descents",
+      "right": "recoils",
+      "input_transform": "inverse",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "peak_complement",
+      "left": "peaks",
+      "right": "valleys",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "fixed_complement",
+      "left": "fixed_points",
+      "right": "anti_fixed_points",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "exceedance_inverse",
+      "left": "exceedances",
+      "right": "deficiencies",
+      "input_transform": "inverse",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "subsequence_complement",
+      "left": "lis_length",
+      "right": "lds_length",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "run_complement",
+      "left": "longest_increasing_run",
+      "right": "longest_decreasing_run",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "record_complement",
+      "left": "left_to_right_maxima",
+      "right": "left_to_right_minima",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "decomposition_complement",
+      "left": "global_descents",
+      "right": "components",
+      "input_transform": "complement",
+      "right_label_offset": 1
+    }
+  ],
+  "architectures": [
+    "transformer",
+    "gru"
+  ],
+  "encodings": [
+    "one_line",
+    "canonical_cycle"
+  ],
+  "actions": [
+    "identity",
+    "complement",
+    "inverse"
+  ],
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "length_weights": {
+    "10": 0.047619047619047616,
+    "11": 0.047619047619047616,
+    "12": 0.047619047619047616,
+    "13": 0.047619047619047616,
+    "14": 0.047619047619047616,
+    "15": 0.047619047619047616,
+    "16": 0.047619047619047616,
+    "17": 0.047619047619047616,
+    "18": 0.047619047619047616,
+    "19": 0.047619047619047616,
+    "20": 0.047619047619047616,
+    "21": 0.047619047619047616,
+    "22": 0.047619047619047616,
+    "23": 0.047619047619047616,
+    "24": 0.047619047619047616,
+    "25": 0.047619047619047616,
+    "26": 0.047619047619047616,
+    "27": 0.047619047619047616,
+    "28": 0.047619047619047616,
+    "29": 0.047619047619047616,
+    "30": 0.047619047619047616
+  },
+  "model": {
+    "d_model": 256,
+    "layers": 4,
+    "heads": 8,
+    "mlp_ratio": 4,
+    "dropout": 0.1,
+    "tie_embeddings": true,
+    "max_seq_len": 128,
+    "vocab_size": 188
+  },
+  "training": {
+    "updates": 20000,
+    "micro_batch": 16,
+    "accumulation": 4,
+    "effective_batch": 64,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "warmup_updates": 1000,
+    "minimum_lr_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "precision": "FP32 parameters, CUDA BF16 autocast, TF32 disabled; FP32 CPU fallback",
+    "attention": "validated equivalent SDPA",
+    "loss": "Answer token plus EOS, shifted causal CE, other targets ignored; same two supervised tokens/example in both encodings.",
+    "length_schedule": "Uniform random permutations of all 21 lengths, repeat then truncate to20k; final length counts differ by at most1.",
+    "batch_schedule": "64 distinct anchors sampled per update from that length; saved batch_indices.npy shared by all32 models of a unit.",
+    "validation_every": 1000,
+    "checkpoint_every": 1000,
+    "endpoint": "Fixed final20k update checkpoint; no best-checkpoint or early-stopping selection.",
+    "execution": "Single GPU, serial jobs; no concurrent step0 creation. Resume only when protocol/data/start hashes agree."
+  },
+  "data": {
+    "examples_per_length": {
+      "train": 4096,
+      "validation": 256,
+      "test": 512
+    },
+    "maximum_attempts_per_world": 2000000,
+    "split_rule": "Sequential unbiased acceptance of seeded random permutations, reject non-eight-element orbits/history/within-world overlap; no answer-based balancing or selection.",
+    "independence": "Independent data/model/batch/dropout seeds per unit, conditional on the fixed mathematical universe and historical exclusions. Do not force global cross-world disjointness; accidental overlaps do not enter cross-world model comparisons.",
+    "training_actions": [
+      "identity"
+    ],
+    "validation_and_test_actions": [
+      "identity",
+      "complement",
+      "inverse"
+    ],
+    "labels_source": "Frozen upstream exact PROPERTY_FUNCTIONS, 16 properties"
+  },
+  "evaluation": {
+    "primary_state": "final_norm at input end before task token",
+    "fit_split": "validation, orbit disjoint from source train and geometry test",
+    "test_split": "test, fixed512 anchors per length",
+    "controls": [
+      "raw_within_length",
+      "answer_strata"
+    ],
+    "answer_strata": "Joint [n,left identity answer,right identity/complement/inverse answers]; independently keep strata>=3 and subtract within-stratum means in fit/test. All conditions share masks.",
+    "length_weights": {
+      "10": 0.047619047619047616,
+      "11": 0.047619047619047616,
+      "12": 0.047619047619047616,
+      "13": 0.047619047619047616,
+      "14": 0.047619047619047616,
+      "15": 0.047619047619047616,
+      "16": 0.047619047619047616,
+      "17": 0.047619047619047616,
+      "18": 0.047619047619047616,
+      "19": 0.047619047619047616,
+      "20": 0.047619047619047616,
+      "21": 0.047619047619047616,
+      "22": 0.047619047619047616,
+      "23": 0.047619047619047616,
+      "24": 0.047619047619047616,
+      "25": 0.047619047619047616,
+      "26": 0.047619047619047616,
+      "27": 0.047619047619047616,
+      "28": 0.047619047619047616,
+      "29": 0.047619047619047616,
+      "30": 0.047619047619047616
+    },
+    "metrics": [
+      "linear_cka",
+      "knn_overlap",
+      "procrustes"
+    ],
+    "sensitivity": [
+      "debiased_cka"
+    ],
+    "knn_k": 10,
+    "procrustes_rank_cap": 8,
+    "undefined_policy": "Keep undefined cells; do not reweight incomplete length aggregates.",
+    "baseline": "Numeric0..30 conditional probabilities plus static true-answer onehot/scalar. Static gold has no fabricated initial or training delta.",
+    "reported_components": [
+      "B0",
+      "Bt",
+      "change_correct",
+      "change_wrong",
+      "Delta",
+      "Gamma0",
+      "Gammat",
+      "GammaDelta"
+    ]
+  },
+  "history_index": {
+    "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/historical_input_hashes.npy",
+    "sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+    "metadata": {
+      "signature": "3bf058f55eecd95ace97fc824cd5929a2d6a8f1c7b6612a9142ac2442dc5c91f",
+      "sha256": "fc657f8b3ffec8d0a6decab752eac49688e968d947ac4002d03138e0b290e8be",
+      "unique_inputs": 18260223,
+      "previous_index_sha256": "331a02b4f93ec3f7343ee9dc83c81c765ac2b8b5e1a733bb087c1213252754b5",
+      "appended_prior_development_orbit_members": 817152,
+      "appended_prior_development_anchors": 102144,
+      "prior_development_split_counts": {
+        "train": 86016,
+        "validation": 5376,
+        "test": 10752
+      },
+      "archive_parser": "all-three-development-permutation-splits/full-eight-orbits/v2",
+      "policy": "Reuse SHA-verified historical index, append all prior development input orbits; no historical inputs admitted."
+    }
+  },
+  "original_protocols": {
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/protocol.json": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+    "/home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json": "cde6d21dc00c3caa6b49aa29ee33cba1605868669af785b4576961e3c7f0ae52",
+    "/home/yangx/ICML/diagnostics/representation_pairing_review_20261011/protocol.json": "ca25c2d3aa668adf9e482954dac4d4ac36ad9db6f3f95cbbf6d7027a950e7c5c"
+  },
+  "source_git_head": "4e3558ac13a635d780d1801978986fd195555177",
+  "source_worktree_status": "?? diagnostics/permworld_repetition_20261106/\n?? experiments/permworld_repetition_20261106/\n?? manuscripts/representation_selectivity_20261012/sections/independent_repetition_methods.tex\n?? tests/test_permworld_repetition_analysis.py\n",
+  "software": {
+    "python": "3.13.13",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "cuda": "12.8",
+    "device": "NVIDIA GeForce RTX 5070"
+  },
+  "training_randomness": "For original four tasks, dropout_base+1000*architecture_index+index(descents,recoils,peaks,valleys). Other twelve use descents stream. Each encoding pair shares actual RNG. Fresh base per unit.",
+  "shared_initialization": "One actual constructor state_dict per architecture/unit, copied exactly across 16 tasks and both encodings. Architectures do not share parameters.",
+  "sampling_scope": "Exact original rejection sampler and fixed historical exclusion index. Sequential train/validation/test draws, within-world orbit-disjoint; cross-world overlap allowed, not artificially rejected. No new mathematical system/task distribution.",
+  "analysis_scope": "Original final_norm three metrics plus debiased CKA and output probabilities, raw/joint-answer. Comparison B raw and candidate-specific answer ordinary CKA. Layer/input-pooling diagnostics are secondary historical analyses, not rerun.",
+  "ranking": "rank=1+count(other>designated); unique first also requires zero exact ties; no tolerance-defined ties",
+  "primary_counts": {
+    "comparison_A_positive_Bt_denominator": 32,
+    "comparison_A_positive_Delta_denominator": 32,
+    "comparison_B_above_mean_denominator": 32,
+    "comparison_B_unique_first_denominator": 32
+  },
+  "failure_policy": "Technical failures resume exact saved optimizer/RNG/config; keep attempt logs. Nonfinite training failures stop that job and remain reported. Weak source learning never excludes a fixed20k endpoint.",
+  "stop_rule": "Only units02..05, 64 endpoints/unit, fixed20k, original final-state main analyses and reporting. No extra seeds, independent-specialist initialization experiment, Graph/Group/Matrix/F17 work or publication."
+}

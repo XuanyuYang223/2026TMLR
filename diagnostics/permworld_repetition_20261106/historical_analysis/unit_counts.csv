@@ -1,0 +1,11 @@
+comparison,control,metric,expected_conditions,observed_conditions,Bt_finite,Bt_positive,Bt_negative,Bt_zero,Delta_finite,Delta_positive,Delta_negative,Delta_zero,finite_conditions,above_other_mean,unique_first,ranking_rule
+A,raw_within_length,linear_cka,32,32,32,27,5,0,32,25,7,0,,,,
+A,raw_within_length,debiased_cka,32,32,32,27,5,0,32,25,7,0,,,,
+A,raw_within_length,knn_overlap,32,32,32,26,6,0,32,19,13,0,,,,
+A,raw_within_length,procrustes,32,32,32,27,5,0,32,26,6,0,,,,
+B,raw_within_length,linear_cka,32,32,,,,,,,,,32,30,25,strict greater; exact equality is a tie; all original candidates required
+A,answer_strata,linear_cka,32,32,32,26,6,0,32,18,14,0,,,,
+A,answer_strata,debiased_cka,32,32,32,26,6,0,32,18,14,0,,,,
+A,answer_strata,knn_overlap,32,32,32,26,6,0,32,16,16,0,,,,
+A,answer_strata,procrustes,32,32,32,26,6,0,32,18,14,0,,,,
+B,answer_strata,linear_cka,32,32,,,,,,,,,32,29,19,strict greater; exact equality is a tie; all original candidates required

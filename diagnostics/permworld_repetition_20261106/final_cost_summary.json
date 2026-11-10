@@ -1,0 +1,48 @@
+{
+  "units": [
+    {
+      "unit": "unit02",
+      "completed_models": 64,
+      "source_training_process_seconds": 68684.34713417501,
+      "analysis_seconds": 802.402907528005,
+      "architecture_process_seconds": {
+        "transformer": 38764.123151607,
+        "gru": 29920.223982568008
+      }
+    },
+    {
+      "unit": "unit03",
+      "completed_models": 64,
+      "source_training_process_seconds": 72619.00158369602,
+      "analysis_seconds": 867.9355694319966,
+      "architecture_process_seconds": {
+        "transformer": 23464.315091342985,
+        "gru": 49154.68649235304
+      }
+    },
+    {
+      "unit": "unit04",
+      "completed_models": 64,
+      "source_training_process_seconds": 59025.37495667992,
+      "analysis_seconds": 857.2279093140096,
+      "architecture_process_seconds": {
+        "transformer": 24640.317979120984,
+        "gru": 34385.05697755894
+      }
+    },
+    {
+      "unit": "unit05",
+      "completed_models": 64,
+      "source_training_process_seconds": 60835.60129330508,
+      "analysis_seconds": 870.3370969590032,
+      "architecture_process_seconds": {
+        "transformer": 26544.038528897072,
+        "gru": 34291.56276440801
+      }
+    }
+  ],
+  "total_additional_source_training_process_hours": 72.54564582440446,
+  "total_new_analysis_process_hours": 0.9438620786758374,
+  "not_active_GPU_kernel_hours": true,
+  "notes": "Saved training process times include validation/checkpoint work and recorded interruptions; preparation, extraction, engineering, audit and paper work are separate. No power or resource-guarantee inference."
+}

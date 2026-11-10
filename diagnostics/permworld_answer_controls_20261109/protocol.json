@@ -1,0 +1,344 @@
+{
+  "version": "permworld-dual-answer-checkpoint-diagnostic/v1",
+  "created_utc": "2026-11-10T04:07:25.256316+00:00",
+  "output": "/mnt/yangx-projects-f/20261109/permworld_answer_controls",
+  "units": [
+    {
+      "unit": "archdev001",
+      "root": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev",
+      "data_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "initializations": {
+        "gru": {
+          "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+          "sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+          "parameter_sha256": "2568285183400a3266e1338d3a169255ebe10df68c3ca1fb9b725663e7870ca0"
+        },
+        "transformer": {
+          "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+          "sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+          "parameter_sha256": "03dee240f607ea45d5ec6d09ebe2121452ba7378dea4f262ec9925d91f2c8dab"
+        }
+      }
+    },
+    {
+      "unit": "unit02",
+      "data_seed": 96200002,
+      "batch_seed": 96300002,
+      "dropout_seed_base": 96420000,
+      "architecture_model_seeds": {
+        "transformer": 96100004,
+        "gru": 96100005
+      },
+      "evaluation_rng_seed": null,
+      "evaluation_anchor_source": "same sequential data_seed RNG as train/validation; no separate evaluation sampler",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/data.npz",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "initializations": {
+        "transformer": {
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/initializations/transformer/step0.pt",
+          "sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+          "parameter_sha256": "5c9940533eb4658f267af76b39e808dbfb7a9854fd50c00b2f598c31ecc5f0ed"
+        },
+        "gru": {
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/initializations/gru/step0.pt",
+          "sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+          "parameter_sha256": "407d0f4866d3dfb00a07aab1746671714ced4794f5d830aa36e93f1dee4174d9"
+        }
+      }
+    },
+    {
+      "unit": "unit03",
+      "data_seed": 96200003,
+      "batch_seed": 96300003,
+      "dropout_seed_base": 96430000,
+      "architecture_model_seeds": {
+        "transformer": 96100006,
+        "gru": 96100007
+      },
+      "evaluation_rng_seed": null,
+      "evaluation_anchor_source": "same sequential data_seed RNG as train/validation; no separate evaluation sampler",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/data.npz",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "initializations": {
+        "transformer": {
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/initializations/transformer/step0.pt",
+          "sha256": "89f8881e3f82c1ef9a1ebb7f9e6b2e415708e2a92d7fc548f1c9b6f1d2c7a42a",
+          "parameter_sha256": "f95bf599842ee48f4b0eba62cb83f929b7824713ce2dad7611e21b3f981dac50"
+        },
+        "gru": {
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/initializations/gru/step0.pt",
+          "sha256": "15cba1041d3b10d003a6390081695e871a632329d759ed7d858c25a979012a63",
+          "parameter_sha256": "3707ccfe32896b750305755b0228957ae72d7236e30b5e071f98180dc5c8db90"
+        }
+      }
+    },
+    {
+      "unit": "unit04",
+      "data_seed": 96200004,
+      "batch_seed": 96300004,
+      "dropout_seed_base": 96440000,
+      "architecture_model_seeds": {
+        "transformer": 96100008,
+        "gru": 96100009
+      },
+      "evaluation_rng_seed": null,
+      "evaluation_anchor_source": "same sequential data_seed RNG as train/validation; no separate evaluation sampler",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/data.npz",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "initializations": {
+        "transformer": {
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/initializations/transformer/step0.pt",
+          "sha256": "de3de5da6ca9950c2a1ad84b328d5f7b6bec022cd05526c1a5c0ef4b160692aa",
+          "parameter_sha256": "3b064cc4f88d7402943a908f6b2b38775eed170921289715fb71b453361da17c"
+        },
+        "gru": {
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/initializations/gru/step0.pt",
+          "sha256": "543fa0af84726d918709b21ea467fe2f83b9c9b64733b7e9756bc81003fc5a2f",
+          "parameter_sha256": "0136e9c4692e6f73182636c501a251f56574202e14382a6fddc55cde826b25be"
+        }
+      }
+    },
+    {
+      "unit": "unit05",
+      "data_seed": 96200005,
+      "batch_seed": 96300005,
+      "dropout_seed_base": 96450000,
+      "architecture_model_seeds": {
+        "transformer": 96100010,
+        "gru": 96100011
+      },
+      "evaluation_rng_seed": null,
+      "evaluation_anchor_source": "same sequential data_seed RNG as train/validation; no separate evaluation sampler",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/data.npz",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "initializations": {
+        "transformer": {
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/initializations/transformer/step0.pt",
+          "sha256": "f3e187016336003eb0ab6ba15a8c7645462d011a4f70d2bfb1014ca7bf491056",
+          "parameter_sha256": "aaba6c04eeed5c02264dbcf953e1e2f74c79d723b3225331efdf78a800ff3233"
+        },
+        "gru": {
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/initializations/gru/step0.pt",
+          "sha256": "ab7e036a0966f140f2d8806cae14c9be4d0ff458ec60b1f98824a50da090ca54",
+          "parameter_sha256": "23813a13e671e5ad71272de7a86a0184cd9b78de84b03000279b901746d727ef"
+        }
+      }
+    }
+  ],
+  "tasks": [
+    "anti_fixed_points",
+    "components",
+    "deficiencies",
+    "descents",
+    "exceedances",
+    "fixed_points",
+    "global_descents",
+    "lds_length",
+    "left_to_right_maxima",
+    "left_to_right_minima",
+    "lis_length",
+    "longest_decreasing_run",
+    "longest_increasing_run",
+    "peaks",
+    "recoils",
+    "valleys"
+  ],
+  "relations": [
+    {
+      "pair_id": "descent_inverse",
+      "left": "descents",
+      "right": "recoils",
+      "input_transform": "inverse",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "peak_complement",
+      "left": "peaks",
+      "right": "valleys",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "fixed_complement",
+      "left": "fixed_points",
+      "right": "anti_fixed_points",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "exceedance_inverse",
+      "left": "exceedances",
+      "right": "deficiencies",
+      "input_transform": "inverse",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "subsequence_complement",
+      "left": "lis_length",
+      "right": "lds_length",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "run_complement",
+      "left": "longest_increasing_run",
+      "right": "longest_decreasing_run",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "record_complement",
+      "left": "left_to_right_maxima",
+      "right": "left_to_right_minima",
+      "input_transform": "complement",
+      "right_label_offset": 0
+    },
+    {
+      "pair_id": "decomposition_complement",
+      "left": "global_descents",
+      "right": "components",
+      "input_transform": "complement",
+      "right_label_offset": 1
+    }
+  ],
+  "architectures": [
+    "transformer",
+    "gru"
+  ],
+  "encodings": [
+    "one_line",
+    "canonical_cycle"
+  ],
+  "actions": [
+    "identity",
+    "complement",
+    "inverse"
+  ],
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "length_weights": {
+    "10": 0.047619047619047616,
+    "11": 0.047619047619047616,
+    "12": 0.047619047619047616,
+    "13": 0.047619047619047616,
+    "14": 0.047619047619047616,
+    "15": 0.047619047619047616,
+    "16": 0.047619047619047616,
+    "17": 0.047619047619047616,
+    "18": 0.047619047619047616,
+    "19": 0.047619047619047616,
+    "20": 0.047619047619047616,
+    "21": 0.047619047619047616,
+    "22": 0.047619047619047616,
+    "23": 0.047619047619047616,
+    "24": 0.047619047619047616,
+    "25": 0.047619047619047616,
+    "26": 0.047619047619047616,
+    "27": 0.047619047619047616,
+    "28": 0.047619047619047616,
+    "29": 0.047619047619047616,
+    "30": 0.047619047619047616
+  },
+  "model": {
+    "d_model": 256,
+    "layers": 4,
+    "heads": 8,
+    "mlp_ratio": 4,
+    "dropout": 0.1,
+    "tie_embeddings": true,
+    "max_seq_len": 128,
+    "vocab_size": 188
+  },
+  "historical_activation_index": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+  "phases": [
+    "initial",
+    "trained"
+  ],
+  "versions": [
+    "pooled_raw",
+    "within_length_debiased",
+    "within_length_dual_answer_debiased"
+  ],
+  "control_definition": {
+    "pooled_raw": "Ordinary linear CKA pooled over all original lengths; NEW length sensitivity, not the original primary analysis.",
+    "within_length_debiased": "Per-n U-centered linear Gram CKA; equal min count per length, original512 so no anchors removed; equal1/21 aggregate.",
+    "within_length_dual_answer_debiased": "Within each n use shared intercept+onehot(A(x))+onehot(B(Tx)) design for both feature matrices; deduplicate identical answer arrays, SVD handles dependent columns; same-sample residuals then U-centered CKA."
+  },
+  "controls_attribution_bridge": "Per-length ordinary CKA saved separately to distinguish length separation from bias correction; not an outcome-selected fourth primary version.",
+  "numerical": {
+    "dtype": "float64",
+    "comparison_tolerance": 1e-08,
+    "ordinary_denominator_floor": 1e-20,
+    "residual_energy_relative_floor": 1e-24,
+    "residual_energy_absolute_floor": 1e-20,
+    "OLS_rank": "eps(float64)*max(N,p)*largest_singular_value"
+  },
+  "alternative_exact_transforms": {
+    "descent_inverse": [],
+    "peak_complement": [],
+    "fixed_complement": [],
+    "exceedance_inverse": [],
+    "subsequence_complement": [],
+    "run_complement": [],
+    "record_complement": [],
+    "decomposition_complement": []
+  },
+  "transform_advantage": "S(designated T)-max(S(other eligible T)), including identity; not original Bt or original training Delta; undefined required controls propagate.",
+  "initialization": "All five units have saved genuine step0. No seed-based reconstructed initialization will be substituted.",
+  "known_initial_identity_reference": "Within architecture+encoding+unit, pre-task identity states are identical across savedinitial specialists. Their raw and shared-design residual identity CKA is1 when defined. Thus the new strongest-alternative contrast can start negative; its increase alone is not evidence that correct-transform CKA increased.",
+  "simplicity": {
+    "one_line/complement": "simple",
+    "canonical_cycle/inverse": "simple",
+    "one_line/inverse": "scrambling",
+    "canonical_cycle/complement": "scrambling",
+    "one_line/identity": "identity",
+    "canonical_cycle/identity": "identity"
+  },
+  "bootstrap_seed": 20261109,
+  "bootstrap_replicates": 10000,
+  "bootstrap_confidence": 0.95,
+  "statistical_unit": "8 prespecified disjoint task pairs; retain all architecture/encoding/unit entries within resampled pair; new4 separate from all5. Conditional catalog sensitivity, not a proof of population-level independence of related pairs.",
+  "decision_policy": "No new practical-zero/equivalence bound. Report continuous effects, task-pair interval, seed ranges, original exact zero directions and deletions. CI crossingzero is not evidence of no learning. Residual linear answer control does not remove nonlinear answer/confidence information.",
+  "learning_phases": [
+    "trained"
+  ],
+  "learning_splits": [
+    "test"
+  ],
+  "numeric_classes": 31,
+  "baseline_smoothing_alpha": 0.5,
+  "learning_prior_alpha": 0.5,
+  "learning_policy": "Train-only per-length frequency prior withfixed.5smoothing over31validanswerIDs. Full188vocabulary NLL from read-only forward when needed; conditional31 NLL separately. Spearman uses conditionalnumericexpectation; no posthoc nearbaseline cutoff.",
+  "allowed_operations": "Existing inputs/weights/activations and necessary forward/linear-algebra analysis only. No optimizer, backward, probe fit, new model, new unit, task budget or publication.",
+  "scientific_protocol_changed": false,
+  "prior_results_seen": true,
+  "exploratory": true,
+  "original_primary_definition": "Per-length final_norm ordinary CKA with joint-answer strata>=3; NOT pooled. Original A uses one fixed wrong input. These are reproduced before new versions.",
+  "code_parent_git_head": "4e3558ac13a635d780d1801978986fd195555177"
+}
