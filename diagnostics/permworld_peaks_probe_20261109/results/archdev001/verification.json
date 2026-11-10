@@ -1,0 +1,107 @@
+{
+  "cka_checks": [
+    {
+      "encoding": "canonical_cycle",
+      "phase": "initial",
+      "role": "identity",
+      "actual": 1.0,
+      "released": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "initial",
+      "role": "correct",
+      "actual": 0.01450756109335656,
+      "released": 0.014507561093356566,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "initial",
+      "role": "wrong",
+      "actual": 0.8146488812152194,
+      "released": 0.8146488812152196,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "trained",
+      "role": "identity",
+      "actual": 0.5218939064507605,
+      "released": 0.5218939064507604,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "trained",
+      "role": "correct",
+      "actual": 0.6627266606393869,
+      "released": 0.6627266606393868,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "trained",
+      "role": "wrong",
+      "actual": 0.008688905091923245,
+      "released": 0.008688905091923244,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "encoding": "one_line",
+      "phase": "initial",
+      "role": "identity",
+      "actual": 1.0,
+      "released": 0.9999999999999997,
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "encoding": "one_line",
+      "phase": "initial",
+      "role": "correct",
+      "actual": 0.6948068855923532,
+      "released": 0.6948068855923529,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "encoding": "one_line",
+      "phase": "initial",
+      "role": "wrong",
+      "actual": 0.07626539191139062,
+      "released": 0.07626539191139063,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "encoding": "one_line",
+      "phase": "trained",
+      "role": "identity",
+      "actual": 0.47042781406488016,
+      "released": 0.47042781406488005,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "encoding": "one_line",
+      "phase": "trained",
+      "role": "correct",
+      "actual": 0.9806350402966838,
+      "released": 0.9806350402966838,
+      "absolute_error": 0.0
+    },
+    {
+      "encoding": "one_line",
+      "phase": "trained",
+      "role": "wrong",
+      "actual": 0.0074294864957011614,
+      "released": 0.0074294864957011614,
+      "absolute_error": 0.0
+    }
+  ],
+  "cka_max_absolute_error": 3.3306690738754696e-16,
+  "exact_oracle_lengths": 21,
+  "peak_label_column": 13,
+  "valley_label_column": 15,
+  "auc_independent_checks": 128,
+  "count_accuracy_and_length_baseline_checks": 4,
+  "status": "passed"
+}

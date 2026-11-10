@@ -1,0 +1,19 @@
+{
+  "protocol_sha256": "36906062ca7133721eaa0aca85ccdf3c72a0abaadef27173138f097508d8873f",
+  "source_sha256": {
+    "experiments/permworld_peaks_probe_20261109/run.py": "f4ff449ba1d980bd497831e158a9c8cf0b348146d534920339efa0fe187af39a",
+    "experiments/permworld_peaks_probe_20261109/__init__.py": "714050c4d341f042876fa3b6c83c2ac6ddfa520bbc5efd1a815dfbebf997eeaf",
+    "experiments/permworld_peaks_probe_20261109/vendor/encoding_core.py": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+    "experiments/permworld_peaks_probe_20261109/vendor/passage.py": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+    "experiments/permworld_peaks_probe_20261109/vendor/import_repetition.py": "c1d42702ed1e84cfca5a2a6ddbcdf9d577df4e98c9419204c998996eefea73c6",
+    "experiments/permworld_peaks_probe_20261109/vendor/archdev_common.py": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+    "experiments/permworld_peaks_probe_20261109/vendor/verify.py": "3791913cb3d61c1fdf474773665f5257d52cb4f2ad22b2127649d625fee89dbf",
+    "experiments/permworld_peaks_probe_20261109/vendor/analyze.py": "f6092e467473d2a3d98a7f3be15b8087d53571706e4aee059d2002e65c23432c",
+    "experiments/permworld_peaks_probe_20261109/vendor/infer.py": "67ed2bf513117239636557e1753494f61da283e95bce92946aae06ad09a95545",
+    "experiments/permworld_peaks_probe_20261109/vendor/restore.py": "df407d69b5ee908cf670ba788674f99877ade777e8bd5149f35d4f05ceb88f78",
+    "diagnostics/permworld_peaks_probe_20261109/cache_audit.json": "ea4daddb0381fada9f00f8e31fb13f9ca609e2d0a57cb8a92b5762d2d092378e",
+    "diagnostics/permworld_peaks_probe_20261109/math_split_audit.json": "5a25367cd80757fedc6e061c15aa36c45ff3191531d6146512c7d6ea37ac9010",
+    "diagnostics/permworld_peaks_probe_20261109/imported_archive_manifest.json": "1a9594a278b9a7976676d2c6a6b6f25d51dd557fac229cae934ba1f62ae65aad"
+  },
+  "before_actual_probe_fits": true
+}

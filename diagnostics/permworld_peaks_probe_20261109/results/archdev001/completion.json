@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "unit": "archdev001",
+  "protocol_sha256": "36906062ca7133721eaa0aca85ccdf3c72a0abaadef27173138f097508d8873f",
+  "elapsed_seconds": 21.215673087979667,
+  "result_sha256": {
+    "summary.csv": "1a99e7e8f768ec720551d7d5b798f7353134d86fbf13c1d69a80af49d1c353ce",
+    "coverage.csv": "7d0440f0428f5ea795ed12616bd29195c686a9d189acf6d655075c649b9573a9",
+    "learning_by_length.csv": "77d5d1a0c48dfea2b6a4f1fa13838da792057b236f9b9c9a12d2e6ff7879cd60",
+    "by_length_and_count.csv": "1fb7d2d53c3ca9849aaa0e914a28c03ae86832f1f1d4bdd1c3525d3fea228939",
+    "by_length.csv": "b3e770fb614e33e6860b070460f92de1a4535156909a2e06323c0a78e47cf168"
+  },
+  "imported_feature_sha256": {
+    "canonical_cycle-descents.npz": "8df1ae1a08c66bd069d26213f819627d83fe45b8407554807e8aa3c6882300c0",
+    "canonical_cycle-initial.npz": "85c9f24ceec9d0f7bc187c1310996b4e57eb520692758585ff7df5b3917b098d",
+    "canonical_cycle-peaks.npz": "f09dceb225d48ccbe32692090b64d92d760cc74544cbf0e105751c5fdfe46ea5",
+    "canonical_cycle-recoils.npz": "edf0d52a8847723c32673f98efa6c1eb4dec6cb8f893d9623ec769385a2265df",
+    "canonical_cycle-valleys.npz": "4b65c207e02b7570df0961e7ea0f38b0cb4109c18e44fce5e707d3b0f6c7b100",
+    "one_line-descents.npz": "bfcb45dcca87411f23edfc15890fc1b9d34c217643ae9ec604c5c4b216e43e4b",
+    "one_line-initial.npz": "9bc2c3902b4f327883c9708127d9d2c2cf65224d99a3fb47ecf8cf3c007c9469",
+    "one_line-peaks.npz": "d3f216487c063bdda3af178cbc7525ebb1c6afb7885b7209d488ceda0841b339",
+    "one_line-recoils.npz": "0a2aa7b08ea9b744736704c4d81989da05a8a4f1f90a7abded965e2e4cfc3d8a",
+    "one_line-valleys.npz": "7a742747ddb1ebf257e32a4ee2d71a2c9008ef9d5e6ec935fbd9c4eae01c18de"
+  },
+  "fitted_only_linear_ridge_probes": true,
+  "no_neural_forward": true,
+  "no_base_training": true
+}

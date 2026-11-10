@@ -1,0 +1,76 @@
+{
+  "source_sha256": "1dbff776e0041b3ac7dbef4b80bf101a0db7b22cde3b48e6a15b9571f00f1202",
+  "definition": "Within each length, trained C > trained I AND trained C > trained inverse AND trained C > separately fitted initial C. Strict original comparisons; no new threshold or inferential test.",
+  "results": [
+    {
+      "unit": "archdev001",
+      "encoding": "canonical_cycle",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 15,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "archdev001",
+      "encoding": "one_line",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 10,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "unit02",
+      "encoding": "canonical_cycle",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 12,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "unit02",
+      "encoding": "one_line",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 7,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "unit03",
+      "encoding": "canonical_cycle",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 9,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "unit03",
+      "encoding": "one_line",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 5,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "unit04",
+      "encoding": "canonical_cycle",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 10,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "unit04",
+      "encoding": "one_line",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 9,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "unit05",
+      "encoding": "canonical_cycle",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 12,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    },
+    {
+      "unit": "unit05",
+      "encoding": "one_line",
+      "registered_lengths": 21,
+      "C_above_both_alternatives_and_initial_lengths": 12,
+      "scope": "Descriptive intersection of already-prespecified per-length comparisons; not independent replications"
+    }
+  ]
+}

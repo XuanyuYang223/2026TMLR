@@ -1,0 +1,104 @@
+{
+  "version": "supplied-peaks-valleys-cache-repetition/v1",
+  "created_utc": "2026-11-10T07:36:06.078495+00:00",
+  "output": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe",
+  "units": [
+    {
+      "unit": "archdev001",
+      "data_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "historical": true
+    },
+    {
+      "unit": "unit02",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/data.npz",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "historical": false
+    },
+    {
+      "unit": "unit03",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/data.npz",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "historical": false
+    },
+    {
+      "unit": "unit04",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/data.npz",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "historical": false
+    },
+    {
+      "unit": "unit05",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/data.npz",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "historical": false
+    }
+  ],
+  "encodings": [
+    "canonical_cycle",
+    "one_line"
+  ],
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "actions": [
+    "identity",
+    "complement",
+    "inverse"
+  ],
+  "alphas": [
+    1,
+    10,
+    100,
+    1000
+  ],
+  "supplied_archive_sha256": "abc932d855e8f32b808cc1b665693ab66ed7b1f4f8cdd8f3d46cc97f800befdd",
+  "representation": "Saved final_norm state at input end before task token; FP32 stored features",
+  "protocol": "Unchanged vendor analyze.py: one standardized multi-output ridge per length/phase/task, source-only validation tuning, original orbit exclusions and count-matched mask.",
+  "main_support": "Unit-specific common test mask where source peaks and all three transformed valley counts coincide; same anchors for both encodings/actions.",
+  "aggregation": "Every length required; equal1/21 mean of within-sample position AUROC. No pooling or silent NaN length omission.",
+  "main_contrasts": [
+    "C-I",
+    "C-inverse",
+    "C-max(I,inverse) after the fixed equal-length aggregate",
+    "trained C minus separately fitted step0 C"
+  ],
+  "secondary": "Per-length directions, all-anchor support, own-valley labels, within-model probes, other-specialist controls, oracle-count position prior, saved count accuracies.",
+  "historical_reproduction_tolerance": {
+    "AUROC_absolute": 0.0005,
+    "justification": "Fixed before fits; smaller than the reported historical cycle advantage by more than an order of magnitude, accommodates CPU-forward versus saved-cache and library roundoff.",
+    "coverage": "Exact fit/dev/test/matched counts and score inventory; original verify.py CKA tolerance retained2e-5."
+  },
+  "statistical_unit": "Four newer independent data/initialization/training bundles; report raw values/mean/sampleSD/range and directions. One task pair only;21lengths/anchors/conditions do not create independent task-pair replicates. No new significance or equivalence test.",
+  "initial_comparison": "Initial and trained phases refit separate probes. Same source probe within phase across target transforms; not a fixed-readout causal intervention across training.",
+  "scope": "Only cached-feature import, ridge-probe fits and scalar analysis. No neural forward, base-model training, additional units, encoding changes, probes on other relations, F17 edits or metric searches.",
+  "result_policy": "Keep all outcomes, zero/mixed effects and every technical failure; stop on historical reproducibility failure without changing scoring/tolerance.",
+  "user_authorized_upload_after_completion": true,
+  "exploratory": true,
+  "original_pilot_seen": true,
+  "git_head": "31792b84d42adaa9ec87bfe68834b33571f75b87"
+}

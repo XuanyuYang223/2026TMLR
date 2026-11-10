@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "unit": "unit05",
+  "protocol_sha256": "36906062ca7133721eaa0aca85ccdf3c72a0abaadef27173138f097508d8873f",
+  "elapsed_seconds": 17.559248243982438,
+  "result_sha256": {
+    "summary.csv": "14c44e7cd684aab444132e20d692b77519124728afbb75e9a7f62be31603a3e3",
+    "coverage.csv": "11615fb5e4f4084f367810c17bc47a082338ba0f2912dfa8c89d20e5b6cfd0c4",
+    "learning_by_length.csv": "d7b0121080f4a555d3714d60054399489945cb1d93ecfe52d21c92633d849bd3",
+    "by_length_and_count.csv": "423873d1cebb238814575171e8596ab0adebf0f25187d1659202ae100e6ee959",
+    "by_length.csv": "068a10b906e53e01848e8173544a4295aea409b89e02cf9fc4a7845acd8fd22b"
+  },
+  "imported_feature_sha256": {
+    "canonical_cycle-descents.npz": "96b159ddd48886aa17a178f5cd03aead5919cd5e1c02a6d99c7e35f403108a81",
+    "canonical_cycle-initial.npz": "52d33722538c56689d955c54e64c1e19a5dfe84bdcf7c5e245320d18a04287f6",
+    "canonical_cycle-peaks.npz": "1a4f72f921b09e79fd8ebf4eedb32e4be8f086392b1e08cf73524f2887007000",
+    "canonical_cycle-recoils.npz": "0012cafeb5170a8e1fcd0c21e689b51466e791aaa94d1337998da8f3b9ad7511",
+    "canonical_cycle-valleys.npz": "4f5902c6c92ec4746f752de8ce14765888744d87d2992a25150d12296ad98c23",
+    "one_line-descents.npz": "7a9e98416a0c7e19dadf5ff2f76dce0c9a3fa517b84b5c92a0e6598c5f28e357",
+    "one_line-initial.npz": "f30299008e82e22a37059d30f64af728f0538baebaf8f6577dea8c73a3d0f859",
+    "one_line-peaks.npz": "2113ad4e8f38666fd968837d516ffdfb2ed644fb67f3f4652a01d1c99877d42b",
+    "one_line-recoils.npz": "efdabb57120230ddf8c951660acea396efcf7497fa64d606827d6acc3ea9c32b",
+    "one_line-valleys.npz": "d5de593e5b8cb07ae91ff63b7f552b7ca850cf7b6db273c9aaad9f3caa5db55e"
+  },
+  "fitted_only_linear_ridge_probes": true,
+  "no_neural_forward": true,
+  "no_base_training": true
+}

@@ -1,0 +1,78 @@
+{
+  "archive_path": "/mnt/c/Users/yangx/Downloads/PermWorld_Peaks_Valleys_Probe.zip",
+  "archive_sha256": "abc932d855e8f32b808cc1b665693ab66ed7b1f4f8cdd8f3d46cc97f800befdd",
+  "files": {
+    "permworld_peaks_probe/README.md": {
+      "sha256": "da80730b502c93d47d62fd0521beb20b910e79ae5f8309b37e477c20435564b3",
+      "size_bytes": 6606
+    },
+    "permworld_peaks_probe/code/analyze.py": {
+      "sha256": "f6092e467473d2a3d98a7f3be15b8087d53571706e4aee059d2002e65c23432c",
+      "size_bytes": 10855
+    },
+    "permworld_peaks_probe/code/archdev_common.py": {
+      "sha256": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+      "size_bytes": 11183
+    },
+    "permworld_peaks_probe/code/encoding_core.py": {
+      "sha256": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+      "size_bytes": 6004
+    },
+    "permworld_peaks_probe/code/import_repetition.py": {
+      "sha256": "c1d42702ed1e84cfca5a2a6ddbcdf9d577df4e98c9419204c998996eefea73c6",
+      "size_bytes": 3456
+    },
+    "permworld_peaks_probe/code/infer.py": {
+      "sha256": "67ed2bf513117239636557e1753494f61da283e95bce92946aae06ad09a95545",
+      "size_bytes": 5641
+    },
+    "permworld_peaks_probe/code/passage.py": {
+      "sha256": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+      "size_bytes": 24650
+    },
+    "permworld_peaks_probe/code/restore.py": {
+      "sha256": "df407d69b5ee908cf670ba788674f99877ade777e8bd5149f35d4f05ceb88f78",
+      "size_bytes": 2148
+    },
+    "permworld_peaks_probe/code/verify.py": {
+      "sha256": "3791913cb3d61c1fdf474773665f5257d52cb4f2ad22b2127649d625fee89dbf",
+      "size_bytes": 4706
+    },
+    "permworld_peaks_probe/results/by_length.csv": {
+      "sha256": "8b738a93e4e054367419466b24501abee90d99253876ca5c2dbd63ce53b2cab7",
+      "size_bytes": 217903
+    },
+    "permworld_peaks_probe/results/by_length_and_count.csv": {
+      "sha256": "970c07b1040bc21ce9333c3f3781cb11a88070d2658e30995f2953ba2a662348",
+      "size_bytes": 1121002
+    },
+    "permworld_peaks_probe/results/coverage.csv": {
+      "sha256": "7d0440f0428f5ea795ed12616bd29195c686a9d189acf6d655075c649b9573a9",
+      "size_bytes": 755
+    },
+    "permworld_peaks_probe/results/learning_by_length.csv": {
+      "sha256": "77d5d1a0c48dfea2b6a4f1fa13838da792057b236f9b9c9a12d2e6ff7879cd60",
+      "size_bytes": 4904
+    },
+    "permworld_peaks_probe/results/probe_auroc.png": {
+      "sha256": "c2583625674b5f8f06c179c0a68ddd9c819bbf9a62b2e2982f711f7f7a2c4651",
+      "size_bytes": 68067
+    },
+    "permworld_peaks_probe/results/released_cka_reference.csv": {
+      "sha256": "23afa052be98c5a6175fbd5504c145160b477147c521ea3aa25460dbe06b5bc4",
+      "size_bytes": 79297
+    },
+    "permworld_peaks_probe/results/source_inventory.json": {
+      "sha256": "50a93128f5119bbe93137dd41f1c4c7ab25abfb87af3da6455bb471f9de5ea6a",
+      "size_bytes": 19980
+    },
+    "permworld_peaks_probe/results/summary.csv": {
+      "sha256": "e0cbb857cc45c5930d12b831521627fa74fbba31de80f2e821a269e7cf8fbba5",
+      "size_bytes": 10359
+    },
+    "permworld_peaks_probe/results/verification.json": {
+      "sha256": "8e702621b6228c62cda32832e7797d10f018520dc13a0d81fc182556ff3ac092",
+      "size_bytes": 2821
+    }
+  }
+}

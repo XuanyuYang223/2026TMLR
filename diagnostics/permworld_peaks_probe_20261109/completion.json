@@ -1,0 +1,31 @@
+{
+  "status": "completed_and_stopped",
+  "historical_cache_reproduction": true,
+  "new_probe_units": 4,
+  "total_units": 5,
+  "base_models_used": 40,
+  "genuine_step0_used": 5,
+  "all_required_lengths": 21,
+  "encodings": [
+    "canonical_cycle",
+    "one_line"
+  ],
+  "new_neural_forward_passes": 0,
+  "new_base_model_updates": 0,
+  "fitted_only_linear_ridge_probes": true,
+  "all_source_checkpoints_unchanged_in_named_audit": true,
+  "missing_required_artifacts": 0,
+  "summary_rows": 520,
+  "per_length_rows": 10920,
+  "matched_new_unit_samples": [
+    1707,
+    1675,
+    1753,
+    1755
+  ],
+  "historical_reproduction_max_AUROC_error": 4.011423422256577e-05,
+  "scientific_results_exploratory": true,
+  "publication_authorized_after_analysis": true,
+  "delivery_manifest_SHA256": "17f1e5535851f0fa27c886bf1e73f17f95ad2ae0e4645497ad6b9be89f6a01a6",
+  "no_automatic_next_experiment": true
+}

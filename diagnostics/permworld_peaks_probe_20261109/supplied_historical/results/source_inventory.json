@@ -1,0 +1,321 @@
+{
+  "initial.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+    "sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+    "bytes": 6669565,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "initial_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: initial_weights,protected_old",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b"
+  },
+  "canonical_cycle-descents.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/checkpoint.pt",
+    "sha256": "49ea820e97d4687532aeb9cf83822bf96f6a7f74f73f98e0c9cc871b1cc568c1",
+    "bytes": 19964057,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/checkpoint.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "trained_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/checkpoint.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,reused_weights",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/49ea820e97d4687532aeb9cf83822bf96f6a7f74f73f98e0c9cc871b1cc568c1",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_descents/checkpoint.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b"
+  },
+  "canonical_cycle-peaks.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/checkpoint.pt",
+    "sha256": "b38089da362e705d1b5d1b0d19edeafb07bd0456057b16efb32ae2902c70bc1b",
+    "bytes": 19963993,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/checkpoint.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "trained_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/checkpoint.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,reused_weights",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/b38089da362e705d1b5d1b0d19edeafb07bd0456057b16efb32ae2902c70bc1b",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_peaks/checkpoint.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa"
+  },
+  "canonical_cycle-recoils.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/checkpoint.pt",
+    "sha256": "d022dcea8aa17717c0968863ef0dd485caa5a0e12948062bfa137b00cdfedb34",
+    "bytes": 19964057,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/checkpoint.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "trained_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/checkpoint.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,reused_weights",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/d022dcea8aa17717c0968863ef0dd485caa5a0e12948062bfa137b00cdfedb34",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_recoils/checkpoint.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa"
+  },
+  "canonical_cycle-valleys.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/checkpoint.pt",
+    "sha256": "e9d15f72b6b3f596a28848244b031b56affcc0e7579f9328c5e9e6cde4db424b",
+    "bytes": 19964057,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/checkpoint.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "trained_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/checkpoint.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,reused_weights",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/e9d15f72b6b3f596a28848244b031b56affcc0e7579f9328c5e9e6cde4db424b",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_canonical_cycle_valleys/checkpoint.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-002-8aee2c4a1c8260aa"
+  },
+  "one_line-descents.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/checkpoint.pt",
+    "sha256": "6056d63f790cc1b63961c2147f6fe231587b99e18e710407448e97fad9b1c2ef",
+    "bytes": 19964057,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/checkpoint.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "trained_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/checkpoint.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,reused_weights",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/6056d63f790cc1b63961c2147f6fe231587b99e18e710407448e97fad9b1c2ef",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_descents/checkpoint.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b"
+  },
+  "one_line-peaks.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+    "sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+    "bytes": 19963993,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "trained_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,reused_weights",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b"
+  },
+  "one_line-recoils.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/checkpoint.pt",
+    "sha256": "5737d8ee863a01d681f0800b88704a6b66df21009636659346816f47822904f3",
+    "bytes": 19964057,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/checkpoint.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "trained_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/checkpoint.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,reused_weights",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/5737d8ee863a01d681f0800b88704a6b66df21009636659346816f47822904f3",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_recoils/checkpoint.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b"
+  },
+  "one_line-valleys.pt": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+    "sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+    "bytes": 19964057,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "trained_checkpoint"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+    "dependency_evidence": [
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_controlled_comparison/layers/index.json",
+      "Completed activation/cache index: /mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,reused_weights",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt"
+    ],
+    "package_id": "permworld-main-weights-2fba61fccc-001-e96ca48e1c966d2b"
+  },
+  "protocol.json": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/protocol.json",
+    "sha256": "2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+    "bytes": 29346,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/protocol.json",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "historical_multilayer",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "protocol_manifest_or_metadata"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/protocol.json",
+    "dependency_evidence": [
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: graph_source_dependency,protected_old,protocol",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json"
+    ],
+    "archive_member": "objects/2be2d2694eb6a7779cae658a6eec0d3f5ad23fa3db0bbfed702004f18d1384d9",
+    "logical_paths": [
+      "/home/yangx/ICML/diagnostics/permworld_layers_20261009/encoding_development/artifacts/protocol.json",
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/protocol.json"
+    ],
+    "package_id": "permworld-main-metadata-d3510dc542-001-05fa81597581180d"
+  },
+  "data.npz": {
+    "logical_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+    "sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+    "bytes": 7158873,
+    "restore_path": "logical/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+    "experiments": [
+      "controlled_comparison",
+      "encoding_development",
+      "fixed_transform_pairing",
+      "permworld_graph_direct_dependency",
+      "permworld_main"
+    ],
+    "roles": [
+      "fixed_input_or_training_data"
+    ],
+    "original_source_realpath": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+    "dependency_evidence": [
+      "Explicit current/support scientific artifact root; no unrelated root traversal",
+      "Final scientific provenance groups: protected_old,world_data",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_controlled_comparison_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/permworld_eight_relations_20261010/protocol.json",
+      "Frozen protocol explicit artifact reference: /home/yangx/ICML/diagnostics/representation_pairing_review_20261011/protocol.json"
+    ],
+    "archive_member": "objects/eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+    "logical_paths": [
+      "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz"
+    ],
+    "package_id": "permworld-main-data-2e4df4144a-001-29a454a3bc398500"
+  }
+}

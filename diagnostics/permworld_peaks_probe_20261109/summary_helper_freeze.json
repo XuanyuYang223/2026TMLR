@@ -1,0 +1,19 @@
+{
+  "summary_helper_path": "diagnostics/permworld_peaks_probe_20261109/summarize_probe.py",
+  "summary_helper_sha256": "82b2b9433cf9bbf8507e8a2b94b93af512c66ae8a3186bf445b9ba407374f300",
+  "registered_utc": "2026-11-10T07:41:55.477180+00:00",
+  "before_actual_probe_result_reads": true,
+  "scientific_procedure": "Only frozen scalar contrasts and unit descriptive summaries; no additional fit or inferential method.",
+  "synthetic_smoke": {
+    "status": "passed",
+    "units": 5,
+    "score_rows": 520,
+    "length_rows": 10920,
+    "unit_contrasts": 10,
+    "figures": 4,
+    "missing_length_rejection": true,
+    "nonfinite_rejection": true,
+    "sample_SD_matches_statistics": true,
+    "output": "/tmp/permworld_probe_summary_smoke_kq2q8qda"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "cka_checks": [
+    {
+      "encoding": "canonical_cycle",
+      "phase": "initial",
+      "role": "identity",
+      "actual": 1.0,
+      "released": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "initial",
+      "role": "correct",
+      "actual": 0.014507559038757868,
+      "released": 0.0145075610933565,
+      "absolute_error": 2.0545986318537546e-09
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "initial",
+      "role": "wrong",
+      "actual": 0.8146488718070256,
+      "released": 0.8146488812152196,
+      "absolute_error": 9.408194001636616e-09
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "trained",
+      "role": "identity",
+      "actual": 0.5218938964096884,
+      "released": 0.5218939064507604,
+      "absolute_error": 1.0041071973887483e-08
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "trained",
+      "role": "correct",
+      "actual": 0.6627266651280845,
+      "released": 0.6627266606393868,
+      "absolute_error": 4.488697746829473e-09
+    },
+    {
+      "encoding": "canonical_cycle",
+      "phase": "trained",
+      "role": "wrong",
+      "actual": 0.008688905124309722,
+      "released": 0.0086889050919232,
+      "absolute_error": 3.238652228343408e-11
+    },
+    {
+      "encoding": "one_line",
+      "phase": "initial",
+      "role": "identity",
+      "actual": 1.0,
+      "released": 0.9999999999999996,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "encoding": "one_line",
+      "phase": "initial",
+      "role": "correct",
+      "actual": 0.694806886989301,
+      "released": 0.6948068855923529,
+      "absolute_error": 1.3969481127418248e-09
+    },
+    {
+      "encoding": "one_line",
+      "phase": "initial",
+      "role": "wrong",
+      "actual": 0.07626538685169522,
+      "released": 0.0762653919113906,
+      "absolute_error": 5.0596953848902615e-09
+    },
+    {
+      "encoding": "one_line",
+      "phase": "trained",
+      "role": "identity",
+      "actual": 0.4704278114316443,
+      "released": 0.47042781406488,
+      "absolute_error": 2.6332356850566896e-09
+    },
+    {
+      "encoding": "one_line",
+      "phase": "trained",
+      "role": "correct",
+      "actual": 0.9806350393900864,
+      "released": 0.9806350402966838,
+      "absolute_error": 9.06597352745564e-10
+    },
+    {
+      "encoding": "one_line",
+      "phase": "trained",
+      "role": "wrong",
+      "actual": 0.0074294864791659265,
+      "released": 0.0074294864957011,
+      "absolute_error": 1.6535173404108594e-11
+    }
+  ],
+  "cka_max_absolute_error": 1.0041071973887483e-08,
+  "exact_oracle_lengths": 21,
+  "peak_label_column": 13,
+  "valley_label_column": 15,
+  "auc_independent_checks": 128,
+  "count_accuracy_and_length_baseline_checks": 4,
+  "status": "passed"
+}

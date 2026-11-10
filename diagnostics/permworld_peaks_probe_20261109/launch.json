@@ -1,0 +1,16 @@
+{
+  "pid": 979012,
+  "command": [
+    "/home/yangx/ICML/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.permworld_peaks_probe_20261109.run",
+    "all"
+  ],
+  "log": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/run.log",
+  "protocol_sha256": "36906062ca7133721eaa0aca85ccdf3c72a0abaadef27173138f097508d8873f",
+  "base_model_training": false,
+  "neural_forward": false,
+  "only_linear_probes": true,
+  "stop_after_registered_units": true
+}

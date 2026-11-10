@@ -1,0 +1,11 @@
+unit,encoding,support,label,length_count,complement_above_identity_lengths,complement_above_inverse_lengths,complement_above_both_lengths,trained_above_initial_complement_lengths,mean_lengthwise_C_minus_best,aggregate_C_minus_best
+archdev001,canonical_cycle,matched,peak,21,19,16,15,19,0.022802245454975244,0.025289830370198496
+archdev001,one_line,matched,peak,21,13,17,12,14,0.002133117348797046,0.0072043472409426546
+unit02,canonical_cycle,matched,peak,21,17,13,13,17,-0.0018364588994959471,0.007127806786721869
+unit02,one_line,matched,peak,21,12,14,10,16,0.0018789895978865527,0.006867526972966109
+unit03,canonical_cycle,matched,peak,21,15,12,11,12,-0.008746926477854803,0.0007507171298406501
+unit03,one_line,matched,peak,21,9,5,5,20,-0.0077552299273081285,-0.0026927111601144915
+unit04,canonical_cycle,matched,peak,21,17,14,12,16,0.01335315387254534,0.01710437926300834
+unit04,one_line,matched,peak,21,12,13,10,15,-0.0013821467334070568,0.003253124851153033
+unit05,canonical_cycle,matched,peak,21,16,15,15,15,0.013883018343331817,0.017156866003747218
+unit05,one_line,matched,peak,21,17,15,13,18,0.004703051812617149,0.007720288148507226
