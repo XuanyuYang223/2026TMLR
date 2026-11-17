@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "fixed_cases": 120,
+  "directional_checks": 240,
+  "maximum_primary_fp32_vs_shadow_fp64_error": 3.8759996951603926e-08,
+  "maximum_independent_arithmetic_error": 1.1102230246251565e-16,
+  "failures": [],
+  "units": [
+    {
+      "unit": "archdev001",
+      "selected_cases": 24,
+      "directional_checks": 48,
+      "gradient_receipt_sha256": "6f9b3ef1f50ecd7c997b3ff4700934fb092e0f643779522fd3484a1a9080c475"
+    },
+    {
+      "unit": "unit02",
+      "selected_cases": 24,
+      "directional_checks": 48,
+      "gradient_receipt_sha256": "b39aa8858dec882f4eb2aac53adf1ab5046b6f90a99f36caf88484204f4ab597"
+    },
+    {
+      "unit": "unit03",
+      "selected_cases": 24,
+      "directional_checks": 48,
+      "gradient_receipt_sha256": "ce9f41b46d13c2d350d9e2fc82c50980acf379a5aff9ba7cac008f65f294c01a"
+    },
+    {
+      "unit": "unit04",
+      "selected_cases": 24,
+      "directional_checks": 48,
+      "gradient_receipt_sha256": "d1b55f37a9c9a1fc04654c11d3f98b9c4583b33c6d29ba35c14b9e20a39eaa12"
+    },
+    {
+      "unit": "unit05",
+      "selected_cases": 24,
+      "directional_checks": 48,
+      "gradient_receipt_sha256": "55dd31b41090908bad80133b49240989298c084d9b3baa166f3642fd47c22034"
+    }
+  ],
+  "source_sha256": "67528bb0f5f9d82cb52bcb23a133e8b09293a3658efa6b65241a3628bdf68fec",
+  "spec_sha256": "28a79b7686d43f3893aaaa529c58ae3ab9deaf37752283659a467a05e4c380cf",
+  "no_new_forwards": true,
+  "no_model_construction": true,
+  "no_fits": true,
+  "scope": "Same pre-fixed FD subset only. FP64 validates the nominal smooth graph; primary FP32 autograd is not a derivative of floating-point rounding.",
+  "precision_limitation": "Actual endpoint delta_m is from original cached FP32 early logits, while g uses CuDNN-off execution. Their allowed logit guard (1e-4) may exceed tiny delta_m. The linear_prediction_error field is arithmetic, not evidence of curvature or failure of local linearity."
+}

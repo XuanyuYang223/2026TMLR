@@ -1,0 +1,14 @@
+{
+  "python": "3.13.13",
+  "packages": {
+    "numpy": "2.4.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.11.0+cu128",
+    "pytest": "9.1.1"
+  },
+  "dependency_target": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/dependencies",
+  "no_dependencies_installed": true
+}

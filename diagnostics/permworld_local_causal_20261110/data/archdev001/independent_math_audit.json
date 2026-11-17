@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "families": 9279,
+  "directed_records": 65500,
+  "record_kinds": {
+    "simple": 18558,
+    "same_label": 32750,
+    "count_matched": 14192
+  },
+  "permutation_endpoint_checks": 196500,
+  "complement_valley_identity_checks": 196500,
+  "support_complement_groups": {
+    "dev": 18457,
+    "fit": 38035,
+    "test": 26087
+  },
+  "fit_AB_complement_groups": {
+    "B": 19447,
+    "A": 18588
+  },
+  "all_selected_disjoint_from_training": true,
+  "all_selected_pools_disjoint": true,
+  "method": "Direct extrema comparisons on all selected raw endpoints, independent of production oracle; own canonical complement keys for leakage."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "stage": "all",
+  "units": [
+    "archdev001",
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "no_base_training": true,
+  "stopped_after_within_model_stage": true
+}

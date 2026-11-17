@@ -1,0 +1,86 @@
+{
+  "version": "PV-trained-source-specificity/v1",
+  "created_utc": "2026-11-10T16:31:52.909982+00:00",
+  "exploratory": true,
+  "prior_results_seen": true,
+  "new_control_test_scores_seen": false,
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_reference": "archdev001",
+  "architecture": "gru",
+  "encoding": "one_line",
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "source": "Frozen trained peaks identity prefix_final; exact saved per-length trained peaks Ridge probe/scaler from prior E/D PV-score exporter. No probe fitting or selection.",
+  "targets": [
+    "trained_valleys",
+    "actual_saved_step0",
+    "trained_fixed_points"
+  ],
+  "pairing": "All target representations at complement(pi), source at pi; same original validation fit anchors and test IDs. Step0 means target only; trained-source probe remains unchanged.",
+  "map": "One raw-coordinate global 256x256 O(256) target-to-source map per target/unit. Per-length fit-only means; sum of centered target.T@source / fit_count across21lengths; same original scipy.linalg.svd(left@right) with2e-12 orthogonality tolerance. No new methods/hyperparameters.",
+  "reuse": "Trained-valleys rotation/means and per-sample scores/probe/scaler reused exact. Old phase=initial used an INITIAL SOURCE probe and cannot serve this control; fit only missing step0target\u2192trainedsource and trainedfixedpoints\u2192trainedsource maps.",
+  "fit_budget": "Exact original per-length fit_indices serialized with source probe (typically~80% of256 validationanchors after orbit exclusions); original tuninganchors unused for map; no extra samples. Same target/source fitrows acrossall3routes.",
+  "supports": {
+    "full_test": "Original eligible heldout testmask: exclude training-orbit overlap;512raw anchors/length before original exclusion. Primary.",
+    "count_matched": "Original PV matched mask, unchanged, sensitivity only."
+  },
+  "auc": "Per-example interior-position AUROC with average ties; all-negative/all-positive undefined retained asNaN and finite/undefined counts. No threshold.",
+  "aggregation": "Finite per-example AUROC mean within eachlength; fixed1/21 sum acrossall21lengths; undefined length => unit metricNaN, no weight redistribution. Unit differences paired; fourformal units mean/sampleSD/minmax/rawvalues; historicalseparate.",
+  "contrasts": [
+    "trained_valleys-minus-actual_saved_step0",
+    "trained_valleys-minus-trained_fixed_points"
+  ],
+  "common_mapping_controls": [
+    "means_only",
+    "fit_identity__test_complement",
+    "fit_inverse__test_complement",
+    "fit_shuffle_1026__test_complement",
+    "fit_shuffle_1027__test_complement",
+    "fit_shuffle_1028__test_complement",
+    "fit_shuffle_1029__test_complement",
+    "fit_shuffle_1030__test_complement",
+    "fit_shuffle_1031__test_complement",
+    "fit_shuffle_1032__test_complement",
+    "fit_shuffle_1033__test_complement"
+  ],
+  "control_max": "For comparison only: each control fixedlengthmean first, then maximum of11controls. No lengthwise maximum.",
+  "judgment": "Task-related extra transferable readout only if trained valleys stably exceeds both model controls with material reported effect sizes; tiny positive signs alone are not clear advantage. Otherwise retain mapping-specific result with training specificity unestablished. Neither result proves shared computation/causal use.",
+  "no_new_base_training": true,
+  "no_neural_forward": true,
+  "no_probe_fits": true,
+  "no_search": true,
+  "old_source_hashes": {
+    "/home/yangx/ICML/experiments/permworld_orthogonal_alignment_20261110/vendor/alignment.py": "7c6a30f87e076aa358548c41b8cbdf5dc41c1512adcb9a1318e2e3eaae3db2ad",
+    "/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor/analyze.py": "f6092e467473d2a3d98a7f3be15b8087d53571706e4aee059d2002e65c23432c",
+    "/home/yangx/ICML/experiments/permworld_exceedance_alignment_20261110/rebuild_pv_scores.py": "091ba0e1486e64b65bf8f15afbb6bba3d92eeeb5e5711aaa6bcb5fdc83993487",
+    "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/protocol.json": "501a999ec466420a47a6a4a5aed7740c0b39bf5bf6af875cd8d33d1ab55da5c6",
+    "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/cache_audit.json": "dcfe1f33832b49bbe8d6bca961a00ed1966b7270a7adb3056cec892a6efb4654",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/cache_audit.json": "fa5aab8021a93f716ada7d68ce6b5719d69d84c3dbf6af8e6a5227d87d07d1e5"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "passed_read_only_formal_schema_review",
+  "completed_utc": "2026-11-10T13:57:08.550733+00:00",
+  "new_test_outcome_access": false,
+  "no_model_forward": true,
+  "no_probe_fit": true,
+  "no_source_modification": true,
+  "helper_sha256": "77b4666460e1bdd2b736d4e14bea8b60ccede957f75c5f3917e658caaf9e6c9e",
+  "reviewed_sources": {
+    "experiments/permworld_local_causal_20261110/formal.py": "cb3559b912fd4ebb90a578015ea2053c8bfb156a7b5f8f3a418a476542886fc0",
+    "experiments/permworld_local_causal_20261110/shared.py": "ba33251423c6bc15a20b943e1ef10278efd4fee3d44ad808f902e4f02e40dc14",
+    "experiments/permworld_local_causal_20261110/features.py": "5b4490adb346f3f4f132a5469a372177fbc6d42d4daac478cd0ae60ad0ed0897",
+    "experiments/permworld_local_causal_20261110/probes.py": "d0d66c8957eb6e340a25de94f68241f2a6ff1d9e1faef7c1f5a441998b7621d8",
+    "experiments/permworld_local_causal_20261110/recurrent.py": "6092c23221f858ddc423685552d1b954cf729a5d3f89d0956fad691ab53c6ff7",
+    "experiments/permworld_local_causal_20261110/calibrate.py": "b484c14a7bab91bac742b9963b6429cd1e7d5525a2c23dfed8411a36392d1c8d",
+    "experiments/permworld_local_causal_20261110/run.py": "122c659498c8706d53f8ef397517c89ccd5a4c493ac759fe48568cc51c595752"
+  },
+  "blocking_issues": [],
+  "synthetic_output_metrics": {
+    "full_argmax_count": [
+      7,
+      -1,
+      30
+    ],
+    "full_argmax_token": [
+      7,
+      90,
+      30
+    ],
+    "expectation": [
+      7.000000511166064,
+      15.0,
+      30.0
+    ],
+    "numeric_mass": [
+      0.9999996763990027,
+      6.389573766789509e-08,
+      1.0
+    ]
+  },
+  "findings": [
+    "Actual recurrent states, one-layer after-right-value edit and correct absolute suffix position",
+    "FIT_A/FIT_B nodes restricted to count-matched natural states and component split by catalog",
+    "Frozen new float64 raw-state StandardScaler/Ridge alpha10 unscales to an exact linear projection",
+    "Helper CSV contract, thirteen conditions, unavailable marker and independent-checker fields agree",
+    "Local-only desired count recipient+sign retained even when matched donor full count unchanged",
+    "Full-state swap continues recipient suffix and independently checks native donor logits at1e-4",
+    "Baseline is unedited continuation, while native/no-op mismatch counts and tolerances are separately recorded",
+    "Random planned norms agree exactly; actual FP32 carried-state norms use prespecified1e-5 absolute/relative tolerance",
+    "Output score explicitly separates nonnumeric full-argmax outcomes from conditional numeric expectation and numeric mass"
+  ],
+  "nonblocking_notes": [
+    "Development engineering protocol breaks equal crossing scores by minimum signed checker shift, then higher layer. The chosen layer1 has a unique crossing maximum.",
+    "After-step one-layer edits leave other layers current states intact. A null count effect cannot establish that earlier local computations were unnecessary.",
+    "Quartet incoming-token ranks covary with the local label; even a positive causal effect need not isolate an abstract predicate mechanism."
+  ]
+}

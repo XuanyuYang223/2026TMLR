@@ -1,0 +1,21 @@
+{
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:00:33) [GCC 14.3.0]",
+  "executable": "/home/yangx/ICML/.venv/bin/python",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "package_versions": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1"
+  },
+  "production_dtype": "FP32 gradient graph and unchanged cached FP32 endpoints; FP64 scalar arithmetic",
+  "finite_difference_dtype": "FP64 shadow of exact saved weights, derivative-wiring validation only",
+  "numeric_flags": "Threads2, TF32off, all model modules eval; CuDNNoff only for differentiable replay/backward",
+  "dependencies_installed": false,
+  "external_pythonpath": [
+    "/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor",
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/dependencies"
+  ]
+}

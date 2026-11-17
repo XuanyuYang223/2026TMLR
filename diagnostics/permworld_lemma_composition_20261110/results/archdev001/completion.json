@@ -1,0 +1,51 @@
+{
+  "status": "completed",
+  "unit": "archdev001",
+  "protocol_sha256": "ae15cb791d7095b835a2f907301f1824254529e1566c7004b573b36baebb94b1",
+  "elapsed_seconds": 13.91418020700803,
+  "predictions": {
+    "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/predictions.npz",
+    "sha256": "def79ac167f8304cc2f6f5ea70a0746dc594365d475bdaafb481a06f259a174c",
+    "size_bytes": 6809640
+  },
+  "artifacts": {
+    "frozen_readouts": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/frozen_readouts.npz",
+      "sha256": "b4107761ba8e928654ac2000dfaf9d2a646ea8eb4a4e56eda2a88e5088756f8b",
+      "size_bytes": 3265923
+    },
+    "mask_shuffle_permutations": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/mask_shuffle_permutations.npz",
+      "sha256": "bdd8d8a14abae280b72817a4a37f59383dea0b949fec61c72ad704121be9a3bf",
+      "size_bytes": 2570200
+    },
+    "predictions": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/predictions.npz",
+      "sha256": "def79ac167f8304cc2f6f5ea70a0746dc594365d475bdaafb481a06f259a174c",
+      "size_bytes": 6809640
+    },
+    "prediction_only": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/prediction_only.npz",
+      "sha256": "fc55f3d308c0463cd229d8d945335ba0351ec719835ba05f2781e7ab88ba7e6a",
+      "size_bytes": 6773120
+    },
+    "signals": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/signals.npz",
+      "sha256": "41a2eeb8ec4c219401bb5d6dc71f55ae98305240edece81ac6a5fb8d087fbd83",
+      "size_bytes": 26810518
+    },
+    "truth": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/truth.npz",
+      "sha256": "5f66e3cd7095b6cff9a5312dc0c4db4acab01fa715bb928351357bf56a162fc6",
+      "size_bytes": 229314
+    }
+  },
+  "matched_anchors": 1757,
+  "test_anchors": 10752,
+  "independent_oracle_checked_on_all_test_inputs": true,
+  "prediction_only_sha_before_truth": "fc55f3d308c0463cd229d8d945335ba0351ec719835ba05f2781e7ab88ba7e6a",
+  "no_neural_forward": true,
+  "no_base_training": true,
+  "no_new_alignment": true,
+  "no_downstream_labels_in_fitting_or_thresholding": true
+}

@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "unit": "unit03",
+  "historical_reference": false,
+  "spec_sha256": "52124e36ca4bdd8d0c1eb8b77e3f2ac5f9f1b0c772c736160cfc12907d67f9c8",
+  "source_plan_sha256": "aae8bca14d461929370e527b382dcd9faae1e5d3d2259446c99b57794af9838e",
+  "source_probe_and_scaler_sha256": "7861fade2dcb5868a89f81d7ac1d97841e3ef1e62d9d539c86e129d8c30f95c0",
+  "same_trained_probe_all_three_targets": true,
+  "no_probe_fits": true,
+  "no_neural_forward": true,
+  "no_base_training": true,
+  "new_maps_only": [
+    "actual_saved_step0",
+    "trained_fixed_points"
+  ],
+  "reused_trained_valleys_map": true,
+  "maximum_trained_route_score_error": 0.0,
+  "maximum_orthogonality_error": {
+    "trained_valleys": 1.5543122344752192e-15,
+    "actual_saved_step0": 1.5543122344752192e-15,
+    "trained_fixed_points": 1.5543122344752192e-15
+  },
+  "outputs": {
+    "/mnt/yangx-projects-f/20261110/permworld_closing_audit/alignment/unit03/maps_and_means.npz": "6f9ca8d289726f39c04bd0444fa7d39f92b7d89cadf2d4a6e58f3b4e97306198",
+    "/mnt/yangx-projects-f/20261110/permworld_closing_audit/alignment/unit03/test_scores.npz": "4da7d081cb2f5207812c85557ccd0f1d851f330b69505738f0cb1d3d2aa5ccdb",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/results/unit03/by_length.csv": "964bdcc1abe044b39c3c6bf2675fe8161af90618f24286ac28db888493da7bd7",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/results/unit03/per_sample.csv": "ac876da2c990feb11835ecf135361b5eaf09d2043fdbdc2934e793c5df34924d",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/results/unit03/fit_audit.csv": "c484d02094758b2e49550fa85de16f4a8e976996b7a53b4a83a52989216cd558"
+  },
+  "created_utc": "2026-11-10T16:37:12.111125+00:00"
+}

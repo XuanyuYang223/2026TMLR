@@ -1,0 +1,432 @@
+{
+  "files": {
+    "diagnostics/permworld_orthogonal_alignment_20261110/README.md": {
+      "sha256": "f85c44b0a5b38f1e6ec796a3d946c8e2c479f6874137f1d53f1138b8230ef8b4",
+      "size_bytes": 10898
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/adapter_verification.json": {
+      "sha256": "234bdda4a8ab2aed720bbd5b136ff3cc851198a7095a933c08dbbcfb98bfde21",
+      "size_bytes": 41064
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/adapter_verification.md": {
+      "sha256": "a4e3e05ed54016f4f75a237c514292ea81f7dc3e08d837c79a231d660e2163c2",
+      "size_bytes": 1227
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/cache_audit.json": {
+      "sha256": "dcfe1f33832b49bbe8d6bca961a00ed1966b7270a7adb3056cec892a6efb4654",
+      "size_bytes": 199796
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/cache_audit.md": {
+      "sha256": "15316b48caae3c6355f551391d4cd4e8411905641bbdcf5f89df900212cc39ca",
+      "size_bytes": 1355
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/cache_audit_run.py": {
+      "sha256": "e0c77a01f434ce7baf827ed2007a5fe6d05999404bac162d335b8e6e65b0a74f",
+      "size_bytes": 15090
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/finalize_alignment_audit.py": {
+      "sha256": "252fb8f6c256c171c700e7c40723c0cbbc04f83a2eeec1d3e8db10b0594e7453",
+      "size_bytes": 23882
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/four_unit_comparison.csv": {
+      "sha256": "6814f3b8372fa8ee8f885985c68244c1b2c70d8ae44b018f91386e0d279aa76d",
+      "size_bytes": 14741
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/four_unit_full_test.csv": {
+      "sha256": "f7a0189fba7a155c58e341342fd956cafc4e5835a8b24ae189ad4c13077c9461",
+      "size_bytes": 7818
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/four_unit_matched.csv": {
+      "sha256": "3b6fbee6391ea38948a6a20f62691b8090948e2797962e9002a014334ea30916",
+      "size_bytes": 7729
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/four_unit_statistics.csv": {
+      "sha256": "3466f6fd8c6cee5d6509263a75c7faa4869b573a1aeeb3121aae3a4da69fa471",
+      "size_bytes": 29042
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/freeze.json": {
+      "sha256": "65892658c490763ae43d104603185b1081e41807faa8a5225e6a173af523e053",
+      "size_bytes": 2601
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/historical_reference.csv": {
+      "sha256": "9036f244c125eb8439a6a4375df5514745cba1a8cab7d8322d05aae6d17cfbe7",
+      "size_bytes": 4300
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/historical_reproduction.json": {
+      "sha256": "48023467ef785ea706316d87910d5b76b13ebda4eca422108e1a665e1450ba24",
+      "size_bytes": 309
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/imported_archive_manifest.json": {
+      "sha256": "2f30bcde469c967187aeee73bd77ab2133b727e3226899b19187c8b3ad9bc567",
+      "size_bytes": 1694
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/launch.json": {
+      "sha256": "1ccbfbe38c5c87da271af1b15b8d81a5ca7eb94ec65352e4bc22b01d5c3a7793",
+      "size_bytes": 437
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/archdev001_alignment.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/archdev001_other_specialists.log": {
+      "sha256": "9cf66d69e06bc9d3c4d7c14afc49b5375645c489a99248107d63cbe4bb94a63c",
+      "size_bytes": 423
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/unit02_alignment.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/unit02_other_specialists.log": {
+      "sha256": "d3167bc761f639b05eee8f476db7ed5891d478b23391ed5f15182cf282b93c2f",
+      "size_bytes": 423
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/unit03_alignment.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/unit03_other_specialists.log": {
+      "sha256": "33f81e889e0fc9813319a5d74d0c8e971392f48e8421f8753b20c1f6cd66ab98",
+      "size_bytes": 423
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/unit04_alignment.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/unit04_other_specialists.log": {
+      "sha256": "5b0e16a4298c13cfce570452899ff048ba89f20b1aefd35a7a4bc028b06e3f48",
+      "size_bytes": 423
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/unit05_alignment.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/logs/unit05_other_specialists.log": {
+      "sha256": "329260fcfab27cecbb0289c9d2b5c0dd241fc798bef7d378cfc4291c8312aad8",
+      "size_bytes": 423
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/math_design_audit.json": {
+      "sha256": "86d8a340ebb2b032f251d5a032c3f2a2ee66f16b48b3949ba79d8b8957e2d57f",
+      "size_bytes": 6088
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/math_design_audit.md": {
+      "sha256": "d51d851eb48eed01e25c671339dac9127870012f100ef8eaecb5302f4167298d",
+      "size_bytes": 3062
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/protection_end.json": {
+      "sha256": "d90605b3d081ab65904c1fb8170dcb222cbd7d96237150f75fa32f74efc86c87",
+      "size_bytes": 146324
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/protection_start.json": {
+      "sha256": "eed25811e7e447239208090dba6b2c6fd0d036498b38822bd3585c42f5d85e84",
+      "size_bytes": 65551
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/protocol.json": {
+      "sha256": "501a999ec466420a47a6a4a5aed7740c0b39bf5bf6af875cd8d33d1ab55da5c6",
+      "size_bytes": 6550
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/requirements-alignment.txt": {
+      "sha256": "6697f6c7238c2483f10b1896ee8bab1f61ef31029a5b13c2969a4765f0d2b44f",
+      "size_bytes": 195
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/alignment_fit_audit.csv": {
+      "sha256": "dabd45387770783dfadfcfa72d3272462e8eeffc652fb6b6db02143b965280cf",
+      "size_bytes": 225
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/alignment_map_audit.json": {
+      "sha256": "dd44fb9a26d27d07ebf48f506197dfd3e8aa3980a7a92ff0c426599c5b3b1b16",
+      "size_bytes": 289182
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/by_length.csv": {
+      "sha256": "5bd118e6a5fa236fe520dae046626a0f2f3f58379c04591477247888ce9ff14c",
+      "size_bytes": 320900
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/other_specialists.csv": {
+      "sha256": "67eced878e540a1a5cf8eb1f107a2add67edbb28ace6ea6a94e6c2dab578af31",
+      "size_bytes": 418
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/other_specialists_by_length.csv": {
+      "sha256": "b4b63362e686780e40ed8a7dcc5eedb37ef7edd9237ede3f254c75fae38583f3",
+      "size_bytes": 8094
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/other_specialists_map_audit.json": {
+      "sha256": "6580df67b6c27f01f06b8d2341bc18bb333d0e770aa86c8171c8a28b5a5a6184",
+      "size_bytes": 73139
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/summary.csv": {
+      "sha256": "66483f13a30718f3700ab7e6dd4ce872119541ecf08423debe0ceb934ac1fbcd",
+      "size_bytes": 16005
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/validation_adaptation.json": {
+      "sha256": "240256411536afac6a309c469bc1cc826a00ca488772d648edb00d9bd3857242",
+      "size_bytes": 5278
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/alignment_fit_audit.csv": {
+      "sha256": "d66a427ee8c42c8847b655cded13dfd077b75f59227931ad7f9f7e2b499823bb",
+      "size_bytes": 225
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/alignment_map_audit.json": {
+      "sha256": "209b533586138b36a48d8474bd95bf272dff496d0c10cb9488a18f6c017c8b93",
+      "size_bytes": 289172
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/by_length.csv": {
+      "sha256": "9e5c1c8708800523c5c80015ecb84844a53969179eed20af2d333ae126a5c41b",
+      "size_bytes": 320826
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/other_specialists.csv": {
+      "sha256": "8113eeb999d8d5d771c907e1c303feb61fc900a580980df81862a2de3efcc893",
+      "size_bytes": 418
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/other_specialists_by_length.csv": {
+      "sha256": "34ddf43dc368a4cc34ac87abddcc12d99a43334bc003fce1d7fa680f996e21f4",
+      "size_bytes": 8117
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/other_specialists_map_audit.json": {
+      "sha256": "4dccda7e58e640fbb117b8d464275ddd7efbe77f417d491c9bb49e147470b755",
+      "size_bytes": 73129
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/summary.csv": {
+      "sha256": "97c8a2ca229e78594924c5f11f9054ea1b1af091d4948b6af21825cc7b84190d",
+      "size_bytes": 16008
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/validation_adaptation.json": {
+      "sha256": "2ab1e96fb52e33458a9d3d5b54b47c27a7da72ddec89b6a7c1f5de7ec1b7f79f",
+      "size_bytes": 5094
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/alignment_fit_audit.csv": {
+      "sha256": "cc390b87698982a30dc83dfc7d4cbd745472c2287eed0a6e93b820b29179389b",
+      "size_bytes": 225
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/alignment_map_audit.json": {
+      "sha256": "e8ef536ff903b5de2178a35aff5606f8db41da928630adc7e644b73c2e03a2e9",
+      "size_bytes": 289171
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/by_length.csv": {
+      "sha256": "251dea00d2df434c601e9e1b7946c8c5c25845c3aa8846201831797bc138e213",
+      "size_bytes": 320886
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/other_specialists.csv": {
+      "sha256": "93b00960084fc1f62c9bdf4b5cd741e48f87592d4a9b68bb8f78e014d21336e2",
+      "size_bytes": 418
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/other_specialists_by_length.csv": {
+      "sha256": "5d6f9ce77e6711aca1237ff97497f0b6bceebbdd88679712c366827b6ecc822b",
+      "size_bytes": 8115
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/other_specialists_map_audit.json": {
+      "sha256": "ae2b674f8f4c3bbd5bede2cc85f51c663e7e3fe7d169f023eaff130da8668e5c",
+      "size_bytes": 73129
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/summary.csv": {
+      "sha256": "bd72256eeb5133fec8f8973943baac3fd21723db246f732d6633189f27467e9d",
+      "size_bytes": 16011
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/validation_adaptation.json": {
+      "sha256": "ef5fafdb9f5d9bf18c689e0f04a1760562c98eaa5d99df301293a40509466bb4",
+      "size_bytes": 5094
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/alignment_fit_audit.csv": {
+      "sha256": "bcfee3295c561edce73b7c83d99a71bcd48e0bb2a0fa14fd6b7b5b06ad1af8bd",
+      "size_bytes": 225
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/alignment_map_audit.json": {
+      "sha256": "c1d38c0807b16dd91cac6571cd83d7673c0a92e7dff51672e6859f447b981013",
+      "size_bytes": 289175
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/by_length.csv": {
+      "sha256": "0332e582ccea6e20ea4fe9350c56bd579fac7f3da82588c5a708a01dca08a5a8",
+      "size_bytes": 320851
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/other_specialists.csv": {
+      "sha256": "8fcc38b62c9832fae6cd85e9437b754863cb72d2ee54f8e3586e4e004417e0c7",
+      "size_bytes": 418
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/other_specialists_by_length.csv": {
+      "sha256": "5a365d4ec75c46db815ae20e0c79eb53f71cba419c7b788b11aa74c7121df95b",
+      "size_bytes": 8102
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/other_specialists_map_audit.json": {
+      "sha256": "70f90d10df66c1ed1c25b42a58e914686f4639933747253c7886c99d3e5bcce9",
+      "size_bytes": 73131
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/summary.csv": {
+      "sha256": "742655d6c79ccaad215f865672719d3bdcd1600140e307fb1aa0af76f652ed49",
+      "size_bytes": 15999
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/validation_adaptation.json": {
+      "sha256": "7ec9038e57d0749a7607ec370b113d7a4930b41d700653bc6928ad8d5da177a9",
+      "size_bytes": 5094
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/alignment_fit_audit.csv": {
+      "sha256": "d5ccfc5cbdfd6c0d6edf742c0cc39c348bb6752970bb50fe37103c6c4bc9158e",
+      "size_bytes": 225
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/alignment_map_audit.json": {
+      "sha256": "ba579c585f500cc4592e027e388c0191db46231114bf4f907c2d6025c042f7f2",
+      "size_bytes": 289173
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/by_length.csv": {
+      "sha256": "f2b6de1257e326925e7453cae77ad3ae9a123809b9958fec1ecbe12fe62e9bca",
+      "size_bytes": 320941
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/other_specialists.csv": {
+      "sha256": "46ef4ac557a5c6b8be7138ba664a78a61cad1c460d88165ffcb5c45f7bbf7d5c",
+      "size_bytes": 417
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/other_specialists_by_length.csv": {
+      "sha256": "c62a71d0e76cffdc092227fa3fc27cc548855937c0c696f3d4a4089c5ae17f23",
+      "size_bytes": 8111
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/other_specialists_map_audit.json": {
+      "sha256": "7d80b9aa82764a40d2068865f5868fd1908d1b83d8beb345d3f82a1e6f486c0f",
+      "size_bytes": 73129
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/summary.csv": {
+      "sha256": "72138fb4c186706666871c1660a66515dbd57aad6dd53b651255b326a1a0ae22",
+      "size_bytes": 16004
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/validation_adaptation.json": {
+      "sha256": "0fa2e59e6a403262d937c77f668a2f9730704a5a14bc71cedce09fc8404d11ec",
+      "size_bytes": 5094
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/run_completion.json": {
+      "sha256": "2ebb4bad50686d5c05e15d9d08dbec1b1e6ccec9a8c73d97d9fa08c813ffc041",
+      "size_bytes": 140
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/runtime_environment.json": {
+      "sha256": "817cc8852b79d1fbf41055dd72f1fb129214b9a085010ed01dc35c5c5a670e5e",
+      "size_bytes": 660
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/saved_results_audit.json": {
+      "sha256": "576e33f2c6b9af8bb8a93c1437eb166ecedfbf286650a850babadcfde02eaa01",
+      "size_bytes": 29910
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summarize_alignment.py": {
+      "sha256": "a7a7cd3a474ffa85d8481b79a478dc4d5fdb60453413d436194a06c27501add3",
+      "size_bytes": 28576
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/aggregation_checks.csv": {
+      "sha256": "dfdfc7eaea02f74f7ff93c1666614bdb805ef5491c3a83a0da71032f431c58a4",
+      "size_bytes": 328
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/alignment_control_margins.png": {
+      "sha256": "5a33d8d7923fa499a40262204df0753a23770435de1362b857eae4a2bff62605",
+      "size_bytes": 122393
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/alignment_fit_audits.csv": {
+      "sha256": "d396870538322b6c4fff52e122e80d8b05e19ed03ec6a574a7664cd62571d3cb",
+      "size_bytes": 1119
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/alignment_recovery_by_unit.png": {
+      "sha256": "5e17f9ce5e60878f77a5707c05bd8280c4d99f5ebb1b518cf69cce625201506d",
+      "size_bytes": 155861
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/all_alignment_by_length.csv": {
+      "sha256": "08e45ff9aba9690aa7616c7a793486391f72caa9a2c0024baf3a63b7d0d5857b",
+      "size_bytes": 1766834
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/all_alignment_scores.csv": {
+      "sha256": "e2c5ab18a99c85215e00f2bc776fe761b0ed606e1c391d03f053d48a43d66029",
+      "size_bytes": 87549
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/canonical_cycle_per_length_alignment.png": {
+      "sha256": "efe0ac9c495ea2d273300f72ade8c36f558c8708cec4a70276db73b63084a3a0",
+      "size_bytes": 329687
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/cohort_summary.csv": {
+      "sha256": "8a5988d58652ff82ade9a0bee9ddd2985bccce86d28646ef12d650db94612711",
+      "size_bytes": 61595
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/one_line_per_length_alignment.png": {
+      "sha256": "d933d265f9708548903eb9b762a95bb52abaa761ef188cf6c7149df0c2db24d2",
+      "size_bytes": 355019
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/other_specialist_scores.csv": {
+      "sha256": "3d103cae282651c95ee57401c06a76ce7c4f0c50f3d3b528bf4f879bc6b7e818",
+      "size_bytes": 3006
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/other_specialists_by_length.csv": {
+      "sha256": "24a43decabfa0e1442fbb0366fa64bf55579e203cc4dd40d924fa59cbec0866d",
+      "size_bytes": 62100
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/per_length_comparison.csv": {
+      "sha256": "fbc0a7fd83e099333c085c406ae2aa95f68e616ed17b169d68f33461aa6f093b",
+      "size_bytes": 352140
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/per_length_directions.csv": {
+      "sha256": "5c2e28599954e284b738637349e1b852a3c801f7fa9c22f8b638851b2235bc2d",
+      "size_bytes": 5757
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/report.md": {
+      "sha256": "be12a2d39f8cc905a19a579f1a580d7915c3c6c4e96c73487c82c09cd8f3c3a9",
+      "size_bytes": 10465
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/success_counts.csv": {
+      "sha256": "d4fa01e70efb95f0698b5f89675bb7856f28f03a6a13ca2326cd75890e532c7a",
+      "size_bytes": 1528
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary/unit_comparison.csv": {
+      "sha256": "315849962dda2941e7ef8e75cf2f9c02d643a437fdc33538d943f166bbd1ca80",
+      "size_bytes": 18235
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary_helper_freeze.json": {
+      "sha256": "cc2a66a3aeba413ccc2927355455a6cce63d40988618e676caefd861ca7871e4",
+      "size_bytes": 390
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/summary_synthetic_verification.json": {
+      "sha256": "da6ecbf735cc54ac576c5661a1c7f676e0335b73e78c7dbabbe3251726b75a95",
+      "size_bytes": 781
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/supplied_historical/README.md": {
+      "sha256": "850fd0ee41067e025d685879edf97e0979fa007e0ec97e39a9f9bc8293fcbec2",
+      "size_bytes": 5254
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/supplied_historical/results/alignment_fit_audit.csv": {
+      "sha256": "dabd45387770783dfadfcfa72d3272462e8eeffc652fb6b6db02143b965280cf",
+      "size_bytes": 225
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/supplied_historical/results/by_length.csv": {
+      "sha256": "f88cfe30bb4c396354e905eb99fcad1789ff70adaadd115de51ef581f9df05ce",
+      "size_bytes": 320921
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/supplied_historical/results/other_specialists.csv": {
+      "sha256": "5113644bca484af33ca115ac0096ea703cf43bffa2022f82a618b136f5327112",
+      "size_bytes": 417
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/supplied_historical/results/other_specialists_by_length.csv": {
+      "sha256": "281e6188e1bbe915c17b86bd4781f4635d8b5809001d42b342e8a058ff253caf",
+      "size_bytes": 8093
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/supplied_historical/results/summary.csv": {
+      "sha256": "3d7c9df4d46d38886a65e7536d050e2c7231d759ee4a557565f105acc12fb562",
+      "size_bytes": 16001
+    },
+    "diagnostics/permworld_orthogonal_alignment_20261110/verify_adapter.py": {
+      "sha256": "cf2753204244f241461310f26f6d2fe2a0380ba718e767acf44afbb5bb9d6b49",
+      "size_bytes": 7852
+    },
+    "experiments/permworld_orthogonal_alignment_20261110/__init__.py": {
+      "sha256": "4be5ed55a6549a4dff853b365e89f2655703c153b3afed75eb6eafbb77ee0b79",
+      "size_bytes": 78
+    },
+    "experiments/permworld_orthogonal_alignment_20261110/instrumented.py": {
+      "sha256": "28922971ee4cb117a97098f709830e360bf0780514edcfea8539177aa6f72e4d",
+      "size_bytes": 4675
+    },
+    "experiments/permworld_orthogonal_alignment_20261110/run.py": {
+      "sha256": "8c64cbfdfd3593da2e12f66bc2c6fb53a42a8f5310037127cfdddcee9023b64c",
+      "size_bytes": 16873
+    },
+    "experiments/permworld_orthogonal_alignment_20261110/vendor/alignment.py": {
+      "sha256": "7c6a30f87e076aa358548c41b8cbdf5dc41c1512adcb9a1318e2e3eaae3db2ad",
+      "size_bytes": 7233
+    },
+    "experiments/permworld_orthogonal_alignment_20261110/vendor/extract_validation.py": {
+      "sha256": "cf28487944cc443cc5e91567105f5f23ab68a56d5dac344f9bbba42dd8ecc477",
+      "size_bytes": 3350
+    },
+    "experiments/permworld_orthogonal_alignment_20261110/vendor/other_specialists.py": {
+      "sha256": "407edfa65d58c8f5645659620f063914e57368912da9b5dff748a0d605a1d5be",
+      "size_bytes": 2982
+    }
+  }
+}

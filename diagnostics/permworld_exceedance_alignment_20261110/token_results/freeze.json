@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-11-10T12:37:16.265343+00:00",
+  "source_sha256": {
+    "/home/yangx/ICML/experiments/permworld_exceedance_alignment_20261110/token_features.py": "367b42b4af8c767158cb6ae58265d4b2a8f51a9ff667d081322dce0dd884a149",
+    "/home/yangx/ICML/experiments/permworld_exceedance_alignment_20261110/token_diagnostic.py": "56a7e6bc409c859113d929ded763ed2f9d93acc8579150942dc667eb6c55868f",
+    "/home/yangx/ICML/experiments/permworld_exceedance_alignment_20261110/oracles.py": "f5cb2154567369a1cab9d9d4406a0e39c8c890dcb00b171e7b09714eb79f7ca2",
+    "/home/yangx/ICML/experiments/permworld_exceedance_alignment_20261110/shared.py": "b43b487c0c834ded0d3e734c2bcd01b8d760c8d4daeb68f104852b5168beddd2",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_stage_spec.json": "0c0940ba5796bbb5dee677d20ffa6a278a9d8ddf472338c4398c3ed451674213",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_stage_supplement.json": "a21c94a7caf86bcfcf736e9dba7c93036001c65b39b119ec4793ae264c7f561e",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/protocol.json": "234726c8b293f1198091fa7d70d7baa8df3ed2843315ce3a336763d3a58b625f",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/cache_audit.json": "fa5aab8021a93f716ada7d68ce6b5719d69d84c3dbf6af8e6a5227d87d07d1e5",
+    "/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor/infer.py": "67ed2bf513117239636557e1753494f61da283e95bce92946aae06ad09a95545",
+    "/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor/archdev_common.py": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+    "/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor/encoding_core.py": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+    "/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor/analyze.py": "f6092e467473d2a3d98a7f3be15b8087d53571706e4aee059d2002e65c23432c"
+  },
+  "synthetic_checks": {
+    "status": "passed",
+    "orientation": true,
+    "scalar_serialization": true,
+    "masked_auroc": true,
+    "inverse_order_once": true,
+    "no_checkpoint_forward": true
+  },
+  "no_token_outcomes_before_freeze": true
+}

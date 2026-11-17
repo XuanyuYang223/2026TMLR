@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "unit": "archdev001",
+  "encoding": "one_line",
+  "n": 10,
+  "anchors": 8,
+  "device": "cuda",
+  "maximum_prefix_error": 2.205371856689453e-06,
+  "tolerance": 2e-05,
+  "parameter_sha256_before": "e49c2a5b18b2fe15667bc662a7c824074aa270d2cdae9a5359789f474bf25ab5",
+  "parameter_sha256_after": "e49c2a5b18b2fe15667bc662a7c824074aa270d2cdae9a5359789f474bf25ab5",
+  "seconds": 1.3901467469986528,
+  "input_sha256": "1c3c0b66bdd7ba719a6cd903a1218a02a11dc6e08e2dc387064d4c689f1079a3",
+  "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "checkpoint_sha256": "0ff18fd27b520bc8c284111013f3c08f11d5d18e9167999e6cfd4146f66cb994",
+  "no_optimizer": true,
+  "no_backward": true,
+  "no_test_scoring": true
+}

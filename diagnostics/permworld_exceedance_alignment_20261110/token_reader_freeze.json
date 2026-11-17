@@ -1,0 +1,24 @@
+{
+  "source_sha256": "fb30fe8ea9c40ca46590645789578915bcc54e58361688b0096b61564447bdf2",
+  "protocol_sha256": "234726c8b293f1198091fa7d70d7baa8df3ed2843315ce3a336763d3a58b625f",
+  "token_freeze_sha256": "ed022a2dd25fa4edae0eb645452646d1eb647097a1d2453bdecf82bc44d4b943",
+  "created_utc": "2026-11-10T12:48:10.554303+00:00",
+  "derived_only": true,
+  "source_score_values_not_read_during_development": true,
+  "synthetic_verification": {
+    "status": "passed",
+    "synthetic_only": true,
+    "length_rows": 184800,
+    "summary_rows": 8800,
+    "checks": [
+      "complete registered inventory",
+      "fixed21 mean",
+      "max AFTER length mean",
+      "structural undefined retained",
+      "no undefined-length reweighting",
+      "four-new-unit statistics",
+      "paired before/after arithmetic"
+    ],
+    "source_sha256": "fb30fe8ea9c40ca46590645789578915bcc54e58361688b0096b61564447bdf2"
+  }
+}

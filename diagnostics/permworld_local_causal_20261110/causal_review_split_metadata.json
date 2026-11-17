@@ -1,0 +1,240 @@
+{
+  "scope": "Saved pair metadata only; no states/logits/model outputs/fitting/forwards. Exact prefix equality count is descriptive and does not alter fixed splits.",
+  "units": [
+    {
+      "unit": "archdev001",
+      "node_counts": {
+        "dev": 7387,
+        "fit_B": 3346,
+        "fit_A": 3206,
+        "test": 23856
+      },
+      "component_counts": {
+        "dev": 886,
+        "fit_B": 1105,
+        "fit_A": 1118,
+        "test": 2496
+      },
+      "pool_intersections": {
+        "fit_A__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_A__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_B__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_A": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 10
+        }
+      }
+    },
+    {
+      "unit": "unit02",
+      "node_counts": {
+        "dev": 7399,
+        "fit_A": 3284,
+        "fit_B": 3268,
+        "test": 23833
+      },
+      "component_counts": {
+        "dev": 902,
+        "fit_A": 1116,
+        "fit_B": 1100,
+        "test": 2483
+      },
+      "pool_intersections": {
+        "fit_A__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_A__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_B__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_A": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 4
+        }
+      }
+    },
+    {
+      "unit": "unit03",
+      "node_counts": {
+        "dev": 7427,
+        "fit_B": 3360,
+        "fit_A": 3192,
+        "test": 23927
+      },
+      "component_counts": {
+        "dev": 867,
+        "fit_B": 1131,
+        "fit_A": 1075,
+        "test": 2494
+      },
+      "pool_intersections": {
+        "fit_A__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_A__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_B__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_A": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 10
+        }
+      }
+    },
+    {
+      "unit": "unit04",
+      "node_counts": {
+        "dev": 7383,
+        "fit_A": 3262,
+        "fit_B": 3290,
+        "test": 23858
+      },
+      "component_counts": {
+        "dev": 882,
+        "fit_A": 1113,
+        "fit_B": 1106,
+        "test": 2522
+      },
+      "pool_intersections": {
+        "fit_A__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_A__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_B__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_A": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 2
+        }
+      }
+    },
+    {
+      "unit": "unit05",
+      "node_counts": {
+        "dev": 7361,
+        "fit_A": 3256,
+        "fit_B": 3296,
+        "test": 23847
+      },
+      "component_counts": {
+        "dev": 877,
+        "fit_A": 1116,
+        "fit_B": 1113,
+        "test": 2481
+      },
+      "pool_intersections": {
+        "fit_A__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_A__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "fit_B__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_A": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__fit_B": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 0
+        },
+        "dev__test": {
+          "full_node": 0,
+          "component": 0,
+          "identical_after_prefix": 8
+        }
+      }
+    }
+  ]
+}

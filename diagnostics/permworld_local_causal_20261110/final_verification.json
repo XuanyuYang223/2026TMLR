@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-10T14:09:11.596782+00:00",
+  "checks": 118376,
+  "failures": [],
+  "maximum_checked_difference": 9.5367431640625e-06,
+  "FP64_score_metric_tolerance": 1e-10,
+  "original_noop_and_fullswap_tolerance": 0.0001,
+  "actual_norm_tolerance": "1e-5+1e-5*treatment_actual_l2",
+  "units": [
+    {
+      "unit": "archdev001",
+      "total_rows_streamed": 262080,
+      "selected_rows_verified": 468,
+      "tasks": [
+        {
+          "task": "peaks",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.52587890625e-05,
+          "fullswap_all_case_max_error": 1.430511474609375e-05
+        },
+        {
+          "task": "valleys",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.71661376953125e-05,
+          "fullswap_all_case_max_error": 1.33514404296875e-05
+        }
+      ]
+    },
+    {
+      "unit": "unit02",
+      "total_rows_streamed": 262080,
+      "selected_rows_verified": 468,
+      "tasks": [
+        {
+          "task": "peaks",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.9073486328125e-05,
+          "fullswap_all_case_max_error": 1.33514404296875e-05
+        },
+        {
+          "task": "valleys",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.430511474609375e-05,
+          "fullswap_all_case_max_error": 1.430511474609375e-05
+        }
+      ]
+    },
+    {
+      "unit": "unit03",
+      "total_rows_streamed": 262080,
+      "selected_rows_verified": 468,
+      "tasks": [
+        {
+          "task": "peaks",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.52587890625e-05,
+          "fullswap_all_case_max_error": 1.33514404296875e-05
+        },
+        {
+          "task": "valleys",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.33514404296875e-05,
+          "fullswap_all_case_max_error": 1.52587890625e-05
+        }
+      ]
+    },
+    {
+      "unit": "unit04",
+      "total_rows_streamed": 262080,
+      "selected_rows_verified": 468,
+      "tasks": [
+        {
+          "task": "peaks",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.33514404296875e-05,
+          "fullswap_all_case_max_error": 1.33514404296875e-05
+        },
+        {
+          "task": "valleys",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.52587890625e-05,
+          "fullswap_all_case_max_error": 1.33514404296875e-05
+        }
+      ]
+    },
+    {
+      "unit": "unit05",
+      "total_rows_streamed": 262080,
+      "selected_rows_verified": 468,
+      "tasks": [
+        {
+          "task": "peaks",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.52587890625e-05,
+          "fullswap_all_case_max_error": 1.430511474609375e-05
+        },
+        {
+          "task": "valleys",
+          "fixed_cases": 18,
+          "selected_score_archives": 6,
+          "original_noop_max_error": 1.52587890625e-05,
+          "fullswap_all_case_max_error": 1.430511474609375e-05
+        }
+      ]
+    }
+  ],
+  "fixed_subset": "First input-order case per(group,sign) at n10/20/30,i2/6,both tasks/allfive. Expected180cases and2340rows. Selected solely from input identities before outcome access.",
+  "scope": "Reconstructed saved rank-one/random carried states and independent probes, NumPy FP64 raw-logit metrics and condition metadata; full-state/noop/real-input positive controls; streaming CSV and explicit source endpoint verification. No new model computation.",
+  "limitations": [
+    "No neural forward was repeated for partial edits. Their recurrence wiring is supported by frozen code review,11engine tests and all-case producer no-op/fullstate guards.",
+    "Source-state cache SHA values rely on creation receipts; only selected nodes were memory-mapped and whole caches were not rehashed.",
+    "Count matching and the FIT_B prefix-count readout do not rule out generic count-axis information. Motif values/ranks and synthetic state distribution remain alternative explanations; no abstract mathematical mechanism is identified by this audit.",
+    "Technical checks and selected pairs are not additional independent experimental repeats."
+  ],
+  "no_neural_forward": true,
+  "no_model_construction": true,
+  "no_probe_fitting": true,
+  "no_base_training": true,
+  "no_new_hyperparameters": true,
+  "no_cross_model_exchange": true,
+  "provenance_snapshot": {
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/finalize_audit.py": "73ee38f269638cbfbacc304a1a047224876f5bcd8182809e10d6bddd5a0aa357",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/formal_code_review.json": "7d1a4ba7393b9412a04c7fa71f98bdbe823fd1ad8476b8ed95a88e2136d4fb37",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/freeze.json": "5519feee5b97e45c7a20d9a00226834a34fca7960801af2ec5285152952d3abb",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/engineering_freeze.json": "fa80bc987f6e387ad41110bb604a16b2cd1225bbf11632b20269cb53e7fe3a62",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/source_audit.json": "dca0a7ef2a4d7c0dd96c05d7ca56f31a99b845a5629bf4a9abdcf8d5ee9eb9f1"
+  },
+  "elapsed_seconds": 38.9801589359995
+}

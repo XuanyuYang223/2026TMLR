@@ -1,0 +1,116 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-11-10T12:05:07.189320+00:00",
+  "git_head": "6d745815c0a1a2a41ad5fc8c0aa6e018f9bab249",
+  "protocol_sha256": "ae15cb791d7095b835a2f907301f1824254529e1566c7004b573b36baebb94b1",
+  "independent_new_units": 4,
+  "historical_reference_units": 1,
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "routes": 15,
+  "variants": 17,
+  "downstream_tasks": 3,
+  "units": [
+    {
+      "unit": "archdev001",
+      "historical": true,
+      "test_anchors": 10752,
+      "matched_anchors": 1757,
+      "predictions": {
+        "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/predictions.npz",
+        "sha256": "def79ac167f8304cc2f6f5ea70a0746dc594365d475bdaafb481a06f259a174c",
+        "size_bytes": 6809640
+      }
+    },
+    {
+      "unit": "unit02",
+      "historical": false,
+      "test_anchors": 10752,
+      "matched_anchors": 1707,
+      "predictions": {
+        "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/predictions.npz",
+        "sha256": "dbbac62584825df86848d3d7dcacc3cdfa8d237ec56ab74122d389739a01d44a",
+        "size_bytes": 6870318
+      }
+    },
+    {
+      "unit": "unit03",
+      "historical": false,
+      "test_anchors": 10752,
+      "matched_anchors": 1675,
+      "predictions": {
+        "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/predictions.npz",
+        "sha256": "092c58832fa31ad456adce287b1373324b4e780e7cd50013c6b94d188e079faf",
+        "size_bytes": 6875891
+      }
+    },
+    {
+      "unit": "unit04",
+      "historical": false,
+      "test_anchors": 10752,
+      "matched_anchors": 1753,
+      "predictions": {
+        "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/predictions.npz",
+        "sha256": "782ad3313ce97351b3e707723b5f5594012bdddae78e62f7c17f51acefa319e0",
+        "size_bytes": 6827709
+      }
+    },
+    {
+      "unit": "unit05",
+      "historical": false,
+      "test_anchors": 10752,
+      "matched_anchors": 1755,
+      "predictions": {
+        "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/predictions.npz",
+        "sha256": "e89da02c1d3c05414214c36c493be728764227cd7cc9a4d9552d4a77e98d301c",
+        "size_bytes": 7022719
+      }
+    }
+  ],
+  "tests_passed": 41,
+  "saved_result_checks": 563506,
+  "saved_result_failures": 0,
+  "protected_prior_file_count": 334,
+  "protected_file_hash_failures": 0,
+  "tracked_file_changes": [],
+  "actual_operations": [
+    "cached activation loading",
+    "source-only position probe reconstruction/fitting",
+    "frozen orthogonal-map reuse",
+    "source-validation threshold selection",
+    "mask-only composition",
+    "scoring and independent checks"
+  ],
+  "no_neural_forward": true,
+  "no_base_training": true,
+  "no_new_alignment_fitting": true,
+  "no_new_task_labels_in_fitting": true,
+  "no_publication": true,
+  "stopped_after_requested_experiment": true,
+  "primary_result": "Aligned route below same-model-twice in all four new units on all three questions, full and original matched supports.",
+  "secondary_result": "Decoded positions reusable in fixed analytic algorithms; count-preserving position shuffles reduce corresponding scores.",
+  "scientific_limit": "No internal lemma-reasoning or original-specialist causal-use claim.",
+  "delivery_manifest_sha256": "1fba77741b987a7da6d684b5d7ee31f2282936e50eeaa084388de3575be10427",
+  "delivery_file_count": 117
+}

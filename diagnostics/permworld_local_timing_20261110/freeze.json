@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-10T14:48:44.839653+00:00",
+  "protocol_sha256": "148d7741b659493c345c6e3ed5ec68ec6faede15cce7e300e8b2fec4bc7b3107",
+  "sources": {
+    "experiments/permworld_local_timing_20261110/run.py": "0d1248c557d567e209488473a197e38fc5f420ea1a3d57b1a8217fc9e2183594",
+    "experiments/permworld_local_timing_20261110/shared.py": "785b0021f79444fdcafed6fa93c5533863486c03b3c710b1ae115955dff0ef67",
+    "experiments/permworld_local_timing_20261110/replay.py": "1e86bac9e8688395726d55fdfbfa24e265c284bc3b1bc6ea9e262205ac36dfb6",
+    "experiments/permworld_local_timing_20261110/__init__.py": "53ee09109dab741eaa8da950ab42ee819174b71356bfc9d1098c836239ab2129",
+    "experiments/permworld_local_timing_20261110/experiment.py": "b7814afde498547bfcc59f0e95771071a8e06f8ffc07716953d41a8bbe640c48",
+    "diagnostics/permworld_local_timing_20261110/input_audit.json": "a1a7ff5bdde0c593cabd1f7b09998fe653de5a8e5a7992617eed07775529c8c4",
+    "diagnostics/permworld_local_timing_20261110/summarize_results.py": "77877ee04e6ef42896e576a0b02a771b1040ca43a8d1aed91abbdfb3da6684d9",
+    "tests/test_permworld_local_timing_replay.py": "1b02c13f11c7b4e3967fa1a9c0eef565d47002a54dd38d535bdfb737188f9f26",
+    "diagnostics/permworld_local_causal_20261110/protocol.json": "016ef16f07924f8bf55a232d21754612afa15dd2655cd4ac9d0425ff3657b176",
+    "diagnostics/permworld_local_causal_20261110/selection.json": "80e03b89f48c675c656e83fcae5a97f588bf67b33163c317f8536e2f9b3f03cc",
+    "experiments/permworld_local_causal_20261110/formal.py": "cb3559b912fd4ebb90a578015ea2053c8bfb156a7b5f8f3a418a476542886fc0",
+    "experiments/permworld_local_causal_20261110/recurrent.py": "6092c23221f858ddc423685552d1b954cf729a5d3f89d0956fad691ab53c6ff7",
+    "experiments/permworld_local_causal_20261110/probes.py": "d0d66c8957eb6e340a25de94f68241f2a6ff1d9e1faef7c1f5a441998b7621d8",
+    "experiments/permworld_local_causal_20261110/shared.py": "ba33251423c6bc15a20b943e1ef10278efd4fee3d44ad808f902e4f02e40dc14",
+    "experiments/permworld_local_causal_20261110/pairs.py": "61182a2ed5653de4a5c972913431ad909b900aa4f9c614706dd9442da7e871c4"
+  },
+  "before_new_formal_outcomes": true
+}

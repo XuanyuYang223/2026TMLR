@@ -1,0 +1,27 @@
+{
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:00:33) [GCC 14.3.0]",
+  "executable": "/home/yangx/ICML/.venv/bin/python",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "numpy": "2.4.4",
+  "scipy": "1.18.1",
+  "scikit_learn": "1.9.1",
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "cudnn": 91900,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "forward_dtype": "float32",
+  "map_and_Ridge_arithmetic": "float64; StandardScaler preserves incoming dtype before explicit float64 conversion",
+  "frozen_gpu_flags": {
+    "allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_deterministic": true
+  },
+  "threads": {
+    "torch": 3,
+    "analysis_threadpool_limit": 3,
+    "OMP_NUM_THREADS": 2,
+    "OPENBLAS_NUM_THREADS": 2,
+    "MKL_NUM_THREADS": 2
+  },
+  "dependency_path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/dependencies"
+}

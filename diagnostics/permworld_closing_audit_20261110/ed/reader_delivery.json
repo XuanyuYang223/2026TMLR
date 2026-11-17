@@ -1,0 +1,165 @@
+{
+  "status": "completed",
+  "created_utc": "2026-11-10T16:38:17.442990+00:00",
+  "scope": "EDsavedscorearithmeticaudit, independentDecimalandfileidentityverification, postresultsclarificationandfigure. Scientificcompletionandfrozenhelperunchanged.",
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_reference": "archdev001",
+  "no_model_or_probe_fitting": true,
+  "no_new_CKA": true,
+  "no_forward": true,
+  "frozen_completion_sha256": "ad0f886a831bce9c7eba856026dec61560bc99c3c52eb0cbf9eb963cebbc3073",
+  "independent_verification_sha256": "c5a7ed47e999df20c396dbcb4dd098e2666e2b9c137028e00fac890072529a51",
+  "plot_receipt_sha256": "b51670fef67c35e6a0cdf2afb32386863fe1b224c7c267c87ac23f9927be10b3",
+  "files": [
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/analyze.py",
+      "sha256": "e0096d2e5d8403486ff4fb8639fdd87cf8b81103cec79aac9107785e771b6d36",
+      "size_bytes": 22741
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/checkpoint_source_manifest.csv",
+      "sha256": "f13232307d2ed8911cf338b307d70e56b746a2747bed04c5fccc1b8527b0e847",
+      "size_bytes": 58376
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/cka_by_phase.csv",
+      "sha256": "e218dda8ef20bd7b42c1f2cd1e643946f9a941df4368c4fe8a31c3371144c453",
+      "size_bytes": 25568
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/cka_four_unit_summary.csv",
+      "sha256": "6f5d45c8cdaacf6e77fe3a36f39d74cc6a4be988f7e0423f2283e556218529c2",
+      "size_bytes": 10903
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/cka_per_length_components.csv",
+      "sha256": "d67fcd9ba957e8431f5ca3f7fa70bfa13e2e80f08fd4d5cb9610a531f43f6894",
+      "size_bytes": 1575572
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/cka_per_unit.csv",
+      "sha256": "f5c1a40d76304cbb4adc48f5d151f01b0841206ecdfbc791ebe1106df197c80a",
+      "size_bytes": 17006
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/cka_source_aggregates.csv",
+      "sha256": "aca069879d292f7b5e60f3133ed31855e09a1ac466820a49897e25d1d16812bf",
+      "size_bytes": 45490
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/code_freeze.json",
+      "sha256": "6d81b4a171cc8db7ec21359532da940457458267223de3e4cb973bc51966e66e",
+      "size_bytes": 395
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/completion.json",
+      "sha256": "ad0f886a831bce9c7eba856026dec61560bc99c3c52eb0cbf9eb963cebbc3073",
+      "size_bytes": 3565
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/ed_encoding_comparison.pdf",
+      "sha256": "e7810b79a47d905a4719879219d5d3048deb2db3c2fed31b50b46fecc20ac6c3",
+      "size_bytes": 32186
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/ed_encoding_comparison.png",
+      "sha256": "3cf5a5062443fb6a87a1ea4b19a6c392777024ab554240e049541125e6328925",
+      "size_bytes": 339780
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/encoding_contrasts_by_unit.csv",
+      "sha256": "dca72877027733f62314eede3d7a86a4f0580e1023e30c3f0e921d0d22b20a32",
+      "size_bytes": 3363
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/encoding_contrasts_summary.csv",
+      "sha256": "3a05b7afd749db28b96d328cf39a401bd060aa64fcf703761acd86c0374b61f7",
+      "size_bytes": 5715
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/independent_arithmetic_rows.csv",
+      "sha256": "4beef3a8ea8157846f6530a3c89246710b22d581317c91769d4b76cb35b71765",
+      "size_bytes": 6374
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/independent_check.py",
+      "sha256": "e20c25143f70f6c8d175261ab783363f2ff53a1eb8045e3ebf630a9513cd37cb",
+      "size_bytes": 6271
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/independent_run.log",
+      "sha256": "7b728c61670a7b80427e9a06840cbe05357015a67cd86f4eeecee8e5254f428d",
+      "size_bytes": 1254
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/independent_verification.json",
+      "sha256": "c5a7ed47e999df20c396dbcb4dd098e2666e2b9c137028e00fac890072529a51",
+      "size_bytes": 20309
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/plot_ed.py",
+      "sha256": "965f4db471328f8042416d918fadbd221c2110d5458b41e0709b8478f6766ec4",
+      "size_bytes": 5411
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/plot_receipt.json",
+      "sha256": "b51670fef67c35e6a0cdf2afb32386863fe1b224c7c267c87ac23f9927be10b3",
+      "size_bytes": 1394
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/plot_run.log",
+      "sha256": "b51670fef67c35e6a0cdf2afb32386863fe1b224c7c267c87ac23f9927be10b3",
+      "size_bytes": 1394
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/probe_four_unit_summary.csv",
+      "sha256": "c0acfdd5f57179bb56712253885c9d47f4d3a98b1f9063d888f5ae6e26a8f26b",
+      "size_bytes": 6503
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/probe_per_length_source.csv",
+      "sha256": "aa976c57124bab1c5eb2d33f83b736e2b8febac6b04f092aa23e166fc45a5f71",
+      "size_bytes": 1206193
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/probe_per_unit.csv",
+      "sha256": "53f3358aff7b3334a88cbea7ae3b09379fabe0883714d0bb7d2dbf3761af4958",
+      "size_bytes": 12331
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/reader_clarification.md",
+      "sha256": "9c62f248d95d4e7498605666504d4a480f5852d949cc5b4d06295d3a58c5ab0f",
+      "size_bytes": 492
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/reference_checks.csv",
+      "sha256": "ad475f022a58e1637360cf9de8678757de061774fb21f75fa9b3ba5ced3510ca",
+      "size_bytes": 825
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/report.md",
+      "sha256": "e20ab7b1fb92d07a21ba33cbaa8ea3b942048aff8705057a62ba24740252ab3c",
+      "size_bytes": 6829
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/reproduce.sh",
+      "sha256": "15b84f9a1bd2cbab2f3357b60888f04374f3035b2122c4e23f3a06b66ecf7e16",
+      "size_bytes": 596
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/run.log",
+      "sha256": "8e9af86fd91b7e50ac14caa18a9f17b52f052b2a6e4397a0237859e2d113ee1e",
+      "size_bytes": 976
+    },
+    {
+      "path": "diagnostics/permworld_closing_audit_20261110/ed/spec.json",
+      "sha256": "22112a92b44911121817b9d1124ce60bdbe074fe4989452192c5e3a285597849",
+      "size_bytes": 265619
+    }
+  ]
+}

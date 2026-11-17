@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "created_utc": "2026-11-10T15:18:29.639973+00:00",
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_reference": "archdev001",
+  "formal_directed_cases": 80640,
+  "historical_directed_cases": 20160,
+  "saved_rows_per_case": 29,
+  "total_production_rows": 2923200,
+  "protocol_sha256": "148d7741b659493c345c6e3ed5ec68ec6faede15cce7e300e8b2fec4bc7b3107",
+  "delivery_manifest_sha256": "1fed39e4c09a3b839c469df08c9bfac1a5a562c9e1875f4d20bba26aa8415506",
+  "reader_report": "README.md",
+  "reproduction": "reproduce.sh",
+  "checkpoint_seed_manifest": "checkpoint_seed_manifest.csv",
+  "no_fits": true,
+  "no_new_base_training": true,
+  "no_DAS": true,
+  "no_cross_model": true,
+  "no_new_task_generalization": true,
+  "no_publication": true,
+  "original_git_head": "6d745815c0a1a2a41ad5fc8c0aa6e018f9bab249",
+  "tracked_files_unchanged": true,
+  "protection_scope": "Named SHA-bound inputs at recorded endpoints, not a whole-disk or continuous-monitoring claim.",
+  "timing_result": "Same1D current-token upper replay did not change any formal modal count; wholeL1 replacement transported the requested change.",
+  "stopped_after_authorized_within_model_experiments": true
+}

@@ -1,0 +1,29 @@
+{
+  "status": "passed_read_only_review",
+  "scope": "Read-only review of finalized token extraction/fitting/evaluation code and the frozen source identities; no token-state payloads or new token outcomes read. No fitting or neural forward.",
+  "reviewed_sha256": {
+    "experiments/permworld_exceedance_alignment_20261110/token_features.py": "367b42b4af8c767158cb6ae58265d4b2a8f51a9ff667d081322dce0dd884a149",
+    "experiments/permworld_exceedance_alignment_20261110/token_diagnostic.py": "56a7e6bc409c859113d929ded763ed2f9d93acc8579150942dc667eb6c55868f",
+    "experiments/permworld_exceedance_alignment_20261110/oracles.py": "f5cb2154567369a1cab9d9d4406a0e39c8c890dcb00b171e7b09714eb79f7ca2"
+  },
+  "token_freeze_sha256": "ed022a2dd25fa4edae0eb645452646d1eb647097a1d2453bdecf82bc44d4b943",
+  "blocking_issues": [],
+  "findings": [
+    "Native edge i->pi(i) offsets account for canonical cycle internal, closing and singleton edges; final_norm state t is after token t.",
+    "Frozen forwards verify checkpoint/parameter identity and complete-prefix agreement at the existing2e-5 tolerance.",
+    "One AFTER scalar probe per n/source task selects alpha on orbit-disjoint source validation-dev; target probe sees only native target labels.",
+    "Inverse states and target-owned values use native j=pi(i) gathered once; transferred scalar outputs already align to source i.",
+    "AFTER fit-only means and maps are reused on BEFORE; distribution shift remains a stated limitation.",
+    "All common maps score the same inverse target states. Count-stratified anchor shuffles preserve source positive counts.",
+    "Pinned StandardScaler input-dtype arithmetic is reproduced for raw own/direct predictions; map effective-vector evaluation equals FP64 rotation plus the serialized affine probe.",
+    "Undefined one-class cycle-kind strata are retained; overall/both-internal and frozen kind-prior controls remain distinguished."
+  ],
+  "limits": [
+    "Source review does not independently establish neural counting or a mathematical mechanism.",
+    "End-state reproduction alone does not validate every token position; final numerical audit will use a fixed named subset."
+  ],
+  "no_neural_forward": true,
+  "no_probe_fitting": true,
+  "no_token_outcome_access": true,
+  "no_frozen_file_modification": true
+}

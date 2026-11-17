@@ -1,0 +1,10 @@
+{
+  "events": [
+    {
+      "stage": "prepare_source_plan",
+      "before_new_test_scoring": true,
+      "issue": "dict(**source,**binding) duplicate path keyword",
+      "fix": "Use ordinary mapping unpack merge; values unchanged; no results computed or thresholds altered."
+    }
+  ]
+}

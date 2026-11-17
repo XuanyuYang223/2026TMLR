@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "checks": 90,
+  "selected_cell_files": 30,
+  "cells": [
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "unit02",
+      "task": "peaks",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "unit02",
+      "task": "peaks",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "unit02",
+      "task": "peaks",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "unit02",
+      "task": "valleys",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "unit02",
+      "task": "valleys",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "unit02",
+      "task": "valleys",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "unit03",
+      "task": "peaks",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "unit03",
+      "task": "peaks",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "unit03",
+      "task": "peaks",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "unit03",
+      "task": "valleys",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "unit03",
+      "task": "valleys",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "unit03",
+      "task": "valleys",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "unit04",
+      "task": "peaks",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "unit04",
+      "task": "peaks",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "unit04",
+      "task": "peaks",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "unit04",
+      "task": "valleys",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "unit04",
+      "task": "valleys",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "unit04",
+      "task": "valleys",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "n": 30,
+      "i": 28
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "n": 10,
+      "i": 2
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "n": 20,
+      "i": 6
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "n": 30,
+      "i": 28
+    }
+  ],
+  "comparison": "Literal contiguous FP32 bytes (including signed zeros), old saved hR/hD/hS versus old test cache point1; no model execution or logits read.",
+  "whole_state_payloads_rehashed": 0,
+  "input_audit_sha256": "a1a7ff5bdde0c593cabd1f7b09998fe653de5a8e5a7992617eed07775529c8c4"
+}

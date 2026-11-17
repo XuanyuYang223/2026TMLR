@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "rows": 18900,
+  "tests": [
+    "fixed length means",
+    "maximum after aggregation",
+    "paired encoding contrasts",
+    "sample SD across new units only",
+    "missing length is undefined",
+    "per-sample finite support",
+    "shared score-support guard",
+    "pair-specific method aliases",
+    "count diagnostic fixed-length aggregation",
+    "initial target is not initial source"
+  ],
+  "summary_rows": 40,
+  "source_sha256": "4eb76c01582486613eda6beacc55adb8de87d79e881e5265a66873df4002ac10"
+}

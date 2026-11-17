@@ -1,0 +1,1644 @@
+{
+  "records": [
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 10,
+      "alpha": 1.0,
+      "probe_fit_examples": 211,
+      "source_tuning_examples": 45,
+      "threshold_info": {
+        "source_micro_f1": 0.9242424242424242,
+        "source_positive_positions": 124,
+        "source_total_positions": 360,
+        "source_predicted_positions": 140,
+        "threshold": 0.3503877121040092,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "5a61280cd29fe01decbbd78a46b03fcbb9f9c7a904f39ef66f06add0cce3e4b5",
+        "intercept": "e8ce95de6c12bad66c1f8b9177183c3a21181c9ca4577c292f124d0e08bfcb08",
+        "mean": "d1f994f74f55e4245dc793fa5d5c8f5ae90ba473a463bc74065fc325f8cce2f0",
+        "scale": "286e4ba371c76cd0ddd6971ee24c41f8c1a31e6040e26f8a584266a0b5266643"
+      },
+      "source_tuning_scores_sha256": "dfc1e668c7b13e3e2e569b23e7d5d3ccd103040a9ec166b038c8ed6fb1b02aeb",
+      "source_tuning_targets_sha256": "86ed6b14fed31fdf7e731244014575e3eb42758acd3cda6839419709651c1e55",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 10,
+      "alpha": 1.0,
+      "probe_fit_examples": 211,
+      "source_tuning_examples": 45,
+      "threshold_info": {
+        "source_micro_f1": 0.8706896551724138,
+        "source_positive_positions": 117,
+        "source_total_positions": 360,
+        "source_predicted_positions": 115,
+        "threshold": 0.49853228397817595,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "3ef74ebff95dbb82508615aed711bd5c575cdf0cf06a58dc2103d0ea41bc844b",
+        "intercept": "89b770192856e483df45397413e4ab1ce68cc230cd6fc98a32ab60ae3b680d1b",
+        "mean": "41b4614c94c7099205bd24707412796b0b3c0b30fc9ddf86e11e2f2479b5d319",
+        "scale": "efbef049842acfc92f7927455b67440e773347df7fd4277a7f90c6e1bf0c5990"
+      },
+      "source_tuning_scores_sha256": "aec0eafca1e6561d2646a9bd3e6799357345f3446e0f11ac3ade8cca491b826c",
+      "source_tuning_targets_sha256": "28057767479a213d0877e72cf7d2001cd50561cbc35e0325c4db0e9be71f1fdc",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 10,
+      "alpha": 1.0,
+      "probe_fit_examples": 211,
+      "source_tuning_examples": 45,
+      "threshold_info": {
+        "source_micro_f1": 0.7422680412371134,
+        "source_positive_positions": 49,
+        "source_total_positions": 450,
+        "source_predicted_positions": 48,
+        "threshold": 0.5305842159357822,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "4d0c0f9f204460c2553093ef3a1efccc0c5d86a41fc9739e3ea871b6963d8e28",
+        "intercept": "71d86ab3bad68480217dd1c2ccd86befa13dad110a6735a20bceadfe5618a1ca",
+        "mean": "8adac79b68fc5698a3271dc83ab63886cb5c128c0bd43fe74f7d741199a4bc5f",
+        "scale": "5a2dd6b87161193b6798da2de85667da32a0d035cbfce9d8d8870f64ded5d2cb"
+      },
+      "source_tuning_scores_sha256": "1242cd84216fd496a118147c9c3619714d643df336675268ac9963c9309f1784",
+      "source_tuning_targets_sha256": "fccad40452903eb6708844e75fa2328bc55d3b5056c6dca229d0987fbe60e5d0",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 11,
+      "alpha": 1.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.8695652173913043,
+        "source_positive_positions": 150,
+        "source_total_positions": 441,
+        "source_predicted_positions": 149,
+        "threshold": 0.5022363570501123,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "26e0f14615d609767982e26410c25509b422d74422a541a21910c40360e0651d",
+        "intercept": "dc762c29183a3296aeec3ca27e979f68b94d11b1c32040a0fdf33100be529f5c",
+        "mean": "52464ea09ad202a6df41c8e0f93fff83dc2eb3acd58b1c3501914bb5ab00ecdf",
+        "scale": "51659f07daa7c92483807d22c0ee7c128b6d1f88f35bc7f1c47ade64fcec3653"
+      },
+      "source_tuning_scores_sha256": "e88f098ee67c508712fb6e64d907da78c9f887d045aea87169dd33193eb219d3",
+      "source_tuning_targets_sha256": "9939a18e87c6f767581606f134ab220daed90ab0f162c3df99e2cad27764b0fe",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 11,
+      "alpha": 10.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.8805460750853242,
+        "source_positive_positions": 147,
+        "source_total_positions": 441,
+        "source_predicted_positions": 146,
+        "threshold": 0.45949110118133796,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "71828925e7b94fdcbe4f7a6f55b6f660ffb6a40cfabaef90550f4d25a6a2e933",
+        "intercept": "8556ca9e92d649afca05d87abb58e58cba04ad5afe73e9010a2a346d6d4bdbad",
+        "mean": "59d80df0b1b00990d400288841e2d0373e272fab9ab811689eea9e7f4b6b22c2",
+        "scale": "9c2b8d2f5512ee12806cb1e249236ce57cc5e87d2251158217854a9d63e200a1"
+      },
+      "source_tuning_scores_sha256": "620c412126d07ad36b0a65fdabcc72f9ccbd72dc5680a9a1bf4ecc3c6fff8d9e",
+      "source_tuning_targets_sha256": "ef3edac52cbf3320351b56c2f2fa4064fbcad1cd4077d5c721c3b57f36326da7",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 11,
+      "alpha": 10.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.625,
+        "source_positive_positions": 45,
+        "source_total_positions": 539,
+        "source_predicted_positions": 67,
+        "threshold": 0.28227260276467714,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "df8170a05056a7a75743233404b5b553deca303063495abcb975a3872819762b",
+        "intercept": "07bd623ee45839002ee568ba83d6b29b3d1107c04ddf4b1598d10bae1fdf833d",
+        "mean": "5c86c37b0b937b2130952c648e27b27eddf9fa6da9816991d3c93fceda0e2e70",
+        "scale": "e2297ad62bc3153f1922b89946e8e02826651ed0eb895f44ff964e6f55429ea1"
+      },
+      "source_tuning_scores_sha256": "41f2d344fd2f751a1bb205b77947f18b888018ade7309217d2029970df17b03f",
+      "source_tuning_targets_sha256": "80e75e07cdcb7dbe973cf2b5d35131f11c4002b2a4cb7143bc262e2bf740a569",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 12,
+      "alpha": 1.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.7942583732057417,
+        "source_positive_positions": 191,
+        "source_total_positions": 590,
+        "source_predicted_positions": 227,
+        "threshold": 0.4205430202981677,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "0b5138d305641be38764bf6be4bfcb749860eeef059fcfa0a0b8a45e5b18048c",
+        "intercept": "48a45008fa0607a2ec316b07cfd376450fe02dc8467e10e4f86a2a6e4cdbb2d1",
+        "mean": "8b5168423a3591c60b70f8519a8547c0de4509883c54ba6a89fb2df36bee9c9d",
+        "scale": "ad6a2cad5a5f75bb55bae9965252a3e19257fd6df0b4c87c46ea6660de2f8c6c"
+      },
+      "source_tuning_scores_sha256": "f9ccfe81124dca1497725509a4c5ff3c804f8bf1ff9580a9538d0ac40153aa3a",
+      "source_tuning_targets_sha256": "2f47f7c09508d4becef18db260f3cb13160dcfd01ecab222718f8c2f2306aabd",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 12,
+      "alpha": 10.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.691358024691358,
+        "source_positive_positions": 184,
+        "source_total_positions": 590,
+        "source_predicted_positions": 221,
+        "threshold": 0.40224877773874995,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "2a100b16a744414c3f437e92bb0eef64ab8d53050eea1a05884eed4123dda8e3",
+        "intercept": "849f739c3584aacd1e63b681cc38b594f0ce2a52455099452b0e529dc938e1ea",
+        "mean": "47ce52e85fc91884a7a2086450c1c09a485e2bdb42cbe8eeb695b65852259707",
+        "scale": "f092f55f2105ac49aed7ba962951806b9764eea0b759a87f69487cc848d26d03"
+      },
+      "source_tuning_scores_sha256": "4ce72370f386661847a385cbef19b0ac5bcd49930aaeedd8ab8961609f9f1adc",
+      "source_tuning_targets_sha256": "9bff669f31ec1700b69cee625deec550bdaa34dad6d5f1244ddfa92fd3b60275",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 12,
+      "alpha": 1.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.6972477064220184,
+        "source_positive_positions": 58,
+        "source_total_positions": 708,
+        "source_predicted_positions": 51,
+        "threshold": 0.5133105488877402,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "1ffb9ac6717c566408f5da52e7ca3f2039954274e25de4b47f95d22e8a8aeaf3",
+        "intercept": "85e097c712dec939710a3c341017beda9fb5343bc6582d7712c3ce6d1879c95b",
+        "mean": "8a2c1d6d3812a019f843832d88f008970e1e23cb8c1a59d1681b9bcec5236517",
+        "scale": "a870e2977d70450ab39b98f1b149b7fb66d5b902b8b076959afd179094039949"
+      },
+      "source_tuning_scores_sha256": "22af3e0d348fe25a308331218b7a2bc733b37224a97a6a3cac4e6b2149366925",
+      "source_tuning_targets_sha256": "2d55d9788488cc690663c86689b8fdae8015dd6d3e96affb166954bd6efc8528",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 13,
+      "alpha": 10.0,
+      "probe_fit_examples": 196,
+      "source_tuning_examples": 60,
+      "threshold_info": {
+        "source_micro_f1": 0.6613333333333333,
+        "source_positive_positions": 203,
+        "source_total_positions": 660,
+        "source_predicted_positions": 172,
+        "threshold": 0.5187380081828042,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "b98c7a60ccbfb1e0669cd0eb18008b2297762cd28fba73d89e6ba04d148d4564",
+        "intercept": "91bb551978a3b4fd076983c97c1405ac4bc88df9f500d2e9fb653116a98a7f11",
+        "mean": "40cf23c172d722566ad89315f3a98aeace9a3e0a024cbf18ebb7aed8029e609c",
+        "scale": "2513e142b8a9d4b299816fb93ebfae01b9115b340cfd235563a91ce1dd68a7f6"
+      },
+      "source_tuning_scores_sha256": "aaa521ae697aedbbafd4c91c252a448414432b821760d05ef29ce38fb8c711ef",
+      "source_tuning_targets_sha256": "d600c00495703b666c60f993b017176a1ac54ebfd686413a756c016cbaf16eaf",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 13,
+      "alpha": 10.0,
+      "probe_fit_examples": 196,
+      "source_tuning_examples": 60,
+      "threshold_info": {
+        "source_micro_f1": 0.704225352112676,
+        "source_positive_positions": 213,
+        "source_total_positions": 660,
+        "source_predicted_positions": 284,
+        "threshold": 0.3258570140408703,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "0954cef54bac7a2727f34d8545b1d2acf556e9c0117184360cb2f0ed3ce5aa5f",
+        "intercept": "3d8f2b5e0e2850ed0aba149e7c3b09f8f8a26c9fbeacde991fa86e0edf944368",
+        "mean": "3446d81f211aece80628f2070e86ff03c6ecc5a4d7ed4d655324519dd2f1d52f",
+        "scale": "215ea6db7be67ce8feb1244cf88f6f8f2a3e0388052040c1b068c0cc929f4d0a"
+      },
+      "source_tuning_scores_sha256": "7c37e845b8953c5bc78a7aed02b50aeab5742e01de26dcf75f5a6efa5f5719d3",
+      "source_tuning_targets_sha256": "fbdc2481e0ed588617d406de49678823abb4138f41a80868947ccd6978c09401",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 13,
+      "alpha": 10.0,
+      "probe_fit_examples": 196,
+      "source_tuning_examples": 60,
+      "threshold_info": {
+        "source_micro_f1": 0.6533333333333333,
+        "source_positive_positions": 65,
+        "source_total_positions": 780,
+        "source_predicted_positions": 85,
+        "threshold": 0.30912193031572394,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c16ea3e60abb6da93c004e7268dbf420aa7c6b578a4a92c035723628ddc3956d",
+        "intercept": "077999f09fa9136569b56ec45bd878679fc5ab1e3bcd7781d14b826e913a6414",
+        "mean": "b0337e5c00b97643c8146deee82f771c8f02cc30f7e28546db2bc7c0943a048e",
+        "scale": "61bbd22221e3503919dec944f2d711ea869ab77424717bfe04c796111c29813a"
+      },
+      "source_tuning_scores_sha256": "a110f8f23910117db0d0fcd9042115385f6782ce671c832c6279e1a2cdb55719",
+      "source_tuning_targets_sha256": "1323e07374afc1780581c5f15bdd86c6ba3e8b7487b7207ef37238da9f3b973a",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 14,
+      "alpha": 1.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.7360406091370558,
+        "source_positive_positions": 190,
+        "source_total_positions": 576,
+        "source_predicted_positions": 204,
+        "threshold": 0.4638708461079555,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "f3b1bd892d59cc6ad62fb127233f68a1bb87c27da7de5fb05575ca94c3770e22",
+        "intercept": "fee85eb90339f3c9edc566b4f551e726983b7b0de665200b6e09aa53a0c4b136",
+        "mean": "9d0563ec4f2286877626cc79c99489cc0200afb1be9613f83b497934dfbe790e",
+        "scale": "c0568809bf33e53105e5587fa7188c96231ce6567e99f452139b45a37d813758"
+      },
+      "source_tuning_scores_sha256": "fb1b26924ea50ce792bb74687997577fff84dab4dc7d8a881c6acb1497ec69ab",
+      "source_tuning_targets_sha256": "ac2c6979c726a93db90f5cf16109b9a68048b91150ddf4b9ac473099dc043565",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 14,
+      "alpha": 10.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.6767676767676768,
+        "source_positive_positions": 194,
+        "source_total_positions": 576,
+        "source_predicted_positions": 202,
+        "threshold": 0.4444014622072283,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "71e6b87ab502f09f6bbb21ef8f4e2eb6c8ed8030eb448404702a7c4ec4dd6c0a",
+        "intercept": "33a3516881ff1b887bae67027ea612177f03843d1d6d415808a70ee9ef9147ae",
+        "mean": "699c19420f77635cc48f2243dc7147f38091ca1d668452f15a7694234a182ae9",
+        "scale": "af0228e25936978c6dda6311513190b00d8f5491d100526079e9c7deb7db9cfe"
+      },
+      "source_tuning_scores_sha256": "c15ffb031e0d722a07e2a4f0a363d26603c56f30db1127bacc8b755bf85f70c3",
+      "source_tuning_targets_sha256": "3d7627f0af500b6e2b4cfab1307badf4de31059ffb37ca7e29be87150688c31f",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 14,
+      "alpha": 1.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.7387387387387387,
+        "source_positive_positions": 55,
+        "source_total_positions": 672,
+        "source_predicted_positions": 56,
+        "threshold": 0.4713126935559807,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "6b9fd2397f75bdc76c5f010b7c01d8356690fa19d34b6a540af1867f35e00121",
+        "intercept": "1deaa4159ea195b8141aad90c79c1b2a667f71c507256b1c00829a2b7e361ebd",
+        "mean": "ae1a578ddf330a078bad4fccc5366bf49d673a270ce44a431b3b8fb166ea65a1",
+        "scale": "5bfc550ed1cfe2d26b19c784b044cf0b74c786e18ea2d597bcab13b2d8a11e6c"
+      },
+      "source_tuning_scores_sha256": "32b10b0a6295c13f4c027bf0be7169261b007db68f90fa5330b2a2850784f8a8",
+      "source_tuning_targets_sha256": "17eeaad688b75f02becf58e4251327a092790c548013efde5a5f07eeac59af37",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 15,
+      "alpha": 1.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.6917960088691796,
+        "source_positive_positions": 214,
+        "source_total_positions": 624,
+        "source_predicted_positions": 237,
+        "threshold": 0.46639583996244033,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "e05b947ec19d37f0748f17c9998c63d30e09e47d02e667a9eb2278132baa52c8",
+        "intercept": "54e264842308153325396ba31d162615e34f67e4374d91a047c4795a42b90e34",
+        "mean": "fe8e386c4abec0594ec59d2d5afb195ef8e23149e42985c7b1580ff5ca044eb2",
+        "scale": "c940739c9ca15981bbae1c7f68efe28c45763286d0030e489f6a4c7c2b6059bd"
+      },
+      "source_tuning_scores_sha256": "f635ca7f10d0e6c4a00ee95021cb1f7882a6edaaf533f4ffa847710257b0851a",
+      "source_tuning_targets_sha256": "aaeffb01d02af69e66c97ca5c21d32a870738c0a3bae2c322a8d03e634553c02",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 15,
+      "alpha": 10.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.6053097345132743,
+        "source_positive_positions": 207,
+        "source_total_positions": 624,
+        "source_predicted_positions": 358,
+        "threshold": 0.26141770224248356,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "2beb27e1228c9df5e5fbb40cece4891bc20daac36946f8c448720255eb1c042e",
+        "intercept": "6da7fc06f75517ffa319845f15b485228e580792d483642a888b5950fc2fb497",
+        "mean": "1eb16bc87106db97ba1acb4390e5e602366fa4ca4673ed1d82a2cc18028439b5",
+        "scale": "eb24191d4ff39309f4ca9550cef9582ba16e65ff2b5097283812c19690eda823"
+      },
+      "source_tuning_scores_sha256": "d5f3d9e939939a500cecc0957d931a38e6ffefc524ace09de645949c33e7bc68",
+      "source_tuning_targets_sha256": "664344709640bb4256618761782dae11d7967bdf4b65567968a67af7c198e329",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 15,
+      "alpha": 10.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.6037735849056604,
+        "source_positive_positions": 51,
+        "source_total_positions": 720,
+        "source_predicted_positions": 55,
+        "threshold": 0.3805373882508471,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "a244c301ef6562c2af4ab697ca2e3eaf234f89c7e36074a9e90f6e3c27e0abda",
+        "intercept": "63aba85e3ead18449d082e76c1247749dee47e0dd4389eb0f91b047e722c003c",
+        "mean": "2cda0d74d600956ed733eca4d08a02c61183ee23ddcfdde6bb7e732bc05884ea",
+        "scale": "dc2a608c54e467fc8d31f7e259c910751e9b3b34ea3da5d17438747735366d4f"
+      },
+      "source_tuning_scores_sha256": "adf7341700b3a426542f3fb9cd32d6c89e31bed91e55b3a183b11ef333796b71",
+      "source_tuning_targets_sha256": "facd9e694f04fc3bb63a7985deb75c8f9ebf8a86e7177cce07c5a493a02cd3e8",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 16,
+      "alpha": 10.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.6329113924050633,
+        "source_positive_positions": 263,
+        "source_total_positions": 770,
+        "source_predicted_positions": 369,
+        "threshold": 0.34350413191691365,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "ebe4f87b8fe355c033e68c65899824734fe3529fd299c607a33862050c8d5a96",
+        "intercept": "f055689ee0767a4d282f4ea9dfb04aa067d20936fefb99aef7c8e73998a0734b",
+        "mean": "25c889cabfda2299a80fa697121797fee566e753b7e8aa1e3e55ab4b97320b8f",
+        "scale": "772688cfc94f529352e64459eec804e86961c23a3a736a4f8efbf14596d3af6a"
+      },
+      "source_tuning_scores_sha256": "4501d2bb34b2d4380fb0773310ccec73b0f8f57fb9097b7a01dd9b38d70cc1b8",
+      "source_tuning_targets_sha256": "d06eb1456c2dabad53cf0120f024303cf87a3c723d001732b85c6109c4ed6c36",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 16,
+      "alpha": 10.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.6177847113884556,
+        "source_positive_positions": 251,
+        "source_total_positions": 770,
+        "source_predicted_positions": 390,
+        "threshold": 0.3073024796110278,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "10ef31a6cab56d2c796a56bd78ba64e8f96b5014ca34bc9c47c2e6a079022c80",
+        "intercept": "6673c874f29301d02f266c50a850369e8475e399f3d8b72b5d69af020cffbeb9",
+        "mean": "ed5d7e8787f346a8aec90cabaa2d162d9bf4bf82ab9f47cd902f52e9bb12bbca",
+        "scale": "3046f63b1aa5ba0f890858490d94a20a692de959daccc8e910c6d6f4c8e585a4"
+      },
+      "source_tuning_scores_sha256": "92cf2802a2ce448da2d2da96e5daf76a7caccd33f6e6567e2b4fe862991cd6bc",
+      "source_tuning_targets_sha256": "992f26a281c2619b41c64bc8dab5d54b3621200ccc76ee15a42a55082fb66c93",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 16,
+      "alpha": 10.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.6231884057971014,
+        "source_positive_positions": 54,
+        "source_total_positions": 880,
+        "source_predicted_positions": 84,
+        "threshold": 0.24527879151509424,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "88313a2abe3040f953165ebe0cbf9338e6e52ee00b5d7d6e2e1bcad4d3ffaf5f",
+        "intercept": "c1702793fcfced60516c264b88c98bf6a26ff2199bf100839fdc3a287baee4fd",
+        "mean": "bc342a9258742e6456c73da3f84b1ddea9c75207099ef1b7a65429bab4a7ab1c",
+        "scale": "c5b27c497cb68635b96249eb52a9fb841b98e6f5dfe0b6f152fafe2f176bcca4"
+      },
+      "source_tuning_scores_sha256": "84f3ccad7ced8e3a5ec0a108f29e063c156d8869f2fc56d3e0df236231e90be7",
+      "source_tuning_targets_sha256": "3353a15922a6919ee75ec401a1fe7959b5fe8963c541a21c1703001b6cf7f817",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 17,
+      "alpha": 10.0,
+      "probe_fit_examples": 202,
+      "source_tuning_examples": 54,
+      "threshold_info": {
+        "source_micro_f1": 0.6084656084656085,
+        "source_positive_positions": 273,
+        "source_total_positions": 810,
+        "source_predicted_positions": 483,
+        "threshold": 0.2399371285279453,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "4e7bce1aa7a3076310b5a17a6068d1b3cd9029afec0f9da021b626014dd3fe53",
+        "intercept": "95616c695213757307bcf83b9331869fc29b9be00158129f700d34cf7d880a04",
+        "mean": "880ce0c683d2f04dbe2546878bdd6a5de6b39c637a1a808999475ca83facb8a5",
+        "scale": "df242f84b109adbf34313354e45f2d8e57c902dfc05ffb5cb89b72d34d392fed"
+      },
+      "source_tuning_scores_sha256": "4b3f9ec4a75ff0c4d397c383962ea91b70771a68381b7f82b62ddbe611b82a3f",
+      "source_tuning_targets_sha256": "2eca7fc2cb254f48e50a71eae27e39fe6791d591bf42696633529db1ac1d9521",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 17,
+      "alpha": 10.0,
+      "probe_fit_examples": 202,
+      "source_tuning_examples": 54,
+      "threshold_info": {
+        "source_micro_f1": 0.5785340314136126,
+        "source_positive_positions": 271,
+        "source_total_positions": 810,
+        "source_predicted_positions": 493,
+        "threshold": 0.22630035222622924,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c3526c4bc0246024c42741aa8eefdbe0a58d4d75beab89efa4c9ca585c2f6c58",
+        "intercept": "03283f0a1a9e7678bbf4c16d29b9afeca0e95df9e03d672b476c54af07fc757b",
+        "mean": "0b7c5b97602d3db04a1c4d64385c9aef091fea76706e9c0ff52560883b8dc424",
+        "scale": "451e50c4cbcadbbed7ad392483bb7ce3d6851305a01f2232c3d6bd0ae4c5253b"
+      },
+      "source_tuning_scores_sha256": "6d256ae0b43627aa69d2f484ed72e468a5c1f4e310c57b50432cd86a077a76c1",
+      "source_tuning_targets_sha256": "da4410f0d5ed8929766d20eec0164ea25ec4383b2f6ad698c92564d8253b716e",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 17,
+      "alpha": 10.0,
+      "probe_fit_examples": 202,
+      "source_tuning_examples": 54,
+      "threshold_info": {
+        "source_micro_f1": 0.6037735849056604,
+        "source_positive_positions": 57,
+        "source_total_positions": 918,
+        "source_predicted_positions": 49,
+        "threshold": 0.38789175824386124,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "d6bd24424db82a1f9d595ec3959dbe7678ee60a894fcf70138db169aa4f97bac",
+        "intercept": "1d92bf12ef769c00bc2455b82e2af954695a5416ef71ae054c642a7b2e63123a",
+        "mean": "7d30fa4cb215d476436c932d00fe8341a5b8b47d14259165299c27d0a36b8516",
+        "scale": "5329d129709a7c5816ab9495c09c8f6cb6e236a9da746a9506d9e24da3f9f128"
+      },
+      "source_tuning_scores_sha256": "24f1cc39ff2db8f12b7dbed1e8f922cf5aa5943a1c365e3cd1b1d3558458a6c3",
+      "source_tuning_targets_sha256": "03fa6d80e41af29445579756b5b54a6db6cc41341e446e69bae6d2712887e5e9",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 18,
+      "alpha": 1.0,
+      "probe_fit_examples": 195,
+      "source_tuning_examples": 61,
+      "threshold_info": {
+        "source_micro_f1": 0.592375366568915,
+        "source_positive_positions": 322,
+        "source_total_positions": 976,
+        "source_predicted_positions": 360,
+        "threshold": 0.43943457733260793,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "5efd4bafbf93a9602f8b0b93e8ac2be955e8534822122879802e4963a9e33d8d",
+        "intercept": "643ea88b56e3c19436cbe704deec890858f8de80148f6f60df319deccb1eab24",
+        "mean": "4fa0150fff6e77a955ce7ed887f93162536a36c114cbd85f16a260ee408e914f",
+        "scale": "3d4fed6b037275af28d8ef88b5e626e87bfb63717ea24bbd64397e43187894e8"
+      },
+      "source_tuning_scores_sha256": "f37dd6133abe380b16becd48ba03d5777d1e9f9b3e3e4bf1d99b1f2bcd238b90",
+      "source_tuning_targets_sha256": "95a305fba1e3ab694b3dde488416e122f006d20fa3d937c7cbb10950b2b6b160",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 18,
+      "alpha": 10.0,
+      "probe_fit_examples": 195,
+      "source_tuning_examples": 61,
+      "threshold_info": {
+        "source_micro_f1": 0.5884146341463414,
+        "source_positive_positions": 316,
+        "source_total_positions": 976,
+        "source_predicted_positions": 340,
+        "threshold": 0.40885842044953624,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "6e0b65afb5da35a2e60aca26d8a96d7c30e792f2a42130d966898f8dd426ba55",
+        "intercept": "80adfddbdb528424995c5cca583112e10cc7231d9c775aae1170f1bee9af96b9",
+        "mean": "8ba20eaf317070a0ba3054f4191af106671e11b6d788046e20b5e35e754789d1",
+        "scale": "5a589a4990cc50a8f2446d0cfed59be039b25bdf8783ebf024589b86441f42f7"
+      },
+      "source_tuning_scores_sha256": "279c11df23b55f21aa5476cedfec994627fd28ea73475c14d5b607b7b6ef34cb",
+      "source_tuning_targets_sha256": "f2eef95775994107e88a02c6ba8c79c51bba90044dad29eb426e55f3648c9878",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 18,
+      "alpha": 1.0,
+      "probe_fit_examples": 195,
+      "source_tuning_examples": 61,
+      "threshold_info": {
+        "source_micro_f1": 0.6293706293706294,
+        "source_positive_positions": 65,
+        "source_total_positions": 1098,
+        "source_predicted_positions": 78,
+        "threshold": 0.37399186795954636,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "de0a28ed1b3cca912f5e04f8c50e0d80a0cc7df9df4b1bd55ce3d58a9edd5d8f",
+        "intercept": "f59b2d689cfc4f1fa05110007e7d7b4933db6b40a84c0104c73bcf2b818808fd",
+        "mean": "001d8ff07455acf8840a9901cb5b96be9a602709aa5e2f202e68c82cc8dec8d2",
+        "scale": "389d7ff12a08913f1a9e2ce9a8e667050b9238d7f46812c1b045b6463e4a3a37"
+      },
+      "source_tuning_scores_sha256": "cf388f83a79074f9aa069cba738fce57c511ea6c74877ec6896066f79bb6f38b",
+      "source_tuning_targets_sha256": "cc4bad4a9fc7e162d7096bd086a310be20aa2e43dc169556496518476aa1a645",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 19,
+      "alpha": 10.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.5630434782608695,
+        "source_positive_positions": 333,
+        "source_total_positions": 1003,
+        "source_predicted_positions": 587,
+        "threshold": 0.24826879086328613,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "a336a0ec9db9592a84f27b5fea9f655876e6ab81f971b6d93bee4e1211659d4d",
+        "intercept": "ab0c9a35b38efc9d9588e4399c0a91f8d1361957da0f6d74789fe0491e584a1c",
+        "mean": "3446bfda4f7bc8697732136c274141ee07efff805f8257629ee582ced6a97c21",
+        "scale": "2ebdda606ffe5b4f3e2c8aade69871d6b7780e9ab7925ef3049eba4e4813f1f1"
+      },
+      "source_tuning_scores_sha256": "cea8adb679954a7e7215efbdd5a40f0e506be94cde69211e1d909a50639967b6",
+      "source_tuning_targets_sha256": "adce6fc8e3c18d58da4b0a2fdcfc3ddf0ac09012b56e5cecf49971a2731d1ce8",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 19,
+      "alpha": 10.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.5445134575569358,
+        "source_positive_positions": 332,
+        "source_total_positions": 1003,
+        "source_predicted_positions": 634,
+        "threshold": 0.19556559765095885,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c179134d9c70461a1d8beb4350f357274bdd7784a286e02da7af1c5d9a2e7f00",
+        "intercept": "b6fd7802ff9ad315232cdaff8facacd6ba3e76ce1cff0251c5f940f45e045789",
+        "mean": "0a5b1bcd513d96ad51c50b0cfc254a461c0b8f140427561362dd124e4dfcdbd5",
+        "scale": "744f8bb192bbc121590c21ee68bf9c9f7e341299b88273e863c1ba95c2b8e615"
+      },
+      "source_tuning_scores_sha256": "27461843c7d832f1f30e1502588064c8d052ba09613485151e60210dcedcbeaa",
+      "source_tuning_targets_sha256": "0750b5c43e54af4b37858918292d535a8581255f02b72a12fc37b719d9978c55",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 19,
+      "alpha": 1.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.6666666666666666,
+        "source_positive_positions": 58,
+        "source_total_positions": 1121,
+        "source_predicted_positions": 62,
+        "threshold": 0.4794493949510115,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "360dd18b6ce64962710d278d7076fbf5cd5b3b3f4659897b042f2947a30aef6f",
+        "intercept": "95f880d05a7629e7b6782e3079aba60e50de1c16d70bf8603d0dc4fa6c466f26",
+        "mean": "a025a1da4b1f44168673b80ca6c96c69df919e3510eef2a658dd75b0bcbd6607",
+        "scale": "4dafacb4cedcd40aa8194f3aa8d4e1c15fec70789b52bbbfad1752d4ebe52601"
+      },
+      "source_tuning_scores_sha256": "38f4ae8137c6d7cc6375f7ae56ca9e591334f4d265a9c97d49583de649f5f722",
+      "source_tuning_targets_sha256": "d9bdb8c35f60de5c5673658ad431c3c185ad48b3f8caaebe5db534d166b6db8b",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 20,
+      "alpha": 1.0,
+      "probe_fit_examples": 214,
+      "source_tuning_examples": 42,
+      "threshold_info": {
+        "source_micro_f1": 0.5587144622991347,
+        "source_positive_positions": 260,
+        "source_total_positions": 756,
+        "source_predicted_positions": 549,
+        "threshold": 0.05322103384372334,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c093bfb681c010a227ff94617333585df6f09a676eb0c2c084b313e3e41112df",
+        "intercept": "1dc6f7a008a37bc68fe11f3fa06954968a4d623fdf381d5d9fc5b33ee31b9907",
+        "mean": "0b0f656173ad3e005def9dd07a5a6817012ed65120a85b1c1ab134fdf663892d",
+        "scale": "b40d96a9de8f4c78ab111419345d6d498981ff00a45777dd2d5942a00016b267"
+      },
+      "source_tuning_scores_sha256": "21b0c344a1801639fb9f9ef6445da41407b539ca62bb164f1a364fd15d5e5042",
+      "source_tuning_targets_sha256": "b7d54841ca29bcc7d23a8f418e22e76e78a948180a7d73c6eb76d8b1da64a2bd",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 20,
+      "alpha": 10.0,
+      "probe_fit_examples": 214,
+      "source_tuning_examples": 42,
+      "threshold_info": {
+        "source_micro_f1": 0.5796703296703297,
+        "source_positive_positions": 260,
+        "source_total_positions": 756,
+        "source_predicted_positions": 468,
+        "threshold": 0.23131119113043577,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "37f146872bf5c2feb58b32b7759905c55ec7c1d468bf39b2dc99c066c1959c1b",
+        "intercept": "e6a2f08aa2d7000a5b5e20ca59717fb9cb9d6db2eff1ca9cad2c019d5e807581",
+        "mean": "f34540736f10927936118d747a9fbabe2b533784764bde1356270cea9ede580f",
+        "scale": "1cde18b7769674c80982f6f5e6ceac5447e7455dea147607b2202e367b551106"
+      },
+      "source_tuning_scores_sha256": "afb0a8c9539b3ad1c7a432c3279d72868013396eca531f4660bd526483dffe31",
+      "source_tuning_targets_sha256": "d8d214809a61da344327745d01c94662710bc3be163238eb1606309f3dab6372",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 20,
+      "alpha": 1.0,
+      "probe_fit_examples": 214,
+      "source_tuning_examples": 42,
+      "threshold_info": {
+        "source_micro_f1": 0.5567010309278351,
+        "source_positive_positions": 45,
+        "source_total_positions": 840,
+        "source_predicted_positions": 52,
+        "threshold": 0.4447724781156281,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "cdd2c3f835af56d4df2c23ba45019e2284b4e9854a6d1099743f3ea6bc519d1c",
+        "intercept": "5130e3d83f2c36d93eb819d5a31deffc4fcd1ffb5ce3441daf1f6a3d7f45d5cf",
+        "mean": "aa71d17226cb6ffd194d89f8f73b40bd33c5d1482471cb16887489359bc3f1b2",
+        "scale": "a1e1bb9ecdf09ff2ec8df3f60574e331059db5a6d71122f847457e022a3ea98b"
+      },
+      "source_tuning_scores_sha256": "8be8e5e87d37c4c28fe05bf42ef56ecd16760f3281e4436a8f6017eba041e81d",
+      "source_tuning_targets_sha256": "6ead43a5cd5cacd169f74a85a0f8214b59dca5300e89cfe9fc9a4a3d5ce74e94",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 21,
+      "alpha": 10.0,
+      "probe_fit_examples": 209,
+      "source_tuning_examples": 47,
+      "threshold_info": {
+        "source_micro_f1": 0.5478787878787879,
+        "source_positive_positions": 304,
+        "source_total_positions": 893,
+        "source_predicted_positions": 521,
+        "threshold": 0.26192741739016207,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "73cc956792545422c7d562e63ea9a00951e811ff0b30dafe761e8913a0ccb9f9",
+        "intercept": "996b1da4c161bffdd962252e2d27404e88114ce5c42eaa14d485ae43527e52dc",
+        "mean": "03f96fa54b936ae6fd8ab82dd666cd21623e4b54de9511f214f59787c849c7da",
+        "scale": "a603073c77f0ad139881093f50770e1b7e977ead5d756f9258a5d33af039ef17"
+      },
+      "source_tuning_scores_sha256": "82332ad6a1574c39230ef78761cbaa2ae2e2acdcba8706911036b364b40a21c2",
+      "source_tuning_targets_sha256": "43cea6d6f77c60d5a8c46432b544bf35966de5a9513a8db06cb00ab67a7898c5",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 21,
+      "alpha": 10.0,
+      "probe_fit_examples": 209,
+      "source_tuning_examples": 47,
+      "threshold_info": {
+        "source_micro_f1": 0.5408805031446541,
+        "source_positive_positions": 296,
+        "source_total_positions": 893,
+        "source_predicted_positions": 340,
+        "threshold": 0.4109632374374192,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c49c69bc03d1874818935790dc300e9ec6b6de595287eb8e7455dbd7e4614072",
+        "intercept": "581f46c2c3fba8e51a8e3f2939daf033badb0911d42f11f772b3cd13ffa32a10",
+        "mean": "03a5e7ef849c3a3d7bcdaa28b0bd31b152fec5a24308296bd8c055646da993dc",
+        "scale": "a8b302d1df21f3ea8e09b3f7a7e809d34944ec9810adb624dd557611e238d764"
+      },
+      "source_tuning_scores_sha256": "1f7bb911afe35dabc7d3fd591acf3036cfadd53301b16508b354f2c0354f02d8",
+      "source_tuning_targets_sha256": "fd67eecbf29e85c30e50b1f1b8a49e209dcf7e798657157e0c2a3305312cbe38",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 21,
+      "alpha": 10.0,
+      "probe_fit_examples": 209,
+      "source_tuning_examples": 47,
+      "threshold_info": {
+        "source_micro_f1": 0.6382978723404256,
+        "source_positive_positions": 37,
+        "source_total_positions": 987,
+        "source_predicted_positions": 57,
+        "threshold": 0.2660399042982382,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "fa259264bad7f5807884d2b27e0e0fb116a058e2cdd1752c94fa13d1d4428094",
+        "intercept": "a24a873acec1980a695c9857bcfaf88a85deef2fabab4aacee6f5ec230b1a39e",
+        "mean": "70fa4a9365b9ec1366c91e74534722023cd371785a9b7555769199072b4366bd",
+        "scale": "8ed2725a43bd65c4c0f6b5d031c7b5630c606ed5d142fb2d47508990e45a596b"
+      },
+      "source_tuning_scores_sha256": "011efb279f67a41565350ce500217a25b93982a328440a316aa1acbf02fda99e",
+      "source_tuning_targets_sha256": "79502e50b1f17690734188fe1cfb38b6b29fd051ae0f262ec5e5f3cc8c6e6b34",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 22,
+      "alpha": 10.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.5495608531994981,
+        "source_positive_positions": 317,
+        "source_total_positions": 960,
+        "source_predicted_positions": 480,
+        "threshold": 0.3067203615802483,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "f26a3ec9555baf583be922820f55c7f6d5c46a5f3dac674969d6a2ddfcac4911",
+        "intercept": "f4f3bc7c1415bf3a9bbb7e641b67e1cc9a309c38b2892c25075100b71ff5366e",
+        "mean": "0915694b894c8576d41e07c03fbf2640a93fe8640a627c2324b747c053c68d06",
+        "scale": "a60788499914fd4487488cd50ece86b3fc9293f24daea20e4da959afab78ec94"
+      },
+      "source_tuning_scores_sha256": "4150c9227b5b77e5382bf324826ec679ac991611ceef4f2ffb6f4f6b1892b63e",
+      "source_tuning_targets_sha256": "a37c49f18ea7e46b8b0fa536e428f56693e75a25a6772b1e678f4f77c59c7f9f",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 22,
+      "alpha": 1.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.5349344978165939,
+        "source_positive_positions": 315,
+        "source_total_positions": 960,
+        "source_predicted_positions": 601,
+        "threshold": 0.15539686151513965,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "9d5ce9c05c49e7caae7922c07fb27908c4115c96bf9d205e8c8c583e37bda06d",
+        "intercept": "7aa62698772b6ce77229e13e8b4e35738fc7a1795013232f195e850610f4326a",
+        "mean": "54c3bd87c75621acccb0c6e40f4df9aa132eb9225f10f5fae111476b7b1e3418",
+        "scale": "146f896288d9741fc0f80124f8a2fb535f67ce3ce90350a0ff565ef4b1d5bc06"
+      },
+      "source_tuning_scores_sha256": "e2293538059c1c191973f073b7f3ca7171f6536d8c655bde8213618abcff6147",
+      "source_tuning_targets_sha256": "6ed2c9a4e48c572bdb6b14308db464bd622deb1ef49bad8e427be0b8d1cb6f46",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 22,
+      "alpha": 1.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.5686274509803921,
+        "source_positive_positions": 51,
+        "source_total_positions": 1056,
+        "source_predicted_positions": 51,
+        "threshold": 0.43636981554259446,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "463e8df3dc60e65bf283db10e9d636cdc1bdb2f6db2fe1e84e711a2df10d7ffb",
+        "intercept": "f5cd39ed51984e2f38a5a6594428a777bc3bcac7ea053023c943982f3ca62e28",
+        "mean": "4ff0c6afd0c275d0faa609ee64641db9ca63e0bff020910834e7d440a31841e5",
+        "scale": "c42d713001afbd637fd05634cf45f071f6da0f274c7122c70a77f07621125ab0"
+      },
+      "source_tuning_scores_sha256": "70d0006d4924529f0d59b4ef23172c875bb6b80173fd99e4b648dc7ce849e4f4",
+      "source_tuning_targets_sha256": "d7a494a95a2c4b946b29324cdc35fbbaebe4054b1ca2b9cda9c4fadd259ff31b",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 23,
+      "alpha": 1.0,
+      "probe_fit_examples": 198,
+      "source_tuning_examples": 58,
+      "threshold_info": {
+        "source_micro_f1": 0.5682507583417593,
+        "source_positive_positions": 414,
+        "source_total_positions": 1218,
+        "source_predicted_positions": 575,
+        "threshold": 0.3445495623597425,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "fe3fc0b35d09fcaa056caeabf9a6e10e8ae57f35b41ddf0c79fc43e7df50a1a7",
+        "intercept": "1e48ea01924b4c0f8b4c2cdc5c09f6f510f4b51bd754edceb385db0d7e5d0900",
+        "mean": "e8b4aa72554400ae84800c96fed22d0a091911e33585158378fd183d3df4bbcf",
+        "scale": "c9a71467df34242c5614d2556d1ba5a7863dba43991b94f55adb62246e4a3883"
+      },
+      "source_tuning_scores_sha256": "5938a654577186b45c7cca2d5b3198df908851c50c62c8dbcff967d4b38a2365",
+      "source_tuning_targets_sha256": "e496b17c55eef27d5f3902ca400588ab88ceca8524baedadb26b8b1090e0462f",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 23,
+      "alpha": 100.0,
+      "probe_fit_examples": 198,
+      "source_tuning_examples": 58,
+      "threshold_info": {
+        "source_micro_f1": 0.5469090909090909,
+        "source_positive_positions": 419,
+        "source_total_positions": 1218,
+        "source_predicted_positions": 956,
+        "threshold": 0.19596944308933495,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "75b755683d088279a79e2057f89787366e1575474acb3a560b51b1085451cfdc",
+        "intercept": "23fdca03e64fb3005ed5080a07fbdc7ee9d6efdb205c0f3032c1862542ad6a64",
+        "mean": "ee4fe9f667c9f17234d2d26b30c2603ef9da76df8e307bc305c0b8ee5c9568ff",
+        "scale": "4d7fe7b4c025ff112622578ba6e5d21f00b8bd9ae183406c67e6269f8858f3d8"
+      },
+      "source_tuning_scores_sha256": "bb9e7f739bd73aa199aad3003716f8de8a617721c58a7364358260dc74492941",
+      "source_tuning_targets_sha256": "0f62ae9b1cf660fb43cbe734b14bfabf16ec953922422ed26693d87409a870eb",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 23,
+      "alpha": 10.0,
+      "probe_fit_examples": 198,
+      "source_tuning_examples": 58,
+      "threshold_info": {
+        "source_micro_f1": 0.5138888888888888,
+        "source_positive_positions": 59,
+        "source_total_positions": 1334,
+        "source_predicted_positions": 85,
+        "threshold": 0.2553894737824059,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "bd02d4890d707ad42ec71670c6f8b7889d019d1337f20a52bff67db776e8b25c",
+        "intercept": "ba0920f6213402c696524d1ed512cfce65f606d97fa74cf9085e3f243a2f6850",
+        "mean": "ee749c00e9beda82ccd04da07150c9307d435d30d5d8d77c0415eb8d3eed15d1",
+        "scale": "0e9f2cbf2470c0959253c1c58318ecaf3e5633d0e662ed08fcb9789351a207b1"
+      },
+      "source_tuning_scores_sha256": "c019dcbc3a6edb8c75d9abbfb37524186c35c273d629ad02f277a1e2ba03f744",
+      "source_tuning_targets_sha256": "f8fb17103be1b8e02e1460fad4e2311e2ad2515acd970d3bc3de0398ef8ec97d",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 24,
+      "alpha": 10.0,
+      "probe_fit_examples": 214,
+      "source_tuning_examples": 42,
+      "threshold_info": {
+        "source_micro_f1": 0.539282250242483,
+        "source_positive_positions": 305,
+        "source_total_positions": 924,
+        "source_predicted_positions": 726,
+        "threshold": 0.07943111461599744,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "d68ae9e9950f09711f8b0d0150d20d45fbe02329858931d2dfee4b2240ba4895",
+        "intercept": "fb7ec44b356925c9b20bdba4266e8a922486dfb1f95301be5649782b591e7405",
+        "mean": "475db31a347b482c1db54e3f82687ac90746c7aee93725ec22cba8d279ede699",
+        "scale": "4a89b44c7a95a2a2d3aa2743de756ec7a8ca0f1e598e877228e1b3b1a98b5ff5"
+      },
+      "source_tuning_scores_sha256": "5024c9a682f14bdb5df92eb70c47ecd699ad7cd263b41f4a62290ebd10c707aa",
+      "source_tuning_targets_sha256": "580b9e5d7fe9a2e417287b79719d1348dfa569948c39fb729ba9b0b7bbaf2a35",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 24,
+      "alpha": 10.0,
+      "probe_fit_examples": 214,
+      "source_tuning_examples": 42,
+      "threshold_info": {
+        "source_micro_f1": 0.5303370786516854,
+        "source_positive_positions": 304,
+        "source_total_positions": 924,
+        "source_predicted_positions": 586,
+        "threshold": 0.20101603213190317,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "544656935a2548f133710d386cb7eb5801f59ed8ea779ae74138eef94cc120d8",
+        "intercept": "696124212b4214aac5db8b7aa0f2e35e40016de9c997edc2fc31e6bc0a00aa92",
+        "mean": "6c9b68d917d8f15c292bfe7c3168a22a126cac8298022d3521a5d56d6dd416aa",
+        "scale": "ba0e57dbe2e9718069a275979657ee1f6346c7153c3303275710bc24e3bc2bae"
+      },
+      "source_tuning_scores_sha256": "165406c5694cd1060f8f054cd65b12cc87a27a6652214c956b5e83243b7b6981",
+      "source_tuning_targets_sha256": "c5a518a6201145d62a56fdc7da824f53a559e30c50bf12ee9db5553a0796c374",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 24,
+      "alpha": 1.0,
+      "probe_fit_examples": 214,
+      "source_tuning_examples": 42,
+      "threshold_info": {
+        "source_micro_f1": 0.4634146341463415,
+        "source_positive_positions": 41,
+        "source_total_positions": 1008,
+        "source_predicted_positions": 41,
+        "threshold": 0.4360520852751181,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c88282e615eb622f79a25358d703134a87a436f880c195f0b4d8ab584d77309f",
+        "intercept": "cf034eb1ce2e35dafc9208b1be103585c6897d4c0f19fb287e6686a0b095c3d1",
+        "mean": "7776e95ae934b57e93125acff300f4427123b986582ffacc95afbdeb361f25d1",
+        "scale": "12042471774789035b182abe5b6c843656132a3d458fa2a52be57c79a864c519"
+      },
+      "source_tuning_scores_sha256": "c9fc82a7308b14b144534bb6f601e232bb77a55fd5221f7ee9062170b70119ba",
+      "source_tuning_targets_sha256": "5f2a38953febd5694aa10470ef88e65bc95688e0aee4ac32f0c38648c44b9284",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 25,
+      "alpha": 10.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.5329991645781119,
+        "source_positive_positions": 365,
+        "source_total_positions": 1104,
+        "source_predicted_positions": 832,
+        "threshold": 0.13780821103856655,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "20f23ac1ba7cf53931644031fca63cff57c64a6fe961f34365678ecffb1b5c85",
+        "intercept": "7043da8a8e13b50aab6013c339daa269fda4ad6e644e8d38fe823edcd83bca8d",
+        "mean": "c7565d81ab9cd884fbe3263cae940f5e90a6bfaff96fd5ea299ee3709914733c",
+        "scale": "a95726bc2eead5b0427eaad3e38bf015acea9cc54700e952ab78d8feb65c8914"
+      },
+      "source_tuning_scores_sha256": "b34a10d9cc92f1f07912b05af43b7183222ab6d357272a9edae12421ea153fbd",
+      "source_tuning_targets_sha256": "eb5cef5f7abf01686b775c434414158d305eb3275c469cd431f45b6a2ae907d2",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 25,
+      "alpha": 10.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.538878842676311,
+        "source_positive_positions": 365,
+        "source_total_positions": 1104,
+        "source_predicted_positions": 741,
+        "threshold": 0.18583368740805897,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "1332495f383afeb4f3699dd90e6a3553c255aefa6a6eef51e60dbc49b85461d2",
+        "intercept": "bf1a1fa6e124c7fca30115f32e32aa749463224c4e26f193c51833e7c6501830",
+        "mean": "8b7e7e9fadfe2bebbe53c7c62685e7df3c89c6e6e004b64a41ebc815bbbdd526",
+        "scale": "053cf09afc799b36fb5825033c3e60f777c5334f76fa6f89eacbdc590741d52a"
+      },
+      "source_tuning_scores_sha256": "9fd9fa9d4e5b2bf226fb9f2c1252ed170752e56d2770c887342531e943664655",
+      "source_tuning_targets_sha256": "90aabc9c3131cdaf2384c449922fa7736fc1828c7bbbad96532b31ad4ee3851a",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 25,
+      "alpha": 1.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.43795620437956206,
+        "source_positive_positions": 49,
+        "source_total_positions": 1200,
+        "source_predicted_positions": 88,
+        "threshold": 0.33429731710074123,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "2b3c01ac0044ea0b180832b986c7bba4c5a466a12e8fd4ce29ebf25314b157c7",
+        "intercept": "103113c93c5d64d148f817557e130387f9a7e9349283e6225c5913971952f0de",
+        "mean": "4a218ced243f436335f403742f01b59ee2fc2ca1062013812edb67c89f94cc11",
+        "scale": "7c3f3a2f2c5a76e4f027935384582f2f7f55d67fae3522304f3cf816fb1f1b49"
+      },
+      "source_tuning_scores_sha256": "b740e89aff544f793bd654420771f1cb29e16278a4bf8f23ad1b3708a50c2bf9",
+      "source_tuning_targets_sha256": "5ad4a8e020ef46c74b9485cc5aa146397ebe86e6d7268f5f578b1569423b2f49",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 26,
+      "alpha": 10.0,
+      "probe_fit_examples": 206,
+      "source_tuning_examples": 50,
+      "threshold_info": {
+        "source_micro_f1": 0.5245441795231417,
+        "source_positive_positions": 404,
+        "source_total_positions": 1200,
+        "source_predicted_positions": 1022,
+        "threshold": 0.04986361505380704,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "8306225315c96f35d5642bb8384fccf641dd8d84b584e7be0081a887a536dc19",
+        "intercept": "0dba77f5e0b907180a001fac0d4aab75e9ae1fa6a758918f5c0a358b9894812a",
+        "mean": "3207b416b9091e2dc4bce2e0f1863da566d89ecdf808385f26a4a7ea1b29e446",
+        "scale": "b26641ac0026f8d9c68d2c6685427443790cf7118e94b935899fbf081d052dfe"
+      },
+      "source_tuning_scores_sha256": "35bd6aa6ee77efb65c9a304e4d75885b5319f52b9a4f355b9afb8c3bae4f3c87",
+      "source_tuning_targets_sha256": "ca9af3df67c6107f44339068bcac8ff7865240e8f436761e652a0d431d4f8130",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 26,
+      "alpha": 10.0,
+      "probe_fit_examples": 206,
+      "source_tuning_examples": 50,
+      "threshold_info": {
+        "source_micro_f1": 0.5303152789005658,
+        "source_positive_positions": 405,
+        "source_total_positions": 1200,
+        "source_predicted_positions": 832,
+        "threshold": 0.19438414896716885,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c22873c6b48500d6ed638d70c063ab820116736fa9dc7f66e688e8d6bea042b8",
+        "intercept": "d90d19bcfeb751072140b44c47408f04bc4c7f706c35017f2f4d2461724e0597",
+        "mean": "d433dc24fa06ac89fafccc750d3f859c7108810a81554bb7b79d3abb9fe3bcdf",
+        "scale": "653e5d7d050a83c0abf1b7a1ba0a73d159dd89cbe138137e5284f553604cc37f"
+      },
+      "source_tuning_scores_sha256": "6b4b19790c4e2f9ae2f7e83dac739d954f806738f7bd7c2ac0998bd72ce4079d",
+      "source_tuning_targets_sha256": "8435d6032fc859ab9761e9af1259f08dd11cb738e3eb02f91c262bd425836547",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 26,
+      "alpha": 1.0,
+      "probe_fit_examples": 206,
+      "source_tuning_examples": 50,
+      "threshold_info": {
+        "source_micro_f1": 0.4485981308411215,
+        "source_positive_positions": 41,
+        "source_total_positions": 1300,
+        "source_predicted_positions": 66,
+        "threshold": 0.343590252877864,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c5bfc2d763752af432ef5734a2ae8b2729352cb3ae34ee4881106354a2b2487c",
+        "intercept": "3b4df5bc76c90e5cc9521b1999fc09df426da5c749c813f974b2675e21e4570f",
+        "mean": "4f3c8d83e0ff1c0367d4e265b4fb1ae91d45cdc5662e126db98a235e5ffac410",
+        "scale": "565f57b6dcfc334b5d6b768a135e7fe78fa0561814434350102c70174572f3a4"
+      },
+      "source_tuning_scores_sha256": "4ae87509e5078e433fd6f444ef486328c8b28837f7024a6b757a2a5f09c8daee",
+      "source_tuning_targets_sha256": "efcc3130619c7299840007f8880e5336a0828d32efeae6740aaa0276001b9ca3",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 27,
+      "alpha": 100.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.5192168237853517,
+        "source_positive_positions": 404,
+        "source_total_positions": 1225,
+        "source_predicted_positions": 975,
+        "threshold": 0.1897627030210636,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "b0fa8ed41f57252f72d5e222ddbeacf8fa418ed59701170d30d09e86c3d65382",
+        "intercept": "01dcc384ccbd302c4c346afff5d49f577493019449ab6ea1d7d6faea2d46bd41",
+        "mean": "de2a341fe20d53dd1215a657c5cb3dfd51bb20dc2ee8fa460cbf7e5ef69fa4ec",
+        "scale": "e8605a271a840f7db1adb324f7854ad5c83714f9cc4452882c2122bed97da257"
+      },
+      "source_tuning_scores_sha256": "70d65f7454cf0f943872eeb27e4d3183c3a2ea28327907f7f3920f3068e61f21",
+      "source_tuning_targets_sha256": "4ddf4a19e7a9e4a3f4c715370ff8a08bc962df317f6762c055b5007532501751",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 27,
+      "alpha": 10.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.527086383601757,
+        "source_positive_positions": 398,
+        "source_total_positions": 1225,
+        "source_predicted_positions": 968,
+        "threshold": 0.09046649709886362,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "13deba66d6ce846b2a065e6ea41a55b6ebc37775b84278bb1a34029a73c9258a",
+        "intercept": "a00710824479cc4aff8e5b0a602dcbf35337d45233290ee0baced1b84fb4476f",
+        "mean": "f3057346d0adb67651deed98f933f997d950989aea864b35b514deedbcc1a10a",
+        "scale": "c01752c7daf0e4a058e452fb4178fd7ed317f58cf82a1e1f3f71a2c7eb180b0b"
+      },
+      "source_tuning_scores_sha256": "56e1097d140a365e66b684cf8ff7cbd4f83ac8a3ae2e4c2035b529ce768fccf8",
+      "source_tuning_targets_sha256": "303746300d4fe4262cace7da0081a60450ed5989f36fcd041cf4cf1101306d04",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 27,
+      "alpha": 10.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.391304347826087,
+        "source_positive_positions": 46,
+        "source_total_positions": 1323,
+        "source_predicted_positions": 46,
+        "threshold": 0.3272181261359234,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "0350f2b64a825a43618312e4741eff33917d44a4858dc57f3be79ba780a74908",
+        "intercept": "97363b69ce25c7a1d876d3ed96bd677d1d02d606873643b4e03458f8149bc51c",
+        "mean": "678344d5896837096b35e027fcdf84d3608cd0ad19de22eb1796a9dda41e5459",
+        "scale": "ea01adfdba8b9f83121965fee8fd5eedf0da5a4bc840e04728582b8b3a2f0227"
+      },
+      "source_tuning_scores_sha256": "8c63c886ce2dcdaa036ad078f4b9040783b06b54e595283036b3ecd607c5c924",
+      "source_tuning_targets_sha256": "2b16abe399bd26e199b4b800e8c34f39e624863ffbdd76389b7163f1318c33f8",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 28,
+      "alpha": 100.0,
+      "probe_fit_examples": 213,
+      "source_tuning_examples": 43,
+      "threshold_info": {
+        "source_micro_f1": 0.5126530612244898,
+        "source_positive_positions": 359,
+        "source_total_positions": 1118,
+        "source_predicted_positions": 866,
+        "threshold": 0.19660558622040922,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "871a4a657e4dc9fc666cf0dffcc20f286a33e3c90b38fd4c3b6a3ff48cd5d285",
+        "intercept": "8542e67af7f3e9fa2cbe35b716effd55d17e4ec2b01265c4a51f097bfd3899fe",
+        "mean": "ca8581d73b85a0e8d1b954e1843fea2e52876f3423caf389dfe256a30be8afa2",
+        "scale": "1eb59760c158126aed919143778814c1d554a007f730f957533d6c58af2fea67"
+      },
+      "source_tuning_scores_sha256": "e6287aefa388ec9f45c356ed65a47ce169614814e282a256fddba5418c57e8e7",
+      "source_tuning_targets_sha256": "343ff5f8b8f4e7359444fcf52734f0adeddfd4835502563be1d8cf232cf79bf1",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 28,
+      "alpha": 10.0,
+      "probe_fit_examples": 213,
+      "source_tuning_examples": 43,
+      "threshold_info": {
+        "source_micro_f1": 0.5140495867768595,
+        "source_positive_positions": 363,
+        "source_total_positions": 1118,
+        "source_predicted_positions": 847,
+        "threshold": 0.12784537011923625,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "5aa7877b80fa17eadc85052a1493d26b0c9cef51c996760ed0e2a0198c436c06",
+        "intercept": "904988d49fb7176761fd816475a1cad25459a44eaaf84975bfa9113eeb809294",
+        "mean": "f0b6020402bf30355d7679bd9881daf964cd725b2a0da4f0a923183e613089f2",
+        "scale": "8bb3ecb8df5210d25fc20afd1fcdea32606cbbee3efac06e581277ecea56ca7d"
+      },
+      "source_tuning_scores_sha256": "d49491ec31615f82095a13de38e111631422b4d74e78592e1bf17d75ef288b94",
+      "source_tuning_targets_sha256": "5da01c604e2d369cb08850cb6c0b5d1228915133e561c5eae19e697f132fe6a3",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 28,
+      "alpha": 10.0,
+      "probe_fit_examples": 213,
+      "source_tuning_examples": 43,
+      "threshold_info": {
+        "source_micro_f1": 0.36893203883495146,
+        "source_positive_positions": 39,
+        "source_total_positions": 1204,
+        "source_predicted_positions": 64,
+        "threshold": 0.23444934717327284,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "ee52226f29226cc4ffe92417ab6b641c8ba2e0ffc730814ff5f114a13710f5ca",
+        "intercept": "e70098487da84e66326edd9656ba78eb5a2aa74b7734a8fb2e9b24fd0f6179c9",
+        "mean": "1730dcdf0e14ff5886d7158ca008290448483a728b8118e6acd7934d7924781c",
+        "scale": "691d4e090a7d74bf684bc37a49d9ee40b38967a91723fec10434478e016a238a"
+      },
+      "source_tuning_scores_sha256": "f39779bdf7098804a41678f75e4226c135df9db64d4ad6238691cf357d104cd9",
+      "source_tuning_targets_sha256": "de5968f60c142b04b469969b52c26e5a3557618c1a6624a5bab2aaa3b69d21fd",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 29,
+      "alpha": 1.0,
+      "probe_fit_examples": 194,
+      "source_tuning_examples": 62,
+      "threshold_info": {
+        "source_micro_f1": 0.5092056812204103,
+        "source_positive_positions": 556,
+        "source_total_positions": 1674,
+        "source_predicted_positions": 1345,
+        "threshold": -0.007216630953742753,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "5389152e6905bb9586ad110b43d54a1ae6664f049aa5c0128d188923252237dc",
+        "intercept": "d504363ea373b351461eec0bdc61b8997e019272c08077d3707dd8ffe9dc9413",
+        "mean": "5e0c2c5a8bcd26058eaa6078185503c59ac0d8ef73c479121fc920012b6b3233",
+        "scale": "82932f2a455ab97d00f95503699f06f5c1605ea4237668b824d70f33284ac02f"
+      },
+      "source_tuning_scores_sha256": "243709334f61871acf7b8348bdc4c78cf7e979b3396b91e12a975f6bc0ce9368",
+      "source_tuning_targets_sha256": "f9fec7e4dcfb6b35c74546bb2ec248b2e14af2a60c9c680342b0fdf3a4cf81ed",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 29,
+      "alpha": 100.0,
+      "probe_fit_examples": 194,
+      "source_tuning_examples": 62,
+      "threshold_info": {
+        "source_micro_f1": 0.5214248838409912,
+        "source_positive_positions": 561,
+        "source_total_positions": 1674,
+        "source_predicted_positions": 1376,
+        "threshold": 0.1801965996269908,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "0e9f924dae92592b308a00ff83c0695f21c23784ea52b2f07878eda342eab85f",
+        "intercept": "cdbb52d212de36b53666b81fea8f3d4cdfe04d8c2cf8e122aa2b891a57734871",
+        "mean": "2b6c3fabc80e6657b7474bb046686ff64adc1b3b59f5df19ab38734f9e4bd5af",
+        "scale": "733df4fce5143053fcdb76143ea05848a073580f65d8fb69597b2a4f667b12eb"
+      },
+      "source_tuning_scores_sha256": "0ae9ff90b46d9fc5fa997914003892f29222af83e90090978f13fc9d2ac3e6f1",
+      "source_tuning_targets_sha256": "4bbe3c9014fc6f0db08bbf985c1e32868443ccb473412e01ea797dc9eaa6c399",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 29,
+      "alpha": 1.0,
+      "probe_fit_examples": 194,
+      "source_tuning_examples": 62,
+      "threshold_info": {
+        "source_micro_f1": 0.4878048780487805,
+        "source_positive_positions": 48,
+        "source_total_positions": 1798,
+        "source_predicted_positions": 34,
+        "threshold": 0.524230690013955,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "7e41de5896d4f9c5fa9455be996ce9446d1c213228220a3fa372dce06af9974e",
+        "intercept": "d1f5bbd18969f1c1ee34ab6fe8c803e9d5f3be74f4e347538f3a6a803cb37ad6",
+        "mean": "eab14034f602d14ab9cc49b730d5c27c5d8cd70fa5a3361ad5e8a664caaf70d0",
+        "scale": "085bafd0505bdb28cdd788176480525d79cb5d6559efded34d838eba7fb5f885"
+      },
+      "source_tuning_scores_sha256": "5f49d19ecf4315d424494eca044ca7abcb0dc875e94582d35d66757525702620",
+      "source_tuning_targets_sha256": "7558ab66f728b574faf555bcfb23d0dde40842d69b6dfc865b99bd4633e53f7d",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "length": 30,
+      "alpha": 10.0,
+      "probe_fit_examples": 202,
+      "source_tuning_examples": 54,
+      "threshold_info": {
+        "source_micro_f1": 0.5288053365676167,
+        "source_positive_positions": 511,
+        "source_total_positions": 1512,
+        "source_predicted_positions": 1138,
+        "threshold": 0.16599460615055048,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "0195f4946549bff1ca8eb76d087c8c92da3b42ea0e53f5cc21b74d3d58709d2f",
+        "intercept": "c5dafa1e9204133e45e44ce77335ff7bc1cb796283fae44775de284ff8aeb74c",
+        "mean": "ddcb5871b1718a5a376e2ba1e980601382ad60b81be988f845a50971a87d066c",
+        "scale": "c79f0757204a8624b3e28a621515a19e8310682489d80388548f9d09ec5946ee"
+      },
+      "source_tuning_scores_sha256": "04bbb28531d8606d06d774debd219e308dbe5d1ae2ed87c4235981eb6a9685e3",
+      "source_tuning_targets_sha256": "bd1921f2fc085bddf9eb5a5e09a8488609c9a5297429c5bdc63eaebf16deadfa",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "length": 30,
+      "alpha": 100.0,
+      "probe_fit_examples": 202,
+      "source_tuning_examples": 54,
+      "threshold_info": {
+        "source_micro_f1": 0.5191873589164786,
+        "source_positive_positions": 512,
+        "source_total_positions": 1512,
+        "source_predicted_positions": 1260,
+        "threshold": 0.18832740210561508,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "02dc2531044d238685e27f6b8b00ccb7a1352cc7ed1ff7a72ee7baf701bb770b",
+        "intercept": "0cf8388525bbc4271ee244f3614b3e59e2275358147cac84564622abde423da7",
+        "mean": "11d5ee8ca694693eec6d67391e1c480ffba033b03b91f2746c143053d303beb5",
+        "scale": "3cf2d699a0a1efe4bf7200b7adee13172efa69ea6212c0dcf3e66e59570a62f3"
+      },
+      "source_tuning_scores_sha256": "9642a66529d0a321d89b3e4787809596dfbb381581ff1b26bd4296d7089fe913",
+      "source_tuning_targets_sha256": "5e8effd830f346c3d35b29fa961acd7fec3a2214a6d93ad4ecf20c1989a8168d",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "archdev001",
+      "task": "fixed_points",
+      "length": 30,
+      "alpha": 10.0,
+      "probe_fit_examples": 202,
+      "source_tuning_examples": 54,
+      "threshold_info": {
+        "source_micro_f1": 0.45454545454545453,
+        "source_positive_positions": 46,
+        "source_total_positions": 1620,
+        "source_predicted_positions": 64,
+        "threshold": 0.2753447026534402,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "e21030b68d2909231a34507278811a599589418c43e44841816acca58296d757",
+        "intercept": "221e3101ed639209aa7afed374c7c4577c61fe20e2fc8822294d76ac630d7131",
+        "mean": "2f04cb985d83d6bfb481e0a45c7dca9c8cbaae3abbeea6271f10a582cbfb65ee",
+        "scale": "b38734689a214898f88e0cc1b143ec2d178fb30df75a34fb637e6fb79c9500f6"
+      },
+      "source_tuning_scores_sha256": "157061e7edbbcf59cbb814904d303a425e9d2fd3a2674d481cdb8e5c87407d84",
+      "source_tuning_targets_sha256": "fa0e5cb3d9e52be140dfac3a80cf1b4b575d0d3c86bd69aa3daf259a060e42fa",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    }
+  ],
+  "source_only": true,
+  "thresholds_frozen_across_routes_tasks_and_ablations": true
+}

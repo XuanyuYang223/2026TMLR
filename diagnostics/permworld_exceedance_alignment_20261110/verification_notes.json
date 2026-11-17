@@ -1,0 +1,20 @@
+{
+  "scope": "Engineering corrections in independent verification only; frozen scientific sources, output scores and numerical tolerances were unchanged.",
+  "notes": [
+    {
+      "component": "audit_saved_main.py",
+      "initial_issue": "Manual serialized-scaler reconstruction did not cast stored mean/scale to incoming FP32 dtype before arithmetic, unlike pinned scikit-learn1.9 StandardScaler.transform.",
+      "observed_fixed_case": {
+        "unit": "archdev001",
+        "encoding": "canonical_cycle",
+        "length": 10,
+        "method": "direct",
+        "initial_maximum_absolute_difference": 5.5965992062922965e-08
+      },
+      "resolution": "Read pinned installed implementation; match its parameter casts and in-place dtype operations, then cast transformed array to FP64 as frozen original fit_probe does.",
+      "tolerance_unchanged": 1e-12,
+      "final_main_audit": "38,520 checks passed; maximum absolute difference0.0; no refit or score rewrite."
+    }
+  ],
+  "token_protocol_scope": "Core token design recorded in main protocol before ED scoring; token source and structural-kind supplements separately frozen before token forwards/fits/outcomes. Derived readers freeze their own code and do not change the registered score definitions."
+}

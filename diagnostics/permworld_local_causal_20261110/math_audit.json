@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "scope": "Independent permutation math, bounded-control construction, and synthetic component isolation; no real checkpoint, hidden state or model prediction was read. Production coverage is a separate generation receipt.",
+  "source_sha256": {
+    "experiments/permworld_local_causal_20261110/pairs.py": "61182a2ed5653de4a5c972913431ad909b900aa4f9c614706dd9442da7e871c4",
+    "tests/test_permworld_local_causal_pairs.py": "18da392db79c94b6214620c4b401a2c12bb3f01f6a547422d07e095b7c76d033"
+  },
+  "tests": {
+    "command": "PYTHONPATH=/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor:/mnt/yangx-projects-f/20261109/permworld_peaks_probe/dependencies .venv/bin/python -m pytest -q tests/test_permworld_local_causal_pairs.py",
+    "passed": 21,
+    "seconds": 9.08,
+    "exhaustive_simple_motif_cases": 224184,
+    "exhaustive_simple_anchor_range": "all permutations n4 through8, every i2..n-2",
+    "exhaustive_count_matched_cases": 40320,
+    "exhaustive_count_matched_anchor_range": "all n8 permutations, i6/k2",
+    "larger_disjoint_motif_cases": 3180,
+    "same_label_synthetic_donors_verified": 552,
+    "component_tests": [
+      "generated-input/complement bridge and test priority",
+      "whole-component original-training collision exclusion",
+      "fit/dev/test disjoint generated support",
+      "order-invariant component identities",
+      "quota shortfalls including empty cells"
+    ]
+  },
+  "frozen_generation_choices": {
+    "candidate_roots_per_cell": 64,
+    "origin_splits": [
+      "validation",
+      "test"
+    ],
+    "lengths": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "centers": "i2..n-2 inclusive",
+    "quotas_per_pool_n_i_family": {
+      "fit": 12,
+      "dev": 6,
+      "test": 8
+    },
+    "count_matched_earlier_center": 2,
+    "count_matched_available": "i>=6 only",
+    "same_label_search": "earlier-only positions1..i-2 first; then full read-prefix1..i+1; each at most64 seeded permutations followed by all lexicographically ordered transpositions; suffixi+2..n/local label/resolved prefix count/total count all exact",
+    "components": "original anchor, both directed pairs, every same-label donor and actual recipient-local-only counterfactual, joined under p/Cp equality; whole-component original-training exclusion; test-root components exclude validation families; remaining validation components hash fit/dev",
+    "fit_AB": "hash component ID into A/B; root fits/checks only count-matched fit i>=6"
+  },
+  "mathematics": {
+    "simple": "Ascending L<a<b<R at i-1..i+2; swapping a,b adds exactly peak_i, changes resolved and total peak counts by+1, preserves suffixi+2..n. Reverse direction subtracts1.",
+    "count_matched": "Disjoint earlier quartet centerk2 and locali>=6: recipient earlier-active/local-inactive, donor earlier-inactive/local-active. Peak changes at exactly{k,i} with opposite signs, prefix and total counts unchanged.",
+    "actual_local_counterfactual": "Swap only recipient local middle values; all other peaks stay fixed, local label matches directed donor, resolved and total counts change by intended sign. This endpoint differs from count-matched donor and is included in leakage components.",
+    "valleys": "Complement all complete input permutations; peak_i becomes valley_i with same count/position identities.",
+    "same_label": "Changed prefix with same local label, resolved prefix count and global count; earlier peak locations can differ.",
+    "read_point": "After pi_(i+1); one-line numeric token index4+2*i including BOS/SIZE/n/ONE_START."
+  },
+  "limitations": [
+    "Other raw permutation statistics need not be invariant; in the simple raw input valley_(i+1) can change while only peak_i changes.",
+    "Complement isolation does not claim inverse/reversal orbit isolation. Stronger original anchor restrictions must be supplied through root_indices if required.",
+    "No neural causal claim follows from this mathematical audit.",
+    "Production fit/dev/test quotas can fall short after component exclusion; report actual coverage and never impute missing records."
+  ],
+  "no_model_forward": true,
+  "no_model_training": true,
+  "no_model_outcome_access": true,
+  "production_generation_run": false
+}

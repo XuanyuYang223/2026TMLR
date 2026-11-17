@@ -1,0 +1,100 @@
+{
+  "unit": "unit02",
+  "files": [
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/canonical_cycle-initial.npz",
+      "output_sha256": "70f431817c34877e30d7a6cf03eecb1a3be47940ea35286c9d2e96c01da4ebb3",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_canonical_cycle_peaks_initial_validation.npz",
+      "source_sha256": "2d6b102236c277d47201e0feaa3a9e0be5836afc92a9af6f76a9cc1f7cbacc7e",
+      "checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "actions": [
+        1,
+        2
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-initial.npz",
+      "output_sha256": "d38643379901a235b6e3461982eb70d3b91d27db28720a0c7f2b9547de08137c",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_initial_validation.npz",
+      "source_sha256": "28929d5c6fa4338b46ca4373219e448dafce04aa7db22886c28bdbfb41d25c7b",
+      "checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "actions": [
+        1,
+        2
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/canonical_cycle-trained.npz",
+      "output_sha256": "44797f566b7d8ff3126db8b38a62cfe6f89e08c671aca3a4eda40948af73cd7c",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_canonical_cycle_valleys_trained_validation.npz",
+      "source_sha256": "78279234de71dcd1a49e6087a85d48fce00789bc681e25fbd2bb9744f98d6015",
+      "checkpoint_sha256": "d9dfeac2c381c9a2bb19d74c71ec1ab19eca30df3c04f7337a7556ad0df4195b",
+      "actions": [
+        1,
+        2
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-trained.npz",
+      "output_sha256": "1b9b5d37923b9e0961380f130ade181003f13e23ce0d935a79640e6cacaca990",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_validation.npz",
+      "source_sha256": "1e6911334aeb2259a6bc4a0d38582d55292e4fe3375f11dbbf088baf5d10e92d",
+      "checkpoint_sha256": "c3a53105d9a505ea449cb17d74911ec9c970728a15c8ea729da3a351ff216af4",
+      "actions": [
+        1,
+        2
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-descents.npz",
+      "output_sha256": "c714b0d69bffbc1e7f08f765de38b32d5a4fadd055c23736cce44a8feb405ee2",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_descents_trained_validation.npz",
+      "source_sha256": "47ffee3545f0bf31eb0d759efcbd835c7a6d82160f43cf79181d25f00726d658",
+      "checkpoint_sha256": "eedac3c2214bc68f349f977e9baf8aa9061242e3cc8bd2b2839247e7bea1776f",
+      "actions": [
+        1
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-recoils.npz",
+      "output_sha256": "820eff07e5c5aade413c8ebf26a691716aa185ba3140a06330f141fb6eccacfb",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_recoils_trained_validation.npz",
+      "source_sha256": "9a8ae8709b6fa8a2f57492a9498aa0790b9305f3c8d1b0913cf5ea10881b8ef6",
+      "checkpoint_sha256": "b53fa12c3fbe5757f212d6db32ca0895226c8ed747f01967af7156b6898a37f8",
+      "actions": [
+        1
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    }
+  ],
+  "no_forward": true
+}

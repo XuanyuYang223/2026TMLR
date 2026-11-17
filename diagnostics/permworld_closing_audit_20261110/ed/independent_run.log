@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-10T16:36:56.787913+00:00",
+  "checks": 226,
+  "arithmetic_checks": 176,
+  "maximum_Decimal_absolute_error": "1.5E-16",
+  "tolerance": "1e-12",
+  "fixed_subset": "units02/05 \u00d7 botharchitectures \u00d7 bothencodings \u00d7 bothphases \u00d7 bothperlengthCKAversions; Decimalprecision60; plusall36means/SD/min/max",
+  "checkpoint_manifest_rows": 40,
+  "no_model_tensor_loading": true,
+  "no_forward": true,
+  "no_fitting": true,
+  "no_CKA_computation": true,
+  "initialization_identity_scope": "Current actual savedstep0 file hashes match original audited inventory; initialization state_dict identities are retained from the original inventory, not reconstructed or re-estimated.",
+  "frozen_completion_sha256": "ad0f886a831bce9c7eba856026dec61560bc99c3c52eb0cbf9eb963cebbc3073",
+  "source_sha256": "e20c25143f70f6c8d175261ab783363f2ff53a1eb8045e3ebf630a9513cd37cb",
+  "outputs": {
+    "checkpoint_source_manifest.csv": "f13232307d2ed8911cf338b307d70e56b746a2747bed04c5fccc1b8527b0e847",
+    "independent_arithmetic_rows.csv": "4beef3a8ea8157846f6530a3c89246710b22d581317c91769d4b76cb35b71765",
+    "reader_clarification.md": "9c62f248d95d4e7498605666504d4a480f5852d949cc5b4d06295d3a58c5ab0f"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "archive_path": "/mnt/c/Users/yangx/Downloads/PermWorld_Orthogonal_Alignment_Pilot.zip",
+  "archive_sha256": "e9ab2aa8c9beb8f02613bd228a71d65dcced7848cb7772f815caf1e48b5c9015",
+  "files": {
+    "probe_alignment/README.md": {
+      "sha256": "850fd0ee41067e025d685879edf97e0979fa007e0ec97e39a9f9bc8293fcbec2",
+      "size_bytes": 5254
+    },
+    "probe_alignment/code/alignment.py": {
+      "sha256": "7c6a30f87e076aa358548c41b8cbdf5dc41c1512adcb9a1318e2e3eaae3db2ad",
+      "size_bytes": 7233
+    },
+    "probe_alignment/code/extract_validation.py": {
+      "sha256": "cf28487944cc443cc5e91567105f5f23ab68a56d5dac344f9bbba42dd8ecc477",
+      "size_bytes": 3350
+    },
+    "probe_alignment/code/other_specialists.py": {
+      "sha256": "407edfa65d58c8f5645659620f063914e57368912da9b5dff748a0d605a1d5be",
+      "size_bytes": 2982
+    },
+    "probe_alignment/results/alignment_fit_audit.csv": {
+      "sha256": "dabd45387770783dfadfcfa72d3272462e8eeffc652fb6b6db02143b965280cf",
+      "size_bytes": 225
+    },
+    "probe_alignment/results/by_length.csv": {
+      "sha256": "f88cfe30bb4c396354e905eb99fcad1789ff70adaadd115de51ef581f9df05ce",
+      "size_bytes": 320921
+    },
+    "probe_alignment/results/other_specialists.csv": {
+      "sha256": "5113644bca484af33ca115ac0096ea703cf43bffa2022f82a618b136f5327112",
+      "size_bytes": 417
+    },
+    "probe_alignment/results/other_specialists_by_length.csv": {
+      "sha256": "281e6188e1bbe915c17b86bd4781f4635d8b5809001d42b342e8a058ff253caf",
+      "size_bytes": 8093
+    },
+    "probe_alignment/results/summary.csv": {
+      "sha256": "3d7c9df4d46d38886a65e7536d050e2c7231d759ee4a557565f105acc12fb562",
+      "size_bytes": 16001
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "scope": "Read-only mathematical/source audit; no probe/map fitting, neural forward, checkpoint loading or actual new results inspected.",
+  "source_sha256": {
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/downloaded/probe_alignment/code/alignment.py": "7c6a30f87e076aa358548c41b8cbdf5dc41c1512adcb9a1318e2e3eaae3db2ad",
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/downloaded/probe_alignment/code/other_specialists.py": "407edfa65d58c8f5645659620f063914e57368912da9b5dff748a0d605a1d5be",
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/downloaded/probe_alignment/code/extract_validation.py": "cf28487944cc443cc5e91567105f5f23ab68a56d5dac344f9bbba42dd8ecc477",
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/downloaded/probe_alignment/README.md": "850fd0ee41067e025d685879edf97e0979fa007e0ec97e39a9f9bc8293fcbec2",
+    "/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor/analyze.py": "f6092e467473d2a3d98a7f3be15b8087d53571706e4aee059d2002e65c23432c"
+  },
+  "checks": [
+    {
+      "name": "target_to_source_orientation",
+      "result": "passed_static",
+      "detail": "For C=Yc.T@Xc=U S Vh, R=U@Vh minimizes ||YcR-Xc||_F over O(d). The built-in synthetic test expects q.T when target=x@q."
+    },
+    {
+      "name": "length_weighting",
+      "result": "passed_static",
+      "detail": "Each length contributes cross-product divided by its own fit count. Summing rather than averaging over21 is a positive constant factor and leaves the polar factor unchanged. One global256x256map per unit/encoding/phase/pairing, not21maps."
+    },
+    {
+      "name": "fit_split_and_probe",
+      "result": "passed_static",
+      "detail": "read_length retains original orbit-disjoint fit/dev/test selections. Map cross-products use probe-fit validation rows only; source ridge/scaler tune on source-dev labels only. No held-out test rows enter maps, means or tuning."
+    },
+    {
+      "name": "common_complement_scoring",
+      "result": "passed_static",
+      "detail": "direct/means_only/three pairedmaps/eightshuffles all score target valleys test action1 with original peak positions using same source probe. All rotations use same complement validation mean and source mean. Native-action rows are auxiliary."
+    },
+    {
+      "name": "phase_and_encoding_scope",
+      "result": "passed_static",
+      "detail": "Both initial/trained phases and bothencodings; initialphase refitsseparateprobes. Descents/recoils suppliedcontrols are trained one-line only; no automaticcycleextension."
+    },
+    {
+      "name": "raw_versus_standardized",
+      "result": "passed_static",
+      "detail": "Schema-adapted NPZ stores raw FP32 final_norm; alignment uses raw centered coordinates. Source StandardScaler is internal to each per-length probe. R is orthogonal in raw hidden coordinates, not necessarily in standardized probe coordinates."
+    },
+    {
+      "name": "shuffle_definition",
+      "result": "passed_static",
+      "detail": "Eight fixed seeds1026..1033 generate count-stratified cyclic derangements within length. Every nonsingleton stratum movesallrows; singletonstrata remain. Seeds and permutations are paired across encodings/phases withinunit. Shuffles are controls, not independent replicationunits."
+    },
+    {
+      "name": "labels_and_priors",
+      "result": "passed_static",
+      "detail": "Paired maps do not use positiontargets. Shuffle grouping uses true source peakcounts. position_prior conditions on true testcount, so it is an oracle-count baseline. Target-own valleys probe is a separately fitted positive reference, not a negative control."
+    },
+    {
+      "name": "model_and_data_identity",
+      "result": "wrapper_requirement",
+      "detail": "Supplied code checks targetCPdigest andfullarangeindex but not all data/cache bindings; adapter/wrapper must check NPZsource SHA, datasplit length/order, actual checkpointreceipts andinitialidentity. Include dataSHA in added provenance ifdesired."
+    },
+    {
+      "name": "finite_support",
+      "result": "passed_static",
+      "detail": "Main code rejects any summary with fewer than21finite lengths. average() excludes examples withundefinedwithin-exampleAUC; retain n andfinitecounts separately. Matchedsupport shouldhaveidenticalfinitecounts acrossallprimarymaps."
+    }
+  ],
+  "recommended_control_definitions": {
+    "map_controls": [
+      "means_only",
+      "trained_fit_identity__test_complement",
+      "trained_fit_inverse__test_complement",
+      "each_of_eight_trained_shuffle_maps_test_complement"
+    ],
+    "expanded_controls": [
+      "map_controls",
+      "oracle_count_position_prior",
+      "step0_complement_aligned",
+      "one_line_descents_direct_and_procrustes",
+      "one_line_recoils_direct_and_procrustes"
+    ],
+    "excluded_from_negative_control_max": [
+      "within_peaks",
+      "within_valleys"
+    ],
+    "primary_success": "Trained correct-complement aligned AUROC > direct trained valleys complement AND > prespecified best-negative-control maximum; disclose exact set before results.",
+    "reports": "Keep map-only and expanded-control contrasts separately; mean/sampleSD/range over4newunits withrawunitvalues. Historical separately/allfive secondary. Eachcontrast computed afterfixed1/21aggregate, notmean oflength-specificmaxima. No seeds/lengths/shuffles asindependenttaskpairs."
+  },
+  "caveats": [
+    "Orthogonality assertions specify atol2e-12 but retain NumPy default rtol1e-7; do not infer an observedmaxerrorbound2e-12 unlessmeasured.",
+    "Other-specialist controls differ in taskidentity/difficulty/learning and are not matched-answer causal comparisons.",
+    "Restored readout under a fitted coordinate map is decodability, not proof of spontaneous sharedcoordinates orcausal use of decodedpositions.",
+    "SVD polar factors can be nonunique on nullspaces; historicalCPUforward and savedGPUcache need not yieldbit-identicalmapped readouts. Keep any reproductiondifferences and do not adapt toleranceafterseeingthem."
+  ]
+}

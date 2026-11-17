@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "length_rows": 184800,
+  "summary_rows": 8800,
+  "checks": [
+    "complete registered inventory",
+    "fixed21 mean",
+    "max AFTER length mean",
+    "structural undefined retained",
+    "no undefined-length reweighting",
+    "four-new-unit statistics",
+    "paired before/after arithmetic"
+  ],
+  "source_sha256": "fb30fe8ea9c40ca46590645789578915bcc54e58361688b0096b61564447bdf2"
+}

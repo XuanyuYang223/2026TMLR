@@ -1,0 +1,41 @@
+{
+  "source_sha256": "77877ee04e6ef42896e576a0b02a771b1040ca43a8d1aed91abbdfb3da6684d9",
+  "protocol_sha256": "148d7741b659493c345c6e3ed5ec68ec6faede15cce7e300e8b2fec4bc7b3107",
+  "created_utc": "2026-11-10T14:49:50.242334+00:00",
+  "synthetic_verification": {
+    "status": "passed",
+    "synthetic_only": true,
+    "source_sha256": "77877ee04e6ef42896e576a0b02a771b1040ca43a8d1aed91abbdfb3da6684d9",
+    "checks": [
+      "streamed29rowpairs",
+      "relative step differs from oracle answer",
+      "nonnumeric outcomes retained",
+      "identical L1 hash/checker across timings",
+      "within-pair random average",
+      "within-pair early/late then DiD",
+      "equal centers then fixed21 lengths",
+      "four new units only for SD"
+    ],
+    "example_result": {
+      "status": "completed_saved_timing_summary",
+      "raw_rows": 365400,
+      "pairs": 12600,
+      "scored_rows": 466200,
+      "position_rows": 1802640,
+      "exact_l1_hash_comparisons": 138600,
+      "formal_units": [
+        "unit02",
+        "unit03",
+        "unit04",
+        "unit05"
+      ],
+      "historical_engineering_reference": "archdev001",
+      "streamed_case_major": true,
+      "no_fits": true,
+      "no_forwards": true,
+      "no_metric_or_condition_selection": true,
+      "main_interpretation": "Interlayer path at this current update, not precise accumulation time or a natural one-dimensional predicate mechanism"
+    }
+  },
+  "no_new_outcome_access_during_development": true
+}

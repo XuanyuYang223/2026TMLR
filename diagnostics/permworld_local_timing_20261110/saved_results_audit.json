@@ -1,0 +1,257 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-10T15:03:15.219695+00:00",
+  "checks": 307041,
+  "failures": [],
+  "maximum_differences_by_category": {
+    "exact_byte_values": 0.0,
+    "GRU_equation_verification": 5.677392702629902e-07,
+    "logit_wiring_guards": 9.5367431640625e-06,
+    "noedit_state_guard": 0.0,
+    "metric_probe_arithmetic": 1.7763568394002505e-14
+  },
+  "tolerances": {
+    "metric_probe_arithmetic": 1e-10,
+    "GRU_equation_verification": 2e-05,
+    "noedit_state_guard": 2e-05,
+    "logit_wiring_guards": 0.0001
+  },
+  "units": [
+    {
+      "unit": "archdev001",
+      "rows_streamed": 584640,
+      "selected_rows_verified": 1044,
+      "task_reports": [
+        {
+          "task": "peaks",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.430511474609375e-05,
+            "late_old_logits": 1.33514404296875e-05,
+            "fullswap_native_logits": 1.430511474609375e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 4.0618715946294515e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        },
+        {
+          "task": "valleys",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.33514404296875e-05,
+            "late_old_logits": 1.71661376953125e-05,
+            "fullswap_native_logits": 1.33514404296875e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 4.5415784855062924e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        }
+      ]
+    },
+    {
+      "unit": "unit02",
+      "rows_streamed": 584640,
+      "selected_rows_verified": 1044,
+      "task_reports": [
+        {
+          "task": "peaks",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.33514404296875e-05,
+            "late_old_logits": 1.52587890625e-05,
+            "fullswap_native_logits": 1.33514404296875e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 4.87331227039256e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        },
+        {
+          "task": "valleys",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.33514404296875e-05,
+            "late_old_logits": 1.52587890625e-05,
+            "fullswap_native_logits": 1.430511474609375e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 4.699511535477541e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        }
+      ]
+    },
+    {
+      "unit": "unit03",
+      "rows_streamed": 584640,
+      "selected_rows_verified": 1044,
+      "task_reports": [
+        {
+          "task": "peaks",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.33514404296875e-05,
+            "late_old_logits": 1.52587890625e-05,
+            "fullswap_native_logits": 1.33514404296875e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 5.198495212077603e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        },
+        {
+          "task": "valleys",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.52587890625e-05,
+            "late_old_logits": 1.52587890625e-05,
+            "fullswap_native_logits": 1.52587890625e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 5.432700800334089e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        }
+      ]
+    },
+    {
+      "unit": "unit04",
+      "rows_streamed": 584640,
+      "selected_rows_verified": 1044,
+      "task_reports": [
+        {
+          "task": "peaks",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.33514404296875e-05,
+            "late_old_logits": 1.430511474609375e-05,
+            "fullswap_native_logits": 1.33514404296875e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 4.662240810082707e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        },
+        {
+          "task": "valleys",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.33514404296875e-05,
+            "late_old_logits": 1.71661376953125e-05,
+            "fullswap_native_logits": 1.33514404296875e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 4.8268169405840666e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        }
+      ]
+    },
+    {
+      "unit": "unit05",
+      "rows_streamed": 584640,
+      "selected_rows_verified": 1044,
+      "task_reports": [
+        {
+          "task": "peaks",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.33514404296875e-05,
+            "late_old_logits": 1.52587890625e-05,
+            "fullswap_native_logits": 1.430511474609375e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 5.051835449965125e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        },
+        {
+          "task": "valleys",
+          "cases": 18,
+          "selected_cells": 6,
+          "manual_upper_equation_cases": 216,
+          "all_case_maxima": {
+            "noedit_state": 0.0,
+            "noedit_logits": 0.0,
+            "early_noedit_native_logits": 1.52587890625e-05,
+            "late_old_logits": 1.52587890625e-05,
+            "fullswap_native_logits": 1.430511474609375e-05,
+            "paired_h1": 0.0,
+            "paired_checker": 0.0,
+            "random_L1_norm": 4.5457504205259625e-08
+          },
+          "early_noop_argmax_mismatches": 0,
+          "rerun_late_old_argmax_mismatches": 0
+        }
+      ]
+    }
+  ],
+  "fixed_subset": "Input-order first case per(group,sign), n10/20/30,i2/6, both tasks/allfive:180cases,5220CSVrows,60old/newcellpairs; no outcome selection.",
+  "GRU_equation_scope": "NumPy float64 reset/update/new equations for L2-L4 using actual saved CPU checkpoint dictionaries, recipient previous states and injected current h1. Reset multiplies the hidden-new affine term including its bias, not the input-new term. This bounded independent arithmetic verifies saved upper states, not a new production model evaluation.",
+  "limitations": [
+    "Manual equations perform bounded neural arithmetic; no production torch model was constructed, resumed or fitted in the actual audit.",
+    "This is implementation/provenance verification, not an independent scientific repeat or evidence for a natural abstract one-dimensional mechanism.",
+    "Token-rank/value and generic count-axis explanations remain possible; early/late differences concern this intervention interface/current update."
+  ],
+  "no_actual_checkpoint_model_construction": true,
+  "no_production_neural_forward": true,
+  "no_probe_fitting": true,
+  "no_new_base_training": true,
+  "no_new_conditions_or_stages": true,
+  "manual_GRU_equation_verification": true,
+  "provenance_snapshot": {
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/finalize_audit.py": "8849de6fe8ff07fb57641cbba84779dd60c6252ccac8bd3abf2c3f5a92736263",
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/equation_synthetic_verification.json": "93877dae87b30a08e9ab7c00634abc0e147bf99e0c8f00cef1f3c383bb12e2a0",
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/code_review.json": "54fc8a9953ec0f0d864774e22403ed5778fd3a6a7740fa5d5af7b5330fafc8a1",
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/freeze.json": "0a6d1f0e235f6925dac555ccf47caf168eda3da6a230ca4e2141a9562dd1da2c",
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/input_audit.json": "a1a7ff5bdde0c593cabd1f7b09998fe653de5a8e5a7992617eed07775529c8c4"
+  },
+  "elapsed_seconds": 87.54982911399566
+}

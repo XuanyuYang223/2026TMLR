@@ -1,0 +1,2704 @@
+{
+  "status": "passed",
+  "captured_utc": "2026-11-10T11:34:56.316508+00:00",
+  "scope": "Read-only current payload/metadata/map audit for existing one-line GRU downstream composition; no fitting or predictions.",
+  "git_head": "6d745815c0a1a2a41ad5fc8c0aa6e018f9bab249",
+  "units": [
+    {
+      "unit": "archdev001",
+      "historical": true,
+      "data_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "validation_examples": 5376,
+      "test_examples": 10752,
+      "validation_per_length": 256,
+      "test_per_length": 512,
+      "raw_features": [
+        {
+          "unit": "archdev001",
+          "task": "peaks",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_peaks__trained__validation/prefix_final.npy",
+          "sha256": "76a2c889fb095d58101a5d0ca220cf0b50d49f4b719af4909eac62586f1f7ca9",
+          "field": null,
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "source_index_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+          "source_index_sha256": "16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6"
+        },
+        {
+          "unit": "archdev001",
+          "task": "peaks",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_peaks__trained__test/prefix_final.npy",
+          "sha256": "eb6cce1e53da2f5f9c23877a4e09f77de70732ba656ee7636d590473e17e73a5",
+          "field": null,
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "source_index_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+          "source_index_sha256": "16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6"
+        },
+        {
+          "unit": "archdev001",
+          "task": "valleys",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_valleys__trained__validation/prefix_final.npy",
+          "sha256": "ea52165a71c565a334cce7e72857a20d7ccb81088b91115853157b583ece1c4d",
+          "field": null,
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1,
+            2
+          ],
+          "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "source_index_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+          "source_index_sha256": "16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6"
+        },
+        {
+          "unit": "archdev001",
+          "task": "valleys",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_valleys__trained__test/prefix_final.npy",
+          "sha256": "a5e7d9165e8fab8d6c832c49b2e9c909c6c94377c364d9e4da53813744c56977",
+          "field": null,
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "source_index_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+          "source_index_sha256": "16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6"
+        },
+        {
+          "unit": "archdev001",
+          "task": "fixed_points",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/eightrel001_gru_one_line_fixed_points__trained__validation/prefix_final.npy",
+          "sha256": "d443a14ed2a87069282a7c56bf523945435abcb98425b324db2525eedec1a5df",
+          "field": null,
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0
+          ],
+          "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "4b5ee414897fd25a23e57278eeda1951cbb2de755bbcd868fd233fe5a50ba229",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "source_index_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+          "source_index_sha256": "16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6"
+        },
+        {
+          "unit": "archdev001",
+          "task": "fixed_points",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/eightrel001_gru_one_line_fixed_points__trained__test/prefix_final.npy",
+          "sha256": "7bfaea4b432406520308c1a03969f79f581a6794580fb8be91bdacd80f97966d",
+          "field": null,
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "4b5ee414897fd25a23e57278eeda1951cbb2de755bbcd868fd233fe5a50ba229",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "source_index_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json",
+          "source_index_sha256": "16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6"
+        }
+      ],
+      "standardized_features": {
+        "peaks": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/archdev001/one_line-peaks.npz",
+          "sha256": "d3f216487c063bdda3af178cbc7525ebb1c6afb7885b7209d488ceda0841b339",
+          "checkpoint_sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        },
+        "valleys": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/archdev001/one_line-valleys.npz",
+          "sha256": "7a742747ddb1ebf257e32a4ee2d71a2c9008ef9d5e6ec935fbd9c4eae01c18de",
+          "checkpoint_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        }
+      },
+      "trained_checkpoints": [
+        {
+          "task": "peaks",
+          "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt",
+          "sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+          "metadata_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/completed.json",
+          "parameter_sha256": null,
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "valleys",
+          "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt",
+          "sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+          "metadata_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/completed.json",
+          "parameter_sha256": null,
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "fixed_points",
+          "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/checkpoint.pt",
+          "sha256": "4b5ee414897fd25a23e57278eeda1951cbb2de755bbcd868fd233fe5a50ba229",
+          "metadata_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/completed.json",
+          "parameter_sha256": "28a09007f82035f6a03c685692334e084c736b760baf5785b60634d4f3943dac",
+          "receipt_status": "missing_authorized",
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000,
+          "actual_checkpoint_header_verified_now": {
+            "run_id": "eightrel001_gru_one_line_fixed_points",
+            "step": 20000,
+            "finite_gradient_updates": 20000,
+            "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+            "architecture": "gru",
+            "task": null
+          },
+          "stale_status_note": "Receipt status is historical missing_authorized, while actual hash-verified checkpoint header is trained20k and caches bind to it; status field is not used as absence evidence."
+        }
+      ],
+      "alignment": {
+        "archive_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/archdev001/alignment.npz",
+        "archive_sha256": "e5940f5c6415e7fd677d1204819c969b217c00d8c2d49d5bdf1b84590d41fca0",
+        "metadata_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/archdev001/alignment.json",
+        "maps": [
+          {
+            "fit_condition": "identity",
+            "key": "R_034",
+            "map_sha256": "c304910b810fb6a5ced675a142eaf984e745974ce30e769388116cdeb23beee0",
+            "cross_sha256": "d4aaeeebb100d0094d77fc572f3bd7e849b5f600d764e54c2bc12fd68d9cc3c4",
+            "maximum_orthogonality_error": 1.3322676295501878e-15
+          },
+          {
+            "fit_condition": "complement",
+            "key": "R_035",
+            "map_sha256": "480e0d7a8618b2194509130b8fa6dc845061f45ee6e3c33417d7e2adfecf4c81",
+            "cross_sha256": "49479f6a2a3f8598c113ddd07409875c95757fbab50c9070b44eeef9b005d9ae",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "inverse",
+            "key": "R_036",
+            "map_sha256": "c3b928580eec4d524414e871bf8bdd53bb49abd9ef23523cfe43573bd0bb4175",
+            "cross_sha256": "f89ac7654e24095c07d117da8b18fd4f39751e6c671d8ff0701e423e9c679ba6",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          },
+          {
+            "fit_condition": "shuffle_1026",
+            "key": "R_037",
+            "map_sha256": "2326702aee81340b3454e3eb99d78d04bfbe7e0e313fa8ca242c9326fb59b34f",
+            "cross_sha256": "ff70e7e29a445f178aa994da5a722163097b6c42f08d510a5bd6a17c17c71196",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1027",
+            "key": "R_038",
+            "map_sha256": "cc9af400f49f9a6542f849ceafe0455487f25fe6003a25879334d78d2f21c9b5",
+            "cross_sha256": "b0ee98797ee2edc01984d6f22cbab2d4e7602ff2680b3170ba6c45676f6e9430",
+            "maximum_orthogonality_error": 1.6653345369377348e-15
+          },
+          {
+            "fit_condition": "shuffle_1028",
+            "key": "R_039",
+            "map_sha256": "f22bf27de39538aa8c2ff3104f353958745177ff42db16738fa54fa8fc871941",
+            "cross_sha256": "6222ba260685d16fce5753ada6eee02195ec41e84096a6e0a1c2e58bce5dfcba",
+            "maximum_orthogonality_error": 1.3322676295501878e-15
+          },
+          {
+            "fit_condition": "shuffle_1029",
+            "key": "R_040",
+            "map_sha256": "0ab8b509f638b9c40e3750fbb3b2bd2cddd5b36c68efc098fa6d1152a3b565a3",
+            "cross_sha256": "32d1dc59be5c8782158cbac18d9116153f03f6159aa795e5ea6fba511d0f7cd7",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1030",
+            "key": "R_041",
+            "map_sha256": "0beb57cdca79e0a6ef96d1609ccfdd39e9fec127212c3ba1300162283944d49c",
+            "cross_sha256": "c6d49e089a5a3d78a6aff11da65c6ff973920e0fce44e3cb06649ab17791446a",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1031",
+            "key": "R_042",
+            "map_sha256": "e35300928891a495aae6aaab636d67e8daccaab9d870ad9fdd75479c548c5516",
+            "cross_sha256": "e940fc4626fb12ef5f629d0ca8638e8eba99ddcf620dbefa23fc298976f6ed0b",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1032",
+            "key": "R_043",
+            "map_sha256": "d521f1c95e03c859392241d285f54ff87b77a7708af3a050724b781bc10b8e86",
+            "cross_sha256": "1659a2c047f46b3ef6e6870fbf516e13d4300622b3e13fbc3010ba7bc99bac98",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          },
+          {
+            "fit_condition": "shuffle_1033",
+            "key": "R_044",
+            "map_sha256": "1030eb8ad2b77fb719a439f826c35dee45b12e1dd32008fe2333f18c47a9c8ff",
+            "cross_sha256": "25d3076a08ae93de69e46bb534aa6c09c0fa7c3030de576aa2e0e2843b7f4c7b",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          }
+        ],
+        "raw_row_vector_direction": "target to source: (h_valleys_C - mu_C) @ R + mu_x",
+        "previous_validation_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/one_line-trained.npz",
+        "centering_means_serialized": false,
+        "mean_reconstruction": "For each length use exactly original read_length probe-fit mask; mu_x=mean(peaks validation action0),mu_C=mean(valleys validation action1),FP64. Use mu_C for every map on fixed complement input."
+      },
+      "source_probe_coefficients_saved": false,
+      "probe_reconstruction": "Rebuild unchanged vendor fit_probe on peaks validation identity and its own interior peak labels using frozen fit/dev masks and source-only alpha selection. Scalers/coefficients were not serialized.",
+      "route_semantics": {
+        "input": "pi = C(x)",
+        "first_peak": "peaks specialist test action1, scored against peak positions of pi",
+        "same_model_second": "peaks specialist test action0; peak(x) positions equal valleys(pi)",
+        "aligned_second": "valleys specialist test action1 mapped by saved trained one-line map; one source peaks probe",
+        "fixed_point_fit": "fixed_points specialist validation action0 with own fixed-point labels for x including endpoints",
+        "fixed_point_test": "fixed_points specialist test action1, labels fixed points of pi=C(x) only for scoring"
+      },
+      "fixed_point_label_column": 5
+    },
+    {
+      "unit": "unit02",
+      "historical": false,
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/data.npz",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "validation_examples": 5376,
+      "test_examples": 10752,
+      "validation_per_length": 256,
+      "test_per_length": 512,
+      "raw_features": [
+        {
+          "unit": "unit02",
+          "task": "peaks",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_trained_validation.npz",
+          "sha256": "ab02a18bb10edea6a082d65f99b4c36782977cc5572aedae02a80d7cb8ede13a",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "38780f1508d1cd74edc13a522e5b93075663b93da848d3dea41b07700d228356",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_trained_validation.json",
+          "metadata_sha256": "271409119eb940a8c84859f889659b9cc0cd551fdde4e2618a0bfc53b6855222"
+        },
+        {
+          "unit": "unit02",
+          "task": "peaks",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_trained_test.npz",
+          "sha256": "c7457d4f8b1085794001790ced6cfe9266e34165b9b976fa111d0c1c35eedd0a",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "38780f1508d1cd74edc13a522e5b93075663b93da848d3dea41b07700d228356",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_trained_test.json",
+          "metadata_sha256": "90edaf14a7261ce8f26e9b34193ee6949ccf46edcbda403d43866c652bc28d7f"
+        },
+        {
+          "unit": "unit02",
+          "task": "valleys",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_validation.npz",
+          "sha256": "1e6911334aeb2259a6bc4a0d38582d55292e4fe3375f11dbbf088baf5d10e92d",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1,
+            2
+          ],
+          "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "c3a53105d9a505ea449cb17d74911ec9c970728a15c8ea729da3a351ff216af4",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_validation.json",
+          "metadata_sha256": "fce13e317ffab7716888a057470b349a5dd8608ecb9cc8983b9b89d111127496"
+        },
+        {
+          "unit": "unit02",
+          "task": "valleys",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_test.npz",
+          "sha256": "bf0ddced7a79d38bbbd0920b596d1f6a2dbf2daedb0e3c8c5d1fa12d2e2a3e2c",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "c3a53105d9a505ea449cb17d74911ec9c970728a15c8ea729da3a351ff216af4",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_test.json",
+          "metadata_sha256": "f8ab1a50b29c3ed0ee7a9898669d6f92fdbd591fbe242aaa903deb19c564a110"
+        },
+        {
+          "unit": "unit02",
+          "task": "fixed_points",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_fixed_points_trained_validation.npz",
+          "sha256": "f5af63aeb1239b4f55770adb8f8df409d4f3fc4cf1f878f7076c9905e3e5e6c8",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0
+          ],
+          "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "156049dfeedce05b2d021900be80f7b6316f680a98b357f4a20d67843e012881",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_fixed_points_trained_validation.json",
+          "metadata_sha256": "181eaaeed485e6d1af25f56a8f43ef0cf5f8ff6d09e64e2fe61732c4aee33ea7"
+        },
+        {
+          "unit": "unit02",
+          "task": "fixed_points",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_fixed_points_trained_test.npz",
+          "sha256": "048fdbc69747e58f8728083f82be28062f9f90d3c2def24069c5fc5ead0c31a0",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "156049dfeedce05b2d021900be80f7b6316f680a98b357f4a20d67843e012881",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_fixed_points_trained_test.json",
+          "metadata_sha256": "23b6502fdce75c3fb814c72ef0162a65239875b7273e81ec0dec555251c648ab"
+        }
+      ],
+      "standardized_features": {
+        "peaks": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit02/one_line-peaks.npz",
+          "sha256": "95a4d05b21f19fca6b67a46d5d18f4deabac67afcb9abf8e62d3f907bd61e7ad",
+          "checkpoint_sha256": "38780f1508d1cd74edc13a522e5b93075663b93da848d3dea41b07700d228356",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        },
+        "valleys": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit02/one_line-valleys.npz",
+          "sha256": "61f84f689799e77764c1e895877b928945e38afc2217b60e1f9d41c880f794bc",
+          "checkpoint_sha256": "c3a53105d9a505ea449cb17d74911ec9c970728a15c8ea729da3a351ff216af4",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        }
+      },
+      "trained_checkpoints": [
+        {
+          "task": "peaks",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_peaks/checkpoint.pt",
+          "sha256": "38780f1508d1cd74edc13a522e5b93075663b93da848d3dea41b07700d228356",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_peaks/completed.json",
+          "parameter_sha256": "6356dfdec1ae55fc1fa9dc16b3679f5a3d00b301c8835f11d7b7a714e6d90f4a",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "valleys",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_valleys/checkpoint.pt",
+          "sha256": "c3a53105d9a505ea449cb17d74911ec9c970728a15c8ea729da3a351ff216af4",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_valleys/completed.json",
+          "parameter_sha256": "974cfafbb3aaad4d50ead94d4afade4d75d13c10ba3305d5cf021c8c0924f5be",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "fixed_points",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_fixed_points/checkpoint.pt",
+          "sha256": "156049dfeedce05b2d021900be80f7b6316f680a98b357f4a20d67843e012881",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_fixed_points/completed.json",
+          "parameter_sha256": "6371bcacd78e93d094d49fb2765d98a1f8b4d81be61a0ecac0cd6daac650046f",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        }
+      ],
+      "alignment": {
+        "archive_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit02/alignment.npz",
+        "archive_sha256": "8111bd4f1434bae963984fe4b33cf94f37fa248ac1aa848b42434edcf550f421",
+        "metadata_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit02/alignment.json",
+        "maps": [
+          {
+            "fit_condition": "identity",
+            "key": "R_034",
+            "map_sha256": "421c8eba89bb66fa973eefaf871074b587540c00444789149143f78118bd1399",
+            "cross_sha256": "03fdd36c9db194fafdff1b3a123b778111fe09cc7ca7fce064b140049ccdd03b",
+            "maximum_orthogonality_error": 1.3322676295501878e-15
+          },
+          {
+            "fit_condition": "complement",
+            "key": "R_035",
+            "map_sha256": "68cf25b6032c958ca0196f28a78db11323f4008f859e4f3b09379005368d1d35",
+            "cross_sha256": "e46066b803435e5bb7a2721a9e5ee7479902eac1a5d50e231bbd2fc54afc132e",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "inverse",
+            "key": "R_036",
+            "map_sha256": "f9d0ba92d04516039fc86732be6b0e44083c3ba84887c9776ca63830d6b89f85",
+            "cross_sha256": "fb889f39749e60b58b3d0fb5a370cbfb0642afabd809e3acb5429a444299f80d",
+            "maximum_orthogonality_error": 1.4432899320127035e-15
+          },
+          {
+            "fit_condition": "shuffle_1026",
+            "key": "R_037",
+            "map_sha256": "c1ba7728b2c5bbef1d545f714e9e58910aae33db2f0b11a339fe58e1d3b9ed68",
+            "cross_sha256": "0c7a82a00813a66f51981b941e5dfcdf1e9ca6804128986487d3a17024f5f20e",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1027",
+            "key": "R_038",
+            "map_sha256": "908de9dc097e43bd32f4c05ce173a346e47bc2f26b5997cb31ab0fa90392781b",
+            "cross_sha256": "2f062d87731bcb5bf02289836e057500d78a084d6cc9020706b211ee4177af1f",
+            "maximum_orthogonality_error": 2.3314683517128287e-15
+          },
+          {
+            "fit_condition": "shuffle_1028",
+            "key": "R_039",
+            "map_sha256": "0df040ed177308ac47bdd994bf59fe297370a0c20e038b0efc7c3aa93596ee65",
+            "cross_sha256": "da5499b935f82596fe3c4d69eeebd1f7603c5df3c154b8b903ecdae196f50385",
+            "maximum_orthogonality_error": 1.4432899320127035e-15
+          },
+          {
+            "fit_condition": "shuffle_1029",
+            "key": "R_040",
+            "map_sha256": "abf0e9b4f1c1246fb3f97749cc9648d947dd65d05b21ce8dc6791dc39d110a7e",
+            "cross_sha256": "880ff569d5a5c877df6d865c2c012c6c5824de6980448c1779eb9f9cf91f1a6f",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1030",
+            "key": "R_041",
+            "map_sha256": "15f4c021a12c9b8f9e6496a1bf9adf2a78266fbfd0983c6ffa6f6fc62690b637",
+            "cross_sha256": "40b7c680759aef8b9f1dc4b27e1fa3cf507fb2ced05cd408ff29d13eb62f6a44",
+            "maximum_orthogonality_error": 1.4432899320127035e-15
+          },
+          {
+            "fit_condition": "shuffle_1031",
+            "key": "R_042",
+            "map_sha256": "a1a7a70baf53fd072cc182d1553a8917f31e953f13c0dec4e67f97813d5a3e1e",
+            "cross_sha256": "e40330d1b51bb1463a97a5f50a6169f3e35fd94465ffc35ad944a6758e185fec",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          },
+          {
+            "fit_condition": "shuffle_1032",
+            "key": "R_043",
+            "map_sha256": "ce795e91170f79bfda142de2ac83810645d86aee60c4e42079bcebc42e0de5ad",
+            "cross_sha256": "f1d29ff5193d294071d0812e1412e7557da26054d8f44a1ecaae96f892c6cb72",
+            "maximum_orthogonality_error": 1.2212453270876722e-15
+          },
+          {
+            "fit_condition": "shuffle_1033",
+            "key": "R_044",
+            "map_sha256": "98dacc1ff4d96455e943e388444667d53430f6155471a721c1d613b07f44dc65",
+            "cross_sha256": "c15d910c8dc1e28d11400b4256f923d8f2e5246a98f160a5a33cda3f8703b4b5",
+            "maximum_orthogonality_error": 3.1086244689504383e-15
+          }
+        ],
+        "raw_row_vector_direction": "target to source: (h_valleys_C - mu_C) @ R + mu_x",
+        "previous_validation_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-trained.npz",
+        "centering_means_serialized": false,
+        "mean_reconstruction": "For each length use exactly original read_length probe-fit mask; mu_x=mean(peaks validation action0),mu_C=mean(valleys validation action1),FP64. Use mu_C for every map on fixed complement input."
+      },
+      "source_probe_coefficients_saved": false,
+      "probe_reconstruction": "Rebuild unchanged vendor fit_probe on peaks validation identity and its own interior peak labels using frozen fit/dev masks and source-only alpha selection. Scalers/coefficients were not serialized.",
+      "route_semantics": {
+        "input": "pi = C(x)",
+        "first_peak": "peaks specialist test action1, scored against peak positions of pi",
+        "same_model_second": "peaks specialist test action0; peak(x) positions equal valleys(pi)",
+        "aligned_second": "valleys specialist test action1 mapped by saved trained one-line map; one source peaks probe",
+        "fixed_point_fit": "fixed_points specialist validation action0 with own fixed-point labels for x including endpoints",
+        "fixed_point_test": "fixed_points specialist test action1, labels fixed points of pi=C(x) only for scoring"
+      },
+      "fixed_point_label_column": 5
+    },
+    {
+      "unit": "unit03",
+      "historical": false,
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/data.npz",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "validation_examples": 5376,
+      "test_examples": 10752,
+      "validation_per_length": 256,
+      "test_per_length": 512,
+      "raw_features": [
+        {
+          "unit": "unit03",
+          "task": "peaks",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_trained_validation.npz",
+          "sha256": "2d580385f5d198825c7c6a2948e2103b9585561b49f13630116f6cb628234843",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "c3ca81bf8b1ec9e5c9a6c2a20d1749fb8abce0f2153eacb754851db16fad1fbc",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_trained_validation.json",
+          "metadata_sha256": "8656b062c05241c2641bc3dc4e0157b4a2f24fb3191c02b738e868f6e46178a8"
+        },
+        {
+          "unit": "unit03",
+          "task": "peaks",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_trained_test.npz",
+          "sha256": "f03b75a0ff0dcaecf9e140d079516c8558a9c39628dfa5883c585591e9504b47",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "c3ca81bf8b1ec9e5c9a6c2a20d1749fb8abce0f2153eacb754851db16fad1fbc",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_trained_test.json",
+          "metadata_sha256": "7d47b35fe7213a6e4bccd831a9cfea85ee457c05a2457d3244763ed41a58d9a7"
+        },
+        {
+          "unit": "unit03",
+          "task": "valleys",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_validation.npz",
+          "sha256": "b4762f3159285f3e2c2c5aedbf9d4c8ea07d81814068c94ff1af2fc9c8239526",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1,
+            2
+          ],
+          "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "21e7de89564e1a64bcf2b17a3c1be061a2e42e0a8e2ac1be599613bd4d90da48",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_validation.json",
+          "metadata_sha256": "e6cd65400687e3f2047981bd8b93f0f10df97127c6d9a3929e172eba71da9cf6"
+        },
+        {
+          "unit": "unit03",
+          "task": "valleys",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_test.npz",
+          "sha256": "03ac32e960b6dff91bfad2a1e7048e1a0d31acdb1d5a71eb3b41e398c17a0835",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "21e7de89564e1a64bcf2b17a3c1be061a2e42e0a8e2ac1be599613bd4d90da48",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_test.json",
+          "metadata_sha256": "7921606217e1481dc48ee36f76d3dcc59aff64f0bdaa4a17b5764baddbb57834"
+        },
+        {
+          "unit": "unit03",
+          "task": "fixed_points",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_fixed_points_trained_validation.npz",
+          "sha256": "2066ab709f5709ff6afef389ca875ab9c000c963f4defea56f4219b95733202a",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0
+          ],
+          "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "c871253e46e2a4d35dee2e3f8a87278a3043455ff5893201709bf2b5fc46c095",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_fixed_points_trained_validation.json",
+          "metadata_sha256": "3f8af9f7e4a5c5c068b0147d46941573d8cf7e7b7b4467a443c48309a0ddeec6"
+        },
+        {
+          "unit": "unit03",
+          "task": "fixed_points",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_fixed_points_trained_test.npz",
+          "sha256": "3303974bed183037f835a516ccb0b198f34573772b70774608f0d1aedc5fdaca",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "c871253e46e2a4d35dee2e3f8a87278a3043455ff5893201709bf2b5fc46c095",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_fixed_points_trained_test.json",
+          "metadata_sha256": "8de4bae61128026d2c357586791a58844161482496da8b4ee1ece7be861e9c11"
+        }
+      ],
+      "standardized_features": {
+        "peaks": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-peaks.npz",
+          "sha256": "04b84d0127393c0bca37033352fc9e654410fecf861a2d07159dc61235550969",
+          "checkpoint_sha256": "c3ca81bf8b1ec9e5c9a6c2a20d1749fb8abce0f2153eacb754851db16fad1fbc",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        },
+        "valleys": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-valleys.npz",
+          "sha256": "2183710ffa7364fdfb321407c8d21837c127841cb6793b0bf40f88c2dcf6a75d",
+          "checkpoint_sha256": "21e7de89564e1a64bcf2b17a3c1be061a2e42e0a8e2ac1be599613bd4d90da48",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        }
+      },
+      "trained_checkpoints": [
+        {
+          "task": "peaks",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_peaks/checkpoint.pt",
+          "sha256": "c3ca81bf8b1ec9e5c9a6c2a20d1749fb8abce0f2153eacb754851db16fad1fbc",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_peaks/completed.json",
+          "parameter_sha256": "f29d0263676ee44914f32565dc58f41bcbb571f5ce2411771b0a27249dae8958",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "valleys",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_valleys/checkpoint.pt",
+          "sha256": "21e7de89564e1a64bcf2b17a3c1be061a2e42e0a8e2ac1be599613bd4d90da48",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_valleys/completed.json",
+          "parameter_sha256": "a7f412ea7c71329ae9ce938f1c974d14abc4582236c20185cfdadc44c9d7e1bf",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "fixed_points",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_fixed_points/checkpoint.pt",
+          "sha256": "c871253e46e2a4d35dee2e3f8a87278a3043455ff5893201709bf2b5fc46c095",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_fixed_points/completed.json",
+          "parameter_sha256": "f745588be79c088ba32fdc15ead70ecb81a16efabe69100ad714616a9f11d85b",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        }
+      ],
+      "alignment": {
+        "archive_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit03/alignment.npz",
+        "archive_sha256": "65fb82c596bbc77c2d0f52015454463f476ec6e71e24c81c7816fb938091f163",
+        "metadata_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit03/alignment.json",
+        "maps": [
+          {
+            "fit_condition": "identity",
+            "key": "R_034",
+            "map_sha256": "656016dccda017c71d106d64e039f9c1690075643ab0edc6d2e880978989a13c",
+            "cross_sha256": "5918bd1f452306b2e873f5c56328cc22c25d54a030b4c1923fea8b2833bc567f",
+            "maximum_orthogonality_error": 1.3322676295501878e-15
+          },
+          {
+            "fit_condition": "complement",
+            "key": "R_035",
+            "map_sha256": "da5028ac3b6b4ac70ae15173dda26d819001e1ae0ddd25a1acd88a174246e893",
+            "cross_sha256": "99db276af694d81873dc3e2a066611e6525bb3e8286a3baa6a0c7021f2daf9c9",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "inverse",
+            "key": "R_036",
+            "map_sha256": "950604384fb3f9cfe57017fd5a20a35d84928f9216e15456f3a5391d1d8f1e7f",
+            "cross_sha256": "73435c2f225b82351b55ad49b8770f65bdd31fc0f56b401a1d4ef278d4fdcef4",
+            "maximum_orthogonality_error": 1.2212453270876722e-15
+          },
+          {
+            "fit_condition": "shuffle_1026",
+            "key": "R_037",
+            "map_sha256": "36a6502cae8d93f6bc31953f3dcbb062a6793ff54f25756f90b1286b7f437c1e",
+            "cross_sha256": "aff8ac478f76215799c78e012f53ab2f4089017d2a55531d7a009a821a3e7e8c",
+            "maximum_orthogonality_error": 2.6645352591003757e-15
+          },
+          {
+            "fit_condition": "shuffle_1027",
+            "key": "R_038",
+            "map_sha256": "de0c92d5df44620285cc75c0d8addeab9cb8499118b28469148e6fa1a62e2f53",
+            "cross_sha256": "8c8ac04ab4fd8e3f9849a316686e6ca0d69175b51948c4ac5f4f800a7924b47a",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1028",
+            "key": "R_039",
+            "map_sha256": "6fe076be517a8e812a756453a5a15bab9502484fa13d90fc624c844544ac8528",
+            "cross_sha256": "89510a398b5b9da5c2f80c3f85bc51547c2f27dfea1878cd55b31aaf3297b8e4",
+            "maximum_orthogonality_error": 1.4432899320127035e-15
+          },
+          {
+            "fit_condition": "shuffle_1029",
+            "key": "R_040",
+            "map_sha256": "95b25ea7b2bd87e3293b98c3bea49c1146451bd21b785e6add976829bccbf218",
+            "cross_sha256": "70af3ab5d53c436cbb40cc1b0d19074dfdf36310900ef83101c0242232ebe1ea",
+            "maximum_orthogonality_error": 1.6653345369377348e-15
+          },
+          {
+            "fit_condition": "shuffle_1030",
+            "key": "R_041",
+            "map_sha256": "9d3c8fd2144cae990edc180343439033131dd60cefccfdfcb9c7e14ba8ff1bf3",
+            "cross_sha256": "a789596a02e720265f931613e4539f7be1d613831a57f815e7cc251ddd3c1b93",
+            "maximum_orthogonality_error": 2.1094237467877974e-15
+          },
+          {
+            "fit_condition": "shuffle_1031",
+            "key": "R_042",
+            "map_sha256": "774b4d813477f541ab6026e769251c0a289cd06583ed805b38e66128659b1282",
+            "cross_sha256": "3e80dddcc3034d8ca05f82fdd3348f2ca639070886d538049e766e336eefb7f9",
+            "maximum_orthogonality_error": 1.9984014443252818e-15
+          },
+          {
+            "fit_condition": "shuffle_1032",
+            "key": "R_043",
+            "map_sha256": "683cdc9cd3e7d837b54d516ae7d62e3a210822f6e78b1999374f2aa357f4702c",
+            "cross_sha256": "81e9aa0c43c82e81e0d4124478bcf016c61c985f57404479c7cc06a6d0b3e082",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1033",
+            "key": "R_044",
+            "map_sha256": "4e86f20687a08f33a18a12949f211a08ef548eef8d4bbfe028c6520cf6d6bf91",
+            "cross_sha256": "cf48e718e752d020baa673274270adebe6cd46298991cce03b8178dd4c2c8064",
+            "maximum_orthogonality_error": 1.4432899320127035e-15
+          }
+        ],
+        "raw_row_vector_direction": "target to source: (h_valleys_C - mu_C) @ R + mu_x",
+        "previous_validation_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-trained.npz",
+        "centering_means_serialized": false,
+        "mean_reconstruction": "For each length use exactly original read_length probe-fit mask; mu_x=mean(peaks validation action0),mu_C=mean(valleys validation action1),FP64. Use mu_C for every map on fixed complement input."
+      },
+      "source_probe_coefficients_saved": false,
+      "probe_reconstruction": "Rebuild unchanged vendor fit_probe on peaks validation identity and its own interior peak labels using frozen fit/dev masks and source-only alpha selection. Scalers/coefficients were not serialized.",
+      "route_semantics": {
+        "input": "pi = C(x)",
+        "first_peak": "peaks specialist test action1, scored against peak positions of pi",
+        "same_model_second": "peaks specialist test action0; peak(x) positions equal valleys(pi)",
+        "aligned_second": "valleys specialist test action1 mapped by saved trained one-line map; one source peaks probe",
+        "fixed_point_fit": "fixed_points specialist validation action0 with own fixed-point labels for x including endpoints",
+        "fixed_point_test": "fixed_points specialist test action1, labels fixed points of pi=C(x) only for scoring"
+      },
+      "fixed_point_label_column": 5
+    },
+    {
+      "unit": "unit04",
+      "historical": false,
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/data.npz",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "validation_examples": 5376,
+      "test_examples": 10752,
+      "validation_per_length": 256,
+      "test_per_length": 512,
+      "raw_features": [
+        {
+          "unit": "unit04",
+          "task": "peaks",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_trained_validation.npz",
+          "sha256": "13ee3d4d64b7f2572a02f61cc220b01daa1859b05b86a95cb005ba3bfaab81d8",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "c7ca1c65d7c33882ffdbf81d335cb245e6a90ea581e4a2e7bc3a064f40b7fbc1",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_trained_validation.json",
+          "metadata_sha256": "99a94e70030f63d72758561687a607dfa541f9cc2ff85904d61691981e85201c"
+        },
+        {
+          "unit": "unit04",
+          "task": "peaks",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_trained_test.npz",
+          "sha256": "9fa137a1b8590cd39859b46293777a28b318222d1c478756c119e62df8644bbc",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "c7ca1c65d7c33882ffdbf81d335cb245e6a90ea581e4a2e7bc3a064f40b7fbc1",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_trained_test.json",
+          "metadata_sha256": "9165252ecb9e0cbeb99c4c884ac02e51b5c6460b05dfcf1085e9cf938d97f772"
+        },
+        {
+          "unit": "unit04",
+          "task": "valleys",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_validation.npz",
+          "sha256": "a6e6c4e8b1fb36968ff1c07197cb60281988a889619fb0b7745a3df203be7992",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1,
+            2
+          ],
+          "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "87dd83b7bd6d63168f629d86d0bd279de0d967da018edf20c8693aae29ff0426",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_validation.json",
+          "metadata_sha256": "a0fce480b0dea677f675c723c2877b2e50332c59e3af9d90926fb6c2f98329d4"
+        },
+        {
+          "unit": "unit04",
+          "task": "valleys",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_test.npz",
+          "sha256": "0beec5796994cc5772e92a5d24afa548a3bc0581e7d9888dec1401a17814c237",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "87dd83b7bd6d63168f629d86d0bd279de0d967da018edf20c8693aae29ff0426",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_test.json",
+          "metadata_sha256": "64f52be6e3db68ca95f2d71f52e6ea9af51ddf1bbd7b00bb0a95715bc5058f38"
+        },
+        {
+          "unit": "unit04",
+          "task": "fixed_points",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_fixed_points_trained_validation.npz",
+          "sha256": "986ff8f3d060034d601b1dd94ab38c83757b060d0dff9c4c6e8c9d82df373934",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0
+          ],
+          "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "85379552b64c585488955bf77d0119f8edd6be42568ff38c1cb708f9e6eb7cf2",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_fixed_points_trained_validation.json",
+          "metadata_sha256": "ddaf8a1fac1a5b584eb4f1f6376937bdee6ec2e847ffb9ed001b177127158486"
+        },
+        {
+          "unit": "unit04",
+          "task": "fixed_points",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_fixed_points_trained_test.npz",
+          "sha256": "a145a4ef7a2461ffca32b50a3f8f65f837954d734e726bc2779466840f9edd83",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "85379552b64c585488955bf77d0119f8edd6be42568ff38c1cb708f9e6eb7cf2",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_fixed_points_trained_test.json",
+          "metadata_sha256": "7ed6eb093f08f79140ec12c1c7fd0678c3d2a4652bf68b25ef82d8631617b969"
+        }
+      ],
+      "standardized_features": {
+        "peaks": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit04/one_line-peaks.npz",
+          "sha256": "ff19378a96951050c395800afa1c0a83a6392c776acdd9a18035ddbe4efb6c86",
+          "checkpoint_sha256": "c7ca1c65d7c33882ffdbf81d335cb245e6a90ea581e4a2e7bc3a064f40b7fbc1",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        },
+        "valleys": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit04/one_line-valleys.npz",
+          "sha256": "fbf9f228891f7162e3a12fb4a2575ac8ec64588fa308b64a49b6573a94229e7e",
+          "checkpoint_sha256": "87dd83b7bd6d63168f629d86d0bd279de0d967da018edf20c8693aae29ff0426",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        }
+      },
+      "trained_checkpoints": [
+        {
+          "task": "peaks",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_peaks/checkpoint.pt",
+          "sha256": "c7ca1c65d7c33882ffdbf81d335cb245e6a90ea581e4a2e7bc3a064f40b7fbc1",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_peaks/completed.json",
+          "parameter_sha256": "d1a2c60feb845156bc17532462e3a840f719016d32f28559562d31c157fcc261",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "valleys",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_valleys/checkpoint.pt",
+          "sha256": "87dd83b7bd6d63168f629d86d0bd279de0d967da018edf20c8693aae29ff0426",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_valleys/completed.json",
+          "parameter_sha256": "471b8976315c01866b35d1639dca94d306f9b9bedd9f0ab33c509f93e1c3beaa",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "fixed_points",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_fixed_points/checkpoint.pt",
+          "sha256": "85379552b64c585488955bf77d0119f8edd6be42568ff38c1cb708f9e6eb7cf2",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_fixed_points/completed.json",
+          "parameter_sha256": "f0dc39ea6d282192e1f361a256c3ac8ae9bc5baffcc3c4c81cdececc9e6dee62",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        }
+      ],
+      "alignment": {
+        "archive_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit04/alignment.npz",
+        "archive_sha256": "3c20f3866e68e6bb346d3be3807348405e65561b7f8f0c66aa427c8973c07b1d",
+        "metadata_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit04/alignment.json",
+        "maps": [
+          {
+            "fit_condition": "identity",
+            "key": "R_034",
+            "map_sha256": "2b447221b6bbdd993a09f97c4a092f41b3c708814491e11b8abe0a89f967a6b2",
+            "cross_sha256": "56d835b31f7b7db43eb052211e73f8ae2e6236590ca70025e33e69b75e0a15d2",
+            "maximum_orthogonality_error": 1.6653345369377348e-15
+          },
+          {
+            "fit_condition": "complement",
+            "key": "R_035",
+            "map_sha256": "eeeaedae5ee43999d7fb221ba8345b67f920d719a4850f46930a532bd0598a11",
+            "cross_sha256": "b05aa2f8b2619289d642dbaae560719f305315cead1e7335009c521b04952f11",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "inverse",
+            "key": "R_036",
+            "map_sha256": "2e454d39bc8ed04f9b25a43cb6b836b66d02348ec3f43f2d4fab69520887733e",
+            "cross_sha256": "d466d9f3ac765b8b8662bf8d24fbb453d1f04cec2bfceff60ef47994bb0fec70",
+            "maximum_orthogonality_error": 1.887379141862766e-15
+          },
+          {
+            "fit_condition": "shuffle_1026",
+            "key": "R_037",
+            "map_sha256": "30d0a0471e721a8a22914d36cf15ac53d1788abaa0ed7f113c9fbc97d1f4c3f7",
+            "cross_sha256": "3d357b49154f8ca9da3c4fd02f4df45722177f9e28b9dd0700f981047ef0c433",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1027",
+            "key": "R_038",
+            "map_sha256": "9d246e9b6203dd62c2f6df75992147faf3a57e6918559590ed3a13366c1a0c83",
+            "cross_sha256": "0b1b058a428bbafc7b916bb1fead10f4623cc982e00ebece453c97c655bf471a",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          },
+          {
+            "fit_condition": "shuffle_1028",
+            "key": "R_039",
+            "map_sha256": "fc9a4aef53dcbdb47e7ae011d77370048514be9ec769ce1b63122a5e13b1135d",
+            "cross_sha256": "fdc42dbc1ead986932f7d4994e8db6b098a038c12efcf9503573a97f10f3c1ac",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1029",
+            "key": "R_040",
+            "map_sha256": "a323a66e25e6a5a7f77732ab584a2a13932a207741dda88fe8f61d9e55db8219",
+            "cross_sha256": "9256638eddfb1e6309fb3eef2055b10204c9fc9b95a00a4183606c7129293708",
+            "maximum_orthogonality_error": 1.9984014443252818e-15
+          },
+          {
+            "fit_condition": "shuffle_1030",
+            "key": "R_041",
+            "map_sha256": "c60b3dac99f45fcdc57558230200f49081451426efe123a79b75c2b71676b8b2",
+            "cross_sha256": "7e2aa741375d1f61fdbe3070222ad7ada36307849fa308d8b896f540e28fcdc3",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          },
+          {
+            "fit_condition": "shuffle_1031",
+            "key": "R_042",
+            "map_sha256": "bce0280d06f69b19a413e64d0693d7dc49f35287eb0795d552e4fe29fcb2ffff",
+            "cross_sha256": "47f4eb078f63f60220ba49bbf0fac18c06b65f71dec971270447d149185511fb",
+            "maximum_orthogonality_error": 2.6645352591003757e-15
+          },
+          {
+            "fit_condition": "shuffle_1032",
+            "key": "R_043",
+            "map_sha256": "9f9edb13b8a874a44b6a82946c679fafd1ce813fc5104753cb027900122ad7ec",
+            "cross_sha256": "9465aad7f1cf0364030dd573681e8dfc7fbd67930bc4a265a30f1dc1bf671fca",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1033",
+            "key": "R_044",
+            "map_sha256": "6ff85e9ab4fe573ba98614b22b6cb9a6c06d90aad43df98de2fd904489b6eb9b",
+            "cross_sha256": "0e1f9c45a5c3275641ddd5d5cfbfb049d20911468c80d09991e05e17377577c7",
+            "maximum_orthogonality_error": 1.6653345369377348e-15
+          }
+        ],
+        "raw_row_vector_direction": "target to source: (h_valleys_C - mu_C) @ R + mu_x",
+        "previous_validation_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/one_line-trained.npz",
+        "centering_means_serialized": false,
+        "mean_reconstruction": "For each length use exactly original read_length probe-fit mask; mu_x=mean(peaks validation action0),mu_C=mean(valleys validation action1),FP64. Use mu_C for every map on fixed complement input."
+      },
+      "source_probe_coefficients_saved": false,
+      "probe_reconstruction": "Rebuild unchanged vendor fit_probe on peaks validation identity and its own interior peak labels using frozen fit/dev masks and source-only alpha selection. Scalers/coefficients were not serialized.",
+      "route_semantics": {
+        "input": "pi = C(x)",
+        "first_peak": "peaks specialist test action1, scored against peak positions of pi",
+        "same_model_second": "peaks specialist test action0; peak(x) positions equal valleys(pi)",
+        "aligned_second": "valleys specialist test action1 mapped by saved trained one-line map; one source peaks probe",
+        "fixed_point_fit": "fixed_points specialist validation action0 with own fixed-point labels for x including endpoints",
+        "fixed_point_test": "fixed_points specialist test action1, labels fixed points of pi=C(x) only for scoring"
+      },
+      "fixed_point_label_column": 5
+    },
+    {
+      "unit": "unit05",
+      "historical": false,
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/data.npz",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "validation_examples": 5376,
+      "test_examples": 10752,
+      "validation_per_length": 256,
+      "test_per_length": 512,
+      "raw_features": [
+        {
+          "unit": "unit05",
+          "task": "peaks",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_trained_validation.npz",
+          "sha256": "766121d07b5ca0e40ed46b1e640ebe5738860db2b982dd07babd10c9bbd6a099",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "bb2cb27d9eff9e9b21dd89258e21f5c83e4a26fa70667d89f036a43107a0f9f6",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_trained_validation.json",
+          "metadata_sha256": "5eaefc160c4bc901121b68f0a67feeb3d3dc90b08e7a66078524a03ad318791d"
+        },
+        {
+          "unit": "unit05",
+          "task": "peaks",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_trained_test.npz",
+          "sha256": "2e4de659f2888303605187e1d955dd64456c384e5d8667cf125018bff35fa008",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1
+          ],
+          "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_peaks/checkpoint.pt",
+          "checkpoint_sha256": "bb2cb27d9eff9e9b21dd89258e21f5c83e4a26fa70667d89f036a43107a0f9f6",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_trained_test.json",
+          "metadata_sha256": "82840fab93ed20b41a6652f69a4c60fae17855fa9c226044eea213d2b4a0bc7c"
+        },
+        {
+          "unit": "unit05",
+          "task": "valleys",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_validation.npz",
+          "sha256": "0ca3145d8efab5e29e43684641694a966db72054edf582fe447a89bb710d9605",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0,
+            1,
+            2
+          ],
+          "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "b1a7a87b79c07d9b78dd913c4b766c3fd6a3f656a426d47e00544c3d46e1da3e",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_validation.json",
+          "metadata_sha256": "3cf09e21761987ed5e08907535fce6c794b1a3418d1096109d1a62bc7901391d"
+        },
+        {
+          "unit": "unit05",
+          "task": "valleys",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_test.npz",
+          "sha256": "0ed0a383d675c77ad5d2c10f60fe0af2fc7d322085af49b669f1267857957171",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_valleys/checkpoint.pt",
+          "checkpoint_sha256": "b1a7a87b79c07d9b78dd913c4b766c3fd6a3f656a426d47e00544c3d46e1da3e",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_test.json",
+          "metadata_sha256": "47467271656175ecab02a76096bc8b7e6ea65b75d5ac6e9b36ceaf11f653b02d"
+        },
+        {
+          "unit": "unit05",
+          "task": "fixed_points",
+          "split": "validation",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_fixed_points_trained_validation.npz",
+          "sha256": "2dcaaff2364c21cb3b3ccbe6b4313f2eae197b9170ba293652cb354356e43771",
+          "field": "prefix_final",
+          "shape": [
+            5376,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            0
+          ],
+          "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "f96cf759a22f4008d3f74eb40dc135bb9ca0f80dea5bb59d39063fbc72eb5330",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_fixed_points_trained_validation.json",
+          "metadata_sha256": "e62b556fd2bb11175e459ecbd0a9be7da1c598ef9414164d194f1d42294abbfe"
+        },
+        {
+          "unit": "unit05",
+          "task": "fixed_points",
+          "split": "test",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_fixed_points_trained_test.npz",
+          "sha256": "6b06dd429ef631c1c163057c2621559f97a02c2ce0c2b02098fee8308f5ab54a",
+          "field": "prefix_final",
+          "shape": [
+            10752,
+            3,
+            256
+          ],
+          "dtype": "float32",
+          "actions": [
+            "identity",
+            "complement",
+            "inverse"
+          ],
+          "required_actions": [
+            1
+          ],
+          "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+          "checkpoint_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_fixed_points/checkpoint.pt",
+          "checkpoint_sha256": "f96cf759a22f4008d3f74eb40dc135bb9ca0f80dea5bb59d39063fbc72eb5330",
+          "row_order": "Original anchor index; complete split; arange(N)",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_fixed_points_trained_test.json",
+          "metadata_sha256": "55b71565862cd86671ff5ba726d02ea9b8e0a6566b6195c3d7cd1073df6335fc"
+        }
+      ],
+      "standardized_features": {
+        "peaks": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit05/one_line-peaks.npz",
+          "sha256": "2113ad4e8f38666fd968837d516ffdfb2ed644fb67f3f4652a01d1c99877d42b",
+          "checkpoint_sha256": "bb2cb27d9eff9e9b21dd89258e21f5c83e4a26fa70667d89f036a43107a0f9f6",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        },
+        "valleys": {
+          "path": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit05/one_line-valleys.npz",
+          "sha256": "d5de593e5b8cb07ae91ff63b7f552b7ca850cf7b6db273c9aaad9f3caa5db55e",
+          "checkpoint_sha256": "b1a7a87b79c07d9b78dd913c4b766c3fd6a3f656a426d47e00544c3d46e1da3e",
+          "note": "Raw FP32 final_norm values in an adapted NPZ schema; no global z-scoring."
+        }
+      },
+      "trained_checkpoints": [
+        {
+          "task": "peaks",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_peaks/checkpoint.pt",
+          "sha256": "bb2cb27d9eff9e9b21dd89258e21f5c83e4a26fa70667d89f036a43107a0f9f6",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_peaks/completed.json",
+          "parameter_sha256": "4a7cc9a0e6e8c830567a2bebeb506ce1fbc9b3507bb5e9a43b41e91b903a4234",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "valleys",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_valleys/checkpoint.pt",
+          "sha256": "b1a7a87b79c07d9b78dd913c4b766c3fd6a3f656a426d47e00544c3d46e1da3e",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_valleys/completed.json",
+          "parameter_sha256": "ef14260ebe058750b5a143f0dfb7bf93d974a60d46d11ad4a9319ae96a510393",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        },
+        {
+          "task": "fixed_points",
+          "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_fixed_points/checkpoint.pt",
+          "sha256": "f96cf759a22f4008d3f74eb40dc135bb9ca0f80dea5bb59d39063fbc72eb5330",
+          "metadata_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_fixed_points/completed.json",
+          "parameter_sha256": "7a4d9c0a6a474bf11b1de7b099f117dbb9fdf32ee0fde5eba53e58446a2a8c72",
+          "receipt_status": null,
+          "receipt_step": 20000,
+          "receipt_finite_gradient_updates": 20000
+        }
+      ],
+      "alignment": {
+        "archive_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit05/alignment.npz",
+        "archive_sha256": "7a3a2ed336cf99fa8ced2f07a7b6fa405cd0a7fc5cc3f10891753e41b5ad6717",
+        "metadata_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit05/alignment.json",
+        "maps": [
+          {
+            "fit_condition": "identity",
+            "key": "R_034",
+            "map_sha256": "74e7c2a023fc53cb4c55ee3706400365b4c9a8773a4584fad0ba3f5128a685d4",
+            "cross_sha256": "9c91d692bd149c1d77b53fcb685fd9841bf8c52fe1a14647c68a4bb5ab124f2c",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          },
+          {
+            "fit_condition": "complement",
+            "key": "R_035",
+            "map_sha256": "ea46cde51360e22d99074b524a4b5e0d779ae9eced8aa9ec567e783690158867",
+            "cross_sha256": "5ebdfac1d8c374712e163baa0adfb4f589d3396939203112bd68d80703c4a42c",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          },
+          {
+            "fit_condition": "inverse",
+            "key": "R_036",
+            "map_sha256": "38846a4e0223b49c11a7b535042ec1b9db30b88bbf04a8237b722b7acd969eaa",
+            "cross_sha256": "678e490700865bd21dda9d5c84d722f0e56481d817142c7421fb31b50cfcfe41",
+            "maximum_orthogonality_error": 1.3322676295501878e-15
+          },
+          {
+            "fit_condition": "shuffle_1026",
+            "key": "R_037",
+            "map_sha256": "022cbb2c55b7fcdb8d103dcaf730621202f0a8fdb2ae9adb28c6955e989d9aea",
+            "cross_sha256": "b9c0260a62d2fa075d7c0943920b9633ced05edee128933768a72fe1ba7ad30e",
+            "maximum_orthogonality_error": 1.4432899320127035e-15
+          },
+          {
+            "fit_condition": "shuffle_1027",
+            "key": "R_038",
+            "map_sha256": "0e5b29487b6bf5a27cdfaaa284a60b6a8d50e9e9589cfdd7e868289714bc38b3",
+            "cross_sha256": "6dac320a10b30695761675b2b4e3fb6591446c57c944e9e9a3468ab8c368c6fe",
+            "maximum_orthogonality_error": 2.6645352591003757e-15
+          },
+          {
+            "fit_condition": "shuffle_1028",
+            "key": "R_039",
+            "map_sha256": "e2be4eeff536ebff2730bde8dc6f5c225abb6ab94cf75ac3e8e3a43b5b7b816a",
+            "cross_sha256": "694c7f5f051a6ac91a530961f194423cb11e206dd74e585f967a78078a88e600",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1029",
+            "key": "R_040",
+            "map_sha256": "10f6fc63d7625f9d4225099e763b935c32d64669873667d973c45133a48d4c18",
+            "cross_sha256": "5aa12e6e93273932115e9531500d8d939595a657f858fc0c7d0b8fa63f90528a",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1030",
+            "key": "R_041",
+            "map_sha256": "0e0549950fec3def0f04101e5d87d26db5525869d39831277d8986eda4359655",
+            "cross_sha256": "012ba72b78de672ee621e8bf5d78cb53600c74dbfbe0951af9ceadb28390ede0",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          },
+          {
+            "fit_condition": "shuffle_1031",
+            "key": "R_042",
+            "map_sha256": "fec58185788c96fabdf2b4fd6b45e300386281b4992662b29fe6aaa09227d458",
+            "cross_sha256": "fe46126b82a88894fa9bea0a1a364c0250b1584d4d971abcbb53a5c3bd91721b",
+            "maximum_orthogonality_error": 1.9984014443252818e-15
+          },
+          {
+            "fit_condition": "shuffle_1032",
+            "key": "R_043",
+            "map_sha256": "ee4e78daaa00aa011bf4c199ac708497de9261adfb34cd504da90b6a06021ae2",
+            "cross_sha256": "07e4480621ab102c19c2a719e14fd2e33dbbf951e0b11a2f4dd2251c6dda6651",
+            "maximum_orthogonality_error": 1.5543122344752192e-15
+          },
+          {
+            "fit_condition": "shuffle_1033",
+            "key": "R_044",
+            "map_sha256": "7293b29981f16651edb4ac332dcf42811ba733488fe5a9597b126c128712ecaf",
+            "cross_sha256": "0a09bc6f4b7ee396248b4268a9c10a6a516870e99e61d0b171c954c8165a40d6",
+            "maximum_orthogonality_error": 1.7763568394002505e-15
+          }
+        ],
+        "raw_row_vector_direction": "target to source: (h_valleys_C - mu_C) @ R + mu_x",
+        "previous_validation_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/one_line-trained.npz",
+        "centering_means_serialized": false,
+        "mean_reconstruction": "For each length use exactly original read_length probe-fit mask; mu_x=mean(peaks validation action0),mu_C=mean(valleys validation action1),FP64. Use mu_C for every map on fixed complement input."
+      },
+      "source_probe_coefficients_saved": false,
+      "probe_reconstruction": "Rebuild unchanged vendor fit_probe on peaks validation identity and its own interior peak labels using frozen fit/dev masks and source-only alpha selection. Scalers/coefficients were not serialized.",
+      "route_semantics": {
+        "input": "pi = C(x)",
+        "first_peak": "peaks specialist test action1, scored against peak positions of pi",
+        "same_model_second": "peaks specialist test action0; peak(x) positions equal valleys(pi)",
+        "aligned_second": "valleys specialist test action1 mapped by saved trained one-line map; one source peaks probe",
+        "fixed_point_fit": "fixed_points specialist validation action0 with own fixed-point labels for x including endpoints",
+        "fixed_point_test": "fixed_points specialist test action1, labels fixed points of pi=C(x) only for scoring"
+      },
+      "fixed_point_label_column": 5
+    }
+  ],
+  "unit_count": 5,
+  "trained_checkpoint_count": 15,
+  "raw_feature_records": 30,
+  "fixed_point_count_formula_checks": 420,
+  "existing_schema_array_equality_checks": 50,
+  "reused_trained_one_line_maps": 55,
+  "missing_required_files": [],
+  "binding_mismatches": [],
+  "files_hashed": {
+    "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/protocol.json": {
+      "sha256": "501a999ec466420a47a6a4a5aed7740c0b39bf5bf6af875cd8d33d1ab55da5c6",
+      "size_bytes": 6550,
+      "mtime_ns": 1794298972826308096,
+      "roles": [
+        "prior_alignment_protocol"
+      ]
+    },
+    "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/archdev001/completion.json": {
+      "sha256": "7e2d60425aa5d9d0c726d657257a0ff4c380f06db61a6bd8e77ded00b5fdbf44",
+      "size_bytes": 1796,
+      "mtime_ns": 1794296213645649667,
+      "roles": [
+        "previous_probe_receipt"
+      ]
+    },
+    "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit02/completion.json": {
+      "sha256": "625a9c2dd4c5637b37b6ccb54a68200450eb0a84dd6b4aa669509f2504807f41",
+      "size_bytes": 1792,
+      "mtime_ns": 1794296233473157240,
+      "roles": [
+        "previous_probe_receipt"
+      ]
+    },
+    "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit03/completion.json": {
+      "sha256": "7b3c3baf2f9109bd5b4e1d9ebd7d8c4eee1ead41af31b8e553657559a2144549",
+      "size_bytes": 1792,
+      "mtime_ns": 1794296252806775521,
+      "roles": [
+        "previous_probe_receipt"
+      ]
+    },
+    "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit04/completion.json": {
+      "sha256": "4404eb70c01ae042a95b0c92ac75c9c176ea11b29c766be65773aa9bb5106550",
+      "size_bytes": 1791,
+      "mtime_ns": 1794296272420186725,
+      "roles": [
+        "previous_probe_receipt"
+      ]
+    },
+    "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit05/completion.json": {
+      "sha256": "b3293455741dc375d4b681fb9062686ea7820666c6076553442d38730cced7e4",
+      "size_bytes": 1792,
+      "mtime_ns": 1794296290968852196,
+      "roles": [
+        "previous_probe_receipt"
+      ]
+    },
+    "/home/yangx/ICML/diagnostics/permworld_repetition_20261106/protocol.json": {
+      "sha256": "6f8b26a5658e641164b54e93d57afc3fe045e354abcbdf731ca6d8c9555f0231",
+      "size_bytes": 12934,
+      "mtime_ns": 1794009826033033099,
+      "roles": [
+        "prior_training_protocol"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/checkpoint.pt": {
+      "sha256": "1182dfaf380a94d08261bce25aa89ae94ff366617ae19416e204f3ca1538835e",
+      "size_bytes": 19963993,
+      "mtime_ns": 1791622545868432900,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_peaks/completed.json": {
+      "sha256": "64ef25ca28787042a708e6df9447e36b26cd3d686a2c75d698d1185ffab17c6c",
+      "size_bytes": 5045,
+      "mtime_ns": 1791622546706212000,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/checkpoint.pt": {
+      "sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+      "size_bytes": 19964057,
+      "mtime_ns": 1791619854958406400,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/models/archdev001_gru_one_line_valleys/completed.json": {
+      "sha256": "73c2a5d70bd98e6eb2e22d24b104117cc6cb7c5465b9625241e072e0cfa3ca46",
+      "size_bytes": 5221,
+      "mtime_ns": 1791619857503715100,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz": {
+      "sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "size_bytes": 7158873,
+      "mtime_ns": 1791614685962008100,
+      "roles": [
+        "data"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_peaks__trained__test/prefix_final.npy": {
+      "sha256": "eb6cce1e53da2f5f9c23877a4e09f77de70732ba656ee7636d590473e17e73a5",
+      "size_bytes": 33030272,
+      "mtime_ns": 1791670249808304600,
+      "roles": [
+        "historical_raw_prefix_final"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_peaks__trained__validation/prefix_final.npy": {
+      "sha256": "76a2c889fb095d58101a5d0ca220cf0b50d49f4b719af4909eac62586f1f7ca9",
+      "size_bytes": 16515200,
+      "mtime_ns": 1791670245767385200,
+      "roles": [
+        "historical_raw_prefix_final"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_valleys__trained__test/prefix_final.npy": {
+      "sha256": "a5e7d9165e8fab8d6c832c49b2e9c909c6c94377c364d9e4da53813744c56977",
+      "size_bytes": 33030272,
+      "mtime_ns": 1791670260997818900,
+      "roles": [
+        "historical_raw_prefix_final"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_valleys__trained__validation/prefix_final.npy": {
+      "sha256": "ea52165a71c565a334cce7e72857a20d7ccb81088b91115853157b583ece1c4d",
+      "size_bytes": 16515200,
+      "mtime_ns": 1791670257130802800,
+      "roles": [
+        "historical_raw_prefix_final"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/eightrel001_gru_one_line_fixed_points__trained__test/prefix_final.npy": {
+      "sha256": "7bfaea4b432406520308c1a03969f79f581a6794580fb8be91bdacd80f97966d",
+      "size_bytes": 33030272,
+      "mtime_ns": 1791712973247928200,
+      "roles": [
+        "historical_raw_prefix_final"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/eightrel001_gru_one_line_fixed_points__trained__validation/prefix_final.npy": {
+      "sha256": "d443a14ed2a87069282a7c56bf523945435abcb98425b324db2525eedec1a5df",
+      "size_bytes": 16515200,
+      "mtime_ns": 1791712967470275800,
+      "roles": [
+        "historical_raw_prefix_final"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/index.json": {
+      "sha256": "16747e8bbb8fb59311912223201af5d4fd933156d72e79926da5f93c6e8d4bb6",
+      "size_bytes": 2705203,
+      "mtime_ns": 1791713308462563000,
+      "roles": [
+        "historical_activation_index"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/checkpoint.pt": {
+      "sha256": "4b5ee414897fd25a23e57278eeda1951cbb2de755bbcd868fd233fe5a50ba229",
+      "size_bytes": 19964185,
+      "mtime_ns": 1791694551185623900,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_fixed_points/completed.json": {
+      "sha256": "71f625d0087085e1a9ddbc91cf72fcc757e6d48d1cafea81d4db8099a4bdef47",
+      "size_bytes": 8009,
+      "mtime_ns": 1791694551612946100,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/data.npz": {
+      "sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "size_bytes": 7159172,
+      "mtime_ns": 1794009863635948400,
+      "roles": [
+        "data"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_fixed_points_trained_test.json": {
+      "sha256": "23b6502fdce75c3fb814c72ef0162a65239875b7273e81ec0dec555251c648ab",
+      "size_bytes": 1573,
+      "mtime_ns": 1794066019778270300,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_fixed_points_trained_test.npz": {
+      "sha256": "048fdbc69747e58f8728083f82be28062f9f90d3c2def24069c5fc5ead0c31a0",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794066019400705400,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_fixed_points_trained_validation.json": {
+      "sha256": "181eaaeed485e6d1af25f56a8f43ef0cf5f8ff6d09e64e2fe61732c4aee33ea7",
+      "size_bytes": 1574,
+      "mtime_ns": 1794066017277903000,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_fixed_points_trained_validation.npz": {
+      "sha256": "f5af63aeb1239b4f55770adb8f8df409d4f3fc4cf1f878f7076c9905e3e5e6c8",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794066017200765900,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_trained_test.json": {
+      "sha256": "90edaf14a7261ce8f26e9b34193ee6949ccf46edcbda403d43866c652bc28d7f",
+      "size_bytes": 1565,
+      "mtime_ns": 1794054660840626700,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_trained_test.npz": {
+      "sha256": "c7457d4f8b1085794001790ced6cfe9266e34165b9b976fa111d0c1c35eedd0a",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794054660456374000,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_trained_validation.json": {
+      "sha256": "271409119eb940a8c84859f889659b9cc0cd551fdde4e2618a0bfc53b6855222",
+      "size_bytes": 1569,
+      "mtime_ns": 1794054658427472100,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_trained_validation.npz": {
+      "sha256": "ab02a18bb10edea6a082d65f99b4c36782977cc5572aedae02a80d7cb8ede13a",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794054658199530500,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_test.json": {
+      "sha256": "f8ab1a50b29c3ed0ee7a9898669d6f92fdbd591fbe242aaa903deb19c564a110",
+      "size_bytes": 1568,
+      "mtime_ns": 1794056578636353200,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_test.npz": {
+      "sha256": "bf0ddced7a79d38bbbd0920b596d1f6a2dbf2daedb0e3c8c5d1fa12d2e2a3e2c",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794056578006720800,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_validation.json": {
+      "sha256": "fce13e317ffab7716888a057470b349a5dd8608ecb9cc8983b9b89d111127496",
+      "size_bytes": 1571,
+      "mtime_ns": 1794056575992518500,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_validation.npz": {
+      "sha256": "1e6911334aeb2259a6bc4a0d38582d55292e4fe3375f11dbbf088baf5d10e92d",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794056575778610200,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_fixed_points/checkpoint.pt": {
+      "sha256": "156049dfeedce05b2d021900be80f7b6316f680a98b357f4a20d67843e012881",
+      "size_bytes": 19972889,
+      "mtime_ns": 1794066011317726600,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_fixed_points/completed.json": {
+      "sha256": "b388101721207409a6606c61cb4c45c28d7de0d5575e654bd956909f83c84fd6",
+      "size_bytes": 13641,
+      "mtime_ns": 1794066011936606900,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_peaks/checkpoint.pt": {
+      "sha256": "38780f1508d1cd74edc13a522e5b93075663b93da848d3dea41b07700d228356",
+      "size_bytes": 19972825,
+      "mtime_ns": 1794054652136978100,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_peaks/completed.json": {
+      "sha256": "0998c3b4d58afb0e0aacd47adbdd28040816b12095f4e82a83ccf7eff4a82d44",
+      "size_bytes": 13406,
+      "mtime_ns": 1794054652756705100,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_valleys/checkpoint.pt": {
+      "sha256": "c3a53105d9a505ea449cb17d74911ec9c970728a15c8ea729da3a351ff216af4",
+      "size_bytes": 19972825,
+      "mtime_ns": 1794056570188518300,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_valleys/completed.json": {
+      "sha256": "800568115e36941dff3ef839f9768d77e93efcb343a3f62fb14c5684a02e7293",
+      "size_bytes": 13632,
+      "mtime_ns": 1794056570450947800,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/data.npz": {
+      "sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "size_bytes": 7158796,
+      "mtime_ns": 1794010639571596500,
+      "roles": [
+        "data"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_fixed_points_trained_test.json": {
+      "sha256": "8de4bae61128026d2c357586791a58844161482496da8b4ee1ece7be861e9c11",
+      "size_bytes": 1572,
+      "mtime_ns": 1794124165892458500,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_fixed_points_trained_test.npz": {
+      "sha256": "3303974bed183037f835a516ccb0b198f34573772b70774608f0d1aedc5fdaca",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794124165528633400,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_fixed_points_trained_validation.json": {
+      "sha256": "3f8af9f7e4a5c5c068b0147d46941573d8cf7e7b7b4467a443c48309a0ddeec6",
+      "size_bytes": 1575,
+      "mtime_ns": 1794124163461824600,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_fixed_points_trained_validation.npz": {
+      "sha256": "2066ab709f5709ff6afef389ca875ab9c000c963f4defea56f4219b95733202a",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794124163167775600,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_trained_test.json": {
+      "sha256": "7d47b35fe7213a6e4bccd831a9cfea85ee457c05a2457d3244763ed41a58d9a7",
+      "size_bytes": 1566,
+      "mtime_ns": 1794109222232056500,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_trained_test.npz": {
+      "sha256": "f03b75a0ff0dcaecf9e140d079516c8558a9c39628dfa5883c585591e9504b47",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794109221834503100,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_trained_validation.json": {
+      "sha256": "8656b062c05241c2641bc3dc4e0157b4a2f24fb3191c02b738e868f6e46178a8",
+      "size_bytes": 1569,
+      "mtime_ns": 1794109219838461700,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_trained_validation.npz": {
+      "sha256": "2d580385f5d198825c7c6a2948e2103b9585561b49f13630116f6cb628234843",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794109219632221700,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_test.json": {
+      "sha256": "7921606217e1481dc48ee36f76d3dcc59aff64f0bdaa4a17b5764baddbb57834",
+      "size_bytes": 1568,
+      "mtime_ns": 1794111155251630700,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_test.npz": {
+      "sha256": "03ac32e960b6dff91bfad2a1e7048e1a0d31acdb1d5a71eb3b41e398c17a0835",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794111154859286500,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_validation.json": {
+      "sha256": "e6cd65400687e3f2047981bd8b93f0f10df97127c6d9a3929e172eba71da9cf6",
+      "size_bytes": 1571,
+      "mtime_ns": 1794111152810405700,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_validation.npz": {
+      "sha256": "b4762f3159285f3e2c2c5aedbf9d4c8ea07d81814068c94ff1af2fc9c8239526",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794111152599177700,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_fixed_points/checkpoint.pt": {
+      "sha256": "c871253e46e2a4d35dee2e3f8a87278a3043455ff5893201709bf2b5fc46c095",
+      "size_bytes": 19972889,
+      "mtime_ns": 1794124155757466900,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_fixed_points/completed.json": {
+      "sha256": "d31b2b7cde870c7ea2f2f8dcdddb1627acbb32650770eb4b356ce708145b3b65",
+      "size_bytes": 13606,
+      "mtime_ns": 1794124157662533900,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_peaks/checkpoint.pt": {
+      "sha256": "c3ca81bf8b1ec9e5c9a6c2a20d1749fb8abce0f2153eacb754851db16fad1fbc",
+      "size_bytes": 19972889,
+      "mtime_ns": 1794109213904366100,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_peaks/completed.json": {
+      "sha256": "ecbd4dc1ee98b607c0280b65485b4212e1c1aba4b43de2a5539f143b40d39668",
+      "size_bytes": 13420,
+      "mtime_ns": 1794109214516112000,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_valleys/checkpoint.pt": {
+      "sha256": "21e7de89564e1a64bcf2b17a3c1be061a2e42e0a8e2ac1be599613bd4d90da48",
+      "size_bytes": 19972825,
+      "mtime_ns": 1794111146799885000,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_valleys/completed.json": {
+      "sha256": "b3075e85f55cf470ff80b311f54b93265801bac637977073186244ffca833933",
+      "size_bytes": 13476,
+      "mtime_ns": 1794111147433525000,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/data.npz": {
+      "sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "size_bytes": 7159687,
+      "mtime_ns": 1794010661125697500,
+      "roles": [
+        "data"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_fixed_points_trained_test.json": {
+      "sha256": "7ed6eb093f08f79140ec12c1c7fd0678c3d2a4652bf68b25ef82d8631617b969",
+      "size_bytes": 1572,
+      "mtime_ns": 1794202762518299000,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_fixed_points_trained_test.npz": {
+      "sha256": "a145a4ef7a2461ffca32b50a3f8f65f837954d734e726bc2779466840f9edd83",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794202762124942700,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_fixed_points_trained_validation.json": {
+      "sha256": "ddaf8a1fac1a5b584eb4f1f6376937bdee6ec2e847ffb9ed001b177127158486",
+      "size_bytes": 1576,
+      "mtime_ns": 1794202759926423000,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_fixed_points_trained_validation.npz": {
+      "sha256": "986ff8f3d060034d601b1dd94ab38c83757b060d0dff9c4c6e8c9d82df373934",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794202759725725900,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_trained_test.json": {
+      "sha256": "9165252ecb9e0cbeb99c4c884ac02e51b5c6460b05dfcf1085e9cf938d97f772",
+      "size_bytes": 1566,
+      "mtime_ns": 1794190063246511300,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_trained_test.npz": {
+      "sha256": "9fa137a1b8590cd39859b46293777a28b318222d1c478756c119e62df8644bbc",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794190062977330500,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_trained_validation.json": {
+      "sha256": "99a94e70030f63d72758561687a607dfa541f9cc2ff85904d61691981e85201c",
+      "size_bytes": 1569,
+      "mtime_ns": 1794190060744556300,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_trained_validation.npz": {
+      "sha256": "13ee3d4d64b7f2572a02f61cc220b01daa1859b05b86a95cb005ba3bfaab81d8",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794190060529762700,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_test.json": {
+      "sha256": "64f52be6e3db68ca95f2d71f52e6ea9af51ddf1bbd7b00bb0a95715bc5058f38",
+      "size_bytes": 1568,
+      "mtime_ns": 1794192184116041800,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_test.npz": {
+      "sha256": "0beec5796994cc5772e92a5d24afa548a3bc0581e7d9888dec1401a17814c237",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794192183618772100,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_validation.json": {
+      "sha256": "a0fce480b0dea677f675c723c2877b2e50332c59e3af9d90926fb6c2f98329d4",
+      "size_bytes": 1571,
+      "mtime_ns": 1794192181436567900,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_validation.npz": {
+      "sha256": "a6e6c4e8b1fb36968ff1c07197cb60281988a889619fb0b7745a3df203be7992",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794192181228566500,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_fixed_points/checkpoint.pt": {
+      "sha256": "85379552b64c585488955bf77d0119f8edd6be42568ff38c1cb708f9e6eb7cf2",
+      "size_bytes": 19972889,
+      "mtime_ns": 1794202754082960500,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_fixed_points/completed.json": {
+      "sha256": "900809c49d0091cdd99f9ca54b9ee037cac281d639dc80f398b1854ff2ca837b",
+      "size_bytes": 13642,
+      "mtime_ns": 1794202754339954000,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_peaks/checkpoint.pt": {
+      "sha256": "c7ca1c65d7c33882ffdbf81d335cb245e6a90ea581e4a2e7bc3a064f40b7fbc1",
+      "size_bytes": 19972889,
+      "mtime_ns": 1794190054705058000,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_peaks/completed.json": {
+      "sha256": "a3cbce4574f241ff7a0009284768595da6b7f0d5e7a88e48fa1b8900ee65e943",
+      "size_bytes": 13390,
+      "mtime_ns": 1794190054987222300,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_valleys/checkpoint.pt": {
+      "sha256": "87dd83b7bd6d63168f629d86d0bd279de0d967da018edf20c8693aae29ff0426",
+      "size_bytes": 19972825,
+      "mtime_ns": 1794192174968632200,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_valleys/completed.json": {
+      "sha256": "e876885080ebbfcccac9457e2e99ae5547d3b67146acae9d50100662c1ff3729",
+      "size_bytes": 13425,
+      "mtime_ns": 1794192175692905800,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/data.npz": {
+      "sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "size_bytes": 7159376,
+      "mtime_ns": 1794010683095750500,
+      "roles": [
+        "data"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_fixed_points_trained_test.json": {
+      "sha256": "55b71565862cd86671ff5ba726d02ea9b8e0a6566b6195c3d7cd1073df6335fc",
+      "size_bytes": 1573,
+      "mtime_ns": 1794264092630582300,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_fixed_points_trained_test.npz": {
+      "sha256": "6b06dd429ef631c1c163057c2621559f97a02c2ce0c2b02098fee8308f5ab54a",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794264091988954500,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_fixed_points_trained_validation.json": {
+      "sha256": "e62b556fd2bb11175e459ecbd0a9be7da1c598ef9414164d194f1d42294abbfe",
+      "size_bytes": 1576,
+      "mtime_ns": 1794264089799257300,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_fixed_points_trained_validation.npz": {
+      "sha256": "2dcaaff2364c21cb3b3ccbe6b4313f2eae197b9170ba293652cb354356e43771",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794264089538927700,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_trained_test.json": {
+      "sha256": "82840fab93ed20b41a6652f69a4c60fae17855fa9c226044eea213d2b4a0bc7c",
+      "size_bytes": 1566,
+      "mtime_ns": 1794251202491641700,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_trained_test.npz": {
+      "sha256": "2e4de659f2888303605187e1d955dd64456c384e5d8667cf125018bff35fa008",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794251202114157900,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_trained_validation.json": {
+      "sha256": "5eaefc160c4bc901121b68f0a67feeb3d3dc90b08e7a66078524a03ad318791d",
+      "size_bytes": 1568,
+      "mtime_ns": 1794251199897779300,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_trained_validation.npz": {
+      "sha256": "766121d07b5ca0e40ed46b1e640ebe5738860db2b982dd07babd10c9bbd6a099",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794251199660596000,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_test.json": {
+      "sha256": "47467271656175ecab02a76096bc8b7e6ea65b75d5ac6e9b36ceaf11f653b02d",
+      "size_bytes": 1568,
+      "mtime_ns": 1794253380499858400,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_test.npz": {
+      "sha256": "0ed0a383d675c77ad5d2c10f60fe0af2fc7d322085af49b669f1267857957171",
+      "size_bytes": 37288720,
+      "mtime_ns": 1794253380105250300,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_validation.json": {
+      "sha256": "3cf09e21761987ed5e08907535fce6c794b1a3418d1096109d1a62bc7901391d",
+      "size_bytes": 1570,
+      "mtime_ns": 1794253377880254900,
+      "roles": [
+        "activation_metadata"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_validation.npz": {
+      "sha256": "0ca3145d8efab5e29e43684641694a966db72054edf582fe447a89bb710d9605",
+      "size_bytes": 18644752,
+      "mtime_ns": 1794253377635330700,
+      "roles": [
+        "new_unit_raw_prefix_final_NPZ"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_fixed_points/checkpoint.pt": {
+      "sha256": "f96cf759a22f4008d3f74eb40dc135bb9ca0f80dea5bb59d39063fbc72eb5330",
+      "size_bytes": 19972889,
+      "mtime_ns": 1794264083362142300,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_fixed_points/completed.json": {
+      "sha256": "45e5701054d324bbe5c3b6fc31726d1c4efeda0f061fa284cccf23ff499bfce7",
+      "size_bytes": 13656,
+      "mtime_ns": 1794264083757150200,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_peaks/checkpoint.pt": {
+      "sha256": "bb2cb27d9eff9e9b21dd89258e21f5c83e4a26fa70667d89f036a43107a0f9f6",
+      "size_bytes": 19972761,
+      "mtime_ns": 1794251193206989600,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_peaks/completed.json": {
+      "sha256": "38cd6110325f3fcc2029ef594e7636f4cf68959bdd0b9ca12ae0c802c43e8828",
+      "size_bytes": 13391,
+      "mtime_ns": 1794251193825944800,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_valleys/checkpoint.pt": {
+      "sha256": "b1a7a87b79c07d9b78dd913c4b766c3fd6a3f656a426d47e00544c3d46e1da3e",
+      "size_bytes": 19972889,
+      "mtime_ns": 1794253371747849100,
+      "roles": [
+        "trained_checkpoint"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_valleys/completed.json": {
+      "sha256": "9c45935d44cfa3d1e1b051cd944aec6bd2229d26dab525b3256c980362808c2e",
+      "size_bytes": 13427,
+      "mtime_ns": 1794253371990178100,
+      "roles": [
+        "checkpoint_completion_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/archdev001/one_line-peaks.npz": {
+      "sha256": "d3f216487c063bdda3af178cbc7525ebb1c6afb7885b7209d488ceda0841b339",
+      "size_bytes": 16775260,
+      "mtime_ns": 1794296198935810600,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/archdev001/one_line-valleys.npz": {
+      "sha256": "7a742747ddb1ebf257e32a4ee2d71a2c9008ef9d5e6ec935fbd9c4eae01c18de",
+      "size_bytes": 38968436,
+      "mtime_ns": 1794296200024105800,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit02/one_line-peaks.npz": {
+      "sha256": "95a4d05b21f19fca6b67a46d5d18f4deabac67afcb9abf8e62d3f907bd61e7ad",
+      "size_bytes": 16775260,
+      "mtime_ns": 1794296224047565000,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit02/one_line-valleys.npz": {
+      "sha256": "61f84f689799e77764c1e895877b928945e38afc2217b60e1f9d41c880f794bc",
+      "size_bytes": 38968436,
+      "mtime_ns": 1794296225243547800,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-peaks.npz": {
+      "sha256": "04b84d0127393c0bca37033352fc9e654410fecf861a2d07159dc61235550969",
+      "size_bytes": 16775260,
+      "mtime_ns": 1794296243720504600,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-valleys.npz": {
+      "sha256": "2183710ffa7364fdfb321407c8d21837c127841cb6793b0bf40f88c2dcf6a75d",
+      "size_bytes": 38968436,
+      "mtime_ns": 1794296244777792700,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit04/one_line-peaks.npz": {
+      "sha256": "ff19378a96951050c395800afa1c0a83a6392c776acdd9a18035ddbe4efb6c86",
+      "size_bytes": 16775260,
+      "mtime_ns": 1794296263024382900,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit04/one_line-valleys.npz": {
+      "sha256": "fbf9f228891f7162e3a12fb4a2575ac8ec64588fa308b64a49b6573a94229e7e",
+      "size_bytes": 38968436,
+      "mtime_ns": 1794296264110679200,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit05/one_line-peaks.npz": {
+      "sha256": "2113ad4e8f38666fd968837d516ffdfb2ed644fb67f3f4652a01d1c99877d42b",
+      "size_bytes": 16775260,
+      "mtime_ns": 1794296281982154300,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit05/one_line-valleys.npz": {
+      "sha256": "d5de593e5b8cb07ae91ff63b7f552b7ca850cf7b6db273c9aaad9f3caa5db55e",
+      "size_bytes": 38968436,
+      "mtime_ns": 1794296282863886200,
+      "roles": [
+        "previous_schema_adapted_features"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/archdev001/alignment.json": {
+      "sha256": "dd44fb9a26d27d07ebf48f506197dfd3e8aa3980a7a92ff0c426599c5b3b1b16",
+      "size_bytes": 289182,
+      "mtime_ns": 1794299096295180700,
+      "roles": [
+        "actual_alignment_map_descriptors"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/archdev001/alignment.npz": {
+      "sha256": "e5940f5c6415e7fd677d1204819c969b217c00d8c2d49d5bdf1b84590d41fca0",
+      "size_bytes": 22474736,
+      "mtime_ns": 1794299096050845100,
+      "roles": [
+        "actual_saved_orthogonal_maps"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit02/alignment.json": {
+      "sha256": "209b533586138b36a48d8474bd95bf272dff496d0c10cb9488a18f6c017c8b93",
+      "size_bytes": 289172,
+      "mtime_ns": 1794299114403401700,
+      "roles": [
+        "actual_alignment_map_descriptors"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit02/alignment.npz": {
+      "sha256": "8111bd4f1434bae963984fe4b33cf94f37fa248ac1aa848b42434edcf550f421",
+      "size_bytes": 22473377,
+      "mtime_ns": 1794299114087094600,
+      "roles": [
+        "actual_saved_orthogonal_maps"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit03/alignment.json": {
+      "sha256": "e8ef536ff903b5de2178a35aff5606f8db41da928630adc7e644b73c2e03a2e9",
+      "size_bytes": 289171,
+      "mtime_ns": 1794299132093940400,
+      "roles": [
+        "actual_alignment_map_descriptors"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit03/alignment.npz": {
+      "sha256": "65fb82c596bbc77c2d0f52015454463f476ec6e71e24c81c7816fb938091f163",
+      "size_bytes": 22475376,
+      "mtime_ns": 1794299131886940400,
+      "roles": [
+        "actual_saved_orthogonal_maps"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit04/alignment.json": {
+      "sha256": "c1d38c0807b16dd91cac6571cd83d7673c0a92e7dff51672e6859f447b981013",
+      "size_bytes": 289175,
+      "mtime_ns": 1794299149355050600,
+      "roles": [
+        "actual_alignment_map_descriptors"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit04/alignment.npz": {
+      "sha256": "3c20f3866e68e6bb346d3be3807348405e65561b7f8f0c66aa427c8973c07b1d",
+      "size_bytes": 22473733,
+      "mtime_ns": 1794299149198198500,
+      "roles": [
+        "actual_saved_orthogonal_maps"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit05/alignment.json": {
+      "sha256": "ba579c585f500cc4592e027e388c0191db46231114bf4f907c2d6025c042f7f2",
+      "size_bytes": 289173,
+      "mtime_ns": 1794299166437359500,
+      "roles": [
+        "actual_alignment_map_descriptors"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit05/alignment.npz": {
+      "sha256": "7a3a2ed336cf99fa8ced2f07a7b6fa405cd0a7fc5cc3f10891753e41b5ad6717",
+      "size_bytes": 22473791,
+      "mtime_ns": 1794299166117462500,
+      "roles": [
+        "actual_saved_orthogonal_maps"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/adaptation.json": {
+      "sha256": "240256411536afac6a309c469bc1cc826a00ca488772d648edb00d9bd3857242",
+      "size_bytes": 5278,
+      "mtime_ns": 1794299085928991200,
+      "roles": [
+        "previous_validation_adaptation_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/one_line-trained.npz": {
+      "sha256": "b9ce3e6c1dbf026a058ce339a23c487102d2b107744f6b08ea6859acf65556aa",
+      "size_bytes": 11054408,
+      "mtime_ns": 1794299085331623900,
+      "roles": [
+        "previous_target_validation_complement_inverse"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/adaptation.json": {
+      "sha256": "2ab1e96fb52e33458a9d3d5b54b47c27a7da72ddec89b6a7c1f5de7ec1b7f79f",
+      "size_bytes": 5094,
+      "mtime_ns": 1794299104732491500,
+      "roles": [
+        "previous_validation_adaptation_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-trained.npz": {
+      "sha256": "1b9b5d37923b9e0961380f130ade181003f13e23ce0d935a79640e6cacaca990",
+      "size_bytes": 11054408,
+      "mtime_ns": 1794299104078084300,
+      "roles": [
+        "previous_target_validation_complement_inverse"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/adaptation.json": {
+      "sha256": "ef5fafdb9f5d9bf18c689e0f04a1760562c98eaa5d99df301293a40509466bb4",
+      "size_bytes": 5094,
+      "mtime_ns": 1794299122497217700,
+      "roles": [
+        "previous_validation_adaptation_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-trained.npz": {
+      "sha256": "1cea0b19747aa44668f336730b585cfffb0f95a9e58a16b4009792810df4a6cd",
+      "size_bytes": 11054408,
+      "mtime_ns": 1794299121835377000,
+      "roles": [
+        "previous_target_validation_complement_inverse"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/adaptation.json": {
+      "sha256": "7ec9038e57d0749a7607ec370b113d7a4930b41d700653bc6928ad8d5da177a9",
+      "size_bytes": 5094,
+      "mtime_ns": 1794299140087554000,
+      "roles": [
+        "previous_validation_adaptation_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/one_line-trained.npz": {
+      "sha256": "7ed1236dbb1ebb45cb30e3901f724484bea19351cdd16e5933494fb92883e183",
+      "size_bytes": 11054408,
+      "mtime_ns": 1794299139372860400,
+      "roles": [
+        "previous_target_validation_complement_inverse"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/adaptation.json": {
+      "sha256": "0fa2e59e6a403262d937c77f668a2f9730704a5a14bc71cedce09fc8404d11ec",
+      "size_bytes": 5094,
+      "mtime_ns": 1794299157265075600,
+      "roles": [
+        "previous_validation_adaptation_receipt"
+      ]
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/one_line-trained.npz": {
+      "sha256": "388337f3ba2f399d327498c69b4ed17453d4d6de6b9646ced8481079b436e150",
+      "size_bytes": 11054408,
+      "mtime_ns": 1794299156636093400,
+      "roles": [
+        "previous_target_validation_complement_inverse"
+      ]
+    }
+  },
+  "unique_files_hashed": 127,
+  "bytes_hashed": 1605985284,
+  "elapsed_seconds": 28.339635267970152,
+  "no_neural_forward": true,
+  "no_probe_fitting": true,
+  "no_alignment_fitting": true,
+  "no_threshold_selection": true,
+  "no_downstream_predictions": true,
+  "no_old_file_writes": true,
+  "limitations": [
+    "Activation identities are checked against existing extraction provenance and payload hashes, not independently re-forwarded.",
+    "Saved rotations do not include per-length means or probe coefficients/scalers. Those must be reconstructed from unchanged source-only validation protocol; no new rotation fit is needed.",
+    "Original standardized peaks files lack test action1. The raw source prefix_final contains it and is required for both routes shared first activation.",
+    "Fixed-point test action1 concerns fixed points of C(x), not of x. Its new source probe must fit only own identity-input fixed-point position labels.",
+    "All wrong/shuffled maps on the common valleys complement input must use complement centering, matching the previous experiment."
+  ]
+}

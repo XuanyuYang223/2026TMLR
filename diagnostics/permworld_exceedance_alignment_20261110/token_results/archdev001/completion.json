@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "unit": "archdev001",
+  "elapsed_seconds": 280.73339951602975,
+  "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "token_freeze_sha256": "ed022a2dd25fa4edae0eb645452646d1eb647097a1d2453bdecf82bc44d4b943",
+  "result_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/archdev001/summary.csv": "29b66f273d4eb2b8f821ce8555279afdd8911a74a9272c014af89a050bddad05",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/archdev001/probe_fit.csv": "ac2653bcddb0af3c4ae38788610e19ca17dd7ff3abb02656f0eececa201cd8d0",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/archdev001/shuffle_fit.csv": "ff5386a81f5a113631fe367a80aa954575cdf33a7132b5af08ada1a16b204609",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/archdev001/by_length.csv": "1435d5c2b780552d16995b2ec9fc7cf36287717781ad78fd207d22bd968562cf"
+  },
+  "no_base_training": true,
+  "external_features": "/mnt/yangx-projects-f/20261110/permworld_exceedance_alignment/token_diagnostic/features/archdev001",
+  "external_scores": "/mnt/yangx-projects-f/20261110/permworld_exceedance_alignment/token_diagnostic/scores/archdev001",
+  "external_parameters": "/mnt/yangx-projects-f/20261110/permworld_exceedance_alignment/token_diagnostic/parameters/archdev001"
+}

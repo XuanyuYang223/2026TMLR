@@ -1,0 +1,23 @@
+{
+  "protocol_sha256": "501a999ec466420a47a6a4a5aed7740c0b39bf5bf6af875cd8d33d1ab55da5c6",
+  "source_sha256": {
+    "experiments/permworld_orthogonal_alignment_20261110/run.py": "8c64cbfdfd3593da2e12f66bc2c6fb53a42a8f5310037127cfdddcee9023b64c",
+    "experiments/permworld_orthogonal_alignment_20261110/__init__.py": "4be5ed55a6549a4dff853b365e89f2655703c153b3afed75eb6eafbb77ee0b79",
+    "experiments/permworld_orthogonal_alignment_20261110/instrumented.py": "28922971ee4cb117a97098f709830e360bf0780514edcfea8539177aa6f72e4d",
+    "experiments/permworld_orthogonal_alignment_20261110/vendor/other_specialists.py": "407edfa65d58c8f5645659620f063914e57368912da9b5dff748a0d605a1d5be",
+    "experiments/permworld_orthogonal_alignment_20261110/vendor/alignment.py": "7c6a30f87e076aa358548c41b8cbdf5dc41c1512adcb9a1318e2e3eaae3db2ad",
+    "experiments/permworld_orthogonal_alignment_20261110/vendor/extract_validation.py": "cf28487944cc443cc5e91567105f5f23ab68a56d5dac344f9bbba42dd8ecc477",
+    "experiments/permworld_peaks_probe_20261109/vendor/encoding_core.py": "4e0995581693572616283eda78e0646d364ebe8f57ec8e6217c2d5cc105e4c8f",
+    "experiments/permworld_peaks_probe_20261109/vendor/passage.py": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+    "experiments/permworld_peaks_probe_20261109/vendor/import_repetition.py": "c1d42702ed1e84cfca5a2a6ddbcdf9d577df4e98c9419204c998996eefea73c6",
+    "experiments/permworld_peaks_probe_20261109/vendor/archdev_common.py": "6942c768e441235ac657949b43514c9ba5d0f2b5900c9bd89743fffce28b700b",
+    "experiments/permworld_peaks_probe_20261109/vendor/verify.py": "3791913cb3d61c1fdf474773665f5257d52cb4f2ad22b2127649d625fee89dbf",
+    "experiments/permworld_peaks_probe_20261109/vendor/analyze.py": "f6092e467473d2a3d98a7f3be15b8087d53571706e4aee059d2002e65c23432c",
+    "experiments/permworld_peaks_probe_20261109/vendor/infer.py": "67ed2bf513117239636557e1753494f61da283e95bce92946aae06ad09a95545",
+    "experiments/permworld_peaks_probe_20261109/vendor/restore.py": "df407d69b5ee908cf670ba788674f99877ade777e8bd5149f35d4f05ceb88f78",
+    "diagnostics/permworld_orthogonal_alignment_20261110/cache_audit.json": "dcfe1f33832b49bbe8d6bca961a00ed1966b7270a7adb3056cec892a6efb4654",
+    "diagnostics/permworld_orthogonal_alignment_20261110/math_design_audit.json": "86d8a340ebb2b032f251d5a032c3f2a2ee66f16b48b3949ba79d8b8957e2d57f",
+    "diagnostics/permworld_orthogonal_alignment_20261110/imported_archive_manifest.json": "2f30bcde469c967187aeee73bd77ab2133b727e3226899b19187c8b3ad9bc567"
+  },
+  "before_actual_alignment_and_probe_fits": true
+}

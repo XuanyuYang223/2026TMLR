@@ -1,0 +1,593 @@
+{
+  "created_utc": "2026-11-10T12:05:07.189320+00:00",
+  "git_head": "6d745815c0a1a2a41ad5fc8c0aa6e018f9bab249",
+  "protocol_sha256": "ae15cb791d7095b835a2f907301f1824254529e1566c7004b573b36baebb94b1",
+  "scope": "New experiment sources, diagnostics, tests and external predictions/exports only; self/completion files excluded.",
+  "files": {
+    "diagnostics/permworld_lemma_composition_20261110/README.md": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/README.md",
+      "sha256": "50e681922f22c28383a4ceb54c0f81e6bb0138b3418f18c08d00a7179c776dcd",
+      "size_bytes": 10320
+    },
+    "diagnostics/permworld_lemma_composition_20261110/build_reader_delivery.py": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/build_reader_delivery.py",
+      "sha256": "1686c2d1ddac8825419732616932150df8c236f558a83b5cbe5cc9dc86f4ecbe",
+      "size_bytes": 15613
+    },
+    "diagnostics/permworld_lemma_composition_20261110/cache_audit.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/cache_audit.json",
+      "sha256": "2d3507c4b5a70e9572a81a099b222cd53882fa7407b1e6f6cc3979d7e0d9a78a",
+      "size_bytes": 128361
+    },
+    "diagnostics/permworld_lemma_composition_20261110/cache_audit.md": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/cache_audit.md",
+      "sha256": "c6574cf05e40aa9050c2f63e8b8323611cde70b43682ebb4ba68d01f2b1a0dc5",
+      "size_bytes": 2557
+    },
+    "diagnostics/permworld_lemma_composition_20261110/cache_audit_run.py": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/cache_audit_run.py",
+      "sha256": "deafe6d23024a8a7eede38ea59ca59880bb720cfcb6eb959bc180da231424f39",
+      "size_bytes": 17336
+    },
+    "diagnostics/permworld_lemma_composition_20261110/environment.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/environment.json",
+      "sha256": "322c5cd159ac0f43d0d787bcb93ec8aabb699361422ca235dd1890d2010a351c",
+      "size_bytes": 171
+    },
+    "diagnostics/permworld_lemma_composition_20261110/export_saved_predictions.py": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/export_saved_predictions.py",
+      "sha256": "3ac4db3e9beffba29aa3f724504ef2cae83dc253bfb95e2dd52d9902bfc1f248",
+      "size_bytes": 3756
+    },
+    "diagnostics/permworld_lemma_composition_20261110/finalize_composition_audit.py": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/finalize_composition_audit.py",
+      "sha256": "c4fead8200a32d2f07e3c7b5cdfba6d46ace20ca53c522fcb9d7852167ee8992",
+      "size_bytes": 23412
+    },
+    "diagnostics/permworld_lemma_composition_20261110/finalize_delivery.py": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/finalize_delivery.py",
+      "sha256": "9f839371b4eb357ff9bb4bb21855b97e397dbbbf31f6f27db5003884ad91463b",
+      "size_bytes": 5213
+    },
+    "diagnostics/permworld_lemma_composition_20261110/freeze.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/freeze.json",
+      "sha256": "9f535675f7a7c2a275c359708d30384de563d06df6c79d14c0b7923b42104573",
+      "size_bytes": 1652
+    },
+    "diagnostics/permworld_lemma_composition_20261110/launch.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/launch.json",
+      "sha256": "a0cc0515d5ada21dd520d86fc0de3117d298640950a518504cca7944a03a2f09",
+      "size_bytes": 497
+    },
+    "diagnostics/permworld_lemma_composition_20261110/main_comparison_by_unit.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/main_comparison_by_unit.csv",
+      "sha256": "92a377cba68002a1edb9ce0ac28c282d696448ffdf7df3c876bbf6a97b8ff1fe",
+      "size_bytes": 7756
+    },
+    "diagnostics/permworld_lemma_composition_20261110/original_routes_by_unit.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/original_routes_by_unit.csv",
+      "sha256": "2d5248ddc020de701841714084153c49846777e8ad417d160bf5e74a27153d7d",
+      "size_bytes": 801595
+    },
+    "diagnostics/permworld_lemma_composition_20261110/protection_end.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/protection_end.json",
+      "sha256": "3de50dc9e136fbba9a9653077babbb49ed4c422d06cfda63553ca909c54be87e",
+      "size_bytes": 141099
+    },
+    "diagnostics/permworld_lemma_composition_20261110/protection_start.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/protection_start.json",
+      "sha256": "5ccd398a4c9dade55052acb51afb45cf2493d606800520a2d539e0742273a4ea",
+      "size_bytes": 58309
+    },
+    "diagnostics/permworld_lemma_composition_20261110/protocol.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/protocol.json",
+      "sha256": "ae15cb791d7095b835a2f907301f1824254529e1566c7004b573b36baebb94b1",
+      "size_bytes": 6876
+    },
+    "diagnostics/permworld_lemma_composition_20261110/reproduce.sh": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/reproduce.sh",
+      "sha256": "47d867afe950fc98e38e4fbab698719f4ef7b493c03ee5460e92118b94c74e02",
+      "size_bytes": 1328
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/archdev001/completion.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/archdev001/completion.json",
+      "sha256": "0fd9813e30c63dad57a2bc19c7babfbf9dab4ef68d0ee570b41cc5bb0388043d",
+      "size_bytes": 2318
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/archdev001/component_diagnostics.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/archdev001/component_diagnostics.csv",
+      "sha256": "485147ae2f381870422eaf8ea91a4e813ed635701466fe2845c50a4ceaec6340",
+      "size_bytes": 33308
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/archdev001/mask_shuffle_audit.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/archdev001/mask_shuffle_audit.json",
+      "sha256": "4996fec901e0035e2a707b18b3717cdebe26ac1ced29e3014a6ef908ca72c74b",
+      "size_bytes": 46593
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/archdev001/source_calibration.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/archdev001/source_calibration.json",
+      "sha256": "aa3b4becf44fbeb6481c953cf3ea722a2bc3e9e703071757708a487f571ad781",
+      "size_bytes": 75385
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/archdev001/upstream_reproduction.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/archdev001/upstream_reproduction.json",
+      "sha256": "b9613ca23ef6f1df72e17972abe7fc5e2491a101b5b5ce7a81b0f312b79d0bc5",
+      "size_bytes": 118749
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit02/completion.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit02/completion.json",
+      "sha256": "fdf8422968017655e206e68cfd7f8beb35e0f2ba9ff161e085934da2a5c10a0f",
+      "size_bytes": 2286
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit02/component_diagnostics.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit02/component_diagnostics.csv",
+      "sha256": "aee460fd693a7db19b131c8f2dbc8a6b91317b6357b305f7c80739760d542052",
+      "size_bytes": 33319
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit02/mask_shuffle_audit.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit02/mask_shuffle_audit.json",
+      "sha256": "ada760b3e9e18d29672b58bf9e8b4dd2e6a40a211024cb90df370985ba0ad071",
+      "size_bytes": 46593
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit02/source_calibration.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit02/source_calibration.json",
+      "sha256": "e479f1e47415a753c200313d560231238c0faa13d99c501b57aeb87e271b7c98",
+      "size_bytes": 75118
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit02/upstream_reproduction.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit02/upstream_reproduction.json",
+      "sha256": "d4006a3dca1e6dc2ba0875dcf1fcdcba7c4b1f220b90667076e6b968ce6f19c7",
+      "size_bytes": 118691
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit03/completion.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit03/completion.json",
+      "sha256": "027c718ccf9df04d06f6d5b6533965b3c1215d48dbf11bf545cb45568cdbf300",
+      "size_bytes": 2286
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit03/component_diagnostics.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit03/component_diagnostics.csv",
+      "sha256": "4f6d5423c6ace5d9b17aae4c7192ea5602dc11cedc7947f6f5291a1bc007fa54",
+      "size_bytes": 33572
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit03/mask_shuffle_audit.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit03/mask_shuffle_audit.json",
+      "sha256": "195b74f16965f1997aed850c3d82f3c2868247625011f2f131893264e5221aff",
+      "size_bytes": 46593
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit03/source_calibration.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit03/source_calibration.json",
+      "sha256": "42ccf6ef9d9127fb9b5eb398db12daaadf56dd340c0782c3cadaab8672259635",
+      "size_bytes": 75093
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit03/upstream_reproduction.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit03/upstream_reproduction.json",
+      "sha256": "12ea3f1fc867b77b74598ef6a3cca34b1a3645edd40d82485747379e65509a97",
+      "size_bytes": 118643
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit04/completion.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit04/completion.json",
+      "sha256": "89c0909165fdd72661e013ec904bb7f1aac1634a500a3fc8d21fa636c38f8720",
+      "size_bytes": 2286
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit04/component_diagnostics.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit04/component_diagnostics.csv",
+      "sha256": "8d40b3115ec17b08d8a2232c2fbcee9e0a84448b570fc9f3a2a50547c6103db6",
+      "size_bytes": 33341
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit04/mask_shuffle_audit.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit04/mask_shuffle_audit.json",
+      "sha256": "9468c0282315e1135116ece172329df3aac0dce1ca41b171e7db73122f3be478",
+      "size_bytes": 46593
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit04/source_calibration.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit04/source_calibration.json",
+      "sha256": "86042e8ec84ba389c76ea86d4b3bfc6f7f208438d59a7edf4bda58b5ecb3a1ca",
+      "size_bytes": 75137
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit04/upstream_reproduction.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit04/upstream_reproduction.json",
+      "sha256": "198d6af77871fb495203ad70454d8923e0adab65606a2eccac4b3302cab4407c",
+      "size_bytes": 118747
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit05/completion.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit05/completion.json",
+      "sha256": "7b8197a0b033ffe686939f6ea73a36b6695ba332f8bbe1d9bce3abbc6b636586",
+      "size_bytes": 2286
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit05/component_diagnostics.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit05/component_diagnostics.csv",
+      "sha256": "df73e22cfe2b542bb3019591249047afada1aabcb2aaecc95fb80697edf928d9",
+      "size_bytes": 33250
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit05/mask_shuffle_audit.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit05/mask_shuffle_audit.json",
+      "sha256": "9c80c26db4828c3e4079115228b838de1b8c5521d6b01a257559ee4fedb8f4da",
+      "size_bytes": 46593
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit05/source_calibration.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit05/source_calibration.json",
+      "sha256": "49757dce07a13a7fc7ee92f6c7c600a38dcf99ff8cfd6e01ebccae19305df86d",
+      "size_bytes": 75086
+    },
+    "diagnostics/permworld_lemma_composition_20261110/results/unit05/upstream_reproduction.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/results/unit05/upstream_reproduction.json",
+      "sha256": "e8bc03070047cc979a5ff27b5a4687020007ecdb33c50d6dba479c5fd8bf8056",
+      "size_bytes": 118655
+    },
+    "diagnostics/permworld_lemma_composition_20261110/run_completion.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/run_completion.json",
+      "sha256": "132f146c9abc7a64403c5f1f4f3f0ef8526fa7dc2d479ce2e1e3e28580da247a",
+      "size_bytes": 168
+    },
+    "diagnostics/permworld_lemma_composition_20261110/saved_results_audit.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/saved_results_audit.json",
+      "sha256": "801ca825fb6f725265bb3b5d05f556e056fc259c857087168dcfe5913da991e4",
+      "size_bytes": 2894
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summarize_composition.py": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summarize_composition.py",
+      "sha256": "cec2cf41ece11fc3b760fdb2e322808d6887429edec349bde66a8a2bcc54ed25",
+      "size_bytes": 28918
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/aligned_minus_same_model.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/aligned_minus_same_model.csv",
+      "sha256": "ddfa6a745ed8e927137759a59efb8116009d3ed16c2d4c25f03c70b424f1b0cf",
+      "size_bytes": 26978
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/aligned_minus_same_model.png": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/aligned_minus_same_model.png",
+      "sha256": "13f86fc55bce549b7d5bef888233ea38e74d42dca9724ff0a41322a5005e9ae5",
+      "size_bytes": 219062
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/cohort_summary.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/cohort_summary.csv",
+      "sha256": "ce577b137c16e3bb8d14649c8958339db2d350009e76090dd254162f1353064e",
+      "size_bytes": 2658309
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/completion.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/completion.json",
+      "sha256": "aafdf64be142dc1ca381f35596d204a0ad455381f97214910cb900d064094f82",
+      "size_bytes": 8337
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/fixed_constraint_diagnostic.png": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/fixed_constraint_diagnostic.png",
+      "sha256": "73eb8ad81e9a9a7a919f2462413005fa1d76a9ae37f1f57e68e13ede2ef979e7",
+      "size_bytes": 72347
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/paired_summary.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/paired_summary.csv",
+      "sha256": "ca83be59e423ebb3cca0170b755813a57cf49e778dced3e59fa4950be65d35c7",
+      "size_bytes": 25915
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/per_length/archdev001.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/per_length/archdev001.csv",
+      "sha256": "bc3ef84bf9064c1a34b2848119cd835f0c0c4d3569c2d45ba79249af8c737bb0",
+      "size_bytes": 21300355
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/per_length/unit02.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/per_length/unit02.csv",
+      "sha256": "51a3ee957287bbbb97968748ee76092a7482d1f23638fddbba0e751cfd9cf6ff",
+      "size_bytes": 21181905
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/per_length/unit03.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/per_length/unit03.csv",
+      "sha256": "f1f825809742ad760fd6275000121fd04fa099948d2c553f44f4221caee839ad",
+      "size_bytes": 21115149
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/per_length/unit04.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/per_length/unit04.csv",
+      "sha256": "b93894427e27529665c0958eb29195e035d89e4beaad1b69f33a67ea43e667ec",
+      "size_bytes": 21284841
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/per_length/unit05.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/per_length/unit05.csv",
+      "sha256": "659b9d39bcc256267eefbc2be144782342f8650fe93bcd737899c20a0561d5c2",
+      "size_bytes": 21119564
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/per_unit_condition_summary.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/per_unit_condition_summary.csv",
+      "sha256": "a6e5516fb22979fc1ce794539ee36873e6b8225d4360faaab5716f0685f9ac07",
+      "size_bytes": 2015948
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/per_unit_metrics.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/per_unit_metrics.csv",
+      "sha256": "9ae75c6d6f5e71ea08787e47e36135e64bbcb2b278455c1a8ebc52097fc5ae1a",
+      "size_bytes": 13809350
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/position_shuffle_effects.png": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/position_shuffle_effects.png",
+      "sha256": "f153fe41c05908a660b81a39aa7991b3287adec8ca18b13ab760b762e8713ad3",
+      "size_bytes": 133784
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/report.md": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/report.md",
+      "sha256": "89e8e64de95bbb490534a2fac42a8a0336cc8aad57e27cfcd8114430ef60aab2",
+      "size_bytes": 11630
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/shuffle_effects_by_unit.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/shuffle_effects_by_unit.csv",
+      "sha256": "d864078069f0867b4becd21f996e0e326bcc3513029bc2e5cb6a93749d32e439",
+      "size_bytes": 394124
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/shuffle_effects_summary.csv": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/shuffle_effects_summary.csv",
+      "sha256": "8a445943bb90ca9706638aa01d0dbf5a8bf74a9e2d6efe7722b31ee20266657d",
+      "size_bytes": 255068
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary/task_exact_accuracy_by_unit.png": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary/task_exact_accuracy_by_unit.png",
+      "sha256": "2e338fbaef8b8c48927ae0dfba727061c64e6dfd631f5fd82e57f1e280da2dbd",
+      "size_bytes": 152868
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary_helper_freeze.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary_helper_freeze.json",
+      "sha256": "e691c5d2e5d7c14685c576cea7b711ebd9fdc33ac3171034b3472c4c49c5d744",
+      "size_bytes": 448
+    },
+    "diagnostics/permworld_lemma_composition_20261110/summary_synthetic_verification.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/summary_synthetic_verification.json",
+      "sha256": "8a31a398548ef447aea8746d2ff21c1a7662d83591456cd23976885340addecb",
+      "size_bytes": 461
+    },
+    "diagnostics/permworld_lemma_composition_20261110/tests_verification.json": {
+      "path": "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/tests_verification.json",
+      "sha256": "c24b689b9d99ba2d393544fe55733cb6b8bed8f4c3d4ddab14ac2ef733b6789f",
+      "size_bytes": 590
+    },
+    "experiments/permworld_lemma_composition_20261110/README.md": {
+      "path": "/home/yangx/ICML/experiments/permworld_lemma_composition_20261110/README.md",
+      "sha256": "752e70d428fb001e486af91583c7790895f2a5aa1e884310eb04dcdc036a3657",
+      "size_bytes": 1006
+    },
+    "experiments/permworld_lemma_composition_20261110/__init__.py": {
+      "path": "/home/yangx/ICML/experiments/permworld_lemma_composition_20261110/__init__.py",
+      "sha256": "dbfa7ec4f78436de190f14f3f88b4d7421a66443db85b23b58fda28c403854d9",
+      "size_bytes": 77
+    },
+    "experiments/permworld_lemma_composition_20261110/calibration.py": {
+      "path": "/home/yangx/ICML/experiments/permworld_lemma_composition_20261110/calibration.py",
+      "sha256": "68d199ee568b1f1c9f30f820f822c245af9acfa1a96ae49985437b877330d4de",
+      "size_bytes": 1930
+    },
+    "experiments/permworld_lemma_composition_20261110/combiners.py": {
+      "path": "/home/yangx/ICML/experiments/permworld_lemma_composition_20261110/combiners.py",
+      "sha256": "5bb1e4519918c925b8933a4e8c9ac683d5ba1b50b8f0aa8f117e5636adfb607e",
+      "size_bytes": 5718
+    },
+    "experiments/permworld_lemma_composition_20261110/export_predictions.py": {
+      "path": "/home/yangx/ICML/experiments/permworld_lemma_composition_20261110/export_predictions.py",
+      "sha256": "70545860af358a2293a412933639a93b81515aa56a4e06f71db2fc2798b93f27",
+      "size_bytes": 2108
+    },
+    "experiments/permworld_lemma_composition_20261110/metrics.py": {
+      "path": "/home/yangx/ICML/experiments/permworld_lemma_composition_20261110/metrics.py",
+      "sha256": "2545a951cabc527b7a8337b72eb9077a82fb82f73dfbdf3e7e299dc93879bfd2",
+      "size_bytes": 12819
+    },
+    "experiments/permworld_lemma_composition_20261110/oracles.py": {
+      "path": "/home/yangx/ICML/experiments/permworld_lemma_composition_20261110/oracles.py",
+      "sha256": "5094ab20366438317e76d5c5db52e21438e45840e5105cad4b30fbe349c723fe",
+      "size_bytes": 2905
+    },
+    "experiments/permworld_lemma_composition_20261110/run.py": {
+      "path": "/home/yangx/ICML/experiments/permworld_lemma_composition_20261110/run.py",
+      "sha256": "15875c52461a2136e60731b40da1bf95f25fa4325a858aba6df659554c498d44",
+      "size_bytes": 22785
+    },
+    "tests/test_permworld_lemma_calibration.py": {
+      "path": "/home/yangx/ICML/tests/test_permworld_lemma_calibration.py",
+      "sha256": "5def0952db5caa83b8b9a11f998309718de74c18e56b232ca56db33f863770a8",
+      "size_bytes": 1312
+    },
+    "tests/test_permworld_lemma_oracles.py": {
+      "path": "/home/yangx/ICML/tests/test_permworld_lemma_oracles.py",
+      "sha256": "6415ba14e68b06263dd99184044af9fb16f61acbce0e0adb106936adf9c0f0df",
+      "size_bytes": 7927
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/archdev001-aligned_complement.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/archdev001-aligned_complement.csv",
+      "sha256": "8ead5ff753f8d29144b4353befc5e1886c0e7b358bea16f915692cf67f07697f",
+      "size_bytes": 1154260
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/archdev001-same_model_twice.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/archdev001-same_model_twice.csv",
+      "sha256": "cacabb77522a76ba2db47b7a91799975896bf61ad2fad2415cfc69b4d050d68c",
+      "size_bytes": 1132699
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit02-aligned_complement.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit02-aligned_complement.csv",
+      "sha256": "967e3fcae8bc513eea93bceeace6cc90b78e12443a7c6a5935ea79ed83291379",
+      "size_bytes": 1111711
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit02-same_model_twice.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit02-same_model_twice.csv",
+      "sha256": "ed05d84b45fa73952f9d1dcf08e2eb006aeeafe32ea8afc4343303b372259f94",
+      "size_bytes": 1089929
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit03-aligned_complement.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit03-aligned_complement.csv",
+      "sha256": "83c4ca4049f24609d1137142f13d355d40c56fdd53bfd28a35f7932d69acb8ef",
+      "size_bytes": 1111502
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit03-same_model_twice.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit03-same_model_twice.csv",
+      "sha256": "bfbbd423a16cefc9e1dfa7295acb90b354d4530c4acd7f5ab642cb5a922e5339",
+      "size_bytes": 1090273
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit04-aligned_complement.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit04-aligned_complement.csv",
+      "sha256": "61aa6fa69a2315141e20f9cc0f88a91e18e7f2d418c14f7583f42887d9d05fe7",
+      "size_bytes": 1110147
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit04-same_model_twice.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit04-same_model_twice.csv",
+      "sha256": "361fee6f814baa50cc29e2a1ca7deb1fcca8dd27f661d3813866b8869a6aa1da",
+      "size_bytes": 1088413
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit05-aligned_complement.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit05-aligned_complement.csv",
+      "sha256": "4e430013e005e1eaadb7fcd0f82f5e482cc3fb1196ef1c3748184c4546a10a33",
+      "size_bytes": 1110750
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit05-same_model_twice.csv": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/exports/unit05-same_model_twice.csv",
+      "sha256": "5d6d5c854cb6f83e0dd952cc939671381e7e6c4bde975fe43d235af87897553e",
+      "size_bytes": 1088786
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/run.log": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/run.log",
+      "sha256": "c8c0e094f2f468585fe9fbe360db3f158dfac59c7b7d2e4b62bc440f6e949a16",
+      "size_bytes": 7203
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/frozen_readouts.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/frozen_readouts.npz",
+      "sha256": "b4107761ba8e928654ac2000dfaf9d2a646ea8eb4a4e56eda2a88e5088756f8b",
+      "size_bytes": 3265923
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/mask_shuffle_permutations.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/mask_shuffle_permutations.npz",
+      "sha256": "bdd8d8a14abae280b72817a4a37f59383dea0b949fec61c72ad704121be9a3bf",
+      "size_bytes": 2570200
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/prediction_only.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/prediction_only.npz",
+      "sha256": "fc55f3d308c0463cd229d8d945335ba0351ec719835ba05f2781e7ab88ba7e6a",
+      "size_bytes": 6773120
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/predictions.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/predictions.npz",
+      "sha256": "def79ac167f8304cc2f6f5ea70a0746dc594365d475bdaafb481a06f259a174c",
+      "size_bytes": 6809640
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/signals.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/signals.npz",
+      "sha256": "41a2eeb8ec4c219401bb5d6dc71f55ae98305240edece81ac6a5fb8d087fbd83",
+      "size_bytes": 26810518
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/truth.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/archdev001/truth.npz",
+      "sha256": "5f66e3cd7095b6cff9a5312dc0c4db4acab01fa715bb928351357bf56a162fc6",
+      "size_bytes": 229314
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/frozen_readouts.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/frozen_readouts.npz",
+      "sha256": "c6408904fdf9eb4913255df85175f91ec8db060f8cd376cbb91252a56a907272",
+      "size_bytes": 3274410
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/mask_shuffle_permutations.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/mask_shuffle_permutations.npz",
+      "sha256": "b8cc59bc7eae45f51695fe94f43680412825c3210fed33c85db8f2c67a8ff66f",
+      "size_bytes": 2569674
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/prediction_only.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/prediction_only.npz",
+      "sha256": "459788dc5446329bd3d3d4b7d002751c20164e331621dbb6c81010f8722a5ba2",
+      "size_bytes": 6833692
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/predictions.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/predictions.npz",
+      "sha256": "dbbac62584825df86848d3d7dcacc3cdfa8d237ec56ab74122d389739a01d44a",
+      "size_bytes": 6870318
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/signals.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/signals.npz",
+      "sha256": "507d337af05a1f4144e222f794d0a249ed2d7a108382aff39ac84cc1310b7f3e",
+      "size_bytes": 26838152
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/truth.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit02/truth.npz",
+      "sha256": "1dd90d4f7f7bb09d1c0b7aedbf4e0e39156ad5d49084d38e3a9ede6d29d6ed9f",
+      "size_bytes": 229368
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/frozen_readouts.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/frozen_readouts.npz",
+      "sha256": "e1e6366b635675e34099dc3dfe36cc1db5f5256d644fcf4d1c4aedccd4eeca70",
+      "size_bytes": 3249374
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/mask_shuffle_permutations.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/mask_shuffle_permutations.npz",
+      "sha256": "cd96ef80dd8af88fcd90c6f67acb28f0a7ffb1fd0dabb3a5f9703c5778907f2e",
+      "size_bytes": 2569868
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/prediction_only.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/prediction_only.npz",
+      "sha256": "a31ebdf4d45c65f90fc2b89655cdcdad5cd102b7e5509a3fc8e416a768b0a23d",
+      "size_bytes": 6839383
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/predictions.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/predictions.npz",
+      "sha256": "092c58832fa31ad456adce287b1373324b4e780e7cd50013c6b94d188e079faf",
+      "size_bytes": 6875891
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/signals.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/signals.npz",
+      "sha256": "67f3afc124af0e96889a4f8ae69f272f7853ab7b0e94e6b86ea79f4f12f68b1d",
+      "size_bytes": 26845415
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/truth.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit03/truth.npz",
+      "sha256": "d5a4b4d55b64d8f50ee72dd3cc603ab28861aee099db591fae27cf121ea8f783",
+      "size_bytes": 229204
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/frozen_readouts.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/frozen_readouts.npz",
+      "sha256": "327f4db36c25107439b1c0f44dd54b606905138298b67834cbc11563c73e0f37",
+      "size_bytes": 3276042
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/mask_shuffle_permutations.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/mask_shuffle_permutations.npz",
+      "sha256": "413b01d9f99f583f924011c8015902b1f17b018de94b05bc04143302eb297495",
+      "size_bytes": 2570432
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/prediction_only.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/prediction_only.npz",
+      "sha256": "d0dca5bde0203b368cdef3616a3f0f06d77451d30e51aa56042576b1ebcad114",
+      "size_bytes": 6790969
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/predictions.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/predictions.npz",
+      "sha256": "782ad3313ce97351b3e707723b5f5594012bdddae78e62f7c17f51acefa319e0",
+      "size_bytes": 6827709
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/signals.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/signals.npz",
+      "sha256": "5e851fc2740331ac8fb0179e4216e12ab14b4a0d6dd891efc9f95ce7dfef8fc7",
+      "size_bytes": 26793120
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/truth.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/truth.npz",
+      "sha256": "359e4be3e150e9cbd8f28c16895deb1509256b17ca39e51f6efa89ebe4202326",
+      "size_bytes": 229449
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/frozen_readouts.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/frozen_readouts.npz",
+      "sha256": "305758dbaddfef017643f6c8ac52682a025790ab3490c89585e6b9e07e25ee2e",
+      "size_bytes": 3268289
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/mask_shuffle_permutations.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/mask_shuffle_permutations.npz",
+      "sha256": "5275b2b153867f84fefc96aedf669ba05deeeab6f0f2f6592e36ded23f5f80a1",
+      "size_bytes": 2569827
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/prediction_only.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/prediction_only.npz",
+      "sha256": "8786537c46f96bd65d84e0c32fa417b20b5210e82b84be9ae81fbb90e7c32e11",
+      "size_bytes": 6986130
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/predictions.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/predictions.npz",
+      "sha256": "e89da02c1d3c05414214c36c493be728764227cd7cc9a4d9552d4a77e98d301c",
+      "size_bytes": 7022719
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/signals.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/signals.npz",
+      "sha256": "c368a51fc4940156a6cd509329cf8773e5c1e2d8749339285883118764bc9666",
+      "size_bytes": 26954480
+    },
+    "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/truth.npz": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit05/truth.npz",
+      "sha256": "7f5cb6e1922e443153203f864fcde500df489c9ac4e85f38dc389db96911c374",
+      "size_bytes": 229370
+    }
+  }
+}

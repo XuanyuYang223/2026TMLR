@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "units": [
+    "archdev001",
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "protocol_sha256": "2fade195fe7531641cfb085c0e1d11a2f4b4b8b08e3da974ed2670aeed55cee3",
+  "receipts": {
+    "archdev001": "2cad5e3a3d0a7e78f423648a3288a514d0094953df422154f4f6b90756a36b58",
+    "unit02": "a43dda47d00b121061d488eedf6c5b779acca1cde31d15a70b20d74f78b56a88",
+    "unit03": "82337e4009564fd33066fcd6b42f50a23f0930283fc155d94a77e8e0465e183c",
+    "unit04": "1a61798b2184c8df789c7ccc55615f6a5812c60dcfb8b86d1a6f47173fe262de",
+    "unit05": "869051f7515d988d3e6ce2040937ef43474d3092c5d51ba7021b3aa0cb888cd7"
+  },
+  "no_neural_forward": true,
+  "no_model_outcome_access": true,
+  "no_training": true
+}

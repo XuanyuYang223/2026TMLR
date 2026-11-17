@@ -1,0 +1,51 @@
+{
+  "version": "explicit-edge-token-diagnostic/v1",
+  "stage": "secondary separately reported after mainprefix_final crosspairtable",
+  "encodings": [
+    "one_line",
+    "canonical_cycle"
+  ],
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "source": "trainedexceedances identity; nativeedgei",
+  "targets": [
+    "traineddeficiencies identity",
+    "traineddeficiencies complement",
+    "traineddeficiencies inverse",
+    "initialtarget inverse",
+    "trainedfixed_points inverse"
+  ],
+  "feature": "FrozenCP eval/inference FP32 final_normsequence; beforestate afterimmediatelyprecedingtoken;afterstate afterlocalexplicit-edge reveal.",
+  "boundary_policy": "one-linevaluetoken; cycleinternal secondvalue; cycleclosing semicolon/END;singletonclosingdelimiterseparate. Not globallyearliestlogicalentailment, beforemayalreadyinformative.",
+  "order": "Extract eachinputnativeedges, thenInvtargetedgej=pi(i)reindexONCEtosourcei. Target-ownscalarreadoutnativejandpriorjpullbackonce; transferredscalaralreadyassignedsourcei afterfeaturepairing,noextraoutputgather.",
+  "probe": "SharedscalarRidge+StandardScalerperunit/encoding/n, fit sourceAFTER flattenedfitanchorpositions, alpha1/10/100/1000 originalsource-devAFTERperanchorAUROC. FreezeapplyBEFOREandAFTER; beforedistributiondiffers.",
+  "maps": "GlobalrawAFTERcoordinateorthogonal256matrix acrossn,source/targetperlengthmeans fitanchors/positions; covariance dividedfitN*n. FitI,C,Inv +8count-matchedanchorshuffles1026..1033 onInv +initialInv +fixedInv. CommonI/C/Inv/shufflemaps evaluateSAMEtrainedDInvtargetj usingtrainedDInv-aftermean/sourceaftermean atBEFOREandAFTER. Initial-targetandFP-target controlsfit/testTHEIR OWNInvfeaturesandowntargetaftermean; sourceTRAINEDscalarprobe/sourceaftermean remainfixed.",
+  "controls": "sourceownbefore/after,targetownDnativeprobeafterfit thenapplybefore/after andInvjpullback,source n/i validationmeanprior,targetnative n/j prior reindexedonce,oracle-source-count positionprior ifappropriate.",
+  "scores": "PeranchorpositionAUROCprimary,poolededgeAUROCsupplement; full+matched originalsupport; separate source/targetinternal/closure/singleton strata, undefinedallnegative preserved. 21fixedweights, no lengthsubsetsearch.",
+  "parameters": "Savefittedscalers,ridgecoeffs/intercepts/chosenalpha,actualR/permutationmaps; peredgeunthresholdedscores+i/j/tokenindices/kinds externally.",
+  "validation": "No optimizer/backward/baseupdate. CP/dataSHAandparameterhashbefore/after; endstate agreement existingprefixcacheatfixed2e-5. Syntheticorientation,andactualorthogonalityabs2e-12rtol0.",
+  "execution": "Prepareonlynow; requiresrootmaincrosspairtablecompletedandexplicitrootstage2go. SmallGPUfrozenforwardprefixcachecheck beforefull.",
+  "initial_reference": "Initial TARGET control only, mapped into trainedsource coordinates and scoredwithsametrainedsourceprobe. No initialsourceprobe phase.",
+  "fixed_target_control": "Fixed_points CP receives no fixedpointposition supervision; onlyhiddenanchor-correspondence orthogonalfit andfrozen trainedexceedanceprobe."
+}

@@ -1,0 +1,120 @@
+{
+  "status": "passed_read_only_review",
+  "scope": "Frozen engineering and pre-formal semantic/code review; no formal model test forward or final count-output access. Fixed input-only audits and synthetic packing are distinct from outcome replication.",
+  "reviewed_sha256": {
+    "experiments/permworld_local_causal_20261110/run.py": "122c659498c8706d53f8ef397517c89ccd5a4c493ac759fe48568cc51c595752",
+    "experiments/permworld_local_causal_20261110/features.py": "5b4490adb346f3f4f132a5469a372177fbc6d42d4daac478cd0ae60ad0ed0897",
+    "experiments/permworld_local_causal_20261110/probes.py": "d0d66c8957eb6e340a25de94f68241f2a6ff1d9e1faef7c1f5a441998b7621d8",
+    "experiments/permworld_local_causal_20261110/calibrate.py": "b484c14a7bab91bac742b9963b6429cd1e7d5525a2c23dfed8411a36392d1c8d",
+    "experiments/permworld_local_causal_20261110/formal.py": "cb3559b912fd4ebb90a578015ea2053c8bfb156a7b5f8f3a418a476542886fc0",
+    "experiments/permworld_local_causal_20261110/shared.py": "ba33251423c6bc15a20b943e1ef10278efd4fee3d44ad808f902e4f02e40dc14",
+    "experiments/permworld_local_causal_20261110/recurrent.py": "6092c23221f858ddc423685552d1b954cf729a5d3f89d0956fad691ab53c6ff7",
+    "experiments/permworld_local_causal_20261110/pairs.py": "61182a2ed5653de4a5c972913431ad909b900aa4f9c614706dd9442da7e871c4"
+  },
+  "blocking_issues": [],
+  "resolved_before_formal_freeze": [
+    {
+      "issue": "Condition-varying donor_id was inconsistent with pair-donor score/count columns.",
+      "resolution": "donor_id and pair_donor_node_id now always name the fixed label-changing pair donor with an explicit scope; intervention_donor_id/count/label fields separately name each actual condition donor. No numerical intervention changed."
+    }
+  ],
+  "checks": [
+    "Engineering-frozen source identities unchanged",
+    "Saved historical layer choice independently recomputed from eight geometry cells; no count endpoint used",
+    "Source FIT_A/FIT_B component separation checked for every unit/task",
+    "Fixed input-only family per unit/task: recipient/donor/actualCF IDs, complement labels, identical postcut suffix, local-only count goal",
+    "Synthetic condition-major pack/batch/reshape retains case and condition order"
+  ],
+  "fixed_input_pair_cases_checked": 40,
+  "input_component_audits": [
+    {
+      "unit": "archdev001",
+      "task": "peaks",
+      "fit_A_components": 1118,
+      "fit_B_components": 1105,
+      "fixed_test_input_family": "e01a1909945f5f20645456cc"
+    },
+    {
+      "unit": "archdev001",
+      "task": "valleys",
+      "fit_A_components": 1118,
+      "fit_B_components": 1105,
+      "fixed_test_input_family": "e01a1909945f5f20645456cc"
+    },
+    {
+      "unit": "unit02",
+      "task": "peaks",
+      "fit_A_components": 1116,
+      "fit_B_components": 1100,
+      "fixed_test_input_family": "eaffb306f86737e4c83ef993"
+    },
+    {
+      "unit": "unit02",
+      "task": "valleys",
+      "fit_A_components": 1116,
+      "fit_B_components": 1100,
+      "fixed_test_input_family": "eaffb306f86737e4c83ef993"
+    },
+    {
+      "unit": "unit03",
+      "task": "peaks",
+      "fit_A_components": 1075,
+      "fit_B_components": 1131,
+      "fixed_test_input_family": "a3189a3464862f78755ca24d"
+    },
+    {
+      "unit": "unit03",
+      "task": "valleys",
+      "fit_A_components": 1075,
+      "fit_B_components": 1131,
+      "fixed_test_input_family": "a3189a3464862f78755ca24d"
+    },
+    {
+      "unit": "unit04",
+      "task": "peaks",
+      "fit_A_components": 1113,
+      "fit_B_components": 1106,
+      "fixed_test_input_family": "c3e24bbd9903a21514b6484a"
+    },
+    {
+      "unit": "unit04",
+      "task": "valleys",
+      "fit_A_components": 1113,
+      "fit_B_components": 1106,
+      "fixed_test_input_family": "c3e24bbd9903a21514b6484a"
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "fit_A_components": 1116,
+      "fit_B_components": 1113,
+      "fixed_test_input_family": "3ee11aad99560277a32f829d"
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "fit_A_components": 1116,
+      "fit_B_components": 1113,
+      "fixed_test_input_family": "3ee11aad99560277a32f829d"
+    }
+  ],
+  "findings": [
+    "Actual raw GRU h_n at one common selected layer is modified; all other layers retain their own cut state and suffix starts at the next absolute token.",
+    "Ridge editing direction uses count-matched natural FIT_A states; independent local checker and diagnostic prefix-count reader use component-disjoint FIT_B, all FP64 with fixed alpha10.",
+    "Formal main point AFTER/right-value, dimension1,dose1 and the same layer are fixed across units/tasks. New-unit geometry is not used to select these settings.",
+    "Condition-major states and identical recipient suffixes are concatenated in the same order before reshaping returned logits. Native recipient, donor and actual-CF node IDs use task-correct transformed permutations.",
+    "Full four-layer donor state swap is a wiring control with donor full-count oracle; matched local-only goal remains recipient total plus sign, distinct from matched donor full count.",
+    "Random directions use pre-fixed local generators; planned L2 matches rank-one coordinate magnitude and actual FP32 norms are checked against treatment with frozen tolerance.",
+    "Same-label controls preserve label/count/suffix by construction; missing controls are explicitly unavailable, not zero-filled.",
+    "Defining editing-probe donor score equality is tautological; independent checker and downstream frozen count predictions remain separate endpoints."
+  ],
+  "limitations": [
+    "Rank-one mixed states can be off manifold or overlap generic counting coordinates; count matching and a linear prefix-count diagnostic do not remove all counting information.",
+    "Source/task/group/sign/position examples share models and inputs; only the registered source bundles are independent repeats.",
+    "This review validates source semantics and small input-only checks. Saved intervention outputs still require post-run numerical/protection audit."
+  ],
+  "no_formal_test_output_access": true,
+  "no_neural_forward": true,
+  "no_probe_fitting": true,
+  "no_frozen_source_edits": true
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-10T16:48:45.898694+00:00",
+  "checks": 59661,
+  "maximum_differences": {
+    "vector": 1.1102230246251565e-16,
+    "scalar": 1.4210854715202004e-14
+  },
+  "coordinate": "raw unnormalized256-dimensional recurrent L1 Euclidean space",
+  "fixed_cases": 120,
+  "fixed_random_rows": 960,
+  "finite_difference_rows_checked": 240,
+  "unit_weighting_checks": 920,
+  "saved_pair_rows_streamed": 100800,
+  "finite_difference_scope": "Saved240FP64-shadow analytic/numerical scalar rows checked for fixed subset, arithmetic/tolerance/pass/coverage only; no model or derivative was rerun here.",
+  "limitations": [
+    "Input-only FP32 derivatives and previously cachedCuDNN actual margin changes are different numerical executions. Their1e-4logit agreement does not validate tiny delta_m as curvature/nonlinearity or a mechanistic residual.",
+    "The fixed FP64 FD shadow verifies differentiation of the graph in its own precision, not the precision of every primaryFP32gradient.",
+    "Saved-vector arithmetic validation does not prove that an axis carries an abstract predicate or is naturally used."
+  ],
+  "no_forward": true,
+  "no_autograd": true,
+  "no_model_loading": true,
+  "no_fits": true,
+  "no_new_metrics_or_conditions": true,
+  "verification_spec_sha256": "46375ca348cccb52a5d3a9d3c1cd444f8e505a54fe825e3a0774047b27c71a91",
+  "source_sha256": "247c814b012464009ddd2d78a7559f559109de35fe03cfcd6bbf8f6f7ff3e4dc"
+}

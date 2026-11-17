@@ -1,0 +1,19 @@
+{
+  "protocol_sha256": "234726c8b293f1198091fa7d70d7baa8df3ed2843315ce3a336763d3a58b625f",
+  "source_sha256": {
+    "experiments/permworld_exceedance_alignment_20261110/__init__.py": "a2dcf4f81ea05ba60f10157b6167992635d12a113f41f7a2a9b5ceea0bb36e01",
+    "experiments/permworld_exceedance_alignment_20261110/shared.py": "b43b487c0c834ded0d3e734c2bcd01b8d760c8d4daeb68f104852b5168beddd2",
+    "experiments/permworld_exceedance_alignment_20261110/run.py": "c973cd8c89dc31ca764f5aeb1ff1353f3ac5da64b273efbd5eff5ce1a7af2c65",
+    "experiments/permworld_exceedance_alignment_20261110/oracles.py": "f5cb2154567369a1cab9d9d4406a0e39c8c890dcb00b171e7b09714eb79f7ca2",
+    "experiments/permworld_exceedance_alignment_20261110/rebuild_pv_scores.py": "091ba0e1486e64b65bf8f15afbb6bba3d92eeeb5e5711aaa6bcb5fdc83993487",
+    "experiments/permworld_peaks_probe_20261109/vendor/analyze.py": "f6092e467473d2a3d98a7f3be15b8087d53571706e4aee059d2002e65c23432c",
+    "experiments/permworld_orthogonal_alignment_20261110/vendor/alignment.py": "7c6a30f87e076aa358548c41b8cbdf5dc41c1512adcb9a1318e2e3eaae3db2ad",
+    "diagnostics/permworld_exceedance_alignment_20261110/cache_audit.json": "fa5aab8021a93f716ada7d68ce6b5719d69d84c3dbf6af8e6a5227d87d07d1e5",
+    "diagnostics/permworld_exceedance_alignment_20261110/math_design_audit.json": "e23873fd6bc231699ae8f56a7bd51d74f90f16dbd337a7b02bbed8d886735c5a",
+    "diagnostics/permworld_exceedance_alignment_20261110/token_stage_spec.json": "0c0940ba5796bbb5dee677d20ffa6a278a9d8ddf472338c4398c3ed451674213",
+    "diagnostics/permworld_exceedance_alignment_20261110/summarize_results.py": "4eb76c01582486613eda6beacc55adb8de87d79e881e5265a66873df4002ac10",
+    "tests/test_permworld_exceedance_oracles.py": "00a4b1445a04be0664c8d8a5bd8b0c639afba573a07b9f71f321d1388c4689ba"
+  },
+  "before_new_ed_probe_fits_and_test_scoring": true,
+  "token_code_separate_freeze_before_token_fits": true
+}

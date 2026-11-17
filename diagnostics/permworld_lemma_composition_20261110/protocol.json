@@ -1,0 +1,136 @@
+{
+  "version": "permworld-frozen-lemma-composition/v1",
+  "created_utc": "2026-11-10T11:49:39.081400+00:00",
+  "client_date": "2026-11-10",
+  "output": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition",
+  "units": [
+    {
+      "unit": "archdev001",
+      "historical": true,
+      "data_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e"
+    },
+    {
+      "unit": "unit02",
+      "historical": false,
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/data.npz",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c"
+    },
+    {
+      "unit": "unit03",
+      "historical": false,
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/data.npz",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899"
+    },
+    {
+      "unit": "unit04",
+      "historical": false,
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/data.npz",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3"
+    },
+    {
+      "unit": "unit05",
+      "historical": false,
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/data.npz",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4"
+    }
+  ],
+  "architecture": "gru",
+  "encoding": "one_line",
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "length_weight": "1/21",
+  "routes": [
+    "same_model_twice",
+    "aligned_complement",
+    "direct_transfer",
+    "means_only",
+    "map_identity",
+    "map_inverse",
+    "map_shuffle_1026",
+    "map_shuffle_1027",
+    "map_shuffle_1028",
+    "map_shuffle_1029",
+    "map_shuffle_1030",
+    "map_shuffle_1031",
+    "map_shuffle_1032",
+    "map_shuffle_1033",
+    "own_probes"
+  ],
+  "variants": [
+    "original",
+    "turn_shuffle_611101",
+    "turn_shuffle_611102",
+    "turn_shuffle_611103",
+    "turn_shuffle_611104",
+    "turn_shuffle_611105",
+    "turn_shuffle_611106",
+    "turn_shuffle_611107",
+    "turn_shuffle_611108",
+    "fixed_shuffle_611101",
+    "fixed_shuffle_611102",
+    "fixed_shuffle_611103",
+    "fixed_shuffle_611104",
+    "fixed_shuffle_611105",
+    "fixed_shuffle_611106",
+    "fixed_shuffle_611107",
+    "fixed_shuffle_611108"
+  ],
+  "mask_shuffle_seeds": [
+    611101,
+    611102,
+    611103,
+    611104,
+    611105,
+    611106,
+    611107,
+    611108
+  ],
+  "input_definition": "Every new question is about pi=C(x). First peaks mask uses peaks testaction1; same-model valley mask uses peaks testaction0. Pairedroute valley mask uses valleys testaction1 under savedtarget-to-source map. Fixedpointtestusesfixed_points testaction1; sourcefitsallusevalidationaction0.",
+  "source_probe": "Rebuild frozen original fit_probe: perlength sourcefit/tuningorbitgroups,StandardScaler,Ridge,cholesky,alphas1/10/100/1000 selected bysourcepositionAUROC. NewFPprobe sees ONLY its own full-position fixedpoint labels including endpoints. No downstream answers or other labels enter fitting.",
+  "threshold": "Per unit/task/length maximize source-tuning micro-F1 over distinct source scores, score>=threshold; high-threshold tie, no-positive source labels ->empty mask. Fit/dev areoriginalsourcevalidationorbit split. Peaks threshold shared by both uses/allmaps; own-valleyreference has ownsource threshold; same FPthreshold/decoder acrossallroutes/tasks. No true-count top-k.",
+  "map_policy": "Reuse savedone_line/trainedR identity/complement/inverse/8count-stratifiedshuffle matrices byte-for-byte. Reconstruct ONLY original fit-validation means; everymap scores same valleys(Cx) features centered by mu_C thenrestoremu_peaks. No newalignment fit.",
+  "tasks": {
+    "longest": "Longest maximal strictmonotone contiguous interval, inclusive1-based endpoints, tiesleftmost.",
+    "fixed_longest": "Longest such interval containing a predicted fixedpoint, NONEifnopredictedfixedpoint. Boundaryfixedpoints belongbothadjacent intervals.",
+    "turns_before_fixed": "Count realinterior turnsmask strictlybeforefirstpredictedfixedpoint, NONEifnone."
+  },
+  "composer_interface": "ONLY predicted Boolean turn/fixed masks and length. No permutation,features,truecount,truepositions or downstreamlabels. Endpoints added asboundaries,not counted asturns.",
+  "shuffle_policy": "8pre-fixed count-preserving positionpermutations for each masktype; turningpositions interioronly,fixedpositions includeendpoints. Perunit/length/seed/stream permutations independentoflabels andsharedacrossroutes. FPmask commonallroutes. One kind shuffledatatime; no newfitting/calibration. Replicatesarecontrols,notunits.",
+  "shuffle_rng": "default_rng(SeedSequence([seed,unitindex,n,stream])); unitindex1historical,2..5new; stream0turns/1FP; rng.permuted(broadcastarange(N,npositions),axis=1) createsindependentrowpermutations in originalanchororderwithinlength.",
+  "support": "All originalheldouttestanchors and SAME originalmatchedmask onanchor x fromread_length,not recomputedonpi=Cx. Truthusedonlyafterpredictionsfrozen for scoring/stratification.",
+  "strata": "Primaryall/matched. E2 additionallytruthFPpresent/absent; constrainedsegmentdiagnostic truthFPpresent ANDoracleconstrainedinterval!=oracleunconstrainedinterval, excludingtrivialNONEcases. Bothsupports retainstrata; no subset chosenbyperformance.",
+  "metrics": "Primary exact-answeraccuracy. Intervalendpoint/start/end MAE andlengthabs errorconditionalonbothintervalsfinite withcoverage; unconditionalnormalizederror=1ifpresence mismatch,0bothNONE,finiteerror/n. Never silentlyreweightundefinedlengths. CountMAEconditionalbothfinite ancillary.",
+  "statistics": "Fournewunit rawvalues,mean,sampleSD,minmax; originalforengineering/reference only. Coupledlengths,questiontypes,routes,and8shufflesarenot independentreplicates. Reportwithinunitshufflemean andindividualcontrols; no newpvalue/equivalence/CI.",
+  "numerical": {
+    "previous_probe_AUROC_absolute": 1e-12,
+    "map_orthogonality_absolute": 2e-12
+  },
+  "outcomes_policy": "Retain everyunit/route and adverseoutcome. No gate ondownstreamaccuracy. Historicalrun validatesimplementationonly; never usedtochoosethresholdrule ornewhyperparameters.",
+  "operations": "Cachedactivations,positionridgefits,source-onlycalibration,predicted-maskcomposition,scoring. No neuralforward,basemodeltraining,newalignment,extraunits,F17/paperchange,automaticpublication orfollow-upexperiment.",
+  "exploratory": true,
+  "prior_readout_results_seen": true,
+  "downstream_outcomes_not_yet_computed": true,
+  "git_head": "6d745815c0a1a2a41ad5fc8c0aa6e018f9bab249"
+}

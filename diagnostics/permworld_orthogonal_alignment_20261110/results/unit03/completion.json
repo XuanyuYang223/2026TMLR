@@ -1,0 +1,142 @@
+{
+  "status": "completed",
+  "unit": "unit03",
+  "protocol_sha256": "501a999ec466420a47a6a4a5aed7740c0b39bf5bf6af875cd8d33d1ab55da5c6",
+  "elapsed_seconds": 17.294591322017368,
+  "features": {
+    "reused": true,
+    "files": {
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/canonical_cycle-initial.npz": "05c70f453df9dc68959da46870b68203b831834d25e8049f5bf1e647e1ff3d9d",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/canonical_cycle-peaks.npz": "ef64162c92bab7bee960d3646eb8d3cc76ff813d982b1b09a60a0ab071c31514",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/canonical_cycle-valleys.npz": "5dd349345829b65e7d674e173764ef3c81a14973d2fb3d93b3da22b80b832cac",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/canonical_cycle-descents.npz": "e06b489f3efa20c4c63179003a767873d10d75d6d66de8663dce69a82ba131b2",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/canonical_cycle-recoils.npz": "cec081b1db753967937d30e514d905756416ef06d3f368267086d872a069d725",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-initial.npz": "b9a9dae370940aab8c8387263bd60ce4aab1ad589c15ecc614f79dced8d0636d",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-peaks.npz": "04b84d0127393c0bca37033352fc9e654410fecf861a2d07159dc61235550969",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-valleys.npz": "2183710ffa7364fdfb321407c8d21837c127841cb6793b0bf40f88c2dcf6a75d",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-descents.npz": "e2b7f952c1e4ce6f81a656d013c83d675c73814a73380b5dc751c1ec0d3fb288",
+      "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03/one_line-recoils.npz": "f9abf9ec634979088f59f73313bc8bb9bf91da86f39583c756447af0627fb18d"
+    }
+  },
+  "validation_adaptation": [
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/canonical_cycle-initial.npz",
+      "output_sha256": "8f81d3fdd6a914bec5ddc04b97590b5e4e2ec4b0ca2a740adce532956ec01a59",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_canonical_cycle_peaks_initial_validation.npz",
+      "source_sha256": "f8275059f2a6ac72c2298ad0707b7502e7e9cc688089c23f780856e14f066fcc",
+      "checkpoint_sha256": "15cba1041d3b10d003a6390081695e871a632329d759ed7d858c25a979012a63",
+      "actions": [
+        1,
+        2
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-initial.npz",
+      "output_sha256": "369f412732a56e0e0e4ecb97b5dceac5a3722ea47cf13ad4e16bf9ebc7c30d68",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_initial_validation.npz",
+      "source_sha256": "2f365821a3be573f4e1cde4ee216f8f2a894a5599eba17aa30d8a67e5d1b498f",
+      "checkpoint_sha256": "15cba1041d3b10d003a6390081695e871a632329d759ed7d858c25a979012a63",
+      "actions": [
+        1,
+        2
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/canonical_cycle-trained.npz",
+      "output_sha256": "c25f40822ca7bb8a0c7259b33eba8d58d3c70cc7843ab120babec3abfca06dda",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_canonical_cycle_valleys_trained_validation.npz",
+      "source_sha256": "7352636776d3ad273e5594c9c549e09888f5038fc29a3ec54252ae2e23035e62",
+      "checkpoint_sha256": "8afbc641fb388209b87bef30b4e3a3c410727a5bdaab6363956d32b715125222",
+      "actions": [
+        1,
+        2
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-trained.npz",
+      "output_sha256": "1cea0b19747aa44668f336730b585cfffb0f95a9e58a16b4009792810df4a6cd",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_validation.npz",
+      "source_sha256": "b4762f3159285f3e2c2c5aedbf9d4c8ea07d81814068c94ff1af2fc9c8239526",
+      "checkpoint_sha256": "21e7de89564e1a64bcf2b17a3c1be061a2e42e0a8e2ac1be599613bd4d90da48",
+      "actions": [
+        1,
+        2
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-descents.npz",
+      "output_sha256": "8d02074eed3ffcea5b1b8387ec6075f19ca5eff6b4bd94bd42877c44f082e473",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_descents_trained_validation.npz",
+      "source_sha256": "b8e6271647c08befd3db466ee959edb4f3728fb5316070abbf60ce100ddaf815",
+      "checkpoint_sha256": "ddff58d9246239b1738b6e4adc126b428a5844de8484dec63b98bd733b97ab2d",
+      "actions": [
+        1
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    },
+    {
+      "output_path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-recoils.npz",
+      "output_sha256": "e3847438321bcf875ea7e59adc9774272b7cf94aa0d604b0a1e937d07a8eab50",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_recoils_trained_validation.npz",
+      "source_sha256": "f4a9b95977dc32ce6f6b4b1230c4aa50e3ebea07a6451bd848755121e69e4fbd",
+      "checkpoint_sha256": "da53b270b35bb9497626098aa3dabe0262d1cbd41ab7838dacfd9dc32dcb2c46",
+      "actions": [
+        1
+      ],
+      "validation_rows": 5376,
+      "dtype": "float32",
+      "original_order_verified": true,
+      "raw_states_no_additional_normalization": true
+    }
+  ],
+  "previous_probe_baseline": {
+    "direct_own_prior_baseline_checks": 36,
+    "maximum_absolute_difference": 0.0,
+    "all21lengths": true
+  },
+  "result_sha256": {
+    "other_specialists_by_length.csv": "5d6f9ce77e6711aca1237ff97497f0b6bceebbdd88679712c366827b6ecc822b",
+    "summary.csv": "bd72256eeb5133fec8f8973943baac3fd21723db246f732d6633189f27467e9d",
+    "alignment_fit_audit.csv": "cc390b87698982a30dc83dfc7d4cbd745472c2287eed0a6e93b820b29179389b",
+    "other_specialists.csv": "93b00960084fc1f62c9bdf4b5cd741e48f87592d4a9b68bb8f78e014d21336e2",
+    "by_length.csv": "251dea00d2df434c601e9e1b7946c8c5c25845c3aa8846201831797bc138e213"
+  },
+  "map_audits": {
+    "alignment": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit03/alignment.json",
+      "sha256": "e8ef536ff903b5de2178a35aff5606f8db41da928630adc7e644b73c2e03a2e9"
+    },
+    "other_specialists": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/map_audits/unit03/other_specialists.json",
+      "sha256": "ae2b674f8f4c3bbd5bede2cc85f51c663e7e3fe7d169f023eaff130da8668e5c"
+    }
+  },
+  "no_neural_forward": true,
+  "no_base_training": true,
+  "all21lengths": true
+}

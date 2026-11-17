@@ -1,0 +1,8 @@
+{
+  "helper_sha256": "a7a7cd3a474ffa85d8481b79a478dc4d5fdb60453413d436194a06c27501add3",
+  "created_utc": "2026-11-10T08:30:41.359107+00:00",
+  "before_first_actual_score_read": true,
+  "best_map": "max(means-only,identity,inverse,EACH eight shuffle)",
+  "best_all": "B_map + step0 alignedC +oracle-count +one-line direct/aligned descents/recoils",
+  "within_model_probes_excluded": true
+}

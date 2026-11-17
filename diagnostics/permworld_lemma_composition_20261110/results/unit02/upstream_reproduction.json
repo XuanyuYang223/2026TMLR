@@ -1,0 +1,5046 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "length": 10,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.9718680245535715,
+      "previous": 0.9718680245535715,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.9850574712643679,
+      "previous": 0.9850574712643679,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.718305896577381,
+      "previous": 0.718305896577381,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.7334051724137931,
+      "previous": 0.7334051724137931,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.49167247953869053,
+      "previous": 0.49167247953869053,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.46691810344827583,
+      "previous": 0.46691810344827583,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.45741141183035716,
+      "previous": 0.45741141183035716,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.4130747126436782,
+      "previous": 0.4130747126436782,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.3121070498511905,
+      "previous": 0.3121070498511905,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.27733477011494245,
+      "previous": 0.27733477011494245,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5365652901785714,
+      "previous": 0.5365652901785714,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5510416666666668,
+      "previous": 0.5510416666666668,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.49709937686011907,
+      "previous": 0.49709937686011907,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5308548850574712,
+      "previous": 0.5308548850574712,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5588425409226191,
+      "previous": 0.5588425409226191,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5382902298850575,
+      "previous": 0.5382902298850575,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.515469215029762,
+      "previous": 0.515469215029762,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5045617816091955,
+      "previous": 0.5045617816091955,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5353922526041667,
+      "previous": 0.5353922526041667,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.557794540229885,
+      "previous": 0.557794540229885,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.42821103050595233,
+      "previous": 0.42821103050595233,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.4344468390804598,
+      "previous": 0.4344468390804598,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5625116257440477,
+      "previous": 0.5625116257440477,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5884698275862069,
+      "previous": 0.5884698275862069,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5962053571428572,
+      "previous": 0.5962053571428572,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.6487068965517243,
+      "previous": 0.6487068965517243,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.49114699590773814,
+      "previous": 0.49114699590773814,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.47546695402298844,
+      "previous": 0.47546695402298844,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.963569568452381,
+      "previous": 0.963569568452381,
+      "error": 0.0
+    },
+    {
+      "length": 10,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.9702586206896552,
+      "previous": 0.9702586206896552,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.9532955109126984,
+      "previous": 0.9532955109126984,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.9497665732959849,
+      "previous": 0.9497665732959849,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.7254448784722222,
+      "previous": 0.7254448784722222,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.7385776532835356,
+      "previous": 0.7385776532835356,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5059802827380953,
+      "previous": 0.5059802827380953,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5369125427948956,
+      "previous": 0.5369125427948956,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.4685298859126984,
+      "previous": 0.4685298859126984,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.4923825085589792,
+      "previous": 0.4923825085589792,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.30690569196428574,
+      "previous": 0.30690569196428574,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.2799097416744476,
+      "previous": 0.2799097416744476,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5250147259424602,
+      "previous": 0.5250147259424602,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.4621070650482415,
+      "previous": 0.4621070650482415,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.46294022817460323,
+      "previous": 0.46294022817460323,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5223934018051666,
+      "previous": 0.5223934018051666,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.523717292906746,
+      "previous": 0.523717292906746,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.4701914098972922,
+      "previous": 0.4701914098972922,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.498060050843254,
+      "previous": 0.498060050843254,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5096949891067538,
+      "previous": 0.5096949891067538,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.4867947048611111,
+      "previous": 0.4867947048611111,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.511258948023654,
+      "previous": 0.511258948023654,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4532955109126984,
+      "previous": 0.4532955109126984,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.47521786492374735,
+      "previous": 0.47521786492374735,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.602308097718254,
+      "previous": 0.602308097718254,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.6483348895113599,
+      "previous": 0.6483348895113599,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5641655815972222,
+      "previous": 0.5641655815972222,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.5541627762215998,
+      "previous": 0.5541627762215998,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.4361444382440476,
+      "previous": 0.4361444382440476,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.3754512916277622,
+      "previous": 0.3754512916277622,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.9268050905257937,
+      "previous": 0.9268050905257937,
+      "error": 0.0
+    },
+    {
+      "length": 11,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.9280656707127295,
+      "previous": 0.9280656707127295,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.9220618644593255,
+      "previous": 0.9220618644593255,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.943095238095238,
+      "previous": 0.943095238095238,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.7161483909970238,
+      "previous": 0.7161483909970238,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.7223214285714286,
+      "previous": 0.7223214285714286,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.48469277033730157,
+      "previous": 0.48469277033730157,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.48303571428571423,
+      "previous": 0.48303571428571423,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.4735103546626984,
+      "previous": 0.4735103546626984,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5127678571428572,
+      "previous": 0.5127678571428572,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.376502433655754,
+      "previous": 0.376502433655754,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.3134523809523809,
+      "previous": 0.3134523809523809,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.4979616195436508,
+      "previous": 0.4979616195436508,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.48485119047619046,
+      "previous": 0.48485119047619046,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.48725469680059524,
+      "previous": 0.48725469680059524,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.47014880952380955,
+      "previous": 0.47014880952380955,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5406477864583333,
+      "previous": 0.5406477864583333,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.4749107142857143,
+      "previous": 0.4749107142857143,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5275515407986111,
+      "previous": 0.5275515407986111,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5188095238095238,
+      "previous": 0.5188095238095238,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5470049758184523,
+      "previous": 0.5470049758184523,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5256845238095238,
+      "previous": 0.5256845238095238,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.513603748139881,
+      "previous": 0.513603748139881,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.5013988095238094,
+      "previous": 0.5013988095238094,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5585460844494048,
+      "previous": 0.5585460844494048,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5679166666666666,
+      "previous": 0.5679166666666666,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5348810298859127,
+      "previous": 0.5348810298859127,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.5213690476190476,
+      "previous": 0.5213690476190476,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.47692708333333333,
+      "previous": 0.47692708333333333,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.4297916666666666,
+      "previous": 0.4297916666666666,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.8981217447916667,
+      "previous": 0.8981217447916667,
+      "error": 0.0
+    },
+    {
+      "length": 12,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.9128571428571429,
+      "previous": 0.9128571428571429,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.9143748449900794,
+      "previous": 0.9143748449900794,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.9259867009867007,
+      "previous": 0.9259867009867007,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.697784908234127,
+      "previous": 0.697784908234127,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6912162162162162,
+      "previous": 0.6912162162162162,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5015307229662699,
+      "previous": 0.5015307229662699,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.544026169026169,
+      "previous": 0.544026169026169,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5064863901289682,
+      "previous": 0.5064863901289682,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5415272415272415,
+      "previous": 0.5415272415272415,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.36439964657738094,
+      "previous": 0.36439964657738094,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.3229836979836979,
+      "previous": 0.3229836979836979,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.47630518353174606,
+      "previous": 0.47630518353174606,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.45382882882882886,
+      "previous": 0.45382882882882886,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.4727887834821428,
+      "previous": 0.4727887834821428,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.4274667524667524,
+      "previous": 0.4274667524667524,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5120822482638889,
+      "previous": 0.5120822482638889,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.4795474045474046,
+      "previous": 0.4795474045474046,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5077450706845238,
+      "previous": 0.5077450706845238,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.44443371943371957,
+      "previous": 0.44443371943371957,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.4857445126488095,
+      "previous": 0.4857445126488095,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.47877520377520366,
+      "previous": 0.47877520377520366,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4960534474206349,
+      "previous": 0.4960534474206349,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.48642213642213644,
+      "previous": 0.48642213642213644,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5334061879960318,
+      "previous": 0.5334061879960318,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.499056199056199,
+      "previous": 0.499056199056199,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5312073722718254,
+      "previous": 0.5312073722718254,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.5428249678249679,
+      "previous": 0.5428249678249679,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.46896933903769844,
+      "previous": 0.46896933903769844,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.36784641784641786,
+      "previous": 0.36784641784641786,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.8607483878968254,
+      "previous": 0.8607483878968254,
+      "error": 0.0
+    },
+    {
+      "length": 13,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.8706563706563705,
+      "previous": 0.8706563706563705,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.8917718150628307,
+      "previous": 0.8917718150628307,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.9178015736649758,
+      "previous": 0.9178015736649758,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6956855572089946,
+      "previous": 0.6956855572089946,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.7190101183657885,
+      "previous": 0.7190101183657885,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.48876023065476193,
+      "previous": 0.48876023065476193,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5053953253695522,
+      "previous": 0.5053953253695522,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5158009362599206,
+      "previous": 0.5158009362599206,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5018354879179621,
+      "previous": 0.5018354879179621,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.3859589430390211,
+      "previous": 0.3859589430390211,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.3624812496590847,
+      "previous": 0.3624812496590847,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.47936088117972886,
+      "previous": 0.47936088117972886,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.47160107456499206,
+      "previous": 0.47160107456499206,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5040026790881282,
+      "previous": 0.5040026790881282,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5292191676212294,
+      "previous": 0.5292191676212294,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5246552321015212,
+      "previous": 0.5246552321015212,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5036747259041073,
+      "previous": 0.5036747259041073,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5075834728422619,
+      "previous": 0.5075834728422619,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5204266213931162,
+      "previous": 0.5204266213931162,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.551467685598545,
+      "previous": 0.551467685598545,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5801297523591338,
+      "previous": 0.5801297523591338,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4749181676793981,
+      "previous": 0.4749181676793981,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.4958565155730104,
+      "previous": 0.4958565155730104,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5664052166005291,
+      "previous": 0.5664052166005291,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.565322437680685,
+      "previous": 0.565322437680685,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5210246414103835,
+      "previous": 0.5210246414103835,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.533557655593738,
+      "previous": 0.533557655593738,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.49755523520171957,
+      "previous": 0.49755523520171957,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.47836483390607104,
+      "previous": 0.47836483390607104,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.8435661840691138,
+      "previous": 0.8435661840691138,
+      "error": 0.0
+    },
+    {
+      "length": 14,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.8594876725031365,
+      "previous": 0.8594876725031365,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.8561546688988095,
+      "previous": 0.8561546688988095,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.8742252456538172,
+      "previous": 0.8742252456538172,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6724948283053752,
+      "previous": 0.6724948283053752,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6890731292517006,
+      "previous": 0.6890731292517006,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.4810429208378427,
+      "previous": 0.4810429208378427,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5080215419501135,
+      "previous": 0.5080215419501135,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.47874250315656564,
+      "previous": 0.47874250315656564,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.4890447845804988,
+      "previous": 0.4890447845804988,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4088380315431096,
+      "previous": 0.4088380315431096,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.41609504913076334,
+      "previous": 0.41609504913076334,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5311565008342352,
+      "previous": 0.5311565008342352,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5492630385487528,
+      "previous": 0.5492630385487528,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5323349285263348,
+      "previous": 0.5323349285263348,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.522859977324263,
+      "previous": 0.522859977324263,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5282163149350649,
+      "previous": 0.5282163149350649,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5386385109599393,
+      "previous": 0.5386385109599393,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.4949085582386364,
+      "previous": 0.4949085582386364,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5036375661375662,
+      "previous": 0.5036375661375662,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5135923971861471,
+      "previous": 0.5135923971861471,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5158871882086168,
+      "previous": 0.5158871882086168,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4897459528318903,
+      "previous": 0.4897459528318903,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.5034863945578232,
+      "previous": 0.5034863945578232,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5142456230835137,
+      "previous": 0.5142456230835137,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5231386999244142,
+      "previous": 0.5231386999244142,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.507772549715909,
+      "previous": 0.507772549715909,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.49204459561602426,
+      "previous": 0.49204459561602426,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.4822348062094156,
+      "previous": 0.4822348062094156,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.4880385487528344,
+      "previous": 0.4880385487528344,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.8151758235254328,
+      "previous": 0.8151758235254328,
+      "error": 0.0
+    },
+    {
+      "length": 15,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.8025651927437643,
+      "previous": 0.8025651927437643,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.799601845946712,
+      "previous": 0.799601845946712,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.7968749999999999,
+      "previous": 0.7968749999999999,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6592593615926484,
+      "previous": 0.6592593615926484,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6841787439613526,
+      "previous": 0.6841787439613526,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.4920568286500206,
+      "previous": 0.4920568286500206,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5116545893719805,
+      "previous": 0.5116545893719805,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.4899518291573258,
+      "previous": 0.4899518291573258,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5002113526570049,
+      "previous": 0.5002113526570049,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4130789620535714,
+      "previous": 0.4130789620535714,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.3711956521739131,
+      "previous": 0.3711956521739131,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.48566419435908836,
+      "previous": 0.48566419435908836,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.49604468599033813,
+      "previous": 0.49604468599033813,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.4908783657283936,
+      "previous": 0.4908783657283936,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.4842542270531401,
+      "previous": 0.4842542270531401,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5000428994988146,
+      "previous": 0.5000428994988146,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.4782306763285024,
+      "previous": 0.4782306763285024,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5129167904732915,
+      "previous": 0.5129167904732915,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5096014492753624,
+      "previous": 0.5096014492753624,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.48573825689129824,
+      "previous": 0.48573825689129824,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5505283816425122,
+      "previous": 0.5505283816425122,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4854663101035869,
+      "previous": 0.4854663101035869,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.4808272946859903,
+      "previous": 0.4808272946859903,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.4977163868033008,
+      "previous": 0.4977163868033008,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.4692783816425121,
+      "previous": 0.4692783816425121,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.49990787478580445,
+      "previous": 0.49990787478580445,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.4685839371980677,
+      "previous": 0.4685839371980677,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.48609963131796274,
+      "previous": 0.48609963131796274,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.42949879227053145,
+      "previous": 0.42949879227053145,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.7767605805342971,
+      "previous": 0.7767605805342971,
+      "error": 0.0
+    },
+    {
+      "length": 16,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.7833635265700485,
+      "previous": 0.7833635265700485,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.7703055249148999,
+      "previous": 0.7703055249148999,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.7711700336700337,
+      "previous": 0.7711700336700337,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.7022520679551929,
+      "previous": 0.7022520679551929,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.7120288108356291,
+      "previous": 0.7120288108356291,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.511313151908855,
+      "previous": 0.511313151908855,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5422803522235341,
+      "previous": 0.5422803522235341,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.49902837324712324,
+      "previous": 0.49902837324712324,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.4651635128339674,
+      "previous": 0.4651635128339674,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4006819576546139,
+      "previous": 0.4006819576546139,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4410446455901001,
+      "previous": 0.4410446455901001,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.48916759997814685,
+      "previous": 0.48916759997814685,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.4707862171498535,
+      "previous": 0.4707862171498535,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5076377138486514,
+      "previous": 0.5076377138486514,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.4862507925576107,
+      "previous": 0.4862507925576107,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5067117185476561,
+      "previous": 0.5067117185476561,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5032398115352661,
+      "previous": 0.5032398115352661,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.4824916081459051,
+      "previous": 0.4824916081459051,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5044310529537802,
+      "previous": 0.5044310529537802,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.48527190655120345,
+      "previous": 0.48527190655120345,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5456720615243342,
+      "previous": 0.5456720615243342,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4617724253466441,
+      "previous": 0.4617724253466441,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.46059198587607675,
+      "previous": 0.46059198587607675,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5018070792777825,
+      "previous": 0.5018070792777825,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.49705239625694175,
+      "previous": 0.49705239625694175,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.4707115500963157,
+      "previous": 0.4707115500963157,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.4858450030609122,
+      "previous": 0.4858450030609122,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.46998610475172975,
+      "previous": 0.46998610475172975,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.4640900892037255,
+      "previous": 0.4640900892037255,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.7519180656583,
+      "previous": 0.7519180656583,
+      "error": 0.0
+    },
+    {
+      "length": 17,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.751148224670952,
+      "previous": 0.751148224670952,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.7364332790419217,
+      "previous": 0.7364332790419217,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.7359514260249554,
+      "previous": 0.7359514260249554,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6446085862650803,
+      "previous": 0.6446085862650803,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6391989750445632,
+      "previous": 0.6391989750445632,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5117569875870658,
+      "previous": 0.5117569875870658,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5256573083778965,
+      "previous": 0.5256573083778965,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.4991950771125576,
+      "previous": 0.4991950771125576,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5143716577540107,
+      "previous": 0.5143716577540107,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4379673820103508,
+      "previous": 0.4379673820103508,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4376169786096256,
+      "previous": 0.4376169786096256,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.520438644065353,
+      "previous": 0.520438644065353,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5463290998217467,
+      "previous": 0.5463290998217467,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5152888242670958,
+      "previous": 0.5152888242670958,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5479389483065954,
+      "previous": 0.5479389483065954,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5083945066977293,
+      "previous": 0.5083945066977293,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.49513703208556153,
+      "previous": 0.49513703208556153,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.4823222770610466,
+      "previous": 0.4823222770610466,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5029244652406417,
+      "previous": 0.5029244652406417,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.489014847999223,
+      "previous": 0.489014847999223,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5001504010695187,
+      "previous": 0.5001504010695187,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4770195116569629,
+      "previous": 0.4770195116569629,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.4703431372549019,
+      "previous": 0.4703431372549019,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.4971479983503909,
+      "previous": 0.4971479983503909,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.4865196078431372,
+      "previous": 0.4865196078431372,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.4867831001192818,
+      "previous": 0.4867831001192818,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.5119318181818182,
+      "previous": 0.5119318181818182,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.5097861482321931,
+      "previous": 0.5097861482321931,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.49765485739750437,
+      "previous": 0.49765485739750437,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.7283423133398719,
+      "previous": 0.7283423133398719,
+      "error": 0.0
+    },
+    {
+      "length": 18,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.7251949643493762,
+      "previous": 0.7251949643493762,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.7306232883869603,
+      "previous": 0.7306232883869603,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.7505867396492395,
+      "previous": 0.7505867396492395,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6309370100385725,
+      "previous": 0.6309370100385725,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.665022304084804,
+      "previous": 0.665022304084804,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5157588180049117,
+      "previous": 0.5157588180049117,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5255784146409147,
+      "previous": 0.5255784146409147,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5123187576312577,
+      "previous": 0.5123187576312577,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.530392871017871,
+      "previous": 0.530392871017871,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.45972188076680265,
+      "previous": 0.45972188076680265,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4411328255078255,
+      "previous": 0.4411328255078255,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5066112327342795,
+      "previous": 0.5066112327342795,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5274694055944056,
+      "previous": 0.5274694055944056,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.49045121545121545,
+      "previous": 0.49045121545121545,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.4800009018759018,
+      "previous": 0.4800009018759018,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5153114030067154,
+      "previous": 0.5153114030067154,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5212927697302697,
+      "previous": 0.5212927697302697,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5207909007225414,
+      "previous": 0.5207909007225414,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5106995435120435,
+      "previous": 0.5106995435120435,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.4897912580041486,
+      "previous": 0.4897912580041486,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.49434385059385066,
+      "previous": 0.49434385059385066,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.48609053164717225,
+      "previous": 0.48609053164717225,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.49011127761127765,
+      "previous": 0.49011127761127765,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.4995037406170219,
+      "previous": 0.4995037406170219,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5196345321345321,
+      "previous": 0.5196345321345321,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5056285673961456,
+      "previous": 0.5056285673961456,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.535131882006882,
+      "previous": 0.535131882006882,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.48803009598908037,
+      "previous": 0.48803009598908037,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.49040438727938723,
+      "previous": 0.49040438727938723,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6909047495473277,
+      "previous": 0.6909047495473277,
+      "error": 0.0
+    },
+    {
+      "length": 19,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.686540195915196,
+      "previous": 0.686540195915196,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.6975604527850622,
+      "previous": 0.6975604527850622,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.7312409473994839,
+      "previous": 0.7312409473994839,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6103192808108173,
+      "previous": 0.6103192808108173,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6187461589900614,
+      "previous": 0.6187461589900614,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5029434029271269,
+      "previous": 0.5029434029271269,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5037220909172129,
+      "previous": 0.5037220909172129,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5059208496220216,
+      "previous": 0.5059208496220216,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.4624293389537292,
+      "previous": 0.4624293389537292,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4591634421712547,
+      "previous": 0.4591634421712547,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.47603903549025495,
+      "previous": 0.47603903549025495,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5235441436938832,
+      "previous": 0.5235441436938832,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5356005782835052,
+      "previous": 0.5356005782835052,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5009510388579399,
+      "previous": 0.5009510388579399,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5268372548860354,
+      "previous": 0.5268372548860354,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5145600761242037,
+      "previous": 0.5145600761242037,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5368575191745923,
+      "previous": 0.5368575191745923,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5159865603387739,
+      "previous": 0.5159865603387739,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5428023534730853,
+      "previous": 0.5428023534730853,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.4924896573334073,
+      "previous": 0.4924896573334073,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5266253394302174,
+      "previous": 0.5266253394302174,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.48058424323072757,
+      "previous": 0.48058424323072757,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.5101002994295677,
+      "previous": 0.5101002994295677,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.4969623854877761,
+      "previous": 0.4969623854877761,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5044036248304541,
+      "previous": 0.5044036248304541,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.488900545948072,
+      "previous": 0.488900545948072,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.5395859560493707,
+      "previous": 0.5395859560493707,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.463596740956767,
+      "previous": 0.463596740956767,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.5147787510592389,
+      "previous": 0.5147787510592389,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.7172059012553804,
+      "previous": 0.7172059012553804,
+      "error": 0.0
+    },
+    {
+      "length": 20,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.684536804658756,
+      "previous": 0.684536804658756,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.7131033246267622,
+      "previous": 0.7131033246267622,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.7022633210944899,
+      "previous": 0.7022633210944899,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6604454681603118,
+      "previous": 0.6604454681603118,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6577878831125584,
+      "previous": 0.6577878831125584,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5151486480099761,
+      "previous": 0.5151486480099761,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5205983410528866,
+      "previous": 0.5205983410528866,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5226550630359225,
+      "previous": 0.5226550630359225,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.515906820452275,
+      "previous": 0.515906820452275,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4442085800484238,
+      "previous": 0.4442085800484238,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4388214599253559,
+      "previous": 0.4388214599253559,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.49826284284292094,
+      "previous": 0.49826284284292094,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5159245516388373,
+      "previous": 0.5159245516388373,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5195327513198607,
+      "previous": 0.5195327513198607,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5317054157963249,
+      "previous": 0.5317054157963249,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.502822860733017,
+      "previous": 0.502822860733017,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.4851028841288581,
+      "previous": 0.4851028841288581,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5387347082171301,
+      "previous": 0.5387347082171301,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5133287707963032,
+      "previous": 0.5133287707963032,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.49745961503774005,
+      "previous": 0.49745961503774005,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.4884682417149948,
+      "previous": 0.4884682417149948,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4716175046741453,
+      "previous": 0.4716175046741453,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.470085434046473,
+      "previous": 0.470085434046473,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.4801091215641997,
+      "previous": 0.4801091215641997,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.4493203765931039,
+      "previous": 0.4493203765931039,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5015154550310801,
+      "previous": 0.5015154550310801,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.5028326651703274,
+      "previous": 0.5028326651703274,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.49243951035943223,
+      "previous": 0.49243951035943223,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.4776011866920958,
+      "previous": 0.4776011866920958,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6830598654817406,
+      "previous": 0.6830598654817406,
+      "error": 0.0
+    },
+    {
+      "length": 21,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.6809250273535987,
+      "previous": 0.6809250273535987,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.6828220936778067,
+      "previous": 0.6828220936778067,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.6678388914326415,
+      "previous": 0.6678388914326415,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6405235705321154,
+      "previous": 0.6405235705321154,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6239592872405372,
+      "previous": 0.6239592872405372,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5027620182551823,
+      "previous": 0.5027620182551823,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.48618322649572654,
+      "previous": 0.48618322649572654,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5082232555584607,
+      "previous": 0.5082232555584607,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5191935032560033,
+      "previous": 0.5191935032560033,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4401500244005127,
+      "previous": 0.4401500244005127,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.43963700651200655,
+      "previous": 0.43963700651200655,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5216252085588022,
+      "previous": 0.5216252085588022,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5176852487789988,
+      "previous": 0.5176852487789988,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5007511181852002,
+      "previous": 0.5007511181852002,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5096357982295482,
+      "previous": 0.5096357982295482,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5337859936016673,
+      "previous": 0.5337859936016673,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5135678673178674,
+      "previous": 0.5135678673178674,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5247742707325227,
+      "previous": 0.5247742707325227,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5174128764753765,
+      "previous": 0.5174128764753765,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.4890325630315865,
+      "previous": 0.4890325630315865,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.4940488273300773,
+      "previous": 0.4940488273300773,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.47477764423076924,
+      "previous": 0.47477764423076924,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.46970479751729755,
+      "previous": 0.46970479751729755,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5058525458916083,
+      "previous": 0.5058525458916083,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.47807953042328044,
+      "previous": 0.47807953042328044,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5081864637370008,
+      "previous": 0.5081864637370008,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.4981923458485958,
+      "previous": 0.4981923458485958,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.4753791426130293,
+      "previous": 0.4753791426130293,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.43719544922669923,
+      "previous": 0.43719544922669923,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6834835356429594,
+      "previous": 0.6834835356429594,
+      "error": 0.0
+    },
+    {
+      "length": 22,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.7053020706145706,
+      "previous": 0.7053020706145706,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.650326807117199,
+      "previous": 0.650326807117199,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.6689833039442883,
+      "previous": 0.6689833039442883,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.5829390796616456,
+      "previous": 0.5829390796616456,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.61902259194276,
+      "previous": 0.61902259194276,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5088355058418084,
+      "previous": 0.5088355058418084,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5280100782681815,
+      "previous": 0.5280100782681815,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.4997392215114363,
+      "previous": 0.4997392215114363,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.48436571698276387,
+      "previous": 0.48436571698276387,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4685664978479858,
+      "previous": 0.4685664978479858,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.49148406737542394,
+      "previous": 0.49148406737542394,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5101372633115018,
+      "previous": 0.5101372633115018,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5155142533203758,
+      "previous": 0.5155142533203758,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.4962929687342108,
+      "previous": 0.4962929687342108,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5094754482989777,
+      "previous": 0.5094754482989777,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5004269152694343,
+      "previous": 0.5004269152694343,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.48882054653363166,
+      "previous": 0.48882054653363166,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.496599269389489,
+      "previous": 0.496599269389489,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.4858182906862379,
+      "previous": 0.4858182906862379,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5070539868606849,
+      "previous": 0.5070539868606849,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5107632088244333,
+      "previous": 0.5107632088244333,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.49710599796172106,
+      "previous": 0.49710599796172106,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.4757390111111599,
+      "previous": 0.4757390111111599,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.4862605966835549,
+      "previous": 0.4862605966835549,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.47522048746238416,
+      "previous": 0.47522048746238416,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5023775087610681,
+      "previous": 0.5023775087610681,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.49668709608385486,
+      "previous": 0.49668709608385486,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.49549511341298363,
+      "previous": 0.49549511341298363,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.48918154685561666,
+      "previous": 0.48918154685561666,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6619273515544524,
+      "previous": 0.6619273515544524,
+      "error": 0.0
+    },
+    {
+      "length": 23,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.679585676761547,
+      "previous": 0.679585676761547,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.6633126219738696,
+      "previous": 0.6633126219738696,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.6958152848033798,
+      "previous": 0.6958152848033798,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6244624908256572,
+      "previous": 0.6244624908256572,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6645336695931933,
+      "previous": 0.6645336695931933,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5121787112531311,
+      "previous": 0.5121787112531311,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5042999108475299,
+      "previous": 0.5042999108475299,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.48998148964112886,
+      "previous": 0.48998148964112886,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.46955297788631123,
+      "previous": 0.46955297788631123,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.44856699904020103,
+      "previous": 0.44856699904020103,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.45902862569529246,
+      "previous": 0.45902862569529246,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5152672199188169,
+      "previous": 0.5152672199188169,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.49711562687753164,
+      "previous": 0.49711562687753164,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5111998621814511,
+      "previous": 0.5111998621814511,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5466499990309515,
+      "previous": 0.5466499990309515,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5126804866077039,
+      "previous": 0.5126804866077039,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5288918202608678,
+      "previous": 0.5288918202608678,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5294291244141887,
+      "previous": 0.5294291244141887,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5344053433339148,
+      "previous": 0.5344053433339148,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.529509932979602,
+      "previous": 0.529509932979602,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5623449522259047,
+      "previous": 0.5623449522259047,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.49034260138350216,
+      "previous": 0.49034260138350216,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.49228346609298984,
+      "previous": 0.49228346609298984,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5137621831835699,
+      "previous": 0.5137621831835699,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.48333115297401014,
+      "previous": 0.48333115297401014,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.49670953304699283,
+      "previous": 0.49670953304699283,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.5174221611721612,
+      "previous": 0.5174221611721612,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.5004327678837961,
+      "previous": 0.5004327678837961,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.5131352113494972,
+      "previous": 0.5131352113494972,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6658608596934366,
+      "previous": 0.6658608596934366,
+      "error": 0.0
+    },
+    {
+      "length": 24,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.6915926555807508,
+      "previous": 0.6915926555807508,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.6510967172709203,
+      "previous": 0.6510967172709203,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.6587035398954902,
+      "previous": 0.6587035398954902,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6201580109545141,
+      "previous": 0.6201580109545141,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6098612544432978,
+      "previous": 0.6098612544432978,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5070769012169971,
+      "previous": 0.5070769012169971,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5447935606991335,
+      "previous": 0.5447935606991335,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5181499904893867,
+      "previous": 0.5181499904893867,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5302981719003391,
+      "previous": 0.5302981719003391,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4400250874775594,
+      "previous": 0.4400250874775594,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4439935623372156,
+      "previous": 0.4439935623372156,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5139240315967895,
+      "previous": 0.5139240315967895,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.4942013940078956,
+      "previous": 0.4942013940078956,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.517377518002911,
+      "previous": 0.517377518002911,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5406070322865989,
+      "previous": 0.5406070322865989,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5213477685683447,
+      "previous": 0.5213477685683447,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5514623978246269,
+      "previous": 0.5514623978246269,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5363453746821043,
+      "previous": 0.5363453746821043,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5801302684816616,
+      "previous": 0.5801302684816616,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5392091917333639,
+      "previous": 0.5392091917333639,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5569606205055122,
+      "previous": 0.5569606205055122,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.5133765537079047,
+      "previous": 0.5133765537079047,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.5177195439579341,
+      "previous": 0.5177195439579341,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5084943917418097,
+      "previous": 0.5084943917418097,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5074475404196767,
+      "previous": 0.5074475404196767,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5028199990281852,
+      "previous": 0.5028199990281852,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.49732316903369533,
+      "previous": 0.49732316903369533,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.5198502081823271,
+      "previous": 0.5198502081823271,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.5154553049289892,
+      "previous": 0.5154553049289892,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6537672821580403,
+      "previous": 0.6537672821580403,
+      "error": 0.0
+    },
+    {
+      "length": 25,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.6576236342490213,
+      "previous": 0.6576236342490213,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.6510482527942362,
+      "previous": 0.6510482527942362,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.6414455664596086,
+      "previous": 0.6414455664596086,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.603454385365946,
+      "previous": 0.603454385365946,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.5843557841732372,
+      "previous": 0.5843557841732372,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5001799846012711,
+      "previous": 0.5001799846012711,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.518346771579002,
+      "previous": 0.518346771579002,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.4981777409770475,
+      "previous": 0.4981777409770475,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5111662595207837,
+      "previous": 0.5111662595207837,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4531217680400924,
+      "previous": 0.4531217680400924,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4648092763339904,
+      "previous": 0.4648092763339904,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.504578454850203,
+      "previous": 0.504578454850203,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.4972067685098731,
+      "previous": 0.4972067685098731,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.49167958629635167,
+      "previous": 0.49167958629635167,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5102615013983988,
+      "previous": 0.5102615013983988,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.4987778001794168,
+      "previous": 0.4987778001794168,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.505645434292544,
+      "previous": 0.505645434292544,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.535507088140141,
+      "previous": 0.535507088140141,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5484452403646644,
+      "previous": 0.5484452403646644,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5237963973507428,
+      "previous": 0.5237963973507428,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5075773509635336,
+      "previous": 0.5075773509635336,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.48423752427234457,
+      "previous": 0.48423752427234457,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.4915132777648096,
+      "previous": 0.4915132777648096,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5122348687880416,
+      "previous": 0.5122348687880416,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5172415069422832,
+      "previous": 0.5172415069422832,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.4927078414773784,
+      "previous": 0.4927078414773784,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.48563108692551094,
+      "previous": 0.48563108692551094,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.5175934108020025,
+      "previous": 0.5175934108020025,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.49614280608076566,
+      "previous": 0.49614280608076566,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6296008457406101,
+      "previous": 0.6296008457406101,
+      "error": 0.0
+    },
+    {
+      "length": 26,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.6468941010045993,
+      "previous": 0.6468941010045993,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.6244171671887302,
+      "previous": 0.6244171671887302,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.6195293142132473,
+      "previous": 0.6195293142132473,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.6045153983772344,
+      "previous": 0.6045153983772344,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.6056704223978148,
+      "previous": 0.6056704223978148,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5051497404911292,
+      "previous": 0.5051497404911292,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5035520924787825,
+      "previous": 0.5035520924787825,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5000595534513244,
+      "previous": 0.5000595534513244,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.5055444068174533,
+      "previous": 0.5055444068174533,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4451098808238599,
+      "previous": 0.4451098808238599,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4697303050573463,
+      "previous": 0.4697303050573463,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5057171751513585,
+      "previous": 0.5057171751513585,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.4872289114650835,
+      "previous": 0.4872289114650835,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.4963506729916003,
+      "previous": 0.4963506729916003,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.5079397828783255,
+      "previous": 0.5079397828783255,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.49743198162736063,
+      "previous": 0.49743198162736063,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5224430369162589,
+      "previous": 0.5224430369162589,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.53592559036251,
+      "previous": 0.53592559036251,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5728003539724348,
+      "previous": 0.5728003539724348,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5472340800717197,
+      "previous": 0.5472340800717197,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.579551855568098,
+      "previous": 0.579551855568098,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.48158492115523366,
+      "previous": 0.48158492115523366,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.5113026952074362,
+      "previous": 0.5113026952074362,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5233695436662311,
+      "previous": 0.5233695436662311,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5398271945594159,
+      "previous": 0.5398271945594159,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.4745434813932359,
+      "previous": 0.4745434813932359,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.4901713421687083,
+      "previous": 0.4901713421687083,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.49065380195006014,
+      "previous": 0.49065380195006014,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.5374849143637555,
+      "previous": 0.5374849143637555,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6228733500925808,
+      "previous": 0.6228733500925808,
+      "error": 0.0
+    },
+    {
+      "length": 27,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.616723525230988,
+      "previous": 0.616723525230988,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.624473327290695,
+      "previous": 0.624473327290695,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.6353369832781597,
+      "previous": 0.6353369832781597,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.5787158584541896,
+      "previous": 0.5787158584541896,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.5918148535331198,
+      "previous": 0.5918148535331198,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.4906682075429354,
+      "previous": 0.4906682075429354,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.4723844593658836,
+      "previous": 0.4723844593658836,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.4983321366091916,
+      "previous": 0.4983321366091916,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.4660125916395267,
+      "previous": 0.4660125916395267,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.465032508717203,
+      "previous": 0.465032508717203,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4615775177694682,
+      "previous": 0.4615775177694682,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.4987152894046125,
+      "previous": 0.4987152894046125,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5069552669552669,
+      "previous": 0.5069552669552669,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.4865624957571869,
+      "previous": 0.4865624957571869,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.4865469489231099,
+      "previous": 0.4865469489231099,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.5031195859960311,
+      "previous": 0.5031195859960311,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.5125753499166812,
+      "previous": 0.5125753499166812,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5234241866197984,
+      "previous": 0.5234241866197984,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5446701367947497,
+      "previous": 0.5446701367947497,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5254770396495919,
+      "previous": 0.5254770396495919,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.516737934408213,
+      "previous": 0.516737934408213,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.48796050854832806,
+      "previous": 0.48796050854832806,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.5055332794999978,
+      "previous": 0.5055332794999978,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5053473345967798,
+      "previous": 0.5053473345967798,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5572789594306622,
+      "previous": 0.5572789594306622,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.4893809945604039,
+      "previous": 0.4893809945604039,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.5167137820040297,
+      "previous": 0.5167137820040297,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.5040750346113201,
+      "previous": 0.5040750346113201,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.501822855936633,
+      "previous": 0.501822855936633,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6297529132157872,
+      "previous": 0.6297529132157872,
+      "error": 0.0
+    },
+    {
+      "length": 28,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.6137299911990314,
+      "previous": 0.6137299911990314,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.6125983452556937,
+      "previous": 0.6125983452556937,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.5981447043587409,
+      "previous": 0.5981447043587409,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.5814779159915395,
+      "previous": 0.5814779159915395,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.5721621260240816,
+      "previous": 0.5721621260240816,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.5133193259811291,
+      "previous": 0.5133193259811291,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5193463441579276,
+      "previous": 0.5193463441579276,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.5116329681730647,
+      "previous": 0.5116329681730647,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.533023854266466,
+      "previous": 0.533023854266466,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4588518090999053,
+      "previous": 0.4588518090999053,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4488416942985852,
+      "previous": 0.4488416942985852,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.5070379635942102,
+      "previous": 0.5070379635942102,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5075178528201405,
+      "previous": 0.5075178528201405,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.4912138173169348,
+      "previous": 0.4912138173169348,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.4898363883489911,
+      "previous": 0.4898363883489911,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.48171716180879137,
+      "previous": 0.48171716180879137,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.4696654399063553,
+      "previous": 0.4696654399063553,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.512863186675867,
+      "previous": 0.512863186675867,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.523592192973506,
+      "previous": 0.523592192973506,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5372447594440709,
+      "previous": 0.5372447594440709,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5417070997683625,
+      "previous": 0.5417070997683625,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.4791176173603441,
+      "previous": 0.4791176173603441,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.47988130068023427,
+      "previous": 0.47988130068023427,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5213468873034549,
+      "previous": 0.5213468873034549,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5322322729805061,
+      "previous": 0.5322322729805061,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.4799660303638612,
+      "previous": 0.4799660303638612,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.4682869271358654,
+      "previous": 0.4682869271358654,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.4823377902619298,
+      "previous": 0.4823377902619298,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.44729271164912404,
+      "previous": 0.44729271164912404,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.622490593830097,
+      "previous": 0.622490593830097,
+      "error": 0.0
+    },
+    {
+      "length": 29,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.6251438626078992,
+      "previous": 0.6251438626078992,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "same_model_twice",
+      "support": "eligible",
+      "actual": 0.602981481925619,
+      "previous": 0.602981481925619,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "same_model_twice",
+      "support": "matched",
+      "actual": 0.610611188532209,
+      "previous": 0.610611188532209,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "aligned_complement",
+      "support": "eligible",
+      "actual": 0.5587804875217995,
+      "previous": 0.5587804875217995,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "aligned_complement",
+      "support": "matched",
+      "actual": 0.5456857690466759,
+      "previous": 0.5456857690466759,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "direct_transfer",
+      "support": "eligible",
+      "actual": 0.48500618227668524,
+      "previous": 0.48500618227668524,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "direct_transfer",
+      "support": "matched",
+      "actual": 0.5033978306456377,
+      "previous": 0.5033978306456377,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "means_only",
+      "support": "eligible",
+      "actual": 0.4862619829202527,
+      "previous": 0.4862619829202527,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "means_only",
+      "support": "matched",
+      "actual": 0.509023247069074,
+      "previous": 0.509023247069074,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_identity",
+      "support": "eligible",
+      "actual": 0.4740502751024067,
+      "previous": 0.4740502751024067,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_identity",
+      "support": "matched",
+      "actual": 0.4857925064629786,
+      "previous": 0.4857925064629786,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_inverse",
+      "support": "eligible",
+      "actual": 0.49667819667151003,
+      "previous": 0.49667819667151003,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_inverse",
+      "support": "matched",
+      "actual": 0.5072916205180459,
+      "previous": 0.5072916205180459,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1026",
+      "support": "eligible",
+      "actual": 0.5148869896471953,
+      "previous": 0.5148869896471953,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1026",
+      "support": "matched",
+      "actual": 0.4986942220623851,
+      "previous": 0.4986942220623851,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1027",
+      "support": "eligible",
+      "actual": 0.4984730924105467,
+      "previous": 0.4984730924105467,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1027",
+      "support": "matched",
+      "actual": 0.49213774092837564,
+      "previous": 0.49213774092837564,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1028",
+      "support": "eligible",
+      "actual": 0.5067299182722198,
+      "previous": 0.5067299182722198,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1028",
+      "support": "matched",
+      "actual": 0.5040601936548144,
+      "previous": 0.5040601936548144,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1029",
+      "support": "eligible",
+      "actual": 0.5044634551221139,
+      "previous": 0.5044634551221139,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1029",
+      "support": "matched",
+      "actual": 0.5090307828673734,
+      "previous": 0.5090307828673734,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1030",
+      "support": "eligible",
+      "actual": 0.5057922597637372,
+      "previous": 0.5057922597637372,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1030",
+      "support": "matched",
+      "actual": 0.48175717877085256,
+      "previous": 0.48175717877085256,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1031",
+      "support": "eligible",
+      "actual": 0.5188698922157747,
+      "previous": 0.5188698922157747,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1031",
+      "support": "matched",
+      "actual": 0.5187060828008325,
+      "previous": 0.5187060828008325,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1032",
+      "support": "eligible",
+      "actual": 0.5050608494839476,
+      "previous": 0.5050608494839476,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1032",
+      "support": "matched",
+      "actual": 0.49671540449646095,
+      "previous": 0.49671540449646095,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1033",
+      "support": "eligible",
+      "actual": 0.516600862554804,
+      "previous": 0.516600862554804,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "map_shuffle_1033",
+      "support": "matched",
+      "actual": 0.5128771482454403,
+      "previous": 0.5128771482454403,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "own_probes",
+      "support": "eligible",
+      "actual": 0.6032447425358287,
+      "previous": 0.6032447425358287,
+      "error": 0.0
+    },
+    {
+      "length": 30,
+      "route": "own_probes",
+      "support": "matched",
+      "actual": 0.6140773327096212,
+      "previous": 0.6140773327096212,
+      "error": 0.0
+    }
+  ],
+  "maximum_AUROC_difference": 0.0
+}

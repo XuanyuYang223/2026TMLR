@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "definition": "Exact signed modal displacement: both full argmax outputs numeric AND edited_count-recipient_count==intended_sign. Oracle desired-answer hit remains a different metric.",
+  "per_unit_local_projection": {
+    "archdev001": {
+      "local_pairs": 20160,
+      "exact_signed_delta_hits": 0,
+      "any_numeric_count_changes": 0,
+      "any_argmax_token_changes": 0
+    },
+    "unit02": {
+      "local_pairs": 20160,
+      "exact_signed_delta_hits": 0,
+      "any_numeric_count_changes": 0,
+      "any_argmax_token_changes": 0
+    },
+    "unit03": {
+      "local_pairs": 20160,
+      "exact_signed_delta_hits": 0,
+      "any_numeric_count_changes": 0,
+      "any_argmax_token_changes": 0
+    },
+    "unit04": {
+      "local_pairs": 20160,
+      "exact_signed_delta_hits": 0,
+      "any_numeric_count_changes": 0,
+      "any_argmax_token_changes": 0
+    },
+    "unit05": {
+      "local_pairs": 20160,
+      "exact_signed_delta_hits": 0,
+      "any_numeric_count_changes": 0,
+      "any_argmax_token_changes": 0
+    }
+  },
+  "no_fitting": true,
+  "no_forward": true,
+  "no_new_test_or_condition": true,
+  "frozen_main_helper_unchanged": true
+}

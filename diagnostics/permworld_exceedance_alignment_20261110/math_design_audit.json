@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "Independent mathematical label, once-only coordinate, and local explicit-edge indexing audit. No probe fit, forward, model construction or new test-score evaluation.",
+  "identity": "Forj=pi(i), E_i(pi)=1[pi(i)>i]=1[i<j]=D_j(inversepi). Fixedpoints i=j are negative on both sides.",
+  "source_sha256": {
+    "experiments/permworld_exceedance_alignment_20261110/oracles.py": "f5cb2154567369a1cab9d9d4406a0e39c8c890dcb00b171e7b09714eb79f7ca2",
+    "tests/test_permworld_exceedance_oracles.py": "00a4b1445a04be0664c8d8a5bd8b0c639afba573a07b9f71f321d1388c4689ba"
+  },
+  "tests_passed": 26,
+  "exhaustive_formula_permutations": 46233,
+  "exhaustive_formula_max_n": 8,
+  "exhaustive_token_permutations": 5913,
+  "exhaustive_token_max_n": 7,
+  "encodings": [
+    "one_line",
+    "canonical_cycle"
+  ],
+  "exhaustive_token_layouts": 11826,
+  "explicit_edge_before_after_checks": 80638,
+  "validation": "Formula andcounttotal agreementwithrealregistry; tokenserializationagreementwithrealpinnedpassage; independentstreamparserconfirmsabsentedgebeforeandpresentedgeafter; fullrealencodercasechecks; once-onlygathercounterexample; closures/singletons/inversepairroles/shapeguards.",
+  "one_line": "Numeric pi(i) tokenat0-based4+2*(i-1);beforeisoneearlier,afterisvaluetoken. Sourcei implicit;prefixheaderincluded.",
+  "canonical_cycle": "Internaledgei->j aftersecondendpointj numeric token,beforeprecedingcomma. Closingedge last->minimumaftersemicolon/CYCLE_END,beforelastnumeric. Singletonusesclosingdelimiterandseparatekind,alwaysnegative.",
+  "target_order": "OwninverseDprobeorpriorindexednativejmustgatherj=pi(i)once. Sourceindexedtransferredscoresnotreordered. Scalarpairedtargetedgefeaturesfirstpairedbyj=pi(i),thereafterscoresalreadysourcei.",
+  "causality_limit": "Explicitserializationreveal,notgloballyearliestlogicalentailment. Prefixgrammar/canonicalordering/permutationconstraintsandn/i labelpriorscanalreadyinformbeforestate. Closuresand singletonstatesseparatelyreported.",
+  "map_scope": "OrthogonalmapAFTERrawstates,andtrainedsourceAFTERscalarprobe; useunchangedmap/probe/AFTERmeansforBEFOREasdistribution-shiftcontrol, notabsence-of-informationcausaltest.",
+  "stage2_spec_sha256": "0c0940ba5796bbb5dee677d20ffa6a278a9d8ddf472338c4398c3ed451674213",
+  "no_probe_fitting": true,
+  "no_neural_forward": true,
+  "no_model_construction": true,
+  "no_test_score_evaluation": true
+}

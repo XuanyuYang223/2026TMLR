@@ -1,0 +1,74 @@
+{
+  "status": "passed_read_only_review",
+  "reviewer": "composition_metrics_subagent",
+  "completed_utc": "2026-11-10T12:29:30.480333+00:00",
+  "new_test_score_access": false,
+  "no_new_fits": true,
+  "no_neural_forward": true,
+  "no_source_modifications": true,
+  "reviewed_sha256": {
+    "experiments/permworld_exceedance_alignment_20261110/run.py": "c973cd8c89dc31ca764f5aeb1ff1353f3ac5da64b273efbd5eff5ce1a7af2c65",
+    "experiments/permworld_exceedance_alignment_20261110/shared.py": "b43b487c0c834ded0d3e734c2bcd01b8d760c8d4daeb68f104852b5168beddd2",
+    "experiments/permworld_exceedance_alignment_20261110/oracles.py": "f5cb2154567369a1cab9d9d4406a0e39c8c890dcb00b171e7b09714eb79f7ca2",
+    "experiments/permworld_exceedance_alignment_20261110/rebuild_pv_scores.py": "091ba0e1486e64b65bf8f15afbb6bba3d92eeeb5e5711aaa6bcb5fdc83993487",
+    "diagnostics/permworld_exceedance_alignment_20261110/summarize_results.py": "4eb76c01582486613eda6beacc55adb8de87d79e881e5265a66873df4002ac10",
+    "diagnostics/permworld_exceedance_alignment_20261110/protocol.json": "234726c8b293f1198091fa7d70d7baa8df3ed2843315ce3a336763d3a58b625f"
+  },
+  "blocking_issues": [],
+  "math_checks": {
+    "exhaustive_permutations_checked": 873,
+    "maximum_n": 6,
+    "checks": [
+      "independently computed E_i(pi)=D_pi(i)(invpi)",
+      "batch gather exactly once matches source labels",
+      "synthetic target-to-source center and rotation recover source coordinates"
+    ]
+  },
+  "findings": [
+    {
+      "topic": "source_vs_target_position",
+      "verdict": "consistent",
+      "detail": "Transferred vector-valued source probe outputs already index source i. Only own target and native target priors are gathered once with pi_i-1; code checks label equality and AUROC invariance."
+    },
+    {
+      "topic": "common_test_input_and_centering",
+      "verdict": "consistent",
+      "detail": "Identity/complement/inverse/shuffle map methods all score the same target inverse state and inverse fit-only mean. They do not substitute wrong-transform centering."
+    },
+    {
+      "topic": "initial_target_control",
+      "verdict": "consistent",
+      "detail": "Step0 target and fixed-point target use the same trained source/probe with separately fitted validation-only maps and their own inverse fit means. They are distinct named methods, not an initial-source phase."
+    },
+    {
+      "topic": "split_and_matched",
+      "verdict": "consistent",
+      "detail": "Uses original orbit-separated source fit/dev/eligible rules. Matched sensitivity requires native D(pi) and D(Cpi) counts both equal E(pi); inverse count equality is exact."
+    },
+    {
+      "topic": "count_diagnostics",
+      "verdict": "consistent",
+      "detail": "Cached native-vocabulary predictions scored against own oracle count on identity and target inverse; length-mode derived only from native training task counts; transform column preserves distinct scopes."
+    },
+    {
+      "topic": "priors_and_common_maximum",
+      "verdict": "consistent",
+      "detail": "Unconditional priors validation-fit only; oracle-count priors explicitly separate. Summary common controls exclude both priors, direct, own, step0 and fixed-point, and maximize each scalar control after fixed21 equal-length mean."
+    },
+    {
+      "topic": "saved_PV_rebuild",
+      "verdict": "consistent",
+      "detail": "Reuses saved rotations byte-for-byte and unchanged source/own fitters; checks all22 trained vendor rows before exporting common-input scores, with fixed1e-12 tolerance."
+    },
+    {
+      "topic": "undefineds",
+      "verdict": "consistent",
+      "detail": "Undefined samples counted; any undefined length gives undefined scalar. Summary never zero-fills/reweights undefined lengths or treats shuffle seeds as independent units."
+    }
+  ],
+  "limitations": [
+    "Read-only source review and small synthetic mathematics checks; no independent real-cache forward or new-score recomputation was performed.",
+    "Raw-cache/checkpoint/data bindings rely on the separately saved cache audit and execution hash guards.",
+    "This review does not establish a neural counting mechanism or remove task-pair/position-prior differences."
+  ]
+}

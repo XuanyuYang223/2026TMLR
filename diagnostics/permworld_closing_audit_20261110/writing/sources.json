@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-11-10T16:51:40.525699+00:00",
+  "code_sha256": "c7a0c99583e8d95d6decebe996121bd4abe6b2fd72af91b6a84507f99ad9ebec",
+  "source_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/protocol.json": "762dcc6e6e7f5ee1b2ea1358dbd97df56a74f2d615a59cf444a9fce3125ffde6",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/freeze.json": "50babec72d254ae052d098e196369e25ca5157bc49bdad82215e13d14d356c8a",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/spec.json": "52124e36ca4bdd8d0c1eb8b77e3f2ac5f9f1b0c772c736160cfc12907d67f9c8",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/by_unit.csv": "19050c4a52ca6e02760a12f5172023e94b2489f23ee03bf88e60d73900eed9c5",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/contrasts_by_unit.csv": "c60c15a98ce05ff02e69731ea0afabe664ea37cf32763d8ef7108ea3d193133e",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/four_unit_summary.csv": "2e48027bcdb5995f86b055c8c59ef5959a79478fd8a4c4eb0d1d824234d682b8",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/final_audit.json": "c7e185c8619b12812ff9c525b8d83f4e0260f6bc89449d4ab0a60e3b6d0c6708",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/spec.json": "22112a92b44911121817b9d1124ce60bdbe074fe4989452192c5e3a285597849",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/cka_four_unit_summary.csv": "6f5d45c8cdaacf6e77fe3a36f39d74cc6a4be988f7e0423f2283e556218529c2",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/encoding_contrasts_summary.csv": "3a05b7afd749db28b96d328cf39a401bd060aa64fcf703761acd86c0374b61f7",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/probe_four_unit_summary.csv": "c0acfdd5f57179bb56712253885c9d47f4d3a98b1f9063d888f5ae6e26a8f26b",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/cka_per_unit.csv": "f5c1a40d76304cbb4adc48f5d151f01b0841206ecdfbc791ebe1106df197c80a",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/independent_verification.json": "c5a7ed47e999df20c396dbcb4dd098e2666e2b9c137028e00fac890072529a51",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/spec.json": "28a79b7686d43f3893aaaa529c58ae3ab9deaf37752283659a467a05e4c380cf",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/all_units.csv": "f0d913a6236a33af111006913d579d4e754587bc6e0ff238d116d456eae4fc5f",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/four_unit_summary.csv": "b5d4c9715cad15a7d9cbe338878f466256c3910f39026b2da9fa93f9d016cf29",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/summary_completion.json": "d15e79bfb0538953584ff2d4778dc0c0646cfd40f867e1ab6f39f271aadfb49c",
+    "/home/yangx/ICML/diagnostics/permworld_answer_controls_20261109/READER_REPORT.md": "0f700264ae68eff0b3e02757b6c32add07db654cf4eacd58687dc025c4edbfe2",
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/headlines/main_by_unit.csv": "209b01db4730dbaabf1310656f02e6e1e6e87a87bcc2e21ea5fa42931d33dcfb",
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/headlines/auxiliary_eight_cells.csv": "51236127046f05a4570cc81f6381ecb2823c9a4619593cac8fff8b0257dd2965",
+    "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/main_comparison_by_unit.csv": "92a377cba68002a1edb9ce0ac28c282d696448ffdf7df3c876bbf6a97b8ff1fe",
+    "/home/yangx/ICML/diagnostics/permworld_lemma_composition_20261110/README.md": "50e681922f22c28383a4ceb54c0f81e6bb0138b3418f18c08d00a7179c776dcd"
+  },
+  "source_tables_only": true,
+  "no_fits_or_forwards": true,
+  "note": "Post-result editorial integration of completed evidence, not a new experimental protocol."
+}

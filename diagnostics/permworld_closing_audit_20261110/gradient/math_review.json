@@ -1,0 +1,53 @@
+{
+  "status": "passed_code_review_with_precision_limits",
+  "created_utc": "2026-11-10T16:46:07.813882+00:00",
+  "scope": "Independent source inspection before reading selected saved gradient values. Saved-vector arithmetic follows separately. No production code edits.",
+  "checks": [
+    {
+      "item": "Coordinate and scaler conversion",
+      "finding": "Saved edit_weight=ridge_coef/scaler_scale; normalized raw weight defines v. Ideal vv^T donor projection is raw Euclidean orthogonal. Actual FP32 addition/casting displacement is distinct and retained."
+    },
+    {
+      "item": "Autograd path",
+      "finding": "Supplied raw h1 leaf tensor stays differentiable through current layers2\u20134 and all original suffix GRUs, layernorm and lm_head. No inference_mode/cache/detach on that path. Only logging tensors detach after autograd. Prefix/previous upper states are intentionally fixed."
+    },
+    {
+      "item": "Timing and state semantics",
+      "finding": "Current upper layers start from RECIPIENT previous-token states, sequentially consume new lower output; suffix starts5+2i, next token after previous testedcurrent4+2i. Raw recurrent states, never normalized states, are carried."
+    },
+    {
+      "item": "Frozen model and batch gradient",
+      "finding": "Entire model eval with dropout disabled; checkpoint parameters requires_gradFalse. grad(sum margins) yields per-sample derivatives because GRUs and final LayerNorm do not couple batch rows. FP64model is a deepcopy for fixed derivative wiring checks only."
+    },
+    {
+      "item": "Behavior scalar and numeric vocabulary",
+      "finding": "m=logit[c+s]\u2212logit[c], with original recipient true c and saved oracle s. Vocabulary indices0..30 are numeric tokens00..30. Matched donors do not change local goal to donor count."
+    },
+    {
+      "item": "Random controls",
+      "finding": "Uses all eight saved actual raw random displacements. Equal-norm derivative is local_norm*(g\u00b7delta_q)/norm(delta_q); raw Euclidean gradient, dot and norm conventions match local edit. No random search/resampling."
+    },
+    {
+      "item": "Near-zero and undefined handling",
+      "finding": "FixedEPS1e\u221212 for norms. Undefinedcosines/angles remain emptyCSV/NaN, counts preserved. Center averages use finite samples with explicit denominators; missing/undefined center thenpropagates throughfixedweights. No reinterpretation aszero."
+    },
+    {
+      "item": "Aggregation",
+      "finding": "Equal registeredcenters perlength (main2..n\u22122,matched6..n\u22122), fixed1/21 all21lengths; fourunits rawvalues/mean/sampleSD/range. New independenthelper verifies saved21length arithmetic, not new outcome selection."
+    }
+  ],
+  "limitations": [
+    "Primary g uses native FP32 GRU with CuDNNoff, whereas actual delta_m is reused from old CuDNN FP32 cached outputs. Full-logit guard1e\u22124 ensures wiring-level closeness, not resolution of tiny delta_m. Their difference cannot be attributed to curvature, distributed causal information, or a mechanistic residual.",
+    "The fixed FP64 shadow finite-difference check establishes the derivative graph in its own precision. It does not prove numerical accuracy or nonzero sensitivity for every near-zero primaryFP32gradient.",
+    "Small donor projection energy or small/orthogonal local derivative only describes the chosen raw coordinate/axis/current update and neighborhood. It does not prove disuse of local information or high-dimensional distributed causal encoding."
+  ],
+  "reviewed_sources": {
+    "experiments/permworld_closing_audit_20261110/gradient_graph.py": "1f65b75c217af7116295be1f405eefd058dc4b9f737a1df8f72020903520986e",
+    "experiments/permworld_closing_audit_20261110/gradient_run.py": "359be488748b2c835a62345bd1d7d9ab5e0395b2db5b4cf9b016d057e91de016",
+    "experiments/permworld_local_causal_20261110/probes.py": "d0d66c8957eb6e340a25de94f68241f2a6ff1d9e1faef7c1f5a441998b7621d8",
+    "experiments/permworld_local_causal_20261110/recurrent.py": "6092c23221f858ddc423685552d1b954cf729a5d3f89d0956fad691ab53c6ff7",
+    "experiments/permworld_peaks_probe_20261109/vendor/passage.py": "d200ffe6f5f6cff717c1b6ed6698a5a6af42bb6580fa4e8729a2fd84b79babd6",
+    "tests/test_permworld_closing_gradient.py": "6dcb8e568867d902205b3f8ff1c7f8bf7f7848d1cfaa982c521edcb707e4ae02"
+  },
+  "verification_spec_sha256": "46375ca348cccb52a5d3a9d3c1cd444f8e505a54fe825e3a0774047b27c71a91"
+}

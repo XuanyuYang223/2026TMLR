@@ -1,0 +1,84 @@
+{
+  "status": "passed_read_only_semantic_review",
+  "completed_utc": "2026-11-10T14:50:23.000312+00:00",
+  "scope": "Current-token timing source/provenance review and synthetic array packing only. No new timing outputs, checkpoint forwards, or probe fits accessed/run.",
+  "reviewed_sha256": {
+    "experiments/permworld_local_timing_20261110/experiment.py": "b7814afde498547bfcc59f0e95771071a8e06f8ffc07716953d41a8bbe640c48",
+    "experiments/permworld_local_timing_20261110/run.py": "0d1248c557d567e209488473a197e38fc5f420ea1a3d57b1a8217fc9e2183594",
+    "experiments/permworld_local_timing_20261110/shared.py": "785b0021f79444fdcafed6fa93c5533863486c03b3c710b1ae115955dff0ef67",
+    "experiments/permworld_local_timing_20261110/replay.py": "1e86bac9e8688395726d55fdfbfa24e265c284bc3b1bc6ea9e262205ac36dfb6",
+    "experiments/permworld_local_causal_20261110/recurrent.py": "6092c23221f858ddc423685552d1b954cf729a5d3f89d0956fad691ab53c6ff7",
+    "experiments/permworld_local_causal_20261110/formal.py": "cb3559b912fd4ebb90a578015ea2053c8bfb156a7b5f8f3a418a476542886fc0",
+    "experiments/permworld_local_causal_20261110/probes.py": "d0d66c8957eb6e340a25de94f68241f2a6ff1d9e1faef7c1f5a441998b7621d8",
+    "experiments/permworld_local_causal_20261110/shared.py": "ba33251423c6bc15a20b943e1ef10278efd4fee3d44ad808f902e4f02e40dc14"
+  },
+  "blocking_issues": [],
+  "findings": [
+    {
+      "topic": "actual_current_token_update",
+      "verdict": "consistent",
+      "detail": "Recipient previous_states is cached point0. Edited current h1 is built once from old FP32 recipient/donor/same-label states and saved coordinate/v/q. replay_upper processes only L2-L4 from recipient previous upper states; L1 and input embedding are not rerun."
+    },
+    {
+      "topic": "paired_edit_identity",
+      "verdict": "consistent",
+      "detail": "Each common early/late condition receives byte-identical h1; per-case h1 SHA, checker and defining-probe equality are enforced. Early full-L1 and late layer1 full swaps likewise inject identical h1."
+    },
+    {
+      "topic": "late_replication_and_noop",
+      "verdict": "consistent",
+      "detail": "All11 old common late conditions are reexecuted and compared to old logits at the existing1e-4 bound; early no-op is checked against late and original native logits at1e-4, with current states at2e-5. Argmax drift is reported and not filtered."
+    },
+    {
+      "topic": "component_norm",
+      "verdict": "consistent",
+      "detail": "Treatment/random matching uses the injected first-layer delta only. Replayed upper consequences and full-state delta are separately retained without rescaling; auxiliary upper-layer swaps may have zero L1 delta but a nonzero full-state delta."
+    },
+    {
+      "topic": "source_and_node_binding",
+      "verdict": "consistent",
+      "detail": "Each source cell SHA/checkpoint/data and saved direction are verified; opaque node IDs bind recipient/donor/actualCF to the correct old catalog per task. Input audit already resolves a valid same-label donor for every old pair, so current availability=True is justified by that required input audit."
+    },
+    {
+      "topic": "packed_condition_alignment",
+      "verdict": "consistent",
+      "detail": "12early replay input blocks align with repeated recipient previous states.28suffix-query blocks use condition-major stacking and the same recipient suffix, then reshape in the same order. ActualCF is reused separately.29CSV rows are written case-major per saved pair ID; synthetic marker pack/reshape passed."
+    },
+    {
+      "topic": "auxiliary_layers",
+      "verdict": "consistent",
+      "detail": "Late layer swaps1..4 replace exactly corresponding h_l. Metadata layer is the actual swapped index, while probe_layer remains1. Payload dimensions distinguish rank-one(1), whole single-layer(256), whole-four-layer(1024) controls and natural inputs(0)."
+    },
+    {
+      "topic": "matched_endpoint",
+      "verdict": "consistent",
+      "detail": "All rows retain local-only desired count=recipient total+sign. Full-state donor reference uses donor native logits/count, which may remain recipient count in matched pairs. ActualCF count uses the local-only goal; these references are kept separate."
+    },
+    {
+      "topic": "frozen_readers_and_random_controls",
+      "verdict": "consistent",
+      "detail": "Only exact old weight/bias and raw direction are loaded; no Ridge/threshold/alpha fitting exists in this stage. Old coordinates and all8old random vectors are reused; source SHA is computed once per cell."
+    },
+    {
+      "topic": "numerical_context",
+      "verdict": "consistent",
+      "detail": "Runner fixes old2thread settings, CUDA matmul and cuDNN TF32=False, deterministiccuDNN=True; standalone failed-default and restored-context checks remain recorded in replay_preflight.json with unchanged tolerances."
+    }
+  ],
+  "checks": {
+    "registered_rows_per_case": 29,
+    "registered_query_blocks": 28,
+    "synthetic_case_major_block_reshape": true,
+    "replay_tests_passed": 7,
+    "no_new_output_access": true
+  },
+  "limitations": [
+    "The label is coupled to local token order/rank and mixed states can be off manifold. A timing effect identifies this intervention path, not an abstract predicate or natural one-dimensional mechanism.",
+    "Whole lower-layer donor replay uses recipient previous upper states and is not a donor-prefix replacement. Whole-four-state wiring controls remain distinct.",
+    "This review does not independently reproduce future timing outcomes; post-run saved-array/endpoint verification is still required."
+  ],
+  "no_probe_fitting": true,
+  "no_neural_forward": true,
+  "no_new_timing_outcome_access": true,
+  "no_frozen_source_edits": true
+}

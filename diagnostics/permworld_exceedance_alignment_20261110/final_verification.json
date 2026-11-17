@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-10T13:03:17.094557+00:00",
+  "checks": 111505,
+  "failures": [],
+  "maximum_checked_difference": 1.1546319456101628e-14,
+  "main_PV_tolerance": 1e-12,
+  "token_serialization_tolerance": 2e-12,
+  "independent_main_audit": {
+    "status": "passed",
+    "checks": 38520,
+    "failures": [],
+    "maximum_absolute_difference": 0.0,
+    "absolute_tolerance": 1e-12,
+    "scope": "All saved ED method AUROC samples and by-length aggregates; independent coefficient/mean/rotation/own-target gather reconstruction on fixed first2 anchors per length; all count-preserving shuffle RNGs; no fits or forwards.",
+    "no_probe_fitting": true,
+    "no_neural_forward": true
+  },
+  "PV_reproduction_receipts": [
+    {
+      "unit": "archdev001",
+      "reproduced_trained_cells": 1848,
+      "source_bindings": 17,
+      "maximum_recorded_error": 0.0
+    },
+    {
+      "unit": "unit02",
+      "reproduced_trained_cells": 1848,
+      "source_bindings": 17,
+      "maximum_recorded_error": 0.0
+    },
+    {
+      "unit": "unit03",
+      "reproduced_trained_cells": 1848,
+      "source_bindings": 17,
+      "maximum_recorded_error": 0.0
+    },
+    {
+      "unit": "unit04",
+      "reproduced_trained_cells": 1848,
+      "source_bindings": 17,
+      "maximum_recorded_error": 0.0
+    },
+    {
+      "unit": "unit05",
+      "reproduced_trained_cells": 1848,
+      "source_bindings": 17,
+      "maximum_recorded_error": 0.0
+    }
+  ],
+  "token_verification": {
+    "unit_reports": [
+      {
+        "unit": "archdev001",
+        "selected_numerical_lengths": [
+          10,
+          20,
+          30
+        ],
+        "selected_anchors_per_length": 2
+      },
+      {
+        "unit": "unit02",
+        "selected_numerical_lengths": [
+          10,
+          20,
+          30
+        ],
+        "selected_anchors_per_length": 2
+      },
+      {
+        "unit": "unit03",
+        "selected_numerical_lengths": [
+          10,
+          20,
+          30
+        ],
+        "selected_anchors_per_length": 2
+      },
+      {
+        "unit": "unit04",
+        "selected_numerical_lengths": [
+          10,
+          20,
+          30
+        ],
+        "selected_anchors_per_length": 2
+      },
+      {
+        "unit": "unit05",
+        "selected_numerical_lengths": [
+          10,
+          20,
+          30
+        ],
+        "selected_anchors_per_length": 2
+      }
+    ],
+    "extraction_metadata_records": 120,
+    "shard_headers_verified": 2520,
+    "selected_score_files": 30,
+    "fixed_subset_state_arrays_read": 120,
+    "whole_token_state_payloads_rehashed": 0,
+    "numerical_scope": "First2anchors at n10/20/30, both encodings/all5units for explicit score reconstruction; all512anchors at those30 scorefiles for independent pair-comparison AUROC/strata. All2520 token shard headers and120 extraction receipts checked; state SHA digests rely on extraction-time records, not another full read."
+  },
+  "provenance_snapshot": {
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/finalize_audit.py": "4c881be83e1becfb63c1e9887ec2a95cd6fde4385db8b7d188cf734484edf3bc",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/audit_saved_main.py": "4377c252b53f992583234d16675f65204f64e583ee16edd54820ad233af1321d",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/main_saved_score_audit.json": "32df800c79533e1a5afa1dae35afeb62a16ee34ceb4a221a3524b22f2a5f67e9",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_readonly_review.json": "eda0595ab1d53078428c983b5b558ddee80f08051b30ae9869ce5f63cbee5942",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/freeze.json": "e18278193d3960c5cdcc0aac1f5af690fe4e61352eff0768507e2f3bf45aa170",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/freeze.json": "ed022a2dd25fa4edae0eb645452646d1eb647097a1d2453bdecf82bc44d4b943",
+    "/home/yangx/ICML/tests/test_permworld_exceedance_token_diagnostic.py": "81820ec8ef9b0b9842493183fe8d3fb589967afeaf82b67e86deb72e2fe06d9c",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/synthetic_pytest.log": "de0f7449a60d2ac302ce3a485280bcd2e233cc79c747df5788d399835691f5bb"
+  },
+  "no_neural_forward": true,
+  "no_probe_fitting": true,
+  "no_alignment_fitting": true,
+  "no_new_hyperparameters": true,
+  "scope": "Read-only source/protection endpoint audit plus saved receipt arithmetic and bounded independent token score checks. Validation checks are technical checks, not independent statistical repetitions.",
+  "elapsed_seconds": 95.65654958598316
+}

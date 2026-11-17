@@ -1,0 +1,7 @@
+metric,architecture,encoding,reference,actual,difference,rounding_tolerance,within_reference_rounding
+dual_answer_CKA_trained_advantage,gru,one_line,0.01951662,0.019516621967457827,1.967457828599972e-09,5e-09,True
+dual_answer_CKA_trained_advantage,gru,canonical_cycle,0.09678745,0.0967874473321583,-2.6678416975567387e-09,5e-09,True
+dual_answer_CKA_trained_advantage,transformer,one_line,0.10890765,0.10890764787419258,-2.1258074189844933e-09,5e-09,True
+dual_answer_CKA_trained_advantage,transformer,canonical_cycle,0.04960034,0.049600335372485246,-4.627514753330342e-09,5e-09,True
+position_AUROC_common_control_margin,gru,one_line,0.010082,0.010081564325677361,-4.356743226394122e-07,5e-07,True
+position_AUROC_common_control_margin,gru,canonical_cycle,0.00015,0.00014950926727691494,-4.907327230850502e-07,5e-07,True

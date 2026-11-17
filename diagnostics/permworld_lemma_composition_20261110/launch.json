@@ -1,0 +1,16 @@
+{
+  "pid": 1039468,
+  "command": [
+    "/home/yangx/ICML/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.permworld_lemma_composition_20261110.run",
+    "all"
+  ],
+  "log": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/run.log",
+  "protocol_sha256": "ae15cb791d7095b835a2f907301f1824254529e1566c7004b573b36baebb94b1",
+  "no_neural_forward": true,
+  "no_base_training": true,
+  "no_new_alignment": true,
+  "only_source_position_probe_calibration_and_fixed_composition": true
+}

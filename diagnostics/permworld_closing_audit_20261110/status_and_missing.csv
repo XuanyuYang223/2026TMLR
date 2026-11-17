@@ -1,0 +1,4 @@
+check,status,evidence,missing
+PV trained-source specificity,completed,alignment/README.md; alignment/final_audit.json,none
+Local-edit geometry and early-path gradients,completed,gradient/README.md; gradient/independent_verification.json,none
+E/D encoding and initialization recheck,completed,ed/report.md; ed/independent_verification.json,none

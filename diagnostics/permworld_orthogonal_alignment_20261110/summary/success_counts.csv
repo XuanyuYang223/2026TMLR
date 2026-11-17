@@ -1,0 +1,9 @@
+cohort,encoding,support,units,beats_direct_units,beats_direct_and_best_map_units,beats_direct_and_best_all_units,primary_requested_rule,controls_scope
+new_units,canonical_cycle,matched,4,4,2,2,Aligned C > direct AND > B_all; within-model probes excluded,B_map plus step0/oracle-count; descents/recoils not evaluated in cycle
+new_units,canonical_cycle,eligible,4,4,4,4,Aligned C > direct AND > B_all; within-model probes excluded,B_map plus step0/oracle-count; descents/recoils not evaluated in cycle
+new_units,one_line,matched,4,4,4,4,Aligned C > direct AND > B_all; within-model probes excluded,B_map plus step0/oracle-count and both direct/aligned descents/recoils
+new_units,one_line,eligible,4,4,4,4,Aligned C > direct AND > B_all; within-model probes excluded,B_map plus step0/oracle-count and both direct/aligned descents/recoils
+all_units,canonical_cycle,matched,5,5,3,3,Aligned C > direct AND > B_all; within-model probes excluded,B_map plus step0/oracle-count; descents/recoils not evaluated in cycle
+all_units,canonical_cycle,eligible,5,5,5,5,Aligned C > direct AND > B_all; within-model probes excluded,B_map plus step0/oracle-count; descents/recoils not evaluated in cycle
+all_units,one_line,matched,5,5,5,5,Aligned C > direct AND > B_all; within-model probes excluded,B_map plus step0/oracle-count and both direct/aligned descents/recoils
+all_units,one_line,eligible,5,5,5,5,Aligned C > direct AND > B_all; within-model probes excluded,B_map plus step0/oracle-count and both direct/aligned descents/recoils

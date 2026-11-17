@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-10T12:01:04.836038+00:00",
+  "scope": "Independent source-only threshold/label checks, saved mask/answer algebra, fixed-subset scalar composers and brute-force oracle, bounded primary summary arithmetic. No new fits or inferential procedure.",
+  "checks": 563506,
+  "maximum_arithmetic_difference": 0.0,
+  "arithmetic_tolerance": 1e-12,
+  "failures": [],
+  "units": [
+    {
+      "unit": "archdev001",
+      "test_anchors": 10752,
+      "matched_anchors": 1757,
+      "source_calibration_records": 63,
+      "independent_thresholds_verified": 63,
+      "fixed_oracle_anchors": 84,
+      "scalar_combiner_evaluations": 21420,
+      "shuffle_position_arrays": 336,
+      "prediction_only_frozen_before_truth": true
+    },
+    {
+      "unit": "unit02",
+      "test_anchors": 10752,
+      "matched_anchors": 1707,
+      "source_calibration_records": 63,
+      "independent_thresholds_verified": 63,
+      "fixed_oracle_anchors": 84,
+      "scalar_combiner_evaluations": 21420,
+      "shuffle_position_arrays": 336,
+      "prediction_only_frozen_before_truth": true
+    },
+    {
+      "unit": "unit03",
+      "test_anchors": 10752,
+      "matched_anchors": 1675,
+      "source_calibration_records": 63,
+      "independent_thresholds_verified": 63,
+      "fixed_oracle_anchors": 84,
+      "scalar_combiner_evaluations": 21420,
+      "shuffle_position_arrays": 336,
+      "prediction_only_frozen_before_truth": true
+    },
+    {
+      "unit": "unit04",
+      "test_anchors": 10752,
+      "matched_anchors": 1753,
+      "source_calibration_records": 63,
+      "independent_thresholds_verified": 63,
+      "fixed_oracle_anchors": 84,
+      "scalar_combiner_evaluations": 21420,
+      "shuffle_position_arrays": 336,
+      "prediction_only_frozen_before_truth": true
+    },
+    {
+      "unit": "unit05",
+      "test_anchors": 10752,
+      "matched_anchors": 1755,
+      "source_calibration_records": 63,
+      "independent_thresholds_verified": 63,
+      "fixed_oracle_anchors": 84,
+      "scalar_combiner_evaluations": 21420,
+      "shuffle_position_arrays": 336,
+      "prediction_only_frozen_before_truth": true
+    }
+  ],
+  "primary_summary_scope": "Original variants of same-model-twice, aligned, direct and own-probe routes; all registered supports/strata/lengths. Other routes/shuffles verified structurally and on fixed first4anchors of each length.",
+  "scalar_anchor_policy": "First four test anchors at each registered length, fixed independently of predictions or correctness.",
+  "threshold_independent_scan": "All unique source-tuning scores scanned ascending with higher-threshold ties; raw source validation identity labels verified.",
+  "no_neural_forward": true,
+  "no_probe_fitting": true,
+  "no_alignment_fitting": true,
+  "no_threshold_changes": true,
+  "no_hyperparameter_changes": true,
+  "elapsed_seconds": 16.517542065004818
+}

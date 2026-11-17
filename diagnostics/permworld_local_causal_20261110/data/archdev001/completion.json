@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "unit": "archdev001",
+  "historical": true,
+  "role": "engineering_reference",
+  "data_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+  "data_sha256_before": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "data_sha256_after": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+  "generation_protocol_sha256": "2fade195fe7531641cfb085c0e1d11a2f4b4b8b08e3da974ed2670aeed55cee3",
+  "candidate_families": 45696,
+  "selected_families": 9279,
+  "selected_by_split": {
+    "dev": 2139,
+    "fit": 4284,
+    "test": 2856
+  },
+  "selected_fit_AB": {
+    "B": 2202,
+    "A": 2082
+  },
+  "candidate_exclusions": {
+    "original_training_equality_or_complement_collision": 30,
+    "validation_family_component_touches_test_root": 19
+  },
+  "components": 14501,
+  "maximum_component_families": 14,
+  "training_collision_components": 15,
+  "cells_with_shortfall": 3,
+  "missing_family_quota": 3,
+  "selected_path": "/mnt/yangx-projects-f/20261110/permworld_local_causal/archdev001/selected_families.json.gz",
+  "output_sha256": {
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/archdev001/selected_families.json.gz": "1d95443e089c4d8a8fbf01068258ac9207b12a55ef5d5a452321a49c039db3c9",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/archdev001/candidate_roster.csv.gz": "e033d86c42a17d981c15d79564ad8d11f02e6d3fc291fe55e44f2a419ed57a57",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/archdev001/components.csv.gz": "81748b51895bfca5edcca38640c0238d82577380c6cb55d1090a5cba1a099430",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/archdev001/coverage.csv": "db2267f123c686eb0a66cb47c61d6185e91e7534d5613978cda434022956a76f",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/archdev001/split_AB_coverage.csv": "c0d80b3d9cbc0600642ab6cba02a4c0bd9118246a98ef857a3f2d74cc24f0b93",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/archdev001/independent_math_audit.json": "6b1e3e89250c171df17ce82225bb6afe8c1d0d983b4df134eb2d580e29ab129b"
+  },
+  "no_neural_forward": true,
+  "no_checkpoint_load": true,
+  "no_model_outcome_access": true,
+  "no_training": true,
+  "elapsed_seconds": 96.96311629202683
+}

@@ -1,0 +1,50 @@
+{
+  "status": "completed_derived_timing_headlines",
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_reference": "archdev001",
+  "main_cells": 8,
+  "auxiliary_cells": 8,
+  "positive_control_cells": 8,
+  "scalar_checks": 2048,
+  "maximum_summary_error": 0.0,
+  "no_new_metrics": true,
+  "no_raw_output_access": true,
+  "no_fits": true,
+  "no_forwards": true,
+  "completed_utc": "2026-11-10T15:06:41.043656+00:00",
+  "source_sha256": "fa94b05bab27a4de44663533c91b35fc2c111dc50fb321454151e129d2be987a",
+  "source_tables": {
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/summary/per_unit.csv": "0aa199140ad1ef85f78b533357bf7ae468016d013a59b70470eb597d0dad8819",
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/summary/four_unit_summary.csv": "7d74df557f1e25ff6b088359579c2dfc253af0a794f6e8ea797a3e946e121142",
+    "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/summary/completion.json": "daf7dfe31d7ff70afad454a5dbab56bb7941d46e007e1cc23110426ee1904328"
+  },
+  "protocol_sha256": "148d7741b659493c345c6e3ed5ec68ec6faede15cce7e300e8b2fec4bc7b3107"
+}
+	Command being timed: ".venv/bin/python diagnostics/permworld_local_timing_20261110/build_headline_tables.py"
+	User time (seconds): 1.00
+	System time (seconds): 0.25
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 595312
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 152257
+	Voluntary context switches: 157
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 304
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

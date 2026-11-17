@@ -1,0 +1,15 @@
+{
+  "pid": 991376,
+  "command": [
+    "/home/yangx/ICML/.venv/bin/python",
+    "-u",
+    "-m",
+    "experiments.permworld_orthogonal_alignment_20261110.run",
+    "all"
+  ],
+  "log": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/run.log",
+  "protocol_sha256": "501a999ec466420a47a6a4a5aed7740c0b39bf5bf6af875cd8d33d1ab55da5c6",
+  "no_base_training": true,
+  "no_forward": true,
+  "reuse_existing_schema_features": true
+}

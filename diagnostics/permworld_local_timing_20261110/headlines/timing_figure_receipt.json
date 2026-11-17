@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "source_tables": {
+    "main_by_unit.csv": "209b01db4730dbaabf1310656f02e6e1e6e87a87bcc2e21ea5fa42931d33dcfb",
+    "auxiliary_by_unit.csv": "68d508bcb0a622f22d468017ccdc364de76b9a68e1a213609a728554733f0c0e"
+  },
+  "source_code_sha256": "728bc1c31573a76baece630025371077837f5299a48468096bd8d5339cbf7735",
+  "no_new_metrics": true,
+  "no_fits": true,
+  "no_forwards": true,
+  "all_eight_registered_cells": true,
+  "historical_excluded": true
+}

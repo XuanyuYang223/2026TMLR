@@ -1,0 +1,421 @@
+length,position,main_registered,matched_registered,reason
+10,1,False,False,endpoint is not an extremum
+10,2,True,False,main only; insufficient earlier disjoint quartet
+10,3,True,False,main only; insufficient earlier disjoint quartet
+10,4,True,False,main only; insufficient earlier disjoint quartet
+10,5,True,False,main only; insufficient earlier disjoint quartet
+10,6,True,True,registered main+matched
+10,7,True,True,registered main+matched
+10,8,True,True,registered main+matched
+10,9,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+10,10,False,False,endpoint is not an extremum
+11,1,False,False,endpoint is not an extremum
+11,2,True,False,main only; insufficient earlier disjoint quartet
+11,3,True,False,main only; insufficient earlier disjoint quartet
+11,4,True,False,main only; insufficient earlier disjoint quartet
+11,5,True,False,main only; insufficient earlier disjoint quartet
+11,6,True,True,registered main+matched
+11,7,True,True,registered main+matched
+11,8,True,True,registered main+matched
+11,9,True,True,registered main+matched
+11,10,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+11,11,False,False,endpoint is not an extremum
+12,1,False,False,endpoint is not an extremum
+12,2,True,False,main only; insufficient earlier disjoint quartet
+12,3,True,False,main only; insufficient earlier disjoint quartet
+12,4,True,False,main only; insufficient earlier disjoint quartet
+12,5,True,False,main only; insufficient earlier disjoint quartet
+12,6,True,True,registered main+matched
+12,7,True,True,registered main+matched
+12,8,True,True,registered main+matched
+12,9,True,True,registered main+matched
+12,10,True,True,registered main+matched
+12,11,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+12,12,False,False,endpoint is not an extremum
+13,1,False,False,endpoint is not an extremum
+13,2,True,False,main only; insufficient earlier disjoint quartet
+13,3,True,False,main only; insufficient earlier disjoint quartet
+13,4,True,False,main only; insufficient earlier disjoint quartet
+13,5,True,False,main only; insufficient earlier disjoint quartet
+13,6,True,True,registered main+matched
+13,7,True,True,registered main+matched
+13,8,True,True,registered main+matched
+13,9,True,True,registered main+matched
+13,10,True,True,registered main+matched
+13,11,True,True,registered main+matched
+13,12,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+13,13,False,False,endpoint is not an extremum
+14,1,False,False,endpoint is not an extremum
+14,2,True,False,main only; insufficient earlier disjoint quartet
+14,3,True,False,main only; insufficient earlier disjoint quartet
+14,4,True,False,main only; insufficient earlier disjoint quartet
+14,5,True,False,main only; insufficient earlier disjoint quartet
+14,6,True,True,registered main+matched
+14,7,True,True,registered main+matched
+14,8,True,True,registered main+matched
+14,9,True,True,registered main+matched
+14,10,True,True,registered main+matched
+14,11,True,True,registered main+matched
+14,12,True,True,registered main+matched
+14,13,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+14,14,False,False,endpoint is not an extremum
+15,1,False,False,endpoint is not an extremum
+15,2,True,False,main only; insufficient earlier disjoint quartet
+15,3,True,False,main only; insufficient earlier disjoint quartet
+15,4,True,False,main only; insufficient earlier disjoint quartet
+15,5,True,False,main only; insufficient earlier disjoint quartet
+15,6,True,True,registered main+matched
+15,7,True,True,registered main+matched
+15,8,True,True,registered main+matched
+15,9,True,True,registered main+matched
+15,10,True,True,registered main+matched
+15,11,True,True,registered main+matched
+15,12,True,True,registered main+matched
+15,13,True,True,registered main+matched
+15,14,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+15,15,False,False,endpoint is not an extremum
+16,1,False,False,endpoint is not an extremum
+16,2,True,False,main only; insufficient earlier disjoint quartet
+16,3,True,False,main only; insufficient earlier disjoint quartet
+16,4,True,False,main only; insufficient earlier disjoint quartet
+16,5,True,False,main only; insufficient earlier disjoint quartet
+16,6,True,True,registered main+matched
+16,7,True,True,registered main+matched
+16,8,True,True,registered main+matched
+16,9,True,True,registered main+matched
+16,10,True,True,registered main+matched
+16,11,True,True,registered main+matched
+16,12,True,True,registered main+matched
+16,13,True,True,registered main+matched
+16,14,True,True,registered main+matched
+16,15,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+16,16,False,False,endpoint is not an extremum
+17,1,False,False,endpoint is not an extremum
+17,2,True,False,main only; insufficient earlier disjoint quartet
+17,3,True,False,main only; insufficient earlier disjoint quartet
+17,4,True,False,main only; insufficient earlier disjoint quartet
+17,5,True,False,main only; insufficient earlier disjoint quartet
+17,6,True,True,registered main+matched
+17,7,True,True,registered main+matched
+17,8,True,True,registered main+matched
+17,9,True,True,registered main+matched
+17,10,True,True,registered main+matched
+17,11,True,True,registered main+matched
+17,12,True,True,registered main+matched
+17,13,True,True,registered main+matched
+17,14,True,True,registered main+matched
+17,15,True,True,registered main+matched
+17,16,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+17,17,False,False,endpoint is not an extremum
+18,1,False,False,endpoint is not an extremum
+18,2,True,False,main only; insufficient earlier disjoint quartet
+18,3,True,False,main only; insufficient earlier disjoint quartet
+18,4,True,False,main only; insufficient earlier disjoint quartet
+18,5,True,False,main only; insufficient earlier disjoint quartet
+18,6,True,True,registered main+matched
+18,7,True,True,registered main+matched
+18,8,True,True,registered main+matched
+18,9,True,True,registered main+matched
+18,10,True,True,registered main+matched
+18,11,True,True,registered main+matched
+18,12,True,True,registered main+matched
+18,13,True,True,registered main+matched
+18,14,True,True,registered main+matched
+18,15,True,True,registered main+matched
+18,16,True,True,registered main+matched
+18,17,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+18,18,False,False,endpoint is not an extremum
+19,1,False,False,endpoint is not an extremum
+19,2,True,False,main only; insufficient earlier disjoint quartet
+19,3,True,False,main only; insufficient earlier disjoint quartet
+19,4,True,False,main only; insufficient earlier disjoint quartet
+19,5,True,False,main only; insufficient earlier disjoint quartet
+19,6,True,True,registered main+matched
+19,7,True,True,registered main+matched
+19,8,True,True,registered main+matched
+19,9,True,True,registered main+matched
+19,10,True,True,registered main+matched
+19,11,True,True,registered main+matched
+19,12,True,True,registered main+matched
+19,13,True,True,registered main+matched
+19,14,True,True,registered main+matched
+19,15,True,True,registered main+matched
+19,16,True,True,registered main+matched
+19,17,True,True,registered main+matched
+19,18,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+19,19,False,False,endpoint is not an extremum
+20,1,False,False,endpoint is not an extremum
+20,2,True,False,main only; insufficient earlier disjoint quartet
+20,3,True,False,main only; insufficient earlier disjoint quartet
+20,4,True,False,main only; insufficient earlier disjoint quartet
+20,5,True,False,main only; insufficient earlier disjoint quartet
+20,6,True,True,registered main+matched
+20,7,True,True,registered main+matched
+20,8,True,True,registered main+matched
+20,9,True,True,registered main+matched
+20,10,True,True,registered main+matched
+20,11,True,True,registered main+matched
+20,12,True,True,registered main+matched
+20,13,True,True,registered main+matched
+20,14,True,True,registered main+matched
+20,15,True,True,registered main+matched
+20,16,True,True,registered main+matched
+20,17,True,True,registered main+matched
+20,18,True,True,registered main+matched
+20,19,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+20,20,False,False,endpoint is not an extremum
+21,1,False,False,endpoint is not an extremum
+21,2,True,False,main only; insufficient earlier disjoint quartet
+21,3,True,False,main only; insufficient earlier disjoint quartet
+21,4,True,False,main only; insufficient earlier disjoint quartet
+21,5,True,False,main only; insufficient earlier disjoint quartet
+21,6,True,True,registered main+matched
+21,7,True,True,registered main+matched
+21,8,True,True,registered main+matched
+21,9,True,True,registered main+matched
+21,10,True,True,registered main+matched
+21,11,True,True,registered main+matched
+21,12,True,True,registered main+matched
+21,13,True,True,registered main+matched
+21,14,True,True,registered main+matched
+21,15,True,True,registered main+matched
+21,16,True,True,registered main+matched
+21,17,True,True,registered main+matched
+21,18,True,True,registered main+matched
+21,19,True,True,registered main+matched
+21,20,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+21,21,False,False,endpoint is not an extremum
+22,1,False,False,endpoint is not an extremum
+22,2,True,False,main only; insufficient earlier disjoint quartet
+22,3,True,False,main only; insufficient earlier disjoint quartet
+22,4,True,False,main only; insufficient earlier disjoint quartet
+22,5,True,False,main only; insufficient earlier disjoint quartet
+22,6,True,True,registered main+matched
+22,7,True,True,registered main+matched
+22,8,True,True,registered main+matched
+22,9,True,True,registered main+matched
+22,10,True,True,registered main+matched
+22,11,True,True,registered main+matched
+22,12,True,True,registered main+matched
+22,13,True,True,registered main+matched
+22,14,True,True,registered main+matched
+22,15,True,True,registered main+matched
+22,16,True,True,registered main+matched
+22,17,True,True,registered main+matched
+22,18,True,True,registered main+matched
+22,19,True,True,registered main+matched
+22,20,True,True,registered main+matched
+22,21,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+22,22,False,False,endpoint is not an extremum
+23,1,False,False,endpoint is not an extremum
+23,2,True,False,main only; insufficient earlier disjoint quartet
+23,3,True,False,main only; insufficient earlier disjoint quartet
+23,4,True,False,main only; insufficient earlier disjoint quartet
+23,5,True,False,main only; insufficient earlier disjoint quartet
+23,6,True,True,registered main+matched
+23,7,True,True,registered main+matched
+23,8,True,True,registered main+matched
+23,9,True,True,registered main+matched
+23,10,True,True,registered main+matched
+23,11,True,True,registered main+matched
+23,12,True,True,registered main+matched
+23,13,True,True,registered main+matched
+23,14,True,True,registered main+matched
+23,15,True,True,registered main+matched
+23,16,True,True,registered main+matched
+23,17,True,True,registered main+matched
+23,18,True,True,registered main+matched
+23,19,True,True,registered main+matched
+23,20,True,True,registered main+matched
+23,21,True,True,registered main+matched
+23,22,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+23,23,False,False,endpoint is not an extremum
+24,1,False,False,endpoint is not an extremum
+24,2,True,False,main only; insufficient earlier disjoint quartet
+24,3,True,False,main only; insufficient earlier disjoint quartet
+24,4,True,False,main only; insufficient earlier disjoint quartet
+24,5,True,False,main only; insufficient earlier disjoint quartet
+24,6,True,True,registered main+matched
+24,7,True,True,registered main+matched
+24,8,True,True,registered main+matched
+24,9,True,True,registered main+matched
+24,10,True,True,registered main+matched
+24,11,True,True,registered main+matched
+24,12,True,True,registered main+matched
+24,13,True,True,registered main+matched
+24,14,True,True,registered main+matched
+24,15,True,True,registered main+matched
+24,16,True,True,registered main+matched
+24,17,True,True,registered main+matched
+24,18,True,True,registered main+matched
+24,19,True,True,registered main+matched
+24,20,True,True,registered main+matched
+24,21,True,True,registered main+matched
+24,22,True,True,registered main+matched
+24,23,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+24,24,False,False,endpoint is not an extremum
+25,1,False,False,endpoint is not an extremum
+25,2,True,False,main only; insufficient earlier disjoint quartet
+25,3,True,False,main only; insufficient earlier disjoint quartet
+25,4,True,False,main only; insufficient earlier disjoint quartet
+25,5,True,False,main only; insufficient earlier disjoint quartet
+25,6,True,True,registered main+matched
+25,7,True,True,registered main+matched
+25,8,True,True,registered main+matched
+25,9,True,True,registered main+matched
+25,10,True,True,registered main+matched
+25,11,True,True,registered main+matched
+25,12,True,True,registered main+matched
+25,13,True,True,registered main+matched
+25,14,True,True,registered main+matched
+25,15,True,True,registered main+matched
+25,16,True,True,registered main+matched
+25,17,True,True,registered main+matched
+25,18,True,True,registered main+matched
+25,19,True,True,registered main+matched
+25,20,True,True,registered main+matched
+25,21,True,True,registered main+matched
+25,22,True,True,registered main+matched
+25,23,True,True,registered main+matched
+25,24,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+25,25,False,False,endpoint is not an extremum
+26,1,False,False,endpoint is not an extremum
+26,2,True,False,main only; insufficient earlier disjoint quartet
+26,3,True,False,main only; insufficient earlier disjoint quartet
+26,4,True,False,main only; insufficient earlier disjoint quartet
+26,5,True,False,main only; insufficient earlier disjoint quartet
+26,6,True,True,registered main+matched
+26,7,True,True,registered main+matched
+26,8,True,True,registered main+matched
+26,9,True,True,registered main+matched
+26,10,True,True,registered main+matched
+26,11,True,True,registered main+matched
+26,12,True,True,registered main+matched
+26,13,True,True,registered main+matched
+26,14,True,True,registered main+matched
+26,15,True,True,registered main+matched
+26,16,True,True,registered main+matched
+26,17,True,True,registered main+matched
+26,18,True,True,registered main+matched
+26,19,True,True,registered main+matched
+26,20,True,True,registered main+matched
+26,21,True,True,registered main+matched
+26,22,True,True,registered main+matched
+26,23,True,True,registered main+matched
+26,24,True,True,registered main+matched
+26,25,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+26,26,False,False,endpoint is not an extremum
+27,1,False,False,endpoint is not an extremum
+27,2,True,False,main only; insufficient earlier disjoint quartet
+27,3,True,False,main only; insufficient earlier disjoint quartet
+27,4,True,False,main only; insufficient earlier disjoint quartet
+27,5,True,False,main only; insufficient earlier disjoint quartet
+27,6,True,True,registered main+matched
+27,7,True,True,registered main+matched
+27,8,True,True,registered main+matched
+27,9,True,True,registered main+matched
+27,10,True,True,registered main+matched
+27,11,True,True,registered main+matched
+27,12,True,True,registered main+matched
+27,13,True,True,registered main+matched
+27,14,True,True,registered main+matched
+27,15,True,True,registered main+matched
+27,16,True,True,registered main+matched
+27,17,True,True,registered main+matched
+27,18,True,True,registered main+matched
+27,19,True,True,registered main+matched
+27,20,True,True,registered main+matched
+27,21,True,True,registered main+matched
+27,22,True,True,registered main+matched
+27,23,True,True,registered main+matched
+27,24,True,True,registered main+matched
+27,25,True,True,registered main+matched
+27,26,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+27,27,False,False,endpoint is not an extremum
+28,1,False,False,endpoint is not an extremum
+28,2,True,False,main only; insufficient earlier disjoint quartet
+28,3,True,False,main only; insufficient earlier disjoint quartet
+28,4,True,False,main only; insufficient earlier disjoint quartet
+28,5,True,False,main only; insufficient earlier disjoint quartet
+28,6,True,True,registered main+matched
+28,7,True,True,registered main+matched
+28,8,True,True,registered main+matched
+28,9,True,True,registered main+matched
+28,10,True,True,registered main+matched
+28,11,True,True,registered main+matched
+28,12,True,True,registered main+matched
+28,13,True,True,registered main+matched
+28,14,True,True,registered main+matched
+28,15,True,True,registered main+matched
+28,16,True,True,registered main+matched
+28,17,True,True,registered main+matched
+28,18,True,True,registered main+matched
+28,19,True,True,registered main+matched
+28,20,True,True,registered main+matched
+28,21,True,True,registered main+matched
+28,22,True,True,registered main+matched
+28,23,True,True,registered main+matched
+28,24,True,True,registered main+matched
+28,25,True,True,registered main+matched
+28,26,True,True,registered main+matched
+28,27,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+28,28,False,False,endpoint is not an extremum
+29,1,False,False,endpoint is not an extremum
+29,2,True,False,main only; insufficient earlier disjoint quartet
+29,3,True,False,main only; insufficient earlier disjoint quartet
+29,4,True,False,main only; insufficient earlier disjoint quartet
+29,5,True,False,main only; insufficient earlier disjoint quartet
+29,6,True,True,registered main+matched
+29,7,True,True,registered main+matched
+29,8,True,True,registered main+matched
+29,9,True,True,registered main+matched
+29,10,True,True,registered main+matched
+29,11,True,True,registered main+matched
+29,12,True,True,registered main+matched
+29,13,True,True,registered main+matched
+29,14,True,True,registered main+matched
+29,15,True,True,registered main+matched
+29,16,True,True,registered main+matched
+29,17,True,True,registered main+matched
+29,18,True,True,registered main+matched
+29,19,True,True,registered main+matched
+29,20,True,True,registered main+matched
+29,21,True,True,registered main+matched
+29,22,True,True,registered main+matched
+29,23,True,True,registered main+matched
+29,24,True,True,registered main+matched
+29,25,True,True,registered main+matched
+29,26,True,True,registered main+matched
+29,27,True,True,registered main+matched
+29,28,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+29,29,False,False,endpoint is not an extremum
+30,1,False,False,endpoint is not an extremum
+30,2,True,False,main only; insufficient earlier disjoint quartet
+30,3,True,False,main only; insufficient earlier disjoint quartet
+30,4,True,False,main only; insufficient earlier disjoint quartet
+30,5,True,False,main only; insufficient earlier disjoint quartet
+30,6,True,True,registered main+matched
+30,7,True,True,registered main+matched
+30,8,True,True,registered main+matched
+30,9,True,True,registered main+matched
+30,10,True,True,registered main+matched
+30,11,True,True,registered main+matched
+30,12,True,True,registered main+matched
+30,13,True,True,registered main+matched
+30,14,True,True,registered main+matched
+30,15,True,True,registered main+matched
+30,16,True,True,registered main+matched
+30,17,True,True,registered main+matched
+30,18,True,True,registered main+matched
+30,19,True,True,registered main+matched
+30,20,True,True,registered main+matched
+30,21,True,True,registered main+matched
+30,22,True,True,registered main+matched
+30,23,True,True,registered main+matched
+30,24,True,True,registered main+matched
+30,25,True,True,registered main+matched
+30,26,True,True,registered main+matched
+30,27,True,True,registered main+matched
+30,28,True,True,registered main+matched
+30,29,False,False,i=n-1 excluded by the four-slot motif requiring a right outer neighbor
+30,30,False,False,endpoint is not an extremum

@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "unit": "unit03",
+  "elapsed_seconds": 274.4324885419919,
+  "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+  "token_freeze_sha256": "ed022a2dd25fa4edae0eb645452646d1eb647097a1d2453bdecf82bc44d4b943",
+  "result_sha256": {
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit03/summary.csv": "77f8186dab45dee3126f7639e9703da0f3697ffc80f41b37fd02bc3bfa2a4fb4",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit03/probe_fit.csv": "681111e75aeccdf561d911b6e1ac1c835e654a3a748f107c42e5980bbd8afe6c",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit03/shuffle_fit.csv": "49bf8b8c7f078faea41a5d3bab5a2c4b8542e5c918eb23195a89a70e3b8f06d5",
+    "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit03/by_length.csv": "5067d21e8ca2fcbb0d85581bf800f43a02bf257233d1e02333ca49a08f10ec9f"
+  },
+  "no_base_training": true,
+  "external_features": "/mnt/yangx-projects-f/20261110/permworld_exceedance_alignment/token_diagnostic/features/unit03",
+  "external_scores": "/mnt/yangx-projects-f/20261110/permworld_exceedance_alignment/token_diagnostic/scores/unit03",
+  "external_parameters": "/mnt/yangx-projects-f/20261110/permworld_exceedance_alignment/token_diagnostic/parameters/unit03"
+}

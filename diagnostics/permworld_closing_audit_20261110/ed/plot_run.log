@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "created_utc": "2026-11-10T16:37:37.012428+00:00",
+  "post_results_reader_only": true,
+  "no_new_metrics_or_conditions": true,
+  "no_model_or_probe_fitting": true,
+  "all_four_formal_units_shown": true,
+  "scalar_summary_checks": 28,
+  "tolerance": 1e-12,
+  "source_sha256": "965f4db471328f8042416d918fadbd221c2110d5458b41e0709b8478f6766ec4",
+  "inputs": {
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/cka_per_unit.csv": "f5c1a40d76304cbb4adc48f5d151f01b0841206ecdfbc791ebe1106df197c80a",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/cka_four_unit_summary.csv": "6f5d45c8cdaacf6e77fe3a36f39d74cc6a4be988f7e0423f2283e556218529c2",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/probe_per_unit.csv": "53f3358aff7b3334a88cbea7ae3b09379fabe0883714d0bb7d2dbf3761af4958",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/probe_four_unit_summary.csv": "c0acfdd5f57179bb56712253885c9d47f4d3a98b1f9063d888f5ae6e26a8f26b"
+  },
+  "outputs": {
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/ed_encoding_comparison.png": "3cf5a5062443fb6a87a1ea4b19a6c392777024ab554240e049541125e6328925",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/ed/ed_encoding_comparison.pdf": "e7810b79a47d905a4719879219d5d3048deb2db3c2fed31b50b46fecc20ac6c3"
+  }
+}

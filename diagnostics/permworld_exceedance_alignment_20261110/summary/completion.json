@@ -1,0 +1,226 @@
+{
+  "status": "completed_saved_position_alignment_summary",
+  "units": [
+    "archdev001",
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "new_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "normalized_length_rows": 22260,
+  "scalar_rows": 1060,
+  "comparison_rows": 40,
+  "cross_pair_rows": 10,
+  "registered_lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "common_controls": [
+    "means_only",
+    "identity_map",
+    "wrong_transform_map",
+    "shuffle_1026",
+    "shuffle_1027",
+    "shuffle_1028",
+    "shuffle_1029",
+    "shuffle_1030",
+    "shuffle_1031",
+    "shuffle_1032",
+    "shuffle_1033"
+  ],
+  "maximum_after_fixed_length_aggregation": true,
+  "full_primary_matched_secondary": true,
+  "no_new_fits": true,
+  "no_neural_forward": true,
+  "undefined_lengths_not_reweighted": true,
+  "completed_utc": "2026-11-10T12:31:13.148967+00:00",
+  "protocol_sha256": "234726c8b293f1198091fa7d70d7baa8df3ed2843315ce3a336763d3a58b625f",
+  "script_sha256": "4eb76c01582486613eda6beacc55adb8de87d79e881e5265a66873df4002ac10",
+  "source_tables": [
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/by_length.csv",
+      "sha256": "5bd118e6a5fa236fe520dae046626a0f2f3f58379c04591477247888ce9ff14c"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/archdev001/summary.csv",
+      "sha256": "66483f13a30718f3700ab7e6dd4ce872119541ecf08423debe0ceb934ac1fbcd"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/by_length.csv",
+      "sha256": "9e5c1c8708800523c5c80015ecb84844a53969179eed20af2d333ae126a5c41b"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/unit02/summary.csv",
+      "sha256": "97c8a2ca229e78594924c5f11f9054ea1b1af091d4948b6af21825cc7b84190d"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/by_length.csv",
+      "sha256": "251dea00d2df434c601e9e1b7946c8c5c25845c3aa8846201831797bc138e213"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/unit03/summary.csv",
+      "sha256": "bd72256eeb5133fec8f8973943baac3fd21723db246f732d6633189f27467e9d"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/by_length.csv",
+      "sha256": "0332e582ccea6e20ea4fe9350c56bd579fac7f3da82588c5a708a01dca08a5a8"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/unit04/summary.csv",
+      "sha256": "742655d6c79ccaad215f865672719d3bdcd1600140e307fb1aa0af76f652ed49"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/by_length.csv",
+      "sha256": "f2b6de1257e326925e7453cae77ad3ae9a123809b9958fec1ecbe12fe62e9bca"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_orthogonal_alignment_20261110/results/unit05/summary.csv",
+      "sha256": "72138fb4c186706666871c1660a66515dbd57aad6dd53b651255b326a1a0ae22"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/archdev001/by_length.csv",
+      "sha256": "8c5ba329cb61400589046dce43b0edb617d75a3d1f53f541f58c03281b9e6570"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/archdev001/summary.csv",
+      "sha256": "3de77841a14a71e3c4762bca25f781f5c91b438ef332a9be64af9f6f23319b73"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit02/by_length.csv",
+      "sha256": "3132ff98ffdac336e544e15f4c2dcf2a5b91e625a91ce35cd32b372ab8d44d94"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit02/summary.csv",
+      "sha256": "eecc5fcef606bdf86d632f1a1e022f7336f68c3519f70b09781da1cbf6144e04"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit03/by_length.csv",
+      "sha256": "338c8c2733314a6630312fb616c8abc05f273fec8e3136618e0574a726a39b7d"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit03/summary.csv",
+      "sha256": "0b719f71eee0b134e0b680a570090e57957d5a8338c9c0c26164ce598051853f"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit04/by_length.csv",
+      "sha256": "049010e618c352fad6e5f7cef2b8ec8013ec900b5d6133ca1b1d038ebc0bf6a1"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit04/summary.csv",
+      "sha256": "6d40b787eba48ad046e63f7135e2b4547f2219920441fa0cf9483d5851fe13ae"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit05/by_length.csv",
+      "sha256": "1444a18673f62c74498c6d980d8a683188dff610894dc1e925df0b1765f13a2f"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit05/summary.csv",
+      "sha256": "1fb9aaa255ea95eed29b55e4bcd569e074f4aea76abde21a37b96f1d817398fa"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/archdev001/learning_by_length.csv",
+      "sha256": "77d5d1a0c48dfea2b6a4f1fa13838da792057b236f9b9c9a12d2e6ff7879cd60"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/archdev001/coverage.csv",
+      "sha256": "7d0440f0428f5ea795ed12616bd29195c686a9d189acf6d655075c649b9573a9"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit02/learning_by_length.csv",
+      "sha256": "a2b517c96c6ccbf3c6817729bf6021087eabb28e0b8cf6ea4ab5c63a9928e89d"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit02/coverage.csv",
+      "sha256": "cb994f63d1092e3b94ca7d14e8a14523d7e6f3c6f842a5fcc5bba6dbec339f2a"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit03/learning_by_length.csv",
+      "sha256": "dee2f7018c16920d0910e36a52678056c7c0a44ccc011b9569b55b598e8cbdad"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit03/coverage.csv",
+      "sha256": "2368c2527926a3ebb388c38713b5c15398984439a993e59f91bd8b1e345b76d4"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit04/learning_by_length.csv",
+      "sha256": "25da7c8cad0b970472ee9d8ab94a16c9b17355637b9cd1f6cb90513129f8af12"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit04/coverage.csv",
+      "sha256": "b5c3b120038b7c66511ed832643aa5ed85038a1c3ac9956f3d6a9dd3359c1b0e"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit05/learning_by_length.csv",
+      "sha256": "d7b0121080f4a555d3714d60054399489945cb1d93ecfe52d21c92633d849bd3"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_peaks_probe_20261109/results/unit05/coverage.csv",
+      "sha256": "11615fb5e4f4084f367810c17bc47a082338ba0f2912dfa8c89d20e5b6cfd0c4"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/archdev001/model_diagnostics_by_length.csv",
+      "sha256": "732ad4525a86250335103e0379c738524d97b1aab57e37b2600fdafc7c92006c"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/archdev001/coverage.csv",
+      "sha256": "1f785a77925e35cba3e06d25b39baf352a0075c0f3bd9e3afacea0f208295a8a"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit02/model_diagnostics_by_length.csv",
+      "sha256": "6bc8635d22ddfe8b7cb4e415065dc66feb3c0c7b208dd8e551561579fad8c4fb"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit02/coverage.csv",
+      "sha256": "4ce445025d28ab94420bc6a6e3216843f1c727eb32f7643f820c7ebffe6bdff9"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit03/model_diagnostics_by_length.csv",
+      "sha256": "4f392ec4037b4e44e4a60c50585cc5a3342311e771f93ae5a8ec6c8bb049daa3"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit03/coverage.csv",
+      "sha256": "0c609ba702bb7c2ac20b03456e8968606459ede773aa541ec1fb9c3d7c2797b7"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit04/model_diagnostics_by_length.csv",
+      "sha256": "067759c157f5d8a7bce8d29848b87689d5391a377c72bc12d9ed9563fc260cfa"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit04/coverage.csv",
+      "sha256": "275bde700a2607503ac64ad3eefe373c349bda906246213c3bdb701107a65fcd"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit05/model_diagnostics_by_length.csv",
+      "sha256": "900c7b4d8d03bbbb626231f4c3a4862f5975116cf5614a296fdba218b66d4d19"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/results/unit05/coverage.csv",
+      "sha256": "067b195f9db1d4d3d8f09c71e80b7f11f4ca724c0172c1c28aac814dd6ab7aa4"
+    }
+  ]
+}

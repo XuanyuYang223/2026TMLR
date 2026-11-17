@@ -1,0 +1,17 @@
+{
+  "protocol_sha256": "ae15cb791d7095b835a2f907301f1824254529e1566c7004b573b36baebb94b1",
+  "source_sha256": {
+    "experiments/permworld_lemma_composition_20261110/run.py": "15875c52461a2136e60731b40da1bf95f25fa4325a858aba6df659554c498d44",
+    "experiments/permworld_lemma_composition_20261110/oracles.py": "5094ab20366438317e76d5c5db52e21438e45840e5105cad4b30fbe349c723fe",
+    "experiments/permworld_lemma_composition_20261110/calibration.py": "68d199ee568b1f1c9f30f820f822c245af9acfa1a96ae49985437b877330d4de",
+    "experiments/permworld_lemma_composition_20261110/export_predictions.py": "70545860af358a2293a412933639a93b81515aa56a4e06f71db2fc2798b93f27",
+    "experiments/permworld_lemma_composition_20261110/combiners.py": "5bb1e4519918c925b8933a4e8c9ac683d5ba1b50b8f0aa8f117e5636adfb607e",
+    "experiments/permworld_lemma_composition_20261110/__init__.py": "dbfa7ec4f78436de190f14f3f88b4d7421a66443db85b23b58fda28c403854d9",
+    "experiments/permworld_lemma_composition_20261110/metrics.py": "2545a951cabc527b7a8337b72eb9077a82fb82f73dfbdf3e7e299dc93879bfd2",
+    "experiments/permworld_peaks_probe_20261109/vendor/analyze.py": "f6092e467473d2a3d98a7f3be15b8087d53571706e4aee059d2002e65c23432c",
+    "diagnostics/permworld_lemma_composition_20261110/cache_audit.json": "2d3507c4b5a70e9572a81a099b222cd53882fa7407b1e6f6cc3979d7e0d9a78a",
+    "tests/test_permworld_lemma_calibration.py": "5def0952db5caa83b8b9a11f998309718de74c18e56b232ca56db33f863770a8",
+    "tests/test_permworld_lemma_oracles.py": "6415ba14e68b06263dd99184044af9fb16f61acbce0e0adb106936adf9c0f0df"
+  },
+  "before_actual_source_threshold_and_downstream_predictions": true
+}

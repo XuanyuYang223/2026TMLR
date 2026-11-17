@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-11-10T16:35:07.679922+00:00",
+  "global_protocol_sha256": "762dcc6e6e7f5ee1b2ea1358dbd97df56a74f2d615a59cf444a9fce3125ffde6",
+  "spec_sha256": "22112a92b44911121817b9d1124ce60bdbe074fe4989452192c5e3a285597849",
+  "code_sha256": "e0096d2e5d8403486ff4fb8639fdd87cf8b81103cec79aac9107785e771b6d36",
+  "source_files": 943,
+  "source_bytes": 291609388,
+  "sources_unchanged": true,
+  "missing_sources": [],
+  "arithmetic_checks": 1240,
+  "maximum_arithmetic_error": 4.440892098500626e-16,
+  "tolerance": 1e-12,
+  "cka_unit_rows": 60,
+  "cka_phase_rows": 120,
+  "cka_length_components": 5040,
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_reference": "archdev001",
+  "no_new_CKA": true,
+  "no_model_forward": true,
+  "no_training": true,
+  "no_probe_fit": true,
+  "no_map_fit": true,
+  "results_exploratory_posthoc": true,
+  "git_head": "6d745815c0a1a2a41ad5fc8c0aa6e018f9bab249"
+}

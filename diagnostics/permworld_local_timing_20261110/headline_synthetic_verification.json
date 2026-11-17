@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "source_sha256": "fa94b05bab27a4de44663533c91b35fc2c111dc50fb321454151e129d2be987a",
+  "checks": [
+    "distinct relative/oracle labels",
+    "four new units only",
+    "raw units/sample SD/range",
+    "all four complete-layer payloads",
+    "separate early complete-L1 paired contrast",
+    "historical reference separate"
+  ],
+  "example_result": {
+    "status": "completed_derived_timing_headlines",
+    "formal_units": [
+      "unit02",
+      "unit03",
+      "unit04",
+      "unit05"
+    ],
+    "historical_reference": "archdev001",
+    "main_cells": 8,
+    "auxiliary_cells": 8,
+    "positive_control_cells": 8,
+    "scalar_checks": 0,
+    "maximum_summary_error": 0.0,
+    "no_new_metrics": true,
+    "no_raw_output_access": true,
+    "no_fits": true,
+    "no_forwards": true
+  }
+}

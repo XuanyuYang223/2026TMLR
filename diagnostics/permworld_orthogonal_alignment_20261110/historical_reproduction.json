@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "summary_rows_checked": 184,
+  "maximum_AUROC_difference": 0.00011638925043588877,
+  "fixed_tolerance": 0.001,
+  "previous_probe_baseline": {
+    "direct_own_prior_baseline_checks": 36,
+    "maximum_absolute_difference": 0.0,
+    "all21lengths": true
+  },
+  "no_new_forward": true
+}

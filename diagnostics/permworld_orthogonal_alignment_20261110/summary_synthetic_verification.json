@@ -1,0 +1,18 @@
+{
+  "status": "passed_synthetic_only",
+  "helper_sha256": "a7a7cd3a474ffa85d8481b79a478dc4d5fdb60453413d436194a06c27501add3",
+  "synthetic_output": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/synthetic_summary_smoke",
+  "synthetic_unit_tables": 20,
+  "synthetic_length_comparisons": 420,
+  "synthetic_alignment_scores": 880,
+  "synthetic_alignment_lengths": 18480,
+  "synthetic_task_controls": 40,
+  "synthetic_task_control_lengths": 840,
+  "maximum_aggregation_error": 5.551115123125783e-17,
+  "strict_maximum_not_shuffle_mean_checked": true,
+  "task_control_can_make_strict_win_false_checked": true,
+  "missing_required_length_rejected": true,
+  "four_figures_generated": true,
+  "no_actual_result_scores_read": true,
+  "no_alignment_or_probe_fitting": true
+}

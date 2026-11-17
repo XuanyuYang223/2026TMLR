@@ -1,0 +1,50 @@
+{
+  "status": "completed_saved_timing_summary",
+  "raw_rows": 2923200,
+  "pairs": 100800,
+  "scored_rows": 3729600,
+  "position_rows": 1802640,
+  "exact_l1_hash_comparisons": 1108800,
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_engineering_reference": "archdev001",
+  "streamed_case_major": true,
+  "no_fits": true,
+  "no_forwards": true,
+  "no_metric_or_condition_selection": true,
+  "main_interpretation": "Interlayer path at this current update, not precise accumulation time or a natural one-dimensional predicate mechanism",
+  "completed_utc": "2026-11-10T15:05:42.144583+00:00",
+  "source_sha256": "77877ee04e6ef42896e576a0b02a771b1040ca43a8d1aed91abbdfb3da6684d9",
+  "protocol_sha256": "148d7741b659493c345c6e3ed5ec68ec6faede15cce7e300e8b2fec4bc7b3107",
+  "source_tables": [
+    {
+      "unit": "archdev001",
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/results/archdev001/pair_results.csv",
+      "sha256": "ed5008361203fd0be8f7fd25d8fcb758c24ad77410a28f35b35d9745c7deefa6"
+    },
+    {
+      "unit": "unit02",
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/results/unit02/pair_results.csv",
+      "sha256": "5d4ec7d617b57a4e9b0d1f1b0f77b5ff825c4b6d26835093cb628bbd32380b9a"
+    },
+    {
+      "unit": "unit03",
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/results/unit03/pair_results.csv",
+      "sha256": "710a80f1547bab09d2dd3d022242c8077002dc84ab507ab8ada13c98cd4aa8ec"
+    },
+    {
+      "unit": "unit04",
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/results/unit04/pair_results.csv",
+      "sha256": "76c98d976e3095c8374a23c790b30c11a7b3a60da7b9c07ca847ed2c1e726663"
+    },
+    {
+      "unit": "unit05",
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_timing_20261110/results/unit05/pair_results.csv",
+      "sha256": "d2925f7663e4c320e53198225a42eebbda2bbf2524e761169fed369fc1f80a31"
+    }
+  ]
+}

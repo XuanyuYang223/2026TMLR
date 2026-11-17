@@ -1,0 +1,9 @@
+unit,historical_reference,task,group,sign,full4_donor_oracle_accuracy,full4_local_desired_answer,full4_relative_step,actual_cf_oracle_accuracy,actual_cf_desired_answer,actual_cf_relative_step,recipient_original_accuracy,early_noop_relative_step,early_noop_any_token_change
+archdev001,True,peaks,main,-1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+archdev001,True,peaks,main,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+archdev001,True,peaks,matched,-1,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+archdev001,True,peaks,matched,1,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+archdev001,True,valleys,main,-1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+archdev001,True,valleys,main,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0
+archdev001,True,valleys,matched,-1,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0
+archdev001,True,valleys,matched,1,1.0,0.0,0.0,0.9997412008281573,0.9997412008281573,0.9997412008281573,1.0,0.0,0.0

@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "units": [
+    "archdev001",
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_reference": "archdev001",
+  "spec_sha256": "52124e36ca4bdd8d0c1eb8b77e3f2ac5f9f1b0c772c736160cfc12907d67f9c8",
+  "source_plan_sha256": "aae8bca14d461929370e527b382dcd9faae1e5d3d2259446c99b57794af9838e",
+  "no_probe_fitting": true,
+  "no_base_training": true,
+  "no_neural_forward": true,
+  "data_support_and_probe_unchanged": true,
+  "output_tables": {
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/by_unit.csv": "19050c4a52ca6e02760a12f5172023e94b2489f23ee03bf88e60d73900eed9c5",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/contrasts_by_unit.csv": "c60c15a98ce05ff02e69731ea0afabe664ea37cf32763d8ef7108ea3d193133e",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/common_mapping_controls_by_unit.csv": "463ee255d63e8449e897243fc95f51c6bf95de926d53e3bb9ab327efcb4a1768",
+    "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/alignment/four_unit_summary.csv": "2e48027bcdb5995f86b055c8c59ef5959a79478fd8a4c4eb0d1d824234d682b8"
+  }
+}

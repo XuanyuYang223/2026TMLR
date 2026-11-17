@@ -1,0 +1,978 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-10T08:29:05.836418+00:00",
+  "source_audit_sha256": "dcfe1f33832b49bbe8d6bca961a00ed1966b7270a7adb3056cec892a6efb4654",
+  "adapted_files": 30,
+  "exported_action_arrays": 50,
+  "total_feature_values_bit_compared": 68812800,
+  "units": 5,
+  "new_units": 4,
+  "all_reuse_receipts_true": true,
+  "standardized_files_reused": 50,
+  "source_identity_and_order_bindings_passed": true,
+  "source_payload_hash_scope": "Uses the current-task source audit expected SHA and exact array comparisons; independent global endpoint audit rehashes original source files. All30 output NPZ current bytes hashed here.",
+  "no_source_file_rebuild_evidence": "All five completion receipts select reuse; all50 prior standardized-file SHA bindings, sizes and mtime_ns agree with start audit. This is endpoint/receipt evidence, not continuous system-call monitoring.",
+  "adapted": [
+    {
+      "unit": "archdev001",
+      "file": "canonical_cycle-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/canonical_cycle-initial.npz",
+      "sha256": "6f83ca4e797798087a9745259392710d22150fd3e9f2e6cdb4d13c6b469246a1",
+      "source_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_canonical_cycle_peaks__initial__validation/prefix_final.npy",
+      "source_sha256": "507d181bd178c775c3fd73c8e17021ef117cd896a514bfd990a136e9c6a56b3c",
+      "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "d2687b2d5c47d507459edc77639917c0294c37e90f2ce6636d0819f0dd269e89"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "40d4a62a4336ff93b037292b6876a6bd5c387d5399e9321f2edca09504df5961"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "archdev001",
+      "file": "one_line-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/one_line-initial.npz",
+      "sha256": "52721563037b0d1e65e3c315281d190813af85029c32357989d915bb40cbfbaa",
+      "source_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_peaks__initial__validation/prefix_final.npy",
+      "source_sha256": "374581bd7ed7bfe2e68c83de963a8cc4b4cf91ae132db51404fbfa22a940d054",
+      "checkpoint_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "816954e4d858237a5fa638137cbcd8591c6fece2ca2ccd0fc53741fc55d21176"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "111443296b19db836501edf647c1396458ba566da23f49348326d5d6db07f513"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "archdev001",
+      "file": "canonical_cycle-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/canonical_cycle-trained.npz",
+      "sha256": "0ae33c050d9566ca920e848086aad040e96d11c61da5129b31a66f0f32eb8f83",
+      "source_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_canonical_cycle_valleys__trained__validation/prefix_final.npy",
+      "source_sha256": "6ce59140bc2cb42f2248f8f92f54556c23d12ce6881190db531154c2093e7ce2",
+      "checkpoint_sha256": "e9d15f72b6b3f596a28848244b031b56affcc0e7579f9328c5e9e6cde4db424b",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "d72ed2fb4defd09bbec63bcf8ca6bbbc8ed908ce7b908ffb496a043d3766f717"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "301fc2ea7e3261b42f7f6589e8e1638462a837dcc100a9c2d7deb0651ac099ae"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "archdev001",
+      "file": "one_line-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/one_line-trained.npz",
+      "sha256": "b9ce3e6c1dbf026a058ce339a23c487102d2b107744f6b08ea6859acf65556aa",
+      "source_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_valleys__trained__validation/prefix_final.npy",
+      "source_sha256": "ea52165a71c565a334cce7e72857a20d7ccb81088b91115853157b583ece1c4d",
+      "checkpoint_sha256": "622bb8a9cd004a83522211b271beff612942c14e688dfce83d4fd7af17bcb499",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "deae773f1151ef73ecb00ab9e9fb4c5c00805ef9b7d6e95e707f055be939d3a6"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "8203bbf03a12d5bf7ae41cd04ca4e95bf9f7dfcbc4a52caf045025e9ca32da1b"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "archdev001",
+      "file": "one_line-descents.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/one_line-descents.npz",
+      "sha256": "1a4e45be5908d4168400d61efa84a127c29b3f996065ccea2edea84163d32118",
+      "source_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_descents__trained__validation/prefix_final.npy",
+      "source_sha256": "2be2301d9d580412f4c7f551968e06d53c85239595ddd737cc2451714e237dc8",
+      "checkpoint_sha256": "6056d63f790cc1b63961c2147f6fe231587b99e18e710407448e97fad9b1c2ef",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "47d3061ce184ed8fcc9314f3f70ea5145880dc61bc334e73b6d49aa532381752"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "archdev001",
+      "file": "one_line-recoils.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/archdev001/one_line-recoils.npz",
+      "sha256": "7df71d2543fd3a65234990ebcc1fd25c2002e0d1a78b4e9b999bc8de2392f366",
+      "source_path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/evaluation/archdev001_gru_one_line_recoils__trained__validation/prefix_final.npy",
+      "source_sha256": "764d73f914669f0560e34dc6ba609377ca11d9c52627c767b0ae1e6530eb2427",
+      "checkpoint_sha256": "5737d8ee863a01d681f0800b88704a6b66df21009636659346816f47822904f3",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "39543499c50314ff6fd7949026ff433e74be2e83b62e005968913d120573c67f"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit02",
+      "file": "canonical_cycle-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/canonical_cycle-initial.npz",
+      "sha256": "70f431817c34877e30d7a6cf03eecb1a3be47940ea35286c9d2e96c01da4ebb3",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_canonical_cycle_peaks_initial_validation.npz",
+      "source_sha256": "2d6b102236c277d47201e0feaa3a9e0be5836afc92a9af6f76a9cc1f7cbacc7e",
+      "checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "a07c851e45b05cca6628dc4fc34961adc732f484dcf8a71c124efa17c3187e01"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "20a24e56cf63852bb1f0cfa6cbe51c837d12bd307631e7687146d3f6e408f6f2"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit02",
+      "file": "one_line-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-initial.npz",
+      "sha256": "d38643379901a235b6e3461982eb70d3b91d27db28720a0c7f2b9547de08137c",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_peaks_initial_validation.npz",
+      "source_sha256": "28929d5c6fa4338b46ca4373219e448dafce04aa7db22886c28bdbfb41d25c7b",
+      "checkpoint_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "5921406b6f6ccbb4919eaa5101ec72e79efe39200a83d937831c72109168ed4b"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "5ca81ce9af73f7a5b0ba9891d07a7f6da9282656150229c611f921f11ea18488"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit02",
+      "file": "canonical_cycle-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/canonical_cycle-trained.npz",
+      "sha256": "44797f566b7d8ff3126db8b38a62cfe6f89e08c671aca3a4eda40948af73cd7c",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_canonical_cycle_valleys_trained_validation.npz",
+      "source_sha256": "78279234de71dcd1a49e6087a85d48fce00789bc681e25fbd2bb9744f98d6015",
+      "checkpoint_sha256": "d9dfeac2c381c9a2bb19d74c71ec1ab19eca30df3c04f7337a7556ad0df4195b",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "41d8d5e41275ca483e9b09b932a1956ab19873a552d755a198f0bd3dd70a5fac"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "df912c0a020d457381edd412493e991901f831bf14a70f0366799d7fedee19f0"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit02",
+      "file": "one_line-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-trained.npz",
+      "sha256": "1b9b5d37923b9e0961380f130ade181003f13e23ce0d935a79640e6cacaca990",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_valleys_trained_validation.npz",
+      "source_sha256": "1e6911334aeb2259a6bc4a0d38582d55292e4fe3375f11dbbf088baf5d10e92d",
+      "checkpoint_sha256": "c3a53105d9a505ea449cb17d74911ec9c970728a15c8ea729da3a351ff216af4",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "229aa7f0cd3fa4d27ee8d54f74630f8bd7057fa9f863702040b26a35ae66440e"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "2ff33ba59fc8e7075af2960365263df55c3d52f42e82285372b841ad6b11df70"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit02",
+      "file": "one_line-descents.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-descents.npz",
+      "sha256": "c714b0d69bffbc1e7f08f765de38b32d5a4fadd055c23736cce44a8feb405ee2",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_descents_trained_validation.npz",
+      "source_sha256": "47ffee3545f0bf31eb0d759efcbd835c7a6d82160f43cf79181d25f00726d658",
+      "checkpoint_sha256": "eedac3c2214bc68f349f977e9baf8aa9061242e3cc8bd2b2839247e7bea1776f",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "8861c75f76a75cff14d4ccbdb7d95e1b3301cf5160800fd3b8aa9bd9df91b52d"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit02",
+      "file": "one_line-recoils.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit02/one_line-recoils.npz",
+      "sha256": "820eff07e5c5aade413c8ebf26a691716aa185ba3140a06330f141fb6eccacfb",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/features/gru_one_line_recoils_trained_validation.npz",
+      "source_sha256": "9a8ae8709b6fa8a2f57492a9498aa0790b9305f3c8d1b0913cf5ea10881b8ef6",
+      "checkpoint_sha256": "b53fa12c3fbe5757f212d6db32ca0895226c8ed747f01967af7156b6898a37f8",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "d1d30d380aa1461ea15ca22d369b266d7c9b6e00123a0a4ca9432f82cd6bbca1"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit03",
+      "file": "canonical_cycle-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/canonical_cycle-initial.npz",
+      "sha256": "8f81d3fdd6a914bec5ddc04b97590b5e4e2ec4b0ca2a740adce532956ec01a59",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_canonical_cycle_peaks_initial_validation.npz",
+      "source_sha256": "f8275059f2a6ac72c2298ad0707b7502e7e9cc688089c23f780856e14f066fcc",
+      "checkpoint_sha256": "15cba1041d3b10d003a6390081695e871a632329d759ed7d858c25a979012a63",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "2fdad8e3532b8fdac1c1ad2efc8eff4c90e50304ff29faba4af26431410752af"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "3b60d35963f41d8284ec3c69d06a476ac9e1f6dea075b64c9cd3207f825aea64"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit03",
+      "file": "one_line-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-initial.npz",
+      "sha256": "369f412732a56e0e0e4ecb97b5dceac5a3722ea47cf13ad4e16bf9ebc7c30d68",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_peaks_initial_validation.npz",
+      "source_sha256": "2f365821a3be573f4e1cde4ee216f8f2a894a5599eba17aa30d8a67e5d1b498f",
+      "checkpoint_sha256": "15cba1041d3b10d003a6390081695e871a632329d759ed7d858c25a979012a63",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "2661112085ae638370b9652180e8f782266b010e43b775c6085312b61afbeec7"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "62a11b64a807d24b45f534d3e52328d936e99c67707a86011eb18624d994b3f4"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit03",
+      "file": "canonical_cycle-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/canonical_cycle-trained.npz",
+      "sha256": "c25f40822ca7bb8a0c7259b33eba8d58d3c70cc7843ab120babec3abfca06dda",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_canonical_cycle_valleys_trained_validation.npz",
+      "source_sha256": "7352636776d3ad273e5594c9c549e09888f5038fc29a3ec54252ae2e23035e62",
+      "checkpoint_sha256": "8afbc641fb388209b87bef30b4e3a3c410727a5bdaab6363956d32b715125222",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "1a780a2ee10065ba6603b732d53e9671a83dd001d3e4631c4dd2812b9b6c6816"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "334af3966a82c0ad4f21b612c5fa9e24a3647f9d1addf14359fa4a8f0aa76df5"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit03",
+      "file": "one_line-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-trained.npz",
+      "sha256": "1cea0b19747aa44668f336730b585cfffb0f95a9e58a16b4009792810df4a6cd",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_valleys_trained_validation.npz",
+      "source_sha256": "b4762f3159285f3e2c2c5aedbf9d4c8ea07d81814068c94ff1af2fc9c8239526",
+      "checkpoint_sha256": "21e7de89564e1a64bcf2b17a3c1be061a2e42e0a8e2ac1be599613bd4d90da48",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "34aafb9ac059c5d6c038771988af1de8d043d6c9958e8f8196b441b3e1b2757e"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "426790d32047d353cc68816ae42b2601727abd9c2d4edbe0ef4b23fac814615f"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit03",
+      "file": "one_line-descents.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-descents.npz",
+      "sha256": "8d02074eed3ffcea5b1b8387ec6075f19ca5eff6b4bd94bd42877c44f082e473",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_descents_trained_validation.npz",
+      "source_sha256": "b8e6271647c08befd3db466ee959edb4f3728fb5316070abbf60ce100ddaf815",
+      "checkpoint_sha256": "ddff58d9246239b1738b6e4adc126b428a5844de8484dec63b98bd733b97ab2d",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "29fbe2c002fff38b00194f2d238c6d1e797a5b6d794d2a798b2395c535505b59"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit03",
+      "file": "one_line-recoils.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit03/one_line-recoils.npz",
+      "sha256": "e3847438321bcf875ea7e59adc9774272b7cf94aa0d604b0a1e937d07a8eab50",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/features/gru_one_line_recoils_trained_validation.npz",
+      "source_sha256": "f4a9b95977dc32ce6f6b4b1230c4aa50e3ebea07a6451bd848755121e69e4fbd",
+      "checkpoint_sha256": "da53b270b35bb9497626098aa3dabe0262d1cbd41ab7838dacfd9dc32dcb2c46",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "507b40e26e2416e5f28718fe06e8e8af834b3e49b68129295054dfcdb932e633"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit04",
+      "file": "canonical_cycle-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/canonical_cycle-initial.npz",
+      "sha256": "95577a94ba64f52d95c9d0830c8e7e02cc36b0c142207bac215c0b5a924d9898",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_canonical_cycle_peaks_initial_validation.npz",
+      "source_sha256": "ca8f9796f0623b4cd5fc5a26f384258130a1e9c44464fc34b81d20d43851f8bf",
+      "checkpoint_sha256": "543fa0af84726d918709b21ea467fe2f83b9c9b64733b7e9756bc81003fc5a2f",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "1efe0197afe9149fb39130de296f6e973a394c31a1d853ac3b0e66f1f83a5d2b"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "b6cad30009ed80ac37af30d94f672c8627fd9e5736b1d1c991a81b4442ef5a22"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit04",
+      "file": "one_line-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/one_line-initial.npz",
+      "sha256": "d857511fc4ab99fbdbbb51d0323379fc5583517cf8f1502dbb687afced65a1f7",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_peaks_initial_validation.npz",
+      "source_sha256": "580ed6753cc81fdaa423ef931be3fa1b9b17284eb993a6ce082f2b7e90da374c",
+      "checkpoint_sha256": "543fa0af84726d918709b21ea467fe2f83b9c9b64733b7e9756bc81003fc5a2f",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "432cc657757de194de9755bf1dd7c6077a248931e3ee9797e80a61238bbd67ce"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "3f1b49b911c270dec1d7eee61004751f14aa4f8f2072dfb62746cc21223f60d9"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit04",
+      "file": "canonical_cycle-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/canonical_cycle-trained.npz",
+      "sha256": "6654dffff185c63000bda2aa76afe8005eaa69b071435980d98232ffad2206c9",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_canonical_cycle_valleys_trained_validation.npz",
+      "source_sha256": "80a4ca442d27a8a17158e073a002cbd740d6d9b9b04be36a00e933fbe2c691ab",
+      "checkpoint_sha256": "6f0de9b89dc4f49e96c83143ee3d41171c7bcee8df6417fdef9c5efcd64a0ca3",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "e59af4e7323c75497ff0aa6fe51da0bd055a5e2bfc1e0459b6004288bb85b677"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "8a3dca0f2ec2726e6f50ccc58fe37b690ab233b33c2bb3e692902d5a94e56843"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit04",
+      "file": "one_line-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/one_line-trained.npz",
+      "sha256": "7ed1236dbb1ebb45cb30e3901f724484bea19351cdd16e5933494fb92883e183",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_valleys_trained_validation.npz",
+      "source_sha256": "a6e6c4e8b1fb36968ff1c07197cb60281988a889619fb0b7745a3df203be7992",
+      "checkpoint_sha256": "87dd83b7bd6d63168f629d86d0bd279de0d967da018edf20c8693aae29ff0426",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "cef0ee670c6421a61b11fe5f3b1cd56790c83bd0f01a926b33a7d4cedf603227"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "f3983bcd84da28d0577c80333c2dc2aaa69aa4c4b0db19db02fba9d44e44acf1"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit04",
+      "file": "one_line-descents.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/one_line-descents.npz",
+      "sha256": "fa555470619e8a052ddf03414fd1d2430b55af9251923a7b90d039fb8dd7afb2",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_descents_trained_validation.npz",
+      "source_sha256": "06d306845ddba203745164a7affa4142c7cad67317a9cd423d5f40a322f1b1d8",
+      "checkpoint_sha256": "342df3c7268e1751b04c6f93e2ab12d2a91b106ce0be5f89343ba4ada57ec5f5",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "4e7ea269e72035cd43c8705fffab1df4b333efa08e59e81b98bcd0a51e3a19f4"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit04",
+      "file": "one_line-recoils.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit04/one_line-recoils.npz",
+      "sha256": "5bc57424f7cfedcab2a3f9147211ea91fadea574227f401c078fe6aa89b7a256",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/features/gru_one_line_recoils_trained_validation.npz",
+      "source_sha256": "90431295836c994c690d4a0b87d5aade03c74673669cf06775bd6a2b2f8e5252",
+      "checkpoint_sha256": "3720dd4cc710d381eac39976e8a293f9aa034ad58c2b435138d821e539ed8460",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "c250eaaa952bb799855dfc764bfd0b65600b10ed60c8bb495fde14dc3d3e2e6b"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit05",
+      "file": "canonical_cycle-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/canonical_cycle-initial.npz",
+      "sha256": "c2b9accb500e7e2ef41ac7f937c2a63c392ab467412ef8543c2930b1056d06d7",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_canonical_cycle_peaks_initial_validation.npz",
+      "source_sha256": "5ae34bdc6c406f8d6e414cb410987d7939a4caed733177ed7ad5dee53785303c",
+      "checkpoint_sha256": "ab7e036a0966f140f2d8806cae14c9be4d0ff458ec60b1f98824a50da090ca54",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "59605b9f6e4fc93b4f1e4c9a7271ace493ba6508e6ca71947583b9da644ff141"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "409aa6d2051e1ecbdc5a7e6548bddd77dfe47daf5f75e1fd2a0c82f0dd788fb8"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit05",
+      "file": "one_line-initial.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/one_line-initial.npz",
+      "sha256": "e716efecfdab18baf03e30eaa0e1278aea997eceb22450c60884845ed81b5c0a",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_peaks_initial_validation.npz",
+      "source_sha256": "943547d4ddd490c430c40620d674bb40c51b3bc1db131ffbf329e40d21a1d2e3",
+      "checkpoint_sha256": "ab7e036a0966f140f2d8806cae14c9be4d0ff458ec60b1f98824a50da090ca54",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "2dedee991febf32172a2a37c245e34bc509577b774db2a9cc918b1df07881437"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "0a995326bca9bdfea713b6c2e386d4dfd92ec509a5a6bcb84cac27f3e47519af"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit05",
+      "file": "canonical_cycle-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/canonical_cycle-trained.npz",
+      "sha256": "19396d2cad6bca77676d7db515410494e658664f6270c8b068fa06dd1ed6ffc3",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_canonical_cycle_valleys_trained_validation.npz",
+      "source_sha256": "3e4a858f0e935f909228a2dfabc825647a2b6d09f2301b85151c2601618ef37c",
+      "checkpoint_sha256": "35786e9db80f482ff6966af2775818504a224262a33d116ac812e8701a07a423",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "6047cb0a094a232e6ceb2d29677d63fd2944b991e2c1176a9b6f7e036533faae"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "cab345585bfb9932b2421ea3a3f60c24d3ebdc825abfd555e93cb8afd4ee61c6"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit05",
+      "file": "one_line-trained.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/one_line-trained.npz",
+      "sha256": "388337f3ba2f399d327498c69b4ed17453d4d6de6b9646ced8481079b436e150",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_valleys_trained_validation.npz",
+      "source_sha256": "0ca3145d8efab5e29e43684641694a966db72054edf582fe447a89bb710d9605",
+      "checkpoint_sha256": "b1a7a87b79c07d9b78dd913c4b766c3fd6a3f656a426d47e00544c3d46e1da3e",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "341f5e5d199dd6f8c1363d5eee64cf7992d65e929259fbaa68f2ab5cad1c06d6"
+        },
+        {
+          "action": 2,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "7f36e7353d259c1da0f86819ec7b1b888a2dbd74d6034b91d3f24e454c77d336"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit05",
+      "file": "one_line-descents.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/one_line-descents.npz",
+      "sha256": "1adb08bf22fcb3497c5ec2af33f2dea80d31fdcfabf789155cb0e0e02bb2dbb5",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_descents_trained_validation.npz",
+      "source_sha256": "2b4677c0734341ee62f87b49bddb369773c7f5c653d0f180bfe8568a31434d51",
+      "checkpoint_sha256": "9adfe5f45bcbf57d7d5c5350f493d9649d79698b08fb4b7ab9253b40ff4ac46b",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "8321dc5f126d6f1ff0f958b1afc2cebcea7e7a99e3d9bd9f1c8385d6b9f71646"
+        }
+      ],
+      "sidecar_binding_passed": true
+    },
+    {
+      "unit": "unit05",
+      "file": "one_line-recoils.npz",
+      "path": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment/validation/unit05/one_line-recoils.npz",
+      "sha256": "a0abc2d5e795def846bf7d67442dbf2a652baa41301083df42e5093475f3d5b5",
+      "source_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/features/gru_one_line_recoils_trained_validation.npz",
+      "source_sha256": "e772bef51da7107c07828d2179dcfdc450b7916ea4aa9259434c02bbf0435129",
+      "checkpoint_sha256": "603ebf9b656289db50134953b496ec99ee50b73ba9066dc3a7ebcf9f0770fba3",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "indices": "Exact arange(5376), no subsampling/reordering",
+      "actions": [
+        {
+          "action": 1,
+          "shape": [
+            5376,
+            256
+          ],
+          "dtype": "float32",
+          "bit_identical_to_source": true,
+          "content_sha256": "ea92506bd3741c2ffbca0fd7c0fec91b0e09386ab6941b647398c4169c01a4ed"
+        }
+      ],
+      "sidecar_binding_passed": true
+    }
+  ],
+  "reused": [
+    {
+      "unit": "archdev001",
+      "completion_reports_reused": true,
+      "standardized_files": 10,
+      "all_prior_hash_bindings_match": true,
+      "original_file_sizes_and_mtimes_unchanged": true
+    },
+    {
+      "unit": "unit02",
+      "completion_reports_reused": true,
+      "standardized_files": 10,
+      "all_prior_hash_bindings_match": true,
+      "original_file_sizes_and_mtimes_unchanged": true
+    },
+    {
+      "unit": "unit03",
+      "completion_reports_reused": true,
+      "standardized_files": 10,
+      "all_prior_hash_bindings_match": true,
+      "original_file_sizes_and_mtimes_unchanged": true
+    },
+    {
+      "unit": "unit04",
+      "completion_reports_reused": true,
+      "standardized_files": 10,
+      "all_prior_hash_bindings_match": true,
+      "original_file_sizes_and_mtimes_unchanged": true
+    },
+    {
+      "unit": "unit05",
+      "completion_reports_reused": true,
+      "standardized_files": 10,
+      "all_prior_hash_bindings_match": true,
+      "original_file_sizes_and_mtimes_unchanged": true
+    }
+  ],
+  "elapsed_seconds": 3.7629560109926388,
+  "no_fitting": true,
+  "no_neural_forward": true,
+  "no_original_file_writes": true
+}

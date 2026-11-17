@@ -1,0 +1,24 @@
+{
+  "protocol_sha256": "016ef16f07924f8bf55a232d21754612afa15dd2655cd4ac9d0425ff3657b176",
+  "created_utc": "2026-11-10T13:57:19.493884+00:00",
+  "sources": {
+    "experiments/permworld_local_causal_20261110/run.py": "122c659498c8706d53f8ef397517c89ccd5a4c493ac759fe48568cc51c595752",
+    "experiments/permworld_local_causal_20261110/shared.py": "ba33251423c6bc15a20b943e1ef10278efd4fee3d44ad808f902e4f02e40dc14",
+    "experiments/permworld_local_causal_20261110/recurrent.py": "6092c23221f858ddc423685552d1b954cf729a5d3f89d0956fad691ab53c6ff7",
+    "experiments/permworld_local_causal_20261110/__init__.py": "b7a13cef4baf20d120afc6ad636e939d4dfc54bc5f90085ec45a8c6477e70948",
+    "experiments/permworld_local_causal_20261110/formal.py": "cb3559b912fd4ebb90a578015ea2053c8bfb156a7b5f8f3a418a476542886fc0",
+    "experiments/permworld_local_causal_20261110/pairs.py": "61182a2ed5653de4a5c972913431ad909b900aa4f9c614706dd9442da7e871c4",
+    "experiments/permworld_local_causal_20261110/calibrate.py": "b484c14a7bab91bac742b9963b6429cd1e7d5525a2c23dfed8411a36392d1c8d",
+    "experiments/permworld_local_causal_20261110/probes.py": "d0d66c8957eb6e340a25de94f68241f2a6ff1d9e1faef7c1f5a441998b7621d8",
+    "experiments/permworld_local_causal_20261110/features.py": "5b4490adb346f3f4f132a5469a372177fbc6d42d4daac478cd0ae60ad0ed0897",
+    "diagnostics/permworld_local_causal_20261110/summarize_results.py": "77b4666460e1bdd2b736d4e14bea8b60ccede957f75c5f3917e658caaf9e6c9e",
+    "diagnostics/permworld_local_causal_20261110/selection.json": "80e03b89f48c675c656e83fcae5a97f588bf67b33163c317f8536e2f9b3f03cc",
+    "diagnostics/permworld_local_causal_20261110/development_geometry.csv": "2611a13ccdb8fe76e344d9aee599d0d2920a4539951d2afa310d90b2f0c26d58",
+    "diagnostics/permworld_local_causal_20261110/data/archdev001/completion.json": "2cad5e3a3d0a7e78f423648a3288a514d0094953df422154f4f6b90756a36b58",
+    "diagnostics/permworld_local_causal_20261110/data/unit02/completion.json": "a43dda47d00b121061d488eedf6c5b779acca1cde31d15a70b20d74f78b56a88",
+    "diagnostics/permworld_local_causal_20261110/data/unit03/completion.json": "82337e4009564fd33066fcd6b42f50a23f0930283fc155d94a77e8e0465e183c",
+    "diagnostics/permworld_local_causal_20261110/data/unit04/completion.json": "1a61798b2184c8df789c7ccc55615f6a5812c60dcfb8b86d1a6f47173fe262de",
+    "diagnostics/permworld_local_causal_20261110/data/unit05/completion.json": "869051f7515d988d3e6ce2040937ef43474d3092c5d51ba7021b3aa0cb888cd7"
+  },
+  "before_any_formal_test_forward_or_count_scoring": true
+}

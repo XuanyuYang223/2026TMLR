@@ -1,0 +1,374 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-10T16:36:56.787913+00:00",
+  "checks": 226,
+  "arithmetic_checks": 176,
+  "maximum_Decimal_absolute_error": "1.5E-16",
+  "tolerance": "1e-12",
+  "fixed_subset": "units02/05 \u00d7 botharchitectures \u00d7 bothencodings \u00d7 bothphases \u00d7 bothperlengthCKAversions; Decimalprecision60; plusall36means/SD/min/max",
+  "fresh_checkpoint_file_hashes": [
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "73a27def35e02b7d24e8f297ab605ff85ea898f859b68007c5da63eef363fcaf",
+      "actual_sha256": "73a27def35e02b7d24e8f297ab605ff85ea898f859b68007c5da63eef363fcaf",
+      "size_bytes": 38967851,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/transformer/step0.pt",
+      "expected_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "actual_sha256": "2b46a4d564f87994ec945f30ce6e8bb9815d40197ed85e4a658b8b17e118bcda",
+      "size_bytes": 13001533,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "3f60a6c182af2b64218950cae9e366d225654b220e60e9b4cf9c3e541098a333",
+      "actual_sha256": "3f60a6c182af2b64218950cae9e366d225654b220e60e9b4cf9c3e541098a333",
+      "size_bytes": 38967851,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "58cf66b021e96fc6b6732cb9e23d5512873dd14fdf2a584f63c8e77d1bebeb63",
+      "actual_sha256": "58cf66b021e96fc6b6732cb9e23d5512873dd14fdf2a584f63c8e77d1bebeb63",
+      "size_bytes": 38967851,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_transformer_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "a88f54aa2242e0a7d82149a08ab576f499c8ff927940a750533e67cfd9cd7b07",
+      "actual_sha256": "a88f54aa2242e0a7d82149a08ab576f499c8ff927940a750533e67cfd9cd7b07",
+      "size_bytes": 38967851,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "a8d7f88e22f412ce89d9d8b4be87def25bef7db3e3ff46ab198b89fe77967784",
+      "actual_sha256": "a8d7f88e22f412ce89d9d8b4be87def25bef7db3e3ff46ab198b89fe77967784",
+      "size_bytes": 19964185,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/initializations/gru/step0.pt",
+      "expected_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "actual_sha256": "7aa6e7ab81a0bc97c7be17282b0af3e6901111e79d4deba4d5ce7cb33ab3d1aa",
+      "size_bytes": 6669565,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "0ff18fd27b520bc8c284111013f3c08f11d5d18e9167999e6cfd4146f66cb994",
+      "actual_sha256": "0ff18fd27b520bc8c284111013f3c08f11d5d18e9167999e6cfd4146f66cb994",
+      "size_bytes": 19964185,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "f521cb7d560110f5c9e357b75201da7649182253b0255776778ecbe1d0589367",
+      "actual_sha256": "f521cb7d560110f5c9e357b75201da7649182253b0255776778ecbe1d0589367",
+      "size_bytes": 19964185,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261010/permworld_eight_relations/models/eightrel001_gru_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "7ffd5659834c40c1c9deb0ec0d93d84106c0b8daf42199464c6384c527a28b63",
+      "actual_sha256": "7ffd5659834c40c1c9deb0ec0d93d84106c0b8daf42199464c6384c527a28b63",
+      "size_bytes": 19964185,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_transformer_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "a53ff19f7eefd4c755b390d078ea0a66c168833246519b61f0886ac1c0a5e9fe",
+      "actual_sha256": "a53ff19f7eefd4c755b390d078ea0a66c168833246519b61f0886ac1c0a5e9fe",
+      "size_bytes": 38976299,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/initializations/transformer/step0.pt",
+      "expected_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "actual_sha256": "963ec9587794fb9d2b7c7daab165ba88f1ff6db1bef76500dbef879252a5568d",
+      "size_bytes": 12999229,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_transformer_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "bfa066f0ad6c57f22abeefaf6802ec08e277759ce9c2d295817e0232be3821d9",
+      "actual_sha256": "bfa066f0ad6c57f22abeefaf6802ec08e277759ce9c2d295817e0232be3821d9",
+      "size_bytes": 38976299,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_transformer_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "90934504a48468d9688d59cb19751678130090bc69875d17fa7146bc6ce788e8",
+      "actual_sha256": "90934504a48468d9688d59cb19751678130090bc69875d17fa7146bc6ce788e8",
+      "size_bytes": 38976299,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_transformer_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "735760540fdb7b7f5e664b3f44f8444647816c0b48efa449a375694cfee66c04",
+      "actual_sha256": "735760540fdb7b7f5e664b3f44f8444647816c0b48efa449a375694cfee66c04",
+      "size_bytes": 38976299,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "173e36f5d544c07c3f3a69acf8f6d7c698f9504f413010410493385c079ac571",
+      "actual_sha256": "173e36f5d544c07c3f3a69acf8f6d7c698f9504f413010410493385c079ac571",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/initializations/gru/step0.pt",
+      "expected_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "actual_sha256": "2ddc15721346a4017c95363fa55e65d2b7d451f3a23e11c2da88e4ceb175d317",
+      "size_bytes": 6666749,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "57d8c5108330a24b408e896cadd7802bf568901d235a2765d19ec8d4450eea45",
+      "actual_sha256": "57d8c5108330a24b408e896cadd7802bf568901d235a2765d19ec8d4450eea45",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "cd99f4f10ade45b43fb9cd21688684a92b4a399951f62303df17b4088fb1f12f",
+      "actual_sha256": "cd99f4f10ade45b43fb9cd21688684a92b4a399951f62303df17b4088fb1f12f",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/models/unit02_gru_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "6158ea3fe826ea6c5220cb078bf98c78d0bbd3a892845a2d116933d76a2013cd",
+      "actual_sha256": "6158ea3fe826ea6c5220cb078bf98c78d0bbd3a892845a2d116933d76a2013cd",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_transformer_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "0402b3534a9fcb13b5b3325b1715bc41a78b1075603e88b271b3057e25e71152",
+      "actual_sha256": "0402b3534a9fcb13b5b3325b1715bc41a78b1075603e88b271b3057e25e71152",
+      "size_bytes": 38976235,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/initializations/transformer/step0.pt",
+      "expected_sha256": "89f8881e3f82c1ef9a1ebb7f9e6b2e415708e2a92d7fc548f1c9b6f1d2c7a42a",
+      "actual_sha256": "89f8881e3f82c1ef9a1ebb7f9e6b2e415708e2a92d7fc548f1c9b6f1d2c7a42a",
+      "size_bytes": 12999165,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_transformer_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "befba422fbb0063da864306cbdce8afdc260677a611ef16487ff4424a2c8a208",
+      "actual_sha256": "befba422fbb0063da864306cbdce8afdc260677a611ef16487ff4424a2c8a208",
+      "size_bytes": 38976235,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_transformer_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "7e832caeec88d458db74083e4c9c33c29f2cf08c49b239122f19afcde7accf61",
+      "actual_sha256": "7e832caeec88d458db74083e4c9c33c29f2cf08c49b239122f19afcde7accf61",
+      "size_bytes": 38976299,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_transformer_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "19f2fac38a00352d6162b6884500d9970a487e3142b614ea653cf615051d624b",
+      "actual_sha256": "19f2fac38a00352d6162b6884500d9970a487e3142b614ea653cf615051d624b",
+      "size_bytes": 38976299,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "9d86a9167106606c4b5a16b3148e2e49a6e08dc98d012181a32e6898800a1fe2",
+      "actual_sha256": "9d86a9167106606c4b5a16b3148e2e49a6e08dc98d012181a32e6898800a1fe2",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/initializations/gru/step0.pt",
+      "expected_sha256": "15cba1041d3b10d003a6390081695e871a632329d759ed7d858c25a979012a63",
+      "actual_sha256": "15cba1041d3b10d003a6390081695e871a632329d759ed7d858c25a979012a63",
+      "size_bytes": 6666749,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "63e9b24ff6e77d303bc9d8147040f177a20f069534a993278fcbf307ece29ae4",
+      "actual_sha256": "63e9b24ff6e77d303bc9d8147040f177a20f069534a993278fcbf307ece29ae4",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "2f04bd480f97bdb90741138dbfa88b7e166dcd274b691de51600c09056df7d7e",
+      "actual_sha256": "2f04bd480f97bdb90741138dbfa88b7e166dcd274b691de51600c09056df7d7e",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/models/unit03_gru_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "f2659b72b65bbc119543b6477d79076180c550373a0d0d093944a6b085071ab0",
+      "actual_sha256": "f2659b72b65bbc119543b6477d79076180c550373a0d0d093944a6b085071ab0",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_transformer_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "ec9ad240083d5c0350862e6956c359b1a70250d1fe32305188205a30c7ac255f",
+      "actual_sha256": "ec9ad240083d5c0350862e6956c359b1a70250d1fe32305188205a30c7ac255f",
+      "size_bytes": 38976235,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/initializations/transformer/step0.pt",
+      "expected_sha256": "de3de5da6ca9950c2a1ad84b328d5f7b6bec022cd05526c1a5c0ef4b160692aa",
+      "actual_sha256": "de3de5da6ca9950c2a1ad84b328d5f7b6bec022cd05526c1a5c0ef4b160692aa",
+      "size_bytes": 12999101,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_transformer_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "432b604c0bb4e8944f7af0e6ddd7f07d502e9849553aa8b1924aa979c1bd7a2e",
+      "actual_sha256": "432b604c0bb4e8944f7af0e6ddd7f07d502e9849553aa8b1924aa979c1bd7a2e",
+      "size_bytes": 38976235,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_transformer_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "e62ce47cf6a0005a9632a8338e78d7b69a284e339c4c29c08a247f37c61e38d0",
+      "actual_sha256": "e62ce47cf6a0005a9632a8338e78d7b69a284e339c4c29c08a247f37c61e38d0",
+      "size_bytes": 38976235,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_transformer_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "989177b9b2d364931678e2d5e9427b4ebe631c31f21a20c498f2fb13e6a588cb",
+      "actual_sha256": "989177b9b2d364931678e2d5e9427b4ebe631c31f21a20c498f2fb13e6a588cb",
+      "size_bytes": 38976235,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "52a31cf7e3a1f47f8d664f3266d30bcfb06fa09c382475c1e58662f28447bf55",
+      "actual_sha256": "52a31cf7e3a1f47f8d664f3266d30bcfb06fa09c382475c1e58662f28447bf55",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/initializations/gru/step0.pt",
+      "expected_sha256": "543fa0af84726d918709b21ea467fe2f83b9c9b64733b7e9756bc81003fc5a2f",
+      "actual_sha256": "543fa0af84726d918709b21ea467fe2f83b9c9b64733b7e9756bc81003fc5a2f",
+      "size_bytes": 6666877,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "9fad2069f2cd4e2de7939ee5fe4b6d0c4758fc7b2bb6dae129e8c8d4c3f30937",
+      "actual_sha256": "9fad2069f2cd4e2de7939ee5fe4b6d0c4758fc7b2bb6dae129e8c8d4c3f30937",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "329693524fb36285a42aa2237193d6ac61ecef601826559e8ba96e2763f4fc09",
+      "actual_sha256": "329693524fb36285a42aa2237193d6ac61ecef601826559e8ba96e2763f4fc09",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/models/unit04_gru_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "e18f9c87e163fc15d500bc7f3c3834aad647317a497a01475b720d60c2c7981b",
+      "actual_sha256": "e18f9c87e163fc15d500bc7f3c3834aad647317a497a01475b720d60c2c7981b",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_transformer_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "194ad38292706db2b92383cb55df8a86f7a21376c53b14dfb1244c1d09d48d0e",
+      "actual_sha256": "194ad38292706db2b92383cb55df8a86f7a21376c53b14dfb1244c1d09d48d0e",
+      "size_bytes": 38976363,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/initializations/transformer/step0.pt",
+      "expected_sha256": "f3e187016336003eb0ab6ba15a8c7645462d011a4f70d2bfb1014ca7bf491056",
+      "actual_sha256": "f3e187016336003eb0ab6ba15a8c7645462d011a4f70d2bfb1014ca7bf491056",
+      "size_bytes": 12999165,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_transformer_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "ff31fb92faf9db06fd794c76e4b2e05130485b3188666f75ac4ad18f9d062b35",
+      "actual_sha256": "ff31fb92faf9db06fd794c76e4b2e05130485b3188666f75ac4ad18f9d062b35",
+      "size_bytes": 38976363,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_transformer_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "4342419196fe0982ed3076ed2f1ae8d4c3ca5d57b192a2eb9608115ef5cbd1fa",
+      "actual_sha256": "4342419196fe0982ed3076ed2f1ae8d4c3ca5d57b192a2eb9608115ef5cbd1fa",
+      "size_bytes": 38976363,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_transformer_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "9ec5ada0e166d8bdeef1a30e968c5e85f786febf17d27d6f6785fe101b5e27b3",
+      "actual_sha256": "9ec5ada0e166d8bdeef1a30e968c5e85f786febf17d27d6f6785fe101b5e27b3",
+      "size_bytes": 38976363,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_deficiencies/checkpoint.pt",
+      "expected_sha256": "d9ad03d0bed496941072c9b5c246aeec6eec97780b169f21b0136b48674b1aa4",
+      "actual_sha256": "d9ad03d0bed496941072c9b5c246aeec6eec97780b169f21b0136b48674b1aa4",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/initializations/gru/step0.pt",
+      "expected_sha256": "ab7e036a0966f140f2d8806cae14c9be4d0ff458ec60b1f98824a50da090ca54",
+      "actual_sha256": "ab7e036a0966f140f2d8806cae14c9be4d0ff458ec60b1f98824a50da090ca54",
+      "size_bytes": 6666685,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_one_line_exceedances/checkpoint.pt",
+      "expected_sha256": "1d8c12af892c2b276a624f014829e28fb2634af53864706fbd5bd855ae17d6a0",
+      "actual_sha256": "1d8c12af892c2b276a624f014829e28fb2634af53864706fbd5bd855ae17d6a0",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_canonical_cycle_deficiencies/checkpoint.pt",
+      "expected_sha256": "7f0eec4acb9ea395f10c5161930c7013f180efebf1381244c2495a6b65886eb2",
+      "actual_sha256": "7f0eec4acb9ea395f10c5161930c7013f180efebf1381244c2495a6b65886eb2",
+      "size_bytes": 19972889,
+      "passed": true
+    },
+    {
+      "path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/models/unit05_gru_canonical_cycle_exceedances/checkpoint.pt",
+      "expected_sha256": "f9f82ec3d6ba9db340215376a6b42dad60042f8f452d7757b7d882ca2bb78be7",
+      "actual_sha256": "f9f82ec3d6ba9db340215376a6b42dad60042f8f452d7757b7d882ca2bb78be7",
+      "size_bytes": 19972889,
+      "passed": true
+    }
+  ],
+  "checkpoint_manifest_rows": 40,
+  "no_model_tensor_loading": true,
+  "no_forward": true,
+  "no_fitting": true,
+  "no_CKA_computation": true,
+  "initialization_identity_scope": "Current actual savedstep0 file hashes match original audited inventory; initialization state_dict identities are retained from the original inventory, not reconstructed or re-estimated.",
+  "frozen_completion_sha256": "ad0f886a831bce9c7eba856026dec61560bc99c3c52eb0cbf9eb963cebbc3073",
+  "source_sha256": "e20c25143f70f6c8d175261ab783363f2ff53a1eb8045e3ebf630a9513cd37cb",
+  "outputs": {
+    "checkpoint_source_manifest.csv": "f13232307d2ed8911cf338b307d70e56b746a2747bed04c5fccc1b8527b0e847",
+    "independent_arithmetic_rows.csv": "4beef3a8ea8157846f6530a3c89246710b22d581317c91769d4b76cb35b71765",
+    "reader_clarification.md": "9c62f248d95d4e7498605666504d4a480f5852d949cc5b4d06295d3a58c5ab0f"
+  }
+}

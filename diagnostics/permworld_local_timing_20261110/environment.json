@@ -1,0 +1,29 @@
+{
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:00:33) [GCC 14.3.0]",
+  "executable": "/home/yangx/ICML/.venv/bin/python",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "package_versions": {
+    "numpy": "2.4.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.11.0+cu128",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.6.0",
+    "pytest": "9.1.1"
+  },
+  "nvidia_smi": "NVIDIA GeForce RTX 5070, 610.88, 12227 MiB",
+  "git_head": "6d745815c0a1a2a41ad5fc8c0aa6e018f9bab249",
+  "production_flags_from_frozen_protocol": {
+    "threads": 2,
+    "cuda_matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cudnn_deterministic": true
+  },
+  "production_parameter_dtype": "float32",
+  "scoring_dtype": "float64",
+  "external_python_paths": [
+    "/home/yangx/ICML/experiments/permworld_peaks_probe_20261109/vendor",
+    "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/dependencies"
+  ],
+  "note": "Existing local environment, no dependency installation. Production flags are from the frozen run, not inferred from packaging-process defaults."
+}

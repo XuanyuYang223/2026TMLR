@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "unit": "unit05",
+  "historical": false,
+  "role": "formal_four_unit",
+  "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/data.npz",
+  "data_sha256_before": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+  "data_sha256_after": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+  "generation_protocol_sha256": "2fade195fe7531641cfb085c0e1d11a2f4b4b8b08e3da974ed2670aeed55cee3",
+  "candidate_families": 45696,
+  "selected_families": 9272,
+  "selected_by_split": {
+    "dev": 2132,
+    "fit": 4284,
+    "test": 2856
+  },
+  "selected_fit_AB": {
+    "A": 2130,
+    "B": 2154
+  },
+  "candidate_exclusions": {
+    "validation_family_component_touches_test_root": 24,
+    "original_training_equality_or_complement_collision": 23
+  },
+  "components": 14509,
+  "maximum_component_families": 14,
+  "training_collision_components": 13,
+  "cells_with_shortfall": 6,
+  "missing_family_quota": 10,
+  "selected_path": "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit05/selected_families.json.gz",
+  "output_sha256": {
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit05/selected_families.json.gz": "3f84315d148760abe1140e4d0cbdea6a7bc4b32c71a377741b0c1cfc53736e55",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit05/candidate_roster.csv.gz": "6df517979d2b661fd0ff5b28feb71f251371cd3ea6e2cf071d02c3afd0670890",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit05/components.csv.gz": "6e079f67aefd253fe3b4e4152b707e7e553b73c82292c19f4c8aafa3712b0f8e",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/unit05/coverage.csv": "fa7c957639fc3767c0b585d927ea38bc94c35f78d5c99811a2d312eed236c0c8",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/unit05/split_AB_coverage.csv": "8f3fe9f127dcf30b6f1e1d80e99adb3f5a0ec6ff82bb22bfa0a4dc669da58b3c",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/unit05/independent_math_audit.json": "bae922c8129042b352a4671c48f7479f09ef3f8f6019a27583fad66484a94b20"
+  },
+  "no_neural_forward": true,
+  "no_checkpoint_load": true,
+  "no_model_outcome_access": true,
+  "no_training": true,
+  "elapsed_seconds": 101.24612187803723
+}

@@ -1,0 +1,1644 @@
+{
+  "records": [
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 10,
+      "alpha": 1.0,
+      "probe_fit_examples": 198,
+      "source_tuning_examples": 58,
+      "threshold_info": {
+        "source_micro_f1": 0.9354838709677419,
+        "source_positive_positions": 158,
+        "source_total_positions": 464,
+        "source_predicted_positions": 152,
+        "threshold": 0.5789481939594527,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "eb68d0b0477a82f71a5d76589ff96e52983e80b0ef5a10428465046243998e6c",
+        "intercept": "f71af01c71aa2128b5eecb1c7851f270d2fef8570b22a11c389303f35acd3a8f",
+        "mean": "3513bf659475c7e1f15a57be48c6494426d68ba1f06917241598098666629e68",
+        "scale": "ef71738ac125aa35c76584312bc75c336211d99bb82378de6d346474ef347d2b"
+      },
+      "source_tuning_scores_sha256": "b10cf733e38631b5a33f27ac9b3ee42c7eedacd06eb1b1f720d56d4d2fe72eca",
+      "source_tuning_targets_sha256": "c50e4611cb3aa0108f0bcd7260254f7a3a2d3dae4b76a45c357c905d0b9c503e",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 10,
+      "alpha": 1.0,
+      "probe_fit_examples": 198,
+      "source_tuning_examples": 58,
+      "threshold_info": {
+        "source_micro_f1": 0.9456869009584664,
+        "source_positive_positions": 156,
+        "source_total_positions": 464,
+        "source_predicted_positions": 157,
+        "threshold": 0.49709506835966855,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "78668603119899b8b8f92f1f83d7c0b4eefc2fd0f07aa006ae43dea4c9b2e5e9",
+        "intercept": "5c469155fa10efb1c8cf1526f015d7f74df9d4fb8d0803e4ebb76dd3c2f6e3cd",
+        "mean": "035beec9a47bb8cb44cedddee5a9cfef26f1b2efb28a7b162e91bd189795f7aa",
+        "scale": "85415856a1550b25153e195e4e8359f0095f85d92e1ccae33428c69c99002ffc"
+      },
+      "source_tuning_scores_sha256": "97baefc47c0493344d59ed6b85f997bdfa8f1a4f1c5bb8d37c016d741b66d1c3",
+      "source_tuning_targets_sha256": "6dd835db7087b73c3d1397960d9220ddb801e889a9c476caaddce5a1bf726024",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 10,
+      "alpha": 1.0,
+      "probe_fit_examples": 198,
+      "source_tuning_examples": 58,
+      "threshold_info": {
+        "source_micro_f1": 0.7454545454545455,
+        "source_positive_positions": 48,
+        "source_total_positions": 580,
+        "source_predicted_positions": 62,
+        "threshold": 0.3583419877867934,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "3c6bae42e753566bd9c0ece574f47c20a08fac8812fd83fda7527a26f2b9edb3",
+        "intercept": "6e14dc1a9ca50ddf359fb796da89ebc25810242d11f4417f604676b9c9625544",
+        "mean": "0715e42895cdfe5b80318e889e4a47b010a65e944c8422956a0404c784cc78a3",
+        "scale": "4f65cfcf9757bddfd63db265cd65e9ad6c9a13bab985d00e2dd42b832fc0a1a7"
+      },
+      "source_tuning_scores_sha256": "3bb7333a3aa3db9b43f7c6d8604a1d6955af70c74eb3168dd1ed207748ad4068",
+      "source_tuning_targets_sha256": "5a44546ab6c4cd908b87c4e5a5d2ee8d24ed160443ec6bd4f3741a190f1741c5",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 11,
+      "alpha": 1.0,
+      "probe_fit_examples": 204,
+      "source_tuning_examples": 52,
+      "threshold_info": {
+        "source_micro_f1": 0.8996763754045307,
+        "source_positive_positions": 155,
+        "source_total_positions": 468,
+        "source_predicted_positions": 154,
+        "threshold": 0.5140230526820373,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "ef2a88ac160d0b9bb4305861a7109d524290aa7465dac801154d117ec908010e",
+        "intercept": "2b822b1b7374e2130da5a5b849fcf88db331b272be3aa1a54fd3e528499f78be",
+        "mean": "79a2d4f309e2dc7f8584c76c7d5cd9db03f0829eafdaf958dd7d36d18c422192",
+        "scale": "f470c71179884525cf34258e6020b0f621de682e2b3834226c58722b16f63d3e"
+      },
+      "source_tuning_scores_sha256": "0e0b9e4d59a1c73b70d5f93ffad4bac4ab467d700750a63266ddb28405502a34",
+      "source_tuning_targets_sha256": "4a2e2affb5930d790694ed978832c5075250aa892c95e39a6edf751ce7252ce7",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 11,
+      "alpha": 1.0,
+      "probe_fit_examples": 204,
+      "source_tuning_examples": 52,
+      "threshold_info": {
+        "source_micro_f1": 0.8980891719745223,
+        "source_positive_positions": 153,
+        "source_total_positions": 468,
+        "source_predicted_positions": 161,
+        "threshold": 0.4890185276429484,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "eaf14c83f563e8e88149f698b8a78152735dca87bb06dd54fdb0c55017c662b5",
+        "intercept": "3a6bce8aea1beb4359bfd3a23f0e6a325fceff0cb00ad794e14ae7ffe1b44500",
+        "mean": "0caf7499599363e5b7de34060a6467d6470faafb9138b22aacf2800aab6ae2df",
+        "scale": "d2cecf57f5abf12d073c7de1c467088724935aa88af07cbf3fe44f0a1bf2f3db"
+      },
+      "source_tuning_scores_sha256": "128861d023f410b96b6ff31d48d2a802df6f0be742bfc8dab721b9d9a0a99af0",
+      "source_tuning_targets_sha256": "7ad792429b945ee265b4dd1a11dc119700622d68eab9ca074d90e5b371154a05",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 11,
+      "alpha": 10.0,
+      "probe_fit_examples": 204,
+      "source_tuning_examples": 52,
+      "threshold_info": {
+        "source_micro_f1": 0.6446280991735537,
+        "source_positive_positions": 48,
+        "source_total_positions": 572,
+        "source_predicted_positions": 73,
+        "threshold": 0.2328945878058698,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "7a55b140629bb8d04dc26bd390236b5c5b277fc9f25bc192fdb47dc53dc26a0a",
+        "intercept": "e7b65956e0e5ba7186c5711d054742e8deaa53651e40f4e0fdafdaa26825de6e",
+        "mean": "e268daa2308fd02258ba453ab714a01b860f5d43aee84e6fcbd548e0bd4624e4",
+        "scale": "a3a1dd66dfb16ad31e33ccfb5772837c15e6e39d04b56f5f90bbd5abae069b8e"
+      },
+      "source_tuning_scores_sha256": "50443229b04a49561961df306fcc907b60a985792352a90ed641660c03eadd62",
+      "source_tuning_targets_sha256": "9ae6b5b1d34ade2267ebe8f1eae6dbc67ce6a75a86fdd453f78c9039ac339819",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 12,
+      "alpha": 1.0,
+      "probe_fit_examples": 206,
+      "source_tuning_examples": 50,
+      "threshold_info": {
+        "source_micro_f1": 0.8944444444444445,
+        "source_positive_positions": 172,
+        "source_total_positions": 500,
+        "source_predicted_positions": 188,
+        "threshold": 0.42243884561755335,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "e1aaa24b2a573ca465ed7dd1f31e01f2cb300947d9b4d959e63846734c0699fa",
+        "intercept": "b52347e582157835668d3e15e1c7edd2130d1480708e15d5e1c29c78b10458ea",
+        "mean": "28394633865a353214a12eb712b9e97d6249036c4520094d82336ccd7a4b54fb",
+        "scale": "5258844e0c0dbc4888e9a30ebfb790aaab98caae13b5883099121f99d557a89a"
+      },
+      "source_tuning_scores_sha256": "7ac15a8475e4c1e317cdceae4cedd99328f2f3d46f2981ccb9274b67bc936470",
+      "source_tuning_targets_sha256": "6fb16d7b9b949d49698e2f3e3b30616571c165b7a8147acc41dd64ec3e9f8282",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 12,
+      "alpha": 1.0,
+      "probe_fit_examples": 206,
+      "source_tuning_examples": 50,
+      "threshold_info": {
+        "source_micro_f1": 0.892128279883382,
+        "source_positive_positions": 172,
+        "source_total_positions": 500,
+        "source_predicted_positions": 171,
+        "threshold": 0.5331441232510348,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "b2fd886b9a2bf7d95372c5e9c69232e89df492d14afb08661f8346f6361d4e63",
+        "intercept": "b8f62825e394c64c3f5895d4644f249862dbeb4e75665404ebfc058481bc0174",
+        "mean": "680593ff82504651d1653604dffa06f7e1c50e0536537c873d4888ffe47aea41",
+        "scale": "348836d82d2891d7fea4e1ce5cb256ac38b0df26dab0d452b06b1afee43b9fbb"
+      },
+      "source_tuning_scores_sha256": "e27fe32e439fbfc8a392042aef933c0e233a434f268b1fb64d79a561787e671b",
+      "source_tuning_targets_sha256": "031e6363d9c01982abb28f6285701b7479e8d3f7c43d5c86f38a7489c37790ef",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 12,
+      "alpha": 1.0,
+      "probe_fit_examples": 206,
+      "source_tuning_examples": 50,
+      "threshold_info": {
+        "source_micro_f1": 0.6753246753246753,
+        "source_positive_positions": 38,
+        "source_total_positions": 600,
+        "source_predicted_positions": 39,
+        "threshold": 0.36733213352299654,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "eb9b4a433b00ccc449f5ba4d10c4a8f064f158a6fb59b89fac951671d097a098",
+        "intercept": "dae72e72766443d42338419fee3d8068af06064d893eee90071f734c6b2b18bb",
+        "mean": "114b873971ec0011e0c61d8f44b63770d1112774b0b5980faf23edd8e7548fd7",
+        "scale": "2f8e88f0c3ee1481121d228fde8092ac45021324839fe53d3910307ca479f512"
+      },
+      "source_tuning_scores_sha256": "b88d0f7a4f3e8f3e5eb09e20964bac8d6f837e81d50b0a83dde6d7d741a817fa",
+      "source_tuning_targets_sha256": "7f3bb90731ed2bf03b9f1d625bf81f3de3e23ed9d630b4c4f8145a490cee7bb1",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 13,
+      "alpha": 1.0,
+      "probe_fit_examples": 203,
+      "source_tuning_examples": 53,
+      "threshold_info": {
+        "source_micro_f1": 0.7914438502673797,
+        "source_positive_positions": 196,
+        "source_total_positions": 583,
+        "source_predicted_positions": 178,
+        "threshold": 0.5664373149860162,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "e2dced7d9f5f4346c89761af84513f064960d2c94f6094559c05b5dd0a5ba4fa",
+        "intercept": "e1b497527a7e3173a45dedfecfa1098c8342796a1370d1f4cb39f3f4dfedb198",
+        "mean": "821c0cce5fc71610c7dda1e2d03a3e5ea328d97d5ba8d21a75f305304ffd05e0",
+        "scale": "dd0c3555c60021c08f192fb79962861916b66782d7a03b89c9f9773ff4043f0d"
+      },
+      "source_tuning_scores_sha256": "1aa61f8a14c8cf2dfa65eb0f7ea2c641858ba8c6e961552b72bcf02f0c0ed9ef",
+      "source_tuning_targets_sha256": "0dc3c9daaacb59f2d70bb9ef2c6f7d62acd1116adb44a9eadf0a741e3842d69f",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 13,
+      "alpha": 1.0,
+      "probe_fit_examples": 203,
+      "source_tuning_examples": 53,
+      "threshold_info": {
+        "source_micro_f1": 0.8105726872246696,
+        "source_positive_positions": 204,
+        "source_total_positions": 583,
+        "source_predicted_positions": 250,
+        "threshold": 0.36973256306075314,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "99795d5f8ae6e2708ab146d7b46ae9f53e9a7086105815fbc874d630fa4fd504",
+        "intercept": "053321beccfe09130b83ca4991c7fe0c4b4c216b62a7b47a4829d8aa994d4434",
+        "mean": "7fdef3503ec0b6c772ccffe1438521a227b15a88f99d4967ec183d321d54e84e",
+        "scale": "7532257ad0eb72826e636fad969556f0d4cd457c49d969fe2eb305f813d3ad38"
+      },
+      "source_tuning_scores_sha256": "82adf1c0ec2e729bc21bb9a6439e2fc650351909af82d19ff3b427b90dfa0792",
+      "source_tuning_targets_sha256": "797a6d9e30aaf4fa8c7a898085f6aecfa03ea017ae81f57c495cd1bc1d3048e8",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 13,
+      "alpha": 1.0,
+      "probe_fit_examples": 203,
+      "source_tuning_examples": 53,
+      "threshold_info": {
+        "source_micro_f1": 0.6818181818181818,
+        "source_positive_positions": 46,
+        "source_total_positions": 689,
+        "source_predicted_positions": 42,
+        "threshold": 0.42490605069298615,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "081826474c4e7f0ea27034ee3b62827b9d78217795396fb95f47db52ca9d2de0",
+        "intercept": "584c69baafbc4d09c7c5fdc56035000b415c0eb5ae98bd1bf6c9ed67ef8af442",
+        "mean": "6aed490a4fd9325f4a37269d75d04382646f7fdc6afbe8a5027b64142d4bd858",
+        "scale": "d2888f4c21914df7f65a0ddb9287b0542903866c579377b4641a39fea2fe36d5"
+      },
+      "source_tuning_scores_sha256": "8398ff85ddb3b68df720b9c894ceaad5abaf69e70cdb47e909fc41b4823bdcfe",
+      "source_tuning_targets_sha256": "d24551f7a7d4ad88127ee98ce98b3e31964e65b6f542642e29026987c07460ac",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 14,
+      "alpha": 1.0,
+      "probe_fit_examples": 193,
+      "source_tuning_examples": 63,
+      "threshold_info": {
+        "source_micro_f1": 0.7514450867052023,
+        "source_positive_positions": 258,
+        "source_total_positions": 756,
+        "source_predicted_positions": 261,
+        "threshold": 0.4984218732161003,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "7bf5c82f5ee21888c9cee6d45bb73ae7358f26b1c6cf3dd22a7d135a743dbd8e",
+        "intercept": "42fc4b9b558f8756268d63e963fb0a6742c5c2275d2b0ab0e86e99901ef0c91e",
+        "mean": "d97c2da47824f5bec5a16f48ed97e393268a73644652b4bf663a189a23a4572d",
+        "scale": "7c6d7b17d6bdc730cbc839ee1c70dc04bb04ea23888563f900134178aee5a85b"
+      },
+      "source_tuning_scores_sha256": "000c204128876d55c2bac3dcbdc565c4635717ad9404e8a6c6963f3288eddd39",
+      "source_tuning_targets_sha256": "0ff9c7860e8cd86a5bc2e0a8a910be61f51611fe4c25791e39fae8d6705f8b90",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 14,
+      "alpha": 1.0,
+      "probe_fit_examples": 193,
+      "source_tuning_examples": 63,
+      "threshold_info": {
+        "source_micro_f1": 0.755741127348643,
+        "source_positive_positions": 255,
+        "source_total_positions": 756,
+        "source_predicted_positions": 224,
+        "threshold": 0.57077348617456,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "d6e02bf8f5103c53df19d7d2585a65f78cb8e39dfe5468e8e1df21cfab1ac40b",
+        "intercept": "a09df77854e58fbe54ae9f696a374dc94756b7c9df421281fd81a6dc1b381108",
+        "mean": "ab8e607b23da5798c8ef12297159eb288c60ae993e5bd054a97f303b2340cb8c",
+        "scale": "4d40ed69c7f3fb8da7dbe4cb555e2878a4435aa4c72cf1de0cdd48eae52ccd2e"
+      },
+      "source_tuning_scores_sha256": "da2bda5430cf3af5996f9cbd3b62de24e99fcb3dee91139c651ed4c51506b2be",
+      "source_tuning_targets_sha256": "699d7333cac3b8108b89cfcb7b51f8e5ccb5ea0eab2e83087b76d5956141e6eb",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 14,
+      "alpha": 10.0,
+      "probe_fit_examples": 193,
+      "source_tuning_examples": 63,
+      "threshold_info": {
+        "source_micro_f1": 0.6133333333333333,
+        "source_positive_positions": 72,
+        "source_total_positions": 882,
+        "source_predicted_positions": 78,
+        "threshold": 0.30048922651821913,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "440a96e366e28b73a95e7154f554993630175cc463c408d28f9ec0615b7b9993",
+        "intercept": "911853aad4a4e1f9123121821e0596a9fec5c03fdcf225f8d136e5053ea804a8",
+        "mean": "73147c1a83efab13629e8c62e381a86f2f9ed92407d53c0ae5e35dc701601d3a",
+        "scale": "ee8cca91345ef58a01a7d02eaa8a9f0ca2c29a8de2d23d0311b2fd9e423ddb54"
+      },
+      "source_tuning_scores_sha256": "60f06c58a00c163e54101d39557521b8bd78272d94aeb24348fabc80a28f548f",
+      "source_tuning_targets_sha256": "75885d4bf017e8b5f1a9954b6ce7e8695cb5ed5363345d29a920e6531a0e94ac",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 15,
+      "alpha": 1.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.7730337078651686,
+        "source_positive_positions": 230,
+        "source_total_positions": 663,
+        "source_predicted_positions": 215,
+        "threshold": 0.5134771343911101,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c090189e5f7445adfe17d97c9d9a134866c636e04da48ba010cc93a7e0a74617",
+        "intercept": "cae0b7b33716e96c53b99689d81a5ebf4906035e09423c62e2e8c904ff0ecc66",
+        "mean": "7e1e0a4423050b091b642544b11d16cf57feb01db2be2158903a0960ec5ebf1c",
+        "scale": "739b7284d0ae36d4e74a8fc3c5e2f06173b22b524f3d0e19784429ab93aea8f2"
+      },
+      "source_tuning_scores_sha256": "4109aa1616a68f3d21f60dd79ee5260815634445b562db90ff28caa1f3f456bb",
+      "source_tuning_targets_sha256": "93405a4766d8e307d357e7256edcf7d76678f92a2d2cb4e8ef27de5a7c24d332",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 15,
+      "alpha": 1.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.7848101265822784,
+        "source_positive_positions": 230,
+        "source_total_positions": 663,
+        "source_predicted_positions": 244,
+        "threshold": 0.5067626766872546,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "dcb5f910a740cae782b72ac1c5088960771b012af3a626799513319898aee5fc",
+        "intercept": "20dff5e78f9eb8abea4180b033ae20f27b01c8e3f49c2843b5d16cb2311f6b4b",
+        "mean": "1a1a60a9a5fe1cf455d574a58601e1c9fd48b32d6880b8618a7209751ab142cf",
+        "scale": "e6fba070ae62f46566a4be67e7bf94e2b608f70374d515939b648d5b9726f42e"
+      },
+      "source_tuning_scores_sha256": "939c420d871bc168f96c81ebda3dfd7564a3a6a7915b94edee8a9a9684ea1163",
+      "source_tuning_targets_sha256": "30870b5ec316f2ab640880e590a976ac1e42418eee2539779c032886cab2d548",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 15,
+      "alpha": 1.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.7380952380952381,
+        "source_positive_positions": 45,
+        "source_total_positions": 765,
+        "source_predicted_positions": 39,
+        "threshold": 0.4654756494704948,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "f6fdb58b25d5ab0b0cbe4e82b7bde2ada53dee9a5e9adaa18fa3d454038a2514",
+        "intercept": "e4fbc3aa104e796f5c60a8bb9212b814165b4e1cec13393fe996c1997a20fe68",
+        "mean": "b16c1585897bb9f8dbaca6a65d06b63f95ecb65836d9b5853f43c6f3039baaf1",
+        "scale": "3fb92000f807a774bded4d897694bac78d3d63b47350fa438da228e816bbb05c"
+      },
+      "source_tuning_scores_sha256": "edcf3f1e83aed461142cf2e00ed34ac2c355bc21f1cfb769776dada4c17a3ffb",
+      "source_tuning_targets_sha256": "72990079ec763fa280dfdd620388c70f8c35a99f1caaff662b951d80aa5d885a",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 16,
+      "alpha": 1.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.6763754045307443,
+        "source_positive_positions": 260,
+        "source_total_positions": 770,
+        "source_predicted_positions": 358,
+        "threshold": 0.3475311923981972,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "30f888585c06c44958c3458d78e8ee624d95516d0664ab14089065c6f64c5312",
+        "intercept": "8c65a9d33840f9cdf1e183a4f9423d0b4d255adbcc0f04318fd3b2f6f5a81322",
+        "mean": "a3eca9ed67704e4f938bad99ffe4a3e8df5dfcbb6b155079be7f2858f315e586",
+        "scale": "0fa400a19ada72eaa4a0cf2d742c848e1706819b4c6ca3e39c78ffb954fa6148"
+      },
+      "source_tuning_scores_sha256": "976590a65785d4a90d376d0858f171497f53771d734d7b6343e6f13575a95ea7",
+      "source_tuning_targets_sha256": "eed309114e1df9024c3190a9766cc2a1a72b378859f6cb2b2a4299d8e9b85df0",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 16,
+      "alpha": 10.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.7003484320557491,
+        "source_positive_positions": 257,
+        "source_total_positions": 770,
+        "source_predicted_positions": 317,
+        "threshold": 0.3818871702152031,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "cd3746a8260c41a1af6be45f21b6afc139ce9952b616037c2095055f057c75e5",
+        "intercept": "730d3d3bd44fdd7c605aef66a14147ad099db939d627eb627a080fc6d0742e69",
+        "mean": "9a42c93060eb12327cadfff8e3c4ea3a7c398b0837708e9a28dd4a8fb60a3a97",
+        "scale": "0ee53d096e59aa5c88e683f928e6938d629c2a404173c1da07c992a44d4ae74f"
+      },
+      "source_tuning_scores_sha256": "2d6376e8cafdd819ba28a3012e273a049910f64c8835baa6af93459e9273513f",
+      "source_tuning_targets_sha256": "cc4d8de0784abdeacf03caec7853898b5484bd3b1cb107364fe8034e4de1c975",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 16,
+      "alpha": 1.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.591304347826087,
+        "source_positive_positions": 51,
+        "source_total_positions": 880,
+        "source_predicted_positions": 64,
+        "threshold": 0.38020632607906546,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "765135a55112ece214d8e0e9c9b61fac63e1ada913b72c5255122459a7a4d77b",
+        "intercept": "5065fa89fcd3d9fd5f431dd86434f1bd1e0eeb84656e5a68aae1af675542b2a2",
+        "mean": "76afc8aa0d044a49771dc72b1882938210e3cc3a3c425bca8c2b6cec1e0817dc",
+        "scale": "9865430937024254e4593f13044ce9f8624d2e7d8bca27ecb2c57e06a7927d52"
+      },
+      "source_tuning_scores_sha256": "7a552160076d3111d50343d5b25fb182b6d92d3ce6b924edbb77624b771d689d",
+      "source_tuning_targets_sha256": "6999187de690e4c0211d50deafd6deb61533e2ee14591fab1ebcff7db680c748",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 17,
+      "alpha": 1.0,
+      "probe_fit_examples": 193,
+      "source_tuning_examples": 63,
+      "threshold_info": {
+        "source_micro_f1": 0.6414141414141414,
+        "source_positive_positions": 318,
+        "source_total_positions": 945,
+        "source_predicted_positions": 474,
+        "threshold": 0.3058253929514384,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "ade81eaa936cde812098641540d00e5c3ca4c2664fe1ea1e02c27869a61e9a97",
+        "intercept": "3b04e5d26564dd5b40487a24b421278918af37b42f3d16ad6d83cb9ee56d3e96",
+        "mean": "0e8b2d7076d526c6afc70cb3a8af7045678bc93b524eac9737feafde0c664515",
+        "scale": "52db65d523a827ae68fec60a6aa26c786f287ce72a291af53cb84bf1eb82e9b3"
+      },
+      "source_tuning_scores_sha256": "07c482d2feaa5dfcce6046fc865c26ba3c6b25f12a7e6751b657bc0ff97a897e",
+      "source_tuning_targets_sha256": "97e10d9aea9775db40439bf19903d5b5ae81de871b709456f657026a26a3006a",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 17,
+      "alpha": 10.0,
+      "probe_fit_examples": 193,
+      "source_tuning_examples": 63,
+      "threshold_info": {
+        "source_micro_f1": 0.6335570469798658,
+        "source_positive_positions": 315,
+        "source_total_positions": 945,
+        "source_predicted_positions": 430,
+        "threshold": 0.3343320717783542,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "b2f2c1af969ba0b45406ab69f0b41a58585528986a765a4ef25bbdedc853ff5c",
+        "intercept": "e5574927065c8b3888fe3e5039f8a1777c40d8e6f6e0f2c2aade81fb7b8c1f27",
+        "mean": "a6ba47a731eb55f5d6e841fad05e9388396ebca7248f2f4dacb8bf88dfda1443",
+        "scale": "b5cfe8937a9cbcb0feb6b33a0455ed06e34d21b152505466086c9bcdb2b47bfd"
+      },
+      "source_tuning_scores_sha256": "53996dc368e12387511d042b3de7d56f63c5727404644558d316ce0b94941ec4",
+      "source_tuning_targets_sha256": "6c39d2a14f665738809331c98feee2e489b3e656a0fe50ee8f61a073b7560ac7",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 17,
+      "alpha": 1.0,
+      "probe_fit_examples": 193,
+      "source_tuning_examples": 63,
+      "threshold_info": {
+        "source_micro_f1": 0.543046357615894,
+        "source_positive_positions": 71,
+        "source_total_positions": 1071,
+        "source_predicted_positions": 80,
+        "threshold": 0.3868972793258424,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "98d435c7707144de5db1c05f78f474179a0bb7cd276b66ffc45d506027c11856",
+        "intercept": "5587aaba081a3a5249644c94e6e52a10a8745c4506104dfe101ff624ba4ebe4f",
+        "mean": "5ee376df0b6064287a3aa439a6f4199bc3cb81e36ddd5cf456e78c48ba20d2c3",
+        "scale": "02c67a1ff7e7d0950b20af7f6c4e47bc3084ab53bb959c68b0363eea1bb1bdd3"
+      },
+      "source_tuning_scores_sha256": "35c8f8e6ed0b72aeba408eddfc4ebb3fc4b79bcde30dd70ec6216b27aee029ab",
+      "source_tuning_targets_sha256": "087fe0f27077bdcc1c4ff7d93985c034d94157dc3c9e5287d0d05f729856f7ac",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 18,
+      "alpha": 1.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.632375189107413,
+        "source_positive_positions": 286,
+        "source_total_positions": 880,
+        "source_predicted_positions": 375,
+        "threshold": 0.35911617432542725,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "89024154ea778247e8b6c74873c8843709075cc48e005c94eccd4c7b302ad9cc",
+        "intercept": "2118a7a468a61cb2fd6b69f9e8b5af6231b953f6da6a918b0c5de0f037e41c4e",
+        "mean": "7e404a7c142a8ae5a15c31cc49d1510d29310fc408adebd1a07ace4f2bb1e04f",
+        "scale": "0aa238851e76c5d323c7d3e700683b9e9af700927a29aefe3ed9e5bea83d717c"
+      },
+      "source_tuning_scores_sha256": "651883d29fe6a30fa2dcf41713892b37436a3f0a0068049faff0cf313b210448",
+      "source_tuning_targets_sha256": "eb91e772c3f6813137e1af48ed11954656834a71432dd8e9df055449ca44b79c",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 18,
+      "alpha": 1.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.7072,
+        "source_positive_positions": 290,
+        "source_total_positions": 880,
+        "source_predicted_positions": 335,
+        "threshold": 0.4344294597347417,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "7ffb03643995ea5bb7c58ea1c1bec159e848f8481af0e1966fb9915d719f1758",
+        "intercept": "3c88b9d7a5ac47c5076d311d6d6760f693a672f81e9176023923824979aab3de",
+        "mean": "d7cf540a68cbfbced05fa5519781c75014b143a3ac53f794e5494e5b0bf8da15",
+        "scale": "81da8a458cc564f9a78c4b06d9303b969007c26ff4f018032b6a4a6121be71fa"
+      },
+      "source_tuning_scores_sha256": "fd95c8318e9b33887a2d167093467359757de1bd3d5ca5799869f5c99747d550",
+      "source_tuning_targets_sha256": "07f95698d6587aa06bb597377f498203d69b5350e55d2eef0a911cf8b1201f46",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 18,
+      "alpha": 1.0,
+      "probe_fit_examples": 201,
+      "source_tuning_examples": 55,
+      "threshold_info": {
+        "source_micro_f1": 0.6964285714285714,
+        "source_positive_positions": 46,
+        "source_total_positions": 990,
+        "source_predicted_positions": 66,
+        "threshold": 0.33449704980887524,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "1a77cef61376006d59e972fbfec9158736122bdf99c036b37a211fdf265105aa",
+        "intercept": "bda28b3794131998bd9d4e364db4c4747f91a67d9a2bd8bae689953ffaecd884",
+        "mean": "f34b6ce4e9ce638c09818cda34b7f6250a072f879d401bed2cda247c9323bb6b",
+        "scale": "fdacb51250c0bc8f4134d377557705cd780eae8c2f5446e2b2943efac58b1ccd"
+      },
+      "source_tuning_scores_sha256": "edf79c279a0c0852ed87cc5955e0cf7e8086c46fe4a4d7470a77decdee1053b5",
+      "source_tuning_targets_sha256": "dbacfe5c6e02aa9a8257e4426bdffc56df4fc62c91b14a75c8e38635833b4846",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 19,
+      "alpha": 1.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.6233382570162481,
+        "source_positive_positions": 296,
+        "source_total_positions": 867,
+        "source_predicted_positions": 381,
+        "threshold": 0.38372097911290076,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "1883fa824e6e028371a04d46e9084bf579153ebf6264852836faf083a0e41161",
+        "intercept": "6aaa6ea7ffafaacfe3617eb30303f94cf0efbe62d629b9b8c446ae8a841b9780",
+        "mean": "0ae210f7b50ce4dfe3651d277ae62f4459c3abc54928ae3928cf4735da5029d5",
+        "scale": "03087299d3060a4761fee8d586040599e4b5fc4c9cb68485c79ea86ee421bbe1"
+      },
+      "source_tuning_scores_sha256": "d0cf5eb14177c566826f41f25965a5decedef92d4981a564c84a64c5ad25a8d2",
+      "source_tuning_targets_sha256": "53cb14cc556b3e1071712ba161a771f6a7e7c814c8b1e99900e4167a42aca597",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 19,
+      "alpha": 1.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.6246246246246246,
+        "source_positive_positions": 291,
+        "source_total_positions": 867,
+        "source_predicted_positions": 375,
+        "threshold": 0.39161388256871366,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "5094cc7943e1a0e3fae873c9ad98fa7d7d9024c2c6a2a957582b6ee32ed947a4",
+        "intercept": "5a2e676b9e530522a6ef4bdcea86474abbf11ac3ce5decf1827261a1aca10c28",
+        "mean": "89374f8b5ce6bd3b994e89720b06f825a14a15da82c6dd9a8dc934c37d24a389",
+        "scale": "77d01d087e8cd1df09fa2e83d9f75dd4b90a9887bf247769e8db7cce5fca3a7e"
+      },
+      "source_tuning_scores_sha256": "a2462e4e2dde249fffb0e9132e749569a053386cf47a6a607bbe600bbe0b7605",
+      "source_tuning_targets_sha256": "5aca8fc1e886a19a4013ac757a129f7e2539564290798c4bf01bd802ac29d5e3",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 19,
+      "alpha": 10.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.5607476635514018,
+        "source_positive_positions": 49,
+        "source_total_positions": 969,
+        "source_predicted_positions": 58,
+        "threshold": 0.3169382373554274,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "b517bbe7bfb0efad0a160063a27886b82a65983a74aac20ad3e92f364d5f95ee",
+        "intercept": "5117500dc79b2aaaa8a95396fd5de60a51447198b237f43ef7e1c49de10d872c",
+        "mean": "36e1e262308057a8bee6954ba7f811f855e8bd3b6afc0538dd1ec8c5b16c624c",
+        "scale": "bc5e9bc3d817485942b130728ea594c402286fabe53ca1f4b8c3df878b31d9a3"
+      },
+      "source_tuning_scores_sha256": "c540f5c41863c145fd71be3b2f28c9f31df59573efe08071a3ff518969965c1e",
+      "source_tuning_targets_sha256": "8f5912d6f1dfc74669e6e7367e61dd421fe04d91d48684376abc7af46878aa4a",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 20,
+      "alpha": 1.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.5666235446313066,
+        "source_positive_positions": 290,
+        "source_total_positions": 882,
+        "source_predicted_positions": 483,
+        "threshold": 0.2439083929102997,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "987e067efb0db0a38fe449d5b4a68ec0c4b82fe4ad9da3e517ee436d76528bf4",
+        "intercept": "fd3903b935667d180749a1adc07abcb153a0364b58bb82ac48aa37c7a8e904d4",
+        "mean": "b4d5a25d8e02f052839e96b2bdfb85cbf92f96a2bda10599703e4e334234d525",
+        "scale": "b1155f4d5bb818d46184c698dbecc307bde7932e0ca04641d8c4c12826c5d0fb"
+      },
+      "source_tuning_scores_sha256": "5b16a00eed5b026c17312a63325cf103e6f0012b977623ca4ab104de55f4d70f",
+      "source_tuning_targets_sha256": "ed4cef62575821b668ede58c3aecd0bb8d7cac7192e6b23b5a2124d55a94a158",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 20,
+      "alpha": 10.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.596931659693166,
+        "source_positive_positions": 287,
+        "source_total_positions": 882,
+        "source_predicted_positions": 430,
+        "threshold": 0.3174973419039461,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "fe6cfd36aab892de19563092783c8707c94fe8c58d60f95b0f22f4f8c364c790",
+        "intercept": "feec38dae885bf95d3d6e2d195c08b46acda2b806604c87c8cd8049ae862cb85",
+        "mean": "09e2847bda1d6a701684ce65b418863cc112d9d9a6558078ff8cabb05fea9642",
+        "scale": "e1e665f66456a12bf8b7c69e479e0c041aa723c009243d21e6568e72b48f91fc"
+      },
+      "source_tuning_scores_sha256": "4d7b8d010cd55009d53b981e65a15cc5691c4f56ea470d8d3f4afc248e44afca",
+      "source_tuning_targets_sha256": "603d0669146fb32276087a6bbfe258331c5956481a6029a53b8f1a92cf758c8c",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 20,
+      "alpha": 10.0,
+      "probe_fit_examples": 207,
+      "source_tuning_examples": 49,
+      "threshold_info": {
+        "source_micro_f1": 0.625,
+        "source_positive_positions": 46,
+        "source_total_positions": 980,
+        "source_predicted_positions": 34,
+        "threshold": 0.4059921381959537,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "baec8f607b32c4f5f7855c27d40f08a284652c6b58382eff6abae2ceac21dc2c",
+        "intercept": "efc17b55be8dc43b2c7f10daeb944f4659939696dd75ea4b987bd3b0d3748c08",
+        "mean": "3787d7a7a4659d81795b22f881927eeedd35df4f3572ec41ab3eefbbcc863d2c",
+        "scale": "711dbd0dc379ab5255b46a63f7083ae61d1af67b03707f7ddf07079fe4098b90"
+      },
+      "source_tuning_scores_sha256": "bcce37844dc7e98a82bbfb6fe400180403336e86d2cc40be4327a76ac2e7fc52",
+      "source_tuning_targets_sha256": "819484a51f15392cacdacb045f174c0a4ffaaebeba8ebd200d63c25ba720cd28",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 21,
+      "alpha": 10.0,
+      "probe_fit_examples": 211,
+      "source_tuning_examples": 45,
+      "threshold_info": {
+        "source_micro_f1": 0.5620328849028401,
+        "source_positive_positions": 288,
+        "source_total_positions": 855,
+        "source_predicted_positions": 381,
+        "threshold": 0.3493445473458219,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "a9a93b017e6210d58169bebbdb6b723be2bc2d090779f54490d4f474c25f5926",
+        "intercept": "055330d32849fdc25972d1a7b17f6cae2bd322372e0d20a52bb34ffd3ce56ce7",
+        "mean": "2cd7d73dded65227304074b3a54f637e1a7aaf724a75ae3d66232e4d0307ac5f",
+        "scale": "c5060f615ca1a94978b4ee79e4e0dd2ed596771fcf03c6fe9822021c19c5ca74"
+      },
+      "source_tuning_scores_sha256": "aa5ad43fdcfc3640ce361310dc4caa0b1991bfc882695af3d2a50784988e02dc",
+      "source_tuning_targets_sha256": "404482d439d39a276a638e5e3ffb9e7d5711f37b10ed8bdd55fc728bdf09b7a8",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 21,
+      "alpha": 10.0,
+      "probe_fit_examples": 211,
+      "source_tuning_examples": 45,
+      "threshold_info": {
+        "source_micro_f1": 0.5938303341902313,
+        "source_positive_positions": 288,
+        "source_total_positions": 855,
+        "source_predicted_positions": 490,
+        "threshold": 0.27251293603250404,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "559ea70bf584309508b5153d4d58ac31cc42eb5fb77c57a34057a2d47acbda7f",
+        "intercept": "cf6927ee5611ca4ffde55cb40c1e71df270804e5740d8ce406dd1a447623aa9e",
+        "mean": "51684a9e96b25fdfbc78d94d94a6a7a03d22f84888c219ab73413d0ae7a9d402",
+        "scale": "8665fac5998565c243749be90342710a2a08c999d259504bc2f682783a69c3f8"
+      },
+      "source_tuning_scores_sha256": "01f49cfa57af2034b6be92ffc2fdbbdbec34d55686776abca28a97f0b04174ad",
+      "source_tuning_targets_sha256": "5e350551c649c3751d9b4eebd41d0adc4554c0f6ccc2d0be8489e6b5609a75b2",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 21,
+      "alpha": 1.0,
+      "probe_fit_examples": 211,
+      "source_tuning_examples": 45,
+      "threshold_info": {
+        "source_micro_f1": 0.5641025641025641,
+        "source_positive_positions": 44,
+        "source_total_positions": 945,
+        "source_predicted_positions": 73,
+        "threshold": 0.2918602341053739,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "ec47a8678627311fd7d70564abd8f914b10447e26ce1d5a72e0bca9a2cae70ae",
+        "intercept": "efde6584792b674e596a257e699894eddf77f76599afde6a2e29753be279fa7c",
+        "mean": "77df4a09b17a26a1035baa0ce2e1704374be7b8adda855348fefc57038e060ed",
+        "scale": "3597d9e011f34efd2320661821e32e11f794e6e2ef8d47010c242e63ce31ec97"
+      },
+      "source_tuning_scores_sha256": "c2df04b34860def322e0774ee55eadc1b6912ec5949be0cdcf169855ca093e66",
+      "source_tuning_targets_sha256": "dabc169b0a3ec70d8332f73b9a8f12cca5a9cc1a6716fc471e0021fcd5dca5cb",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 22,
+      "alpha": 1.0,
+      "probe_fit_examples": 212,
+      "source_tuning_examples": 44,
+      "threshold_info": {
+        "source_micro_f1": 0.5552884615384616,
+        "source_positive_positions": 291,
+        "source_total_positions": 880,
+        "source_predicted_positions": 541,
+        "threshold": 0.17096414230884202,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "09179151e5b329527c0026ad576a6b21130d905f696dfe1783dcf220325d84bd",
+        "intercept": "1f769225b4df3e8dcc940f35b3b54a49a90a1f62a3665b9c179e1b528399fac9",
+        "mean": "0e553973a8031b4793b6bd2f04d996b29fb2bf5eef08e2993d6deb997dc1c0b4",
+        "scale": "06fe51231ec2eb4104733ee2ebd3ca946da93282b2619e426dc018adb951fd6f"
+      },
+      "source_tuning_scores_sha256": "810d5d58375919ee5506199e87f2fa714698ed05815fa860801043222c1e9d11",
+      "source_tuning_targets_sha256": "905e1d6bfd06946115f7c02ed9aedb7cd092fd44ff4b903955e5268be6681055",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 22,
+      "alpha": 10.0,
+      "probe_fit_examples": 212,
+      "source_tuning_examples": 44,
+      "threshold_info": {
+        "source_micro_f1": 0.5534105534105535,
+        "source_positive_positions": 288,
+        "source_total_positions": 880,
+        "source_predicted_positions": 489,
+        "threshold": 0.267876693243584,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "d0f9c0ae158f95e1d0b49b6f55e438167e8d09805060d500e79ceb13e84de495",
+        "intercept": "40d9308c31185986071f2b1b92a923bc311459d5b56b18d646c99e23b35f4335",
+        "mean": "f08ac3f240816035d29875ff12f7595954eb01fca0c5d914bfbe7239c8e1323d",
+        "scale": "14c07666da77c3a63827bfc8ea8d514c638d919fced2473d41f9821d0de45dfb"
+      },
+      "source_tuning_scores_sha256": "630aa84c2b5d55dd13ceab276c50a4b34cb16eb7bc94f4080c7cda5325ab14f3",
+      "source_tuning_targets_sha256": "40963a84937040e3b03c35f80a130901715bcee22f0944b526d1bdd47e5db3ba",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 22,
+      "alpha": 1.0,
+      "probe_fit_examples": 212,
+      "source_tuning_examples": 44,
+      "threshold_info": {
+        "source_micro_f1": 0.5609756097560976,
+        "source_positive_positions": 45,
+        "source_total_positions": 968,
+        "source_predicted_positions": 37,
+        "threshold": 0.5740675601096845,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "a21c46c2380e774c37bd5fb29ef6f8dc79b32266c3b763b5a154f06b310411cc",
+        "intercept": "4e74ac5167c41120115c34ca3036176e2476c2bf1c96122aa89d470f37779852",
+        "mean": "0dc239cf9c125b3f12d27b73272ad456b80f07e55cef15a2543a0927b6e6a7cb",
+        "scale": "1897a89737b3cf0de86c978c53eec74f3bf136c4cae4910f71c0f7f0017e9f08"
+      },
+      "source_tuning_scores_sha256": "5df31e6f975ed41602b4a55621a5e0b2bb8e86d0d4360e5d81f71f83a614e22e",
+      "source_tuning_targets_sha256": "d77417d45442f80b3c41f8b6ecf13eb4c71810ad4edf0e2659e1bef21d1ec59c",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 23,
+      "alpha": 10.0,
+      "probe_fit_examples": 210,
+      "source_tuning_examples": 46,
+      "threshold_info": {
+        "source_micro_f1": 0.5730858468677494,
+        "source_positive_positions": 334,
+        "source_total_positions": 966,
+        "source_predicted_positions": 528,
+        "threshold": 0.2909089588384323,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "f7dd656aa526f95081c0de95df8c8daceff8b0d69dab6286286b635d17c96e91",
+        "intercept": "5777d38a21c0600dbb69c5fe0ff3c4448502d1520b55e768a42d5cae405b56cc",
+        "mean": "f10f91bf5cb30d39cfa1a39e8ab8c1ae2fdd34cde3c40f7287fdb6fb855a2b21",
+        "scale": "e0ca72f5062a057af7a107d87599a6f30ba0d870d4ec3ee9ac37b26501a705b2"
+      },
+      "source_tuning_scores_sha256": "c31c0561adc621a967596125030e62cc30f35bcdf8bb9e8b3437fda41edecd94",
+      "source_tuning_targets_sha256": "6de62a35005433483d48180b5da0ca977e163d1a7cc89a722a7fa907a983a803",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 23,
+      "alpha": 10.0,
+      "probe_fit_examples": 210,
+      "source_tuning_examples": 46,
+      "threshold_info": {
+        "source_micro_f1": 0.541095890410959,
+        "source_positive_positions": 332,
+        "source_total_positions": 966,
+        "source_predicted_positions": 544,
+        "threshold": 0.2843339751893963,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "ad286f49f3b4b890271c008ab37d28fccf0b39564cbb0a99d4d4372d9f196f43",
+        "intercept": "c1acaa12d069b449a81bf6af02e2340455581192aa692bd37dd3c1d074ed30d8",
+        "mean": "a135df89b2373fc0746dee6b975994dc1444b52977a5b737b6c83d3eee3e019d",
+        "scale": "3cdde393946f38fb091be0bc1f63cb9ff560bafef4d1cbe7b6eabab7c3851a54"
+      },
+      "source_tuning_scores_sha256": "8119cbcf3f7697562d8579b7d9aa617e58dfd539624c630f47ee1e0479b7e634",
+      "source_tuning_targets_sha256": "e6eef8e3e2f396e22ad9546199948f3b76d3fa3d24007086cddf49d76bdffc4a",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 23,
+      "alpha": 1.0,
+      "probe_fit_examples": 210,
+      "source_tuning_examples": 46,
+      "threshold_info": {
+        "source_micro_f1": 0.4148148148148148,
+        "source_positive_positions": 42,
+        "source_total_positions": 1058,
+        "source_predicted_positions": 93,
+        "threshold": 0.2511554421077119,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "8bba48c3b2b9817f0e08a77769d2fe0a5bc69b02555385284207dc3bedf9c782",
+        "intercept": "d7e9c3fe3be25ef1a3252a5c87c9c3123fe352897c81a0f18fc70441166fa15e",
+        "mean": "f60c90bd294c66d8496d3fa16ed68887ceb4c9f88677bf97265bf1ae55067265",
+        "scale": "42684be4e895e3cd711ccb389ce65ee0135c193f79b11650ae4a098d473dc5db"
+      },
+      "source_tuning_scores_sha256": "d0d6bb972ad2accec2c493feb9a3f99b6484f835e9a67d8f731c956e3c8ab17a",
+      "source_tuning_targets_sha256": "ef2157a0ce58a8fb99741790ee8ee20e743a84cb640ac55cd70c089f0037987d",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 24,
+      "alpha": 1.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.5486518171160609,
+        "source_positive_positions": 374,
+        "source_total_positions": 1122,
+        "source_predicted_positions": 479,
+        "threshold": 0.3972624588224218,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "02be61d1d655d70449fb03180c936ef3bcdbab1d780eabff5d6788a2b7195943",
+        "intercept": "812319800e3cc68d864aa828d013612a240b9912b539941a7a44223dbd2d0a50",
+        "mean": "e6e315cf2ae13d5b19703e336b32197ac185a489100bd6bd49f3f39e62122da3",
+        "scale": "ad86d3d6165fe5a72c834de313a6c0d6a4fba30e41d59135a1a3d0fd34ac7339"
+      },
+      "source_tuning_scores_sha256": "45029def48715e53ac04ba4f6a2e801c0c935bf44a3618417b75e887055acc7b",
+      "source_tuning_targets_sha256": "97ff9f21e903dade5e86f37a93612876ae3eb637aadcb4d14d3ddf3468eadaa5",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 24,
+      "alpha": 10.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.5400192864030858,
+        "source_positive_positions": 370,
+        "source_total_positions": 1122,
+        "source_predicted_positions": 667,
+        "threshold": 0.25286202126720275,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "1e831f472023d5c175b3be89ece855581afd3cfbb5203aefd0a72d93dbab95ca",
+        "intercept": "34c4611adb6952d02e6656f00609b0c986c4cd740fc89e8fbcf37c2068e9cf1f",
+        "mean": "e7171cb5b46c8b8a0782237bd88e4689faa883e36464e8acb80eb83e0cdea70b",
+        "scale": "b2479c68c1a8659867864ae86653503edcded78f7bc43971d5ee79aa7c34ddc2"
+      },
+      "source_tuning_scores_sha256": "0b4cab2dba275a4e35dff6ddbbc1ff6a9caf2915cce75de1fdce861bf13e19fb",
+      "source_tuning_targets_sha256": "9d78f99f5a6c4be7c53f70a6604bd3d58aadfaec8bd39fb3c1400d0932f361a3",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 24,
+      "alpha": 1.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.45528455284552843,
+        "source_positive_positions": 49,
+        "source_total_positions": 1224,
+        "source_predicted_positions": 74,
+        "threshold": 0.3521568902215425,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "bba407b19d41e8de9e5203954c5c88891dfdb633c7c73aac99ccfc2630163f6f",
+        "intercept": "15dd9ae00db24c480cb4b977ff215bd9281d2a2bbf9ad95db805e5b1208340c7",
+        "mean": "5cb39ab3fd3d37c21d134ccf3ef23501faa0bc7595380eccf62274a2d70ef975",
+        "scale": "ace0eb22fbe1558c4106db34c6485d0790c864d293a106e62d40010ef951ac23"
+      },
+      "source_tuning_scores_sha256": "5e6461163d19b510c957b4b69fb0b1dd23a0e8c0e794c02ed7bde2249dc5ca73",
+      "source_tuning_targets_sha256": "0f6e26fc342a29b570381b583d4c0194f048959776bb0b83949b386f39a1faa6",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 25,
+      "alpha": 10.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.5366820885657634,
+        "source_positive_positions": 461,
+        "source_total_positions": 1357,
+        "source_predicted_positions": 1052,
+        "threshold": 0.12792615147114147,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "95b85681c679a1d6ca9050f4807145bdd6d86fe8016b3fedcb6087f6b099aff3",
+        "intercept": "14727fd2531a51623a57481e9bb8e87b11888ede2cea4cd97dbc67f4272d44c0",
+        "mean": "a6e3dc392b1363728db74327ccb6e80074480e9dc20bcd239f08ca37da34fb0d",
+        "scale": "f40dfbdd628cb6e600ecbdfcd43826dc8e09f78a65df5df63f348050002da74a"
+      },
+      "source_tuning_scores_sha256": "5e5648f2b0e6d4ba6347f2d7199729e56f04ebbd42040319420a7ea8f5dde459",
+      "source_tuning_targets_sha256": "bb59fdd0bd1c8086ece97b8c556668fdfb1f8d71dfbd24801925a833e0fa20cd",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 25,
+      "alpha": 10.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.5442834138486312,
+        "source_positive_positions": 461,
+        "source_total_positions": 1357,
+        "source_predicted_positions": 781,
+        "threshold": 0.26729883046150166,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "0abda6edc998f7aac88b4dab4f1c70e588c4948856a3c6a926bda1bf62f50dd2",
+        "intercept": "a3632c1367fd04299515f9a9667f376b9ce1d1fbd4d1997e43e728c89595a226",
+        "mean": "57f832d8b623615b06ee4196d32662125d84f9df5799273deee76c5978f19fad",
+        "scale": "31b35d2862eae7ab94daa0574cb250f76a39cd8e020943ff13c7860b6905ef86"
+      },
+      "source_tuning_scores_sha256": "70003b10ace5aa0449e8d16bef9233e059b94187bfc672d5c2732c3092772f05",
+      "source_tuning_targets_sha256": "35778b7715491038cae1a28f4130665baba327ce93c71d9596d515130153e666",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 25,
+      "alpha": 1.0,
+      "probe_fit_examples": 197,
+      "source_tuning_examples": 59,
+      "threshold_info": {
+        "source_micro_f1": 0.48951048951048953,
+        "source_positive_positions": 68,
+        "source_total_positions": 1475,
+        "source_predicted_positions": 75,
+        "threshold": 0.3944487135348329,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "a9cdd0139bfff064bc91ecf76dc24e1c45c940130f8876555eabbeca8b12016a",
+        "intercept": "55b679f636c76dce7f50d68e4928fd0a0eda89456e51360df1568e61d745c6a6",
+        "mean": "04c2ae18e2b8b32554b479acdf46619d4515477dbaf4ce13403787fdf983f22a",
+        "scale": "31528a33d42af7b07ac86e3cbb0582741bae4b7127293e9f64940a82f822653d"
+      },
+      "source_tuning_scores_sha256": "ea223e96073b588ee1a9890381e22ebb44d53424c6b92ef220a85f40045565d5",
+      "source_tuning_targets_sha256": "c691d6303b986d7cfac81287d2ed99b7c01d7f21f96343817c1d3132ed7c80ba",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 26,
+      "alpha": 1.0,
+      "probe_fit_examples": 216,
+      "source_tuning_examples": 40,
+      "threshold_info": {
+        "source_micro_f1": 0.518974358974359,
+        "source_positive_positions": 317,
+        "source_total_positions": 960,
+        "source_predicted_positions": 658,
+        "threshold": 0.1303973812312329,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "0c6e64f12e14c7388122dd53870bf8a4373c54d38d567a4669f4193112858223",
+        "intercept": "4310645e0b3ab1a3c75a1de2d76b475df46d55eadde8071978185b0085ca918a",
+        "mean": "6b396538c6a5c701f537214f42bc582280ca0208dd7c8b1b3c07bf7e7489617b",
+        "scale": "fa339b59a38a90dfbec8a618f5e0297d54b993b44f5a0b754b70489f1e4df558"
+      },
+      "source_tuning_scores_sha256": "9bb6ea3872856878bea383ad58f0b9d136fff9b4e1881db7e5cbc832fa1ae620",
+      "source_tuning_targets_sha256": "4952632af04d05260b1687992fde07da42ff2368b33eb12c7155e227a5be61b4",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 26,
+      "alpha": 10.0,
+      "probe_fit_examples": 216,
+      "source_tuning_examples": 40,
+      "threshold_info": {
+        "source_micro_f1": 0.5551401869158878,
+        "source_positive_positions": 330,
+        "source_total_positions": 960,
+        "source_predicted_positions": 740,
+        "threshold": 0.1103704677236024,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "035599487bd21fa280ae7d1a862cd11a6ddb22b571d9c5ba6f68f72dd266a761",
+        "intercept": "d4d05634a930b5f58989061cffc89b236b9887e42d2adf1d18f0d1b5d035a451",
+        "mean": "8533e11eecba971ecf0cb583cb03e99d61e60d35e3ed7aa49445587618e18eeb",
+        "scale": "aefdd6a8e0b6ae5b692d3da1141b3620176b2cffc2664f90aca7c6264671e85a"
+      },
+      "source_tuning_scores_sha256": "0747be6a2e36dd08fcbfec94c66eda39e2a4a9db4ccfa2bf673ed019c46f66e0",
+      "source_tuning_targets_sha256": "cfb1e27c635a99a20f21553d9747a9cac6a27c316fd7a26091af63c0bb7a5c35",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 26,
+      "alpha": 10.0,
+      "probe_fit_examples": 216,
+      "source_tuning_examples": 40,
+      "threshold_info": {
+        "source_micro_f1": 0.36363636363636365,
+        "source_positive_positions": 42,
+        "source_total_positions": 1040,
+        "source_predicted_positions": 90,
+        "threshold": 0.19526320606303407,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "583972dcc7d2c3f4665b0de3b68b40fa214de38faa663f708a95a0bcbcf9683e",
+        "intercept": "cff06744c3ba43daee2d35705c56891305363b881469db8168e5496ea0ec25cf",
+        "mean": "defdf80d4227eaf30f6465d48dfd4582a84740def362af8a0c92bd5d3926a97c",
+        "scale": "daa74fb14c2c1dd50283058a97e53480989d2aa663bf69495da578965a63d036"
+      },
+      "source_tuning_scores_sha256": "9300f7d6a21a9f61669fb35933c084f73e80b0e2216be113fe8f48de0cdd0dc1",
+      "source_tuning_targets_sha256": "2546bfa4a519a8a40f705fdb1a133f1902eb178e3adcfb7ca0f52a2c400df4e1",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 27,
+      "alpha": 1.0,
+      "probe_fit_examples": 203,
+      "source_tuning_examples": 53,
+      "threshold_info": {
+        "source_micro_f1": 0.5256525652565257,
+        "source_positive_positions": 440,
+        "source_total_positions": 1325,
+        "source_predicted_positions": 671,
+        "threshold": 0.31431417771316367,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "e95dd1712a46446076fd307388118ec99799f36f13f38e7a222405bc43f3ddd1",
+        "intercept": "37d1f698fe84e461533aa919f649c87214628859913ea7edf4d411317fc6dc21",
+        "mean": "19db814d22d04035530560af9cdc11e91c3c646781b9ba5d64c104f3d0936b1a",
+        "scale": "7c125fd9bb2df796bf4a672ddfdc57b7ab1a7774ee66ff46f561e82e007e0f0f"
+      },
+      "source_tuning_scores_sha256": "3fc0af1b6253614d9c7f5ae48e8d39b77a4415a954c3558471e3e8b27b91c9aa",
+      "source_tuning_targets_sha256": "60a57eaf4c1c09c651025e816857b0020753759df881b35f9a533f6a834f6ad6",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 27,
+      "alpha": 100.0,
+      "probe_fit_examples": 203,
+      "source_tuning_examples": 53,
+      "threshold_info": {
+        "source_micro_f1": 0.5359160613397902,
+        "source_positive_positions": 439,
+        "source_total_positions": 1325,
+        "source_predicted_positions": 800,
+        "threshold": 0.275598141552016,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "6d74e1f55a96e180285ea7dd513963e4e3c587eaadd02c9fbb85ee4feded15ce",
+        "intercept": "dcb3ee5ccfac30c30dd029a63beba2a3ac4ec7e7d5166158f550155c333da039",
+        "mean": "ba029f20ef78ff80a6d576f6a5698f76d5530596af58a03d1bfe931bfb2032c8",
+        "scale": "d6a4e80841f67e668e7f075ce61aca413bd60fd73ae6331af90bddbe2900fab1"
+      },
+      "source_tuning_scores_sha256": "932aea773c19cd6de48c177fdc0570ec1f13db3f7f4ddedfd18999ca3baff5f7",
+      "source_tuning_targets_sha256": "892e1201777bc8ad8af1d92ff712e9868d467f0a33ee1f6209fb11bf18135b38",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 27,
+      "alpha": 100.0,
+      "probe_fit_examples": 203,
+      "source_tuning_examples": 53,
+      "threshold_info": {
+        "source_micro_f1": 0.3263157894736842,
+        "source_positive_positions": 46,
+        "source_total_positions": 1431,
+        "source_predicted_positions": 144,
+        "threshold": 0.13162226612873934,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "113a5d9268eafdcb434ae4febaabdf8b8895ee59d260cf9e85f2562ba2d883b6",
+        "intercept": "4c353c03a0cc39556fe4dabdf062126aecaa054ee055d3ceb3b9e8e4fe919efb",
+        "mean": "d3f91120bc8674bd3bc9209abb0f6d81e558bd34a6aa891d69d096747cc1f0f0",
+        "scale": "bb5ad3f0a98e9085d333cbd08712bfb9eb4a297a4af9c4a5633c1cd79276e9d2"
+      },
+      "source_tuning_scores_sha256": "da4805296e6f7235ee0aa5f6ba7a47796f16c6066e963fc5af1d68ec267259bf",
+      "source_tuning_targets_sha256": "925ff1c809e88b3aad36632f996c8e4188d9bfc6e7ca257e402f5aced3c93afa",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 28,
+      "alpha": 10.0,
+      "probe_fit_examples": 200,
+      "source_tuning_examples": 56,
+      "threshold_info": {
+        "source_micro_f1": 0.5356900067980965,
+        "source_positive_positions": 503,
+        "source_total_positions": 1456,
+        "source_predicted_positions": 968,
+        "threshold": 0.23526824571616256,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "157fff1b7aeac9377fa7e87010490547a147bb437fb465a3a749452ef72e6097",
+        "intercept": "359b35a847f23fa2b146daf5c8cd08f8e777ea90dc57202d6fa6dd9788e463b7",
+        "mean": "622d25adb1ced2fa051643107569010e93463e983da5f7bb242eced35bb6d3cb",
+        "scale": "fae28076f901abb8b0beaf48ec3ea34173be8d110fcf1656023cb07c5d3a9bd5"
+      },
+      "source_tuning_scores_sha256": "994eb9440cd1499114f7c016c2a232f91f00e35489223ef8d7caf8235e17545a",
+      "source_tuning_targets_sha256": "2fe0f30419e14df94b64c4560b1de9ef3c922adfbde61a6b4a50f1f19e1c291d",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 28,
+      "alpha": 10.0,
+      "probe_fit_examples": 200,
+      "source_tuning_examples": 56,
+      "threshold_info": {
+        "source_micro_f1": 0.5448415374241402,
+        "source_positive_positions": 493,
+        "source_total_positions": 1456,
+        "source_predicted_positions": 990,
+        "threshold": 0.19927064299433583,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "f3698f38f501a12793a9b12e9088cd4c38345939def3405e446d5c9317395cf7",
+        "intercept": "9879c143f52b0f97b4896bf43868da59ce253b73dd0a18601158acff8ee8b6d6",
+        "mean": "b3825f46683fd252f789e7a74f0d6845592acf7b65b861bbd6da975748d25657",
+        "scale": "4a2c73517f25cf82ef5e222fd68aa683b85be6ec1e4d063ff606fda5b623be5a"
+      },
+      "source_tuning_scores_sha256": "4f50e96e5dc8ac14ffc25e528a0eead393e048353f95a21320401a12766576a6",
+      "source_tuning_targets_sha256": "d718f544621ab6680325a6a69b7022c6781fde2f657d01d504ccf4c59d0d54d6",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 28,
+      "alpha": 100.0,
+      "probe_fit_examples": 200,
+      "source_tuning_examples": 56,
+      "threshold_info": {
+        "source_micro_f1": 0.35555555555555557,
+        "source_positive_positions": 50,
+        "source_total_positions": 1568,
+        "source_predicted_positions": 85,
+        "threshold": 0.1912802100561426,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "ee96b9df6ae34fff9e4ac052544c5ea0a32d8aa72d3bc00c82527d44b50823fe",
+        "intercept": "1d7c734aa5a5c0167350a38c71fb5ac7f549c953b207519c24151b3ca9247508",
+        "mean": "87a222d924cca09230777104da645b61f8d0e8771c25404b1b4c6b9f626fc70a",
+        "scale": "18d865cbe80d08d7e47cf0ed876d0429093717ecee4d18ed2b53787087e6aca8"
+      },
+      "source_tuning_scores_sha256": "9178f115c4cf205bb8079c42c67d9980290b132b2ec3d8510b29252464994a1a",
+      "source_tuning_targets_sha256": "8a3c83d012f60945a351ed8141edc8725a79e8a81884958640f142352aaca838",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 29,
+      "alpha": 100.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.5140247879973907,
+        "source_positive_positions": 422,
+        "source_total_positions": 1296,
+        "source_predicted_positions": 1111,
+        "threshold": 0.15735867901719935,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "c157f3f3cdefbb4f1b00f654307fbcae4a9826829c5b197467cad4a4472ea178",
+        "intercept": "bf28c78d885755ed1000c918a1eb273f6f1651d73d2e76e581920eaec80c29ca",
+        "mean": "856c802f12a085c4459b09b34033ba1866af5182b9a04879435e51e16529a3b1",
+        "scale": "b9d20fe165d670c4919397a50a209379b9f2782e558aab8986ff82cb0a86cd22"
+      },
+      "source_tuning_scores_sha256": "dcf182287d1a7485aa374bd34ded443c9eb953b8e835d438240c8c5199ca455a",
+      "source_tuning_targets_sha256": "308060fb90657e8770ea2f5c3e5f9c0fb531c410f9324dbee86d9171086abb99",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 29,
+      "alpha": 100.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.5162110616656072,
+        "source_positive_positions": 433,
+        "source_total_positions": 1296,
+        "source_predicted_positions": 1140,
+        "threshold": 0.1488337382070897,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "ceed176db0ae9be9b88829894ba22aaf11178aafab79e5376b000108ffd0d349",
+        "intercept": "61437c2db84451fa8093f1f9bf42b116e175afe6a5b95aa212c91fba28a6ff8b",
+        "mean": "507e7272b9aeee70ba81a1c552f1397601c2c747893c08b142d064967f6fce30",
+        "scale": "b2e7e58adff744dd5a9ef565942a93160967639c0de2cf6dea38b05e65852049"
+      },
+      "source_tuning_scores_sha256": "b62d7790c9a891f51a91b6cb83b5a32dccdd5bca4637cfba5a161c6319d67f1f",
+      "source_tuning_targets_sha256": "b526b6ab46724014b5cce680b7f733ca680b765a69d8b8e932bf7fd7f674e3e9",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 29,
+      "alpha": 10.0,
+      "probe_fit_examples": 208,
+      "source_tuning_examples": 48,
+      "threshold_info": {
+        "source_micro_f1": 0.4489795918367347,
+        "source_positive_positions": 42,
+        "source_total_positions": 1392,
+        "source_predicted_positions": 56,
+        "threshold": 0.2652641472791064,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "7a256fab1a2ea7961f2cca714868ade2eaec5c32a849b7303503fe56b05f7df6",
+        "intercept": "b56c3bf2685cb1586c45b817a80c12e2e906f8056f205d60182d02c7dcbfa5fd",
+        "mean": "dbc5141c12c73e5ea7b4dd39e0582de2b4f80688c4092cc141528e5ea1e09121",
+        "scale": "1b6af8bc31717c9240b100eeb6c56902f5ebcd927a4f35bc9ffe72242c14da46"
+      },
+      "source_tuning_scores_sha256": "0722c041307ce8e7a4ee29553b9c92720f2503138cd315df4cd604219a48c812",
+      "source_tuning_targets_sha256": "8b0b87eb7fdc7b254dd8eb2ba2ee6bea107e28af985c46e80ff9e214fce2af24",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "peaks",
+      "length": 30,
+      "alpha": 1.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.5121212121212121,
+        "source_positive_positions": 472,
+        "source_total_positions": 1428,
+        "source_predicted_positions": 848,
+        "threshold": 0.2184415701443383,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "f50dbbc599fa11f97775c806388d3ccb27d8d31d41c9d6cee06ea4ee1816de00",
+        "intercept": "d881cc701ac68ea3fe18259179cb0ddbdeb4a2301be359a985bf372f7c17a361",
+        "mean": "e86d6c1f2df8433a86ac1eb1989da4b4e19c2f41793942450aecede6d1b03d1f",
+        "scale": "8433f335b7698785158a16fdd27c0f3f8eaaa4207adff131656fe79ca6f74a6b"
+      },
+      "source_tuning_scores_sha256": "04d9cf31cf2f0417471739b61209e11cb4a1a02e8c418d84ca1800d95d8882a1",
+      "source_tuning_targets_sha256": "2085f18576a98550b0c7bf0c66294d18de6821a4c5eaec1f9375313d5d11cf5a",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "valleys",
+      "length": 30,
+      "alpha": 10.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.5263157894736842,
+        "source_positive_positions": 479,
+        "source_total_positions": 1428,
+        "source_predicted_positions": 1117,
+        "threshold": 0.11143088218248595,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "0c9e89aca8fa2524c71edbbc58a74726df43971b3bd1d87c45c765dfff87bb6f",
+        "intercept": "ad112400234f36ac360d280479147b923342e3ef81c8cae33d9f00d315cbdac1",
+        "mean": "d4c980c793731be44c5710202ff4086babcd142a23d847e6274149de4fcfde0b",
+        "scale": "04e2bcb30a8a2f0f469d9b555e15863e84a1cc3a47c2ab1a20236081d0065314"
+      },
+      "source_tuning_scores_sha256": "c9ef5d4f5df72438fec2df20766ede36b8b9d4e7a42b77b49e183dce8b957179",
+      "source_tuning_targets_sha256": "b1eee5a40425c3040e24371bb4ee5c8079f66c57cd624d5a8b78a15ec816e275",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    },
+    {
+      "unit": "unit05",
+      "task": "fixed_points",
+      "length": 30,
+      "alpha": 10.0,
+      "probe_fit_examples": 205,
+      "source_tuning_examples": 51,
+      "threshold_info": {
+        "source_micro_f1": 0.44660194174757284,
+        "source_positive_positions": 49,
+        "source_total_positions": 1530,
+        "source_predicted_positions": 54,
+        "threshold": 0.28153900694731976,
+        "reason": "Source tuning micro-F1; equal-score groups kept together; highest-threshold tie"
+      },
+      "probe_parameter_hashes": {
+        "coef": "123a72ab6372f5f38ebd16561c82adf5e797a6ca65f8b26fef14493bab4e63c7",
+        "intercept": "f6934b11f68974ed71cb4d050be9b841d200ad0fb4fb5413921350f6c8db2696",
+        "mean": "e2256576c9c4e8249facda3bed7adde24622d72769a8c90ef3fa01ed5d56c997",
+        "scale": "95c8a724e52bc34a9f226e260bfcb5e6fff47a7acc8448af41ba6f2f28c42f2b"
+      },
+      "source_tuning_scores_sha256": "68bf56623a04f1666ea8a21d45e4db24ff8534776a4a47b9da0064b7f68f9d53",
+      "source_tuning_targets_sha256": "4efd8dd92c81ab076eb4f7255d3fe9912677ab0f9faf022dfc1a73bf0d82478c",
+      "uses_downstream_answers": false,
+      "source_validation_action": 0
+    }
+  ],
+  "source_only": true,
+  "thresholds_frozen_across_routes_tasks_and_ablations": true
+}

@@ -1,0 +1,448 @@
+{
+  "status": "passed_read_only_design_review_with_interpretation_limits",
+  "captured_utc": "2026-11-10T14:08:16.176391+00:00",
+  "scope": "Read-only source, protocol, historical local-geometry selection arithmetic, and saved raw pair metadata. No formal output scores/logits, recurrent payloads, or checkpoint weights read; no fits, forwards, source edits or new experiments.",
+  "frozen_protocol_sha256": "016ef16f07924f8bf55a232d21754612afa15dd2655cd4ac9d0425ff3657b176",
+  "engineering_protocol_sha256": "de2e47eb9127fbcf3a3710a3bf854a838e13bf0797f6f64e86d79f131503312d",
+  "selection_sha256": "80e03b89f48c675c656e83fcae5a97f588bf67b33163c317f8536e2f9b3f03cc",
+  "pair_generation_protocol_sha256": "2fade195fe7531641cfb085c0e1d11a2f4b4b8b08e3da974ed2670aeed55cee3",
+  "reviewed_source_sha256": {
+    "experiments/permworld_local_causal_20261110/calibrate.py": "b484c14a7bab91bac742b9963b6429cd1e7d5525a2c23dfed8411a36392d1c8d",
+    "experiments/permworld_local_causal_20261110/features.py": "5b4490adb346f3f4f132a5469a372177fbc6d42d4daac478cd0ae60ad0ed0897",
+    "experiments/permworld_local_causal_20261110/probes.py": "d0d66c8957eb6e340a25de94f68241f2a6ff1d9e1faef7c1f5a441998b7621d8",
+    "experiments/permworld_local_causal_20261110/formal.py": "cb3559b912fd4ebb90a578015ea2053c8bfb156a7b5f8f3a418a476542886fc0",
+    "experiments/permworld_local_causal_20261110/recurrent.py": "6092c23221f858ddc423685552d1b954cf729a5d3f89d0956fad691ab53c6ff7",
+    "experiments/permworld_local_causal_20261110/shared.py": "ba33251423c6bc15a20b943e1ef10278efd4fee3d44ad808f902e4f02e40dc14",
+    "experiments/permworld_local_causal_20261110/run.py": "122c659498c8706d53f8ef397517c89ccd5a4c493ac759fe48568cc51c595752",
+    "experiments/permworld_local_causal_20261110/pairs.py": "61182a2ed5653de4a5c972913431ad909b900aa4f9c614706dd9442da7e871c4",
+    "diagnostics/permworld_local_causal_20261110/protocol.json": "016ef16f07924f8bf55a232d21754612afa15dd2655cd4ac9d0425ff3657b176",
+    "diagnostics/permworld_local_causal_20261110/engineering_protocol.json": "de2e47eb9127fbcf3a3710a3bf854a838e13bf0797f6f64e86d79f131503312d",
+    "diagnostics/permworld_local_causal_20261110/engineering_freeze.json": "fa80bc987f6e387ad41110bb604a16b2cd1225bbf11632b20269cb53e7fe3a62",
+    "diagnostics/permworld_local_causal_20261110/freeze.json": "5519feee5b97e45c7a20d9a00226834a34fca7960801af2ec5285152952d3abb",
+    "diagnostics/permworld_local_causal_20261110/selection.json": "80e03b89f48c675c656e83fcae5a97f588bf67b33163c317f8536e2f9b3f03cc",
+    "diagnostics/permworld_local_causal_20261110/development_geometry.csv": "2611a13ccdb8fe76e344d9aee599d0d2920a4539951d2afa310d90b2f0c26d58",
+    "diagnostics/permworld_local_causal_20261110/pair_generation_protocol.json": "2fade195fe7531641cfb085c0e1d11a2f4b4b8b08e3da974ed2670aeed55cee3",
+    "diagnostics/permworld_local_causal_20261110/math_audit.json": "8c4fae42917336bb71d6e1b173d33893b7d6989a3123c9596339fb1b390790ac",
+    "tests/test_permworld_local_causal_pairs.py": "18da392db79c94b6214620c4b401a2c12bb3f01f6a547422d07e095b7c76d033"
+  },
+  "selected_pair_file_sha256": {
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/archdev001/selected_families.json.gz": "1d95443e089c4d8a8fbf01068258ac9207b12a55ef5d5a452321a49c039db3c9",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit02/selected_families.json.gz": "2c380f1fb50ba0a61d19b43b775a4dc96dde467a6c8f6556b6b487fa51c337ca",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit03/selected_families.json.gz": "04c5a4ff690ea1331b56ffca21cbd30b349777fa57592aa7f133c8169416aa16",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit04/selected_families.json.gz": "b9abbbc6ce43caf79e413074962db96538a9e038d8866cfa5fa60e39c66ac7ce",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit05/selected_families.json.gz": "3f84315d148760abe1140e4d0cbdea6a7bc4b32c71a377741b0c1cfc53736e55"
+  },
+  "freeze_checks": {
+    "engineering_freeze.json": {
+      "protocol_matches": true,
+      "source_files": 13,
+      "all_source_hashes_match": true
+    },
+    "freeze.json": {
+      "protocol_matches": true,
+      "source_files": 17,
+      "all_source_hashes_match": true
+    }
+  },
+  "selection_recomputed": {
+    "layer": 1,
+    "min_crossing": 0.9981662591687042,
+    "min_signed_shift": 0.8031073878334987
+  },
+  "selected_common_layer": 1,
+  "selected_point": "AFTER",
+  "selected_dose": 1,
+  "blocking_implementation_issues": [],
+  "checks": [
+    {
+      "id": "selector",
+      "status": "passed",
+      "source": "calibrate.py:41\u201379; features.py:13\u201362",
+      "finding": "Only source_audit.units[0]=archdev001 is calibrated. collect(fit,dev) never resumes through the count query. Four AFTER layers are ranked by minimum FIT_B-checker boundary crossing across task/group/sign, then minimum signed checker shift, then higher layer. BEFORE is descriptive. Prefix-count-reader MAE is computed as a diagnostic but is not a selection key."
+    },
+    {
+      "id": "selection_arithmetic",
+      "status": "passed",
+      "source": "development_geometry.csv; selection.json; protocol.json",
+      "finding": "Independent CSV arithmetic reproduces common layer1 (zero-based0), AFTER point1, dose1 and dimension1. Dose and decision boundary0.5 are fixed, not searched using count outputs."
+    },
+    {
+      "id": "fit_sources",
+      "status": "passed",
+      "source": "shared.py:73\u2013101; probes.py:27\u201347",
+      "finding": "FIT nodes come only from +direction count-matched records with i>=6, taking both recipient and donor. The +direction restriction avoids double-counting the reversed same endpoints. FIT_A fits the editing label reader; component-disjoint FIT_B fits the checker and diagnostic prefix-count reader. Scalers fit their own halves; dev/test nodes never enter these fits."
+    },
+    {
+      "id": "split_metadata",
+      "status": "passed_with_descriptive_caveat",
+      "source": "causal_review_split_metadata.json",
+      "finding": "Across all five units, no full-node/component overlap or identical AFTER prefix involves FIT_A and FIT_B/dev/test. Dev/test have10,4,10,2,8 identical AFTER prefixes despite distinct full permutations. This does not alter the frozen protocol; formal-unit dev does not select the layer, and historical test is a reference only. Full-permutation separation is not claimed to imply universal prefix uniqueness."
+    },
+    {
+      "id": "actual_recurrence",
+      "status": "passed_source_review",
+      "source": "recurrent.py:107\u2013198; features.py:13\u201362; formal.py:39\u2013203",
+      "finding": "Edits act on actual per-layer GRU h_n after token4+2*i, not on LayerNorm output. All four carried states seed the next token with absolute positions preserved. Only the selected layer is projected; other three keep recipient states already updated for the current token. Model.eval/requires_gradFalse/inference_mode and parameter/hash checks are implemented. Native/no-op and full-state-swap checks have fixed1e-4 absolute logit tolerance; this review does not independently rerun them."
+    },
+    {
+      "id": "endpoint_wiring",
+      "status": "passed_source_and_fixed_record_review",
+      "source": "formal.py:82\u2013193; unit02 fixed n10/i6 pair",
+      "finding": "Both simple and count-matched local goals use recipient true total plus intended sign. In count-matched pairs the full donor total stays equal to recipient; actual_local_counterfactual flips only local peak_i and changes total by the sign. Full-state swap is therefore a donor-wiring reference, not the local-only target for matched pairs. Same-label intervention donor fields and fixed label-changing pair donor fields remain separate."
+    },
+    {
+      "id": "controls",
+      "status": "passed_with_interpretation_limits",
+      "source": "probes.py:50\u201355; formal.py:64\u2013121",
+      "finding": "Dose1 projection exactly matches the defining edit-reader coordinate algebraically; only disjoint FIT_B checker evidence is non-tautological. Eight random global directions retain the treatment signed coordinate and norm up to fixed FP32 tolerances. Same-label projections use their natural coordinate and are not norm-matched; inspect reported L2, and distinguish earlier-only/full-read-prefix variants."
+    },
+    {
+      "id": "count_overlap",
+      "status": "limitation",
+      "source": "probes.py:27\u201347; paired count construction",
+      "finding": "Equal true resolved/total counts in each matched pair do not imply the edit vector v is orthogonal to count-sensitive neural directions. For linear count reader c, predicted count changes by (c dot v)*((h_d-h_r) dot v). A count-probe diagnostic is not removal of all count information or a proof of an isolated local mathematical variable."
+    },
+    {
+      "id": "input_confound",
+      "status": "limitation",
+      "source": "pairs.py: motif_pair/count_matched_pair/same_label_donor",
+      "finding": "Normalized ascending quartets change the right value read at the cut from b to a when making a peak, so local value/rank/order proxies remain. Count matching removes a direct true-count difference, not all token/value or state-distribution explanations. Full-read-prefix same-label controls may also alter other extremum locations at the future boundary while preserving the prescribed counts and label."
+    },
+    {
+      "id": "timing",
+      "status": "critical_interpretation_boundary",
+      "source": "formal.py selected-layer-only AFTER patch; recurrent.py resume",
+      "finding": "A negative AFTER-layer1 intervention does not establish that local extremum information was unused earlier: the current token has already updated upper recipient layers and other information can be redundant/distributed. A positive effect establishes sensitivity to this operational intervention; it does not alone prove the model naturally uses a unique abstract lemma or that all relevant count computation runs through this component."
+    },
+    {
+      "id": "scope",
+      "status": "passed",
+      "source": "run.py formal_freeze.stage_boundary; formal.py within-model model loop",
+      "finding": "Task-specific directions are independently fitted inside each checkpoint. This phase contains no cross-model exchange and no new downstream combination task. Neither positive nor negative results authorize automatic cross-model work. Claims remain conditional on one-line GRUs, fixed20k checkpoints, constructed motifs, and this historically chosen single-layer AFTER projection."
+    }
+  ],
+  "split_metadata_audit": {
+    "scope": "Saved pair metadata only; no states/logits/model outputs/fitting/forwards. Exact prefix equality count is descriptive and does not alter fixed splits.",
+    "units": [
+      {
+        "unit": "archdev001",
+        "node_counts": {
+          "dev": 7387,
+          "fit_B": 3346,
+          "fit_A": 3206,
+          "test": 23856
+        },
+        "component_counts": {
+          "dev": 886,
+          "fit_B": 1105,
+          "fit_A": 1118,
+          "test": 2496
+        },
+        "pool_intersections": {
+          "fit_A__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_A__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_B__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_A": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 10
+          }
+        }
+      },
+      {
+        "unit": "unit02",
+        "node_counts": {
+          "dev": 7399,
+          "fit_A": 3284,
+          "fit_B": 3268,
+          "test": 23833
+        },
+        "component_counts": {
+          "dev": 902,
+          "fit_A": 1116,
+          "fit_B": 1100,
+          "test": 2483
+        },
+        "pool_intersections": {
+          "fit_A__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_A__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_B__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_A": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 4
+          }
+        }
+      },
+      {
+        "unit": "unit03",
+        "node_counts": {
+          "dev": 7427,
+          "fit_B": 3360,
+          "fit_A": 3192,
+          "test": 23927
+        },
+        "component_counts": {
+          "dev": 867,
+          "fit_B": 1131,
+          "fit_A": 1075,
+          "test": 2494
+        },
+        "pool_intersections": {
+          "fit_A__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_A__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_B__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_A": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 10
+          }
+        }
+      },
+      {
+        "unit": "unit04",
+        "node_counts": {
+          "dev": 7383,
+          "fit_A": 3262,
+          "fit_B": 3290,
+          "test": 23858
+        },
+        "component_counts": {
+          "dev": 882,
+          "fit_A": 1113,
+          "fit_B": 1106,
+          "test": 2522
+        },
+        "pool_intersections": {
+          "fit_A__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_A__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_B__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_A": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 2
+          }
+        }
+      },
+      {
+        "unit": "unit05",
+        "node_counts": {
+          "dev": 7361,
+          "fit_A": 3256,
+          "fit_B": 3296,
+          "test": 23847
+        },
+        "component_counts": {
+          "dev": 877,
+          "fit_A": 1116,
+          "fit_B": 1113,
+          "test": 2481
+        },
+        "pool_intersections": {
+          "fit_A__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_A__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "fit_B__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_A": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__fit_B": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 0
+          },
+          "dev__test": {
+            "full_node": 0,
+            "component": 0,
+            "identical_after_prefix": 8
+          }
+        }
+      }
+    ]
+  },
+  "fixed_math_example": {
+    "unit": "unit02",
+    "family_id": "eaffb306f86737e4c83ef993",
+    "pair_id": "eaffb306f86737e4c83ef993:count_matched:+1",
+    "n": 10,
+    "i": 6,
+    "k": 2,
+    "recipient": [
+      2,
+      5,
+      3,
+      6,
+      1,
+      7,
+      8,
+      9,
+      4,
+      10
+    ],
+    "count_matched_donor": [
+      2,
+      3,
+      5,
+      6,
+      1,
+      8,
+      7,
+      9,
+      4,
+      10
+    ],
+    "actual_local_counterfactual": [
+      2,
+      5,
+      3,
+      6,
+      1,
+      8,
+      7,
+      9,
+      4,
+      10
+    ],
+    "recipient_peak_positions": [
+      2,
+      4,
+      8
+    ],
+    "donor_peak_positions": [
+      4,
+      6,
+      8
+    ],
+    "actual_cf_peak_positions": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "post_read_suffix": [
+      9,
+      4,
+      10
+    ],
+    "oracle_counts": {
+      "recipient": 3,
+      "donor": 3,
+      "actual_cf": 4
+    },
+    "no_model_outputs_used": true
+  },
+  "permitted_claim": "Under this fixed within-model operational intervention, a naturally supervised one-dimensional component can be tested for downstream count sensitivity and control specificity; interpretation depends on independent-checker reliability and natural/no-op/full-state references.",
+  "not_established": [
+    "a uniquely mathematical local variable rather than correlated token/value/count directions",
+    "necessity during the already-completed current-token update",
+    "generalization beyond these normalized motifs or one-line GRUs",
+    "cross-model reuse of one common lemma or new-task composition",
+    "an effect caused specifically by training rather than existing coding structure"
+  ],
+  "no_formal_outcome_access": true,
+  "no_model_forward": true,
+  "no_probe_fit": true,
+  "no_source_modification": true,
+  "stop_at_within_model_stage": true
+}

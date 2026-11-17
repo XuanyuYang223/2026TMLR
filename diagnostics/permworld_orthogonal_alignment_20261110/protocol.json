@@ -1,0 +1,128 @@
+{
+  "version": "permworld-orthogonal-alignment-cache-repetition/v1",
+  "created_utc": "2026-11-10T08:22:52.824725+00:00",
+  "client_date": "2026-11-10",
+  "output": "/mnt/yangx-projects-f/20261110/permworld_orthogonal_alignment",
+  "units": [
+    {
+      "unit": "archdev001",
+      "data_path": "/mnt/yangx-projects-f/20261009/permworld_new_artifacts/encoding_archdev/worlds/archdev001/data.npz",
+      "data_sha256": "eed21512c62bebb46f26251adf5dd703ed94739ccfa1ebd3a00a46575a64c07e",
+      "historical": true,
+      "features": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/archdev001"
+    },
+    {
+      "unit": "unit02",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/data.npz",
+      "data_sha256": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+      "historical": false,
+      "features": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit02"
+    },
+    {
+      "unit": "unit03",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit03/data.npz",
+      "data_sha256": "e15a16beac804c20d7b0b749b1f2c509ca42282979acf3bf59867c8412962899",
+      "historical": false,
+      "features": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit03"
+    },
+    {
+      "unit": "unit04",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit04/data.npz",
+      "data_sha256": "41005fd6205077ab97b5bc442df7a03cfe2b3faa0037cb21d0b3600af5ea24a3",
+      "historical": false,
+      "features": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit04"
+    },
+    {
+      "unit": "unit05",
+      "root": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05",
+      "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit05/data.npz",
+      "data_sha256": "3888c63e1c2eeb8218519de93db9b472be0a3360a3c1d1ac34e7efaf226bdfb4",
+      "historical": false,
+      "features": "/mnt/yangx-projects-f/20261109/permworld_peaks_probe/features/unit05"
+    }
+  ],
+  "architectures": [
+    "gru"
+  ],
+  "encodings": [
+    "canonical_cycle",
+    "one_line"
+  ],
+  "lengths": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "actions": [
+    "identity",
+    "complement",
+    "inverse"
+  ],
+  "shuffle_seeds": [
+    1026,
+    1027,
+    1028,
+    1029,
+    1030,
+    1031,
+    1032,
+    1033
+  ],
+  "supplied_archive_sha256": "e9ab2aa8c9beb8f02613bd228a71d65dcced7848cb7772f815caf1e48b5c9015",
+  "feature_policy": "Reuse previous schema-adapted rawFP32 features byte-for-byte. No global zscore. Missing new-unit copies may be rebuilt with original importer into a NEW output directory, never overwriting prior files. Hash mismatch stops.",
+  "validation_adaptation": "prefix_final action1=complement,action2=inverse; peaks initial or valleys trained; arange original validation_indices; actual CP/data/parameter/source binding verified. One-line descents/recoils trained action1 only.",
+  "fit_policy": "Unchanged alignment.py/other_specialists.py. One global raw-coordinate O(256) map per unit/phase/encoding/fit condition; fit means and equal-length cross-products use only original probe-fit validation rows. Probes/scalers/alpha selection retain original source-only split.",
+  "test_policy": "Primary comparisons use the SAME held-out valleys complement features, complement validation mean, source mean, frozen source probe and original peak labels. Native-input rows are auxiliary. Matched and all-eligible supports both retained;21lengths equalweighted.",
+  "B_map": [
+    "means_only",
+    "fit_identity__test_complement",
+    "fit_inverse__test_complement",
+    "fit_shuffle_1026__test_complement",
+    "fit_shuffle_1027__test_complement",
+    "fit_shuffle_1028__test_complement",
+    "fit_shuffle_1029__test_complement",
+    "fit_shuffle_1030__test_complement",
+    "fit_shuffle_1031__test_complement",
+    "fit_shuffle_1032__test_complement",
+    "fit_shuffle_1033__test_complement"
+  ],
+  "B_all": "max(B_map,initial fit_complement__test_complement,oracle_count_position_prior,and forone_line both direct/procrustes descents/recoils). Within-model source/target probes are positive references,excluded.",
+  "main_one_line_success": "trained alignedC > trained direct AND trained alignedC > B_all; reportcommonmap-onlysuccess separately. Maxima after fixed equal-length aggregation,notmean oflengthwisemaxima.",
+  "statistics": "Four newer independent data/initialization/training bundles: rawunitvalues,mean,sampleSD,min/max,countdirections. Historicalreference separate andall5secondary. One taskpair,8shuffles and21lengths are not independent replications. No new pvalue/equivalence/CI.",
+  "numerical": {
+    "dtype": "FP64 maps and ridge solves,rawFP32 cached states",
+    "strict_orthogonality_absolute": 2e-12,
+    "strict_orthogonality_relative": 0,
+    "previous_direct_baseline_absolute": 1e-12,
+    "historical_supplied_AUROC_absolute": 0.001,
+    "historical_tolerance_reason": "Fixed before new fits; accommodates cached GPU-origin versus historical CPU-forward FP32 states and numerical/library differences, while much smaller than the reported0.138alignmentgain."
+  },
+  "controls": "Keep means-only,step0,all8individualshuffles,wrong-fit maps,ownprobes,oraclecountprior,andone-lineother specialists. No relabeling or posthoc dropping of candidates,lengths,units.",
+  "operation_scope": "Existing inputs/activations, fileformat adaptation, ridge probes and orthogonal fitting only. No neural forward, extract_validation execution, checkpoint reinitialization, base training, extra units, F17/paper edits or automatic publication.",
+  "map_instrumentation": "Wrap original rotation/shuffle functions without changing returned values; independently record actualR,strictorthogonality,syntheticorientation,count-preservingpermutations. Mapparameterfiles saved externally.",
+  "historical_gate": "Reproduce supplied historical scores from existing caches first; stop on discrepancy without changing metric/tolerance. Direct/own/prior values for everyunit independentlymatch previous completedprobe results.",
+  "exploratory": true,
+  "prior_pilot_seen": true,
+  "git_head": "6d745815c0a1a2a41ad5fc8c0aa6e018f9bab249"
+}

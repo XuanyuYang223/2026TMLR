@@ -1,0 +1,33 @@
+{
+  "status": "passed_read_only_timing_schema_review",
+  "completed_utc": "2026-11-10T14:48:11.217096+00:00",
+  "reviewer": "composition_metrics_subagent",
+  "new_timing_outcome_access": false,
+  "no_forward": true,
+  "no_fit": true,
+  "no_source_modification": true,
+  "blocking_issues": [],
+  "helper_sha256": "77877ee04e6ef42896e576a0b02a771b1040ca43a8d1aed91abbdfb3da6684d9",
+  "reviewed_sources": {
+    "experiments/permworld_local_timing_20261110/experiment.py": "b7814afde498547bfcc59f0e95771071a8e06f8ffc07716953d41a8bbe640c48",
+    "experiments/permworld_local_timing_20261110/replay.py": "1e86bac9e8688395726d55fdfbfa24e265c284bc3b1bc6ea9e262205ac36dfb6",
+    "experiments/permworld_local_timing_20261110/shared.py": "785b0021f79444fdcafed6fa93c5533863486c03b3c710b1ae115955dff0ef67",
+    "experiments/permworld_local_timing_20261110/run.py": "0d1248c557d567e209488473a197e38fc5f420ea1a3d57b1a8217fc9e2183594"
+  },
+  "findings": [
+    "Exact case-major29rowinventory matches frozen summary helper",
+    "Same FP32 first-layer edit feeds early and late; bytehash and checker equality are recorded",
+    "Early replay uses corresponding recipient BEFORE-token h2/h3/h4 and edited CURRENT h1; it neither embeds nor reruns layer1",
+    "Existing old probes/direction/eight random vectors are loaded; no refitting or control reselection",
+    "One late-unmodified count baseline is shared across all timings, with separate early no-op numerical checks",
+    "Injected L1 norm is kept distinct from full carried-state norm; only the former is random-norm matched",
+    "Auxiliary current layer1..4 swaps, early full-L1 replacement, full-state donor and actual counterfactual references remain separate",
+    "Mixed auxiliary states have blank physical-oracle count; local desired answer remains recipient+sign and the helper separately computes relative exact step",
+    "New table fields include full token argmax, conditional numeric expectation and full numeric mass, consistent with the reused output_metrics routine"
+  ],
+  "limitations": [
+    "Read-only code review; no new timing outcomes or actual model forwards were inspected.",
+    "Prior late outcomes from these same units were seen before this exploratory follow-up; this is not a fresh unseen-data confirmation.",
+    "Replay contrasts identify the tested current interlayer route under a mixed state, not precise natural accumulation timing or an abstract one-dimensional lemma."
+  ]
+}

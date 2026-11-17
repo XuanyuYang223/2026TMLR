@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-11-10T16:33:57.533595+00:00",
+  "protocol_sha256": "762dcc6e6e7f5ee1b2ea1358dbd97df56a74f2d615a59cf444a9fce3125ffde6",
+  "spec_hashes": {
+    "diagnostics/permworld_closing_audit_20261110/alignment/spec.json": "52124e36ca4bdd8d0c1eb8b77e3f2ac5f9f1b0c772c736160cfc12907d67f9c8",
+    "diagnostics/permworld_closing_audit_20261110/gradient/spec.json": "28a79b7686d43f3893aaaa529c58ae3ab9deaf37752283659a467a05e4c380cf",
+    "diagnostics/permworld_closing_audit_20261110/ed/spec.json": "22112a92b44911121817b9d1124ce60bdbe074fe4989452192c5e3a285597849"
+  },
+  "freeze_helper_sha256": "ce1663e2499e12747658c15c57723e102c46704f56671d7e2ff45a5380d6c99e",
+  "protection_start_sha256": "1d93a74dd524086a12e3e60e8ad45d1dd5caa696289c729d8cd53af0bc83a25e",
+  "before_new_requested_computations": true,
+  "prior_results_known": true,
+  "stage_execution_code_frozen_separately_before_each_first_new_calculation": true
+}

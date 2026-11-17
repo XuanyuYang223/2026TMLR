@@ -1,0 +1,67 @@
+{
+  "status": "passed_under_original_frozen_context",
+  "completed_utc": "2026-11-10T14:40:34.189138+00:00",
+  "scope": "Numerical engineering checks only: synthetic replay invariants and first8historical validation n10 anchors for each peaks/valleys checkpoint. No four-new-unit test scoring, fitting or accuracy outcome selection.",
+  "tests_passed": 7,
+  "synthetic_tests_passed": 5,
+  "historical_validation_tests_passed": 2,
+  "source_sha256": {
+    "experiments/permworld_local_timing_20261110/replay.py": "1e86bac9e8688395726d55fdfbfa24e265c284bc3b1bc6ea9e262205ac36dfb6",
+    "tests/test_permworld_local_timing_replay.py": "1b02c13f11c7b4e3967fa1a9c0eef565d47002a54dd38d535bdfb737188f9f26"
+  },
+  "original_frozen_context": {
+    "torch_threads": 2,
+    "OMP_NUM_THREADS": 2,
+    "OPENBLAS_NUM_THREADS": 2,
+    "MKL_NUM_THREADS": 2,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_deterministic": true
+  },
+  "frozen_tolerances": {
+    "noedit_state_absolute": 2e-05,
+    "noedit_logits_absolute": 0.0001
+  },
+  "default_context_failure_record": {
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_deterministic": false,
+    "peaks_noedit_state_error": 0.0,
+    "valleys_noedit_state_error": 0.0,
+    "peaks_full_vs_continuation_logits_error": 0.00022220611572265625,
+    "valleys_full_vs_continuation_logits_error": 0.0005230903625488281,
+    "resolution": "Restore the existing frozen runner backend/thread context; no scientific source logic or tolerance was changed. These were historical numerical preflight failures, not formal outcomes."
+  },
+  "frozen_context_results": {
+    "peaks": {
+      "anchors": 8,
+      "length": 10,
+      "device": "cuda",
+      "noedit_state_max_error": 0.0,
+      "noedit_full_vs_continuation_logits_error": 2.86102294921875e-06,
+      "h1_bit_identical": true,
+      "parameters_and_source_files_unchanged": true
+    },
+    "valleys": {
+      "anchors": 8,
+      "length": 10,
+      "device": "cuda",
+      "noedit_state_max_error": 0.0,
+      "noedit_full_vs_continuation_logits_error": 2.86102294921875e-06,
+      "h1_bit_identical": true,
+      "parameters_and_source_files_unchanged": true
+    }
+  },
+  "additional_invariants": [
+    "L2-L4 actual h0 equals recipient BEFORE state, not native AFTER state.",
+    "Layer1, embedding, positions and final_norm are never rerun by replay_upper.",
+    "Early and late edited h1 are bit-identical; upper updates differ for a discriminating synthetic fixture.",
+    "Donor h1 with recipient previous uppers is distinct from whole-donor-state swap; the latter remains a separate positive wiring control.",
+    "Input states remain unchanged; training mode, wrong shapes and non-FP32 states are rejected."
+  ],
+  "reproduce_command": "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 .venv/bin/python -m pytest tests/test_permworld_local_timing_replay.py -q -s",
+  "no_new_base_training": true,
+  "no_probe_refitting": true,
+  "no_new_four_unit_scoring": true,
+  "no_old_file_writes": true
+}

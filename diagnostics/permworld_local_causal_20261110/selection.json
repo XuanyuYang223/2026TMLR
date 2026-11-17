@@ -1,0 +1,40 @@
+{
+  "status": "selected",
+  "historical_unit": "archdev001",
+  "layer": 1,
+  "layer_zero_based": 0,
+  "timing": "after_right_value",
+  "point": 1,
+  "dose": 1.0,
+  "dimension": 1,
+  "threshold": 0.5,
+  "minimum_historical_dev_true_crossing": 0.9981662591687042,
+  "manipulation_development_reliable": true,
+  "min_signed_checker_shift": 0.8031073878334987,
+  "candidates": [
+    {
+      "layer": 1,
+      "min_crossing": 0.9981662591687042,
+      "min_signed_shift": 0.8031073878334987
+    },
+    {
+      "layer": 2,
+      "min_crossing": 0.9951100244498777,
+      "min_signed_shift": 0.7871456622733712
+    },
+    {
+      "layer": 3,
+      "min_crossing": 0.5329593267882188,
+      "min_signed_shift": 0.3790322578301666
+    },
+    {
+      "layer": 4,
+      "min_crossing": 0.13651238896680692,
+      "min_signed_shift": 0.1543149507705794
+    }
+  ],
+  "criterion": "Maximize minimum independent-checker true boundary crossing across task/group/sign dev cells; then minimum directed score shift; then higher layer. BEFORE readouts are descriptive only. No count-output endpoint is inspected for selection.",
+  "no_formal_test_output_access": true,
+  "no_count_effect_selection": true,
+  "development_geometry_sha256": "2611a13ccdb8fe76e344d9aee599d0d2920a4539951d2afa310d90b2f0c26d58"
+}

@@ -1,0 +1,71 @@
+{
+  "status": "completed_saved_token_reader",
+  "units": [
+    "archdev001",
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "new_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "length_rows": 184800,
+  "summary_rows": 8800,
+  "wide_rows": 400,
+  "checks": 17600,
+  "maximum_aggregation_error": 3.3306690738754696e-16,
+  "no_new_fits": true,
+  "no_neural_forward": true,
+  "common_max_after_equal_length_averaging": true,
+  "undefined_cells_not_reweighted": true,
+  "main_prefix_final_result_unchanged": true,
+  "completed_utc": "2026-11-10T13:01:26.171781+00:00",
+  "reader_source_sha256": "fb30fe8ea9c40ca46590645789578915bcc54e58361688b0096b61564447bdf2",
+  "reader_freeze_sha256": "47a6ff5569ff29f39500d20f9b10359b113edd7fbb866b302633a295299acb6c",
+  "source_tables": [
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/archdev001/by_length.csv",
+      "sha256": "1435d5c2b780552d16995b2ec9fc7cf36287717781ad78fd207d22bd968562cf"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/archdev001/summary.csv",
+      "sha256": "29b66f273d4eb2b8f821ce8555279afdd8911a74a9272c014af89a050bddad05"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit02/by_length.csv",
+      "sha256": "551e930fe150fe590a62e54aa0c5fa4005af0fca52408852384f257e2d66cfb2"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit02/summary.csv",
+      "sha256": "8362bd2dcc435737768a01af287da6a81cf3c262c2bde384cf922317d3730634"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit03/by_length.csv",
+      "sha256": "5067d21e8ca2fcbb0d85581bf800f43a02bf257233d1e02333ca49a08f10ec9f"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit03/summary.csv",
+      "sha256": "77f8186dab45dee3126f7639e9703da0f3697ffc80f41b37fd02bc3bfa2a4fb4"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit04/by_length.csv",
+      "sha256": "65371db2312c6816e03651487626f3ae36f49fc9bdfdd66a47f2279b298fb7d9"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit04/summary.csv",
+      "sha256": "6b234ba9c865cb7929c7e349b81ea1a8eee9488aa8fff4ea8bced2ab09f063bf"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit05/by_length.csv",
+      "sha256": "21734796ba91043ee0446daaca2d932653d7ff51b13749b8d96de7c98ef2a91f"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_exceedance_alignment_20261110/token_results/unit05/summary.csv",
+      "sha256": "1966acc0072de754285ee60715190afda6d516bc1f21658337a98848eb8fb377"
+    }
+  ]
+}

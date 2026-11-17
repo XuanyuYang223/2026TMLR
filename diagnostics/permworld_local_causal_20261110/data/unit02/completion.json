@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "unit": "unit02",
+  "historical": false,
+  "role": "formal_four_unit",
+  "data_path": "/mnt/yangx-projects-f/20261106/permworld_repetition/unit02/data.npz",
+  "data_sha256_before": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+  "data_sha256_after": "4e2eb571b148c2164bde544d1ec8f94afc068a5ff280c98ede939ba56603ba8c",
+  "generation_protocol_sha256": "2fade195fe7531641cfb085c0e1d11a2f4b4b8b08e3da974ed2670aeed55cee3",
+  "candidate_families": 45696,
+  "selected_families": 9280,
+  "selected_by_split": {
+    "dev": 2140,
+    "fit": 4284,
+    "test": 2856
+  },
+  "selected_fit_AB": {
+    "B": 2125,
+    "A": 2159
+  },
+  "candidate_exclusions": {
+    "original_training_equality_or_complement_collision": 26,
+    "validation_family_component_touches_test_root": 28
+  },
+  "components": 14418,
+  "maximum_component_families": 13,
+  "training_collision_components": 13,
+  "cells_with_shortfall": 1,
+  "missing_family_quota": 2,
+  "selected_path": "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit02/selected_families.json.gz",
+  "output_sha256": {
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit02/selected_families.json.gz": "2c380f1fb50ba0a61d19b43b775a4dc96dde467a6c8f6556b6b487fa51c337ca",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit02/candidate_roster.csv.gz": "44f42ba430b4991e4cb0f6dc2600c1846aad1c32f53b8d6ff54ac8c8f633fb4e",
+    "/mnt/yangx-projects-f/20261110/permworld_local_causal/unit02/components.csv.gz": "428e222fa18725c0ba2599b91522dea1130ccf1a1ec99cd4ba13388da4fec5de",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/unit02/coverage.csv": "81819437f6a99ed4a13abb72808a8b43fc861479017c461a6057479730dbe09c",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/unit02/split_AB_coverage.csv": "a205539577bfcecd4e85720453b4d415599bd851bc01fab8fb25a2da41cae23c",
+    "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/data/unit02/independent_math_audit.json": "5979772d3df7afd77a585b03bfe39f49c536c570df1097d04d2e8aac8d923ed2"
+  },
+  "no_neural_forward": true,
+  "no_checkpoint_load": true,
+  "no_model_outcome_access": true,
+  "no_training": true,
+  "elapsed_seconds": 97.12639077502536
+}

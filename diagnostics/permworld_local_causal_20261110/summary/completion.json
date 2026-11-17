@@ -1,0 +1,45 @@
+{
+  "status": "completed_saved_local_intervention_summary",
+  "raw_rows": 1310400,
+  "scored_rows": 1713600,
+  "position_rows": 828240,
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_reference": "archdev001",
+  "no_fits": true,
+  "no_forwards": true,
+  "randoms_averaged_within_pair_first": true,
+  "no_control_maximum": true,
+  "primary_aggregation": "Fixed 1/21 lengths, equal positions, paired means within position",
+  "pooled_pair_sensitivity": true,
+  "no_count_outcome_selection": true,
+  "completed_utc": "2026-11-10T14:08:07.174261+00:00",
+  "source_sha256": "77b4666460e1bdd2b736d4e14bea8b60ccede957f75c5f3917e658caaf9e6c9e",
+  "protocol_sha256": "016ef16f07924f8bf55a232d21754612afa15dd2655cd4ac9d0425ff3657b176",
+  "source_tables": [
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/results/archdev001/pair_results.csv",
+      "sha256": "509f60947efffbed9327d58f36ae397568eaa55405549f80e3a1cdc9a8874148"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/results/unit02/pair_results.csv",
+      "sha256": "fe9ea15a0cf07b4d0adf1d15e2cb62d9ac3ed82229db8dc6bba5e20db40c90a5"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/results/unit03/pair_results.csv",
+      "sha256": "81b44d56385762a8676bfebf44da044080273d5caa299158b7a02eeccf229ecd"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/results/unit04/pair_results.csv",
+      "sha256": "1b53ffbe4d237ac794b409dd0e0e4d805409aa0481d289f7283565ba83fa721a"
+    },
+    {
+      "path": "/home/yangx/ICML/diagnostics/permworld_local_causal_20261110/results/unit05/pair_results.csv",
+      "sha256": "231e00bc0713c1a190e6f6c2befb588d05e7308447c65ad4ec49a385b769bea9"
+    }
+  ]
+}

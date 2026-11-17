@@ -1,0 +1,88 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-11-10T16:52:35.099481+00:00",
+  "checks_completed": [
+    "PV trained-source/model-target specificity",
+    "Fixed1Dedit early-path geometry and gradients",
+    "E/D control-specific encoding recheck"
+  ],
+  "formal_units": [
+    "unit02",
+    "unit03",
+    "unit04",
+    "unit05"
+  ],
+  "historical_reference": "archdev001",
+  "protocol_sha256": "762dcc6e6e7f5ee1b2ea1358dbd97df56a74f2d615a59cf444a9fce3125ffde6",
+  "manifest_sha256": "dd8269d9415bff15ffadff3fbf10917c3c087715ae285a5bb481497882806d00",
+  "exploratory_post_results": true,
+  "retrospectively_preregistered": false,
+  "formal_gradient_pairs": 80640,
+  "historical_gradient_pairs": 20160,
+  "finite_difference_cases": 120,
+  "finite_difference_directional_checks": 240,
+  "gradient_unit_receipts": [
+    {
+      "unit": "archdev001",
+      "path": "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/results/archdev001/completion.json",
+      "sha256": "6f9b3ef1f50ecd7c997b3ff4700934fb092e0f643779522fd3484a1a9080c475",
+      "pairs": 20160,
+      "finite_difference_rows": 48,
+      "elapsed_seconds": 103.04707321000751
+    },
+    {
+      "unit": "unit02",
+      "path": "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/results/unit02/completion.json",
+      "sha256": "b39aa8858dec882f4eb2aac53adf1ab5046b6f90a99f36caf88484204f4ab597",
+      "pairs": 20160,
+      "finite_difference_rows": 48,
+      "elapsed_seconds": 113.06313433300238
+    },
+    {
+      "unit": "unit03",
+      "path": "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/results/unit03/completion.json",
+      "sha256": "ce9f41b46d13c2d350d9e2fc82c50980acf379a5aff9ba7cac008f65f294c01a",
+      "pairs": 20160,
+      "finite_difference_rows": 48,
+      "elapsed_seconds": 104.56368624599418
+    },
+    {
+      "unit": "unit04",
+      "path": "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/results/unit04/completion.json",
+      "sha256": "d1b55f37a9c9a1fc04654c11d3f98b9c4583b33c6d29ba35c14b9e20a39eaa12",
+      "pairs": 20160,
+      "finite_difference_rows": 48,
+      "elapsed_seconds": 103.30757842998719
+    },
+    {
+      "unit": "unit05",
+      "path": "/home/yangx/ICML/diagnostics/permworld_closing_audit_20261110/gradient/results/unit05/completion.json",
+      "sha256": "55dd31b41090908bad80133b49240989298c084d9b3baa166f3642fd47c22034",
+      "pairs": 20160,
+      "finite_difference_rows": 48,
+      "elapsed_seconds": 101.52344251499744
+    }
+  ],
+  "missing_materials": [],
+  "new_control_maps": 10,
+  "new_probe_fits": 0,
+  "new_base_model_training": 0,
+  "new_worlds": 0,
+  "new_directions_or_doses": 0,
+  "no_DAS": true,
+  "no_cross_model_exchange": true,
+  "original_manuscript_overwritten": false,
+  "no_DMLR_direction_change": true,
+  "no_upload_or_publication": true,
+  "next_experiment_started": false,
+  "git_head_unchanged": true,
+  "tracked_files_unchanged": true,
+  "stopped": true,
+  "writing_files": [
+    "writing/claim_evidence_scope.csv",
+    "writing/claim_evidence_scope.md",
+    "writing/tmlr_structure.md",
+    "writing/results_draft.md",
+    "writing/results_draft.tex"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Synthetic mathematical gate/order/seed verification only; no actual checkpoint or timing outcome accessed.",
+  "single_GRU_max_error": 2.220446049250313e-16,
+  "three_upper_GRU_max_error": 2.220446049250313e-16,
+  "hand_checked_reset_and_hidden_bias": true,
+  "tolerance": 1e-12,
+  "actual_checkpoint_model_modules_constructed": 0,
+  "synthetic_torch_GRU_references": true
+}

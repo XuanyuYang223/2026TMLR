@@ -1,0 +1,13 @@
+{
+  "version": "token-stage-supplement/v1",
+  "created_utc": "2026-11-10T12:37:16.264470+00:00",
+  "status": "frozen_before_any_token_forward_fit_or_outcome",
+  "supplemental_controls": [
+    "both_internal stratum",
+    "fit-only native token-kind priors"
+  ],
+  "both_internal": "source cycle_internal AND paired inverse-target cycle_internal; original overall metric stays primary",
+  "kind_prior": "source training-fit E fraction by source edge kind; target validation-fit D fraction by native identity kind, evaluated at native inverse kind then gathered once",
+  "undefined": "single-class and missing-length aggregates remain undefined, not zero; no weight renormalization",
+  "before": "AFTER-only scalar probe, scaler and centering means applied unchanged to BEFORE; before can already informative"
+}

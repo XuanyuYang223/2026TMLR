@@ -1,0 +1,51 @@
+{
+  "status": "completed",
+  "unit": "unit04",
+  "protocol_sha256": "ae15cb791d7095b835a2f907301f1824254529e1566c7004b573b36baebb94b1",
+  "elapsed_seconds": 9.148634121986106,
+  "predictions": {
+    "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/predictions.npz",
+    "sha256": "782ad3313ce97351b3e707723b5f5594012bdddae78e62f7c17f51acefa319e0",
+    "size_bytes": 6827709
+  },
+  "artifacts": {
+    "frozen_readouts": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/frozen_readouts.npz",
+      "sha256": "327f4db36c25107439b1c0f44dd54b606905138298b67834cbc11563c73e0f37",
+      "size_bytes": 3276042
+    },
+    "mask_shuffle_permutations": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/mask_shuffle_permutations.npz",
+      "sha256": "413b01d9f99f583f924011c8015902b1f17b018de94b05bc04143302eb297495",
+      "size_bytes": 2570432
+    },
+    "predictions": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/predictions.npz",
+      "sha256": "782ad3313ce97351b3e707723b5f5594012bdddae78e62f7c17f51acefa319e0",
+      "size_bytes": 6827709
+    },
+    "prediction_only": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/prediction_only.npz",
+      "sha256": "d0dca5bde0203b368cdef3616a3f0f06d77451d30e51aa56042576b1ebcad114",
+      "size_bytes": 6790969
+    },
+    "signals": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/signals.npz",
+      "sha256": "5e851fc2740331ac8fb0179e4216e12ab14b4a0d6dd891efc9f95ce7dfef8fc7",
+      "size_bytes": 26793120
+    },
+    "truth": {
+      "path": "/mnt/yangx-projects-f/20261110/permworld_lemma_composition/units/unit04/truth.npz",
+      "sha256": "359e4be3e150e9cbd8f28c16895deb1509256b17ca39e51f6efa89ebe4202326",
+      "size_bytes": 229449
+    }
+  },
+  "matched_anchors": 1753,
+  "test_anchors": 10752,
+  "independent_oracle_checked_on_all_test_inputs": true,
+  "prediction_only_sha_before_truth": "d0dca5bde0203b368cdef3616a3f0f06d77451d30e51aa56042576b1ebcad114",
+  "no_neural_forward": true,
+  "no_base_training": true,
+  "no_new_alignment": true,
+  "no_downstream_labels_in_fitting_or_thresholding": true
+}
