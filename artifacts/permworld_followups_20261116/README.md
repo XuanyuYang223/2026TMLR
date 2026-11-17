@@ -2,6 +2,8 @@
 
 This publication collects six previously local November follow-ups. Start with the [three-check closing report](../../diagnostics/permworld_closing_audit_20261110/README.md), then the [claim–evidence–scope table](../../diagnostics/permworld_closing_audit_20261110/writing/claim_evidence_scope.md). All primary means use **unit02–unit05**; the historical unit is a separate reference. These are exploratory analyses following earlier results, not retrospectively preregistered confirmation experiments.
 
+**Published and verified.** The [completion receipt](publication_completion.json) records 20 release attachments (18 result packages, the reader ZIP and the manifest). [Public verification](public_verification.json) passed 2,574 checks: every asset's provider size/digest/state, all 623 selected files in a clean public clone, complete reader-ZIP download/member hashes, and the smallest package's public download/restore. The other large packages were fully verified locally, not downloaded again in full. Four older releases and their 117 assets retained their recorded metadata. This upload is complete; no new experiment is running.
+
 ## Read the results
 
 | Package | Reader entry | Scope |
@@ -13,7 +15,7 @@ This publication collects six previously local November follow-ups. Start with t
 | Early versus late edits | [Reader report](../../diagnostics/permworld_local_timing_20261110/headlines/reader_report.md) | Paired timing comparison, whole-layer controls and four-unit raw values |
 | Three closing checks and writing | [Report](../../diagnostics/permworld_closing_audit_20261110/README.md) | Same trained-source model controls, local gradients and E/D recheck |
 
-The existing E/D report has one historical relative-link error: its token coverage table is [here](../../diagnostics/permworld_exceedance_alignment_20261110/token_reader/token_coverage_by_length.csv), rather than at that report's root. Frozen reports were not edited to repair their provenance-bound bytes.
+The existing E/D report has one historical relative-link error: its token coverage table belongs at `diagnostics/permworld_exceedance_alignment_20261110/token_reader/token_coverage_by_length.csv`, rather than at that report's root. This large table is supplied through the release manifest and restored under `repo/`, rather than hosted as an ordinary Git file. Frozen reports were not edited to repair their provenance-bound bytes.
 
 ## Writing materials
 
